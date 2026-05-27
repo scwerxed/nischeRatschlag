@@ -9,6 +9,8 @@ export default function Navbar() {
         </Link>
         <div className="flex gap-6 text-sm font-medium text-gray-600">
           <Link href="/blog" className="hover:text-green-700">Blog</Link>
+          <Link href="/karte" className="hover:text-green-700">Karte</Link>
+          <Link href="/routenplaner" className="hover:text-green-700">Routenplaner</Link>
           <Link href="/ueber-uns" className="hover:text-green-700">Über uns</Link>
           <Link href="/kontakt" className="hover:text-green-700">Kontakt</Link>
         </div>

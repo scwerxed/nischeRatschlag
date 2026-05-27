@@ -5,6 +5,7 @@ export type Post = {
   content: string;
   date: string;
   category: 'Wandern' | 'Baden' | 'Unterkunft' | 'Ausflug';
+  region: string;
   affiliateLinks?: { label: string; url: string }[];
 };
 
@@ -15,6 +16,7 @@ export const posts: Post[] = [
     excerpt: 'Von gemütlichen Seepromenaden bis zu anspruchsvollen Gipfeltouren – die schönsten Wanderwege rund um den Wörthersee.',
     date: '2026-05-20',
     category: 'Wandern',
+    region: 'kaernten',
     content: `
 Der Wörthersee ist nicht nur zum Baden da – die Region bietet auch fantastische Wanderwege für jeden Schwierigkeitsgrad.
 
@@ -47,6 +49,7 @@ Gute Wanderschuhe sind Pflicht – besonders für die längeren Touren. Aktuelle
     excerpt: 'Wo badet man am besten? Ein Überblick über die top Badestellen – kostenlos und mit Eintritt.',
     date: '2026-05-15',
     category: 'Baden',
+    region: 'kaernten',
     content: `
 Der Wörthersee ist einer der wärmsten Seen Österreichs – im Sommer erreicht das Wasser bis zu 28°C. Hier sind die besten Badestellen:
 
@@ -76,6 +79,7 @@ Früh kommen zahlt sich aus – die beliebten Spots sind im Juli/August schnell 
     excerpt: 'Miniaturpark, Reptilienzoo, Schifffahrt und mehr – so wird der Urlaub am Wörthersee für die ganze Familie unvergesslich.',
     date: '2026-05-10',
     category: 'Ausflug',
+    region: 'kaernten',
     content: `
 Ein Urlaub am Wörthersee mit Kindern ist eine tolle Idee – die Region hat für die Kleinen viel zu bieten.
 

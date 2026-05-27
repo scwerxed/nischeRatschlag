@@ -1,5 +1,7 @@
 import Link from 'next/link';
 import { posts } from '@/app/lib/posts';
+import HeroSlideshow from '@/app/ui/hero-slideshow';
+import RegionSelector from '@/app/ui/region-selector';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -13,21 +15,29 @@ export default function HomePage() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-green-700 text-white px-6 py-20">
+      <HeroSlideshow>
+        <h1 className="text-4xl md:text-5xl font-bold mb-4 drop-shadow-lg">
+          Kärnten & Wörthersee entdecken
+        </h1>
+        <p className="text-lg md:text-xl text-white/90 mb-8 drop-shadow">
+          Wandertipps, Badestellen, Ausflugsziele und Hotelempfehlungen –
+          alles was du für deinen Urlaub am Wörthersee brauchst.
+        </p>
+        <Link
+          href="/blog"
+          className="inline-block bg-white text-green-700 font-semibold px-8 py-3 rounded-lg hover:bg-green-50 transition-colors"
+        >
+          Alle Artikel lesen
+        </Link>
+      </HeroSlideshow>
+
+      {/* Region Selector */}
+      <section className="bg-white border-b border-gray-100 px-6 py-8">
         <div className="max-w-3xl mx-auto text-center">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">
-            Kärnten & Wörthersee entdecken
-          </h1>
-          <p className="text-lg md:text-xl text-green-100 mb-8">
-            Wandertipps, Badestellen, Ausflugsziele und Hotelempfehlungen –
-            alles was du für deinen Urlaub am Wörthersee brauchst.
-          </p>
-          <Link
-            href="/blog"
-            className="inline-block bg-white text-green-700 font-semibold px-8 py-3 rounded-lg hover:bg-green-50 transition-colors"
-          >
-            Alle Artikel lesen
-          </Link>
+          <h2 className="text-lg font-semibold text-gray-800 mb-4">
+            Welches Bundesland möchtest du entdecken?
+          </h2>
+          <RegionSelector />
         </div>
       </section>
 

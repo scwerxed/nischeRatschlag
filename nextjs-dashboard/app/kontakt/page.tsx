@@ -13,10 +13,10 @@ export default function KontaktPage() {
         Hast du Fragen, Anregungen oder Kooperationsanfragen? Schreib uns einfach eine E-Mail.
       </p>
       <a
-        href="mailto:hallo@woerthersee-guide.at"
+        href="xx@gmail.com"
         className="inline-block bg-green-700 text-white font-semibold px-6 py-3 rounded-lg hover:bg-green-800 transition-colors"
       >
-        hallo@woerthersee-guide.at
+        xx@gmail.com
       </a>
     </div>
   );
