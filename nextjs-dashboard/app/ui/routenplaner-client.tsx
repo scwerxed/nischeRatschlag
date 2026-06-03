@@ -1,43 +1,57 @@
 'use client';
 
 import { useEffect, useRef, useState } from 'react';
-import 'leaflet/dist/leaflet.css';
 
 type Waypoint = { lat: number; lng: number; label: string };
-type RouteInfo = { distance: number; duration: number };
+type SnappedPoint = { lat: number; lng: number };
+type RouteInfo = {
+  distance: number;
+  duration: number;
+  ascent: number;
+  descent: number;
+  elevations: number[];
+  snappedWaypoints: SnappedPoint[];
+};
+type SavedRoute = { id: string; name: string; waypoints: Waypoint[]; date: string };
 
 const CENTER: [number, number] = [46.83, 13.83];
 const MAX_WAYPOINTS = 8;
+const STORAGE_KEY = 'nische-ratschlag-routes';
+
+function loadFromStorage(): SavedRoute[] {
+  try { return JSON.parse(localStorage.getItem(STORAGE_KEY) ?? '[]'); }
+  catch { return []; }
+}
+function saveToStorage(routes: SavedRoute[]) {
+  localStorage.setItem(STORAGE_KEY, JSON.stringify(routes));
+}
 
 async function fetchRoute(waypoints: Waypoint[]): Promise<{ geojson: any; info: RouteInfo } | null> {
-  const apiKey = process.env.NEXT_PUBLIC_ORS_API_KEY;
-  if (!apiKey) return null;
+  const lonlats = waypoints.map((w) => `${w.lng.toFixed(6)},${w.lat.toFixed(6)}`).join('|');
+  try {
+    const res = await fetch(`/api/brouter?lonlats=${encodeURIComponent(lonlats)}`);
+    if (!res.ok) return null;
+    const data = await res.json();
 
-  const coordinates = waypoints.map((w) => [w.lng, w.lat]);
+    const props = data.features?.[0]?.properties ?? {};
+    const coords: number[][] = data.features?.[0]?.geometry?.coordinates ?? [];
 
-  const res = await fetch(
-    'https://api.openrouteservice.org/v2/directions/foot-hiking/geojson',
-    {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        Authorization: apiKey,
-      },
-      body: JSON.stringify({ coordinates }),
-    }
-  );
+    const distance = parseInt(props['track-length'] ?? '0');
+    const ascent   = parseInt(props['filtered ascend'] ?? '0');
+    const descent  = parseInt(props['plain-ascend'] ?? '0');
+    const duration = parseInt(props['total-time'] ?? '0');
 
-  if (!res.ok) return null;
-  const data = await res.json();
+    const raw = coords.map((c) => c[2] ?? 0).filter((e) => e > 0);
+    const step = Math.max(1, Math.floor(raw.length / 150));
+    const elevations = raw.filter((_, i) => i % step === 0);
 
-  const summary = data.features?.[0]?.properties?.summary;
-  return {
-    geojson: data,
-    info: {
-      distance: summary?.distance ?? 0,
-      duration: summary?.duration ?? 0,
-    },
-  };
+    return {
+      geojson: data,
+      info: { distance, duration, ascent, descent, elevations, snappedWaypoints: data.snappedWaypoints ?? [] },
+    };
+  } catch {
+    return null;
+  }
 }
 
 function formatDuration(seconds: number): string {
@@ -46,22 +60,55 @@ function formatDuration(seconds: number): string {
   return h > 0 ? `${h} h ${m} min` : `${m} min`;
 }
 
+function difficultyFromRoute(km: number, asc: number) {
+  if (km > 15 || asc > 800) return { label: 'Schwer', color: 'text-red-700 bg-red-50 border-red-200', dot: '🔴' };
+  if (km > 8  || asc > 400) return { label: 'Mittel', color: 'text-yellow-700 bg-yellow-50 border-yellow-200', dot: '🟡' };
+  return { label: 'Leicht', color: 'text-green-700 bg-green-50 border-green-200', dot: '🟢' };
+}
+
+function ElevationProfile({ elevations }: { elevations: number[] }) {
+  if (elevations.length < 2) return null;
+  const min = Math.min(...elevations);
+  const max = Math.max(...elevations);
+  const range = max - min || 1;
+  const W = 260, H = 84, pl = 38, pr = 6, pt = 8, pb = 4;
+  const cw = W - pl - pr, ch = H - pt - pb;
+  const pts = elevations.map((e, i) => {
+    const x = pl + (i / (elevations.length - 1)) * cw;
+    const y = pt + ch - ((e - min) / range) * ch;
+    return `${x.toFixed(1)},${y.toFixed(1)}`;
+  });
+  const line = `M ${pts.join(' L ')}`;
+  const fill = `${line} L ${(pl + cw).toFixed(1)},${(pt + ch).toFixed(1)} L ${pl},${(pt + ch).toFixed(1)} Z`;
+  return (
+    <svg viewBox={`0 0 ${W} ${H}`} className="w-full" style={{ height: 84 }}>
+      <path d={fill} fill="#dcfce7" />
+      <path d={line} fill="none" stroke="#16a34a" strokeWidth="1.5" strokeLinejoin="round" />
+      <line x1={pl} y1={pt} x2={pl} y2={pt + ch} stroke="#e5e7eb" strokeWidth="1" />
+      <line x1={pl} y1={pt + ch} x2={pl + cw} y2={pt + ch} stroke="#e5e7eb" strokeWidth="1" />
+      <text x={pl - 3} y={pt + 5} textAnchor="end" fontSize="8" fill="#9ca3af">{max} m</text>
+      <text x={pl - 3} y={pt + ch} textAnchor="end" fontSize="8" fill="#9ca3af">{min} m</text>
+    </svg>
+  );
+}
+
 export default function RoutenplanerClient() {
-  const containerRef = useRef<HTMLDivElement>(null);
-  const mapRef = useRef<any>(null);
-  const markersRef = useRef<any[]>([]);
+  const containerRef  = useRef<HTMLDivElement>(null);
+  const mapRef        = useRef<any>(null);
+  const markersRef    = useRef<any[]>([]);
   const routeLayerRef = useRef<any>(null);
 
-  const [waypoints, setWaypoints] = useState<Waypoint[]>([]);
-  const [routeInfo, setRouteInfo] = useState<RouteInfo | null>(null);
-  const [loading, setLoading] = useState(false);
-  const [noApiKey, setNoApiKey] = useState(false);
+  const [waypoints,   setWaypoints]   = useState<Waypoint[]>([]);
+  const [routeInfo,   setRouteInfo]   = useState<RouteInfo | null>(null);
+  const [loading,     setLoading]     = useState(false);
+  const [routeError,  setRouteError]  = useState<string | null>(null);
+  const [savedRoutes, setSavedRoutes] = useState<SavedRoute[]>([]);
+  const [saveName,    setSaveName]    = useState('');
+  const [saveOpen,    setSaveOpen]    = useState(false);
 
-  useEffect(() => {
-    if (!process.env.NEXT_PUBLIC_ORS_API_KEY) setNoApiKey(true);
-  }, []);
+  useEffect(() => { setSavedRoutes(loadFromStorage()); }, []);
 
-  // Init map
+  // ── Map init ──────────────────────────────────────────────────────────────
   useEffect(() => {
     if (!containerRef.current || mapRef.current) return;
     let cancelled = false;
@@ -70,25 +117,25 @@ export default function RoutenplanerClient() {
       const L = (await import('leaflet')).default;
       if (cancelled || !containerRef.current) return;
 
+      // Clear stale Leaflet state left by HMR or React Strict Mode
+      const el = containerRef.current as any;
+      if (el._leaflet_id) { el._leaflet_id = null; }
+
       const map = L.map(containerRef.current, { center: CENTER, zoom: 9 });
       mapRef.current = map;
 
       L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        attribution: '© OpenStreetMap contributors',
-        maxZoom: 18,
+        attribution: '© OpenStreetMap contributors', maxZoom: 18,
       }).addTo(map);
 
       L.tileLayer('https://tile.waymarkedtrails.org/hiking/{z}/{x}/{y}.png', {
-        attribution: '© Waymarked Trails',
-        opacity: 0.6,
-        maxZoom: 18,
+        attribution: '© Waymarked Trails', opacity: 0.6, maxZoom: 18,
       }).addTo(map);
 
       map.on('click', (e: any) => {
         setWaypoints((prev) => {
           if (prev.length >= MAX_WAYPOINTS) return prev;
-          const idx = prev.length + 1;
-          return [...prev, { lat: e.latlng.lat, lng: e.latlng.lng, label: `Punkt ${idx}` }];
+          return [...prev, { lat: e.latlng.lat, lng: e.latlng.lng, label: `Punkt ${prev.length + 1}` }];
         });
       });
     })();
@@ -100,7 +147,7 @@ export default function RoutenplanerClient() {
     };
   }, []);
 
-  // Sync markers when waypoints change
+  // ── Sync markers + fetch route on waypoint change ─────────────────────────
   useEffect(() => {
     const map = mapRef.current;
     if (!map) return;
@@ -108,48 +155,27 @@ export default function RoutenplanerClient() {
     (async () => {
       const L = (await import('leaflet')).default;
 
-      // Remove old markers
       markersRef.current.forEach((m) => map.removeLayer(m));
       markersRef.current = [];
 
-      // Add new markers
       waypoints.forEach((wp, i) => {
         const isStart = i === 0;
-        const isEnd = i === waypoints.length - 1 && waypoints.length > 1;
-        const color = isStart ? '#15803d' : isEnd ? '#b91c1c' : '#1d4ed8';
-
+        const isEnd   = i === waypoints.length - 1 && waypoints.length > 1;
+        const color   = isStart ? '#15803d' : isEnd ? '#b91c1c' : '#1d4ed8';
         const icon = L.divIcon({
           className: '',
-          html: `<div style="
-            width:28px;height:28px;border-radius:50%;
-            background:${color};color:white;
-            display:flex;align-items:center;justify-content:center;
-            font-size:12px;font-weight:bold;
-            border:2px solid white;box-shadow:0 1px 4px rgba(0,0,0,0.4);
-          ">${i + 1}</div>`,
-          iconSize: [28, 28],
-          iconAnchor: [14, 14],
+          html: `<div style="width:28px;height:28px;border-radius:50%;background:${color};color:#fff;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700;border:2px solid #fff;box-shadow:0 1px 4px rgba(0,0,0,.4)">${i + 1}</div>`,
+          iconSize: [28, 28], iconAnchor: [14, 14],
         });
-
-        const marker = L.marker([wp.lat, wp.lng], { icon })
-          .bindPopup(wp.label)
-          .addTo(map);
-        markersRef.current.push(marker);
+        markersRef.current.push(L.marker([wp.lat, wp.lng], { icon }).bindPopup(wp.label).addTo(map));
       });
 
-      // Remove old route
-      if (routeLayerRef.current) {
-        map.removeLayer(routeLayerRef.current);
-        routeLayerRef.current = null;
-      }
+      if (routeLayerRef.current) { map.removeLayer(routeLayerRef.current); routeLayerRef.current = null; }
 
-      if (waypoints.length < 2) {
-        setRouteInfo(null);
-        return;
-      }
+      if (waypoints.length < 2) { setRouteInfo(null); setRouteError(null); return; }
 
-      // Fetch route
       setLoading(true);
+      setRouteError(null);
       try {
         const result = await fetchRoute(waypoints);
         if (result) {
@@ -158,6 +184,13 @@ export default function RoutenplanerClient() {
           }).addTo(map);
           map.fitBounds(routeLayerRef.current.getBounds(), { padding: [40, 40] });
           setRouteInfo(result.info);
+
+          // Move markers to snapped trail positions
+          result.info.snappedWaypoints.forEach((snapped, i) => {
+            markersRef.current[i]?.setLatLng([snapped.lat, snapped.lng]);
+          });
+        } else {
+          setRouteError('Route konnte nicht berechnet werden.');
         }
       } finally {
         setLoading(false);
@@ -165,95 +198,213 @@ export default function RoutenplanerClient() {
     })();
   }, [waypoints]);
 
-  function clearAll() {
-    setWaypoints([]);
-    setRouteInfo(null);
+  function clearAll() { setWaypoints([]); setRouteInfo(null); setRouteError(null); }
+  function removeWaypoint(idx: number) { setWaypoints((prev) => prev.filter((_, i) => i !== idx)); }
+  function handleSave() {
+    const name = saveName.trim() || `Route ${savedRoutes.length + 1}`;
+    const updated = [{ id: Date.now().toString(), name, waypoints, date: new Date().toLocaleDateString('de-AT') }, ...savedRoutes];
+    saveToStorage(updated);
+    setSavedRoutes(updated);
+    setSaveName(''); setSaveOpen(false);
   }
-
-  function removeWaypoint(idx: number) {
-    setWaypoints((prev) => prev.filter((_, i) => i !== idx));
+  function handleDelete(id: string) {
+    const updated = savedRoutes.filter((r) => r.id !== id);
+    saveToStorage(updated); setSavedRoutes(updated);
   }
 
   return (
-    <div className="flex flex-col lg:flex-row gap-4">
-      {/* Sidebar */}
-      <div className="lg:w-72 shrink-0 space-y-4">
+    <div className="flex flex-col xl:flex-row gap-4">
+
+      {/* ── Left sidebar ─────────────────────────────────────────────────── */}
+      <div className="xl:w-64 shrink-0 space-y-4">
         <div className="bg-white border border-gray-200 rounded-xl p-4">
           <h2 className="font-semibold text-gray-800 mb-1">Wegpunkte</h2>
-          <p className="text-xs text-gray-400 mb-3">Klick auf die Karte um Punkte zu setzen (max. {MAX_WAYPOINTS})</p>
+          <p className="text-xs text-gray-400 mb-3">
+            Auf die Karte klicken um Punkte zu setzen (max. {MAX_WAYPOINTS})
+          </p>
 
-          {waypoints.length === 0 && (
-            <p className="text-sm text-gray-400 italic">Noch keine Punkte gesetzt.</p>
+          {waypoints.length === 0 ? (
+            <div className="flex items-start gap-2 bg-blue-50 border border-blue-100 rounded-lg p-3">
+              <span className="text-blue-500 text-lg mt-0.5">👆</span>
+              <p className="text-xs text-blue-700 leading-relaxed">
+                Klicke irgendwo auf die Karte um den ersten Wegpunkt zu setzen.
+              </p>
+            </div>
+          ) : (
+            <ul className="space-y-1.5">
+              {waypoints.map((wp, i) => (
+                <li key={i} className="flex items-center gap-2 text-sm">
+                  <span className={`w-6 h-6 rounded-full flex items-center justify-center text-white text-xs font-bold shrink-0 ${
+                    i === 0 ? 'bg-green-700' : i === waypoints.length - 1 ? 'bg-red-700' : 'bg-blue-700'
+                  }`}>{i + 1}</span>
+                  <span className="text-gray-600 truncate flex-1">{wp.label}</span>
+                  <button onClick={() => removeWaypoint(i)} className="text-gray-300 hover:text-red-500 text-lg leading-none" aria-label="Entfernen">×</button>
+                </li>
+              ))}
+            </ul>
           )}
 
-          <ul className="space-y-1.5">
-            {waypoints.map((wp, i) => (
-              <li key={i} className="flex items-center gap-2 text-sm">
-                <span className={`w-6 h-6 rounded-full flex items-center justify-center text-white text-xs font-bold shrink-0 ${
-                  i === 0 ? 'bg-green-700' : i === waypoints.length - 1 ? 'bg-red-700' : 'bg-blue-700'
-                }`}>
-                  {i + 1}
-                </span>
-                <span className="text-gray-600 truncate flex-1">{wp.label}</span>
-                <button
-                  onClick={() => removeWaypoint(i)}
-                  className="text-gray-300 hover:text-red-500 text-lg leading-none"
-                  aria-label="Entfernen"
-                >
-                  ×
-                </button>
-              </li>
-            ))}
-          </ul>
+          {waypoints.length === 1 && (
+            <p className="mt-3 text-xs text-gray-400 flex items-center gap-1.5">
+              <span className="text-blue-400">👆</span> Noch einen Punkt setzen um die Route zu berechnen.
+            </p>
+          )}
 
-          {waypoints.length > 0 && (
-            <button
-              onClick={clearAll}
-              className="mt-3 w-full text-sm text-red-600 hover:text-red-800 border border-red-200 hover:border-red-400 rounded-lg py-1.5 transition-colors"
-            >
+          {waypoints.length >= 2 && (
+            <div className="mt-3 space-y-2">
+              {!saveOpen ? (
+                <button onClick={() => setSaveOpen(true)} className="w-full text-sm bg-green-700 text-white rounded-lg py-1.5 hover:bg-green-800 transition-colors">
+                  Route speichern
+                </button>
+              ) : (
+                <div className="flex gap-2">
+                  <input
+                    type="text" placeholder="Routenname…" value={saveName}
+                    onChange={(e) => setSaveName(e.target.value)}
+                    onKeyDown={(e) => e.key === 'Enter' && handleSave()}
+                    className="flex-1 text-sm border border-gray-300 rounded-lg px-2 py-1.5 outline-none focus:border-green-500"
+                    autoFocus
+                  />
+                  <button onClick={handleSave} className="text-sm bg-green-700 text-white px-3 rounded-lg hover:bg-green-800">OK</button>
+                </div>
+              )}
+              <button onClick={clearAll} className="w-full text-sm text-red-600 hover:text-red-800 border border-red-200 hover:border-red-400 rounded-lg py-1.5 transition-colors">
+                Alle löschen
+              </button>
+            </div>
+          )}
+
+          {waypoints.length === 1 && (
+            <button onClick={clearAll} className="mt-2 w-full text-sm text-red-600 hover:text-red-800 border border-red-200 hover:border-red-400 rounded-lg py-1.5 transition-colors">
               Alle löschen
             </button>
           )}
         </div>
 
-        {/* Route Info */}
-        {loading && (
-          <div className="bg-white border border-gray-200 rounded-xl p-4 text-sm text-gray-400">
-            Route wird berechnet…
-          </div>
-        )}
-
-        {routeInfo && !loading && (
-          <div className="bg-green-50 border border-green-200 rounded-xl p-4">
-            <h3 className="font-semibold text-gray-800 mb-2">Route</h3>
-            <div className="space-y-1 text-sm">
-              <div className="flex justify-between">
-                <span className="text-gray-500">Distanz</span>
-                <span className="font-medium">{(routeInfo.distance / 1000).toFixed(1)} km</span>
-              </div>
-              <div className="flex justify-between">
-                <span className="text-gray-500">Dauer (zu Fuß)</span>
-                <span className="font-medium">{formatDuration(routeInfo.duration)}</span>
-              </div>
-            </div>
-          </div>
-        )}
-
-        {/* API Key Hinweis */}
-        {noApiKey && (
-          <div className="bg-yellow-50 border border-yellow-200 rounded-xl p-4 text-xs text-yellow-800">
-            <strong>Kein API-Key.</strong> Wegpunkte setzen funktioniert, aber Routen werden erst berechnet wenn{' '}
-            <code>NEXT_PUBLIC_ORS_API_KEY</code> in <code>.env.local</code> gesetzt ist.{' '}
-            <a href="https://openrouteservice.org/dev/#/signup" target="_blank" rel="noopener noreferrer" className="underline">
-              Kostenlos registrieren →
-            </a>
+        {savedRoutes.length > 0 && (
+          <div className="bg-white border border-gray-200 rounded-xl p-4">
+            <h2 className="font-semibold text-gray-800 mb-3">Gespeicherte Routen</h2>
+            <ul className="space-y-2">
+              {savedRoutes.map((route) => (
+                <li key={route.id} className="border border-gray-100 rounded-lg p-2.5">
+                  <div className="flex items-start justify-between gap-2">
+                    <div className="min-w-0">
+                      <p className="text-sm font-medium text-gray-800 truncate">{route.name}</p>
+                      <p className="text-xs text-gray-400">{route.date} · {route.waypoints.length} Punkte</p>
+                    </div>
+                    <button onClick={() => handleDelete(route.id)} className="text-gray-300 hover:text-red-500 text-lg leading-none shrink-0">×</button>
+                  </div>
+                  <button onClick={() => setWaypoints(route.waypoints)} className="mt-2 w-full text-xs text-green-700 border border-green-200 hover:bg-green-50 rounded py-1 transition-colors">
+                    Laden →
+                  </button>
+                </li>
+              ))}
+            </ul>
           </div>
         )}
       </div>
 
-      {/* Map */}
-      <div className="flex-1 rounded-xl overflow-hidden border border-gray-200 shadow-sm" style={{ minHeight: 560 }}>
-        <div ref={containerRef} style={{ height: 560 }} />
+      {/* ── Map ──────────────────────────────────────────────────────────── */}
+      <div className="relative flex-1 rounded-xl overflow-hidden border border-gray-200 shadow-sm min-h-[520px]">
+        <div
+          ref={containerRef}
+          style={{ height: 520, cursor: waypoints.length < MAX_WAYPOINTS ? 'crosshair' : 'default' }}
+        />
+        {/* Floating hint – only before first waypoint */}
+        {waypoints.length === 0 && (
+          <div className="pointer-events-none absolute inset-0 flex items-center justify-center z-[1000]">
+            <div className="bg-white/90 backdrop-blur-sm border border-gray-200 rounded-xl px-5 py-3 shadow text-sm text-gray-600 flex items-center gap-2">
+              <span className="text-lg">👆</span>
+              Auf die Karte klicken um Wegpunkte zu setzen
+            </div>
+          </div>
+        )}
+      </div>
+
+      {/* ── Right panel ──────────────────────────────────────────────────── */}
+      <div className="xl:w-72 shrink-0 space-y-4">
+
+        {loading && (
+          <div className="bg-white border border-gray-200 rounded-xl p-5 flex items-center gap-3 text-sm text-gray-500">
+            <svg className="animate-spin h-4 w-4 text-green-600 shrink-0" fill="none" viewBox="0 0 24 24">
+              <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" />
+              <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v8z" />
+            </svg>
+            Wanderweg suchen &amp; Route berechnen…
+          </div>
+        )}
+
+        {routeError && !loading && (
+          <div className="bg-red-50 border border-red-200 rounded-xl p-4 text-sm text-red-700">
+            {routeError}
+          </div>
+        )}
+
+        {routeInfo && !loading && (
+          <>
+            <div className="bg-white border border-gray-200 rounded-xl p-5">
+              <h3 className="font-semibold text-gray-900 mb-4 text-sm flex items-center gap-2">🗺️ Routendetails</h3>
+              <div className="grid grid-cols-2 gap-2.5">
+                <div className="bg-green-50 border border-green-100 rounded-xl p-3 text-center">
+                  <p className="text-xl font-bold text-green-700 leading-none">{(routeInfo.distance / 1000).toFixed(1)}</p>
+                  <p className="text-xs text-gray-500 mt-1">km Distanz</p>
+                </div>
+                <div className="bg-blue-50 border border-blue-100 rounded-xl p-3 text-center">
+                  <p className="text-xl font-bold text-blue-700 leading-none">{formatDuration(routeInfo.duration)}</p>
+                  <p className="text-xs text-gray-500 mt-1">Gehzeit</p>
+                </div>
+                <div className="bg-orange-50 border border-orange-100 rounded-xl p-3 text-center">
+                  <p className="text-xl font-bold text-orange-600 leading-none">↑ {routeInfo.ascent} m</p>
+                  <p className="text-xs text-gray-500 mt-1">Aufstieg</p>
+                </div>
+                <div className="bg-slate-50 border border-slate-100 rounded-xl p-3 text-center">
+                  <p className="text-xl font-bold text-slate-600 leading-none">↓ {routeInfo.descent} m</p>
+                  <p className="text-xs text-gray-500 mt-1">Abstieg</p>
+                </div>
+              </div>
+            </div>
+
+            {routeInfo.elevations.length > 2 && (
+              <div className="bg-white border border-gray-200 rounded-xl p-5">
+                <h3 className="font-semibold text-gray-900 mb-3 text-sm flex items-center gap-2">📈 Höhenprofil</h3>
+                <ElevationProfile elevations={routeInfo.elevations} />
+                <div className="flex justify-between mt-1">
+                  <span className="text-xs text-gray-400">Start</span>
+                  <span className="text-xs text-gray-400">Ziel</span>
+                </div>
+              </div>
+            )}
+
+            {(() => {
+              const diff = difficultyFromRoute(routeInfo.distance / 1000, routeInfo.ascent);
+              return (
+                <div className="bg-white border border-gray-200 rounded-xl p-5">
+                  <h3 className="font-semibold text-gray-900 mb-3 text-sm flex items-center gap-2">🥾 Einschätzung</h3>
+                  <span className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full border text-xs font-semibold ${diff.color}`}>
+                    {diff.dot} {diff.label}
+                  </span>
+                  <p className="text-xs text-gray-400 mt-2 leading-relaxed">
+                    Basierend auf {(routeInfo.distance / 1000).toFixed(1)} km und {routeInfo.ascent} m Aufstieg.
+                  </p>
+                </div>
+              );
+            })()}
+
+            <p className="text-xs text-gray-400 text-center">
+              Routing: <a href="https://brouter.de" target="_blank" rel="noopener noreferrer" className="underline">BRouter</a> · Wanderprofil
+            </p>
+          </>
+        )}
+
+        {!routeInfo && !loading && !routeError && (
+          <div className="bg-gray-50 border border-dashed border-gray-200 rounded-xl p-6 text-center">
+            <p className="text-4xl mb-3">🗺️</p>
+            <p className="text-sm font-medium text-gray-700 mb-1">Noch keine Route</p>
+            <p className="text-xs text-gray-400 leading-relaxed">
+              Setze mindestens 2 Wegpunkte auf der Karte — Distanz, Gehzeit, Höhenprofil und Schwierigkeit erscheinen hier automatisch.
+            </p>
+          </div>
+        )}
       </div>
     </div>
   );

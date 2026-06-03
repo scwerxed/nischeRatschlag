@@ -1,7 +1,6 @@
 'use client';
 
 import { useEffect, useRef, useState } from 'react';
-import 'leaflet/dist/leaflet.css';
 
 const KAERNTEN_CENTER: [number, number] = [46.83, 13.83];
 const KAERNTEN_ZOOM = 9;

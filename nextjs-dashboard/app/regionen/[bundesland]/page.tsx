@@ -20,17 +20,63 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 }
 
+const CATEGORY_ICONS: Record<string, string> = {
+  Wandern: '🥾',
+  Baden: '🏊',
+  Unterkunft: '🏨',
+  Ausflug: '🚗',
+};
+
+const DIFFICULTY_STYLES: Record<string, { label: string; cls: string }> = {
+  leicht: { label: 'Leicht', cls: 'bg-green-100 text-green-700' },
+  mittel: { label: 'Mittel', cls: 'bg-yellow-100 text-yellow-700' },
+  schwer: { label: 'Schwer', cls: 'bg-red-100 text-red-700' },
+};
+
+const KAERNTEN_SEASONS = [
+  {
+    season: 'Frühling',
+    months: 'Apr – Mai',
+    icon: '🌸',
+    tip: 'Alpenrosen-Blüte, kaum Touristen, günstige Preise. Ideal für Wanderungen.',
+  },
+  {
+    season: 'Sommer',
+    months: 'Jun – Aug',
+    icon: '☀️',
+    tip: 'Seen bis 29°C, volle Programm. Frühzeitig buchen – Hochsaison.',
+  },
+  {
+    season: 'Herbst',
+    months: 'Sep – Okt',
+    icon: '🍂',
+    tip: 'Goldenes Licht, leere Strände, Berge ohne Gedränge. Geheimtipp-Zeit.',
+  },
+  {
+    season: 'Winter',
+    months: 'Nov – Mär',
+    icon: '❄️',
+    tip: 'Weissensee: Europas größte Natureisfläche zum Schlittschuhlaufen.',
+  },
+];
+
 export default async function RegionPage({ params }: Props) {
   const { bundesland } = await params;
   const region = getRegionBySlug(bundesland);
   if (!region) notFound();
 
   const regionPosts = posts.filter((p) => p.region === bundesland);
+  const categories = ['Wandern', 'Baden', 'Ausflug', 'Unterkunft'] as const;
+
+  const counts = categories.reduce<Record<string, number>>((acc, cat) => {
+    acc[cat] = regionPosts.filter((p) => p.category === cat).length;
+    return acc;
+  }, {});
 
   return (
     <div className="max-w-5xl mx-auto px-6 py-12">
       {/* Header */}
-      <div className="mb-10">
+      <div className="mb-8">
         <Link href="/" className="text-sm text-green-600 hover:underline">
           ← Zurück zur Startseite
         </Link>
@@ -55,36 +101,178 @@ export default async function RegionPage({ params }: Props) {
         </div>
       )}
 
-      {/* Aktive Region mit Posts */}
-      {region.aktiv && regionPosts.length > 0 && (
-        <div className="grid md:grid-cols-2 gap-6">
-          {regionPosts.map((post) => (
-            <Link
-              key={post.slug}
-              href={`/blog/${post.slug}`}
-              className="group block border border-gray-200 rounded-xl p-6 hover:border-green-400 hover:shadow-md transition-all"
-            >
-              <div className="flex items-center justify-between mb-2">
-                <span className="text-xs font-medium text-green-600 uppercase tracking-wide">
-                  {post.category}
-                </span>
-                <span className="text-xs text-gray-400">{post.date}</span>
+      {/* Aktive Region */}
+      {region.aktiv && (
+        <>
+          {/* Kärnten Intro */}
+          {bundesland === 'kaernten' && (
+            <div className="bg-gradient-to-r from-green-700 to-green-600 text-white rounded-2xl p-6 mb-8">
+              <h2 className="text-lg font-bold mb-2">Kärnten – Österreichs Seenland</h2>
+              <p className="text-green-100 text-sm leading-relaxed mb-4">
+                Über 1.270 Seen, Gipfel bis 3.798 m und das wärmste Seewasser Österreichs: Kärnten vereint
+                Alpenwandern und Badesommer wie keine andere Region. Hier findest du kuratierte Insider-Tipps –
+                mit konkreten Preisen, ehrlichen Bewertungen und Kombinationsrouten, die andere Websites nicht zeigen.
+              </p>
+              <div className="grid grid-cols-3 gap-3 text-center text-sm">
+                <div className="bg-white/15 rounded-lg py-2">
+                  <p className="font-bold text-lg">{regionPosts.length}</p>
+                  <p className="text-green-100 text-xs">Artikel</p>
+                </div>
+                <div className="bg-white/15 rounded-lg py-2">
+                  <p className="font-bold text-lg">1.270+</p>
+                  <p className="text-green-100 text-xs">Seen</p>
+                </div>
+                <div className="bg-white/15 rounded-lg py-2">
+                  <p className="font-bold text-lg">29°C</p>
+                  <p className="text-green-100 text-xs">max. Wassertemp.</p>
+                </div>
               </div>
-              <h2 className="font-semibold text-lg text-gray-900 group-hover:text-green-700 leading-snug">
-                {post.title}
-              </h2>
-              <p className="mt-2 text-sm text-gray-500">{post.excerpt}</p>
-              <span className="mt-4 inline-block text-sm text-green-600 font-medium">
-                Weiterlesen →
-              </span>
-            </Link>
-          ))}
-        </div>
-      )}
+            </div>
+          )}
 
-      {/* Aktive Region aber noch keine Posts */}
-      {region.aktiv && regionPosts.length === 0 && (
-        <p className="text-gray-500">Noch keine Artikel für diese Region vorhanden.</p>
+          {/* Stats Schnellnavigation */}
+          <div className="grid grid-cols-4 gap-3 mb-8">
+            {categories.map((cat) => (
+              <a
+                key={cat}
+                href={`#${cat.toLowerCase()}`}
+                className="flex flex-col items-center bg-gray-50 hover:bg-green-50 border border-gray-200 hover:border-green-300 rounded-xl py-3 px-2 text-center transition-colors"
+              >
+                <span className="text-xl mb-1">{CATEGORY_ICONS[cat]}</span>
+                <span className="text-xs font-medium text-gray-700">{cat}</span>
+                <span className="text-xs text-green-600 font-semibold mt-0.5">{counts[cat]} Artikel</span>
+              </a>
+            ))}
+          </div>
+
+          {/* Karte & Routenplaner CTA */}
+          <div className="grid sm:grid-cols-2 gap-4 mb-10">
+            <Link
+              href="/karte"
+              className="group flex items-start gap-4 bg-green-700 text-white rounded-xl p-5 hover:bg-green-800 transition-colors"
+            >
+              <span className="text-3xl">🗺️</span>
+              <div>
+                <p className="font-semibold text-lg leading-tight">Interaktive Wanderkarte</p>
+                <p className="text-green-100 text-sm mt-1">
+                  Alle Wanderwege und Gipfel in Kärnten auf einen Blick – inkl. Waymarked Trails Overlay.
+                </p>
+                <span className="mt-3 inline-block text-sm font-medium underline underline-offset-2">
+                  Karte öffnen →
+                </span>
+              </div>
+            </Link>
+            <Link
+              href="/routenplaner"
+              className="group flex items-start gap-4 border-2 border-green-700 text-green-700 rounded-xl p-5 hover:bg-green-50 transition-colors"
+            >
+              <span className="text-3xl">📍</span>
+              <div>
+                <p className="font-semibold text-lg leading-tight">Routenplaner</p>
+                <p className="text-gray-500 text-sm mt-1">
+                  Eigene Wanderroute planen – Wegpunkte setzen, Distanz und Gehzeit berechnen.
+                </p>
+                <span className="mt-3 inline-block text-sm font-medium underline underline-offset-2">
+                  Route planen →
+                </span>
+              </div>
+            </Link>
+          </div>
+
+          {/* Beste Reisezeit */}
+          {bundesland === 'kaernten' && (
+            <section className="mb-12">
+              <h2 className="text-xl font-bold mb-4">🗓️ Beste Reisezeit für Kärnten</h2>
+              <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-3">
+                {KAERNTEN_SEASONS.map((s) => (
+                  <div
+                    key={s.season}
+                    className="border border-gray-200 rounded-xl p-4"
+                  >
+                    <div className="flex items-center gap-2 mb-2">
+                      <span className="text-xl">{s.icon}</span>
+                      <div>
+                        <p className="font-semibold text-sm text-gray-900">{s.season}</p>
+                        <p className="text-xs text-gray-400">{s.months}</p>
+                      </div>
+                    </div>
+                    <p className="text-xs text-gray-600 leading-relaxed">{s.tip}</p>
+                  </div>
+                ))}
+              </div>
+            </section>
+          )}
+
+          {/* Posts nach Kategorie */}
+          {categories.map((cat) => {
+            const catPosts = regionPosts.filter((p) => p.category === cat);
+            if (catPosts.length === 0) return null;
+            return (
+              <section key={cat} id={cat.toLowerCase()} className="mb-14">
+                <h2 className="text-xl font-bold mb-4 flex items-center gap-2">
+                  <span>{CATEGORY_ICONS[cat]}</span>
+                  {cat}
+                  <span className="ml-1 text-sm font-normal text-gray-400">({catPosts.length})</span>
+                </h2>
+                <div className="grid md:grid-cols-2 gap-5">
+                  {catPosts.map((post) => (
+                    <Link
+                      key={post.slug}
+                      href={`/blog/${post.slug}`}
+                      className="group block border border-gray-200 rounded-xl p-6 hover:border-green-400 hover:shadow-md transition-all"
+                    >
+                      {/* Meta */}
+                      <div className="flex items-center justify-between mb-2 flex-wrap gap-1">
+                        <div className="flex items-center gap-2">
+                          <span className="text-xs font-medium text-green-600 uppercase tracking-wide">
+                            {post.category}
+                          </span>
+                          {post.difficulty && (
+                            <span
+                              className={`text-xs font-medium px-2 py-0.5 rounded-full ${DIFFICULTY_STYLES[post.difficulty].cls}`}
+                            >
+                              {DIFFICULTY_STYLES[post.difficulty].label}
+                            </span>
+                          )}
+                        </div>
+                        {post.bestSeason && (
+                          <span className="text-xs text-gray-400">{post.bestSeason}</span>
+                        )}
+                      </div>
+
+                      {/* Titel */}
+                      <h3 className="font-semibold text-lg text-gray-900 group-hover:text-green-700 leading-snug mb-2">
+                        {post.title}
+                      </h3>
+
+                      {/* Highlights */}
+                      {post.highlights && post.highlights.length > 0 ? (
+                        <ul className="space-y-0.5 mb-3">
+                          {post.highlights.map((h, i) => (
+                            <li key={i} className="text-xs text-gray-500 flex items-start gap-1.5">
+                              <span className="text-green-500 mt-0.5 shrink-0">✓</span>
+                              {h}
+                            </li>
+                          ))}
+                        </ul>
+                      ) : (
+                        <p className="mt-2 text-sm text-gray-500 mb-3">{post.excerpt}</p>
+                      )}
+
+                      <span className="inline-block text-sm text-green-600 font-medium">
+                        Weiterlesen →
+                      </span>
+                    </Link>
+                  ))}
+                </div>
+              </section>
+            );
+          })}
+
+          {regionPosts.length === 0 && (
+            <p className="text-gray-500">Noch keine Artikel für diese Region vorhanden.</p>
+          )}
+        </>
       )}
     </div>
   );
