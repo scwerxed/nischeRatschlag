@@ -10,9 +10,11 @@ export const metadata: Metadata = {
 export default function BlogPage() {
   return (
     <div className="max-w-5xl mx-auto px-6 py-12">
-      <h1 className="text-3xl font-bold mb-2">Blog</h1>
-      <p className="text-gray-500 mb-10">
-        {posts.length} Insider-Tipps für Kärnten &amp; Wörthersee – Wandern, Baden, Ausflüge und Unterkünfte.
+      <p className="eyebrow mb-2">Magazin</p>
+      <h1 className="font-serif text-4xl font-bold mb-2 text-gray-900">Kärnten in {posts.length} Geschichten</h1>
+      <p className="text-gray-500 mb-10 max-w-2xl">
+        Insider-Tipps für Wandern, Baden, Ausflüge und Unterkünfte – recherchiert vor Ort,
+        mit echten Preisen und ehrlichen Einschätzungen.
       </p>
 
       <BlogSearch posts={posts} />

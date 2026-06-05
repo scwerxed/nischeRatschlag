@@ -76,14 +76,14 @@ function renderContent(content: string) {
     if (line.startsWith('## ')) {
       flushList();
       elements.push(
-        <h2 key={i} className="text-2xl font-bold mt-12 mb-4 text-gray-900 border-b-2 border-green-100 pb-3">
+        <h2 key={i} className="font-serif text-2xl font-bold mt-12 mb-4 text-gray-900 border-b border-gray-200 pb-3">
           {renderInline(line.slice(3))}
         </h2>
       );
     } else if (line.startsWith('### ')) {
       flushList();
       elements.push(
-        <h3 key={i} className="text-lg font-semibold mt-7 mb-2.5 text-gray-800">
+        <h3 key={i} className="font-serif text-lg font-bold mt-7 mb-2.5 text-gray-800">
           {renderInline(line.slice(4))}
         </h3>
       );
@@ -176,7 +176,7 @@ export default async function BlogPostPage({ params }: Props) {
       </div>
 
       {/* Titel */}
-      <h1 className="text-3xl font-bold mb-5 leading-tight text-gray-900">{post.title}</h1>
+      <h1 className="font-serif text-3xl md:text-4xl font-bold mb-5 leading-[1.15] text-gray-900">{post.title}</h1>
 
       {/* Highlights Box */}
       {post.highlights && post.highlights.length > 0 && (
@@ -200,15 +200,13 @@ export default async function BlogPostPage({ params }: Props) {
 
       {/* Wegekarte – vorgegebene Routen */}
       {post.trails && post.trails.length > 0 && (
-        <div className="mt-10">
-          <div className="flex items-center gap-2 mb-3">
-            <span className="text-lg">🥾</span>
-            <h2 className="text-xl font-bold text-gray-900">
-              {post.trails.length > 1 ? 'Wähle deinen Weg' : 'Der Weg auf der Karte'}
-            </h2>
-          </div>
+        <div className="mt-12">
+          <p className="eyebrow mb-2">Wanderkarte</p>
+          <h2 className="font-serif text-2xl font-bold text-gray-900 mb-1">
+            {post.trails.length > 1 ? 'Wähle deinen Weg' : 'Der Weg auf der Karte'}
+          </h2>
           {post.trails.length > 1 && (
-            <p className="text-sm text-gray-500 mb-3">
+            <p className="text-sm text-gray-500 mb-4">
               Tippe auf eine Tour, um den vorgegebenen Wegverlauf auf der Karte zu sehen.
             </p>
           )}
@@ -281,8 +279,8 @@ export default async function BlogPostPage({ params }: Props) {
 
       {/* Verwandte Artikel */}
       {related.length > 0 && (
-        <div className="mt-10">
-          <h2 className="text-lg font-bold text-gray-900 mb-4">Das könnte dich auch interessieren</h2>
+        <div className="mt-12">
+          <h2 className="font-serif text-xl font-bold text-gray-900 mb-4">Das könnte dich auch interessieren</h2>
           <div className="grid sm:grid-cols-3 gap-4">
             {related.map((r) => (
               <Link

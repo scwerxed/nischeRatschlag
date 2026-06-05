@@ -2,6 +2,40 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  html {
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  body {
+    font-feature-settings: 'kern', 'liga';
+  }
+
+  /* Editoriale Überschriften: Serif, enger Satz */
+  h1, h2, h3 {
+    letter-spacing: -0.015em;
+  }
+
+  /* Markierungs-Farbe passend zur Marke */
+  ::selection {
+    background: #c2dbcf;
+    color: #1b3b2f;
+  }
+}
+
+/* Dezente, „handgesetzte" Eyebrow-Label-Optik */
+@layer components {
+  .eyebrow {
+    @apply text-xs font-semibold uppercase tracking-[0.18em] text-green-600;
+  }
+
+  /* Feiner Link-Unterstrich-Hover für Fließtext-Links */
+  .link-underline {
+    @apply relative text-green-700;
+  }
+}
+
 input[type='number'] {
   -moz-appearance: textfield;
   appearance: textfield;

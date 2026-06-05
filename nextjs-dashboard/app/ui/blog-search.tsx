@@ -96,7 +96,7 @@ export default function BlogSearch({ posts }: { posts: Post[] }) {
                 </div>
                 <span className="text-xs text-gray-400">{post.date}</span>
               </div>
-              <h2 className="font-semibold text-lg text-gray-900 group-hover:text-green-700 leading-snug">
+              <h2 className="font-serif font-bold text-lg text-gray-900 group-hover:text-green-700 leading-snug">
                 {post.title}
               </h2>
               <p className="mt-2 text-sm text-gray-500 line-clamp-2">{post.excerpt}</p>

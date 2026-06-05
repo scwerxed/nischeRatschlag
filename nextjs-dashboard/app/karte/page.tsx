@@ -11,9 +11,9 @@ export default function KartePage() {
     <div className="max-w-7xl mx-auto px-4 sm:px-6 pt-6 pb-4">
       <div className="flex items-baseline justify-between mb-3">
         <div>
-          <h1 className="text-xl font-bold text-gray-900">Wanderkarte Kärnten</h1>
+          <h1 className="font-serif text-2xl font-bold text-gray-900">Wanderkarte Kärnten</h1>
           <p className="text-sm text-gray-500 mt-0.5">
-            Wanderwege, Gipfel und Seen — Karte, Topografie und Layer rechts oben ein-/ausblenden
+            Wanderwege, Gipfel und Unterkünfte — Karte, Topografie und Layer rechts oben ein-/ausblenden
           </p>
         </div>
       </div>

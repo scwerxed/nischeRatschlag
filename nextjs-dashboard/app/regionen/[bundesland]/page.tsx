@@ -104,8 +104,8 @@ export default async function RegionPage({ params }: Props) {
         <Link href="/" className="text-sm text-green-600 hover:underline">
           ← Zurück zur Startseite
         </Link>
-        <h1 className="text-3xl font-bold mt-3 mb-2">{region.name}</h1>
-        <p className="text-gray-500">{region.beschreibung}</p>
+        <h1 className="font-serif text-4xl font-bold mt-3 mb-2 text-gray-900">{region.name}</h1>
+        <p className="text-gray-500 max-w-2xl">{region.beschreibung}</p>
       </div>
 
       {/* Inaktive Region */}
@@ -130,26 +130,25 @@ export default async function RegionPage({ params }: Props) {
         <>
           {/* Kärnten Intro */}
           {bundesland === 'kaernten' && (
-            <div className="bg-gradient-to-r from-green-700 to-green-600 text-white rounded-2xl p-6 mb-8">
-              <h2 className="text-lg font-bold mb-2">Kärnten – Österreichs Seenland</h2>
-              <p className="text-green-100 text-sm leading-relaxed mb-4">
-                Über 1.270 Seen, Gipfel bis 3.798 m und das wärmste Seewasser Österreichs: Kärnten vereint
-                Alpenwandern und Badesommer wie keine andere Region. Hier findest du kuratierte Insider-Tipps –
-                mit konkreten Preisen, ehrlichen Bewertungen und Kombinationsrouten, die andere Websites nicht zeigen.
+            <div className="bg-green-800 text-white p-8 mb-8 border-l-4 border-sand-300">
+              <p className="eyebrow text-green-300 mb-2">Österreichs Seenland</p>
+              <h2 className="font-serif text-2xl font-bold mb-3">Alpenwandern und Badesommer in einem</h2>
+              <p className="text-green-100 text-sm leading-relaxed mb-6 max-w-2xl">
+                Über 1.270 Seen, Gipfel bis 3.798 m und das wärmste Seewasser Österreichs. Hier findest du
+                kuratierte Insider-Tipps – mit konkreten Preisen, ehrlichen Bewertungen und Kombinationsrouten,
+                die andere Websites nicht zeigen.
               </p>
-              <div className="grid grid-cols-3 gap-3 text-center text-sm">
-                <div className="bg-white/15 rounded-lg py-2">
-                  <p className="font-bold text-lg">{regionPosts.length}</p>
-                  <p className="text-green-100 text-xs">Artikel</p>
-                </div>
-                <div className="bg-white/15 rounded-lg py-2">
-                  <p className="font-bold text-lg">1.270+</p>
-                  <p className="text-green-100 text-xs">Seen</p>
-                </div>
-                <div className="bg-white/15 rounded-lg py-2">
-                  <p className="font-bold text-lg">29°C</p>
-                  <p className="text-green-100 text-xs">max. Wassertemp.</p>
-                </div>
+              <div className="grid grid-cols-3 gap-px bg-white/15 border border-white/15 max-w-md">
+                {[
+                  { v: String(regionPosts.length), l: 'Artikel' },
+                  { v: '1.270+', l: 'Seen' },
+                  { v: '29 °C', l: 'max. Wassertemp.' },
+                ].map((s) => (
+                  <div key={s.l} className="bg-green-800 py-3 text-center">
+                    <p className="font-serif font-bold text-xl">{s.v}</p>
+                    <p className="text-green-200 text-xs mt-0.5">{s.l}</p>
+                  </div>
+                ))}
               </div>
             </div>
           )}
@@ -206,7 +205,7 @@ export default async function RegionPage({ params }: Props) {
           {/* Beste Reisezeit */}
           {bundesland === 'kaernten' && (
             <section className="mb-12">
-              <h2 className="text-xl font-bold mb-4">🗓️ Beste Reisezeit für Kärnten</h2>
+              <h2 className="font-serif text-2xl font-bold mb-5 text-gray-900">Beste Reisezeit für Kärnten</h2>
               <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-3">
                 {KAERNTEN_SEASONS.map((s) => (
                   <div
@@ -233,10 +232,9 @@ export default async function RegionPage({ params }: Props) {
             if (catPosts.length === 0) return null;
             return (
               <section key={cat} id={cat.toLowerCase()} className="mb-14">
-                <h2 className="text-xl font-bold mb-4 flex items-center gap-2">
-                  <span>{CATEGORY_ICONS[cat]}</span>
+                <h2 className="font-serif text-2xl font-bold mb-5 text-gray-900 flex items-baseline gap-2">
                   {cat}
-                  <span className="ml-1 text-sm font-normal text-gray-400">({catPosts.length})</span>
+                  <span className="text-sm font-sans font-normal text-gray-400">{catPosts.length} Artikel</span>
                 </h2>
                 <div className="grid md:grid-cols-2 gap-5">
                   {catPosts.map((post) => (
@@ -310,7 +308,8 @@ export default async function RegionPage({ params }: Props) {
                   }),
                 }}
               />
-              <h2 className="text-xl font-bold mb-4">❓ Häufige Fragen zu Kärnten</h2>
+              <p className="eyebrow mb-2">FAQ</p>
+              <h2 className="font-serif text-2xl font-bold mb-5 text-gray-900">Häufige Fragen zu Kärnten</h2>
               <Faq items={KAERNTEN_FAQ} />
             </section>
           )}

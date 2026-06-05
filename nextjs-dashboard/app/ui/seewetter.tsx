@@ -60,11 +60,16 @@ export default function Seewetter() {
 
   return (
     <div className="border border-gray-200 overflow-hidden" style={{ borderRadius: 8 }}>
-      <div className="bg-gradient-to-r from-sky-600 to-cyan-500 text-white px-5 py-4">
-        <h3 className="font-bold flex items-center gap-2">🌊 Seewetter live</h3>
-        <p className="text-sky-100 text-xs mt-0.5">
-          Aktuelle Lufttemperatur{swim ? ' & Wassertemperatur' : ''} an Kärntens Seen
-        </p>
+      <div className="bg-green-800 text-white px-5 py-4 flex items-baseline justify-between">
+        <div>
+          <h3 className="font-serif text-lg font-bold">Seewetter</h3>
+          <p className="text-green-200 text-xs mt-0.5">
+            Aktuelle Lufttemperatur{swim ? ' & Wassertemperatur' : ''} an Kärntens Seen
+          </p>
+        </div>
+        <span className="flex items-center gap-1.5 text-[11px] uppercase tracking-wider text-green-200">
+          <span className="w-1.5 h-1.5 rounded-full bg-green-300 animate-pulse" /> Live
+        </span>
       </div>
       <div className="divide-y divide-gray-100">
         {rows.map((row) => (

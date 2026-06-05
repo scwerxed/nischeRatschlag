@@ -1,5 +1,5 @@
 import '@/app/ui/global.css';
-import { inter } from '@/app/ui/fonts';
+import { inter, lusitana } from '@/app/ui/fonts';
 import Navbar from '@/app/ui/navbar';
 import Footer from '@/app/ui/footer';
 import ScrollToTop from '@/app/ui/scroll-to-top';
@@ -24,8 +24,8 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="de">
-      <body className={`${inter.className} antialiased bg-white text-gray-900`}>
+    <html lang="de" className={`${inter.variable} ${lusitana.variable}`}>
+      <body className="font-sans antialiased bg-white text-gray-900">
         <Navbar />
         <main>{children}</main>
         <Footer />

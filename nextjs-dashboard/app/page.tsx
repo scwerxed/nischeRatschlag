@@ -4,6 +4,7 @@ import HeroSlideshow from '@/app/ui/hero-slideshow';
 import RegionSelector from '@/app/ui/region-selector';
 import Newsletter from '@/app/ui/newsletter';
 import Seewetter from '@/app/ui/seewetter';
+import { CATEGORY_ICONS } from '@/app/lib/blog-utils';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -12,133 +13,156 @@ export const metadata: Metadata = {
 };
 
 export default function HomePage() {
-  const featured = posts.slice(0, 3);
+  const [lead, ...rest] = posts.slice(0, 4);
 
   return (
     <>
-      {/* Hero */}
+      {/* ── Hero ───────────────────────────────────────────────────────── */}
       <HeroSlideshow>
-        <h1 className="text-4xl md:text-5xl font-bold mb-4 drop-shadow-lg">
-          Kärnten & Wörthersee entdecken
+        <p className="eyebrow text-green-200 mb-4">Reisemagazin · Kärnten</p>
+        <h1 className="font-serif text-4xl md:text-6xl font-bold leading-[1.05] mb-5">
+          Kärntens Seen &amp; Berge,<br />ehrlich erklärt.
         </h1>
-        <p className="text-lg md:text-xl text-white/90 mb-8 drop-shadow">
-          Wandertipps, Badestellen, Ausflugsziele und Hotelempfehlungen –
-          alles was du für deinen Urlaub am Wörthersee brauchst.
+        <p className="text-lg text-white/85 mb-8 max-w-xl leading-relaxed">
+          Handverlesene Wanderungen, Badestellen und Ausflüge – mit echten Preisen,
+          klaren Empfehlungen und Routen, die du sonst nirgends findest.
         </p>
-        <Link
-          href="/blog"
-          className="inline-block bg-white text-green-700 font-semibold px-8 py-3 rounded-lg hover:bg-green-50 transition-colors"
-        >
-          Alle Artikel lesen
-        </Link>
+        <div className="flex flex-wrap gap-3">
+          <Link
+            href="/blog"
+            className="inline-block bg-white text-green-800 font-semibold px-7 py-3 hover:bg-green-50 transition-colors"
+          >
+            Zum Magazin
+          </Link>
+          <Link
+            href="/karte"
+            className="inline-block border border-white/60 text-white font-semibold px-7 py-3 hover:bg-white/10 transition-colors"
+          >
+            Wanderkarte öffnen
+          </Link>
+        </div>
       </HeroSlideshow>
 
-      {/* Region Selector */}
-      <section className="bg-white border-b border-gray-100 px-6 py-8">
+      {/* ── Kennzahlen-Band ────────────────────────────────────────────── */}
+      <section className="border-b border-gray-200 bg-sand-50">
+        <div className="max-w-6xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 divide-x divide-gray-200">
+          {[
+            { value: '33', label: 'Insider-Artikel' },
+            { value: '1.270+', label: 'Seen in Kärnten' },
+            { value: '29 °C', label: 'wärmstes Seewasser' },
+            { value: '3.798 m', label: 'höchster Gipfel' },
+          ].map((s) => (
+            <div key={s.label} className="py-7 px-4 text-center">
+              <p className="font-serif text-2xl md:text-3xl font-bold text-gray-900 leading-none">{s.value}</p>
+              <p className="text-xs text-gray-500 mt-2 uppercase tracking-wider">{s.label}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* ── Region-Auswahl ─────────────────────────────────────────────── */}
+      <section className="px-6 py-10 border-b border-gray-100">
         <div className="max-w-3xl mx-auto text-center">
-          <h2 className="text-lg font-semibold text-gray-800 mb-4">
-            Welches Bundesland möchtest du entdecken?
-          </h2>
+          <p className="eyebrow mb-3">Bundesland wählen</p>
           <RegionSelector />
         </div>
       </section>
 
-      {/* Quick-Stats */}
-      <section className="max-w-5xl mx-auto px-6 pt-14">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-          {[
-            { value: '33', label: 'Insider-Artikel', icon: '📖' },
-            { value: '1.270+', label: 'Seen in Kärnten', icon: '🏞️' },
-            { value: '29°C', label: 'wärmstes Seewasser', icon: '🌡️' },
-            { value: '3.798 m', label: 'höchster Gipfel', icon: '⛰️' },
-          ].map((s) => (
-            <div key={s.label} className="text-center border border-gray-200 py-5 px-3" style={{ borderRadius: 6 }}>
-              <p className="text-2xl mb-1">{s.icon}</p>
-              <p className="text-xl font-bold text-gray-900 leading-none">{s.value}</p>
-              <p className="text-xs text-gray-500 mt-1.5">{s.label}</p>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      {/* Seewetter live */}
-      <section className="max-w-5xl mx-auto px-6 pt-14">
-        <Seewetter />
-      </section>
-
-      {/* Featured Posts */}
-      <section className="max-w-5xl mx-auto px-6 py-14">
-        <h2 className="text-2xl font-bold mb-8">Aktuelle Tipps</h2>
-        <div className="grid md:grid-cols-3 gap-6">
-          {featured.map((post) => (
-            <Link
-              key={post.slug}
-              href={`/blog/${post.slug}`}
-              className="group block border border-gray-200 rounded-xl p-5 hover:border-green-400 hover:shadow-md transition-all"
-            >
-              <span className="text-xs font-medium text-green-600 uppercase tracking-wide">
-                {post.category}
-              </span>
-              <h3 className="mt-2 font-semibold text-gray-900 group-hover:text-green-700 leading-snug">
-                {post.title}
-              </h3>
-              <p className="mt-2 text-sm text-gray-500 line-clamp-3">{post.excerpt}</p>
-              <span className="mt-4 inline-block text-sm text-green-600 font-medium">
-                Weiterlesen →
-              </span>
-            </Link>
-          ))}
-        </div>
-      </section>
-
-      {/* Karte-CTA: Besucher auf unsere Karte mit Unterkünften lenken */}
-      <section className="bg-green-50 border-y border-green-100 px-6 py-14">
-        <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-8 items-center">
+      {/* ── Featured: Magazin-Layout (1 groß + Liste) ──────────────────── */}
+      <section className="max-w-6xl mx-auto px-6 py-16">
+        <div className="flex items-end justify-between mb-8">
           <div>
-            <span className="text-xs font-semibold text-green-700 uppercase tracking-widest">Interaktiv</span>
-            <h2 className="text-2xl font-bold text-gray-900 mt-2 mb-3">
-              Finde Wanderwege, Gipfel &amp; Unterkünfte auf der Karte
+            <p className="eyebrow mb-2">Aus dem Magazin</p>
+            <h2 className="font-serif text-3xl font-bold text-gray-900">Aktuelle Tipps</h2>
+          </div>
+          <Link href="/blog" className="text-sm font-medium text-green-700 hover:text-green-600 hidden sm:block">
+            Alle {posts.length} Artikel →
+          </Link>
+        </div>
+
+        <div className="grid md:grid-cols-2 gap-8">
+          {/* Lead-Artikel */}
+          <Link href={`/blog/${lead.slug}`} className="group block">
+            <div className="aspect-[16/10] bg-gradient-to-br from-green-700 to-green-900 mb-4 flex items-end p-6 overflow-hidden">
+              <span className="font-serif text-2xl text-white/95 leading-snug">{lead.title}</span>
+            </div>
+            <p className="eyebrow mb-1.5">{lead.category}{lead.bestSeason ? ` · ${lead.bestSeason}` : ''}</p>
+            <p className="text-gray-600 leading-relaxed">{lead.excerpt}</p>
+            <span className="mt-3 inline-block text-sm font-medium text-green-700 group-hover:text-green-600">
+              Weiterlesen →
+            </span>
+          </Link>
+
+          {/* Liste */}
+          <div className="divide-y divide-gray-100">
+            {rest.map((post) => (
+              <Link key={post.slug} href={`/blog/${post.slug}`} className="group flex gap-4 py-5 first:pt-0">
+                <span className="text-2xl shrink-0 mt-0.5 grayscale-[0.2]">{CATEGORY_ICONS[post.category]}</span>
+                <div>
+                  <p className="eyebrow mb-1">{post.category}</p>
+                  <h3 className="font-serif text-lg font-bold text-gray-900 group-hover:text-green-700 leading-snug">
+                    {post.title}
+                  </h3>
+                  <p className="mt-1 text-sm text-gray-500 line-clamp-2">{post.excerpt}</p>
+                </div>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── Seewetter ──────────────────────────────────────────────────── */}
+      <section className="bg-sand-50 border-y border-gray-200 py-16">
+        <div className="max-w-3xl mx-auto px-6">
+          <div className="text-center mb-7">
+            <p className="eyebrow mb-2">Live aus Kärnten</p>
+            <h2 className="font-serif text-3xl font-bold text-gray-900">Wie warm ist das Wasser gerade?</h2>
+          </div>
+          <Seewetter />
+        </div>
+      </section>
+
+      {/* ── Karte-CTA ──────────────────────────────────────────────────── */}
+      <section className="max-w-6xl mx-auto px-6 py-20">
+        <div className="grid md:grid-cols-2 gap-12 items-center">
+          <div>
+            <p className="eyebrow mb-3">Interaktiv</p>
+            <h2 className="font-serif text-3xl font-bold text-gray-900 mb-4 leading-tight">
+              Wege, Gipfel und Unterkünfte auf einer Karte
             </h2>
-            <p className="text-gray-600 mb-5 leading-relaxed">
-              Unsere interaktive Wanderkarte zeigt dir alle Wege, Gipfel und handverlesene
-              Unterkünfte direkt am See. Verfügbarkeit &amp; Preise mit einem Klick prüfen.
+            <p className="text-gray-600 mb-7 leading-relaxed">
+              Unsere Wanderkarte verbindet das offizielle Wegenetz mit live geladenen Gipfeln
+              und handverlesenen Unterkünften direkt am See – Verfügbarkeit mit einem Klick.
             </p>
             <div className="flex flex-wrap gap-3">
-              <Link
-                href="/karte"
-                className="inline-block bg-green-700 text-white font-semibold px-7 py-3 hover:bg-green-800 transition-colors"
-                style={{ borderRadius: 4 }}
-              >
-                🗺️ Karte öffnen
+              <Link href="/karte" className="inline-block bg-green-700 text-white font-semibold px-7 py-3 hover:bg-green-800 transition-colors">
+                Karte öffnen
               </Link>
-              <Link
-                href="/routenplaner"
-                className="inline-block border border-green-700 text-green-700 font-semibold px-7 py-3 hover:bg-green-100 transition-colors"
-                style={{ borderRadius: 4 }}
-              >
-                📍 Route planen
+              <Link href="/routenplaner" className="inline-block border border-gray-300 text-gray-700 font-semibold px-7 py-3 hover:border-green-600 hover:text-green-700 transition-colors">
+                Route planen
               </Link>
             </div>
           </div>
-          <div className="grid grid-cols-2 gap-3">
+          <div className="border-t border-gray-200">
             {[
-              { emoji: '🏨', t: 'Hotels', d: 'direkt am See' },
-              { emoji: '⛺', t: 'Camping', d: 'ab 25 €/Nacht' },
-              { emoji: '🥾', t: 'Wanderwege', d: 'mit Höhenprofil' },
-              { emoji: '🏔️', t: 'Gipfel', d: 'live von OSM' },
+              { t: 'Unterkünfte', d: 'Hotels, Camping & Ferienwohnungen direkt am See' },
+              { t: 'Wanderwege', d: 'Offizielles Wegenetz mit Höhenprofil im Routenplaner' },
+              { t: 'Gipfel', d: 'Über 1.000 benannte Gipfel, live von OpenStreetMap' },
             ].map((c) => (
-              <div key={c.t} className="bg-white border border-green-100 p-4" style={{ borderRadius: 6 }}>
-                <p className="text-2xl mb-1">{c.emoji}</p>
-                <p className="font-semibold text-gray-900 text-sm">{c.t}</p>
-                <p className="text-xs text-gray-500">{c.d}</p>
+              <div key={c.t} className="flex gap-4 py-5 border-b border-gray-200">
+                <span className="font-serif text-xl text-green-700 font-bold w-6 shrink-0">·</span>
+                <div>
+                  <p className="font-semibold text-gray-900">{c.t}</p>
+                  <p className="text-sm text-gray-500 mt-0.5">{c.d}</p>
+                </div>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Newsletter */}
-      <section className="max-w-5xl mx-auto px-6 py-16">
+      {/* ── Newsletter ─────────────────────────────────────────────────── */}
+      <section className="max-w-5xl mx-auto px-6 pb-20">
         <Newsletter />
       </section>
     </>

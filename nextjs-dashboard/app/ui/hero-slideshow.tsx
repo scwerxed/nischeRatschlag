@@ -21,18 +21,18 @@ export default function HeroSlideshow({ children }: { children: React.ReactNode 
   }, []);
 
   return (
-    <section className="relative h-[520px] flex items-center justify-center overflow-hidden">
+    <section className="relative h-[560px] flex items-end overflow-hidden">
       {images.map((img, i) => (
         <div
           key={img.src}
-          className="absolute inset-0 transition-opacity duration-1000"
+          className="absolute inset-0 transition-opacity duration-[1200ms] ease-in-out"
           style={{ opacity: i === current ? 1 : 0, zIndex: i === current ? 1 : 0 }}
         >
           <Image
             src={img.src}
             alt={img.alt}
             fill
-            className="object-cover"
+            className="object-cover scale-105"
             priority={i === 0}
             onLoad={() =>
               setLoaded((prev) => {
@@ -45,28 +45,29 @@ export default function HeroSlideshow({ children }: { children: React.ReactNode 
         </div>
       ))}
 
-      {/* Fallback-Gradient wenn Bilder noch nicht geladen */}
+      {/* Fallback wenn Bilder noch nicht geladen */}
       {!loaded[current] && (
-        <div className="absolute inset-0 bg-green-700" style={{ zIndex: 0 }} />
+        <div className="absolute inset-0 bg-green-800" style={{ zIndex: 0 }} />
       )}
 
-      {/* Dunkles Overlay für Lesbarkeit */}
-      <div className="absolute inset-0 bg-black/40" style={{ zIndex: 2 }} />
+      {/* Verlaufs-Scrim von unten – natürlicher als flaches Overlay */}
+      <div
+        className="absolute inset-0"
+        style={{ zIndex: 2, background: 'linear-gradient(to top, rgba(15,30,24,.82) 0%, rgba(15,30,24,.35) 45%, rgba(15,30,24,.05) 100%)' }}
+      />
 
-      {/* Inhalt */}
-      <div className="relative text-white text-center px-6 max-w-3xl" style={{ zIndex: 3 }}>
-        {children}
+      {/* Inhalt – links ausgerichtet, editorial */}
+      <div className="relative w-full max-w-6xl mx-auto px-6 pb-16" style={{ zIndex: 3 }}>
+        <div className="max-w-2xl text-white">{children}</div>
       </div>
 
-      {/* Punkte-Navigation */}
-      <div className="absolute bottom-5 flex gap-2" style={{ zIndex: 3 }}>
+      {/* Strich-Navigation statt Punkte */}
+      <div className="absolute bottom-6 right-6 flex gap-2" style={{ zIndex: 3 }}>
         {images.map((_, i) => (
           <button
             key={i}
             onClick={() => setCurrent(i)}
-            className={`w-2.5 h-2.5 rounded-full transition-all ${
-              i === current ? 'bg-white scale-125' : 'bg-white/50'
-            }`}
+            className={`h-1 transition-all ${i === current ? 'w-8 bg-white' : 'w-4 bg-white/50 hover:bg-white/80'}`}
             aria-label={`Bild ${i + 1}`}
           />
         ))}
