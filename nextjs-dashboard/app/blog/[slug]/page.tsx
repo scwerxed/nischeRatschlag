@@ -3,6 +3,12 @@ import { posts, getPostBySlug } from '@/app/lib/posts';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import type { Metadata } from 'next';
+import { cloak } from '@/app/lib/affiliate';
+import TrailMapWrapper from '@/app/ui/trail-map-wrapper';
+import ShareButtons from '@/app/ui/share-buttons';
+import { readingTime, relatedPosts, CATEGORY_ICONS } from '@/app/lib/blog-utils';
+
+const BASE = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://www.nische-ratschlag.at';
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -14,7 +20,18 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const post = getPostBySlug(slug);
   if (!post) return {};
-  return { title: post.title, description: post.excerpt };
+  return {
+    title: post.title,
+    description: post.excerpt,
+    alternates: { canonical: `/blog/${post.slug}` },
+    openGraph: {
+      title: post.title,
+      description: post.excerpt,
+      type: 'article',
+      publishedTime: post.date,
+      url: `${BASE}/blog/${post.slug}`,
+    },
+  };
 }
 
 const DIFFICULTY_STYLES: Record<string, { label: string; cls: string }> = {
@@ -99,8 +116,37 @@ export default async function BlogPostPage({ params }: Props) {
   const regionLabel =
     post.region === 'kaernten' ? 'Kärnten' : post.region.charAt(0).toUpperCase() + post.region.slice(1);
 
+  const minutes = readingTime(post.content);
+  const related = relatedPosts(post, posts);
+
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@graph': [
+      {
+        '@type': 'Article',
+        headline: post.title,
+        description: post.excerpt,
+        datePublished: post.date,
+        dateModified: post.date,
+        author: { '@type': 'Organization', name: 'Wörthersee Guide' },
+        publisher: { '@type': 'Organization', name: 'Wörthersee Guide' },
+        mainEntityOfPage: `${BASE}/blog/${post.slug}`,
+        articleSection: post.category,
+      },
+      {
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+          { '@type': 'ListItem', position: 1, name: 'Startseite', item: BASE },
+          { '@type': 'ListItem', position: 2, name: regionLabel, item: `${BASE}/regionen/${post.region}` },
+          { '@type': 'ListItem', position: 3, name: post.title, item: `${BASE}/blog/${post.slug}` },
+        ],
+      },
+    ],
+  };
+
   return (
     <div className="max-w-2xl mx-auto px-6 py-12">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       {/* Breadcrumb */}
       <div className="flex items-center gap-2 text-xs text-gray-400 mb-6">
         <Link href="/" className="hover:text-green-600">Startseite</Link>
@@ -126,6 +172,7 @@ export default async function BlogPostPage({ params }: Props) {
           </span>
         )}
         <span className="text-xs text-gray-400 ml-auto">{post.date}</span>
+        <span className="text-xs text-gray-400">· ⏱ {minutes} Min. Lesezeit</span>
       </div>
 
       {/* Titel */}
@@ -151,6 +198,40 @@ export default async function BlogPostPage({ params }: Props) {
         {renderContent(post.content)}
       </div>
 
+      {/* Wegekarte – vorgegebene Routen */}
+      {post.trails && post.trails.length > 0 && (
+        <div className="mt-10">
+          <div className="flex items-center gap-2 mb-3">
+            <span className="text-lg">🥾</span>
+            <h2 className="text-xl font-bold text-gray-900">
+              {post.trails.length > 1 ? 'Wähle deinen Weg' : 'Der Weg auf der Karte'}
+            </h2>
+          </div>
+          {post.trails.length > 1 && (
+            <p className="text-sm text-gray-500 mb-3">
+              Tippe auf eine Tour, um den vorgegebenen Wegverlauf auf der Karte zu sehen.
+            </p>
+          )}
+          <TrailMapWrapper trails={post.trails} />
+          <div className="mt-3 flex flex-wrap gap-3">
+            <Link
+              href="/routenplaner"
+              className="inline-flex items-center gap-2 text-sm font-medium text-green-700 border border-green-200 hover:bg-green-50 px-4 py-2 transition-colors"
+              style={{ borderRadius: 3 }}
+            >
+              📍 Eigene Route planen
+            </Link>
+            <Link
+              href="/karte"
+              className="inline-flex items-center gap-2 text-sm font-medium text-green-700 border border-green-200 hover:bg-green-50 px-4 py-2 transition-colors"
+              style={{ borderRadius: 3 }}
+            >
+              🗺️ Große Wanderkarte öffnen
+            </Link>
+          </div>
+        </div>
+      )}
+
       {/* Affiliate Links */}
       {post.affiliateLinks && post.affiliateLinks.length > 0 && (
         <div className="mt-10 border border-green-100 bg-green-50 rounded-xl p-6">
@@ -159,7 +240,7 @@ export default async function BlogPostPage({ params }: Props) {
             {post.affiliateLinks.map((link) => (
               <li key={link.url}>
                 <a
-                  href={link.url}
+                  href={cloak(link.url)}
                   target="_blank"
                   rel="noopener noreferrer sponsored"
                   className="text-green-700 hover:underline font-medium text-sm"
@@ -190,6 +271,35 @@ export default async function BlogPostPage({ params }: Props) {
           >
             📍 Route planen
           </Link>
+        </div>
+      )}
+
+      {/* Teilen */}
+      <div className="mt-10 pt-6 border-t border-gray-100">
+        <ShareButtons title={post.title} />
+      </div>
+
+      {/* Verwandte Artikel */}
+      {related.length > 0 && (
+        <div className="mt-10">
+          <h2 className="text-lg font-bold text-gray-900 mb-4">Das könnte dich auch interessieren</h2>
+          <div className="grid sm:grid-cols-3 gap-4">
+            {related.map((r) => (
+              <Link
+                key={r.slug}
+                href={`/blog/${r.slug}`}
+                className="group block border border-gray-200 p-4 hover:border-green-400 hover:shadow-sm transition-all"
+                style={{ borderRadius: 8 }}
+              >
+                <span className="text-xs font-medium text-green-600 uppercase tracking-wide">
+                  {CATEGORY_ICONS[r.category]} {r.category}
+                </span>
+                <h3 className="mt-1.5 text-sm font-semibold text-gray-900 group-hover:text-green-700 leading-snug line-clamp-3">
+                  {r.title}
+                </h3>
+              </Link>
+            ))}
+          </div>
         </div>
       )}
 

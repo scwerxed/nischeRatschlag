@@ -3,6 +3,30 @@ import { posts } from '@/app/lib/posts';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import type { Metadata } from 'next';
+import Faq, { type FaqItem } from '@/app/ui/faq';
+
+const KAERNTEN_FAQ: FaqItem[] = [
+  {
+    q: 'Welcher ist der wärmste Badesee in Kärnten?',
+    a: 'Der Klopeiner See in Südkärnten ist mit durchschnittlich 26–29 °C der wärmste Badesee Österreichs. Durch das flache Becken und die geschützte Lage erwärmt sich das Wasser schneller als an jedem anderen heimischen See.',
+  },
+  {
+    q: 'Wann ist die beste Reisezeit für Kärnten?',
+    a: 'Juli und August sind am wärmsten, aber auch am vollsten. Geheimtipp ist der September: Die Seen haben noch 22–25 °C, die Preise fallen um bis zu 40 % und die Strände sind leer. Für Wanderungen ist Juni (Alpenrosenblüte) ideal.',
+  },
+  {
+    q: 'Gibt es kostenlose Badestellen am Wörthersee?',
+    a: 'Ja. Bekannte Gratis-Stellen sind der Freistrand Maria Wörth und die Badebucht Reifnitz. Abseits der Touristenströme lohnen kleinere Seen wie der Forstsee oder Keutschacher See mit kostenlosen Zugängen.',
+  },
+  {
+    q: 'Welche Wanderung lohnt sich für Anfänger?',
+    a: 'Die Seepromenade Klagenfurt–Pörtschach (flach, 18 km) und der Nockberge-Höhenweg (sanfte Almwege ohne Klettern) sind ideal für Einsteiger und Familien. Den genauen Wegverlauf siehst du auf unserer interaktiven Wanderkarte.',
+  },
+  {
+    q: 'Ist Kärnten auch im Winter einen Besuch wert?',
+    a: 'Absolut. Der Weissensee verwandelt sich in Europas größte Natureisfläche, und Skigebiete wie Bad Kleinkirchheim (mit Therme) und das Nassfeld bieten 100+ km Pisten – oft günstiger als Tirol.',
+  },
+];
 
 type Props = { params: Promise<{ bundesland: string }> };
 
@@ -268,6 +292,28 @@ export default async function RegionPage({ params }: Props) {
               </section>
             );
           })}
+
+          {/* FAQ – mit Rich-Snippet JSON-LD */}
+          {bundesland === 'kaernten' && (
+            <section className="mb-12">
+              <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                  __html: JSON.stringify({
+                    '@context': 'https://schema.org',
+                    '@type': 'FAQPage',
+                    mainEntity: KAERNTEN_FAQ.map((f) => ({
+                      '@type': 'Question',
+                      name: f.q,
+                      acceptedAnswer: { '@type': 'Answer', text: f.a },
+                    })),
+                  }),
+                }}
+              />
+              <h2 className="text-xl font-bold mb-4">❓ Häufige Fragen zu Kärnten</h2>
+              <Faq items={KAERNTEN_FAQ} />
+            </section>
+          )}
 
           {regionPosts.length === 0 && (
             <p className="text-gray-500">Noch keine Artikel für diese Region vorhanden.</p>

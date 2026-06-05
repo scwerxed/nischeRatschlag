@@ -1,3 +1,12 @@
+export type Trail = {
+  name: string;
+  difficulty: 'leicht' | 'mittel' | 'schwer';
+  length: string;       // z.B. "8 km"
+  duration: string;     // z.B. "3 Std."
+  ascent?: string;      // z.B. "434 hm"
+  coords: [number, number][]; // [lat, lng] Wegpunkte des vorgegebenen Wegs
+};
+
 export type Post = {
   slug: string;
   title: string;
@@ -10,6 +19,7 @@ export type Post = {
   difficulty?: 'leicht' | 'mittel' | 'schwer';
   highlights?: string[];
   bestSeason?: string;
+  trails?: Trail[];
 };
 
 export const posts: Post[] = [
@@ -47,6 +57,23 @@ Gute Wanderschuhe sind Pflicht – besonders für die längeren Touren. Aktuelle
     affiliateLinks: [
       { label: 'Wanderschuhe auf Amazon ansehen', url: 'https://www.amazon.de/s?k=wanderschuhe+herren' },
       { label: 'Hotels am Wörthersee – booking.com', url: 'https://www.booking.com/region/at/carinthia.de.html' },
+    ],
+    trails: [
+      {
+        name: 'Seepromenade Klagenfurt–Pörtschach',
+        difficulty: 'leicht', length: '18 km', duration: '4,5 Std.', ascent: '60 hm',
+        coords: [[46.6240, 14.2620], [46.6280, 14.2200], [46.6310, 14.1800], [46.6328, 14.1497]],
+      },
+      {
+        name: 'Pyramidenkogel',
+        difficulty: 'mittel', length: '7 km', duration: '3 Std.', ascent: '420 hm',
+        coords: [[46.6010, 14.1330], [46.5980, 14.1290], [46.5945, 14.1240], [46.5919, 14.1208]],
+      },
+      {
+        name: 'Maria Wörth Rundweg',
+        difficulty: 'leicht', length: '8 km', duration: '2 Std.', ascent: '90 hm',
+        coords: [[46.6178, 14.1640], [46.6155, 14.1700], [46.6170, 14.1780], [46.6205, 14.1720], [46.6178, 14.1640]],
+      },
     ],
   },
   {
@@ -146,6 +173,13 @@ Die Auswahl an Hotels und Pensionen am Weissensee ist klein aber fein. Frühzeit
     affiliateLinks: [
       { label: 'Unterkünfte am Weissensee – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Weissensee+K%C3%A4rnten' },
       { label: 'Wanderrucksack für alpine Touren – Amazon', url: 'https://www.amazon.de/s?k=wanderrucksack+30l' },
+    ],
+    trails: [
+      {
+        name: 'Seerundweg Weissensee',
+        difficulty: 'leicht', length: '22 km', duration: '6 Std.', ascent: '150 hm',
+        coords: [[46.7164, 13.3017], [46.7150, 13.3300], [46.7120, 13.3600], [46.7080, 13.3850], [46.7150, 13.3700], [46.7200, 13.3300], [46.7164, 13.3017]],
+      },
     ],
   },
   {
@@ -724,6 +758,18 @@ Der Dobratsch birgt Spuren einer Naturkatastrophe: Das Erdbeben von 1348 löste 
     affiliateLinks: [
       { label: 'Bergschuhe für Kärntner Wanderungen – Amazon', url: 'https://www.amazon.de/s?k=bergschuhe+herren+mittelhoch' },
       { label: 'Hotels in Villach – booking.com', url: 'https://www.booking.com/city/at/villach.de.html' },
+    ],
+    trails: [
+      {
+        name: 'Rosenalm – Dobratsch Gipfel',
+        difficulty: 'mittel', length: '6 km', duration: '2 Std.', ascent: '434 hm',
+        coords: [[46.5985, 13.6720], [46.6010, 13.6790], [46.6035, 13.6850], [46.6064, 13.6903]],
+      },
+      {
+        name: 'Kräuterwanderweg',
+        difficulty: 'leicht', length: '4 km', duration: '1,5 Std.', ascent: '120 hm',
+        coords: [[46.5950, 13.6680], [46.5965, 13.6720], [46.5980, 13.6760], [46.5960, 13.6700]],
+      },
     ],
   },
   {

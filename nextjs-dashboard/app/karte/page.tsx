@@ -8,15 +8,32 @@ export const metadata: Metadata = {
 
 export default function KartePage() {
   return (
-    <div className="max-w-5xl mx-auto px-6 py-12">
-      <h1 className="text-3xl font-bold mb-2">Wanderkarte Kärnten</h1>
-      <p className="text-gray-500 mb-6">
-        Wanderwege und Gipfel in Kärnten. Grüne Punkte = benannte Gipfel. Layer rechts oben zum Ein-/Ausblenden.
-      </p>
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 pt-6 pb-4">
+      <div className="flex items-baseline justify-between mb-3">
+        <div>
+          <h1 className="text-xl font-bold text-gray-900">Wanderkarte Kärnten</h1>
+          <p className="text-sm text-gray-500 mt-0.5">
+            Wanderwege, Gipfel und Seen — Karte, Topografie und Layer rechts oben ein-/ausblenden
+          </p>
+        </div>
+      </div>
+
       <MapWrapper />
-      <p className="text-xs text-gray-400 mt-3">
-        Kartendaten: © OpenStreetMap | Wanderwege: © Waymarked Trails | Gipfeldaten: Overpass API
-      </p>
+
+      <div className="mt-2 flex flex-wrap gap-x-4 gap-y-0.5">
+        <span className="text-xs text-gray-400">
+          © <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer" className="hover:text-gray-600">OpenStreetMap</a>
+        </span>
+        <span className="text-xs text-gray-400">
+          Wanderwege: <a href="https://hiking.waymarkedtrails.org" target="_blank" rel="noopener noreferrer" className="hover:text-gray-600">Waymarked Trails</a>
+        </span>
+        <span className="text-xs text-gray-400">
+          Topo: <a href="https://opentopomap.org" target="_blank" rel="noopener noreferrer" className="hover:text-gray-600">OpenTopoMap</a>
+        </span>
+        <span className="text-xs text-gray-400">
+          Gipfel: <a href="https://overpass-api.de" target="_blank" rel="noopener noreferrer" className="hover:text-gray-600">Overpass API</a>
+        </span>
+      </div>
     </div>
   );
 }
