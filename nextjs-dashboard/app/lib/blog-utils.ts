@@ -22,9 +22,21 @@ export function relatedPosts(current: Post, all: Post[], limit = 3): Post[] {
     .map((x) => x.p);
 }
 
-export const CATEGORY_ICONS: Record<string, string> = {
-  Wandern: '🥾',
-  Baden: '🏊',
-  Unterkunft: '🏨',
-  Ausflug: '🚗',
+// Text-Labels statt Emoji – wirkt redaktioneller
+export const CATEGORY_LABEL: Record<string, string> = {
+  Wandern:   'Wandern',
+  Baden:     'Baden',
+  Unterkunft:'Unterkunft',
+  Ausflug:   'Ausflug',
 };
+
+// Kleine farbige Punkte als Kategorie-Marker (CSS-Klassen)
+export const CATEGORY_DOT: Record<string, string> = {
+  Wandern:   'bg-green-600',
+  Baden:     'bg-sky-500',
+  Unterkunft:'bg-violet-500',
+  Ausflug:   'bg-amber-500',
+};
+
+// Rückwärtskompatibel für alte Imports
+export const CATEGORY_ICONS = CATEGORY_LABEL;

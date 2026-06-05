@@ -4,7 +4,7 @@ import HeroSlideshow from '@/app/ui/hero-slideshow';
 import RegionSelector from '@/app/ui/region-selector';
 import Newsletter from '@/app/ui/newsletter';
 import Seewetter from '@/app/ui/seewetter';
-import { CATEGORY_ICONS } from '@/app/lib/blog-utils';
+import { CATEGORY_DOT } from '@/app/lib/blog-utils';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -97,7 +97,7 @@ export default function HomePage() {
           <div className="divide-y divide-gray-100">
             {rest.map((post) => (
               <Link key={post.slug} href={`/blog/${post.slug}`} className="group flex gap-4 py-5 first:pt-0">
-                <span className="text-2xl shrink-0 mt-0.5 grayscale-[0.2]">{CATEGORY_ICONS[post.category]}</span>
+                <span className={`shrink-0 mt-2.5 w-1.5 h-1.5 rounded-full ${CATEGORY_DOT[post.category] ?? 'bg-gray-400'}`} />
                 <div>
                   <p className="eyebrow mb-1">{post.category}</p>
                   <h3 className="font-serif text-lg font-bold text-gray-900 group-hover:text-green-700 leading-snug">

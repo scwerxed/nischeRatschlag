@@ -3,7 +3,7 @@
 import { useMemo, useState } from 'react';
 import Link from 'next/link';
 import type { Post } from '@/app/lib/posts';
-import { CATEGORY_ICONS } from '@/app/lib/blog-utils';
+import { CATEGORY_DOT } from '@/app/lib/blog-utils';
 
 const CATEGORIES = ['Alle', 'Wandern', 'Baden', 'Ausflug', 'Unterkunft'] as const;
 const DIFF_STYLE: Record<string, string> = {
@@ -56,9 +56,8 @@ export default function BlogSearch({ posts }: { posts: Post[] }) {
                 ? 'bg-green-700 text-white'
                 : 'bg-gray-100 text-gray-600 hover:bg-green-50 hover:text-green-700'
             }`}
-            style={{ borderRadius: 999 }}
+            style={{ borderRadius: 3 }}
           >
-            {c !== 'Alle' && <span className="mr-1">{CATEGORY_ICONS[c]}</span>}
             {c}
           </button>
         ))}
@@ -85,8 +84,9 @@ export default function BlogSearch({ posts }: { posts: Post[] }) {
             >
               <div className="flex items-center justify-between mb-2">
                 <div className="flex items-center gap-2">
-                  <span className="text-xs font-medium text-green-600 uppercase tracking-wide">
-                    {CATEGORY_ICONS[post.category]} {post.category}
+                  <span className="flex items-center gap-1.5 text-xs font-semibold text-green-700 uppercase tracking-wide">
+                    <span className={`w-1.5 h-1.5 rounded-full ${CATEGORY_DOT[post.category] ?? 'bg-gray-400'}`} />
+                    {post.category}
                   </span>
                   {post.difficulty && (
                     <span className={`text-xs font-medium px-2 py-0.5 rounded-full ${DIFF_STYLE[post.difficulty]}`}>

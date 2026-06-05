@@ -5,7 +5,7 @@ import Footer from '@/app/ui/footer';
 import ScrollToTop from '@/app/ui/scroll-to-top';
 import type { Metadata } from 'next';
 
-const BASE = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://www.nische-ratschlag.at';
+const BASE = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://nische-ratschlag.vercel.app';
 
 export const metadata: Metadata = {
   metadataBase: new URL(BASE),

@@ -3,7 +3,7 @@ import { posts } from '@/app/lib/posts';
 import { regionen } from '@/app/lib/regionen';
 
 // ⚠️ Später durch die echte Produktiv-Domain ersetzen:
-const BASE = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://www.nische-ratschlag.at';
+const BASE = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://nische-ratschlag.vercel.app';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticPages = ['', '/blog', '/karte', '/routenplaner', '/ueber-uns', '/kontakt', '/datenschutz'].map((p) => ({

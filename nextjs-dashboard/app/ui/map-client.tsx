@@ -85,20 +85,20 @@ export default function MapClient() {
           const info = TYP_INFO[u.typ];
           const icon = L.divIcon({
             className: '',
-            html: `<div style="display:flex;align-items:center;justify-content:center;width:26px;height:26px;background:${info.color};color:#fff;font-size:13px;border:2px solid #fff;box-shadow:0 1px 3px rgba(0,0,0,.4);border-radius:4px 4px 4px 0;transform:rotate(-45deg)"><span style="transform:rotate(45deg)">${info.emoji}</span></div>`,
+            html: `<div style="display:flex;align-items:center;justify-content:center;width:26px;height:26px;background:${info.color};color:#fff;font-size:11px;font-weight:700;border:2px solid #fff;box-shadow:0 1px 3px rgba(0,0,0,.35);border-radius:3px 3px 3px 0;transform:rotate(-45deg)"><span style="transform:rotate(45deg);letter-spacing:0">${info.short}</span></div>`,
             iconSize: [26, 26],
             iconAnchor: [13, 26],
             popupAnchor: [0, -24],
           });
           L.marker([u.lat, u.lng], { icon })
             .bindPopup(
-              `<div style="min-width:180px">
-                <div style="font-size:11px;color:${info.color};font-weight:600;text-transform:uppercase;letter-spacing:.04em">${u.typ} · ${u.see}</div>
-                <div style="font-size:14px;font-weight:700;color:#111827;margin:2px 0 4px">${u.name}</div>
-                <div style="font-size:12px;color:#6b7280;margin-bottom:8px">${u.ort} · ab <strong style="color:#16a34a">${u.abPreis} €</strong>/Nacht</div>
+              `<div style="min-width:185px;font-family:system-ui,sans-serif">
+                <div style="font-size:10px;color:${info.color};font-weight:700;text-transform:uppercase;letter-spacing:.06em;margin-bottom:3px">${u.typ} &middot; ${u.see}</div>
+                <div style="font-size:14px;font-weight:700;color:#111827;margin-bottom:2px">${u.name}</div>
+                <div style="font-size:12px;color:#6b7280;margin-bottom:8px">${u.ort} &nbsp;&middot;&nbsp; ab <strong style="color:#15803d">${u.abPreis}&thinsp;&euro;</strong>/Nacht</div>
                 <a href="${cloak(u.bookingUrl)}" target="_blank" rel="noopener sponsored"
-                   style="display:block;text-align:center;background:#15803d;color:#fff;font-size:13px;font-weight:600;padding:7px 10px;border-radius:3px;text-decoration:none">
-                   Verfügbarkeit prüfen →
+                   style="display:block;text-align:center;background:#15803d;color:#fff;font-size:12px;font-weight:600;padding:7px 10px;border-radius:3px;text-decoration:none;letter-spacing:.01em">
+                   Verfügbarkeit prüfen
                 </a>
                </div>`,
               { closeButton: true }

@@ -224,10 +224,9 @@ export default function RoutenplanerClient() {
           </p>
 
           {waypoints.length === 0 ? (
-            <div className="flex items-start gap-2 bg-blue-50 border border-blue-100 rounded-lg p-3">
-              <span className="text-blue-500 text-lg mt-0.5">👆</span>
-              <p className="text-xs text-blue-700 leading-relaxed">
-                Klicke irgendwo auf die Karte um den ersten Wegpunkt zu setzen.
+            <div className="bg-gray-50 border border-gray-200 p-3" style={{ borderRadius: 4 }}>
+              <p className="text-xs text-gray-600 leading-relaxed">
+                Klicke auf die Karte um den ersten Wegpunkt zu setzen.
               </p>
             </div>
           ) : (
@@ -245,8 +244,8 @@ export default function RoutenplanerClient() {
           )}
 
           {waypoints.length === 1 && (
-            <p className="mt-3 text-xs text-gray-400 flex items-center gap-1.5">
-              <span className="text-blue-400">👆</span> Noch einen Punkt setzen um die Route zu berechnen.
+            <p className="mt-3 text-xs text-gray-400">
+              Noch einen Punkt auf der Karte setzen um die Route zu berechnen.
             </p>
           )}
 
@@ -313,9 +312,8 @@ export default function RoutenplanerClient() {
         {/* Floating hint – only before first waypoint */}
         {waypoints.length === 0 && (
           <div className="pointer-events-none absolute inset-0 flex items-center justify-center z-[1000]">
-            <div className="bg-white/90 backdrop-blur-sm border border-gray-200 rounded-xl px-5 py-3 shadow text-sm text-gray-600 flex items-center gap-2">
-              <span className="text-lg">👆</span>
-              Auf die Karte klicken um Wegpunkte zu setzen
+            <div className="bg-white/90 backdrop-blur border border-gray-300 px-5 py-2.5 text-sm text-gray-600 tracking-wide" style={{ borderRadius: 3 }}>
+              Auf die Karte klicken — Wegpunkte setzen
             </div>
           </div>
         )}
@@ -342,31 +340,26 @@ export default function RoutenplanerClient() {
 
         {routeInfo && !loading && (
           <>
-            <div className="bg-white border border-gray-200 rounded-xl p-5">
-              <h3 className="font-semibold text-gray-900 mb-4 text-sm flex items-center gap-2">🗺️ Routendetails</h3>
-              <div className="grid grid-cols-2 gap-2.5">
-                <div className="bg-green-50 border border-green-100 rounded-xl p-3 text-center">
-                  <p className="text-xl font-bold text-green-700 leading-none">{(routeInfo.distance / 1000).toFixed(1)}</p>
-                  <p className="text-xs text-gray-500 mt-1">km Distanz</p>
-                </div>
-                <div className="bg-blue-50 border border-blue-100 rounded-xl p-3 text-center">
-                  <p className="text-xl font-bold text-blue-700 leading-none">{formatDuration(routeInfo.duration)}</p>
-                  <p className="text-xs text-gray-500 mt-1">Gehzeit</p>
-                </div>
-                <div className="bg-orange-50 border border-orange-100 rounded-xl p-3 text-center">
-                  <p className="text-xl font-bold text-orange-600 leading-none">↑ {routeInfo.ascent} m</p>
-                  <p className="text-xs text-gray-500 mt-1">Aufstieg</p>
-                </div>
-                <div className="bg-slate-50 border border-slate-100 rounded-xl p-3 text-center">
-                  <p className="text-xl font-bold text-slate-600 leading-none">↓ {routeInfo.descent} m</p>
-                  <p className="text-xs text-gray-500 mt-1">Abstieg</p>
-                </div>
+            <div className="bg-white border border-gray-200 p-5" style={{ borderRadius: 4 }}>
+              <p className="eyebrow mb-4">Routendetails</p>
+              <div className="grid grid-cols-2 gap-px bg-gray-200">
+                {[
+                  { v: `${(routeInfo.distance / 1000).toFixed(1)} km`, l: 'Distanz' },
+                  { v: formatDuration(routeInfo.duration),              l: 'Gehzeit' },
+                  { v: `↑ ${routeInfo.ascent} m`,                      l: 'Aufstieg' },
+                  { v: `↓ ${routeInfo.descent} m`,                     l: 'Abstieg' },
+                ].map((s) => (
+                  <div key={s.l} className="bg-white px-3 py-3 text-center">
+                    <p className="font-serif text-lg font-bold text-gray-900 leading-none">{s.v}</p>
+                    <p className="text-xs text-gray-500 mt-1 uppercase tracking-wider">{s.l}</p>
+                  </div>
+                ))}
               </div>
             </div>
 
             {routeInfo.elevations.length > 2 && (
-              <div className="bg-white border border-gray-200 rounded-xl p-5">
-                <h3 className="font-semibold text-gray-900 mb-3 text-sm flex items-center gap-2">📈 Höhenprofil</h3>
+              <div className="bg-white border border-gray-200 p-5" style={{ borderRadius: 4 }}>
+                <p className="eyebrow mb-3">Höhenprofil</p>
                 <ElevationProfile elevations={routeInfo.elevations} />
                 <div className="flex justify-between mt-1">
                   <span className="text-xs text-gray-400">Start</span>
@@ -378,30 +371,32 @@ export default function RoutenplanerClient() {
             {(() => {
               const diff = difficultyFromRoute(routeInfo.distance / 1000, routeInfo.ascent);
               return (
-                <div className="bg-white border border-gray-200 rounded-xl p-5">
-                  <h3 className="font-semibold text-gray-900 mb-3 text-sm flex items-center gap-2">🥾 Einschätzung</h3>
-                  <span className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full border text-xs font-semibold ${diff.color}`}>
-                    {diff.dot} {diff.label}
+                <div className="bg-white border border-gray-200 p-5" style={{ borderRadius: 4 }}>
+                  <p className="eyebrow mb-3">Einschätzung</p>
+                  <span className={`inline-flex items-center gap-2 px-3 py-1.5 border text-xs font-semibold ${diff.color}`} style={{ borderRadius: 3 }}>
+                    <span className={`w-2 h-2 rounded-full shrink-0 ${
+                      diff.label === 'Leicht' ? 'bg-green-500' : diff.label === 'Mittel' ? 'bg-yellow-400' : 'bg-red-500'
+                    }`} />
+                    {diff.label}
                   </span>
                   <p className="text-xs text-gray-400 mt-2 leading-relaxed">
-                    Basierend auf {(routeInfo.distance / 1000).toFixed(1)} km und {routeInfo.ascent} m Aufstieg.
+                    {(routeInfo.distance / 1000).toFixed(1)} km &middot; {routeInfo.ascent} m Aufstieg
                   </p>
                 </div>
               );
             })()}
 
             <p className="text-xs text-gray-400 text-center">
-              Routing: <a href="https://brouter.de" target="_blank" rel="noopener noreferrer" className="underline">BRouter</a> · Wanderprofil
+              Routing: <a href="https://brouter.de" target="_blank" rel="noopener noreferrer" className="underline hover:text-gray-600">BRouter</a> &middot; Wanderprofil
             </p>
           </>
         )}
 
         {!routeInfo && !loading && !routeError && (
-          <div className="bg-gray-50 border border-dashed border-gray-200 rounded-xl p-6 text-center">
-            <p className="text-4xl mb-3">🗺️</p>
-            <p className="text-sm font-medium text-gray-700 mb-1">Noch keine Route</p>
+          <div className="border border-gray-200 p-6 text-center" style={{ borderRadius: 4 }}>
+            <p className="text-sm font-semibold text-gray-700 mb-1">Noch keine Route</p>
             <p className="text-xs text-gray-400 leading-relaxed">
-              Setze mindestens 2 Wegpunkte auf der Karte — Distanz, Gehzeit, Höhenprofil und Schwierigkeit erscheinen hier automatisch.
+              Mindestens 2 Punkte auf der Karte setzen — Distanz, Gehzeit und Höhenprofil erscheinen hier.
             </p>
           </div>
         )}

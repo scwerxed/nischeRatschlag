@@ -8,7 +8,7 @@ import TrailMapWrapper from '@/app/ui/trail-map-wrapper';
 import ShareButtons from '@/app/ui/share-buttons';
 import { readingTime, relatedPosts, CATEGORY_ICONS } from '@/app/lib/blog-utils';
 
-const BASE = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://www.nische-ratschlag.at';
+const BASE = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://nische-ratschlag.vercel.app';
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -34,10 +34,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 }
 
-const DIFFICULTY_STYLES: Record<string, { label: string; cls: string }> = {
-  leicht: { label: '🟢 Leicht', cls: 'bg-green-100 text-green-700 border-green-200' },
-  mittel: { label: '🟡 Mittel', cls: 'bg-yellow-100 text-yellow-700 border-yellow-200' },
-  schwer: { label: '🔴 Schwer', cls: 'bg-red-100 text-red-700 border-red-200' },
+const DIFFICULTY_STYLES: Record<string, { label: string; dot: string; cls: string }> = {
+  leicht: { label: 'Leicht', dot: 'bg-green-500', cls: 'bg-green-50 text-green-700 border-green-200' },
+  mittel: { label: 'Mittel', dot: 'bg-yellow-400', cls: 'bg-yellow-50 text-yellow-700 border-yellow-200' },
+  schwer: { label: 'Schwer', dot: 'bg-red-500',   cls: 'bg-red-50 text-red-700 border-red-200' },
 };
 
 function renderInline(text: string): React.ReactNode {
@@ -59,10 +59,10 @@ function renderContent(content: string) {
   const flushList = () => {
     if (listItems.length > 0) {
       elements.push(
-        <ul key={`list-${listKey++}`} className="list-none space-y-2 text-gray-700 mb-5 ml-0">
+        <ul key={`list-${listKey++}`} className="list-none space-y-2 text-gray-700 mb-5 ml-0 border-l-2 border-green-200 pl-4">
           {listItems.map((item, i) => (
-            <li key={i} className="flex items-start gap-2.5">
-              <span className="text-green-500 mt-0.5 shrink-0 font-bold">✓</span>
+            <li key={i} className="flex items-start gap-2">
+              <span className="shrink-0 mt-[0.6em] w-2.5 h-px bg-green-500 inline-block" />
               <span className="leading-relaxed">{renderInline(item)}</span>
             </li>
           ))}
@@ -162,17 +162,18 @@ export default async function BlogPostPage({ params }: Props) {
           {post.category}
         </span>
         {post.difficulty && (
-          <span className={`text-xs font-medium px-2.5 py-1 rounded-full border ${DIFFICULTY_STYLES[post.difficulty].cls}`}>
+          <span className={`inline-flex items-center gap-1.5 text-xs font-medium px-2.5 py-1 border ${DIFFICULTY_STYLES[post.difficulty].cls}`} style={{ borderRadius: 3 }}>
+            <span className={`w-2 h-2 rounded-full shrink-0 ${DIFFICULTY_STYLES[post.difficulty].dot}`} />
             {DIFFICULTY_STYLES[post.difficulty].label}
           </span>
         )}
         {post.bestSeason && (
-          <span className="text-xs text-gray-500 bg-gray-100 px-2.5 py-1 rounded-full">
-            📅 Beste Zeit: {post.bestSeason}
+          <span className="text-xs text-gray-500 bg-gray-100 px-2.5 py-1" style={{ borderRadius: 3 }}>
+            {post.bestSeason}
           </span>
         )}
         <span className="text-xs text-gray-400 ml-auto">{post.date}</span>
-        <span className="text-xs text-gray-400">· ⏱ {minutes} Min. Lesezeit</span>
+        <span className="text-xs text-gray-400">&middot; {minutes} Min. Lesen</span>
       </div>
 
       {/* Titel */}
@@ -180,12 +181,12 @@ export default async function BlogPostPage({ params }: Props) {
 
       {/* Highlights Box */}
       {post.highlights && post.highlights.length > 0 && (
-        <div className="bg-green-50 border border-green-200 rounded-xl p-5 mb-8">
-          <p className="text-xs font-semibold text-green-700 uppercase tracking-wide mb-3">Auf einen Blick</p>
+        <div className="border-l-4 border-green-600 bg-green-50 px-5 py-4 mb-8">
+          <p className="eyebrow mb-3">Auf einen Blick</p>
           <ul className="space-y-1.5">
             {post.highlights.map((h, i) => (
-              <li key={i} className="flex items-start gap-2 text-sm text-gray-700">
-                <span className="text-green-600 shrink-0 font-bold mt-0.5">✓</span>
+              <li key={i} className="flex items-start gap-2.5 text-sm text-gray-700">
+                <span className="shrink-0 mt-1.5 w-3 h-px bg-green-600 inline-block" />
                 {h}
               </li>
             ))}

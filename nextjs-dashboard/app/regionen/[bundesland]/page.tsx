@@ -44,11 +44,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 }
 
-const CATEGORY_ICONS: Record<string, string> = {
-  Wandern: '🥾',
-  Baden: '🏊',
-  Unterkunft: '🏨',
-  Ausflug: '🚗',
+const CATEGORY_DOT: Record<string, string> = {
+  Wandern:   'bg-green-600',
+  Baden:     'bg-sky-500',
+  Unterkunft:'bg-violet-500',
+  Ausflug:   'bg-amber-500',
 };
 
 const DIFFICULTY_STYLES: Record<string, { label: string; cls: string }> = {
@@ -159,11 +159,12 @@ export default async function RegionPage({ params }: Props) {
               <a
                 key={cat}
                 href={`#${cat.toLowerCase()}`}
-                className="flex flex-col items-center bg-gray-50 hover:bg-green-50 border border-gray-200 hover:border-green-300 rounded-xl py-3 px-2 text-center transition-colors"
+                className="flex flex-col items-center bg-gray-50 hover:bg-green-50 border border-gray-200 hover:border-green-300 py-3 px-2 text-center transition-colors"
+                style={{ borderRadius: 4 }}
               >
-                <span className="text-xl mb-1">{CATEGORY_ICONS[cat]}</span>
-                <span className="text-xs font-medium text-gray-700">{cat}</span>
-                <span className="text-xs text-green-600 font-semibold mt-0.5">{counts[cat]} Artikel</span>
+                <span className={`w-2.5 h-2.5 rounded-full mb-2 ${CATEGORY_DOT[cat] ?? 'bg-gray-400'}`} />
+                <span className="text-xs font-semibold text-gray-700 uppercase tracking-wide">{cat}</span>
+                <span className="text-xs text-green-600 font-medium mt-0.5">{counts[cat]}</span>
               </a>
             ))}
           </div>

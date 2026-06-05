@@ -11,7 +11,7 @@
 
 // ⚠️ Hier eure echten Partner-IDs eintragen, sobald vorhanden:
 export const PARTNER_IDS = {
-  amazonTag: 'nischeratschlag-21',   // Amazon PartnerNet Tag
+  amazonTag: 'nischeratschl-21',     // Amazon PartnerNet Tag
   bookingAid: '0000000',             // booking.com Affiliate ID (aid)
 };
 
