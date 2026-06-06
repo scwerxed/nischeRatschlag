@@ -4,7 +4,6 @@ import Navbar from '@/app/ui/navbar';
 import Footer from '@/app/ui/footer';
 import ScrollToTop from '@/app/ui/scroll-to-top';
 import CookieConsent from '@/app/ui/cookie-consent';
-import Script from 'next/script';
 import type { Metadata } from 'next';
 import { BASE, SITE_NAME, KAERNTEN_GEO, BASE_KEYWORDS, orgSchema, websiteSchema } from '@/app/lib/seo';
 
@@ -48,28 +47,17 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="de" className={`${inter.variable} ${lusitana.variable}`}>
       <head>
         {/* Google Consent Mode v2 – Standard: alles verweigert, bis Einwilligung erteilt wird.
-            Muss VOR dem AdSense-Script laufen. */}
-        <Script id="consent-default" strategy="beforeInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            window.gtag = gtag;
-            gtag('consent', 'default', {
-              ad_storage: 'denied',
-              ad_user_data: 'denied',
-              ad_personalization: 'denied',
-              analytics_storage: 'denied',
-              wait_for_update: 500
-            });
-          `}
-        </Script>
-        {/* Google AdSense – Auto-Anzeigen auf allen Seiten */}
-        <Script
-          id="adsbygoogle-init"
+            Echtes Inline-Script, läuft synchron VOR dem AdSense-Script. */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}window.gtag=gtag;gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'denied',wait_for_update:500});`,
+          }}
+        />
+        {/* Google AdSense – echtes <script>-Tag im Head (für Crawler-Verifizierung) */}
+        <script
           async
           src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_CLIENT}`}
           crossOrigin="anonymous"
-          strategy="afterInteractive"
         />
       </head>
       <body className="font-sans antialiased bg-white text-gray-900">
