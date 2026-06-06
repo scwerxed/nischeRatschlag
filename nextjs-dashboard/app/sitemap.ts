@@ -2,8 +2,7 @@ import type { MetadataRoute } from 'next';
 import { posts } from '@/app/lib/posts';
 import { regionen } from '@/app/lib/regionen';
 
-// ⚠️ Später durch die echte Produktiv-Domain ersetzen:
-const BASE = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://nische-ratschlag.vercel.app';
+const BASE = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://bergseen-guide.com';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticPages = ['', '/blog', '/karte', '/routenplaner', '/ueber-uns', '/kontakt', '/impressum', '/datenschutz'].map((p) => ({

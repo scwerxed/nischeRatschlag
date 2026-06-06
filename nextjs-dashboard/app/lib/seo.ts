@@ -8,7 +8,7 @@
  *  — "Ausflug Kärnten" / "Kärnten Sehenswürdigkeiten"
  */
 
-export const BASE = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://nische-ratschlag.vercel.app';
+export const BASE = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://bergseen-guide.com';
 export const SITE_NAME = 'Wörthersee Guide';
 
 // Geo-Koordinaten Kärntens (für Local SEO)
