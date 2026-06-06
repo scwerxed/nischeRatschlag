@@ -2,7 +2,7 @@ import type { MetadataRoute } from 'next';
 import { posts } from '@/app/lib/posts';
 import { regionen } from '@/app/lib/regionen';
 
-const BASE = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://bergseen-guide.com';
+const BASE = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://www.bergseen-guide.com';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticPages = ['', '/blog', '/karte', '/routenplaner', '/reiseinfos', '/ueber-uns', '/kontakt', '/impressum', '/datenschutz'].map((p) => ({
