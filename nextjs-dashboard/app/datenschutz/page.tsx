@@ -51,10 +51,12 @@ export default function DatenschutzPage() {
 
       <Section title="3. Cookies & Einwilligung">
         <p>
-          Technisch notwendige Cookies setzen wir, um Grundfunktionen bereitzustellen (z. B. das
-          Speichern deiner Cookie-Auswahl). Für Werbe- und Analyse-Cookies holen wir vorab deine
-          Einwilligung über das Cookie-Banner ein (Art. 6 Abs. 1 lit. a DSGVO). Du kannst deine
-          Einwilligung jederzeit über den Link „Cookie-Einstellungen“ im Seitenfuß widerrufen.
+          Für Werbe-Cookies holen wir vorab deine Einwilligung über eine von Google zertifizierte
+          Plattform zur Einwilligungsverwaltung (Consent Management Platform, CMP) ein
+          (Art. 6 Abs. 1 lit. a DSGVO). Beim ersten Besuch aus dem EWR, dem Vereinigten Königreich
+          oder der Schweiz erscheint ein entsprechendes Einwilligungsfenster mit den Optionen
+          „Einwilligen“, „Nicht einwilligen“ und „Optionen verwalten“. Deine Auswahl kannst du
+          jederzeit über dieses Fenster ändern.
         </p>
       </Section>
 
@@ -67,10 +69,10 @@ export default function DatenschutzPage() {
           und dein Nutzungsverhalten verarbeitet werden.
         </p>
         <p>
-          In der EU/im EWR werden personalisierte Anzeigen nur ausgespielt, wenn du im Cookie-Banner
-          zustimmst (Google Consent Mode v2). Ohne Einwilligung werden – soweit möglich – nur
-          nicht-personalisierte Anzeigen ausgeliefert. Rechtsgrundlage ist deine Einwilligung
-          (Art. 6 Abs. 1 lit. a DSGVO).
+          In der EU/im EWR werden personalisierte Anzeigen nur ausgespielt, wenn du über die
+          Einwilligungsabfrage (Google-zertifizierte CMP mit Consent Mode v2) zustimmst. Ohne
+          Einwilligung werden – soweit möglich – nur nicht-personalisierte Anzeigen ausgeliefert.
+          Rechtsgrundlage ist deine Einwilligung (Art. 6 Abs. 1 lit. a DSGVO).
         </p>
         <p>
           Mehr Informationen und Widerspruchsmöglichkeiten:{' '}

@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import CookieSettingsButton from '@/app/ui/cookie-settings-button';
 
 export default function Footer() {
   return (
@@ -39,7 +38,6 @@ export default function Footer() {
             <li><Link href="/kontakt" className="hover:text-white transition-colors">Kontakt</Link></li>
             <li><Link href="/impressum" className="hover:text-white transition-colors">Impressum</Link></li>
             <li><Link href="/datenschutz" className="hover:text-white transition-colors">Datenschutz</Link></li>
-            <li><CookieSettingsButton className="hover:text-white transition-colors text-left" /></li>
           </ul>
         </div>
       </div>
