@@ -6,7 +6,7 @@ import { regionen } from '@/app/lib/regionen';
 const BASE = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://nische-ratschlag.vercel.app';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const staticPages = ['', '/blog', '/karte', '/routenplaner', '/ueber-uns', '/kontakt', '/datenschutz'].map((p) => ({
+  const staticPages = ['', '/blog', '/karte', '/routenplaner', '/ueber-uns', '/kontakt', '/impressum', '/datenschutz'].map((p) => ({
     url: `${BASE}${p}`,
     lastModified: new Date(),
     changeFrequency: 'weekly' as const,

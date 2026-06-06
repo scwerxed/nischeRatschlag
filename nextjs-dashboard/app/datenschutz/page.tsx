@@ -1,51 +1,138 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Datenschutz',
+  title: 'Datenschutzerklärung',
+  description: 'Informationen zur Verarbeitung personenbezogener Daten gemäß DSGVO – Google AdSense, Hosting, Cookies und deine Rechte.',
+  alternates: { canonical: '/datenschutz' },
 };
+
+const KONTAKT_EMAIL = 'gabriel.seebacher@gmail.com';
+
+function Section({ title, children }: { title: string; children: React.ReactNode }) {
+  return (
+    <section className="mb-8">
+      <h2 className="font-serif text-xl font-bold mb-3 text-gray-900">{title}</h2>
+      <div className="text-gray-700 leading-relaxed space-y-3">{children}</div>
+    </section>
+  );
+}
 
 export default function DatenschutzPage() {
   return (
     <div className="max-w-2xl mx-auto px-6 py-12">
-      <h1 className="text-3xl font-bold mb-8">Datenschutzerklärung</h1>
+      <p className="eyebrow mb-2">Rechtliches</p>
+      <h1 className="font-serif text-4xl font-bold mb-3 text-gray-900">Datenschutzerklärung</h1>
+      <p className="text-gray-500 mb-10">
+        Wir nehmen den Schutz deiner Daten ernst. Nachfolgend informieren wir dich gemäß
+        Datenschutz-Grundverordnung (DSGVO) über die Verarbeitung personenbezogener Daten.
+      </p>
 
-      <section className="mb-8">
-        <h2 className="text-xl font-semibold mb-3">1. Verantwortlicher</h2>
-        <p className="text-gray-700">
-          Verantwortlicher im Sinne der DSGVO ist der Betreiber dieser Website.
-          Kontakt: <a href="mailto:hallo@woerthersee-guide.at" className="text-green-600 hover:underline">hallo@woerthersee-guide.at</a>
+      <Section title="1. Verantwortlicher">
+        <p>
+          Verantwortlich für die Datenverarbeitung auf dieser Website ist der im{' '}
+          <a href="/impressum" className="text-green-700 hover:underline">Impressum</a> genannte
+          Medieninhaber. Kontakt:{' '}
+          <a href={`mailto:${KONTAKT_EMAIL}`} className="text-green-700 hover:underline">{KONTAKT_EMAIL}</a>
         </p>
-      </section>
+      </Section>
 
-      <section className="mb-8">
-        <h2 className="text-xl font-semibold mb-3">2. Erhobene Daten</h2>
-        <p className="text-gray-700">
-          Diese Website erhebt keine personenbezogenen Daten über Formulare oder Tracking-Tools,
-          soweit dies nicht ausdrücklich angegeben ist. Beim Aufruf der Website werden technische
-          Zugriffsdaten (IP-Adresse, Zeitpunkt, Browser) vom Hosting-Anbieter protokolliert.
+      <Section title="2. Hosting (Vercel)">
+        <p>
+          Diese Website wird bei der Vercel Inc. (340 S Lemon Ave #4133, Walnut, CA 91789, USA)
+          gehostet. Beim Aufruf der Website werden automatisch technische Zugriffsdaten in
+          Server-Logfiles verarbeitet: IP-Adresse, Datum und Uhrzeit, aufgerufene Seite,
+          Browsertyp und Betriebssystem. Dies ist technisch notwendig, um die Website
+          auszuliefern und ihre Sicherheit zu gewährleisten (Rechtsgrundlage:
+          Art. 6 Abs. 1 lit. f DSGVO – berechtigtes Interesse). Mit Vercel besteht ein
+          Auftragsverarbeitungsvertrag; die Übermittlung in die USA erfolgt auf Basis der
+          EU-Standardvertragsklauseln.
         </p>
-      </section>
+      </Section>
 
-      <section className="mb-8">
-        <h2 className="text-xl font-semibold mb-3">3. Affiliate-Links</h2>
-        <p className="text-gray-700">
-          Diese Website enthält Affiliate-Links zu externen Anbietern (z. B. booking.com, Amazon).
-          Beim Klick auf solche Links können Cookies durch den jeweiligen Anbieter gesetzt werden.
-          Wir erhalten eine Provision, wenn du über diese Links einkaufst – für dich entstehen
-          keine Mehrkosten.
+      <Section title="3. Cookies & Einwilligung">
+        <p>
+          Technisch notwendige Cookies setzen wir, um Grundfunktionen bereitzustellen (z. B. das
+          Speichern deiner Cookie-Auswahl). Für Werbe- und Analyse-Cookies holen wir vorab deine
+          Einwilligung über das Cookie-Banner ein (Art. 6 Abs. 1 lit. a DSGVO). Du kannst deine
+          Einwilligung jederzeit über den Link „Cookie-Einstellungen“ im Seitenfuß widerrufen.
         </p>
-      </section>
+      </Section>
 
-      <section className="mb-8">
-        <h2 className="text-xl font-semibold mb-3">4. Deine Rechte</h2>
-        <p className="text-gray-700">
-          Du hast jederzeit das Recht auf Auskunft, Berichtigung, Löschung und Einschränkung
-          der Verarbeitung deiner Daten sowie das Recht auf Datenübertragbarkeit.
-          Wende dich dazu an die oben genannte Kontaktadresse.
+      <Section title="4. Google AdSense">
+        <p>
+          Diese Website nutzt Google AdSense, einen Dienst der Google Ireland Limited
+          (Gordon House, Barrow Street, Dublin 4, Irland), zur Einbindung von Werbeanzeigen.
+          Google verwendet Cookies und vergleichbare Technologien, um Anzeigen auszuspielen und
+          deren Auslieferung zu messen. Dabei können Daten wie deine IP-Adresse, Geräteinformationen
+          und dein Nutzungsverhalten verarbeitet werden.
         </p>
-      </section>
+        <p>
+          In der EU/im EWR werden personalisierte Anzeigen nur ausgespielt, wenn du im Cookie-Banner
+          zustimmst (Google Consent Mode v2). Ohne Einwilligung werden – soweit möglich – nur
+          nicht-personalisierte Anzeigen ausgeliefert. Rechtsgrundlage ist deine Einwilligung
+          (Art. 6 Abs. 1 lit. a DSGVO).
+        </p>
+        <p>
+          Mehr Informationen und Widerspruchsmöglichkeiten:{' '}
+          <a href="https://policies.google.com/technologies/ads?hl=de" target="_blank" rel="noopener noreferrer" className="text-green-700 hover:underline">
+            Google – Werbung
+          </a>{' '}
+          und{' '}
+          <a href="https://adssettings.google.com" target="_blank" rel="noopener noreferrer" className="text-green-700 hover:underline">
+            Google Anzeigeneinstellungen
+          </a>.
+        </p>
+      </Section>
 
-      <p className="text-xs text-gray-400 mt-8">Stand: Mai 2026</p>
+      <Section title="5. Affiliate-Links">
+        <p>
+          Diese Website enthält Affiliate-Links (u. a. Amazon, booking.com). Klickst du auf einen
+          solchen Link, kann der jeweilige Partner Cookies setzen, um einen Kaufabschluss uns
+          zuzuordnen. Wir erhalten in diesem Fall eine Provision – für dich entstehen keine
+          Mehrkosten. Es werden dabei keine Daten von uns an die Partner übermittelt, die über
+          den Klick hinausgehen.
+        </p>
+      </Section>
+
+      <Section title="6. Externe Dienste & Karten">
+        <p>
+          Auf den Karten- und Routenseiten binden wir Kartenmaterial und Daten externer Anbieter
+          ein: OpenStreetMap, OpenTopoMap, Waymarked Trails, Overpass API, BRouter sowie das
+          Wetter-API Open-Meteo. Beim Laden dieser Inhalte wird deine IP-Adresse an den jeweiligen
+          Anbieter übermittelt, was technisch notwendig ist, um die Inhalte anzuzeigen
+          (Art. 6 Abs. 1 lit. f DSGVO).
+        </p>
+      </Section>
+
+      <Section title="7. Newsletter">
+        <p>
+          Wenn du dich für den Newsletter anmeldest, verarbeiten wir deine E-Mail-Adresse
+          ausschließlich zum Versand der Informationen, in die du eingewilligt hast
+          (Art. 6 Abs. 1 lit. a DSGVO). Du kannst dich jederzeit über den Abmeldelink abmelden.
+        </p>
+      </Section>
+
+      <Section title="8. Deine Rechte">
+        <p>
+          Du hast jederzeit das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der
+          Verarbeitung, Datenübertragbarkeit sowie auf Widerspruch gegen die Verarbeitung.
+          Eine erteilte Einwilligung kannst du jederzeit mit Wirkung für die Zukunft widerrufen.
+          Wende dich dazu an{' '}
+          <a href={`mailto:${KONTAKT_EMAIL}`} className="text-green-700 hover:underline">{KONTAKT_EMAIL}</a>.
+        </p>
+      </Section>
+
+      <Section title="9. Beschwerderecht">
+        <p>
+          Du hast das Recht, dich bei einer Aufsichtsbehörde zu beschweren. In Österreich ist dies
+          die Österreichische Datenschutzbehörde (dsb.gv.at), in Deutschland die jeweils zuständige
+          Landesdatenschutzbehörde.
+        </p>
+      </Section>
+
+      <p className="text-xs text-gray-400 mt-10">
+        Stand: {new Date().toLocaleDateString('de-AT', { month: 'long', year: 'numeric' })}
+      </p>
     </div>
   );
 }
