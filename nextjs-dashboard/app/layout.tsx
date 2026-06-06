@@ -3,8 +3,12 @@ import { inter, lusitana } from '@/app/ui/fonts';
 import Navbar from '@/app/ui/navbar';
 import Footer from '@/app/ui/footer';
 import ScrollToTop from '@/app/ui/scroll-to-top';
+import Script from 'next/script';
 import type { Metadata } from 'next';
 import { BASE, SITE_NAME, KAERNTEN_GEO, BASE_KEYWORDS, orgSchema, websiteSchema } from '@/app/lib/seo';
+
+// Google AdSense Publisher-ID
+const ADSENSE_CLIENT = 'ca-pub-4474617795810442';
 
 export const metadata: Metadata = {
   metadataBase: new URL(BASE),
@@ -26,8 +30,10 @@ export const metadata: Metadata = {
     url: BASE,
   },
   twitter: { card: 'summary_large_image', site: '@woertherseeguide' },
-  // Local SEO: Suchmaschinen wissen, dass wir Kärnten/Österreich abdecken
   other: {
+    // AdSense Site-Verifizierung
+    'google-adsense-account': ADSENSE_CLIENT,
+    // Local SEO: Suchmaschinen wissen, dass wir Kärnten/Österreich abdecken
     'geo.region': 'AT-2',                         // ISO 3166-2 Kärnten
     'geo.placename': 'Kärnten, Österreich',
     'geo.position': `${KAERNTEN_GEO.lat};${KAERNTEN_GEO.lng}`,
@@ -39,6 +45,16 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="de" className={`${inter.variable} ${lusitana.variable}`}>
+      <head>
+        {/* Google AdSense – Auto-Anzeigen auf allen Seiten */}
+        <Script
+          id="adsbygoogle-init"
+          async
+          src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_CLIENT}`}
+          crossOrigin="anonymous"
+          strategy="afterInteractive"
+        />
+      </head>
       <body className="font-sans antialiased bg-white text-gray-900">
         {/* Globales Schema: Organization + WebSite (Sitelinks Searchbox) */}
         <script
