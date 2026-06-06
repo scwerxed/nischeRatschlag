@@ -7,16 +7,13 @@ export const metadata: Metadata = {
   robots: { index: true, follow: true },
 };
 
-// ⚠️ BITTE AUSFÜLLEN: Die mit [...] markierten Felder sind gesetzlich verpflichtend
-//    (§ 5 E-Commerce-Gesetz, § 25 Mediengesetz). Ohne echten Namen + ladungsfähige
-//    Anschrift ist das Impressum nicht rechtskonform und AdSense kann ablehnen.
 const IMPRESSUM = {
-  name: '[Vor- und Nachname]',
-  strasse: '[Straße und Hausnummer]',
-  plz_ort: '[PLZ Ort]',
+  name: 'Gabriel Seebacher',
+  strasse: 'Evaweg 19',
+  plz_ort: '9020 Klagenfurt',
   land: 'Österreich',
   email: 'gabriel.seebacher@gmail.com',
-  telefon: '[optional: Telefonnummer]',
+  telefon: '',
 };
 
 export default function ImpressumPage() {
