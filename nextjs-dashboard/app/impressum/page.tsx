@@ -54,7 +54,7 @@ export default function ImpressumPage() {
           Offenlegung gemäß § 25 MedienG
         </h2>
         <p className="text-gray-700 leading-relaxed">
-          Wörthersee Guide ist ein privat betriebenes, unabhängiges Reise-Informationsangebot
+          Bergseen Guide ist ein privat betriebenes, unabhängiges Reise-Informationsangebot
           über die Region Kärnten. Grundlegende Richtung: redaktionelle, werbefinanzierte
           Information zu Reise, Wandern, Baden und Ausflügen in Kärnten.
         </p>

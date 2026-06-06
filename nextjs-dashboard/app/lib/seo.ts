@@ -1,5 +1,5 @@
 /**
- * Zentrale SEO-Utilities für den Wörthersee Guide.
+ * Zentrale SEO-Utilities für den Bergseen Guide.
  *
  * Suchintentionen, die wir abdecken wollen:
  *  — "Wandern Kärnten" / "Wanderwege Wörthersee"
@@ -9,7 +9,7 @@
  */
 
 export const BASE = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://bergseen-guide.com';
-export const SITE_NAME = 'Wörthersee Guide';
+export const SITE_NAME = 'Bergseen Guide';
 
 // Geo-Koordinaten Kärntens (für Local SEO)
 export const KAERNTEN_GEO = { lat: 46.83, lng: 13.83 };

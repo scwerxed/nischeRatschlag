@@ -8,9 +8,9 @@ import { CATEGORY_DOT } from '@/app/lib/blog-utils';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Wörthersee Guide – Wandern, Baden & Urlaub in Kärnten',
+  title: 'Bergseen Guide – Wandern, Baden & Urlaub in Kärnten',
   description: 'Insider-Tipps für Kärnten: Wanderwege am Wörthersee, die wärmsten Badeseen Österreichs, Ausflüge und Unterkünfte – ehrlich recherchiert mit echten Preisen.',
-  keywords: ['Wörthersee Guide', 'Kärnten Urlaub', 'Wandern Kärnten', 'Badeseen Kärnten', 'Klopeiner See', 'Millstätter See', 'Weissensee'],
+  keywords: ['Bergseen Guide', 'Kärnten Urlaub', 'Wandern Kärnten', 'Badeseen Kärnten', 'Wörthersee', 'Klopeiner See', 'Millstätter See', 'Weissensee'],
   alternates: { canonical: '/' },
 };
 

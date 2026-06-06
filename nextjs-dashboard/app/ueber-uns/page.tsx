@@ -3,7 +3,7 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'Über uns',
-  description: 'Wer hinter dem Wörthersee Guide steckt – unabhängiger Reiseführer für Kärnten mit ehrlichen, selbst recherchierten Tipps.',
+  description: 'Wer hinter dem Bergseen Guide steckt – unabhängiger Reiseführer für Kärnten mit ehrlichen, selbst recherchierten Tipps.',
   alternates: { canonical: '/ueber-uns' },
 };
 
@@ -16,7 +16,7 @@ export default function UeberUnsPage() {
       </h1>
 
       <p className="text-gray-700 leading-relaxed mb-4">
-        Der Wörthersee Guide ist ein unabhängiges Reise-Magazin über Kärnten und seine Seen.
+        Der Bergseen Guide ist ein unabhängiges Reise-Magazin über Kärnten und seine Seen.
         Wir schreiben über Wanderungen, Badestellen, Ausflüge und Unterkünfte – nicht aus
         Hochglanzprospekten abgeschrieben, sondern aus eigener Erfahrung vor Ort.
       </p>

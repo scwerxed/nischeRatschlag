@@ -24,7 +24,7 @@ function Logo({ onClick }: { onClick?: () => void }) {
       </span>
       <span className="leading-none">
         <span className="block font-serif text-lg font-bold text-gray-900 tracking-tightish">
-          Wörthersee&nbsp;Guide
+          Bergseen&nbsp;Guide
         </span>
         <span className="block text-[10px] uppercase tracking-[0.22em] text-gray-400 mt-0.5">
           Kärnten · Seen &amp; Berge

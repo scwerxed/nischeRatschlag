@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     siteName: SITE_NAME,
     url: BASE,
   },
-  twitter: { card: 'summary_large_image', site: '@woertherseeguide' },
+  twitter: { card: 'summary_large_image', site: '@bergseenguide' },
   other: {
     // AdSense Site-Verifizierung
     'google-adsense-account': ADSENSE_CLIENT,

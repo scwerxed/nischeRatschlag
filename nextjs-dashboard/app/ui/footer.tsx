@@ -11,7 +11,7 @@ export default function Footer() {
               <path d="M2 21 L9.5 7 L14 15 L17 10 L24 21 Z" fill="#e6d8c3" />
               <circle cx="19" cy="6" r="2.4" fill="#e6d8c3" opacity="0.6" />
             </svg>
-            <span className="font-serif text-lg font-bold text-white">Wörthersee Guide</span>
+            <span className="font-serif text-lg font-bold text-white">Bergseen Guide</span>
           </div>
           <p className="text-sm leading-relaxed">
             Unabhängiger Reiseführer für Kärnten: Wanderungen, Badeseen, Ausflüge und
@@ -45,7 +45,7 @@ export default function Footer() {
 
       <div className="border-t border-white/10">
         <div className="max-w-6xl mx-auto px-6 py-5 flex flex-col sm:flex-row justify-between gap-2 text-xs text-green-300/70">
-          <p>© {new Date().getFullYear()} Wörthersee Guide. Alle Angaben ohne Gewähr.</p>
+          <p>© {new Date().getFullYear()} Bergseen Guide. Alle Angaben ohne Gewähr.</p>
           <p>Enthält Affiliate-Links · Kärnten, Österreich</p>
         </div>
       </div>
