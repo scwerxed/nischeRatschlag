@@ -3,6 +3,8 @@ import { inter, lusitana } from '@/app/ui/fonts';
 import Navbar from '@/app/ui/navbar';
 import Footer from '@/app/ui/footer';
 import ScrollToTop from '@/app/ui/scroll-to-top';
+import { Analytics } from '@vercel/analytics/next';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 import type { Metadata } from 'next';
 import { BASE, SITE_NAME, KAERNTEN_GEO, BASE_KEYWORDS, orgSchema, websiteSchema } from '@/app/lib/seo';
 
@@ -63,6 +65,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <main>{children}</main>
         <Footer />
         <ScrollToTop />
+        {/* Vercel Web Analytics (Besucherstatistik) + Speed Insights (Ladezeiten/SEO) */}
+        <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
