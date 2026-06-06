@@ -26,6 +26,18 @@ function saveToStorage(routes: SavedRoute[]) {
   localStorage.setItem(STORAGE_KEY, JSON.stringify(routes));
 }
 
+/**
+ * Naismith's Rule (Standard des ÖAV/DAV):
+ * 4 km/h auf ebenem Gelände + 1 Stunde je 300 m Aufstieg.
+ * Ergibt realistische Wanderzeiten — BRouter's total-time ist unbrauchbar
+ * (nutzt interne Straßen-Gehgeschwindigkeiten).
+ */
+function hikingDuration(distanceM: number, ascentM: number): number {
+  const horizontal = (distanceM / 1000 / 4) * 3600; // Sekunden für 4 km/h
+  const vertical   = (ascentM / 300) * 3600;         // 1h pro 300 m Aufstieg
+  return Math.round(horizontal + vertical);
+}
+
 async function fetchRoute(waypoints: Waypoint[]): Promise<{ geojson: any; info: RouteInfo } | null> {
   const lonlats = waypoints.map((w) => `${w.lng.toFixed(6)},${w.lat.toFixed(6)}`).join('|');
   try {
@@ -39,7 +51,8 @@ async function fetchRoute(waypoints: Waypoint[]): Promise<{ geojson: any; info: 
     const distance = parseInt(props['track-length'] ?? '0');
     const ascent   = parseInt(props['filtered ascend'] ?? '0');
     const descent  = parseInt(props['plain-ascend'] ?? '0');
-    const duration = parseInt(props['total-time'] ?? '0');
+    // BRouter total-time ignorieren — Naismith's Rule stattdessen:
+    const duration = hikingDuration(distance, ascent);
 
     const raw = coords.map((c) => c[2] ?? 0).filter((e) => e > 0);
     const step = Math.max(1, Math.floor(raw.length / 150));

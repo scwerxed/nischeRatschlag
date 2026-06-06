@@ -4,6 +4,7 @@ import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import type { Metadata } from 'next';
 import Faq, { type FaqItem } from '@/app/ui/faq';
+import { BASE, BASE_KEYWORDS, touristDestinationSchema, breadcrumbSchema } from '@/app/lib/seo';
 
 const KAERNTEN_FAQ: FaqItem[] = [
   {
@@ -38,9 +39,15 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { bundesland } = await params;
   const region = getRegionBySlug(bundesland);
   if (!region) return {};
+  const isKaernten = bundesland === 'kaernten';
   return {
-    title: region.name,
-    description: region.beschreibung,
+    title: isKaernten ? 'Kärnten Urlaub – Wandern, Badeseen & Ausflüge' : region.name,
+    description: isKaernten
+      ? 'Kärntens schönste Wanderwege, Badeseen und Ausflugsziele – mit echten Preisen, interaktiver Karte und 33 Insider-Tipps für deinen Urlaub am Wörthersee.'
+      : region.beschreibung,
+    keywords: isKaernten ? [...BASE_KEYWORDS, 'Kärnten Urlaub', 'Wörthersee Hotel', 'Kärnten Wandern'] : undefined,
+    alternates: { canonical: `/regionen/${bundesland}` },
+    openGraph: { title: region.name, description: region.beschreibung, url: `${BASE}/regionen/${bundesland}`, locale: 'de_AT' },
   };
 }
 
@@ -99,6 +106,15 @@ export default async function RegionPage({ params }: Props) {
 
   return (
     <div className="max-w-5xl mx-auto px-6 py-12">
+      {bundesland === 'kaernten' && (
+        <>
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(touristDestinationSchema()) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema([
+            { name: 'Startseite', url: BASE },
+            { name: 'Kärnten',    url: `${BASE}/regionen/kaernten` },
+          ])) }} />
+        </>
+      )}
       {/* Header */}
       <div className="mb-8">
         <Link href="/" className="text-sm text-green-600 hover:underline">

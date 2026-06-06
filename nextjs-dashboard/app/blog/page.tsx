@@ -3,8 +3,10 @@ import BlogSearch from '@/app/ui/blog-search';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Blog',
-  description: 'Alle Artikel rund um den Wörthersee und Kärnten – Wandern, Baden, Ausflüge und Unterkünfte.',
+  title: 'Magazin – Kärnten Tipps & Wanderwege',
+  description: '33 Insider-Artikel über Kärnten: Wanderwege am Wörthersee, Badeseen, Ausflüge und Unterkünfte – mit echten Preisen und ehrlichen Bewertungen.',
+  keywords: ['Kärnten Blog', 'Wandern Kärnten', 'Wörthersee Tipps', 'Baden Kärnten', 'Ausflug Kärnten', 'Kärnten Insider'],
+  alternates: { canonical: '/blog' },
 };
 
 export default function BlogPage() {

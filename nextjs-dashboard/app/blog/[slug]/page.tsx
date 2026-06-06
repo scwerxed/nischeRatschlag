@@ -6,9 +6,8 @@ import type { Metadata } from 'next';
 import { cloak } from '@/app/lib/affiliate';
 import TrailMapWrapper from '@/app/ui/trail-map-wrapper';
 import ShareButtons from '@/app/ui/share-buttons';
-import { readingTime, relatedPosts, CATEGORY_ICONS } from '@/app/lib/blog-utils';
-
-const BASE = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://nische-ratschlag.vercel.app';
+import { readingTime, relatedPosts } from '@/app/lib/blog-utils';
+import { BASE, SITE_NAME, CATEGORY_KEYWORDS, articleSchema, breadcrumbSchema } from '@/app/lib/seo';
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -20,17 +19,29 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const post = getPostBySlug(slug);
   if (!post) return {};
+
+  const catKw = CATEGORY_KEYWORDS[post.category] ?? [];
+  const keywords = [...catKw, 'Kärnten', 'Wörthersee', post.bestSeason ?? ''].filter(Boolean);
+  // Reichere Beschreibung: Excerpt + erste Highlights
+  const hlText = post.highlights?.slice(0, 2).join(' · ') ?? '';
+  const description = hlText ? `${post.excerpt} ${hlText}` : post.excerpt;
+
   return {
     title: post.title,
-    description: post.excerpt,
+    description: description.slice(0, 160),
+    keywords,
     alternates: { canonical: `/blog/${post.slug}` },
     openGraph: {
       title: post.title,
-      description: post.excerpt,
+      description: description.slice(0, 160),
       type: 'article',
       publishedTime: post.date,
       url: `${BASE}/blog/${post.slug}`,
+      siteName: SITE_NAME,
+      locale: 'de_AT',
+      tags: keywords,
     },
+    twitter: { card: 'summary_large_image', title: post.title, description: post.excerpt },
   };
 }
 
@@ -119,34 +130,29 @@ export default async function BlogPostPage({ params }: Props) {
   const minutes = readingTime(post.content);
   const related = relatedPosts(post, posts);
 
-  const jsonLd = {
-    '@context': 'https://schema.org',
-    '@graph': [
-      {
-        '@type': 'Article',
-        headline: post.title,
-        description: post.excerpt,
-        datePublished: post.date,
-        dateModified: post.date,
-        author: { '@type': 'Organization', name: 'Wörthersee Guide' },
-        publisher: { '@type': 'Organization', name: 'Wörthersee Guide' },
-        mainEntityOfPage: `${BASE}/blog/${post.slug}`,
-        articleSection: post.category,
-      },
-      {
-        '@type': 'BreadcrumbList',
-        itemListElement: [
-          { '@type': 'ListItem', position: 1, name: 'Startseite', item: BASE },
-          { '@type': 'ListItem', position: 2, name: regionLabel, item: `${BASE}/regionen/${post.region}` },
-          { '@type': 'ListItem', position: 3, name: post.title, item: `${BASE}/blog/${post.slug}` },
-        ],
-      },
-    ],
-  };
+  const jsonLd = [
+    articleSchema({ title: post.title, excerpt: post.excerpt, date: post.date, slug: post.slug, category: post.category, region: post.region }),
+    breadcrumbSchema([
+      { name: 'Startseite',  url: BASE },
+      { name: regionLabel,   url: `${BASE}/regionen/${post.region}` },
+      { name: post.title,    url: `${BASE}/blog/${post.slug}` },
+    ]),
+    // Wandern-Posts bekommen zusätzlich ein SportsActivityLocation-Schema
+    ...(post.category === 'Wandern' ? [{
+      '@context': 'https://schema.org',
+      '@type': 'SportsActivityLocation',
+      name: post.title,
+      description: post.excerpt,
+      address: { '@type': 'PostalAddress', addressRegion: 'Kärnten', addressCountry: 'AT' },
+      sport: 'Hiking',
+    }] : []),
+  ];
 
   return (
     <div className="max-w-2xl mx-auto px-6 py-12">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      {/* Canonical hreflang für deutschsprachige Suche */}
+      <link rel="alternate" hrefLang="de-AT" href={`${BASE}/blog/${post.slug}`} />
       {/* Breadcrumb */}
       <div className="flex items-center gap-2 text-xs text-gray-400 mb-6">
         <Link href="/" className="hover:text-green-600">Startseite</Link>
@@ -290,9 +296,7 @@ export default async function BlogPostPage({ params }: Props) {
                 className="group block border border-gray-200 p-4 hover:border-green-400 hover:shadow-sm transition-all"
                 style={{ borderRadius: 8 }}
               >
-                <span className="text-xs font-medium text-green-600 uppercase tracking-wide">
-                  {CATEGORY_ICONS[r.category]} {r.category}
-                </span>
+                <span className="eyebrow">{r.category}</span>
                 <h3 className="mt-1.5 text-sm font-semibold text-gray-900 group-hover:text-green-700 leading-snug line-clamp-3">
                   {r.title}
                 </h3>
