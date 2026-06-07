@@ -3,7 +3,7 @@ import { posts, getPostBySlug } from '@/app/lib/posts';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import type { Metadata } from 'next';
-import { cloak } from '@/app/lib/affiliate';
+import { cloak, EXCURSIONS } from '@/app/lib/affiliate';
 import TrailMapWrapper from '@/app/ui/trail-map-wrapper';
 import ShareButtons from '@/app/ui/share-buttons';
 import { readingTime, relatedPosts } from '@/app/lib/blog-utils';
@@ -261,20 +261,47 @@ export default async function BlogPostPage({ params }: Props) {
         </div>
       )}
 
+      {/* Erlebnisse & Tickets buchen (Ausflug + Wandern) */}
+      {(post.category === 'Ausflug' || post.category === 'Wandern') && (
+        <div className="mt-8 border border-gray-200 p-6" style={{ borderRadius: 8 }}>
+          <p className="eyebrow mb-1">Erlebnisse &amp; Tickets</p>
+          <h3 className="font-serif text-lg font-bold text-gray-900 mb-1">Ausflüge in Kärnten buchen</h3>
+          <p className="text-sm text-gray-500 mb-4">Geführte Touren, Stadtführungen und Tickets – flexibel stornierbar.</p>
+          <div className="grid sm:grid-cols-2 gap-3">
+            {EXCURSIONS.map((ex) => (
+              <a
+                key={ex.url}
+                href={cloak(ex.url)}
+                target="_blank"
+                rel="noopener noreferrer sponsored"
+                className="group block border border-gray-200 px-4 py-3 hover:border-green-400 hover:bg-green-50 transition-colors"
+                style={{ borderRadius: 6 }}
+              >
+                <span className="block text-sm font-semibold text-gray-900 group-hover:text-green-700">{ex.label} →</span>
+                <span className="block text-xs text-gray-500 mt-0.5">{ex.note}</span>
+              </a>
+            ))}
+          </div>
+          <p className="text-xs text-gray-400 mt-3">* Partner-Links (GetYourGuide) – für dich ohne Mehrkosten.</p>
+        </div>
+      )}
+
       {/* CTA für Wandern */}
       {post.category === 'Wandern' && (
         <div className="mt-6 grid grid-cols-2 gap-4">
           <Link
             href="/karte"
-            className="flex items-center justify-center gap-2 bg-green-700 text-white font-medium text-sm px-5 py-3 rounded-xl hover:bg-green-800 transition-colors"
+            className="flex items-center justify-center gap-2 bg-green-700 text-white font-medium text-sm px-5 py-3 hover:bg-green-800 transition-colors"
+            style={{ borderRadius: 6 }}
           >
-            🗺️ Auf Karte anzeigen
+            Auf Karte anzeigen
           </Link>
           <Link
             href="/routenplaner"
-            className="flex items-center justify-center gap-2 border border-green-700 text-green-700 font-medium text-sm px-5 py-3 rounded-xl hover:bg-green-50 transition-colors"
+            className="flex items-center justify-center gap-2 border border-green-700 text-green-700 font-medium text-sm px-5 py-3 hover:bg-green-50 transition-colors"
+            style={{ borderRadius: 6 }}
           >
-            📍 Route planen
+            Route planen
           </Link>
         </div>
       )}

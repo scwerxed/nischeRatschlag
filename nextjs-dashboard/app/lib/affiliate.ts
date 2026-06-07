@@ -64,3 +64,30 @@ export const NAMED_LINKS: Record<string, NamedLink> = {
 export function namedCloak(id: keyof typeof NAMED_LINKS): string {
   return cloak(NAMED_LINKS[id].url);
 }
+
+// Buchbare Ausflüge / Aktivitäten / Tickets (GetYourGuide) ─────────────────────
+// Werden in einer "Erlebnisse & Tickets"-Box auf Ausflug-/Wander-Artikeln gezeigt.
+export type Excursion = { label: string; note: string; url: string };
+
+export const EXCURSIONS: Excursion[] = [
+  {
+    label: 'Aktivitäten in ganz Kärnten',
+    note: 'Touren, Tickets & Erlebnisse im Überblick',
+    url: 'https://www.getyourguide.de/s/?q=K%C3%A4rnten',
+  },
+  {
+    label: 'Klagenfurt & Wörthersee',
+    note: 'Stadtführungen, Schifffahrt, Minimundus',
+    url: 'https://www.getyourguide.de/s/?q=Klagenfurt%20am%20W%C3%B6rthersee',
+  },
+  {
+    label: 'Großglockner & Hochalpenstraße',
+    note: 'Geführte Touren & Tagesausflüge',
+    url: 'https://www.getyourguide.de/s/?q=Gro%C3%9Fglockner',
+  },
+  {
+    label: 'Villach & Faaker See',
+    note: 'Erlebnisse rund um Villach',
+    url: 'https://www.getyourguide.de/s/?q=Villach',
+  },
+];

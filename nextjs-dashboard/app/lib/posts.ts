@@ -432,8 +432,24 @@ Kleiner, aber charmanter Freistrand direkt neben der berühmten Kirche. Sehr bel
 ## Badebucht Reifnitz (kostenlos)
 Ruhigere Alternative am Südufer, ideal für Familien mit kleinen Kindern – flacher Einstieg.
 
-## Tipp
-Früh kommen zahlt sich aus – die beliebten Spots sind im Juli/August schnell voll.
+## Strandbad Pörtschach (mit Eintritt)
+Großzügige Liegewiesen, Stege weit in den See, Kinderbereich. Eines der gepflegtesten Bäder am Nordufer mit toller Blickachse über den See.
+
+## Bad Saag & Aussichtsbuchten am Südufer
+Das ruhigere Südufer hat mehrere kleine, weniger bekannte Buchten. Hier ist es auch in der Hochsaison entspannter als am belebten Nordufer.
+
+## Kostenlos vs. mit Eintritt – was lohnt sich?
+- **Strandbäder (Eintritt ~5–8 €):** Liegewiese, sanitäre Anlagen, Gastronomie, Bademeister – ideal für ganze Tage und Familien.
+- **Freistrände (gratis):** schnelles Bad, weniger Komfort, oft kein WC. Früh da sein, dann hat man die schönsten Plätze.
+
+## Wassertemperatur & beste Zeit
+Von Juni bis September liegt das Wasser meist zwischen 23 und 28 °C – Spitzenwerte im Juli/August. Im September ist es oft noch über 22 °C, bei deutlich weniger Andrang.
+
+## Praktische Tipps
+- **Parken:** an beliebten Bädern gebührenpflichtig; früh kommen oder mit dem Rad/Schiff anreisen
+- **Anreise per Schiff:** viele Bäder haben einen eigenen Anlegesteg – stressfreier als Parkplatzsuche
+- **Frühschwimmer:** vor 10 Uhr sind selbst die Top-Spots leer
+- **Schlechtwetter-Alternative:** bei Regen lohnt eine der Thermen in der Umgebung
     `,
     affiliateLinks: [
       { label: 'Hotels in Velden – booking.com', url: 'https://www.booking.com/city/at/velden-am-worthersee.de.html' },
@@ -464,11 +480,28 @@ Mit dem Schiff von Klagenfurt bis Velden – Kinder lieben die Fahrt über den S
 ## Europapark im Strandbad
 Kletterturm, Wasserrutschen und Spielplatz direkt am See.
 
+## Pyramidenkogel – Aussichtsturm mit Riesenrutsche
+Der höchste Holzaussichtsturm der Welt hat für Kinder ein besonderes Highlight: die 120 m lange Indoor-Rutsche vom Turm nach unten. Panoramablick für die Eltern, Adrenalin für die Kids.
+
+## Tierische Erlebnisse
+Für tierbegeisterte Kinder lohnen sich die Tiertouren der Region – von der **Alpaka-Wanderung** über **Eselwanderungen** bis zur **Greifvogelschau**. Sanft, lehrreich und ein echtes Urlaubs-Highlight (eigene Artikel dazu im Magazin).
+
+## Schlechtwetter-Programm
+- **Hallenbäder & Thermen** in der Umgebung (z. B. Bad Kleinkirchheim)
+- **Minimundus** ist teils überdacht
+- **Reptilienzoo Happ** funktioniert auch bei Regen
+
+## Tipps für entspannte Familientage
+- **Früh starten:** Vormittags sind Parkplätze und Attraktionen leerer
+- **Kärnten Card:** Mit vielen Übernachtungen gratis – freier Eintritt zu über 100 Ausflugszielen, rechnet sich für Familien schnell
+- **Mittagshitze meiden:** vormittags Aktivität, mittags See, nachmittags Schatten
+
 ## Unterkunft-Tipp
 Familienfreundliche Hotels mit Kinderbetreuung findet man am besten über booking.com:
     `,
     affiliateLinks: [
       { label: 'Familienhotels Wörthersee – booking.com', url: 'https://www.booking.com/region/at/carinthia.de.html?nflt=fc%3D2' },
+      { label: 'Familienausflüge & Tickets – GetYourGuide', url: 'https://www.getyourguide.de/s/?q=K%C3%A4rnten' },
     ],
   },
   {
