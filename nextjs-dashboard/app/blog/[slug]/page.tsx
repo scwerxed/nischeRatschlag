@@ -22,7 +22,6 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   const catKw = CATEGORY_KEYWORDS[post.category] ?? [];
   const keywords = [...catKw, 'Kärnten', 'Wörthersee', post.bestSeason ?? ''].filter(Boolean);
-  // Reichere Beschreibung: Excerpt + erste Highlights
   const hlText = post.highlights?.slice(0, 2).join(' · ') ?? '';
   const description = hlText ? `${post.excerpt} ${hlText}` : post.excerpt;
 
@@ -49,6 +48,13 @@ const DIFFICULTY_STYLES: Record<string, { label: string; dot: string; cls: strin
   leicht: { label: 'Leicht', dot: 'bg-green-500', cls: 'bg-green-50 text-green-700 border-green-200' },
   mittel: { label: 'Mittel', dot: 'bg-yellow-400', cls: 'bg-yellow-50 text-yellow-700 border-yellow-200' },
   schwer: { label: 'Schwer', dot: 'bg-red-500',   cls: 'bg-red-50 text-red-700 border-red-200' },
+};
+
+const CATEGORY_GRADIENT: Record<string, string> = {
+  Wandern:    'from-green-700 to-green-900',
+  Baden:      'from-sky-600 to-green-800',
+  Ausflug:    'from-emerald-700 to-green-900',
+  Unterkunft: 'from-teal-700 to-green-900',
 };
 
 function renderInline(text: string): React.ReactNode {
@@ -129,6 +135,7 @@ export default async function BlogPostPage({ params }: Props) {
 
   const minutes = readingTime(post.content);
   const related = relatedPosts(post, posts);
+  const gradient = CATEGORY_GRADIENT[post.category] ?? 'from-green-700 to-green-900';
 
   const jsonLd = [
     articleSchema({ title: post.title, excerpt: post.excerpt, date: post.date, slug: post.slug, category: post.category, region: post.region }),
@@ -137,7 +144,6 @@ export default async function BlogPostPage({ params }: Props) {
       { name: regionLabel,   url: `${BASE}/regionen/${post.region}` },
       { name: post.title,    url: `${BASE}/blog/${post.slug}` },
     ]),
-    // Wandern-Posts bekommen zusätzlich ein SportsActivityLocation-Schema
     ...(post.category === 'Wandern' ? [{
       '@context': 'https://schema.org',
       '@type': 'SportsActivityLocation',
@@ -149,198 +155,189 @@ export default async function BlogPostPage({ params }: Props) {
   ];
 
   return (
-    <div className="max-w-2xl mx-auto px-6 py-12">
+    <div>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
-      {/* Canonical hreflang für deutschsprachige Suche */}
       <link rel="alternate" hrefLang="de-AT" href={`${BASE}/blog/${post.slug}`} />
-      {/* Breadcrumb */}
-      <div className="flex items-center gap-2 text-xs text-gray-400 mb-6">
-        <Link href="/" className="hover:text-green-600">Startseite</Link>
-        <span>/</span>
-        <Link href={`/regionen/${post.region}`} className="hover:text-green-600">{regionLabel}</Link>
-        <span>/</span>
-        <span className="text-gray-600">{post.category}</span>
-      </div>
 
-      {/* Meta badges */}
-      <div className="flex flex-wrap items-center gap-2 mb-4">
-        <span className="text-xs font-semibold text-green-700 bg-green-50 border border-green-200 px-2.5 py-1 rounded-full uppercase tracking-wide">
-          {post.category}
-        </span>
-        {post.difficulty && (
-          <span className={`inline-flex items-center gap-1.5 text-xs font-medium px-2.5 py-1 border ${DIFFICULTY_STYLES[post.difficulty].cls}`} style={{ borderRadius: 3 }}>
-            <span className={`w-2 h-2 rounded-full shrink-0 ${DIFFICULTY_STYLES[post.difficulty].dot}`} />
-            {DIFFICULTY_STYLES[post.difficulty].label}
-          </span>
-        )}
-        {post.bestSeason && (
-          <span className="text-xs text-gray-500 bg-gray-100 px-2.5 py-1" style={{ borderRadius: 3 }}>
-            {post.bestSeason}
-          </span>
-        )}
-        <span className="text-xs text-gray-400 ml-auto">{post.date}</span>
-        <span className="text-xs text-gray-400">&middot; {minutes} Min. Lesen</span>
-      </div>
+      {/* ── Farbiger Kopfbereich ─────────────────────────────────────────── */}
+      <header className={`bg-gradient-to-br ${gradient} text-white`}>
+        <div className="max-w-6xl mx-auto px-6 py-12 md:py-16">
+          {/* Breadcrumb */}
+          <nav className="flex flex-wrap items-center gap-2 text-xs text-white/70 mb-5">
+            <Link href="/" className="hover:text-white">Startseite</Link>
+            <span>/</span>
+            <Link href={`/regionen/${post.region}`} className="hover:text-white">{regionLabel}</Link>
+            <span>/</span>
+            <span className="text-white/90">{post.category}</span>
+          </nav>
 
-      {/* Titel */}
-      <h1 className="font-serif text-3xl md:text-4xl font-bold mb-5 leading-[1.15] text-gray-900">{post.title}</h1>
+          <div className="flex flex-wrap items-center gap-2 mb-4 text-xs">
+            <span className="font-semibold bg-white/15 border border-white/20 px-2.5 py-1 uppercase tracking-wide" style={{ borderRadius: 3 }}>
+              {post.category}
+            </span>
+            {post.difficulty && (
+              <span className="inline-flex items-center gap-1.5 bg-white/15 border border-white/20 px-2.5 py-1" style={{ borderRadius: 3 }}>
+                <span className={`w-2 h-2 rounded-full shrink-0 ${DIFFICULTY_STYLES[post.difficulty].dot}`} />
+                {DIFFICULTY_STYLES[post.difficulty].label}
+              </span>
+            )}
+            {post.bestSeason && (
+              <span className="bg-white/15 border border-white/20 px-2.5 py-1" style={{ borderRadius: 3 }}>{post.bestSeason}</span>
+            )}
+            <span className="text-white/60 ml-auto">{post.date} · {minutes} Min. Lesen</span>
+          </div>
 
-      {/* Highlights Box */}
-      {post.highlights && post.highlights.length > 0 && (
-        <div className="border-l-4 border-green-600 bg-green-50 px-5 py-4 mb-8">
-          <p className="eyebrow mb-3">Auf einen Blick</p>
-          <ul className="space-y-1.5">
-            {post.highlights.map((h, i) => (
-              <li key={i} className="flex items-start gap-2.5 text-sm text-gray-700">
-                <span className="shrink-0 mt-1.5 w-3 h-px bg-green-600 inline-block" />
-                {h}
-              </li>
-            ))}
-          </ul>
+          <h1 className="font-serif text-3xl md:text-5xl font-bold leading-[1.1] max-w-3xl">{post.title}</h1>
+          <p className="text-white/85 text-lg mt-4 max-w-2xl leading-relaxed">{post.excerpt}</p>
         </div>
-      )}
+      </header>
 
-      {/* Artikel-Inhalt */}
-      <div className="prose-style">
-        {renderContent(post.content)}
-      </div>
+      {/* ── Zweispaltiger Inhalt ─────────────────────────────────────────── */}
+      <div className="max-w-6xl mx-auto px-6 py-12 grid lg:grid-cols-[minmax(0,1fr)_320px] gap-10 lg:gap-14">
 
-      {/* Wegekarte – vorgegebene Routen */}
-      {post.trails && post.trails.length > 0 && (
-        <div className="mt-12">
-          <p className="eyebrow mb-2">Wanderkarte</p>
-          <h2 className="font-serif text-2xl font-bold text-gray-900 mb-1">
-            {post.trails.length > 1 ? 'Wähle deinen Weg' : 'Der Weg auf der Karte'}
-          </h2>
-          {post.trails.length > 1 && (
-            <p className="text-sm text-gray-500 mb-4">
-              Tippe auf eine Tour, um den vorgegebenen Wegverlauf auf der Karte zu sehen.
-            </p>
+        {/* Hauptspalte */}
+        <article className="min-w-0">
+          {post.highlights && post.highlights.length > 0 && (
+            <div className="border-l-4 border-green-600 bg-green-50 px-5 py-4 mb-8">
+              <p className="eyebrow mb-3">Auf einen Blick</p>
+              <ul className="space-y-1.5">
+                {post.highlights.map((h, i) => (
+                  <li key={i} className="flex items-start gap-2.5 text-sm text-gray-700">
+                    <span className="shrink-0 mt-1.5 w-3 h-px bg-green-600 inline-block" />
+                    {h}
+                  </li>
+                ))}
+              </ul>
+            </div>
           )}
-          <TrailMapWrapper trails={post.trails} />
-          <div className="mt-3 flex flex-wrap gap-3">
-            <Link
-              href="/routenplaner"
-              className="inline-flex items-center gap-2 text-sm font-medium text-green-700 border border-green-200 hover:bg-green-50 px-4 py-2 transition-colors"
-              style={{ borderRadius: 3 }}
-            >
-              📍 Eigene Route planen
-            </Link>
-            <Link
-              href="/karte"
-              className="inline-flex items-center gap-2 text-sm font-medium text-green-700 border border-green-200 hover:bg-green-50 px-4 py-2 transition-colors"
-              style={{ borderRadius: 3 }}
-            >
-              🗺️ Große Wanderkarte öffnen
-            </Link>
-          </div>
-        </div>
-      )}
 
-      {/* Affiliate Links */}
-      {post.affiliateLinks && post.affiliateLinks.length > 0 && (
-        <div className="mt-10 border border-green-100 bg-green-50 rounded-xl p-6">
-          <h3 className="font-semibold text-gray-900 mb-3">Empfehlungen & Links</h3>
-          <ul className="space-y-2">
-            {post.affiliateLinks.map((link) => (
-              <li key={link.url}>
-                <a
-                  href={cloak(link.url)}
-                  target="_blank"
-                  rel="noopener noreferrer sponsored"
-                  className="text-green-700 hover:underline font-medium text-sm"
-                >
-                  {link.label} →
-                </a>
-              </li>
-            ))}
-          </ul>
-          <p className="text-xs text-gray-400 mt-3">
-            * Affiliate-Links – beim Kauf erhalte ich eine kleine Provision, für dich entstehen keine Mehrkosten.
-          </p>
-        </div>
-      )}
+          <div className="prose-style">{renderContent(post.content)}</div>
 
-      {/* Erlebnisse & Tickets buchen (Ausflug + Wandern) */}
-      {(post.category === 'Ausflug' || post.category === 'Wandern') && (
-        <div className="mt-8 border border-gray-200 p-6" style={{ borderRadius: 8 }}>
-          <p className="eyebrow mb-1">Erlebnisse &amp; Tickets</p>
-          <h3 className="font-serif text-lg font-bold text-gray-900 mb-1">Ausflüge in Kärnten buchen</h3>
-          <p className="text-sm text-gray-500 mb-4">Geführte Touren, Stadtführungen und Tickets – flexibel stornierbar.</p>
-          <div className="grid sm:grid-cols-2 gap-3">
-            {EXCURSIONS.map((ex) => (
-              <a
-                key={ex.url}
-                href={cloak(ex.url)}
-                target="_blank"
-                rel="noopener noreferrer sponsored"
-                className="group block border border-gray-200 px-4 py-3 hover:border-green-400 hover:bg-green-50 transition-colors"
-                style={{ borderRadius: 6 }}
-              >
-                <span className="block text-sm font-semibold text-gray-900 group-hover:text-green-700">{ex.label} →</span>
-                <span className="block text-xs text-gray-500 mt-0.5">{ex.note}</span>
-              </a>
-            ))}
-          </div>
-          <p className="text-xs text-gray-400 mt-3">* Partner-Links (GetYourGuide) – für dich ohne Mehrkosten.</p>
-        </div>
-      )}
+          {/* Wegekarte */}
+          {post.trails && post.trails.length > 0 && (
+            <div className="mt-12">
+              <p className="eyebrow mb-2">Wanderkarte</p>
+              <h2 className="font-serif text-2xl font-bold text-gray-900 mb-1">
+                {post.trails.length > 1 ? 'Wähle deinen Weg' : 'Der Weg auf der Karte'}
+              </h2>
+              {post.trails.length > 1 && (
+                <p className="text-sm text-gray-500 mb-4">Tippe auf eine Tour, um den vorgegebenen Wegverlauf zu sehen.</p>
+              )}
+              <TrailMapWrapper trails={post.trails} />
+            </div>
+          )}
 
-      {/* CTA für Wandern */}
-      {post.category === 'Wandern' && (
-        <div className="mt-6 grid grid-cols-2 gap-4">
-          <Link
-            href="/karte"
-            className="flex items-center justify-center gap-2 bg-green-700 text-white font-medium text-sm px-5 py-3 hover:bg-green-800 transition-colors"
-            style={{ borderRadius: 6 }}
-          >
-            Auf Karte anzeigen
-          </Link>
-          <Link
-            href="/routenplaner"
-            className="flex items-center justify-center gap-2 border border-green-700 text-green-700 font-medium text-sm px-5 py-3 hover:bg-green-50 transition-colors"
-            style={{ borderRadius: 6 }}
-          >
-            Route planen
-          </Link>
-        </div>
-      )}
-
-      {/* Teilen */}
-      <div className="mt-10 pt-6 border-t border-gray-100">
-        <ShareButtons title={post.title} />
-      </div>
-
-      {/* Verwandte Artikel */}
-      {related.length > 0 && (
-        <div className="mt-12">
-          <h2 className="font-serif text-xl font-bold text-gray-900 mb-4">Das könnte dich auch interessieren</h2>
-          <div className="grid sm:grid-cols-3 gap-4">
-            {related.map((r) => (
-              <Link
-                key={r.slug}
-                href={`/blog/${r.slug}`}
-                className="group block border border-gray-200 p-4 hover:border-green-400 hover:shadow-sm transition-all"
-                style={{ borderRadius: 8 }}
-              >
-                <span className="eyebrow">{r.category}</span>
-                <h3 className="mt-1.5 text-sm font-semibold text-gray-900 group-hover:text-green-700 leading-snug line-clamp-3">
-                  {r.title}
-                </h3>
+          {/* Wandern-CTA */}
+          {post.category === 'Wandern' && (
+            <div className="mt-6 grid sm:grid-cols-2 gap-4">
+              <Link href="/karte" className="flex items-center justify-center bg-green-700 text-white font-medium text-sm px-5 py-3 hover:bg-green-800 transition-colors" style={{ borderRadius: 6 }}>
+                Auf Karte anzeigen
               </Link>
-            ))}
-          </div>
-        </div>
-      )}
+              <Link href="/routenplaner" className="flex items-center justify-center border border-green-700 text-green-700 font-medium text-sm px-5 py-3 hover:bg-green-50 transition-colors" style={{ borderRadius: 6 }}>
+                Route planen
+              </Link>
+            </div>
+          )}
 
-      {/* Zurück zur Region */}
-      <div className="mt-10 pt-6 border-t border-gray-100">
-        <Link
-          href={`/regionen/${post.region}`}
-          className="text-sm text-green-600 hover:underline font-medium"
-        >
-          ← Alle {regionLabel}-Artikel anzeigen
-        </Link>
+          {/* Teilen */}
+          <div className="mt-10 pt-6 border-t border-gray-100">
+            <ShareButtons title={post.title} />
+          </div>
+
+          {/* Verwandte Artikel */}
+          {related.length > 0 && (
+            <div className="mt-12">
+              <h2 className="font-serif text-xl font-bold text-gray-900 mb-4">Das könnte dich auch interessieren</h2>
+              <div className="grid sm:grid-cols-2 gap-4">
+                {related.map((r) => (
+                  <Link key={r.slug} href={`/blog/${r.slug}`} className="group block border border-gray-200 p-4 hover:border-green-400 hover:shadow-sm transition-all" style={{ borderRadius: 8 }}>
+                    <span className="eyebrow">{r.category}</span>
+                    <h3 className="mt-1.5 text-sm font-semibold text-gray-900 group-hover:text-green-700 leading-snug">{r.title}</h3>
+                  </Link>
+                ))}
+              </div>
+            </div>
+          )}
+
+          <div className="mt-10 pt-6 border-t border-gray-100">
+            <Link href={`/regionen/${post.region}`} className="text-sm text-green-700 hover:underline font-medium">
+              ← Alle {regionLabel}-Artikel anzeigen
+            </Link>
+          </div>
+        </article>
+
+        {/* Sidebar */}
+        <aside className="space-y-6 lg:sticky lg:top-20 self-start">
+          {/* Schnellinfo */}
+          <div className="border border-gray-200 p-5" style={{ borderRadius: 8 }}>
+            <p className="eyebrow mb-3">Schnellinfo</p>
+            <dl className="space-y-2.5 text-sm">
+              <div className="flex justify-between gap-3">
+                <dt className="text-gray-500">Kategorie</dt>
+                <dd className="font-medium text-gray-900">{post.category}</dd>
+              </div>
+              {post.difficulty && (
+                <div className="flex justify-between gap-3">
+                  <dt className="text-gray-500">Schwierigkeit</dt>
+                  <dd className="font-medium text-gray-900 inline-flex items-center gap-1.5">
+                    <span className={`w-2 h-2 rounded-full ${DIFFICULTY_STYLES[post.difficulty].dot}`} />
+                    {DIFFICULTY_STYLES[post.difficulty].label}
+                  </dd>
+                </div>
+              )}
+              {post.bestSeason && (
+                <div className="flex justify-between gap-3">
+                  <dt className="text-gray-500">Beste Zeit</dt>
+                  <dd className="font-medium text-gray-900 text-right">{post.bestSeason}</dd>
+                </div>
+              )}
+              <div className="flex justify-between gap-3">
+                <dt className="text-gray-500">Lesezeit</dt>
+                <dd className="font-medium text-gray-900">{minutes} Min.</dd>
+              </div>
+              <div className="flex justify-between gap-3">
+                <dt className="text-gray-500">Region</dt>
+                <dd className="font-medium text-gray-900">{regionLabel}</dd>
+              </div>
+            </dl>
+          </div>
+
+          {/* Erlebnisse & Tickets */}
+          {(post.category === 'Ausflug' || post.category === 'Wandern') && (
+            <div className="border border-gray-200 p-5" style={{ borderRadius: 8 }}>
+              <p className="eyebrow mb-1">Erlebnisse &amp; Tickets</p>
+              <h3 className="font-serif text-base font-bold text-gray-900 mb-3">Ausflüge buchen</h3>
+              <div className="space-y-2.5">
+                {EXCURSIONS.map((ex) => (
+                  <a key={ex.url} href={cloak(ex.url)} target="_blank" rel="noopener noreferrer sponsored"
+                    className="group block border border-gray-200 px-3 py-2.5 hover:border-green-400 hover:bg-green-50 transition-colors" style={{ borderRadius: 6 }}>
+                    <span className="block text-sm font-semibold text-gray-900 group-hover:text-green-700 leading-snug">{ex.label} →</span>
+                    <span className="block text-xs text-gray-500 mt-0.5">{ex.note}</span>
+                  </a>
+                ))}
+              </div>
+              <p className="text-[11px] text-gray-400 mt-2.5">* Partner-Links (GetYourGuide)</p>
+            </div>
+          )}
+
+          {/* Empfehlungen */}
+          {post.affiliateLinks && post.affiliateLinks.length > 0 && (
+            <div className="border border-green-100 bg-green-50 p-5" style={{ borderRadius: 8 }}>
+              <p className="eyebrow mb-3">Empfehlungen</p>
+              <ul className="space-y-2.5">
+                {post.affiliateLinks.map((link) => (
+                  <li key={link.url}>
+                    <a href={cloak(link.url)} target="_blank" rel="noopener noreferrer sponsored"
+                      className="text-green-700 hover:underline font-medium text-sm leading-snug block">
+                      {link.label} →
+                    </a>
+                  </li>
+                ))}
+              </ul>
+              <p className="text-[11px] text-gray-400 mt-3">* Affiliate-Links – ohne Mehrkosten für dich.</p>
+            </div>
+          )}
+        </aside>
       </div>
     </div>
   );
