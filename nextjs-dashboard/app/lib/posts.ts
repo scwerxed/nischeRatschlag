@@ -24,6 +24,320 @@ export type Post = {
 
 export const posts: Post[] = [
   {
+    slug: 'alpaka-wanderung-kaernten',
+    title: 'Alpaka-Wanderung in Kärnten – die schönsten Touren mit den flauschigen Begleitern',
+    excerpt: 'Mit Alpakas durch die Kärntner Natur spazieren: Wo es die besten Touren gibt, was sie kosten, und warum das gerade für Familien und gestresste Großstädter ein Erlebnis ist.',
+    date: '2026-06-07',
+    category: 'Ausflug',
+    region: 'kaernten',
+    bestSeason: 'April–Oktober',
+    highlights: ['Mehrere Höfe in ganz Kärnten', 'Ideal für Familien & ohne Vorkenntnisse', 'Entschleunigung pur – das „Tier-Yoga" der Berge'],
+    content: `
+Alpaka-Wandern ist von der Kuriosität zum echten Trend-Ausflug geworden – und Kärnten hat einige der schönsten Höfe dafür. Die ruhigen, neugierigen Tiere führt man an der Leine über Wiesen- und Waldwege. Kein Reiten, kein Stress, einfach gemeinsames Spazieren. Klingt simpel, wirkt aber erstaunlich entspannend.
+
+## Was ist eine Alpaka-Wanderung?
+
+Du bekommst auf dem Hof ein (oder zwei) Alpakas zugeteilt, eine kurze Einführung im Umgang mit den Tieren, und dann geht's los – meist 1 bis 2 Stunden gemütlich durch die Landschaft. Alpakas sind sanftmütig, spucken (anders als ihr Ruf) selten Menschen an und eignen sich perfekt auch für Kinder ab ca. 4 Jahren.
+
+## Für wen lohnt sich das?
+
+- **Familien**: Kinder lieben die flauschigen Tiere, das Tempo ist kindgerecht
+- **Paare**: ungewöhnliches Date abseits von Restaurant und Kino
+- **Gestresste**: Der langsame Rhythmus der Tiere wirkt nachweislich beruhigend – manche Höfe bieten sogar „Alpaka-Yoga" an
+- **Fotografen**: Alpakas vor Bergkulisse sind ein dankbares Motiv
+
+## Wo in Kärnten?
+
+Alpaka-Höfe gibt es u. a. rund um den Wörthersee, im Gegendtal, im Lavanttal und in den Nockbergen. Die meisten bieten Touren nur **mit Voranmeldung** an – spontan vorbeifahren funktioniert selten. Such am besten nach „Alpakawanderung + [deine Urlaubsregion]" und buche ein paar Tage im Voraus.
+
+## Was kostet es?
+
+- Pro Person ca. **25–40 €** für eine 1–2-stündige Tour
+- Kinder oft ermäßigt
+- Manche Höfe nehmen pro Alpaka (für 2 Personen teilbar)
+
+## Praktische Tipps
+
+- **Festes Schuhwerk** anziehen – es geht über Wiesen und Waldwege
+- Alpakas mögen **keine hektischen Bewegungen** – ruhig bleiben, dann sind sie zutraulich
+- **Nicht füttern** ohne Erlaubnis – die Höfe haben klare Regeln
+- Bei Hitze starten viele Touren früh morgens oder am Abend
+- Wetterfest packen: Bei Dauerregen werden Touren oft abgesagt
+
+## Kombi-Tipp
+
+Viele Alpaka-Höfe liegen in ruhigen Seitentälern – ideal, um danach in einem Almgasthof einzukehren oder einen nahen Badesee anzusteuern. So wird aus der Tour ein ganzer Ausflugstag.
+    `,
+    affiliateLinks: [
+      { label: 'Outdoor-Schuhe für die Tour – Amazon', url: 'https://www.amazon.de/s?k=wanderschuhe+leicht' },
+      { label: 'Unterkünfte in Kärnten – booking.com', url: 'https://www.booking.com/region/at/carinthia.de.html' },
+    ],
+  },
+  {
+    slug: 'lama-trekking-kaernten',
+    title: 'Lama-Trekking in Kärnten – Wandern mit den ruhigen Packtieren',
+    excerpt: 'Lamas sind etwas größer und eigenständiger als Alpakas – und perfekte Wanderbegleiter. Was Lama-Trekking ausmacht, wo es das in Kärnten gibt und worauf du achten solltest.',
+    date: '2026-06-06',
+    category: 'Ausflug',
+    region: 'kaernten',
+    bestSeason: 'Mai–Oktober',
+    highlights: ['Längere Touren als mit Alpakas möglich', 'Lamas tragen Gepäck & Picknick', 'Ruhige, trittsichere Bergbegleiter'],
+    content: `
+Lamas werden oft mit Alpakas verwechselt, sind aber größer, kräftiger und eigenständiger. Genau das macht sie zu hervorragenden Trekking-Partnern: Sie tragen sogar dein Picknick oder leichtes Gepäck und sind auf schmalen Bergpfaden erstaunlich trittsicher.
+
+## Lama vs. Alpaka – was ist der Unterschied?
+
+- **Größe**: Lamas sind deutlich größer (bis 1,20 m Schulterhöhe) und stärker
+- **Charakter**: eigenständiger, „cooler" – Alpakas sind verschmuster und ängstlicher
+- **Touren**: Mit Lamas sind längere Wanderungen (halbtags) üblich, oft mit Packsattel
+
+## Der Ablauf
+
+Nach einer Einführung führst du dein Lama am Strick. Anders als beim Reiten bleibst du auf dem Boden – das Tier ist Begleiter, nicht Transportmittel. Auf Halbtagestouren tragen die Lamas Satteltaschen mit Verpflegung, die unterwegs gemeinsam ausgepackt wird.
+
+## Für wen geeignet?
+
+Lama-Trekking ist ideal für alle, die etwas mehr Wanderung und weniger Streichelzoo wollen. Kinder sollten etwas älter sein (ca. ab 6 Jahren), weil die Tiere kräftig sind und die Touren länger. Für ältere Kinder und Erwachsene ein tolles, ruhiges Naturerlebnis.
+
+## Wo in Kärnten?
+
+Lama-Höfe gibt es vereinzelt in den Nockbergen, im Drau- und Gailtal sowie im Lavanttal. Wie bei Alpakas gilt: **vorab buchen**, die Gruppen sind klein.
+
+## Kosten
+
+- Kurztour (1–1,5 Std.): ca. **30–40 €** p. P.
+- Halbtagestour mit Picknick: ca. **55–75 €** p. P.
+
+## Tipps
+
+- **Lange Hose & feste Schuhe** – es geht ins Gelände
+- Lamas brauchen **Abstand zu Hunden** – lass deinen Hund daheim oder kläre es vorab
+- Ruhig und geduldig bleiben: Lamas spüren Hektik sofort
+- Wettercheck vorher – bei Gewitter wird abgesagt
+    `,
+    affiliateLinks: [
+      { label: 'Tagesrucksack für die Tour – Amazon', url: 'https://www.amazon.de/s?k=wanderrucksack+20l' },
+      { label: 'Unterkünfte in Kärnten – booking.com', url: 'https://www.booking.com/region/at/carinthia.de.html' },
+    ],
+  },
+  {
+    slug: 'eselwanderung-kaernten',
+    title: 'Eselwanderung in Kärnten – das geduldigste Abenteuer für Kinder',
+    excerpt: 'Esel sind klug, geduldig und bei Kindern beliebt. Eine Eselwanderung ist eines der entspanntesten Familienerlebnisse in Kärnten – hier die Infos dazu.',
+    date: '2026-06-05',
+    category: 'Ausflug',
+    region: 'kaernten',
+    bestSeason: 'Mai–September',
+    highlights: ['Perfekt für kleine Kinder', 'Esel tragen müde Kinderbeine', 'Sehr ruhiges, geduldiges Wesen'],
+    content: `
+Esel haben zu Unrecht den Ruf, stur zu sein – tatsächlich sind sie klug, vorsichtig und extrem geduldig. Für Familien mit kleineren Kindern ist die Eselwanderung deshalb oft das beste Tiererlebnis: Wenn die Kinderbeine müde werden, dürfen die Kleinen meist sogar ein Stück auf dem Esel mitreiten.
+
+## Warum Esel?
+
+- **Geduldig**: Esel lassen sich von Kindern nicht aus der Ruhe bringen
+- **Sicher**: Sie gehen langsam und überlegt, stürzen praktisch nie
+- **Tragen mit**: Picknick, Jacken – und müde Kinder
+
+## Der Ablauf
+
+Auf dem Hof lernst du „deinen" Esel kennen, wirst eingewiesen und führst ihn dann auf gemütlichen Wegen. Die Touren sind bewusst kurz und flach gehalten (oft 1–2 Stunden), damit auch die Kleinsten mitkommen.
+
+## Für wen?
+
+Klar im Fokus: **Familien mit Kindern von 3 bis 10 Jahren**. Aber auch Großeltern-Enkel-Ausflüge funktionieren super, weil das Tempo niedrig ist.
+
+## Wo & was kostet es?
+
+Eselhöfe gibt es im Lavanttal, Gegendtal und rund um die Nockberge. Preise meist **20–35 €** pro Person/Esel, Kinder oft günstiger. Voranmeldung nötig.
+
+## Tipps
+
+- **Geschlossene Schuhe** für die Kinder
+- Esel mögen **klare, ruhige Ansagen** – die Höfe zeigen dir, wie's geht
+- Snacks & Trinken für die Kinder mitnehmen
+- Bei großer Hitze: Vormittagstermin wählen
+    `,
+    affiliateLinks: [
+      { label: 'Kinder-Wanderschuhe – Amazon', url: 'https://www.amazon.de/s?k=kinder+wanderschuhe' },
+      { label: 'Familienunterkünfte Kärnten – booking.com', url: 'https://www.booking.com/region/at/carinthia.de.html' },
+    ],
+  },
+  {
+    slug: 'reiten-pferdetrekking-kaernten',
+    title: 'Reiten & Pferdetrekking in Kärnten – vom Ponyhof bis zum Almritt',
+    excerpt: 'Ob erster Ponyritt für Kinder oder mehrstündiger Ausritt über die Almen: Kärnten bietet Reiterlebnisse für jedes Level. Überblick, Reviere und Tipps.',
+    date: '2026-06-04',
+    category: 'Ausflug',
+    region: 'kaernten',
+    bestSeason: 'Mai–Oktober',
+    highlights: ['Vom Ponyführen bis zum Wanderritt', 'Islandpferde-Höfe mit ruhigem Gang', 'Almritte mit Panoramablick'],
+    content: `
+Kärnten ist Pferdeland – sanfte Hügel, weite Almen und ruhige Seitentäler bieten ideale Reitreviere. Vom geführten Ponyführen für die Kleinsten bis zum mehrstündigen Wanderritt über die Almen ist alles dabei.
+
+## Für Einsteiger & Kinder
+
+Viele Höfe bieten **Ponyführen** und Reitstunden auf dem Platz an – ideal für den ersten Kontakt. Kinder werden geführt, Sicherheit steht an erster Stelle (Helmpflicht). Perfekt, um zu testen, ob der Funke überspringt.
+
+## Für Fortgeschrittene: Almritte & Wanderritte
+
+Wer sicher im Sattel sitzt, kann geführte **Ausritte über die Almen** machen – teils halbtags mit Einkehr. Besonders beliebt sind **Islandpferde-Höfe**: Die Tiere sind klein, trittsicher und haben mit dem „Tölt" einen besonders ruhigen, bequemen Gang – auch für weniger Geübte angenehm.
+
+## Wo in Kärnten?
+
+Reiterhöfe verteilen sich über das ganze Land – Schwerpunkte im Lavanttal, Gailtal, Gegendtal und in den Nockbergen. Almritte gibt's vor allem in den höher gelegenen Regionen.
+
+## Kosten (Richtwerte)
+
+- Ponyführen / Reitstunde: ca. **20–35 €**
+- Geführter Ausritt (1–2 Std.): ca. **35–60 €**
+- Halbtags-Almritt mit Einkehr: ca. **80–120 €**
+
+## Tipps
+
+- **Lange Hose** und Schuhe mit kleinem Absatz mitbringen
+- Helm wird gestellt, eigener ist aber hygienischer
+- Reiterfahrung **ehrlich angeben** – die Höfe teilen passende Pferde zu
+- Frühzeitig buchen, gute Höfe sind im Sommer schnell ausgebucht
+    `,
+    affiliateLinks: [
+      { label: 'Reithelm & Zubehör – Amazon', url: 'https://www.amazon.de/s?k=reithelm' },
+      { label: 'Unterkünfte in Kärnten – booking.com', url: 'https://www.booking.com/region/at/carinthia.de.html' },
+    ],
+  },
+  {
+    slug: 'husky-schlittenhunde-kaernten',
+    title: 'Husky-Touren in Kärnten – Schlittenhunde im Winter erleben',
+    excerpt: 'Ein Gespann begeisterter Huskys durch den Schnee: Husky-Touren sind das winterliche Tier-Highlight. Wo es das in Kärnten gibt und was dich erwartet.',
+    date: '2026-06-03',
+    category: 'Ausflug',
+    region: 'kaernten',
+    bestSeason: 'Dezember–März',
+    highlights: ['Echtes Winter-Abenteuer mit Schlittenhunden', 'Auch Schnuppern & Hunde-Kennenlernen', 'Unvergesslich für Tierliebhaber'],
+    content: `
+Wenn im Winter der Schnee liegt, wird in Kärnten ein ganz besonderes Tiererlebnis möglich: Touren mit **Schlittenhunden**. Die Energie und Begeisterung eines Husky-Gespanns, das losziehen will, ist schwer zu beschreiben – das muss man erlebt haben.
+
+## Was wird angeboten?
+
+- **Schnupper-/Kennenlern-Termine**: Hunde streicheln, Rudel verstehen, kurze Runde – ideal für Familien und Einsteiger
+- **Mitfahrten im Schlitten**: Du sitzt, der Musher lenkt
+- **Selbst lenken (für Erwachsene)**: nach Einweisung das Gespann selbst führen – das intensivste Erlebnis
+
+## Wichtig zu wissen
+
+Husky-Touren sind **stark wetter- und schneeabhängig**. Liegt zu wenig Schnee, werden Touren auf Wagen (Trockenland-Training) umgestellt oder abgesagt. Die Anzahl der Anbieter in Kärnten ist begrenzt – früh informieren und buchen.
+
+## Für wen?
+
+Tierliebhaber, Familien (Schnuppertermine), Abenteuerlustige. Kleine Kinder dürfen meist nur mitfahren, nicht selbst lenken. Hunde-Allergiker sollten verzichten.
+
+## Kosten
+
+Sehr unterschiedlich je nach Format – von ca. **40 €** (Schnuppern) bis zu mehreren Hundert Euro für längere, selbst gelenkte Touren mit Einschulung.
+
+## Tipps
+
+- **Warm anziehen** in Schichten – es ist kalt und windig auf dem Schlitten
+- Respekt vor den Tieren: Den Anweisungen des Mushers genau folgen
+- Kamera mit vollem Akku (Kälte entlädt schnell)
+- Als Winter-Kombi: danach in eine der Kärntner Thermen (z. B. Bad Kleinkirchheim) zum Aufwärmen
+    `,
+    affiliateLinks: [
+      { label: 'Warme Winterbekleidung – Amazon', url: 'https://www.amazon.de/s?k=thermo+winterjacke' },
+      { label: 'Winterunterkünfte Kärnten – booking.com', url: 'https://www.booking.com/region/at/carinthia.de.html' },
+    ],
+  },
+  {
+    slug: 'greifvogelschau-adler-kaernten',
+    title: 'Adlerflugschau & Greifvögel in Kärnten – Falknerei hautnah',
+    excerpt: 'Adler, Geier und Falken im freien Flug erleben: Die Greifvogelschauen in Kärnten sind ein eindrucksvolles Erlebnis für die ganze Familie. Wo, wann und worauf achten.',
+    date: '2026-06-02',
+    category: 'Ausflug',
+    region: 'kaernten',
+    bestSeason: 'April–Oktober',
+    highlights: ['Adler & Geier im freien Flug', 'Lehrreich & spektakulär zugleich', 'Überdacht – auch bei wechselhaftem Wetter'],
+    content: `
+Wenn ein Steinadler mit über zwei Metern Spannweite knapp über die Köpfe der Zuschauer gleitet, hält das ganze Publikum den Atem an. Greifvogel- und Adlerflugschauen gehören zu den eindrucksvollsten Tiererlebnissen Kärntens – und sind dabei lehrreich und absolut familientauglich.
+
+## Was dich erwartet
+
+Erfahrene Falkner zeigen Adler, Geier, Falken, Bussarde und Eulen im **freien Flug**. Du erfährst viel über die Tiere, ihre Jagdtechniken und den Artenschutz. Viele Vorführungen sind moderiert und kindgerecht aufbereitet.
+
+## Wo in Kärnten?
+
+Bekannte Anlaufstellen sind Adlerarena/Greifvogelwarten, die oft an **Burgen oder in Bergregionen** angesiedelt sind – die Kulisse macht das Erlebnis komplett. Vorführungszeiten sind fix (meist 1–2 mal täglich), also vorher die Zeiten checken.
+
+## Für wen?
+
+Für **alle Altersgruppen** – besonders eindrucksvoll für Kinder, die Tiere lieben. Da man sitzt und zuschaut, ist es auch für weniger Mobile gut geeignet.
+
+## Kosten
+
+Eintritt meist **12–18 €** für Erwachsene, Kinder ermäßigt, Familienkarten verfügbar.
+
+## Tipps
+
+- **Vorführungszeiten** vorab prüfen – außerhalb der Show sieht man die Tiere nur in Volieren
+- **Hut/Kappe** kann praktisch sein – die Vögel fliegen tief
+- Frühzeitig kommen für gute Sitzplätze
+- Oft mit Burgbesichtigung kombinierbar – ein toller Halbtagesausflug
+    `,
+    affiliateLinks: [
+      { label: 'Fernglas für Tierbeobachtung – Amazon', url: 'https://www.amazon.de/s?k=fernglas+10x42' },
+      { label: 'Ausflüge & Tickets – GetYourGuide', url: 'https://www.getyourguide.de/-l158762/' },
+    ],
+  },
+  {
+    slug: 'tiererlebnisse-kaernten-familien',
+    title: 'Tiererlebnisse in Kärnten – die schönsten Touren mit Tieren für Familien',
+    excerpt: 'Alpaka, Lama, Esel, Pferd, Husky oder Greifvogel? Der große Überblick über alle Tiertouren in Kärnten – mit Empfehlungen nach Alter, Saison und Budget.',
+    date: '2026-06-07',
+    category: 'Ausflug',
+    region: 'kaernten',
+    bestSeason: 'Ganzjährig',
+    highlights: ['Alle Tiertouren auf einen Blick', 'Empfehlungen nach Kinderalter', 'Sommer- und Winter-Erlebnisse'],
+    content: `
+Kärnten ist ein Paradies für Tierfreunde – und gerade Familien finden hier Erlebnisse, die Kindern jahrelang in Erinnerung bleiben. Dieser Überblick hilft dir, das passende Tierabenteuer zu finden.
+
+## Welche Tour passt zu welchem Alter?
+
+- **Ab 3 Jahren**: Eselwanderung (geduldig, langsam, Kinder dürfen mitreiten)
+- **Ab 4 Jahren**: Alpaka-Wanderung (flauschig, ruhig, kurz)
+- **Ab 6 Jahren**: Lama-Trekking, Ponyführen
+- **Ab 8 Jahren**: längere Ausritte, Husky-Schnuppern
+- **Jedes Alter**: Greifvogelschau (man sitzt und schaut zu)
+
+## Sommer oder Winter?
+
+- **Frühling–Herbst**: Alpaka, Lama, Esel, Reiten, Greifvögel
+- **Winter**: Husky-/Schlittenhundetouren – das einzige saisonale Highlight, das nur bei Schnee geht
+
+## Was kostet ein Tierausflug?
+
+Die meisten geführten Touren liegen zwischen **20 und 60 €** pro Person. Greifvogelschauen sind mit ~12–18 € am günstigsten, selbst gelenkte Husky-Touren am teuersten.
+
+## Unsere Detail-Artikel
+
+- **Alpaka-Wanderung** – der entspannte Klassiker
+- **Lama-Trekking** – für etwas längere Touren
+- **Eselwanderung** – das geduldigste Tier für kleine Kinder
+- **Reiten & Pferdetrekking** – vom Ponyhof bis zum Almritt
+- **Husky-Touren** – das Winter-Abenteuer
+- **Adlerflugschau** – Greifvögel hautnah
+
+## Goldene Regeln für Tiertouren
+
+- **Immer vorab buchen** – die Gruppen sind klein, spontan klappt selten
+- **Festes Schuhwerk** und wetterfeste Kleidung
+- **Ruhe bewahren** – Tiere spüren Hektik sofort
+- **Regeln der Höfe respektieren** (Füttern, Abstand, Hunde)
+- Bei schlechtem Wetter flexibel bleiben – manche Touren werden abgesagt
+    `,
+    affiliateLinks: [
+      { label: 'Familienunterkünfte Kärnten – booking.com', url: 'https://www.booking.com/region/at/carinthia.de.html' },
+      { label: 'Outdoor-Ausrüstung für Familien – Amazon', url: 'https://www.amazon.de/s?k=outdoor+ausr%C3%BCstung+kinder' },
+    ],
+  },
+  {
     slug: 'die-10-besten-wanderwege-am-woerthersee',
     title: 'Die 10 besten Wanderwege am Wörthersee',
     excerpt: 'Von gemütlichen Seepromenaden bis zu anspruchsvollen Gipfeltouren – die schönsten Wanderwege rund um den Wörthersee.',
@@ -50,6 +364,24 @@ Der „Kärntner Hausberg" bietet eine der schönsten Aussichten der Alpen – b
 
 ## 5. Maria Wörth Rundweg (leicht, 8 km)
 Rund um die malerische Halbinsel mit der berühmten Wallfahrtskirche. Kurz aber wunderschön.
+
+## 6. Reinzackel-Gipfel (mittel, 4 Stunden)
+Über dem Südufer gelegen, mit weniger Andrang als der Pyramidenkogel. Schöner Wald-Aufstieg, oben freier Blick über den ganzen See.
+
+## 7. Forstsee-Runde (leicht, 6 km)
+Der kleine Forstsee oberhalb von Pörtschach ist ein Geheimtipp: ruhiger Rundweg durch Wald, kaum Touristen, ideal für eine schnelle Feierabendrunde.
+
+## 8. Sattnitz-Höhenweg (mittel, 14 km)
+Auf dem bewaldeten Höhenrücken südlich von Klagenfurt. Aussichtspunkte über den Wörthersee und das Klagenfurter Becken, angenehm schattig im Hochsommer.
+
+## 9. Ulrichsberg (mittel, 3 Stunden)
+Geschichtsträchtiger Aussichtsberg mit Ruine und Rundblick bis in die Karawanken. Kombinierbar mit dem benachbarten Magdalensberg.
+
+## 10. Kompolan & Aussichtsturm Pyramidenkogel-Höhenweg (schwer, 5 Stunden)
+Die sportliche Verbindungstour über mehrere Höhenzüge des Südufers – für konditionsstarke Wanderer, die Ruhe und Weitblick suchen.
+
+## Beste Zeit & Tipps
+April bis Juni und September/Oktober sind ideal: angenehme Temperaturen, klare Sicht, weniger Andrang. Im Hochsommer früh starten und schattige Wald-Routen (Sattnitz, Forstsee) bevorzugen. Wasser, Sonnenschutz und eine Regenjacke gehören immer in den Rucksack – das Bergwetter kann rasch umschlagen.
 
 ## Ausrüstungs-Tipp
 Gute Wanderschuhe sind Pflicht – besonders für die längeren Touren. Aktuelle Preise und Bewertungen:

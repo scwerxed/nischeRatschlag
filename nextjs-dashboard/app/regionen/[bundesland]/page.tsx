@@ -43,7 +43,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: isKaernten ? 'Kärnten Urlaub – Wandern, Badeseen & Ausflüge' : region.name,
     description: isKaernten
-      ? 'Kärntens schönste Wanderwege, Badeseen und Ausflugsziele – mit echten Preisen, interaktiver Karte und 33 Insider-Tipps für deinen Urlaub am Wörthersee.'
+      ? 'Kärntens schönste Wanderwege, Badeseen, Tiertouren und Ausflugsziele – mit echten Preisen, interaktiver Karte und 40+ Insider-Tipps für deinen Urlaub am Wörthersee.'
       : region.beschreibung,
     keywords: isKaernten ? [...BASE_KEYWORDS, 'Kärnten Urlaub', 'Wörthersee Hotel', 'Kärnten Wandern'] : undefined,
     alternates: { canonical: `/regionen/${bundesland}` },

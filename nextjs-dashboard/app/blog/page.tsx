@@ -4,7 +4,7 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'Magazin – Kärnten Tipps & Wanderwege',
-  description: '33 Insider-Artikel über Kärnten: Wanderwege am Wörthersee, Badeseen, Ausflüge und Unterkünfte – mit echten Preisen und ehrlichen Bewertungen.',
+  description: '40+ Insider-Artikel über Kärnten: Wanderwege am Wörthersee, Badeseen, Ausflüge, Tiertouren und Unterkünfte – mit echten Preisen und ehrlichen Bewertungen.',
   keywords: ['Kärnten Blog', 'Wandern Kärnten', 'Wörthersee Tipps', 'Baden Kärnten', 'Ausflug Kärnten', 'Kärnten Insider'],
   alternates: { canonical: '/blog' },
 };

@@ -49,7 +49,7 @@ export default function HomePage() {
       <section className="border-b border-gray-200 bg-sand-50">
         <div className="max-w-6xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 divide-x divide-gray-200">
           {[
-            { value: '33', label: 'Insider-Artikel' },
+            { value: String(posts.length), label: 'Insider-Artikel' },
             { value: '1.270+', label: 'Seen in Kärnten' },
             { value: '29 °C', label: 'wärmstes Seewasser' },
             { value: '3.798 m', label: 'höchster Gipfel' },
