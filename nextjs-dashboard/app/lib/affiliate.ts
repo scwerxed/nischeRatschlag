@@ -12,7 +12,8 @@
 // ⚠️ Hier eure echten Partner-IDs eintragen, sobald vorhanden:
 export const PARTNER_IDS = {
   amazonTag: 'nischeratschl-21',     // Amazon PartnerNet Tag
-  bookingAid: '0000000',             // booking.com Affiliate ID (aid)
+  bookingAid: '0000000',             // booking.com Affiliate ID (aid) – noch eintragen
+  gygPartnerId: 'CTZDZJB',           // GetYourGuide Partner-ID
 };
 
 // Domains, auf die wir weiterleiten dürfen (verhindert Open-Redirect-Missbrauch)
@@ -46,7 +47,7 @@ export function appendPartnerTag(target: URL): URL {
     target.searchParams.set('aid', PARTNER_IDS.bookingAid);
   }
   if (host === 'getyourguide.de' && !target.searchParams.has('partner_id')) {
-    target.searchParams.set('partner_id', PARTNER_IDS.bookingAid);
+    target.searchParams.set('partner_id', PARTNER_IDS.gygPartnerId);
   }
   return target;
 }

@@ -54,6 +54,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_CLIENT}`}
           crossOrigin="anonymous"
         />
+        {/* GetYourGuide Analytics – Conversion-Tracking für Ausflugs-Links */}
+        <script
+          async
+          defer
+          src="https://widget.getyourguide.com/dist/pa.umd.production.min.js"
+          data-gyg-partner-id="CTZDZJB"
+        />
       </head>
       <body className="font-sans antialiased bg-white text-gray-900">
         {/* Globales Schema: Organization + WebSite (Sitelinks Searchbox) */}
