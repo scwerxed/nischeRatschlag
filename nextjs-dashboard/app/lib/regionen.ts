@@ -27,8 +27,8 @@ export const regionen: Region[] = [
   {
     slug: 'steiermark',
     name: 'Steiermark',
-    beschreibung: 'Grünes Herz Österreichs – Wein, Natur und Grazer Altstadt.',
-    aktiv: false,
+    beschreibung: 'Das grüne Herz Österreichs – Graz, Weinstraßen, Almen, der Dachstein und smaragdgrüne Bergseen.',
+    aktiv: true,
   },
   {
     slug: 'wien',
@@ -57,8 +57,8 @@ export const regionen: Region[] = [
   {
     slug: 'burgenland',
     name: 'Burgenland',
-    beschreibung: 'Neusiedler See, Wein und pannonische Tiefebene.',
-    aktiv: false,
+    beschreibung: 'Neusiedler See, Spitzenweine, Störche und pannonisches Sonnenklima – Österreichs Osten.',
+    aktiv: true,
   },
 ];
 

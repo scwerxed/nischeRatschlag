@@ -15,15 +15,17 @@ export const metadata: Metadata = {
   metadataBase: new URL(BASE),
   title: {
     template: `%s | ${SITE_NAME}`,
-    default: `${SITE_NAME} – Wandern, Baden & Ausflüge in Kärnten`,
+    default: `${SITE_NAME} – Seen, Berge & Ausflüge in Österreich`,
   },
   description:
-    'Insider-Tipps für Kärnten & Wörthersee: Wanderwege, Badestellen, Ausflugsziele und Unterkünfte – ehrlich recherchiert mit echten Preisen.',
+    'Insider-Tipps für Kärnten, die Steiermark & das Burgenland: Wanderwege, Badeseen, Ausflugsziele und Unterkünfte – ehrlich recherchiert mit echten Preisen.',
   keywords: BASE_KEYWORDS,
   authors: [{ name: SITE_NAME, url: BASE }],
   creator: SITE_NAME,
   publisher: SITE_NAME,
   category: 'travel',
+  applicationName: SITE_NAME,
+  alternates: { canonical: '/' },
   openGraph: {
     type: 'website',
     locale: 'de_AT',
@@ -31,16 +33,32 @@ export const metadata: Metadata = {
     url: BASE,
   },
   twitter: { card: 'summary_large_image', site: '@bergseenguide' },
+  // Rich-Result-Direktiven: große Bildvorschauen & volle Snippets erlauben
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+      'max-video-preview': -1,
+    },
+  },
   other: {
     // AdSense Site-Verifizierung
     'google-adsense-account': ADSENSE_CLIENT,
-    // Local SEO: Suchmaschinen wissen, dass wir Kärnten/Österreich abdecken
-    'geo.region': 'AT-2',                         // ISO 3166-2 Kärnten
-    'geo.placename': 'Kärnten, Österreich',
+    // Local SEO: abgedeckte Region(en) in Österreich
+    'geo.region': 'AT',
+    'geo.placename': 'Kärnten, Steiermark, Burgenland – Österreich',
     'geo.position': `${KAERNTEN_GEO.lat};${KAERNTEN_GEO.lng}`,
     'ICBM': `${KAERNTEN_GEO.lat}, ${KAERNTEN_GEO.lng}`,
     'language': 'de-AT',
   },
+};
+
+export const viewport = {
+  themeColor: '#255744',
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

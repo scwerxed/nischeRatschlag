@@ -13,7 +13,15 @@ pnpm lint         # Run ESLint
 
 No test suite is configured.
 
-**Known build issue**: `pnpm build` fails on the `/seed` route because `bcrypt`'s native binary is not compiled for the current platform. This is a pre-existing issue unrelated to app logic — the dev server and all other routes work fine. TypeScript compiles successfully.
+## Deployment
+
+- **Live on Vercel** at `https://www.bergseen-guide.com` (primary domain is **www**; the apex `bergseen-guide.com` 308-redirects to www). Domain registered at world4you (A `@` → `216.198.79.1`, CNAME `www` → vercel-dns).
+- `NEXT_PUBLIC_SITE_URL` should be `https://www.bergseen-guide.com` (fallbacks in `seo.ts`/`sitemap.ts`/`robots.ts` already point there).
+- Google Search Console verified (HTML file `public/google748e248ac86b336e.html`); sitemap submitted.
+- AdSense (`ca-pub-4474617795810442`) + GetYourGuide partner (`CTZDZJB`) + Amazon tag (`nischeratschl-21`) are live. booking.com `aid` still placeholder.
+
+### ⚠️ FUTURE: migrate to Cloudflare Pages when monetization grows
+Vercel's free **Hobby** plan is officially **non-commercial**. This site runs AdSense + affiliate links (= commercial), so technically it needs Vercel **Pro ($20/mo)**. No surprise billing on Hobby — it throttles/pauses instead. **Plan:** once real revenue comes in (or Vercel asks to upgrade), migrate to **Cloudflare Pages** — its free tier explicitly allows commercial use and is very generous. Migration is ~1h (Next.js works via the Cloudflare adapter). The user explicitly asked to keep this note for the future.
 
 ## Architecture
 

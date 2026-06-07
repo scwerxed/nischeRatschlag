@@ -41,11 +41,15 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!region) return {};
   const isKaernten = bundesland === 'kaernten';
   return {
-    title: isKaernten ? 'Kärnten Urlaub – Wandern, Badeseen & Ausflüge' : region.name,
+    title: isKaernten
+      ? 'Kärnten Urlaub – Wandern, Badeseen & Ausflüge'
+      : `${region.name} Urlaub – Wandern, Baden & Ausflüge`,
     description: isKaernten
       ? 'Kärntens schönste Wanderwege, Badeseen, Tiertouren und Ausflugsziele – mit echten Preisen, interaktiver Karte und 40+ Insider-Tipps für deinen Urlaub am Wörthersee.'
-      : region.beschreibung,
-    keywords: isKaernten ? [...BASE_KEYWORDS, 'Kärnten Urlaub', 'Wörthersee Hotel', 'Kärnten Wandern'] : undefined,
+      : `${region.beschreibung} Wanderwege, Ausflugsziele, Unterkünfte und Insider-Tipps für deinen Urlaub in ${region.name}.`,
+    keywords: isKaernten
+      ? [...BASE_KEYWORDS, 'Kärnten Urlaub', 'Wörthersee Hotel', 'Kärnten Wandern']
+      : [`${region.name} Urlaub`, `Wandern ${region.name}`, `Ausflug ${region.name}`, `${region.name} Sehenswürdigkeiten`, 'Österreich Urlaub'],
     alternates: { canonical: `/regionen/${bundesland}` },
     openGraph: { title: region.name, description: region.beschreibung, url: `${BASE}/regionen/${bundesland}`, locale: 'de_AT' },
   };
@@ -106,14 +110,14 @@ export default async function RegionPage({ params }: Props) {
 
   return (
     <div className="max-w-5xl mx-auto px-6 py-12">
+      {/* Breadcrumb für alle aktiven Regionen */}
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema([
+        { name: 'Startseite', url: BASE },
+        { name: region.name,  url: `${BASE}/regionen/${bundesland}` },
+      ])) }} />
+      {/* Kärnten zusätzlich: TouristDestination mit Attraktionen */}
       {bundesland === 'kaernten' && (
-        <>
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(touristDestinationSchema()) }} />
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema([
-            { name: 'Startseite', url: BASE },
-            { name: 'Kärnten',    url: `${BASE}/regionen/kaernten` },
-          ])) }} />
-        </>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(touristDestinationSchema()) }} />
       )}
       {/* Header */}
       <div className="mb-8">

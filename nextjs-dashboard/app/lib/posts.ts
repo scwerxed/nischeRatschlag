@@ -1808,6 +1808,560 @@ Viele Wanderer starten von der slowenischen Seite (Tržič) – andere Landschaf
       { label: 'Wanderkarte Karawanken – Amazon', url: 'https://www.amazon.de/s?k=wanderkarte+karawanken' },
     ],
   },
+
+  // ─── STEIERMARK ──────────────────────────────────────────────────────────────
+  {
+    slug: 'graz-altstadt-sehenswuerdigkeiten',
+    title: 'Graz entdecken – die schönsten Sehenswürdigkeiten der UNESCO-Altstadt',
+    excerpt: 'Grazer Schlossberg, Uhrturm, Murinsel und Kunsthaus: Die steirische Hauptstadt verbindet mittelalterliche Altstadt mit moderner Architektur. Der kompakte Stadtführer.',
+    date: '2026-06-09',
+    category: 'Ausflug',
+    region: 'steiermark',
+    bestSeason: 'Ganzjährig',
+    highlights: ['UNESCO-Weltkulturerbe Altstadt', 'Schlossberg mit Uhrturm & Aussicht', 'Studentenstadt mit lebendiger Kulinarik'],
+    content: `
+Graz ist die zweitgrößte Stadt Österreichs – und eine der unterschätztesten. Die Altstadt zählt zum UNESCO-Weltkulturerbe, gleichzeitig ist Graz dank zweier Universitäten jung, lebendig und kulinarisch top.
+
+## Der Schlossberg
+Das Wahrzeichen über der Stadt. Hinauf geht's per Standseilbahn, Lift im Berg oder über die Treppe. Oben: der berühmte **Uhrturm**, ein Panoramablick über die roten Dächer und gemütliche Gastgärten.
+
+## Historische Altstadt
+Enge Gassen, Renaissance-Innenhöfe, das Landhaus und der Hauptplatz mit dem Rathaus. Alles bequem zu Fuß erkundbar – plane mindestens einen halben Tag ein.
+
+## Modernes Graz
+Das blubberblasenförmige **Kunsthaus** („Friendly Alien") und die **Murinsel** – eine schwimmende Plattform mitten in der Mur – zeigen die moderne Seite. Spannender Kontrast zur Altstadt.
+
+## Kulinarik
+Graz ist „Genusshauptstadt": steirisches Kürbiskernöl, Backhendl, Buschenschank-Tradition. Am **Kaiser-Josef-Markt** gibt's frische regionale Produkte.
+
+## Praktische Tipps
+- Anreise: Bahn von Wien ca. 2,5 Std., von Klagenfurt ca. 2 Std.
+- Parken: Tiefgaragen in der Innenstadt, Altstadt großteils Fußgängerzone
+- Tipp: Die Stadt ist ideal mit einem Tagesausflug ins Umland (Riegersburg, Weinstraße) kombinierbar
+    `,
+    affiliateLinks: [
+      { label: 'Graz: Touren & Tickets – GetYourGuide', url: 'https://www.getyourguide.de/s/?q=Graz' },
+      { label: 'Hotels in Graz – booking.com', url: 'https://www.booking.com/city/at/graz.de.html' },
+    ],
+  },
+  {
+    slug: 'dachstein-gletscher-skywalk',
+    title: 'Dachstein Gletscher & Sky Walk – über den Wolken in der Steiermark',
+    excerpt: 'Hängebrücke, Treppe ins Nichts und Eispalast auf 2.700 m: Der Dachstein ist das spektakulärste Hochgebirgs-Erlebnis der Steiermark – ganz ohne Bergsteigen.',
+    date: '2026-06-09',
+    category: 'Ausflug',
+    region: 'steiermark',
+    bestSeason: 'Mai–Oktober',
+    highlights: ['Bequem per Seilbahn auf 2.700 m', 'Hängebrücke & "Treppe ins Nichts"', 'Ganzjährig Gletscher & Eispalast'],
+    content: `
+Der Dachstein ist mit 2.995 m der höchste Berg der Steiermark – und das Beste: Man muss kein Bergsteiger sein, um oben zu stehen. Die Dachstein-Seilbahn bringt dich bequem auf rund 2.700 m.
+
+## Die Highlights oben
+- **Sky Walk:** Aussichtsplattform mit Blick bis nach Slowenien und Tschechien
+- **Hängebrücke:** Österreichs höchstgelegene Hängebrücke, 100 m lang über dem Abgrund
+- **Treppe ins Nichts:** 14 Stufen, die frei im Fels enden – nur für Schwindelfreie
+- **Eispalast:** in den Gletscher gegrabene Eisskulpturen, ganzjährig
+
+## Für wen geeignet?
+Für alle, die ein Hochgebirgserlebnis ohne Anstrengung wollen – Familien, ältere Besucher, alle. Schwindelfreiheit hilft bei Brücke und Treppe.
+
+## Wichtig
+- Auch im Sommer **warm anziehen** – oben ist es deutlich kälter und windig
+- Feste Schuhe (es kann Schnee/Eis liegen)
+- Bei schlechter Sicht lohnt die Auffahrt weniger – Wetter & Webcam vorab checken
+
+## Praktische Infos
+- Talstation bei Ramsau am Dachstein
+- Anfahrt: Von Schladming ca. 20 Minuten
+- Tickets: Seilbahn-Kombiticket inkl. aller Attraktionen
+    `,
+    affiliateLinks: [
+      { label: 'Dachstein & Schladming: Tickets – GetYourGuide', url: 'https://www.getyourguide.de/s/?q=Dachstein' },
+      { label: 'Hotels in Ramsau/Schladming – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Ramsau+am+Dachstein' },
+      { label: 'Warme Outdoor-Jacke – Amazon', url: 'https://www.amazon.de/s?k=softshelljacke+wandern' },
+    ],
+  },
+  {
+    slug: 'schladming-dachstein-wandern',
+    title: 'Wandern in Schladming-Dachstein – Touren für jedes Level',
+    excerpt: 'Die Region Schladming-Dachstein ist ein Wanderparadies: von der gemütlichen Almwanderung bis zur hochalpinen Tour. Die schönsten Routen und Hütten im Überblick.',
+    date: '2026-06-08',
+    category: 'Wandern',
+    region: 'steiermark',
+    difficulty: 'mittel',
+    bestSeason: 'Juni–Oktober',
+    highlights: ['Von Almwanderung bis Hochtour', 'Seilbahnen erleichtern den Aufstieg', 'Urige Almhütten zum Einkehren'],
+    content: `
+Schladming kennen viele vom Skifahren und vom Weltcup-Nachtslalom. Aber im Sommer ist die Region ein erstklassiges Wandergebiet – mit der Planai, Hochwurzen, Reiteralm und dem Dachsteinmassiv.
+
+## Einsteiger & Familien
+Die **Seilbahnen** (Planai, Hochwurzen) bringen dich bequem nach oben – von dort gemütliche Höhenwanderungen mit Panoramablick und Einkehr auf urigen Hütten. Ideal mit Kindern.
+
+## Die Schladminger Tauern
+Wer höher hinaus will: Im Süden locken die **Tauern-Seen** (z. B. die Giglachseen) auf Mehrstundentouren – glasklare Bergseen, einsame Pfade.
+
+## Hochalpin: Dachstein-Rundwanderwege
+Am Fuß des Dachsteins führen anspruchsvolle Touren entlang der Gletscherwelt – für Geübte mit Trittsicherheit.
+
+## Hütten-Tipp
+Die Region ist dicht mit bewirtschafteten Almen besetzt – Brettljause, Kaspressknödel und hausgemachter Kuchen sind nie weit. Viele Hütten haben auch Lager für Mehrtagestouren.
+
+## Praktische Infos
+- Sommercard: Mit vielen Übernachtungen sind Bergbahnen inkludiert
+- Anfahrt: A10 Tauernautobahn, Abfahrt Schladming
+- Ausrüstung: Feste Schuhe, Regenschutz, am Berg schnelle Wetterwechsel
+    `,
+    affiliateLinks: [
+      { label: 'Hotels in Schladming – booking.com', url: 'https://www.booking.com/city/at/schladming.de.html' },
+      { label: 'Wanderschuhe – Amazon', url: 'https://www.amazon.de/s?k=wanderschuhe+damen' },
+    ],
+  },
+  {
+    slug: 'gruener-see-tragoess',
+    title: 'Grüner See in Tragöß – der smaragdgrüne Naturschatz der Steiermark',
+    excerpt: 'Im Frühling verwandelt sich der Grüne See durch Schmelzwasser in ein türkises Naturwunder. Was du über den berühmtesten Bergsee der Steiermark wissen musst.',
+    date: '2026-06-08',
+    category: 'Ausflug',
+    region: 'steiermark',
+    bestSeason: 'Mai–Juni',
+    highlights: ['Türkisgrünes Wasser durch Schmelzwasser', 'Tauchen verboten – strenger Naturschutz', 'Leichte Rundwanderung möglich'],
+    content: `
+Der Grüne See bei Tragöß im Hochschwabgebiet ist einer der fotogensten Orte Österreichs. Seinen Namen verdankt er der intensiv smaragdgrünen Farbe – und seine Besonderheit dem Wechsel der Jahreszeiten.
+
+## Das Naturphänomen
+Im Frühjahr lässt die Schneeschmelze den See stark ansteigen – Wiesen, Bänke und Wege stehen dann unter kristallklarem Wasser. Im Hochsommer zieht sich das Wasser wieder zurück. **Höchststand meist Mai/Juni** – die schönste Zeit für den Besuch.
+
+## Wichtig: strenger Schutz
+Der See steht unter Naturschutz. **Tauchen und Schwimmen sind verboten**, um das empfindliche Ökosystem zu schützen. Bitte unbedingt respektieren – Verstöße werden geahndet.
+
+## Rundweg
+Ein leichter Spazierweg führt um den See – familientauglich, knapp eine Stunde. Festes Schuhwerk reicht.
+
+## Praktische Tipps
+- **Früh kommen:** Der See ist sehr beliebt, Parkplätze füllen sich schnell
+- Parkgebühr vor Ort
+- Anfahrt: Von Bruck an der Mur ca. 30 Minuten
+- Kombinierbar mit einer Wanderung im Hochschwabgebiet
+    `,
+    affiliateLinks: [
+      { label: 'Unterkünfte in der Region Bruck/Tragöß – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Trag%C3%B6%C3%9F' },
+      { label: 'Kamera-Stativ für Naturfotos – Amazon', url: 'https://www.amazon.de/s?k=reisestativ+kamera' },
+    ],
+  },
+  {
+    slug: 'suedsteirische-weinstrasse',
+    title: 'Südsteirische Weinstraße – Toskana-Feeling und Buschenschank',
+    excerpt: 'Sanfte Rebhügel, Klapotetz und gemütliche Buschenschänke: Die Südsteirische Weinstraße ist eine der schönsten Genussregionen Österreichs. Route, Tipps und Einkehr.',
+    date: '2026-06-08',
+    category: 'Ausflug',
+    region: 'steiermark',
+    bestSeason: 'Mai–Oktober',
+    highlights: ['Hügellandschaft wie in der Toskana', 'Buschenschank: Wein & Brettljause', 'Sauvignon Blanc von Weltrang'],
+    content: `
+Die Südsteirische Weinstraße zwischen Ehrenhausen und Leutschach wird oft „steirische Toskana" genannt – zu Recht: sanfte Rebhügel, Zypressen-ähnliche Baumreihen und ein mildes Klima.
+
+## Was ist ein Buschenschank?
+Die typische Einkehr der Region: Weinbauern schenken ihren eigenen Wein aus und servieren kalte Brettljausen (Speck, Käse, Aufstriche, Kernöl-Eier). Bodenständig, günstig, herrlich. Der **Klapotetz** – ein hölzernes Windrad – ist das Wahrzeichen der Weingärten.
+
+## Die Weine
+Die Südsteiermark ist berühmt für **Sauvignon Blanc**, Welschriesling und Morillon (Chardonnay) – frische, mineralische Weißweine von internationalem Rang.
+
+## Die schönste Route
+Von Ehrenhausen über die Kernölhügel nach Gamlitz und Leutschach. Viele Aussichtspunkte, Weingüter mit Verkostung und Buschenschänke säumen den Weg. Auch per Rad oder zu Fuß (Weinwanderwege) erlebbar.
+
+## Wichtig
+- **Nicht selbst fahren nach der Verkostung** – Fahrer bestimmen oder Taxi/Shuttle nutzen
+- Buschenschänke haben wechselnde Öffnungstage („Ausg'steckt is") – vorab prüfen
+- Hochsaison Herbst (Weinlese, Sturm-Zeit) – früh Tisch reservieren
+
+## Praktische Infos
+- Anfahrt: Von Graz ca. 45 Minuten
+- Beste Zeit: Spätsommer/Herbst für Weinlese-Stimmung
+    `,
+    affiliateLinks: [
+      { label: 'Weingüter & Touren Südsteiermark – GetYourGuide', url: 'https://www.getyourguide.de/s/?q=S%C3%BCdsteiermark' },
+      { label: 'Hotels an der Weinstraße – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Gamlitz' },
+    ],
+  },
+  {
+    slug: 'riegersburg-burg-ausflug',
+    title: 'Riegersburg – mächtige Burg, Greifvögel und Schokolade',
+    excerpt: 'Die Riegersburg thront auf einem Vulkanfelsen über der Oststeiermark. Mit Greifvogelschau, Burgmuseum und der Zotter-Schokoladenmanufaktur nebenan ein perfekter Familientag.',
+    date: '2026-06-08',
+    category: 'Ausflug',
+    region: 'steiermark',
+    bestSeason: 'April–Oktober',
+    highlights: ['Imposante Burg auf erloschenem Vulkan', 'Greifvogelschau mit Adlern & Geiern', 'Zotter-Schokoladentheater nebenan'],
+    content: `
+Die Riegersburg ist eine der eindrucksvollsten Burgen Österreichs – sie thront auf einem 482 m hohen Vulkanfelsen und galt als uneinnehmbar. Heute ist sie ein lohnendes Ausflugsziel für die ganze Familie.
+
+## Die Burg
+Über mehrere Tore und Mauern geht es hinauf (oder bequem mit dem Lift). Oben warten Burgmuseum, das Hexenmuseum und ein atemberaubender Rundblick über die Oststeiermark.
+
+## Greifvogelschau
+Auf der Burg gibt es regelmäßige **Flugvorführungen** mit Adlern, Geiern und Falken – beeindruckend und lehrreich, besonders für Kinder. Vorführungszeiten vorab checken.
+
+## Zotter Schokolade
+Nur wenige Minuten entfernt liegt die berühmte **Zotter Schokoladenmanufaktur** mit „Schoko-Laden-Theater" und Verkostung von über 100 Sorten. Die perfekte Kombination zum Burgbesuch.
+
+## Praktische Infos
+- Anfahrt: Von Graz ca. 1 Stunde
+- Lift hinauf gegen Gebühr (sonst ~20 Min. Aufstieg)
+- Tipp: Burg + Greifvogelschau + Zotter ergeben einen vollen, abwechslungsreichen Tag
+    `,
+    affiliateLinks: [
+      { label: 'Oststeiermark: Ausflüge & Tickets – GetYourGuide', url: 'https://www.getyourguide.de/s/?q=Steiermark' },
+      { label: 'Unterkünfte Oststeiermark – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Riegersburg' },
+    ],
+  },
+  {
+    slug: 'therme-loipersdorf-steiermark',
+    title: 'Thermen in der Steiermark – Entspannung im Thermenland',
+    excerpt: 'Loipersdorf, Bad Waltersdorf, Bad Radkersburg: Die Oststeiermark ist Österreichs Thermenland. Welche Therme zu wem passt – Familie, Wellness oder Ruhe.',
+    date: '2026-06-08',
+    category: 'Ausflug',
+    region: 'steiermark',
+    bestSeason: 'Ganzjährig',
+    highlights: ['Eine der größten Thermen Europas (Loipersdorf)', 'Familien- und reine Ruhebereiche', 'Ideal als Schlechtwetter-Programm'],
+    content: `
+Die Oststeiermark ist das Thermenland Österreichs – warmes, mineralreiches Wasser aus der Tiefe, eingebettet in sanfte Hügel. Ideal das ganze Jahr, besonders aber als Schlechtwetter- oder Winterprogramm.
+
+## Therme Loipersdorf
+Eine der größten Thermen Europas, mit riesigem Familienbereich (Rutschen, Erlebnisbecken) und einem separaten, ruhigen Schaffelbad für Erwachsene. Für alle Zielgruppen.
+
+## Heiltherme Bad Waltersdorf
+Fokus auf Wellness, Ruhe und Gesundheit – elegantes Ambiente, weniger Trubel. Ideal für Paare und Erholungssuchende.
+
+## Parktherme Bad Radkersburg
+Großzügige Saunalandschaft und Thermalwasser, im hübschen Kurort Bad Radkersburg nahe der slowenischen Grenze.
+
+## Tipps
+- **Wochentags** ist es deutlich ruhiger als am Wochenende
+- Eigene Badeschlapfen & Bademantel sparen Leihgebühren
+- Viele Thermenhotels bieten direkten Bademantelgang in die Therme
+
+## Praktische Infos
+- Region: Oststeiermark, ca. 1 Std. von Graz
+- Kombinierbar mit Weinstraße & Riegersburg
+    `,
+    affiliateLinks: [
+      { label: 'Thermenhotels Steiermark – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Loipersdorf' },
+      { label: 'Bademantel & Wellness-Zubehör – Amazon', url: 'https://www.amazon.de/s?k=bademantel+unisex' },
+    ],
+  },
+  {
+    slug: 'gesaeuse-nationalpark-wandern',
+    title: 'Nationalpark Gesäuse – wildes Wandern zwischen Fels und Wasser',
+    excerpt: 'Der Nationalpark Gesäuse ist die wildeste Bergregion der Steiermark: tosende Enns, steile Kalkwände und einsame Steige. Für Wanderer, die echte Natur suchen.',
+    date: '2026-06-08',
+    category: 'Wandern',
+    region: 'steiermark',
+    difficulty: 'schwer',
+    bestSeason: 'Juni–September',
+    highlights: ['Wildester Nationalpark der Steiermark', 'Wildwasser der Enns & steile Kalkwände', 'Touren von leicht bis hochalpin'],
+    content: `
+„Im Gsäus" – so nennen Einheimische den Nationalpark Gesäuse, wo sich die Enns in Jahrtausenden durch das Kalkmassiv gefräst hat. Das Ergebnis: eine der dramatischsten Berglandschaften Österreichs.
+
+## Für Einsteiger
+Auch ohne hochalpine Erfahrung gibt es lohnende Wege: der **Wasserweg Johnsbach** oder Spaziergänge entlang der Enns zeigen die Wildnis aus sicherer Distanz. Familientauglich.
+
+## Für Geübte
+Die Gipfel des Gesäuses (Hochtor, Planspitze) sind ernste, hochalpine Ziele mit Klettersteig-Charakter – nur für erfahrene, trittsichere Bergsteiger mit passender Ausrüstung.
+
+## Wildwasser
+Die Enns ist ein bekanntes **Rafting- und Kajakrevier**. Geführte Rafting-Touren sind ein Highlight für Abenteuerlustige.
+
+## Wichtig
+- Wetter im Gebirge schlägt schnell um – früh starten
+- Auf markierten Wegen bleiben (Naturschutz + Sicherheit)
+- Schwierigkeitsgrade ernst nehmen: viele Gesäuse-Touren sind anspruchsvoll
+
+## Praktische Infos
+- Nationalpark-Pavillon in Gstatterboden mit Infos
+- Anfahrt: Von Liezen ca. 30 Minuten
+- Ausrüstung: Bergschuhe, Regenschutz, bei Gipfeln Helm/Klettersteigset
+    `,
+    affiliateLinks: [
+      { label: 'Rafting & Touren im Gesäuse – GetYourGuide', url: 'https://www.getyourguide.de/s/?q=Ges%C3%A4use' },
+      { label: 'Unterkünfte im Gesäuse – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Ges%C3%A4use' },
+    ],
+  },
+
+  // ─── BURGENLAND ──────────────────────────────────────────────────────────────
+  {
+    slug: 'neusiedler-see-baden-segeln',
+    title: 'Neusiedler See – Baden, Segeln und Surfen im Steppensee',
+    excerpt: 'Der Neusiedler See ist Mitteleuropas größter Steppensee: flach, warm und windsicher. Perfekt für Familien, Segler und Surfer. Die besten Strandbäder und Spots.',
+    date: '2026-06-09',
+    category: 'Baden',
+    region: 'burgenland',
+    bestSeason: 'Mai–September',
+    highlights: ['Maximal ~1,8 m tief – ideal für Kinder', 'Verlässlicher Wind: Top für Segeln & Surfen', 'UNESCO-Welterbe & Naturparadies'],
+    content: `
+Der Neusiedler See ist einzigartig: ein flacher Steppensee, der im Schnitt nur rund 1 Meter tief ist. Das Wasser erwärmt sich dadurch schnell – und der beständige Wind macht ihn zum Eldorado für Segler und Surfer.
+
+## Baden mit Kindern
+Durch die geringe Tiefe ist der See **extrem kinderfreundlich** – man kann weit hinauslaufen. Strandbäder gibt es u. a. in Podersdorf (der bekannteste Badeort), Neusiedl und Illmitz.
+
+## Segeln & Surfen
+Der verlässliche Wind macht den See zu einem der besten **Segel- und Windsurf-Reviere** Österreichs. Schulen und Verleih gibt es in Podersdorf und Neusiedl.
+
+## Podersdorf am See
+Der einzige Ort direkt am offenen Wasser (sonst umgibt ein breiter Schilfgürtel den See). Leuchtturm, Strandbad, Promenade – das touristische Zentrum.
+
+## Besonderheit Schilfgürtel
+Der größte Teil des Ufers ist von kilometerbreitem Schilf gesäumt – ein einzigartiger Lebensraum und UNESCO-Welterbe. Zum Wasser kommt man meist über angelegte Kanäle und Stege.
+
+## Praktische Infos
+- Anfahrt: Von Wien ca. 1 Stunde
+- Fahrrad ist das ideale Fortbewegungsmittel (flach, Radweg um den See)
+- Sonnenschutz nicht vergessen – wenig Schatten in der Steppe
+    `,
+    affiliateLinks: [
+      { label: 'Hotels in Podersdorf am See – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Podersdorf+am+See' },
+      { label: 'Sonnenschutz & Strandzubehör – Amazon', url: 'https://www.amazon.de/s?k=sonnenschirm+strand' },
+    ],
+  },
+  {
+    slug: 'seewinkel-nationalpark-voegel',
+    title: 'Nationalpark Neusiedler See-Seewinkel – Vogelparadies der Pannonischen Steppe',
+    excerpt: 'Salzlacken, Schilf und über 350 Vogelarten: Der Seewinkel ist eines der bedeutendsten Vogelgebiete Europas. Wo und wann man Reiher, Säbelschnäbler & Co. beobachtet.',
+    date: '2026-06-09',
+    category: 'Ausflug',
+    region: 'burgenland',
+    bestSeason: 'April–Mai, September–Oktober',
+    highlights: ['Über 350 Vogelarten', 'Einzigartige Salzlacken-Landschaft', 'Beobachtungstürme & geführte Touren'],
+    content: `
+Der Seewinkel östlich des Neusiedler Sees ist eine flache Steppenlandschaft mit zahllosen flachen **Salzlacken** – ein Lebensraum, den es so sonst nirgends in Mitteleuropa gibt. Für Vogelbeobachter ist er ein Mekka.
+
+## Die Vogelwelt
+Über 350 Arten wurden hier gezählt: Säbelschnäbler, Löffler, Silberreiher, Seeadler, Großtrappen und unzählige Zugvögel. Im Frühjahr und Herbst ziehen Zehntausende durch.
+
+## Beste Zeit
+**Frühling (April/Mai)** und **Herbst (September/Oktober)** zur Zugzeit. Früh morgens und in der Abenddämmerung ist die Aktivität am höchsten.
+
+## So beobachtest du
+- **Beobachtungstürme** und -hütten verteilen sich über das Gebiet
+- **Fernglas oder Spektiv** ist Pflicht
+- Geführte Touren mit Rangern (Nationalpark-Infozentrum Illmitz) lohnen sich enorm
+
+## Verhaltensregeln
+Auf Wegen bleiben, leise sein, Abstand halten – die Tiere sind störungsempfindlich. Hunde an der Leine bzw. besser zu Hause lassen.
+
+## Praktische Infos
+- Infozentrum: Nationalpark-Haus in Illmitz
+- Anfahrt: Von Wien ca. 1,5 Stunden
+- Mit dem Rad gut erkundbar (flach)
+    `,
+    affiliateLinks: [
+      { label: 'Fernglas für Vogelbeobachtung – Amazon', url: 'https://www.amazon.de/s?k=fernglas+10x42+vogelbeobachtung' },
+      { label: 'Unterkünfte in Illmitz – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Illmitz' },
+    ],
+  },
+  {
+    slug: 'rust-stoerche-altstadt',
+    title: 'Rust am Neusiedler See – Storchenstadt und Weinjuwel',
+    excerpt: 'Die kleinste Freistadt Österreichs ist berühmt für die Störche auf ihren Kaminen und exzellenten Wein. Ein Bummel durch Rust gehört zu jedem Burgenland-Besuch.',
+    date: '2026-06-09',
+    category: 'Ausflug',
+    region: 'burgenland',
+    bestSeason: 'April–September',
+    highlights: ['Störche nisten auf den Dächern', 'Malerische Barock-Altstadt', 'Berühmter Ruster Ausbruch (Süßwein)'],
+    content: `
+Rust ist ein Bilderbuchstädtchen am Westufer des Neusiedler Sees – und vor allem für seine **Störche** bekannt, die jeden Sommer auf den Kaminen der Altstadthäuser nisten.
+
+## Die Störche
+Von Frühling bis Spätsommer brüten zahlreiche Storchenpaare mitten in der Stadt. Man kann sie direkt von der Gasse aus auf ihren Horsten beobachten – ein einzigartiges Schauspiel. Beste Zeit: April bis August.
+
+## Die Altstadt
+Bunte Barock- und Renaissancehäuser, der Rathausplatz und die Fischerkirche machen Rust zu einem der schönsten Ortsbilder des Burgenlands. Alles in wenigen Minuten zu Fuß.
+
+## Wein
+Rust ist eine Weinhochburg – berühmt für den **Ruster Ausbruch**, einen edelsüßen Wein von Weltrang. In den Weingütern und Vinotheken kann man verkosten.
+
+## Zum See
+Über einen schmalen Damm durch den Schilfgürtel gelangt man zum Seebad Rust mit Bootshafen.
+
+## Praktische Infos
+- Anfahrt: Von Eisenstadt ca. 20 Minuten
+- Kombinierbar mit einer Radtour um den See
+- Tipp: Abends ist das Storchengeklapper am schönsten
+    `,
+    affiliateLinks: [
+      { label: 'Hotels in Rust – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Rust+Burgenland' },
+      { label: 'Weinverkostungen im Burgenland – GetYourGuide', url: 'https://www.getyourguide.de/s/?q=Burgenland' },
+    ],
+  },
+  {
+    slug: 'eisenstadt-schloss-esterhazy',
+    title: 'Eisenstadt – Schloss Esterházy und auf Haydns Spuren',
+    excerpt: 'Die burgenländische Landeshauptstadt vereint barocke Pracht und Musikgeschichte. Schloss Esterházy, der Haydnsaal und das Bergkirchen-Mausoleum sind die Highlights.',
+    date: '2026-06-09',
+    category: 'Ausflug',
+    region: 'burgenland',
+    bestSeason: 'Ganzjährig',
+    highlights: ['Prunkvolles Schloss Esterházy', 'Haydnsaal mit weltbekannter Akustik', 'Kompakte, entspannte Landeshauptstadt'],
+    content: `
+Eisenstadt ist die kleinste Landeshauptstadt Österreichs – und gerade deshalb charmant: Die Highlights liegen kompakt beisammen und lassen sich in einem halben Tag entspannt erkunden.
+
+## Schloss Esterházy
+Das barocke Wahrzeichen der Stadt, einst Residenz der mächtigen Fürstenfamilie Esterházy. Prunkräume, wechselnde Ausstellungen und ein schöner Schlosspark.
+
+## Haydnsaal
+Im Schloss liegt der berühmte **Haydnsaal** – einer der akustisch besten Konzertsäle der Welt. Joseph Haydn wirkte hier fast 40 Jahre als Hofkapellmeister. Bei einem Konzert ein unvergessliches Erlebnis.
+
+## Bergkirche & Haydn-Mausoleum
+In der Bergkirche befindet sich das Mausoleum Haydns sowie ein begehbarer Kalvarienberg – eine architektonische Besonderheit.
+
+## Kulinarik & Wein
+Eisenstadt liegt am Fuß des Leithagebirges, einer feinen Weinregion. In der Fußgängerzone gibt's gemütliche Lokale und Vinotheken.
+
+## Praktische Infos
+- Anfahrt: Von Wien ca. 1 Stunde
+- Schloss-Tickets vor Ort oder online
+- Kombinierbar mit Rust und dem Neusiedler See
+    `,
+    affiliateLinks: [
+      { label: 'Hotels in Eisenstadt – booking.com', url: 'https://www.booking.com/city/at/eisenstadt.de.html' },
+      { label: 'Eisenstadt: Touren & Tickets – GetYourGuide', url: 'https://www.getyourguide.de/s/?q=Eisenstadt' },
+    ],
+  },
+  {
+    slug: 'burgenland-wein-blaufraenkisch',
+    title: 'Wein im Burgenland – Blaufränkischland und Rotwein-Hochburg',
+    excerpt: 'Das Burgenland ist Österreichs wärmste Weinregion und die Heimat großer Rotweine. Vom Blaufränkisch im Mittelburgenland bis zum edelsüßen Wein am See – ein Überblick.',
+    date: '2026-06-09',
+    category: 'Ausflug',
+    region: 'burgenland',
+    bestSeason: 'Mai–Oktober',
+    highlights: ['Österreichs Rotwein-Hochburg', 'Blaufränkisch von internationalem Rang', 'Viele Weingüter mit Verkostung'],
+    content: `
+Das pannonische Klima – heiße Sommer, viele Sonnenstunden – macht das Burgenland zur wärmsten und für Rotwein besten Weinregion Österreichs.
+
+## Die Weinregionen
+- **Mittelburgenland („Blaufränkischland"):** Heimat des kräftigen Blaufränkisch, der Leitsorte des Burgenlands
+- **Neusiedlersee:** Rotweine (Zweigelt) und weltberühmte edelsüße Weine (Beerenauslesen, Trockenbeerenauslesen)
+- **Leithaberg:** elegante Weiß- und Rotweine am Fuß des Leithagebirges
+
+## Verkostung & Buschenschank
+Unzählige Weingüter bieten Verkostungen an, viele mit Ab-Hof-Verkauf. In Buschenschänken gibt's Wein und regionale Jause in gemütlicher Atmosphäre.
+
+## Genuss-Tipp
+Die Region verbindet Wein mit exzellenter Kulinarik – Gänsebraten zur Martinizeit (November) ist eine burgenländische Institution.
+
+## Wichtig
+- **Nie selbst fahren** nach der Verkostung – Fahrer bestimmen oder Shuttle nutzen
+- Öffnungszeiten der Weingüter/Buschenschänke vorab prüfen
+
+## Praktische Infos
+- Basis: Rust, Mörbisch oder Neusiedl als Ausgangspunkt
+- Ideal mit Radtour oder Seebesuch zu kombinieren
+    `,
+    affiliateLinks: [
+      { label: 'Weingüter & Verkostungen Burgenland – GetYourGuide', url: 'https://www.getyourguide.de/s/?q=Burgenland%20Wein' },
+      { label: 'Unterkünfte am Neusiedler See – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Neusiedler+See' },
+    ],
+  },
+  {
+    slug: 'neusiedler-see-radweg',
+    title: 'Neusiedler See Radweg – die flache Genussrunde um den Steppensee',
+    excerpt: 'Rund 125 km flach um den Neusiedler See – durch Österreich und Ungarn, vorbei an Weingärten, Schilf und Storchendörfern. Einer der beliebtesten Radwege Europas.',
+    date: '2026-06-09',
+    category: 'Ausflug',
+    region: 'burgenland',
+    bestSeason: 'April–Oktober',
+    highlights: ['Komplett flach – ideal für Familien', 'Grenzüberschreitend AT/Ungarn', 'Per Fähre abkürzbar'],
+    content: `
+Der Neusiedler See Radweg ist ein Klassiker: Die komplette Seeumrundung ist rund 125 km lang, führt durch Österreich und Ungarn – und ist dabei **fast vollkommen flach**. Perfekt für entspannte Genussradler und Familien.
+
+## Die Strecke
+Der Weg verläuft größtenteils abseits des Autoverkehrs durch Weingärten, Schilfgürtel, Naturschutzgebiete und charmante Dörfer wie Rust, Mörbisch, Podersdorf und (auf ungarischer Seite) Fertőrákos.
+
+## Flexibel dank Fähre
+Wer nicht die ganze Runde fahren will: Eine **Fähre zwischen Mörbisch und Illmitz** (saisonal) kürzt die Runde ab – ideal für eine Halbtagestour.
+
+## Etappen-Tipp
+- Einsteiger: Teilstück Neusiedl–Podersdorf (Ostufer, viel direkter Seekontakt)
+- Genießer: Westufer mit Rust & Mörbisch (Wein & Störche)
+
+## Praktische Infos
+- E-Bike-Verleih in fast allen Orten rund um den See
+- Ausweis mitnehmen (Grenzübertritt nach Ungarn)
+- Einkehr: Buschenschänke und Heurige entlang der Strecke
+- Wind beachten: Gegenwind kann anstrengend sein – Richtung clever wählen
+    `,
+    affiliateLinks: [
+      { label: 'Fahrradtaschen & Zubehör – Amazon', url: 'https://www.amazon.de/s?k=fahrradtasche+gep%C3%A4cktr%C3%A4ger' },
+      { label: 'Unterkünfte am Neusiedler See – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Neusiedler+See' },
+    ],
+  },
+  {
+    slug: 'burg-forchtenstein-ausflug',
+    title: 'Burg Forchtenstein – die Schatzkammer der Esterházy',
+    excerpt: 'Eine der best erhaltenen Burgen Österreichs, nie erobert: Burg Forchtenstein beherbergt eine der größten privaten Waffen- und Kunstsammlungen Europas. Ein Highlight für Familien.',
+    date: '2026-06-09',
+    category: 'Ausflug',
+    region: 'burgenland',
+    bestSeason: 'April–Oktober',
+    highlights: ['Nie erobert – original erhalten', 'Riesige Waffen- & Schatzkammer', 'Spannend für Kinder & Erwachsene'],
+    content: `
+Burg Forchtenstein thront auf einem Felssporn am Rand des Rosaliengebirges im Nordburgenland. Sie wurde nie erobert – und beherbergt deshalb original erhaltene Sammlungen der Fürsten Esterházy.
+
+## Die Schatzkammer
+Die fürstliche Schatzkammer zählt zu den bedeutendsten privaten Kunstsammlungen Europas: Prunkuhren, exotische Kuriositäten, Gold- und Silberarbeiten. Nur im Rahmen von Führungen zugänglich.
+
+## Die Waffensammlung
+Eine der größten privaten Rüstkammern – Ritterrüstungen, historische Waffen, Kanonen. Für Kinder besonders spannend.
+
+## Der tiefe Brunnen
+Ein 142 m tiefer Brunnen, einst von Kriegsgefangenen in den Fels geschlagen – beeindruckendes Zeugnis der Burggeschichte.
+
+## Familienprogramm
+Im Sommer gibt es oft Ritterfeste und Kinderführungen – ein Erlebnis für die ganze Familie.
+
+## Praktische Infos
+- Anfahrt: Von Wiener Neustadt ca. 20 Minuten, von Eisenstadt ca. 30 Minuten
+- Führungen mit Anmeldung empfohlen
+- Festes Schuhwerk für die Burganlage
+    `,
+    affiliateLinks: [
+      { label: 'Unterkünfte im Nordburgenland – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Forchtenstein' },
+      { label: 'Burgen & Ausflüge Burgenland – GetYourGuide', url: 'https://www.getyourguide.de/s/?q=Burgenland' },
+    ],
+  },
+  {
+    slug: 'therme-burgenland-lutzmannsburg',
+    title: 'Thermen im Burgenland – von der Familientherme bis zur Ruheoase',
+    excerpt: 'St. Martins Therme, Sonnentherme Lutzmannsburg und mehr: Das Burgenland hat Thermen für jeden – ob Familienspaß mit Riesenrutschen oder Wellness in der Lagune.',
+    date: '2026-06-09',
+    category: 'Ausflug',
+    region: 'burgenland',
+    bestSeason: 'Ganzjährig',
+    highlights: ['Europas familienfreundlichste Therme (Lutzmannsburg)', 'St. Martins Therme mit Naturbadesee', 'Ideal bei Regen & im Winter'],
+    content: `
+Das pannonische Klima und Thermalquellen machen das Burgenland zu einer Wohlfühlregion. Die Thermen sind ganzjährig ein verlässliches Ziel – ob Familienurlaub oder Wellness-Wochenende.
+
+## Sonnentherme Lutzmannsburg
+Gilt als eine der **familienfreundlichsten Thermen Europas** – mit langen Rutschen, eigenem Babybereich und Kleinkind-Welt. Perfekt für Familien mit kleinen Kindern.
+
+## St. Martins Therme & Lodge (Frauenkirchen)
+Eine Besonderheit: Therme kombiniert mit einem **Naturbadesee** und geführten Touren in den angrenzenden Nationalpark. Wellness und Natur in einem.
+
+## Tipps
+- **Wochentags** ruhiger und günstiger als am Wochenende
+- Familien: Lutzmannsburg; Paare/Ruhe: St. Martins oder Erwachsenenbereiche
+- Thermenhotels mit direktem Zugang sparen Anfahrt
+
+## Praktische Infos
+- Region: Mittel- und Nordburgenland
+- Anfahrt: Von Wien je nach Therme 1–1,5 Stunden
+- Gut mit See- und Weinregion kombinierbar
+    `,
+    affiliateLinks: [
+      { label: 'Thermenhotels Burgenland – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Lutzmannsburg' },
+      { label: 'Badezubehör für Kinder – Amazon', url: 'https://www.amazon.de/s?k=schwimmhilfe+kinder' },
+    ],
+  },
 ];
 
 export function getPostBySlug(slug: string): Post | undefined {
