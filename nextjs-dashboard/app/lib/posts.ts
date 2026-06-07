@@ -679,6 +679,7 @@ Die Straße ist mautpflichtig (Tagesticket ca. 40 €/Auto). Geöffnet von Mai b
 Von Villach ca. 1,5 Stunden, von Klagenfurt ca. 2 Stunden über Heiligenblut.
     `,
     affiliateLinks: [
+      { label: 'Großglockner-Touren & Tickets – GetYourGuide', url: 'https://www.getyourguide.de/s/?q=Gro%C3%9Fglockner' },
       { label: 'Hotels in Heiligenblut – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Heiligenblut+K%C3%A4rnten' },
       { label: 'Fernglas für Bergtouren – Amazon', url: 'https://www.amazon.de/s?k=fernglas+wandern' },
     ],
@@ -844,6 +845,7 @@ Jedes der 14 Tore hatte eine eigene Verteidigungsfunktion. Man wandert buchstäb
 Vom Hochosterwitz weiter nach Gurk zum romanischen Dom (12. Jahrhundert) – eines der bedeutendsten Kunstdenkmäler Österreichs, mit einzigartiger Krypta. Der Umweg beträgt nur 20 km. Ein perfekter Kärnten-Kulturtag.
     `,
     affiliateLinks: [
+      { label: 'Burg Hochosterwitz – Tickets & Touren auf GetYourGuide', url: 'https://www.getyourguide.de/s/?q=Hochosterwitz' },
       { label: 'Hotels in der Region St. Veit – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=St.+Veit+an+der+Glan' },
     ],
   },
@@ -889,6 +891,7 @@ Bahn: Von Wien Hauptbahnhof ca. 3,5 Stunden. Von Graz ca. 2,5 Stunden (Südbahn)
 Parken: Tiefgarage Heiligengeistplatz, 24/7 geöffnet, günstiger als Innenstadtparkplätze.
     `,
     affiliateLinks: [
+      { label: 'Klagenfurt: Stadtführungen, Minimundus & Tickets – GetYourGuide', url: 'https://www.getyourguide.de/s/?q=Klagenfurt%20am%20W%C3%B6rthersee' },
       { label: 'Hotels in Klagenfurt – booking.com', url: 'https://www.booking.com/city/at/klagenfurt.de.html' },
     ],
   },
@@ -1173,6 +1176,7 @@ Das Loretto-Strandbad liegt 10 Gehminuten vom Ortskern. Sauberes Wasser, ordentl
 - Tipp: Zimmer in Krumpendorf oder Pörtschach buchen – 40% günstiger, Bustransfer möglich
     `,
     affiliateLinks: [
+      { label: 'Erlebnisse rund um Velden & den Wörthersee – GetYourGuide', url: 'https://www.getyourguide.de/s/?q=Velden%20am%20W%C3%B6rthersee' },
       { label: 'Hotels in Velden – booking.com', url: 'https://www.booking.com/city/at/velden-am-worthersee.de.html' },
     ],
   },
@@ -1565,6 +1569,7 @@ Hinfahrt per Schiff, Rückfahrt am Seeradweg – oder umgekehrt. 17 km Radweg am
 - Kinder unter 6 Jahren: kostenlos
     `,
     affiliateLinks: [
+      { label: 'Bootstouren & Schifffahrt am Wörthersee – GetYourGuide', url: 'https://www.getyourguide.de/s/?q=W%C3%B6rthersee%20Schifffahrt' },
       { label: 'Hotels am Wörthersee – booking.com', url: 'https://www.booking.com/region/at/worthersee.de.html' },
     ],
   },
