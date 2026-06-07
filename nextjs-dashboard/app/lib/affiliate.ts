@@ -68,27 +68,36 @@ export function namedCloak(id: keyof typeof NAMED_LINKS): string {
 
 // Buchbare Ausflüge / Aktivitäten / Tickets (GetYourGuide) ─────────────────────
 // Werden in einer "Erlebnisse & Tickets"-Box auf Ausflug-/Wander-Artikeln gezeigt.
+// Pro Region eigene Vorschläge – leicht um weitere Regionen/Länder (DE, CH) erweiterbar.
 export type Excursion = { label: string; note: string; url: string };
 
-export const EXCURSIONS: Excursion[] = [
-  {
-    label: 'Aktivitäten in ganz Kärnten',
-    note: 'Touren, Tickets & Erlebnisse im Überblick',
-    url: 'https://www.getyourguide.de/s/?q=K%C3%A4rnten',
-  },
-  {
-    label: 'Klagenfurt & Wörthersee',
-    note: 'Stadtführungen, Schifffahrt, Minimundus',
-    url: 'https://www.getyourguide.de/s/?q=Klagenfurt%20am%20W%C3%B6rthersee',
-  },
-  {
-    label: 'Großglockner & Hochalpenstraße',
-    note: 'Geführte Touren & Tagesausflüge',
-    url: 'https://www.getyourguide.de/s/?q=Gro%C3%9Fglockner',
-  },
-  {
-    label: 'Villach & Faaker See',
-    note: 'Erlebnisse rund um Villach',
-    url: 'https://www.getyourguide.de/s/?q=Villach',
-  },
-];
+const gyg = (q: string) => `https://www.getyourguide.de/s/?q=${encodeURIComponent(q)}`;
+
+export const EXCURSIONS_BY_REGION: Record<string, Excursion[]> = {
+  kaernten: [
+    { label: 'Aktivitäten in ganz Kärnten', note: 'Touren, Tickets & Erlebnisse', url: gyg('Kärnten') },
+    { label: 'Klagenfurt & Wörthersee',     note: 'Stadtführungen, Schifffahrt, Minimundus', url: gyg('Klagenfurt am Wörthersee') },
+    { label: 'Großglockner & Hochalpenstraße', note: 'Geführte Touren & Tagesausflüge', url: gyg('Großglockner') },
+    { label: 'Villach & Faaker See',         note: 'Erlebnisse rund um Villach', url: gyg('Villach') },
+  ],
+  steiermark: [
+    { label: 'Aktivitäten in der Steiermark', note: 'Touren, Tickets & Erlebnisse', url: gyg('Steiermark') },
+    { label: 'Graz',                          note: 'Stadtführungen & Tickets', url: gyg('Graz') },
+    { label: 'Dachstein & Schladming',        note: 'Bergbahnen, Gletscher & Touren', url: gyg('Dachstein') },
+    { label: 'Südsteiermark & Wein',          note: 'Weinerlebnisse & Verkostungen', url: gyg('Südsteiermark') },
+  ],
+  burgenland: [
+    { label: 'Aktivitäten im Burgenland', note: 'Touren, Tickets & Erlebnisse', url: gyg('Burgenland') },
+    { label: 'Neusiedler See',            note: 'Wassersport, Bootstouren & mehr', url: gyg('Neusiedler See') },
+    { label: 'Eisenstadt',                note: 'Schloss Esterházy & Stadtführungen', url: gyg('Eisenstadt') },
+    { label: 'Burgenland Wein',           note: 'Weinverkostungen & Genusstouren', url: gyg('Burgenland Wein') },
+  ],
+};
+
+/** Liefert region-spezifische Ausflugslinks (Fallback: Kärnten). */
+export function excursionsFor(region: string): Excursion[] {
+  return EXCURSIONS_BY_REGION[region] ?? EXCURSIONS_BY_REGION.kaernten;
+}
+
+// Rückwärtskompatibel
+export const EXCURSIONS = EXCURSIONS_BY_REGION.kaernten;

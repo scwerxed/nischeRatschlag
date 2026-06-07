@@ -3,7 +3,7 @@ import { posts, getPostBySlug } from '@/app/lib/posts';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import type { Metadata } from 'next';
-import { cloak, EXCURSIONS } from '@/app/lib/affiliate';
+import { cloak, excursionsFor } from '@/app/lib/affiliate';
 import TrailMapWrapper from '@/app/ui/trail-map-wrapper';
 import ShareButtons from '@/app/ui/share-buttons';
 import { readingTime, relatedPosts } from '@/app/lib/blog-utils';
@@ -306,9 +306,9 @@ export default async function BlogPostPage({ params }: Props) {
           {(post.category === 'Ausflug' || post.category === 'Wandern') && (
             <div className="border border-gray-200 p-5" style={{ borderRadius: 8 }}>
               <p className="eyebrow mb-1">Erlebnisse &amp; Tickets</p>
-              <h3 className="font-serif text-base font-bold text-gray-900 mb-3">Ausflüge buchen</h3>
+              <h3 className="font-serif text-base font-bold text-gray-900 mb-3">Ausflüge in {regionLabel} buchen</h3>
               <div className="space-y-2.5">
-                {EXCURSIONS.map((ex) => (
+                {excursionsFor(post.region).map((ex) => (
                   <a key={ex.url} href={cloak(ex.url)} target="_blank" rel="noopener noreferrer sponsored"
                     className="group block border border-gray-200 px-3 py-2.5 hover:border-green-400 hover:bg-green-50 transition-colors" style={{ borderRadius: 6 }}>
                     <span className="block text-sm font-semibold text-gray-900 group-hover:text-green-700 leading-snug">{ex.label} →</span>
