@@ -14,7 +14,9 @@ export default function TrailMapClient({ trails }: { trails: Trail[] }) {
   const mapRef       = useRef<any>(null);
   const lineRef      = useRef<any>(null);
   const markersRef   = useRef<any[]>([]);
+  const reqIdRef     = useRef(0);
   const [selected, setSelected] = useState(0);
+  const [loading, setLoading]   = useState(false);
 
   // init map once
   useEffect(() => {
@@ -55,17 +57,50 @@ export default function TrailMapClient({ trails }: { trails: Trail[] }) {
     })();
   }, [selected]); // eslint-disable-line react-hooks/exhaustive-deps
 
-  function drawTrail(L: any, map: any, trail: Trail) {
+  /**
+   * Zeichnet eine Route. Holt die echte Wegführung von BRouter (folgt Wanderwegen).
+   * Fällt auf die direkte Verbindung der Wegpunkte zurück, falls das Routing scheitert.
+   */
+  async function drawTrail(L: any, map: any, trail: Trail) {
+    const myReq = ++reqIdRef.current;
+
     if (lineRef.current) { map.removeLayer(lineRef.current); lineRef.current = null; }
     markersRef.current.forEach((m) => map.removeLayer(m));
     markersRef.current = [];
 
     const color = DIFF[trail.difficulty].color;
-    lineRef.current = L.polyline(trail.coords, { color, weight: 5, opacity: 0.9 }).addTo(map);
 
-    const start = trail.coords[0];
-    const end = trail.coords[trail.coords.length - 1];
-    const isLoop = start[0] === end[0] && start[1] === end[1];
+    // Sofort die Luftlinie zeichnen (damit nie eine leere Karte zu sehen ist)
+    let latlngs: [number, number][] = trail.coords;
+    lineRef.current = L.polyline(latlngs, { color, weight: 4, opacity: 0.45, dashArray: '6 6' }).addTo(map);
+    map.fitBounds(lineRef.current.getBounds(), { padding: [30, 30] });
+
+    // Echte Wegführung von BRouter nachladen
+    setLoading(true);
+    try {
+      const lonlats = trail.coords.map(([lat, lng]) => `${lng.toFixed(6)},${lat.toFixed(6)}`).join('|');
+      const res = await fetch(`/api/brouter?lonlats=${encodeURIComponent(lonlats)}`);
+      if (res.ok) {
+        const data = await res.json();
+        const coords: number[][] = data?.features?.[0]?.geometry?.coordinates ?? [];
+        if (coords.length > 1) latlngs = coords.map((c) => [c[1], c[0]]);
+      }
+    } catch {
+      // Fallback bleibt die Luftlinie
+    }
+
+    if (myReq !== reqIdRef.current) return; // veraltete Anfrage – Nutzer hat umgeschaltet
+    setLoading(false);
+
+    // Luftlinie durch die echte (oder Fallback-)Route ersetzen
+    if (lineRef.current) { map.removeLayer(lineRef.current); }
+    lineRef.current = L.polyline(latlngs, { color, weight: 5, opacity: 0.9 }).addTo(map);
+
+    const start = latlngs[0];
+    const end = latlngs[latlngs.length - 1];
+    const oStart = trail.coords[0];
+    const oEnd = trail.coords[trail.coords.length - 1];
+    const isLoop = oStart[0] === oEnd[0] && oStart[1] === oEnd[1];
 
     const dot = (c: string, label: string) =>
       L.divIcon({
@@ -105,7 +140,15 @@ export default function TrailMapClient({ trails }: { trails: Trail[] }) {
       )}
 
       {/* Map */}
-      <div ref={containerRef} style={{ height: 380 }} />
+      <div className="relative">
+        <div ref={containerRef} style={{ height: 380 }} />
+        {loading && (
+          <div className="absolute top-2 left-2 z-[1000] bg-white/90 border border-gray-200 px-2.5 py-1 text-xs text-gray-600 flex items-center gap-1.5" style={{ borderRadius: 3 }}>
+            <span className="w-2.5 h-2.5 border border-gray-300 border-t-green-600 rounded-full animate-spin" />
+            Wegverlauf wird geladen…
+          </div>
+        )}
+      </div>
 
       {/* Stats-Leiste */}
       <div className="flex flex-wrap items-center gap-x-5 gap-y-1.5 px-4 py-3 bg-white border-t border-gray-200">
