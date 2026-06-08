@@ -2362,6 +2362,425 @@ Eine Besonderheit: Therme kombiniert mit einem **Naturbadesee** und geführten T
       { label: 'Badezubehör für Kinder – Amazon', url: 'https://www.amazon.de/s?k=schwimmhilfe+kinder' },
     ],
   },
+
+  // ─── STEIERMARK (Vertiefung) ─────────────────────────────────────────────────
+  {
+    slug: 'murradweg-steiermark',
+    title: 'Murradweg – mit dem Rad quer durch die Steiermark',
+    excerpt: 'Der Murradweg (R2) folgt der Mur von den Tauern bis ins Grazer Becken: rund 365 km, überwiegend flach und gut beschildert. Eine der beliebtesten Radrouten Österreichs.',
+    date: '2026-06-10',
+    category: 'Ausflug',
+    region: 'steiermark',
+    bestSeason: 'April–Oktober',
+    highlights: ['365 km von den Bergen bis Graz', 'Überwiegend flach & familientauglich', 'Bahn-Rückreise einfach möglich'],
+    content: `
+Der Murradweg ist ein Klassiker unter Österreichs Fernradwegen. Er begleitet die Mur vom Lungau über die Obersteiermark bis nach Graz und weiter an die slowenische Grenze.
+
+## Die Strecke
+Vom alpinen Oberlauf geht es stetig sanft bergab durch das Murtal – an Schladming und Murau vorbei, durch Wälder und Auen bis ins Grazer Becken. Dadurch ist der Weg überwiegend flach und auch für Genussradler und Familien gut machbar.
+
+## Etappen-Tipp
+- **Einsteiger:** Murau–Unzmarkt, gemütlich und landschaftlich schön
+- **Kultur:** Endspurt nach Graz mit der UNESCO-Altstadt als Ziel
+- Rückreise: Die Bahn fährt großteils parallel – Abkürzen jederzeit möglich
+
+## Praktische Infos
+- E-Bike-Verleih in vielen Orten entlang der Route
+- Gute Beschilderung (R2)
+- Einkehr: Gasthäuser und Buschenschänke am Weg
+    `,
+    affiliateLinks: [
+      { label: 'Fahrradtaschen & Zubehör – Amazon', url: 'https://www.amazon.de/s?k=fahrradtasche+gep%C3%A4cktr%C3%A4ger' },
+      { label: 'Unterkünfte im Murtal – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Murau' },
+    ],
+  },
+  {
+    slug: 'schoeckl-graz-hausberg',
+    title: 'Schöckl – der Hausberg von Graz',
+    excerpt: 'Der Schöckl ist Graz’ Hausberg: Wandern, Seilbahn, Hängebrücke und ein Panoramablick über die ganze Steiermark. Ideal für einen Halbtagesausflug aus der Stadt.',
+    date: '2026-06-10',
+    category: 'Wandern',
+    region: 'steiermark',
+    difficulty: 'mittel',
+    bestSeason: 'April–Oktober',
+    highlights: ['Panorama über die ganze Steiermark', 'Seilbahn oder Aufstieg zu Fuß', 'Hängebrücke & Motorikpark am Gipfel'],
+    content: `
+Der 1.445 m hohe Schöckl ist der Hausberg von Graz – an klaren Tagen reicht der Blick über das Grazer Becken bis zu den Gipfeln der Tauern.
+
+## Hinauf
+Bequem per **Seilbahn** in wenigen Minuten, oder zu Fuß über mehrere Wanderwege (1,5–2 Std., mittel). Eine beliebte Kombination: hinauf wandern, hinunter mit der Bahn.
+
+## Oben am Gipfel
+- Panorama-Rundblick über die Steiermark
+- **Hängebrücke** und Aussichtsplattform
+- Gipfelhaus zum Einkehren
+- Im Sommer Motorikpark & Wanderwege
+
+## Praktische Infos
+- Anfahrt: Von Graz ca. 25 Minuten nach St. Radegund
+- Festes Schuhwerk für den Aufstieg
+- Bei guter Fernsicht besonders lohnend – Wetter checken
+    `,
+    affiliateLinks: [
+      { label: 'Graz: Touren & Tickets – GetYourGuide', url: 'https://www.getyourguide.de/s/?q=Graz' },
+      { label: 'Wanderschuhe – Amazon', url: 'https://www.amazon.de/s?k=wanderschuhe' },
+    ],
+  },
+  {
+    slug: 'erzberg-eisenerz-steiermark',
+    title: 'Steirischer Erzberg – der „Brotlaib der Steiermark"',
+    excerpt: 'Der Erzberg bei Eisenerz ist der größte Tagebau Mitteleuropas. Mit der Hauly-Riesentruck-Fahrt und einem Bergwerksstollen ein Abenteuer für die ganze Familie.',
+    date: '2026-06-10',
+    category: 'Ausflug',
+    region: 'steiermark',
+    bestSeason: 'Mai–Oktober',
+    highlights: ['Größter Tagebau Mitteleuropas', 'Mitfahrt im 860-PS-Hauly-Truck', 'Bergwerksstollen zum Erleben'],
+    content: `
+Der Erzberg ist ein 700 m hoher, terrassenförmig abgetragener Berg aus Eisenerz – ein industrielles Wahrzeichen der Steiermark und ein überraschend spannendes Ausflugsziel.
+
+## Abenteuer Erzberg
+- **Hauly-Fahrt:** Mitfahrt in einem gigantischen Schwerlast-Truck über die Abbauterrassen
+- **Schaubergwerk:** Mit der Grubenbahn in die Stollen des historischen Untertagebaus
+- Spektakuläre Einblicke in den aktiven Erzabbau
+
+## Für wen?
+Familien, Technik-Fans und alle, die mal etwas anderes als Seen und Berge sehen wollen. Robuste Kleidung empfohlen.
+
+## Praktische Infos
+- Ort: Eisenerz, Obersteiermark
+- Touren nur mit Anmeldung/zu festen Zeiten – vorab buchen
+- Warme Jacke für die Stollen (auch im Sommer kühl)
+    `,
+    affiliateLinks: [
+      { label: 'Unterkünfte in Eisenerz – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Eisenerz' },
+      { label: 'Steiermark: Erlebnisse – GetYourGuide', url: 'https://www.getyourguide.de/s/?q=Steiermark' },
+    ],
+  },
+  {
+    slug: 'stift-admont-bibliothek',
+    title: 'Stift Admont – die größte Klosterbibliothek der Welt',
+    excerpt: 'Der barocke Bibliothekssaal von Stift Admont ist ein Weltwunder des Wissens: 70.000 Bände unter prachtvollen Deckenfresken. Ein Kulturhighlight am Rand des Gesäuses.',
+    date: '2026-06-10',
+    category: 'Ausflug',
+    region: 'steiermark',
+    bestSeason: 'April–Oktober',
+    highlights: ['Größter Klosterbibliothekssaal der Welt', 'Prachtvolle Barock-Deckenfresken', 'Museen & Naturkundesammlung im Stift'],
+    content: `
+Stift Admont liegt am Tor zum Nationalpark Gesäuse – und beherbergt einen der schönsten Räume Österreichs: den größten klösterlichen Bibliothekssaal der Welt.
+
+## Der Bibliothekssaal
+70 Meter lang, mit sieben Kuppeln, vergoldeten Verzierungen und Deckenfresken, die das menschliche Wissen darstellen. Rund 70.000 Bände – ein überwältigender Anblick.
+
+## Mehr als nur Bücher
+Das Stift beherbergt auch ein Kunsthistorisches Museum, eine bedeutende Naturkundesammlung und moderne Kunst – eine seltene Mischung aus Barock und Gegenwart.
+
+## Kombi-Tipp
+Ideal mit einem Besuch im **Nationalpark Gesäuse** zu verbinden – Kultur am Vormittag, Natur am Nachmittag.
+
+## Praktische Infos
+- Ort: Admont, Obersteiermark
+- Anfahrt: Von Liezen ca. 25 Minuten
+- Öffnungszeiten saisonal – vorab prüfen
+    `,
+    affiliateLinks: [
+      { label: 'Unterkünfte in Admont – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Admont' },
+      { label: 'Reiseführer Steiermark – Amazon', url: 'https://www.amazon.de/s?k=reisef%C3%BChrer+steiermark' },
+    ],
+  },
+  {
+    slug: 'lurgrotte-tropfsteinhoehle-steiermark',
+    title: 'Lurgrotte – Österreichs größte erschlossene Tropfsteinhöhle',
+    excerpt: 'Riesige Tropfsteine, unterirdische Bäche und beeindruckende Hallen: Die Lurgrotte bei Graz ist ein ideales Ausflugsziel bei Hitze oder Regen – kühl und faszinierend.',
+    date: '2026-06-10',
+    category: 'Ausflug',
+    region: 'steiermark',
+    bestSeason: 'Ganzjährig',
+    highlights: ['Größte erschlossene Tropfsteinhöhle Österreichs', 'Konstant kühl – perfekt bei Hitze', 'Geführte Touren für Familien'],
+    content: `
+Die Lurgrotte zwischen Peggau und Semriach nördlich von Graz ist die größte wasserführende und erschlossene Tropfsteinhöhle Österreichs – ein faszinierendes unterirdisches Naturwunder.
+
+## Was dich erwartet
+Geführte Rundgänge durch riesige Hallen, vorbei an bizarren Tropfsteinen und dem unterirdischen Lurbach. Der größte Tropfstein, „der Riese", ist über 13 m hoch.
+
+## Ideal als Wetter-Joker
+In der Höhle herrschen konstant rund 10 °C – das perfekte Ziel an heißen Sommertagen oder bei Regen.
+
+## Praktische Infos
+- Zwei Eingänge: Peggau (kürzere Tour) und Semriach (längere Tour)
+- **Warme Jacke** und feste Schuhe mitnehmen
+- Führungen zu festen Zeiten – vorab Zeiten prüfen
+- Anfahrt: Von Graz ca. 25 Minuten
+    `,
+    affiliateLinks: [
+      { label: 'Unterkünfte bei Graz – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Peggau' },
+      { label: 'Stirnlampe für Höhlen – Amazon', url: 'https://www.amazon.de/s?k=stirnlampe' },
+    ],
+  },
+  {
+    slug: 'mariazell-wallfahrt-ausflug',
+    title: 'Mariazell – Österreichs bedeutendster Wallfahrtsort',
+    excerpt: 'Die Basilika von Mariazell zieht seit Jahrhunderten Pilger an. Doch der Ort in der Obersteiermark bietet auch Bergbahnen, Lebkuchen und Natur – ein lohnender Ausflug.',
+    date: '2026-06-10',
+    category: 'Ausflug',
+    region: 'steiermark',
+    bestSeason: 'Mai–Oktober, Dezember (Advent)',
+    highlights: ['Wichtigster Wallfahrtsort Österreichs', 'Bürgeralpe-Bergbahn & Erlebniswelt', 'Berühmter Mariazeller Lebkuchen'],
+    content: `
+Mariazell ist seit über 850 Jahren das spirituelle Herz Österreichs – die Basilika mit der „Magna Mater Austriae" zieht jährlich hunderttausende Pilger an. Aber auch ohne religiösen Hintergrund lohnt der Ausflug.
+
+## Die Basilika
+Das eindrucksvolle Gotteshaus mit barocker Ausstattung und der berühmten Gnadenkapelle steht im Zentrum des Ortes.
+
+## Für Familien
+Die **Bürgeralpe** (Bergbahn) bietet die Erlebniswelt „Holzknechtland" und tolle Wanderungen mit Blick über die Mariazeller Berge.
+
+## Kulinarik
+Mariazeller **Lebkuchen** und Kräuterliköre sind beliebte Mitbringsel – die Traditionsbetriebe gibt es seit Generationen.
+
+## Praktische Infos
+- Anreise nostalgisch mit der **Mariazellerbahn** (Schmalspurbahn von St. Pölten)
+- Im Advent stimmungsvoller Adventmarkt
+- Anfahrt mit Auto: Von Bruck an der Mur ca. 45 Minuten
+    `,
+    affiliateLinks: [
+      { label: 'Hotels in Mariazell – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Mariazell' },
+      { label: 'Steiermark: Ausflüge – GetYourGuide', url: 'https://www.getyourguide.de/s/?q=Steiermark' },
+    ],
+  },
+  {
+    slug: 'steirisches-vulkanland',
+    title: 'Steirisches Vulkanland – Genussregion auf erloschenen Vulkanen',
+    excerpt: 'Sanfte Hügel auf alten Vulkanen, Kürbiskernöl, Schokolade und Buschenschänke: Das Steirische Vulkanland in der Oststeiermark ist eine der genussvollsten Ecken Österreichs.',
+    date: '2026-06-10',
+    category: 'Ausflug',
+    region: 'steiermark',
+    bestSeason: 'Mai–Oktober',
+    highlights: ['Genussregion: Kernöl, Wein, Schokolade', 'Riegersburg & Zotter mittendrin', 'Vulkanland-Thermen zum Entspannen'],
+    content: `
+Vor Millionen Jahren brodelten hier Vulkane – heute ist das Steirische Vulkanland eine sanfte Hügellandschaft und eine der bekanntesten Genussregionen Österreichs.
+
+## Genuss pur
+Die Region steht für höchste Produktqualität: steirisches **Kürbiskernöl** („grünes Gold"), Wein, Edelbrände, Käferbohnen und die weltbekannte **Zotter-Schokolade**.
+
+## Sehenswertes
+- **Riegersburg** – mächtige Burg auf einem Vulkanfelsen
+- **Zotter Schokoladenmanufaktur** mit Verkostung
+- Vulkanland-Thermen (Loipersdorf, Bad Gleichenberg)
+
+## Genuss-Tour
+Eine Rundfahrt durch das Vulkanland verbindet Buschenschänke, Hofläden und Aussichtspunkte. Ideal mit dem Auto oder E-Bike.
+
+## Praktische Infos
+- Anfahrt: Von Graz ca. 45–60 Minuten
+- Hofläden & Buschenschänke haben wechselnde Öffnungszeiten
+- Gut mit Riegersburg + Therme zu einem Tag kombinierbar
+    `,
+    affiliateLinks: [
+      { label: 'Unterkünfte im Vulkanland – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Bad+Gleichenberg' },
+      { label: 'Steirisches Kürbiskernöl – Amazon', url: 'https://www.amazon.de/s?k=steirisches+k%C3%BCrbiskern%C3%B6l' },
+    ],
+  },
+
+  // ─── BURGENLAND (Vertiefung) ─────────────────────────────────────────────────
+  {
+    slug: 'moerbisch-seefestspiele',
+    title: 'Mörbisch & die Seefestspiele – Operette auf dem Neusiedler See',
+    excerpt: 'Auf der größten Seebühne Europas erklingt in Mörbisch jeden Sommer Operette unter freiem Himmel. Plus: das charmanteste Weindorf am Westufer.',
+    date: '2026-06-10',
+    category: 'Ausflug',
+    region: 'burgenland',
+    bestSeason: 'Juli–August',
+    highlights: ['Größte Seebühne Europas', 'Operette unter Sternenhimmel', 'Charmantes Weindorf mit Hofgassen'],
+    content: `
+Mörbisch am See am Westufer des Neusiedler Sees ist berühmt für zwei Dinge: seine malerischen weiß getünchten Hofgassen und die Seefestspiele auf der größten Seebühne Europas.
+
+## Die Seefestspiele
+Jeden Sommer (Juli/August) wird auf der riesigen Bühne direkt am Wasser Operette aufgeführt – ein unvergessliches Erlebnis unter freiem Himmel. Karten früh sichern, die Vorstellungen sind beliebt.
+
+## Das Weindorf
+Die typischen „Hofgassen" mit Maiskolben an den Fassaden, kleine Weingüter und Buschenschänke machen Mörbisch zu einem der hübschesten Orte am See.
+
+## Praktische Infos
+- Anfahrt: Von Eisenstadt ca. 20 Minuten
+- Über den Seedamm zum Strandbad & Bootshafen
+- Tipp: Festspiele + Abendessen im Weindorf = perfekter Sommerabend
+    `,
+    affiliateLinks: [
+      { label: 'Hotels in Mörbisch – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=M%C3%B6rbisch+am+See' },
+      { label: 'Burgenland: Tickets & Touren – GetYourGuide', url: 'https://www.getyourguide.de/s/?q=Burgenland' },
+    ],
+  },
+  {
+    slug: 'familypark-st-margarethen',
+    title: 'Familypark St. Margarethen – der größte Freizeitpark Österreichs',
+    excerpt: 'Über 100 Attraktionen für Familien mit Kindern: Der Familypark im Burgenland ist Österreichs größter Freizeitpark – ideal für einen ganzen Tag mit der Familie.',
+    date: '2026-06-10',
+    category: 'Ausflug',
+    region: 'burgenland',
+    bestSeason: 'April–Oktober',
+    highlights: ['Österreichs größter Freizeitpark', 'Über 100 Attraktionen', 'Besonders für jüngere Kinder ideal'],
+    content: `
+Der Familypark bei St. Margarethen im Burgenland ist der größte Freizeitpark Österreichs – und im Gegensatz zu vielen Parks klar auf **Familien mit jüngeren Kindern** ausgerichtet.
+
+## Was geboten wird
+Über 100 Attraktionen – von sanften Karussells und Märchenwelten für die Kleinen bis zu Achterbahnen und Wasserbahnen für die etwas Größeren. Viel Grün, kurze Wartezeiten, durchdachte Themenwelten.
+
+## Für wen?
+Ideal für Familien mit Kindern von etwa 2 bis 12 Jahren. Ein voller Tag ist leicht zu füllen.
+
+## Praktische Infos
+- Anfahrt: Von Wien ca. 1 Stunde, von Eisenstadt ca. 15 Minuten
+- Tickets online oft günstiger
+- Tipp: Unter der Woche deutlich ruhiger als am Wochenende
+    `,
+    affiliateLinks: [
+      { label: 'Familienhotels Burgenland – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=St.+Margarethen+im+Burgenland' },
+      { label: 'Burgenland: Familienausflüge – GetYourGuide', url: 'https://www.getyourguide.de/s/?q=Burgenland' },
+    ],
+  },
+  {
+    slug: 'roemersteinbruch-st-margarethen-oper',
+    title: 'Römersteinbruch St. Margarethen – Oper in spektakulärer Kulisse',
+    excerpt: 'Der historische Römersteinbruch wird im Sommer zur gewaltigen Opernbühne. Auch außerhalb der Festspiele ein eindrucksvolles Naturdenkmal und Ausflugsziel.',
+    date: '2026-06-10',
+    category: 'Ausflug',
+    region: 'burgenland',
+    bestSeason: 'Juli–August',
+    highlights: ['Oper in monumentaler Felskulisse', 'Historischer Steinbruch der Römer', 'Eindrucksvoll auch ohne Vorstellung'],
+    content: `
+Schon die Römer brachen hier den Stein für ihre Bauten – heute ist der Römersteinbruch St. Margarethen eine der eindrucksvollsten Naturbühnen Europas.
+
+## Oper im Steinbruch
+Im Sommer wird die gewaltige Felskulisse zur Bühne für große Opernproduktionen unter freiem Himmel. Die Akustik und das Ambiente sind einzigartig – ein Höhepunkt des burgenländischen Kultursommers.
+
+## Auch tagsüber lohnend
+Außerhalb der Festspiele ist der Steinbruch ein beeindruckendes Naturdenkmal mit Skulpturen und Wanderwegen.
+
+## Praktische Infos
+- Anfahrt: Nahe St. Margarethen, ca. 15 Min. von Eisenstadt
+- Festspiel-Karten früh sichern
+- Gut mit Familypark (gleicher Ort) kombinierbar
+    `,
+    affiliateLinks: [
+      { label: 'Unterkünfte bei St. Margarethen – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=St.+Margarethen+im+Burgenland' },
+      { label: 'Burgenland: Tickets – GetYourGuide', url: 'https://www.getyourguide.de/s/?q=Burgenland' },
+    ],
+  },
+  {
+    slug: 'geschriebenstein-wandern-burgenland',
+    title: 'Geschriebenstein – auf den höchsten Berg des Burgenlands',
+    excerpt: 'Mit 884 m ist der Geschriebenstein der höchste Punkt des Burgenlands. Eine gemütliche Waldwanderung mit Aussichtsturm direkt an der Grenze zu Ungarn.',
+    date: '2026-06-10',
+    category: 'Wandern',
+    region: 'burgenland',
+    difficulty: 'leicht',
+    bestSeason: 'April–November',
+    highlights: ['Höchster Berg des Burgenlands (884 m)', 'Aussichtsturm mit Blick AT/Ungarn', 'Sanfte, schattige Waldwanderung'],
+    content: `
+Der Geschriebenstein im Günser Gebirge ist mit 884 m der höchste Berg des Burgenlands – und liegt genau auf der Grenze zu Ungarn. Eine entspannte Wanderung für alle Levels.
+
+## Die Wanderung
+Sanfte, gut beschilderte Waldwege führen zum Gipfel – angenehm schattig, daher auch im Hochsommer machbar. Mehrere Ausgangspunkte (z. B. Lockenhaus, Rechnitz).
+
+## Am Gipfel
+Ein **Aussichtsturm** bietet Rundblick über das Günser Gebirge, das Burgenland und nach Ungarn hinein. Eine Schutzhütte lädt zur Rast.
+
+## Praktische Infos
+- Naturpark Geschriebenstein-Írottkő
+- Festes Schuhwerk reicht, kein alpines Terrain
+- Kombinierbar mit der Ritterburg Lockenhaus
+    `,
+    affiliateLinks: [
+      { label: 'Unterkünfte im Südburgenland – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Lockenhaus' },
+      { label: 'Wanderschuhe – Amazon', url: 'https://www.amazon.de/s?k=wanderschuhe' },
+    ],
+  },
+  {
+    slug: 'burg-guessing-suedburgenland',
+    title: 'Burg Güssing – Wahrzeichen des Südburgenlands',
+    excerpt: 'Die älteste Burg des Burgenlands thront auf einem Vulkankegel über Güssing. Mit Museum, Aussicht und Greifvogel-Tradition ein lohnender Ausflug im grünen Süden.',
+    date: '2026-06-10',
+    category: 'Ausflug',
+    region: 'burgenland',
+    bestSeason: 'April–Oktober',
+    highlights: ['Älteste Burg des Burgenlands', 'Auf erloschenem Vulkankegel', 'Weiter Blick über das Südburgenland'],
+    content: `
+Burg Güssing wurde im 12. Jahrhundert auf einem erloschenen Vulkankegel errichtet und ist die älteste Burg des Burgenlands. Sie prägt das Bild des grünen, hügeligen Südburgenlands.
+
+## Die Burg
+Über einen Schrägaufzug oder zu Fuß erreicht man die Anlage. Oben warten ein Burgmuseum, eine Schatzkammer und ein herrlicher Rundblick über die sanfte Landschaft bis nach Ungarn.
+
+## Region Südburgenland
+Güssing liegt mitten in einer ruhigen Genussregion – Uhudler-Wein, Thermen und das Naturparkland laden zum Verweilen.
+
+## Praktische Infos
+- Anfahrt: Von Graz ca. 1 Stunde, von Wien ca. 1,5 Stunden
+- Öffnungszeiten saisonal
+- Gut mit einer Uhudler-Verkostung kombinierbar
+    `,
+    affiliateLinks: [
+      { label: 'Unterkünfte in Güssing – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=G%C3%BCssing' },
+      { label: 'Burgenland: Ausflüge – GetYourGuide', url: 'https://www.getyourguide.de/s/?q=Burgenland' },
+    ],
+  },
+  {
+    slug: 'uhudler-suedburgenland-wein',
+    title: 'Uhudler – die kuriose Weinspezialität des Südburgenlands',
+    excerpt: 'Erdbeer- und Waldbeerenaromen aus einer fast verbotenen Rebsorte: Der Uhudler ist die eigenwillige Weinspezialität des Südburgenlands. Wo man ihn verkostet.',
+    date: '2026-06-10',
+    category: 'Ausflug',
+    region: 'burgenland',
+    bestSeason: 'Mai–Oktober',
+    highlights: ['Einzigartige, fast verbotene Spezialität', 'Aromen von Erdbeere & Waldbeere', 'Uhudler-Weinstraße mit Buschenschänken'],
+    content: `
+Der Uhudler ist eine der kuriosesten Weinspezialitäten Österreichs – ein Wein aus „Direktträger"-Reben, der lange umstritten und zeitweise sogar verboten war. Heute ist er das Aushängeschild des Südburgenlands.
+
+## Was macht ihn besonders?
+Der Uhudler schmeckt unverwechselbar nach Walderdbeeren und Johannisbeeren – fruchtig, eigenwillig, einzigartig. Man liebt ihn oder findet ihn gewöhnungsbedürftig, aber probieren sollte man ihn unbedingt.
+
+## Die Uhudler-Weinstraße
+Im Südburgenland (rund um Heiligenbrunn) führt eine eigene Weinstraße zu Kellerstöckln und Buschenschänken, in denen der Uhudler ausgeschenkt wird – urig und bodenständig.
+
+## Praktische Infos
+- Region: Südburgenland, rund um Heiligenbrunn/Güssing
+- **Nicht selbst fahren** nach der Verkostung
+- Kellerstöckl als besondere Übernachtung – sehr beliebt
+    `,
+    affiliateLinks: [
+      { label: 'Kellerstöckl & Unterkünfte Südburgenland – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Heiligenbrunn' },
+      { label: 'Burgenland Wein – GetYourGuide', url: 'https://www.getyourguide.de/s/?q=Burgenland%20Wein' },
+    ],
+  },
+  {
+    slug: 'kulinarik-burgenland-martiniloben',
+    title: 'Kulinarik im Burgenland – Gans, Wein und Martiniloben',
+    excerpt: 'Das Burgenland ist eine Genussregion: pannonische Küche, Spitzenweine und im November das traditionelle Martiniloben mit Gansl. Was man probieren muss.',
+    date: '2026-06-10',
+    category: 'Ausflug',
+    region: 'burgenland',
+    bestSeason: 'Ganzjährig (Martiniloben im November)',
+    highlights: ['Pannonische Küche & Spitzenweine', 'Martiniloben: Gansl & Jungwein im November', 'Buschenschank-Kultur'],
+    content: `
+Das milde pannonische Klima macht das Burgenland nicht nur zur Weinregion, sondern auch zur Genussregion. Wer herkommt, sollte sich Zeit zum Essen und Verkosten nehmen.
+
+## Pannonische Küche
+Deftig und bodenständig: Gänsebraten, Grammelpogatscherl, Kürbisgerichte, Fisch aus dem Neusiedler See (Zander, Karpfen) und reichlich frisches Gemüse aus dem „Gemüsegarten Österreichs" (Seewinkel).
+
+## Martiniloben
+Rund um den Martinitag (11. November) feiert das Burgenland das **Martiniloben**: Weingüter öffnen ihre Keller, der neue Jahrgang wird verkostet, dazu gibt es traditionell **Martinigansl**. Eine der schönsten Zeiten für einen kulinarischen Besuch.
+
+## Wo genießen?
+In Buschenschänken, Heurigen und Weingütern rund um den Neusiedler See und im Südburgenland. Reservierung in der Hauptsaison empfohlen.
+
+## Praktische Infos
+- Beste Zeit für Wein & Gansl: November
+- Mit Weinverkostung kombinieren – aber Fahrer bestimmen
+    `,
+    affiliateLinks: [
+      { label: 'Unterkünfte am Neusiedler See – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Neusiedler+See' },
+      { label: 'Genusstouren Burgenland – GetYourGuide', url: 'https://www.getyourguide.de/s/?q=Burgenland%20Wein' },
+    ],
+  },
 ];
 
 export function getPostBySlug(slug: string): Post | undefined {
