@@ -15,14 +15,14 @@ export const regionen: Region[] = [
   {
     slug: 'salzburg',
     name: 'Salzburg',
-    beschreibung: 'Mozart, Berchtesgaden, Wolfgangsee – Salzburg für jeden Geschmack.',
-    aktiv: false,
+    beschreibung: 'Mozartstadt, Hohe Tauern, Zeller See und das Salzburger Seenland – Kultur und Bergwelt vereint.',
+    aktiv: true,
   },
   {
     slug: 'tirol',
     name: 'Tirol',
-    beschreibung: 'Alpenpanorama, Innsbruck und die besten Wanderwege der Alpen.',
-    aktiv: false,
+    beschreibung: 'Innsbruck, Achensee, Ötztal & Zillertal – das Herz der Alpen mit Bergseen und Gipfeln.',
+    aktiv: true,
   },
   {
     slug: 'steiermark',

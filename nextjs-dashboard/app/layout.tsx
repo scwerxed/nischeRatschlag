@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     default: `${SITE_NAME} – Seen, Berge & Ausflüge in Österreich`,
   },
   description:
-    'Insider-Tipps für Kärnten, die Steiermark & das Burgenland: Wanderwege, Badeseen, Ausflugsziele und Unterkünfte – ehrlich recherchiert mit echten Preisen.',
+    'Insider-Tipps für Österreich – Kärnten, Salzburg, Tirol, Steiermark & Burgenland: Wanderwege, Badeseen, Ausflugsziele und Unterkünfte, ehrlich recherchiert mit echten Preisen.',
   keywords: BASE_KEYWORDS,
   authors: [{ name: SITE_NAME, url: BASE }],
   creator: SITE_NAME,

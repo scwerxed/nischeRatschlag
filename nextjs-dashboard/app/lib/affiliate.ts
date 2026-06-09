@@ -92,6 +92,18 @@ export const EXCURSIONS_BY_REGION: Record<string, Excursion[]> = {
     { label: 'Eisenstadt',                note: 'Schloss Esterházy & Stadtführungen', url: gyg('Eisenstadt') },
     { label: 'Burgenland Wein',           note: 'Weinverkostungen & Genusstouren', url: gyg('Burgenland Wein') },
   ],
+  salzburg: [
+    { label: 'Aktivitäten in Salzburg',   note: 'Touren, Tickets & Erlebnisse', url: gyg('Salzburg') },
+    { label: 'Stadt Salzburg',            note: 'Altstadt, Festung & Mozart', url: gyg('Salzburg Stadt') },
+    { label: 'Zell am See & Kaprun',      note: 'See, Bergbahnen & Gletscher', url: gyg('Zell am See') },
+    { label: 'Krimmler Wasserfälle',      note: 'Höchster Wasserfall Europas', url: gyg('Krimmler Wasserfälle') },
+  ],
+  tirol: [
+    { label: 'Aktivitäten in Tirol',      note: 'Touren, Tickets & Erlebnisse', url: gyg('Tirol') },
+    { label: 'Innsbruck',                 note: 'Altstadt, Nordkette & Tickets', url: gyg('Innsbruck') },
+    { label: 'Ötztal & Sölden',           note: 'Gletscher, Bergbahnen & mehr', url: gyg('Ötztal') },
+    { label: 'Swarovski Kristallwelten',  note: 'Tickets & Führungen', url: gyg('Swarovski Kristallwelten') },
+  ],
 };
 
 /** Liefert region-spezifische Ausflugslinks (Fallback: Kärnten). */

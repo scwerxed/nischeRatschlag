@@ -2781,6 +2781,488 @@ In Buschenschänken, Heurigen und Weingütern rund um den Neusiedler See und im 
       { label: 'Genusstouren Burgenland – GetYourGuide', url: 'https://www.getyourguide.de/s/?q=Burgenland%20Wein' },
     ],
   },
+
+  // ─── SALZBURG ────────────────────────────────────────────────────────────────
+  {
+    slug: 'salzburg-stadt-altstadt',
+    title: 'Salzburg Stadt – Mozart, Festung und barocke Altstadt',
+    excerpt: 'Die Mozartstadt zählt zum UNESCO-Welterbe: Festung Hohensalzburg, Getreidegasse, Dom und Mirabellgarten. Der kompakte Guide für die schönste Barockstadt Österreichs.',
+    date: '2026-06-11',
+    category: 'Ausflug',
+    region: 'salzburg',
+    bestSeason: 'Ganzjährig',
+    highlights: ['UNESCO-Welterbe Altstadt', 'Festung Hohensalzburg über der Stadt', 'Mozart-Geburtshaus & Mirabellgarten'],
+    content: `
+Salzburg ist eine der schönsten Städte Europas – die barocke Altstadt mit der mächtigen Festung gehört zum UNESCO-Welterbe und ist zu Fuß perfekt erkundbar.
+
+## Festung Hohensalzburg
+Das Wahrzeichen thront über der Stadt – eine der größten erhaltenen Burgen Europas. Hinauf per Standseilbahn oder zu Fuß. Oben: Museen und ein traumhafter Blick über Salzburg und die Alpen.
+
+## Altstadt & Getreidegasse
+Die berühmte Getreidegasse mit ihren schmiedeeisernen Zunftschildern, Mozarts Geburtshaus, der Dom und die Residenz – alles dicht beisammen. Mindestens einen halben Tag einplanen.
+
+## Mirabellgarten
+Der barocke Schlossgarten mit Blick auf die Festung – bekannt aus „The Sound of Music" und gratis zugänglich.
+
+## Praktische Infos
+- Anreise: Bahn von Wien ca. 2,5 Std., von München ca. 1,5 Std.
+- Salzburg Card: freier Eintritt zu Sehenswürdigkeiten + öffentliche Verkehrsmittel
+- Tipp: Früh morgens ist die Altstadt am ruhigsten
+    `,
+    affiliateLinks: [
+      { label: 'Salzburg: Touren & Tickets – GetYourGuide', url: 'https://www.getyourguide.de/s/?q=Salzburg%20Stadt' },
+      { label: 'Hotels in Salzburg – booking.com', url: 'https://www.booking.com/city/at/salzburg.de.html' },
+    ],
+  },
+  {
+    slug: 'zell-am-see-zeller-see',
+    title: 'Zell am See & Zeller See – Baden mit Gletscherblick',
+    excerpt: 'Türkiser Bergsee, die Schmittenhöhe und der Kitzsteinhorn-Gletscher in Reichweite: Zell am See ist eine der vielseitigsten Urlaubsregionen Salzburgs – Sommer wie Winter.',
+    date: '2026-06-11',
+    category: 'Baden',
+    region: 'salzburg',
+    bestSeason: 'Mai–September',
+    highlights: ['Badesee mit Bergpanorama', 'Schmittenhöhe-Bergbahn', 'Kitzsteinhorn-Gletscher ganzjährig'],
+    content: `
+Zell am See liegt malerisch zwischen dem türkisen Zeller See und den Gipfeln der Hohen Tauern – eine der schönsten Kombinationen aus Wasser und Bergen in Österreich.
+
+## Der Zeller See
+Trinkwasserqualität, im Sommer bis ~23 °C, mit Strandbädern und einer Seepromenade. Rundherum führt ein flacher Rad- und Spazierweg (rund 11 km).
+
+## Berge ringsum
+- **Schmittenhöhe:** Hausberg mit Bergbahn, Panoramaweg und Aussicht über die Tauern
+- **Kitzsteinhorn (Kaprun):** Gletscher mit Schnee das ganze Jahr – Bergbahn bis 3.000 m
+
+## Für wen?
+Familien (flacher See, viele Aktivitäten), Aktive (Wandern, Radfahren, Wassersport) und alle, die See + Hochgebirge an einem Ort wollen.
+
+## Praktische Infos
+- Anfahrt: Von Salzburg ca. 1 Stunde
+- Sommercard mit Übernachtung: Bergbahnen & Schifffahrt oft inkludiert
+- Kombi-Tipp: Großglockner Hochalpenstraße ist nicht weit
+    `,
+    affiliateLinks: [
+      { label: 'Hotels in Zell am See – booking.com', url: 'https://www.booking.com/city/at/zell-am-see.de.html' },
+      { label: 'Zell am See & Kaprun: Tickets – GetYourGuide', url: 'https://www.getyourguide.de/s/?q=Zell%20am%20See' },
+    ],
+  },
+  {
+    slug: 'krimmler-wasserfaelle',
+    title: 'Krimmler Wasserfälle – Europas höchster Wasserfall',
+    excerpt: 'Mit 380 m Fallhöhe sind die Krimmler Wasserfälle die höchsten Europas. Ein gut angelegter Wasserfallweg führt entlang der tosenden Kaskaden – ein Naturschauspiel für alle.',
+    date: '2026-06-11',
+    category: 'Ausflug',
+    region: 'salzburg',
+    bestSeason: 'Mai–Oktober',
+    highlights: ['380 m – höchster Wasserfall Europas', 'Gut angelegter Wasserfallweg', 'Heilklima durch Wassernebel'],
+    content: `
+Die Krimmler Wasserfälle im Nationalpark Hohe Tauern stürzen in drei gewaltigen Stufen 380 Meter in die Tiefe – ein Naturschauspiel, das jährlich Hunderttausende anzieht.
+
+## Der Wasserfallweg
+Ein gut angelegter, stetig ansteigender Weg führt entlang der Kaskaden zu mehreren Aussichtskanzeln. Hin und zurück ca. 3–4 Stunden (mit Pausen), aber auch kürzere Abschnitte lohnen.
+
+## Gesundes Mikroklima
+Der feine Wassernebel gilt als heilsam für die Atemwege – die Krimmler Wasserfälle werden sogar für Allergiker-Studien genutzt.
+
+## Praktische Infos
+- Festes Schuhwerk & Regenschutz (es ist nass und kann rutschig sein)
+- Eintritt/Parkgebühr vor Ort
+- Anfahrt: Im Oberpinzgau, von Zell am See ca. 1 Stunde
+- Kombinierbar mit dem Nationalpark Hohe Tauern
+    `,
+    affiliateLinks: [
+      { label: 'Unterkünfte in Krimml/Oberpinzgau – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Krimml' },
+      { label: 'Regenjacke für Ausflüge – Amazon', url: 'https://www.amazon.de/s?k=regenjacke+wandern' },
+    ],
+  },
+  {
+    slug: 'hohe-tauern-nationalpark-salzburg',
+    title: 'Nationalpark Hohe Tauern – Wandern im größten Schutzgebiet der Alpen',
+    excerpt: 'Gletscher, Dreitausender und seltene Tierwelt: Der Nationalpark Hohe Tauern ist das größte Schutzgebiet der Alpen. Die schönsten Wanderungen auf der Salzburger Seite.',
+    date: '2026-06-11',
+    category: 'Wandern',
+    region: 'salzburg',
+    difficulty: 'mittel',
+    bestSeason: 'Juni–September',
+    highlights: ['Größtes Schutzgebiet der Alpen', 'Gletscher, Murmeltiere & Steinadler', 'Touren von leicht bis hochalpin'],
+    content: `
+Der Nationalpark Hohe Tauern erstreckt sich über Salzburg, Kärnten und Tirol und schützt eine der eindrucksvollsten Hochgebirgslandschaften Europas – mit dem Großvenediger und unzähligen Dreitausendern.
+
+## Für Einsteiger
+Talwanderungen wie im **Obersulzbachtal** oder zu den Almen sind familientauglich und führen durch unberührte Natur – mit guter Chance auf Murmeltiere.
+
+## Für Geübte
+Hochtouren zum Großvenediger oder auf die umliegenden Gipfel sind ernsthafte alpine Unternehmungen – nur mit Erfahrung, Ausrüstung und ggf. Bergführer.
+
+## Tierwelt
+Murmeltiere, Steinböcke, Gämsen und der Steinadler – die Hohen Tauern sind ein Paradies für Naturbeobachter. Fernglas mitnehmen.
+
+## Praktische Infos
+- Nationalpark-Zentren mit Infos und geführten Rangertouren
+- Wetter im Hochgebirge ernst nehmen – früh starten
+- Ausrüstung je nach Tour: von Wanderschuhen bis Hochtourenset
+    `,
+    affiliateLinks: [
+      { label: 'Unterkünfte im Pinzgau – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Pinzgau' },
+      { label: 'Fernglas für Tierbeobachtung – Amazon', url: 'https://www.amazon.de/s?k=fernglas+10x42' },
+    ],
+  },
+  {
+    slug: 'salzburger-seenland-baden',
+    title: 'Salzburger Seenland – Badeseen vor den Toren der Stadt',
+    excerpt: 'Wallersee, Mattsee, Obertrumer See und Fuschlsee: Das Salzburger Seenland bietet warme Badeseen in idyllischer Landschaft – ruhiger und günstiger als die großen Touristenseen.',
+    date: '2026-06-11',
+    category: 'Baden',
+    region: 'salzburg',
+    bestSeason: 'Juni–September',
+    highlights: ['Mehrere warme Badeseen', 'Nur 20–40 Min. von Salzburg Stadt', 'Ruhiger als die großen Seen'],
+    content: `
+Nördlich und östlich der Stadt Salzburg liegt das Salzburger Seenland – eine sanfte Hügellandschaft mit mehreren angenehm warmen Badeseen, ideal für entspannte Sommertage.
+
+## Die Seen
+- **Wallersee:** der größte, mit Strandbädern und Naturschutzgebiet
+- **Mattsee & Obertrumer See:** warm, familienfreundlich, mit Segel- und SUP-Möglichkeiten
+- **Fuschlsee:** kristallklar, im Salzkammergut-Stil, vor Bergkulisse
+
+## Warum hierher?
+Die Seen sind weniger überlaufen als die berühmten Salzkammergut-Seen, das Wasser ist warm, und Salzburg Stadt ist in 20–40 Minuten erreichbar – perfekt für Stadt + Badeurlaub.
+
+## Praktische Infos
+- Mit dem Rad gut verbindbar (Seenland-Radwege)
+- Strandbäder meist mit kleinem Eintritt, einige Gratis-Stellen
+- Anfahrt: Von Salzburg je nach See 20–40 Minuten
+    `,
+    affiliateLinks: [
+      { label: 'Unterkünfte im Salzburger Seenland – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Mattsee' },
+      { label: 'SUP-Board für Einsteiger – Amazon', url: 'https://www.amazon.de/s?k=sup+board+aufblasbar' },
+    ],
+  },
+  {
+    slug: 'eisriesenwelt-werfen',
+    title: 'Eisriesenwelt Werfen – die größte Eishöhle der Welt',
+    excerpt: 'In den Tennengebirge-Felsen verbirgt sich die größte Eishöhle der Welt. Gewaltige Eisformationen, eine spektakuläre Anfahrt mit Seilbahn – ein einzigartiges Naturerlebnis.',
+    date: '2026-06-11',
+    category: 'Ausflug',
+    region: 'salzburg',
+    bestSeason: 'Mai–Oktober',
+    highlights: ['Größte Eishöhle der Welt', 'Spektakuläre Lage mit Seilbahn', 'Auch im Hochsommer eisig schön'],
+    content: `
+Hoch über dem Salzachtal bei Werfen liegt die Eisriesenwelt – mit über 42 km Länge die größte Eishöhle der Welt. Der zugängliche Teil zeigt monumentale Eisformationen.
+
+## Der Besuch
+Eine kurvige Bergstraße, ein steiler Fußweg und eine **Seilbahn** bringen dich zum Höhleneingang auf 1.640 m. Drinnen führt eine geführte Tour (mit Karbidlampen) durch glitzernde Eishallen und an gewaltigen Eisfiguren vorbei.
+
+## Wichtig
+- In der Höhle ist es **um 0 °C** – warm anziehen, auch im Hochsommer!
+- Festes Schuhwerk, es geht über viele Stufen
+- Nicht für Gehbehinderte geeignet (anstrengender Weg)
+
+## Praktische Infos
+- Anfahrt: Von Salzburg ca. 45 Minuten
+- Mehrere Stunden einplanen (Anfahrt, Aufstieg, Führung)
+- Kombinierbar mit der Burg Hohenwerfen direkt gegenüber
+    `,
+    affiliateLinks: [
+      { label: 'Unterkünfte bei Werfen – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Werfen' },
+      { label: 'Salzburg: Ausflüge & Tickets – GetYourGuide', url: 'https://www.getyourguide.de/s/?q=Salzburg' },
+    ],
+  },
+  {
+    slug: 'saalbach-hinterglemm',
+    title: 'Saalbach-Hinterglemm – Bergsommer und Ski-Eldorado',
+    excerpt: 'Im Winter eines der größten Skigebiete Österreichs, im Sommer ein Bike- und Wanderparadies: Saalbach-Hinterglemm im Salzburger Land bietet ganzjährig Action am Berg.',
+    date: '2026-06-11',
+    category: 'Ausflug',
+    region: 'salzburg',
+    bestSeason: 'Dezember–März & Juni–September',
+    highlights: ['Skicircus: 270 km Pisten', 'Top Mountainbike-Region im Sommer', 'Bergbahnen für bequeme Wanderungen'],
+    content: `
+Saalbach-Hinterglemm im Pinzgau ist eine der bekanntesten Bergsportregionen Österreichs – im Winter Teil des riesigen „Skicircus", im Sommer ein Eldorado für Biker und Wanderer.
+
+## Winter
+Der **Skicircus Saalbach Hinterglemm Leogang Fieberbrunn** bietet rund 270 Pistenkilometer – eines der größten zusammenhängenden Skigebiete Österreichs, ideal für ausgedehnte Skitage.
+
+## Sommer
+- **Mountainbiking:** zahlreiche Trails und Bikeparks, Bergbahnen mit Radtransport
+- **Wandern:** Höhenwege mit Panoramablick, viele Hütten
+- Familienangebote rund um die Bergbahnen
+
+## Praktische Infos
+- Anfahrt: Von Zell am See ca. 20 Minuten
+- Sommer- bzw. Skipass-Karten oft mit Übernachtung vergünstigt
+- Lebhaftes Aprés-Ski im Winter – wer Ruhe sucht, weicht aus
+    `,
+    affiliateLinks: [
+      { label: 'Hotels in Saalbach-Hinterglemm – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Saalbach+Hinterglemm' },
+      { label: 'Skiausrüstung – Amazon', url: 'https://www.amazon.de/s?k=skihelm+mit+visier' },
+    ],
+  },
+  {
+    slug: 'schloss-hellbrunn-salzburg',
+    title: 'Schloss Hellbrunn – Wasserspiele und Sound of Music',
+    excerpt: 'Das Lustschloss Hellbrunn ist berühmt für seine 400 Jahre alten Wasserspiele, die Besucher mit versteckten Fontänen überraschen. Plus: der Pavillon aus „The Sound of Music".',
+    date: '2026-06-11',
+    category: 'Ausflug',
+    region: 'salzburg',
+    bestSeason: 'April–Oktober',
+    highlights: ['Historische Wasserspiele zum Staunen', 'Sound-of-Music-Pavillon im Park', 'Familienfreundlich & verspielt'],
+    content: `
+Schloss Hellbrunn am Stadtrand von Salzburg wurde im 17. Jahrhundert als fürsterzbischöfliches Lustschloss erbaut – berühmt für seine raffinierten Wasserspiele.
+
+## Die Wasserspiele
+Bei der Führung durch den Park aktivieren versteckte Fontänen unerwartet das Wasser – ein verspielter Spaß, der schon vor 400 Jahren die Gäste überraschte. Auf trockene Sitzplätze sollte man nicht zu sehr vertrauen!
+
+## Sound of Music
+Der gläserne Pavillon („Sixteen Going on Seventeen") aus dem berühmten Film steht im Schlosspark – ein beliebtes Fotomotiv.
+
+## Praktische Infos
+- Wasserspiele nur in der warmen Jahreszeit (April–Okt.)
+- Wechselkleidung für Kinder kann sinnvoll sein – man wird (absichtlich) nass
+- Anfahrt: Vom Salzburger Zentrum ca. 15 Minuten, gut mit dem Bus erreichbar
+    `,
+    affiliateLinks: [
+      { label: 'Salzburg: Touren & Tickets – GetYourGuide', url: 'https://www.getyourguide.de/s/?q=Salzburg' },
+      { label: 'Hotels in Salzburg – booking.com', url: 'https://www.booking.com/city/at/salzburg.de.html' },
+    ],
+  },
+
+  // ─── TIROL ───────────────────────────────────────────────────────────────────
+  {
+    slug: 'innsbruck-sehenswuerdigkeiten',
+    title: 'Innsbruck – Alpenmetropole zwischen Altstadt und Nordkette',
+    excerpt: 'Goldenes Dachl, Kaiserliche Hofburg und die Nordkette direkt über der Stadt: Innsbruck verbindet historische Altstadt mit Hochgebirge in Rekordzeit. Der Stadtguide.',
+    date: '2026-06-11',
+    category: 'Ausflug',
+    region: 'tirol',
+    bestSeason: 'Ganzjährig',
+    highlights: ['Goldenes Dachl & Kaiserliche Hofburg', 'Nordkettenbahn von der Stadt aufs Hochgebirge', 'Alpenpanorama mitten in der Stadt'],
+    content: `
+Innsbruck ist die einzige Großstadt der Alpen, in der man in 20 Minuten von der barocken Altstadt auf 2.000 m Höhe gelangt – das macht die Tiroler Landeshauptstadt einzigartig.
+
+## Altstadt
+Das **Goldene Dachl** mit seinen 2.657 vergoldeten Schindeln ist das Wahrzeichen. Dazu die Kaiserliche Hofburg, der Dom und die bunten Bürgerhäuser – kompakt und sehenswert.
+
+## Nordkettenbahn
+Von der Innenstadt fährt die futuristische Hungerburgbahn (von Stararchitektin Zaha Hadid) und weiter die Seilbahn aufs **Hafelekar (2.256 m)** – Hochgebirge mit Blick über die ganze Stadt, in Minuten erreichbar.
+
+## Praktische Infos
+- Anreise: Bahn-Knotenpunkt, gut aus DE/AT/CH erreichbar
+- Innsbruck Card: Bergbahnen, Museen & öffentlicher Verkehr inklusive
+- Tipp: Sonnenuntergang vom Hafelekar ist spektakulär
+    `,
+    affiliateLinks: [
+      { label: 'Innsbruck: Touren & Tickets – GetYourGuide', url: 'https://www.getyourguide.de/s/?q=Innsbruck' },
+      { label: 'Hotels in Innsbruck – booking.com', url: 'https://www.booking.com/city/at/innsbruck.de.html' },
+    ],
+  },
+  {
+    slug: 'achensee-tirol',
+    title: 'Achensee – Tirols größter See, der „Tiroler Fjord"',
+    excerpt: 'Tiefblaues Wasser zwischen Karwendel und Rofan: Der Achensee ist Tirols größter See und ein Paradies für Segler, Wanderer und Genießer. Alles zum „Tiroler Meer".',
+    date: '2026-06-11',
+    category: 'Baden',
+    region: 'tirol',
+    bestSeason: 'Juni–September',
+    highlights: ['Tirols größter See – tiefblau & klar', 'Top zum Segeln & Surfen (verlässlicher Wind)', 'Wandern im Karwendel & Rofan'],
+    content: `
+Der Achensee liegt auf 930 m zwischen den Karwendel- und Rofangebirgen – ein tiefblauer, klarer Bergsee, der wegen seiner langgestreckten Form auch „Tiroler Fjord" genannt wird.
+
+## Wasser & Wind
+Das Wasser ist klar und im Hochsommer angenehm (bis ~20 °C). Der verlässliche Wind macht den Achensee zu einem der besten **Segel- und Surfreviere** der Alpen. Strandbäder gibt es in Pertisau und Maurach.
+
+## Berge ringsum
+- **Rofan-Seilbahn** mit Aussicht und dem „Airrofan Skyglider"
+- **Karwendel:** anspruchsvolle Wanderungen und Almen
+- Schifffahrt über den See als entspannte Alternative
+
+## Praktische Infos
+- Anfahrt: Von Innsbruck ca. 45 Minuten
+- Nostalgische Anreise mit der Achenseebahn (Zahnrad-Dampfbahn) von Jenbach
+- Achensee Card mit Übernachtung: Bergbahnen & Schiff oft inkludiert
+    `,
+    affiliateLinks: [
+      { label: 'Hotels am Achensee – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Achensee' },
+      { label: 'Neoprenanzug / Wassersport – Amazon', url: 'https://www.amazon.de/s?k=neoprenanzug' },
+    ],
+  },
+  {
+    slug: 'oetztal-soelden',
+    title: 'Ötztal & Sölden – Gletscher, Gipfel und Action',
+    excerpt: 'Das Ötztal ist Tirols Abenteuer-Tal: Gletscher-Skigebiet Sölden, der Aqua Dome, hochalpine Wanderungen und das höchstgelegene Bergdorf Österreichs. Was du erleben kannst.',
+    date: '2026-06-11',
+    category: 'Ausflug',
+    region: 'tirol',
+    bestSeason: 'Ganzjährig',
+    highlights: ['Gletscher-Skigebiet Sölden', 'Aqua Dome Therme', 'Hochalpine Touren bis 3.000 m'],
+    content: `
+Das Ötztal zieht sich tief in die Ötztaler Alpen – ein Tal der Superlative mit Gletschern, Dreitausendern und dem actionreichen Sölden.
+
+## Sölden
+Bekannt durch den Ski-Weltcup-Auftakt und das Gletscherskigebiet (Schnee bis in den Frühsommer). Die „Gaislachkogl"-Bahn führt zum Gipfelrestaurant und zur 007-ELEMENTS-James-Bond-Erlebniswelt.
+
+## Sommer im Ötztal
+- **Wandern:** von Talwegen bis zu hochalpinen Touren (z. B. rund um Obergurgl, das höchste Kirchdorf Österreichs)
+- **Aqua Dome** in Längenfeld: spektakuläre Thermenlandschaft mit Bergblick
+- Klettersteige, Rafting und Bikeparks
+
+## Praktische Infos
+- Anfahrt: Von Innsbruck ca. 1 Stunde
+- Hochalpine Touren nur mit Erfahrung & Ausrüstung
+- Aqua Dome ideal als Schlechtwetter- oder Aprés-Programm
+    `,
+    affiliateLinks: [
+      { label: 'Hotels in Sölden/Ötztal – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=S%C3%B6lden' },
+      { label: 'Ötztal: Tickets & Touren – GetYourGuide', url: 'https://www.getyourguide.de/s/?q=%C3%96tztal' },
+    ],
+  },
+  {
+    slug: 'zillertal-wandern',
+    title: 'Zillertal – Wandern zwischen Almen und Dreitausendern',
+    excerpt: 'Das Zillertal ist eines der beliebtesten Wandertäler Tirols: sanfte Almwege im Tal, hochalpine Touren am Zillertaler Hauptkamm und der Hintertuxer Gletscher als ganzjähriges Highlight.',
+    date: '2026-06-11',
+    category: 'Wandern',
+    region: 'tirol',
+    difficulty: 'mittel',
+    bestSeason: 'Juni–Oktober',
+    highlights: ['Von Almwanderung bis Hochtour', 'Hintertuxer Gletscher – Schnee im Sommer', 'Dichtes Netz an Hütten'],
+    content: `
+Das Zillertal südlich von Jenbach ist ein Wanderklassiker – breit gefächert von gemütlichen Talwegen bis zu ernsthaften Hochtouren am vergletscherten Hauptkamm.
+
+## Für Einsteiger & Familien
+Almwanderungen und Höhenwege mit Bergbahn-Unterstützung (z. B. am Penken oder in Mayrhofen). Viele bewirtschaftete Almen mit Tiroler Schmankerln.
+
+## Für Geübte
+Der **Berliner Höhenweg** ist eine bekannte mehrtägige Hüttentour über den Zillertaler Hauptkamm – für trittsichere, konditionsstarke Bergwanderer.
+
+## Hintertuxer Gletscher
+Das einzige ganzjährige Skigebiet Österreichs – auch im Sommer Schnee und ein begehbares Natureispalast-Erlebnis im Gletscher.
+
+## Praktische Infos
+- Anfahrt: Von Innsbruck ca. 1 Stunde
+- Zillertal Card mit Bergbahnen & Bussen
+- Wetter und Tourenschwierigkeit ernst nehmen
+    `,
+    affiliateLinks: [
+      { label: 'Hotels im Zillertal – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Zillertal' },
+      { label: 'Wanderstöcke – Amazon', url: 'https://www.amazon.de/s?k=wanderst%C3%B6cke+teleskop' },
+    ],
+  },
+  {
+    slug: 'kitzbuehel-ausflug',
+    title: 'Kitzbühel – Gamsstadt zwischen Glamour und Bergsport',
+    excerpt: 'Die legendäre Streif, eine charmante mittelalterliche Altstadt und mondänes Flair: Kitzbühel ist einer der bekanntesten Orte der Alpen – im Sommer ein ruhiges Wander- und Golfparadies.',
+    date: '2026-06-11',
+    category: 'Ausflug',
+    region: 'tirol',
+    bestSeason: 'Ganzjährig',
+    highlights: ['Legendäre Skiabfahrt „Streif"', 'Charmante mittelalterliche Altstadt', 'Sommer: Wandern, Golf & Bergbahnen'],
+    content: `
+Kitzbühel, die „Gamsstadt", ist einer der berühmtesten Orte der Alpen – bekannt durch das Hahnenkamm-Skirennen, aber auch im Sommer ein lohnendes Ziel.
+
+## Winter
+Die **Streif** am Hahnenkamm gilt als schwierigste Abfahrt der Welt – das jährliche Rennen ist ein gesellschaftliches Großereignis. Das Skigebiet ist groß und schneesicher.
+
+## Sommer
+Ruhiger und entspannter: Wandern und Biken am Kitzbüheler Horn, Golfplätze, der Schwarzsee zum Baden und eine hübsche Fußgängerzone mit Geschäften und Cafés.
+
+## Altstadt
+Die bemalten Bürgerhäuser der Vorderstadt geben Kitzbühel sein unverwechselbares, mittelalterliches Flair.
+
+## Praktische Infos
+- Anfahrt: Von Innsbruck ca. 1 Stunde, gut per Bahn erreichbar
+- Im Winter (v. a. zur Rennzeit) teuer & ausgebucht – früh planen
+- Sommer ist deutlich günstiger und ruhiger
+    `,
+    affiliateLinks: [
+      { label: 'Hotels in Kitzbühel – booking.com', url: 'https://www.booking.com/city/at/kitzbuhel.de.html' },
+      { label: 'Tirol: Erlebnisse – GetYourGuide', url: 'https://www.getyourguide.de/s/?q=Tirol' },
+    ],
+  },
+  {
+    slug: 'swarovski-kristallwelten',
+    title: 'Swarovski Kristallwelten – funkelndes Erlebnis bei Innsbruck',
+    excerpt: 'Der Riese, glitzernde Wunderkammern und ein verspielter Garten: Die Swarovski Kristallwelten in Wattens sind eines der meistbesuchten Ausflugsziele Tirols – für Groß und Klein.',
+    date: '2026-06-11',
+    category: 'Ausflug',
+    region: 'tirol',
+    bestSeason: 'Ganzjährig',
+    highlights: ['Kunstvolle Kristall-Wunderkammern', 'Großer Spiel- & Erlebnisgarten', 'Auch bei Regen ein top Ziel'],
+    content: `
+Die Swarovski Kristallwelten in Wattens bei Innsbruck sind ein Mix aus Kunst, Design und Inszenierung – und eines der beliebtesten Ausflugsziele Tirols.
+
+## Die Wunderkammern
+Renommierte Künstler haben Räume rund um das Thema Kristall gestaltet – von funkelnden Installationen bis zu begehbaren Kunstwerken. Der „Riese" speit Wasser am Eingang.
+
+## Für Familien
+Der weitläufige Garten mit Spielturm, Karussell und Wasserspielen begeistert Kinder. Drinnen wie draußen gibt es viel zu entdecken – ideal auch bei wechselhaftem Wetter.
+
+## Praktische Infos
+- Anfahrt: Von Innsbruck ca. 20 Minuten, Shuttle-Bus verfügbar
+- Tickets online oft günstiger und ohne Anstehen
+- Mehrere Stunden einplanen
+    `,
+    affiliateLinks: [
+      { label: 'Swarovski Kristallwelten: Tickets – GetYourGuide', url: 'https://www.getyourguide.de/s/?q=Swarovski%20Kristallwelten' },
+      { label: 'Hotels bei Innsbruck – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Wattens' },
+    ],
+  },
+  {
+    slug: 'wilder-kaiser-wandern',
+    title: 'Wilder Kaiser – schroffe Gipfel und sanfte Almen',
+    excerpt: 'Das markante Kaisergebirge ist eine der eindrucksvollsten Kulissen Tirols. Vom gemütlichen Almweg bis zur ausgesetzten Klettertour bietet der Wilde Kaiser Wandern für jeden.',
+    date: '2026-06-11',
+    category: 'Wandern',
+    region: 'tirol',
+    difficulty: 'mittel',
+    bestSeason: 'Juni–Oktober',
+    highlights: ['Spektakuläre Felskulisse', 'Familienwege & Bergsteiger-Touren', 'Bekannte Filmkulisse (Bergdoktor)'],
+    content: `
+Der Wilde Kaiser im Tiroler Unterland ragt mit schroffen Kalkwänden über sanften grünen Almen auf – eine der fotogensten Bergkulissen Österreichs und bekannt aus der TV-Serie „Der Bergdoktor".
+
+## Für Familien & Einsteiger
+Rund um Ellmau, Going und Scheffau führen viele leichte Almwege – mit Einkehrhütten und Spielstationen. Bergbahnen (z. B. in Söll) erleichtern den Aufstieg.
+
+## Für Bergsteiger
+Die schroffen Gipfel des Kaisergebirges sind ein Eldorado für erfahrene Bergsteiger und Kletterer – ausgesetzte Steige und alpine Touren.
+
+## Praktische Infos
+- Region „Wilder Kaiser" um Ellmau, Going, Scheffau, Söll
+- Anfahrt: Von Innsbruck ca. 1 Stunde, von Kufstein ca. 20 Minuten
+- Festes Schuhwerk; bei alpinen Touren entsprechende Ausrüstung
+    `,
+    affiliateLinks: [
+      { label: 'Hotels am Wilden Kaiser – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Ellmau' },
+      { label: 'Wanderschuhe – Amazon', url: 'https://www.amazon.de/s?k=wanderschuhe' },
+    ],
+  },
+  {
+    slug: 'plansee-tirol-baden',
+    title: 'Plansee & Heiterwanger See – Tirols stille Badeseen im Westen',
+    excerpt: 'Der Plansee ist Tirols zweitgrößter See: tiefblau, ruhig und von Bergen umrahmt. Mit dem benachbarten Heiterwanger See ein Geheimtipp für Badeurlaub abseits der Massen.',
+    date: '2026-06-11',
+    category: 'Baden',
+    region: 'tirol',
+    bestSeason: 'Juni–September',
+    highlights: ['Tiefblauer Bergsee, ruhig & klar', 'Verbunden mit dem Heiterwanger See', 'Bootsverleih & Schifffahrt'],
+    content: `
+Im äußersten Westen Tirols, nahe der bayerischen Grenze, liegt der Plansee – Tirols zweitgrößter See und ein ruhiger Gegenpol zu den belebten Tourismusseen.
+
+## Der See
+Tiefblaues, klares Wasser, von bewaldeten Bergen umrahmt. Im Hochsommer angenehm zum Baden, dazu Bootsverleih und eine kleine Schifffahrt. Über einen Kanal ist der Plansee mit dem **Heiterwanger See** verbunden.
+
+## Aktiv
+Rund um den See führen Rad- und Spazierwege; die Gegend ist auch bei Stand-up-Paddlern und Anglern beliebt. Ruhe und Natur stehen im Vordergrund.
+
+## Praktische Infos
+- Anfahrt: Nahe Reutte, von Innsbruck ca. 1,5 Stunden, von München ca. 1,5 Stunden
+- Gut mit einem Ausflug zu Schloss Neuschwanstein (Bayern) kombinierbar
+- Wenig Infrastruktur – Verpflegung mitnehmen
+    `,
+    affiliateLinks: [
+      { label: 'Unterkünfte bei Reutte/Plansee – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Reutte' },
+      { label: 'SUP-Board – Amazon', url: 'https://www.amazon.de/s?k=sup+board+aufblasbar' },
+    ],
+  },
 ];
 
 export function getPostBySlug(slug: string): Post | undefined {
