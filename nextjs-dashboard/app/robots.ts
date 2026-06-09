@@ -19,6 +19,8 @@ const BLOCKED_BOTS = [
   'ImagesiftBot',
   'cohere-ai',
   'DataForSeoBot',
+  // Chinesische Such-Crawler (keine DACH-Zielgruppe)
+  'Baiduspider', 'Sogou', 'YisouSpider', '360Spider', 'Sosospider',
 ];
 
 export default function robots(): MetadataRoute.Robots {
