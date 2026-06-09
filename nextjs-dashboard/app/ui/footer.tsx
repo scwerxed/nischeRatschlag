@@ -26,6 +26,8 @@ export default function Footer() {
             <li><Link href="/blog" className="hover:text-white transition-colors">Magazin</Link></li>
             <li><Link href="/karte" className="hover:text-white transition-colors">Wanderkarte</Link></li>
             <li><Link href="/routenplaner" className="hover:text-white transition-colors">Routenplaner</Link></li>
+            <li><Link href="/seen-vergleich" className="hover:text-white transition-colors">Seen-Vergleich</Link></li>
+            <li><Link href="/merkliste" className="hover:text-white transition-colors">Merkliste</Link></li>
             <li><Link href="/reiseinfos" className="hover:text-white transition-colors">Reiseinfos</Link></li>
             <li><Link href="/regionen/kaernten" className="hover:text-white transition-colors">Region Kärnten</Link></li>
           </ul>

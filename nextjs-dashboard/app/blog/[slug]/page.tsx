@@ -6,6 +6,7 @@ import type { Metadata } from 'next';
 import { cloak, excursionsFor } from '@/app/lib/affiliate';
 import TrailMapWrapper from '@/app/ui/trail-map-wrapper';
 import ShareButtons from '@/app/ui/share-buttons';
+import SaveButton from '@/app/ui/save-button';
 import { readingTime, relatedPosts } from '@/app/lib/blog-utils';
 import { BASE, SITE_NAME, CATEGORY_KEYWORDS, articleSchema, breadcrumbSchema } from '@/app/lib/seo';
 
@@ -300,6 +301,9 @@ export default async function BlogPostPage({ params }: Props) {
                 <dd className="font-medium text-gray-900">{regionLabel}</dd>
               </div>
             </dl>
+            <div className="mt-4 pt-4 border-t border-gray-100">
+              <SaveButton slug={post.slug} title={post.title} category={post.category} />
+            </div>
           </div>
 
           {/* Erlebnisse & Tickets */}

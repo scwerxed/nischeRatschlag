@@ -8,9 +8,9 @@ const LINKS = [
   { href: '/blog', label: 'Magazin' },
   { href: '/karte', label: 'Karte' },
   { href: '/routenplaner', label: 'Routenplaner' },
+  { href: '/seen-vergleich', label: 'Seen-Vergleich' },
   { href: '/regionen/kaernten', label: 'Kärnten' },
   { href: '/ueber-uns', label: 'Über uns' },
-  { href: '/kontakt', label: 'Kontakt' },
 ];
 
 function Logo({ onClick }: { onClick?: () => void }) {
@@ -34,18 +34,47 @@ function Logo({ onClick }: { onClick?: () => void }) {
   );
 }
 
+function Heart({ count }: { count: number }) {
+  return (
+    <Link href="/merkliste" aria-label={`Merkliste (${count})`} className="relative text-gray-500 hover:text-green-700 transition-colors">
+      <svg width="22" height="22" viewBox="0 0 16 16" fill={count > 0 ? 'currentColor' : 'none'} stroke="currentColor" strokeWidth="1.5">
+        <path d="M8 14s-5-3.3-5-7a3 3 0 0 1 5-2.2A3 3 0 0 1 13 7c0 3.7-5 7-5 7z" strokeLinejoin="round" />
+      </svg>
+      {count > 0 && (
+        <span className="absolute -top-1.5 -right-1.5 bg-green-700 text-white text-[10px] font-bold min-w-[16px] h-4 px-1 flex items-center justify-center rounded-full">
+          {count}
+        </span>
+      )}
+    </Link>
+  );
+}
+
 export default function Navbar() {
   const [open, setOpen] = useState(false);
+  const [count, setCount] = useState(0);
   const pathname = usePathname();
 
-  // Menü bei Seitenwechsel schließen
   useEffect(() => { setOpen(false); }, [pathname]);
 
-  // Body-Scroll sperren wenn Menü offen
   useEffect(() => {
     document.body.style.overflow = open ? 'hidden' : '';
     return () => { document.body.style.overflow = ''; };
   }, [open]);
+
+  // Merklisten-Zähler live aktualisieren
+  useEffect(() => {
+    const update = () => {
+      try { setCount(JSON.parse(localStorage.getItem('bergseen-merkliste') ?? '[]').length); }
+      catch { setCount(0); }
+    };
+    update();
+    window.addEventListener('merkliste-changed', update);
+    window.addEventListener('storage', update);
+    return () => {
+      window.removeEventListener('merkliste-changed', update);
+      window.removeEventListener('storage', update);
+    };
+  }, []);
 
   const isActive = (href: string) =>
     href === '/' ? pathname === '/' : pathname.startsWith(href);
@@ -55,34 +84,39 @@ export default function Navbar() {
       <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
         <Logo />
 
-        {/* Desktop-Navigation */}
-        <div className="hidden md:flex items-center gap-7 text-sm text-gray-600">
-          {LINKS.map((l) => (
-            <Link
-              key={l.href}
-              href={l.href}
-              className={`relative transition-colors after:absolute after:left-0 after:-bottom-1.5 after:h-px after:bg-green-600 after:transition-all ${
-                isActive(l.href)
-                  ? 'text-green-700 after:w-full'
-                  : 'hover:text-green-700 after:w-0 hover:after:w-full'
-              }`}
-            >
-              {l.label}
-            </Link>
-          ))}
-        </div>
+        <div className="flex items-center gap-5">
+          {/* Desktop-Navigation */}
+          <div className="hidden md:flex items-center gap-6 text-sm text-gray-600">
+            {LINKS.map((l) => (
+              <Link
+                key={l.href}
+                href={l.href}
+                className={`relative transition-colors after:absolute after:left-0 after:-bottom-1.5 after:h-px after:bg-green-600 after:transition-all ${
+                  isActive(l.href)
+                    ? 'text-green-700 after:w-full'
+                    : 'hover:text-green-700 after:w-0 hover:after:w-full'
+                }`}
+              >
+                {l.label}
+              </Link>
+            ))}
+          </div>
 
-        {/* Hamburger (mobil) */}
-        <button
-          onClick={() => setOpen((v) => !v)}
-          className="md:hidden flex flex-col justify-center items-center w-10 h-10 -mr-2"
-          aria-label={open ? 'Menü schließen' : 'Menü öffnen'}
-          aria-expanded={open}
-        >
-          <span className={`block w-6 h-0.5 bg-gray-800 transition-all duration-300 ${open ? 'translate-y-[7px] rotate-45' : ''}`} />
-          <span className={`block w-6 h-0.5 bg-gray-800 my-1.5 transition-all duration-300 ${open ? 'opacity-0' : ''}`} />
-          <span className={`block w-6 h-0.5 bg-gray-800 transition-all duration-300 ${open ? '-translate-y-[7px] -rotate-45' : ''}`} />
-        </button>
+          {/* Merkliste-Herz (immer sichtbar) */}
+          <Heart count={count} />
+
+          {/* Hamburger (mobil) */}
+          <button
+            onClick={() => setOpen((v) => !v)}
+            className="md:hidden flex flex-col justify-center items-center w-9 h-9 -mr-1"
+            aria-label={open ? 'Menü schließen' : 'Menü öffnen'}
+            aria-expanded={open}
+          >
+            <span className={`block w-6 h-0.5 bg-gray-800 transition-all duration-300 ${open ? 'translate-y-[7px] rotate-45' : ''}`} />
+            <span className={`block w-6 h-0.5 bg-gray-800 my-1.5 transition-all duration-300 ${open ? 'opacity-0' : ''}`} />
+            <span className={`block w-6 h-0.5 bg-gray-800 transition-all duration-300 ${open ? '-translate-y-[7px] -rotate-45' : ''}`} />
+          </button>
+        </div>
       </div>
 
       {/* Mobiles Overlay-Menü */}
@@ -92,7 +126,7 @@ export default function Navbar() {
         }`}
       >
         <div className="flex flex-col px-6 py-4 divide-y divide-gray-100">
-          {LINKS.map((l) => (
+          {[...LINKS, { href: '/merkliste', label: 'Merkliste' }, { href: '/kontakt', label: 'Kontakt' }].map((l) => (
             <Link
               key={l.href}
               href={l.href}
