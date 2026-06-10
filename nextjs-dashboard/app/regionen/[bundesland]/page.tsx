@@ -3,31 +3,9 @@ import { posts } from '@/app/lib/posts';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import type { Metadata } from 'next';
-import Faq, { type FaqItem } from '@/app/ui/faq';
+import Faq from '@/app/ui/faq';
 import { BASE, BASE_KEYWORDS, touristDestinationSchema, breadcrumbSchema } from '@/app/lib/seo';
-
-const KAERNTEN_FAQ: FaqItem[] = [
-  {
-    q: 'Welcher ist der wärmste Badesee in Kärnten?',
-    a: 'Der Klopeiner See in Südkärnten ist mit durchschnittlich 26–29 °C der wärmste Badesee Österreichs. Durch das flache Becken und die geschützte Lage erwärmt sich das Wasser schneller als an jedem anderen heimischen See.',
-  },
-  {
-    q: 'Wann ist die beste Reisezeit für Kärnten?',
-    a: 'Juli und August sind am wärmsten, aber auch am vollsten. Geheimtipp ist der September: Die Seen haben noch 22–25 °C, die Preise fallen um bis zu 40 % und die Strände sind leer. Für Wanderungen ist Juni (Alpenrosenblüte) ideal.',
-  },
-  {
-    q: 'Gibt es kostenlose Badestellen am Wörthersee?',
-    a: 'Ja. Bekannte Gratis-Stellen sind der Freistrand Maria Wörth und die Badebucht Reifnitz. Abseits der Touristenströme lohnen kleinere Seen wie der Forstsee oder Keutschacher See mit kostenlosen Zugängen.',
-  },
-  {
-    q: 'Welche Wanderung lohnt sich für Anfänger?',
-    a: 'Die Seepromenade Klagenfurt–Pörtschach (flach, 18 km) und der Nockberge-Höhenweg (sanfte Almwege ohne Klettern) sind ideal für Einsteiger und Familien. Den genauen Wegverlauf siehst du auf unserer interaktiven Wanderkarte.',
-  },
-  {
-    q: 'Ist Kärnten auch im Winter einen Besuch wert?',
-    a: 'Absolut. Der Weissensee verwandelt sich in Europas größte Natureisfläche, und Skigebiete wie Bad Kleinkirchheim (mit Therme) und das Nassfeld bieten 100+ km Pisten – oft günstiger als Tirol.',
-  },
-];
+import { FAQS_BY_REGION } from '@/app/lib/faqs';
 
 type Props = { params: Promise<{ bundesland: string }> };
 
@@ -312,8 +290,8 @@ export default async function RegionPage({ params }: Props) {
             );
           })}
 
-          {/* FAQ – mit Rich-Snippet JSON-LD */}
-          {bundesland === 'kaernten' && (
+          {/* FAQ – mit Rich-Snippet JSON-LD (alle Regionen mit FAQ) */}
+          {FAQS_BY_REGION[bundesland] && (
             <section className="mb-12">
               <script
                 type="application/ld+json"
@@ -321,7 +299,7 @@ export default async function RegionPage({ params }: Props) {
                   __html: JSON.stringify({
                     '@context': 'https://schema.org',
                     '@type': 'FAQPage',
-                    mainEntity: KAERNTEN_FAQ.map((f) => ({
+                    mainEntity: FAQS_BY_REGION[bundesland].map((f) => ({
                       '@type': 'Question',
                       name: f.q,
                       acceptedAnswer: { '@type': 'Answer', text: f.a },
@@ -330,8 +308,8 @@ export default async function RegionPage({ params }: Props) {
                 }}
               />
               <p className="eyebrow mb-2">FAQ</p>
-              <h2 className="font-serif text-2xl font-bold mb-5 text-gray-900">Häufige Fragen zu Kärnten</h2>
-              <Faq items={KAERNTEN_FAQ} />
+              <h2 className="font-serif text-2xl font-bold mb-5 text-gray-900">Häufige Fragen zu {region.name}</h2>
+              <Faq items={FAQS_BY_REGION[bundesland]} />
             </section>
           )}
 

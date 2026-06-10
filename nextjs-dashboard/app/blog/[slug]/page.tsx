@@ -58,6 +58,28 @@ const CATEGORY_GRADIENT: Record<string, string> = {
   Unterkunft: 'from-teal-700 to-green-900',
 };
 
+/** Erzeugt eine stabile Anker-ID aus einer Überschrift (umlaut-sicher). */
+function slugifyHeading(text: string): string {
+  return text
+    .replace(/\*\*/g, '')
+    .toLowerCase()
+    .replace(/ä/g, 'ae').replace(/ö/g, 'oe').replace(/ü/g, 'ue').replace(/ß/g, 'ss')
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/(^-|-$)/g, '');
+}
+
+/** Liest alle ##-Überschriften für das Inhaltsverzeichnis aus. */
+function extractHeadings(content: string): { id: string; text: string }[] {
+  return content
+    .trim()
+    .split('\n')
+    .filter((l) => l.startsWith('## '))
+    .map((l) => {
+      const text = l.slice(3).replace(/\*\*/g, '').trim();
+      return { id: slugifyHeading(l.slice(3)), text };
+    });
+}
+
 function renderInline(text: string): React.ReactNode {
   const parts = text.split(/(\*\*[^*]+\*\*)/g);
   return parts.map((part, i) => {
@@ -94,7 +116,7 @@ function renderContent(content: string) {
     if (line.startsWith('## ')) {
       flushList();
       elements.push(
-        <h2 key={i} className="font-serif text-2xl font-bold mt-12 mb-4 text-gray-900 border-b border-gray-200 pb-3">
+        <h2 key={i} id={slugifyHeading(line.slice(3))} className="font-serif text-2xl font-bold mt-12 mb-4 text-gray-900 border-b border-gray-200 pb-3 scroll-mt-20">
           {renderInline(line.slice(3))}
         </h2>
       );
@@ -136,6 +158,7 @@ export default async function BlogPostPage({ params }: Props) {
 
   const minutes = readingTime(post.content);
   const related = relatedPosts(post, posts);
+  const headings = extractHeadings(post.content);
   const gradient = CATEGORY_GRADIENT[post.category] ?? 'from-green-700 to-green-900';
 
   const jsonLd = [
@@ -269,6 +292,22 @@ export default async function BlogPostPage({ params }: Props) {
 
         {/* Sidebar */}
         <aside className="space-y-6 lg:sticky lg:top-20 self-start">
+          {/* Inhaltsverzeichnis */}
+          {headings.length >= 3 && (
+            <nav className="border border-gray-200 p-5" style={{ borderRadius: 8 }} aria-label="Inhaltsverzeichnis">
+              <p className="eyebrow mb-3">Inhalt</p>
+              <ol className="space-y-1.5 text-sm">
+                {headings.map((h) => (
+                  <li key={h.id}>
+                    <a href={`#${h.id}`} className="text-gray-600 hover:text-green-700 transition-colors block leading-snug">
+                      {h.text}
+                    </a>
+                  </li>
+                ))}
+              </ol>
+            </nav>
+          )}
+
           {/* Schnellinfo */}
           <div className="border border-gray-200 p-5" style={{ borderRadius: 8 }}>
             <p className="eyebrow mb-3">Schnellinfo</p>
