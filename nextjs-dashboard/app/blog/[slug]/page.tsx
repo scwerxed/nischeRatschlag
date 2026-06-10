@@ -8,7 +8,7 @@ import TrailMapWrapper from '@/app/ui/trail-map-wrapper';
 import ShareButtons from '@/app/ui/share-buttons';
 import SaveButton from '@/app/ui/save-button';
 import { readingTime, relatedPosts } from '@/app/lib/blog-utils';
-import { BASE, SITE_NAME, CATEGORY_KEYWORDS, articleSchema, breadcrumbSchema } from '@/app/lib/seo';
+import { BASE, SITE_NAME, CATEGORY_KEYWORDS, articleSchema, breadcrumbSchema, OFFICIAL_REGION_SITES } from '@/app/lib/seo';
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -159,6 +159,8 @@ export default async function BlogPostPage({ params }: Props) {
   const minutes = readingTime(post.content);
   const related = relatedPosts(post, posts);
   const headings = extractHeadings(post.content);
+  const regionSite = OFFICIAL_REGION_SITES[post.region];
+  const officialLinks = [...(post.officialLinks ?? []), ...(regionSite ? [regionSite] : [])];
   const gradient = CATEGORY_GRADIENT[post.category] ?? 'from-green-700 to-green-900';
 
   const jsonLd = [
@@ -378,6 +380,24 @@ export default async function BlogPostPage({ params }: Props) {
                 ))}
               </ul>
               <p className="text-[11px] text-gray-400 mt-3">* Affiliate-Links – ohne Mehrkosten für dich.</p>
+            </div>
+          )}
+
+          {/* Offizielle Infos & Quellen (keine Affiliate-Links) */}
+          {officialLinks.length > 0 && (
+            <div className="border border-gray-200 p-5" style={{ borderRadius: 8 }}>
+              <p className="eyebrow mb-3">Offizielle Infos</p>
+              <ul className="space-y-2.5">
+                {officialLinks.map((link) => (
+                  <li key={link.url}>
+                    <a href={link.url} target="_blank" rel="noopener noreferrer"
+                      className="text-gray-700 hover:text-green-700 text-sm leading-snug block">
+                      {link.label} ↗
+                    </a>
+                  </li>
+                ))}
+              </ul>
+              <p className="text-[11px] text-gray-400 mt-3">Aktuelle Öffnungszeiten &amp; Preise bitte auf den offiziellen Seiten prüfen.</p>
             </div>
           )}
         </aside>

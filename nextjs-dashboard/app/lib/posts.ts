@@ -16,6 +16,7 @@ export type Post = {
   category: 'Wandern' | 'Baden' | 'Unterkunft' | 'Ausflug';
   region: string;
   affiliateLinks?: { label: string; url: string }[];
+  officialLinks?: { label: string; url: string }[]; // offizielle Quellen (keine Affiliate-Links)
   difficulty?: 'leicht' | 'mittel' | 'schwer';
   highlights?: string[];
   bestSeason?: string;
@@ -499,6 +500,10 @@ Für tierbegeisterte Kinder lohnen sich die Tiertouren der Region – von der **
 ## Unterkunft-Tipp
 Familienfreundliche Hotels mit Kinderbetreuung findet man am besten über booking.com:
     `,
+    officialLinks: [
+      { label: 'Minimundus Klagenfurt (minimundus.at)', url: 'https://www.minimundus.at' },
+      { label: 'Reptilienzoo Happ (reptilienzoo.at)', url: 'https://www.reptilienzoo.at' },
+    ],
     affiliateLinks: [
       { label: 'Familienhotels Wörthersee – booking.com', url: 'https://www.booking.com/region/at/carinthia.de.html?nflt=fc%3D2' },
       { label: 'Familienausflüge & Tickets – GetYourGuide', url: 'https://www.getyourguide.de/s/?q=K%C3%A4rnten' },
@@ -678,6 +683,9 @@ Die Straße ist mautpflichtig (Tagesticket ca. 40 €/Auto). Geöffnet von Mai b
 ## Anfahrt aus Kärnten
 Von Villach ca. 1,5 Stunden, von Klagenfurt ca. 2 Stunden über Heiligenblut.
     `,
+    officialLinks: [
+      { label: 'Großglockner Hochalpenstraße (grossglockner.at)', url: 'https://www.grossglockner.at' },
+    ],
     affiliateLinks: [
       { label: 'Großglockner-Touren & Tickets – GetYourGuide', url: 'https://www.getyourguide.de/s/?q=Gro%C3%9Fglockner' },
       { label: 'Hotels in Heiligenblut – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Heiligenblut+K%C3%A4rnten' },
@@ -2117,6 +2125,9 @@ Der größte Teil des Ufers ist von kilometerbreitem Schilf gesäumt – ein ein
 - Fahrrad ist das ideale Fortbewegungsmittel (flach, Radweg um den See)
 - Sonnenschutz nicht vergessen – wenig Schatten in der Steppe
     `,
+    officialLinks: [
+      { label: 'Neusiedler See Tourismus (neusiedlersee.com)', url: 'https://www.neusiedlersee.com' },
+    ],
     affiliateLinks: [
       { label: 'Hotels in Podersdorf am See – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Podersdorf+am+See' },
       { label: 'Sonnenschutz & Strandzubehör – Amazon', url: 'https://www.amazon.de/s?k=sonnenschirm+strand' },
@@ -2962,6 +2973,9 @@ Eine kurvige Bergstraße, ein steiler Fußweg und eine **Seilbahn** bringen dich
 - Mehrere Stunden einplanen (Anfahrt, Aufstieg, Führung)
 - Kombinierbar mit der Burg Hohenwerfen direkt gegenüber
     `,
+    officialLinks: [
+      { label: 'Eisriesenwelt Werfen (eisriesenwelt.at)', url: 'https://www.eisriesenwelt.at' },
+    ],
     affiliateLinks: [
       { label: 'Unterkünfte bei Werfen – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Werfen' },
       { label: 'Salzburg: Ausflüge & Tickets – GetYourGuide', url: 'https://www.getyourguide.de/s/?q=Salzburg' },
@@ -3050,6 +3064,10 @@ Von der Innenstadt fährt die futuristische Hungerburgbahn (von Stararchitektin 
 - Innsbruck Card: Bergbahnen, Museen & öffentlicher Verkehr inklusive
 - Tipp: Sonnenuntergang vom Hafelekar ist spektakulär
     `,
+    officialLinks: [
+      { label: 'Innsbruck Tourismus (innsbruck.info)', url: 'https://www.innsbruck.info' },
+      { label: 'Nordkettenbahnen (nordkette.com)', url: 'https://www.nordkette.com' },
+    ],
     affiliateLinks: [
       { label: 'Innsbruck: Touren & Tickets – GetYourGuide', url: 'https://www.getyourguide.de/s/?q=Innsbruck' },
       { label: 'Hotels in Innsbruck – booking.com', url: 'https://www.booking.com/city/at/innsbruck.de.html' },
@@ -3201,6 +3219,9 @@ Der weitläufige Garten mit Spielturm, Karussell und Wasserspielen begeistert Ki
 - Tickets online oft günstiger und ohne Anstehen
 - Mehrere Stunden einplanen
     `,
+    officialLinks: [
+      { label: 'Swarovski Kristallwelten (kristallwelten.swarovski.com)', url: 'https://kristallwelten.swarovski.com' },
+    ],
     affiliateLinks: [
       { label: 'Swarovski Kristallwelten: Tickets – GetYourGuide', url: 'https://www.getyourguide.de/s/?q=Swarovski%20Kristallwelten' },
       { label: 'Hotels bei Innsbruck – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Wattens' },

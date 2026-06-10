@@ -29,6 +29,15 @@ export const CATEGORY_KEYWORDS: Record<string, string[]> = {
   Ausflug:   ['Ausflug Kärnten', 'Sehenswürdigkeiten Kärnten', 'Tipps Kärnten', 'Ausflugsziele Österreich'],
 };
 
+// Offizielle Tourismus-Portale pro Region (stabile Quellen für die "Offizielle Infos"-Box)
+export const OFFICIAL_REGION_SITES: Record<string, { label: string; url: string }> = {
+  kaernten:    { label: 'Kärnten Tourismus (kaernten.at)',          url: 'https://www.kaernten.at' },
+  salzburg:    { label: 'SalzburgerLand Tourismus (salzburgerland.com)', url: 'https://www.salzburgerland.com' },
+  tirol:       { label: 'Tirol Werbung (tirol.at)',                  url: 'https://www.tirol.at' },
+  steiermark:  { label: 'Steiermark Tourismus (steiermark.com)',     url: 'https://www.steiermark.com' },
+  burgenland:  { label: 'Burgenland Tourismus (burgenland.info)',    url: 'https://www.burgenland.info' },
+};
+
 /** Organisation JSON-LD – erscheint auf allen Seiten */
 export function orgSchema() {
   return {
