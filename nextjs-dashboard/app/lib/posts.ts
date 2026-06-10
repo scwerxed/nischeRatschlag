@@ -3284,6 +3284,1020 @@ Rund um den See führen Rad- und Spazierwege; die Gegend ist auch bei Stand-up-P
       { label: 'SUP-Board – Amazon', url: 'https://www.amazon.de/s?k=sup+board+aufblasbar' },
     ],
   },
+  // ─── STEIERMARK (Ausbau 2) ───────────────────────────────────────────────────
+  {
+    slug: 'altausseer-see-baden',
+    title: 'Altausseer See – kristallklares Wasser im Ausseerland',
+    excerpt: 'Eingerahmt vom Loser und dem Dachsteinmassiv zählt der Altausseer See zu den schönsten und saubersten Bergseen der Steiermark. Baden, Wandern und Plättenfahrten.',
+    date: '2026-06-12', category: 'Baden', region: 'steiermark', bestSeason: 'Juni–September',
+    highlights: ['Glasklares, sauberes Wasser', 'Seeumrundung in 2 Std. (flach)', 'Traditionelle Plätten-Bootsfahrten'],
+    content: `
+Der Altausseer See im steirischen Salzkammergut ist ein Postkartenmotiv: tiefgrünes, kristallklares Wasser vor der Kulisse von Loser und Trisselwand.
+
+## Baden & Bootfahren
+Das Wasser ist sauber und im Hochsommer erfrischend (bis ~20 °C). Ruderboote und die traditionellen flachen „Plätten" kann man mieten – die ruhigste Art, den See zu erleben.
+
+## Seeumrundung
+Ein flacher, knapp 8 km langer Rundweg führt um den See – familientauglich, schattig, mit traumhaften Ausblicken. Ideal zum Spazieren oder Radeln.
+
+## Praktische Infos
+- Anfahrt: Von Bad Aussee wenige Minuten
+- Parkplätze gebührenpflichtig, früh kommen
+- Kombinierbar mit der Loser-Panoramastraße
+    `,
+    affiliateLinks: [
+      { label: 'Unterkünfte im Ausseerland – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Altaussee' },
+      { label: 'Steiermark: Erlebnisse – GetYourGuide', url: 'https://www.getyourguide.de/s/?q=Steiermark' },
+    ],
+  },
+  {
+    slug: 'grundlsee-steirisches-meer',
+    title: 'Grundlsee – das „steirische Meer"',
+    excerpt: 'Der Grundlsee ist der größte See der Steiermark und Tor zum geheimnisvollen Toplitzsee. Baden, Bootfahren und die „Drei-Seen-Tour" durch unberührte Bergnatur.',
+    date: '2026-06-12', category: 'Baden', region: 'steiermark', bestSeason: 'Juni–September',
+    highlights: ['Größter See der Steiermark', '"Drei-Seen-Tour" zum Toplitzsee', 'Unberührte Bergkulisse'],
+    content: `
+Der Grundlsee bei Bad Aussee wird liebevoll „steirisches Meer" genannt – ein langgestreckter, klarer See, umgeben von steilen Bergflanken.
+
+## Baden & Bootfahren
+Mehrere Badeplätze und Bootsverleihe säumen das Ufer. Das Wasser ist sauber und ruhig – ideal für Familien und Ruhesuchende.
+
+## Drei-Seen-Tour
+Ein Klassiker: vom Grundlsee per Boot und zu Fuß weiter zum **Toplitzsee** (Schauplatz vieler Legenden) und zum kleinen Kammersee, der Quelle der Traun. Geführte Plättenfahrten machen es zum Erlebnis.
+
+## Praktische Infos
+- Anfahrt: Von Bad Aussee ca. 10 Minuten
+- Drei-Seen-Touren saisonal, Boot empfehlenswert
+- Festes Schuhwerk für die Wege zwischen den Seen
+    `,
+    affiliateLinks: [
+      { label: 'Unterkünfte am Grundlsee – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Grundlsee' },
+      { label: 'Ausseerland: Touren – GetYourGuide', url: 'https://www.getyourguide.de/s/?q=Ausseerland' },
+    ],
+  },
+  {
+    slug: 'stubenbergsee-baden',
+    title: 'Stubenbergsee – Familienbadesee in der Oststeiermark',
+    excerpt: 'Warmes Wasser, flache Ufer und viel Programm: Der Stubenbergsee ist einer der beliebtesten Badeseen der Oststeiermark – perfekt für Familien.',
+    date: '2026-06-12', category: 'Baden', region: 'steiermark', bestSeason: 'Mai–September',
+    highlights: ['Warmer, flacher Familienbadesee', 'Tretboote, Strandbäder & Spielplätze', 'Tierwelt Herberstein in der Nähe'],
+    content: `
+Der Stubenbergsee bei Stubenberg ist ein künstlich angelegter, aber herrlich warmer Badesee – einer der Top-Familienseen der Oststeiermark.
+
+## Baden & Aktivitäten
+Flache Einstiege, mehrere Strandbäder, Tretboote und Liegewiesen. Das Wasser wird im Sommer angenehm warm – ideal für Kinder.
+
+## In der Nähe
+Die **Tierwelt Herberstein** (Zoo + Schloss + Gironcoli-Museum) liegt nur wenige Minuten entfernt – eine perfekte Ergänzung für einen Familientag.
+
+## Praktische Infos
+- Anfahrt: Von Graz ca. 45 Minuten
+- Eintritt in die Strandbäder, einige freie Uferzonen
+- Sonnenschutz mitnehmen – wenig Schatten
+    `,
+    affiliateLinks: [
+      { label: 'Unterkünfte bei Stubenberg – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Stubenberg+am+See' },
+      { label: 'Strandzubehör – Amazon', url: 'https://www.amazon.de/s?k=strandmuschel' },
+    ],
+  },
+  {
+    slug: 'hochschwab-wandern',
+    title: 'Hochschwab – einsame Gipfel und Gämsen in der Obersteiermark',
+    excerpt: 'Das Hochschwabmassiv ist eine der wildesten und einsamsten Bergregionen der Steiermark – mit großen Gämsrudeln, Karstlandschaft und anspruchsvollen Gipfeltouren.',
+    date: '2026-06-12', category: 'Wandern', region: 'steiermark', difficulty: 'schwer', bestSeason: 'Juni–Oktober',
+    highlights: ['Wilde, einsame Karstberge', 'Große Gämsbestände', 'Anspruchsvolle Gipfeltouren'],
+    content: `
+Das Hochschwabgebiet nördlich von Bruck an der Mur ist eine raue Kalk-Hochfläche – wenig erschlossen, dafür ursprünglich und tierreich.
+
+## Die Touren
+Der Gipfel des Hochschwab (2.277 m) ist ein langer, konditionsfordernder Anstieg, oft über Karstgelände und vorbei am Schiestlhaus. Trittsicherheit und Ausdauer sind Pflicht.
+
+## Tierwelt
+Das Gebiet beherbergt einen der größten Gämsbestände der Alpen – mit etwas Glück sieht man ganze Rudel. Auch Steinadler kreisen hier.
+
+## Praktische Infos
+- Wasser mitnehmen: Karst führt kaum Oberflächenwasser, Hütten sind rar
+- Früh starten, Wetter ernst nehmen (Nebelgefahr auf der Hochfläche)
+- Ausgangspunkte u. a. Seewiesen, Bodenbauer
+    `,
+    affiliateLinks: [
+      { label: 'Wanderausrüstung – Amazon', url: 'https://www.amazon.de/s?k=wanderrucksack+30l' },
+      { label: 'Unterkünfte Obersteiermark – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Bruck+an+der+Mur' },
+    ],
+  },
+  {
+    slug: 'giglachseen-schladminger-tauern',
+    title: 'Giglachseen – Bergseen-Wanderung in den Schladminger Tauern',
+    excerpt: 'Zwei türkise Bergseen auf über 1.900 m, urige Hütten und ein Panorama wie im Bilderbuch: Die Giglachseen sind eine der lohnendsten Wanderungen der Steiermark.',
+    date: '2026-06-12', category: 'Wandern', region: 'steiermark', difficulty: 'mittel', bestSeason: 'Juli–September',
+    highlights: ['Zwei türkise Bergseen auf 1.900 m', 'Urige Hütten zum Einkehren', 'Auch für geübte Familien machbar'],
+    content: `
+Die Giglachseen in den Schladminger Tauern sind ein Wanderklassiker – zwei glasklare Bergseen, eingebettet in eine sanfte Hochgebirgslandschaft.
+
+## Die Wanderung
+Vom Parkplatz Ursprungalm führt ein gut markierter Weg in 1,5–2 Stunden zu den Seen. Mäßige Steigung, technisch einfach – auch für trittsichere Familien geeignet.
+
+## Einkehr & Übernachtung
+Die Giglachseehütte und die Ignaz-Mattis-Hütte liegen direkt am Wasser – ideal für eine Brettljause oder als Etappe auf der Schladminger Tauern-Höhenrunde.
+
+## Praktische Infos
+- Mautstraße zur Ursprungalm (Ausgangspunkt)
+- Anfahrt: Von Schladming ca. 45 Minuten
+- Wetterumschwung möglich – Regenschutz & warme Schicht
+    `,
+    affiliateLinks: [
+      { label: 'Hotels in Schladming – booking.com', url: 'https://www.booking.com/city/at/schladming.de.html' },
+      { label: 'Wanderschuhe – Amazon', url: 'https://www.amazon.de/s?k=wanderschuhe' },
+    ],
+  },
+  {
+    slug: 'murau-murtalbahn',
+    title: 'Murau & die Murtalbahn – Bier, Holz und Nostalgie-Dampf',
+    excerpt: 'Das mittelalterliche Murau in der Obersteiermark ist bekannt für seine Brauerei und die nostalgische Murtalbahn. Eine charmante Auszeit abseits des Trubels.',
+    date: '2026-06-12', category: 'Ausflug', region: 'steiermark', bestSeason: 'Mai–Oktober',
+    highlights: ['Mittelalterliches Stadtbild', 'Murauer Brauerei mit Bierschau', 'Nostalgische Dampf-Schmalspurbahn'],
+    content: `
+Murau im oberen Murtal ist ein hübsches mittelalterliches Städtchen – dominiert von Schloss Murau und der weithin bekannten Murauer Brauerei.
+
+## Stadt & Bier
+Die Altstadt mit Bürgerhäusern, Kirche und Schloss lädt zum Bummeln. Die Murauer Brauerei bietet Führungen und eine „Bierwelt" zum Verkosten.
+
+## Murtalbahn
+Die nostalgische Schmalspurbahn fährt durchs Murtal – an manchen Tagen mit Dampflok. Man kann sogar selbst eine Draisine mieten und auf den Schienen strampeln.
+
+## Praktische Infos
+- Anfahrt: im oberen Murtal, gut über die Murtal-Bundesstraße
+- Brauereiführung & Dampffahrten an festen Terminen – vorab prüfen
+- Kombinierbar mit dem Murradweg
+    `,
+    affiliateLinks: [
+      { label: 'Unterkünfte in Murau – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Murau' },
+      { label: 'Steiermark: Touren – GetYourGuide', url: 'https://www.getyourguide.de/s/?q=Steiermark' },
+    ],
+  },
+  {
+    slug: 'bad-aussee-ausseerland',
+    title: 'Bad Aussee & das Ausseerland – Herz des Salzkammguts',
+    excerpt: 'Im geografischen Mittelpunkt Österreichs liegt das Ausseerland: Bad Aussee mit Tradition, Narzissenwiesen, Salzbergwerk und drei traumhaften Seen.',
+    date: '2026-06-12', category: 'Ausflug', region: 'steiermark', bestSeason: 'Mai–Oktober',
+    highlights: ['Mittelpunkt Österreichs', 'Narzissenfest im Frühsommer', 'Tracht, Tradition & Salzkammergut-Flair'],
+    content: `
+Bad Aussee ist die Kurstadt im Herzen des Ausseerlands – ein Landstrich, der für seine ursprüngliche Tradition, Tracht und Naturschönheit berühmt ist.
+
+## Stadt & Tradition
+Der hübsche Kurort lebt gelebtes Brauchtum: Trachten, Handwerk und das berühmte **Narzissenfest** (Ende Mai/Anfang Juni) mit kunstvollen Blumenfiguren.
+
+## Natur ringsum
+Drei Seen (Altausseer See, Grundlsee, Toplitzsee), der Loser als Hausberg und Salz­bergwerke machen das Ausseerland zum Naturparadies.
+
+## Praktische Infos
+- Anreise per Bahn (Salzkammergutbahn) gut möglich
+- Narzissenfest: früh Unterkunft buchen
+- Idealer Ausgangspunkt für die Seen-Ausflüge
+    `,
+    affiliateLinks: [
+      { label: 'Hotels in Bad Aussee – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Bad+Aussee' },
+      { label: 'Ausseerland: Erlebnisse – GetYourGuide', url: 'https://www.getyourguide.de/s/?q=Ausseerland' },
+    ],
+  },
+  {
+    slug: 'rogner-bad-blumau-therme',
+    title: 'Rogner Bad Blumau – Hundertwasser-Therme in der Oststeiermark',
+    excerpt: 'Bunte Fassaden, goldene Kuppeln und Türme: Die Therme Rogner Bad Blumau ist ein begehbares Hundertwasser-Kunstwerk – Wellness und Architektur in einem.',
+    date: '2026-06-12', category: 'Ausflug', region: 'steiermark', bestSeason: 'Ganzjährig',
+    highlights: ['Therme als Hundertwasser-Gesamtkunstwerk', 'Vulkanisches Thermalwasser', 'Ganzjähriges Wellness-Ziel'],
+    content: `
+Die Therme Rogner Bad Blumau ist weltweit einzigartig: ein vollständig nach den Ideen von Friedensreich Hundertwasser gestaltetes Thermendorf – bunt, organisch, ohne gerade Linien.
+
+## Architektur & Therme
+Begrünte Dächer, schiefe Säulen, goldene Zwiebeltürme – und mittendrin warmes Thermalwasser aus vulkanischem Untergrund. Baden im Kunstwerk.
+
+## Für wen?
+Wellness-Suchende, Architektur-Fans und alle, die etwas Außergewöhnliches wollen. Tagesgäste wie Übernachtungsgäste.
+
+## Praktische Infos
+- Anfahrt: Von Graz ca. 1 Stunde
+- Tageskarten oder Übernachtung im Thermendorf
+- Wochentags ruhiger
+    `,
+    affiliateLinks: [
+      { label: 'Thermenhotels Oststeiermark – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Bad+Blumau' },
+      { label: 'Bademantel & Wellness – Amazon', url: 'https://www.amazon.de/s?k=bademantel+unisex' },
+    ],
+  },
+  {
+    slug: 'poellauer-tal-naturpark',
+    title: 'Naturpark Pöllauer Tal – Hirschbirne, Klöster und sanfte Hügel',
+    excerpt: 'Das Pöllauer Tal in der Oststeiermark ist ein „Tal der Genüsse": Streuobstwiesen mit der seltenen Hirschbirne, das Schloss Pöllau und ruhige Wanderwege.',
+    date: '2026-06-12', category: 'Ausflug', region: 'steiermark', bestSeason: 'April–Oktober',
+    highlights: ['Genuss-Naturpark mit Hirschbirne', 'Barockes Schloss & "steirischer Petersdom"', 'Sanfte Wander- & Radwege'],
+    content: `
+Der Naturpark Pöllauer Tal ist eine sanfte, grüne Hügellandschaft – bekannt für die seltene Hirschbirne und kulinarische Spezialitäten daraus (Most, Brand, Schokolade).
+
+## Genuss & Kultur
+Die Streuobstwiesen prägen das Tal. Sehenswert sind das Schloss Pöllau und die Wallfahrtskirche Pöllauberg, der „steirische Petersdom".
+
+## Aktiv
+Gemütliche Wander- und Radwege durch Obstgärten und Wälder – ideal für entspannte Tage mit Einkehr bei Buschenschänken und Mostheurigen.
+
+## Praktische Infos
+- Anfahrt: Von Hartberg ca. 15 Minuten
+- Herbst (Ernte) besonders stimmungsvoll
+- Hofläden mit Hirschbirnen-Spezialitäten
+    `,
+    affiliateLinks: [
+      { label: 'Unterkünfte im Pöllauer Tal – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=P%C3%B6llau' },
+      { label: 'Steiermark: Genusstouren – GetYourGuide', url: 'https://www.getyourguide.de/s/?q=Steiermark' },
+    ],
+  },
+  {
+    slug: 'wasserlochklamm-palfau',
+    title: 'Wasserlochklamm Palfau – Brücken, Wasserfälle und Smaragdwasser',
+    excerpt: 'Über Hängebrücken und Steige durch eine tosende Schlucht zum smaragdgrünen Wasserloch: Die Wasserlochklamm in Palfau ist ein Naturerlebnis für die ganze Familie.',
+    date: '2026-06-12', category: 'Ausflug', region: 'steiermark', bestSeason: 'Mai–Oktober',
+    highlights: ['Spektakuläre Schlucht mit Hängebrücken', 'Smaragdgrünes Quellwasser', 'Familientauglicher Steig'],
+    content: `
+Die Wasserlochklamm bei Palfau im Gesäuse-Vorland ist eine der schönsten erschlossenen Klammen der Steiermark – mit fünf Wasserfällen und leuchtend grünem Wasser.
+
+## Der Klammweg
+Gut gesicherte Steige, Holzbrücken und eine Hängebrücke führen entlang der Wasserfälle bergauf zum „Wasserloch", dem smaragdgrünen Quelltopf. Hin und zurück ca. 2 Stunden.
+
+## Für wen?
+Familientauglich (Kinder lieben die Brücken), aber festes Schuhwerk nötig – es ist nass und teils steil.
+
+## Praktische Infos
+- Eintritt/Parkgebühr vor Ort
+- Rutschfeste Schuhe & Regenjacke
+- Anfahrt: nahe Palfau, gut mit dem Gesäuse kombinierbar
+    `,
+    affiliateLinks: [
+      { label: 'Unterkünfte bei Palfau – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Palfau' },
+      { label: 'Wanderschuhe rutschfest – Amazon', url: 'https://www.amazon.de/s?k=wanderschuhe+wasserdicht' },
+    ],
+  },
+
+  // ─── BURGENLAND (Ausbau 2) ───────────────────────────────────────────────────
+  {
+    slug: 'podersdorf-am-see',
+    title: 'Podersdorf am See – das Strandbad-Zentrum des Neusiedler Sees',
+    excerpt: 'Podersdorf ist der einzige Ort direkt am offenen Neusiedler See – mit dem berühmten Leuchtturm, langem Strandbad und besten Bedingungen zum Surfen und Segeln.',
+    date: '2026-06-13', category: 'Baden', region: 'burgenland', bestSeason: 'Mai–September',
+    highlights: ['Direkter Zugang zum offenen See', 'Wahrzeichen Leuchtturm', 'Top zum Kitesurfen & Segeln'],
+    content: `
+Podersdorf am See ist der Badeort am Neusiedler See schlechthin – als einziger Ort liegt er ohne breiten Schilfgürtel direkt am offenen Wasser.
+
+## Strandbad & Leuchtturm
+Das langgezogene Strandbad mit flachem Einstieg ist ideal für Familien, der weiße Leuchtturm das Fotomotiv. Liegewiesen, Gastronomie und Promenade gehören dazu.
+
+## Wassersport
+Der verlässliche Wind macht Podersdorf zum Hotspot für **Surfer, Kitesurfer und Segler** – mit Schulen und Verleih vor Ort.
+
+## Praktische Infos
+- Anfahrt: Von Wien ca. 1 Stunde
+- Mit dem Rad: direkt am Neusiedler See Radweg
+- Wenig Schatten – Sonnenschutz mitnehmen
+    `,
+    affiliateLinks: [
+      { label: 'Hotels in Podersdorf – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Podersdorf+am+See' },
+      { label: 'Sonnen- & Strandzubehör – Amazon', url: 'https://www.amazon.de/s?k=strandmuschel+windschutz' },
+    ],
+  },
+  {
+    slug: 'burg-lockenhaus',
+    title: 'Burg Lockenhaus – Ritterburg mit Geheimnissen',
+    excerpt: 'Die mittelalterliche Burg Lockenhaus im Südburgenland gilt als eine der besterhaltenen Wehrburgen Österreichs – mit Kultsaal, Greifvögeln und legendärem Templer-Mythos.',
+    date: '2026-06-13', category: 'Ausflug', region: 'burgenland', bestSeason: 'April–Oktober',
+    highlights: ['Besterhaltene Wehrburg der Region', 'Geheimnisvoller Kultraum', 'Greifvogelschau & Museum'],
+    content: `
+Burg Lockenhaus thront über dem gleichnamigen Ort am Fuß des Geschriebensteins – eine der besterhaltenen mittelalterlichen Burgen Österreichs.
+
+## Die Burg
+Der berühmte gotische „Kultraum" gibt bis heute Rätsel auf, dazu Verliese, Rüstkammer und ein Museum. Die Templer-Legende sorgt für Gänsehaut.
+
+## Erlebnis
+Greifvogelvorführungen, Ritterfeste und ein Burgrestaurant machen den Besuch zum Erlebnis für die ganze Familie.
+
+## Praktische Infos
+- Anfahrt: Südburgenland, von Oberpullendorf ca. 20 Minuten
+- Kombinierbar mit Wanderung auf den Geschriebenstein
+- Öffnungszeiten/Vorführungen vorab prüfen
+    `,
+    affiliateLinks: [
+      { label: 'Unterkünfte in Lockenhaus – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Lockenhaus' },
+      { label: 'Burgenland: Ausflüge – GetYourGuide', url: 'https://www.getyourguide.de/s/?q=Burgenland' },
+    ],
+  },
+  {
+    slug: 'schloss-halbturn',
+    title: 'Schloss Halbturn – barockes Juwel im Seewinkel',
+    excerpt: 'Das ehemalige kaiserliche Jagdschloss Halbturn ist das bedeutendste Barockschloss des Burgenlands – mit Deckenfresko, Schlosspark und eigenem Weingut.',
+    date: '2026-06-13', category: 'Ausflug', region: 'burgenland', bestSeason: 'April–Oktober',
+    highlights: ['Bedeutendstes Barockschloss des Burgenlands', 'Fresko von Maulbertsch', 'Schlosspark & eigenes Weingut'],
+    content: `
+Schloss Halbturn wurde im 18. Jahrhundert als kaiserliches Jagd- und Lustschloss erbaut – ein eleganter Barockbau im flachen Seewinkel.
+
+## Schloss & Kunst
+Das prächtige Deckenfresko von Franz Anton Maulbertsch im Festsaal ist ein Höhepunkt. Wechselnde Ausstellungen und ein weitläufiger Schlosspark laden zum Verweilen.
+
+## Wein
+Das Schloss Halbturn ist auch ein renommiertes Weingut – Verkostungen im historischen Ambiente sind möglich.
+
+## Praktische Infos
+- Anfahrt: Von Neusiedl am See ca. 20 Minuten
+- Ausstellungen saisonal – Termine prüfen
+- Gut mit dem Seewinkel-Nationalpark kombinierbar
+    `,
+    affiliateLinks: [
+      { label: 'Unterkünfte im Seewinkel – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Halbturn' },
+      { label: 'Burgenland Wein – GetYourGuide', url: 'https://www.getyourguide.de/s/?q=Burgenland%20Wein' },
+    ],
+  },
+  {
+    slug: 'leithagebirge-purbach-wandern',
+    title: 'Leithagebirge & Purbach – Wandern und Wein am Nordwestufer',
+    excerpt: 'Bewaldete Höhen, Aussicht über den Neusiedler See und Kellergassen voller Wein: Das Leithagebirge bei Purbach verbindet sanftes Wandern mit Genuss.',
+    date: '2026-06-13', category: 'Wandern', region: 'burgenland', difficulty: 'leicht', bestSeason: 'April–Oktober',
+    highlights: ['Sanfte Wälder mit Seeblick', 'Kellergassen & Weingüter', 'Familientaugliche Wege'],
+    content: `
+Das Leithagebirge im Nordwesten des Neusiedler Sees ist ein bewaldeter Höhenzug mit gemütlichen Wanderwegen und herrlichem Blick über die pannonische Ebene.
+
+## Wandern
+Leichte bis mittlere Wege führen durch Eichen- und Buchenwälder zu Aussichtspunkten über den See. Ideal für Familien und Genusswanderer.
+
+## Wein & Kultur
+Orte wie Purbach und Donnerskirchen sind für ihren Wein (Leithaberg DAC) und ihre Kellergassen bekannt – perfekt für eine Einkehr nach der Tour.
+
+## Praktische Infos
+- Anfahrt: Von Eisenstadt ca. 15 Minuten
+- Gut mit Weinverkostung kombinierbar (nicht selbst fahren)
+- Feste Schuhe reichen, kein alpines Gelände
+    `,
+    affiliateLinks: [
+      { label: 'Unterkünfte in Purbach – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Purbach+am+Neusiedler+See' },
+      { label: 'Wanderschuhe leicht – Amazon', url: 'https://www.amazon.de/s?k=wanderschuhe+leicht' },
+    ],
+  },
+  {
+    slug: 'burg-bernstein-edelserpentin',
+    title: 'Bernstein – Burg, Edelserpentin und Südburgenland-Idylle',
+    excerpt: 'Der Ort Bernstein im Südburgenland ist berühmt für den seltenen Edelserpentin-Stein und seine Burg mit Sternwarte. Ein ruhiges, ursprüngliches Stück Burgenland.',
+    date: '2026-06-13', category: 'Ausflug', region: 'burgenland', bestSeason: 'April–Oktober',
+    highlights: ['Seltener Edelserpentin („Bernsteiner Jade")', 'Burg mit Hotel & Sternwarte', 'Ursprüngliches Südburgenland'],
+    content: `
+Bernstein liegt in den sanften Hügeln des Südburgenlands – bekannt für eine geologische Besonderheit: den grünen Edelserpentin, der hier seit Generationen verarbeitet wird.
+
+## Edelserpentin
+Der „Bernsteiner Edelserpentin" (auch „steirische Jade" genannt) wird in örtlichen Werkstätten zu Schmuck und Skulpturen verarbeitet – Schauwerkstätten geben Einblick.
+
+## Burg Bernstein
+Die mittelalterliche Burg ist heute teils Hotel, beherbergt eine Sternwarte und ist mit dem Forscher Graf Almásy („Der englische Patient") verbunden.
+
+## Praktische Infos
+- Anfahrt: Südburgenland, von Oberwart ca. 20 Minuten
+- Schauwerkstätten & Burg mit eigenen Öffnungszeiten
+- Ruhige Region – ideal zum Entschleunigen
+    `,
+    affiliateLinks: [
+      { label: 'Unterkünfte in Bernstein – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Bernstein+Burgenland' },
+      { label: 'Burgenland: Erlebnisse – GetYourGuide', url: 'https://www.getyourguide.de/s/?q=Burgenland' },
+    ],
+  },
+  {
+    slug: 'friedensburg-stadtschlaining',
+    title: 'Friedensburg Stadtschlaining – Mittelalter und Friedensarbeit',
+    excerpt: 'Die mächtige Burg Schlaining im Südburgenland ist heute Sitz des Friedenszentrums und ein eindrucksvolles Ausflugsziel mit Museum und mittelalterlichem Stadtbild.',
+    date: '2026-06-13', category: 'Ausflug', region: 'burgenland', bestSeason: 'April–Oktober',
+    highlights: ['Gut erhaltene mittelalterliche Burg', 'Europäisches Friedenszentrum', 'Hübsches historisches Städtchen'],
+    content: `
+Die Friedensburg Schlaining in Stadtschlaining ist eine der eindrucksvollsten Burgen des Südburgenlands – und ein besonderer Ort: Sie beherbergt das Österreichische Studienzentrum für Frieden und Konfliktlösung.
+
+## Burg & Museum
+Die wuchtige Anlage mit Bergfried und Arkadenhof beherbergt Ausstellungen rund um Krieg und Frieden. Das kleine Städtchen ringsum ist hübsch erhalten.
+
+## Für wen?
+Geschichts- und Kulturinteressierte – ein nachdenklicher, ruhiger Kontrast zu reinen Naturzielen.
+
+## Praktische Infos
+- Anfahrt: Südburgenland, von Oberwart ca. 15 Minuten
+- Museum mit saisonalen Öffnungszeiten
+- Gut mit Bernstein & Güssing kombinierbar
+    `,
+    affiliateLinks: [
+      { label: 'Unterkünfte bei Stadtschlaining – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Stadtschlaining' },
+      { label: 'Burgenland: Touren – GetYourGuide', url: 'https://www.getyourguide.de/s/?q=Burgenland' },
+    ],
+  },
+  {
+    slug: 'steppentierpark-pamhagen',
+    title: 'Steppentierpark Pamhagen – Wildtiere im Seewinkel',
+    excerpt: 'Wasserbüffel, Przewalski-Pferde, Wölfe und Steppenrinder: Der Steppentierpark Pamhagen zeigt die Tierwelt der pannonischen Steppe – ideal für Familien.',
+    date: '2026-06-13', category: 'Ausflug', region: 'burgenland', bestSeason: 'April–Oktober',
+    highlights: ['Tiere der pannonischen Steppe', 'Weitläufiges Freigelände', 'Familienfreundlich, naturnah'],
+    content: `
+Der Steppentierpark Pamhagen im Seewinkel zeigt rund 50 Tierarten – mit Schwerpunkt auf der ursprünglichen Tierwelt der pannonischen Steppe.
+
+## Die Tiere
+Wasserbüffel, Przewalski-Wildpferde, Steppenrinder, Wölfe, Luchse und viele Vögel leben in weitläufigen, naturnahen Gehegen. Kinder können einen Streichelbereich besuchen.
+
+## Kombi-Tipp
+Direkt benachbart liegen die St. Martins Therme & Lodge mit Naturbadesee – ein ganzer Familientag aus Tierpark + Baden.
+
+## Praktische Infos
+- Anfahrt: Von Wien ca. 1,5 Stunden
+- Großes Gelände – gutes Schuhwerk
+- Saisonale Öffnungszeiten beachten
+    `,
+    affiliateLinks: [
+      { label: 'Unterkünfte in Pamhagen – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Pamhagen' },
+      { label: 'Fernglas für Kinder – Amazon', url: 'https://www.amazon.de/s?k=fernglas+kinder' },
+    ],
+  },
+  {
+    slug: 'weinidylle-radweg-suedburgenland',
+    title: 'Weinidylle-Radweg – durch das hügelige Südburgenland',
+    excerpt: 'Sanfte Rebhügel, Kellerstöckl und Uhudler-Buschenschänke: Der Weinidylle-Radweg führt gemütlich durch eine der ursprünglichsten Genussregionen Österreichs.',
+    date: '2026-06-13', category: 'Ausflug', region: 'burgenland', bestSeason: 'April–Oktober',
+    highlights: ['Hügelige Genuss-Radtour', 'Kellerstöckl & Uhudler', 'Ruhig & wenig befahren'],
+    content: `
+Der Weinidylle-Radweg erschließt das südliche Burgenland rund um Güssing, Heiligenbrunn und Eberau – eine sanfte, von Weingärten geprägte Hügellandschaft.
+
+## Die Tour
+Im Gegensatz zum flachen Neusiedler-See-Radweg geht es hier wellig auf und ab – mit E-Bike entspannt machbar. Unterwegs locken Kellerstöckl, Buschenschänke und der einzigartige Uhudler.
+
+## Genuss
+Hofläden, Mostheurige und Weingüter säumen die Strecke. Die Region ist deutlich ruhiger und ursprünglicher als der Norden.
+
+## Praktische Infos
+- E-Bike-Verleih in größeren Orten empfehlenswert
+- Buschenschank-Öffnungszeiten („ausg'steckt") prüfen
+- Kombinierbar mit Burg Güssing
+    `,
+    affiliateLinks: [
+      { label: 'Unterkünfte im Südburgenland – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=G%C3%BCssing' },
+      { label: 'Fahrradzubehör – Amazon', url: 'https://www.amazon.de/s?k=fahrradtasche+gep%C3%A4cktr%C3%A4ger' },
+    ],
+  },
+  {
+    slug: 'kittsee-schloss',
+    title: 'Kittsee – Barockschloss im Dreiländereck',
+    excerpt: 'Ganz im Norden des Burgenlands, wo Österreich, Ungarn und die Slowakei zusammentreffen, liegt Kittsee mit seinem Barockschloss und dem Ethnographischen Museum.',
+    date: '2026-06-13', category: 'Ausflug', region: 'burgenland', bestSeason: 'April–Oktober',
+    highlights: ['Barockschloss mit Museum', 'Dreiländereck AT/HU/SK', 'Nahe Bratislava & Wien'],
+    content: `
+Kittsee liegt im äußersten Nordburgenland – nur wenige Kilometer von Bratislava und gut eine halbe Stunde von Wien entfernt, im Dreiländereck.
+
+## Schloss & Museum
+Das barocke Schloss Kittsee beherbergt das Ethnographische Museum mit wechselnden Ausstellungen zu Volkskultur und Brauchtum Mittel- und Osteuropas.
+
+## Lage
+Durch die Nähe zu zwei Hauptstädten ein idealer Zwischenstopp – Wien und Bratislava sind beide schnell erreichbar.
+
+## Praktische Infos
+- Anfahrt: Von Wien ca. 45 Minuten
+- Museum mit saisonalen Öffnungszeiten
+- Gut mit einem Bratislava-Ausflug kombinierbar
+    `,
+    affiliateLinks: [
+      { label: 'Unterkünfte in Kittsee/Umgebung – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Kittsee' },
+      { label: 'Burgenland: Touren – GetYourGuide', url: 'https://www.getyourguide.de/s/?q=Burgenland' },
+    ],
+  },
+  {
+    slug: 'naturpark-rosalia-kogelberg',
+    title: 'Naturpark Rosalia-Kogelberg – Wandern im hügeligen Mittelburgenland',
+    excerpt: 'Zwischen Wäldern, Wiesen und der Wallfahrtskapelle Rosalia: Der Naturpark Rosalia-Kogelberg bietet sanftes Wandern und Ruhe an der Grenze zu Niederösterreich.',
+    date: '2026-06-13', category: 'Wandern', region: 'burgenland', difficulty: 'leicht', bestSeason: 'April–Oktober',
+    highlights: ['Sanfte Wald- & Wiesenwege', 'Rosalienkapelle als Ausflugsziel', 'Ruhig & familientauglich'],
+    content: `
+Der Naturpark Rosalia-Kogelberg erstreckt sich über die bewaldeten Hügel im Norden des Mittelburgenlands – ein ruhiges Wandergebiet abseits der Touristenströme.
+
+## Wandern
+Markierte Wege führen durch Mischwälder und über Wiesen, vorbei an der barocken **Rosalienkapelle** auf dem Rosaliengebirge. Sanfte Anstiege, ideal für Familien.
+
+## Natur
+Artenreiche Wiesen, alte Eichenwälder und ein Lehrpfad machen den Naturpark auch für Kinder lehrreich.
+
+## Praktische Infos
+- Anfahrt: Von Mattersburg/Forchtenstein wenige Minuten
+- Gut mit Burg Forchtenstein kombinierbar
+- Feste Schuhe genügen
+    `,
+    affiliateLinks: [
+      { label: 'Unterkünfte im Mittelburgenland – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Forchtenstein' },
+      { label: 'Wanderschuhe – Amazon', url: 'https://www.amazon.de/s?k=wanderschuhe' },
+    ],
+  },
+
+  // ─── TIROL (Ausbau 2) ────────────────────────────────────────────────────────
+  {
+    slug: 'stubaital-stubaier-gletscher',
+    title: 'Stubaital & Stubaier Gletscher – Tirols größtes Gletscherskigebiet',
+    excerpt: 'Nur 45 Minuten von Innsbruck: Das Stubaital bietet das größte Gletscherskigebiet Österreichs, Höhenwanderungen und die Aussichtsplattform „TOP OF TYROL" auf über 3.200 m.',
+    date: '2026-06-14', category: 'Ausflug', region: 'tirol', bestSeason: 'Ganzjährig',
+    highlights: ['Größtes Gletscherskigebiet Österreichs', 'Aussichtsplattform auf 3.210 m', 'Wandern & Skifahren ganzjährig'],
+    content: `
+Das Stubaital südlich von Innsbruck endet am mächtigen Stubaier Gletscher – einem Ganzjahres-Skigebiet und Hochgebirgs-Erlebnis ohne alpinistische Anforderungen.
+
+## Gletscher & Aussicht
+Bergbahnen bringen dich bequem ins ewige Eis. Die Plattform **„TOP OF TYROL"** auf 3.210 m bietet einen Rundblick über mehr als 100 Dreitausender.
+
+## Sommer
+Höhenwanderungen, der Wilde-Wasser-Weg entlang tosender Bäche und Klettersteige – das Tal ist auch im Sommer ein Wanderparadies.
+
+## Praktische Infos
+- Anfahrt: Von Innsbruck ca. 45 Minuten
+- Auch im Sommer warm anziehen (Gletscher!)
+- Bergbahn-Tickets online oft günstiger
+    `,
+    officialLinks: [
+      { label: 'Stubaier Gletscher (stubaier-gletscher.com)', url: 'https://www.stubaier-gletscher.com' },
+    ],
+    affiliateLinks: [
+      { label: 'Hotels im Stubaital – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Stubaital' },
+      { label: 'Tirol: Tickets & Touren – GetYourGuide', url: 'https://www.getyourguide.de/s/?q=Stubaital' },
+    ],
+  },
+  {
+    slug: 'seefeld-tirol',
+    title: 'Seefeld in Tirol – Hochplateau für Genießer und Langläufer',
+    excerpt: 'Auf einem sonnigen Hochplateau über Innsbruck liegt Seefeld – zweifacher Olympia-Austragungsort, Langlauf-Mekka und im Sommer ein sanftes Wander- und Wellnessziel.',
+    date: '2026-06-14', category: 'Ausflug', region: 'tirol', bestSeason: 'Ganzjährig',
+    highlights: ['Sonniges Hochplateau (1.200 m)', 'Langlauf-Weltzentrum', 'Mondänes Flair & Wellness'],
+    content: `
+Seefeld liegt auf einem sonnenverwöhnten Hochplateau nordwestlich von Innsbruck – elegant, leicht erreichbar und ganzjährig beliebt.
+
+## Winter
+Eines der bekanntesten **Langlaufgebiete** der Welt (zweimal Olympia, mehrfach WM), dazu Abfahrtspisten und Winterwanderwege.
+
+## Sommer
+Sanfte Wanderungen über das Plateau, Golf, Wellness und gemütliche Cafés – Seefeld gilt als mondänes, aber entspanntes Ziel.
+
+## Praktische Infos
+- Anreise bequem per Bahn von Innsbruck (ca. 30 Min.)
+- Höhenlage = angenehm im Hochsommer
+- Gut für Familien & ältere Gäste geeignet
+    `,
+    affiliateLinks: [
+      { label: 'Hotels in Seefeld – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Seefeld+in+Tirol' },
+      { label: 'Tirol: Erlebnisse – GetYourGuide', url: 'https://www.getyourguide.de/s/?q=Seefeld' },
+    ],
+  },
+  {
+    slug: 'festung-kufstein',
+    title: 'Festung Kufstein – Wahrzeichen am Tor zu Tirol',
+    excerpt: 'Hoch über dem Inn thront die Festung Kufstein mit der berühmten Heldenorgel. Eine der mächtigsten Burganlagen Österreichs – mit Panoramablick und lebendiger Altstadt.',
+    date: '2026-06-14', category: 'Ausflug', region: 'tirol', bestSeason: 'April–Oktober',
+    highlights: ['Mächtige Festung über dem Inn', 'Berühmte Heldenorgel', 'Charmante Altstadt (Römerhofgasse)'],
+    content: `
+Kufstein, das „Tor zu Tirol", wird überragt von einer der eindrucksvollsten Festungsanlagen Österreichs.
+
+## Die Festung
+Über einen Panoramaaufzug oder zu Fuß erreichbar, bietet sie Museen, den Kaiserturm und einen weiten Blick über das Inntal. Täglich erklingt die **Heldenorgel** – eine der größten Freiluftorgeln der Welt.
+
+## Altstadt
+Die malerische Römerhofgasse mit ihren Gasthäusern (bekannt durch das Lied „Kufsteinlied") lädt zum Bummeln und Einkehren.
+
+## Praktische Infos
+- Anfahrt: An der A12/Grenze zu Bayern, ca. 1 Std. von Innsbruck
+- Heldenorgel täglich zur Mittagszeit
+- Gut mit dem Kaisergebirge (Wandern) kombinierbar
+    `,
+    affiliateLinks: [
+      { label: 'Hotels in Kufstein – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Kufstein' },
+      { label: 'Tirol: Tickets – GetYourGuide', url: 'https://www.getyourguide.de/s/?q=Kufstein' },
+    ],
+  },
+  {
+    slug: 'lienzer-dolomiten-osttirol',
+    title: 'Lienzer Dolomiten & Osttirol – schroffe Felsen, südliches Flair',
+    excerpt: 'Abgeschieden im Süden liegt Osttirol mit der Sonnenstadt Lienz und den schroffen Lienzer Dolomiten – ein Geheimtipp für Wanderer und Ruhesuchende.',
+    date: '2026-06-14', category: 'Wandern', region: 'tirol', difficulty: 'mittel', bestSeason: 'Juni–Oktober',
+    highlights: ['Schroffe Dolomiten-Kulisse', 'Sonnenstadt Lienz', 'Ruhig & wenig überlaufen'],
+    content: `
+Osttirol ist vom übrigen Tirol durch hohe Berge getrennt und dadurch ursprünglich geblieben. Über der Bezirksstadt Lienz ragen die markanten Lienzer Dolomiten auf.
+
+## Wandern
+Vom gemütlichen Talweg bis zur hochalpinen Tour über Klettersteige reicht das Angebot. Die Dolomitenhütte ist ein beliebter Ausgangspunkt mit spektakulärem Blick.
+
+## Lienz & Umgebung
+Die „Sonnenstadt" Lienz mit ihrer italienisch anmutenden Altstadt, dazu Schloss Bruck und die Nähe zum Nationalpark Hohe Tauern.
+
+## Praktische Infos
+- Anfahrt: über Felbertauern oder von Kärnten (Drautal)
+- Hochtouren nur für Geübte mit Ausrüstung
+- Geheimtipp – auch in der Hochsaison ruhiger
+    `,
+    affiliateLinks: [
+      { label: 'Hotels in Lienz/Osttirol – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Lienz' },
+      { label: 'Wanderausrüstung – Amazon', url: 'https://www.amazon.de/s?k=wanderausr%C3%BCstung' },
+    ],
+  },
+  {
+    slug: 'reschensee-versunkener-kirchturm',
+    title: 'Reschensee – der versunkene Kirchturm im Wasser',
+    excerpt: 'Ein einzelner Kirchturm ragt aus dem Wasser: Der Reschensee im äußersten Westen Tirols/Südtirols ist eines der meistfotografierten Motive der Alpen.',
+    date: '2026-06-14', category: 'Ausflug', region: 'tirol', bestSeason: 'Mai–Oktober',
+    highlights: ['Ikonischer versunkener Kirchturm', 'Fotomotiv von Weltrang', 'Top-Spot für Wind- & Kitesurfer'],
+    content: `
+Der Reschensee am Reschenpass entstand 1950 durch einen Stausee – ein ganzes Dorf wurde geflutet. Geblieben ist der romanische Kirchturm, der bis heute aus dem Wasser ragt.
+
+## Das Wahrzeichen
+Der einsame Turm im türkisen Wasser vor Bergkulisse ist eines der berühmtesten Fotomotive der Alpen – im Winter, wenn der See gefroren ist, sogar begehbar.
+
+## Aktiv
+Durch den beständigen Wind ist der Reschensee ein Hotspot für **Kite- und Windsurfer**. Ein Rad-/Wanderweg führt um den See.
+
+## Praktische Infos
+- Lage: Reschenpass, Grenze Tirol/Südtirol/Schweiz
+- Anfahrt: von Landeck ca. 1 Stunde
+- Gut mit einem Ausflug ins Südtiroler Vinschgau kombinierbar
+    `,
+    affiliateLinks: [
+      { label: 'Unterkünfte am Reschensee – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Reschensee' },
+      { label: 'Kamera-Zubehör – Amazon', url: 'https://www.amazon.de/s?k=reisestativ' },
+    ],
+  },
+  {
+    slug: 'hintertuxer-gletscher',
+    title: 'Hintertuxer Gletscher – Skifahren mitten im Sommer',
+    excerpt: 'Österreichs einziges Ganzjahres-Skigebiet: Am Hintertuxer Gletscher im Zillertal kann man an 365 Tagen Ski fahren – plus den begehbaren Natur-Eispalast erkunden.',
+    date: '2026-06-14', category: 'Ausflug', region: 'tirol', bestSeason: 'Ganzjährig',
+    highlights: ['Ganzjähriges Skigebiet (365 Tage)', 'Begehbarer Natur-Eispalast', 'Gletscherflugbahn bis 3.250 m'],
+    content: `
+Am hintersten Ende des Zillertals liegt der Hintertuxer Gletscher – das einzige Skigebiet Österreichs, das das ganze Jahr geöffnet hat.
+
+## Ski im Sommer
+Selbst im Juli und August liegt hier oben bestens präparierter Schnee – ein Erlebnis für alle, die nicht auf den Winter warten wollen.
+
+## Natur-Eispalast
+Eine Besonderheit: der begehbare Eispalast im Inneren des Gletschers, mit glitzernden Eiskristallen und einem unterirdischen See.
+
+## Praktische Infos
+- Anfahrt: durchs Zillertal bis Hintertux
+- Warme, wetterfeste Kleidung – auch im Hochsommer
+- Bergbahn-Kombitickets prüfen
+    `,
+    affiliateLinks: [
+      { label: 'Hotels in Hintertux/Zillertal – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Hintertux' },
+      { label: 'Skiausrüstung – Amazon', url: 'https://www.amazon.de/s?k=skihandschuhe' },
+    ],
+  },
+  {
+    slug: 'alpbachtal-schoenstes-dorf',
+    title: 'Alpbachtal – das „schönste Dorf Österreichs"',
+    excerpt: 'Holzhäuser mit Blumenbalkonen, sattgrüne Almen und gelebte Tradition: Alpbach wurde zum schönsten Dorf Österreichs gekürt. Ein Bilderbuch-Tirol zum Wandern.',
+    date: '2026-06-14', category: 'Ausflug', region: 'tirol', bestSeason: 'Mai–Oktober',
+    highlights: ['Gekürtes „schönstes Dorf Österreichs"', 'Einheitliche Tiroler Holzarchitektur', 'Familienfreundliches Wandergebiet'],
+    content: `
+Alpbach im Alpbachtal gilt als eines der schönsten Dörfer der Alpen – berühmt für seine einheitliche, traditionelle Holzbauweise mit blumengeschmückten Balkonen.
+
+## Dorf & Tradition
+Strenge Bauvorschriften haben das harmonische Ortsbild bewahrt. Alpbach ist auch durch das Europäische Forum (Denkertreffen) international bekannt.
+
+## Aktiv
+Das Wandergebiet rund um das Wiedersbergerhorn ist familienfreundlich, mit Bergbahnen, Almen und Erlebniswegen. Im Winter ein gemütliches Skigebiet.
+
+## Praktische Infos
+- Anfahrt: von der A12, Abfahrt Brixlegg/Kramsach
+- Gut mit dem Reintalersee (Baden) kombinierbar
+- Sommercard mit Bergbahnen
+    `,
+    affiliateLinks: [
+      { label: 'Hotels im Alpbachtal – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Alpbach' },
+      { label: 'Tirol: Erlebnisse – GetYourGuide', url: 'https://www.getyourguide.de/s/?q=Alpbachtal' },
+    ],
+  },
+  {
+    slug: 'st-anton-am-arlberg',
+    title: 'St. Anton am Arlberg – Wiege des alpinen Skilaufs',
+    excerpt: 'St. Anton am Arlberg gilt als eines der besten Skigebiete der Welt und legendäres Après-Ski-Ziel. Im Sommer ein hochalpines Wander- und Bikerevier.',
+    date: '2026-06-14', category: 'Ausflug', region: 'tirol', bestSeason: 'Dezember–April & Juni–September',
+    highlights: ['Weltklasse-Skigebiet am Arlberg', 'Legendäres Après-Ski', 'Sommer: Wandern & Biken hochalpin'],
+    content: `
+St. Anton am Arlberg im Westen Tirols ist eine Ikone des Wintersports – hier wurde der alpine Skilauf maßgeblich geprägt.
+
+## Winter
+Teil des riesigen **Skigebiets Arlberg** (Ski Arlberg) mit über 300 Pistenkilometern, anspruchsvollen Hängen und berühmtem, lautem Après-Ski.
+
+## Sommer
+Ruhiger und naturnah: hochalpine Wanderungen, Mountainbike-Trails und Bergbahnen mit Panoramablick.
+
+## Praktische Infos
+- Anreise bequem per Bahn (Arlberg-Strecke)
+- Winter teuer & ausgebucht – früh buchen
+- Sommer deutlich günstiger und ruhiger
+    `,
+    affiliateLinks: [
+      { label: 'Hotels in St. Anton – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=St.+Anton+am+Arlberg' },
+      { label: 'Skiausrüstung – Amazon', url: 'https://www.amazon.de/s?k=skibrille' },
+    ],
+  },
+  {
+    slug: 'walchsee-kaiserwinkl',
+    title: 'Walchsee im Kaiserwinkl – warmer Badesee vor dem Zahmen Kaiser',
+    excerpt: 'Der Walchsee im Tiroler Kaiserwinkl ist einer der wärmsten Badeseen Tirols – flach, sauber und ideal für Familien, mit dem Kaisergebirge als Kulisse.',
+    date: '2026-06-14', category: 'Baden', region: 'tirol', bestSeason: 'Juni–September',
+    highlights: ['Einer der wärmsten Seen Tirols (bis ~24 °C)', 'Flach & familienfreundlich', 'Kaisergebirge als Kulisse'],
+    content: `
+Der Walchsee im nordtiroler Kaiserwinkl ist ein angenehm warmer Moorsee – ideal zum Baden vor der markanten Kulisse des Zahmen Kaisers.
+
+## Baden
+Durch die geringe Tiefe erwärmt sich der See schnell (bis ~24 °C) – perfekt für Familien. Strandbäder, Liegewiesen und Bootsverleih am Ufer.
+
+## Aktiv
+Ein Rundweg führt um den See, dazu SUP, Segeln und Wanderungen am Zahmen Kaiser. Im Winter Langlauf und Winterwandern.
+
+## Praktische Infos
+- Anfahrt: nahe Kufstein, von Innsbruck ca. 1 Stunde
+- Strandbäder mit Eintritt, einige freie Uferstellen
+- Ruhiger als die großen Tourismusseen
+    `,
+    affiliateLinks: [
+      { label: 'Unterkünfte am Walchsee – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Walchsee' },
+      { label: 'SUP-Board – Amazon', url: 'https://www.amazon.de/s?k=sup+board+aufblasbar' },
+    ],
+  },
+  {
+    slug: 'pitztaler-gletscher',
+    title: 'Pitztaler Gletscher – Tirols höchster Gletscher per Bahn',
+    excerpt: 'Mit der unterirdischen Gletscherbahn und der Seilbahn geht es auf 3.440 m zum Café 3.440, dem höchstgelegenen Café Österreichs – mit Panoramabrücke und Gletscherblick.',
+    date: '2026-06-14', category: 'Ausflug', region: 'tirol', bestSeason: 'Ganzjährig',
+    highlights: ['Höchster Punkt per Bahn in Tirol (3.440 m)', 'Höchstes Café Österreichs', 'Panoramabrücke über dem Eis'],
+    content: `
+Der Pitztaler Gletscher am Ende des einsamen Pitztals bringt dich besonders hoch hinauf – per unterirdischer Standseilbahn und Gletscherseilbahn auf 3.440 m.
+
+## Café 3.440 & Panoramabrücke
+Oben warten das höchstgelegene Café Österreichs und eine Aussichtsbrücke mit Blick auf die Wildspitze (3.768 m), Tirols höchsten Berg.
+
+## Ski & Sommer
+Skifahren bis weit in den Frühsommer, dazu Gletscherführungen und ein einzigartiges Hochgebirgserlebnis – auch für Nicht-Skifahrer.
+
+## Praktische Infos
+- Anfahrt: durchs Pitztal bis Mittelberg
+- Warme Kleidung – Hochgebirge, dünne Luft
+- Wetter & Sicht vorab prüfen (Webcams)
+    `,
+    affiliateLinks: [
+      { label: 'Unterkünfte im Pitztal – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Pitztal' },
+      { label: 'Tirol: Tickets & Touren – GetYourGuide', url: 'https://www.getyourguide.de/s/?q=Pitztal' },
+    ],
+  },
+
+  // ─── SALZBURG (Ausbau 2) ─────────────────────────────────────────────────────
+  {
+    slug: 'salzwelten-hallein-duerrnberg',
+    title: 'Salzwelten Hallein – ins Salzbergwerk am Dürrnberg',
+    excerpt: 'Mit der Grubenbahn in den Berg, über Bergmannsrutschen in die Tiefe und mit dem Floß über einen unterirdischen Salzsee: Die Salzwelten Hallein sind ein Abenteuer für die ganze Familie.',
+    date: '2026-06-15', category: 'Ausflug', region: 'salzburg', bestSeason: 'Ganzjährig',
+    highlights: ['Ältestes Salzbergwerk-Erlebnis der Welt', 'Bergmannsrutschen & Salzsee-Floß', 'Ganzjährig – ideal bei Regen'],
+    content: `
+Am Dürrnberg bei Hallein wurde schon vor über 2.500 Jahren von den Kelten Salz abgebaut. Heute führt eine Erlebnisführung tief in den Berg.
+
+## Das Erlebnis
+Mit der Grubenbahn geht's hinein, über zwei lange **Bergmannsrutschen** hinab, und mit einem beleuchteten Floß über einen unterirdischen Salzsee. Dazu Einblicke in keltische Geschichte.
+
+## Für wen?
+Familien (Kinder lieben die Rutschen), Geschichtsinteressierte – und alle, die ein wetterunabhängiges Ziel suchen.
+
+## Praktische Infos
+- Im Berg konstant ~10 °C – warme Jacke (Overall wird gestellt)
+- Anfahrt: von Salzburg ca. 20 Minuten
+- Festes Schuhwerk, Führung mit fixen Zeiten
+    `,
+    officialLinks: [
+      { label: 'Salzwelten (salzwelten.at)', url: 'https://www.salzwelten.at' },
+    ],
+    affiliateLinks: [
+      { label: 'Unterkünfte in Hallein – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Hallein' },
+      { label: 'Salzburg: Tickets & Touren – GetYourGuide', url: 'https://www.getyourguide.de/s/?q=Salzburg' },
+    ],
+  },
+  {
+    slug: 'wolfgangsee-st-gilgen',
+    title: 'Wolfgangsee & St. Gilgen – Salzkammergut-Idylle',
+    excerpt: 'Tiefblaues Wasser, das „Weiße Rössl" und die Schafbergbahn: Der Wolfgangsee an der Grenze zum Salzkammergut gehört zu den schönsten Badeseen rund um Salzburg.',
+    date: '2026-06-15', category: 'Baden', region: 'salzburg', bestSeason: 'Juni–September',
+    highlights: ['Klares Salzkammergut-Wasser', 'Schafbergbahn mit Traumblick', 'Nostalgische Raddampfer'],
+    content: `
+Der Wolfgangsee liegt malerisch zwischen St. Gilgen (Salzburg) und St. Wolfgang – eine der bekanntesten Postkartenkulissen Österreichs.
+
+## Baden & Schifffahrt
+Sauberes, im Sommer angenehm warmes Wasser, mehrere Strandbäder und nostalgische Schaufelraddampfer, die die Orte verbinden.
+
+## Schafberg
+Mit der historischen Zahnradbahn geht es auf den Schafberg (1.783 m) – der Panoramablick über den See und die Salzkammergut-Seen ist legendär.
+
+## Praktische Infos
+- Anfahrt: Von Salzburg ca. 40 Minuten nach St. Gilgen
+- Schafbergbahn saisonal, früh buchen
+- St. Gilgen mit Mozart-Bezug (Geburtsort der Mutter)
+    `,
+    affiliateLinks: [
+      { label: 'Hotels am Wolfgangsee – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=St.+Gilgen' },
+      { label: 'Salzkammergut: Touren – GetYourGuide', url: 'https://www.getyourguide.de/s/?q=Wolfgangsee' },
+    ],
+  },
+  {
+    slug: 'fuschlsee-baden',
+    title: 'Fuschlsee – kristallklarer Badesee bei Salzburg',
+    excerpt: 'Trinkwasserqualität, smaragdgrünes Wasser und ein Schloss am Ufer: Der Fuschlsee ist einer der saubersten und schönsten Badeseen im Salzburger Seengebiet.',
+    date: '2026-06-15', category: 'Baden', region: 'salzburg', bestSeason: 'Juni–September',
+    highlights: ['Trinkwasserqualität, smaragdgrün', 'Naturbelassenes Ufer', 'Nur 20 Min. von Salzburg'],
+    content: `
+Der Fuschlsee östlich von Salzburg besticht durch sein klares, grün schimmerndes Wasser und ein weitgehend naturbelassenes Ufer.
+
+## Baden & Natur
+Mehrere Badeplätze, dazu ein 6,5 km langer Seerundweg durch Wald und am Wasser entlang. Das Schloss Fuschl thront elegant am Ufer.
+
+## Ruhe statt Trubel
+Im Vergleich zu den großen Salzkammergut-Seen geht es hier ruhiger zu – ideal für entspannte Badetage und Spaziergänge.
+
+## Praktische Infos
+- Anfahrt: Von Salzburg ca. 20 Minuten
+- Begrenzte Parkplätze – früh kommen
+- Gut mit Wolfgangsee/St. Gilgen kombinierbar
+    `,
+    affiliateLinks: [
+      { label: 'Unterkünfte am Fuschlsee – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Fuschl+am+See' },
+      { label: 'Strandzubehör – Amazon', url: 'https://www.amazon.de/s?k=badetuch+mikrofaser' },
+    ],
+  },
+  {
+    slug: 'bad-gastein-wasserfall',
+    title: 'Bad Gastein – Wasserfall, Belle Époque und Thermen',
+    excerpt: 'Ein tosender Wasserfall mitten im Ort, prachtvolle Belle-Époque-Hotels und heilendes Thermalwasser: Bad Gastein erlebt als stilvolles Bergdorf ein spektakuläres Comeback.',
+    date: '2026-06-15', category: 'Ausflug', region: 'salzburg', bestSeason: 'Ganzjährig',
+    highlights: ['Wasserfall mitten im Ortszentrum', 'Belle-Époque-Architektur', 'Heilende Gasteiner Thermen'],
+    content: `
+Bad Gastein im Gasteinertal ist ein einzigartiges Bergdorf: An steile Hänge gebaut, mit einem **Wasserfall mitten im Zentrum** und prachtvollen Hotelpalästen aus der Belle Époque.
+
+## Atmosphäre
+Lange etwas verschlafen, erlebt der Ort ein stilvolles Comeback – mit Designhotels, Kunst und dem morbiden Charme der alten Grandhotels.
+
+## Thermen & Berge
+Das heilende Thermalwasser (Felsentherme, Alpentherme) ist berühmt. Ringsum: Skifahren im Winter, Wandern im Sommer.
+
+## Praktische Infos
+- Anreise bequem per Bahn (Tauernbahn)
+- Wasserfallweg führt mitten durch den Ort
+- Kombinierbar mit dem Nationalpark Hohe Tauern
+    `,
+    affiliateLinks: [
+      { label: 'Hotels in Bad Gastein – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Bad+Gastein' },
+      { label: 'Salzburg: Erlebnisse – GetYourGuide', url: 'https://www.getyourguide.de/s/?q=Gastein' },
+    ],
+  },
+  {
+    slug: 'burg-hohenwerfen',
+    title: 'Burg Hohenwerfen – Mittelalterburg mit Greifvogelschau',
+    excerpt: 'Hoch über dem Salzachtal thront die 900 Jahre alte Burg Hohenwerfen. Mit historischer Falknerei-Flugschau und Blick auf das Tennengebirge ein Highlight für Familien.',
+    date: '2026-06-15', category: 'Ausflug', region: 'salzburg', bestSeason: 'April–Oktober',
+    highlights: ['900 Jahre alte Höhenburg', 'Historische Greifvogel-Flugschau', 'Gegenüber der Eisriesenwelt'],
+    content: `
+Burg Hohenwerfen wacht seit über 900 Jahren über das Salzachtal bei Werfen – eine der eindrucksvollsten Höhenburgen Österreichs.
+
+## Burg & Falknerei
+Neben Waffenkammer, Verlies und Türmen ist die **historische Falknerei** das Highlight: Adler, Geier und Falken im freien Flug vor der Bergkulisse.
+
+## Lage
+Direkt gegenüber liegt die Eisriesenwelt – beide lassen sich gut zu einem vollen Ausflugstag verbinden.
+
+## Praktische Infos
+- Anfahrt: Von Salzburg ca. 45 Minuten
+- Schrägaufzug oder Fußweg hinauf
+- Flugvorführungszeiten vorab prüfen
+    `,
+    affiliateLinks: [
+      { label: 'Unterkünfte bei Werfen – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Werfen' },
+      { label: 'Salzburg: Tickets – GetYourGuide', url: 'https://www.getyourguide.de/s/?q=Werfen' },
+    ],
+  },
+  {
+    slug: 'grossarltal-tal-der-almen',
+    title: 'Großarltal – das „Tal der Almen"',
+    excerpt: 'Mit über 40 bewirtschafteten Almen hat das Großarltal die höchste Almendichte der Alpen. Ein Paradies für Wanderer, die urige Einkehr und sanfte Berge lieben.',
+    date: '2026-06-15', category: 'Wandern', region: 'salzburg', difficulty: 'mittel', bestSeason: 'Juni–Oktober',
+    highlights: ['Höchste Almendichte der Alpen', 'Über 40 bewirtschaftete Almen', 'Familienfreundliche Touren'],
+    content: `
+Das Großarltal im Salzburger Pongau trägt seinen Beinamen „Tal der Almen" zu Recht – nirgends gibt es so viele bewirtschaftete Almen auf engem Raum.
+
+## Wandern & Einkehr
+Von der gemütlichen Almwanderung bis zur Gipfeltour ist alles dabei – und überall lockt eine Alm mit hausgemachter Jause, Buttermilch und Kaiserschmarrn.
+
+## Für Familien
+Viele Wege sind kinderwagentauglich oder kurz, mit Tieren zum Streicheln auf den Almen.
+
+## Praktische Infos
+- Anfahrt: über St. Johann im Pongau ins Großarltal
+- Bergbahn Großarl erleichtert den Einstieg
+- Almsaison ca. Juni bis September
+    `,
+    affiliateLinks: [
+      { label: 'Hotels im Großarltal – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Gro%C3%9Farl' },
+      { label: 'Wanderschuhe – Amazon', url: 'https://www.amazon.de/s?k=wanderschuhe+damen' },
+    ],
+  },
+  {
+    slug: 'untersberg-salzburg',
+    title: 'Untersberg – Salzburgs sagenumwobener Hausberg',
+    excerpt: 'Mit der Seilbahn schwebt man von der Stadt auf 1.776 m: Der Untersberg bietet Panoramablick über Salzburg, Wanderungen und jede Menge Sagen und Mythen.',
+    date: '2026-06-15', category: 'Wandern', region: 'salzburg', difficulty: 'mittel', bestSeason: 'Mai–Oktober',
+    highlights: ['Seilbahn von Salzburg aufs Hochplateau', 'Panorama über Stadt & Alpen', 'Sagenumwobener Berg'],
+    content: `
+Der Untersberg an der Grenze zu Bayern ist Salzburgs markanter Hausberg – ein wuchtiges Kalkmassiv, um das sich zahlreiche Sagen ranken (Kaiser Karl soll im Berg schlafen).
+
+## Hinauf
+Die Untersbergbahn bringt dich in wenigen Minuten von St. Leonhard auf 1.776 m. Oben: Aussichtsplattform, Gipfelkreuz-Wanderungen und Blick über Salzburg.
+
+## Wandern
+Vom kurzen Gipfelweg bis zu längeren Plateau-Touren – festes Schuhwerk und Wetterfestigkeit vorausgesetzt.
+
+## Praktische Infos
+- Anfahrt: Von Salzburg ca. 20 Minuten zur Talstation
+- Oben deutlich kühler – warme Schicht mitnehmen
+- Bei guter Fernsicht besonders lohnend
+    `,
+    affiliateLinks: [
+      { label: 'Hotels bei Salzburg – booking.com', url: 'https://www.booking.com/city/at/salzburg.de.html' },
+      { label: 'Wanderausrüstung – Amazon', url: 'https://www.amazon.de/s?k=wanderrucksack+20l' },
+    ],
+  },
+  {
+    slug: 'kitzsteinhorn-kaprun',
+    title: 'Kitzsteinhorn Kaprun – Salzburgs Gletscher am „Top of Salzburg"',
+    excerpt: 'Schnee das ganze Jahr, die Aussichtsplattform „Top of Salzburg" auf 3.029 m und eine Gletscher-Erlebniswelt: Das Kitzsteinhorn über Kaprun ist Hochgebirge zum Anfassen.',
+    date: '2026-06-15', category: 'Ausflug', region: 'salzburg', bestSeason: 'Ganzjährig',
+    highlights: ['Ganzjähriger Gletscher über Kaprun', 'Plattform "Top of Salzburg" (3.029 m)', 'Gletscher-Erlebniswelt & Stollen'],
+    content: `
+Das Kitzsteinhorn über Kaprun ist Salzburgs einziges Gletscherskigebiet – und ein beeindruckendes Hochgebirgserlebnis, das man bequem per Bahn erreicht.
+
+## Top of Salzburg
+Die Aussichtsplattform und der Aussichtsstollen auf rund 3.000 m bieten einen Rundblick über die Hohen Tauern und den Großglockner.
+
+## Ganzjährig
+Skifahren bis in den Frühsommer, dazu eine Gletscher-Erlebniswelt mit Infos über Eis und Permafrost.
+
+## Praktische Infos
+- Anfahrt: über Zell am See nach Kaprun
+- Warme Kleidung – auch im Sommer Gletschertemperaturen
+- Kombi mit Zeller See & Tauern Spa möglich
+    `,
+    affiliateLinks: [
+      { label: 'Hotels in Kaprun – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Kaprun' },
+      { label: 'Zell am See–Kaprun: Tickets – GetYourGuide', url: 'https://www.getyourguide.de/s/?q=Kaprun' },
+    ],
+  },
+  {
+    slug: 'liechtensteinklamm',
+    title: 'Liechtensteinklamm – tief, eng und spektakulär',
+    excerpt: 'Eine der längsten und tiefsten Schluchten der Alpen: Über neue Stege und Brücken führt der Weg durch die tosende Liechtensteinklamm bei St. Johann im Pongau.',
+    date: '2026-06-15', category: 'Ausflug', region: 'salzburg', bestSeason: 'Mai–Oktober',
+    highlights: ['Eine der tiefsten Klammen der Alpen', 'Neue Stege & spektakuläre Wendeltreppe', 'Tosendes Wasser & Wasserfall'],
+    content: `
+Die Liechtensteinklamm bei St. Johann im Pongau ist eine der eindrucksvollsten Schluchten der Alpen – stellenweise nur wenige Meter breit und über 300 m tief.
+
+## Der Klammweg
+Moderne Stege, Brücken und eine spektakuläre Wendeltreppe führen entlang der tosenden Salzach-Ache bis zum Wasserfall am Ende. Hin und zurück ca. 1–1,5 Stunden.
+
+## Wichtig
+Festes, rutschfestes Schuhwerk und Regenschutz – in der Klamm ist es feucht und kühl.
+
+## Praktische Infos
+- Eintritt/Parkgebühr vor Ort
+- Anfahrt: Von Salzburg ca. 50 Minuten
+- Bei Starkregen kann die Klamm gesperrt sein
+    `,
+    affiliateLinks: [
+      { label: 'Unterkünfte bei St. Johann/Pongau – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=St.+Johann+im+Pongau' },
+      { label: 'Regenjacke – Amazon', url: 'https://www.amazon.de/s?k=regenjacke+wandern' },
+    ],
+  },
+  {
+    slug: 'filzmoos-bischofsmuetze',
+    title: 'Filzmoos & Bischofsmütze – Bilderbuch-Wandern im Pongau',
+    excerpt: 'Das beschauliche Filzmoos vor der markanten Bischofsmütze ist ein Geheimtipp für Genusswanderer und Familien – sanfte Almen, gute Luft und alpine Ruhe.',
+    date: '2026-06-15', category: 'Wandern', region: 'salzburg', difficulty: 'leicht', bestSeason: 'Juni–Oktober',
+    highlights: ['Markante Bischofsmütze als Kulisse', 'Sanfte Almwanderungen', 'Ruhig & familienfreundlich'],
+    content: `
+Filzmoos im Salzburger Pongau liegt idyllisch zu Füßen der Gosaukamm-Berge mit der markanten **Bischofsmütze**. Ein ruhiger Ort für Genusswanderer.
+
+## Wandern
+Sanfte Almwege, der Almerlebnisbus und gemütliche Hütten machen das Wandern familienfreundlich. Für Geübte locken Touren Richtung Hofpürglhütte und Gosaukamm.
+
+## Charakter
+Filzmoos ist bewusst ruhig geblieben – kein Massentourismus, dafür Bergidylle, gute Luft und Sternenhimmel.
+
+## Praktische Infos
+- Anfahrt: Von Salzburg ca. 1 Stunde
+- Sommercard mit Bergbahn & Bus
+- Im Winter familienfreundliches Skigebiet
+    `,
+    affiliateLinks: [
+      { label: 'Hotels in Filzmoos – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Filzmoos' },
+      { label: 'Wanderstöcke – Amazon', url: 'https://www.amazon.de/s?k=wanderst%C3%B6cke+teleskop' },
+    ],
+  },
+
 ];
 
 export function getPostBySlug(slug: string): Post | undefined {
