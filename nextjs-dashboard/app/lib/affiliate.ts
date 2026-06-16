@@ -35,18 +35,28 @@ export function cloak(url: string): string {
 }
 
 /**
+ * Erkennt noch nicht hinterlegte Platzhalter-IDs (leer oder nur Nullen),
+ * damit wir keine ungültigen Tracking-Parameter an Partner-URLs hängen.
+ */
+function isPlaceholderId(id: string): boolean {
+  return !id || /^0+$/.test(id);
+}
+
+/**
  * Hängt – serverseitig im Redirect verwendet – unsere Partner-Tags an die Ziel-URL.
+ * Platzhalter-IDs werden übersprungen: dann geht der Klick sauber durch (nur ohne Provision),
+ * statt mit einer ungültigen ID (z. B. aid=0000000) ins Leere zu laufen.
  */
 export function appendPartnerTag(target: URL): URL {
   const host = target.hostname.replace(/^www\./, '');
 
-  if (host === 'amazon.de' && !target.searchParams.has('tag')) {
+  if (host === 'amazon.de' && !isPlaceholderId(PARTNER_IDS.amazonTag) && !target.searchParams.has('tag')) {
     target.searchParams.set('tag', PARTNER_IDS.amazonTag);
   }
-  if (host === 'booking.com' && !target.searchParams.has('aid')) {
+  if (host === 'booking.com' && !isPlaceholderId(PARTNER_IDS.bookingAid) && !target.searchParams.has('aid')) {
     target.searchParams.set('aid', PARTNER_IDS.bookingAid);
   }
-  if (host === 'getyourguide.de' && !target.searchParams.has('partner_id')) {
+  if (host === 'getyourguide.de' && !isPlaceholderId(PARTNER_IDS.gygPartnerId) && !target.searchParams.has('partner_id')) {
     target.searchParams.set('partner_id', PARTNER_IDS.gygPartnerId);
   }
   return target;

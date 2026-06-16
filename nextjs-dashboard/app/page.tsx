@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { posts } from '@/app/lib/posts';
+import { regionen } from '@/app/lib/regionen';
 import HeroSlideshow from '@/app/ui/hero-slideshow';
 import RegionSelector from '@/app/ui/region-selector';
 import Newsletter from '@/app/ui/newsletter';
@@ -8,25 +9,37 @@ import { CATEGORY_DOT } from '@/app/lib/blog-utils';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Bergseen Guide – Wandern, Baden & Urlaub in Kärnten',
-  description: 'Insider-Tipps für Kärnten: Wanderwege am Wörthersee, die wärmsten Badeseen Österreichs, Ausflüge und Unterkünfte – ehrlich recherchiert mit echten Preisen.',
-  keywords: ['Bergseen Guide', 'Kärnten Urlaub', 'Wandern Kärnten', 'Badeseen Kärnten', 'Wörthersee', 'Klopeiner See', 'Millstätter See', 'Weissensee'],
+  title: 'Bergseen Guide – Wandern, Baden & Urlaub in Österreich',
+  description: 'Insider-Tipps für ganz Österreich: die schönsten Wanderwege, wärmsten Badeseen und Ausflugsziele in Kärnten, Salzburg, Tirol, der Steiermark und im Burgenland – ehrlich recherchiert mit echten Preisen.',
+  keywords: ['Bergseen Guide', 'Urlaub Österreich', 'Wandern Österreich', 'Badeseen Österreich', 'Bergseen Österreich', 'Ausflugsziele Österreich', 'Wörthersee', 'Neusiedler See', 'Achensee', 'Zeller See'],
   alternates: { canonical: '/' },
 };
 
+// Beliebte Reiseziele in Österreich – verlinken auf die jeweilige Region.
+const POPULAR_DESTINATIONS = [
+  { slug: 'kaernten',   name: 'Kärnten',    tag: 'Wörthersee & Badeseen',     note: 'Wärmstes Seewasser Österreichs' },
+  { slug: 'salzburg',   name: 'Salzburg',   tag: 'Zeller See & Großglockner', note: 'Mozartstadt trifft Hohe Tauern' },
+  { slug: 'tirol',      name: 'Tirol',      tag: 'Achensee & Ötztal',         note: 'Das Herz der Alpen' },
+  { slug: 'steiermark', name: 'Steiermark', tag: 'Grüner See & Dachstein',    note: 'Das grüne Herz Österreichs' },
+  { slug: 'burgenland', name: 'Burgenland', tag: 'Neusiedler See & Wein',     note: 'Pannonische Sonne am Steppensee' },
+];
+
 export default function HomePage() {
-  const [lead, ...rest] = posts.slice(0, 4);
+  // Neueste Artikel zuerst – so erscheint Content aus allen Regionen, nicht nur Kärnten.
+  const featured = [...posts].sort((a, b) => b.date.localeCompare(a.date)).slice(0, 4);
+  const [lead, ...rest] = featured;
+  const activeRegions = regionen.filter((r) => r.aktiv).length;
 
   return (
     <>
       {/* ── Hero ───────────────────────────────────────────────────────── */}
       <HeroSlideshow>
-        <p className="eyebrow text-green-200 mb-4">Reisemagazin · Kärnten</p>
+        <p className="eyebrow text-green-200 mb-4">Reisemagazin · Österreich</p>
         <h1 className="font-serif text-4xl md:text-6xl font-bold leading-[1.05] mb-5">
-          Kärntens Seen &amp; Berge,<br />ehrlich erklärt.
+          Österreichs Seen &amp; Berge,<br />ehrlich erklärt.
         </h1>
         <p className="text-lg text-white/85 mb-8 max-w-xl leading-relaxed">
-          Handverlesene Wanderungen, Badestellen und Ausflüge – mit echten Preisen,
+          Handverlesene Wanderungen, Badeseen und Ausflüge in ganz Österreich – mit echten Preisen,
           klaren Empfehlungen und Routen, die du sonst nirgends findest.
         </p>
         <div className="flex flex-wrap gap-3">
@@ -50,9 +63,9 @@ export default function HomePage() {
         <div className="max-w-6xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 divide-x divide-gray-200">
           {[
             { value: String(posts.length), label: 'Insider-Artikel' },
-            { value: '1.270+', label: 'Seen in Kärnten' },
-            { value: '29 °C', label: 'wärmstes Seewasser' },
-            { value: '3.798 m', label: 'höchster Gipfel' },
+            { value: String(activeRegions), label: 'Regionen' },
+            { value: '28 °C', label: 'wärmste Badeseen' },
+            { value: '3.798 m', label: 'höchster Berg' },
           ].map((s) => (
             <div key={s.label} className="py-7 px-4 text-center">
               <p className="font-serif text-2xl md:text-3xl font-bold text-gray-900 leading-none">{s.value}</p>
@@ -62,16 +75,43 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── Region-Auswahl ─────────────────────────────────────────────── */}
-      <section className="px-6 py-10 border-b border-gray-100">
-        <div className="max-w-3xl mx-auto text-center">
-          <p className="eyebrow mb-3">Bundesland wählen</p>
+      {/* ── Beliebte Reiseziele ────────────────────────────────────────── */}
+      <section className="max-w-6xl mx-auto px-6 py-16">
+        <div className="text-center mb-9">
+          <p className="eyebrow mb-2">Beliebte Reiseziele</p>
+          <h2 className="font-serif text-3xl font-bold text-gray-900">Wohin in Österreich?</h2>
+          <p className="text-gray-500 mt-2 max-w-xl mx-auto">
+            Von den warmen Seen Kärntens bis zu den Gipfeln Tirols – wähle deine Region.
+          </p>
+        </div>
+
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+          {POPULAR_DESTINATIONS.map((d) => (
+            <Link
+              key={d.slug}
+              href={`/regionen/${d.slug}`}
+              className="group block border border-gray-200 p-6 hover:border-green-400 hover:shadow-md transition-all"
+              style={{ borderRadius: 8 }}
+            >
+              <p className="eyebrow mb-1.5">{d.tag}</p>
+              <h3 className="font-serif text-xl font-bold text-gray-900 group-hover:text-green-700 leading-snug">
+                {d.name}
+              </h3>
+              <p className="text-sm text-gray-500 mt-1.5">{d.note}</p>
+              <span className="mt-4 inline-block text-sm font-medium text-green-700 group-hover:text-green-600">
+                Tipps &amp; Hotels →
+              </span>
+            </Link>
+          ))}
+        </div>
+
+        <div className="mt-8">
           <RegionSelector />
         </div>
       </section>
 
       {/* ── Featured: Magazin-Layout (1 groß + Liste) ──────────────────── */}
-      <section className="max-w-6xl mx-auto px-6 py-16">
+      <section className="max-w-6xl mx-auto px-6 pb-16 border-t border-gray-100 pt-16">
         <div className="flex items-end justify-between mb-8">
           <div>
             <p className="eyebrow mb-2">Aus dem Magazin</p>
@@ -117,7 +157,7 @@ export default function HomePage() {
       <section className="bg-sand-50 border-y border-gray-200 py-16">
         <div className="max-w-3xl mx-auto px-6">
           <div className="text-center mb-7">
-            <p className="eyebrow mb-2">Live aus Kärnten</p>
+            <p className="eyebrow mb-2">Live aus Österreich</p>
             <h2 className="font-serif text-3xl font-bold text-gray-900">Wie warm ist das Wasser gerade?</h2>
           </div>
           <Seewetter />

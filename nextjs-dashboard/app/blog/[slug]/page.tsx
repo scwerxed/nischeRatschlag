@@ -8,7 +8,7 @@ import TrailMapWrapper from '@/app/ui/trail-map-wrapper';
 import ShareButtons from '@/app/ui/share-buttons';
 import SaveButton from '@/app/ui/save-button';
 import { readingTime, relatedPosts } from '@/app/lib/blog-utils';
-import { BASE, SITE_NAME, CATEGORY_KEYWORDS, articleSchema, breadcrumbSchema, OFFICIAL_REGION_SITES } from '@/app/lib/seo';
+import { BASE, SITE_NAME, CATEGORY_KEYWORDS, REGION_META, regionName, articleSchema, breadcrumbSchema, OFFICIAL_REGION_SITES } from '@/app/lib/seo';
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -22,7 +22,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!post) return {};
 
   const catKw = CATEGORY_KEYWORDS[post.category] ?? [];
-  const keywords = [...catKw, 'Kärnten', 'Wörthersee', post.bestSeason ?? ''].filter(Boolean);
+  const regionKw = REGION_META[post.region]?.keywords ?? [];
+  const keywords = [...catKw, ...regionKw, post.bestSeason ?? ''].filter(Boolean);
   const hlText = post.highlights?.slice(0, 2).join(' · ') ?? '';
   const description = hlText ? `${post.excerpt} ${hlText}` : post.excerpt;
 
@@ -80,11 +81,27 @@ function extractHeadings(content: string): { id: string; text: string }[] {
     });
 }
 
+// Inline-Tokens: **fett** und [Text](url)
+const INLINE_RE = /(\*\*[^*]+\*\*|\[[^\]]+\]\([^)]+\))/g;
+
 function renderInline(text: string): React.ReactNode {
-  const parts = text.split(/(\*\*[^*]+\*\*)/g);
+  const parts = text.split(INLINE_RE);
   return parts.map((part, i) => {
     if (part.startsWith('**') && part.endsWith('**')) {
       return <strong key={i} className="font-semibold text-gray-900">{part.slice(2, -2)}</strong>;
+    }
+    const link = /^\[([^\]]+)\]\(([^)]+)\)$/.exec(part);
+    if (link) {
+      const [, label, href] = link;
+      // Interne Links bleiben im SPA-Router, externe öffnen sicher in neuem Tab.
+      if (href.startsWith('/')) {
+        return <Link key={i} href={href} className="text-green-700 font-medium hover:underline">{label}</Link>;
+      }
+      return (
+        <a key={i} href={href} target="_blank" rel="noopener noreferrer" className="text-green-700 font-medium hover:underline">
+          {label}
+        </a>
+      );
     }
     return part;
   });
@@ -153,8 +170,7 @@ export default async function BlogPostPage({ params }: Props) {
   const post = getPostBySlug(slug);
   if (!post) notFound();
 
-  const regionLabel =
-    post.region === 'kaernten' ? 'Kärnten' : post.region.charAt(0).toUpperCase() + post.region.slice(1);
+  const regionLabel = regionName(post.region);
 
   const minutes = readingTime(post.content);
   const related = relatedPosts(post, posts);
@@ -175,7 +191,7 @@ export default async function BlogPostPage({ params }: Props) {
       '@type': 'SportsActivityLocation',
       name: post.title,
       description: post.excerpt,
-      address: { '@type': 'PostalAddress', addressRegion: 'Kärnten', addressCountry: 'AT' },
+      address: { '@type': 'PostalAddress', addressRegion: regionLabel, addressCountry: 'AT' },
       sport: 'Hiking',
     }] : []),
   ];

@@ -4,7 +4,7 @@ import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import type { Metadata } from 'next';
 import Faq from '@/app/ui/faq';
-import { BASE, BASE_KEYWORDS, touristDestinationSchema, breadcrumbSchema } from '@/app/lib/seo';
+import { BASE, REGION_META, touristDestinationSchema, breadcrumbSchema } from '@/app/lib/seo';
 import { FAQS_BY_REGION } from '@/app/lib/faqs';
 
 type Props = { params: Promise<{ bundesland: string }> };
@@ -25,9 +25,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     description: isKaernten
       ? 'Kärntens schönste Wanderwege, Badeseen, Tiertouren und Ausflugsziele – mit echten Preisen, interaktiver Karte und 40+ Insider-Tipps für deinen Urlaub am Wörthersee.'
       : `${region.beschreibung} Wanderwege, Ausflugsziele, Unterkünfte und Insider-Tipps für deinen Urlaub in ${region.name}.`,
-    keywords: isKaernten
-      ? [...BASE_KEYWORDS, 'Kärnten Urlaub', 'Wörthersee Hotel', 'Kärnten Wandern']
-      : [`${region.name} Urlaub`, `Wandern ${region.name}`, `Ausflug ${region.name}`, `${region.name} Sehenswürdigkeiten`, 'Österreich Urlaub'],
+    keywords: [
+      ...(REGION_META[bundesland]?.keywords ?? []),
+      `${region.name} Urlaub`, `Wandern ${region.name}`, `Ausflug ${region.name}`,
+      `${region.name} Sehenswürdigkeiten`, 'Urlaub Österreich',
+    ],
     alternates: { canonical: `/regionen/${bundesland}` },
     openGraph: { title: region.name, description: region.beschreibung, url: `${BASE}/regionen/${bundesland}`, locale: 'de_AT' },
   };

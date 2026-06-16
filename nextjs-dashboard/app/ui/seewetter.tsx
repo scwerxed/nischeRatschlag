@@ -2,13 +2,14 @@
 
 import { useEffect, useState } from 'react';
 
+// Beliebte Badeseen quer durch Österreich (Wassertemp. = saisonale Richtwerte).
 const LAKES = [
-  { name: 'Wörthersee',      lat: 46.62, lng: 14.14, water: 26 },
-  { name: 'Klopeiner See',   lat: 46.62, lng: 14.57, water: 28 },
-  { name: 'Millstätter See', lat: 46.80, lng: 13.58, water: 24 },
-  { name: 'Faaker See',      lat: 46.57, lng: 13.92, water: 25 },
-  { name: 'Ossiacher See',   lat: 46.67, lng: 13.98, water: 25 },
-  { name: 'Weissensee',      lat: 46.71, lng: 13.30, water: 23 },
+  { name: 'Wörthersee (K)',    lat: 46.62, lng: 14.14, water: 26 },
+  { name: 'Klopeiner See (K)', lat: 46.62, lng: 14.57, water: 28 },
+  { name: 'Neusiedler See (B)',lat: 47.84, lng: 16.75, water: 25 },
+  { name: 'Zeller See (S)',    lat: 47.32, lng: 12.80, water: 22 },
+  { name: 'Achensee (T)',      lat: 47.45, lng: 11.71, water: 20 },
+  { name: 'Wolfgangsee (S)',   lat: 47.74, lng: 13.42, water: 24 },
 ];
 
 function isSwimSeason() {
@@ -47,7 +48,7 @@ export default function Seewetter() {
         <div>
           <h3 className="font-serif text-lg font-bold">Seewetter</h3>
           <p className="text-green-200 text-xs mt-0.5">
-            Aktuelle Lufttemperatur{swim ? ' & Wassertemperatur' : ''} an Kärntens Seen
+            Aktuelle Lufttemperatur{swim ? ' & Wassertemperatur' : ''} an Österreichs beliebtesten Seen
           </p>
         </div>
         <span className="flex items-center gap-1.5 text-[11px] uppercase tracking-wider text-green-200">
