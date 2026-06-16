@@ -27,7 +27,7 @@ export default function robots(): MetadataRoute.Robots {
   return {
     rules: [
       // Alle übrigen Bots (inkl. Google, Bing) dürfen alles außer interne Pfade
-      { userAgent: '*', allow: '/', disallow: ['/go', '/api/', '/seed'] },
+      { userAgent: '*', allow: '/', disallow: ['/go', '/api/'] },
       // KI-/Scraper-Bots komplett aussperren
       { userAgent: BLOCKED_BOTS, disallow: '/' },
     ],
