@@ -4,7 +4,6 @@ import { regionen } from '@/app/lib/regionen';
 import HeroSlideshow from '@/app/ui/hero-slideshow';
 import RegionSelector from '@/app/ui/region-selector';
 import Newsletter from '@/app/ui/newsletter';
-import Seewetter from '@/app/ui/seewetter';
 import { CATEGORY_DOT } from '@/app/lib/blog-utils';
 import type { Metadata } from 'next';
 
@@ -64,8 +63,8 @@ export default function HomePage() {
           {[
             { value: String(posts.length), label: 'Insider-Artikel' },
             { value: String(activeRegions), label: 'Regionen' },
-            { value: '28 °C', label: 'wärmste Badeseen' },
-            { value: '3.798 m', label: 'höchster Berg' },
+            { value: '4', label: 'Kategorien' },
+            { value: '100 %', label: 'ehrlich recherchiert' },
           ].map((s) => (
             <div key={s.label} className="py-7 px-4 text-center">
               <p className="font-serif text-2xl md:text-3xl font-bold text-gray-900 leading-none">{s.value}</p>
@@ -81,7 +80,7 @@ export default function HomePage() {
           <p className="eyebrow mb-2">Beliebte Reiseziele</p>
           <h2 className="font-serif text-3xl font-bold text-gray-900">Wohin in Österreich?</h2>
           <p className="text-gray-500 mt-2 max-w-xl mx-auto">
-            Von den warmen Seen Kärntens bis zu den Gipfeln Tirols – wähle deine Region.
+            Wähle dein Bundesland – jede Region mit eigenen Wanderungen, Badeseen und Ausflugstipps.
           </p>
         </div>
 
@@ -150,17 +149,6 @@ export default function HomePage() {
               </Link>
             ))}
           </div>
-        </div>
-      </section>
-
-      {/* ── Seewetter ──────────────────────────────────────────────────── */}
-      <section className="bg-sand-50 border-y border-gray-200 py-16">
-        <div className="max-w-3xl mx-auto px-6">
-          <div className="text-center mb-7">
-            <p className="eyebrow mb-2">Live aus Österreich</p>
-            <h2 className="font-serif text-3xl font-bold text-gray-900">Wie warm ist das Wasser gerade?</h2>
-          </div>
-          <Seewetter />
         </div>
       </section>
 
