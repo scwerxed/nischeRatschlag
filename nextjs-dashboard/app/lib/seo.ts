@@ -86,26 +86,31 @@ export function websiteSchema() {
   };
 }
 
-/** TouristDestination JSON-LD für Kärnten-Seite */
-export function touristDestinationSchema() {
+/** TouristDestination JSON-LD – region-aware (für jede aktive Region). */
+export function touristDestinationSchema(opts: {
+  name: string;
+  description: string;
+  url: string;
+  geo: { lat: number; lng: number };
+  attractions: { name: string; description: string }[];
+}) {
   return {
     '@context': 'https://schema.org',
     '@type': 'TouristDestination',
-    name: 'Kärnten',
-    description: 'Österreichs Seenland mit über 1.270 Seen, dem Wörthersee, Millstätter See und Gipfeln bis 3.798 m.',
-    url: `${BASE}/regionen/kaernten`,
+    name: opts.name,
+    description: opts.description,
+    url: opts.url,
     geo: {
       '@type': 'GeoCoordinates',
-      latitude: KAERNTEN_GEO.lat,
-      longitude: KAERNTEN_GEO.lng,
+      latitude: opts.geo.lat,
+      longitude: opts.geo.lng,
     },
     touristType: ['Wanderer', 'Badegäste', 'Familien', 'Naturliebhaber'],
-    includesAttraction: [
-      { '@type': 'TouristAttraction', name: 'Wörthersee', description: 'Wärmstes Gewässer Kärntens, bis 28 °C' },
-      { '@type': 'TouristAttraction', name: 'Großglockner', description: 'Österreichs höchster Berg, 3.798 m' },
-      { '@type': 'TouristAttraction', name: 'Weissensee', description: 'Sauberster See Europas, Sichttiefe 8 m' },
-      { '@type': 'TouristAttraction', name: 'Nockberge', description: 'UNESCO-Biosphärenpark, sanfte Almwanderwege' },
-    ],
+    includesAttraction: opts.attractions.map((a) => ({
+      '@type': 'TouristAttraction',
+      name: a.name,
+      description: a.description,
+    })),
   };
 }
 

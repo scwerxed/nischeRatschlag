@@ -6,6 +6,9 @@ import type { Metadata } from 'next';
 import Faq from '@/app/ui/faq';
 import { BASE, REGION_META, touristDestinationSchema, breadcrumbSchema } from '@/app/lib/seo';
 import { FAQS_BY_REGION } from '@/app/lib/faqs';
+import { REGION_CONTENT } from '@/app/lib/regionen-content';
+import { unterkuenfte } from '@/app/lib/unterkuenfte';
+import { cloak } from '@/app/lib/affiliate';
 
 type Props = { params: Promise<{ bundesland: string }> };
 
@@ -48,33 +51,6 @@ const DIFFICULTY_STYLES: Record<string, { label: string; cls: string }> = {
   schwer: { label: 'Schwer', cls: 'bg-red-100 text-red-700' },
 };
 
-const KAERNTEN_SEASONS = [
-  {
-    season: 'Frühling',
-    months: 'Apr – Mai',
-    icon: '🌸',
-    tip: 'Alpenrosen-Blüte, kaum Touristen, günstige Preise. Ideal für Wanderungen.',
-  },
-  {
-    season: 'Sommer',
-    months: 'Jun – Aug',
-    icon: '☀️',
-    tip: 'Seen bis 29°C, volle Programm. Frühzeitig buchen – Hochsaison.',
-  },
-  {
-    season: 'Herbst',
-    months: 'Sep – Okt',
-    icon: '🍂',
-    tip: 'Goldenes Licht, leere Strände, Berge ohne Gedränge. Geheimtipp-Zeit.',
-  },
-  {
-    season: 'Winter',
-    months: 'Nov – Mär',
-    icon: '❄️',
-    tip: 'Weissensee: Europas größte Natureisfläche zum Schlittschuhlaufen.',
-  },
-];
-
 export default async function RegionPage({ params }: Props) {
   const { bundesland } = await params;
   const region = getRegionBySlug(bundesland);
@@ -88,6 +64,10 @@ export default async function RegionPage({ params }: Props) {
     return acc;
   }, {});
 
+  const content = REGION_CONTENT[bundesland];
+  const meta = REGION_META[bundesland];
+  const stays = unterkuenfte.filter((u) => u.region === bundesland);
+
   return (
     <div className="max-w-5xl mx-auto px-6 py-12">
       {/* Breadcrumb für alle aktiven Regionen */}
@@ -95,9 +75,15 @@ export default async function RegionPage({ params }: Props) {
         { name: 'Startseite', url: BASE },
         { name: region.name,  url: `${BASE}/regionen/${bundesland}` },
       ])) }} />
-      {/* Kärnten zusätzlich: TouristDestination mit Attraktionen */}
-      {bundesland === 'kaernten' && (
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(touristDestinationSchema()) }} />
+      {/* TouristDestination mit Attraktionen – für jede aktive Region */}
+      {region.aktiv && content && meta && (
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(touristDestinationSchema({
+          name: region.name,
+          description: content.destinationDescription,
+          url: `${BASE}/regionen/${bundesland}`,
+          geo: meta.geo,
+          attractions: content.attractions,
+        })) }} />
       )}
       {/* Header */}
       <div className="mb-8">
@@ -117,10 +103,10 @@ export default async function RegionPage({ params }: Props) {
             Wir arbeiten gerade an Inhalten für {region.name}. Schau bald wieder vorbei!
           </p>
           <Link
-            href="/"
+            href="/#regionen"
             className="mt-5 inline-block bg-green-700 text-white text-sm font-medium px-5 py-2.5 rounded-lg hover:bg-green-800 transition-colors"
           >
-            Zu Kärnten & Wörthersee
+            Verfügbare Regionen ansehen
           </Link>
         </div>
       )}
@@ -128,24 +114,16 @@ export default async function RegionPage({ params }: Props) {
       {/* Aktive Region */}
       {region.aktiv && (
         <>
-          {/* Kärnten Intro */}
-          {bundesland === 'kaernten' && (
+          {/* Region-Intro */}
+          {content && (
             <div className="bg-green-800 text-white p-8 mb-8 border-l-4 border-sand-300">
-              <p className="eyebrow text-green-300 mb-2">Österreichs Seenland</p>
-              <h2 className="font-serif text-2xl font-bold mb-3">Alpenwandern und Badesommer in einem</h2>
-              <p className="text-green-100 text-sm leading-relaxed mb-6 max-w-2xl">
-                Über 1.270 Seen, Gipfel bis 3.798 m und das wärmste Seewasser Österreichs. Hier findest du
-                kuratierte Insider-Tipps – mit konkreten Preisen, ehrlichen Bewertungen und Kombinationsrouten,
-                die andere Websites nicht zeigen.
-              </p>
-              <div className="grid grid-cols-3 gap-px bg-white/15 border border-white/15 max-w-md">
-                {[
-                  { v: String(regionPosts.length), l: 'Artikel' },
-                  { v: '1.270+', l: 'Seen' },
-                  { v: '29 °C', l: 'max. Wassertemp.' },
-                ].map((s) => (
+              <p className="eyebrow text-green-300 mb-2">{content.intro.eyebrow}</p>
+              <h2 className="font-serif text-2xl font-bold mb-3">{content.intro.title}</h2>
+              <p className="text-green-100 text-sm leading-relaxed mb-6 max-w-2xl">{content.intro.text}</p>
+              <div className="grid grid-cols-4 gap-px bg-white/15 border border-white/15 max-w-md">
+                {[{ v: String(regionPosts.length), l: 'Artikel' }, ...content.intro.stats].map((s) => (
                   <div key={s.l} className="bg-green-800 py-3 text-center">
-                    <p className="font-serif font-bold text-xl">{s.v}</p>
+                    <p className="font-serif font-bold text-lg">{s.v}</p>
                     <p className="text-green-200 text-xs mt-0.5">{s.l}</p>
                   </div>
                 ))}
@@ -179,7 +157,7 @@ export default async function RegionPage({ params }: Props) {
               <div>
                 <p className="font-semibold text-lg leading-tight">Interaktive Wanderkarte</p>
                 <p className="text-green-100 text-sm mt-1">
-                  Alle Wanderwege und Gipfel in Kärnten auf einen Blick – inkl. Waymarked Trails Overlay.
+                  Wanderwege, Gipfel und Unterkünfte auf einen Blick – inkl. Waymarked Trails Overlay.
                 </p>
                 <span className="mt-3 inline-block text-sm font-medium underline underline-offset-2">
                   Karte öffnen →
@@ -204,11 +182,11 @@ export default async function RegionPage({ params }: Props) {
           </div>
 
           {/* Beste Reisezeit */}
-          {bundesland === 'kaernten' && (
+          {content && (
             <section className="mb-12">
-              <h2 className="font-serif text-2xl font-bold mb-5 text-gray-900">Beste Reisezeit für Kärnten</h2>
+              <h2 className="font-serif text-2xl font-bold mb-5 text-gray-900">Beste Reisezeit für {region.name}</h2>
               <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-3">
-                {KAERNTEN_SEASONS.map((s) => (
+                {content.seasons.map((s) => (
                   <div
                     key={s.season}
                     className="border border-gray-200 rounded-xl p-4"
@@ -291,6 +269,32 @@ export default async function RegionPage({ params }: Props) {
               </section>
             );
           })}
+
+          {/* Unterkünfte (Affiliate) */}
+          {stays.length > 0 && (
+            <section className="mb-14">
+              <p className="eyebrow mb-2">Unterkünfte</p>
+              <h2 className="font-serif text-2xl font-bold mb-1 text-gray-900">Hotels & Ferienwohnungen in {region.name}</h2>
+              <p className="text-sm text-gray-500 mb-5">Verfügbarkeit & Preise direkt über booking.com prüfen.</p>
+              <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                {stays.map((u) => (
+                  <a
+                    key={u.id}
+                    href={cloak(u.bookingUrl)}
+                    target="_blank"
+                    rel="noopener noreferrer sponsored"
+                    className="group block border border-gray-200 p-4 hover:border-green-400 hover:bg-green-50 transition-colors"
+                    style={{ borderRadius: 8 }}
+                  >
+                    <span className="block text-xs font-semibold text-green-700 uppercase tracking-wide">{u.typ} · {u.see}</span>
+                    <span className="block font-semibold text-gray-900 group-hover:text-green-700 mt-1 leading-snug">{u.name}</span>
+                    <span className="block text-sm text-gray-500 mt-0.5">{u.ort} · ab {u.abPreis}&thinsp;€/Nacht →</span>
+                  </a>
+                ))}
+              </div>
+              <p className="text-[11px] text-gray-400 mt-3">* Affiliate-Links – ohne Mehrkosten für dich.</p>
+            </section>
+          )}
 
           {/* FAQ – mit Rich-Snippet JSON-LD (alle Regionen mit FAQ) */}
           {FAQS_BY_REGION[bundesland] && (

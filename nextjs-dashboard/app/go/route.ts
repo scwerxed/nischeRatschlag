@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
+import { track } from '@vercel/analytics/server';
 import { ALLOWED_HOSTS, appendPartnerTag } from '@/app/lib/affiliate';
 
 /**
@@ -7,7 +8,7 @@ import { ALLOWED_HOSTS, appendPartnerTag } from '@/app/lib/affiliate';
  *  • hängt unsere Partner-Tags an
  *  • leitet per 302 weiter
  */
-export function GET(request: NextRequest) {
+export async function GET(request: NextRequest) {
   const raw = request.nextUrl.searchParams.get('u');
   const home = new URL('/', request.url);
 
@@ -26,6 +27,16 @@ export function GET(request: NextRequest) {
 
   const final = appendPartnerTag(target);
 
-  // TODO: hier ließe sich ein Klick-Logging einbauen (DB / Analytics)
+  // Affiliate-Klick als Custom-Event tracken (Vercel Analytics).
+  // Darf den Redirect niemals blockieren.
+  try {
+    await track('affiliate_click', {
+      partner: target.hostname.replace(/^www\./, ''),
+      path: target.pathname.slice(0, 80),
+    });
+  } catch {
+    /* Tracking-Fehler ignorieren */
+  }
+
   return NextResponse.redirect(final.toString(), 302);
 }

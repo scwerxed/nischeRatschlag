@@ -34,14 +34,15 @@ This is a **Next.js 16 App Router** travel/tourism guide website for **Austria**
 - **Blog posts**: Hardcoded array in [app/lib/posts.ts](app/lib/posts.ts) (~130 posts). Each post has slug, title, category, difficulty, region, content (custom markdown-like format), affiliate links, and optional `trails` (predefined hiking routes with `[lat,lng]` coordinate arrays).
 - **Regions**: Defined in [app/lib/regionen.ts](app/lib/regionen.ts). 5 active (Kärnten, Salzburg, Tirol, Steiermark, Burgenland); 4 stubs (Wien, Oberösterreich, Niederösterreich, Vorarlberg).
 - **Region SEO metadata**: [app/lib/seo.ts](app/lib/seo.ts) → `REGION_META` (name, geo, keywords per region) + `regionName()`. Structured data & metadata are region-aware (no longer hardcoded to Kärnten). Add DE/CH regions here when expanding.
-- **Accommodations**: [app/lib/unterkuenfte.ts](app/lib/unterkuenfte.ts) — accommodations shown as affiliate pins on the map (lat/lng, type, price, booking URL). Currently Kärnten only.
+- **Region page content**: [app/lib/regionen-content.ts](app/lib/regionen-content.ts) → `REGION_CONTENT` (intro box, best-season tips, attractions per region). Powers the region-page intro, the "Beste Reisezeit" grid and the `TouristDestination` schema for **all** active regions.
+- **Accommodations**: [app/lib/unterkuenfte.ts](app/lib/unterkuenfte.ts) — affiliate accommodations (lat/lng, type, price, booking URL, `region`). Shown as pins on the map **and** as affiliate cards on each region page (filtered by `region`). Covers all 5 active regions.
 - **Region FAQs**: [app/lib/faqs.ts](app/lib/faqs.ts) → `FAQS_BY_REGION` (powers the FAQ accordion + FAQPage rich snippets).
 
 ### Affiliate system
 
 All outbound partner links route through our own domain via [app/lib/affiliate.ts](app/lib/affiliate.ts) + the [app/go/route.ts](app/go/route.ts) redirect handler:
 - `cloak(url)` wraps any partner URL into `/go?u=<encoded>`.
-- `/go` validates the target host against an allowlist (no open redirect), appends our partner tags (`appendPartnerTag`), then 302-redirects.
+- `/go` validates the target host against an allowlist (no open redirect), appends our partner tags (`appendPartnerTag`), tracks an `affiliate_click` custom event (Vercel Analytics, server-side, non-blocking), then 302-redirects.
 - Partner IDs live in `PARTNER_IDS` (Amazon tag, booking.com aid) — replace placeholders with real IDs.
 - Blog post affiliate links and map accommodation popups all go through `cloak()`. The strategy is to keep visitors on our map (where accommodation affiliate pins live) rather than linking out directly.
 
@@ -90,6 +91,8 @@ No external markdown library is used.
 - **OpenGraph/Twitter**: `metadataBase` in the root layout; per-post OG in `generateMetadata`.
 - **Search**: [app/ui/blog-search.tsx](app/ui/blog-search.tsx) is client-side text search + category filter; it reads an initial `?q=` from the URL. The navbar ([app/ui/navbar.tsx](app/ui/navbar.tsx)) has a global search box (desktop + mobile) that routes to `/blog?q=…`, which also makes the WebSite SearchAction JSON-LD functional.
 - **Favicon**: [app/icon.svg](app/icon.svg) (brand mountain on forest-green) — Next auto-generates the icon `<link>`.
+- **PWA manifest**: [app/manifest.ts](app/manifest.ts) (name, theme color `#255744`, icon) → installable on mobile.
+- **Custom 404**: [app/not-found.tsx](app/not-found.tsx) — branded, `noindex`, links to home/magazine/regions.
 - **Blog post add-ons**: reading time, share buttons ([app/ui/share-buttons.tsx](app/ui/share-buttons.tsx)), related posts (scored by category/difficulty/season via [app/lib/blog-utils.ts](app/lib/blog-utils.ts)).
 - **Home add-ons**: live lake-weather widget across popular Austrian lakes ([app/ui/seewetter.tsx](app/ui/seewetter.tsx), Open-Meteo, no key), quick-stats, region cards, map-feature grid.
 - **Newsletter** ([app/ui/newsletter.tsx](app/ui/newsletter.tsx)): **pre-launch / not functional** — no backend, email only saved to `localStorage`. Copy is intentionally honest ("in Vorbereitung"). Wire up a provider (Brevo/MailerLite) with double-opt-in before promising delivery.
