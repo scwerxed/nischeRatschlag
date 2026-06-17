@@ -3,9 +3,9 @@ import type { Metadata } from 'next';
 import { BASE, breadcrumbSchema } from '@/app/lib/seo';
 
 export const metadata: Metadata = {
-  title: 'Kärnten Reiseinfos – Anreise, Maut, Kosten & Packliste',
-  description: 'Alles Praktische für deinen Kärnten-Urlaub: Anreise mit Auto/Bahn, Vignette & Mautstraßen, beste Reisezeit, Kosten, Notfallnummern und Packliste.',
-  keywords: ['Kärnten Anreise', 'Kärnten Maut', 'Vignette Österreich', 'Kärnten Reisetipps', 'Kärnten Urlaub Kosten', 'Großglockner Maut'],
+  title: 'Österreich Reiseinfos – Anreise, Vignette, Maut & Kosten',
+  description: 'Alles Praktische für deinen Österreich-Urlaub: Anreise mit Auto/Bahn/Flug, Vignette & Mautstraßen, beste Reisezeit, Kosten, Notfallnummern und Packliste.',
+  keywords: ['Österreich Anreise', 'Vignette Österreich', 'Maut Österreich', 'Österreich Reisetipps', 'Österreich Urlaub Kosten', 'Alpenstraßen Maut'],
   alternates: { canonical: '/reiseinfos' },
 };
 
@@ -30,34 +30,35 @@ export default function ReiseinfosPage() {
       />
 
       <p className="eyebrow mb-2">Praktisches</p>
-      <h1 className="font-serif text-4xl font-bold mb-3 text-gray-900">Kärnten Reiseinfos</h1>
+      <h1 className="font-serif text-4xl font-bold mb-3 text-gray-900">Österreich Reiseinfos</h1>
       <p className="text-gray-500 mb-10">
-        Das Wichtigste für die Planung deines Kärnten-Urlaubs auf einen Blick – Anreise, Maut,
+        Das Wichtigste für die Planung deines Österreich-Urlaubs auf einen Blick – Anreise, Maut,
         Kosten und was in den Koffer gehört.
       </p>
 
       <Block title="Anreise">
-        <p><strong className="font-semibold text-gray-900">Mit dem Auto:</strong> Aus Deutschland über die A10 (Tauernautobahn) via Salzburg, aus der Schweiz über Tirol/A10. Achtung: In Österreich gilt <strong className="font-semibold text-gray-900">Vignettenpflicht</strong> auf Autobahnen.</p>
-        <p><strong className="font-semibold text-gray-900">Mit der Bahn:</strong> Direktverbindungen von Wien (ca. 4 Std.) und München (ca. 4–5 Std.) nach Villach und Klagenfurt. Die ÖBB Nightjets aus Deutschland halten in Villach.</p>
-        <p><strong className="font-semibold text-gray-900">Mit dem Flugzeug:</strong> Flughafen Klagenfurt (KLU) ist klein; größere Auswahl über Ljubljana (SLO, ~1 Std.) oder Salzburg (~2 Std.).</p>
+        <p><strong className="font-semibold text-gray-900">Mit dem Auto:</strong> Aus Deutschland über Tirol (A93/Inntal), Salzburg (A8→A10) oder Richtung Osten nach Wien; aus der Schweiz über Vorarlberg/Tirol. In Österreich gilt auf Autobahnen <strong className="font-semibold text-gray-900">Vignettenpflicht</strong>.</p>
+        <p><strong className="font-semibold text-gray-900">Mit der Bahn:</strong> Die ÖBB verbinden alle Landeshauptstädte (Wien, Salzburg, Innsbruck, Graz, Klagenfurt); Railjet aus Deutschland und Nightjets halten an den großen Knoten.</p>
+        <p><strong className="font-semibold text-gray-900">Mit dem Flugzeug:</strong> Internationale Flughäfen in Wien (VIE), Salzburg (SZG), Innsbruck (INN), Graz (GRZ) und Klagenfurt (KLU).</p>
       </Block>
 
       <Block title="Vignette & Mautstraßen">
         <p>Die <strong className="font-semibold text-gray-900">Autobahn-Vignette</strong> ist Pflicht: 10-Tage (~12 €), 2-Monate oder Jahres-Vignette. Erhältlich digital (ÖAMTC/ASFINAG) oder an Tankstellen. Die Digital-Vignette gilt erst ab dem 18. Tag nach Kauf rückwirkend nicht – früh kaufen.</p>
         <p>Zusätzlich <strong className="font-semibold text-gray-900">extra mautpflichtig</strong> (nicht in der Vignette enthalten):</p>
         <ul className="list-none space-y-1.5 border-l-2 border-green-200 pl-4">
-          <li className="flex gap-2"><span className="shrink-0 mt-[0.6em] w-2.5 h-px bg-green-500" />Großglockner Hochalpenstraße (~40 €/Tag PKW)</li>
-          <li className="flex gap-2"><span className="shrink-0 mt-[0.6em] w-2.5 h-px bg-green-500" />Nockalmstraße (~20 €)</li>
-          <li className="flex gap-2"><span className="shrink-0 mt-[0.6em] w-2.5 h-px bg-green-500" />Villacher Alpenstraße / Dobratsch (~22 €)</li>
+          <li className="flex gap-2"><span className="shrink-0 mt-[0.6em] w-2.5 h-px bg-green-500" />Großglockner Hochalpenstraße – Salzburg/Kärnten (~40 €/Tag PKW)</li>
+          <li className="flex gap-2"><span className="shrink-0 mt-[0.6em] w-2.5 h-px bg-green-500" />Timmelsjoch Hochalpenstraße – Tirol (~30 €)</li>
+          <li className="flex gap-2"><span className="shrink-0 mt-[0.6em] w-2.5 h-px bg-green-500" />Silvretta-Hochalpenstraße – Tirol/Vorarlberg (~17 €)</li>
+          <li className="flex gap-2"><span className="shrink-0 mt-[0.6em] w-2.5 h-px bg-green-500" />Nockalmstraße – Kärnten (~20 €)</li>
         </ul>
       </Block>
 
       <Block title="Beste Reisezeit">
-        <p>Juli/August sind am wärmsten (Seen bis 28 °C), aber am vollsten und teuersten. <strong className="font-semibold text-gray-900">Geheimtipp September:</strong> Wasser noch 22–25 °C, Preise bis 40 % günstiger, kaum Touristen. Details und ein Saison-Überblick auf der{' '}
-          <Link href="/regionen/kaernten" className="text-green-700 hover:underline">Kärnten-Seite</Link>.</p>
+        <p>Juli/August sind am wärmsten (Badeseen bis 28 °C), aber am vollsten und teuersten. <strong className="font-semibold text-gray-900">Geheimtipp September:</strong> Wasser vielerorts noch 22–25 °C, Preise deutlich günstiger, kaum Touristen. Region-spezifische Saison-Tipps findest du auf den{' '}
+          <Link href="/#regionen" className="text-green-700 hover:underline">Regionenseiten</Link>.</p>
       </Block>
 
-      <Block title="Was kostet ein Kärnten-Urlaub?">
+      <Block title="Was kostet ein Österreich-Urlaub?">
         <ul className="list-none space-y-1.5 border-l-2 border-green-200 pl-4">
           <li className="flex gap-2"><span className="shrink-0 mt-[0.6em] w-2.5 h-px bg-green-500" />Campingplatz (Zelt + 2 Pers.): ab ~22 €/Nacht</li>
           <li className="flex gap-2"><span className="shrink-0 mt-[0.6em] w-2.5 h-px bg-green-500" />Ferienwohnung: ab ~60 €/Nacht</li>
@@ -65,7 +66,7 @@ export default function ReiseinfosPage() {
           <li className="flex gap-2"><span className="shrink-0 mt-[0.6em] w-2.5 h-px bg-green-500" />Strandbad-Eintritt: ~5–8 €/Tag</li>
           <li className="flex gap-2"><span className="shrink-0 mt-[0.6em] w-2.5 h-px bg-green-500" />Hauptgericht im Gasthaus: ~14–20 €</li>
         </ul>
-        <p className="text-sm text-gray-500">Spar-Tipp: Viele Regionen geben mit der Übernachtung die <strong className="font-semibold text-gray-900">Kärnten Card</strong> aus – freier Eintritt zu über 100 Ausflugszielen.</p>
+        <p className="text-sm text-gray-500">Spar-Tipp: Viele Regionen geben mit der Übernachtung eine <strong className="font-semibold text-gray-900">Gästekarte</strong> aus (z. B. Kärnten Card, SalzburgerLand Card, Tirols Gästekarten) – oft mit freiem Eintritt zu zahlreichen Ausflugszielen oder Bergbahnen.</p>
       </Block>
 
       <Block title="Notfallnummern">

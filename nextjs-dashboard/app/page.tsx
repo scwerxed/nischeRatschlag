@@ -75,7 +75,7 @@ export default function HomePage() {
       </section>
 
       {/* ── Beliebte Reiseziele ────────────────────────────────────────── */}
-      <section className="max-w-6xl mx-auto px-6 py-16">
+      <section id="regionen" className="max-w-6xl mx-auto px-6 py-16 scroll-mt-20">
         <div className="text-center mb-9">
           <p className="eyebrow mb-2">Beliebte Reiseziele</p>
           <h2 className="font-serif text-3xl font-bold text-gray-900">Wohin in Österreich?</h2>

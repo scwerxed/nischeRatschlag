@@ -3,9 +3,9 @@ import BlogSearch from '@/app/ui/blog-search';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Magazin – Kärnten Tipps & Wanderwege',
-  description: '40+ Insider-Artikel über Kärnten: Wanderwege am Wörthersee, Badeseen, Ausflüge, Tiertouren und Unterkünfte – mit echten Preisen und ehrlichen Bewertungen.',
-  keywords: ['Kärnten Blog', 'Wandern Kärnten', 'Wörthersee Tipps', 'Baden Kärnten', 'Ausflug Kärnten', 'Kärnten Insider'],
+  title: 'Magazin – Österreich Tipps & Wanderwege',
+  description: 'Insider-Artikel für ganz Österreich: Wanderwege, Badeseen, Ausflüge, Tiertouren und Unterkünfte in Kärnten, Salzburg, Tirol, der Steiermark und im Burgenland – mit echten Preisen und ehrlichen Bewertungen.',
+  keywords: ['Österreich Blog', 'Wandern Österreich', 'Badeseen Österreich', 'Ausflugsziele Österreich', 'Reisetipps Österreich', 'Bergseen Österreich'],
   alternates: { canonical: '/blog' },
 };
 
@@ -13,7 +13,7 @@ export default function BlogPage() {
   return (
     <div className="max-w-5xl mx-auto px-6 py-12">
       <p className="eyebrow mb-2">Magazin</p>
-      <h1 className="font-serif text-4xl font-bold mb-2 text-gray-900">Kärnten in {posts.length} Geschichten</h1>
+      <h1 className="font-serif text-4xl font-bold mb-2 text-gray-900">Österreich in {posts.length} Geschichten</h1>
       <p className="text-gray-500 mb-10 max-w-2xl">
         Insider-Tipps für Wandern, Baden, Ausflüge und Unterkünfte – recherchiert vor Ort,
         mit echten Preisen und ehrlichen Einschätzungen.

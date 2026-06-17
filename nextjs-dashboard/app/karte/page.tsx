@@ -2,8 +2,8 @@ import MapWrapper from '@/app/ui/map-wrapper';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Wanderkarte Kärnten',
-  description: 'Interaktive Karte mit Wanderwegen und Gipfeln in Kärnten.',
+  title: 'Interaktive Wanderkarte',
+  description: 'Interaktive Karte mit Wanderwegen, Gipfeln und Unterkünften – aktuell mit Fokus Kärnten, weitere österreichische Regionen folgen.',
 };
 
 export default function KartePage() {
@@ -11,9 +11,9 @@ export default function KartePage() {
     <div className="max-w-7xl mx-auto px-4 sm:px-6 pt-6 pb-4">
       <div className="flex items-baseline justify-between mb-3">
         <div>
-          <h1 className="font-serif text-2xl font-bold text-gray-900">Wanderkarte Kärnten</h1>
+          <h1 className="font-serif text-2xl font-bold text-gray-900">Interaktive Wanderkarte</h1>
           <p className="text-sm text-gray-500 mt-0.5">
-            Wanderwege, Gipfel und Unterkünfte — Karte, Topografie und Layer rechts oben ein-/ausblenden
+            Wanderwege, Gipfel und Unterkünfte (aktuell Fokus Kärnten) — Karte, Topografie und Layer rechts oben ein-/ausblenden
           </p>
         </div>
       </div>

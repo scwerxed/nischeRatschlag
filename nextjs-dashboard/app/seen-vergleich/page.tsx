@@ -3,14 +3,15 @@ import type { Metadata } from 'next';
 import { BASE, breadcrumbSchema } from '@/app/lib/seo';
 
 export const metadata: Metadata = {
-  title: 'Kärntens Seen im Vergleich – welcher See passt zu dir?',
-  description: 'Wörthersee, Klopeiner See, Millstätter See & Co. im direkten Vergleich: Wassertemperatur, Größe, Charakter und für wen sich welcher See am besten eignet.',
-  keywords: ['welcher See Kärnten', 'wärmster See Österreich', 'Badeseen Kärnten Vergleich', 'Kärnten See Familie', 'sauberster See Kärnten'],
+  title: 'Österreichs Seen im Vergleich – welcher Badesee passt zu dir?',
+  description: 'Wörthersee, Klopeiner See, Neusiedler See, Achensee & Co. im direkten Vergleich: Wassertemperatur, Größe, Charakter und für wen sich welcher österreichische Badesee am besten eignet.',
+  keywords: ['welcher See Österreich', 'wärmster See Österreich', 'Badeseen Österreich Vergleich', 'See Familie Österreich', 'schönster Badesee Österreich'],
   alternates: { canonical: '/seen-vergleich' },
 };
 
 type Lake = {
   name: string;
+  region: string;
   slug?: string;        // verlinkter Artikel, falls vorhanden
   maxTemp: string;
   groesse: string;
@@ -21,13 +22,16 @@ type Lake = {
 };
 
 const LAKES: Lake[] = [
-  { name: 'Wörthersee', slug: 'beste-badestellen-woerthersee', maxTemp: '28 °C', groesse: 'sehr groß', charakter: 'Mondän & belebt', idealFuer: 'Action, Ausgehen, Familien', gratis: true, tipp: 'Gratis-Strände in Maria Wörth & Reifnitz' },
-  { name: 'Klopeiner See', slug: 'klopeiner-see-badeurlaub', maxTemp: '28 °C', groesse: 'klein', charakter: 'Ruhig & familiär', idealFuer: 'Familien mit Kindern', gratis: false, tipp: 'Wärmster Badesee Österreichs' },
-  { name: 'Millstätter See', slug: 'millstaetter-see-wandern-und-schwimmen', maxTemp: '26 °C', groesse: 'groß & tief', charakter: 'Elegant & ruhig', idealFuer: 'Wandern + Baden, Paare', gratis: true, tipp: 'Im Herbst herrlich leer' },
-  { name: 'Faaker See', slug: 'faaker-see-badestellen', maxTemp: '27 °C', groesse: 'mittel', charakter: 'Türkis & malerisch', idealFuer: 'Familien, Fotografen', gratis: false, tipp: 'Karibisches Türkis durch Kalk' },
-  { name: 'Ossiacher See', slug: 'ossiacher-see-badeurlaub', maxTemp: '26 °C', groesse: 'groß', charakter: 'Sportlich & lebhaft', idealFuer: 'Wassersport, Aktive', gratis: true, tipp: 'Top zum Surfen & SUP' },
-  { name: 'Weissensee', slug: 'weissensee-kaernten-geheimtipp', maxTemp: '24 °C', groesse: 'mittel', charakter: 'Naturnah & still', idealFuer: 'Ruhe, Natur, Familien', gratis: true, tipp: 'Sauberster See – Motorbootverbot' },
-  { name: 'Keutschacher See', slug: 'keutschacher-seental-radtour', maxTemp: '24 °C', groesse: 'klein', charakter: 'Geheimtipp', idealFuer: 'Ruhesuchende, Radler', gratis: true, tipp: 'Wenig Trubel, kostenloser Zugang' },
+  { name: 'Wörthersee', region: 'Kärnten', slug: 'beste-badestellen-woerthersee', maxTemp: '28 °C', groesse: 'sehr groß', charakter: 'Mondän & belebt', idealFuer: 'Action, Ausgehen, Familien', gratis: true, tipp: 'Gratis-Strände in Maria Wörth & Reifnitz' },
+  { name: 'Klopeiner See', region: 'Kärnten', slug: 'klopeiner-see-badeurlaub', maxTemp: '28 °C', groesse: 'klein', charakter: 'Ruhig & familiär', idealFuer: 'Familien mit Kindern', gratis: false, tipp: 'Wärmster Badesee Österreichs' },
+  { name: 'Millstätter See', region: 'Kärnten', slug: 'millstaetter-see-wandern-und-schwimmen', maxTemp: '26 °C', groesse: 'groß & tief', charakter: 'Elegant & ruhig', idealFuer: 'Wandern + Baden, Paare', gratis: true, tipp: 'Im Herbst herrlich leer' },
+  { name: 'Faaker See', region: 'Kärnten', slug: 'faaker-see-badestellen', maxTemp: '27 °C', groesse: 'mittel', charakter: 'Türkis & malerisch', idealFuer: 'Familien, Fotografen', gratis: false, tipp: 'Karibisches Türkis durch Kalk' },
+  { name: 'Ossiacher See', region: 'Kärnten', slug: 'ossiacher-see-badeurlaub', maxTemp: '26 °C', groesse: 'groß', charakter: 'Sportlich & lebhaft', idealFuer: 'Wassersport, Aktive', gratis: true, tipp: 'Top zum Surfen & SUP' },
+  { name: 'Weissensee', region: 'Kärnten', slug: 'weissensee-kaernten-geheimtipp', maxTemp: '24 °C', groesse: 'mittel', charakter: 'Naturnah & still', idealFuer: 'Ruhe, Natur, Familien', gratis: true, tipp: 'Sauberster See – Motorbootverbot' },
+  { name: 'Neusiedler See', region: 'Burgenland', maxTemp: '25 °C', groesse: 'sehr groß & flach', charakter: 'Steppensee & windig', idealFuer: 'Segeln, Surfen, Familien', gratis: true, tipp: 'Mitteleuropas größter Steppensee, meist nur ~1 m tief' },
+  { name: 'Zeller See', region: 'Salzburg', maxTemp: '23 °C', groesse: 'mittel', charakter: 'Bergpanorama', idealFuer: 'Baden mit Bergblick, Familien', gratis: true, tipp: 'Baden vor der Kulisse der Hohen Tauern' },
+  { name: 'Wolfgangsee', region: 'Salzburg', maxTemp: '24 °C', groesse: 'groß', charakter: 'Idyllisch & beliebt', idealFuer: 'Familien, Ausflüge', gratis: true, tipp: 'St. Wolfgang & Schafbergbahn' },
+  { name: 'Achensee', region: 'Tirol', maxTemp: '20 °C', groesse: 'groß', charakter: 'Alpin & glasklar', idealFuer: 'Segeln, Surfen, Wandern', gratis: true, tipp: 'Tirols größter See – frisch, aber top zum Segeln' },
 ];
 
 export default function SeenVergleichPage() {
@@ -41,10 +45,11 @@ export default function SeenVergleichPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
       <p className="eyebrow mb-2">Entscheidungshilfe</p>
-      <h1 className="font-serif text-4xl font-bold mb-3 text-gray-900">Kärntens Seen im Vergleich</h1>
+      <h1 className="font-serif text-4xl font-bold mb-3 text-gray-900">Österreichs Seen im Vergleich</h1>
       <p className="text-gray-500 mb-8 max-w-2xl">
-        Über 1.270 Seen hat Kärnten – aber welcher passt zu dir? Hier die beliebtesten Badeseen
-        im direkten Vergleich: Wassertemperatur, Charakter und für wen sich welcher See eignet.
+        Österreich hat Tausende Badeseen – von den warmen Seen im Süden bis zu glasklaren
+        Bergseen in den Alpen. Hier die beliebtesten im direkten Vergleich: Wassertemperatur,
+        Charakter und für wen sich welcher See eignet.
       </p>
 
       {/* Tabelle (Desktop) */}
@@ -53,6 +58,7 @@ export default function SeenVergleichPage() {
           <thead>
             <tr className="bg-green-800 text-white text-left">
               <th className="px-4 py-3 font-semibold">See</th>
+              <th className="px-4 py-3 font-semibold">Region</th>
               <th className="px-4 py-3 font-semibold">max. Wassertemp.</th>
               <th className="px-4 py-3 font-semibold">Größe</th>
               <th className="px-4 py-3 font-semibold">Charakter</th>
@@ -66,6 +72,7 @@ export default function SeenVergleichPage() {
                 <td className="px-4 py-3 font-semibold text-gray-900">
                   {l.slug ? <Link href={`/blog/${l.slug}`} className="text-green-700 hover:underline">{l.name}</Link> : l.name}
                 </td>
+                <td className="px-4 py-3 text-gray-600 whitespace-nowrap">{l.region}</td>
                 <td className="px-4 py-3 text-gray-700 whitespace-nowrap">{l.maxTemp}</td>
                 <td className="px-4 py-3 text-gray-600">{l.groesse}</td>
                 <td className="px-4 py-3 text-gray-600">{l.charakter}</td>
@@ -91,7 +98,7 @@ export default function SeenVergleichPage() {
               </h2>
               <span className="text-sm font-semibold text-cyan-700">{l.maxTemp}</span>
             </div>
-            <p className="text-sm text-gray-600 mt-1">{l.charakter} · {l.groesse}</p>
+            <p className="text-sm text-gray-600 mt-1">{l.region} · {l.charakter} · {l.groesse}</p>
             <p className="text-sm text-gray-500 mt-1">Ideal für: {l.idealFuer}</p>
             <p className="text-xs text-gray-500 mt-2">{l.gratis ? '✓ Gratis-Bademöglichkeit' : 'Strandbad mit Eintritt'} · {l.tipp}</p>
           </div>
@@ -104,9 +111,10 @@ export default function SeenVergleichPage() {
         <ul className="space-y-1.5 text-sm text-gray-700">
           <li className="flex items-start gap-2.5"><span className="shrink-0 mt-1.5 w-3 h-px bg-green-600 inline-block" /><strong className="font-semibold text-gray-900">Wärmstes Wasser:</strong>&nbsp;Klopeiner See &amp; Wörthersee (bis 28 °C)</li>
           <li className="flex items-start gap-2.5"><span className="shrink-0 mt-1.5 w-3 h-px bg-green-600 inline-block" /><strong className="font-semibold text-gray-900">Familien:</strong>&nbsp;Klopeiner See &amp; Weissensee (flach, ruhig)</li>
-          <li className="flex items-start gap-2.5"><span className="shrink-0 mt-1.5 w-3 h-px bg-green-600 inline-block" /><strong className="font-semibold text-gray-900">Ruhe &amp; Natur:</strong>&nbsp;Weissensee &amp; Keutschacher See</li>
+          <li className="flex items-start gap-2.5"><span className="shrink-0 mt-1.5 w-3 h-px bg-green-600 inline-block" /><strong className="font-semibold text-gray-900">Ruhe &amp; Natur:</strong>&nbsp;Weissensee &amp; Achensee</li>
           <li className="flex items-start gap-2.5"><span className="shrink-0 mt-1.5 w-3 h-px bg-green-600 inline-block" /><strong className="font-semibold text-gray-900">Action &amp; Ausgehen:</strong>&nbsp;Wörthersee</li>
-          <li className="flex items-start gap-2.5"><span className="shrink-0 mt-1.5 w-3 h-px bg-green-600 inline-block" /><strong className="font-semibold text-gray-900">Wassersport:</strong>&nbsp;Ossiacher See</li>
+          <li className="flex items-start gap-2.5"><span className="shrink-0 mt-1.5 w-3 h-px bg-green-600 inline-block" /><strong className="font-semibold text-gray-900">Bergpanorama:</strong>&nbsp;Zeller See &amp; Achensee</li>
+          <li className="flex items-start gap-2.5"><span className="shrink-0 mt-1.5 w-3 h-px bg-green-600 inline-block" /><strong className="font-semibold text-gray-900">Segeln &amp; Wind:</strong>&nbsp;Neusiedler See &amp; Achensee</li>
         </ul>
       </div>
 

@@ -9,7 +9,7 @@ const LINKS = [
   { href: '/karte', label: 'Karte' },
   { href: '/routenplaner', label: 'Routenplaner' },
   { href: '/seen-vergleich', label: 'Seen-Vergleich' },
-  { href: '/regionen/kaernten', label: 'Kärnten' },
+  { href: '/#regionen', label: 'Regionen' },
   { href: '/ueber-uns', label: 'Über uns' },
 ];
 
@@ -27,7 +27,7 @@ function Logo({ onClick }: { onClick?: () => void }) {
           Bergseen&nbsp;Guide
         </span>
         <span className="block text-[10px] uppercase tracking-[0.22em] text-gray-400 mt-0.5">
-          Kärnten · Seen &amp; Berge
+          Österreich · Seen &amp; Berge
         </span>
       </span>
     </Link>

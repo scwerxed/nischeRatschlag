@@ -26,8 +26,8 @@ export default function Image() {
         <div style={{ display: 'flex', fontSize: 72, fontWeight: 700, marginTop: 28, lineHeight: 1.1, maxWidth: 950 }}>
           Seen, Berge &amp; Ausflüge in Österreich
         </div>
-        <div style={{ display: 'flex', fontSize: 30, marginTop: 28, opacity: 0.85 }}>
-          Kärnten · Steiermark · Burgenland
+        <div style={{ display: 'flex', fontSize: 28, marginTop: 28, opacity: 0.85 }}>
+          Kärnten · Salzburg · Tirol · Steiermark · Burgenland
         </div>
       </div>
     ),

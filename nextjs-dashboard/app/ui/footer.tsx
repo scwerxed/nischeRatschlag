@@ -14,7 +14,7 @@ export default function Footer() {
             <span className="font-serif text-lg font-bold text-white">Bergseen Guide</span>
           </div>
           <p className="text-sm leading-relaxed">
-            Unabhängiger Reiseführer für Kärnten: Wanderungen, Badeseen, Ausflüge und
+            Unabhängiger Reiseführer für Österreich: Wanderungen, Badeseen, Ausflüge und
             ehrliche Unterkunfts-Tipps – recherchiert statt abgeschrieben.
           </p>
         </div>
@@ -29,7 +29,7 @@ export default function Footer() {
             <li><Link href="/seen-vergleich" className="hover:text-white transition-colors">Seen-Vergleich</Link></li>
             <li><Link href="/merkliste" className="hover:text-white transition-colors">Merkliste</Link></li>
             <li><Link href="/reiseinfos" className="hover:text-white transition-colors">Reiseinfos</Link></li>
-            <li><Link href="/regionen/kaernten" className="hover:text-white transition-colors">Region Kärnten</Link></li>
+            <li><Link href="/#regionen" className="hover:text-white transition-colors">Regionen</Link></li>
           </ul>
         </div>
 
@@ -48,7 +48,7 @@ export default function Footer() {
       <div className="border-t border-white/10">
         <div className="max-w-6xl mx-auto px-6 py-5 flex flex-col sm:flex-row justify-between gap-2 text-xs text-green-300/70">
           <p>© {new Date().getFullYear()} Bergseen Guide. Alle Angaben ohne Gewähr.</p>
-          <p>Enthält Affiliate-Links · Kärnten, Österreich</p>
+          <p>Enthält Affiliate-Links · Österreich</p>
         </div>
       </div>
     </footer>

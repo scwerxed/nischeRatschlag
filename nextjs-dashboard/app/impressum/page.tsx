@@ -55,8 +55,8 @@ export default function ImpressumPage() {
         </h2>
         <p className="text-gray-700 leading-relaxed">
           Bergseen Guide ist ein privat betriebenes, unabhängiges Reise-Informationsangebot
-          über die Region Kärnten. Grundlegende Richtung: redaktionelle, werbefinanzierte
-          Information zu Reise, Wandern, Baden und Ausflügen in Kärnten.
+          über Österreich. Grundlegende Richtung: redaktionelle, werbefinanzierte
+          Information zu Reise, Wandern, Baden und Ausflügen in Österreich.
         </p>
       </section>
 

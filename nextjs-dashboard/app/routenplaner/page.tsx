@@ -2,8 +2,8 @@ import RoutenplanerWrapper from '@/app/ui/routenplaner-wrapper';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Routenplaner Kärnten',
-  description: 'Plane deine Wanderroute in Kärnten – Wegpunkte setzen, Distanz & Dauer berechnen.',
+  title: 'Routenplaner – Wanderrouten in Österreich',
+  description: 'Plane deine Wanderroute in Österreich – Wegpunkte setzen, Distanz, Gehzeit & Höhenprofil berechnen.',
 };
 
 export default function RoutenplanerPage() {

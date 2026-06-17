@@ -3,7 +3,7 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'Über uns',
-  description: 'Wer hinter dem Bergseen Guide steckt – unabhängiger Reiseführer für Kärnten mit ehrlichen, selbst recherchierten Tipps.',
+  description: 'Wer hinter dem Bergseen Guide steckt – unabhängiger Reiseführer für Österreich mit ehrlichen, selbst recherchierten Tipps.',
   alternates: { canonical: '/ueber-uns' },
 };
 
@@ -12,11 +12,11 @@ export default function UeberUnsPage() {
     <div className="max-w-2xl mx-auto px-6 py-12">
       <p className="eyebrow mb-2">Über uns</p>
       <h1 className="font-serif text-4xl font-bold mb-6 text-gray-900">
-        Kärnten, wie wir es wirklich erleben
+        Österreich, wie wir es wirklich erleben
       </h1>
 
       <p className="text-gray-700 leading-relaxed mb-4">
-        Der Bergseen Guide ist ein unabhängiges Reise-Magazin über Kärnten und seine Seen.
+        Der Bergseen Guide ist ein unabhängiges Reise-Magazin über Österreichs Seen und Berge.
         Wir schreiben über Wanderungen, Badestellen, Ausflüge und Unterkünfte – nicht aus
         Hochglanzprospekten abgeschrieben, sondern aus eigener Erfahrung vor Ort.
       </p>
