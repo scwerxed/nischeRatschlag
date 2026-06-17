@@ -4,6 +4,7 @@ import { useEffect, useMemo, useState } from 'react';
 import Link from 'next/link';
 import type { Post } from '@/app/lib/posts';
 import { CATEGORY_DOT } from '@/app/lib/blog-utils';
+import PostArtwork from '@/app/ui/post-artwork';
 
 const CATEGORIES = ['Alle', 'Wandern', 'Baden', 'Ausflug', 'Unterkunft'] as const;
 const DIFF_STYLE: Record<string, string> = {
@@ -87,8 +88,11 @@ export default function BlogSearch({ posts }: { posts: Post[] }) {
             <Link
               key={post.slug}
               href={`/blog/${post.slug}`}
-              className="group block border border-gray-200 rounded-xl p-6 hover:border-green-400 hover:shadow-md transition-all"
+              className="group block border border-gray-200 rounded-xl p-6 overflow-hidden hover:border-green-400 hover:shadow-md transition-all"
             >
+              <div className="aspect-[16/9] -mx-6 -mt-6 mb-4 overflow-hidden">
+                <PostArtwork seed={post.slug} category={post.category} />
+              </div>
               <div className="flex items-center justify-between mb-2">
                 <div className="flex items-center gap-2">
                   <span className="flex items-center gap-1.5 text-xs font-semibold text-green-700 uppercase tracking-wide">

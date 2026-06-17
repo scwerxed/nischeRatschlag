@@ -93,6 +93,7 @@ No external markdown library is used.
 - **Favicon**: [app/icon.svg](app/icon.svg) (brand mountain on forest-green) — Next auto-generates the icon `<link>`.
 - **PWA manifest**: [app/manifest.ts](app/manifest.ts) (name, theme color `#255744`, icon) → installable on mobile.
 - **Custom 404**: [app/not-found.tsx](app/not-found.tsx) — branded, `noindex`, links to home/magazine/regions.
+- **Post artwork**: [app/ui/post-artwork.tsx](app/ui/post-artwork.tsx) generates a deterministic SVG landscape per post (seeded by slug, palette by category) — used as article hero + card thumbnails everywhere (magazine, home lead, region cards). No real photos yet; this is a branded placeholder so every article has a distinct image without assets/licensing. Swap for real photos later via an optional `image` field on `Post`.
 - **Blog post add-ons**: reading time, share buttons ([app/ui/share-buttons.tsx](app/ui/share-buttons.tsx)), related posts (scored by category/difficulty/season via [app/lib/blog-utils.ts](app/lib/blog-utils.ts)).
 - **Home add-ons**: live lake-weather widget across popular Austrian lakes ([app/ui/seewetter.tsx](app/ui/seewetter.tsx), Open-Meteo, no key), quick-stats, region cards, map-feature grid.
 - **Newsletter** ([app/ui/newsletter.tsx](app/ui/newsletter.tsx)): **pre-launch / not functional** — no backend, email only saved to `localStorage`. Copy is intentionally honest ("in Vorbereitung"). Wire up a provider (Brevo/MailerLite) with double-opt-in before promising delivery.

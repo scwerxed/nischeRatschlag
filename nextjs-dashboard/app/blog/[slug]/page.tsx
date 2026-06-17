@@ -7,6 +7,7 @@ import { cloak, excursionsFor } from '@/app/lib/affiliate';
 import TrailMapWrapper from '@/app/ui/trail-map-wrapper';
 import ShareButtons from '@/app/ui/share-buttons';
 import SaveButton from '@/app/ui/save-button';
+import PostArtwork from '@/app/ui/post-artwork';
 import { readingTime, relatedPosts } from '@/app/lib/blog-utils';
 import { BASE, SITE_NAME, CATEGORY_KEYWORDS, REGION_META, regionName, articleSchema, breadcrumbSchema, OFFICIAL_REGION_SITES } from '@/app/lib/seo';
 
@@ -201,9 +202,13 @@ export default async function BlogPostPage({ params }: Props) {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <link rel="alternate" hrefLang="de-AT" href={`${BASE}/blog/${post.slug}`} />
 
-      {/* ── Farbiger Kopfbereich ─────────────────────────────────────────── */}
-      <header className={`bg-gradient-to-br ${gradient} text-white`}>
-        <div className="max-w-6xl mx-auto px-6 py-12 md:py-16">
+      {/* ── Kopfbereich mit Landschaftsmotiv ─────────────────────────────── */}
+      <header className="relative text-white overflow-hidden">
+        <div className="absolute inset-0">
+          <PostArtwork seed={post.slug} category={post.category} className="h-full w-full" />
+        </div>
+        <div className={`absolute inset-0 bg-gradient-to-t ${gradient}`} style={{ opacity: 0.82 }} />
+        <div className="relative max-w-6xl mx-auto px-6 py-12 md:py-16">
           {/* Breadcrumb */}
           <nav className="flex flex-wrap items-center gap-2 text-xs text-white/70 mb-5">
             <Link href="/" className="hover:text-white">Startseite</Link>

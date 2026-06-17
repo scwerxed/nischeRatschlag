@@ -4,6 +4,7 @@ import { regionen } from '@/app/lib/regionen';
 import HeroSlideshow from '@/app/ui/hero-slideshow';
 import RegionSelector from '@/app/ui/region-selector';
 import Newsletter from '@/app/ui/newsletter';
+import PostArtwork from '@/app/ui/post-artwork';
 import { CATEGORY_DOT } from '@/app/lib/blog-utils';
 import type { Metadata } from 'next';
 
@@ -124,8 +125,10 @@ export default function HomePage() {
         <div className="grid md:grid-cols-2 gap-8">
           {/* Lead-Artikel */}
           <Link href={`/blog/${lead.slug}`} className="group block">
-            <div className="aspect-[16/10] bg-gradient-to-br from-green-700 to-green-900 mb-4 flex items-end p-6 overflow-hidden">
-              <span className="font-serif text-2xl text-white/95 leading-snug">{lead.title}</span>
+            <div className="relative aspect-[16/10] mb-4 overflow-hidden">
+              <PostArtwork seed={lead.slug} category={lead.category} className="absolute inset-0 transition-transform duration-500 group-hover:scale-105" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
+              <span className="absolute bottom-0 left-0 p-6 font-serif text-2xl text-white leading-snug">{lead.title}</span>
             </div>
             <p className="eyebrow mb-1.5">{lead.category}{lead.bestSeason ? ` · ${lead.bestSeason}` : ''}</p>
             <p className="text-gray-600 leading-relaxed">{lead.excerpt}</p>

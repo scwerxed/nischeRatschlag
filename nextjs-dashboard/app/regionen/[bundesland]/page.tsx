@@ -9,6 +9,7 @@ import { FAQS_BY_REGION } from '@/app/lib/faqs';
 import { REGION_CONTENT } from '@/app/lib/regionen-content';
 import { unterkuenfte } from '@/app/lib/unterkuenfte';
 import { cloak } from '@/app/lib/affiliate';
+import PostArtwork from '@/app/ui/post-artwork';
 
 type Props = { params: Promise<{ bundesland: string }> };
 
@@ -220,8 +221,11 @@ export default async function RegionPage({ params }: Props) {
                     <Link
                       key={post.slug}
                       href={`/blog/${post.slug}`}
-                      className="group block border border-gray-200 rounded-xl p-6 hover:border-green-400 hover:shadow-md transition-all"
+                      className="group block border border-gray-200 rounded-xl p-6 overflow-hidden hover:border-green-400 hover:shadow-md transition-all"
                     >
+                      <div className="aspect-[16/9] -mx-6 -mt-6 mb-4 overflow-hidden">
+                        <PostArtwork seed={post.slug} category={post.category} />
+                      </div>
                       {/* Meta */}
                       <div className="flex items-center justify-between mb-2 flex-wrap gap-1">
                         <div className="flex items-center gap-2">
