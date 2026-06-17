@@ -56,7 +56,7 @@ All outbound partner links route through our own domain via [app/lib/affiliate.t
 | `/routenplaner` | Client (dynamic import) | Interactive route planner via BRouter (proxied through `/api/brouter`, which snaps waypoints to nearest trail via Overpass); elevation profile + difficulty; saves to `localStorage` |
 | `/blog/[slug]` (hiking) | — | Hiking posts with `trails` render a `TrailMap` (OpenTopoMap) where users pick a predefined route |
 | `/go` | Route handler | Affiliate redirect with host allowlist + partner-tag injection |
-| `/api/brouter` | Route handler | Proxies BRouter (CORS) + snaps waypoints to nearest hiking trail via Overpass |
+| `/api/brouter` | Route handler | Proxies BRouter (CORS) + snaps waypoints to nearest hiking trail via Overpass. Guarded against abuse: same-origin Referer check + in-memory per-IP rate limit (30/min) |
 
 ### Map/interactive components
 
@@ -93,7 +93,9 @@ No external markdown library is used.
 - **Newsletter** ([app/ui/newsletter.tsx](app/ui/newsletter.tsx)): **pre-launch / not functional** — no backend, email only saved to `localStorage`. Copy is intentionally honest ("in Vorbereitung"). Wire up a provider (Brevo/MailerLite) with double-opt-in before promising delivery.
 - **Global**: scroll-to-top button in the layout.
 - **FAQ accordion**: [app/ui/faq.tsx](app/ui/faq.tsx).
-- **Bot / geo blocking**: [middleware.ts](middleware.ts) returns HTTP 403 for AI/scraper/SEO crawlers (by User-Agent) and for visitors from CN/RU/HK (`x-vercel-ip-country`). Search/ad crawlers (Google, Bing, AdSense) are explicitly allowed.
+- **Bot / geo blocking**: [middleware.ts](middleware.ts) returns HTTP 403 for AI/scraper/SEO crawlers (by User-Agent) and for visitors from CN/RU/HK (`x-vercel-ip-country`). Search/ad crawlers (Google, Bing, AdSense) are explicitly allowed. UA-blocking is spoofable (noise reduction, not real security); the one outbound endpoint `/api/brouter` is additionally rate-limited + Referer-checked.
+- **Security headers**: [next.config.ts](next.config.ts) `headers()` adds `X-Content-Type-Options: nosniff`, `Referrer-Policy: strict-origin-when-cross-origin`, `X-Frame-Options: SAMEORIGIN`, `Permissions-Policy` (camera/mic/payment off) to all routes. No CSP yet (would need careful allowlisting for AdSense/GetYourGuide).
+- **Third-party scripts**: AdSense loader stays in `<head>` (reliable ad loading) with a `preconnect`; the GetYourGuide tracking script is deferred via `next/script` `strategy="lazyOnload"` to protect Core Web Vitals.
 
 External APIs (all keyless): **BRouter** (routing), **Overpass** (peaks + trail snapping), **Waymarked Trails** (tiles), **OpenTopoMap** (topo tiles), **Open-Meteo** (weather).
 

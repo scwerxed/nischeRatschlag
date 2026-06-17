@@ -32,8 +32,10 @@ export default function HeroSlideshow({ children }: { children: React.ReactNode 
             src={img.src}
             alt={img.alt}
             fill
+            sizes="100vw"
             className="object-cover scale-105"
             priority={i === 0}
+            loading={i === 0 ? undefined : 'lazy'}
             onLoad={() =>
               setLoaded((prev) => {
                 const next = [...prev];

@@ -5,6 +5,7 @@ import Footer from '@/app/ui/footer';
 import ScrollToTop from '@/app/ui/scroll-to-top';
 import { Analytics } from '@vercel/analytics/next';
 import { SpeedInsights } from '@vercel/speed-insights/next';
+import Script from 'next/script';
 import type { Metadata } from 'next';
 import { BASE, SITE_NAME, AUSTRIA_GEO, BASE_KEYWORDS, orgSchema, websiteSchema } from '@/app/lib/seo';
 
@@ -82,21 +83,17 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="de" className={`${inter.variable} ${lusitana.variable}`}>
       <head>
+        {/* Schnellere Verbindung zu Drittanbietern (spart Handshake-Zeit → besseres LCP/INP). */}
+        <link rel="preconnect" href="https://pagead2.googlesyndication.com" crossOrigin="anonymous" />
+        <link rel="dns-prefetch" href="https://widget.getyourguide.com" />
         {/* Consent Mode v2 – MUSS vor adsbygoogle.js stehen (inline = läuft synchron zuerst). */}
         <script dangerouslySetInnerHTML={{ __html: CONSENT_DEFAULT }} />
-        {/* Google AdSense – echtes <script>-Tag im Head.
+        {/* Google AdSense – im Head, damit Ads/Auto-Ads zuverlässig laden.
             Einwilligung wird über Consent Mode v2 (oben) + Googles zertifizierte CMP verwaltet. */}
         <script
           async
           src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_CLIENT}`}
           crossOrigin="anonymous"
-        />
-        {/* GetYourGuide Analytics – Conversion-Tracking für Ausflugs-Links */}
-        <script
-          async
-          defer
-          src="https://widget.getyourguide.com/dist/pa.umd.production.min.js"
-          data-gyg-partner-id="CTZDZJB"
         />
       </head>
       <body className="font-sans antialiased bg-white text-gray-900">
@@ -112,6 +109,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         {/* Vercel Web Analytics (Besucherstatistik) + Speed Insights (Ladezeiten/SEO) */}
         <Analytics />
         <SpeedInsights />
+        {/* GetYourGuide Conversion-Tracking – unkritisch, daher erst nach allem anderen laden. */}
+        <Script
+          src="https://widget.getyourguide.com/dist/pa.umd.production.min.js"
+          strategy="lazyOnload"
+          data-gyg-partner-id="CTZDZJB"
+        />
       </body>
     </html>
   );

@@ -1,5 +1,36 @@
 import { NextRequest, NextResponse } from 'next/server';
 
+// ── Missbrauchsschutz ────────────────────────────────────────────────────────
+// Diese Route ruft fremde Gratis-APIs (BRouter, Overpass) in unserem Namen auf.
+// Ohne Schutz könnte sie als kostenloser Routing-Proxy missbraucht werden.
+
+/** Erlaubt nur Aufrufe von der eigenen Domain (Referer-Host == Host).
+ *  Fehlt der Referer ganz, blocken wir nicht hart – dafür greift das Rate-Limit. */
+function sameOrigin(req: NextRequest): boolean {
+  const ref = req.headers.get('referer');
+  if (!ref) return true;
+  try {
+    return new URL(ref).host === req.headers.get('host');
+  } catch {
+    return false;
+  }
+}
+
+// Einfaches In-Memory-Rate-Limit pro IP (pro warmer Serverless-Instanz).
+const RATE = { limit: 30, windowMs: 60_000 };
+const hits = new Map<string, { count: number; reset: number }>();
+
+function rateLimited(ip: string): boolean {
+  const now = Date.now();
+  const e = hits.get(ip);
+  if (!e || now > e.reset) {
+    hits.set(ip, { count: 1, reset: now + RATE.windowMs });
+    return false;
+  }
+  e.count += 1;
+  return e.count > RATE.limit;
+}
+
 async function snapToTrail(lat: number, lng: number): Promise<{ lat: number; lng: number }> {
   // Find nodes on foot-accessible ways within 500 m
   const q = `[out:json][timeout:8];way(around:500,${lat.toFixed(6)},${lng.toFixed(6)})[highway~"^(path|footway|track|bridleway)$"][foot!="no"];node(w);out skel;`;
@@ -27,6 +58,14 @@ async function snapToTrail(lat: number, lng: number): Promise<{ lat: number; lng
 }
 
 export async function GET(request: NextRequest) {
+  if (!sameOrigin(request)) {
+    return NextResponse.json({ error: 'Forbidden' }, { status: 403 });
+  }
+  const ip = (request.headers.get('x-forwarded-for') ?? '').split(',')[0].trim() || 'unknown';
+  if (rateLimited(ip)) {
+    return NextResponse.json({ error: 'Too many requests' }, { status: 429 });
+  }
+
   const lonlats = request.nextUrl.searchParams.get('lonlats');
   if (!lonlats) return NextResponse.json({ error: 'lonlats required' }, { status: 400 });
 
