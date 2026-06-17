@@ -1,6 +1,6 @@
 'use client';
 
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import Link from 'next/link';
 import type { Post } from '@/app/lib/posts';
 import { CATEGORY_DOT } from '@/app/lib/blog-utils';
@@ -15,6 +15,13 @@ const DIFF_STYLE: Record<string, string> = {
 export default function BlogSearch({ posts }: { posts: Post[] }) {
   const [query, setQuery] = useState('');
   const [cat, setCat] = useState<(typeof CATEGORIES)[number]>('Alle');
+
+  // Suchbegriff aus der URL übernehmen (?q=…), z. B. aus der Navbar-Suche oder
+  // Googles Sitelinks-Searchbox (WebSite-SearchAction zeigt auf /blog?q=).
+  useEffect(() => {
+    const q = new URLSearchParams(window.location.search).get('q');
+    if (q) setQuery(q);
+  }, []);
 
   const filtered = useMemo(() => {
     const q = query.trim().toLowerCase();

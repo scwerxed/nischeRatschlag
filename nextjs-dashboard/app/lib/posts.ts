@@ -4297,6 +4297,155 @@ Filzmoos ist bewusst ruhig geblieben – kein Massentourismus, dafür Bergidylle
       { label: 'Wanderstöcke – Amazon', url: 'https://www.amazon.de/s?k=wanderst%C3%B6cke+teleskop' },
     ],
   },
+  {
+    slug: 'pyramidenkogel-woerthersee',
+    title: 'Pyramidenkogel – der Aussichtsturm über dem Wörthersee',
+    excerpt: 'Vom höchsten Holz-Aussichtsturm der Welt reicht der Blick über den Wörthersee bis zu den Karawanken – und runter geht es wahlweise mit Österreichs höchster Turmrutsche.',
+    date: '2026-06-17', category: 'Ausflug', region: 'kaernten', bestSeason: 'April–Oktober',
+    highlights: ['100 m hoher Holzturm mit Panorama-Lift', 'Rundumblick über den Wörthersee', 'Indoor-Rutsche als Highlight für Kinder'],
+    content: `
+Hoch über dem Keutschacher Seental thront der **Pyramidenkogel** – mit rund 100 Metern der höchste Holz-Aussichtsturm der Welt. Bei klarer Sicht reicht der Blick vom Wörthersee über die Karawanken bis zu den Hohen Tauern.
+
+## Was dich oben erwartet
+Drei Aussichtsplattformen, erreichbar per Lift oder über die Treppe. Von ganz oben siehst du fast ganz Mittelkärnten – ideal zum Sonnenuntergang, wenn sich der See orange färbt.
+
+## Für Familien
+Das Highlight für Kinder (und Mutige): die **52 m lange Indoor-Rutsche**, eine der höchsten Turmrutschen Europas. In wenigen Sekunden geht es spiralförmig nach unten.
+
+## Praktische Infos
+- Anfahrt: ca. 20 Minuten von Klagenfurt
+- Großer Parkplatz vorhanden
+- Abends teils länger geöffnet (Sonnenuntergangs-Tickets)
+- Gut kombinierbar mit einer Runde um den Keutschacher See
+    `,
+    affiliateLinks: [
+      { label: 'Unterkünfte am Wörthersee – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=W%C3%B6rthersee' },
+    ],
+  },
+  {
+    slug: 'minimundus-klagenfurt',
+    title: 'Minimundus in Klagenfurt – die kleine Welt am Wörthersee',
+    excerpt: 'Eiffelturm, Taj Mahal und Petersdom auf einem Spaziergang: Der Miniaturpark Minimundus zeigt über 150 Bauwerke aus aller Welt im Maßstab 1:25 – ein Klassiker für Familien.',
+    date: '2026-06-17', category: 'Ausflug', region: 'kaernten', bestSeason: 'April–Oktober',
+    highlights: ['Über 150 Modelle berühmter Bauwerke', 'Maßstab 1:25, liebevoll detailliert', 'Ideal für Familien & als Schlechtwetter-Alternative'],
+    content: `
+Am Rande von Klagenfurt, nahe dem Wörthersee, liegt **Minimundus** – „die kleine Welt am Wörthersee". Auf rund 26.000 m² stehen über 150 originalgetreue Modelle berühmter Bauwerke im Maßstab 1:25.
+
+## Was es zu sehen gibt
+Vom Eiffelturm über den Petersdom und das Taj Mahal bis zur Freiheitsstatue – eine Weltreise zu Fuß in ein bis zwei Stunden. Viele Modelle bestehen aus Originalmaterialien.
+
+## Für Familien
+Modelleisenbahnen, Schiffe und Flugzeuge in Bewegung begeistern Kinder. Es gibt einen Spielplatz und genug Platz zum Toben.
+
+## Praktische Infos
+- Zentral in Klagenfurt, nahe Strandbad & Europapark
+- Tickets oft günstiger mit der Kärnten Card
+- Gut kombinierbar mit dem benachbarten Reptilienzoo
+    `,
+    affiliateLinks: [
+      { label: 'Hotels in Klagenfurt – booking.com', url: 'https://www.booking.com/city/at/klagenfurt.de.html' },
+    ],
+  },
+  {
+    slug: 'gaisberg-salzburg-aussicht',
+    title: 'Gaisberg – Salzburgs Hausberg mit Rundblick',
+    excerpt: 'Der Gaisberg ist der Aussichtsbalkon der Stadt Salzburg: oben Rundblick über die Altstadt, das Alpenvorland und die Salzkammergut-Seen – zu Fuß oder bequem mit dem Bus.',
+    date: '2026-06-16', category: 'Wandern', region: 'salzburg', difficulty: 'mittel', bestSeason: 'Mai–Oktober',
+    highlights: ['Rundblick über Salzburg & Salzkammergut', 'Per Wanderung oder Bus erreichbar', 'Beliebter Startplatz für Paragleiter'],
+    content: `
+Der **Gaisberg** (1.287 m) ist der Hausberg der Stadt Salzburg – ein bewaldeter Rücken im Osten, von dem aus du die Altstadt, das Alpenvorland und bei klarer Sicht die Seen des Salzkammerguts überblickst.
+
+## Hinauf
+Mehrere Wanderwege führen vom Stadtrand in 2–3 Stunden hinauf. Wer es bequem mag, nimmt den **Gaisberg-Bus** bis zum Gipfelplateau und spaziert oben nur die Rundwege.
+
+## Oben
+Ein leichter Gipfelrundweg, Almwiesen und meist mehrere Paragleiter, die hier starten. Bei Föhn ist die Fernsicht spektakulär.
+
+## Praktische Infos
+- Vom Gipfel kurze Spazierwege für alle Niveaus
+- Gasthaus am Plateau
+- Festes Schuhwerk; oben oft kühler & windiger als in der Stadt
+    `,
+    affiliateLinks: [
+      { label: 'Hotels in Salzburg – booking.com', url: 'https://www.booking.com/city/at/salzburg.de.html' },
+      { label: 'Wanderschuhe – Amazon', url: 'https://www.amazon.de/s?k=wanderschuhe' },
+    ],
+  },
+  {
+    slug: 'stubaier-gletscher',
+    title: 'Stubaier Gletscher – Schnee und Bergpanorama auch im Sommer',
+    excerpt: 'Tirols größtes Gletscherskigebiet im Stubaital bietet Pisten bis in den Frühsommer und mit der Aussichtsplattform „Top of Tyrol" einen Logenblick auf über 3.200 m.',
+    date: '2026-06-16', category: 'Ausflug', region: 'tirol', bestSeason: 'Ganzjährig',
+    highlights: ['Tirols größtes Gletscherskigebiet', 'Aussichtsplattform „Top of Tyrol" (3.210 m)', 'Schnee bis in den Frühsommer'],
+    content: `
+Am Talschluss des **Stubaitals**, rund 45 Minuten von Innsbruck, liegt Tirols größtes Gletscherskigebiet. Dank der Höhe liegt hier oft bis in den Frühsommer Schnee.
+
+## Im Sommer
+Auch ohne Ski lohnt die Auffahrt: Die Aussichtsplattform **„Top of Tyrol"** auf 3.210 m schwebt förmlich über dem Gletscher, ringsum ein Meer aus Dreitausendern. Ein kurzer Steig führt vom Bergrestaurant hin.
+
+## Gut zu wissen
+Oben ist es auch im Sommer kalt – warme Jacke, Sonnenbrille und Sonnencreme (Gletscherstrahlung!) sind Pflicht. Feste Schuhe für die Plattform-Wege.
+
+## Praktische Infos
+- Mehrstufige Gondelauffahrt ab Mutterbergalm
+- Wetter vorab prüfen – bei Nebel lohnt es kaum
+- Familienfreundlich, vieles auch ohne Wanderung erlebbar
+    `,
+    affiliateLinks: [
+      { label: 'Unterkünfte im Stubaital – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Stubaital' },
+    ],
+  },
+  {
+    slug: 'schloss-eggenberg-graz',
+    title: 'Schloss Eggenberg in Graz – Barockpracht und Pfauengarten',
+    excerpt: 'Das prunkvolle Schloss Eggenberg am Rand von Graz ist UNESCO-Welterbe: 365 Fenster, der prachtvolle Planetensaal und ein weitläufiger Park, in dem Pfauen frei umherstolzieren.',
+    date: '2026-06-16', category: 'Ausflug', region: 'steiermark', bestSeason: 'Park ganzjährig · Prunkräume April–Oktober',
+    highlights: ['UNESCO-Welterbe in Graz', 'Planetensaal & Prunkräume', 'Großer Park mit freilaufenden Pfauen'],
+    content: `
+Am westlichen Stadtrand von Graz liegt **Schloss Eggenberg**, die prächtigste Barockanlage der Steiermark und Teil des UNESCO-Welterbes.
+
+## Symbolik in Stein
+Die Anlage ist als Abbild des Kosmos angelegt: **365 Außenfenster** für die Tage des Jahres und im Mittelpunkt der prunkvolle **Planetensaal** mit seinen Deckengemälden.
+
+## Der Park
+Rund um das Schloss erstreckt sich ein weitläufiger Landschaftspark – beliebt für Spaziergänge und berühmt für die **Pfauen**, die hier frei umherlaufen.
+
+## Praktische Infos
+- Mit der Straßenbahn aus der Grazer Innenstadt erreichbar
+- Prunkräume nur mit Führung, Park frei zugänglich
+- Gut kombinierbar mit Alter Galerie & Münzkabinett vor Ort
+    `,
+    affiliateLinks: [
+      { label: 'Hotels in Graz – booking.com', url: 'https://www.booking.com/city/at/graz.de.html' },
+    ],
+  },
+  {
+    slug: 'therme-lutzmannsburg',
+    title: 'Sonnentherme Lutzmannsburg – Familientherme im Burgenland',
+    excerpt: 'Die Sonnentherme Lutzmannsburg im südlichen Burgenland gilt als eine der besten Familien- und Babythermen Europas – mit langen Rutschen, eigener Babywelt und pannonischem Sonnenklima.',
+    date: '2026-06-16', category: 'Unterkunft', region: 'burgenland', bestSeason: 'Ganzjährig',
+    highlights: ['Eine der führenden Familienthermen Europas', 'Eigene Baby- & Kleinkindwelt', 'Lange Rutschen für ältere Kinder'],
+    content: `
+Im südlichen Burgenland, nahe der ungarischen Grenze, liegt die **Sonnentherme Lutzmannsburg** – bekannt als eine der familienfreundlichsten Thermen Europas.
+
+## Für die Kleinsten
+Die eigene **Babywelt** mit warmem Wasser, flachen Becken und Wickelbereichen macht die Therme zum Klassiker für Familien mit Babys und Kleinkindern.
+
+## Für größere Kinder
+Mehrere lange Rutschen sorgen bei älteren Kindern für Action, während Erwachsene Ruhezonen und Saunen finden.
+
+## Übernachten
+Rund um die Therme gibt es Hotels und Apartments, viele mit Thermeneintritt im Paket – ideal für einen Wochenend- oder Wellnessaufenthalt.
+
+## Praktische Infos
+- Lage: Südburgenland, ca. 1,5 Std. von Wien
+- Verlässlich warmes, pannonisches Klima
+- Tickets in der Hauptsaison vorab sichern
+    `,
+    affiliateLinks: [
+      { label: 'Hotels in Lutzmannsburg – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Lutzmannsburg' },
+    ],
+  },
 
 ];
 

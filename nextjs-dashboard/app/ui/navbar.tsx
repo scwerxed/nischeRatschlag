@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import { usePathname } from 'next/navigation';
+import { usePathname, useRouter } from 'next/navigation';
 import { useEffect, useState } from 'react';
 
 const LINKS = [
@@ -31,6 +31,36 @@ function Logo({ onClick }: { onClick?: () => void }) {
         </span>
       </span>
     </Link>
+  );
+}
+
+function SearchForm({ onSubmit }: { onSubmit?: () => void }) {
+  const router = useRouter();
+  const [q, setQ] = useState('');
+  return (
+    <form
+      role="search"
+      onSubmit={(e) => {
+        e.preventDefault();
+        const v = q.trim();
+        if (!v) return;
+        router.push(`/blog?q=${encodeURIComponent(v)}`);
+        onSubmit?.();
+      }}
+      className="relative w-full"
+    >
+      <input
+        type="search"
+        value={q}
+        onChange={(e) => setQ(e.target.value)}
+        placeholder="Suchen…"
+        aria-label="Artikel durchsuchen"
+        className="w-full pl-8 pr-3 py-1.5 text-sm border border-gray-300 rounded-md outline-none focus:border-green-500 focus:ring-1 focus:ring-green-500"
+      />
+      <svg className="absolute left-2.5 top-1/2 -translate-y-1/2 text-gray-400" width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.6" aria-hidden>
+        <circle cx="7" cy="7" r="5" /><path d="M11 11l3.5 3.5" strokeLinecap="round" />
+      </svg>
+    </form>
   );
 }
 
@@ -85,6 +115,11 @@ export default function Navbar() {
         <Logo />
 
         <div className="flex items-center gap-5">
+          {/* Desktop-Suche */}
+          <div className="hidden lg:block w-44">
+            <SearchForm />
+          </div>
+
           {/* Desktop-Navigation */}
           <div className="hidden md:flex items-center gap-6 text-sm text-gray-600">
             {LINKS.map((l) => (
@@ -125,6 +160,9 @@ export default function Navbar() {
           open ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-full pointer-events-none'
         }`}
       >
+        <div className="px-6 pt-5 pb-1">
+          <SearchForm onSubmit={() => setOpen(false)} />
+        </div>
         <div className="flex flex-col px-6 py-4 divide-y divide-gray-100">
           {[...LINKS, { href: '/merkliste', label: 'Merkliste' }, { href: '/kontakt', label: 'Kontakt' }].map((l) => (
             <Link
