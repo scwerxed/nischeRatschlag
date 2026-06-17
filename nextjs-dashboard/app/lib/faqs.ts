@@ -33,4 +33,28 @@ export const FAQS_BY_REGION: Record<string, FaqItem[]> = {
     { q: 'Wofür ist das Burgenland bekannt?', a: 'Für Spitzenweine (Blaufränkisch, edelsüße Weine), das pannonische Sonnenklima, den Neusiedler See und Thermen wie Lutzmannsburg.' },
     { q: 'Beste Reisezeit für das Burgenland?', a: 'Mai bis September für See und Wein, der November für das traditionelle Martiniloben mit Gansl und Jungwein.' },
   ],
+  wien: [
+    { q: 'Was muss man in Wien gesehen haben?', a: 'Schloss Schönbrunn, den Stephansdom und die Altstadt, den Prater mit Riesenrad sowie ein klassisches Kaffeehaus. Im Sommer lohnt zusätzlich ein Bad an der Alten Donau.' },
+    { q: 'Wo kann man in Wien baden?', a: 'An der Alten Donau (ruhig, ideal für Familien), auf der Donauinsel (kostenlos, lange Ufer) und im Gänsehäufel-Strandbad. Mitten in der Stadt und gut mit Öffis erreichbar.' },
+    { q: 'Wie bewegt man sich in Wien am besten fort?', a: 'Mit den Öffis: U-Bahn, Straßenbahn und Bus decken alles ab. Die Innenstadt erkundet man am besten zu Fuß, ein Auto braucht man nicht.' },
+    { q: 'Wann ist die beste Reisezeit für Wien?', a: 'Mai/Juni und September für mildes Wetter und blühende Gärten. Der Advent mit den Christkindlmärkten ist besonders stimmungsvoll.' },
+  ],
+  oberoesterreich: [
+    { q: 'Was ist im Salzkammergut ein Muss?', a: 'Hallstatt mit Salzwelten und Skywalk, der Traunsee bei Gmunden, der Attersee zum Baden und der Dachstein-Krippenstein mit der 5fingers-Plattform.' },
+    { q: 'Welcher See ist zum Baden am besten?', a: 'Der Attersee und der Mondsee sind glasklar; der Mondsee wird etwas wärmer. Der Traunsee ist tief und kühl, dafür spektakulär vor dem Traunstein.' },
+    { q: 'Ist Hallstatt zu überlaufen?', a: 'Tagsüber ja, vor allem mittags. Früh morgens oder am Abend wird es ruhiger – wer übernachtet, hat den Ort fast für sich.' },
+    { q: 'Beste Reisezeit für Oberösterreich?', a: 'Juni bis September zum Baden und für Schifffahrten, der Herbst für ruhiges Wandern mit Nebelstimmung über den Seen.' },
+  ],
+  niederoesterreich: [
+    { q: 'Was muss man in der Wachau sehen?', a: 'Stift Melk, das mittelalterliche Dürnstein mit Burgruine, die Weinterrassen entlang der Donau und eine Donauschifffahrt zwischen Melk und Krems.' },
+    { q: 'Rax oder Schneeberg – welcher Hausberg?', a: 'Beide sind bequem per Bahn erreichbar: die Rax mit der Seilbahn, der Schneeberg mit der Salamander-Zahnradbahn. Die Rax bietet ein sanftes Hochplateau, der Schneeberg ist der höchste Berg Niederösterreichs.' },
+    { q: 'Wann blüht die Marille in der Wachau?', a: 'Meist Ende März bis Anfang April. Dann verwandeln die blühenden Marillenbäume das Donautal in ein Blütenmeer.' },
+    { q: 'Kann man in Niederösterreich baden?', a: 'Ja, etwa im Lunzer See (wärmster Gebirgssee), im Erlaufsee oder im Stausee Ottenstein im Waldviertel.' },
+  ],
+  vorarlberg: [
+    { q: 'Kann man im Bodensee baden?', a: 'Ja, in Bregenz und Lochau gibt es Strandbäder mit Liegewiesen. Im Hochsommer wird der See angenehm warm – dazu Alpenblick inklusive.' },
+    { q: 'Was sind die Bregenzer Festspiele?', a: 'Ein berühmtes Opernfestival auf der größten Seebühne der Welt direkt am Bodensee, jeweils im Juli und August.' },
+    { q: 'Wie kommt man zum Lünersee?', a: 'Mit der Lünerseebahn vom Brandnertal hinauf; oben führt ein leichter Rundweg um den türkisen Bergsee vor der Rätikon-Kulisse.' },
+    { q: 'Beste Reisezeit für Vorarlberg?', a: 'Juni bis September zum Baden, Wandern und für die Festspiele; der Winter zum Skifahren am Arlberg und im Montafon.' },
+  ],
 };

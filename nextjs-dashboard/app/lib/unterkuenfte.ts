@@ -43,6 +43,25 @@ export const unterkuenfte: Unterkunft[] = [
   { id: 'neusiedl-hotel',         region: 'burgenland', name: 'Hotels am Neusiedler See',    ort: 'Neusiedl am See', see: 'Neusiedler See', typ: 'Hotel',         abPreis: 85,  lat: 47.9490, lng: 16.8420, bookingUrl: 'https://www.booking.com/searchresults.de.html?ss=Neusiedler+See' },
   { id: 'rust-fewo',              region: 'burgenland', name: 'Unterkünfte in Rust',         ort: 'Rust',            see: 'Neusiedler See', typ: 'Ferienwohnung', abPreis: 75,  lat: 47.8000, lng: 16.6720, bookingUrl: 'https://www.booking.com/searchresults.de.html?ss=Rust+Burgenland' },
   { id: 'lutzmannsburg-hotel',    region: 'burgenland', name: 'Hotels in Lutzmannsburg',     ort: 'Lutzmannsburg',   see: 'Therme',         typ: 'Hotel',         abPreis: 95,  lat: 47.4640, lng: 16.6360, bookingUrl: 'https://www.booking.com/searchresults.de.html?ss=Lutzmannsburg' },
+
+  // ── Wien ─────────────────────────────────────────────────────────────────
+  { id: 'wien-zentrum-hotel',     region: 'wien',     name: 'Hotels in Wien (Zentrum)',      ort: 'Wien',            see: 'Donau',          typ: 'Hotel',         abPreis: 95,  lat: 48.2082, lng: 16.3738, bookingUrl: 'https://www.booking.com/city/at/vienna.de.html' },
+  { id: 'wien-altedonau-fewo',    region: 'wien',     name: 'Apartments an der Alten Donau', ort: 'Wien',            see: 'Alte Donau',     typ: 'Ferienwohnung', abPreis: 80,  lat: 48.2400, lng: 16.4250, bookingUrl: 'https://www.booking.com/searchresults.de.html?ss=Alte+Donau+Wien' },
+
+  // ── Oberösterreich ─────────────────────────────────────────────────────────
+  { id: 'hallstatt-hotel',        region: 'oberoesterreich', name: 'Hotels in Hallstatt',     ort: 'Hallstatt',       see: 'Hallstätter See',typ: 'Hotel',         abPreis: 110, lat: 47.5620, lng: 13.6490, bookingUrl: 'https://www.booking.com/searchresults.de.html?ss=Hallstatt' },
+  { id: 'gmunden-hotel',          region: 'oberoesterreich', name: 'Hotels am Traunsee',      ort: 'Gmunden',         see: 'Traunsee',       typ: 'Hotel',         abPreis: 95,  lat: 47.9180, lng: 13.7990, bookingUrl: 'https://www.booking.com/searchresults.de.html?ss=Gmunden+Traunsee' },
+  { id: 'attersee-fewo',          region: 'oberoesterreich', name: 'Unterkünfte am Attersee', ort: 'Attersee',        see: 'Attersee',       typ: 'Ferienwohnung', abPreis: 75,  lat: 47.9150, lng: 13.5250, bookingUrl: 'https://www.booking.com/searchresults.de.html?ss=Attersee' },
+
+  // ── Niederösterreich ───────────────────────────────────────────────────────
+  { id: 'krems-wachau-hotel',     region: 'niederoesterreich', name: 'Hotels in der Wachau',  ort: 'Krems',           see: 'Donau',          typ: 'Hotel',         abPreis: 90,  lat: 48.4100, lng: 15.6010, bookingUrl: 'https://www.booking.com/searchresults.de.html?ss=Wachau' },
+  { id: 'semmering-hotel',        region: 'niederoesterreich', name: 'Hotels am Semmering',   ort: 'Semmering',       see: 'Rax-Schneeberg', typ: 'Hotel',         abPreis: 85,  lat: 47.6470, lng: 15.8270, bookingUrl: 'https://www.booking.com/searchresults.de.html?ss=Semmering' },
+  { id: 'lunz-fewo',              region: 'niederoesterreich', name: 'Unterkünfte am Lunzer See', ort: 'Lunz am See', see: 'Lunzer See',     typ: 'Ferienwohnung', abPreis: 70,  lat: 47.8580, lng: 15.0290, bookingUrl: 'https://www.booking.com/searchresults.de.html?ss=Lunz+am+See' },
+
+  // ── Vorarlberg ─────────────────────────────────────────────────────────────
+  { id: 'bregenz-hotel',          region: 'vorarlberg', name: 'Hotels in Bregenz',           ort: 'Bregenz',         see: 'Bodensee',       typ: 'Hotel',         abPreis: 100, lat: 47.5030, lng: 9.7470,  bookingUrl: 'https://www.booking.com/searchresults.de.html?ss=Bregenz' },
+  { id: 'bregenzerwald-fewo',     region: 'vorarlberg', name: 'Unterkünfte im Bregenzerwald',ort: 'Au',              see: 'Bregenzerwald',  typ: 'Ferienwohnung', abPreis: 80,  lat: 47.3210, lng: 9.9870,  bookingUrl: 'https://www.booking.com/searchresults.de.html?ss=Bregenzerwald' },
+  { id: 'brandnertal-hotel',      region: 'vorarlberg', name: 'Hotels im Brandnertal',       ort: 'Brand',           see: 'Lünersee',       typ: 'Hotel',         abPreis: 95,  lat: 47.1010, lng: 9.7340,  bookingUrl: 'https://www.booking.com/searchresults.de.html?ss=Brandnertal' },
 ];
 
 // Farben & einbuchstabige Label für Karten-Pins (kein Emoji)

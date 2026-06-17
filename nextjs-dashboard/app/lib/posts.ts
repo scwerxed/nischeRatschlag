@@ -4447,6 +4447,497 @@ Rund um die Therme gibt es Hotels und Apartments, viele mit Thermeneintritt im P
     ],
   },
 
+  // ═══════════════════════ WIEN ═══════════════════════
+  {
+    slug: 'wien-schoenbrunn',
+    title: 'Schloss Schönbrunn – Kaiserpracht und weitläufiger Park',
+    excerpt: 'Das Schloss Schönbrunn ist Wiens meistbesuchte Sehenswürdigkeit: kaiserliche Prunkräume, ein riesiger Barockgarten mit Gloriette und der älteste Zoo der Welt.',
+    date: '2026-06-14', category: 'Ausflug', region: 'wien', bestSeason: 'Ganzjährig',
+    highlights: ['UNESCO-Welterbe', 'Park & Gloriette gratis zugänglich', 'Ältester Zoo der Welt im Areal'],
+    content: `
+Schloss **Schönbrunn** war die Sommerresidenz der Habsburger und ist heute Wiens Besuchermagnet Nummer eins – UNESCO-Welterbe samt weitläufigem Barockgarten.
+
+## Schloss & Park
+Die Prunkräume zeigt man mit Audioguide (Imperial- oder Grand Tour). Der **Schlosspark** mit Gloriette, Brunnen und Irrgarten ist frei zugänglich – allein dafür lohnt der Besuch.
+
+## Für Familien
+Im Areal liegt der **Tiergarten Schönbrunn**, der älteste noch bestehende Zoo der Welt, dazu ein Kindermuseum und das Palmenhaus.
+
+## Praktische Infos
+- Mit der U4 (Station Schönbrunn) direkt erreichbar
+- Schlosstickets vorab online buchen – oft lange Schlangen
+- Park früh morgens am ruhigsten
+    `,
+    affiliateLinks: [
+      { label: 'Hotels in Wien – booking.com', url: 'https://www.booking.com/city/at/vienna.de.html' },
+    ],
+  },
+  {
+    slug: 'wien-prater',
+    title: 'Wiener Prater – Riesenrad, Rummel und grüne Auen',
+    excerpt: 'Der Prater vereint den nostalgischen Wurstelprater mit dem berühmten Riesenrad und die weitläufige grüne Hauptallee zum Radeln, Laufen und Spazieren.',
+    date: '2026-06-13', category: 'Ausflug', region: 'wien', bestSeason: 'März–Oktober',
+    highlights: ['Wahrzeichen Riesenrad', 'Eintritt frei – nur einzelne Fahrgeschäfte kosten', 'Grüne Hauptallee zum Radeln'],
+    content: `
+Der **Wiener Prater** ist zweierlei: der bunte **Wurstelprater** mit Fahrgeschäften und das große grüne Auenland dahinter.
+
+## Wurstelprater
+Der Vergnügungspark ist frei zugänglich – gezahlt wird pro Attraktion. Das **Riesenrad** von 1897 ist das Wahrzeichen und bietet einen schönen Blick über die Stadt.
+
+## Grüner Prater
+Die kilometerlange **Hauptallee** ist ein Paradies zum Radeln, Joggen und Spazieren – mitten in der Stadt, aber erstaunlich ruhig.
+
+## Praktische Infos
+- U1/U2 Station Praterstern
+- Fahrgeschäfte v. a. von Frühling bis Herbst in Betrieb
+- Gut mit einem Donauinsel-Besuch kombinierbar
+    `,
+    affiliateLinks: [
+      { label: 'Hotels in Wien – booking.com', url: 'https://www.booking.com/city/at/vienna.de.html' },
+    ],
+  },
+  {
+    slug: 'wien-stephansdom-altstadt',
+    title: 'Stephansdom & Altstadt – Wien zu Fuß entdecken',
+    excerpt: 'Der Stephansdom ist das Herz Wiens: Vom Turm reicht der Blick über die Dächer, ringsum liegen Graben, Kärntner Straße und die schönsten Gassen der UNESCO-Altstadt.',
+    date: '2026-06-13', category: 'Ausflug', region: 'wien', bestSeason: 'Ganzjährig',
+    highlights: ['Wiens Wahrzeichen', 'UNESCO-Altstadt zu Fuß', 'Türme & Katakomben besichtigbar'],
+    content: `
+Der **Stephansdom** („Steffl") steht mitten in der Wiener Altstadt und ist der ideale Ausgangspunkt für einen Stadtbummel.
+
+## Der Dom
+Das bunte Ziegeldach ist berühmt. Man kann den **Südturm** über 343 Stufen erklimmen oder mit dem Lift zum Nordturm mit der Pummerin-Glocke; unten warten die Katakomben.
+
+## Rund um den Dom
+Vom Stephansplatz führen **Graben** und **Kohlmarkt** zu Hofburg und Kärntner Straße – die Wiener Innenstadt ist UNESCO-Welterbe und kompakt zu Fuß erkundbar.
+
+## Praktische Infos
+- U1/U3 Station Stephansplatz
+- Dom-Besuch frei, Türme/Katakomben kostenpflichtig
+- Kaffeehaus-Pause nicht vergessen
+    `,
+    affiliateLinks: [
+      { label: 'Hotels in Wien – booking.com', url: 'https://www.booking.com/city/at/vienna.de.html' },
+    ],
+  },
+  {
+    slug: 'alte-donau-baden-wien',
+    title: 'Alte Donau – Baden mitten in Wien',
+    excerpt: 'Die Alte Donau ist Wiens Badeparadies: ruhiges, sauberes Wasser, Strandbäder und Bootsverleih – alles bequem mit der U-Bahn erreichbar.',
+    date: '2026-06-12', category: 'Baden', region: 'wien', bestSeason: 'Mai–September',
+    highlights: ['Baden ohne Strömung, ideal für Familien', 'Mit der U1 erreichbar', 'Boote & SUP zum Ausleihen'],
+    content: `
+Die **Alte Donau** ist ein vom Hauptstrom abgetrennter, stehender Altarm – und Wiens beliebtestes Stadtgewässer zum Baden.
+
+## Baden & Wassersport
+Das Wasser ist ruhig (keine Strömung) und gut für Familien. Es gibt mehrere **Strandbäder** (z. B. Gänsehäufel) sowie kostenlose Einstiege. Tret-, Ruder- und Elektroboote sowie SUP kann man ausleihen.
+
+## Drumherum
+Promenaden, Strandcafés und Heurige liegen rund ums Ufer. Die **Donauinsel** mit langen Gratis-Badezonen ist gleich nebenan.
+
+## Praktische Infos
+- U1 Alte Donau oder Kaisermühlen
+- Strandbäder kostenpflichtig, viele Uferzonen gratis
+- Wochenende im Hochsommer früh kommen
+    `,
+    affiliateLinks: [
+      { label: 'Hotels in Wien – booking.com', url: 'https://www.booking.com/city/at/vienna.de.html' },
+    ],
+  },
+  {
+    slug: 'wienerwald-wandern',
+    title: 'Wienerwald – Wandern vor den Toren der Stadt',
+    excerpt: 'Der Wienerwald reicht bis an die Stadtgrenze: leichte Wanderungen, Aussichtspunkte wie Kahlenberg und Leopoldsberg und Heurige zum Ausklang.',
+    date: '2026-06-12', category: 'Wandern', region: 'wien', difficulty: 'leicht', bestSeason: 'April–Oktober',
+    highlights: ['Direkt mit Öffis erreichbar', 'Blick über Wien vom Kahlenberg', 'Einkehr beim Heurigen'],
+    content: `
+Der **Wienerwald** ist das grüne Naherholungsgebiet der Hauptstadt – Buchenwälder und Wiesen, die bis an die Stadtgrenze reichen.
+
+## Beliebte Touren
+Der Klassiker führt über **Kahlenberg** und **Leopoldsberg** mit Panoramablick über Wien und die Donau. Sanfte Wege machen viele Runden auch für Familien machbar.
+
+## Einkehr
+Am Fuß der Hänge in Grinzing und Nussdorf laden die **Heurigen** zu Jung­wein und Brettljause – der perfekte Abschluss.
+
+## Praktische Infos
+- Mit Bus/Bim bis Kahlenberg oder Grinzing
+- Festes Schuhwerk reicht, kein Hochgebirge
+- Im Herbst besonders schöne Laubfärbung
+    `,
+    affiliateLinks: [
+      { label: 'Hotels in Wien – booking.com', url: 'https://www.booking.com/city/at/vienna.de.html' },
+      { label: 'Wanderschuhe – Amazon', url: 'https://www.amazon.de/s?k=wanderschuhe' },
+    ],
+  },
+
+  // ═══════════════════════ OBERÖSTERREICH ═══════════════════════
+  {
+    slug: 'hallstatt-salzkammergut',
+    title: 'Hallstatt – das berühmteste Dorf des Salzkammerguts',
+    excerpt: 'Hallstatt am gleichnamigen See ist UNESCO-Welterbe und eines der meistfotografierten Dörfer der Welt: Salzbergwerk, Skywalk und das ikonische Seeufer.',
+    date: '2026-06-11', category: 'Ausflug', region: 'oberoesterreich', bestSeason: 'Mai–Oktober',
+    highlights: ['UNESCO-Welterbe am See', 'Ältestes Salzbergwerk der Welt', 'Skywalk mit Postkartenblick'],
+    content: `
+**Hallstatt** schmiegt sich zwischen Berg und See – ein Bilderbuchdorf, dessen Ansicht um die Welt ging.
+
+## Salz & Aussicht
+Hoch über dem Ort liegt das **Salzwelten**-Bergwerk (ältestes der Welt) samt **Skywalk**-Aussichtsplattform mit dem berühmten Blick auf Ort und See.
+
+## Tipp gegen den Andrang
+Tagsüber ist Hallstatt sehr voll. **Früh morgens oder am Abend** – oder mit Übernachtung – erlebst du den Ort viel ruhiger.
+
+## Praktische Infos
+- Anreise per Bahn (Station Hallstatt + Fähre) empfehlenswert
+- Parkplätze im Ort begrenzt & kostenpflichtig
+- Gut mit Dachstein-Krippenstein kombinierbar
+    `,
+    affiliateLinks: [
+      { label: 'Hotels in Hallstatt – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Hallstatt' },
+    ],
+  },
+  {
+    slug: 'traunsee-gmunden',
+    title: 'Traunsee & Gmunden – türkiser See unterm Traunstein',
+    excerpt: 'Der tiefe Traunsee bei Gmunden besticht mit türkisem Wasser, dem markanten Traunstein und dem Seeschloss Ort – baden, Schiff fahren und genießen.',
+    date: '2026-06-11', category: 'Baden', region: 'oberoesterreich', bestSeason: 'Juni–September',
+    highlights: ['Tiefster See Österreichs', 'Seeschloss Ort', 'Traunstein als Kulisse'],
+    content: `
+Der **Traunsee** ist mit über 190 m der tiefste See Österreichs – glasklar, kühl und dramatisch vom **Traunstein** überragt.
+
+## Baden & Boot
+Strandbäder in **Gmunden** und Altmünster laden zum Baden; das kühle, klare Wasser ist auch bei Tauchern beliebt. Schifffahrten fahren über den See zum **Seeschloss Ort**.
+
+## Gmunden
+Die Stadt ist für ihre Keramik bekannt – ein hübscher Bummel zwischen Seebad und Rathausplatz.
+
+## Praktische Infos
+- Bahn bis Gmunden, dann Straßenbahn/Bus
+- Wasser auch im Hochsommer eher frisch
+- Traunstein-Besteigung nur für geübte Bergsteiger
+    `,
+    affiliateLinks: [
+      { label: 'Hotels am Traunsee – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Gmunden+Traunsee' },
+    ],
+  },
+  {
+    slug: 'attersee-baden',
+    title: 'Attersee – glasklares Wasser zum Baden, Segeln & Tauchen',
+    excerpt: 'Der Attersee ist der größte Binnensee Österreichs und ein Wassersport-Eldorado: kristallklares Wasser, beste Segelwinde und viele frei zugängliche Badeplätze.',
+    date: '2026-06-10', category: 'Baden', region: 'oberoesterreich', bestSeason: 'Juni–September',
+    highlights: ['Größter Binnensee Österreichs', 'Top zum Segeln & Tauchen', 'Sehr klares Wasser'],
+    content: `
+Der **Attersee** im Salzkammergut ist der größte zur Gänze in Österreich liegende See – berühmt für sein klares, türkisblaues Wasser.
+
+## Wassersport
+Verlässliche Winde machen den See zu einem der besten **Segel- und Surfreviere** des Landes. Die hervorragende Sicht zieht auch **Taucher** an.
+
+## Baden
+Rund um den See liegen zahlreiche Strandbäder und freie Einstiege; die Orte Attersee, Weyregg und Nußdorf sind gute Basis.
+
+## Praktische Infos
+- Auch Schifffahrt über den See möglich
+- Wasserqualität durchgehend ausgezeichnet
+- Gut mit dem Mondsee kombinierbar
+    `,
+    affiliateLinks: [
+      { label: 'Unterkünfte am Attersee – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Attersee' },
+    ],
+  },
+  {
+    slug: 'dachstein-krippenstein',
+    title: 'Dachstein-Krippenstein – 5fingers & Eishöhle über Hallstatt',
+    excerpt: 'Mit der Seilbahn auf den Krippenstein: Die 5fingers-Plattform schwebt über dem Abgrund, dazu die Dachstein-Eishöhle und der Welterbeblick aufs Salzkammergut.',
+    date: '2026-06-10', category: 'Ausflug', region: 'oberoesterreich', bestSeason: 'Mai–Oktober',
+    highlights: ['5fingers-Aussichtsplattform', 'Dachstein-Rieseneishöhle', 'Welterbeblick über Hallstatt'],
+    content: `
+Vom Salzkammergut bringt dich die Seilbahn ab Obertraun hinauf zum **Krippenstein** – Hochgebirge zum Anfassen.
+
+## Aussicht & Höhlen
+Die **5fingers**-Plattform ragt frei über die Felswand mit Blick auf den Hallstätter See. Auf dem Weg liegen die **Rieseneishöhle** und die Mammuthöhle.
+
+## Gut zu wissen
+Oben ist es deutlich kühler als im Tal – warme Kleidung und feste Schuhe mitnehmen. Bei Nebel lohnt die Auffahrt kaum, vorher Wetter prüfen.
+
+## Praktische Infos
+- Mehrstufige Seilbahn ab Obertraun
+- Kombitickets Bahn + Höhlen
+- Familienfreundlich, auch ohne lange Wanderung
+    `,
+    affiliateLinks: [
+      { label: 'Hotels in Hallstatt/Obertraun – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Obertraun' },
+    ],
+  },
+  {
+    slug: 'linz-ausflug',
+    title: 'Linz – Donau, Kunst und der Pöstlingberg',
+    excerpt: 'Linz überrascht als moderne Kulturstadt: Ars Electronica und Lentos an der Donau, die Altstadt rund um den Hauptplatz und die Bergbahn auf den Pöstlingberg.',
+    date: '2026-06-09', category: 'Ausflug', region: 'oberoesterreich', bestSeason: 'Ganzjährig',
+    highlights: ['Ars Electronica Center', 'Pöstlingbergbahn mit Stadtblick', 'Lebendige Donau-Promenade'],
+    content: `
+**Linz** an der Donau hat sich von der Industriestadt zur UNESCO-City-of-Media-Arts gewandelt – modern und überraschend lebendig.
+
+## Kunst & Donau
+Das **Ars Electronica Center** und das Kunstmuseum **Lentos** liegen direkt am Fluss; abends leuchten die Fassaden. Der große **Hauptplatz** bildet das Herz der Altstadt.
+
+## Pöstlingberg
+Eine der steilsten Adhäsionsbahnen Europas bringt dich auf den **Pöstlingberg** mit Wallfahrtskirche, Grottenbahn und weitem Blick über Stadt und Donau.
+
+## Praktische Infos
+- Gut zu Fuß und mit der Tram erkundbar
+- Donau-Radweg führt mitten durch
+- Ideal als Stopp auf der Fahrt ins Salzkammergut
+    `,
+    affiliateLinks: [
+      { label: 'Hotels in Linz – booking.com', url: 'https://www.booking.com/city/at/linz.de.html' },
+    ],
+  },
+
+  // ═══════════════════════ NIEDERÖSTERREICH ═══════════════════════
+  {
+    slug: 'wachau-duernstein',
+    title: 'Wachau & Dürnstein – Weltkulturerbe an der Donau',
+    excerpt: 'Die Wachau zwischen Melk und Krems ist UNESCO-Welterbe: Weinterrassen, das blaue Stiftsstädtchen Dürnstein und Donauschifffahrten durch eine der schönsten Flusslandschaften Europas.',
+    date: '2026-06-09', category: 'Ausflug', region: 'niederoesterreich', bestSeason: 'April–Oktober',
+    highlights: ['UNESCO-Weltkulturlandschaft', 'Dürnstein mit blauem Stiftsturm', 'Donauschifffahrt & Weinterrassen'],
+    content: `
+Die **Wachau** ist das wohl schönste Stück Donautal – terrassierte Weinberge, Marillengärten und mittelalterliche Orte, allesamt UNESCO-Welterbe.
+
+## Dürnstein
+Das Städtchen mit dem markanten **blauen Stiftsturm** und der Burgruine, in der einst Richard Löwenherz gefangen saß, ist der Höhepunkt.
+
+## Erleben
+Eine **Donauschifffahrt** zwischen Melk und Krems zeigt die Landschaft von ihrer besten Seite; der Weltkulturerbe-Radweg verläuft am Ufer.
+
+## Praktische Infos
+- Mit Bahn bis Krems oder Melk, dann Schiff/Rad
+- Marillenblüte Ende März/Anfang April
+- Im Herbst Weinlese & Sturm
+    `,
+    affiliateLinks: [
+      { label: 'Hotels in der Wachau – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Wachau' },
+    ],
+  },
+  {
+    slug: 'stift-melk',
+    title: 'Stift Melk – Barockjuwel über der Donau',
+    excerpt: 'Das Benediktinerstift Melk thront mächtig über der Donau am Eingang der Wachau: prunkvolle Bibliothek, goldene Stiftskirche und ein weiter Blick ins Tal.',
+    date: '2026-06-08', category: 'Ausflug', region: 'niederoesterreich', bestSeason: 'Ganzjährig',
+    highlights: ['Eines der größten Barockklöster Europas', 'Prunkbibliothek & Stiftskirche', 'Tor zur Wachau'],
+    content: `
+**Stift Melk** ist das barocke Wahrzeichen der Wachau – ein gewaltiger gelber Klosterbau hoch über der Donau.
+
+## Höhepunkte
+Die **Stiftsbibliothek** mit ihren historischen Bänden und die golden funkelnde **Stiftskirche** sind überwältigend. Vom Altan reicht der Blick über die Donau.
+
+## Garten & Park
+Im Sommer lohnt der barocke **Stiftspark** mit Gartenpavillon – ideal für eine ruhige Runde nach der Führung.
+
+## Praktische Infos
+- Direkt an der A1 / Bahnhof Melk
+- Toller Auftakt für eine Wachau-Tour Richtung Krems
+- Führungen oder Besuch auf eigene Faust
+    `,
+    affiliateLinks: [
+      { label: 'Hotels rund um Melk – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Melk' },
+    ],
+  },
+  {
+    slug: 'schneeberg-wandern',
+    title: 'Schneeberg – Niederösterreichs höchster Gipfel',
+    excerpt: 'Der Schneeberg ist der höchste Berg Niederösterreichs und der Hausberg der Wiener: bequem mit der Salamander-Zahnradbahn hinauf, oben ein weites Hochplateau zum Wandern.',
+    date: '2026-06-08', category: 'Wandern', region: 'niederoesterreich', difficulty: 'mittel', bestSeason: 'Juni–Oktober',
+    highlights: ['2.076 m – höchster Berg NÖs', 'Salamander-Zahnradbahn', 'Weiter Blick bis Wien'],
+    content: `
+Der **Schneeberg** (2.076 m) ist der höchste Gipfel Niederösterreichs und an klaren Tagen von Wien aus zu sehen.
+
+## Hinauf
+Die historische **Salamander-Zahnradbahn** bringt dich von Puchberg bequem in Richtung Gipfelregion. Von der Bergstation führen Wege zum **Klosterwappen** und zur Fischerhütte.
+
+## Oben
+Das weite, fast baumlose Hochplateau bietet alpine Stimmung und Fernblick – aber auch raschen Wetterwechsel.
+
+## Praktische Infos
+- Zahnradbahn ab Puchberg am Schneeberg
+- Feste Bergschuhe & warme Schicht nötig
+- Wetter prüfen – oben deutlich kühler
+    `,
+    affiliateLinks: [
+      { label: 'Unterkünfte am Schneeberg – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Puchberg+am+Schneeberg' },
+      { label: 'Wanderschuhe – Amazon', url: 'https://www.amazon.de/s?k=wanderschuhe' },
+    ],
+  },
+  {
+    slug: 'rax-seilbahn',
+    title: 'Rax – mit Österreichs ältester Seilbahn aufs Hochplateau',
+    excerpt: 'Die Rax ist der gemütliche Wiener Hausberg: Österreichs älteste Personenseilbahn bringt dich aufs weite Hochplateau mit leichten Wanderungen und Almhütten.',
+    date: '2026-06-07', category: 'Ausflug', region: 'niederoesterreich', bestSeason: 'Mai–Oktober',
+    highlights: ['Österreichs älteste Seilbahn (1926)', 'Sanftes Hochplateau zum Wandern', 'Familienfreundlich'],
+    content: `
+Die **Rax** ist neben dem Schneeberg der klassische Wiener Hausberg – freundlicher und einfacher zu erwandern.
+
+## Auffahrt
+Die **Raxseilbahn** (seit 1926, Österreichs älteste Personenseilbahn) bringt dich in wenigen Minuten aufs Plateau auf rund 1.500 m.
+
+## Oben
+Sanfte Wege führen zu Aussichtspunkten und urigen **Almhütten** – viele Touren sind auch für Familien gut machbar.
+
+## Praktische Infos
+- Talstation bei Hirschwang/Reichenau
+- Plateau-Runden für Einsteiger geeignet
+- Festes Schuhwerk, Bergwetter beachten
+    `,
+    affiliateLinks: [
+      { label: 'Unterkünfte Rax-Schneeberg – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Reichenau+an+der+Rax' },
+    ],
+  },
+  {
+    slug: 'lunzer-see-baden',
+    title: 'Lunzer See – Baden im wärmsten Gebirgssee der Region',
+    excerpt: 'Der Lunzer See in den Ybbstaler Alpen gilt als wärmster Gebirgssee Niederösterreichs: glasklar, idyllisch und mit Naturbad – ein Geheimtipp abseits des Trubels.',
+    date: '2026-06-07', category: 'Baden', region: 'niederoesterreich', bestSeason: 'Juni–September',
+    highlights: ['Wärmster Gebirgssee NÖs', 'Glasklares Wasser', 'Ruhiger Geheimtipp'],
+    content: `
+Der **Lunzer See** liegt eingebettet in die Ybbstaler Alpen und ist der einzige natürliche Gebirgssee Niederösterreichs – und erstaunlich warm.
+
+## Baden
+Das **Strandbad** mit Liegewiese und Bootsverleih liegt direkt am klaren Wasser; ringsum laden Uferwege zu Spaziergängen.
+
+## Drumherum
+Das Wildnisgebiet Dürrenstein-Lassingtal mit Urwald liegt in der Nähe – Natur pur abseits der großen Touristenströme.
+
+## Praktische Infos
+- Anfahrt über das Ybbstal
+- Naturbelassen, eher ruhig
+- Gut mit einer leichten Wanderung kombinierbar
+    `,
+    affiliateLinks: [
+      { label: 'Unterkünfte am Lunzer See – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Lunz+am+See' },
+    ],
+  },
+
+  // ═══════════════════════ VORARLBERG ═══════════════════════
+  {
+    slug: 'bregenz-bodensee',
+    title: 'Bregenz & Bodensee – Baden, Promenade und Pfänderblick',
+    excerpt: 'Bregenz liegt am Ostufer des Bodensees: Strandbäder und Seepromenade, die Pfänderbahn mit Blick über drei Länder und im Sommer die berühmte Seebühne.',
+    date: '2026-06-06', category: 'Baden', region: 'vorarlberg', bestSeason: 'Mai–September',
+    highlights: ['Baden im Bodensee', 'Pfänderbahn mit Drei-Länder-Blick', 'Seepromenade & Hafen'],
+    content: `
+**Bregenz** ist Vorarlbergs Hauptstadt direkt am **Bodensee** – Seefeeling mit Bergkulisse.
+
+## See & Stadt
+Strandbäder und die lange **Seepromenade** laden im Sommer zum Baden und Flanieren. Die mittelalterliche **Oberstadt** mit dem Martinsturm lohnt einen Abstecher.
+
+## Pfänder
+Die **Pfänderbahn** bringt dich auf den Hausberg mit weitem Blick über den See und bis zu den Alpen dreier Länder – samt Alpenwildpark.
+
+## Praktische Infos
+- Bahnhof & Hafen zentral gelegen
+- Bodensee im Hochsommer angenehm warm
+- Festspiel-Saison im Juli/August einplanen
+    `,
+    affiliateLinks: [
+      { label: 'Hotels in Bregenz – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Bregenz' },
+    ],
+  },
+  {
+    slug: 'bregenzer-festspiele-seebuehne',
+    title: 'Bregenzer Festspiele – Oper auf der Seebühne',
+    excerpt: 'Jeden Sommer wird der Bodensee zur Kulisse: Auf der weltgrößten Seebühne in Bregenz spielen die Festspiele große Oper vor tausenden Zuschauern unter freiem Himmel.',
+    date: '2026-06-06', category: 'Ausflug', region: 'vorarlberg', bestSeason: 'Juli–August',
+    highlights: ['Weltgrößte Seebühne', 'Spektakuläre Bühnenbilder', 'Oper unter freiem Himmel'],
+    content: `
+Die **Bregenzer Festspiele** sind ein Sommer-Highlight von Weltrang: Oper auf der **Seebühne** direkt am Bodensee, mit gigantischen Bühnenbildern.
+
+## Das Erlebnis
+Bis zu 7.000 Zuschauer verfolgen die Aufführung unter freiem Himmel, das Wasser des Sees als Bühnenkulisse. Die Inszenierungen werden meist zwei Sommer lang gespielt.
+
+## Gut zu wissen
+Karten sind begehrt – **früh buchen**. Bei Regen wird gegebenenfalls ins Festspielhaus verlegt.
+
+## Praktische Infos
+- Saison Juli bis Mitte August
+- Bregenz gut per Bahn erreichbar
+- Mit Baden & Pfänder zum Tagesausflug kombinieren
+    `,
+    affiliateLinks: [
+      { label: 'Hotels in Bregenz – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Bregenz' },
+    ],
+  },
+  {
+    slug: 'bregenzerwald-wandern',
+    title: 'Bregenzerwald – Wandern zwischen Käse und Holzdörfern',
+    excerpt: 'Der Bregenzerwald verbindet sanfte Wanderwege mit preisgekrönter Holzarchitektur und der berühmten KäseStrasse – Genusswandern auf vorarlbergerisch.',
+    date: '2026-06-05', category: 'Wandern', region: 'vorarlberg', difficulty: 'leicht', bestSeason: 'Juni–Oktober',
+    highlights: ['Sanfte Genusswanderungen', 'KäseStrasse & Sennereien', 'Moderne Holzarchitektur'],
+    content: `
+Der **Bregenzerwald** ist eine eigene Welt: grüne Hügel, traditionelle Sennereien und Dörfer mit international beachteter **Holzarchitektur**.
+
+## Wandern
+Vom gemütlichen Talspaziergang bis zur Bergtour ist alles dabei; Bergbahnen in Au, Damüls und Mellau erleichtern den Einstieg. Familienfreundliche Wege überwiegen.
+
+## Genuss
+Entlang der **KäseStrasse** verkosten Sennereien ihren Bergkäse – die ideale Belohnung nach der Tour.
+
+## Praktische Infos
+- Mit der Gästekarte oft Bergbahnen inklusive
+- Beste Zeit Juni bis Oktober
+- Feste Schuhe; Wetter im Gebirge beachten
+    `,
+    affiliateLinks: [
+      { label: 'Unterkünfte im Bregenzerwald – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Bregenzerwald' },
+      { label: 'Wanderschuhe – Amazon', url: 'https://www.amazon.de/s?k=wanderschuhe' },
+    ],
+  },
+  {
+    slug: 'luenersee-wandern',
+    title: 'Lünersee – türkises Bergsee-Juwel im Brandnertal',
+    excerpt: 'Der Lünersee ist einer der schönsten Bergseen Österreichs: türkises Wasser auf knapp 2.000 m, bequem mit der Seilbahn erreichbar und mit einem leichten Uferrundweg.',
+    date: '2026-06-05', category: 'Wandern', region: 'vorarlberg', difficulty: 'mittel', bestSeason: 'Juni–Oktober',
+    highlights: ['Türkiser Hochgebirgssee', 'Seilbahn erspart den Aufstieg', 'Leichter Uferrundweg (~1,5 Std.)'],
+    content: `
+Der **Lünersee** liegt auf rund 1.970 m im Brandnertal vor der mächtigen Rätikon-Kulisse – ein Postkartenmotiv aus türkisem Wasser und Fels.
+
+## Hin & Rundweg
+Die **Lünerseebahn** bringt dich bequem hinauf. Oben führt ein leichter **Uferrundweg** (gut 1,5 Stunden) einmal um den See – für Geübte locken Touren zur Totalphütte und auf die Schesaplana.
+
+## Gut zu wissen
+Auf knapp 2.000 m ist das Wetter wechselhaft und das Wasser eiskalt – warme Kleidung mitnehmen.
+
+## Praktische Infos
+- Talstation am Lünerseebahn-Parkplatz, Brandnertal
+- Uferrundweg auch für Familien machbar
+- Frühzeitig starten – nachmittags oft Gewitter
+    `,
+    affiliateLinks: [
+      { label: 'Hotels im Brandnertal – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Brandnertal' },
+    ],
+  },
+  {
+    slug: 'silvretta-hochalpenstrasse',
+    title: 'Silvretta-Hochalpenstraße – Panoramafahrt über die Bielerhöhe',
+    excerpt: 'Die Silvretta-Hochalpenstraße schraubt sich in Kehren hinauf zur Bielerhöhe am Silvretta-Stausee – eine der schönsten Panoramastraßen der Alpen zwischen Montafon und Paznaun.',
+    date: '2026-06-04', category: 'Ausflug', region: 'vorarlberg', bestSeason: 'Juni–Oktober',
+    highlights: ['Spektakuläre Kehren-Auffahrt', 'Silvretta-Stausee auf der Bielerhöhe', 'Start für Bergtouren'],
+    content: `
+Die **Silvretta-Hochalpenstraße** verbindet das Montafon mit dem Paznauntal und führt über die **Bielerhöhe** (rund 2.030 m) – Hochgebirge per Auto oder Motorrad.
+
+## Die Fahrt
+In zahlreichen Kehren geht es hinauf zum türkisblauen **Silvretta-Stausee**, eingerahmt von Dreitausendern und Gletschern.
+
+## Oben
+Ein leichter Uferweg um den Stausee, Einkehrmöglichkeiten und Ausgangspunkte für Bergtouren (z. B. zur Wiesbadener Hütte) warten auf der Passhöhe.
+
+## Praktische Infos
+- Mautstraße, im Winter gesperrt (meist Juni–Okt offen)
+- Wetter prüfen, oben deutlich kühler
+- Früh fahren – tagsüber viel Verkehr
+    `,
+    affiliateLinks: [
+      { label: 'Unterkünfte im Montafon – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Montafon' },
+    ],
+  },
+
 ];
 
 export function getPostBySlug(slug: string): Post | undefined {

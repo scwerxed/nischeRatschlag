@@ -34,6 +34,10 @@ export const REGION_META: Record<
   tirol:      { name: 'Tirol',      geo: { lat: 47.25, lng: 11.40 }, keywords: ['Tirol', 'Achensee', 'Innsbruck', 'Ötztal', 'Wandern Tirol'] },
   steiermark: { name: 'Steiermark', geo: { lat: 47.36, lng: 15.09 }, keywords: ['Steiermark', 'Grüner See', 'Dachstein', 'Graz', 'Wandern Steiermark'] },
   burgenland: { name: 'Burgenland', geo: { lat: 47.75, lng: 16.55 }, keywords: ['Burgenland', 'Neusiedler See', 'Rust', 'pannonisch', 'Urlaub Burgenland'] },
+  wien:              { name: 'Wien',              geo: { lat: 48.21, lng: 16.37 }, keywords: ['Wien', 'Schönbrunn', 'Prater', 'Alte Donau', 'Wienerwald', 'Urlaub Wien'] },
+  oberoesterreich:   { name: 'Oberösterreich',    geo: { lat: 47.95, lng: 13.80 }, keywords: ['Oberösterreich', 'Salzkammergut', 'Hallstatt', 'Traunsee', 'Attersee', 'Linz'] },
+  niederoesterreich: { name: 'Niederösterreich',  geo: { lat: 48.20, lng: 15.62 }, keywords: ['Niederösterreich', 'Wachau', 'Stift Melk', 'Schneeberg', 'Rax', 'Wein Niederösterreich'] },
+  vorarlberg:        { name: 'Vorarlberg',        geo: { lat: 47.25, lng: 9.92 },  keywords: ['Vorarlberg', 'Bodensee', 'Bregenz', 'Bregenzerwald', 'Lünersee', 'Montafon'] },
 };
 
 /** Anzeigename einer Region (Fallback: Slug kapitalisiert). */

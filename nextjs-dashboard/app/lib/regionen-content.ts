@@ -121,4 +121,92 @@ export const REGION_CONTENT: Record<string, RegionContent> = {
     ],
     destinationDescription: 'Das Burgenland – Österreichs sonniger Osten: der Neusiedler See als Steppensee, Spitzenweine, Störche in Rust und pannonisches Klima.',
   },
+
+  wien: {
+    intro: {
+      eyebrow: 'Die Kaiserstadt',
+      title: 'Kultur, Kaffeehäuser – und Wasser',
+      text: 'Wien ist mehr als Schloss und Oper: Die Donauinsel und die Alte Donau bieten echte Badeplätze mitten in der Stadt, der Wienerwald lädt zum Wandern, und dazwischen liegen Schönbrunn, Prater und Stephansdom.',
+      stats: [{ v: 'UNESCO', l: 'Altstadt & Schönbrunn' }, { v: 'Alte Donau', l: 'Baden in der Stadt' }, { v: 'Wienerwald', l: 'vor der Haustür' }],
+    },
+    seasons: [
+      { season: 'Frühling', months: 'Apr – Mai', icon: SEASON_ICONS.fruehling, tip: 'Schlossgärten blühen, erste Heurige öffnen, ideale Sightseeing-Zeit.' },
+      { season: 'Sommer', months: 'Jun – Aug', icon: SEASON_ICONS.sommer, tip: 'Baden an Donauinsel & Alter Donau, Schanigärten, laue Abende.' },
+      { season: 'Herbst', months: 'Sep – Okt', icon: SEASON_ICONS.herbst, tip: 'Museen, Heuriger und der bunte Wienerwald – ohne Sommerhitze.' },
+      { season: 'Winter', months: 'Nov – Mär', icon: SEASON_ICONS.winter, tip: 'Christkindlmärkte, Kaffeehaus-Kultur und Oper.' },
+    ],
+    attractions: [
+      { name: 'Schloss Schönbrunn', description: 'UNESCO-Welterbe mit Park, Gloriette & Tiergarten' },
+      { name: 'Stephansdom & Altstadt', description: 'Wahrzeichen im Herzen der Innenstadt' },
+      { name: 'Prater & Riesenrad', description: 'Wiens berühmter Vergnügungspark' },
+      { name: 'Alte Donau', description: 'Baden, Boot fahren & Segeln in der Stadt' },
+    ],
+    destinationDescription: 'Österreichs Hauptstadt Wien: UNESCO-Altstadt, Schloss Schönbrunn, der Prater und Bademöglichkeiten an der Alten Donau.',
+  },
+
+  oberoesterreich: {
+    intro: {
+      eyebrow: 'Das Salzkammergut',
+      title: 'Glasklare Seen zwischen sanften Bergen',
+      text: 'Oberösterreich ist Seen-Land: das weltberühmte Hallstatt am Hallstätter See, der türkise Traunsee bei Gmunden, der tiefblaue Attersee – dazu Linz an der Donau und der Dachstein-Krippenstein.',
+      stats: [{ v: 'Hallstatt', l: 'UNESCO-Welterbe' }, { v: 'Attersee', l: 'größter Binnensee' }, { v: 'Dachstein', l: 'Krippenstein' }],
+    },
+    seasons: [
+      { season: 'Frühling', months: 'Apr – Mai', icon: SEASON_ICONS.fruehling, tip: 'Die Seen erwachen, Hallstatt ist noch ruhig – beste Foto-Zeit.' },
+      { season: 'Sommer', months: 'Jun – Aug', icon: SEASON_ICONS.sommer, tip: 'Baden in Atter- & Traunsee, Schifffahrt und Bergbahnen.' },
+      { season: 'Herbst', months: 'Sep – Okt', icon: SEASON_ICONS.herbst, tip: 'Nebelstimmung über den Seen, ideale Wanderzeit, weniger Trubel.' },
+      { season: 'Winter', months: 'Nov – Mär', icon: SEASON_ICONS.winter, tip: 'Dachstein-Skigebiet und das verschneite Hallstatt.' },
+    ],
+    attractions: [
+      { name: 'Hallstatt', description: 'UNESCO-Welterbe am Hallstätter See, Salzwelten & Skywalk' },
+      { name: 'Traunsee (Gmunden)', description: 'Türkiser See mit Schloss Ort & Traunstein' },
+      { name: 'Attersee', description: 'Größter Binnensee Österreichs, top zum Segeln & Tauchen' },
+      { name: 'Dachstein-Krippenstein', description: '5fingers-Plattform und Eishöhle hoch über dem See' },
+    ],
+    destinationDescription: 'Oberösterreich mit dem Salzkammergut: Hallstatt, Traunsee, Attersee und der Dachstein – glasklare Seen zwischen sanften Bergen.',
+  },
+
+  niederoesterreich: {
+    intro: {
+      eyebrow: 'Wachau, Wein & Wiener Alpen',
+      title: 'Vom Donautal auf die Hausberge',
+      text: 'Niederösterreich reicht von der UNESCO-Weltkulturlandschaft Wachau mit Stift Melk und Dürnstein über die Weinregionen Kamptal & Weinviertel bis zu den Wiener Hausbergen Schneeberg und Rax.',
+      stats: [{ v: 'Wachau', l: 'UNESCO-Welterbe' }, { v: '2.076 m', l: 'Schneeberg' }, { v: 'Wein', l: 'Wachau & Kamptal' }],
+    },
+    seasons: [
+      { season: 'Frühling', months: 'Apr – Mai', icon: SEASON_ICONS.fruehling, tip: 'Marillenblüte in der Wachau – die Täler stehen in voller Blüte.' },
+      { season: 'Sommer', months: 'Jun – Aug', icon: SEASON_ICONS.sommer, tip: 'Wandern auf Rax & Schneeberg, Donau-Radweg, Baden im Lunzer See.' },
+      { season: 'Herbst', months: 'Sep – Okt', icon: SEASON_ICONS.herbst, tip: 'Weinlese, Sturm und die golden gefärbte Wachau.' },
+      { season: 'Winter', months: 'Nov – Mär', icon: SEASON_ICONS.winter, tip: 'Semmering, verschneite Stifte und stille Täler.' },
+    ],
+    attractions: [
+      { name: 'Wachau & Dürnstein', description: 'Donautal-Welterbe mit Weinterrassen und Burgruine' },
+      { name: 'Stift Melk', description: 'Barocke Benediktinerabtei über der Donau' },
+      { name: 'Schneeberg', description: 'Höchster Berg Niederösterreichs, mit Zahnradbahn' },
+      { name: 'Rax', description: 'Wiener Hausberg mit Seilbahn und Hochplateau' },
+    ],
+    destinationDescription: 'Niederösterreich: die UNESCO-Wachau mit Stift Melk und Dürnstein, Weinregionen und die Wiener Hausberge Schneeberg und Rax.',
+  },
+
+  vorarlberg: {
+    intro: {
+      eyebrow: 'Zwischen Bodensee und Bergen',
+      title: 'Vom Seeufer auf die Dreitausender',
+      text: 'Vorarlberg verbindet den Bodensee mit den weltbekannten Bregenzer Festspielen, dazu den Bregenzerwald mit Käse und Holzarchitektur und alpine Bergseen wie den Lünersee – Österreichs westlichster Genuss.',
+      stats: [{ v: 'Bodensee', l: 'Baden & Seebühne' }, { v: 'Lünersee', l: 'Bergsee-Juwel' }, { v: 'Bregenzerwald', l: 'Käse & Wandern' }],
+    },
+    seasons: [
+      { season: 'Frühling', months: 'Apr – Mai', icon: SEASON_ICONS.fruehling, tip: 'Mildes Bodensee-Ufer, die Täler werden grün, kaum Andrang.' },
+      { season: 'Sommer', months: 'Jun – Aug', icon: SEASON_ICONS.sommer, tip: 'Baden im Bodensee, Festspiele auf der Seebühne, Bergseen-Wandern.' },
+      { season: 'Herbst', months: 'Sep – Okt', icon: SEASON_ICONS.herbst, tip: 'Klare Fernsicht, Wandern im Bregenzerwald, Käse-Genuss.' },
+      { season: 'Winter', months: 'Dez – Mär', icon: SEASON_ICONS.winter, tip: 'Skifahren am Arlberg und im Montafon.' },
+    ],
+    attractions: [
+      { name: 'Bodensee & Bregenz', description: 'Baden, Promenade und Pfänderbahn mit Alpenblick' },
+      { name: 'Bregenzer Festspiele', description: 'Oper auf der weltgrößten Seebühne' },
+      { name: 'Lünersee', description: 'Türkiser Bergsee im Brandnertal, Rätikon-Kulisse' },
+      { name: 'Bregenzerwald', description: 'Holzarchitektur, Käsestraße und sanfte Wanderwege' },
+    ],
+    destinationDescription: 'Vorarlberg: der Bodensee mit den Bregenzer Festspielen, der Bregenzerwald und alpine Bergseen wie der Lünersee im Brandnertal.',
+  },
 };

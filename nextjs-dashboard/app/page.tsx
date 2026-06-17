@@ -22,6 +22,10 @@ const POPULAR_DESTINATIONS = [
   { slug: 'tirol',      name: 'Tirol',      tag: 'Achensee & Ötztal',         note: 'Das Herz der Alpen' },
   { slug: 'steiermark', name: 'Steiermark', tag: 'Grüner See & Dachstein',    note: 'Das grüne Herz Österreichs' },
   { slug: 'burgenland', name: 'Burgenland', tag: 'Neusiedler See & Wein',     note: 'Pannonische Sonne am Steppensee' },
+  { slug: 'oberoesterreich',   name: 'Oberösterreich',   tag: 'Salzkammergut & Hallstatt', note: 'Glasklare Seen, Atter- & Traunsee' },
+  { slug: 'niederoesterreich', name: 'Niederösterreich', tag: 'Wachau & Wiener Alpen',      note: 'Donautal, Wein, Schneeberg & Rax' },
+  { slug: 'vorarlberg',        name: 'Vorarlberg',        tag: 'Bodensee & Bergseen',        note: 'Von Bregenz bis zum Lünersee' },
+  { slug: 'wien',              name: 'Wien',              tag: 'Kaiserstadt & Alte Donau',   note: 'Kultur, Kaffeehaus & Baden in der Stadt' },
 ];
 
 export default function HomePage() {
