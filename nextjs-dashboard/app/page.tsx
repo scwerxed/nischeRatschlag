@@ -17,15 +17,15 @@ export const metadata: Metadata = {
 
 // Beliebte Reiseziele in Österreich – verlinken auf die jeweilige Region.
 const POPULAR_DESTINATIONS = [
-  { slug: 'kaernten',   name: 'Kärnten',    tag: 'Wörthersee & Badeseen',     note: 'Wärmstes Seewasser Österreichs' },
-  { slug: 'salzburg',   name: 'Salzburg',   tag: 'Zeller See & Großglockner', note: 'Mozartstadt trifft Hohe Tauern' },
-  { slug: 'tirol',      name: 'Tirol',      tag: 'Achensee & Ötztal',         note: 'Das Herz der Alpen' },
-  { slug: 'steiermark', name: 'Steiermark', tag: 'Grüner See & Dachstein',    note: 'Das grüne Herz Österreichs' },
-  { slug: 'burgenland', name: 'Burgenland', tag: 'Neusiedler See & Wein',     note: 'Pannonische Sonne am Steppensee' },
-  { slug: 'oberoesterreich',   name: 'Oberösterreich',   tag: 'Salzkammergut & Hallstatt', note: 'Glasklare Seen, Atter- & Traunsee' },
-  { slug: 'niederoesterreich', name: 'Niederösterreich', tag: 'Wachau & Wiener Alpen',      note: 'Donautal, Wein, Schneeberg & Rax' },
-  { slug: 'vorarlberg',        name: 'Vorarlberg',        tag: 'Bodensee & Bergseen',        note: 'Von Bregenz bis zum Lünersee' },
-  { slug: 'wien',              name: 'Wien',              tag: 'Kaiserstadt & Alte Donau',   note: 'Kultur, Kaffeehaus & Baden in der Stadt' },
+  { slug: 'kaernten',          name: 'Kärnten',          tag: 'Wörthersee & Badeseen',     note: 'Wärmstes Seewasser Österreichs',      bar: 'from-sky-400 to-cyan-600' },
+  { slug: 'salzburg',          name: 'Salzburg',         tag: 'Zeller See & Großglockner', note: 'Mozartstadt trifft Hohe Tauern',      bar: 'from-violet-400 to-purple-600' },
+  { slug: 'tirol',             name: 'Tirol',            tag: 'Achensee & Ötztal',         note: 'Das Herz der Alpen',                  bar: 'from-blue-400 to-indigo-600' },
+  { slug: 'steiermark',        name: 'Steiermark',       tag: 'Grüner See & Dachstein',    note: 'Das grüne Herz Österreichs',          bar: 'from-green-500 to-emerald-700' },
+  { slug: 'burgenland',        name: 'Burgenland',       tag: 'Neusiedler See & Wein',     note: 'Pannonische Sonne am Steppensee',     bar: 'from-amber-400 to-orange-600' },
+  { slug: 'oberoesterreich',   name: 'Oberösterreich',   tag: 'Salzkammergut & Hallstatt', note: 'Glasklare Seen, Atter- & Traunsee',   bar: 'from-teal-400 to-cyan-600' },
+  { slug: 'niederoesterreich', name: 'Niederösterreich', tag: 'Wachau & Wiener Alpen',     note: 'Donautal, Wein, Schneeberg & Rax',    bar: 'from-rose-400 to-pink-600' },
+  { slug: 'vorarlberg',        name: 'Vorarlberg',       tag: 'Bodensee & Bergseen',       note: 'Von Bregenz bis zum Lünersee',        bar: 'from-cyan-400 to-teal-600' },
+  { slug: 'wien',              name: 'Wien',             tag: 'Kaiserstadt & Alte Donau',  note: 'Kultur, Kaffeehaus & Baden',          bar: 'from-red-400 to-rose-600' },
 ];
 
 export default function HomePage() {
@@ -66,13 +66,13 @@ export default function HomePage() {
       <section className="border-b border-gray-200 bg-sand-50">
         <div className="max-w-6xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 divide-x divide-gray-200">
           {[
-            { value: String(posts.length), label: 'Insider-Artikel' },
-            { value: String(activeRegions), label: 'Regionen' },
-            { value: '4', label: 'Kategorien' },
-            { value: '100 %', label: 'ehrlich recherchiert' },
+            { value: String(posts.length), label: 'Insider-Artikel', color: 'text-green-700' },
+            { value: String(activeRegions), label: 'Bundesländer', color: 'text-sky-600' },
+            { value: '4', label: 'Kategorien', color: 'text-amber-600' },
+            { value: '100 %', label: 'ehrlich recherchiert', color: 'text-violet-600' },
           ].map((s) => (
             <div key={s.label} className="py-7 px-4 text-center">
-              <p className="font-serif text-2xl md:text-3xl font-bold text-gray-900 leading-none">{s.value}</p>
+              <p className={`font-serif text-2xl md:text-3xl font-bold leading-none ${s.color}`}>{s.value}</p>
               <p className="text-xs text-gray-500 mt-2 uppercase tracking-wider">{s.label}</p>
             </div>
           ))}
@@ -80,7 +80,8 @@ export default function HomePage() {
       </section>
 
       {/* ── Beliebte Reiseziele ────────────────────────────────────────── */}
-      <section id="regionen" className="max-w-6xl mx-auto px-6 py-16 scroll-mt-20">
+      <section id="regionen" className="bg-gradient-to-b from-sand-50 to-white scroll-mt-20">
+       <div className="max-w-6xl mx-auto px-6 py-16">
         <div className="text-center mb-9">
           <p className="eyebrow mb-2">Beliebte Reiseziele</p>
           <h2 className="font-serif text-3xl font-bold text-gray-900">Wohin in Österreich?</h2>
@@ -94,17 +95,20 @@ export default function HomePage() {
             <Link
               key={d.slug}
               href={`/regionen/${d.slug}`}
-              className="group block border border-gray-200 p-6 hover:border-green-400 hover:shadow-md transition-all"
+              className="group block border border-gray-200 overflow-hidden hover:border-green-400 hover:shadow-lg transition-all"
               style={{ borderRadius: 8 }}
             >
-              <p className="eyebrow mb-1.5">{d.tag}</p>
-              <h3 className="font-serif text-xl font-bold text-gray-900 group-hover:text-green-700 leading-snug">
-                {d.name}
-              </h3>
-              <p className="text-sm text-gray-500 mt-1.5">{d.note}</p>
-              <span className="mt-4 inline-block text-sm font-medium text-green-700 group-hover:text-green-600">
-                Tipps &amp; Hotels →
-              </span>
+              <div className={`h-2 bg-gradient-to-r ${d.bar}`} />
+              <div className="p-6">
+                <p className={`text-xs font-semibold uppercase tracking-[0.14em] mb-1.5 bg-gradient-to-r ${d.bar} bg-clip-text text-transparent`}>{d.tag}</p>
+                <h3 className="font-serif text-xl font-bold text-gray-900 group-hover:text-green-700 leading-snug">
+                  {d.name}
+                </h3>
+                <p className="text-sm text-gray-500 mt-1.5">{d.note}</p>
+                <span className="mt-4 inline-block text-sm font-medium text-green-700 group-hover:text-green-600">
+                  Tipps &amp; Hotels →
+                </span>
+              </div>
             </Link>
           ))}
         </div>
@@ -112,6 +116,7 @@ export default function HomePage() {
         <div className="mt-8">
           <RegionSelector />
         </div>
+       </div>
       </section>
 
       {/* ── Featured: Magazin-Layout (1 groß + Liste) ──────────────────── */}

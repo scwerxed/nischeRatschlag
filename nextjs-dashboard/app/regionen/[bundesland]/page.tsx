@@ -10,6 +10,7 @@ import { REGION_CONTENT } from '@/app/lib/regionen-content';
 import { unterkuenfte } from '@/app/lib/unterkuenfte';
 import { cloak } from '@/app/lib/affiliate';
 import PostArtwork from '@/app/ui/post-artwork';
+import { CATEGORY_STYLE } from '@/app/lib/blog-utils';
 
 type Props = { params: Promise<{ bundesland: string }> };
 
@@ -134,18 +135,21 @@ export default async function RegionPage({ params }: Props) {
 
           {/* Stats Schnellnavigation */}
           <div className="grid grid-cols-4 gap-3 mb-8">
-            {categories.map((cat) => (
-              <a
-                key={cat}
-                href={`#${cat.toLowerCase()}`}
-                className="flex flex-col items-center bg-gray-50 hover:bg-green-50 border border-gray-200 hover:border-green-300 py-3 px-2 text-center transition-colors"
-                style={{ borderRadius: 4 }}
-              >
-                <span className={`w-2.5 h-2.5 rounded-full mb-2 ${CATEGORY_DOT[cat] ?? 'bg-gray-400'}`} />
-                <span className="text-xs font-semibold text-gray-700 uppercase tracking-wide">{cat}</span>
-                <span className="text-xs text-green-600 font-medium mt-0.5">{counts[cat]}</span>
-              </a>
-            ))}
+            {categories.map((cat) => {
+              const st = CATEGORY_STYLE[cat];
+              return (
+                <a
+                  key={cat}
+                  href={`#${cat.toLowerCase()}`}
+                  className={`flex flex-col items-center border ${st?.bg ?? 'bg-gray-50'} ${st?.border ?? 'border-gray-200'} hover:shadow-md py-3 px-2 text-center transition-all`}
+                  style={{ borderRadius: 4 }}
+                >
+                  <span className={`w-2.5 h-2.5 rounded-full mb-2 ${CATEGORY_DOT[cat] ?? 'bg-gray-400'}`} />
+                  <span className={`text-xs font-semibold uppercase tracking-wide ${st?.text ?? 'text-gray-700'}`}>{cat}</span>
+                  <span className="text-xs text-gray-500 font-medium mt-0.5">{counts[cat]} Artikel</span>
+                </a>
+              );
+            })}
           </div>
 
           {/* Karte & Routenplaner CTA */}
@@ -229,7 +233,7 @@ export default async function RegionPage({ params }: Props) {
                       {/* Meta */}
                       <div className="flex items-center justify-between mb-2 flex-wrap gap-1">
                         <div className="flex items-center gap-2">
-                          <span className="text-xs font-medium text-green-600 uppercase tracking-wide">
+                          <span className={`text-xs font-medium uppercase tracking-wide ${CATEGORY_STYLE[post.category]?.text ?? 'text-green-600'}`}>
                             {post.category}
                           </span>
                           {post.difficulty && (

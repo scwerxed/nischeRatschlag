@@ -3,7 +3,7 @@
 import { useEffect, useMemo, useState } from 'react';
 import Link from 'next/link';
 import type { Post } from '@/app/lib/posts';
-import { CATEGORY_DOT } from '@/app/lib/blog-utils';
+import { CATEGORY_DOT, CATEGORY_STYLE } from '@/app/lib/blog-utils';
 import PostArtwork from '@/app/ui/post-artwork';
 
 const CATEGORIES = ['Alle', 'Wandern', 'Baden', 'Ausflug', 'Unterkunft'] as const;
@@ -61,7 +61,7 @@ export default function BlogSearch({ posts }: { posts: Post[] }) {
             onClick={() => setCat(c)}
             className={`text-sm font-medium px-4 py-1.5 transition-colors ${
               cat === c
-                ? 'bg-green-700 text-white'
+                ? `${c === 'Alle' ? 'bg-green-700' : CATEGORY_STYLE[c]?.chip ?? 'bg-green-700'} text-white`
                 : 'bg-gray-100 text-gray-600 hover:bg-green-50 hover:text-green-700'
             }`}
             style={{ borderRadius: 3 }}
@@ -95,7 +95,7 @@ export default function BlogSearch({ posts }: { posts: Post[] }) {
               </div>
               <div className="flex items-center justify-between mb-2">
                 <div className="flex items-center gap-2">
-                  <span className="flex items-center gap-1.5 text-xs font-semibold text-green-700 uppercase tracking-wide">
+                  <span className={`flex items-center gap-1.5 text-xs font-semibold uppercase tracking-wide ${CATEGORY_STYLE[post.category]?.text ?? 'text-green-700'}`}>
                     <span className={`w-1.5 h-1.5 rounded-full ${CATEGORY_DOT[post.category] ?? 'bg-gray-400'}`} />
                     {post.category}
                   </span>

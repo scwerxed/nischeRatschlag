@@ -115,6 +115,8 @@ Only one var actually matters now:
 
 Tailwind CSS 3.4 with a **custom forest-green palette** (overrides Tailwind's default green in [tailwind.config.ts](tailwind.config.ts) — `green-600` = `#2f6b54`, `green-700` = `#255744`) plus a warm `sand` accent. Primary brand color is green-600/700. Responsive layouts use `md:` and `lg:` breakpoints.
 
+**Accent colors:** category color system in [app/lib/blog-utils.ts](app/lib/blog-utils.ts) → `CATEGORY_STYLE` (Wandern=green, Baden=sky, Ausflug=amber, Unterkunft=violet) — used for badges, filter buttons, region-page category chips. Each region card on the homepage has its own gradient accent (`bar` in `POPULAR_DESTINATIONS`). These pull in default Tailwind colors (sky/amber/violet/rose/teal/…) as literal class strings so the JIT picks them up.
+
 ### Dependencies
 
 - `leaflet` + `@types/leaflet` — interactive maps
