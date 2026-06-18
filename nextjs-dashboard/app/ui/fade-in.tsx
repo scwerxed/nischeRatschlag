@@ -30,11 +30,14 @@ export default function FadeIn({
   once = true,
 }: Props) {
   const ref = useRef<HTMLDivElement>(null);
+  const [mounted, setMounted] = useState(false);
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
     const el = ref.current;
     if (!el) return;
+
+    setMounted(true);
 
     const observer = new IntersectionObserver(
       ([entry]) => {
@@ -45,23 +48,25 @@ export default function FadeIn({
           setVisible(false);
         }
       },
-      { threshold: 0.15, rootMargin: '0px 0px -40px 0px' },
+      { threshold: 0.08, rootMargin: '0px 0px -20px 0px' },
     );
 
     observer.observe(el);
     return () => observer.disconnect();
   }, [once]);
 
+  const show = !mounted || visible;
+
   return (
     <div
       ref={ref}
       className={className}
-      style={{
-        opacity: visible ? 1 : 0,
-        transform: visible ? 'none' : OFFSET[direction],
+      style={mounted ? {
+        opacity: show ? 1 : 0,
+        transform: show ? 'none' : OFFSET[direction],
         transition: `opacity ${duration}ms cubic-bezier(.16,1,.3,1) ${delay}ms, transform ${duration}ms cubic-bezier(.16,1,.3,1) ${delay}ms`,
-        willChange: visible ? 'auto' : 'opacity, transform',
-      }}
+        willChange: show ? 'auto' : 'opacity, transform',
+      } : undefined}
     >
       {children}
     </div>
