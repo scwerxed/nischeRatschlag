@@ -2,7 +2,6 @@
 
 import { useEffect, useState } from 'react';
 
-// Beliebte Badeseen quer durch Österreich (Wassertemp. = saisonale Richtwerte).
 const LAKES = [
   { name: 'Wörthersee (K)',    lat: 46.62, lng: 14.14, water: 26 },
   { name: 'Klopeiner See (K)', lat: 46.62, lng: 14.57, water: 28 },
@@ -43,10 +42,16 @@ export default function Seewetter() {
   const swim = isSwimSeason();
 
   return (
-    <div className="border border-gray-200 overflow-hidden" style={{ borderRadius: 4 }}>
+    <div className="border border-gray-200 overflow-hidden h-full flex flex-col" style={{ borderRadius: 10 }}>
       <div className="bg-green-800 text-white px-5 py-4 flex items-baseline justify-between">
         <div>
-          <h3 className="font-serif text-lg font-bold">Seewetter</h3>
+          <h3 className="font-serif text-lg font-bold flex items-center gap-2">
+            <svg width="18" height="18" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.5" className="text-green-300">
+              <circle cx="8" cy="5" r="3" />
+              <path d="M1 14c1-2 3-3 4-3s2 2 3 2 2-2 3-2 3 1 4 3" />
+            </svg>
+            Seewetter
+          </h3>
           <p className="text-green-200 text-xs mt-0.5">
             Aktuelle Lufttemperatur{swim ? ' & Wassertemperatur' : ''} an Österreichs beliebtesten Seen
           </p>
@@ -56,16 +61,22 @@ export default function Seewetter() {
           Live
         </span>
       </div>
-      <div className="divide-y divide-gray-100">
-        {rows.map((row) => (
-          <div key={row.name} className="flex items-center justify-between px-5 py-3">
+      <div className="divide-y divide-gray-100 flex-1">
+        {rows.map((row, i) => (
+          <div
+            key={row.name}
+            className="flex items-center justify-between px-5 py-3 hover:bg-green-50/50 transition-colors"
+            style={{ animationDelay: `${i * 50}ms` }}
+          >
             <span className="text-sm font-medium text-gray-700">{row.name}</span>
             <div className="flex items-center gap-4 text-sm">
-              <span className="text-gray-500">
-                {loading ? '—' : row.air !== null ? `${row.air} °C Luft` : '—'}
+              <span className="text-gray-500 tabular-nums">
+                {loading ? (
+                  <span className="inline-block w-12 h-4 bg-gray-100 animate-pulse" style={{ borderRadius: 3 }} />
+                ) : row.air !== null ? `${row.air} °C Luft` : '—'}
               </span>
               {swim && (
-                <span className="font-semibold text-green-800 bg-green-50 border border-green-200 px-2 py-0.5 text-xs" style={{ borderRadius: 3 }}>
+                <span className="font-semibold text-green-800 bg-green-50 border border-green-200 px-2 py-0.5 text-xs tabular-nums" style={{ borderRadius: 3 }}>
                   {row.water} °C Wasser
                 </span>
               )}
@@ -73,7 +84,12 @@ export default function Seewetter() {
           </div>
         ))}
       </div>
-      <p className="text-[11px] text-gray-400 px-5 py-2 bg-gray-50 border-t border-gray-100">
+      <p className="text-[11px] text-gray-400 px-5 py-2.5 bg-gray-50 border-t border-gray-100 flex items-center gap-1.5">
+        <svg width="10" height="10" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.5" className="text-gray-300">
+          <circle cx="8" cy="8" r="6" />
+          <path d="M8 5v4" strokeLinecap="round" />
+          <circle cx="8" cy="11" r="0.5" fill="currentColor" />
+        </svg>
         Luft: live via Open-Meteo · Wasser: saisonale Richtwerte
       </p>
     </div>

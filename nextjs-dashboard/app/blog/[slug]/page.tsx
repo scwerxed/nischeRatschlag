@@ -8,6 +8,8 @@ import TrailMapWrapper from '@/app/ui/trail-map-wrapper';
 import ShareButtons from '@/app/ui/share-buttons';
 import SaveButton from '@/app/ui/save-button';
 import PostArtwork from '@/app/ui/post-artwork';
+import ViewTracker from '@/app/ui/view-tracker';
+import RecentlyViewed from '@/app/ui/recently-viewed';
 import { readingTime, relatedPosts } from '@/app/lib/blog-utils';
 import { BASE, SITE_NAME, CATEGORY_KEYWORDS, REGION_META, regionName, articleSchema, breadcrumbSchema, OFFICIAL_REGION_SITES } from '@/app/lib/seo';
 
@@ -201,6 +203,7 @@ export default async function BlogPostPage({ params }: Props) {
     <div>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <link rel="alternate" hrefLang="de-AT" href={`${BASE}/blog/${post.slug}`} />
+      <ViewTracker slug={post.slug} title={post.title} category={post.category} />
 
       {/* ── Kopfbereich mit Landschaftsmotiv ─────────────────────────────── */}
       <header className="relative text-white overflow-hidden">
@@ -403,6 +406,9 @@ export default async function BlogPostPage({ params }: Props) {
               <p className="text-[11px] text-gray-400 mt-3">* Affiliate-Links – ohne Mehrkosten für dich.</p>
             </div>
           )}
+
+          {/* Zuletzt angesehen */}
+          <RecentlyViewed currentSlug={post.slug} />
 
           {/* Offizielle Infos & Quellen (keine Affiliate-Links) */}
           {officialLinks.length > 0 && (
