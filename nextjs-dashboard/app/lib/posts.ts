@@ -4937,6 +4937,92 @@ Ein leichter Uferweg um den Stausee, Einkehrmöglichkeiten und Ausgangspunkte f�
       { label: 'Unterkünfte im Montafon – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Montafon' },
     ],
   },
+  {
+    slug: 'nockalmstrasse-panoramastrasse',
+    title: 'Nockalmstraße – die sanfte Panoramastraße durch die Nockberge',
+    excerpt: 'Die Nockalmstraße schlängelt sich in 52 Kehren durch den Biosphärenpark Nockberge – sanfte, begrünte Almkuppen statt schroffer Felsen, mit Murmeltieren, Almhütten und Wanderwegen direkt am Straßenrand.',
+    date: '2026-06-18', category: 'Ausflug', region: 'kaernten', bestSeason: 'Mai–Oktober',
+    highlights: ['52 Kehren durch den Biosphärenpark Nockberge', 'Sanfte Almlandschaft & Murmeltiere', 'Viele kurze Wanderungen direkt an der Straße'],
+    content: `
+Die **Nockalmstraße** ist Kärntens große Panoramastraße – aber ganz anders als der schroffe Großglockner. Hier prägen die **Nockberge** das Bild: sanfte, grasbewachsene Bergkuppen, die zu den ältesten und weichsten Formen der Alpen zählen. Auf gut 34 Kilometern und in **52 Kehren** windet sich die Mautstraße zwischen Innerkrems und Ebene Reichenau durch den UNESCO-Biosphärenpark.
+
+## Was die Strecke besonders macht
+Statt Gletschern und Steilwänden erwarten dich blühende Almwiesen, weidende Kühe und ein Horizont aus runden Gipfeln. Mehrere **Aussichtspunkte und Themenwege** liegen direkt an der Straße, sodass sich Autofahren und kurze Spaziergänge gut abwechseln lassen. Am höchsten Punkt, der Eisentalhöhe (rund 2.000 m), reicht der Blick weit über die Hohen Tauern.
+
+## Natur erleben
+Die Nockberge sind bekannt für ihre **Murmeltiere**, die man mit etwas Geduld direkt an den Wanderwegen beobachten kann. Infostellen und ein Aussichtsturm erklären die Tier- und Pflanzenwelt – ideal auch für Familien mit Kindern.
+
+## Wandern & Einkehr
+Von den Parkplätzen entlang der Straße starten zahlreiche **kurze, leichte Touren** zu Almen und Aussichtskanzeln. Bewirtschaftete Hütten laden zu Kärntner Kasnudeln und frischer Buttermilch.
+
+## Praktische Infos
+- Mautstraße, im Winter gesperrt (meist Mai bis Oktober offen)
+- Anfahrt von Bad Kleinkirchheim oder Innerkrems
+- Für die ganze Strecke inkl. Stopps mindestens einen halben Tag einplanen
+- Gut kombinierbar mit einem Thermenbesuch in Bad Kleinkirchheim
+    `,
+    affiliateLinks: [
+      { label: 'Hotels in Bad Kleinkirchheim – booking.com', url: 'https://www.booking.com/city/at/bad-kleinkirchheim.de.html' },
+    ],
+    officialLinks: [
+      { label: 'Nockalmstraße – offizielle Infos', url: 'https://www.nockalmstrasse.at' },
+    ],
+  },
+  {
+    slug: 'gosausee-dachstein-spiegelung',
+    title: 'Gosausee – der Dachstein spiegelt sich im Bergsee',
+    excerpt: 'Der Vordere Gosausee im Salzkammergut ist einer der fotogensten Plätze Österreichs: Bei Windstille spiegelt sich der Gletscher des Dachsteins perfekt im klaren Wasser. Ein leichter Uferrundweg macht ihn für alle erlebbar.',
+    date: '2026-06-18', category: 'Wandern', region: 'oberoesterreich', difficulty: 'leicht', bestSeason: 'Mai–Oktober',
+    highlights: ['Dachstein-Spiegelung im See', 'Leichter Uferrundweg (~1 Std.)', 'Gosaukammbahn für die Höhe'],
+    content: `
+Der **Vordere Gosausee** bei Gosau im Salzkammergut gehört zu den schönsten Bergseen Österreichs. Sein Markenzeichen: An ruhigen Tagen spiegelt sich das **Dachsteinmassiv mit seinem Gletscher** so perfekt im klaren Wasser, dass Himmel und Berg sich im See verdoppeln.
+
+## Der Uferrundweg
+Rund um den See führt ein fast ebener **Rundweg** von gut einer Stunde – kinderwagen- und familientauglich. Schon nach wenigen Minuten öffnet sich der berühmte Blick über den See zum Dachstein. Bänke und Fotopunkte laden zum Verweilen.
+
+## Höher hinaus
+Wer mehr will, fährt mit der **Gosaukammbahn** auf die Zwieselalm oder wandert weiter zum **Hinteren Gosausee**, der noch ursprünglicher und stiller liegt. Geübte erreichen über markierte Steige die Adamekhütte am Gletscherrand.
+
+## Beste Zeit & Stimmung
+Für die Spiegelung lohnt sich ein **früher Morgen bei Windstille**. Im Frühsommer rauscht die Schneeschmelze, im Herbst färben sich Lärchen golden – beide Jahreszeiten sind besonders fotogen.
+
+## Praktische Infos
+- Großer (kostenpflichtiger) Parkplatz am Seeufer
+- Anfahrt: von Hallstatt/Gosau ca. 20–30 Minuten
+- Festes Schuhwerk reicht für den Rundweg
+- Gut mit einem Hallstatt-Besuch an einem Tag kombinierbar
+    `,
+    affiliateLinks: [
+      { label: 'Unterkünfte in Gosau – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Gosau' },
+    ],
+  },
+  {
+    slug: 'maria-woerth-woerthersee',
+    title: 'Maria Wörth – das Kirchendorf auf der Wörthersee-Halbinsel',
+    excerpt: 'Maria Wörth liegt auf einer kleinen Halbinsel mitten im Wörthersee – mit zwei mittelalterlichen Kirchen, Seeblick in alle Richtungen und einer der schönsten Kulissen Kärntens. Ideal für einen ruhigen Halbtagesausflug.',
+    date: '2026-06-18', category: 'Ausflug', region: 'kaernten', bestSeason: 'April–Oktober',
+    highlights: ['Zwei historische Kirchen auf der Halbinsel', 'Rundum-Seeblick & Fotomotiv', 'Kostenlose Badebuchten in der Nähe'],
+    content: `
+**Maria Wörth** ist eines der Wahrzeichen des Wörthersees: ein altes Kirchendorf auf einer in den See ragenden **Halbinsel**, umgeben von türkisem Wasser und Bergen. Schon von der Uferstraße bietet der Ort eines der beliebtesten Fotomotive Kärntens.
+
+## Die beiden Kirchen
+Auf der Anhöhe stehen zwei mittelalterliche Kirchen dicht beieinander: die größere **Pfarrkirche** (Rosenkranzkirche) mit gotischem Chor und die kleinere **Winterkirche**. Vom Friedhof und der Terrasse reicht der Blick weit über den See – ein stiller, fast mediterraner Platz.
+
+## Drumherum
+Der Ort ist autofrei am Kirchhügel und in wenigen Minuten erkundet. Rund um die Halbinsel laden **Uferpromenaden, Badebuchten und Bootsstege** zum Verweilen. Wer mag, kommt mit dem **Linienschiff** der Wörthersee-Schifffahrt an – die Anreise über das Wasser ist ein Erlebnis für sich.
+
+## Baden & Kombinieren
+In der Nähe gibt es kostenlose Badestellen und Strandbäder. Maria Wörth lässt sich gut mit einem Besuch des **Pyramidenkogels** (nur wenige Minuten entfernt) zu einem Halbtag verbinden.
+
+## Praktische Infos
+- Parkplätze im Ort begrenzt – in der Hochsaison früh kommen oder per Schiff anreisen
+- Kirchenbesichtigung frei (um Spende wird gebeten)
+- Schönstes Licht am späten Nachmittag
+    `,
+    affiliateLinks: [
+      { label: 'Unterkünfte am Wörthersee – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=W%C3%B6rthersee' },
+    ],
+  },
 
 ];
 

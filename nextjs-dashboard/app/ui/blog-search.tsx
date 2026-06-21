@@ -30,6 +30,9 @@ export default function BlogSearch({ posts }: { posts: Post[] }) {
         !q ||
         p.title.toLowerCase().includes(q) ||
         p.excerpt.toLowerCase().includes(q) ||
+        p.region.toLowerCase().includes(q) ||
+        p.content.toLowerCase().includes(q) ||
+        (p.bestSeason ?? '').toLowerCase().includes(q) ||
         (p.highlights ?? []).some((h) => h.toLowerCase().includes(q));
       return matchCat && matchText;
     });
