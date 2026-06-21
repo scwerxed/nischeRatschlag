@@ -4583,13 +4583,23 @@ Am Fuß der Hänge in Grinzing und Nussdorf laden die **Heurigen** zu Jung­wein
 ## Salz & Aussicht
 Hoch über dem Ort liegt das **Salzwelten**-Bergwerk (ältestes der Welt) samt **Skywalk**-Aussichtsplattform mit dem berühmten Blick auf Ort und See.
 
+## Was du in Hallstatt machen kannst
+Neben dem Bummel durch die engen Gassen am **Marktplatz** lohnen mehrere Höhepunkte: die Fahrt mit dem Schrägaufzug hinauf zu den **Salzwelten** und dem **Skywalk „Welterbeblick"**, das beschauliche **Beinhaus** bei der Pfarrkirche, eine **Schifffahrt** über den Hallstätter See und ein Abstecher zum nahen **Echerntal** mit dem Waldbachstrub-Wasserfall. Wer mehr Natur sucht, fährt mit der Seilbahn von Obertraun zum Dachstein-Krippenstein.
+
+## Geschichte zum Anfassen
+Hallstatt gab einer ganzen Epoche ihren Namen: Die **Hallstattzeit** (frühe Eisenzeit) ist nach den prähistorischen Salzfunden hier benannt. Salz – das „weiße Gold" – machte den Ort schon vor 7.000 Jahren bedeutend, was die Salzwelten anschaulich erzählen.
+
+## Beste Reisezeit
+Von **Mai bis Oktober** zeigt sich Hallstatt von seiner schönsten Seite. Im Sommer ist es am vollsten – Frühling und Herbst bieten mildes Licht und weniger Andrang. Im Winter verwandelt sich der Ort in eine verschneite, fast kitschig-schöne Kulisse.
+
 ## Tipp gegen den Andrang
-Tagsüber ist Hallstatt sehr voll. **Früh morgens oder am Abend** – oder mit Übernachtung – erlebst du den Ort viel ruhiger.
+Tagsüber ist Hallstatt sehr voll, vor allem mittags durch Tagestouristen. **Früh morgens oder am Abend** – oder mit Übernachtung – erlebst du den Ort viel ruhiger und kommst zu den besten Fotos ohne Menschenmassen.
 
 ## Praktische Infos
-- Anreise per Bahn (Station Hallstatt + Fähre) empfehlenswert
-- Parkplätze im Ort begrenzt & kostenpflichtig
-- Gut mit Dachstein-Krippenstein kombinierbar
+- Anreise per Bahn (Station Hallstatt + Fähre über den See) empfehlenswert
+- Parkplätze im Ort stark begrenzt & kostenpflichtig – Parkleitsystem nutzen
+- Gut mit Dachstein-Krippenstein, Gosausee oder Bad Ischl an einem Tag kombinierbar
+- Für die Salzwelten festes Schuhwerk und eine Jacke (im Berg ist es kühl)
     `,
     affiliateLinks: [
       { label: 'Hotels in Hallstatt – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Hallstatt' },
@@ -4632,12 +4642,19 @@ Der **Attersee** im Salzkammergut ist der größte zur Gänze in Österreich lie
 Verlässliche Winde machen den See zu einem der besten **Segel- und Surfreviere** des Landes. Die hervorragende Sicht zieht auch **Taucher** an.
 
 ## Baden
-Rund um den See liegen zahlreiche Strandbäder und freie Einstiege; die Orte Attersee, Weyregg und Nußdorf sind gute Basis.
+Rund um den See liegen zahlreiche **Strandbäder** und frei zugängliche Einstiege; die Orte **Attersee am Attersee, Weyregg, Nußdorf und Seewalchen** sind gute Basis. Das Wasser ist außergewöhnlich klar – an manchen Stellen blickt man viele Meter in die Tiefe. Familien finden flache Liegewiesen, Aktive Stege zum Hineinspringen.
+
+## Wandern & Radeln rund um den See
+Der **Attersee-Radweg** führt rund um das Ufer; sportlichere Touren gehen hinauf zum **Buchberg** oder in den angrenzenden **Höllengebirge**-Vorbergen mit Blick über den ganzen See. Auch der nahe **Mondsee** und der **Schafberg** mit der Zahnradbahn lassen sich gut anschließen.
+
+## Klimt am Attersee
+Der Maler **Gustav Klimt** verbrachte viele Sommer am Attersee und schuf hier zahlreiche seiner berühmten Landschaftsbilder – ein eigener „Klimt-Weg" erinnert daran.
 
 ## Praktische Infos
-- Auch Schifffahrt über den See möglich
-- Wasserqualität durchgehend ausgezeichnet
-- Gut mit dem Mondsee kombinierbar
+- Anreise: von Salzburg oder Linz je ca. 1 Stunde
+- Schifffahrt über den See von Mai bis Oktober
+- Wasserqualität durchgehend ausgezeichnet (Trinkwasserqualität)
+- Gut mit Mondsee, Wolfgangsee und dem Salzkammergut kombinierbar
     `,
     affiliateLinks: [
       { label: 'Unterkünfte am Attersee – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Attersee' },
@@ -4706,12 +4723,19 @@ Die **Wachau** ist das wohl schönste Stück Donautal – terrassierte Weinberge
 Das Städtchen mit dem markanten **blauen Stiftsturm** und der Burgruine, in der einst Richard Löwenherz gefangen saß, ist der Höhepunkt.
 
 ## Erleben
-Eine **Donauschifffahrt** zwischen Melk und Krems zeigt die Landschaft von ihrer besten Seite; der Weltkulturerbe-Radweg verläuft am Ufer.
+Eine **Donauschifffahrt** zwischen Melk und Krems zeigt die Landschaft von ihrer besten Seite; parallel verläuft der **Donau-Radweg**, einer der beliebtesten Radwege Europas – flach, gut ausgebaut und gesäumt von Weingärten.
+
+## Wein & Genuss
+Die Wachau ist eine der renommiertesten **Weinregionen** Österreichs, berühmt für Grünen Veltliner und Riesling von den steilen Terrassen. In den **Heurigen** und Vinotheken von Dürnstein, Weißenkirchen und Spitz verkostet man die Weine direkt beim Winzer. Eine regionale Spezialität ist die **Wachauer Marille** (Aprikose) – als Marmelade, Schnaps oder Knödel.
+
+## Wandern: der Welterbesteig
+Wer die Wachau zu Fuß erleben will, folgt dem **Welterbesteig**: Der Weitwanderweg führt hoch über der Donau durch Weinterrassen, Trockenrasen und Wälder, mit immer neuen Ausblicken auf den Fluss und die Ruinen.
 
 ## Praktische Infos
-- Mit Bahn bis Krems oder Melk, dann Schiff/Rad
-- Marillenblüte Ende März/Anfang April
-- Im Herbst Weinlese & Sturm
+- Mit Bahn bis Krems oder Melk, dann Schiff oder Leihrad
+- Marillenblüte Ende März/Anfang April – ein Höhepunkt im Jahr
+- Im Herbst Weinlese, Sturm und der „Wachau-Herbst" mit goldenen Weingärten
+- Tickets für die Donauschifffahrt in der Hauptsaison vorab sichern
     `,
     affiliateLinks: [
       { label: 'Hotels in der Wachau – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Wachau' },
