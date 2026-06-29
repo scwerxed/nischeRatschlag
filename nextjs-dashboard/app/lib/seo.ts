@@ -158,3 +158,46 @@ export function breadcrumbSchema(items: { name: string; url: string }[]) {
     })),
   };
 }
+
+/** SportsActivityLocation für Wander-Artikel ohne vordefinierte Route (region-aware). */
+export function sportsActivitySchema(opts: { name: string; description: string; region: string }) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'SportsActivityLocation',
+    name: opts.name,
+    description: opts.description,
+    address: { '@type': 'PostalAddress', addressRegion: regionName(opts.region), addressCountry: 'AT' },
+    sport: 'Hiking',
+  };
+}
+
+/**
+ * Strukturierte Route für eine vordefinierte Wanderung.
+ * Modelliert den Wegverlauf als GeoShape-Linie (lat,lng-Punkte) plus Eckdaten
+ * (Distanz, Gehzeit, Aufstieg, Schwierigkeit) als PropertyValues – valides
+ * schema.org, das Suchmaschinen den Tourcharakter verständlich macht.
+ */
+export function trailRouteSchema(opts: {
+  title: string;
+  description: string;
+  region: string;
+  trail: { name: string; difficulty: string; length: string; duration: string; ascent?: string; coords: [number, number][] };
+}) {
+  const { trail } = opts;
+  const line = trail.coords.map(([lat, lng]) => `${lat},${lng}`).join(' ');
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'SportsActivityLocation',
+    name: `${opts.title} – ${trail.name}`,
+    description: opts.description,
+    sport: 'Hiking',
+    address: { '@type': 'PostalAddress', addressRegion: regionName(opts.region), addressCountry: 'AT' },
+    ...(trail.coords.length ? { geo: { '@type': 'GeoShape', line } } : {}),
+    additionalProperty: [
+      { '@type': 'PropertyValue', name: 'Distanz', value: trail.length },
+      { '@type': 'PropertyValue', name: 'Gehzeit', value: trail.duration },
+      ...(trail.ascent ? [{ '@type': 'PropertyValue', name: 'Aufstieg', value: trail.ascent }] : []),
+      { '@type': 'PropertyValue', name: 'Schwierigkeit', value: trail.difficulty },
+    ],
+  };
+}

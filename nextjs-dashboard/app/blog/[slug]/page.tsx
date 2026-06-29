@@ -11,7 +11,7 @@ import PostArtwork from '@/app/ui/post-artwork';
 import ViewTracker from '@/app/ui/view-tracker';
 import RecentlyViewed from '@/app/ui/recently-viewed';
 import { readingTime, relatedPosts } from '@/app/lib/blog-utils';
-import { BASE, SITE_NAME, CATEGORY_KEYWORDS, REGION_META, regionName, articleSchema, breadcrumbSchema, OFFICIAL_REGION_SITES } from '@/app/lib/seo';
+import { BASE, SITE_NAME, CATEGORY_KEYWORDS, REGION_META, regionName, articleSchema, breadcrumbSchema, sportsActivitySchema, trailRouteSchema, OFFICIAL_REGION_SITES } from '@/app/lib/seo';
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -189,14 +189,14 @@ export default async function BlogPostPage({ params }: Props) {
       { name: regionLabel,   url: `${BASE}/regionen/${post.region}` },
       { name: post.title,    url: `${BASE}/blog/${post.slug}` },
     ]),
-    ...(post.category === 'Wandern' ? [{
-      '@context': 'https://schema.org',
-      '@type': 'SportsActivityLocation',
-      name: post.title,
-      description: post.excerpt,
-      address: { '@type': 'PostalAddress', addressRegion: regionLabel, addressCountry: 'AT' },
-      sport: 'Hiking',
-    }] : []),
+    // Wander-Artikel ohne vordefinierte Route: generische Aktivitäts-Location
+    ...(post.category === 'Wandern' && !(post.trails && post.trails.length)
+      ? [sportsActivitySchema({ name: post.title, description: post.excerpt, region: post.region })]
+      : []),
+    // Artikel mit vordefinierten Touren: pro Route ein Schema mit Wegverlauf & Eckdaten
+    ...(post.trails ?? []).map((trail) =>
+      trailRouteSchema({ title: post.title, description: post.excerpt, region: post.region, trail })
+    ),
   ];
 
   return (
