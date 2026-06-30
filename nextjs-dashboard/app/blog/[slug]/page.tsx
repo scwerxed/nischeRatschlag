@@ -183,10 +183,16 @@ export default async function BlogPostPage({ params }: Props) {
   const gradient = CATEGORY_GRADIENT[post.category] ?? 'from-green-700 to-green-900';
 
   // Startpunkt: explizit gesetzt oder erster Wegpunkt der ersten Tour.
-  const start = post.startCoords ?? post.trails?.[0]?.coords?.[0];
-  const mapHref = start
-    ? `/karte?lat=${start[0]}&lng=${start[1]}&zoom=14&name=${encodeURIComponent(post.title)}`
+  // Fallback: Region-Mittelpunkt, damit jeder Artikel einen Karten-CTA hat.
+  const precise = post.startCoords ?? post.trails?.[0]?.coords?.[0];
+  const regionGeo = REGION_META[post.region]?.geo;
+  const mapPoint: [number, number] | undefined =
+    precise ?? (regionGeo ? [regionGeo.lat, regionGeo.lng] : undefined);
+  const mapZoom = precise ? 14 : 9;
+  const mapHref = mapPoint
+    ? `/karte?lat=${mapPoint[0]}&lng=${mapPoint[1]}&zoom=${mapZoom}&name=${encodeURIComponent(precise ? post.title : regionName(post.region))}`
     : '/karte';
+  const mapCtaLabel = precise ? 'Startpunkt auf Karte' : 'Region auf Karte';
 
   const jsonLd = [
     articleSchema({ title: post.title, excerpt: post.excerpt, date: post.date, slug: post.slug, category: post.category, region: post.region }),
@@ -287,7 +293,7 @@ export default async function BlogPostPage({ params }: Props) {
           {post.category === 'Wandern' && (
             <div className="mt-6 grid sm:grid-cols-2 gap-4">
               <Link href={mapHref} className="flex items-center justify-center bg-green-700 text-white font-medium text-sm px-5 py-3 hover:bg-green-800 transition-colors" style={{ borderRadius: 6 }}>
-                {start ? 'Startpunkt auf Karte' : 'Auf Karte anzeigen'}
+                {mapCtaLabel}
               </Link>
               <Link href="/routenplaner" className="flex items-center justify-center border border-green-700 text-green-700 font-medium text-sm px-5 py-3 hover:bg-green-50 transition-colors" style={{ borderRadius: 6 }}>
                 Route planen
@@ -375,13 +381,13 @@ export default async function BlogPostPage({ params }: Props) {
             <div className="mt-4 pt-4 border-t border-gray-100">
               <SaveButton slug={post.slug} title={post.title} category={post.category} />
             </div>
-            {start && (
+            {mapPoint && (
               <Link
                 href={mapHref}
                 className="mt-3 flex items-center justify-center gap-1.5 w-full text-sm font-medium px-4 py-2.5 border border-green-700 text-green-700 hover:bg-green-50 transition-colors"
                 style={{ borderRadius: 6 }}
               >
-                <span aria-hidden>📍</span> Startpunkt auf Karte öffnen
+                <span aria-hidden>📍</span> {precise ? 'Startpunkt auf Karte öffnen' : 'Region auf Karte öffnen'}
               </Link>
             )}
           </div>
