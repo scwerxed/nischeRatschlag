@@ -136,6 +136,28 @@ export default function MapClient() {
 
         map.on('moveend', updatePeaks);
         map.on('zoomend', updatePeaks);
+
+        // Deep-Link: /karte?lat=..&lng=..&zoom=..&name=.. → dorthin zentrieren + Startpunkt-Marker
+        const sp = new URLSearchParams(window.location.search);
+        const dlLat = parseFloat(sp.get('lat') ?? '');
+        const dlLng = parseFloat(sp.get('lng') ?? '');
+        if (Number.isFinite(dlLat) && Number.isFinite(dlLng)) {
+          const dz = parseInt(sp.get('zoom') ?? '', 10);
+          map.setView([dlLat, dlLng], Number.isFinite(dz) ? dz : 14);
+          const nm = (sp.get('name') ?? 'Startpunkt').replace(/[<>]/g, '').slice(0, 80);
+          const startIcon = L.divIcon({
+            className: '',
+            html: `<div style="width:22px;height:22px;background:#15803d;border:3px solid #fff;border-radius:50% 50% 50% 0;transform:rotate(-45deg);box-shadow:0 1px 5px rgba(0,0,0,.45)"></div>`,
+            iconSize: [22, 22],
+            iconAnchor: [11, 22],
+            popupAnchor: [0, -20],
+          });
+          L.marker([dlLat, dlLng], { icon: startIcon, zIndexOffset: 1000 })
+            .addTo(map)
+            .bindPopup(`<strong style="font-size:13px">${nm}</strong><br/><span style="color:#6b7280;font-size:12px">Startpunkt</span>`)
+            .openPopup();
+        }
+
         setMapReady(true);
 
         // Fetch peaks (non-blocking)
