@@ -5,6 +5,7 @@ const QUICK_LINKS = [
   { href: '/karte', label: 'Wanderkarte' },
   { href: '/routenplaner', label: 'Routenplaner' },
   { href: '/seen-vergleich', label: 'Seen-Vergleich' },
+  { href: '/wandern-baden', label: 'Wandern + Baden' },
   { href: '/wochenendtrip', label: 'Wochenendtrips' },
   { href: '/merkliste', label: 'Merkliste' },
   { href: '/reiseinfos', label: 'Reiseinfos' },

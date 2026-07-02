@@ -6,7 +6,7 @@ import { TRIP_CITIES } from '@/app/lib/wochenendtrip';
 const BASE = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://www.bergseen-guide.com';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const staticPages = ['', '/blog', '/karte', '/routenplaner', '/seen-vergleich', '/wochenendtrip', '/reiseinfos', '/ueber-uns', '/kontakt', '/impressum', '/datenschutz'].map((p) => ({
+  const staticPages = ['', '/blog', '/karte', '/routenplaner', '/seen-vergleich', '/wochenendtrip', '/wandern-baden', '/reiseinfos', '/ueber-uns', '/kontakt', '/impressum', '/datenschutz'].map((p) => ({
     url: `${BASE}${p}`,
     lastModified: new Date(),
     changeFrequency: 'weekly' as const,

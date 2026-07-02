@@ -38,7 +38,7 @@ function coordsOf(p: Post): [number, number] | undefined {
 }
 
 /** Luftlinie in km (Haversine). */
-function distKm(a: [number, number], b: [number, number]): number {
+export function distKm(a: [number, number], b: [number, number]): number {
   const R = 6371;
   const toRad = (d: number) => (d * Math.PI) / 180;
   const dLat = toRad(b[0] - a[0]);

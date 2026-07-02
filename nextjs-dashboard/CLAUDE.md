@@ -55,6 +55,7 @@ All outbound partner links route through our own domain via [app/lib/affiliate.t
 | `/blog/[slug]` | SSG | `generateStaticParams` from posts array; custom markdown renderer with `**bold**` and `---` support |
 | `/regionen/[bundesland]` | SSG | `generateStaticParams` from regionen array |
 | `/wochenendtrip` + `/wochenendtrip/[stadt]` | SSG | „Wochenendtrip ab Wien/Graz/Salzburg" – bündelt Posts nach Luftlinie zur Startstadt in Fahrzeit-Buckets (`app/lib/wochenendtrip.ts`, nutzt `post.startCoords`). Hub + Stadt-Seiten, `ItemList`+`BreadcrumbList`-JSON-LD |
+| `/wandern-baden` | SSG | Sommer-Landingpage: kombiniert je Region Wanderungen mit dem nächstgelegenen Badeziel (≤25 km Luftlinie, `app/lib/wandern-baden.ts`) + Live-Seewetter-Widget. `ItemList`+`BreadcrumbList`-JSON-LD |
 | `/karte` | Client (dynamic import) | Leaflet map; toggleable layers (OSM/OpenTopoMap base, Waymarked Trails overlay, Overpass peaks, accommodation affiliate pins); custom control panel. **Deep links**: `?lat=&lng=&zoom=&name=` centers the map + drops a "Startpunkt" marker (used by the "Startpunkt auf Karte öffnen" CTA on articles) |
 | `/routenplaner` | Client (dynamic import) | Interactive route planner via BRouter (proxied through `/api/brouter`, which snaps waypoints to nearest trail via Overpass); elevation profile + difficulty; saves to `localStorage` |
 | `/blog/[slug]` (hiking) | — | Hiking posts with `trails` render a `TrailMap` (OpenTopoMap) where users pick a predefined route |
