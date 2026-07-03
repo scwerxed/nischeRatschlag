@@ -31,7 +31,7 @@ This is a **Next.js 16 App Router** travel/tourism guide website for **Austria**
 
 ### Data sources
 
-- **Blog posts**: Hardcoded array in [app/lib/posts.ts](app/lib/posts.ts) (~150 posts). Each post has slug, title, category, difficulty, region, content (custom markdown-like format), affiliate links, and optional `trails` (predefined hiking routes with `[lat,lng]` coordinate arrays).
+- **Blog posts**: Hardcoded array in [app/lib/posts.ts](app/lib/posts.ts) (~150 posts). Each post has slug, title, category, difficulty, region, content (custom markdown-like format), affiliate links, and optional `trails` (predefined hiking routes with `[lat,lng]` coordinate arrays), `startCoords` (map deep-link anchor) and `startPoint` (parking/arrival details → "Startpunkt & Parken" sidebar card with a Google-Maps navigation link; ~12 flagship posts so far).
 - **Regions**: Defined in [app/lib/regionen.ts](app/lib/regionen.ts). All **9 Austrian Bundesländer** are active (Kärnten, Salzburg, Tirol, Steiermark, Burgenland, Wien, Oberösterreich, Niederösterreich, Vorarlberg) — each with REGION_META, REGION_CONTENT, FAQs, accommodations and articles.
 - **Region SEO metadata**: [app/lib/seo.ts](app/lib/seo.ts) → `REGION_META` (name, geo, keywords per region) + `regionName()`. Structured data & metadata are region-aware (no longer hardcoded to Kärnten). Add DE/CH regions here when expanding.
 - **Region page content**: [app/lib/regionen-content.ts](app/lib/regionen-content.ts) → `REGION_CONTENT` (intro box, best-season tips, attractions per region). Powers the region-page intro, the "Beste Reisezeit" grid and the `TouristDestination` schema for **all** active regions.

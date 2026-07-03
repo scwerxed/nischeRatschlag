@@ -392,6 +392,44 @@ export default async function BlogPostPage({ params }: Props) {
             )}
           </div>
 
+          {/* Startpunkt & Parken */}
+          {post.startPoint && (
+            <div className="border border-sand-200 bg-sand-50 p-5" style={{ borderRadius: 8 }}>
+              <p className="eyebrow mb-3">Startpunkt &amp; Parken</p>
+              <p className="font-semibold text-gray-900 text-sm leading-snug">🅿️ {post.startPoint.name}</p>
+              <dl className="mt-3 space-y-2 text-sm">
+                {post.startPoint.parking && (
+                  <div>
+                    <dt className="text-gray-500 text-xs uppercase tracking-wide">Parken</dt>
+                    <dd className="text-gray-700 mt-0.5">{post.startPoint.parking}</dd>
+                  </div>
+                )}
+                {post.startPoint.arrival && (
+                  <div>
+                    <dt className="text-gray-500 text-xs uppercase tracking-wide">Beste Ankunft</dt>
+                    <dd className="text-gray-700 mt-0.5">{post.startPoint.arrival}</dd>
+                  </div>
+                )}
+              </dl>
+              {post.startPoint.note && (
+                <p className="mt-3 text-xs text-gray-600 border-l-2 border-amber-400 bg-amber-50 px-2.5 py-1.5">
+                  {post.startPoint.note}
+                </p>
+              )}
+              {precise && (
+                <a
+                  href={`https://www.google.com/maps/dir/?api=1&destination=${precise[0]},${precise[1]}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-4 flex items-center justify-center gap-1.5 w-full text-sm font-medium px-4 py-2.5 bg-green-700 text-white hover:bg-green-800 transition-colors"
+                  style={{ borderRadius: 6 }}
+                >
+                  Navigation starten ↗
+                </a>
+              )}
+            </div>
+          )}
+
           {/* Erlebnisse & Tickets */}
           {(post.category === 'Ausflug' || post.category === 'Wandern') && (
             <div className="border border-gray-200 p-5" style={{ borderRadius: 8 }}>

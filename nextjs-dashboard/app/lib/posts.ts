@@ -22,6 +22,12 @@ export type Post = {
   bestSeason?: string;
   trails?: Trail[];
   startCoords?: [number, number]; // [lat, lng] – Startpunkt für „Auf Karte öffnen“ (Fallback: trails[0].coords[0])
+  startPoint?: {                  // Anreise-/Park-Infos zum Startpunkt (Detail-Karte im Artikel)
+    name: string;                 // z. B. "Parkplatz Gosausee"
+    parking?: string;             // Kosten/Auslastung, z. B. "kostenpflichtig, im Sommer schnell voll"
+    arrival?: string;             // beste Ankunftszeit, z. B. "vor 9 Uhr"
+    note?: string;                // Warnung/Hinweis, z. B. "besser per Bahn + Fähre"
+  };
 };
 
 export const posts: Post[] = [
@@ -1957,6 +1963,7 @@ Die Region ist dicht mit bewirtschafteten Almen besetzt – Brettljause, Kaspres
   {
     slug: 'gruener-see-tragoess',
     startCoords: [47.5530, 15.1000],
+    startPoint: { name: 'Parkplatz Grüner See (Tragöß)', parking: 'kostenpflichtig, begrenzte Plätze', arrival: 'früh morgens – Mai/Juni ist Hochsaison', note: 'Baden und Tauchen im See sind verboten – der Rundweg lohnt trotzdem.' },
     title: 'Grüner See in Tragöß – der smaragdgrüne Naturschatz der Steiermark',
     excerpt: 'Im Frühling verwandelt sich der Grüne See durch Schmelzwasser in ein türkises Naturwunder. Was du über den berühmtesten Bergsee der Steiermark wissen musst.',
     date: '2026-06-08',
@@ -2917,6 +2924,7 @@ Familien (flacher See, viele Aktivitäten), Aktive (Wandern, Radfahren, Wassersp
   {
     slug: 'krimmler-wasserfaelle',
     startCoords: [47.2100, 12.1700],
+    startPoint: { name: 'Parkplatz Krimmler Wasserfälle', parking: 'kostenpflichtig, großer Besucherparkplatz', arrival: 'vormittags, bevor die Busse kommen', note: 'Für die Wasserfallwege wird zusätzlich Eintritt eingehoben.' },
     title: 'Krimmler Wasserfälle – Europas höchster Wasserfall',
     excerpt: 'Mit 380 m Fallhöhe sind die Krimmler Wasserfälle die höchsten Europas. Ein gut angelegter Wasserfallweg führt entlang der tosenden Kaskaden – ein Naturschauspiel für alle.',
     date: '2026-06-11',
@@ -4176,6 +4184,7 @@ Familien (Kinder lieben die Rutschen), Geschichtsinteressierte – und alle, die
   {
     slug: 'wolfgangsee-st-gilgen',
     startCoords: [47.7680, 13.3710],
+    startPoint: { name: 'Parkplätze St. Gilgen / Strobl', parking: 'ortsnah kostenpflichtig', arrival: 'vormittags', note: 'Schafbergbahn und Schifffahrt starten direkt im Ort.' },
     title: 'Wolfgangsee & St. Gilgen – Salzkammergut-Idylle',
     excerpt: 'Tiefblaues Wasser, das „Weiße Rössl" und die Schafbergbahn: Der Wolfgangsee an der Grenze zum Salzkammergut gehört zu den schönsten Badeseen rund um Salzburg.',
     date: '2026-06-15', category: 'Baden', region: 'salzburg', bestSeason: 'Juni–September',
@@ -4412,6 +4421,8 @@ Filzmoos ist bewusst ruhig geblieben – kein Massentourismus, dafür Bergidylle
     title: 'Pyramidenkogel – der Aussichtsturm über dem Wörthersee',
     excerpt: 'Vom höchsten Holz-Aussichtsturm der Welt reicht der Blick über den Wörthersee bis zu den Karawanken – und runter geht es wahlweise mit Österreichs höchster Turmrutsche.',
     date: '2026-06-17', category: 'Ausflug', region: 'kaernten', bestSeason: 'April–Oktober',
+    startCoords: [46.6094, 14.1454],
+    startPoint: { name: 'Parkplatz Pyramidenkogel', parking: 'großer Parkplatz direkt am Turm', arrival: 'zum Sonnenuntergang besonders schön', note: 'Abends länger geöffnet – Sunset-Tickets beachten.' },
     highlights: ['100 m hoher Holzturm mit Panorama-Lift', 'Rundumblick über den Wörthersee', 'Indoor-Rutsche als Highlight für Kinder'],
     content: `
 Hoch über dem Keutschacher Seental thront der **Pyramidenkogel** – mit rund 100 Metern der höchste Holz-Aussichtsturm der Welt. Bei klarer Sicht reicht der Blick vom Wörthersee über die Karawanken bis zu den Hohen Tauern.
@@ -4696,6 +4707,7 @@ Am Fuß der Hänge in Grinzing und Nussdorf laden die **Heurigen** zu Jung­wein
     excerpt: 'Hallstatt am gleichnamigen See ist UNESCO-Welterbe und eines der meistfotografierten Dörfer der Welt: Salzbergwerk, Skywalk und das ikonische Seeufer.',
     date: '2026-06-11', category: 'Ausflug', region: 'oberoesterreich', bestSeason: 'Mai–Oktober',
     startCoords: [47.5620, 13.6490],
+    startPoint: { name: 'Parkplätze P1/P2 Hallstatt-Lahn', parking: 'kostenpflichtig, im Sommer schnell voll', arrival: 'vor 9 Uhr oder nach 17 Uhr', note: 'Entspannter: per Bahn bis Hallstatt + Fähre über den See – das Ortszentrum ist weitgehend autofrei.' },
     highlights: ['UNESCO-Welterbe am See', 'Ältestes Salzbergwerk der Welt', 'Skywalk mit Postkartenblick'],
     content: `
 **Hallstatt** schmiegt sich zwischen Berg und See – ein Bilderbuchdorf, dessen Ansicht um die Welt ging.
@@ -4753,6 +4765,7 @@ Die Stadt ist für ihre Keramik bekannt – ein hübscher Bummel zwischen Seebad
   {
     slug: 'attersee-baden',
     startCoords: [47.9150, 13.5250],
+    startPoint: { name: 'Strandbad-Parkplätze rund um den See', parking: 'je nach Badeplatz, meist kostenpflichtig', arrival: 'an Hitzetagen vor 10 Uhr', note: 'Viele freie Einstiege haben nur wenige Parkplätze – Rad oder Bus nutzen.' },
     title: 'Attersee – glasklares Wasser zum Baden, Segeln & Tauchen',
     excerpt: 'Der Attersee ist der größte Binnensee Österreichs und ein Wassersport-Eldorado: kristallklares Wasser, beste Segelwinde und viele frei zugängliche Badeplätze.',
     date: '2026-06-10', category: 'Baden', region: 'oberoesterreich', bestSeason: 'Juni–September',
@@ -4785,6 +4798,7 @@ Der Maler **Gustav Klimt** verbrachte viele Sommer am Attersee und schuf hier za
   {
     slug: 'dachstein-krippenstein',
     startCoords: [47.5300, 13.6900],
+    startPoint: { name: 'Talstation Dachstein-Seilbahn (Obertraun)', parking: 'Parkplatz an der Talstation', arrival: 'vormittags – bessere Sicht, weniger Andrang', note: 'Bei Nebel lohnt die Auffahrt kaum – Webcam vorher prüfen.' },
     title: 'Dachstein-Krippenstein – 5fingers & Eishöhle über Hallstatt',
     excerpt: 'Mit der Seilbahn auf den Krippenstein: Die 5fingers-Plattform schwebt über dem Abgrund, dazu die Dachstein-Eishöhle und der Welterbeblick aufs Salzkammergut.',
     date: '2026-06-10', category: 'Ausflug', region: 'oberoesterreich', bestSeason: 'Mai–Oktober',
@@ -4897,6 +4911,7 @@ Im Sommer lohnt der barocke **Stiftspark** mit Gartenpavillon – ideal für ein
     excerpt: 'Der Schneeberg ist der höchste Berg Niederösterreichs und der Hausberg der Wiener: bequem mit der Salamander-Zahnradbahn hinauf, oben ein weites Hochplateau zum Wandern.',
     date: '2026-06-08', category: 'Wandern', region: 'niederoesterreich', difficulty: 'mittel', bestSeason: 'Juni–Oktober',
     startCoords: [47.7670, 15.8080],
+    startPoint: { name: 'Parkplatz Zahnradbahn Puchberg', parking: 'beim Bahnhof Puchberg am Schneeberg', arrival: 'zur ersten Zahnradbahn', note: 'Salamander-Bahn in der Saison vorab reservieren.' },
     highlights: ['2.076 m – höchster Berg NÖs', 'Salamander-Zahnradbahn', 'Weiter Blick bis Wien'],
     content: `
 Der **Schneeberg** (2.076 m) ist der höchste Gipfel Niederösterreichs und an klaren Tagen von Wien aus zu sehen.
@@ -5048,6 +5063,7 @@ Entlang der **KäseStrasse** verkosten Sennereien ihren Bergkäse – die ideale
   {
     slug: 'luenersee-wandern',
     startCoords: [47.0620, 9.7560],
+    startPoint: { name: 'Parkplatz Lünerseebahn (Brandnertal)', parking: 'kostenpflichtig, an Schönwettertagen früh voll', arrival: 'zur ersten Bahn (vor 9 Uhr)', note: 'Alternative: Wanderbus ins Brandnertal statt eigenem Auto.' },
     title: 'Lünersee – türkises Bergsee-Juwel im Brandnertal',
     excerpt: 'Der Lünersee ist einer der schönsten Bergseen Österreichs: türkises Wasser auf knapp 2.000 m, bequem mit der Seilbahn erreichbar und mit einem leichten Uferrundweg.',
     date: '2026-06-05', category: 'Wandern', region: 'vorarlberg', difficulty: 'mittel', bestSeason: 'Juni–Oktober',
@@ -5101,6 +5117,7 @@ Ein leichter Uferweg um den Stausee, Einkehrmöglichkeiten und Ausgangspunkte f�
     excerpt: 'Die Nockalmstraße schlängelt sich in 52 Kehren durch den Biosphärenpark Nockberge – sanfte, begrünte Almkuppen statt schroffer Felsen, mit Murmeltieren, Almhütten und Wanderwegen direkt am Straßenrand.',
     date: '2026-06-18', category: 'Ausflug', region: 'kaernten', bestSeason: 'Mai–Oktober',
     startCoords: [46.8800, 13.7800],
+    startPoint: { name: 'Mautstellen Innerkrems / Ebene Reichenau', parking: 'Parkplätze entlang der Straße in der Maut inbegriffen', arrival: 'vormittags starten, Stopps einplanen', note: 'Mautstraße – im Winter gesperrt (ca. Mai bis Oktober offen).' },
     highlights: ['52 Kehren durch den Biosphärenpark Nockberge', 'Sanfte Almlandschaft & Murmeltiere', 'Viele kurze Wanderungen direkt an der Straße'],
     content: `
 Die **Nockalmstraße** ist Kärntens große Panoramastraße – aber ganz anders als der schroffe Großglockner. Hier prägen die **Nockberge** das Bild: sanfte, grasbewachsene Bergkuppen, die zu den ältesten und weichsten Formen der Alpen zählen. Auf gut 34 Kilometern und in **52 Kehren** windet sich die Mautstraße zwischen Innerkrems und Ebene Reichenau durch den UNESCO-Biosphärenpark.
@@ -5133,6 +5150,7 @@ Von den Parkplätzen entlang der Straße starten zahlreiche **kurze, leichte Tou
     excerpt: 'Der Vordere Gosausee im Salzkammergut ist einer der fotogensten Plätze Österreichs: Bei Windstille spiegelt sich der Gletscher des Dachsteins perfekt im klaren Wasser. Ein leichter Uferrundweg macht ihn für alle erlebbar.',
     date: '2026-06-18', category: 'Wandern', region: 'oberoesterreich', difficulty: 'leicht', bestSeason: 'Mai–Oktober',
     startCoords: [47.5350, 13.4880],
+    startPoint: { name: 'Parkplatz Vorderer Gosausee', parking: 'kostenpflichtig (Tagesgebühr), direkt am See', arrival: 'vor 9 Uhr – beste Chance auf Spiegelung und freie Plätze', note: 'Die Zufahrtsstraße endet am See; an Sommer-Wochenenden früh kommen.' },
     highlights: ['Dachstein-Spiegelung im See', 'Leichter Uferrundweg (~1 Std.)', 'Gosaukammbahn für die Höhe'],
     content: `
 Der **Vordere Gosausee** bei Gosau im Salzkammergut gehört zu den schönsten Bergseen Österreichs. Sein Markenzeichen: An ruhigen Tagen spiegelt sich das **Dachsteinmassiv mit seinem Gletscher** so perfekt im klaren Wasser, dass Himmel und Berg sich im See verdoppeln.
@@ -5162,6 +5180,7 @@ Für die Spiegelung lohnt sich ein **früher Morgen bei Windstille**. Im Frühso
     excerpt: 'Maria Wörth liegt auf einer kleinen Halbinsel mitten im Wörthersee – mit zwei mittelalterlichen Kirchen, Seeblick in alle Richtungen und einer der schönsten Kulissen Kärntens. Ideal für einen ruhigen Halbtagesausflug.',
     date: '2026-06-18', category: 'Ausflug', region: 'kaernten', bestSeason: 'April–Oktober',
     startCoords: [46.6178, 14.1640],
+    startPoint: { name: 'Ortsparkplätze Maria Wörth', parking: 'begrenzt, in der Saison kostenpflichtig', arrival: 'früh kommen oder per Wörthersee-Schiff anreisen', note: 'Der Kirchhügel ist autofrei – kurze Gehwege vom Parkplatz.' },
     highlights: ['Zwei historische Kirchen auf der Halbinsel', 'Rundum-Seeblick & Fotomotiv', 'Kostenlose Badebuchten in der Nähe'],
     content: `
 **Maria Wörth** ist eines der Wahrzeichen des Wörthersees: ein altes Kirchendorf auf einer in den See ragenden **Halbinsel**, umgeben von türkisem Wasser und Bergen. Schon von der Uferstraße bietet der Ort eines der beliebtesten Fotomotive Kärntens.
