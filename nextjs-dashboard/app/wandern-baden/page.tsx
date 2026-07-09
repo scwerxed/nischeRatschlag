@@ -109,6 +109,9 @@ export default function WandernBadenPage() {
         <Link href="/wochenendtrip" className="inline-block border border-green-700 text-green-700 text-sm font-semibold px-5 py-2.5 hover:bg-green-50 transition-colors" style={{ borderRadius: 6 }}>
           Wochenendtrips
         </Link>
+        <Link href="/hitzefreundliche-ausfluege" className="inline-block border border-amber-500 text-amber-700 text-sm font-semibold px-5 py-2.5 hover:bg-amber-50 transition-colors" style={{ borderRadius: 6 }}>
+          Kühle Ziele für Hitzetage
+        </Link>
       </div>
     </div>
   );

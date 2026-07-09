@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import type { Metadata } from 'next';
 import { BASE, breadcrumbSchema } from '@/app/lib/seo';
+import { LAKES, SEE_THEMEN } from '@/app/lib/seen';
 
 export const metadata: Metadata = {
   title: 'Österreichs Seen im Vergleich – welcher Badesee passt zu dir?',
@@ -8,31 +9,6 @@ export const metadata: Metadata = {
   keywords: ['welcher See Österreich', 'wärmster See Österreich', 'Badeseen Österreich Vergleich', 'See Familie Österreich', 'schönster Badesee Österreich'],
   alternates: { canonical: '/seen-vergleich' },
 };
-
-type Lake = {
-  name: string;
-  region: string;
-  slug?: string;        // verlinkter Artikel, falls vorhanden
-  maxTemp: string;
-  groesse: string;
-  charakter: string;
-  idealFuer: string;
-  gratis: boolean;
-  tipp: string;
-};
-
-const LAKES: Lake[] = [
-  { name: 'Wörthersee', region: 'Kärnten', slug: 'beste-badestellen-woerthersee', maxTemp: '28 °C', groesse: 'sehr groß', charakter: 'Mondän & belebt', idealFuer: 'Action, Ausgehen, Familien', gratis: true, tipp: 'Gratis-Strände in Maria Wörth & Reifnitz' },
-  { name: 'Klopeiner See', region: 'Kärnten', slug: 'klopeiner-see-badeurlaub', maxTemp: '28 °C', groesse: 'klein', charakter: 'Ruhig & familiär', idealFuer: 'Familien mit Kindern', gratis: false, tipp: 'Wärmster Badesee Österreichs' },
-  { name: 'Millstätter See', region: 'Kärnten', slug: 'millstaetter-see-wandern-und-schwimmen', maxTemp: '26 °C', groesse: 'groß & tief', charakter: 'Elegant & ruhig', idealFuer: 'Wandern + Baden, Paare', gratis: true, tipp: 'Im Herbst herrlich leer' },
-  { name: 'Faaker See', region: 'Kärnten', slug: 'faaker-see-badestellen', maxTemp: '27 °C', groesse: 'mittel', charakter: 'Türkis & malerisch', idealFuer: 'Familien, Fotografen', gratis: false, tipp: 'Karibisches Türkis durch Kalk' },
-  { name: 'Ossiacher See', region: 'Kärnten', slug: 'ossiacher-see-badeurlaub', maxTemp: '26 °C', groesse: 'groß', charakter: 'Sportlich & lebhaft', idealFuer: 'Wassersport, Aktive', gratis: true, tipp: 'Top zum Surfen & SUP' },
-  { name: 'Weissensee', region: 'Kärnten', slug: 'weissensee-kaernten-geheimtipp', maxTemp: '24 °C', groesse: 'mittel', charakter: 'Naturnah & still', idealFuer: 'Ruhe, Natur, Familien', gratis: true, tipp: 'Sauberster See – Motorbootverbot' },
-  { name: 'Neusiedler See', region: 'Burgenland', maxTemp: '25 °C', groesse: 'sehr groß & flach', charakter: 'Steppensee & windig', idealFuer: 'Segeln, Surfen, Familien', gratis: true, tipp: 'Mitteleuropas größter Steppensee, meist nur ~1 m tief' },
-  { name: 'Zeller See', region: 'Salzburg', maxTemp: '23 °C', groesse: 'mittel', charakter: 'Bergpanorama', idealFuer: 'Baden mit Bergblick, Familien', gratis: true, tipp: 'Baden vor der Kulisse der Hohen Tauern' },
-  { name: 'Wolfgangsee', region: 'Salzburg', maxTemp: '24 °C', groesse: 'groß', charakter: 'Idyllisch & beliebt', idealFuer: 'Familien, Ausflüge', gratis: true, tipp: 'St. Wolfgang & Schafbergbahn' },
-  { name: 'Achensee', region: 'Tirol', maxTemp: '20 °C', groesse: 'groß', charakter: 'Alpin & glasklar', idealFuer: 'Segeln, Surfen, Wandern', gratis: true, tipp: 'Tirols größter See – frisch, aber top zum Segeln' },
-];
 
 export default function SeenVergleichPage() {
   const jsonLd = breadcrumbSchema([
@@ -51,6 +27,20 @@ export default function SeenVergleichPage() {
         Bergseen in den Alpen. Hier die beliebtesten im direkten Vergleich: Wassertemperatur,
         Charakter und für wen sich welcher See eignet.
       </p>
+
+      {/* Entscheidungs-Seiten nach Thema */}
+      <div className="flex flex-wrap gap-2 mb-8 -mt-2">
+        {SEE_THEMEN.map((t) => (
+          <Link
+            key={t.slug}
+            href={`/seen-vergleich/${t.slug}`}
+            className="text-sm font-medium px-4 py-1.5 bg-sky-50 text-sky-700 border border-sky-200 hover:bg-sky-100 transition-colors"
+            style={{ borderRadius: 999 }}
+          >
+            {t.h1} →
+          </Link>
+        ))}
+      </div>
 
       {/* Tabelle (Desktop) */}
       <div className="hidden md:block overflow-x-auto border border-gray-200" style={{ borderRadius: 8 }}>

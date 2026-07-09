@@ -7,6 +7,7 @@ const QUICK_LINKS = [
   { href: '/seen-vergleich', label: 'Seen-Vergleich' },
   { href: '/wandern-baden', label: 'Wandern + Baden' },
   { href: '/wochenendtrip', label: 'Wochenendtrips' },
+  { href: '/beste-ausfluege', label: 'Beste Ausflüge' },
   { href: '/merkliste', label: 'Merkliste' },
   { href: '/reiseinfos', label: 'Reiseinfos' },
   { href: '/#regionen', label: 'Regionen' },

@@ -2,11 +2,13 @@ import type { MetadataRoute } from 'next';
 import { posts } from '@/app/lib/posts';
 import { regionen } from '@/app/lib/regionen';
 import { TRIP_CITIES } from '@/app/lib/wochenendtrip';
+import { MONATE } from '@/app/lib/monatstipps';
+import { SEE_THEMEN } from '@/app/lib/seen';
 
 const BASE = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://www.bergseen-guide.com';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const staticPages = ['', '/blog', '/karte', '/routenplaner', '/seen-vergleich', '/wochenendtrip', '/wandern-baden', '/reiseinfos', '/ueber-uns', '/kontakt', '/impressum', '/datenschutz'].map((p) => ({
+  const staticPages = ['', '/blog', '/karte', '/routenplaner', '/seen-vergleich', '/wochenendtrip', '/wandern-baden', '/hitzefreundliche-ausfluege', '/beste-ausfluege', '/reiseinfos', '/ueber-uns', '/kontakt', '/impressum', '/datenschutz'].map((p) => ({
     url: `${BASE}${p}`,
     lastModified: new Date(),
     changeFrequency: 'weekly' as const,
@@ -15,6 +17,20 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const tripPages = Object.keys(TRIP_CITIES).map((slug) => ({
     url: `${BASE}/wochenendtrip/${slug}`,
+    lastModified: new Date(),
+    changeFrequency: 'monthly' as const,
+    priority: 0.7,
+  }));
+
+  const monatPages = MONATE.map((m) => ({
+    url: `${BASE}/beste-ausfluege/${m.slug}`,
+    lastModified: new Date(),
+    changeFrequency: 'monthly' as const,
+    priority: 0.7,
+  }));
+
+  const seeThemaPages = SEE_THEMEN.map((t) => ({
+    url: `${BASE}/seen-vergleich/${t.slug}`,
     lastModified: new Date(),
     changeFrequency: 'monthly' as const,
     priority: 0.7,
@@ -34,5 +50,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: r.aktiv ? 0.9 : 0.3,
   }));
 
-  return [...staticPages, ...tripPages, ...postPages, ...regionPages];
+  return [...staticPages, ...tripPages, ...monatPages, ...seeThemaPages, ...postPages, ...regionPages];
 }

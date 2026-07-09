@@ -275,6 +275,30 @@ export default async function BlogPostPage({ params }: Props) {
 
           <div className="prose-style">{renderContent(post.content)}</div>
 
+          {/* Kurz- / Lang-Varianten */}
+          {post.routeVariants && post.routeVariants.length > 0 && (
+            <div className="mt-10">
+              <p className="eyebrow mb-2">Kurz oder lang?</p>
+              <h2 className="font-serif text-2xl font-bold text-gray-900 mb-4">Deine Routen-Varianten</h2>
+              <div className="space-y-3">
+                {post.routeVariants.map((v) => (
+                  <div key={v.label} className="flex flex-wrap items-center gap-x-4 gap-y-1 border border-gray-200 px-4 py-3" style={{ borderRadius: 8 }}>
+                    <span className={`w-2 h-2 rounded-full shrink-0 ${DIFFICULTY_STYLES[v.difficulty].dot}`} />
+                    <span className="font-semibold text-gray-900 flex-1 min-w-[160px]">{v.label}</span>
+                    <span className="text-sm text-gray-600 whitespace-nowrap">{v.length}</span>
+                    <span className="text-sm text-gray-600 whitespace-nowrap">{v.duration}</span>
+                    {v.ascent && <span className="text-sm text-gray-600 whitespace-nowrap">↑ {v.ascent}</span>}
+                    <span className={`text-xs font-medium px-2 py-0.5 rounded-full border ${DIFFICULTY_STYLES[v.difficulty].cls}`}>
+                      {DIFFICULTY_STYLES[v.difficulty].label}
+                    </span>
+                    {v.note && <span className="w-full text-xs text-gray-500">{v.note}</span>}
+                  </div>
+                ))}
+              </div>
+              <p className="text-xs text-gray-400 mt-2">Angaben ca. – je nach Startpunkt und Tempo.</p>
+            </div>
+          )}
+
           {/* Wegekarte */}
           {post.trails && post.trails.length > 0 && (
             <div className="mt-12">

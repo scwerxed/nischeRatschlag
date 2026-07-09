@@ -28,6 +28,14 @@ export type Post = {
     arrival?: string;             // beste Ankunftszeit, z. B. "vor 9 Uhr"
     note?: string;                // Warnung/Hinweis, z. B. "besser per Bahn + Fähre"
   };
+  routeVariants?: {               // Kurz-/Lang-Varianten derselben Tour („Kurzroute / lange Variante“)
+    label: string;                // z. B. "Uferrundweg (Familienrunde)"
+    difficulty: 'leicht' | 'mittel' | 'schwer';
+    length: string;               // z. B. "6,5 km"
+    duration: string;             // z. B. "2 Std."
+    ascent?: string;              // z. B. "80 hm"
+    note?: string;                // z. B. "kinderwagentauglich"
+  }[];
 };
 
 export const posts: Post[] = [
@@ -1113,6 +1121,7 @@ Es gibt keine naturverbundenere Art, Kärntens Seen zu erleben, als morgens das 
   {
     slug: 'villacher-alpe-dobratsch-wanderung',
     startCoords: [46.6000, 13.6700],
+    routeVariants: [ { label: 'Rundweg ab Rosstratte', difficulty: 'leicht', length: '4 km', duration: '1,5 Std.', ascent: '150 hm', note: 'familienfreundlich' }, { label: 'Gipfelweg auf den Dobratsch (2.166 m)', difficulty: 'mittel', length: '9 km', duration: '3,5 Std.', ascent: '450 hm' } ],
     title: 'Villacher Alpe (Dobratsch) – Kärntens Hausberg mit Blick bis zur Adria',
     excerpt: 'Der Dobratsch ist von fast überall in Kärnten sichtbar – und vom Gipfel sieht man bei klarem Wetter bis zur Adria und zum Triglav. Naturpark, 1.000 Pflanzenarten und einfache Gipfelwanderung.',
     date: '2026-05-13',
@@ -2924,6 +2933,7 @@ Familien (flacher See, viele Aktivitäten), Aktive (Wandern, Radfahren, Wassersp
   {
     slug: 'krimmler-wasserfaelle',
     startCoords: [47.2100, 12.1700],
+    routeVariants: [ { label: 'Nur zum Untersten Wasserfall', difficulty: 'leicht', length: '1 km', duration: '30 Min.', ascent: '100 hm' }, { label: 'Alle drei Fallstufen (Top of the Falls)', difficulty: 'mittel', length: '4 km', duration: '2 Std.', ascent: '430 hm' } ],
     startPoint: { name: 'Parkplatz Krimmler Wasserfälle', parking: 'kostenpflichtig, großer Besucherparkplatz', arrival: 'vormittags, bevor die Busse kommen', note: 'Für die Wasserfallwege wird zusätzlich Eintritt eingehoben.' },
     title: 'Krimmler Wasserfälle – Europas höchster Wasserfall',
     excerpt: 'Mit 380 m Fallhöhe sind die Krimmler Wasserfälle die höchsten Europas. Ein gut angelegter Wasserfallweg führt entlang der tosenden Kaskaden – ein Naturschauspiel für alle.',
@@ -4676,6 +4686,7 @@ Promenaden, Strandcafés und Heurige liegen rund ums Ufer. Die **Donauinsel** mi
   {
     slug: 'wienerwald-wandern',
     startCoords: [48.2760, 16.3330],
+    routeVariants: [ { label: 'Kahlenberg–Leopoldsberg-Runde', difficulty: 'leicht', length: '5 km', duration: '1,5 Std.', ascent: '120 hm' }, { label: 'Stadtwanderweg 1 komplett', difficulty: 'mittel', length: '11 km', duration: '3,5 Std.', ascent: '330 hm' } ],
     title: 'Wienerwald – Wandern vor den Toren der Stadt',
     excerpt: 'Der Wienerwald reicht bis an die Stadtgrenze: leichte Wanderungen, Aussichtspunkte wie Kahlenberg und Leopoldsberg und Heurige zum Ausklang.',
     date: '2026-06-12', category: 'Wandern', region: 'wien', difficulty: 'leicht', bestSeason: 'April–Oktober',
@@ -4911,6 +4922,7 @@ Im Sommer lohnt der barocke **Stiftspark** mit Gartenpavillon – ideal für ein
     excerpt: 'Der Schneeberg ist der höchste Berg Niederösterreichs und der Hausberg der Wiener: bequem mit der Salamander-Zahnradbahn hinauf, oben ein weites Hochplateau zum Wandern.',
     date: '2026-06-08', category: 'Wandern', region: 'niederoesterreich', difficulty: 'mittel', bestSeason: 'Juni–Oktober',
     startCoords: [47.7670, 15.8080],
+    routeVariants: [ { label: 'Gipfelrunde ab Bergstation (Zahnradbahn)', difficulty: 'leicht', length: '4 km', duration: '1,5–2 Std.', ascent: '200 hm' }, { label: 'Aufstieg über den Fadensteig', difficulty: 'schwer', length: '12 km', duration: '5–6 Std.', ascent: '1.100 hm', note: 'nur bei sicherem Wetter' } ],
     startPoint: { name: 'Parkplatz Zahnradbahn Puchberg', parking: 'beim Bahnhof Puchberg am Schneeberg', arrival: 'zur ersten Zahnradbahn', note: 'Salamander-Bahn in der Saison vorab reservieren.' },
     highlights: ['2.076 m – höchster Berg NÖs', 'Salamander-Zahnradbahn', 'Weiter Blick bis Wien'],
     content: `
@@ -5063,6 +5075,7 @@ Entlang der **KäseStrasse** verkosten Sennereien ihren Bergkäse – die ideale
   {
     slug: 'luenersee-wandern',
     startCoords: [47.0620, 9.7560],
+    routeVariants: [ { label: 'Seerundweg (mit Bahn hinauf)', difficulty: 'leicht', length: '6,3 km', duration: '2 Std.', ascent: '60 hm', note: 'auch für Familien gut machbar' }, { label: 'Aufstieg zu Fuß über den Bösen Tritt', difficulty: 'mittel', length: '+2 km', duration: '+1,5 Std.', ascent: '470 hm', note: 'statt Bahnfahrt – trittsicher sein' }, { label: 'Abstecher zur Totalphütte', difficulty: 'mittel', length: '9 km', duration: '3,5 Std.', ascent: '500 hm', note: 'Einkehr auf 2.385 m' } ],
     startPoint: { name: 'Parkplatz Lünerseebahn (Brandnertal)', parking: 'kostenpflichtig, an Schönwettertagen früh voll', arrival: 'zur ersten Bahn (vor 9 Uhr)', note: 'Alternative: Wanderbus ins Brandnertal statt eigenem Auto.' },
     title: 'Lünersee – türkises Bergsee-Juwel im Brandnertal',
     excerpt: 'Der Lünersee ist einer der schönsten Bergseen Österreichs: türkises Wasser auf knapp 2.000 m, bequem mit der Seilbahn erreichbar und mit einem leichten Uferrundweg.',
@@ -5150,6 +5163,7 @@ Von den Parkplätzen entlang der Straße starten zahlreiche **kurze, leichte Tou
     excerpt: 'Der Vordere Gosausee im Salzkammergut ist einer der fotogensten Plätze Österreichs: Bei Windstille spiegelt sich der Gletscher des Dachsteins perfekt im klaren Wasser. Ein leichter Uferrundweg macht ihn für alle erlebbar.',
     date: '2026-06-18', category: 'Wandern', region: 'oberoesterreich', difficulty: 'leicht', bestSeason: 'Mai–Oktober',
     startCoords: [47.5350, 13.4880],
+    routeVariants: [ { label: 'Uferrundweg Vorderer Gosausee', difficulty: 'leicht', length: '4,5 km', duration: '1–1,5 Std.', ascent: '30 hm', note: 'kinderwagentauglich' }, { label: 'Zum Hinteren Gosausee und retour', difficulty: 'mittel', length: '11 km', duration: '3–3,5 Std.', ascent: '250 hm' } ],
     startPoint: { name: 'Parkplatz Vorderer Gosausee', parking: 'kostenpflichtig (Tagesgebühr), direkt am See', arrival: 'vor 9 Uhr – beste Chance auf Spiegelung und freie Plätze', note: 'Die Zufahrtsstraße endet am See; an Sommer-Wochenenden früh kommen.' },
     highlights: ['Dachstein-Spiegelung im See', 'Leichter Uferrundweg (~1 Std.)', 'Gosaukammbahn für die Höhe'],
     content: `
