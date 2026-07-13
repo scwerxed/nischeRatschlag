@@ -8,6 +8,7 @@ const QUICK_LINKS = [
   { href: '/wandern-baden', label: 'Wandern + Baden' },
   { href: '/wochenendtrip', label: 'Wochenendtrips' },
   { href: '/beste-ausfluege', label: 'Beste Ausflüge' },
+  { href: '/ausfluege-nach-dauer', label: 'Ausflüge nach Dauer' },
   { href: '/merkliste', label: 'Merkliste' },
   { href: '/reiseinfos', label: 'Reiseinfos' },
   { href: '/#regionen', label: 'Regionen' },

@@ -36,6 +36,10 @@ export type Post = {
     ascent?: string;              // z. B. "80 hm"
     note?: string;                // z. B. "kinderwagentauglich"
   }[];
+  planningMistakes?: {            // „Schlecht geplant, wenn …“-Warnbox im Artikel
+    fehler: string;               // der typische Planungsfehler
+    besser: string;               // was man stattdessen tut
+  }[];
 };
 
 export const posts: Post[] = [
@@ -678,6 +682,7 @@ Campingplätze direkt am Seeufer sind die günstigste und schönste Art, den Oss
   {
     slug: 'grossglockner-tagesausflug',
     startCoords: [47.0740, 12.8300],
+    planningMistakes: [ { fehler: 'Erst mittags auffahren', besser: 'Früh starten – nachmittags ziehen oft Wolken und Gewitter auf, dann ist die Sicht weg.' }, { fehler: 'Die Maut nicht eingeplant', besser: 'Rund 40 € pro PKW (Tageskarte) einkalkulieren.' } ],
     title: 'Großglockner Hochalpenstraße – Tagesausflug mit Wow-Faktor',
     excerpt: 'Österreichs höchster Berg, Gletscher hautnah und eine legendäre Panoramastraße: Der Großglockner ist ein Muss für jeden Kärnten-Besucher.',
     date: '2026-05-08',
@@ -1972,6 +1977,7 @@ Die Region ist dicht mit bewirtschafteten Almen besetzt – Brettljause, Kaspres
   {
     slug: 'gruener-see-tragoess',
     startCoords: [47.5530, 15.1000],
+    planningMistakes: [ { fehler: 'Du willst im See baden oder tauchen', besser: 'Beides ist verboten – der Rundweg und die Farbe des Sees sind der eigentliche Grund zu kommen.' }, { fehler: 'Besuch im Hochsommer geplant', besser: 'Mai/Juni fahren: höchster Wasserstand nach der Schneeschmelze, kräftigstes Smaragdgrün.' } ],
     startPoint: { name: 'Parkplatz Grüner See (Tragöß)', parking: 'kostenpflichtig, begrenzte Plätze', arrival: 'früh morgens – Mai/Juni ist Hochsaison', note: 'Baden und Tauchen im See sind verboten – der Rundweg lohnt trotzdem.' },
     title: 'Grüner See in Tragöß – der smaragdgrüne Naturschatz der Steiermark',
     excerpt: 'Im Frühling verwandelt sich der Grüne See durch Schmelzwasser in ein türkises Naturwunder. Was du über den berühmtesten Bergsee der Steiermark wissen musst.',
@@ -2933,6 +2939,7 @@ Familien (flacher See, viele Aktivitäten), Aktive (Wandern, Radfahren, Wassersp
   {
     slug: 'krimmler-wasserfaelle',
     startCoords: [47.2100, 12.1700],
+    planningMistakes: [ { fehler: 'Ohne Jacke auf den Wasserfallweg', besser: 'Der Sprühnebel macht nass – leichte Regen- oder Windjacke mitnehmen.' }, { fehler: 'Mit Sandalen oder Flipflops', besser: 'Der Weg ist steil und feucht – feste Schuhe anziehen.' } ],
     routeVariants: [ { label: 'Nur zum Untersten Wasserfall', difficulty: 'leicht', length: '1 km', duration: '30 Min.', ascent: '100 hm' }, { label: 'Alle drei Fallstufen (Top of the Falls)', difficulty: 'mittel', length: '4 km', duration: '2 Std.', ascent: '430 hm' } ],
     startPoint: { name: 'Parkplatz Krimmler Wasserfälle', parking: 'kostenpflichtig, großer Besucherparkplatz', arrival: 'vormittags, bevor die Busse kommen', note: 'Für die Wasserfallwege wird zusätzlich Eintritt eingehoben.' },
     title: 'Krimmler Wasserfälle – Europas höchster Wasserfall',
@@ -4718,6 +4725,7 @@ Am Fuß der Hänge in Grinzing und Nussdorf laden die **Heurigen** zu Jung­wein
     excerpt: 'Hallstatt am gleichnamigen See ist UNESCO-Welterbe und eines der meistfotografierten Dörfer der Welt: Salzbergwerk, Skywalk und das ikonische Seeufer.',
     date: '2026-06-11', category: 'Ausflug', region: 'oberoesterreich', bestSeason: 'Mai–Oktober',
     startCoords: [47.5620, 13.6490],
+    planningMistakes: [ { fehler: 'Du kommst zwischen 10 und 16 Uhr an', besser: 'Vor 9 Uhr da sein oder übernachten – mittags schieben sich die Tagesbusse durch die Gassen.' }, { fehler: 'Du willst mit dem Auto bis ins Zentrum', besser: 'P1/P2 nutzen oder gleich Bahn + Fähre – der Ort ist weitgehend autofrei.' }, { fehler: 'Nur eine Stunde eingeplant', besser: 'Mit Salzwelten und Skywalk braucht Hallstatt einen halben Tag.' } ],
     startPoint: { name: 'Parkplätze P1/P2 Hallstatt-Lahn', parking: 'kostenpflichtig, im Sommer schnell voll', arrival: 'vor 9 Uhr oder nach 17 Uhr', note: 'Entspannter: per Bahn bis Hallstatt + Fähre über den See – das Ortszentrum ist weitgehend autofrei.' },
     highlights: ['UNESCO-Welterbe am See', 'Ältestes Salzbergwerk der Welt', 'Skywalk mit Postkartenblick'],
     content: `
@@ -4776,6 +4784,7 @@ Die Stadt ist für ihre Keramik bekannt – ein hübscher Bummel zwischen Seebad
   {
     slug: 'attersee-baden',
     startCoords: [47.9150, 13.5250],
+    planningMistakes: [ { fehler: 'An Hitzetagen mittags anreisen', besser: 'Vor 10 Uhr da sein – die Strandbad-Parkplätze sind sonst voll.' }, { fehler: 'Nur einen Badeplatz ansteuern', besser: 'Plan B am anderen Ufer bereithalten – der See ist groß, die Plätze verteilen sich.' } ],
     startPoint: { name: 'Strandbad-Parkplätze rund um den See', parking: 'je nach Badeplatz, meist kostenpflichtig', arrival: 'an Hitzetagen vor 10 Uhr', note: 'Viele freie Einstiege haben nur wenige Parkplätze – Rad oder Bus nutzen.' },
     title: 'Attersee – glasklares Wasser zum Baden, Segeln & Tauchen',
     excerpt: 'Der Attersee ist der größte Binnensee Österreichs und ein Wassersport-Eldorado: kristallklares Wasser, beste Segelwinde und viele frei zugängliche Badeplätze.',
@@ -4862,6 +4871,7 @@ Eine der steilsten Adhäsionsbahnen Europas bringt dich auf den **Pöstlingberg*
   {
     slug: 'wachau-duernstein',
     startCoords: [48.3970, 15.5210],
+    planningMistakes: [ { fehler: 'Nur mit dem Auto von Ort zu Ort', besser: 'Schiff und Rad kombinieren – die Parkplätze in Dürnstein sind im Sommer schnell voll.' }, { fehler: 'Heurigen-Tour am Montag geplant', besser: 'Viele Buschenschanken haben unter der Woche Schließtage – Öffnungszeiten vorher prüfen.' } ],
     title: 'Wachau & Dürnstein – Weltkulturerbe an der Donau',
     excerpt: 'Die Wachau zwischen Melk und Krems ist UNESCO-Welterbe: Weinterrassen, das blaue Stiftsstädtchen Dürnstein und Donauschifffahrten durch eine der schönsten Flusslandschaften Europas.',
     date: '2026-06-09', category: 'Ausflug', region: 'niederoesterreich', bestSeason: 'April–Oktober',
@@ -4922,6 +4932,7 @@ Im Sommer lohnt der barocke **Stiftspark** mit Gartenpavillon – ideal für ein
     excerpt: 'Der Schneeberg ist der höchste Berg Niederösterreichs und der Hausberg der Wiener: bequem mit der Salamander-Zahnradbahn hinauf, oben ein weites Hochplateau zum Wandern.',
     date: '2026-06-08', category: 'Wandern', region: 'niederoesterreich', difficulty: 'mittel', bestSeason: 'Juni–Oktober',
     startCoords: [47.7670, 15.8080],
+    planningMistakes: [ { fehler: 'Letzte Talfahrt der Zahnradbahn nicht gecheckt', besser: 'Abfahrtszeiten vorab notieren – der Abstieg zu Fuß ist lang und zäh.' }, { fehler: 'Im T-Shirt aufs Hochplateau', besser: 'Oben weht auch im Sommer kalter Wind – warme Schicht einpacken.' } ],
     routeVariants: [ { label: 'Gipfelrunde ab Bergstation (Zahnradbahn)', difficulty: 'leicht', length: '4 km', duration: '1,5–2 Std.', ascent: '200 hm' }, { label: 'Aufstieg über den Fadensteig', difficulty: 'schwer', length: '12 km', duration: '5–6 Std.', ascent: '1.100 hm', note: 'nur bei sicherem Wetter' } ],
     startPoint: { name: 'Parkplatz Zahnradbahn Puchberg', parking: 'beim Bahnhof Puchberg am Schneeberg', arrival: 'zur ersten Zahnradbahn', note: 'Salamander-Bahn in der Saison vorab reservieren.' },
     highlights: ['2.076 m – höchster Berg NÖs', 'Salamander-Zahnradbahn', 'Weiter Blick bis Wien'],
@@ -5075,6 +5086,7 @@ Entlang der **KäseStrasse** verkosten Sennereien ihren Bergkäse – die ideale
   {
     slug: 'luenersee-wandern',
     startCoords: [47.0620, 9.7560],
+    planningMistakes: [ { fehler: 'Erst mittags starten', besser: 'Früh fahren: weniger Andrang an der Bahn und deutlich geringere Gewittergefahr.' }, { fehler: 'Badesachen für den See eingepackt', besser: 'Auf knapp 2.000 m ist das Wasser eiskalt – es bleibt beim Zehen-Test.' } ],
     routeVariants: [ { label: 'Seerundweg (mit Bahn hinauf)', difficulty: 'leicht', length: '6,3 km', duration: '2 Std.', ascent: '60 hm', note: 'auch für Familien gut machbar' }, { label: 'Aufstieg zu Fuß über den Bösen Tritt', difficulty: 'mittel', length: '+2 km', duration: '+1,5 Std.', ascent: '470 hm', note: 'statt Bahnfahrt – trittsicher sein' }, { label: 'Abstecher zur Totalphütte', difficulty: 'mittel', length: '9 km', duration: '3,5 Std.', ascent: '500 hm', note: 'Einkehr auf 2.385 m' } ],
     startPoint: { name: 'Parkplatz Lünerseebahn (Brandnertal)', parking: 'kostenpflichtig, an Schönwettertagen früh voll', arrival: 'zur ersten Bahn (vor 9 Uhr)', note: 'Alternative: Wanderbus ins Brandnertal statt eigenem Auto.' },
     title: 'Lünersee – türkises Bergsee-Juwel im Brandnertal',

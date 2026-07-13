@@ -59,9 +59,12 @@ All outbound partner links route through our own domain via [app/lib/affiliate.t
 | `/hitzefreundliche-ausfluege` | SSG | Kuratierte kühle Ziele für Hitzetage (Klammen/Höhlen, Höhenluft, Wasser) mit „Kühl-Faktor"-Notizen; Daten inline in der Page |
 | `/beste-ausfluege` + `/beste-ausfluege/[monat]` | SSG | Monats-Seiten (Juli/Aug/Sep) mit kuratierten Picks + „Warum jetzt?" (`app/lib/monatstipps.ts`) — weitere Monate dort ergänzen |
 | `/seen-vergleich/[thema]` | SSG | Seen-Entscheidungsseiten (ruhige-seen, familienseen, seen-mit-wanderung) aus `app/lib/seen.ts` (LAKES mit Tags; auch von /seen-vergleich genutzt) |
+| `/ausfluege-nach-dauer` | SSG | Zeitfenster-Planer (unter 2 Std. / halber Tag / ganzer Tag / Wochenende), kuratierte Picks mit realistischer Dauer; Daten inline |
+| `/bahnhofsausfluege` | SSG | Öffi-Ziele in 3 Gruppen (direkt an der Bahn / Bahn+Schiff/Bus / Stadt&U-Bahn) mit Anreise-Hinweis je Ziel; Daten inline |
+| `/feierabend-ausfluege` | SSG | After-Work-Ziele ab Wien/Graz/Salzburg (≤ ~45 Min. Anfahrt, abendtauglich) mit Abend-Hinweis; Daten inline |
 | `/karte` | Client (dynamic import) | Leaflet map; toggleable layers (OSM/OpenTopoMap base, Waymarked Trails overlay, Overpass peaks, accommodation affiliate pins); custom control panel. **Deep links**: `?lat=&lng=&zoom=&name=` centers the map + drops a "Startpunkt" marker (used by the "Startpunkt auf Karte öffnen" CTA on articles) |
 | `/routenplaner` | Client (dynamic import) | Interactive route planner via BRouter (proxied through `/api/brouter`, which snaps waypoints to nearest trail via Overpass); elevation profile + difficulty; saves to `localStorage` |
-| `/blog/[slug]` (hiking) | — | Hiking posts with `trails` render a `TrailMap` (OpenTopoMap) where users pick a predefined route. Posts with `routeVariants` render a "Kurz oder lang?" variant list (label/length/duration/ascent/difficulty) |
+| `/blog/[slug]` (hiking) | — | Hiking posts with `trails` render a `TrailMap` (OpenTopoMap) where users pick a predefined route. Posts with `routeVariants` render a "Kurz oder lang?" variant list; posts with `planningMistakes` render a red "Schlecht geplant, wenn …" warning box (fehler → besser) |
 | `/go` | Route handler | Affiliate redirect with host allowlist + partner-tag injection |
 | `/api/brouter` | Route handler | Proxies BRouter (CORS) + snaps waypoints to nearest hiking trail via Overpass. Guarded against abuse: same-origin Referer check + in-memory per-IP rate limit (30/min) |
 

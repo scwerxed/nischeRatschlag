@@ -275,6 +275,21 @@ export default async function BlogPostPage({ params }: Props) {
 
           <div className="prose-style">{renderContent(post.content)}</div>
 
+          {/* Typische Planungsfehler */}
+          {post.planningMistakes && post.planningMistakes.length > 0 && (
+            <div className="mt-10 border-l-4 border-red-400 bg-red-50 px-5 py-4">
+              <p className="eyebrow mb-3 !text-red-700">Schlecht geplant, wenn …</p>
+              <ul className="space-y-3">
+                {post.planningMistakes.map((m) => (
+                  <li key={m.fehler} className="text-sm leading-relaxed">
+                    <p className="text-gray-800"><span className="font-semibold text-red-700">✗</span> {m.fehler}</p>
+                    <p className="text-gray-600 mt-0.5 pl-4"><span className="font-semibold text-green-700">→</span> {m.besser}</p>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
+
           {/* Kurz- / Lang-Varianten */}
           {post.routeVariants && post.routeVariants.length > 0 && (
             <div className="mt-10">
