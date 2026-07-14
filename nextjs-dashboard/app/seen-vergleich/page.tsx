@@ -40,6 +40,13 @@ export default function SeenVergleichPage() {
             {t.h1} →
           </Link>
         ))}
+        <Link
+          href="/badeplaetze"
+          className="text-sm font-medium px-4 py-1.5 bg-sky-50 text-sky-700 border border-sky-200 hover:bg-sky-100 transition-colors"
+          style={{ borderRadius: 999 }}
+        >
+          Badeplatz-Check (gratis, Schatten, flach …) →
+        </Link>
       </div>
 
       {/* Tabelle (Desktop) */}
