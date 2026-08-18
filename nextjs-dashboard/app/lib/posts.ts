@@ -5069,18 +5069,26 @@ Das Wildnisgebiet Dürrenstein-Lassingtal mit Urwald liegt in der Nähe – Natu
     startCoords: [47.5030, 9.7470],
     highlights: ['Baden im Bodensee', 'Pfänderbahn mit Drei-Länder-Blick', 'Seepromenade & Hafen'],
     content: `
-**Bregenz** ist Vorarlbergs Hauptstadt direkt am **Bodensee** – Seefeeling mit Bergkulisse.
+**Bregenz** ist Vorarlbergs Hauptstadt direkt am **Bodensee** – Seefeeling mit Bergkulisse. Die Kombination ist selten: Man badet in einem See, an dessen Ufer drei Länder grenzen, und steht eine Viertelstunde später auf einem Berg mit Alpenblick.
 
 ## See & Stadt
-Strandbäder und die lange **Seepromenade** laden im Sommer zum Baden und Flanieren. Die mittelalterliche **Oberstadt** mit dem Martinsturm lohnt einen Abstecher.
+Strandbäder und die lange **Seepromenade** laden im Sommer zum Baden und Flanieren; vom Hafen legen Kursschiffe zu den deutschen und Schweizer Ufern ab. Ein Stück oberhalb liegt die mittelalterliche **Oberstadt** mit dem markanten **Martinsturm** und seiner mächtigen Zwiebelhaube – ein ruhiger Gegenpol zum Trubel am Wasser. Am Kornmarktplatz steht das **Kunsthaus Bregenz**, ein bekannter Bau des Architekten Peter Zumthor.
 
 ## Pfänder
-Die **Pfänderbahn** bringt dich auf den Hausberg mit weitem Blick über den See und bis zu den Alpen dreier Länder – samt Alpenwildpark.
+Die **Pfänderbahn** bringt dich in wenigen Minuten auf den Hausberg (rund 1.060 m) mit weitem Blick über den Bodensee und auf die Alpen dreier Länder. Oben warten ein **Alpenwildpark** mit heimischen Tieren, eine Greifvogelschau in der Saison und ein Panorama-Rundweg, der auch mit Kindern gut machbar ist. Wer will, geht zu Fuß hinunter – bergab ist der Weg deutlich angenehmer als hinauf.
+
+## Bodensee-Radweg
+Bregenz ist eine der klassischen Etappenstationen am **Bodensee-Radweg**, der einmal um den ganzen See führt. Der Uferabschnitt Richtung Lindau ist flach und familientauglich; Räder lassen sich vor Ort leihen, und die Kursschiffe nehmen sie in der Regel mit.
+
+## Beste Reisezeit
+Badesaison ist etwa Juni bis September – der Bodensee erwärmt sich als flacherer See im Hochsommer angenehm. Juli und August stehen zugleich im Zeichen der **Bregenzer Festspiele**, dann ist die Stadt voll und Unterkünfte sind knapp. Frühling und Frühherbst sind ruhiger und für Pfänder und Radweg oft die schönere Zeit.
 
 ## Praktische Infos
-- Bahnhof & Hafen zentral gelegen
-- Bodensee im Hochsommer angenehm warm
-- Festspiel-Saison im Juli/August einplanen
+- Bahnhof und Hafen liegen zentral, die Stadt ist gut ohne Auto machbar
+- Strandbäder sind kostenpflichtig, es gibt daneben frei zugängliche Uferabschnitte
+- Pfänderbahn: Betriebszeiten und Revisionspausen vorab prüfen
+- In der Festspielzeit Quartier früh buchen
+- Gut kombinierbar mit einem Abstecher in den Bregenzerwald
     `,
     affiliateLinks: [
       { label: 'Hotels in Bregenz – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Bregenz' },
@@ -5096,16 +5104,24 @@ Die **Pfänderbahn** bringt dich auf den Hausberg mit weitem Blick über den See
     content: `
 Die **Bregenzer Festspiele** sind ein Sommer-Highlight von Weltrang: Oper auf der **Seebühne** direkt am Bodensee, mit gigantischen Bühnenbildern.
 
+## Geschichte
+Begonnen hat alles 1946, kurz nach dem Krieg – gespielt wurde damals auf zwei zusammengeschobenen Kieskähnen im See. Daraus wurde über die Jahrzehnte die größte Seebühne der Welt und eines der bekanntesten Opernfestivals überhaupt.
+
 ## Das Erlebnis
-Bis zu 7.000 Zuschauer verfolgen die Aufführung unter freiem Himmel, das Wasser des Sees als Bühnenkulisse. Die Inszenierungen werden meist zwei Sommer lang gespielt.
+Mehrere tausend Zuschauer verfolgen die Aufführung unter freiem Himmel, das Wasser des Sees und der Nachthimmel als Kulisse. Das Besondere sind die **Bühnenbilder**: monumentale Konstruktionen, die im See stehen und selbst zur Attraktion werden – oft mit Wasser, Feuer und beweglichen Elementen gearbeitet. Die Inszenierung auf dem See („Spiel auf dem See") wird in der Regel **zwei Sommer hintereinander** gespielt, dazu kommt ein Programm im Festspielhaus.
 
 ## Gut zu wissen
-Karten sind begehrt – **früh buchen**. Bei Regen wird gegebenenfalls ins Festspielhaus verlegt.
+Karten sind begehrt – **früh buchen** ist keine Floskel, beliebte Termine sind rasch weg. Bei schlechtem Wetter kann die Vorstellung ins Festspielhaus verlegt oder abgebrochen werden; die Regelungen zu Ersatz und Rückerstattung stehen in den Ticketbedingungen und sollten vor dem Kauf gelesen werden. Eine Decke oder warme Jacke ist auch im Hochsommer sinnvoll, am See wird es abends kühl.
+
+## Beste Reisezeit
+Die Seebühnen-Saison läuft üblicherweise von **Ende Juli bis Ende August**. Genaue Spieltermine und das Programm gibt der Veranstalter jeweils im Vorjahr bekannt – Termine und Verfügbarkeit also direkt dort prüfen.
 
 ## Praktische Infos
-- Saison Juli bis Mitte August
-- Bregenz gut per Bahn erreichbar
-- Mit Baden & Pfänder zum Tagesausflug kombinieren
+- Bregenz ist per Bahn sehr gut erreichbar, das Festspielgelände liegt nahe am Bahnhof
+- In der Festspielzeit sind Unterkünfte in Bregenz knapp und teuer – Umland oder Bahnanreise einplanen
+- Anreise am Vorstellungstag großzügig kalkulieren, rund um den Beginn wird es voll
+- Gut mit Baden im Bodensee und einer Pfänder-Auffahrt zum ganzen Tag kombinierbar
+- Wer keine Karte bekommt: Die Kulisse lässt sich auch von der Promenade aus bestaunen
     `,
     affiliateLinks: [
       { label: 'Hotels in Bregenz – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Bregenz' },
@@ -5119,18 +5135,26 @@ Karten sind begehrt – **früh buchen**. Bei Regen wird gegebenenfalls ins Fest
     date: '2026-06-05', category: 'Wandern', region: 'vorarlberg', difficulty: 'leicht', bestSeason: 'Juni–Oktober',
     highlights: ['Sanfte Genusswanderungen', 'KäseStrasse & Sennereien', 'Moderne Holzarchitektur'],
     content: `
-Der **Bregenzerwald** ist eine eigene Welt: grüne Hügel, traditionelle Sennereien und Dörfer mit international beachteter **Holzarchitektur**.
+Der **Bregenzerwald** ist eine eigene Welt: grüne Hügel, traditionelle Sennereien und Dörfer mit international beachteter **Holzarchitektur**. Es ist keine Postkarten-Alpenregion mit Geranien am Balkon, sondern eine Gegend, die Handwerk und Moderne bewusst zusammenbringt – das macht sie ungewöhnlich.
 
 ## Wandern
-Vom gemütlichen Talspaziergang bis zur Bergtour ist alles dabei; Bergbahnen in Au, Damüls und Mellau erleichtern den Einstieg. Familienfreundliche Wege überwiegen.
+Vom gemütlichen Talspaziergang bis zur Bergtour ist alles dabei; **Bergbahnen in Au, Damüls, Mellau und Bezau** erleichtern den Einstieg und ersparen den Aufstieg. Familienfreundliche Wege überwiegen, die Höhen sind moderat, und fast überall lässt sich eine Alm oder ein Gasthaus in die Runde einbauen. Wer es weiter mag, findet mit dem Weitwanderweg über mehrere Etappen eine Möglichkeit, die Region am Stück zu durchqueren.
 
-## Genuss
-Entlang der **KäseStrasse** verkosten Sennereien ihren Bergkäse – die ideale Belohnung nach der Tour.
+## Genuss: die KäseStrasse
+Entlang der **KäseStrasse Bregenzerwald** verkosten Sennereien, Alpen und Gasthäuser ihren Bergkäse – vom jungen Alpkäse bis zum lang gereiften Laib. Viele Sennereien lassen sich besichtigen, teils mit Blick in die Produktion. Die traditionelle **Dreistufenwirtschaft** – Vieh zieht im Jahresverlauf vom Tal über das Vorsäß auf die Alpe und zurück – prägt die Landschaft bis heute und ist der Grund für die vielen Hütten an den Hängen.
+
+## Holzarchitektur
+Der Bregenzerwald ist international bekannt für zeitgenössische **Holzbaukunst**: Bushaltestellen von Stararchitekten, moderne Sennereien, Gemeindehäuser und Hotels aus heimischem Holz. Der **Werkraum** in Andelsbuch zeigt das regionale Handwerk gebündelt; wer sich für Architektur interessiert, kann die Dörfer entlang eigener Architekturrouten erkunden.
+
+## Beste Reisezeit
+**Juni bis Oktober** ist Wander-Hauptsaison; im Frühsommer blühen die Bergwiesen, im September und Oktober ist es ruhiger und klarer. Im Herbst finden die traditionellen **Almabtriebe** statt. Der Winter bringt vergleichsweise schneesicheres Skifahren, vor allem rund um Damüls und Mellau.
 
 ## Praktische Infos
-- Mit der Gästekarte oft Bergbahnen inklusive
-- Beste Zeit Juni bis Oktober
-- Feste Schuhe; Wetter im Gebirge beachten
+- Je nach Unterkunft und Saison gibt es Gästekarten, die Bergbahnen und Bus enthalten – Konditionen beim Quartier erfragen
+- Der Landbus erschließt die Täler gut, ein Auto ist nicht zwingend nötig
+- Feste Schuhe mitnehmen, Bergwetter kann rasch umschlagen
+- Sennereien und Betriebe haben Ruhetage und saisonale Öffnungszeiten – vorab prüfen
+- Gut mit Bregenz und dem Bodensee zu einer Rundreise verbindbar
     `,
     affiliateLinks: [
       { label: 'Unterkünfte im Bregenzerwald – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Bregenzerwald' },
@@ -5150,16 +5174,24 @@ Entlang der **KäseStrasse** verkosten Sennereien ihren Bergkäse – die ideale
     content: `
 Der **Lünersee** liegt auf rund 1.970 m im Brandnertal vor der mächtigen Rätikon-Kulisse – ein Postkartenmotiv aus türkisem Wasser und Fels.
 
-## Hin & Rundweg
-Die **Lünerseebahn** bringt dich bequem hinauf. Oben führt ein leichter **Uferrundweg** (gut 1,5 Stunden) einmal um den See – für Geübte locken Touren zur Totalphütte und auf die Schesaplana.
+## Natursee und Stausee zugleich
+Was viele nicht wissen: Der Lünersee ist ursprünglich ein natürlicher Bergsee, wurde aber in den 1950er-Jahren durch eine Staumauer deutlich vergrößert und dient heute der Stromerzeugung. Das erklärt, warum der Wasserstand im Jahresverlauf schwanken kann – auf die Schönheit hat das wenig Einfluss, das intensive Türkis stammt vom fein gemahlenen Gesteinsmehl im Wasser.
 
-## Gut zu wissen
-Auf knapp 2.000 m ist das Wetter wechselhaft und das Wasser eiskalt – warme Kleidung mitnehmen.
+## Hin & Rundweg
+Die **Lünerseebahn** bringt dich bequem hinauf. Oben führt ein leichter **Uferrundweg** (gut 1,5 Stunden, kaum Höhenmeter) einmal um den See – einer der lohnendsten einfachen Wege der Ostalpen, weil die Kulisse ständig wechselt. Direkt an der Bergstation liegt die **Douglasshütte** als Einkehr.
+
+## Weiter hinauf
+Für Geübte ist der See Ausgangspunkt: Die **Totalphütte** auf rund 2.380 m ist in etwa 1,5 Stunden erreichbar, von dort führt der Weiterweg auf die **Schesaplana** (2.964 m), den höchsten Gipfel des Rätikon. Beides ist alpines Gelände und verlangt Trittsicherheit, gute Kondition und stabiles Wetter – kein Ziel für einen spontanen Nachmittag.
+
+## Beste Reisezeit
+Die Bahn läuft üblicherweise von **Juni bis Oktober**; davor liegt am Ufer oft noch Schnee. Der Hochsommer ist am verlässlichsten, September bringt klare Sicht und weniger Andrang. Betriebszeiten und mögliche Revisionspausen vor der Anreise prüfen.
 
 ## Praktische Infos
-- Talstation am Lünerseebahn-Parkplatz, Brandnertal
-- Uferrundweg auch für Familien machbar
-- Frühzeitig starten – nachmittags oft Gewitter
+- Talstation am Lünerseebahn-Parkplatz im Brandnertal, Parken kostenpflichtig
+- Uferrundweg auch für Familien machbar, aber nicht durchgehend kinderwagentauglich
+- Baden ist wegen der Wassertemperatur praktisch keine Option – der See bleibt eiskalt
+- Frühzeitig starten: weniger Andrang an der Bahn, geringere Gewittergefahr am Nachmittag
+- Letzte Talfahrt notieren, der Abstieg zu Fuß zieht sich
     `,
     affiliateLinks: [
       { label: 'Hotels im Brandnertal – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Brandnertal' },
@@ -5173,18 +5205,23 @@ Auf knapp 2.000 m ist das Wetter wechselhaft und das Wasser eiskalt – warme Kl
     date: '2026-06-04', category: 'Ausflug', region: 'vorarlberg', bestSeason: 'Juni–Oktober',
     highlights: ['Spektakuläre Kehren-Auffahrt', 'Silvretta-Stausee auf der Bielerhöhe', 'Start für Bergtouren'],
     content: `
-Die **Silvretta-Hochalpenstraße** verbindet das Montafon mit dem Paznauntal und führt über die **Bielerhöhe** (rund 2.030 m) – Hochgebirge per Auto oder Motorrad.
+Die **Silvretta-Hochalpenstraße** verbindet das Montafon mit dem Paznauntal und führt über die **Bielerhöhe** (rund 2.030 m) – Hochgebirge per Auto oder Motorrad, ohne einen Schritt zu gehen.
 
 ## Die Fahrt
-In zahlreichen Kehren geht es hinauf zum türkisblauen **Silvretta-Stausee**, eingerahmt von Dreitausendern und Gletschern.
+Von Partenen im Montafon schraubt sich die Straße in zahlreichen engen Kehren hinauf; die Steigung ist ordentlich, die Ausblicke werden mit jeder Kurve besser. Oben öffnet sich die Passhöhe zum türkisblauen **Silvretta-Stausee**, eingerahmt von Dreitausendern und Gletscherresten. Auf der anderen Seite geht es hinunter nach Galtür ins Paznauntal – die Strecke lässt sich also gut als Verbindung zweier Täler fahren, nicht nur als Stichfahrt.
 
-## Oben
-Ein leichter Uferweg um den Stausee, Einkehrmöglichkeiten und Ausgangspunkte für Bergtouren (z. B. zur Wiesbadener Hütte) warten auf der Passhöhe.
+## Oben an der Bielerhöhe
+Ein leichter **Uferweg** führt um den Stausee (rund 2 Stunden, kaum Höhenmeter) – der beste Weg, das Panorama zu genießen, ohne Bergerfahrung zu brauchen. Dazu gibt es Einkehrmöglichkeiten und Parkplätze direkt an der Passhöhe. Ambitionierte starten hier zu Bergtouren, etwa zur **Wiesbadener Hütte** oder weiter auf den **Piz Buin** (3.312 m), den höchsten Berg Vorarlbergs – Hochtouren mit Gletscherberührung, die entsprechende Ausrüstung und Erfahrung verlangen.
+
+## Beste Reisezeit
+Die Straße ist eine typische Sommerstraße: Sie öffnet in der Regel **Ende Mai / Juni** und schließt im **Oktober**, je nach Schneelage. Im Winter ist sie gesperrt – Galtür und Partenen sind dann nicht über den Pass verbunden. Der genaue Öffnungszeitraum wird jedes Jahr neu festgelegt und sollte vor der Fahrt geprüft werden.
 
 ## Praktische Infos
-- Mautstraße, im Winter gesperrt (meist Juni–Okt offen)
-- Wetter prüfen, oben deutlich kühler
-- Früh fahren – tagsüber viel Verkehr
+- **Mautstraße** – Tarife und Öffnungszeitraum vorab beim Betreiber prüfen
+- Oben ist es deutlich kühler und windiger als im Tal, warme Jacke einpacken
+- Früh fahren: An Schönwetter-Wochenenden ist tagsüber viel Verkehr, auch viele Motorräder
+- Wohnwagen und große Gespanne sind auf solchen Passstraßen oft eingeschränkt – Bedingungen vorher klären
+- Bei Nebel bringt die Fahrt wenig: Bergwetter und Webcams checken
     `,
     affiliateLinks: [
       { label: 'Unterkünfte im Montafon – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Montafon' },
