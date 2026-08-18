@@ -57,6 +57,7 @@ All outbound partner links route through our own domain via [app/lib/affiliate.t
 | `/wochenendtrip` + `/wochenendtrip/[stadt]` | SSG | „Wochenendtrip ab Wien/Graz/Salzburg" – bündelt Posts nach Luftlinie zur Startstadt in Fahrzeit-Buckets (`app/lib/wochenendtrip.ts`, nutzt `post.startCoords`). Hub + Stadt-Seiten, `ItemList`+`BreadcrumbList`-JSON-LD |
 | `/wandern-baden` | SSG | Sommer-Landingpage: kombiniert je Region Wanderungen mit dem nächstgelegenen Badeziel (≤25 km Luftlinie, `app/lib/wandern-baden.ts`) + Live-Seewetter-Widget. `ItemList`+`BreadcrumbList`-JSON-LD |
 | `/hitzefreundliche-ausfluege` | SSG | Kuratierte kühle Ziele für Hitzetage (Klammen/Höhlen, Höhenluft, Wasser) mit „Kühl-Faktor"-Notizen; Daten inline in der Page |
+| `/regentaugliche-ausfluege` | SSG | Schlechtwetter-Plan-B in 6 Gruppen (Thermen, Höhlen/Bergwerke, Burgen/Stifte, Familien-Erlebniswelten, Städte, Klammen bei Regen) mit „Bei Regen"-Notiz je Ziel; Daten inline in der Page |
 | `/beste-ausfluege` + `/beste-ausfluege/[monat]` | SSG | Monats-Seiten (Juli/Aug/Sep) mit kuratierten Picks + „Warum jetzt?" (`app/lib/monatstipps.ts`) — weitere Monate dort ergänzen |
 | `/seen-vergleich/[thema]` | SSG | Seen-Entscheidungsseiten (ruhige-seen, familienseen, seen-mit-wanderung) aus `app/lib/seen.ts` (LAKES mit Tags; auch von /seen-vergleich genutzt) |
 | `/ausfluege-nach-dauer` | SSG | Zeitfenster-Planer (unter 2 Std. / halber Tag / ganzer Tag / Wochenende), kuratierte Picks mit realistischer Dauer; Daten inline |

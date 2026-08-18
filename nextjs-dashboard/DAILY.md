@@ -44,7 +44,6 @@ Jeder Lauf startet **ohne Gedächtnis** an frühere Sessions — dieses File + `
 ## Backlog (eine Sache pro Tag herausnehmen)
 
 ### Features / neue Seiten
-- `/regentaugliche-ausfluege` — Schlechtwetter-Plan-B (Thermen, Museen, Klammen, Höhlen)
 - `/mit-hund` — hundefreundliche Seen & Wanderungen (`dogFriendly`-Feld am Post)
 - `/familienausfluege` bzw. `/kinderwagen-ausfluege` — kinderwagentaugliche Wege, Familien-Check-Box
 - `/fotospots` — Aussichtspunkte & Foto-Stellen je Bundesland
@@ -88,5 +87,6 @@ Jeder Lauf startet **ohne Gedächtnis** an frühere Sessions — dieses File + `
 
 <!-- Format: - YYYY-MM-DD — [Feature|Content] Kurzbeschreibung -->
 
+- 2026-08-18 — [Feature] `/regentaugliche-ausfluege`: Schlechtwetter-Plan-B mit 28 kuratierten Zielen in 6 Gruppen, ehrlichen „auch bei Regen im Freien"-Hinweisen und Klamm-Sicherheitswarnung.
 - 2026-08-18 — [Content] Artikel „Stift Melk" ausgebaut: neue Abschnitte Geschichte, Beste Reisezeit, Anreise; Höhepunkte & Praktische Infos vertieft.
 - 2026-07-31 — [Setup] Playbook angelegt, täglicher Lauf eingerichtet.
