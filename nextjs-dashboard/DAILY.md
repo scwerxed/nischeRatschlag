@@ -88,6 +88,7 @@ Jeder Lauf startet **ohne Gedächtnis** an frühere Sessions — dieses File + `
 
 <!-- Format: - YYYY-MM-DD — [Feature|Content] Kurzbeschreibung -->
 
+- 2026-08-18 — [Content] 6 dünne NÖ-/OÖ-Artikel ausgebaut (Traunsee, Krippenstein, Linz, Schneeberg, Rax, Lunzer See). Damit sind alle vier dünnen Regionen (Wien, Vorarlberg, NÖ, OÖ) durch.
 - 2026-08-18 — [Feature] Wochenendtrip-Startstädte Linz, Innsbruck & Klagenfurt ergänzt (3 neue SSG-Seiten). Kandidaten vorab per Haversine-Skript geprüft: Villach/St. Pölten wegen Überschneidung, Bregenz wegen zu weniger Ziele verworfen.
 - 2026-08-18 — [Content] Alle 5 Vorarlberg-Artikel ausgebaut (Bregenz, Festspiele, Bregenzerwald, Lünersee, Silvretta): neue Abschnitte zu Geschichte, Holzarchitektur/KäseStrasse, Natur-vs-Stausee und Beste Reisezeit.
 - 2026-08-18 — [Feature] `/aussicht-ohne-anstrengung`: 21 Ziele in 4 Gruppen (Seilbahnen, Panoramastraßen, Aussichtstürme, kurze Wege) — Zielgruppe Familien, Senioren, gemütliche Ausflügler.

@@ -4807,18 +4807,26 @@ Tagsüber ist Hallstatt sehr voll, vor allem mittags durch Tagestouristen. **Fr�
     date: '2026-06-11', category: 'Baden', region: 'oberoesterreich', bestSeason: 'Juni–September',
     highlights: ['Tiefster See Österreichs', 'Seeschloss Ort', 'Traunstein als Kulisse'],
     content: `
-Der **Traunsee** ist mit über 190 m der tiefste See Österreichs – glasklar, kühl und dramatisch vom **Traunstein** überragt.
+Der **Traunsee** ist mit über 190 m der tiefste See Österreichs – glasklar, kühl und dramatisch vom **Traunstein** überragt. Wer vom flachen Alpenvorland kommt, erlebt hier den abrupten Übergang ins Gebirge: Die Felswand steht praktisch direkt im Wasser.
 
 ## Baden & Boot
-Strandbäder in **Gmunden** und Altmünster laden zum Baden; das kühle, klare Wasser ist auch bei Tauchern beliebt. Schifffahrten fahren über den See zum **Seeschloss Ort**.
+Strandbäder in **Gmunden** und Altmünster laden zum Baden; das kühle, klare Wasser ist wegen der guten Sicht auch bei **Tauchern** beliebt. Historische Schiffe fahren über den See – darunter ein Dampfschiff mit langer Tradition – und legen unter anderem beim **Seeschloss Ort** an, das über einen hölzernen Steg mit dem Ufer verbunden ist und zu den meistfotografierten Motiven Oberösterreichs zählt.
 
 ## Gmunden
-Die Stadt ist für ihre Keramik bekannt – ein hübscher Bummel zwischen Seebad und Rathausplatz.
+Die Stadt ist für ihre **Keramik** mit dem grün-weißen Flammendekor bekannt – Manufaktur und Geschäfte laden zum Stöbern. Dazu kommt ein hübscher Bummel zwischen Seebahnhof, Esplanade und Rathausplatz, dessen Rathaus ein Glockenspiel aus eben dieser Keramik trägt. Von Gmunden führt außerdem eine Standseilbahn auf den **Grünberg** mit Aussichtsplattform über dem See.
+
+## Rund um den See
+Ein Uferweg und die Straßen rund um den Traunsee eignen sich für Rad- und Spazierrunden; Traunkirchen mit seiner Halbinsel und Ebensee am Südende sind lohnende Zwischenstopps. Der **Traunstein** (rund 1.690 m) ist ein ernsthafter Berg: Die Anstiege sind steil, teils versichert und ausschließlich etwas für erfahrene, trittsichere Bergsteiger – von spontanen Versuchen ist abzuraten.
+
+## Beste Reisezeit
+Badesaison ist etwa Juni bis September, wobei der tiefe See auch im Hochsommer eher frisch bleibt – wer warmes Wasser sucht, ist am flacheren Attersee oder Mondsee besser aufgehoben. Frühling und Herbst sind für Schifffahrt, Radrunde und Grünberg besonders schön, dann ist es auch deutlich ruhiger.
 
 ## Praktische Infos
-- Bahn bis Gmunden, dann Straßenbahn/Bus
-- Wasser auch im Hochsommer eher frisch
-- Traunstein-Besteigung nur für geübte Bergsteiger
+- Bahn bis Gmunden, von dort Straßenbahn und Bus – gut ohne Auto machbar
+- Wasser auch im Hochsommer eher frisch, Neoprenanzug für längeres Schwimmen sinnvoll
+- Fahrpläne der Schifffahrt sind saisonal – vorab prüfen
+- Traunstein-Besteigung nur für geübte Bergsteiger mit entsprechender Ausrüstung
+- Gut mit einem Abstecher zum Attersee oder ins Salzkammergut kombinierbar
     `,
     affiliateLinks: [
       { label: 'Hotels am Traunsee – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Gmunden+Traunsee' },
@@ -4867,18 +4875,27 @@ Der Maler **Gustav Klimt** verbrachte viele Sommer am Attersee und schuf hier za
     date: '2026-06-10', category: 'Ausflug', region: 'oberoesterreich', bestSeason: 'Mai–Oktober',
     highlights: ['5fingers-Aussichtsplattform', 'Dachstein-Rieseneishöhle', 'Welterbeblick über Hallstatt'],
     content: `
-Vom Salzkammergut bringt dich die Seilbahn ab Obertraun hinauf zum **Krippenstein** – Hochgebirge zum Anfassen.
+Vom Salzkammergut bringt dich die Seilbahn ab Obertraun hinauf zum **Krippenstein** – Hochgebirge zum Anfassen, ganz ohne Aufstieg.
 
-## Aussicht & Höhlen
-Die **5fingers**-Plattform ragt frei über die Felswand mit Blick auf den Hallstätter See. Auf dem Weg liegen die **Rieseneishöhle** und die Mammuthöhle.
+## Aussicht: die 5fingers
+Die **5fingers**-Plattform ist das Wahrzeichen: Fünf stählerne Stege ragen frei über die Felswand hinaus, jeder anders gestaltet – einer mit Glasboden, einer ganz ohne Geländer am Ende. Darunter fällt die Wand mehrere hundert Meter ab, davor liegt der **Hallstätter See**. Der Weg von der Bergstation dorthin ist kurz und einfach, aber schwindelfrei sollte man sein.
 
-## Gut zu wissen
-Oben ist es deutlich kühler als im Tal – warme Kleidung und feste Schuhe mitnehmen. Bei Nebel lohnt die Auffahrt kaum, vorher Wetter prüfen.
+## Die Höhlen
+Auf halber Höhe liegen die **Dachstein-Rieseneishöhle** mit ihren Eisformationen und die **Mammuthöhle** mit gewaltigen Gangquerschnitten. Beide sind nur mit Führung zugänglich und ganzjährig kalt – in der Eishöhle liegt die Temperatur um den Gefrierpunkt. Warme Jacke ist Pflicht, nicht Empfehlung.
+
+## Oben unterwegs
+Vom Krippenstein führen Wege über das karstige Hochplateau, etwa zum **Heilbronner Kreuz** oder in Richtung Welterbeblick. Die Landschaft ist schroff und weglos wirkend – markierte Wege sollte man nicht verlassen, im Karst verliert man schnell die Orientierung.
+
+## Beste Reisezeit
+Die Sommersaison der Bahn läuft etwa von **Mai bis Oktober**, die Höhlen haben eigene, kürzere Saisonzeiten. Im Winter ist der Krippenstein ein Freeride-Gebiet. Betriebszeiten, Revisionspausen und Höhlen-Führungszeiten unbedingt vorab prüfen – die Bahn fährt nicht durchgehend das ganze Jahr.
 
 ## Praktische Infos
-- Mehrstufige Seilbahn ab Obertraun
-- Kombitickets Bahn + Höhlen
-- Familienfreundlich, auch ohne lange Wanderung
+- Mehrstufige Seilbahn ab Obertraun, gut mit Bahn und Bus erreichbar
+- Kombitickets für Bahn und Höhlen sind üblich – Varianten vorab vergleichen
+- Für Bahn + eine Höhle + 5fingers realistisch einen halben bis ganzen Tag einplanen
+- Oben ist es deutlich kühler und windiger als im Tal – warme Kleidung und feste Schuhe
+- Bei Nebel lohnt die Auffahrt kaum: Webcams und Bergwetter vorher checken
+- Gut mit einem Hallstatt-Besuch zu kombinieren, aber nicht beides in wenigen Stunden
     `,
     affiliateLinks: [
       { label: 'Hotels in Hallstatt/Obertraun – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Obertraun' },
@@ -4892,18 +4909,26 @@ Oben ist es deutlich kühler als im Tal – warme Kleidung und feste Schuhe mitn
     date: '2026-06-09', category: 'Ausflug', region: 'oberoesterreich', bestSeason: 'Ganzjährig',
     highlights: ['Ars Electronica Center', 'Pöstlingbergbahn mit Stadtblick', 'Lebendige Donau-Promenade'],
     content: `
-**Linz** an der Donau hat sich von der Industriestadt zur UNESCO-City-of-Media-Arts gewandelt – modern und überraschend lebendig.
+**Linz** an der Donau hat sich von der Industriestadt zur UNESCO-City-of-Media-Arts gewandelt – modern und überraschend lebendig. Wer die Stadt nur vom Vorbeifahren auf der Westautobahn kennt, unterschätzt sie gründlich.
 
 ## Kunst & Donau
-Das **Ars Electronica Center** und das Kunstmuseum **Lentos** liegen direkt am Fluss; abends leuchten die Fassaden. Der große **Hauptplatz** bildet das Herz der Altstadt.
+Das **Ars Electronica Center** – ein Museum für digitale Kunst, Robotik und Zukunftstechnologie – und das Kunstmuseum **Lentos** stehen sich an den beiden Donauufern gegenüber; beide Fassaden sind bei Dunkelheit farbig beleuchtet und prägen das Stadtbild am Abend. Dazu kommt das **Musiktheater** und das jährliche Ars-Electronica-Festival, das die Stadt für einige Tage in ein Labor verwandelt.
+
+## Altstadt & Hauptplatz
+Der **Hauptplatz** gehört zu den größten geschlossenen Plätzen Europas und bildet mit der barocken Dreifaltigkeitssäule das Herz der Altstadt. Ringsum liegen Gassen mit Lokalen, dazu der **Mariendom** – gemessen an der Fassungskapazität die größte Kirche Österreichs. Die **Landstraße** ist die Einkaufsachse.
 
 ## Pöstlingberg
-Eine der steilsten Adhäsionsbahnen Europas bringt dich auf den **Pöstlingberg** mit Wallfahrtskirche, Grottenbahn und weitem Blick über Stadt und Donau.
+Eine der steilsten Adhäsionsbahnen Europas – also eine Bahn ohne Zahnstange – bringt dich vom Hauptplatz auf den **Pöstlingberg** mit Wallfahrtskirche, weitem Blick über Stadt und Donau und der **Grottenbahn**, einer nostalgischen Zwergen- und Märchenwelt, die bei Kindern zuverlässig funktioniert.
+
+## Beste Reisezeit
+Ganzjährig: Museen, Dom und Grottenbahn funktionieren bei jedem Wetter, was Linz zu einem der besten **Schlechtwetter-Ziele** Oberösterreichs macht. Im Sommer belebt sich die Donaupromenade, im Advent gibt es Märkte am Hauptplatz und am Volksgarten. Öffnungszeiten der Grottenbahn sind saisonal – vorab prüfen.
 
 ## Praktische Infos
-- Gut zu Fuß und mit der Tram erkundbar
-- Donau-Radweg führt mitten durch
-- Ideal als Stopp auf der Fahrt ins Salzkammergut
+- Gut zu Fuß und mit der Straßenbahn erkundbar, Hauptbahnhof zentral
+- Der **Donau-Radweg** führt mitten durch die Stadt – idealer Etappenort
+- Ideal als Stopp auf der Fahrt ins Salzkammergut oder in die Wachau
+- Für Ars Electronica und Lentos zusammen einen halben Tag einplanen
+- Museums-Kombitickets prüfen, wenn mehreres geplant ist
     `,
     affiliateLinks: [
       { label: 'Hotels in Linz – booking.com', url: 'https://www.booking.com/city/at/linz.de.html' },
@@ -4991,18 +5016,26 @@ Das Stift ist ganzjährig zugänglich. Zur Marillenblüte im Frühling oder zur 
     startPoint: { name: 'Parkplatz Zahnradbahn Puchberg', parking: 'beim Bahnhof Puchberg am Schneeberg', arrival: 'zur ersten Zahnradbahn', note: 'Salamander-Bahn in der Saison vorab reservieren.' },
     highlights: ['2.076 m – höchster Berg NÖs', 'Salamander-Zahnradbahn', 'Weiter Blick bis Wien'],
     content: `
-Der **Schneeberg** (2.076 m) ist der höchste Gipfel Niederösterreichs und an klaren Tagen von Wien aus zu sehen.
+Der **Schneeberg** (2.076 m) ist der höchste Gipfel Niederösterreichs und an klaren Tagen von Wien aus zu sehen. Er ist der östlichste Zweitausender der Alpen – wer hier oben nach Osten blickt, sieht die Berge im Flachland enden.
 
-## Hinauf
-Die historische **Salamander-Zahnradbahn** bringt dich von Puchberg bequem in Richtung Gipfelregion. Von der Bergstation führen Wege zum **Klosterwappen** und zur Fischerhütte.
+## Hinauf mit der Salamander
+Die historische **Zahnradbahn** ab Puchberg fährt seit dem späten 19. Jahrhundert auf den Berg; die modernen Triebwagen tragen wegen ihrer Lackierung den Spitznamen **„Salamander"**. An einzelnen Terminen sind auch nostalgische Dampfzüge im Einsatz. Die Fahrt endet nicht am Gipfel, sondern bei der Bergstation Hochschneeberg – von dort geht es zu Fuß weiter.
 
-## Oben
-Das weite, fast baumlose Hochplateau bietet alpine Stimmung und Fernblick – aber auch raschen Wetterwechsel.
+## Oben am Plateau
+Das weite, fast baumlose Hochplateau bietet alpine Stimmung und Fernblick über das Wiener Becken bis nach Ungarn. Von der Bergstation führen Wege zum **Klosterwappen**, dem höchsten Punkt, und zur **Fischerhütte** knapp darunter – beides in ein bis zwei Stunden erreichbar, ohne Klettersteig-Charakter, aber im offenen Gelände. Bei der Bergstation steht außerdem die kleine Elisabethkirche.
+
+## Für Ambitionierte
+Zu Fuß führen anspruchsvolle Steige von unten herauf, etwa der **Fadensteig** oder der Schneebergweg – das sind lange Anstiege mit über 1.000 Höhenmetern, teils versichert, und ausschließlich für konditionsstarke, trittsichere Bergsteiger bei stabilem Wetter.
+
+## Beste Reisezeit
+Die Zahnradbahn verkehrt saisonal, meist von **Ende April bis Ende Oktober**. Der Hochsommer ist am verlässlichsten, September und Oktober bringen klare Fernsicht. Am Plateau kann auch im Sommer Schnee liegen und es weht fast immer Wind.
 
 ## Praktische Infos
-- Zahnradbahn ab Puchberg am Schneeberg
-- Feste Bergschuhe & warme Schicht nötig
-- Wetter prüfen – oben deutlich kühler
+- Zahnradbahn ab Puchberg am Schneeberg, Anreise per Bahn ab Wien gut möglich
+- In der Saison Plätze vorab reservieren – die Züge sind an schönen Tagen ausgebucht
+- **Letzte Talfahrt notieren**: Der Abstieg zu Fuß dauert Stunden und zieht sich
+- Feste Bergschuhe und warme Schicht sind auch im Hochsommer nötig
+- Wetterbericht prüfen – am Plateau schlägt das Wetter rasch um, Gewitter meist nachmittags
     `,
     affiliateLinks: [
       { label: 'Unterkünfte am Schneeberg – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Puchberg+am+Schneeberg' },
@@ -5017,18 +5050,26 @@ Das weite, fast baumlose Hochplateau bietet alpine Stimmung und Fernblick – ab
     date: '2026-06-07', category: 'Ausflug', region: 'niederoesterreich', bestSeason: 'Mai–Oktober',
     highlights: ['Österreichs älteste Seilbahn (1926)', 'Sanftes Hochplateau zum Wandern', 'Familienfreundlich'],
     content: `
-Die **Rax** ist neben dem Schneeberg der klassische Wiener Hausberg – freundlicher und einfacher zu erwandern.
+Die **Rax** ist neben dem Schneeberg der klassische Wiener Hausberg – freundlicher, grüner und deutlich einfacher zu erwandern als der schroffe Nachbar.
 
 ## Auffahrt
-Die **Raxseilbahn** (seit 1926, Österreichs älteste Personenseilbahn) bringt dich in wenigen Minuten aufs Plateau auf rund 1.500 m.
+Die **Raxseilbahn** ging 1926 in Betrieb und war die erste Personenseilbahn Österreichs. Sie bringt dich in wenigen Minuten von Hirschwang auf rund 1.500 m aufs Plateau – ein Höhenunterschied, für den man zu Fuß gut zwei Stunden bräuchte.
 
-## Oben
-Sanfte Wege führen zu Aussichtspunkten und urigen **Almhütten** – viele Touren sind auch für Familien gut machbar.
+## Oben am Plateau
+Anders als am Schneeberg ist die Rax oben grün und wellig: Latschenfelder, Wiesen und lichte Bereiche statt Karstwüste. Sanfte Wege führen zu Aussichtspunkten über das Höllental und zu urigen **Schutzhütten** – vom Ottohaus in wenigen Minuten bis zu längeren Plateaurunden ist alles dabei. Viele Touren sind mit Kindern gut machbar, weil die Höhenunterschiede oben gering bleiben.
+
+## Höllental & Wasserleitung
+Unterhalb der Rax verläuft das **Höllental**, durch das die **I. Wiener Hochquellenwasserleitung** führt – seit dem 19. Jahrhundert kommt Wiens Trinkwasser aus dieser Gegend. Der Talweg entlang der Schwarza ist ein schöner, flacher Spaziergang und eine gute Alternative, wenn die Bahn nicht fährt oder das Wetter oben nicht passt.
+
+## Beste Reisezeit
+**Mai bis Oktober** ist die Hauptsaison; die Bergwiesen blühen im Frühsommer, der Herbst bringt klare Sicht. Die Seilbahn hat saisonale Betriebszeiten und Revisionspausen – vor der Anreise prüfen. Im Winter ist das Plateau bei Schnee ein Ziel für Schneeschuh- und Tourengeher, dann gelten alpine Regeln.
 
 ## Praktische Infos
-- Talstation bei Hirschwang/Reichenau
-- Plateau-Runden für Einsteiger geeignet
-- Festes Schuhwerk, Bergwetter beachten
+- Talstation bei Hirschwang/Reichenau an der Rax, ab Wien in gut einer Stunde erreichbar
+- Plateau-Runden sind für Einsteiger und Familien geeignet, festes Schuhwerk trotzdem nötig
+- Letzte Talfahrt beachten – der Abstieg zu Fuß dauert deutlich länger als gedacht
+- Am Plateau gibt es kaum Wasserstellen, ausreichend mitnehmen
+- Bergwetter beachten: Nachmittags-Gewitter sind im Sommer häufig
     `,
     affiliateLinks: [
       { label: 'Unterkünfte Rax-Schneeberg – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Reichenau+an+der+Rax' },
@@ -5042,18 +5083,26 @@ Sanfte Wege führen zu Aussichtspunkten und urigen **Almhütten** – viele Tour
     date: '2026-06-07', category: 'Baden', region: 'niederoesterreich', bestSeason: 'Juni–September',
     highlights: ['Wärmster Gebirgssee NÖs', 'Glasklares Wasser', 'Ruhiger Geheimtipp'],
     content: `
-Der **Lunzer See** liegt eingebettet in die Ybbstaler Alpen und ist der einzige natürliche Gebirgssee Niederösterreichs – und erstaunlich warm.
+Der **Lunzer See** liegt eingebettet in die Ybbstaler Alpen und gilt als der einzige größere natürliche Gebirgssee Niederösterreichs – und als erstaunlich warm für seine Lage.
+
+## Warum er wärmer ist
+Der See ist vergleichsweise flach und wird von den umliegenden Hängen geschützt; dadurch erwärmt er sich im Sommer spürbar besser als tiefe Alpenseen. Das macht ihn zu einer der wenigen Adressen in Niederösterreich, wo Bergsee-Kulisse und angenehmes Badewasser zusammenkommen. Verlässliche Gradzahlen gibt es nicht – die aktuelle Wassertemperatur meldet das Strandbad in der Saison.
 
 ## Baden
-Das **Strandbad** mit Liegewiese und Bootsverleih liegt direkt am klaren Wasser; ringsum laden Uferwege zu Spaziergängen.
+Das **Strandbad** mit Liegewiese und Bootsverleih liegt direkt am klaren Wasser; ringsum laden Uferwege zu Spaziergängen. Der Rundweg um den See ist flach, kurz und auch mit Kindern problemlos machbar – eine gute Kombination aus Baden und Bewegung.
 
-## Drumherum
-Das Wildnisgebiet Dürrenstein-Lassingtal mit Urwald liegt in der Nähe – Natur pur abseits der großen Touristenströme.
+## Wildnisgebiet Dürrenstein-Lassingtal
+Ganz in der Nähe liegt eines der letzten **Urwaldgebiete Mitteleuropas**, seit 2017 UNESCO-Weltnaturerbe. Der Kernbereich – der Rothwald – ist streng geschützt und nur im Rahmen geführter Exkursionen mit begrenzter Teilnehmerzahl zugänglich; Anmeldung ist erforderlich und Plätze sind rar. Wer spontan Natur will, findet in den umgebenden Tälern trotzdem reichlich Wald und Ruhe.
+
+## Beste Reisezeit
+Badesaison ist etwa **Juni bis September**, mit dem Hochsommer als verlässlichster Zeit. Frühling und Herbst eignen sich für Wanderungen im Ybbstal; im Winter ist die Gegend ruhig und schneesicherer als das Wiener Umland.
 
 ## Praktische Infos
-- Anfahrt über das Ybbstal
-- Naturbelassen, eher ruhig
-- Gut mit einer leichten Wanderung kombinierbar
+- Anfahrt über das Ybbstal, mit Öffis aufwendiger als mit dem Auto – Verbindungen vorab prüfen
+- Naturbelassen und eher ruhig, kein Trubel-Badeort – genau das ist der Reiz
+- Strandbad kostenpflichtig, Öffnungszeiten saisonal
+- Gut mit einer leichten Wanderung oder einer Ybbstal-Radrunde kombinierbar
+- An heißen Sommerwochenenden ist der kleine See gut besucht: früh kommen
     `,
     affiliateLinks: [
       { label: 'Unterkünfte am Lunzer See – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Lunz+am+See' },
