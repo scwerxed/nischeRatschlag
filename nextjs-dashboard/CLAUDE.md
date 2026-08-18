@@ -54,7 +54,7 @@ All outbound partner links route through our own domain via [app/lib/affiliate.t
 | `/blog` | Server Component | Grid of all blog posts |
 | `/blog/[slug]` | SSG | `generateStaticParams` from posts array; custom markdown renderer with `**bold**` and `---` support |
 | `/regionen/[bundesland]` | SSG | `generateStaticParams` from regionen array |
-| `/wochenendtrip` + `/wochenendtrip/[stadt]` | SSG | „Wochenendtrip ab Wien/Graz/Salzburg" – bündelt Posts nach Luftlinie zur Startstadt in Fahrzeit-Buckets (`app/lib/wochenendtrip.ts`, nutzt `post.startCoords`). Hub + Stadt-Seiten, `ItemList`+`BreadcrumbList`-JSON-LD |
+| `/wochenendtrip` + `/wochenendtrip/[stadt]` | SSG | „Wochenendtrip ab Wien/Graz/Salzburg/Linz/Innsbruck/Klagenfurt" – bündelt Posts nach Luftlinie zur Startstadt in Fahrzeit-Buckets (`app/lib/wochenendtrip.ts`, nutzt `post.startCoords`). Hub + Stadt-Seiten, `ItemList`+`BreadcrumbList`-JSON-LD |
 | `/wandern-baden` | SSG | Sommer-Landingpage: kombiniert je Region Wanderungen mit dem nächstgelegenen Badeziel (≤25 km Luftlinie, `app/lib/wandern-baden.ts`) + Live-Seewetter-Widget. `ItemList`+`BreadcrumbList`-JSON-LD |
 | `/hitzefreundliche-ausfluege` | SSG | Kuratierte kühle Ziele für Hitzetage (Klammen/Höhlen, Höhenluft, Wasser) mit „Kühl-Faktor"-Notizen; Daten inline in der Page |
 | `/aussicht-ohne-anstrengung` | SSG | „Viel Aussicht, wenig Höhenmeter" in 4 Gruppen (Seilbahnen, Panoramastraßen, Aussichtstürme, kurze Wege) mit „Warum leicht"-Notiz je Ziel; Daten inline in der Page |

@@ -53,7 +53,9 @@ Jeder Lauf startet **ohne Gedächtnis** an frühere Sessions — dieses File + `
 - `/sonnenuntergang-spots` — Golden-Hour-Ziele inkl. Rückweg-Hinweis
 - `/zwei-ausfluege-an-einem-tag` — Vormittag+Nachmittag-Kombis mit Transferzeit
 - Weitere Monate in `app/lib/monatstipps.ts` (Oktober, November, Dezember, …)
-- Weitere Startstädte in `app/lib/wochenendtrip.ts` (Linz, Innsbruck, Klagenfurt, Villach)
+- Weitere Startstädte in `app/lib/wochenendtrip.ts` — Villach/Bregenz/St. Pölten bewusst **nicht**:
+  Villach & St. Pölten überschneiden sich zu stark mit Klagenfurt bzw. Wien (Duplicate Content),
+  Bregenz hat im 220-km-Radius nur ~25 Ziele. Erst nachziehen, wenn mehr Vorarlberg-Posts da sind.
 - Weitere Seen-Themen in `app/lib/seen.ts` (`seen-mit-wassersport`, `warme-seen`)
 - `/karte`: Filter-Chips (Unterkünfte/Gipfel/Wege) — Layer-Panel existiert bereits
 - Post-Feld `season` → „Saison-Ampel" (jetzt / geht / eher nicht) auf Karten & Artikeln
@@ -86,6 +88,7 @@ Jeder Lauf startet **ohne Gedächtnis** an frühere Sessions — dieses File + `
 
 <!-- Format: - YYYY-MM-DD — [Feature|Content] Kurzbeschreibung -->
 
+- 2026-08-18 — [Feature] Wochenendtrip-Startstädte Linz, Innsbruck & Klagenfurt ergänzt (3 neue SSG-Seiten). Kandidaten vorab per Haversine-Skript geprüft: Villach/St. Pölten wegen Überschneidung, Bregenz wegen zu weniger Ziele verworfen.
 - 2026-08-18 — [Content] Alle 5 Vorarlberg-Artikel ausgebaut (Bregenz, Festspiele, Bregenzerwald, Lünersee, Silvretta): neue Abschnitte zu Geschichte, Holzarchitektur/KäseStrasse, Natur-vs-Stausee und Beste Reisezeit.
 - 2026-08-18 — [Feature] `/aussicht-ohne-anstrengung`: 21 Ziele in 4 Gruppen (Seilbahnen, Panoramastraßen, Aussichtstürme, kurze Wege) — Zielgruppe Familien, Senioren, gemütliche Ausflügler.
 - 2026-08-18 — [Content] Alle 5 Wien-Artikel ausgebaut (Schönbrunn, Prater, Stephansdom, Alte Donau, Wienerwald): je 2–3 neue Abschnitte (Geschichte, Beste Reisezeit) und vertiefte Praxis-Infos. Wien war die dünnste Region.

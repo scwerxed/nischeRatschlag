@@ -25,6 +25,24 @@ export const TRIP_CITIES: Record<string, TripCity> = {
     geo: [47.8009, 13.0430],
     intro: 'Salzburg ist das Tor zum Salzkammergut: Wolfgangsee, Fuschlsee, Hallstatt und die Hohen Tauern sind schnell erreicht. Ausflüge und Kurztrips ab der Mozartstadt, sortiert nach Fahrzeit.',
   },
+  'ab-linz': {
+    slug: 'ab-linz',
+    name: 'Linz',
+    geo: [48.3069, 14.2858],
+    intro: 'Linz liegt günstig zwischen Salzkammergut, Mühlviertel und Wachau: Attersee, Traunsee und Hallstatt sind ebenso erreichbar wie die Donau flussabwärts. Die besten Ziele ab Linz, nach Fahrzeit gebündelt.',
+  },
+  'ab-innsbruck': {
+    slug: 'ab-innsbruck',
+    name: 'Innsbruck',
+    geo: [47.2692, 11.4041],
+    intro: 'Von Innsbruck aus liegen Zillertal, Ötztal, Achensee und der Wilde Kaiser vor der Haustür, dazu die Gletscher rundum und bei etwas längerer Fahrt Vorarlberg. Ausflüge ab Innsbruck, sortiert nach Fahrzeit.',
+  },
+  'ab-klagenfurt': {
+    slug: 'ab-klagenfurt',
+    name: 'Klagenfurt',
+    geo: [46.6247, 14.3050],
+    intro: 'Klagenfurt ist der ideale Ausgangspunkt für Kärntens Seen: Wörthersee, Faaker See und Ossiacher See sind Minuten entfernt, dazu Nockberge, Karawanken und die Südsteiermark. Die schönsten Ziele ab Klagenfurt nach Fahrzeit.',
+  },
 };
 
 export const TIME_BUCKETS = [

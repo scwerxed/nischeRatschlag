@@ -4,9 +4,9 @@ import { TRIP_CITIES, tripsFrom } from '@/app/lib/wochenendtrip';
 import { BASE, breadcrumbSchema } from '@/app/lib/seo';
 
 export const metadata: Metadata = {
-  title: 'Wochenendtrips in Österreich – Ausflüge ab Wien, Graz & Salzburg',
-  description: 'Kurztrips und Wochenendausflüge in Österreich, gebündelt nach Startstadt und Fahrzeit. Finde die schönsten Ziele ab Wien, Graz oder Salzburg – Seen, Berge und Sehenswürdigkeiten.',
-  keywords: ['Wochenendtrip Österreich', 'Ausflug ab Wien', 'Ausflug ab Graz', 'Ausflug ab Salzburg', 'Kurztrip Österreich', 'Tagesausflug Österreich'],
+  title: 'Wochenendtrips in Österreich – Ausflüge ab Wien, Graz, Salzburg, Linz, Innsbruck & Klagenfurt',
+  description: 'Kurztrips und Wochenendausflüge in Österreich, gebündelt nach Startstadt und Fahrzeit. Finde die schönsten Ziele ab Wien, Graz, Salzburg, Linz, Innsbruck oder Klagenfurt – Seen, Berge und Sehenswürdigkeiten.',
+  keywords: ['Wochenendtrip Österreich', 'Ausflug ab Wien', 'Ausflug ab Graz', 'Ausflug ab Salzburg', 'Ausflug ab Linz', 'Ausflug ab Innsbruck', 'Ausflug ab Klagenfurt', 'Kurztrip Österreich', 'Tagesausflug Österreich'],
   alternates: { canonical: '/wochenendtrip' },
 };
 
@@ -14,6 +14,9 @@ const CITY_ACCENT: Record<string, string> = {
   'ab-wien': 'from-red-400 to-rose-600',
   'ab-graz': 'from-green-500 to-emerald-700',
   'ab-salzburg': 'from-violet-400 to-purple-600',
+  'ab-linz': 'from-sky-400 to-blue-600',
+  'ab-innsbruck': 'from-amber-400 to-orange-600',
+  'ab-klagenfurt': 'from-teal-400 to-cyan-600',
 };
 
 export default function WochenendtripHub() {
