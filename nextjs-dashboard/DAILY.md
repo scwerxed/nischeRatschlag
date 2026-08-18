@@ -52,7 +52,9 @@ Jeder Lauf startet **ohne Gedächtnis** an frühere Sessions — dieses File + `
 - „Basislager"-Seiten: beste Ausgangsorte je Wanderregion (Affiliate-stark)
 - `/sonnenuntergang-spots` — Golden-Hour-Ziele inkl. Rückweg-Hinweis
 - `/zwei-ausfluege-an-einem-tag` — Vormittag+Nachmittag-Kombis mit Transferzeit
-- Weitere Monate in `app/lib/monatstipps.ts` (Oktober, November, Dezember, …)
+- Weitere Monate in `app/lib/monatstipps.ts` — **Jänner bis Juni fehlen noch** (Juli–Dez sind da).
+  Jänner/Februar: Ski, Eislaufen am Weißensee, Rodeln. März/April: Marillenblüte Wachau,
+  Narzissenfest Ausseerland, erste Klammen. Mai/Juni: Grüner See, Almrosenblüte, Badesaison-Start.
 - Weitere Startstädte in `app/lib/wochenendtrip.ts` — Villach/Bregenz/St. Pölten bewusst **nicht**:
   Villach & St. Pölten überschneiden sich zu stark mit Klagenfurt bzw. Wien (Duplicate Content),
   Bregenz hat im 220-km-Radius nur ~25 Ziele. Erst nachziehen, wenn mehr Vorarlberg-Posts da sind.
@@ -88,6 +90,7 @@ Jeder Lauf startet **ohne Gedächtnis** an frühere Sessions — dieses File + `
 
 <!-- Format: - YYYY-MM-DD — [Feature|Content] Kurzbeschreibung -->
 
+- 2026-08-18 — [Feature] Monatsseiten Oktober, November & Dezember ergänzt (je 10 Picks, 3 neue SSG-Seiten). Bewusst jetzt gebaut, damit sie vor der jeweiligen Saison indexiert sind.
 - 2026-08-18 — [Content] 6 dünne NÖ-/OÖ-Artikel ausgebaut (Traunsee, Krippenstein, Linz, Schneeberg, Rax, Lunzer See). Damit sind alle vier dünnen Regionen (Wien, Vorarlberg, NÖ, OÖ) durch.
 - 2026-08-18 — [Feature] Wochenendtrip-Startstädte Linz, Innsbruck & Klagenfurt ergänzt (3 neue SSG-Seiten). Kandidaten vorab per Haversine-Skript geprüft: Villach/St. Pölten wegen Überschneidung, Bregenz wegen zu weniger Ziele verworfen.
 - 2026-08-18 — [Content] Alle 5 Vorarlberg-Artikel ausgebaut (Bregenz, Festspiele, Bregenzerwald, Lünersee, Silvretta): neue Abschnitte zu Geschichte, Holzarchitektur/KäseStrasse, Natur-vs-Stausee und Beste Reisezeit.

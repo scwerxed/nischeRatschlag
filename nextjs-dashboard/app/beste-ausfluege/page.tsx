@@ -5,7 +5,7 @@ import { BASE, breadcrumbSchema } from '@/app/lib/seo';
 
 export const metadata: Metadata = {
   title: 'Beste Ausflüge nach Monat – Österreich im Jahresverlauf',
-  description: 'Welcher Ausflug passt zu welchem Monat? Kuratierte Österreich-Tipps für Juli, August und September – mit Begründung, warum sich jedes Ziel genau jetzt lohnt.',
+  description: 'Welcher Ausflug passt zu welchem Monat? Kuratierte Österreich-Tipps von Juli bis Dezember – mit Begründung, warum sich jedes Ziel genau jetzt lohnt.',
   alternates: { canonical: '/beste-ausfluege' },
 };
 
