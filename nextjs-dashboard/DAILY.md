@@ -71,11 +71,24 @@ Jeder Lauf startet **ohne Gedächtnis** an frühere Sessions — dieses File + `
 - „Route in Google Maps / Komoot öffnen"-Buttons bei Touren-Artikeln
 - `/blog`: Pagination bzw. „Mehr laden" (aktuell werden alle ~155 Karten gerendert)
 - Technisch: `any`-Typen in den Leaflet-Dateien durch `@types/leaflet` ersetzen
+- **Landingpage-Hub** — es gibt inzwischen 10+ Themenseiten (Regen, Hitze, Aussicht, Dauer,
+  Bahnhof, Feierabend, Badeplätze, Wandern+Baden, Monate, Wochenendtrip, Seen-Themen).
+  Der Footer wird lang; eine eigene Übersichtsseite `/ausflugsplaner` oder ein Block auf der
+  Startseite würde sie besser auffindbar machen als die reine Footer-Liste.
+- Themenseiten aus Artikeln heraus verlinken: aktuell zeigen die Landingpages **auf** die
+  Artikel, aber kaum ein Artikel zeigt zurück auf eine passende Themenseite.
 
 ### Content
-- **Neue Artikel** (Slug vorher prüfen!) — dünn besetzte Regionen zuerst:
-  Wien, Vorarlberg, Niederösterreich, Oberösterreich
-- **Dünne Artikel ausbauen** — v. a. die zuletzt ergänzten Regional-Artikel (~150 Wörter).
+- **Neue Artikel** (Slug vorher prüfen!) — dünn besetzte Regionen zuerst.
+  Stand 2026-08-18 je Region: Kärnten 44, Burgenland 26, Steiermark 26, Salzburg 19, Tirol 19,
+  **Oberösterreich 6, Wien 5, Niederösterreich 5, Vorarlberg 5**. Die letzten vier brauchen
+  neue Artikel, nicht mehr nur längere — der Ausbau der bestehenden ist durch.
+  Ideen: Wien (Donauinsel, Lainzer Tiergarten, Kahlenberg einzeln, Museumsquartier),
+  Vorarlberg (Montafon, Arlberg-Sommer, Rappenlochschlucht, Dornbirn/Karren),
+  NÖ (Waldviertel-Stauseen, Ötscher-Tormäuer, Grafenegg, Semmeringbahn),
+  OÖ (Mondsee, Wolfgangsee-Ostufer, Nationalpark Kalkalpen, Steyr-Altstadt).
+- **Dünne Artikel ausbauen** — der Durchgang durch Wien, Vorarlberg, NÖ und OÖ ist
+  abgeschlossen (2026-08-18). Als Nächstes die kürzeren Artikel in Burgenland und Tirol prüfen.
   Zusätzliche `##`-Abschnitte mit echtem Inhalt (Geschichte, Aktivitäten, beste Zeit,
   Anreise), keine Floskeln, kein Duplicate Content.
 - `startCoords` / `startPoint` für weitere Orts-Artikel nachziehen
