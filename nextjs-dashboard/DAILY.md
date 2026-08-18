@@ -80,7 +80,6 @@ Jeder Lauf startet **ohne Gedächtnis** an frühere Sessions — dieses File + `
 - `startCoords` / `startPoint` für weitere Orts-Artikel nachziehen
 - `planningMistakes` („Schlecht geplant, wenn …") für weitere Top-Artikel
 - `routeVariants` (Kurz/Lang) für weitere Touren-Artikel
-- FAQs je Region in `app/lib/faqs.ts` erweitern
 - Weitere Badeplätze in `app/lib/badeplaetze.ts`
 - Weitere Unterkünfte in `app/lib/unterkuenfte.ts` (mehr Affiliate-Fläche)
 
@@ -90,6 +89,7 @@ Jeder Lauf startet **ohne Gedächtnis** an frühere Sessions — dieses File + `
 
 <!-- Format: - YYYY-MM-DD — [Feature|Content] Kurzbeschreibung -->
 
+- 2026-08-18 — [Content] Region-FAQs von 37 auf 73 verdoppelt (je 8–9 pro Bundesland). Neue Fragen zielen auf echte Suchintentionen: Aufenthaltsdauer, Schlechtwetter, Auto vs. Öffis, Hunde/Familien. Speist die FAQPage-Rich-Snippets.
 - 2026-08-18 — [Feature] Monatsseiten Oktober, November & Dezember ergänzt (je 10 Picks, 3 neue SSG-Seiten). Bewusst jetzt gebaut, damit sie vor der jeweiligen Saison indexiert sind.
 - 2026-08-18 — [Content] 6 dünne NÖ-/OÖ-Artikel ausgebaut (Traunsee, Krippenstein, Linz, Schneeberg, Rax, Lunzer See). Damit sind alle vier dünnen Regionen (Wien, Vorarlberg, NÖ, OÖ) durch.
 - 2026-08-18 — [Feature] Wochenendtrip-Startstädte Linz, Innsbruck & Klagenfurt ergänzt (3 neue SSG-Seiten). Kandidaten vorab per Haversine-Skript geprüft: Villach/St. Pölten wegen Überschneidung, Bregenz wegen zu weniger Ziele verworfen.
