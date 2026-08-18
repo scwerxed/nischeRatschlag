@@ -4600,16 +4600,27 @@ Rund um die Therme gibt es Hotels und Apartments, viele mit Thermeneintritt im P
     content: `
 Schloss **Schönbrunn** war die Sommerresidenz der Habsburger und ist heute Wiens Besuchermagnet Nummer eins – UNESCO-Welterbe samt weitläufigem Barockgarten.
 
-## Schloss & Park
-Die Prunkräume zeigt man mit Audioguide (Imperial- oder Grand Tour). Der **Schlosspark** mit Gloriette, Brunnen und Irrgarten ist frei zugänglich – allein dafür lohnt der Besuch.
+## Geschichte
+Die Anlage geht auf ein kaiserliches Jagdschloss zurück; ihre heutige Gestalt erhielt sie im 18. Jahrhundert unter **Maria Theresia**, die Schönbrunn zur Sommerresidenz des Hofes ausbaute. Bis zum Ende der Monarchie 1918 war es Bühne der Habsburger – hier residierte Kaiser Franz Joseph, hier fand 1961 das Gipfeltreffen zwischen Kennedy und Chruschtschow statt. Seit 1996 steht Schloss samt Garten auf der **UNESCO-Welterbeliste**.
+
+## Schloss & Prunkräume
+Von den rund 1.400 Räumen sind einige Dutzend zu besichtigen, wahlweise als kürzere **Imperial Tour** oder als längere **Grand Tour** mit Audioguide. Highlights sind das Arbeitszimmer von Franz Joseph, die Spiegelsäle und die aufwendig gestalteten Chinesischen Kabinette.
+
+## Der Schlosspark
+Der **Schlosspark** ist frei zugänglich und allein den Besuch wert: die streng geschnittenen Alleen, der Neptunbrunnen und der Anstieg zur **Gloriette** auf dem Hügel, von der aus man über den Garten hinweg auf Schloss und Stadt blickt. Kostenpflichtig sind einzelne Bereiche wie Irrgarten, Kronprinzengarten und Orangerie.
 
 ## Für Familien
-Im Areal liegt der **Tiergarten Schönbrunn**, der älteste noch bestehende Zoo der Welt, dazu ein Kindermuseum und das Palmenhaus.
+Im Areal liegt der **Tiergarten Schönbrunn**, der älteste noch bestehende Zoo der Welt (gegründet 1752), dazu ein **Kindermuseum** im Schloss, das historische **Palmenhaus** und das Wüstenhaus. Für Familien ist das leicht ein ganzer Tag.
+
+## Beste Reisezeit
+Ganzjährig lohnend: Der Garten zeigt sich im Frühling und Frühsommer von seiner schönsten Seite, im Herbst sorgt das Laub für Farbe, und im Advent gibt es vor dem Schloss einen Weihnachtsmarkt. Die Prunkräume funktionieren ohnehin bei jedem Wetter – Schönbrunn ist damit auch ein guter Regentag-Ausflug.
 
 ## Praktische Infos
-- Mit der U4 (Station Schönbrunn) direkt erreichbar
-- Schlosstickets vorab online buchen – oft lange Schlangen
-- Park früh morgens am ruhigsten
+- Mit der U4 (Station Schönbrunn) direkt erreichbar, dazu Straßenbahn- und Buslinien
+- Schlosstickets vorab online buchen – vor Ort bilden sich oft lange Schlangen, Eintritte sind zeitfensterbasiert
+- Der Park ist früh morgens am ruhigsten; tagsüber ist mit viel Betrieb zu rechnen
+- Kombitickets für Schloss, Zoo und weitere Attraktionen prüfen, wenn mehreres geplant ist
+- Für Schloss + Zoo + Park realistisch einen ganzen Tag einplanen
     `,
     affiliateLinks: [
       { label: 'Hotels in Wien – booking.com', url: 'https://www.booking.com/city/at/vienna.de.html' },
@@ -4623,18 +4634,26 @@ Im Areal liegt der **Tiergarten Schönbrunn**, der älteste noch bestehende Zoo 
     date: '2026-06-13', category: 'Ausflug', region: 'wien', bestSeason: 'März–Oktober',
     highlights: ['Wahrzeichen Riesenrad', 'Eintritt frei – nur einzelne Fahrgeschäfte kosten', 'Grüne Hauptallee zum Radeln'],
     content: `
-Der **Wiener Prater** ist zweierlei: der bunte **Wurstelprater** mit Fahrgeschäften und das große grüne Auenland dahinter.
+Der **Wiener Prater** ist zweierlei: der bunte **Wurstelprater** mit Fahrgeschäften und das große grüne Auenland dahinter. Viele Besucher kennen nur den Rummel – dabei ist der Grüne Prater das eigentlich Besondere.
+
+## Geschichte
+Das Gebiet war jahrhundertelang kaiserliches Jagdrevier. **1766 gab Joseph II. den Prater für die Öffentlichkeit frei** – ein für die Zeit bemerkenswerter Schritt, der bis heute nachwirkt: Der Prater gehört allen. Das **Riesenrad** entstand 1897 anlässlich des 50-jährigen Thronjubiläums von Kaiser Franz Joseph und überlebte als eines der wenigen Bauwerke die Zerstörungen des Zweiten Weltkriegs.
 
 ## Wurstelprater
-Der Vergnügungspark ist frei zugänglich – gezahlt wird pro Attraktion. Das **Riesenrad** von 1897 ist das Wahrzeichen und bietet einen schönen Blick über die Stadt.
+Der Vergnügungspark ist frei zugänglich – gezahlt wird pro Attraktion, es gibt also keinen Eintritt und keinen Zwang zum Pauschalticket. Neben dem rund 65 Meter hohen **Riesenrad** mit seinen hölzernen Waggons reicht das Angebot von nostalgischen Ringelspielen und Geisterbahnen bis zu modernen Hochfahrgeschäften. Das Nebeneinander von Jahrmarkt-Nostalgie und Adrenalin macht den Reiz aus.
 
 ## Grüner Prater
-Die kilometerlange **Hauptallee** ist ein Paradies zum Radeln, Joggen und Spazieren – mitten in der Stadt, aber erstaunlich ruhig.
+Die schnurgerade **Hauptallee** zieht sich mehrere Kilometer durch alten Baumbestand – ein Paradies zum Radeln, Joggen und Spazieren, autofrei und mitten in der Stadt, aber erstaunlich ruhig. Abseits davon liegen weite Wiesen, Auwald und stille Nebenwege. Die schmalspurige **Liliputbahn** verbindet den Rummel mit dem Ernst-Happel-Stadion und ist bei Kindern ein Fixpunkt.
+
+## Beste Reisezeit
+Der Grüne Prater funktioniert ganzjährig – im Herbst mit Laubfärbung besonders schön. Die Fahrgeschäfte laufen schwerpunktmäßig von Frühling bis Herbst; im Winter ist der Wurstelprater deutlich ruhiger, einzelne Betriebe und das Riesenrad haben aber auch dann geöffnet. Öffnungszeiten der einzelnen Attraktionen am besten vorab prüfen.
 
 ## Praktische Infos
-- U1/U2 Station Praterstern
-- Fahrgeschäfte v. a. von Frühling bis Herbst in Betrieb
-- Gut mit einem Donauinsel-Besuch kombinierbar
+- U1/U2 Station Praterstern, dazu Bahnhof Wien Praterstern – sehr gut mit Öffis erreichbar
+- Eintritt frei, gezahlt wird nur pro Fahrgeschäft
+- Fürs Riesenrad in der Hauptsaison mit Wartezeit rechnen
+- Gut mit einem Besuch der Donauinsel oder der Alten Donau kombinierbar
+- Räder lassen sich in der Stadt leihen – die Hauptallee ist ideal dafür
     `,
     affiliateLinks: [
       { label: 'Hotels in Wien – booking.com', url: 'https://www.booking.com/city/at/vienna.de.html' },
@@ -4648,18 +4667,26 @@ Die kilometerlange **Hauptallee** ist ein Paradies zum Radeln, Joggen und Spazie
     date: '2026-06-13', category: 'Ausflug', region: 'wien', bestSeason: 'Ganzjährig',
     highlights: ['Wiens Wahrzeichen', 'UNESCO-Altstadt zu Fuß', 'Türme & Katakomben besichtigbar'],
     content: `
-Der **Stephansdom** („Steffl") steht mitten in der Wiener Altstadt und ist der ideale Ausgangspunkt für einen Stadtbummel.
+Der **Stephansdom** („Steffl") steht mitten in der Wiener Altstadt und ist der ideale Ausgangspunkt für einen Stadtbummel. Wien lässt sich rund um den Dom fast vollständig zu Fuß erschließen – das macht die Stadt für einen Tagesbesuch so dankbar.
 
 ## Der Dom
-Das bunte Ziegeldach ist berühmt. Man kann den **Südturm** über 343 Stufen erklimmen oder mit dem Lift zum Nordturm mit der Pummerin-Glocke; unten warten die Katakomben.
+Die gotische Kathedrale wuchs über Jahrhunderte; ihr **buntes Ziegeldach** mit dem Doppeladler-Muster ist eines der bekanntesten Motive Wiens. Der **Südturm** ist mit rund 136 Metern der höhere und lässt sich über 343 Stufen zu Fuß erklimmen – die Aussichtskammer belohnt mit Blick über die Dächer. Bequemer geht es per Lift im Nordturm hinauf zur **Pummerin**, einer der größten Glocken Europas, die traditionell zum Jahreswechsel läutet. Unter der Kirche liegen die **Katakomben** mit Gruftanlagen der Habsburger und älteren Gräberkammern.
 
 ## Rund um den Dom
-Vom Stephansplatz führen **Graben** und **Kohlmarkt** zu Hofburg und Kärntner Straße – die Wiener Innenstadt ist UNESCO-Welterbe und kompakt zu Fuß erkundbar.
+Vom Stephansplatz führen **Graben** und **Kohlmarkt** zu Hofburg und Michaelerplatz, in die Gegenrichtung geht es über die **Kärntner Straße** zur Staatsoper. Die Wiener Innenstadt ist UNESCO-Welterbe und kompakt: Pestsäule, Peterskirche, die Gassen rund um den Hohen Markt und die Ankeruhr liegen alle in wenigen Minuten Fußweg.
+
+## Kaffeehaus & Pause
+Zum Wien-Besuch gehört das **Kaffeehaus** – die traditionsreichen Häuser rund um die Innenstadt sind selbst Sehenswürdigkeit. Wer nicht Schlange stehen will, weicht auf die weniger prominenten Adressen in den Seitengassen aus; die Qualität ist dort oft nicht schlechter, die Stimmung entspannter.
+
+## Beste Reisezeit
+Ganzjährig. Frühling und Herbst sind für Stadtspaziergänge am angenehmsten; im Advent verwandeln die Christkindlmärkte die Innenstadt, dafür ist es entsprechend voll. Im Hochsommer kann es in den Gassen heiß werden – dann früh starten oder den Nachmittag in Museen verlegen.
 
 ## Praktische Infos
-- U1/U3 Station Stephansplatz
-- Dom-Besuch frei, Türme/Katakomben kostenpflichtig
-- Kaffeehaus-Pause nicht vergessen
+- U1/U3 Station Stephansplatz, direkt unter dem Dom
+- Der Dombesuch im hinteren Bereich ist frei; Türme, Katakomben und geführte Bereiche sind kostenpflichtig
+- Zu Gottesdienstzeiten ist die Besichtigung eingeschränkt – Zeiten vorab prüfen
+- Angemessene Kleidung wird erwartet, es ist eine aktive Kirche
+- Der Dom ist auch bei Schlechtwetter ein guter Programmpunkt
     `,
     affiliateLinks: [
       { label: 'Hotels in Wien – booking.com', url: 'https://www.booking.com/city/at/vienna.de.html' },
@@ -4673,18 +4700,26 @@ Vom Stephansplatz führen **Graben** und **Kohlmarkt** zu Hofburg und Kärntner 
     date: '2026-06-12', category: 'Baden', region: 'wien', bestSeason: 'Mai–September',
     highlights: ['Baden ohne Strömung, ideal für Familien', 'Mit der U1 erreichbar', 'Boote & SUP zum Ausleihen'],
     content: `
-Die **Alte Donau** ist ein vom Hauptstrom abgetrennter, stehender Altarm – und Wiens beliebtestes Stadtgewässer zum Baden.
+Die **Alte Donau** ist ein vom Hauptstrom abgetrennter, stehender Altarm – und Wiens beliebtestes Stadtgewässer zum Baden. Dass eine Millionenstadt ein derart sauberes Badegewässer mitten im Stadtgebiet hat, ist europaweit eine Seltenheit.
+
+## Wie sie entstand
+Bei der großen **Donauregulierung in den 1870er-Jahren** wurde der mäandernde Fluss begradigt und ein Altarm vom Hauptstrom abgeschnitten. Übrig blieb ein stehendes Gewässer ohne Strömung, das sich zum Naherholungsgebiet entwickelte – heute gesäumt von Bädern, Bootshütten und Schrebergärten.
 
 ## Baden & Wassersport
-Das Wasser ist ruhig (keine Strömung) und gut für Familien. Es gibt mehrere **Strandbäder** (z. B. Gänsehäufel) sowie kostenlose Einstiege. Tret-, Ruder- und Elektroboote sowie SUP kann man ausleihen.
+Das Wasser ist ruhig und ohne Strömung, damit auch für Familien mit Kindern entspannt. Es gibt mehrere **Strandbäder** – das bekannteste ist das **Gänsehäufel** auf einer Insel, dazu kommen Angelibad und Arbeiterstrandbad – sowie frei zugängliche Uferstellen und Einstiege. Tret-, Ruder- und Elektroboote lassen sich ebenso ausleihen wie **SUP-Boards**; Segeln und Surfen haben an der Alten Donau ebenfalls Tradition.
 
 ## Drumherum
-Promenaden, Strandcafés und Heurige liegen rund ums Ufer. Die **Donauinsel** mit langen Gratis-Badezonen ist gleich nebenan.
+Rund ums Ufer liegen Promenaden, Strandcafés und Heurige – eine Runde ums Gewässer lässt sich gut zu Fuß oder mit dem Rad machen. Die **Donauinsel** mit ihren kilometerlangen Gratis-Badezonen ist gleich nebenan, ebenso die Uferbereiche der Neuen Donau.
+
+## Beste Reisezeit
+Badesaison ist etwa von Mai bis September; im Hochsommer erwärmt sich das flache, stehende Wasser angenehm. Außerhalb der Saison bleibt die Alte Donau ein schönes Spazier- und Radziel, im Winter friert sie in kalten Jahren zu – Eislaufen ist dann aber nur bei offizieller Freigabe erlaubt.
 
 ## Praktische Infos
-- U1 Alte Donau oder Kaisermühlen
-- Strandbäder kostenpflichtig, viele Uferzonen gratis
-- Wochenende im Hochsommer früh kommen
+- U1 Alte Donau oder Kaisermühlen – Wiens einziger Badesee mit direktem U-Bahn-Anschluss
+- Strandbäder sind kostenpflichtig, viele Uferzonen dagegen gratis zugänglich
+- An heißen Wochenenden früh kommen, die beliebten Bäder füllen sich schnell
+- Wasserqualität wird laufend überwacht; aktuelle Infos der Stadt Wien vorab prüfen
+- Ideal als Abkühlung, wenn ein Stadtbesuch in eine Hitzewelle fällt
     `,
     affiliateLinks: [
       { label: 'Hotels in Wien – booking.com', url: 'https://www.booking.com/city/at/vienna.de.html' },
@@ -4699,18 +4734,26 @@ Promenaden, Strandcafés und Heurige liegen rund ums Ufer. Die **Donauinsel** mi
     date: '2026-06-12', category: 'Wandern', region: 'wien', difficulty: 'leicht', bestSeason: 'April–Oktober',
     highlights: ['Direkt mit Öffis erreichbar', 'Blick über Wien vom Kahlenberg', 'Einkehr beim Heurigen'],
     content: `
-Der **Wienerwald** ist das grüne Naherholungsgebiet der Hauptstadt – Buchenwälder und Wiesen, die bis an die Stadtgrenze reichen.
+Der **Wienerwald** ist das grüne Naherholungsgebiet der Hauptstadt – Buchenwälder und Wiesen, die bis an die Stadtgrenze reichen. Er markiert den östlichsten Ausläufer der Alpen: Wer hier wandert, steht auf den letzten Bergen vor der Pannonischen Tiefebene.
+
+## Ein Biosphärenpark vor der Haustür
+Seit 2005 ist der Wienerwald von der UNESCO als **Biosphärenpark** anerkannt – eine Kulturlandschaft aus Wald, Wiesen und Weingärten, die geschützt und zugleich genutzt wird. Dass eine Großstadt ein derart ausgedehntes Waldgebiet direkt an der Grenze hat, verdankt Wien auch dem „Wienerwald-Retter" Josef Schöffel, der die Abholzung im 19. Jahrhundert verhinderte.
 
 ## Beliebte Touren
-Der Klassiker führt über **Kahlenberg** und **Leopoldsberg** mit Panoramablick über Wien und die Donau. Sanfte Wege machen viele Runden auch für Familien machbar.
+Der Klassiker führt über **Kahlenberg** (484 m) und **Leopoldsberg** (425 m) mit Panoramablick über Wien, die Donau und bis ins Marchfeld. Die Stadt hat außerdem nummerierte **Stadtwanderwege** ausgeschildert, die alle mit Öffis erreichbar sind und ins Grüne führen – ideal, wenn man ohne Auto unterwegs ist. Sanfte Wege und moderate Höhenunterschiede machen viele Runden auch für Familien machbar. Wer Tiere sehen will, geht in den **Lainzer Tiergarten** im Westen der Stadt, wo Wildschweine und Rotwild frei leben.
 
 ## Einkehr
-Am Fuß der Hänge in Grinzing und Nussdorf laden die **Heurigen** zu Jung­wein und Brettljause – der perfekte Abschluss.
+Am Fuß der Hänge in **Grinzing**, **Nussdorf** und Neustift laden die **Heurigen** zu Jungwein und Brettljause – der perfekte Abschluss einer Runde. Viele Betriebe haben wechselnde Öffnungszeiten („ausg'steckt is'"), das lässt sich vorab online prüfen. Auf den Höhen selbst gibt es Gasthäuser mit Aussichtsterrasse.
+
+## Beste Reisezeit
+April bis Oktober ist die Hauptzeit. Im **Herbst** ist der Wienerwald mit Laubfärbung und Weinlese am schönsten – dann haben auch die Heurigen Hochsaison. Im Frühling blühen die Wiesen, im Hochsommer spendet der Buchenwald angenehm Schatten. Winterwanderungen sind bei Schnee möglich, die Wege sind aber nicht durchgehend geräumt.
 
 ## Praktische Infos
-- Mit Bus/Bim bis Kahlenberg oder Grinzing
-- Festes Schuhwerk reicht, kein Hochgebirge
-- Im Herbst besonders schöne Laubfärbung
+- Mit Bus oder Straßenbahn bis Kahlenberg, Grinzing oder Nussdorf – Auto ist nicht nötig
+- Festes Schuhwerk reicht, es ist kein Hochgebirge; nach Regen sind Waldwege aber rutschig
+- Wasser mitnehmen, Quellen gibt es unterwegs kaum
+- Gut kombinierbar mit einem Heurigen-Abend als Ausklang
+- Am Wochenende sind die bekannten Aussichtspunkte gut besucht – unter der Woche deutlich ruhiger
     `,
     affiliateLinks: [
       { label: 'Hotels in Wien – booking.com', url: 'https://www.booking.com/city/at/vienna.de.html' },
