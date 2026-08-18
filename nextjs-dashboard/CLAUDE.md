@@ -60,7 +60,7 @@ All outbound partner links route through our own domain via [app/lib/affiliate.t
 | `/aussicht-ohne-anstrengung` | SSG | „Viel Aussicht, wenig Höhenmeter" in 4 Gruppen (Seilbahnen, Panoramastraßen, Aussichtstürme, kurze Wege) mit „Warum leicht"-Notiz je Ziel; Daten inline in der Page |
 | `/regentaugliche-ausfluege` | SSG | Schlechtwetter-Plan-B in 6 Gruppen (Thermen, Höhlen/Bergwerke, Burgen/Stifte, Familien-Erlebniswelten, Städte, Klammen bei Regen) mit „Bei Regen"-Notiz je Ziel; Daten inline in der Page |
 | `/beste-ausfluege` + `/beste-ausfluege/[monat]` | SSG | Monats-Seiten (Juli–Dezember) mit kuratierten Picks + „Warum jetzt?" (`app/lib/monatstipps.ts`) — Jänner–Juni dort ergänzen |
-| `/seen-vergleich/[thema]` | SSG | Seen-Entscheidungsseiten (ruhige-seen, familienseen, seen-mit-wanderung) aus `app/lib/seen.ts` (LAKES mit Tags; auch von /seen-vergleich genutzt) |
+| `/seen-vergleich/[thema]` | SSG | Seen-Entscheidungsseiten (ruhige-seen, familienseen, seen-mit-wanderung, warme-seen, seen-mit-wassersport) aus `app/lib/seen.ts` (23 LAKES mit Tags; auch von /seen-vergleich genutzt). Neues Thema = neuer `SEE_THEMEN`-Eintrag mit passendem `LakeTag` |
 | `/ausfluege-nach-dauer` | SSG | Zeitfenster-Planer (unter 2 Std. / halber Tag / ganzer Tag / Wochenende), kuratierte Picks mit realistischer Dauer; Daten inline |
 | `/bahnhofsausfluege` | SSG | Öffi-Ziele in 3 Gruppen (direkt an der Bahn / Bahn+Schiff/Bus / Stadt&U-Bahn) mit Anreise-Hinweis je Ziel; Daten inline |
 | `/feierabend-ausfluege` | SSG | After-Work-Ziele ab Wien/Graz/Salzburg (≤ ~45 Min. Anfahrt, abendtauglich) mit Abend-Hinweis; Daten inline |

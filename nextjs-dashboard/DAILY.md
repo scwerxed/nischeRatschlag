@@ -58,7 +58,8 @@ Jeder Lauf startet **ohne Gedächtnis** an frühere Sessions — dieses File + `
 - Weitere Startstädte in `app/lib/wochenendtrip.ts` — Villach/Bregenz/St. Pölten bewusst **nicht**:
   Villach & St. Pölten überschneiden sich zu stark mit Klagenfurt bzw. Wien (Duplicate Content),
   Bregenz hat im 220-km-Radius nur ~25 Ziele. Erst nachziehen, wenn mehr Vorarlberg-Posts da sind.
-- Weitere Seen-Themen in `app/lib/seen.ts` (`seen-mit-wassersport`, `warme-seen`)
+- Weitere Seen-Themen in `app/lib/seen.ts` — alle 5 `LakeTag`s haben jetzt eine Seite.
+  Für ein neues Thema braucht es zuerst einen neuen Tag im `LakeTag`-Typ (z. B. `hund`, `gratis`).
 - `/karte`: Filter-Chips (Unterkünfte/Gipfel/Wege) — Layer-Panel existiert bereits
 - Post-Feld `season` → „Saison-Ampel" (jetzt / geht / eher nicht) auf Karten & Artikeln
 - Post-Feld `oeffi` → „Mit Öffis erreichbar"-Badge auf Artikel- und Übersichtskarten
@@ -89,6 +90,7 @@ Jeder Lauf startet **ohne Gedächtnis** an frühere Sessions — dieses File + `
 
 <!-- Format: - YYYY-MM-DD — [Feature|Content] Kurzbeschreibung -->
 
+- 2026-08-18 — [Feature] Seen-Datenbestand von 10 auf 23 Seen erweitert + 2 neue Themenseiten (`warme-seen`, `seen-mit-wassersport`). Stärkt alle 5 Themenseiten und `/seen-vergleich` gleichzeitig.
 - 2026-08-18 — [Content] Region-FAQs von 37 auf 73 verdoppelt (je 8–9 pro Bundesland). Neue Fragen zielen auf echte Suchintentionen: Aufenthaltsdauer, Schlechtwetter, Auto vs. Öffis, Hunde/Familien. Speist die FAQPage-Rich-Snippets.
 - 2026-08-18 — [Feature] Monatsseiten Oktober, November & Dezember ergänzt (je 10 Picks, 3 neue SSG-Seiten). Bewusst jetzt gebaut, damit sie vor der jeweiligen Saison indexiert sind.
 - 2026-08-18 — [Content] 6 dünne NÖ-/OÖ-Artikel ausgebaut (Traunsee, Krippenstein, Linz, Schneeberg, Rax, Lunzer See). Damit sind alle vier dünnen Regionen (Wien, Vorarlberg, NÖ, OÖ) durch.

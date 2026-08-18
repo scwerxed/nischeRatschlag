@@ -27,6 +27,19 @@ export const LAKES: Lake[] = [
   { name: 'Zeller See', region: 'Salzburg', slug: 'zell-am-see-zeller-see', maxTemp: '23 °C', groesse: 'mittel', charakter: 'Bergpanorama', idealFuer: 'Baden mit Bergblick, Familien', gratis: true, tipp: 'Baden vor der Kulisse der Hohen Tauern', tags: ['wanderung', 'familie'] },
   { name: 'Wolfgangsee', region: 'Salzburg', slug: 'wolfgangsee-st-gilgen', maxTemp: '24 °C', groesse: 'groß', charakter: 'Idyllisch & beliebt', idealFuer: 'Familien, Ausflüge', gratis: true, tipp: 'St. Wolfgang & Schafbergbahn', tags: ['familie', 'wanderung'] },
   { name: 'Achensee', region: 'Tirol', slug: 'achensee-tirol', maxTemp: '20 °C', groesse: 'groß', charakter: 'Alpin & glasklar', idealFuer: 'Segeln, Surfen, Wandern', gratis: true, tipp: 'Tirols größter See – frisch, aber top zum Segeln', tags: ['wassersport', 'wanderung', 'ruhig'] },
+  { name: 'Attersee', region: 'Oberösterreich', slug: 'attersee-baden', maxTemp: '23 °C', groesse: 'sehr groß', charakter: 'Glasklar & sportlich', idealFuer: 'Segeln, Tauchen, Baden', gratis: true, tipp: 'Top Sichtweiten – einer der beliebtesten Tauchseen des Landes', tags: ['wassersport', 'familie', 'wanderung'] },
+  { name: 'Traunsee', region: 'Oberösterreich', slug: 'traunsee-gmunden', maxTemp: '21 °C', groesse: 'groß & sehr tief', charakter: 'Dramatisch & kühl', idealFuer: 'Tauchen, Schifffahrt, Fotografie', gratis: true, tipp: 'Tiefster See Österreichs, direkt unter dem Traunstein', tags: ['wanderung', 'wassersport'] },
+  { name: 'Grundlsee', region: 'Steiermark', slug: 'grundlsee-steirisches-meer', maxTemp: '20 °C', groesse: 'groß', charakter: 'Naturnah & weit', idealFuer: 'Ruhe, Wandern, Bootsfahrt', gratis: true, tipp: 'Das „steirische Meer" – Dreiseentour zum Toplitzsee', tags: ['ruhig', 'wanderung'] },
+  { name: 'Altausseer See', region: 'Steiermark', slug: 'altausseer-see-baden', maxTemp: '20 °C', groesse: 'mittel', charakter: 'Still & tiefgrün', idealFuer: 'Ruhe, Uferrunde, Natur', gratis: true, tipp: 'Flacher Rundweg mit Loser-Kulisse, Motorboote verboten', tags: ['ruhig', 'wanderung'] },
+  { name: 'Stubenbergsee', region: 'Steiermark', slug: 'stubenbergsee-baden', maxTemp: '26 °C', groesse: 'klein', charakter: 'Warm & unkompliziert', idealFuer: 'Familien, Badetag ab Graz', gratis: false, tipp: 'Einer der wärmsten Badeseen der Oststeiermark', tags: ['warm', 'familie'] },
+  { name: 'Fuschlsee', region: 'Salzburg', slug: 'fuschlsee-baden', maxTemp: '23 °C', groesse: 'mittel', charakter: 'Klar & idyllisch', idealFuer: 'Ruhiger Badetag ab Salzburg', gratis: true, tipp: 'Trinkwasserqualität, nur 20 Minuten von Salzburg', tags: ['ruhig', 'familie', 'wanderung'] },
+  { name: 'Plansee', region: 'Tirol', slug: 'plansee-tirol-baden', maxTemp: '20 °C', groesse: 'groß', charakter: 'Fjordartig & still', idealFuer: 'Ruhe, Kajak, Fotografie', gratis: true, tipp: 'Der „Fjord Tirols" – kühl, klar und erstaunlich leer', tags: ['ruhig', 'wanderung'] },
+  { name: 'Walchsee', region: 'Tirol', slug: 'walchsee-kaiserwinkl', maxTemp: '24 °C', groesse: 'mittel', charakter: 'Warm & familiär', idealFuer: 'Familien, Baden mit Kaiserblick', gratis: false, tipp: 'Für Tiroler Verhältnisse ungewöhnlich warm', tags: ['warm', 'familie'] },
+  { name: 'Lunzer See', region: 'Niederösterreich', slug: 'lunzer-see-baden', maxTemp: '24 °C', groesse: 'klein', charakter: 'Gebirgssee, aber warm', idealFuer: 'Familien, ruhiger Badetag', gratis: false, tipp: 'Wärmster Gebirgssee Niederösterreichs, flacher Rundweg', tags: ['warm', 'familie', 'ruhig'] },
+  { name: 'Alte Donau', region: 'Wien', slug: 'alte-donau-baden-wien', maxTemp: '25 °C', groesse: 'mittel', charakter: 'Stadtgewässer ohne Strömung', idealFuer: 'Baden ohne Anreise, SUP, Segeln', gratis: true, tipp: 'Wiens einziger Badesee mit direktem U-Bahn-Anschluss', tags: ['warm', 'familie', 'wassersport'] },
+  { name: 'Keutschacher See', region: 'Kärnten', slug: 'keutschacher-seental-radtour', maxTemp: '27 °C', groesse: 'klein', charakter: 'Warm & unaufgeregt', idealFuer: 'Familien, Radtour im Seental', gratis: true, tipp: 'Ruhigere Alternative zum Wörthersee gleich nebenan', tags: ['warm', 'familie', 'ruhig'] },
+  { name: 'Bodensee (Bregenz)', region: 'Vorarlberg', slug: 'bregenz-bodensee', maxTemp: '23 °C', groesse: 'sehr groß', charakter: 'Weit & städtisch', idealFuer: 'Segeln, Promenade, Familien', gratis: true, tipp: 'Baden mit Alpenblick, Pfänderbahn direkt dahinter', tags: ['warm', 'familie', 'wassersport'] },
+  { name: 'Gosausee', region: 'Oberösterreich', slug: 'gosausee-dachstein-spiegelung', maxTemp: '18 °C', groesse: 'klein', charakter: 'Eiskalt & spektakulär', idealFuer: 'Fotografie, Uferrunde, Wandern', gratis: true, tipp: 'Dachstein-Spiegelung am Morgen – zum Baden ehrlich zu kalt', tags: ['wanderung', 'ruhig'] },
 ];
 
 export type SeeThema = { slug: string; tag: LakeTag; title: string; h1: string; intro: string };
@@ -52,5 +65,19 @@ export const SEE_THEMEN: SeeThema[] = [
     title: 'Seen mit Wanderung – Baden und Bergtour kombinieren',
     h1: 'Seen, an denen sich Wandern lohnt',
     intro: 'Erst auf den Berg, dann ins Wasser: An diesen Seen starten lohnende Wanderungen direkt am Ufer – ideal für einen aktiven Sommertag.',
+  },
+  {
+    slug: 'warme-seen',
+    tag: 'warm',
+    title: 'Die wärmsten Badeseen Österreichs – Baden ohne Kälteschock',
+    h1: 'Warme Badeseen in Österreich',
+    intro: 'Nicht jeder Alpensee ist eine Mutprobe: Diese Seen sind flach genug oder geschützt genug gelegen, um im Hochsommer richtig warm zu werden – gut für Kinder und alle, die ungern frieren.',
+  },
+  {
+    slug: 'seen-mit-wassersport',
+    tag: 'wassersport',
+    title: 'Seen für Wassersport in Österreich – Segeln, Surfen, SUP & Tauchen',
+    h1: 'Seen für Wassersport',
+    intro: 'Verlässlicher Wind, klare Sicht unter Wasser oder einfach genug Platz: An diesen Seen geht mehr als Planschen – vom Segelrevier über Surfspots bis zu Österreichs beliebtesten Tauchgewässern.',
   },
 ];
