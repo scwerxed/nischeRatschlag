@@ -8,7 +8,7 @@ import { SEE_THEMEN } from '@/app/lib/seen';
 const BASE = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://www.bergseen-guide.com';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const staticPages = ['', '/blog', '/karte', '/routenplaner', '/seen-vergleich', '/wochenendtrip', '/wandern-baden', '/hitzefreundliche-ausfluege', '/regentaugliche-ausfluege', '/beste-ausfluege', '/ausfluege-nach-dauer', '/bahnhofsausfluege', '/feierabend-ausfluege', '/badeplaetze', '/reiseinfos', '/ueber-uns', '/kontakt', '/impressum', '/datenschutz'].map((p) => ({
+  const staticPages = ['', '/blog', '/karte', '/routenplaner', '/seen-vergleich', '/wochenendtrip', '/wandern-baden', '/hitzefreundliche-ausfluege', '/regentaugliche-ausfluege', '/aussicht-ohne-anstrengung', '/beste-ausfluege', '/ausfluege-nach-dauer', '/bahnhofsausfluege', '/feierabend-ausfluege', '/badeplaetze', '/reiseinfos', '/ueber-uns', '/kontakt', '/impressum', '/datenschutz'].map((p) => ({
     url: `${BASE}${p}`,
     lastModified: new Date(),
     changeFrequency: 'weekly' as const,

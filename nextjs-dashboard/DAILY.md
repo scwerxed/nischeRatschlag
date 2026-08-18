@@ -50,7 +50,6 @@ Jeder Lauf startet **ohne Gedächtnis** an frühere Sessions — dieses File + `
 - `/einkehr` — Hütten/Gasthäuser nach der Wanderung (neues `app/lib/einkehr.ts`)
 - `/unterkuenfte/am-see`, `/unterkuenfte/romantisch` — kommerzielle Intent-Seiten (Affiliate)
 - „Basislager"-Seiten: beste Ausgangsorte je Wanderregion (Affiliate-stark)
-- `/aussicht-ohne-anstrengung` — viel Aussicht, wenig Höhenmeter (Bergbahnen, kurze Wege)
 - `/sonnenuntergang-spots` — Golden-Hour-Ziele inkl. Rückweg-Hinweis
 - `/zwei-ausfluege-an-einem-tag` — Vormittag+Nachmittag-Kombis mit Transferzeit
 - Weitere Monate in `app/lib/monatstipps.ts` (Oktober, November, Dezember, …)
@@ -87,6 +86,7 @@ Jeder Lauf startet **ohne Gedächtnis** an frühere Sessions — dieses File + `
 
 <!-- Format: - YYYY-MM-DD — [Feature|Content] Kurzbeschreibung -->
 
+- 2026-08-18 — [Feature] `/aussicht-ohne-anstrengung`: 21 Ziele in 4 Gruppen (Seilbahnen, Panoramastraßen, Aussichtstürme, kurze Wege) — Zielgruppe Familien, Senioren, gemütliche Ausflügler.
 - 2026-08-18 — [Content] Alle 5 Wien-Artikel ausgebaut (Schönbrunn, Prater, Stephansdom, Alte Donau, Wienerwald): je 2–3 neue Abschnitte (Geschichte, Beste Reisezeit) und vertiefte Praxis-Infos. Wien war die dünnste Region.
 - 2026-08-18 — [Feature] `/regentaugliche-ausfluege`: Schlechtwetter-Plan-B mit 28 kuratierten Zielen in 6 Gruppen, ehrlichen „auch bei Regen im Freien"-Hinweisen und Klamm-Sicherheitswarnung.
 - 2026-08-18 — [Content] Artikel „Stift Melk" ausgebaut: neue Abschnitte Geschichte, Beste Reisezeit, Anreise; Höhepunkte & Praktische Infos vertieft.

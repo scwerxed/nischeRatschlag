@@ -11,6 +11,7 @@ const QUICK_LINKS = [
   { href: '/beste-ausfluege', label: 'Beste Ausflüge' },
   { href: '/ausfluege-nach-dauer', label: 'Ausflüge nach Dauer' },
   { href: '/regentaugliche-ausfluege', label: 'Ausflüge bei Regen' },
+  { href: '/aussicht-ohne-anstrengung', label: 'Aussicht ohne Anstrengung' },
   { href: '/merkliste', label: 'Merkliste' },
   { href: '/reiseinfos', label: 'Reiseinfos' },
   { href: '/#regionen', label: 'Regionen' },
