@@ -4911,16 +4911,27 @@ Wer die Wachau zu Fuß erleben will, folgt dem **Welterbesteig**: Der Weitwander
     content: `
 **Stift Melk** ist das barocke Wahrzeichen der Wachau – ein gewaltiger gelber Klosterbau hoch über der Donau.
 
+## Geschichte
+Seit 1089 sitzen hier Benediktinermönche; den heutigen Bau ließ Baumeister Jakob Prandtauer im frühen 18. Jahrhundert errichten. Das Stift ist bis heute eine aktive Klostergemeinschaft mit angeschlossenem Gymnasium – kein reines Museum, sondern gelebter Ort.
+
 ## Höhepunkte
-Die **Stiftsbibliothek** mit ihren historischen Bänden und die golden funkelnde **Stiftskirche** sind überwältigend. Vom Altan reicht der Blick über die Donau.
+Die **Stiftsbibliothek** mit ihren historischen Bänden und prunkvollen Deckenfresken sowie die golden funkelnde **Stiftskirche** sind überwältigend. Der **Marmorsaal** mit seiner illusionistischen Deckenmalerei und der weite **Altan** mit Blick über die Donau und die Dächer von Melk runden den Rundgang ab.
 
 ## Garten & Park
-Im Sommer lohnt der barocke **Stiftspark** mit Gartenpavillon – ideal für eine ruhige Runde nach der Führung.
+Im Sommer lohnt der barocke **Stiftspark** mit Gartenpavillon und Wasserspielen – ideal für eine ruhige Runde nach der Führung.
+
+## Beste Reisezeit
+Das Stift ist ganzjährig zugänglich. Zur Marillenblüte im Frühling oder zur Weinlese im Herbst lässt sich der Besuch gut mit einer Fahrt durch die Wachau verbinden; im Hochsommer ist tagsüber mit mehr Betrieb zu rechnen.
+
+## Anreise
+- Direkt an der A1, eigener Bahnhof Melk – gut mit dem Zug ab Wien oder Linz erreichbar
+- Von Melk starten auch Donauschifffahrten und der Donau-Radweg durch die Wachau nach Krems
+- Parkplätze am Fuß des Stiftsbergs, von dort kurzer Fußweg hinauf
 
 ## Praktische Infos
-- Direkt an der A1 / Bahnhof Melk
-- Toller Auftakt für eine Wachau-Tour Richtung Krems
-- Führungen oder Besuch auf eigene Faust
+- Führungen oder Besuch auf eigene Faust, Audioguide verfügbar
+- Toller Auftakt für eine Wachau-Tour Richtung Krems und Dürnstein
+- Beides an einem Tag ist machbar, aber sportlich – wer Zeit hat, verteilt es besser auf zwei Tage
     `,
     affiliateLinks: [
       { label: 'Hotels rund um Melk – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Melk' },
