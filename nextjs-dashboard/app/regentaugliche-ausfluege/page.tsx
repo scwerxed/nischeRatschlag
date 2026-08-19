@@ -64,6 +64,8 @@ const GROUPS: { title: string; note: string; picks: { slug: string; warum: strin
       { slug: 'salzburg-stadt-altstadt', warum: 'Getreidegasse, Festung und Museen – Salzburg ist Regen gewohnt.' },
       { slug: 'wien-schoenbrunn', warum: 'Prunkräume, Palmenhaus und Wagenburg als Innenprogramm, wenn der Park ausfällt.' },
       { slug: 'wien-stephansdom-altstadt', warum: 'Dom, Katakomben und die Kaffeehäuser ringsum – Wiens bester Regentag-Klassiker.' },
+      { slug: 'museumsquartier-wien', warum: 'Mehrere Museen auf einem Areal, dazwischen überdachte Arkaden – ein ganzer Regentag ohne Umsteigen.' },
+      { slug: 'schloss-belvedere-wien', warum: 'Klimt-Sammlung im Oberen Belvedere; der Garten geht auch bei Nieselwetter.' },
       { slug: 'linz-ausflug', warum: 'Ars Electronica Center und Lentos liegen zentral – Linz punktet gerade bei Schlechtwetter.' },
       { slug: 'klagenfurt-stadtfuehrung', warum: 'Kompakte Altstadt mit Innenhöfen und Lokalen, gut als Wörthersee-Ersatzprogramm.' },
     ],

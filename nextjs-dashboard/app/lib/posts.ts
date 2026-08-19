@@ -4652,7 +4652,7 @@ Der Grüne Prater funktioniert ganzjährig – im Herbst mit Laubfärbung besond
 - U1/U2 Station Praterstern, dazu Bahnhof Wien Praterstern – sehr gut mit Öffis erreichbar
 - Eintritt frei, gezahlt wird nur pro Fahrgeschäft
 - Fürs Riesenrad in der Hauptsaison mit Wartezeit rechnen
-- Gut mit einem Besuch der Donauinsel oder der Alten Donau kombinierbar
+- Gut mit einem Besuch der [Donauinsel](/blog/donauinsel-wien) oder der Alten Donau kombinierbar
 - Räder lassen sich in der Stadt leihen – die Hauptallee ist ideal dafür
     `,
     affiliateLinks: [
@@ -4709,7 +4709,7 @@ Bei der großen **Donauregulierung in den 1870er-Jahren** wurde der mäandernde 
 Das Wasser ist ruhig und ohne Strömung, damit auch für Familien mit Kindern entspannt. Es gibt mehrere **Strandbäder** – das bekannteste ist das **Gänsehäufel** auf einer Insel, dazu kommen Angelibad und Arbeiterstrandbad – sowie frei zugängliche Uferstellen und Einstiege. Tret-, Ruder- und Elektroboote lassen sich ebenso ausleihen wie **SUP-Boards**; Segeln und Surfen haben an der Alten Donau ebenfalls Tradition.
 
 ## Drumherum
-Rund ums Ufer liegen Promenaden, Strandcafés und Heurige – eine Runde ums Gewässer lässt sich gut zu Fuß oder mit dem Rad machen. Die **Donauinsel** mit ihren kilometerlangen Gratis-Badezonen ist gleich nebenan, ebenso die Uferbereiche der Neuen Donau.
+Rund ums Ufer liegen Promenaden, Strandcafés und Heurige – eine Runde ums Gewässer lässt sich gut zu Fuß oder mit dem Rad machen. Die [Donauinsel](/blog/donauinsel-wien) mit ihren kilometerlangen Gratis-Badezonen ist gleich nebenan, ebenso die Uferbereiche der Neuen Donau.
 
 ## Beste Reisezeit
 Badesaison ist etwa von Mai bis September; im Hochsommer erwärmt sich das flache, stehende Wasser angenehm. Außerhalb der Saison bleibt die Alte Donau ein schönes Spazier- und Radziel, im Winter friert sie in kalten Jahren zu – Eislaufen ist dann aber nur bei offizieller Freigabe erlaubt.
@@ -4740,7 +4740,7 @@ Der **Wienerwald** ist das grüne Naherholungsgebiet der Hauptstadt – Buchenw�
 Seit 2005 ist der Wienerwald von der UNESCO als **Biosphärenpark** anerkannt – eine Kulturlandschaft aus Wald, Wiesen und Weingärten, die geschützt und zugleich genutzt wird. Dass eine Großstadt ein derart ausgedehntes Waldgebiet direkt an der Grenze hat, verdankt Wien auch dem „Wienerwald-Retter" Josef Schöffel, der die Abholzung im 19. Jahrhundert verhinderte.
 
 ## Beliebte Touren
-Der Klassiker führt über **Kahlenberg** (484 m) und **Leopoldsberg** (425 m) mit Panoramablick über Wien, die Donau und bis ins Marchfeld. Die Stadt hat außerdem nummerierte **Stadtwanderwege** ausgeschildert, die alle mit Öffis erreichbar sind und ins Grüne führen – ideal, wenn man ohne Auto unterwegs ist. Sanfte Wege und moderate Höhenunterschiede machen viele Runden auch für Familien machbar. Wer Tiere sehen will, geht in den **Lainzer Tiergarten** im Westen der Stadt, wo Wildschweine und Rotwild frei leben.
+Der Klassiker führt über **Kahlenberg** (484 m) und **Leopoldsberg** (425 m) mit Panoramablick über Wien, die Donau und bis ins Marchfeld. Die Stadt hat außerdem nummerierte **Stadtwanderwege** ausgeschildert, die alle mit Öffis erreichbar sind und ins Grüne führen – ideal, wenn man ohne Auto unterwegs ist. Sanfte Wege und moderate Höhenunterschiede machen viele Runden auch für Familien machbar. Wer Tiere sehen will, geht in den [Lainzer Tiergarten](/blog/lainzer-tiergarten-wien) im Westen der Stadt, wo Wildschweine und Rotwild frei leben.
 
 ## Einkehr
 Am Fuß der Hänge in **Grinzing**, **Nussdorf** und Neustift laden die **Heurigen** zu Jungwein und Brettljause – der perfekte Abschluss einer Runde. Viele Betriebe haben wechselnde Öffnungszeiten („ausg'steckt is'"), das lässt sich vorab online prüfen. Auf den Höhen selbst gibt es Gasthäuser mit Aussichtsterrasse.
@@ -4758,6 +4758,146 @@ April bis Oktober ist die Hauptzeit. Im **Herbst** ist der Wienerwald mit Laubf�
     affiliateLinks: [
       { label: 'Hotels in Wien – booking.com', url: 'https://www.booking.com/city/at/vienna.de.html' },
       { label: 'Wanderschuhe – Amazon', url: 'https://www.amazon.de/s?k=wanderschuhe' },
+    ],
+  },
+  {
+    slug: 'donauinsel-wien',
+    startCoords: [48.2277, 16.4230],
+    title: 'Donauinsel – Wiens 21 Kilometer lange Freizeitinsel',
+    excerpt: 'Die Donauinsel teilt die Donau und ist Wiens größtes Freizeitgelände: Baden, Radeln, Skaten und Grillen auf 21 Kilometern Länge, mitten in der Stadt und trotzdem grün.',
+    date: '2026-08-19', category: 'Ausflug', region: 'wien', bestSeason: 'Mai–September',
+    highlights: ['21 km lang, mit U-Bahn erreichbar', 'Gratis Badestellen ohne Eintritt', 'Durchgehender Rad- und Skateweg'],
+    content: `
+Die **Donauinsel** ist ein künstlich aufgeschüttetes, rund 21 Kilometer langes Band zwischen Donau und Neuer Donau – Wiens meistgenutztes Freizeitgebiet und im Sommer die grüne Ausweichfläche der ganzen Stadt.
+
+## Warum es die Insel gibt
+Die Donauinsel ist kein Zufallsprodukt, sondern das Ergebnis eines Hochwasserschutzprojekts: Beim Bau der **Neuen Donau** in den 1970er- und 80er-Jahren entstand mit dem Aushub die Insel dazwischen. Aus einer reinen Infrastrukturmaßnahme wurde so nebenbei einer der beliebtesten Erholungsräume Wiens – seit 1984 offiziell eröffnet und seither stetig begrünt.
+
+## Baden ohne Eintritt
+Anders als die benachbarte Alte Donau gibt es auf der Donauinsel keine umzäunten Strandbäder, sondern **frei zugängliche Ufer** auf ganzer Länge – Betonstufen, Wiesen und Kiesbuchten zum Reinspringen. Besonders beliebt ist der Bereich rund um die **Copa Cagrana** nahe der Reichsbrücke mit Lokalen direkt am Wasser. Wer es ruhiger mag, findet weiter nördlich oder südlich stille Abschnitte ganz ohne Betrieb.
+
+## Radeln, Skaten, Sport
+Durchgehend asphaltierte Wege ziehen sich über die gesamte Insellänge – ideal für lange Rad- oder Skate-Touren ganz ohne Autoverkehr. Dazu kommen Beachvolleyballfelder, Wasserski-Anlagen und zahlreiche Grillplätze, die im Sommer an Wochenenden gut besucht sind. Einmal im Jahr verwandelt das kostenlose **Donauinselfest** die Insel in Europas größtes Open-Air-Festival.
+
+## Für Familien
+Mehrere Abschnitte haben flach abfallende Ufer und Spielplätze in Wassernähe, dazu Kioske und Gastro-Stationen entlang der Wege – für einen Tag mit Kindern muss nicht viel mitgebracht werden. Schatten ist streckenweise allerdings rar, an heißen Tagen lohnt sich ein Sonnensegel oder ein schattiger Abschnitt näher an den Baumgruppen.
+
+## Beste Reisezeit
+Mai bis September zum Baden und für die volle Freizeitnutzung. Außerhalb der Badesaison ist die Insel als flache, autofreie Rad- und Spazierstrecke ganzjährig attraktiv – im Frühling und Herbst deutlich ruhiger als im Hochsommer.
+
+## Praktische Infos
+- U1 (Station Donauinsel) und U6 (Neue Donau) bringen direkt aufs Gelände, dazu mehrere Buslinien
+- Kein Eintritt für die Ufer, nur einzelne Gastro-Stationen und Verleihe kosten
+- Schatten ist ungleich verteilt – wer länger bleibt, sucht sich am besten früh einen Platz nahe Bäumen
+- Gut mit einem Abstecher zum Prater oder zur Alten Donau kombinierbar
+- An Sommerwochenenden und beim Donauinselfest ist mit viel Betrieb zu rechnen
+    `,
+    affiliateLinks: [
+      { label: 'Hotels in Wien – booking.com', url: 'https://www.booking.com/city/at/vienna.de.html' },
+    ],
+  },
+  {
+    slug: 'lainzer-tiergarten-wien',
+    startCoords: [48.1770, 16.2380],
+    title: 'Lainzer Tiergarten – Wildschweine und Wald am Stadtrand',
+    excerpt: 'Ein ummauertes Wildgehege von der Größe eines kleinen Naturparks: Im Lainzer Tiergarten laufen Wildschweine und Rotwild frei herum – erreichbar mit Öffis, ohne Eintritt.',
+    date: '2026-08-19', category: 'Wandern', region: 'wien', difficulty: 'leicht', bestSeason: 'März–November',
+    highlights: ['Freilaufendes Wild mitten in Wien', 'Kein Eintritt', 'Leichte Wege, familientauglich'],
+    routeVariants: [
+      { label: 'Runde ab Lainzer Tor zur Hermesvilla', difficulty: 'leicht', length: '4 km', duration: '1,5 Std.', ascent: '80 hm', note: 'gut mit Kinderwagen machbar' },
+      { label: 'Große Runde über die Kaltbründlberg-Warte', difficulty: 'mittel', length: '11 km', duration: '3,5 Std.', ascent: '350 hm' },
+    ],
+    content: `
+Der **Lainzer Tiergarten** im Westen Wiens ist ein ummauertes Wald- und Wiesengebiet von rund 24 Quadratkilometern – ein ehemaliges kaiserliches Jagdrevier, in dem Wildschweine, Rotwild und Mufflons bis heute frei leben.
+
+## Vom Jagdrevier zum Naturschutzgebiet
+Die knapp 24 Kilometer lange **Mauer** rund um das Gelände wurde im 18. Jahrhundert errichtet, um das Wild für die kaiserliche Jagd im Gebiet zu halten. Seit 1919 ist der Tiergarten öffentlich zugänglich, heute ist er Teil des Biosphärenparks Wienerwald. Große Teile sind als Naturwald sich selbst überlassen – alte Eichen und Buchen, Totholz und dichter Unterwuchs machen den Unterschied zu einem gepflegten Stadtpark sofort sichtbar.
+
+## Wild beobachten
+Das Besondere: Die Tiere sind nicht in Gehegen, sondern **frei im Gelände** – man begegnet ihnen auf oder neben den Wegen. **Wildschweine** sind am häufigsten zu sehen, oft mit Frischlingen. So nah man ihnen auch kommt: Es sind Wildtiere, kein Streichelzoo. Abstand halten, nicht füttern, Hunde nur wo erlaubt und ausnahmslos an der Leine. Die besten Chancen auf Sichtungen bestehen früh am Morgen und in den Abendstunden.
+
+## Wege & Hermesvilla
+Ein Netz breiter, gut markierter Forstwege durchzieht das Gelände; die meisten Runden sind flach bis leicht hügelig und ohne alpine Ausrüstung machbar. Zentraler Anlaufpunkt ist die **Hermesvilla**, die Kaiser Franz Joseph für Elisabeth („Sisi") errichten ließ – heute ein Museum mit Café und Gastgarten. Höher hinaus geht es zur **Kaltbründlberg-Warte** mit Blick über den Wienerwald.
+
+## Beste Reisezeit
+Der Tiergarten hat **saisonal beschränkte Öffnungszeiten** und ist im Winter über Wochen ganz geschlossen – die aktuellen Zeiten und Tore vor der Anfahrt unbedingt auf der Seite der Stadt Wien prüfen. Im Frühling sind die Frischlinge unterwegs, im Herbst färbt sich der Buchenwald, im Hochsommer ist der geschlossene Waldbestand angenehm schattig.
+
+## Praktische Infos
+- Haupteingang **Lainzer Tor** mit Bus erreichbar; weitere Tore verteilen sich rund ums Gelände
+- Eintritt frei, die Tore sind aber nur zu bestimmten Zeiten offen – Öffnungszeiten vorab prüfen
+- Wildtiere nicht füttern, Abstand halten, auf den Wegen bleiben
+- Hunde nur in ausgewiesenen Bereichen und an der Leine
+- Radfahren ist nur auf einzelnen freigegebenen Routen erlaubt
+    `,
+    affiliateLinks: [
+      { label: 'Hotels in Wien – booking.com', url: 'https://www.booking.com/city/at/vienna.de.html' },
+      { label: 'Fernglas – Amazon', url: 'https://www.amazon.de/s?k=fernglas+wandern' },
+    ],
+  },
+  {
+    slug: 'museumsquartier-wien',
+    startCoords: [48.2030, 16.3590],
+    title: 'MuseumsQuartier – Wiens Kulturhof für Regentage',
+    excerpt: 'Große Museen, Höfe zum Verweilen und Kultur unter einem Dach: Das MuseumsQuartier ist Wiens verlässlichster Plan B, wenn das Wetter den Ausflug kippt.',
+    date: '2026-08-19', category: 'Ausflug', region: 'wien', bestSeason: 'Ganzjährig',
+    highlights: ['Mehrere Museen auf einem Areal', 'Höfe frei zugänglich, ohne Ticket', 'Ideal bei Regen und Hitze'],
+    content: `
+Das **MuseumsQuartier** – von Wienern kurz „MQ" genannt – ist eines der größten Kulturareale Europas: barocke Hofstallungen, in die moderne Museumsbauten gesetzt wurden, dazwischen weite Innenhöfe zum Sitzen.
+
+## Barockhöfe mit modernem Kern
+Die Anlage war ursprünglich die **kaiserliche Hofstallung**, entworfen im frühen 18. Jahrhundert. Nach jahrzehntelanger Nutzung als Messegelände wurde das Areal um die Jahrtausendwende zum Kulturquartier umgebaut – die historische Fassade blieb, dahinter entstanden zwei markante Neubauten: der helle Kalksteinkubus des **Leopold Museum** und der dunkle Basaltbau des **mumok**.
+
+## Die Museen
+Das **Leopold Museum** zeigt eine der bedeutendsten Sammlungen österreichischer Moderne – Schwerpunkt **Egon Schiele**, dazu Gustav Klimt und der Wiener Jugendstil. Das **mumok** (Museum moderner Kunst) widmet sich internationaler Gegenwarts- und Nachkriegskunst, die **Kunsthalle Wien** wechselnden Ausstellungen. Dazu kommen das **ZOOM Kindermuseum** mit Mitmach-Stationen für Kinder und die Architekturzentrum-Ausstellungen. Wer mehrere Häuser besuchen will, prüft am besten die Kombitickets des Quartiers.
+
+## Die Höfe
+Auch ohne Ticket lohnt sich das MQ: Die Innenhöfe sind **frei zugänglich**, mit den bunten „Enzis"-Möbeln zum Liegen, Cafés unter Arkaden und im Sommer Open-Air-Programm. Es ist einer der wenigen zentralen Orte in Wien, an dem man sich hinsetzen kann, ohne konsumieren zu müssen.
+
+## Beste Reisezeit
+Ganzjährig – gerade deshalb ist das MQ der klassische Plan B bei Regen. Im Hochsommer funktionieren die Museen auch als Hitzeflucht, im Winter gibt es im Hof einen Weihnachtsmarkt. Öffnungszeiten und Ruhetage unterscheiden sich je Haus und sollten vorab geprüft werden.
+
+## Praktische Infos
+- U2 Station MuseumsQuartier oder U3 Volkstheater, beide direkt am Areal
+- Höfe frei zugänglich, Museen kostenpflichtig – Kombitickets prüfen, wenn mehrere Häuser geplant sind
+- Für ein einzelnes Museum reichen 2–3 Stunden, für mehrere Häuser einen ganzen Tag einplanen
+- Gut kombinierbar mit Stephansdom und Innenstadt – alles fußläufig
+- Große Sonderausstellungen sind am Wochenende voll; unter der Woche vormittags ist es deutlich ruhiger
+    `,
+    affiliateLinks: [
+      { label: 'Hotels in Wien – booking.com', url: 'https://www.booking.com/city/at/vienna.de.html' },
+    ],
+  },
+  {
+    slug: 'schloss-belvedere-wien',
+    startCoords: [48.1910, 16.3800],
+    title: 'Schloss Belvedere – Klimts „Kuss" und ein Barockgarten mit Stadtblick',
+    excerpt: 'Zwei Barockschlösser, verbunden durch einen terrassierten Garten: Im Oberen Belvedere hängt Gustav Klimts „Der Kuss", vom Garten reicht der Blick über Wien.',
+    date: '2026-08-19', category: 'Ausflug', region: 'wien', bestSeason: 'Ganzjährig',
+    highlights: ['Klimts „Der Kuss" im Oberen Belvedere', 'Barockgarten frei zugänglich', 'Blick über die Stadt vom Oberen Schloss'],
+    content: `
+Das **Belvedere** ist eine der schönsten Barockanlagen Europas: zwei Schlösser, Oberes und Unteres Belvedere, verbunden durch einen streng terrassierten Garten – und heute ein Museum mit einer der bekanntesten Sammlungen Österreichs.
+
+## Prinz Eugens Sommersitz
+Erbaut wurde die Anlage im frühen 18. Jahrhundert für **Prinz Eugen von Savoyen**, den erfolgreichsten Feldherrn der Habsburger, als Sommerresidenz vor den damaligen Stadtmauern. Architekt war Johann Lucas von Hildebrandt. 1955 schrieb das Obere Belvedere noch einmal Geschichte: Im Marmorsaal wurde der **Österreichische Staatsvertrag** unterzeichnet.
+
+## Die Sammlung
+Das **Obere Belvedere** beherbergt die größte Klimt-Sammlung der Welt – im Zentrum **„Der Kuss"**, dazu weitere Hauptwerke des Wiener Jugendstils sowie Arbeiten von Egon Schiele und Oskar Kokoschka. Ergänzt wird das durch österreichische Kunst vom Mittelalter bis in die Gegenwart. Das **Untere Belvedere** mit Orangerie und Marmorstall zeigt wechselnde Sonderausstellungen in den ehemaligen Wohnräumen des Prinzen.
+
+## Der Garten
+Zwischen beiden Schlössern liegt der **französische Barockgarten** mit Wasserbecken, Skulpturen und Hecken auf mehreren Terrassen. Er ist **frei zugänglich** – und vom oberen Ende bietet sich einer der schönsten Blicke auf Wien: über den Garten hinweg auf die Stadt mit dem Stephansdom dahinter. Ein klassisches Postkartenmotiv, für das kein Ticket nötig ist.
+
+## Beste Reisezeit
+Ganzjährig. Der Garten ist im Frühling und Frühsommer am schönsten, im Herbst sorgt das Laub für Farben, im Advent gibt es vor dem Oberen Belvedere einen Weihnachtsmarkt. Die Museen funktionieren bei jedem Wetter und sind daher ein guter Regentag-Programmpunkt.
+
+## Praktische Infos
+- Mit Straßenbahn (Station Schloss Belvedere bzw. Unteres Belvedere) und ab Wien Hauptbahnhof zu Fuß erreichbar
+- Garten frei zugänglich, die Schlösser sind kostenpflichtig – Tickets sind zeitfensterbasiert, Vorabbuchung empfohlen
+- Für Oberes Belvedere plus Garten reichen etwa 2–3 Stunden
+- Vor dem „Kuss" ist es tagsüber voll; früh am Vormittag ist es am ruhigsten
+- Gut kombinierbar mit einem Spaziergang durch die Innenstadt oder mit dem MuseumsQuartier
+    `,
+    affiliateLinks: [
+      { label: 'Hotels in Wien – booking.com', url: 'https://www.booking.com/city/at/vienna.de.html' },
     ],
   },
 

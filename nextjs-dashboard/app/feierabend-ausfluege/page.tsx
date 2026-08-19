@@ -20,6 +20,7 @@ const CITIES: { name: string; note: string; picks: { slug: string; abend: string
       { slug: 'wienerwald-wandern', abend: 'Kahlenberg zum Sonnenuntergang – danach Heuriger in Grinzing' },
       { slug: 'alte-donau-baden-wien', abend: 'Abendbad mit Blick auf die Skyline, bis Sonnenuntergang' },
       { slug: 'wien-prater', abend: 'Hauptallee-Runde nach Büroschluss, Riesenrad in der Dämmerung' },
+      { slug: 'donauinsel-wien', abend: 'Sprung ins Wasser nach der Arbeit – U-Bahn hin, Sonnenuntergang über dem Wasser' },
       { slug: 'neusiedler-see-baden-segeln', abend: 'ca. 45 Min.: Abendwind, flacher See, weite Sonnenuntergänge' },
     ],
   },

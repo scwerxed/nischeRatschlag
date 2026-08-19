@@ -45,7 +45,7 @@ export const BADEPLAETZE: Badeplatz[] = [
   { name: 'Strandbad Walchsee', see: 'Walchsee', region: 'Tirol', slug: 'walchsee-kaiserwinkl', features: ['flach', 'wc', 'gastro'], hinweis: 'Warmer Familiensee im Kaiserwinkl.' },
   // Wien
   { name: 'Gänsehäufel', see: 'Alte Donau', region: 'Wien', slug: 'alte-donau-baden-wien', features: ['flach', 'wc', 'gastro', 'schatten'], hinweis: 'Wiens Klassiker – Strandbad-Insel mit altem Baumbestand.' },
-  { name: 'Donauinsel', see: 'Neue Donau', region: 'Wien', slug: 'alte-donau-baden-wien', features: ['gratis', 'wc', 'gastro'], hinweis: 'Kilometerlange freie Badezonen, mit der U-Bahn erreichbar.' },
+  { name: 'Donauinsel', see: 'Neue Donau', region: 'Wien', slug: 'donauinsel-wien', features: ['gratis', 'wc', 'gastro'], hinweis: 'Kilometerlange freie Badezonen, mit der U-Bahn erreichbar.' },
   // Burgenland
   { name: 'Strandbad Podersdorf', see: 'Neusiedler See', region: 'Burgenland', slug: 'podersdorf-am-see', features: ['flach', 'wc', 'gastro'], hinweis: 'Sehr flach und warm – der Klassiker am Ostufer.' },
   // Niederösterreich

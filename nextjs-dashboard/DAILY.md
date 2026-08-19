@@ -80,11 +80,10 @@ Jeder Lauf startet **ohne Gedächtnis** an frühere Sessions — dieses File + `
 
 ### Content
 - **Neue Artikel** (Slug vorher prüfen!) — dünn besetzte Regionen zuerst.
-  Stand 2026-08-18 je Region: Kärnten 44, Burgenland 26, Steiermark 26, Salzburg 19, Tirol 19,
-  **Oberösterreich 6, Wien 5, Niederösterreich 5, Vorarlberg 5**. Die letzten vier brauchen
+  Stand 2026-08-19 je Region: Kärnten 44, Burgenland 26, Steiermark 26, Salzburg 19, Tirol 19,
+  **Wien 9, Oberösterreich 6, Niederösterreich 5, Vorarlberg 5**. Die letzten drei brauchen
   neue Artikel, nicht mehr nur längere — der Ausbau der bestehenden ist durch.
-  Ideen: Wien (Donauinsel, Lainzer Tiergarten, Kahlenberg einzeln, Museumsquartier),
-  Vorarlberg (Montafon, Arlberg-Sommer, Rappenlochschlucht, Dornbirn/Karren),
+  Ideen: Vorarlberg (Montafon, Arlberg-Sommer, Rappenlochschlucht, Dornbirn/Karren),
   NÖ (Waldviertel-Stauseen, Ötscher-Tormäuer, Grafenegg, Semmeringbahn),
   OÖ (Mondsee, Wolfgangsee-Ostufer, Nationalpark Kalkalpen, Steyr-Altstadt).
 - **Dünne Artikel ausbauen** — der Durchgang durch Wien, Vorarlberg, NÖ und OÖ ist
@@ -103,6 +102,7 @@ Jeder Lauf startet **ohne Gedächtnis** an frühere Sessions — dieses File + `
 
 <!-- Format: - YYYY-MM-DD — [Feature|Content] Kurzbeschreibung -->
 
+- 2026-08-19 — [Content] 4 neue Wien-Artikel (Donauinsel, Lainzer Tiergarten, MuseumsQuartier, Schloss Belvedere) — Wien war mit 5 Artikeln die dünnste Region, jetzt 9. Alle mit `startCoords`, querverlinkt aus /regentaugliche-ausfluege, /hitzefreundliche-ausfluege, /feierabend-ausfluege und aus bestehenden Wien-Artikeln.
 - 2026-08-18 — [Feature] Seen-Datenbestand von 10 auf 23 Seen erweitert + 2 neue Themenseiten (`warme-seen`, `seen-mit-wassersport`). Stärkt alle 5 Themenseiten und `/seen-vergleich` gleichzeitig.
 - 2026-08-18 — [Content] Region-FAQs von 37 auf 73 verdoppelt (je 8–9 pro Bundesland). Neue Fragen zielen auf echte Suchintentionen: Aufenthaltsdauer, Schlechtwetter, Auto vs. Öffis, Hunde/Familien. Speist die FAQPage-Rich-Snippets.
 - 2026-08-18 — [Feature] Monatsseiten Oktober, November & Dezember ergänzt (je 10 Picks, 3 neue SSG-Seiten). Bewusst jetzt gebaut, damit sie vor der jeweiligen Saison indexiert sind.

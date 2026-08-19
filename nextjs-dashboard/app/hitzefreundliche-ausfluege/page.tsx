@@ -46,6 +46,7 @@ const GROUPS: { title: string; note: string; picks: { slug: string; warum: strin
       { slug: 'plansee-tirol-baden', warum: 'Stiller, kühler Bergsee – der Fjord Tirols.' },
       { slug: 'gosausee-dachstein-spiegelung', warum: 'Früh starten: schattiger Uferweg + kaltes Gletscherwasser.' },
       { slug: 'alte-donau-baden-wien', warum: 'Abkühlung ohne Anreise – mitten in Wien, mit der U-Bahn erreichbar.' },
+      { slug: 'donauinsel-wien', warum: 'Kilometerlange Gratis-Ufer: Wer eine ruhige Stelle sucht, geht einfach weiter die Insel entlang.' },
       { slug: 'attersee-baden', warum: 'Tiefes, klares Wasser, das auch im Hochsommer frisch bleibt.' },
     ],
   },
