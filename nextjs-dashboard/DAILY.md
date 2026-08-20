@@ -75,12 +75,10 @@ Jeder Lauf startet **ohne Gedächtnis** an frühere Sessions — dieses File + `
 
 ### Content
 - **Neue Artikel** (Slug vorher prüfen!) — dünn besetzte Regionen zuerst.
-  Stand 2026-08-19 je Region: Kärnten 44, Burgenland 26, Steiermark 26, Salzburg 19, Tirol 19,
-  **Wien 9, Oberösterreich 6, Niederösterreich 5, Vorarlberg 5**. Die letzten drei brauchen
-  neue Artikel, nicht mehr nur längere — der Ausbau der bestehenden ist durch.
-  Ideen: Vorarlberg (Montafon, Arlberg-Sommer, Rappenlochschlucht, Dornbirn/Karren),
-  NÖ (Waldviertel-Stauseen, Ötscher-Tormäuer, Grafenegg, Semmeringbahn),
-  OÖ (Mondsee, Wolfgangsee-Ostufer, Nationalpark Kalkalpen, Steyr-Altstadt).
+  Stand 2026-08-20 je Region: Kärnten 44, Burgenland 26, Steiermark 26, Salzburg 19, Tirol 19,
+  Wien 9, **Oberösterreich 8, Niederösterreich 7, Vorarlberg 7**.
+  Übrige Ideen: Vorarlberg (Arlberg-Sommer, Karren Dornbirn), NÖ (Waldviertel-Stauseen, Grafenegg),
+  OÖ (Mondsee, Wolfgangsee-Ostufer).
 - **Dünne Artikel ausbauen** — der Durchgang durch Wien, Vorarlberg, NÖ und OÖ ist
   abgeschlossen (2026-08-18). Als Nächstes die kürzeren Artikel in Burgenland und Tirol prüfen.
   Zusätzliche `##`-Abschnitte mit echtem Inhalt (Geschichte, Aktivitäten, beste Zeit,
@@ -97,6 +95,7 @@ Jeder Lauf startet **ohne Gedächtnis** an frühere Sessions — dieses File + `
 
 <!-- Format: - YYYY-MM-DD — [Feature|Content] Kurzbeschreibung -->
 
+- 2026-08-20 — [Content] 6 neue Artikel in den drei dünnsten Regionen: Vorarlberg (Montafon, Rappenlochschlucht), Niederösterreich (Ötscher-Tormäuer, Semmeringbahn), Oberösterreich (Nationalpark Kalkalpen, Steyr-Altstadt). Alle mit startCoords, region-passenden bestSeason-Angaben und gegenseitiger Verlinkung wo thematisch passend.
 - 2026-08-20 — [Feature] `app/lib/monatstipps.ts` um Jänner–Juni erweitert (60 neue Picks, 6 neue SSG-Seiten unter `/beste-ausfluege/[monat]`) — jetzt alle 12 Monate abgedeckt. Jede Zuordnung gegen das `bestSeason`-Feld des jeweiligen Posts geprüft, damit keine Ziele außerhalb ihrer echten Saison landen (z. B. Klammen erst ab Mai, Minimundus erst ab April). `/beste-ausfluege`-Hub-Text entsprechend aktualisiert.
 - 2026-08-20 — [Feature] Neuer Hub `/ausflugsplaner`: bündelt alle 12 Themenseiten (Wetter, Zeit, Seen, Monat, Anreise/Karte) gruppiert mit Kurzbeschreibung. Footer + Sitemap ergänzt, aus 10 bestehenden Themenseiten zurückverlinkt (vorher zeigten sie nur aufeinander, nicht auf eine zentrale Übersicht).
 - 2026-08-19 — [Content] 4 neue Wien-Artikel (Donauinsel, Lainzer Tiergarten, MuseumsQuartier, Schloss Belvedere) — Wien war mit 5 Artikeln die dünnste Region, jetzt 9. Alle mit `startCoords`, querverlinkt aus /regentaugliche-ausfluege, /hitzefreundliche-ausfluege, /feierabend-ausfluege und aus bestehenden Wien-Artikeln.

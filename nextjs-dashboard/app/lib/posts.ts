@@ -5509,6 +5509,185 @@ In der Nähe gibt es kostenlose Badestellen und Strandbäder. Maria Wörth läss
       { label: 'Unterkünfte am Wörthersee – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=W%C3%B6rthersee' },
     ],
   },
+  {
+    slug: 'montafon-tal-wandern',
+    startCoords: [47.0800, 9.9250],
+    title: 'Montafon – Wandertal zwischen Silvretta, Rätikon und Verwall',
+    excerpt: 'Das Montafon ist eines der großen Wandertäler Vorarlbergs: eingerahmt von Silvretta, Rätikon und Verwall, mit Bergbahnen als Höhenzugang und einer eigenen Alm- und Käsetradition zwischen Schruns, Gaschurn und Partenen.',
+    date: '2026-08-20', category: 'Wandern', region: 'vorarlberg', difficulty: 'mittel', bestSeason: 'Juni–Oktober',
+    highlights: ['Drei Gebirgsgruppen an einem Tal', 'Bergbahnen als Abkürzung in die Höhe', 'Eigene Alm- und Käsetradition'],
+    content: `
+Das **Montafon** ist das südlichste und größte Tal Vorarlbergs – von Bludenz bis zum Talschluss bei Partenen ziehen sich die Orte Schruns, Tschagguns, St. Gallenkirch und Gaschurn entlang der Ill, umgeben von gleich drei Gebirgsgruppen.
+
+## Drei Gebirgsgruppen, ein Tal
+Im Süden und Westen ragt der **Rätikon** mit schroffen Kalkwänden auf, im Osten schließt die **Silvretta** mit ihren Gletscherresten an, im Norden liegt das eher sanftere **Verwall**. Diese Vielfalt macht das Montafon zu einem Tal für sehr unterschiedliche Wandertypen: von gemütlichen Almwegen bis zu alpinen Hochtouren ist alles vorhanden.
+
+## Bergbahnen als Einstieg in die Höhe
+Mehrere Bahnen ersparen den mühsamen unteren Aufstieg: Von Vandans führt die **Golmerbahn** auf den Golm mit Panoramaweg und Hängebrücke, von Schruns geht es ins **Hochjoch**, von Gaschurn auf die **Versettla**. Wer die Höhenmeter lieber zu Fuß macht, findet ab jedem Talort markierte Aufstiege zu Hütten und Almen.
+
+## Alm- und Käsetradition
+Das Montafon pflegt eine eigene Sennerei-Kultur – die traditionelle Herstellung von Sauerkäse auf den Alpen ist bis heute lebendig und wird auf vielen Hütten noch praktiziert. Eine Einkehr auf einer bewirtschafteten Alm gehört für die meisten Touren dazu, oft mit hausgemachten Milchprodukten.
+
+## Beste Reisezeit
+Die Bergbahnen und die meisten Hütten haben in der Regel von **Juni bis Oktober** geöffnet, je nach Schneelage der jeweiligen Saison. Der Hochsommer eignet sich für die höheren Lagen, Juni und September für tiefere Almrunden mit weniger Andrang.
+
+## Praktische Infos
+- Startpunkte in Schruns, Tschagguns, St. Gallenkirch, Gaschurn oder Partenen – je nach Ziel unterschiedlich
+- Bergbahnen sparen Zeit und Höhenmeter, Betriebszeiten aber saisonal, vorab prüfen
+- Hochalpine Touren in Silvretta und Rätikon verlangen Trittsicherheit und Erfahrung
+- Wetterumschwünge in den Bergketten rundum können rasch kommen – Bergwetter checken
+    `,
+    affiliateLinks: [
+      { label: 'Unterkünfte im Montafon – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Montafon' },
+    ],
+  },
+  {
+    slug: 'rappenlochschlucht-dornbirn',
+    startCoords: [47.4230, 9.7290],
+    title: 'Rappenlochschlucht – Klammwandern direkt vor den Toren Dornbirns',
+    excerpt: 'Nur wenige Minuten von Dornbirn entfernt führt ein gesicherter Steig durch die enge, tief eingeschnittene Rappenlochschlucht – kompakt, spektakulär und ganz ohne lange Anfahrt in die Berge.',
+    date: '2026-08-20', category: 'Wandern', region: 'vorarlberg', difficulty: 'leicht', bestSeason: 'April–Oktober',
+    highlights: ['Enge Schlucht direkt bei Dornbirn', 'Kurzer, gut gesicherter Steig', 'Kombinierbar mit der Alplochschlucht'],
+    content: `
+Wo sich die **Dornbirner Ach** durch den Fels gefräst hat, liegt die **Rappenlochschlucht** – eine der zugänglichsten Klammen Vorarlbergs, nur eine kurze Fahrt von der Dornbirner Innenstadt entfernt.
+
+## Durch die Schlucht
+Ein schmaler, in den Fels gesprengter Steig mit Geländer führt tief unten am tosenden Wasser entlang durch die enge Schlucht. Die Wände stehen an manchen Stellen nur wenige Meter auseinander, oben blitzt ein schmaler Himmelsstreifen durch – ein kurzer, aber eindrucksvoller Weg, der auch für Familien mit etwas älteren Kindern gut machbar ist.
+
+## Weiter zur Alplochschlucht
+Wer mag, verbindet die Rappenlochschlucht mit der benachbarten **Alplochschlucht** zu einer Rundtour – beide Schluchten liegen nur wenige Gehminuten auseinander und lassen sich an einem Vormittag zusammen erkunden. Insgesamt bleibt die Runde kurz, eignet sich aber gut als Auftakt oder Ausklang eines Dornbirn-Ausflugs.
+
+## Beste Reisezeit
+Nach starken Regenfällen oder in der Schneeschmelze kann der Steig durch hohen Wasserstand oder Steinschlaggefahr gesperrt sein – wie bei allen Klammen gilt: aktuellen Sperr- und Wetterstatus vor dem Losfahren prüfen. Am schönsten ist die Schlucht bei stabilem Wetter zwischen Frühling und Herbst.
+
+## Praktische Infos
+- Parkplatz an der Talstation bzw. am Schluchteingang, in der Saison gut frequentiert
+- Festes Schuhwerk empfehlenswert, der Steig ist streckenweise nass und rutschig
+- Kombination mit der Alplochschlucht verlängert die Runde nur wenig
+- Bei Gewitter oder starkem Regen die Schlucht meiden
+    `,
+    affiliateLinks: [
+      { label: 'Unterkünfte in Dornbirn – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Dornbirn' },
+    ],
+  },
+  {
+    slug: 'oetscher-tormaeuer-wandern',
+    startCoords: [47.8567, 15.0419],
+    title: 'Ötscher-Tormäuer – wilde Schlucht am Fuß des Ötschers',
+    excerpt: 'Die Ötschergräben zählen zu den eindrucksvollsten Schluchten Österreichs: smaragdgrüne Gumpen, Wasserfälle und ein gesicherter Steig direkt am Fels, eingebettet in den Naturpark Ötscher-Tormäuer im Mostviertel.',
+    date: '2026-08-20', category: 'Wandern', region: 'niederoesterreich', difficulty: 'mittel', bestSeason: 'Mai–Oktober',
+    highlights: ['Smaragdgrüne Gumpen und Wasserfälle', 'Naturpark am Fuß des Ötschers', 'Gesicherter Steig mit Stegen und Leitern'],
+    content: `
+Am Fuß des **Ötschers** (1.893 m), einem der markantesten Berge des Mostviertels, hat sich über Jahrtausende eine tiefe Schlucht in den Fels gegraben: die **Ötschergräben**, Kernstück des Naturparks Ötscher-Tormäuer.
+
+## Der Steig durch die Gräben
+Ein gut gesicherter Steig mit Stegen, Brücken und stellenweise Leitern führt entlang tosender Bäche durch die Schlucht, vorbei an smaragdgrünen Gumpen und kleinen Wasserfällen. Die Kulisse aus steilen Felswänden und dichtem Bergwald macht die Tour zu einer der eindrucksvollsten Klamm-Wanderungen Niederösterreichs – konditionell und trittsicherheitsmäßig aber anspruchsvoller als eine einfache Familienklamm.
+
+## Kombination mit dem Ötscher-Gipfel
+Ambitionierte verbinden die Gräben mit dem Aufstieg auf den **Ötscher** selbst – ein langer, konditionell fordernder Tag mit alpinem Charakter im oberen Bereich, kein spontanes Nachmittagsprogramm. Wer es ruhiger mag, bleibt in der Schlucht und dreht dort um oder wandert zu einer der umliegenden Hütten.
+
+## Beste Reisezeit
+Nach der Schneeschmelze im Frühjahr führen die Bäche am meisten Wasser, gleichzeitig können einzelne Passagen dann noch nass oder rutschig sein. Die stabilsten Bedingungen bietet meist der Sommer bis in den frühen Herbst; Sperren nach Unwettern sind möglich und sollten vorab geprüft werden.
+
+## Praktische Infos
+- Ausgangspunkte u. a. bei Wienerbruck, Lackenhof oder Puchenstuben im Mostviertel
+- Festes Schuhwerk und etwas Kondition sind nötig, der Steig ist kein reiner Spazierweg
+- Bei Nässe sind Stege und Steinstufen rutschig – Vorsicht walten lassen
+- Gute Kombination mit einer Übernachtung im Mostviertel oder einem Abstecher zum [Lunzer See](/blog/lunzer-see-baden)
+    `,
+    affiliateLinks: [
+      { label: 'Unterkünfte im Mostviertel – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Mostviertel' },
+    ],
+  },
+  {
+    slug: 'semmeringbahn-weltkulturerbe',
+    startCoords: [47.6270, 15.8280],
+    title: 'Semmeringbahn – Weltkulturerbe zwischen Viadukten und Panoramablick',
+    excerpt: 'Die Semmeringbahn ist die älteste Gebirgsbahn Europas und UNESCO-Weltkulturerbe: Tunnel, Viadukte und der Bahnwanderweg machen den Semmering zu einem Ausflug für Bahnfans, Wanderer und alle, die mondäne Sommerfrische-Architektur mögen.',
+    date: '2026-08-20', category: 'Ausflug', region: 'niederoesterreich', bestSeason: 'April–Oktober',
+    highlights: ['UNESCO-Weltkulturerbe seit 1998', 'Historische Viadukte und Tunnel', 'Bahnwanderweg mit Blick auf die Strecke'],
+    content: `
+Der **Semmering** an der Grenze zwischen Niederösterreich und der Steiermark ist gleich doppelt bedeutend: als historischer Alpenpass und als Standort der **Semmeringbahn**, der ersten mit normaler Spurweite gebauten Gebirgsbahn Europas.
+
+## Die Bahn und ihre Bauwerke
+Mitte des 19. Jahrhunderts unter Carl Ritter von Ghega gebaut, überwindet die Strecke den Alpenübergang mit zahlreichen Tunneln, Viadukten und Kehren – eine technische Meisterleistung ihrer Zeit, die bis heute in Betrieb ist. Wegen dieser Ingenieursleistung wurde die Bahn 1998 als eine der ersten Eisenbahnstrecken weltweit zum UNESCO-Weltkulturerbe erklärt.
+
+## Der Bahnwanderweg
+Ein markierter **Bahnwanderweg** begleitet die Strecke über weite Teile und bietet immer wieder freie Blicke auf die berühmten Viadukte, etwa das Kalte-Rinne-Viadukt. Der Weg lässt sich in Teilstücken gehen und eignet sich für alle, die Landschaft, Technikgeschichte und Bahnromantik verbinden wollen, ganz ohne alpine Anforderungen.
+
+## Kurort Semmering
+Rund um den Bahnhof erinnert die mondäne Villenarchitektur an die Zeit, als der Semmering als Luftkurort der Wiener Gesellschaft galt. Auch heute lädt die Gegend zu ruhigen Spaziergängen mit Fernblick Richtung Rax und Schneeberg ein.
+
+## Beste Reisezeit
+Die Bahn selbst fährt ganzjährig, der Bahnwanderweg ist aber bei Schnee und Eis im Winter deutlich anspruchsvoller. Am angenehmsten sind Frühling bis Herbst, wenn die Wege trocken und die Ausblicke frei sind.
+
+## Praktische Infos
+- Bahnhof Semmering ist mit der Bahn direkt erreichbar – gute Alternative zur Anfahrt mit dem Auto
+- Der Bahnwanderweg ist in mehrere Etappen unterteilt, nicht die gesamte Strecke muss an einem Tag gegangen werden
+- Fahrpläne und mögliche Baustellen an der Strecke vorab prüfen
+- Festes Schuhwerk empfehlenswert, Teilstücke verlaufen unbefestigt am Hang
+    `,
+    affiliateLinks: [
+      { label: 'Unterkünfte am Semmering – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Semmering' },
+    ],
+  },
+  {
+    slug: 'nationalpark-kalkalpen-wandern',
+    startCoords: [47.8281, 14.2264],
+    title: 'Nationalpark Kalkalpen – Wildnis im oberösterreichischen Bergland',
+    excerpt: 'Der Nationalpark Kalkalpen ist eines der größten zusammenhängenden Waldschutzgebiete Mitteleuropas – urwaldartige Bestände, wilde Bäche und einsame Höhenwege zwischen Reichraminger Hintergebirge und Sengsengebirge.',
+    date: '2026-08-20', category: 'Wandern', region: 'oberoesterreich', difficulty: 'mittel', bestSeason: 'Mai–Oktober',
+    highlights: ['Eines der größten Waldschutzgebiete Mitteleuropas', 'Urwaldartige Bestände und wilde Bäche', 'Ausgangspunkte in Molln, Reichraming und Windischgarsten'],
+    content: `
+Zwischen dem **Reichraminger Hintergebirge** und dem **Sengsengebirge** erstreckt sich der **Nationalpark Kalkalpen** – eines der größten zusammenhängenden Waldgebiete Mitteleuropas, weitgehend sich selbst überlassen.
+
+## Ein Nationalpark aus Wald
+Anders als viele alpine Nationalparks steht hier nicht das Hochgebirge im Vordergrund, sondern großflächige, teils urwaldartige Buchen- und Fichtenwälder, durchzogen von naturbelassenen Bächen und schroffen Kalkschluchten. Wer Ruhe und echte Wildnis sucht, findet hier deutlich weniger Trubel als in den bekannten Wandergebieten des Salzkammerguts.
+
+## Wandern zwischen Hintergebirge und Sengsengebirge
+Markierte Wege führen von den Talorten aus in die Kernzonen – von gemütlichen Talwanderungen entlang der Bäche bis zu anspruchsvolleren Höhenwegen auf den Kammlagen des Sengsengebirges. Ein Besuch im Nationalpark-Zentrum am Rand des Gebiets liefert vorab einen guten Überblick über Wege und aktuelle Bedingungen.
+
+## Beste Reisezeit
+Die Hauptwandersaison liegt zwischen **Mai und Oktober**; in höheren Lagen kann bis in den späten Frühling Schnee liegen. Der Wald sorgt auch an heißen Sommertagen für angenehmen Schatten, was das Gebiet zu einer guten Alternative bei Hitzewellen macht.
+
+## Praktische Infos
+- Ausgangspunkte u. a. in Molln, Reichraming und Windischgarsten – je nach gewünschter Route unterschiedlich
+- Kernzonen sind Wildnisgebiete – auf den markierten Wegen bleiben und Rücksicht auf Wildtiere nehmen
+- Handyempfang ist in den abgelegenen Tälern stellenweise eingeschränkt
+- Gute Kombination mit einer Nacht in einem der umliegenden Orte des Nationalparks, etwa in [Steyr](/blog/steyr-altstadt-ausflug)
+    `,
+    affiliateLinks: [
+      { label: 'Unterkünfte rund um den Nationalpark Kalkalpen – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Molln' },
+    ],
+  },
+  {
+    slug: 'steyr-altstadt-ausflug',
+    startCoords: [48.0397, 14.4212],
+    title: 'Steyr – Altstadt am Zusammenfluss von Enns und Steyr',
+    excerpt: 'Steyr gilt als eine der schönsten Altstädte Österreichs: bunte Bürgerhausfassaden am Stadtplatz, die berühmte Bummerlhaus-Fassade und die Lage am Zusammenfluss zweier Flüsse machen die oberösterreichische Stadt zu einem lohnenden Tagesausflug.',
+    date: '2026-08-20', category: 'Ausflug', region: 'oberoesterreich', bestSeason: 'Ganzjährig',
+    highlights: ['Eine der schönsten Altstädte Österreichs', 'Lage am Zusammenfluss von Enns und Steyr', 'Kompakt zu Fuß erkundbar'],
+    content: `
+**Steyr** liegt dort, wo der gleichnamige Fluss in die Enns mündet – eine Lage, die der Stadt seit dem Mittelalter Wohlstand brachte und bis heute ihr Stadtbild prägt.
+
+## Der Stadtplatz
+Der langgezogene **Stadtplatz** gilt als einer der schönsten Österreichs: dichte Reihen bunter Bürgerhäuser, Erker und Giebel, allen voran das reich verzierte **Bummerlhaus** als bekanntestes Fotomotiv der Stadt. Enge Gassen und Durchgänge laden zum Schlendern abseits der Hauptachse ein.
+
+## Zwischen zwei Flüssen
+Auf der schmalen Landzunge zwischen Enns und Steyr liegt die **Ennsleite** mit Ausblick auf beide Flüsse, während der historische **Wehrgraben** an die frühindustrielle Vergangenheit der Stadt erinnert – Steyr war lange ein Zentrum der Eisen- und später der Fahrrad- und Automobilindustrie. Wer mag, verbindet den Altstadtbummel mit einem Spaziergang entlang der Flussufer.
+
+## Beste Reisezeit
+Die Altstadt lässt sich **ganzjährig** besuchen; im Sommer laden die Flussufer zusätzlich zum Verweilen ein, zur Adventzeit sorgt der Christkindlmarkt am Stadtplatz für zusätzliche Atmosphäre.
+
+## Praktische Infos
+- Altstadt ist kompakt und gut zu Fuß erkundbar, Parkplätze eher am Rand des Zentrums suchen
+- Museen und Kirchen haben unterschiedliche Öffnungszeiten – vorab prüfen
+- Gute Ausgangsbasis auch für Ausflüge in den nahen [Nationalpark Kalkalpen](/blog/nationalpark-kalkalpen-wandern)
+    `,
+    affiliateLinks: [
+      { label: 'Unterkünfte in Steyr – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Steyr' },
+    ],
+  },
 
 ];
 
