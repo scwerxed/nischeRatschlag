@@ -32,6 +32,12 @@ export const BADEPLAETZE: Badeplatz[] = [
   { name: 'Uferwege Techendorf', see: 'Weissensee', region: 'Kärnten', slug: 'weissensee-kaernten-geheimtipp', features: ['gratis', 'schatten', 'wandern'], hinweis: 'Freie Einstiege entlang der Uferwege – ideal nach einer Runde am See.' },
   { name: 'Strandbad Faak', see: 'Faaker See', region: 'Kärnten', slug: 'faaker-see-badestellen', features: ['flach', 'wc', 'gastro'], hinweis: 'Türkises Wasser; die Gratis-Plätze am See sind rar.' },
   { name: 'Bodensdorf Nordufer', see: 'Ossiacher See', region: 'Kärnten', slug: 'ossiacher-see-badeurlaub', features: ['gratis', 'wc'], hinweis: 'Freie Uferabschnitte am Nordufer; beliebt bei SUP und Surfern.' },
+  { name: 'Uferpromenade Millstatt', see: 'Millstätter See', region: 'Kärnten', slug: 'millstaetter-see-wandern-und-schwimmen', features: ['gratis', 'wandern', 'schatten'], hinweis: 'Freie Zugänge entlang der Promenade – nach der Saison angenehm leer.' },
+  { name: 'Freibad Keutschacher See', see: 'Keutschacher See', region: 'Kärnten', slug: 'keutschacher-seental-radtour', features: ['gratis', 'flach', 'wandern'], hinweis: 'Ruhigere Alternative zum Wörthersee gleich nebenan, gut mit der Seental-Radtour kombinierbar.' },
+  // Steiermark
+  { name: 'Ostufer Grundlsee', see: 'Grundlsee', region: 'Steiermark', slug: 'grundlsee-steirisches-meer', features: ['gratis', 'wandern', 'schatten'], hinweis: 'Das „steirische Meer" – ruhige Uferabschnitte, gut mit der Wanderung zum Toplitzsee kombinierbar.' },
+  { name: 'Seeuferweg Altaussee', see: 'Altausseer See', region: 'Steiermark', slug: 'altausseer-see-baden', features: ['gratis', 'wandern'], hinweis: 'Flacher Rundweg mit freien Einstiegen; Motorboote sind am See verboten.' },
+  { name: 'Strandbad Stubenberg', see: 'Stubenbergsee', region: 'Steiermark', slug: 'stubenbergsee-baden', features: ['flach', 'wc', 'gastro'], hinweis: 'Einer der wärmsten Badeseen der Oststeiermark – beliebtes Ziel ab Graz.' },
   // Salzburg
   { name: 'Badeplätze am Fuschlsee', see: 'Fuschlsee', region: 'Salzburg', slug: 'fuschlsee-baden', features: ['gratis', 'schatten', 'wandern'], hinweis: 'Kombiniere den Seerundweg (ca. 3 Std.) mit einem Sprung ins smaragdgrüne Wasser.' },
   { name: 'Strandbad Zell am See', see: 'Zeller See', region: 'Salzburg', slug: 'zell-am-see-zeller-see', features: ['flach', 'wc', 'gastro'], hinweis: 'Baden mit Blick auf die Hohen Tauern.' },
@@ -48,6 +54,7 @@ export const BADEPLAETZE: Badeplatz[] = [
   { name: 'Donauinsel', see: 'Neue Donau', region: 'Wien', slug: 'donauinsel-wien', features: ['gratis', 'wc', 'gastro'], hinweis: 'Kilometerlange freie Badezonen, mit der U-Bahn erreichbar.' },
   // Burgenland
   { name: 'Strandbad Podersdorf', see: 'Neusiedler See', region: 'Burgenland', slug: 'podersdorf-am-see', features: ['flach', 'wc', 'gastro'], hinweis: 'Sehr flach und warm – der Klassiker am Ostufer.' },
+  { name: 'Illmitz Ostufer', see: 'Neusiedler See', region: 'Burgenland', slug: 'neusiedler-see-baden-segeln', features: ['flach', 'wc', 'gastro'], hinweis: 'Sehr flach und windexponiert – Warmwasser-Klassiker mit Segel- und Surfspots.' },
   // Niederösterreich
   { name: 'Strandbad Lunz', see: 'Lunzer See', region: 'Niederösterreich', slug: 'lunzer-see-baden', features: ['wc', 'gastro', 'wandern', 'schatten'], hinweis: 'Wärmster Gebirgssee der Region; Uferwege direkt ab Bad.' },
   // Vorarlberg
