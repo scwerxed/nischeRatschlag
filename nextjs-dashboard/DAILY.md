@@ -93,6 +93,7 @@ Jeder Lauf startet **ohne Gedächtnis** an frühere Sessions — dieses File + `
 
 <!-- Format: - YYYY-MM-DD — [Feature|Content] Kurzbeschreibung -->
 
+- 2026-08-20 — [Content] 3 neue Unterkunfts-Einträge (`app/lib/unterkuenfte.ts`): Montafon (Vorarlberg), Ötscher/Lackenhof (NÖ), Steyr (OÖ) — passend zu den heute neu hinzugefügten Artikeln, schließt Lücken auf der Karte in den drei zuvor dünnsten Regionen.
 - 2026-08-20 — [Content] `app/lib/badeplaetze.ts` von 19 auf 25 Einträge erweitert — Steiermark war komplett unvertreten (jetzt Grundlsee, Altausseer See, Stubenbergsee), dazu Millstätter See, Keutschacher See und der Neusiedler-See-Hauptteil (Illmitz) ergänzt.
 - 2026-08-20 — [Feature] Ausflugsplaner-Teaser auf der Startseite (schmale Banner-Sektion nach dem Kennzahlen-Band) + neue SEO-Keywords (Steyr, Nationalpark Kalkalpen, Ötscher, Semmering) für OÖ/NÖ passend zu den neuen Artikeln.
 - 2026-08-20 — [Content] 6 neue Artikel in den drei dünnsten Regionen: Vorarlberg (Montafon, Rappenlochschlucht), Niederösterreich (Ötscher-Tormäuer, Semmeringbahn), Oberösterreich (Nationalpark Kalkalpen, Steyr-Altstadt). Alle mit startCoords, region-passenden bestSeason-Angaben und gegenseitiger Verlinkung wo thematisch passend.

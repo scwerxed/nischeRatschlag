@@ -52,16 +52,19 @@ export const unterkuenfte: Unterkunft[] = [
   { id: 'hallstatt-hotel',        region: 'oberoesterreich', name: 'Hotels in Hallstatt',     ort: 'Hallstatt',       see: 'Hallstätter See',typ: 'Hotel',         abPreis: 110, lat: 47.5620, lng: 13.6490, bookingUrl: 'https://www.booking.com/searchresults.de.html?ss=Hallstatt' },
   { id: 'gmunden-hotel',          region: 'oberoesterreich', name: 'Hotels am Traunsee',      ort: 'Gmunden',         see: 'Traunsee',       typ: 'Hotel',         abPreis: 95,  lat: 47.9180, lng: 13.7990, bookingUrl: 'https://www.booking.com/searchresults.de.html?ss=Gmunden+Traunsee' },
   { id: 'attersee-fewo',          region: 'oberoesterreich', name: 'Unterkünfte am Attersee', ort: 'Attersee',        see: 'Attersee',       typ: 'Ferienwohnung', abPreis: 75,  lat: 47.9150, lng: 13.5250, bookingUrl: 'https://www.booking.com/searchresults.de.html?ss=Attersee' },
+  { id: 'steyr-hotel',            region: 'oberoesterreich', name: 'Hotels in Steyr',        ort: 'Steyr',           see: 'Enns',           typ: 'Hotel',         abPreis: 85,  lat: 48.0397, lng: 14.4212, bookingUrl: 'https://www.booking.com/city/at/steyr.de.html' },
 
   // ── Niederösterreich ───────────────────────────────────────────────────────
   { id: 'krems-wachau-hotel',     region: 'niederoesterreich', name: 'Hotels in der Wachau',  ort: 'Krems',           see: 'Donau',          typ: 'Hotel',         abPreis: 90,  lat: 48.4100, lng: 15.6010, bookingUrl: 'https://www.booking.com/searchresults.de.html?ss=Wachau' },
   { id: 'semmering-hotel',        region: 'niederoesterreich', name: 'Hotels am Semmering',   ort: 'Semmering',       see: 'Rax-Schneeberg', typ: 'Hotel',         abPreis: 85,  lat: 47.6470, lng: 15.8270, bookingUrl: 'https://www.booking.com/searchresults.de.html?ss=Semmering' },
   { id: 'lunz-fewo',              region: 'niederoesterreich', name: 'Unterkünfte am Lunzer See', ort: 'Lunz am See', see: 'Lunzer See',     typ: 'Ferienwohnung', abPreis: 70,  lat: 47.8580, lng: 15.0290, bookingUrl: 'https://www.booking.com/searchresults.de.html?ss=Lunz+am+See' },
+  { id: 'oetscher-fewo',          region: 'niederoesterreich', name: 'Unterkünfte am Ötscher', ort: 'Lackenhof',      see: 'Ötscher',        typ: 'Ferienwohnung', abPreis: 65,  lat: 47.8500, lng: 15.0800, bookingUrl: 'https://www.booking.com/searchresults.de.html?ss=Lackenhof+am+%C3%96tscher' },
 
   // ── Vorarlberg ─────────────────────────────────────────────────────────────
   { id: 'bregenz-hotel',          region: 'vorarlberg', name: 'Hotels in Bregenz',           ort: 'Bregenz',         see: 'Bodensee',       typ: 'Hotel',         abPreis: 100, lat: 47.5030, lng: 9.7470,  bookingUrl: 'https://www.booking.com/searchresults.de.html?ss=Bregenz' },
   { id: 'bregenzerwald-fewo',     region: 'vorarlberg', name: 'Unterkünfte im Bregenzerwald',ort: 'Au',              see: 'Bregenzerwald',  typ: 'Ferienwohnung', abPreis: 80,  lat: 47.3210, lng: 9.9870,  bookingUrl: 'https://www.booking.com/searchresults.de.html?ss=Bregenzerwald' },
   { id: 'brandnertal-hotel',      region: 'vorarlberg', name: 'Hotels im Brandnertal',       ort: 'Brand',           see: 'Lünersee',       typ: 'Hotel',         abPreis: 95,  lat: 47.1010, lng: 9.7340,  bookingUrl: 'https://www.booking.com/searchresults.de.html?ss=Brandnertal' },
+  { id: 'montafon-hotel',         region: 'vorarlberg', name: 'Hotels im Montafon',          ort: 'Schruns',         see: 'Montafon',       typ: 'Hotel',         abPreis: 95,  lat: 47.0800, lng: 9.9250,  bookingUrl: 'https://www.booking.com/searchresults.de.html?ss=Montafon' },
 ];
 
 // Farben & einbuchstabige Label für Karten-Pins (kein Emoji)
