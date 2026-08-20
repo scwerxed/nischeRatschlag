@@ -70,8 +70,6 @@ Jeder Lauf startet **ohne Gedächtnis** an frühere Sessions — dieses File + `
 - Technisch: `any`-Typen in den Leaflet-Dateien durch `@types/leaflet` ersetzen
 - Themenseiten aus Artikeln heraus verlinken: aktuell zeigen die Landingpages **auf** die
   Artikel, aber kaum ein Artikel zeigt zurück auf eine passende Themenseite.
-- Startseite: eigener Block/Karte für `/ausflugsplaner`, damit der neue Hub nicht nur im
-  Footer und in den Themenseiten-CTAs auftaucht, sondern auch direkt von der Startseite sichtbar ist.
 
 ### Content
 - **Neue Artikel** (Slug vorher prüfen!) — dünn besetzte Regionen zuerst.
@@ -95,6 +93,7 @@ Jeder Lauf startet **ohne Gedächtnis** an frühere Sessions — dieses File + `
 
 <!-- Format: - YYYY-MM-DD — [Feature|Content] Kurzbeschreibung -->
 
+- 2026-08-20 — [Feature] Ausflugsplaner-Teaser auf der Startseite (schmale Banner-Sektion nach dem Kennzahlen-Band) + neue SEO-Keywords (Steyr, Nationalpark Kalkalpen, Ötscher, Semmering) für OÖ/NÖ passend zu den neuen Artikeln.
 - 2026-08-20 — [Content] 6 neue Artikel in den drei dünnsten Regionen: Vorarlberg (Montafon, Rappenlochschlucht), Niederösterreich (Ötscher-Tormäuer, Semmeringbahn), Oberösterreich (Nationalpark Kalkalpen, Steyr-Altstadt). Alle mit startCoords, region-passenden bestSeason-Angaben und gegenseitiger Verlinkung wo thematisch passend.
 - 2026-08-20 — [Feature] `app/lib/monatstipps.ts` um Jänner–Juni erweitert (60 neue Picks, 6 neue SSG-Seiten unter `/beste-ausfluege/[monat]`) — jetzt alle 12 Monate abgedeckt. Jede Zuordnung gegen das `bestSeason`-Feld des jeweiligen Posts geprüft, damit keine Ziele außerhalb ihrer echten Saison landen (z. B. Klammen erst ab Mai, Minimundus erst ab April). `/beste-ausfluege`-Hub-Text entsprechend aktualisiert.
 - 2026-08-20 — [Feature] Neuer Hub `/ausflugsplaner`: bündelt alle 12 Themenseiten (Wetter, Zeit, Seen, Monat, Anreise/Karte) gruppiert mit Kurzbeschreibung. Footer + Sitemap ergänzt, aus 10 bestehenden Themenseiten zurückverlinkt (vorher zeigten sie nur aufeinander, nicht auf eine zentrale Übersicht).

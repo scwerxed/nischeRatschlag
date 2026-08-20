@@ -101,6 +101,24 @@ export default function HomePage() {
         </section>
       </FadeIn>
 
+      {/* ── Ausflugsplaner-Teaser ──────────────────────────────────────── */}
+      <FadeIn direction="none" duration={400}>
+        <section className="border-b border-gray-200 bg-sand-50">
+          <div className="max-w-6xl mx-auto px-6 py-4 flex flex-wrap items-center justify-between gap-3">
+            <p className="text-sm text-gray-600">
+              <strong className="text-gray-900">Nicht sicher, wohin?</strong>{' '}
+              Der Ausflugsplaner sortiert alle Ziele nach Wetter, Zeitfenster und Monat.
+            </p>
+            <Link href="/ausflugsplaner" className="inline-flex items-center gap-1.5 text-sm font-semibold text-green-700 hover:text-green-600 transition-colors">
+              Ausflugsplaner öffnen
+              <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="2">
+                <path d="M6 3l5 5-5 5" strokeLinecap="round" strokeLinejoin="round" />
+              </svg>
+            </Link>
+          </div>
+        </section>
+      </FadeIn>
+
       {/* ── Tipp des Tages + Seewetter ─────────────────────────────────── */}
       <section className="max-w-6xl mx-auto px-6 py-16">
         <div className="grid md:grid-cols-2 gap-8">
