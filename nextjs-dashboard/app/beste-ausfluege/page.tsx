@@ -5,7 +5,7 @@ import { BASE, breadcrumbSchema } from '@/app/lib/seo';
 
 export const metadata: Metadata = {
   title: 'Beste Ausflüge nach Monat – Österreich im Jahresverlauf',
-  description: 'Welcher Ausflug passt zu welchem Monat? Kuratierte Österreich-Tipps von Juli bis Dezember – mit Begründung, warum sich jedes Ziel genau jetzt lohnt.',
+  description: 'Welcher Ausflug passt zu welchem Monat? Kuratierte Österreich-Tipps für alle 12 Monate – mit Begründung, warum sich jedes Ziel genau jetzt lohnt.',
   alternates: { canonical: '/beste-ausfluege' },
 };
 
@@ -22,8 +22,8 @@ export default function BesteAusfluegeHub() {
       <p className="eyebrow mb-2">Saisonal</p>
       <h1 className="font-serif text-4xl font-bold mb-3 text-gray-900">Beste Ausflüge nach Monat</h1>
       <p className="text-gray-500 max-w-2xl mb-10 leading-relaxed">
-        Nicht jedes Ziel passt zu jeder Jahreszeit. Hier bündeln wir unsere Artikel monatsweise –
-        mit ehrlicher Begründung, warum sich ein Ausflug genau jetzt lohnt. Weitere Monate folgen laufend.
+        Nicht jedes Ziel passt zu jeder Jahreszeit. Hier bündeln wir unsere Artikel für alle 12 Monate –
+        mit ehrlicher Begründung, warum sich ein Ausflug genau jetzt lohnt.
       </p>
 
       <div className="mb-8">

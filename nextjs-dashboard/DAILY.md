@@ -52,9 +52,6 @@ Jeder Lauf startet **ohne Gedächtnis** an frühere Sessions — dieses File + `
 - „Basislager"-Seiten: beste Ausgangsorte je Wanderregion (Affiliate-stark)
 - `/sonnenuntergang-spots` — Golden-Hour-Ziele inkl. Rückweg-Hinweis
 - `/zwei-ausfluege-an-einem-tag` — Vormittag+Nachmittag-Kombis mit Transferzeit
-- Weitere Monate in `app/lib/monatstipps.ts` — **Jänner bis Juni fehlen noch** (Juli–Dez sind da).
-  Jänner/Februar: Ski, Eislaufen am Weißensee, Rodeln. März/April: Marillenblüte Wachau,
-  Narzissenfest Ausseerland, erste Klammen. Mai/Juni: Grüner See, Almrosenblüte, Badesaison-Start.
 - Weitere Startstädte in `app/lib/wochenendtrip.ts` — Villach/Bregenz/St. Pölten bewusst **nicht**:
   Villach & St. Pölten überschneiden sich zu stark mit Klagenfurt bzw. Wien (Duplicate Content),
   Bregenz hat im 220-km-Radius nur ~25 Ziele. Erst nachziehen, wenn mehr Vorarlberg-Posts da sind.
@@ -100,6 +97,7 @@ Jeder Lauf startet **ohne Gedächtnis** an frühere Sessions — dieses File + `
 
 <!-- Format: - YYYY-MM-DD — [Feature|Content] Kurzbeschreibung -->
 
+- 2026-08-20 — [Feature] `app/lib/monatstipps.ts` um Jänner–Juni erweitert (60 neue Picks, 6 neue SSG-Seiten unter `/beste-ausfluege/[monat]`) — jetzt alle 12 Monate abgedeckt. Jede Zuordnung gegen das `bestSeason`-Feld des jeweiligen Posts geprüft, damit keine Ziele außerhalb ihrer echten Saison landen (z. B. Klammen erst ab Mai, Minimundus erst ab April). `/beste-ausfluege`-Hub-Text entsprechend aktualisiert.
 - 2026-08-20 — [Feature] Neuer Hub `/ausflugsplaner`: bündelt alle 12 Themenseiten (Wetter, Zeit, Seen, Monat, Anreise/Karte) gruppiert mit Kurzbeschreibung. Footer + Sitemap ergänzt, aus 10 bestehenden Themenseiten zurückverlinkt (vorher zeigten sie nur aufeinander, nicht auf eine zentrale Übersicht).
 - 2026-08-19 — [Content] 4 neue Wien-Artikel (Donauinsel, Lainzer Tiergarten, MuseumsQuartier, Schloss Belvedere) — Wien war mit 5 Artikeln die dünnste Region, jetzt 9. Alle mit `startCoords`, querverlinkt aus /regentaugliche-ausfluege, /hitzefreundliche-ausfluege, /feierabend-ausfluege und aus bestehenden Wien-Artikeln.
 - 2026-08-18 — [Feature] Seen-Datenbestand von 10 auf 23 Seen erweitert + 2 neue Themenseiten (`warme-seen`, `seen-mit-wassersport`). Stärkt alle 5 Themenseiten und `/seen-vergleich` gleichzeitig.
