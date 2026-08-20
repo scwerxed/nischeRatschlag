@@ -1,6 +1,7 @@
 import Link from 'next/link';
 
 const QUICK_LINKS = [
+  { href: '/ausflugsplaner', label: 'Ausflugsplaner' },
   { href: '/blog', label: 'Magazin' },
   { href: '/karte', label: 'Wanderkarte' },
   { href: '/routenplaner', label: 'Routenplaner' },

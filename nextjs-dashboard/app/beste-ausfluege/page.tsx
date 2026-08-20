@@ -26,6 +26,12 @@ export default function BesteAusfluegeHub() {
         mit ehrlicher Begründung, warum sich ein Ausflug genau jetzt lohnt. Weitere Monate folgen laufend.
       </p>
 
+      <div className="mb-8">
+        <Link href="/ausflugsplaner" className="inline-block border border-gray-300 text-gray-700 text-sm font-semibold px-5 py-2.5 hover:border-green-600 hover:text-green-700 transition-colors" style={{ borderRadius: 6 }}>
+          Alle Themenseiten
+        </Link>
+      </div>
+
       <div className="grid sm:grid-cols-3 gap-5">
         {MONATE.map((m) => (
           <Link

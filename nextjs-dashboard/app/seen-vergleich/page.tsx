@@ -118,6 +118,7 @@ export default function SeenVergleichPage() {
       <div className="mt-8 flex flex-wrap gap-3">
         <Link href="/blog" className="inline-block bg-green-700 text-white text-sm font-semibold px-5 py-2.5 hover:bg-green-800 transition-colors" style={{ borderRadius: 4 }}>Alle Badeseen-Artikel</Link>
         <Link href="/karte" className="inline-block border border-green-700 text-green-700 text-sm font-semibold px-5 py-2.5 hover:bg-green-50 transition-colors" style={{ borderRadius: 4 }}>Auf der Karte ansehen</Link>
+        <Link href="/ausflugsplaner" className="inline-block border border-gray-300 text-gray-700 text-sm font-semibold px-5 py-2.5 hover:border-green-600 hover:text-green-700 transition-colors" style={{ borderRadius: 4 }}>Alle Themenseiten</Link>
       </div>
 
       <p className="text-xs text-gray-400 mt-6">Wassertemperaturen sind sommerliche Höchstwerte (Juli/August) und können je nach Wetter schwanken.</p>

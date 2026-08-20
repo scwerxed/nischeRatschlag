@@ -112,6 +112,9 @@ export default function WandernBadenPage() {
         <Link href="/hitzefreundliche-ausfluege" className="inline-block border border-amber-500 text-amber-700 text-sm font-semibold px-5 py-2.5 hover:bg-amber-50 transition-colors" style={{ borderRadius: 6 }}>
           Kühle Ziele für Hitzetage
         </Link>
+        <Link href="/ausflugsplaner" className="inline-block border border-gray-300 text-gray-700 text-sm font-semibold px-5 py-2.5 hover:border-green-600 hover:text-green-700 transition-colors" style={{ borderRadius: 6 }}>
+          Alle Themenseiten
+        </Link>
         <Link href="/badeplaetze" className="inline-block border border-sky-500 text-sky-700 text-sm font-semibold px-5 py-2.5 hover:bg-sky-50 transition-colors" style={{ borderRadius: 6 }}>
           Badeplatz-Check
         </Link>

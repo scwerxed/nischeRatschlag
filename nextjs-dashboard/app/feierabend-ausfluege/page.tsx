@@ -127,6 +127,9 @@ export default function FeierabendPage() {
         <Link href="/bahnhofsausfluege" className="inline-block border border-green-700 text-green-700 text-sm font-semibold px-5 py-2.5 hover:bg-green-50 transition-colors" style={{ borderRadius: 6 }}>
           Ausflüge ab Bahnhof
         </Link>
+        <Link href="/ausflugsplaner" className="inline-block border border-gray-300 text-gray-700 text-sm font-semibold px-5 py-2.5 hover:border-green-600 hover:text-green-700 transition-colors" style={{ borderRadius: 6 }}>
+          Alle Themenseiten
+        </Link>
       </div>
     </div>
   );

@@ -71,12 +71,10 @@ Jeder Lauf startet **ohne Gedächtnis** an frühere Sessions — dieses File + `
 - „Route in Google Maps / Komoot öffnen"-Buttons bei Touren-Artikeln
 - `/blog`: Pagination bzw. „Mehr laden" (aktuell werden alle ~155 Karten gerendert)
 - Technisch: `any`-Typen in den Leaflet-Dateien durch `@types/leaflet` ersetzen
-- **Landingpage-Hub** — es gibt inzwischen 10+ Themenseiten (Regen, Hitze, Aussicht, Dauer,
-  Bahnhof, Feierabend, Badeplätze, Wandern+Baden, Monate, Wochenendtrip, Seen-Themen).
-  Der Footer wird lang; eine eigene Übersichtsseite `/ausflugsplaner` oder ein Block auf der
-  Startseite würde sie besser auffindbar machen als die reine Footer-Liste.
 - Themenseiten aus Artikeln heraus verlinken: aktuell zeigen die Landingpages **auf** die
   Artikel, aber kaum ein Artikel zeigt zurück auf eine passende Themenseite.
+- Startseite: eigener Block/Karte für `/ausflugsplaner`, damit der neue Hub nicht nur im
+  Footer und in den Themenseiten-CTAs auftaucht, sondern auch direkt von der Startseite sichtbar ist.
 
 ### Content
 - **Neue Artikel** (Slug vorher prüfen!) — dünn besetzte Regionen zuerst.
@@ -102,6 +100,7 @@ Jeder Lauf startet **ohne Gedächtnis** an frühere Sessions — dieses File + `
 
 <!-- Format: - YYYY-MM-DD — [Feature|Content] Kurzbeschreibung -->
 
+- 2026-08-20 — [Feature] Neuer Hub `/ausflugsplaner`: bündelt alle 12 Themenseiten (Wetter, Zeit, Seen, Monat, Anreise/Karte) gruppiert mit Kurzbeschreibung. Footer + Sitemap ergänzt, aus 10 bestehenden Themenseiten zurückverlinkt (vorher zeigten sie nur aufeinander, nicht auf eine zentrale Übersicht).
 - 2026-08-19 — [Content] 4 neue Wien-Artikel (Donauinsel, Lainzer Tiergarten, MuseumsQuartier, Schloss Belvedere) — Wien war mit 5 Artikeln die dünnste Region, jetzt 9. Alle mit `startCoords`, querverlinkt aus /regentaugliche-ausfluege, /hitzefreundliche-ausfluege, /feierabend-ausfluege und aus bestehenden Wien-Artikeln.
 - 2026-08-18 — [Feature] Seen-Datenbestand von 10 auf 23 Seen erweitert + 2 neue Themenseiten (`warme-seen`, `seen-mit-wassersport`). Stärkt alle 5 Themenseiten und `/seen-vergleich` gleichzeitig.
 - 2026-08-18 — [Content] Region-FAQs von 37 auf 73 verdoppelt (je 8–9 pro Bundesland). Neue Fragen zielen auf echte Suchintentionen: Aufenthaltsdauer, Schlechtwetter, Auto vs. Öffis, Hunde/Familien. Speist die FAQPage-Rich-Snippets.
