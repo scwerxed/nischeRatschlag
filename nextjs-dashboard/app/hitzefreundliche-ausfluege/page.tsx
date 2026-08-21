@@ -3,6 +3,7 @@ import type { Metadata } from 'next';
 import { getPostBySlug } from '@/app/lib/posts';
 import { BASE, regionName, breadcrumbSchema } from '@/app/lib/seo';
 import PostArtwork from '@/app/ui/post-artwork';
+import { HITZE_GROUPS as GROUPS } from '@/app/lib/themen-picks';
 
 export const metadata: Metadata = {
   title: 'Hitzefreundliche Sommerausflüge – kühle Ziele für heiße Tage',
@@ -10,47 +11,6 @@ export const metadata: Metadata = {
   keywords: ['Ausflug bei Hitze', 'kühle Ausflugsziele Österreich', 'Ausflug 35 Grad', 'Klamm Österreich', 'Abkühlung Sommer Ausflug', 'wohin bei Hitze'],
   alternates: { canonical: '/hitzefreundliche-ausfluege' },
 };
-
-// Kuratierte Ziele mit Hitze-Begründung, gruppiert nach Kühl-Faktor.
-const GROUPS: { title: string; note: string; picks: { slug: string; warum: string }[] }[] = [
-  {
-    title: 'Kühle Klammen, Höhlen & Wasserfälle',
-    note: 'In Schluchten und Höhlen hat es oft 15–20 °C weniger als draußen – die natürlichste Klimaanlage des Landes.',
-    picks: [
-      { slug: 'eisriesenwelt-werfen', warum: 'In der größten Eishöhle der Welt hat es konstant um 0 °C – Jacke nicht vergessen.' },
-      { slug: 'liechtensteinklamm', warum: 'Enge Schlucht, Sprühnebel und Schatten – angenehm kühl selbst an Hitzetagen.' },
-      { slug: 'wasserlochklamm-palfau', warum: 'Wasserfälle und schattiger Steig durch die Klamm.' },
-      { slug: 'lurgrotte-tropfsteinhoehle-steiermark', warum: 'Konstant um 10 °C in der größten Tropfsteinhöhle Österreichs.' },
-      { slug: 'krimmler-wasserfaelle', warum: 'Der Sprühnebel der 380-m-Fälle kühlt die Umgebung messbar ab.' },
-      { slug: 'salzwelten-hallein-duerrnberg', warum: 'Tief im Berg bleibt es kühl – Ausflug und Abkühlung in einem.' },
-    ],
-  },
-  {
-    title: 'Höhenluft: über 1.500 m ist es kühler',
-    note: 'Pro 1.000 Höhenmeter sinkt die Temperatur um rund 6 °C – oben wandert es sich auch im Hochsommer angenehm.',
-    picks: [
-      { slug: 'stubaier-gletscher', warum: 'Auf über 3.000 m liegt selbst im Juli Schnee.' },
-      { slug: 'hintertuxer-gletscher', warum: 'Ganzjahres-Gletscher – Winterluft mitten im Sommer.' },
-      { slug: 'dachstein-gletscher-skywalk', warum: 'Gletscherluft und Fernblick statt Tal-Hitze.' },
-      { slug: 'luenersee-wandern', warum: 'Uferrundweg auf knapp 2.000 m – frische Bergluft garantiert.' },
-      { slug: 'grossglockner-tagesausflug', warum: 'Hochalpenstraße bis über 2.500 m – oben weht immer ein kühler Wind.' },
-      { slug: 'giglachseen-schladminger-tauern', warum: 'Hochgelegene Bergseen mit erfrischend kaltem Wasser.' },
-    ],
-  },
-  {
-    title: 'Wasser direkt vor der Tür',
-    note: 'Wenn schon Hitze, dann mit Abkühlung in Reichweite: Ziele, bei denen der Sprung ins Wasser dazugehört.',
-    picks: [
-      { slug: 'weissensee-kaernten-geheimtipp', warum: 'Höchstgelegener Badesee der Alpen-Südseite – erfrischend statt badewannenwarm.' },
-      { slug: 'achensee-tirol', warum: 'Alpin-frisches Wasser, dazu kühlender Talwind.' },
-      { slug: 'plansee-tirol-baden', warum: 'Stiller, kühler Bergsee – der Fjord Tirols.' },
-      { slug: 'gosausee-dachstein-spiegelung', warum: 'Früh starten: schattiger Uferweg + kaltes Gletscherwasser.' },
-      { slug: 'alte-donau-baden-wien', warum: 'Abkühlung ohne Anreise – mitten in Wien, mit der U-Bahn erreichbar.' },
-      { slug: 'donauinsel-wien', warum: 'Kilometerlange Gratis-Ufer: Wer eine ruhige Stelle sucht, geht einfach weiter die Insel entlang.' },
-      { slug: 'attersee-baden', warum: 'Tiefes, klares Wasser, das auch im Hochsommer frisch bleibt.' },
-    ],
-  },
-];
 
 export default function HitzePage() {
   const allPicks = GROUPS.flatMap((g) => g.picks).map((p) => ({ ...p, post: getPostBySlug(p.slug) })).filter((p) => p.post);

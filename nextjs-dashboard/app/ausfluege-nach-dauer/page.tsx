@@ -3,6 +3,7 @@ import type { Metadata } from 'next';
 import { getPostBySlug } from '@/app/lib/posts';
 import { BASE, regionName, breadcrumbSchema } from '@/app/lib/seo';
 import PostArtwork from '@/app/ui/post-artwork';
+import { DAUER_GROUPS as GROUPS } from '@/app/lib/themen-picks';
 
 export const metadata: Metadata = {
   title: 'Ausflüge nach Dauer – was passt in 2 Stunden, einen halben oder ganzen Tag?',
@@ -10,56 +11,6 @@ export const metadata: Metadata = {
   keywords: ['Ausflug 2 Stunden', 'Halbtagesausflug Österreich', 'Tagesausflug Österreich', 'kurzer Ausflug', 'was tun heute Österreich', 'Ausflug wenig Zeit'],
   alternates: { canonical: '/ausfluege-nach-dauer' },
 };
-
-// Kuratierte Zeitfenster – „zeit“ ist die realistische Gesamtdauer vor Ort.
-const GROUPS: { title: string; note: string; picks: { slug: string; zeit: string }[] }[] = [
-  {
-    title: 'Unter 2 Stunden',
-    note: 'Schnell hin, kurz staunen, ohne Stress zurück – ideal für spontane Lücken im Tag.',
-    picks: [
-      { slug: 'pyramidenkogel-woerthersee', zeit: '1–2 Std. inkl. Turm & Rutsche' },
-      { slug: 'minimundus-klagenfurt', zeit: '1–2 Std. Rundgang' },
-      { slug: 'liechtensteinklamm', zeit: 'ca. 1,5 Std. inkl. Klammweg' },
-      { slug: 'gaisberg-salzburg-aussicht', zeit: 'mit dem Bus hinauf: Gipfelrunde in 1 Std.' },
-      { slug: 'alte-donau-baden-wien', zeit: 'Abendbad ab 1 Std.' },
-      { slug: 'krimmler-wasserfaelle', zeit: 'Unterster Fall: ca. 1 Std.' },
-    ],
-  },
-  {
-    title: 'Ein halber Tag',
-    note: 'Vormittag oder Nachmittag – genug Zeit für ein echtes Erlebnis samt Einkehr.',
-    picks: [
-      { slug: 'gruener-see-tragoess', zeit: 'Rundweg + Anfahrt ≈ 4–5 Std.' },
-      { slug: 'luenersee-wandern', zeit: 'Bahn + Seerunde ≈ 4 Std.' },
-      { slug: 'burg-hochosterwitz-ausflug', zeit: 'Aufstieg + Burg ≈ 3 Std.' },
-      { slug: 'stift-melk', zeit: 'Führung + Stiftspark ≈ 3–4 Std.' },
-      { slug: 'traunsee-gmunden', zeit: 'Stadt + Seepromenade ≈ 4 Std.' },
-      { slug: 'schloss-eggenberg-graz', zeit: 'Prunkräume + Park ≈ 3 Std.' },
-    ],
-  },
-  {
-    title: 'Ein ganzer Tag',
-    note: 'Früh los, spät zurück – diese Ziele füllen einen Tag, ohne dass Langeweile aufkommt.',
-    picks: [
-      { slug: 'hallstatt-salzkammergut', zeit: 'Ort + Salzwelten + Skywalk' },
-      { slug: 'grossglockner-tagesausflug', zeit: 'Hochalpenstraße mit Stopps' },
-      { slug: 'wachau-duernstein', zeit: 'Schiff + Rad + Heuriger' },
-      { slug: 'dachstein-krippenstein', zeit: 'Seilbahn + 5fingers + Eishöhle' },
-      { slug: 'schneeberg-wandern', zeit: 'Zahnradbahn + Plateau-Wanderung' },
-      { slug: 'hochschwab-wandern', zeit: 'lange Zustiege – nur mit ganzem Tag' },
-    ],
-  },
-  {
-    title: 'Ein Wochenende',
-    note: 'Manche Ziele entfalten sich erst mit einer Übernachtung – langsamer Morgen inklusive.',
-    picks: [
-      { slug: 'weissensee-kaernten-geheimtipp', zeit: 'entschleunigt erst ab 2 Tagen richtig' },
-      { slug: 'bad-aussee-ausseerland', zeit: 'Ausseerland in Ruhe erkunden' },
-      { slug: 'grossarltal-tal-der-almen', zeit: 'Almen-Wochenende mit Hüttenabend' },
-      { slug: 'alpbachtal-schoenstes-dorf', zeit: 'Dorf, Almen & Bergbahnen' },
-    ],
-  },
-];
 
 export default function DauerPage() {
   const allPicks = GROUPS.flatMap((g) => g.picks).map((p) => ({ ...p, post: getPostBySlug(p.slug) })).filter((p) => p.post);

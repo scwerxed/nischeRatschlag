@@ -37,6 +37,7 @@ This is a **Next.js 16 App Router** travel/tourism guide website for **Austria**
 - **Region page content**: [app/lib/regionen-content.ts](app/lib/regionen-content.ts) → `REGION_CONTENT` (intro box, best-season tips, attractions per region). Powers the region-page intro, the "Beste Reisezeit" grid and the `TouristDestination` schema for **all** active regions.
 - **Accommodations**: [app/lib/unterkuenfte.ts](app/lib/unterkuenfte.ts) — affiliate accommodations (lat/lng, type, price, booking URL, `region`). Shown as pins on the map **and** as affiliate cards on each region page (filtered by `region`). Covers all 9 Bundesländer.
 - **Region FAQs**: [app/lib/faqs.ts](app/lib/faqs.ts) → `FAQS_BY_REGION` (powers the FAQ accordion + FAQPage rich snippets).
+- **Themenseiten-Picks**: [app/lib/themen-picks.ts](app/lib/themen-picks.ts) holds the curated slug lists of the six inline-data landing pages (`HITZE_GROUPS`, `REGEN_GROUPS`, `AUSSICHT_GROUPS`, `DAUER_GROUPS`, `BAHNHOF_GROUPS`, `FEIERABEND_CITIES`). The pages import them (`import { X as GROUPS }`); keeping the data out of `page.tsx` is what lets the reverse index below read it too. Newer theme pages should put their data here from the start.
 
 ### Affiliate system
 
@@ -107,6 +108,7 @@ No external markdown library is used.
 - **Custom 404**: [app/not-found.tsx](app/not-found.tsx) — branded, `noindex`, links to home/magazine/regions.
 - **Post artwork**: [app/ui/post-artwork.tsx](app/ui/post-artwork.tsx) generates a deterministic SVG landscape per post (seeded by slug, palette by category) — used as article hero + card thumbnails everywhere (magazine, home lead, region cards). No real photos yet; this is a branded placeholder so every article has a distinct image without assets/licensing. Swap for real photos later via an optional `image` field on `Post`.
 - **Blog post add-ons**: reading time, share buttons ([app/ui/share-buttons.tsx](app/ui/share-buttons.tsx)), related posts (scored by category/difficulty/season via [app/lib/blog-utils.ts](app/lib/blog-utils.ts)).
+- **Themenseiten-Rückverlinkung**: [app/lib/themenseiten.ts](app/lib/themenseiten.ts) → `themenFor(slug)` builds a reverse index (post slug → theme pages that list it) from `themen-picks.ts`, `monatstipps.ts`, `seen.ts` and `badeplaetze.ts`. Blog posts render it as a "Dieses Ziel steht auch auf diesen Listen" block (max. 4 links, at most 2 per source, ranked by `rank`). Closes the internal-link loop — the landing pages already point *at* articles, this points back. A new theme page joins it by adding one `addGroups(...)` call.
 - **Home add-ons**: live lake-weather widget across popular Austrian lakes ([app/ui/seewetter.tsx](app/ui/seewetter.tsx), Open-Meteo, no key), quick-stats, region cards, map-feature grid.
 - **Newsletter** ([app/ui/newsletter.tsx](app/ui/newsletter.tsx)): **pre-launch / not functional** — no backend, email only saved to `localStorage`. Copy is intentionally honest ("in Vorbereitung"). Wire up a provider (Brevo/MailerLite) with double-opt-in before promising delivery.
 - **Global**: scroll-to-top button in the layout.

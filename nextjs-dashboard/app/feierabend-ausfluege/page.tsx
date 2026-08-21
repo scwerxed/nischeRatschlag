@@ -3,6 +3,7 @@ import type { Metadata } from 'next';
 import { getPostBySlug } from '@/app/lib/posts';
 import { BASE, regionName, breadcrumbSchema } from '@/app/lib/seo';
 import PostArtwork from '@/app/ui/post-artwork';
+import { FEIERABEND_CITIES as CITIES } from '@/app/lib/themen-picks';
 
 export const metadata: Metadata = {
   title: 'Feierabend-Ausflüge ab Wien, Graz & Salzburg – raus nach der Arbeit',
@@ -10,42 +11,6 @@ export const metadata: Metadata = {
   keywords: ['Feierabend Ausflug Wien', 'Feierabend Ausflug Graz', 'Feierabend Ausflug Salzburg', 'nach der Arbeit raus', 'Abend Ausflug', 'Sonnenuntergang Ausflug'],
   alternates: { canonical: '/feierabend-ausfluege' },
 };
-
-// Kuratierte Feierabend-Ziele je Stadt (Anfahrt grob ≤ 45 Min., abendtauglich).
-const CITIES: { name: string; note: string; picks: { slug: string; abend: string }[] }[] = [
-  {
-    name: 'Ab Wien',
-    note: 'U-Bahn oder kurze Fahrt – und um 22 Uhr liegst du wieder im eigenen Bett.',
-    picks: [
-      { slug: 'wienerwald-wandern', abend: 'Kahlenberg zum Sonnenuntergang – danach Heuriger in Grinzing' },
-      { slug: 'alte-donau-baden-wien', abend: 'Abendbad mit Blick auf die Skyline, bis Sonnenuntergang' },
-      { slug: 'wien-prater', abend: 'Hauptallee-Runde nach Büroschluss, Riesenrad in der Dämmerung' },
-      { slug: 'donauinsel-wien', abend: 'Sprung ins Wasser nach der Arbeit – U-Bahn hin, Sonnenuntergang über dem Wasser' },
-      { slug: 'neusiedler-see-baden-segeln', abend: 'ca. 45 Min.: Abendwind, flacher See, weite Sonnenuntergänge' },
-    ],
-  },
-  {
-    name: 'Ab Graz',
-    note: 'Hausberg, Schlosspark oder Buschenschank – alles in unter einer Dreiviertelstunde.',
-    picks: [
-      { slug: 'schoeckl-graz-hausberg', abend: 'Abendrunde am Grazer Hausberg – Seilbahn-Zeiten checken' },
-      { slug: 'schloss-eggenberg-graz', abend: 'Pfauen im Abendlicht – der Park hat lange offen' },
-      { slug: 'stubenbergsee-baden', abend: 'ca. 40 Min.: Abendbad im warmen Badesee' },
-      { slug: 'suedsteirische-weinstrasse', abend: 'ca. 45 Min.: Buschenschank-Abend in den Weinhügeln' },
-    ],
-  },
-  {
-    name: 'Ab Salzburg',
-    note: 'Zwischen Gaisberg und Seenland liegt der perfekte Feierabend nur Minuten entfernt.',
-    picks: [
-      { slug: 'gaisberg-salzburg-aussicht', abend: 'DER Feierabendberg: per Bus hinauf, Sonnenuntergang über der Stadt' },
-      { slug: 'fuschlsee-baden', abend: 'ca. 25 Min.: Abendbad im smaragdgrünen See' },
-      { slug: 'salzburger-seenland-baden', abend: 'Wallersee & Co – flache, warme Seen für den Abendsprung' },
-      { slug: 'schloss-hellbrunn-salzburg', abend: 'Abendspaziergang durch den Schlosspark' },
-      { slug: 'untersberg-salzburg', abend: 'Mit der Bahn hinauf – letzte Talfahrt unbedingt prüfen' },
-    ],
-  },
-];
 
 export default function FeierabendPage() {
   const allPicks = CITIES.flatMap((c) => c.picks).map((p) => ({ ...p, post: getPostBySlug(p.slug) })).filter((p) => p.post);

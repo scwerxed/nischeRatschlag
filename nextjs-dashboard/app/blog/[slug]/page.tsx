@@ -11,6 +11,7 @@ import PostArtwork from '@/app/ui/post-artwork';
 import ViewTracker from '@/app/ui/view-tracker';
 import RecentlyViewed from '@/app/ui/recently-viewed';
 import { readingTime, relatedPosts } from '@/app/lib/blog-utils';
+import { themenFor } from '@/app/lib/themenseiten';
 import { BASE, SITE_NAME, CATEGORY_KEYWORDS, REGION_META, regionName, articleSchema, breadcrumbSchema, sportsActivitySchema, trailRouteSchema, OFFICIAL_REGION_SITES } from '@/app/lib/seo';
 
 type Props = { params: Promise<{ slug: string }> };
@@ -177,6 +178,7 @@ export default async function BlogPostPage({ params }: Props) {
 
   const minutes = readingTime(post.content);
   const related = relatedPosts(post, posts);
+  const themen = themenFor(slug);
   const headings = extractHeadings(post.content);
   const regionSite = OFFICIAL_REGION_SITES[post.region];
   const officialLinks = [...(post.officialLinks ?? []), ...(regionSite ? [regionSite] : [])];
@@ -357,6 +359,28 @@ export default async function BlogPostPage({ params }: Props) {
                   </Link>
                 ))}
               </div>
+            </div>
+          )}
+
+          {/* Themenseiten, auf denen dieser Artikel vorkommt */}
+          {themen.length > 0 && (
+            <div className="mt-12">
+              <h2 className="font-serif text-xl font-bold text-gray-900 mb-1">Dieses Ziel steht auch auf diesen Listen</h2>
+              <p className="text-sm text-gray-500 mb-4">Passt der Ausflug gerade nicht? Über die Themenseiten findest du Alternativen mit demselben Anspruch.</p>
+              <div className="grid sm:grid-cols-2 gap-3">
+                {themen.map((t) => (
+                  <Link key={t.href} href={t.href} className="group flex items-start gap-3 border border-gray-200 p-4 hover:border-green-400 hover:shadow-sm transition-all" style={{ borderRadius: 8 }}>
+                    <span className="shrink-0 mt-2 w-3 h-px bg-green-600 inline-block" />
+                    <span>
+                      <span className="block text-sm font-semibold text-gray-900 group-hover:text-green-700 leading-snug">{t.label}</span>
+                      <span className="block mt-0.5 text-xs text-gray-500 leading-snug">{t.note}</span>
+                    </span>
+                  </Link>
+                ))}
+              </div>
+              <Link href="/ausflugsplaner" className="inline-block mt-4 text-sm text-green-700 hover:underline font-medium">
+                Alle Themenseiten im Ausflugsplaner →
+              </Link>
             </div>
           )}
 

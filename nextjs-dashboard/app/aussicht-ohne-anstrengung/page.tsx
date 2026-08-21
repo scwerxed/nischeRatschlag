@@ -3,6 +3,7 @@ import type { Metadata } from 'next';
 import { getPostBySlug } from '@/app/lib/posts';
 import { BASE, regionName, breadcrumbSchema } from '@/app/lib/seo';
 import PostArtwork from '@/app/ui/post-artwork';
+import { AUSSICHT_GROUPS as GROUPS } from '@/app/lib/themen-picks';
 
 export const metadata: Metadata = {
   title: 'Aussicht ohne Anstrengung – Bergblick ohne lange Wanderung',
@@ -10,55 +11,6 @@ export const metadata: Metadata = {
   keywords: ['Aussicht ohne Wandern', 'Bergbahn Österreich Aussicht', 'Panoramastraße Österreich', 'Ausflug ohne Anstrengung', 'Aussichtspunkt mit Seilbahn', 'Bergblick ohne Aufstieg'],
   alternates: { canonical: '/aussicht-ohne-anstrengung' },
 };
-
-// Kuratierte Aussichtsziele, gruppiert nach Art des "Aufstiegs".
-const GROUPS: { title: string; note: string; picks: { slug: string; warum: string }[] }[] = [
-  {
-    title: 'Seilbahn hoch, Aussicht sofort',
-    note: 'Bergbahnen nehmen dir den kompletten Aufstieg ab. Oben wartet meist ein Gasthaus mit Terrasse – mehr braucht es nicht für einen guten Tag.',
-    picks: [
-      { slug: 'rax-seilbahn', warum: 'Österreichs älteste Personenseilbahn bringt dich aufs sanfte Hochplateau – oben genügen flache Wege.' },
-      { slug: 'schoeckl-graz-hausberg', warum: 'Grazer Hausberg per Seilbahn: Rundblick über die Steiermark ohne einen einzigen Höhenmeter zu Fuß.' },
-      { slug: 'untersberg-salzburg', warum: 'In Minuten von Salzburg-Nähe auf über 1.800 m – der Blick reicht weit über Stadt und Alpenvorland.' },
-      { slug: 'dachstein-krippenstein', warum: 'Mehrsektionen-Seilbahn hinauf zum „5fingers"-Aussichtssteg mit Blick über den Hallstätter See.' },
-      { slug: 'kitzsteinhorn-kaprun', warum: 'Gletscherwelt und Aussichtsplattform auf rund 3.000 m, komplett per Bahn erschlossen.' },
-      { slug: 'hintertuxer-gletscher', warum: 'Ganzjahres-Gletscher – Hochgebirgspanorama auch dann, wenn Wandern keine Option ist.' },
-      { slug: 'luenersee-wandern', warum: 'Die Bahn bringt dich direkt an den Seespiegel auf knapp 2.000 m; der Uferweg ist flach.' },
-      { slug: 'festung-kufstein', warum: 'Standseilbahn statt Burgberg-Aufstieg – Innblick und Altstadtpanorama inklusive.' },
-    ],
-  },
-  {
-    title: 'Panoramastraßen: Aussicht ab dem Parkplatz',
-    note: 'Hier fährst du direkt in die Höhe. Beachte: Diese Straßen sind in der Regel mautpflichtig und im Winter gesperrt – Öffnungszeitraum und Tarife vorab beim Betreiber prüfen.',
-    picks: [
-      { slug: 'grossglockner-tagesausflug', warum: 'Die Hochalpenstraße führt bis über 2.500 m; an der Kaiser-Franz-Josefs-Höhe steht man direkt vor dem Gletscher.' },
-      { slug: 'nockalmstrasse-panoramastrasse', warum: 'Sanfte Nockberge-Kuppen, viele Parkbuchten mit Aussicht – Panorama fast ohne Aussteigen.' },
-      { slug: 'silvretta-hochalpenstrasse', warum: 'Serpentinen zum Stausee auf über 2.000 m mit Blick auf die Gletscher der Silvretta.' },
-      { slug: 'villacher-alpe-dobratsch-wanderung', warum: 'Die Alpenstraße führt weit hinauf; von den oberen Parkplätzen ist es nur noch ein kurzer Weg zur Aussicht.' },
-      { slug: 'gaisberg-salzburg-aussicht', warum: 'Salzburgs Hausberg ist bis fast zum Gipfel befahrbar – der beste Stadtblick mit minimalem Aufwand.' },
-    ],
-  },
-  {
-    title: 'Aussichtstürme & Plattformen',
-    note: 'Gebaute Aussicht: Lift oder kurze Treppe, dafür ein Rundumblick, den man sich sonst erwandern müsste.',
-    picks: [
-      { slug: 'pyramidenkogel-woerthersee', warum: 'Höchster Holzaussichtsturm der Welt mit Lift – Rundblick über den Wörthersee und die Karawanken.' },
-      { slug: 'dachstein-gletscher-skywalk', warum: 'Hängebrücke, Skywalk und „Treppe ins Nichts" direkt bei der Bergstation.' },
-      { slug: 'hallstatt-salzkammergut', warum: 'Der Skywalk „Welterbeblick" ist per Schrägaufzug erreichbar – der berühmteste Blick des Salzkammerguts.' },
-      { slug: 'geschriebenstein-wandern-burgenland', warum: 'Aussichtsturm auf dem höchsten Punkt des Burgenlands, über kurze Waldwege erreichbar.' },
-    ],
-  },
-  {
-    title: 'Kurze Wege, große Wirkung',
-    note: 'Kein Lift nötig – hier stimmt einfach das Verhältnis: wenig Höhenmeter, viel Landschaft. Gut für Familien und alle, die es gemütlich mögen.',
-    picks: [
-      { slug: 'schneeberg-wandern', warum: 'Die Zahnradbahn erledigt den Aufstieg; oben reicht eine kurze Plateaurunde für alpines Panorama.' },
-      { slug: 'gosausee-dachstein-spiegelung', warum: 'Flacher Uferweg, und der Dachstein spiegelt sich im See – eines der schönsten Motive Österreichs.' },
-      { slug: 'wienerwald-wandern', warum: 'Kahlenberg und Leopoldsberg sind mit Bus erreichbar, der Blick über Wien beginnt am Parkplatz.' },
-      { slug: 'maria-woerth-woerthersee', warum: 'Die Halbinsel-Kirche liegt eben am Ufer – Postkartenblick über den See ohne jeden Anstieg.' },
-    ],
-  },
-];
 
 export default function AussichtPage() {
   const allPicks = GROUPS.flatMap((g) => g.picks).map((p) => ({ ...p, post: getPostBySlug(p.slug) })).filter((p) => p.post);

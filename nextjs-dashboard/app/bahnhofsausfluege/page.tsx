@@ -3,6 +3,7 @@ import type { Metadata } from 'next';
 import { getPostBySlug } from '@/app/lib/posts';
 import { BASE, regionName, breadcrumbSchema } from '@/app/lib/seo';
 import PostArtwork from '@/app/ui/post-artwork';
+import { BAHNHOF_GROUPS as GROUPS } from '@/app/lib/themen-picks';
 
 export const metadata: Metadata = {
   title: 'Ausflug ab Bahnhof – Österreich ohne Auto entdecken',
@@ -10,48 +11,6 @@ export const metadata: Metadata = {
   keywords: ['Ausflug ohne Auto', 'Ausflug mit Zug Österreich', 'Bahn Ausflugsziele', 'Ausflug ab Bahnhof', 'öffentlich erreichbar Wandern', 'Klimaticket Ausflug'],
   alternates: { canonical: '/bahnhofsausfluege' },
 };
-
-// Kuratierte Öffi-Ziele – „anreise“ = konkreter Bahn-Hinweis.
-const GROUPS: { title: string; note: string; picks: { slug: string; anreise: string }[] }[] = [
-  {
-    title: 'Ziel direkt an der Bahn',
-    note: 'Aussteigen und loslegen – diese Ziele liegen wenige Gehminuten vom Bahnhof entfernt.',
-    picks: [
-      { slug: 'schneeberg-wandern', anreise: 'Bahnhof Puchberg – die Zahnradbahn startet direkt daneben' },
-      { slug: 'zell-am-see-zeller-see', anreise: 'Bahnhof Zell am See liegt direkt am See' },
-      { slug: 'bregenz-bodensee', anreise: 'Vom Bahnhof in 5 Min. an der Seepromenade' },
-      { slug: 'stift-melk', anreise: 'Bahnhof Melk, ca. 15 Min. zu Fuß zum Stift' },
-      { slug: 'festung-kufstein', anreise: 'Bahnhof Kufstein, 10 Min. zur Festung' },
-      { slug: 'seefeld-tirol', anreise: 'Die Mittenwaldbahn hält mitten im Ort' },
-      { slug: 'kitzbuehel-ausflug', anreise: 'Bahnhof Kitzbühel im Ortszentrum' },
-    ],
-  },
-  {
-    title: 'Bahn + Schiff oder Bus',
-    note: 'Ein Umstieg gehört dazu – dafür beginnt das Erlebnis schon bei der Anreise.',
-    picks: [
-      { slug: 'hallstatt-salzkammergut', anreise: 'Bahn bis Hallstatt, dann die Fähre über den See – schönste Ankunft Österreichs' },
-      { slug: 'rax-seilbahn', anreise: 'Bahn bis Payerbach-Reichenau, Bus zur Seilbahn' },
-      { slug: 'traunsee-gmunden', anreise: 'Bahn bis Gmunden, Straßenbahn bis zum See' },
-      { slug: 'attersee-baden', anreise: 'Lokalbahn ab Vöcklamarkt direkt an den See' },
-      { slug: 'wolfgangsee-st-gilgen', anreise: 'Bahn bis Salzburg oder Bad Ischl, Bus an den See' },
-      { slug: 'wachau-duernstein', anreise: 'Bahn bis Krems oder Melk, weiter per Schiff oder Rad' },
-    ],
-  },
-  {
-    title: 'Stadt & U-Bahn',
-    note: 'Städtische Ziele, bei denen das Auto nur stören würde.',
-    picks: [
-      { slug: 'wien-schoenbrunn', anreise: 'U4 Station Schönbrunn' },
-      { slug: 'wien-prater', anreise: 'U1/U2 Praterstern' },
-      { slug: 'alte-donau-baden-wien', anreise: 'U1 Alte Donau' },
-      { slug: 'salzburg-stadt-altstadt', anreise: 'Vom Hauptbahnhof per Bus oder 20 Min. zu Fuß' },
-      { slug: 'graz-altstadt-sehenswuerdigkeiten', anreise: 'Straßenbahn ab Hauptbahnhof ins Zentrum' },
-      { slug: 'innsbruck-sehenswuerdigkeiten', anreise: 'Altstadt 10 Min. vom Hauptbahnhof' },
-      { slug: 'linz-ausflug', anreise: 'Straßenbahn ab Hauptbahnhof zum Hauptplatz' },
-    ],
-  },
-];
 
 export default function BahnhofsausfluegePage() {
   const allPicks = GROUPS.flatMap((g) => g.picks).map((p) => ({ ...p, post: getPostBySlug(p.slug) })).filter((p) => p.post);
