@@ -112,6 +112,18 @@ export default function DatenschutzPage() {
           ausschließlich zum Versand der Informationen, in die du eingewilligt hast
           (Art. 6 Abs. 1 lit. a DSGVO). Du kannst dich jederzeit über den Abmeldelink abmelden.
         </p>
+        <p>
+          Die Anmeldung erfolgt im Double-Opt-in-Verfahren: Nach dem Absenden des Formulars
+          erhältst du eine Bestätigungsmail. Erst wenn du den darin enthaltenen Link anklickst,
+          wird deine Adresse in den Verteiler aufgenommen. Bestätigst du nicht, wird die
+          Adresse nicht weiter verarbeitet.
+        </p>
+        <p>
+          Für Versand und Verwaltung des Newsletters nutzen wir Brevo (Sendinblue GmbH,
+          Köpenicker Str. 126, 10179 Berlin). Deine E-Mail-Adresse sowie die zur Protokollierung
+          der Einwilligung nötigen Daten werden dort gespeichert. Mit dem Anbieter besteht ein
+          Auftragsverarbeitungsvertrag gemäß Art. 28 DSGVO.
+        </p>
       </Section>
 
       <Section title="8. Deine Rechte">

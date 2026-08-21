@@ -70,9 +70,10 @@ Jeder Lauf startet **ohne Gedächtnis** an frühere Sessions — dieses File + `
 - Technisch: `any`-Typen in den Leaflet-Dateien durch `@types/leaflet` ersetzen
 
 ### Content
-- Themenseiten-Rückverlinkung erweitern: `/wandern-baden`, `/wochenendtrip/[stadt]` und
-  `/seen-vergleich` (Hub) fehlen noch im Rückwärts-Index (`app/lib/themenseiten.ts`) —
-  beide sind berechnet statt kuratiert, brauchen also eigene Ableitungen.
+- ⚠️ **Newsletter scharfschalten:** Code steht, es fehlen nur die drei Brevo-Env-Vars in
+  Vercel (`BREVO_API_KEY`, `BREVO_LIST_ID`, `BREVO_DOI_TEMPLATE_ID`). Solange sie fehlen,
+  antwortet `/api/newsletter` mit 503 und das Formular sagt das ehrlich. Das muss der
+  Betreiber selbst im Brevo-Konto anlegen — nicht im Tageslauf machbar.
 - **Neue Artikel** (Slug vorher prüfen!) — dünn besetzte Regionen zuerst.
   Stand 2026-08-20 je Region: Kärnten 44, Burgenland 26, Steiermark 26, Salzburg 19, Tirol 19,
   Wien 9, **Oberösterreich 8, Niederösterreich 7, Vorarlberg 7**.
@@ -94,6 +95,8 @@ Jeder Lauf startet **ohne Gedächtnis** an frühere Sessions — dieses File + `
 
 <!-- Format: - YYYY-MM-DD — [Feature|Content] Kurzbeschreibung -->
 
+- 2026-08-21 — [Feature] Newsletter funktionsfähig gemacht: neue Route `app/api/newsletter/route.ts` meldet Adressen per Double-Opt-in bei Brevo an (Brevo verschickt die Bestätigungsmail, wir selbst versenden nichts), Formular mit Lade-/Fehler-/Erfolgszustand, Bestätigungsseite `/newsletter/bestaetigt` (noindex), Datenschutz §7 um Double-Opt-in + Auftragsverarbeiter ergänzt. Vorher landete die Adresse nur im `localStorage` — es kam nirgends etwas an. **Offen:** die drei Brevo-Env-Vars müssen noch in Vercel gesetzt werden.
+- 2026-08-21 — [Feature] Rückwärts-Index vervollständigt: `/wandern-baden`, `/wochenendtrip/[stadt]` (nächstgelegene Startstadt zuerst) und der `/seen-vergleich`-Hub speisen jetzt ebenfalls `themenFor()`. Damit 12 Quellen, Limit von 4 auf 6 Links erhöht.
 - 2026-08-21 — [Feature] Themenseiten-Rückverlinkung: neuer Rückwärts-Index `app/lib/themenseiten.ts` (`themenFor(slug)`) zeigt in jedem Artikel den Block „Dieses Ziel steht auch auf diesen Listen" — max. 4 Links, höchstens 2 je Quelle. Speist sich aus den kuratierten Listen der Themenseiten, `monatstipps.ts`, `seen.ts` und `badeplaetze.ts`; 118 der 165 Artikel bekommen dadurch Rückwege. Voraussetzung dafür war, die Inline-Daten der sechs Themenseiten (Hitze, Regen, Aussicht, Dauer, Bahnhof, Feierabend) nach `app/lib/themen-picks.ts` zu ziehen — reiner Verschiebe-Diff, die Seiten importieren sie jetzt.
 - 2026-08-20 — [Content] 3 neue Unterkunfts-Einträge (`app/lib/unterkuenfte.ts`): Montafon (Vorarlberg), Ötscher/Lackenhof (NÖ), Steyr (OÖ) — passend zu den heute neu hinzugefügten Artikeln, schließt Lücken auf der Karte in den drei zuvor dünnsten Regionen.
 - 2026-08-20 — [Content] `app/lib/badeplaetze.ts` von 19 auf 25 Einträge erweitert — Steiermark war komplett unvertreten (jetzt Grundlsee, Altausseer See, Stubenbergsee), dazu Millstätter See, Keutschacher See und der Neusiedler-See-Hauptteil (Illmitz) ergänzt.

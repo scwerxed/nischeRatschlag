@@ -71,6 +71,8 @@ All outbound partner links route through our own domain via [app/lib/affiliate.t
 | `/routenplaner` | Client (dynamic import) | Interactive route planner via BRouter (proxied through `/api/brouter`, which snaps waypoints to nearest trail via Overpass); elevation profile + difficulty; saves to `localStorage` |
 | `/blog/[slug]` (hiking) | — | Hiking posts with `trails` render a `TrailMap` (OpenTopoMap) where users pick a predefined route. Posts with `routeVariants` render a "Kurz oder lang?" variant list; posts with `planningMistakes` render a red "Schlecht geplant, wenn …" warning box (fehler → besser) |
 | `/go` | Route handler | Affiliate redirect with host allowlist + partner-tag injection |
+| `/newsletter/bestaetigt` | SSG | Landing page for the newsletter double-opt-in link (noindex, not in the sitemap) |
+| `/api/newsletter` | Route handler | POST `{ email }` → Brevo double-opt-in. Same-origin Referer check + per-IP rate limit (5/min); 503 while the Brevo env vars are unset |
 | `/api/brouter` | Route handler | Proxies BRouter (CORS) + snaps waypoints to nearest hiking trail via Overpass. Guarded against abuse: same-origin Referer check + in-memory per-IP rate limit (30/min) |
 
 ### Map/interactive components
@@ -110,7 +112,7 @@ No external markdown library is used.
 - **Blog post add-ons**: reading time, share buttons ([app/ui/share-buttons.tsx](app/ui/share-buttons.tsx)), related posts (scored by category/difficulty/season via [app/lib/blog-utils.ts](app/lib/blog-utils.ts)).
 - **Themenseiten-Rückverlinkung**: [app/lib/themenseiten.ts](app/lib/themenseiten.ts) → `themenFor(slug)` builds a reverse index (post slug → theme pages that list it) from `themen-picks.ts`, `monatstipps.ts`, `seen.ts` and `badeplaetze.ts`. Blog posts render it as a "Dieses Ziel steht auch auf diesen Listen" block (max. 4 links, at most 2 per source, ranked by `rank`). Closes the internal-link loop — the landing pages already point *at* articles, this points back. A new theme page joins it by adding one `addGroups(...)` call.
 - **Home add-ons**: live lake-weather widget across popular Austrian lakes ([app/ui/seewetter.tsx](app/ui/seewetter.tsx), Open-Meteo, no key), quick-stats, region cards, map-feature grid.
-- **Newsletter** ([app/ui/newsletter.tsx](app/ui/newsletter.tsx)): **pre-launch / not functional** — no backend, email only saved to `localStorage`. Copy is intentionally honest ("in Vorbereitung"). Wire up a provider (Brevo/MailerLite) with double-opt-in before promising delivery.
+- **Newsletter** ([app/ui/newsletter.tsx](app/ui/newsletter.tsx)): posts to [app/api/newsletter/route.ts](app/api/newsletter/route.ts), which calls Brevo's `contacts/doubleOptinConfirmation` — Brevo sends the confirmation mail and only adds the address after the click, so we never send mail ourselves. The DOI link redirects to [/newsletter/bestaetigt](app/newsletter/bestaetigt/page.tsx) (noindex). ⚠️ **Needs three env vars** (`BREVO_API_KEY`, `BREVO_LIST_ID`, `BREVO_DOI_TEMPLATE_ID`); while any is missing the route answers 503 and the form says so honestly instead of silently dropping the address. Duplicate signups are reported as success on purpose (no list-membership disclosure). The privacy policy (§7) names Brevo — **change it too** if the provider ever changes.
 - **Global**: scroll-to-top button in the layout.
 - **FAQ accordion**: [app/ui/faq.tsx](app/ui/faq.tsx).
 - **Bot / geo blocking**: [middleware.ts](middleware.ts) returns HTTP 403 for AI/scraper/SEO crawlers (by User-Agent) and for visitors from CN/RU/HK (`x-vercel-ip-country`). Search/ad crawlers (Google, Bing, AdSense) are explicitly allowed. UA-blocking is spoofable (noise reduction, not real security); the one outbound endpoint `/api/brouter` is additionally rate-limited + Referer-checked.
@@ -121,8 +123,8 @@ External APIs (all keyless): **BRouter** (routing), **Overpass** (peaks + trail 
 
 ### Environment variables
 
-Only one var actually matters now:
 - `NEXT_PUBLIC_SITE_URL` — production domain for sitemap/robots/canonical/OG (should be `https://www.bergseen-guide.com`)
+- `BREVO_API_KEY`, `BREVO_LIST_ID`, `BREVO_DOI_TEMPLATE_ID` — newsletter signup (see `/api/newsletter` above). **Server-side only, never `NEXT_PUBLIC_`.** Until all three are set in Vercel, the signup form politely refuses instead of losing addresses. Setup in Brevo: create a list (→ list id) and a *Double-Opt-in* template containing the `{{ doubleOptinUrl }}` placeholder (→ template id).
 - Affiliate partner IDs live in code ([app/lib/affiliate.ts](app/lib/affiliate.ts) → `PARTNER_IDS`), not env
 
 ### Styling
