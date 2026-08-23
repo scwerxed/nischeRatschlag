@@ -11,7 +11,7 @@ import PostArtwork from '@/app/ui/post-artwork';
 import ViewTracker from '@/app/ui/view-tracker';
 import RecentlyViewed from '@/app/ui/recently-viewed';
 import { readingTime, relatedPosts } from '@/app/lib/blog-utils';
-import { themenFor } from '@/app/lib/themenseiten';
+import { themenFor, oeffiAnreise } from '@/app/lib/themenseiten';
 import { BASE, SITE_NAME, CATEGORY_KEYWORDS, REGION_META, regionName, articleSchema, breadcrumbSchema, sportsActivitySchema, trailRouteSchema, OFFICIAL_REGION_SITES } from '@/app/lib/seo';
 
 type Props = { params: Promise<{ slug: string }> };
@@ -179,6 +179,7 @@ export default async function BlogPostPage({ params }: Props) {
   const minutes = readingTime(post.content);
   const related = relatedPosts(post, posts);
   const themen = themenFor(slug);
+  const oeffi = oeffiAnreise(slug);
   const headings = extractHeadings(post.content);
   const regionSite = OFFICIAL_REGION_SITES[post.region];
   const officialLinks = [...(post.officialLinks ?? []), ...(regionSite ? [regionSite] : [])];
@@ -247,6 +248,9 @@ export default async function BlogPostPage({ params }: Props) {
             )}
             {post.bestSeason && (
               <span className="bg-white/15 border border-white/20 px-2.5 py-1" style={{ borderRadius: 3 }}>{post.bestSeason}</span>
+            )}
+            {oeffi && (
+              <span className="bg-white/15 border border-white/20 px-2.5 py-1" style={{ borderRadius: 3 }}>🚋 Mit Öffis erreichbar</span>
             )}
             <span className="text-white/60 ml-auto">{post.date} · {minutes} Min. Lesen</span>
           </div>
@@ -454,6 +458,17 @@ export default async function BlogPostPage({ params }: Props) {
               </Link>
             )}
           </div>
+
+          {/* Mit Öffis erreichbar */}
+          {oeffi && (
+            <div className="border border-sky-200 bg-sky-50 p-5" style={{ borderRadius: 8 }}>
+              <p className="eyebrow mb-3">Mit Öffis erreichbar</p>
+              <p className="text-sm text-gray-700 leading-relaxed">🚋 {oeffi}</p>
+              <Link href="/bahnhofsausfluege" className="mt-3 inline-flex items-center gap-1 text-sm font-medium text-green-700 hover:text-green-800">
+                Weitere Öffi-Ziele ansehen →
+              </Link>
+            </div>
+          )}
 
           {/* Startpunkt & Parken */}
           {post.startPoint && (

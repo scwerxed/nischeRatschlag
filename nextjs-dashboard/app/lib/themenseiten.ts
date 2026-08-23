@@ -144,6 +144,15 @@ for (const lake of LAKES) {
   }
 }
 
+/** Öffi-Anreise-Hinweis, falls der Artikel in den Bahnhofsausflügen kuratiert ist. */
+export function oeffiAnreise(slug: string): string | undefined {
+  for (const g of BAHNHOF_GROUPS) {
+    const hit = g.picks.find((p) => p.slug === slug);
+    if (hit) return hit.anreise;
+  }
+  return undefined;
+}
+
 /** Themenseiten, auf denen dieser Artikel vorkommt – max. 2 je Quelle. */
 export function themenFor(slug: string, limit = 6): ThemenLink[] {
   const perRank = new Map<number, number>();

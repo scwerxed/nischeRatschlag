@@ -59,7 +59,11 @@ Jeder Lauf startet **ohne Gedächtnis** an frühere Sessions — dieses File + `
   Für ein neues Thema braucht es zuerst einen neuen Tag im `LakeTag`-Typ (z. B. `hund`, `gratis`).
 - `/karte`: Filter-Chips (Unterkünfte/Gipfel/Wege) — Layer-Panel existiert bereits
 - Post-Feld `season` → „Saison-Ampel" (jetzt / geht / eher nicht) auf Karten & Artikeln
-- Post-Feld `oeffi` → „Mit Öffis erreichbar"-Badge auf Artikel- und Übersichtskarten
+- „Mit Öffis erreichbar"-Badge existiert seit 2026-08-23 auf der Artikelseite (aus
+  `BAHNHOF_GROUPS` abgeleitet, ~20 Artikel). **Offen:** dasselbe Badge auch auf den
+  Übersichtskarten (Magazin-Grid, Regionsseiten) zeigen — dafür bräuchte man wohl doch
+  ein schnelles Lookup-Set statt der Card-Komponenten einzeln `oeffiAnreise()` aufrufen
+  zu lassen, plus mehr Artikel in `BAHNHOF_GROUPS` aufnehmen.
 - Post-Feld `kosten` → Budget-Karte (Parken, Bahn, Eintritt, Bergbahn, Essen)
 - „Wenn dir diese Tour gefällt …" — ähnliche Touren je Artikel (Region+Kategorie+Schwierigkeit)
 - Region-Seiten: Vergleichstabelle der Touren (Dauer, Schwierigkeit, Höhenmeter, Baden)
@@ -97,6 +101,7 @@ Jeder Lauf startet **ohne Gedächtnis** an frühere Sessions — dieses File + `
 
 <!-- Format: - YYYY-MM-DD — [Feature|Content] Kurzbeschreibung -->
 
+- 2026-08-23 — [Feature] „Mit Öffis erreichbar"-Badge auf der Artikelseite: neue `oeffiAnreise(slug)` in `app/lib/themenseiten.ts` liest die bereits kuratierte Anreise-Info aus `BAHNHOF_GROUPS` (`/bahnhofsausfluege`) aus. Zeigt sich als Badge im Kopfbereich + als Sidebar-Karte mit dem konkreten Öffi-Tipp (z. B. „Bahnhof Zell am See liegt direkt am See") und einem Link zurück zur Übersichtsseite. Betrifft die ~20 dort bereits gelisteten Artikel, keine neuen Fakten erfunden – nur bestehende, schon geprüfte Daten sichtbarer gemacht.
 - 2026-08-23 — [Content] 6 dünne Burgenland-/Tirol-Artikel ausgebaut: `kittsee-schloss` (Geschichte, Beste Reisezeit), `naturpark-rosalia-kogelberg` (Rosalienkapelle, Beste Reisezeit), `seefeld-tirol` (Olympia-Geschichte, Beste Reisezeit), `hintertuxer-gletscher` (Zillertal drumherum, Beste Reisezeit), `st-anton-am-arlberg` (Skigeschichte/Hannes Schneider, Beste Reisezeit), `walchsee-kaiserwinkl` (Kaiserwinkl-Region, Beste Reisezeit). Das waren laut Zeichenzahl-Check die 6 kürzesten Artikel der beiden bislang ungeprüften Regionen (nach Wien/Vorarlberg/NÖ/OÖ am 2026-08-18/19).
 - 2026-08-21 — [Feature] Newsletter funktionsfähig gemacht: neue Route `app/api/newsletter/route.ts` meldet Adressen per Double-Opt-in bei Brevo an (Brevo verschickt die Bestätigungsmail, wir selbst versenden nichts), Formular mit Lade-/Fehler-/Erfolgszustand, Bestätigungsseite `/newsletter/bestaetigt` (noindex), Datenschutz §7 um Double-Opt-in + Auftragsverarbeiter ergänzt. Vorher landete die Adresse nur im `localStorage` — es kam nirgends etwas an. **Offen:** die drei Brevo-Env-Vars müssen noch in Vercel gesetzt werden.
 - 2026-08-21 — [Feature] Rückwärts-Index vervollständigt: `/wandern-baden`, `/wochenendtrip/[stadt]` (nächstgelegene Startstadt zuerst) und der `/seen-vergleich`-Hub speisen jetzt ebenfalls `themenFor()`. Damit 12 Quellen, Limit von 4 auf 6 Links erhöht.
