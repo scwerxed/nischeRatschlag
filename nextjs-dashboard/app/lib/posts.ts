@@ -3863,12 +3863,18 @@ Kittsee liegt im äußersten Nordburgenland – nur wenige Kilometer von Bratisl
 ## Schloss & Museum
 Das barocke Schloss Kittsee beherbergt das Ethnographische Museum mit wechselnden Ausstellungen zu Volkskultur und Brauchtum Mittel- und Osteuropas.
 
+## Geschichte
+Die Anlage geht auf eine mittelalterliche Wasserburg zurück, die im 17. und 18. Jahrhundert zum Barockschloss umgebaut wurde. Wie viele Schlösser im Burgenland stand Kittsee lange im Einflussbereich der Familie Esterházy, bevor es seine heutige museale Nutzung bekam – die wechselvolle Geschichte an der Grenze zu Ungarn und der Slowakei prägt bis heute die Ausstellungen.
+
 ## Lage
-Durch die Nähe zu zwei Hauptstädten ein idealer Zwischenstopp – Wien und Bratislava sind beide schnell erreichbar.
+Durch die Nähe zu zwei Hauptstädten ein idealer Zwischenstopp – Wien und Bratislava sind beide schnell erreichbar. Rund um das Schloss lädt ein Park zum kurzen Spaziergang ein, ein ruhiger Kontrast zum Trubel der nahen Großstädte.
+
+## Beste Reisezeit
+Frühling bis Herbst, wenn das Museum durchgehend geöffnet hat und der Park am schönsten ist. Ein Tagesausflug lässt sich gut mit einem Abstecher nach Bratislava (Zug oder Bus) oder nach Wien verbinden.
 
 ## Praktische Infos
 - Anfahrt: Von Wien ca. 45 Minuten
-- Museum mit saisonalen Öffnungszeiten
+- Museum mit saisonalen Öffnungszeiten – vorab prüfen
 - Gut mit einem Bratislava-Ausflug kombinierbar
     `,
     affiliateLinks: [
@@ -3892,10 +3898,16 @@ Markierte Wege führen durch Mischwälder und über Wiesen, vorbei an der barock
 ## Natur
 Artenreiche Wiesen, alte Eichenwälder und ein Lehrpfad machen den Naturpark auch für Kinder lehrreich.
 
+## Rosalienkapelle
+Die Wallfahrtskapelle auf dem Gipfel des Rosaliengebirges ist seit Jahrhunderten Ziel von Pilgern und Ausflüglern. Von der Anhöhe reicht der Blick bei klarer Sicht weit über das Mittelburgenland bis zum Neusiedler See.
+
+## Beste Reisezeit
+April bis Oktober, mit angenehmen Temperaturen auch an heißen Sommertagen dank der bewaldeten, schattigen Wege. Im Frühling und Herbst sorgt das Laub- und Mischwaldgebiet für besonders stimmungsvolle Farben.
+
 ## Praktische Infos
 - Anfahrt: Von Mattersburg/Forchtenstein wenige Minuten
 - Gut mit Burg Forchtenstein kombinierbar
-- Feste Schuhe genügen
+- Feste Schuhe genügen, markierte Wege gut ausgeschildert
     `,
     affiliateLinks: [
       { label: 'Unterkünfte im Mittelburgenland – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Forchtenstein' },
@@ -3948,6 +3960,12 @@ Eines der bekanntesten **Langlaufgebiete** der Welt (zweimal Olympia, mehrfach W
 
 ## Sommer
 Sanfte Wanderungen über das Plateau, Golf, Wellness und gemütliche Cafés – Seefeld gilt als mondänes, aber entspanntes Ziel.
+
+## Geschichte
+Seefeld war zweimal Austragungsort Olympischer Winterspiele (1964 und 1976, jeweils als Nordische Zentrale von Innsbruck) und ist bis heute regelmäßig Schauplatz von Nordischen Ski-Weltmeisterschaften. Diese Tradition prägt bis heute das gepflegte, weltoffene Ortsbild.
+
+## Beste Reisezeit
+Ganzjährig ein Ziel: Dezember bis März für Langlauf und Winterwandern, Juni bis September für sanftes Wandern in Höhenlage – die 1.200 m sorgen für angenehme Temperaturen, wenn es im Inntal drückend heiß wird.
 
 ## Praktische Infos
 - Anreise bequem per Bahn von Innsbruck (ca. 30 Min.)
@@ -4053,10 +4071,16 @@ Selbst im Juli und August liegt hier oben bestens präparierter Schnee – ein E
 ## Natur-Eispalast
 Eine Besonderheit: der begehbare Eispalast im Inneren des Gletschers, mit glitzernden Eiskristallen und einem unterirdischen See.
 
+## Zillertal drumherum
+Das Zillertal selbst bietet auf dem Weg zum Gletscher zahlreiche Zwischenstopps – von Almen und Wasserfällen bis zu urigen Bergdörfern. Wer nicht nur Ski fahren will, findet talwärts auch sommerliche Wanderwege ohne Höheneis und Gletscherausrüstung.
+
+## Beste Reisezeit
+Wintersportler kommen ganzjährig auf ihre Kosten, am ruhigsten ist es außerhalb der Hauptsaison im Früh- und Spätsommer. Für einen reinen Sightseeing-Ausflug ohne Skifahren eignen sich die Sommermonate, wenn talnahe Bereiche schneefrei und leichter zugänglich sind.
+
 ## Praktische Infos
 - Anfahrt: durchs Zillertal bis Hintertux
 - Warme, wetterfeste Kleidung – auch im Hochsommer
-- Bergbahn-Kombitickets prüfen
+- Bergbahn-Kombitickets vorab online prüfen
     `,
     affiliateLinks: [
       { label: 'Hotels in Hintertux/Zillertal – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Hintertux' },
@@ -4105,6 +4129,12 @@ Teil des riesigen **Skigebiets Arlberg** (Ski Arlberg) mit über 300 Pistenkilom
 ## Sommer
 Ruhiger und naturnah: hochalpine Wanderungen, Mountainbike-Trails und Bergbahnen mit Panoramablick.
 
+## Geschichte
+St. Anton gilt als Geburtsort des modernen alpinen Skisports – hier gründete Hannes Schneider zu Beginn des 20. Jahrhunderts seine legendäre Skischule und prägte die bis heute weltweit gelehrte „Arlberg-Technik". Diese Pionierrolle macht den Ort zu einem Pflichtziel für Skigeschichte-Interessierte.
+
+## Beste Reisezeit
+Dezember bis April für Wintersport und Après-Ski, Juni bis September für ruhiges Wandern und Biken – die Zwischensaisonen im Frühjahr und Spätherbst sind wetterbedingt weniger verlässlich.
+
 ## Praktische Infos
 - Anreise bequem per Bahn (Arlberg-Strecke)
 - Winter teuer & ausgebucht – früh buchen
@@ -4130,6 +4160,12 @@ Durch die geringe Tiefe erwärmt sich der See schnell (bis ~24 °C) – perfekt 
 
 ## Aktiv
 Ein Rundweg führt um den See, dazu SUP, Segeln und Wanderungen am Zahmen Kaiser. Im Winter Langlauf und Winterwandern.
+
+## Der Kaiserwinkl
+Der Walchsee liegt im sogenannten Kaiserwinkl, einer sanft-hügeligen Region zwischen Zahmem und Wildem Kaiser. Die Landschaft ist deutlich ruhiger als das nahe Kufsteiner Land und eignet sich gut als Basis für mehrtägige Rad- und Wandertouren rund um beide Kaisergebirge.
+
+## Beste Reisezeit
+Juni bis September für Badewetter, wenn der flache See seine wärmsten Temperaturen erreicht. Außerhalb der Badesaison lohnt sich der Rundweg ums Ufer trotzdem – dann meist deutlich ruhiger.
 
 ## Praktische Infos
 - Anfahrt: nahe Kufstein, von Innsbruck ca. 1 Stunde
