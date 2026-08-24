@@ -83,12 +83,14 @@ Jeder Lauf startet **ohne Gedächtnis** an frühere Sessions — dieses File + `
   Wien 9, **Oberösterreich 8, Niederösterreich 7, Vorarlberg 7**.
   Übrige Ideen: Vorarlberg (Arlberg-Sommer, Karren Dornbirn), NÖ (Waldviertel-Stauseen, Grafenegg),
   OÖ (Mondsee, Wolfgangsee-Ostufer).
-- **Dünne Artikel ausbauen** — der Durchgang durch Wien, Vorarlberg, NÖ, OÖ und die
-  6 kürzesten Burgenland-/Tirol-Artikel ist abgeschlossen (2026-08-23). Als Nächstes die
-  übrigen kürzeren Artikel in Burgenland und Tirol prüfen (z. B. schloss-halbturn,
-  steppentierpark-pamhagen, burg-lockenhaus, podersdorf-am-see, stubaital-stubaier-gletscher,
-  pitztaler-gletscher). Zusätzliche `##`-Abschnitte mit echtem Inhalt (Geschichte,
-  Aktivitäten, beste Zeit, Anreise), keine Floskeln, kein Duplicate Content.
+- **Dünne Artikel ausbauen** — der Durchgang durch Wien, Vorarlberg, NÖ, OÖ sowie die
+  12 kürzesten Burgenland-/Tirol-Artikel ist abgeschlossen (2026-08-23/24: kittsee-schloss,
+  naturpark-rosalia-kogelberg, seefeld-tirol, hintertuxer-gletscher, st-anton-am-arlberg,
+  walchsee-kaiserwinkl, podersdorf-am-see, burg-lockenhaus, schloss-halbturn,
+  steppentierpark-pamhagen, stubaital-stubaier-gletscher, pitztaler-gletscher). Als Nächstes
+  bei Bedarf die übrigen Regionen (Salzburg, Steiermark) auf besonders kurze Artikel prüfen.
+  Zusätzliche `##`-Abschnitte mit echtem Inhalt (Geschichte, Aktivitäten, beste Zeit, Anreise),
+  keine Floskeln, kein Duplicate Content.
 - `startCoords` / `startPoint` für weitere Orts-Artikel nachziehen
 - `planningMistakes` („Schlecht geplant, wenn …") für weitere Top-Artikel
 - `routeVariants` (Kurz/Lang) für weitere Touren-Artikel
@@ -101,6 +103,7 @@ Jeder Lauf startet **ohne Gedächtnis** an frühere Sessions — dieses File + `
 
 <!-- Format: - YYYY-MM-DD — [Feature|Content] Kurzbeschreibung -->
 
+- 2026-08-24 — [Content] 6 weitere dünne Burgenland-/Tirol-Artikel ausgebaut: `podersdorf-am-see` (Geschichte des Leuchtturms, Beste Reisezeit), `burg-lockenhaus` (Geschichte des Kultraums, Beste Reisezeit), `schloss-halbturn` (Baugeschichte/Hildebrandt, Beste Reisezeit), `steppentierpark-pamhagen` (Naturschutzgedanke bei Przewalski-Pferden, Beste Reisezeit), `stubaital-stubaier-gletscher` (Erschließungsgeschichte, Beste Reisezeit), `pitztaler-gletscher` (Erschließungsgeschichte, Beste Reisezeit). Damit sind jetzt alle 12 Kandidaten aus dem 2026-08-23-Backlog-Eintrag durch.
 - 2026-08-23 — [Feature] „Mit Öffis erreichbar"-Badge auf der Artikelseite: neue `oeffiAnreise(slug)` in `app/lib/themenseiten.ts` liest die bereits kuratierte Anreise-Info aus `BAHNHOF_GROUPS` (`/bahnhofsausfluege`) aus. Zeigt sich als Badge im Kopfbereich + als Sidebar-Karte mit dem konkreten Öffi-Tipp (z. B. „Bahnhof Zell am See liegt direkt am See") und einem Link zurück zur Übersichtsseite. Betrifft die ~20 dort bereits gelisteten Artikel, keine neuen Fakten erfunden – nur bestehende, schon geprüfte Daten sichtbarer gemacht.
 - 2026-08-23 — [Content] 6 dünne Burgenland-/Tirol-Artikel ausgebaut: `kittsee-schloss` (Geschichte, Beste Reisezeit), `naturpark-rosalia-kogelberg` (Rosalienkapelle, Beste Reisezeit), `seefeld-tirol` (Olympia-Geschichte, Beste Reisezeit), `hintertuxer-gletscher` (Zillertal drumherum, Beste Reisezeit), `st-anton-am-arlberg` (Skigeschichte/Hannes Schneider, Beste Reisezeit), `walchsee-kaiserwinkl` (Kaiserwinkl-Region, Beste Reisezeit). Das waren laut Zeichenzahl-Check die 6 kürzesten Artikel der beiden bislang ungeprüften Regionen (nach Wien/Vorarlberg/NÖ/OÖ am 2026-08-18/19).
 - 2026-08-21 — [Feature] Newsletter funktionsfähig gemacht: neue Route `app/api/newsletter/route.ts` meldet Adressen per Double-Opt-in bei Brevo an (Brevo verschickt die Bestätigungsmail, wir selbst versenden nichts), Formular mit Lade-/Fehler-/Erfolgszustand, Bestätigungsseite `/newsletter/bestaetigt` (noindex), Datenschutz §7 um Double-Opt-in + Auftragsverarbeiter ergänzt. Vorher landete die Adresse nur im `localStorage` — es kam nirgends etwas an. **Offen:** die drei Brevo-Env-Vars müssen noch in Vercel gesetzt werden.

@@ -3658,6 +3658,12 @@ Das langgezogene Strandbad mit flachem Einstieg ist ideal für Familien, der wei
 ## Wassersport
 Der verlässliche Wind macht Podersdorf zum Hotspot für **Surfer, Kitesurfer und Segler** – mit Schulen und Verleih vor Ort.
 
+## Geschichte
+Podersdorf war ursprünglich ein Fischer- und Bauerndorf am Ostufer des Neusiedler Sees. Der weiße Leuchtturm ist kein historisches Seezeichen, sondern wurde erst in jüngerer Zeit als Wahrzeichen errichtet – inzwischen aber das meistfotografierte Motiv des Orts. Erst mit dem Aufkommen des Windsurfens wandelte sich das einst ruhige Dorf zum bekanntesten Wassersportort am See.
+
+## Beste Reisezeit
+Mai bis September für Badespaß, die Wassersportsaison beginnt durch den zuverlässigen Wind oft schon im Frühling. Der flache, pannonische Steppensee erwärmt sich rasch, kühlt an windigen Tagen am offenen Ufer aber auch schnell wieder ab.
+
 ## Praktische Infos
 - Anfahrt: Von Wien ca. 1 Stunde
 - Mit dem Rad: direkt am Neusiedler See Radweg
@@ -3684,6 +3690,12 @@ Der berühmte gotische „Kultraum" gibt bis heute Rätsel auf, dazu Verliese, R
 ## Erlebnis
 Greifvogelvorführungen, Ritterfeste und ein Burgrestaurant machen den Besuch zum Erlebnis für die ganze Familie.
 
+## Geschichte
+Die Burg geht auf das Mittelalter zurück und wurde im Lauf der Jahrhunderte mehrfach umgebaut. Der ungewöhnliche gotische Kultraum ist bis heute nicht eindeutig gedeutet – Vermutungen reichen von einer Kapelle über einen Templer-Bezug bis zu einem profanen Versammlungsraum, was der Burg ihren geheimnisvollen Ruf einbrachte.
+
+## Beste Reisezeit
+April bis Oktober, wenn die Burg regelmäßig geöffnet hat und die Greifvogelschauen stattfinden. Im Sommer lässt sich der Besuch gut mit einer Wanderung auf den nahen Geschriebenstein verbinden, dem höchsten Punkt des Burgenlands.
+
 ## Praktische Infos
 - Anfahrt: Südburgenland, von Oberpullendorf ca. 20 Minuten
 - Kombinierbar mit Wanderung auf den Geschriebenstein
@@ -3709,6 +3721,12 @@ Das prächtige Deckenfresko von Franz Anton Maulbertsch im Festsaal ist ein Höh
 
 ## Wein
 Das Schloss Halbturn ist auch ein renommiertes Weingut – Verkostungen im historischen Ambiente sind möglich.
+
+## Geschichte
+Das Schloss entstand Anfang des 18. Jahrhunderts als kaiserliches Jagd- und Lustschloss und wird dem Barockbaumeister Johann Lucas von Hildebrandt zugeschrieben. Später ging es in den Besitz mehrerer Adelsfamilien über – ein Schicksal, das es mit vielen Barockschlössern des Burgenlands teilt, deren Geschichte eng mit der Herrschaft der Familie Esterházy verwoben ist.
+
+## Beste Reisezeit
+April bis Oktober, wenn Park und Ausstellungen zugänglich sind. Im Frühsommer blüht der Schlosspark besonders schön, im Herbst laden die hauseigenen Weinverkostungen nach der Weinlese zur Einkehr.
 
 ## Praktische Infos
 - Anfahrt: Von Neusiedl am See ca. 20 Minuten
@@ -3813,6 +3831,12 @@ Wasserbüffel, Przewalski-Wildpferde, Steppenrinder, Wölfe, Luchse und viele V�
 
 ## Kombi-Tipp
 Direkt benachbart liegen die St. Martins Therme & Lodge mit Naturbadesee – ein ganzer Familientag aus Tierpark + Baden.
+
+## Naturschutzgedanke
+Viele der gezeigten Tiere wie das Przewalski-Wildpferd zählen zu den bedrohten Arten und waren in freier Wildbahn zeitweise sogar ausgestorben. Der Park versteht sich daher auch als Beitrag zu internationalen Erhaltungszuchtprogrammen, nicht nur als reine Schaustellung.
+
+## Beste Reisezeit
+April bis Oktober, wenn der Park durchgehend geöffnet hat. In der prallen Mittagshitze des Sommers ziehen sich viele Tiere in den Schatten zurück – ein Besuch am Vormittag oder späten Nachmittag erhöht die Chance auf aktive Tiere.
 
 ## Praktische Infos
 - Anfahrt: Von Wien ca. 1,5 Stunden
@@ -3931,6 +3955,12 @@ Bergbahnen bringen dich bequem ins ewige Eis. Die Plattform **„TOP OF TYROL"**
 
 ## Sommer
 Höhenwanderungen, der Wilde-Wasser-Weg entlang tosender Bäche und Klettersteige – das Tal ist auch im Sommer ein Wanderparadies.
+
+## Geschichte
+Das Skigebiet am Stubaier Gletscher wurde ab den 1970er-Jahren erschlossen und zählte zu den ersten Gletscherskigebieten der Alpen. Der Ausbau machte ganzjähriges Skifahren in dieser Höhenlage möglich und verwandelte das zuvor vor allem von Almwirtschaft und Bergsteigern geprägte Tal in eines der meistbesuchten Ausflugsziele Tirols.
+
+## Beste Reisezeit
+Wintersport ist am Gletscher praktisch ganzjährig möglich, am zuverlässigsten aber von Herbst bis Frühsommer. Für Wanderungen und den Wilde-Wasser-Weg eignen sich die Sommermonate Juni bis September am besten, wenn die tieferen Talabschnitte schneefrei sind.
 
 ## Praktische Infos
 - Anfahrt: Von Innsbruck ca. 45 Minuten
@@ -4192,6 +4222,12 @@ Oben warten das höchstgelegene Café Österreichs und eine Aussichtsbrücke mit
 
 ## Ski & Sommer
 Skifahren bis weit in den Frühsommer, dazu Gletscherführungen und ein einzigartiges Hochgebirgserlebnis – auch für Nicht-Skifahrer.
+
+## Geschichte
+Das Pitztal wurde als Gletscherskigebiet deutlich später erschlossen als die Nachbartäler – weshalb es bis heute als das ruhigere, ursprünglichere der Tiroler Gletschertäler gilt. Die unterirdische Standseilbahn, die tief in den Berg hineinführt, war bei ihrer Eröffnung eine technische Besonderheit und ist bis heute prägend für die Anreise auf den Gletscher.
+
+## Beste Reisezeit
+Ski- und Gletscherausflüge sind ganzjährig möglich, am stabilsten meist von Herbst bis Frühsommer. Für einen reinen Ausblick ohne Skifahren eignen sich klare Tage im Spätsommer, wenn die Fernsicht auf die Wildspitze am besten ist.
 
 ## Praktische Infos
 - Anfahrt: durchs Pitztal bis Mittelberg
