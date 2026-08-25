@@ -69,7 +69,6 @@ Jeder Lauf startet **ohne Gedächtnis** an frühere Sessions — dieses File + `
 - Region-Seiten: Vergleichstabelle der Touren (Dauer, Schwierigkeit, Höhenmeter, Baden)
 - Artikel: „Auto oder Öffis?"-Vergleichsblock
 - Artikel: „1 Nacht reicht?"-Block für Tagesziele mit langer Anfahrt
-- „Route in Google Maps / Komoot öffnen"-Buttons bei Touren-Artikeln
 - `/blog`: Pagination bzw. „Mehr laden" (aktuell werden alle ~155 Karten gerendert)
 - Technisch: `any`-Typen in den Leaflet-Dateien durch `@types/leaflet` ersetzen
 
@@ -103,6 +102,7 @@ Jeder Lauf startet **ohne Gedächtnis** an frühere Sessions — dieses File + `
 
 <!-- Format: - YYYY-MM-DD — [Feature|Content] Kurzbeschreibung -->
 
+- 2026-08-25 — [Feature] „Route in Google Maps öffnen"-Button für Wander-Artikel: die externe Google-Maps-Navigation (bestehendes `api=1&destination=`-Muster, bisher nur in der „Startpunkt & Parken"-Karte für die 12 Artikel mit `startPoint`) gibt es jetzt auch im Wandern-CTA-Block direkt unter dem Artikeltext — für alle ~35 Wandern-Artikel mit `startCoords`/Tour-Koordinaten, nicht nur die mit ausführlicher Parken-Karte. Bei Artikeln mit `startPoint` wird der Button nicht doppelt angezeigt (dort steht er schon in der Sidebar). Komoot-Deeplink bewusst weggelassen, da das URL-Schema beim Testen nicht zuverlässig verifizierbar war.
 - 2026-08-24 — [Content] 6 weitere dünne Burgenland-/Tirol-Artikel ausgebaut: `podersdorf-am-see` (Geschichte des Leuchtturms, Beste Reisezeit), `burg-lockenhaus` (Geschichte des Kultraums, Beste Reisezeit), `schloss-halbturn` (Baugeschichte/Hildebrandt, Beste Reisezeit), `steppentierpark-pamhagen` (Naturschutzgedanke bei Przewalski-Pferden, Beste Reisezeit), `stubaital-stubaier-gletscher` (Erschließungsgeschichte, Beste Reisezeit), `pitztaler-gletscher` (Erschließungsgeschichte, Beste Reisezeit). Damit sind jetzt alle 12 Kandidaten aus dem 2026-08-23-Backlog-Eintrag durch.
 - 2026-08-23 — [Feature] „Mit Öffis erreichbar"-Badge auf der Artikelseite: neue `oeffiAnreise(slug)` in `app/lib/themenseiten.ts` liest die bereits kuratierte Anreise-Info aus `BAHNHOF_GROUPS` (`/bahnhofsausfluege`) aus. Zeigt sich als Badge im Kopfbereich + als Sidebar-Karte mit dem konkreten Öffi-Tipp (z. B. „Bahnhof Zell am See liegt direkt am See") und einem Link zurück zur Übersichtsseite. Betrifft die ~20 dort bereits gelisteten Artikel, keine neuen Fakten erfunden – nur bestehende, schon geprüfte Daten sichtbarer gemacht.
 - 2026-08-23 — [Content] 6 dünne Burgenland-/Tirol-Artikel ausgebaut: `kittsee-schloss` (Geschichte, Beste Reisezeit), `naturpark-rosalia-kogelberg` (Rosalienkapelle, Beste Reisezeit), `seefeld-tirol` (Olympia-Geschichte, Beste Reisezeit), `hintertuxer-gletscher` (Zillertal drumherum, Beste Reisezeit), `st-anton-am-arlberg` (Skigeschichte/Hannes Schneider, Beste Reisezeit), `walchsee-kaiserwinkl` (Kaiserwinkl-Region, Beste Reisezeit). Das waren laut Zeichenzahl-Check die 6 kürzesten Artikel der beiden bislang ungeprüften Regionen (nach Wien/Vorarlberg/NÖ/OÖ am 2026-08-18/19).

@@ -336,13 +336,26 @@ export default async function BlogPostPage({ params }: Props) {
 
           {/* Wandern-CTA */}
           {post.category === 'Wandern' && (
-            <div className="mt-6 grid sm:grid-cols-2 gap-4">
-              <Link href={mapHref} className="flex items-center justify-center bg-green-700 text-white font-medium text-sm px-5 py-3 hover:bg-green-800 transition-colors" style={{ borderRadius: 6 }}>
-                {mapCtaLabel}
-              </Link>
-              <Link href="/routenplaner" className="flex items-center justify-center border border-green-700 text-green-700 font-medium text-sm px-5 py-3 hover:bg-green-50 transition-colors" style={{ borderRadius: 6 }}>
-                Route planen
-              </Link>
+            <div className="mt-6 space-y-3">
+              <div className="grid sm:grid-cols-2 gap-4">
+                <Link href={mapHref} className="flex items-center justify-center bg-green-700 text-white font-medium text-sm px-5 py-3 hover:bg-green-800 transition-colors" style={{ borderRadius: 6 }}>
+                  {mapCtaLabel}
+                </Link>
+                <Link href="/routenplaner" className="flex items-center justify-center border border-green-700 text-green-700 font-medium text-sm px-5 py-3 hover:bg-green-50 transition-colors" style={{ borderRadius: 6 }}>
+                  Route planen
+                </Link>
+              </div>
+              {precise && !post.startPoint && (
+                <a
+                  href={`https://www.google.com/maps/dir/?api=1&destination=${precise[0]},${precise[1]}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center justify-center gap-1.5 border border-gray-300 text-gray-700 font-medium text-sm px-5 py-3 hover:bg-gray-50 transition-colors"
+                  style={{ borderRadius: 6 }}
+                >
+                  <span aria-hidden>🧭</span> Route in Google Maps öffnen ↗
+                </a>
+              )}
             </div>
           )}
 
