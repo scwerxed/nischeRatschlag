@@ -57,6 +57,7 @@ export const BADEPLAETZE: Badeplatz[] = [
   { name: 'Illmitz Ostufer', see: 'Neusiedler See', region: 'Burgenland', slug: 'neusiedler-see-baden-segeln', features: ['flach', 'wc', 'gastro'], hinweis: 'Sehr flach und windexponiert – Warmwasser-Klassiker mit Segel- und Surfspots.' },
   // Niederösterreich
   { name: 'Strandbad Lunz', see: 'Lunzer See', region: 'Niederösterreich', slug: 'lunzer-see-baden', features: ['wc', 'gastro', 'wandern', 'schatten'], hinweis: 'Wärmster Gebirgssee der Region; Uferwege direkt ab Bad.' },
+  { name: 'Naturbuchten Stausee Ottenstein', see: 'Stausee Ottenstein', region: 'Niederösterreich', slug: 'stausee-ottenstein-waldviertel', features: ['gratis', 'wandern'], hinweis: 'Fjordartige Buchten im Waldviertel – ruhiger als die bekannten Seen im Osten, dafür kühler.' },
   // Vorarlberg
   { name: 'Strandbad Bregenz', see: 'Bodensee', region: 'Vorarlberg', slug: 'bregenz-bodensee', features: ['flach', 'wc', 'gastro', 'schatten'], hinweis: 'Baden mit Blick über den Bodensee – abends Festspiel-Kulisse.' },
 ];

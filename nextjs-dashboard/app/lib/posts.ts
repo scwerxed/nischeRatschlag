@@ -5315,6 +5315,7 @@ Badesaison ist etwa **Juni bis September**, mit dem Hochsommer als verlässlichs
 - Strandbad kostenpflichtig, Öffnungszeiten saisonal
 - Gut mit einer leichten Wanderung oder einer Ybbstal-Radrunde kombinierbar
 - An heißen Sommerwochenenden ist der kleine See gut besucht: früh kommen
+- Ganz anderer Seetyp im selben Bundesland: der weitläufige [Stausee Ottenstein](/blog/stausee-ottenstein-waldviertel) im Waldviertel
     `,
     affiliateLinks: [
       { label: 'Unterkünfte am Lunzer See – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Lunz+am+See' },
@@ -5629,6 +5630,9 @@ Ein schmaler, in den Fels gesprengter Steig mit Geländer führt tief unten am t
 ## Weiter zur Alplochschlucht
 Wer mag, verbindet die Rappenlochschlucht mit der benachbarten **Alplochschlucht** zu einer Rundtour – beide Schluchten liegen nur wenige Gehminuten auseinander und lassen sich an einem Vormittag zusammen erkunden. Insgesamt bleibt die Runde kurz, eignet sich aber gut als Auftakt oder Ausklang eines Dornbirn-Ausflugs.
 
+## Kombination mit dem Karren
+Für den Nachmittag bietet sich ein Abstecher zur nahen [Karrenseilbahn](/blog/karren-dornbirn) an – wenige Fahrminuten entfernt bringt sie in kurzer Zeit auf knapp 1.000 m mit Blick über das Rheintal und den Bodensee.
+
 ## Beste Reisezeit
 Nach starken Regenfällen oder in der Schneeschmelze kann der Steig durch hohen Wasserstand oder Steinschlaggefahr gesperrt sein – wie bei allen Klammen gilt: aktuellen Sperr- und Wetterstatus vor dem Losfahren prüfen. Am schönsten ist die Schlucht bei stabilem Wetter zwischen Frühling und Herbst.
 
@@ -5758,6 +5762,70 @@ Die Altstadt lässt sich **ganzjährig** besuchen; im Sommer laden die Flussufer
     `,
     affiliateLinks: [
       { label: 'Unterkünfte in Steyr – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Steyr' },
+    ],
+  },
+  {
+    slug: 'karren-dornbirn',
+    startCoords: [47.3879, 9.7506],
+    title: 'Karren – Dornbirns Hausberg mit Seilbahn und Blick über den Bodensee',
+    excerpt: 'Die Karrenseilbahn bringt dich in wenigen Minuten aus der Dornbirner Innenstadt auf knapp 1.000 m – oben wartet ein weiter Blick über das Rheintal, den Bodensee und die Schweizer Berge, ganz ohne Aufstieg.',
+    date: '2026-08-26', category: 'Wandern', region: 'vorarlberg', difficulty: 'leicht', bestSeason: 'April–Oktober',
+    highlights: ['Seilbahn direkt aus der Stadt', 'Panorama über Rheintal, Bodensee und Schweiz', 'Kombinierbar mit der Rappenlochschlucht'],
+    content: `
+Kaum ein Hausberg liegt so nah an einer Stadt wie der **Karren** an Dornbirn: Von der Talstation im Ortsteil Gütle bringt die Karrenseilbahn Besucher in wenigen Minuten auf knapp 1.000 m Höhe – mitten aus dem Alltag direkt ins Panorama.
+
+## Der Blick von oben
+Von der Bergstation reicht der Blick über das **Rheintal** bis zum **Bodensee** und an klaren Tagen weit in die Schweizer Berge. Ein kurzer Weg führt zum eigentlichen Gipfelkreuz, der Rest lässt sich gemütlich auf der Aussichtsterrasse verbringen – ideal für alle, die Weitblick ohne Anstrengung suchen.
+
+## Für Wanderfreudige
+Wer nicht nur die Seilbahn nutzen will, kann den Karren auch zu Fuß erreichen: Markierte Wege führen von Dornbirn aus durch den Wald bergauf, mit deutlich mehr Höhenmetern als der Bahnfahrt, aber ohne technische Schwierigkeiten. Umgekehrt eignet sich die Bahn auch als reine Auffahrt, um dann von oben aus weiterzuwandern, etwa Richtung Staufensee.
+
+## Kombination mit der Rappenlochschlucht
+Da die Talstation nur wenige Fahrminuten von der [Rappenlochschlucht](/blog/rappenlochschlucht-dornbirn) entfernt liegt, lassen sich beide Ziele gut an einem Tag verbinden – vormittags die enge Schlucht, nachmittags der weite Blick vom Karren.
+
+## Beste Reisezeit
+Am klarsten ist die Fernsicht meist an kühleren, trockenen Tagen im Frühjahr und Herbst; im Hochsommer trübt Dunst die Sicht über den Bodensee gelegentlich ein. Betriebszeiten und mögliche Revisionspausen der Seilbahn vorab prüfen.
+
+## Praktische Infos
+- Talstation im Ortsteil Gütle, mit dem Auto oder zu Fuß aus der Dornbirner Innenstadt erreichbar
+- Parkplätze rund um die Talstation vorhanden, in der Hauptsaison zeitweise ausgelastet
+- Oben Gastronomie mit Terrasse – für alle, die den Ausblick nicht nur kurz genießen wollen
+- Festes Schuhwerk empfiehlt sich für alle, die von der Bergstation aus noch weiterwandern
+    `,
+    affiliateLinks: [
+      { label: 'Unterkünfte in Dornbirn – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Dornbirn' },
+    ],
+  },
+  {
+    slug: 'stausee-ottenstein-waldviertel',
+    startCoords: [48.5972, 15.3194],
+    title: 'Stausee Ottenstein – Baden und Segeln im Waldviertel',
+    excerpt: 'Fjordartige Buchten, Segelboote und stille Waldufer: Der Stausee Ottenstein ist der größte der drei Kamp-Stauseen im Waldviertel – ein Ausflugsziel für Wassersport, Badetage und ruhige Uferwanderungen abseits der Wachau-Trubel.',
+    date: '2026-08-26', category: 'Baden', region: 'niederoesterreich', bestSeason: 'Juni–September',
+    highlights: ['Größter der drei Kamp-Stauseen', 'Segeln, Surfen und Paddeln möglich', 'Ruhige Naturbuchten zum Baden'],
+    content: `
+Wo der Kamp durch das Waldviertel fließt, staut ihn eine 69 m hohe Bogenstaumauer zum **Stausee Ottenstein** – dem obersten und größten der drei Kamp-Stauseen. Die weit verzweigten, fjordartigen Buchten machen ihn zu einem der eigenwilligsten Gewässer Niederösterreichs.
+
+## Baden in stillen Buchten
+Anders als an klassischen Strandbädern verteilen sich die Badeplätze auf mehrere natürliche Buchten und Ufergrundstücke entlang des Sees, etwa nahe der Ruine Lichtenfels, entlang des Wanderwegs 80a oder rund um die Staumauer. Wer Ruhe sucht, findet hier deutlich einsamere Ecken als an den bekannten Kärntner oder Salzburger Seen.
+
+## Segeln, Surfen und Paddeln
+Der See gilt als eines der besten Segelreviere im Waldviertel; nordwestlich der Staumauer haben sich Segel- und Surfschulen mit Bootsverleih angesiedelt. Auch Kajak und Stand-up-Paddling sind auf dem weitläufigen Gewässer beliebt – ideal für alle, die neben dem Baden auch aktiv aufs Wasser wollen.
+
+## Rund um den See
+Waldreiche Ufer laden zusätzlich zum Wandern und Radfahren ein, oft mit Blick auf die schmalen Wasserarme des Stausees. Wer mehrere Tage im Waldviertel verbringt, kombiniert den Ottensteiner Stausee gut mit einem Abstecher zum ruhigeren [Lunzer See](/blog/lunzer-see-baden) im Mostviertel oder einem Stadtbummel in Zwettl.
+
+## Beste Reisezeit
+Die Hauptsaison für Baden und Wassersport liegt zwischen **Juni und September**; das Waldviertel ist klimatisch etwas kühler als das östliche Niederösterreich, wärmste Wassertemperaturen sind daher meist erst im Hochsommer zu erwarten.
+
+## Praktische Infos
+- Zufahrt u. a. über Ottenstein, Rastenfeld oder Mitterreith – je nach gewünschter Bucht unterschiedlich
+- Manche Uferabschnitte sind Privatgrund oder nur über den Campingplatz zugänglich – ausgeschilderte öffentliche Zugänge nutzen
+- Wassersportverleih und -kurse vorab reservieren, besonders an Wochenenden
+- Parkmöglichkeiten an den bekannten Badebuchten sind begrenzt – früh anreisen
+    `,
+    affiliateLinks: [
+      { label: 'Unterkünfte im Waldviertel – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Waldviertel' },
     ],
   },
 

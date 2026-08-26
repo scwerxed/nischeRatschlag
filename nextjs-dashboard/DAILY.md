@@ -78,9 +78,9 @@ Jeder Lauf startet **ohne Gedächtnis** an frühere Sessions — dieses File + `
   antwortet `/api/newsletter` mit 503 und das Formular sagt das ehrlich. Das muss der
   Betreiber selbst im Brevo-Konto anlegen — nicht im Tageslauf machbar.
 - **Neue Artikel** (Slug vorher prüfen!) — dünn besetzte Regionen zuerst.
-  Stand 2026-08-20 je Region: Kärnten 44, Burgenland 26, Steiermark 26, Salzburg 19, Tirol 19,
-  Wien 9, **Oberösterreich 8, Niederösterreich 7, Vorarlberg 7**.
-  Übrige Ideen: Vorarlberg (Arlberg-Sommer, Karren Dornbirn), NÖ (Waldviertel-Stauseen, Grafenegg),
+  Stand 2026-08-26 je Region: Kärnten 44, Burgenland 26, Steiermark 26, Salzburg 19, Tirol 19,
+  Wien 9, **Oberösterreich 8, Niederösterreich 8, Vorarlberg 8**.
+  Übrige Ideen: Vorarlberg (Arlberg-Sommer), NÖ (Grafenegg, Waldviertel allgemein),
   OÖ (Mondsee, Wolfgangsee-Ostufer).
 - **Dünne Artikel ausbauen** — der Durchgang durch Wien, Vorarlberg, NÖ, OÖ sowie die
   12 kürzesten Burgenland-/Tirol-Artikel ist abgeschlossen (2026-08-23/24: kittsee-schloss,
@@ -102,6 +102,7 @@ Jeder Lauf startet **ohne Gedächtnis** an frühere Sessions — dieses File + `
 
 <!-- Format: - YYYY-MM-DD — [Feature|Content] Kurzbeschreibung -->
 
+- 2026-08-26 — [Content] 2 neue Artikel in den bis dahin dünnsten Regionen: `karren-dornbirn` (Vorarlberg, Wandern) – Dornbirns Hausberg mit Seilbahn und Rheintal-/Bodensee-Blick, verlinkt mit `rappenlochschlucht-dornbirn` und neu in die Gruppe „Seilbahn hoch, Aussicht sofort" auf `/aussicht-ohne-anstrengung` aufgenommen; `stausee-ottenstein-waldviertel` (Niederösterreich, Baden) – größter der drei Kamp-Stauseen, Baden/Segeln/Paddeln, verlinkt mit `lunzer-see-baden` und neu als Eintrag in `app/lib/badeplaetze.ts`. Damit sind Vorarlberg und Niederösterreich mit Oberösterreich gleichauf (je 8 Artikel), Wien bleibt jetzt die dünnste Region.
 - 2026-08-25 — [Feature] „Route in Google Maps öffnen"-Button für Wander-Artikel: die externe Google-Maps-Navigation (bestehendes `api=1&destination=`-Muster, bisher nur in der „Startpunkt & Parken"-Karte für die 12 Artikel mit `startPoint`) gibt es jetzt auch im Wandern-CTA-Block direkt unter dem Artikeltext — für alle ~35 Wandern-Artikel mit `startCoords`/Tour-Koordinaten, nicht nur die mit ausführlicher Parken-Karte. Bei Artikeln mit `startPoint` wird der Button nicht doppelt angezeigt (dort steht er schon in der Sidebar). Komoot-Deeplink bewusst weggelassen, da das URL-Schema beim Testen nicht zuverlässig verifizierbar war.
 - 2026-08-24 — [Content] 6 weitere dünne Burgenland-/Tirol-Artikel ausgebaut: `podersdorf-am-see` (Geschichte des Leuchtturms, Beste Reisezeit), `burg-lockenhaus` (Geschichte des Kultraums, Beste Reisezeit), `schloss-halbturn` (Baugeschichte/Hildebrandt, Beste Reisezeit), `steppentierpark-pamhagen` (Naturschutzgedanke bei Przewalski-Pferden, Beste Reisezeit), `stubaital-stubaier-gletscher` (Erschließungsgeschichte, Beste Reisezeit), `pitztaler-gletscher` (Erschließungsgeschichte, Beste Reisezeit). Damit sind jetzt alle 12 Kandidaten aus dem 2026-08-23-Backlog-Eintrag durch.
 - 2026-08-23 — [Feature] „Mit Öffis erreichbar"-Badge auf der Artikelseite: neue `oeffiAnreise(slug)` in `app/lib/themenseiten.ts` liest die bereits kuratierte Anreise-Info aus `BAHNHOF_GROUPS` (`/bahnhofsausfluege`) aus. Zeigt sich als Badge im Kopfbereich + als Sidebar-Karte mit dem konkreten Öffi-Tipp (z. B. „Bahnhof Zell am See liegt direkt am See") und einem Link zurück zur Übersichtsseite. Betrifft die ~20 dort bereits gelisteten Artikel, keine neuen Fakten erfunden – nur bestehende, schon geprüfte Daten sichtbarer gemacht.

@@ -57,6 +57,7 @@ export const AUSSICHT_GROUPS: { title: string; note: string; picks: { slug: stri
       { slug: 'hintertuxer-gletscher', warum: 'Ganzjahres-Gletscher – Hochgebirgspanorama auch dann, wenn Wandern keine Option ist.' },
       { slug: 'luenersee-wandern', warum: 'Die Bahn bringt dich direkt an den Seespiegel auf knapp 2.000 m; der Uferweg ist flach.' },
       { slug: 'festung-kufstein', warum: 'Standseilbahn statt Burgberg-Aufstieg – Innblick und Altstadtpanorama inklusive.' },
+      { slug: 'karren-dornbirn', warum: 'Aus der Dornbirner Innenstadt in wenigen Minuten hinauf – Blick über Rheintal, Bodensee und die Schweizer Berge.' },
     ],
   },
   {
