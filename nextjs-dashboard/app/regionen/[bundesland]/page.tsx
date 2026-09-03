@@ -11,6 +11,7 @@ import { unterkuenfte } from '@/app/lib/unterkuenfte';
 import { cloak } from '@/app/lib/affiliate';
 import PostArtwork from '@/app/ui/post-artwork';
 import { CATEGORY_STYLE } from '@/app/lib/blog-utils';
+import { isOeffiErreichbar } from '@/app/lib/themenseiten';
 
 type Props = { params: Promise<{ bundesland: string }> };
 
@@ -241,6 +242,11 @@ export default async function RegionPage({ params }: Props) {
                               className={`text-xs font-medium px-2 py-0.5 rounded-full ${DIFFICULTY_STYLES[post.difficulty].cls}`}
                             >
                               {DIFFICULTY_STYLES[post.difficulty].label}
+                            </span>
+                          )}
+                          {isOeffiErreichbar(post.slug) && (
+                            <span className="text-xs font-medium px-2 py-0.5 rounded-full bg-blue-50 text-blue-700 border border-blue-200">
+                              🚋 Öffis
                             </span>
                           )}
                         </div>

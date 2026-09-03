@@ -59,11 +59,10 @@ Jeder Lauf startet **ohne Gedächtnis** an frühere Sessions — dieses File + `
   Für ein neues Thema braucht es zuerst einen neuen Tag im `LakeTag`-Typ (z. B. `hund`, `gratis`).
 - `/karte`: Filter-Chips (Unterkünfte/Gipfel/Wege) — Layer-Panel existiert bereits
 - Post-Feld `season` → „Saison-Ampel" (jetzt / geht / eher nicht) auf Karten & Artikeln
-- „Mit Öffis erreichbar"-Badge existiert seit 2026-08-23 auf der Artikelseite (aus
-  `BAHNHOF_GROUPS` abgeleitet, ~20 Artikel). **Offen:** dasselbe Badge auch auf den
-  Übersichtskarten (Magazin-Grid, Regionsseiten) zeigen — dafür bräuchte man wohl doch
-  ein schnelles Lookup-Set statt der Card-Komponenten einzeln `oeffiAnreise()` aufrufen
-  zu lassen, plus mehr Artikel in `BAHNHOF_GROUPS` aufnehmen.
+- „Mit Öffis erreichbar"-Badge existiert seit 2026-08-23 auf der Artikelseite und seit
+  2026-09-03 auch auf Magazin-Grid + Regionsseiten-Karten (`isOeffiErreichbar()`).
+  **Offen:** mehr Artikel in `BAHNHOF_GROUPS` aufnehmen, damit das Badge auf mehr als
+  den ~20 kuratierten Karten erscheint.
 - Post-Feld `kosten` → Budget-Karte (Parken, Bahn, Eintritt, Bergbahn, Essen)
 - „Wenn dir diese Tour gefällt …" — ähnliche Touren je Artikel (Region+Kategorie+Schwierigkeit)
 - Region-Seiten: Vergleichstabelle der Touren (Dauer, Schwierigkeit, Höhenmeter, Baden)
@@ -102,6 +101,7 @@ Jeder Lauf startet **ohne Gedächtnis** an frühere Sessions — dieses File + `
 
 <!-- Format: - YYYY-MM-DD — [Feature|Content] Kurzbeschreibung -->
 
+- 2026-09-03 — [Feature] „Mit Öffis erreichbar"-Badge auf die Übersichtskarten erweitert: neues `isOeffiErreichbar(slug)` in `app/lib/themenseiten.ts` (Set-Lookup über `BAHNHOF_GROUPS`, O(1) statt der vollen `oeffiAnreise()`-Textsuche) zeigt das 🚋-Badge jetzt auch im Magazin-Grid (`app/ui/blog-search.tsx`) und auf den Regionsseiten-Karten (`app/regionen/[bundesland]/page.tsx`), nicht mehr nur auf der Artikelseite selbst. Keine neuen Daten – nutzt dieselbe kuratierte Liste wie bisher.
 - 2026-08-26 — [Content] 2 neue Artikel in den bis dahin dünnsten Regionen: `karren-dornbirn` (Vorarlberg, Wandern) – Dornbirns Hausberg mit Seilbahn und Rheintal-/Bodensee-Blick, verlinkt mit `rappenlochschlucht-dornbirn` und neu in die Gruppe „Seilbahn hoch, Aussicht sofort" auf `/aussicht-ohne-anstrengung` aufgenommen; `stausee-ottenstein-waldviertel` (Niederösterreich, Baden) – größter der drei Kamp-Stauseen, Baden/Segeln/Paddeln, verlinkt mit `lunzer-see-baden` und neu als Eintrag in `app/lib/badeplaetze.ts`. Damit sind Vorarlberg und Niederösterreich mit Oberösterreich gleichauf (je 8 Artikel), Wien bleibt jetzt die dünnste Region.
 - 2026-08-25 — [Feature] „Route in Google Maps öffnen"-Button für Wander-Artikel: die externe Google-Maps-Navigation (bestehendes `api=1&destination=`-Muster, bisher nur in der „Startpunkt & Parken"-Karte für die 12 Artikel mit `startPoint`) gibt es jetzt auch im Wandern-CTA-Block direkt unter dem Artikeltext — für alle ~35 Wandern-Artikel mit `startCoords`/Tour-Koordinaten, nicht nur die mit ausführlicher Parken-Karte. Bei Artikeln mit `startPoint` wird der Button nicht doppelt angezeigt (dort steht er schon in der Sidebar). Komoot-Deeplink bewusst weggelassen, da das URL-Schema beim Testen nicht zuverlässig verifizierbar war.
 - 2026-08-24 — [Content] 6 weitere dünne Burgenland-/Tirol-Artikel ausgebaut: `podersdorf-am-see` (Geschichte des Leuchtturms, Beste Reisezeit), `burg-lockenhaus` (Geschichte des Kultraums, Beste Reisezeit), `schloss-halbturn` (Baugeschichte/Hildebrandt, Beste Reisezeit), `steppentierpark-pamhagen` (Naturschutzgedanke bei Przewalski-Pferden, Beste Reisezeit), `stubaital-stubaier-gletscher` (Erschließungsgeschichte, Beste Reisezeit), `pitztaler-gletscher` (Erschließungsgeschichte, Beste Reisezeit). Damit sind jetzt alle 12 Kandidaten aus dem 2026-08-23-Backlog-Eintrag durch.

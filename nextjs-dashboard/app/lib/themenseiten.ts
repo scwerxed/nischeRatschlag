@@ -153,6 +153,15 @@ export function oeffiAnreise(slug: string): string | undefined {
   return undefined;
 }
 
+// Schnelles Lookup-Set fürs Badge auf Übersichtskarten (Magazin-Grid,
+// Regionsseiten) – dort reicht ein Boolean, ohne den vollen Anreise-Text.
+const OEFFI_SLUGS = new Set(BAHNHOF_GROUPS.flatMap((g) => g.picks.map((p) => p.slug)));
+
+/** Ob der Artikel im Bahnhofsausflüge-Kurator gelistet ist (fürs Karten-Badge). */
+export function isOeffiErreichbar(slug: string): boolean {
+  return OEFFI_SLUGS.has(slug);
+}
+
 /** Themenseiten, auf denen dieser Artikel vorkommt – max. 2 je Quelle. */
 export function themenFor(slug: string, limit = 6): ThemenLink[] {
   const perRank = new Map<number, number>();

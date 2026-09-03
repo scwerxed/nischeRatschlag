@@ -4,6 +4,7 @@ import { useEffect, useMemo, useState } from 'react';
 import Link from 'next/link';
 import type { Post } from '@/app/lib/posts';
 import { CATEGORY_DOT, CATEGORY_STYLE, readingTime } from '@/app/lib/blog-utils';
+import { isOeffiErreichbar } from '@/app/lib/themenseiten';
 import PostArtwork from '@/app/ui/post-artwork';
 
 const CATEGORIES = ['Alle', 'Wandern', 'Baden', 'Ausflug', 'Unterkunft'] as const;
@@ -116,6 +117,11 @@ export default function BlogSearch({ posts }: { posts: Post[] }) {
                       {post.difficulty && (
                         <span className={`text-xs font-medium px-2 py-0.5 rounded-full ${DIFF_STYLE[post.difficulty]}`}>
                           {post.difficulty}
+                        </span>
+                      )}
+                      {isOeffiErreichbar(post.slug) && (
+                        <span className="text-xs font-medium px-2 py-0.5 rounded-full bg-blue-50 text-blue-700 border border-blue-200">
+                          🚋 Öffis
                         </span>
                       )}
                     </div>
