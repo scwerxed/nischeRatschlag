@@ -77,10 +77,10 @@ Jeder Lauf startet **ohne Gedächtnis** an frühere Sessions — dieses File + `
   antwortet `/api/newsletter` mit 503 und das Formular sagt das ehrlich. Das muss der
   Betreiber selbst im Brevo-Konto anlegen — nicht im Tageslauf machbar.
 - **Neue Artikel** (Slug vorher prüfen!) — dünn besetzte Regionen zuerst.
-  Stand 2026-08-26 je Region: Kärnten 44, Burgenland 26, Steiermark 26, Salzburg 19, Tirol 19,
-  Wien 9, **Oberösterreich 8, Niederösterreich 8, Vorarlberg 8**.
-  Übrige Ideen: Vorarlberg (Arlberg-Sommer), NÖ (Grafenegg, Waldviertel allgemein),
-  OÖ (Mondsee, Wolfgangsee-Ostufer).
+  Stand 2026-09-04 je Region: Kärnten 44, Burgenland 26, Steiermark 26, Salzburg 19, Tirol 19,
+  Oberösterreich 9, Vorarlberg 9, Wien 9, **Niederösterreich 8**.
+  Übrige Ideen: NÖ (Grafenegg, Waldviertel allgemein), OÖ (Wolfgangsee-Ostufer),
+  Wien (Kahlenberg/Leopoldsberg, Schatzkammer/Hofburg).
 - **Dünne Artikel ausbauen** — der Durchgang durch Wien, Vorarlberg, NÖ, OÖ sowie die
   12 kürzesten Burgenland-/Tirol-Artikel ist abgeschlossen (2026-08-23/24: kittsee-schloss,
   naturpark-rosalia-kogelberg, seefeld-tirol, hintertuxer-gletscher, st-anton-am-arlberg,
@@ -101,6 +101,7 @@ Jeder Lauf startet **ohne Gedächtnis** an frühere Sessions — dieses File + `
 
 <!-- Format: - YYYY-MM-DD — [Feature|Content] Kurzbeschreibung -->
 
+- 2026-09-04 — [Content] 2 neue Artikel für die bis dahin dünnsten Regionen: `mondsee-baden-salzkammergut` (Oberösterreich, Baden) – der wärmere, flachere Nachbarsee von Attersee/Traunsee, samt „Sound of Music"-Basilika und Drachenwand-Kulisse, verlinkt mit `attersee-baden` und `traunsee-gmunden`; `lech-zuers-am-arlberg` (Vorarlberg, Ausflug) – der mondäne Winterort im ruhigeren Sommerbetrieb, Formarinsee, verlinkt mit `silvretta-hochalpenstrasse` und `bregenzerwald-wandern`. Damit sind Oberösterreich und Vorarlberg mit Wien gleichauf (je 9 Artikel), Niederösterreich ist jetzt die dünnste Region.
 - 2026-09-03 — [Feature] „Mit Öffis erreichbar"-Badge auf die Übersichtskarten erweitert: neues `isOeffiErreichbar(slug)` in `app/lib/themenseiten.ts` (Set-Lookup über `BAHNHOF_GROUPS`, O(1) statt der vollen `oeffiAnreise()`-Textsuche) zeigt das 🚋-Badge jetzt auch im Magazin-Grid (`app/ui/blog-search.tsx`) und auf den Regionsseiten-Karten (`app/regionen/[bundesland]/page.tsx`), nicht mehr nur auf der Artikelseite selbst. Keine neuen Daten – nutzt dieselbe kuratierte Liste wie bisher.
 - 2026-08-26 — [Content] 2 neue Artikel in den bis dahin dünnsten Regionen: `karren-dornbirn` (Vorarlberg, Wandern) – Dornbirns Hausberg mit Seilbahn und Rheintal-/Bodensee-Blick, verlinkt mit `rappenlochschlucht-dornbirn` und neu in die Gruppe „Seilbahn hoch, Aussicht sofort" auf `/aussicht-ohne-anstrengung` aufgenommen; `stausee-ottenstein-waldviertel` (Niederösterreich, Baden) – größter der drei Kamp-Stauseen, Baden/Segeln/Paddeln, verlinkt mit `lunzer-see-baden` und neu als Eintrag in `app/lib/badeplaetze.ts`. Damit sind Vorarlberg und Niederösterreich mit Oberösterreich gleichauf (je 8 Artikel), Wien bleibt jetzt die dünnste Region.
 - 2026-08-25 — [Feature] „Route in Google Maps öffnen"-Button für Wander-Artikel: die externe Google-Maps-Navigation (bestehendes `api=1&destination=`-Muster, bisher nur in der „Startpunkt & Parken"-Karte für die 12 Artikel mit `startPoint`) gibt es jetzt auch im Wandern-CTA-Block direkt unter dem Artikeltext — für alle ~35 Wandern-Artikel mit `startCoords`/Tour-Koordinaten, nicht nur die mit ausführlicher Parken-Karte. Bei Artikeln mit `startPoint` wird der Button nicht doppelt angezeigt (dort steht er schon in der Sidebar). Komoot-Deeplink bewusst weggelassen, da das URL-Schema beim Testen nicht zuverlässig verifizierbar war.

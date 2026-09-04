@@ -5828,6 +5828,70 @@ Die Hauptsaison für Baden und Wassersport liegt zwischen **Juni und September**
       { label: 'Unterkünfte im Waldviertel – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Waldviertel' },
     ],
   },
+  {
+    slug: 'mondsee-baden-salzkammergut',
+    startCoords: [47.8497, 13.3502],
+    title: 'Mondsee – der „Sound of Music"-See mit warmem Wasser im Salzkammergut',
+    excerpt: 'Der Mondsee im oberösterreichischen Salzkammergut gilt als einer der wärmsten Seen der Region – dazu die berühmte Basilika aus „The Sound of Music" und die markante Drachenwand als Kulisse.',
+    date: '2026-09-04', category: 'Baden', region: 'oberoesterreich', bestSeason: 'Juni–September',
+    highlights: ['Eines der wärmeren Gewässer im Salzkammergut', 'Basilika St. Michael aus „The Sound of Music"', 'Drachenwand & Schafberg als Bergkulisse'],
+    content: `
+Der **Mondsee** verdankt seinen Namen seiner halbmondförmigen Kontur – ein vergleichsweise flacher, warmer See am Nordrand des Salzkammerguts, nur eine knappe halbe Autostunde von Salzburg entfernt.
+
+## Baden
+Weil er weniger tief ist als seine Nachbarn Attersee und Wolfgangsee, erwärmt sich der Mondsee im Sommer spürbar schneller – ein Grund, warum er bei Familien mit Kindern beliebt ist. Rund um den See verteilen sich mehrere Strandbäder und Freibäder mit Liegewiesen, dazu einige freie, weniger überlaufene Uferabschnitte abseits der Hauptorte.
+
+## Die Basilika St. Michael
+Weltberühmt wurde der Ort Mondsee durch die ehemalige Klosterkirche **Basilika St. Michael**, deren prunkvolles Barockinnere als Trauungskirche im Hollywood-Musical „The Sound of Music" diente. Bis heute zieht das internationale Fans des Films an – auch wer den Film nicht kennt, findet in der Kirche eines der eindrucksvollsten Barockensembles Oberösterreichs.
+
+## Aktiv am und über dem See
+Segeln, Surfen und Stand-up-Paddling sind auf dem Mondsee verbreitet, dazu ein größtenteils befahrbarer Uferradweg. Wer höher hinaus will, blickt auf die schroffe **Drachenwand** an der Nordseite des Sees – ein bekanntes Wander- und Klettersteigziel – oder fährt zum nahen **Schafberg** mit seiner historischen Zahnradbahn, von wo sich Mondsee, Attersee und Wolfgangsee gemeinsam überblicken lassen.
+
+## Beste Reisezeit
+Die Hauptbadesaison liegt zwischen **Juni und September**, wenn der vergleichsweise flache See seine wärmsten Temperaturen erreicht. Außerhalb der Saison lohnt sich der Ort trotzdem – etwa für einen ruhigen Basilika-Besuch oder einen Herbstspaziergang am Ufer.
+
+## Praktische Infos
+- Strandbäder liegen v. a. rund um den Ort Mondsee und in St. Lorenz – Parkplätze dort an Sommerwochenenden früh ausgelastet
+- Freie Uferzugänge sind vorhanden, aber begrenzt – auf ausgeschilderte öffentliche Bereiche achten
+- Gute Kombination mit einem Abstecher zum nahen [Attersee](/blog/attersee-baden) oder [Traunsee](/blog/traunsee-gmunden), beide nur eine kurze Fahrt entfernt
+- Für den Schafberg-Ausflug Fahrplan der Zahnradbahn vorab prüfen, an schönen Tagen früh anreisen
+    `,
+    affiliateLinks: [
+      { label: 'Unterkünfte am Mondsee – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Mondsee' },
+    ],
+  },
+  {
+    slug: 'lech-zuers-am-arlberg',
+    startCoords: [47.2058, 10.1372],
+    title: 'Lech-Zürs am Arlberg – Vorarlbergs mondänes Bergdorf im Sommer',
+    excerpt: 'Lech am Arlberg ist als Nobel-Skiort bekannt – im Sommer zeigt sich das Vorarlberger Bergdorf ruhiger und naturnah: hochalpine Wanderwege, der türkise Formarinsee und deutlich weniger Trubel als in der Wintersaison.',
+    date: '2026-09-04', category: 'Ausflug', region: 'vorarlberg', bestSeason: 'Juni–September',
+    highlights: ['Ruhiges Gegenstück zum weltbekannten Winterort', 'Türkiser Formarinsee in der Nähe', 'Hochalpine Wanderwege rund ums Lechquellengebirge'],
+    content: `
+**Lech am Arlberg** und das benachbarte Zürs gehören zu den bekanntesten – und teuersten – Wintersportorten der Alpen. Im Sommer zeigt sich die Vorarlberger Seite des Arlbergmassivs von einer ganz anderen Seite: ruhig, grün und mit deutlich weniger Betrieb als zur Skisaison.
+
+## Wandern im Lechquellengebirge
+Rund um Lech beginnen zahlreiche markierte Wanderwege, von gemütlichen Talwanderungen entlang des Lech-Flusses bis zu anspruchsvolleren Touren ins **Lechquellengebirge**. Mehrere Bergbahnen, die im Winter Skifahrer befördern, sind im Sommer für Wanderer geöffnet und verkürzen den Aufstieg zu den umliegenden Aussichtspunkten deutlich.
+
+## Der Formarinsee
+Ein beliebtes Ausflugsziel in der Umgebung ist der **Formarinsee** oberhalb von Lech – ein türkis schimmernder Bergsee auf rund 1.800 m, umgeben von den schroffen Roten Wänden. Der See ist zu Fuß oder mit dem Wanderbus erreichbar und gilt als einer der fotogensten Flecken Vorarlbergs.
+
+## Vom Skiort zum Sommerdorf
+Lech verdankt seinen Ruf als exklusiver Wintersportort seiner langen Tourismusgeschichte und der Lage inmitten des Arlbergmassivs – dieselbe Höhenlage, die im Winter für zuverlässigen Schnee sorgt, macht den Ort im Sommer zu einer angenehm kühlen, hochalpinen Basis. Die Infrastruktur aus der Wintersaison – gute Wege, gepflegte Hütten, dichtes Bahnnetz – kommt Sommergästen ebenso zugute, bei spürbar ruhigerer Atmosphäre.
+
+## Beste Reisezeit
+Die Wandersaison reicht etwa von **Juni bis September**, wobei hochalpine Wege je nach Schneelage erst im Juni schneefrei werden. Der Formarinsee ist meist bis in den frühen Herbst gut erreichbar.
+
+## Praktische Infos
+- Anreise am bequemsten über die Arlberg-Straße oder -Bahn (Bahnhof St. Anton/Langen, weiter mit dem Bus)
+- Bergbahnen im Sommer mit eigenem Fahrplan – vor allem außerhalb der Hauptsaison Betriebszeiten vorab prüfen
+- Der Ort ist im Sommer deutlich günstiger und ruhiger als im Winter, aber weiterhin im oberen Preissegment
+- Gute Ergänzung zu einer Rundtour mit der [Silvretta-Hochalpenstraße](/blog/silvretta-hochalpenstrasse) oder dem [Bregenzerwald](/blog/bregenzerwald-wandern)
+    `,
+    affiliateLinks: [
+      { label: 'Unterkünfte in Lech am Arlberg – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Lech+am+Arlberg' },
+    ],
+  },
 
 ];
 
