@@ -13,6 +13,7 @@ const QUICK_LINKS = [
   { href: '/ausfluege-nach-dauer', label: 'Ausflüge nach Dauer' },
   { href: '/regentaugliche-ausfluege', label: 'Ausflüge bei Regen' },
   { href: '/aussicht-ohne-anstrengung', label: 'Aussicht ohne Anstrengung' },
+  { href: '/sonnenuntergang-spots', label: 'Sonnenuntergang-Spots' },
   { href: '/merkliste', label: 'Merkliste' },
   { href: '/reiseinfos', label: 'Reiseinfos' },
   { href: '/#regionen', label: 'Regionen' },

@@ -37,7 +37,7 @@ This is a **Next.js 16 App Router** travel/tourism guide website for **Austria**
 - **Region page content**: [app/lib/regionen-content.ts](app/lib/regionen-content.ts) → `REGION_CONTENT` (intro box, best-season tips, attractions per region). Powers the region-page intro, the "Beste Reisezeit" grid and the `TouristDestination` schema for **all** active regions.
 - **Accommodations**: [app/lib/unterkuenfte.ts](app/lib/unterkuenfte.ts) — affiliate accommodations (lat/lng, type, price, booking URL, `region`). Shown as pins on the map **and** as affiliate cards on each region page (filtered by `region`). Covers all 9 Bundesländer.
 - **Region FAQs**: [app/lib/faqs.ts](app/lib/faqs.ts) → `FAQS_BY_REGION` (powers the FAQ accordion + FAQPage rich snippets).
-- **Themenseiten-Picks**: [app/lib/themen-picks.ts](app/lib/themen-picks.ts) holds the curated slug lists of the six inline-data landing pages (`HITZE_GROUPS`, `REGEN_GROUPS`, `AUSSICHT_GROUPS`, `DAUER_GROUPS`, `BAHNHOF_GROUPS`, `FEIERABEND_CITIES`). The pages import them (`import { X as GROUPS }`); keeping the data out of `page.tsx` is what lets the reverse index below read it too. Newer theme pages should put their data here from the start.
+- **Themenseiten-Picks**: [app/lib/themen-picks.ts](app/lib/themen-picks.ts) holds the curated slug lists of the inline-data landing pages (`HITZE_GROUPS`, `REGEN_GROUPS`, `AUSSICHT_GROUPS`, `DAUER_GROUPS`, `BAHNHOF_GROUPS`, `FEIERABEND_CITIES`, `SONNENUNTERGANG_GROUPS`). The pages import them (`import { X as GROUPS }`); keeping the data out of `page.tsx` is what lets the reverse index below read it too. Newer theme pages should put their data here from the start.
 
 ### Affiliate system
 
@@ -66,6 +66,7 @@ All outbound partner links route through our own domain via [app/lib/affiliate.t
 | `/ausfluege-nach-dauer` | SSG | Zeitfenster-Planer (unter 2 Std. / halber Tag / ganzer Tag / Wochenende), kuratierte Picks mit realistischer Dauer; Daten inline |
 | `/bahnhofsausfluege` | SSG | Öffi-Ziele in 3 Gruppen (direkt an der Bahn / Bahn+Schiff/Bus / Stadt&U-Bahn) mit Anreise-Hinweis je Ziel; Daten inline |
 | `/feierabend-ausfluege` | SSG | After-Work-Ziele ab Wien/Graz/Salzburg (≤ ~45 Min. Anfahrt, abendtauglich) mit Abend-Hinweis; Daten inline |
+| `/sonnenuntergang-spots` | SSG | Golden-Hour-Ziele in 3 Gruppen (Bergblick, Seen mit Spiegelung, Türme/Straßen/Städte) mit „Warum"-Notiz je Ziel + genereller Rückweg-Hinweisbox (letzte Bahn, Stirnlampe, Sonnenuntergangszeit); Daten in `app/lib/themen-picks.ts` (`SONNENUNTERGANG_GROUPS`) |
 | `/badeplaetze` | SSG + Client-Filter | Badeplatz-Check: konkrete Badeplätze mit filterbaren Eigenschaften (gratis/Schatten/flach/WC/Gastro/nach Wanderung/Hund) aus `app/lib/badeplaetze.ts`; Filter-UI in `app/ui/badeplatz-filter.tsx` |
 | `/karte` | Client (dynamic import) | Leaflet map; toggleable layers (OSM/OpenTopoMap base, Waymarked Trails overlay, Overpass peaks, accommodation affiliate pins); custom control panel. **Deep links**: `?lat=&lng=&zoom=&name=` centers the map + drops a "Startpunkt" marker (used by the "Startpunkt auf Karte öffnen" CTA on articles) |
 | `/routenplaner` | Client (dynamic import) | Interactive route planner via BRouter (proxied through `/api/brouter`, which snaps waypoints to nearest trail via Overpass); elevation profile + difficulty; saves to `localStorage` |

@@ -255,6 +255,45 @@ export const BAHNHOF_GROUPS: { title: string; note: string; picks: { slug: strin
   },
 ];
 
+// Kuratierte Sonnenuntergangs-Ziele, gruppiert nach Art des Aussichtspunkts.
+export const SONNENUNTERGANG_GROUPS: { title: string; note: string; picks: { slug: string; warum: string }[] }[] = [
+  {
+    title: 'Bergblick nach Westen',
+    note: 'Bergbahnen fahren meist nur bis kurz vor Sonnenuntergang – Betriebszeiten vorher prüfen, sonst wartet ein Abstieg im Dunkeln. Stirnlampe gehört trotzdem ins Gepäck.',
+    picks: [
+      { slug: 'untersberg-salzburg', warum: 'Salzburgs Sagenberg mit freiem Rundblick weit über die Alpen – die Bahn bringt dich entspannt zur letzten Fahrt hinauf.' },
+      { slug: 'schoeckl-graz-hausberg', warum: 'Grazer Hausberg mit offenem Blick übers Grazer Becken nach Westen.' },
+      { slug: 'karren-dornbirn', warum: 'Über dem Rheintal: weiter Blick zum Bodensee und in die Schweizer Berge, wenn die Sonne tiefer steht.' },
+      { slug: 'villacher-alpe-dobratsch-wanderung', warum: 'Kärntens Hausberg mit freiem Rundblick bis zu den Karawanken – die Passstraße führt fast bis zum Gipfel.' },
+      { slug: 'rax-seilbahn', warum: 'Weites Hochplateau mit Blick übers Wiener Becken – Österreichs älteste Seilbahn bringt dich in Ruhe hinauf.' },
+      { slug: 'geschriebenstein-wandern-burgenland', warum: 'Höchster Punkt des Burgenlands, Aussichtsturm mit freiem Blick übers Hügelland.' },
+    ],
+  },
+  {
+    title: 'Seen mit Spiegelung',
+    note: 'Zum Abend hin legt sich oft der Wind – dann liegt das Wasser glatt und spiegelt den Himmel am schönsten.',
+    picks: [
+      { slug: 'maria-woerth-woerthersee', warum: 'Die Halbinsel-Kirche liegt direkt am Ufer – wenn sich der Abendhimmel im Wörthersee spiegelt, eines der meistfotografierten Motive Kärntens.' },
+      { slug: 'neusiedler-see-baden-segeln', warum: 'Der flache Steppensee liegt weit offen – freier Blick zum Horizont, oft mit auffrischendem Abendwind.' },
+      { slug: 'achensee-tirol', warum: 'Tirols größter See im Nord-Süd-Tal – am Ufer weiter Blick übers Wasser in die tief stehende Sonne.' },
+      { slug: 'fuschlsee-baden', warum: 'Kleiner, ruhiger See bei Salzburg – abends meist deutlich leerer als tagsüber.' },
+      { slug: 'gosausee-dachstein-spiegelung', warum: 'Der Dachstein spiegelt sich im glatten Wasser – am schönsten, wenn der Wind zum Abend hin einschläft.' },
+      { slug: 'luenersee-wandern', warum: 'Stausee auf fast 2.000 m – Abendlicht auf türkisem Wasser, dazu die Stille der Bergwelt.' },
+    ],
+  },
+  {
+    title: 'Türme, Straßen & Städte im Abendlicht',
+    note: 'Kein Gipfelaufstieg nötig – auch mit wenig Aufwand lässt sich die Abendstimmung genießen.',
+    picks: [
+      { slug: 'pyramidenkogel-woerthersee', warum: 'Höchster Holzaussichtsturm der Welt, per Lift erreichbar – Rundblick über den Wörthersee im Abendlicht.' },
+      { slug: 'gaisberg-salzburg-aussicht', warum: 'Salzburgs Hausberg, mit dem Bus erreichbar – die Altstadt liegt bei Sonnenuntergang direkt zu Füßen.' },
+      { slug: 'wienerwald-wandern', warum: 'Kahlenberg und Leopoldsberg sind mit dem Bus erreichbar – von dort blickt man über ganz Wien.' },
+      { slug: 'hallstatt-salzkammergut', warum: 'Der Blick vom Skywalk über Dorf und See gehört zu den bekanntesten Postkartenmotiven Österreichs.' },
+      { slug: 'silvretta-hochalpenstrasse', warum: 'Passstraße über die Bielerhöhe – von den oberen Parkplätzen weiter Blick auf die Gletscher der Silvretta.' },
+    ],
+  },
+];
+
 // Kuratierte Feierabend-Ziele je Stadt (Anfahrt grob ≤ 45 Min., abendtauglich).
 export const FEIERABEND_CITIES: { name: string; note: string; picks: { slug: string; abend: string }[] }[] = [
   {

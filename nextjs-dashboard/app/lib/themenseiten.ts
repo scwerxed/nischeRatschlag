@@ -10,6 +10,7 @@ import {
   DAUER_GROUPS,
   BAHNHOF_GROUPS,
   FEIERABEND_CITIES,
+  SONNENUNTERGANG_GROUPS,
 } from '@/app/lib/themen-picks';
 
 // Rückwärts-Index: zu welchen Themenseiten gehört ein Artikel?
@@ -130,6 +131,8 @@ for (const c of FEIERABEND_CITIES) {
     });
   }
 }
+
+addGroups(SONNENUNTERGANG_GROUPS, '/sonnenuntergang-spots', 'Sonnenuntergang-Spots', 'Die besten Golden-Hour-Ziele', 13);
 
 // Der Seen-Hub ist bewusst die schwächste Quelle: Er greift nur, wenn oben
 // nichts Spezifischeres übrig geblieben ist.

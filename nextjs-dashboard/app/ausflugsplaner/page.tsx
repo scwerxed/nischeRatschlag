@@ -28,6 +28,7 @@ const GROUPS: Group[] = [
     items: [
       { href: '/ausfluege-nach-dauer', title: 'Ausflüge nach Dauer', desc: 'Unter 2 Stunden, halber Tag, ganzer Tag oder Wochenende.' },
       { href: '/feierabend-ausfluege', title: 'Feierabend-Ausflüge', desc: 'Ab Wien, Graz & Salzburg – abendtauglich, unter 45 Minuten Anfahrt.' },
+      { href: '/sonnenuntergang-spots', title: 'Sonnenuntergang-Spots', desc: 'Berge, Seen & Türme mit dem besten Blick zur Golden Hour – inkl. Rückweg-Hinweisen.' },
       { href: '/wochenendtrip', title: 'Wochenendtrips', desc: 'Kurztrips ab Wien, Graz, Salzburg, Linz, Innsbruck & Klagenfurt, nach Fahrzeit sortiert.' },
     ],
   },
