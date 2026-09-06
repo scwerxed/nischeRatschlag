@@ -4932,7 +4932,7 @@ Ganzjährig – gerade deshalb ist das MQ der klassische Plan B bei Regen. Im Ho
 - U2 Station MuseumsQuartier oder U3 Volkstheater, beide direkt am Areal
 - Höfe frei zugänglich, Museen kostenpflichtig – Kombitickets prüfen, wenn mehrere Häuser geplant sind
 - Für ein einzelnes Museum reichen 2–3 Stunden, für mehrere Häuser einen ganzen Tag einplanen
-- Gut kombinierbar mit Stephansdom und Innenstadt – alles fußläufig
+- Gut kombinierbar mit Stephansdom und Innenstadt – alles fußläufig, ebenso mit der nahen [Hofburg](/blog/hofburg-schatzkammer-wien)
 - Große Sonderausstellungen sind am Wochenende voll; unter der Woche vormittags ist es deutlich ruhiger
     `,
     affiliateLinks: [
@@ -4966,10 +4966,44 @@ Ganzjährig. Der Garten ist im Frühling und Frühsommer am schönsten, im Herbs
 - Garten frei zugänglich, die Schlösser sind kostenpflichtig – Tickets sind zeitfensterbasiert, Vorabbuchung empfohlen
 - Für Oberes Belvedere plus Garten reichen etwa 2–3 Stunden
 - Vor dem „Kuss" ist es tagsüber voll; früh am Vormittag ist es am ruhigsten
-- Gut kombinierbar mit einem Spaziergang durch die Innenstadt oder mit dem MuseumsQuartier
+- Gut kombinierbar mit einem Spaziergang durch die Innenstadt, dem MuseumsQuartier oder der [Hofburg](/blog/hofburg-schatzkammer-wien)
     `,
     affiliateLinks: [
       { label: 'Hotels in Wien – booking.com', url: 'https://www.booking.com/city/at/vienna.de.html' },
+    ],
+  },
+  {
+    slug: 'hofburg-schatzkammer-wien',
+    startCoords: [48.2065, 16.3656],
+    title: 'Hofburg & Kaiserliche Schatzkammer – 600 Jahre Habsburger auf engem Raum',
+    excerpt: 'Über sechs Jahrhunderte regierten die Habsburger von der Hofburg aus: Kaiserappartements, Sisi Museum und in der Schatzkammer die Reichskrone und andere Insignien der Habsburgermonarchie.',
+    date: '2026-09-06', category: 'Ausflug', region: 'wien', bestSeason: 'Ganzjährig',
+    highlights: ['Kaiserappartements & Sisi Museum', 'Schatzkammer mit Reichskrone & Kroninsignien', 'Mitten in der Wiener Innenstadt'],
+    content: `
+Die **Hofburg** war vom 13. Jahrhundert bis 1918 Residenz und Regierungssitz der Habsburger – gewachsen über Jahrhunderte zu einem ganzen Stadtviertel aus Trakten, Höfen und Kuppeln mitten in Wien.
+
+## Geschichte
+Was als mittelalterliche Burg begann, wurde von Generationen von Habsburgern immer weiter ausgebaut: gotische Ursprünge, Renaissance- und Barocktrakte, dazu im 19. Jahrhundert die Neue Burg im Stil der Ringstraßenzeit. Bis zum Ende der Monarchie residierte hier der Kaiser, heute ist die Hofburg unter anderem **Amtssitz des Bundespräsidenten** sowie Standort mehrerer Museen und der Nationalbibliothek.
+
+## Kaiserappartements & Sisi Museum
+In den **Kaiserappartements** lässt sich der Alltag am Hof von Kaiser Franz Joseph und Kaiserin Elisabeth nachvollziehen – von den nüchternen Amtsräumen des Kaisers bis zu den privaten Wohnräumen. Das **Sisi Museum** erzählt daneben die Geschichte der Kaiserin jenseits des Mythos: mit persönlichen Objekten, ihrer Reiselust und ihrem tragischen Ende.
+
+## Die Schatzkammer
+Die **Kaiserliche Schatzkammer** zeigt eine der bedeutendsten Sammlungen Europas: die **Reichskrone des Heiligen Römischen Reichs**, die österreichische Kaiserkrone, dazu Zepter, Reichsapfel und weitere Insignien der Habsburgermonarchie. Sie liegt in einem eigenen Trakt der Hofburg mit eigenem Ticket – wer sowohl Appartements als auch Schatzkammer sehen will, sollte dafür ausreichend Zeit einplanen.
+
+## Beste Reisezeit
+Ganzjährig – als reines Innenprogramm ist die Hofburg wetterunabhängig und damit ein verlässlicher Regentag-Ausflug in der Innenstadt.
+
+## Praktische Infos
+- Zentral in der Wiener Innenstadt, mit U-Bahn (U3 Herrengasse) und mehreren Straßenbahnlinien erreichbar
+- Appartements/Sisi Museum und Schatzkammer haben getrennte Tickets – Kombitickets vorab prüfen
+- Für beide Bereiche realistisch einen halben Tag einplanen
+- Direkt nebenan liegen die Spanische Hofreitschule und der Prunksaal der Nationalbibliothek
+- Fußläufig gut mit Stephansdom, Graben/Kohlmarkt oder dem [MuseumsQuartier](/blog/museumsquartier-wien) kombinierbar
+    `,
+    affiliateLinks: [
+      { label: 'Hotels in Wien – booking.com', url: 'https://www.booking.com/city/at/vienna.de.html' },
+      { label: 'Wien: Touren & Tickets – GetYourGuide', url: 'https://www.getyourguide.de/s/?q=Hofburg%20Wien' },
     ],
   },
 
@@ -5176,9 +5210,43 @@ Wer die Wachau zu Fuß erleben will, folgt dem **Welterbesteig**: Der Weitwander
 - Marillenblüte Ende März/Anfang April – ein Höhepunkt im Jahr
 - Im Herbst Weinlese, Sturm und der „Wachau-Herbst" mit goldenen Weingärten
 - Tickets für die Donauschifffahrt in der Hauptsaison vorab sichern
+- Nur wenige Minuten entfernt liegt mit [Schloss Grafenegg](/blog/schloss-grafenegg-kamptal) ein ganz anderer Kontrast: Neugotik statt Barock, Klassikfestival statt Weinlese
     `,
     affiliateLinks: [
       { label: 'Hotels in der Wachau – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Wachau' },
+    ],
+  },
+  {
+    slug: 'schloss-grafenegg-kamptal',
+    startCoords: [48.4090, 15.7170],
+    title: 'Schloss Grafenegg – Neugotik, Wolkenturm und Klassik im Kamptal',
+    excerpt: 'Schloss Grafenegg im Kamptal überrascht mit einer verspielten neugotischen Fassade, einem weitläufigen Landschaftspark mit Skulpturen und dem futuristischen Wolkenturm als Bühne für Klassikkonzerte.',
+    date: '2026-09-06', category: 'Ausflug', region: 'niederoesterreich', bestSeason: 'April–Oktober',
+    highlights: ['Verspielte neugotische Schlossfassade', 'Wolkenturm – Freiluftbühne für Klassik', 'Kunstpark mit Skulpturen, frei begehbar'],
+    content: `
+Wer nach Barockschlössern und Stiften eine Abwechslung sucht, findet sie im Kamptal: **Schloss Grafenegg** ist ein romantisch-verspieltes Neugotik-Ensemble mit Zinnen, Erkern und Türmchen – und daneben eine der modernsten Konzertbühnen Österreichs.
+
+## Geschichte
+Der Kern der Anlage reicht bis ins 14. Jahrhundert zurück, doch sein heutiges Gesicht erhielt Grafenegg erst im 19. Jahrhundert: Graf Breunner ließ das Schloss im Stil der englischen **Neugotik** aufwendig umbauen – mit Zinnenkränzen, Maßwerk und Türmen, die eher an eine romantische Burgenfantasie als an ein klassisches Barockschloss erinnern. Es gilt als eines der bedeutendsten weltlichen Neugotik-Bauwerke Österreichs.
+
+## Der Wolkenturm
+Im Schlosspark steht seit 2007 der **Wolkenturm** – eine markante, geschwungene Freiluftbühne aus Stahl, die sich wie eine Skulptur in die Parklandschaft einfügt. Er ist die Hauptspielstätte des **Grafenegg Festivals**, das im Sommer international besetzte Klassikkonzerte in den Park bringt und gemeinsam mit dem Tonkünstler-Orchester Niederösterreich das Schloss weit über die Region hinaus bekannt gemacht hat.
+
+## Der Kunstpark
+Rund um Schloss und Wolkenturm erstreckt sich ein weitläufiger **englischer Landschaftspark**, in dem zeitgenössische Skulpturen zwischen altem Baumbestand verteilt sind. Der Park ist frei zugänglich und lädt auch ohne Konzertticket zu einem ruhigen Spaziergang ein – eine ungewöhnliche Mischung aus Natur, Architektur und moderner Kunst.
+
+## Beste Reisezeit
+Park und Kunstwerke lassen sich von Frühling bis Herbst am besten genießen; das Grafenegg Festival findet in den Sommermonaten statt und ist der touristische Höhepunkt des Jahres. Das Schlossinnere ist überwiegend Veranstaltungen vorbehalten und nicht durchgehend für Einzelbesucher zugänglich – der Reiz liegt vor allem in Fassade, Wolkenturm und Park.
+
+## Praktische Infos
+- Liegt im Kamptal, rund 10 Fahrminuten von Krems und damit gut mit einem Wachau-Ausflug kombinierbar
+- Parkplätze direkt am Areal vorhanden
+- Konzerttickets für das Festival deutlich im Voraus sichern, Termine variieren von Jahr zu Jahr
+- Auch ohne Konzert lohnt sich ein Spaziergang durch den Kunstpark
+- Kombinierbar mit der [Wachau](/blog/wachau-duernstein) oder [Stift Melk](/blog/stift-melk) für einen Tag rund um Krems
+    `,
+    affiliateLinks: [
+      { label: 'Hotels rund um Krems & Kamptal – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Krems%20an%20der%20Donau' },
     ],
   },
   {
@@ -5207,6 +5275,7 @@ Das Stift ist ganzjährig zugänglich. Zur Marillenblüte im Frühling oder zur 
 - Direkt an der A1, eigener Bahnhof Melk – gut mit dem Zug ab Wien oder Linz erreichbar
 - Von Melk starten auch Donauschifffahrten und der Donau-Radweg durch die Wachau nach Krems
 - Parkplätze am Fuß des Stiftsbergs, von dort kurzer Fußweg hinauf
+- Richtung Krems liegt mit [Schloss Grafenegg](/blog/schloss-grafenegg-kamptal) ein neugotischer Kontrastpunkt fürs Kamptal
 
 ## Praktische Infos
 - Führungen oder Besuch auf eigene Faust, Audioguide verfügbar

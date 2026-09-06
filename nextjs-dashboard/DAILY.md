@@ -76,10 +76,10 @@ Jeder Lauf startet **ohne Gedächtnis** an frühere Sessions — dieses File + `
   antwortet `/api/newsletter` mit 503 und das Formular sagt das ehrlich. Das muss der
   Betreiber selbst im Brevo-Konto anlegen — nicht im Tageslauf machbar.
 - **Neue Artikel** (Slug vorher prüfen!) — dünn besetzte Regionen zuerst.
-  Stand 2026-09-04 je Region: Kärnten 44, Burgenland 26, Steiermark 26, Salzburg 19, Tirol 19,
-  Oberösterreich 9, Vorarlberg 9, Wien 9, **Niederösterreich 8**.
-  Übrige Ideen: NÖ (Grafenegg, Waldviertel allgemein), OÖ (Wolfgangsee-Ostufer),
-  Wien (Kahlenberg/Leopoldsberg, Schatzkammer/Hofburg).
+  Stand 2026-09-06 je Region: Kärnten 44, Burgenland 26, Steiermark 26, Salzburg 19, Tirol 19,
+  Wien 10, Niederösterreich 9, **Oberösterreich 9, Vorarlberg 9** (jetzt die dünnsten).
+  Übrige Ideen: OÖ (Wolfgangsee-Ostufer), Vorarlberg (weiterer Ort im Bregenzerwald oder Walgau),
+  NÖ (Waldviertel allgemein, Pielachtal/Dirndlweg).
 - **Dünne Artikel ausbauen** — der Durchgang durch Wien, Vorarlberg, NÖ, OÖ sowie die
   12 kürzesten Burgenland-/Tirol-Artikel ist abgeschlossen (2026-08-23/24: kittsee-schloss,
   naturpark-rosalia-kogelberg, seefeld-tirol, hintertuxer-gletscher, st-anton-am-arlberg,
@@ -100,6 +100,7 @@ Jeder Lauf startet **ohne Gedächtnis** an frühere Sessions — dieses File + `
 
 <!-- Format: - YYYY-MM-DD — [Feature|Content] Kurzbeschreibung -->
 
+- 2026-09-06 — [Content] 2 neue Artikel für die bis dahin dünnste Region (Niederösterreich, 8) und Wien (9): `schloss-grafenegg-kamptal` (Niederösterreich, Ausflug) – neugotisches Schloss im Kamptal mit dem Wolkenturm (Freiluft-Konzertbühne des Grafenegg Festivals) und frei zugänglichem Skulpturenpark, verlinkt mit `wachau-duernstein` und `stift-melk` (Krems liegt dazwischen); `hofburg-schatzkammer-wien` (Wien, Ausflug) – Kaiserappartements, Sisi Museum und die Schatzkammer mit der Reichskrone, verlinkt mit `schloss-belvedere-wien` und `museumsquartier-wien`, zusätzlich in die „Städte bei Regen"-Gruppe auf `/regentaugliche-ausfluege` aufgenommen (reines Innenprogramm). Damit ist Niederösterreich mit Wien gleichauf (je 9–10 Artikel), Oberösterreich und Vorarlberg sind jetzt die dünnsten Regionen (je 9).
 - 2026-09-05 — [Feature] Neue Landingpage `/sonnenuntergang-spots`: 17 kuratierte Golden-Hour-Ziele in 3 Gruppen (Bergblick nach Westen, Seen mit Spiegelung, Türme/Straßen/Städte im Abendlicht), Daten in `app/lib/themen-picks.ts` (`SONNENUNTERGANG_GROUPS`) nach bestehendem Muster. Inklusive genereller Rückweg-Hinweisbox (letzte Bahn/Bus prüfen, Sonnenuntergangszeit, Stirnlampe als Reserve) statt Einzel-Fakten je Ziel, um keine erfundenen Betriebszeiten zu riskieren. In den Rückwärts-Index (`themenseiten.ts`, neuer rank 13), `sitemap.ts`, Footer und den `/ausflugsplaner`-Hub eingebunden, plus Querverlinkung zu/von `/feierabend-ausfluege` und `/aussicht-ohne-anstrengung`.
 - 2026-09-04 — [Content] 2 neue Artikel für die bis dahin dünnsten Regionen: `mondsee-baden-salzkammergut` (Oberösterreich, Baden) – der wärmere, flachere Nachbarsee von Attersee/Traunsee, samt „Sound of Music"-Basilika und Drachenwand-Kulisse, verlinkt mit `attersee-baden` und `traunsee-gmunden`; `lech-zuers-am-arlberg` (Vorarlberg, Ausflug) – der mondäne Winterort im ruhigeren Sommerbetrieb, Formarinsee, verlinkt mit `silvretta-hochalpenstrasse` und `bregenzerwald-wandern`. Damit sind Oberösterreich und Vorarlberg mit Wien gleichauf (je 9 Artikel), Niederösterreich ist jetzt die dünnste Region.
 - 2026-09-03 — [Feature] „Mit Öffis erreichbar"-Badge auf die Übersichtskarten erweitert: neues `isOeffiErreichbar(slug)` in `app/lib/themenseiten.ts` (Set-Lookup über `BAHNHOF_GROUPS`, O(1) statt der vollen `oeffiAnreise()`-Textsuche) zeigt das 🚋-Badge jetzt auch im Magazin-Grid (`app/ui/blog-search.tsx`) und auf den Regionsseiten-Karten (`app/regionen/[bundesland]/page.tsx`), nicht mehr nur auf der Artikelseite selbst. Keine neuen Daten – nutzt dieselbe kuratierte Liste wie bisher.
