@@ -12,6 +12,7 @@ import { cloak } from '@/app/lib/affiliate';
 import PostArtwork from '@/app/ui/post-artwork';
 import { CATEGORY_STYLE } from '@/app/lib/blog-utils';
 import { isOeffiErreichbar } from '@/app/lib/themenseiten';
+import { seasonStatus, SEASON_LABEL } from '@/app/lib/season';
 
 type Props = { params: Promise<{ bundesland: string }> };
 
@@ -250,9 +251,15 @@ export default async function RegionPage({ params }: Props) {
                             </span>
                           )}
                         </div>
-                        {post.bestSeason && (
-                          <span className="text-xs text-gray-400">{post.bestSeason}</span>
-                        )}
+                        {post.bestSeason && (() => {
+                          const season = seasonStatus(post.bestSeason);
+                          return (
+                            <span className="inline-flex items-center gap-1 text-xs text-gray-400">
+                              {season && <span className={`w-1.5 h-1.5 rounded-full shrink-0 ${SEASON_LABEL[season].dot}`} title={SEASON_LABEL[season].label} />}
+                              {post.bestSeason}
+                            </span>
+                          );
+                        })()}
                       </div>
 
                       {/* Titel */}

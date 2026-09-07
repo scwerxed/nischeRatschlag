@@ -56,15 +56,17 @@ Jeder Lauf startet **ohne Gedächtnis** an frühere Sessions — dieses File + `
   Bregenz hat im 220-km-Radius nur ~25 Ziele. Erst nachziehen, wenn mehr Vorarlberg-Posts da sind.
 - Weitere Seen-Themen in `app/lib/seen.ts` — alle 5 `LakeTag`s haben jetzt eine Seite.
   Für ein neues Thema braucht es zuerst einen neuen Tag im `LakeTag`-Typ (z. B. `hund`, `gratis`).
-- `/karte`: Filter-Chips (Unterkünfte/Gipfel/Wege) — Layer-Panel existiert bereits
-- Post-Feld `season` → „Saison-Ampel" (jetzt / geht / eher nicht) auf Karten & Artikeln
 - „Mit Öffis erreichbar"-Badge existiert seit 2026-08-23 auf der Artikelseite und seit
   2026-09-03 auch auf Magazin-Grid + Regionsseiten-Karten (`isOeffiErreichbar()`).
   **Offen:** mehr Artikel in `BAHNHOF_GROUPS` aufnehmen, damit das Badge auf mehr als
   den ~20 kuratierten Karten erscheint.
-- Post-Feld `kosten` → Budget-Karte (Parken, Bahn, Eintritt, Bergbahn, Essen)
-- „Wenn dir diese Tour gefällt …" — ähnliche Touren je Artikel (Region+Kategorie+Schwierigkeit)
-- Region-Seiten: Vergleichstabelle der Touren (Dauer, Schwierigkeit, Höhenmeter, Baden)
+- Post-Feld `kosten` → Budget-Karte (Parken, Bahn, Eintritt, Bergbahn, Essen) — ⚠️ kollidiert
+  mit der „keine exakten Preise"-Regel; falls umgesetzt, nur grobe Kategorien
+  ("günstig/mittel/teuer"), keine Beträge.
+- Region-Seiten: Vergleichstabelle der Touren (Dauer, Schwierigkeit, Höhenmeter) — Datenlage
+  aktuell dünn: nur 3 Posts haben `trails`, 7 `routeVariants`, die meisten Wandern-Artikel
+  liefern nur `difficulty`. Erst sinnvoll, wenn mehr Touren strukturierte Länge/Dauer/Höhenmeter-
+  Daten haben (`routeVariants`-Backlog-Punkt unten nachziehen).
 - Artikel: „Auto oder Öffis?"-Vergleichsblock
 - Artikel: „1 Nacht reicht?"-Block für Tagesziele mit langer Anfahrt
 - `/blog`: Pagination bzw. „Mehr laden" (aktuell werden alle ~155 Karten gerendert)
@@ -100,6 +102,7 @@ Jeder Lauf startet **ohne Gedächtnis** an frühere Sessions — dieses File + `
 
 <!-- Format: - YYYY-MM-DD — [Feature|Content] Kurzbeschreibung -->
 
+- 2026-09-07 — [Feature] Saison-Ampel: neues `app/lib/season.ts` (`seasonStatus()`) leitet aus dem längst vorhandenen `bestSeason`-Text (z. B. "Mai–Oktober", "Ganzjährig", "Dezember–März & Juni–September") ab, ob der aktuelle Monat 🟢 ideal, 🟡 Übergangszeit oder 🔴 eher ungünstig ist – Rückgabe `undefined` statt einer falschen Einschätzung, wenn der Text nicht sicher parsbar ist. Kein neues `Post`-Feld nötig, da praktisch jeder Artikel schon eine geprüfte `bestSeason`-Angabe hat. Sichtbar als Emoji im Artikel-Kopfbereich-Badge + farbiges Label unter „Beste Zeit" in der Sidebar (`app/blog/[slug]/page.tsx`) sowie als kleiner Farbpunkt neben `bestSeason` auf den Regionsseiten-Karten (`app/regionen/[bundesland]/page.tsx`). Beim Durchgehen des Backlogs auch zwei erledigte Punkte entfernt, die schon existieren: „Ähnliche Touren" (bereits `relatedPosts()` in `blog-utils.ts`) und `/karte`-Filter-Chips (das Ebenen-Panel mit Wanderwege/Gipfel/Unterkünfte-Toggles gibt es schon in `map-client.tsx`).
 - 2026-09-06 — [Content] 2 neue Artikel für die bis dahin dünnste Region (Niederösterreich, 8) und Wien (9): `schloss-grafenegg-kamptal` (Niederösterreich, Ausflug) – neugotisches Schloss im Kamptal mit dem Wolkenturm (Freiluft-Konzertbühne des Grafenegg Festivals) und frei zugänglichem Skulpturenpark, verlinkt mit `wachau-duernstein` und `stift-melk` (Krems liegt dazwischen); `hofburg-schatzkammer-wien` (Wien, Ausflug) – Kaiserappartements, Sisi Museum und die Schatzkammer mit der Reichskrone, verlinkt mit `schloss-belvedere-wien` und `museumsquartier-wien`, zusätzlich in die „Städte bei Regen"-Gruppe auf `/regentaugliche-ausfluege` aufgenommen (reines Innenprogramm). Damit ist Niederösterreich mit Wien gleichauf (je 9–10 Artikel), Oberösterreich und Vorarlberg sind jetzt die dünnsten Regionen (je 9).
 - 2026-09-05 — [Feature] Neue Landingpage `/sonnenuntergang-spots`: 17 kuratierte Golden-Hour-Ziele in 3 Gruppen (Bergblick nach Westen, Seen mit Spiegelung, Türme/Straßen/Städte im Abendlicht), Daten in `app/lib/themen-picks.ts` (`SONNENUNTERGANG_GROUPS`) nach bestehendem Muster. Inklusive genereller Rückweg-Hinweisbox (letzte Bahn/Bus prüfen, Sonnenuntergangszeit, Stirnlampe als Reserve) statt Einzel-Fakten je Ziel, um keine erfundenen Betriebszeiten zu riskieren. In den Rückwärts-Index (`themenseiten.ts`, neuer rank 13), `sitemap.ts`, Footer und den `/ausflugsplaner`-Hub eingebunden, plus Querverlinkung zu/von `/feierabend-ausfluege` und `/aussicht-ohne-anstrengung`.
 - 2026-09-04 — [Content] 2 neue Artikel für die bis dahin dünnsten Regionen: `mondsee-baden-salzkammergut` (Oberösterreich, Baden) – der wärmere, flachere Nachbarsee von Attersee/Traunsee, samt „Sound of Music"-Basilika und Drachenwand-Kulisse, verlinkt mit `attersee-baden` und `traunsee-gmunden`; `lech-zuers-am-arlberg` (Vorarlberg, Ausflug) – der mondäne Winterort im ruhigeren Sommerbetrieb, Formarinsee, verlinkt mit `silvretta-hochalpenstrasse` und `bregenzerwald-wandern`. Damit sind Oberösterreich und Vorarlberg mit Wien gleichauf (je 9 Artikel), Niederösterreich ist jetzt die dünnste Region.

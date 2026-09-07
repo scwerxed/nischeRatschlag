@@ -12,6 +12,7 @@ import ViewTracker from '@/app/ui/view-tracker';
 import RecentlyViewed from '@/app/ui/recently-viewed';
 import { readingTime, relatedPosts } from '@/app/lib/blog-utils';
 import { themenFor, oeffiAnreise } from '@/app/lib/themenseiten';
+import { seasonStatus, SEASON_LABEL } from '@/app/lib/season';
 import { BASE, SITE_NAME, CATEGORY_KEYWORDS, REGION_META, regionName, articleSchema, breadcrumbSchema, sportsActivitySchema, trailRouteSchema, OFFICIAL_REGION_SITES } from '@/app/lib/seo';
 
 type Props = { params: Promise<{ slug: string }> };
@@ -180,6 +181,7 @@ export default async function BlogPostPage({ params }: Props) {
   const related = relatedPosts(post, posts);
   const themen = themenFor(slug);
   const oeffi = oeffiAnreise(slug);
+  const season = seasonStatus(post.bestSeason);
   const headings = extractHeadings(post.content);
   const regionSite = OFFICIAL_REGION_SITES[post.region];
   const officialLinks = [...(post.officialLinks ?? []), ...(regionSite ? [regionSite] : [])];
@@ -247,7 +249,10 @@ export default async function BlogPostPage({ params }: Props) {
               </span>
             )}
             {post.bestSeason && (
-              <span className="bg-white/15 border border-white/20 px-2.5 py-1" style={{ borderRadius: 3 }}>{post.bestSeason}</span>
+              <span className="inline-flex items-center gap-1.5 bg-white/15 border border-white/20 px-2.5 py-1" style={{ borderRadius: 3 }}>
+                {season && <span aria-hidden>{SEASON_LABEL[season].emoji}</span>}
+                {post.bestSeason}
+              </span>
             )}
             {oeffi && (
               <span className="bg-white/15 border border-white/20 px-2.5 py-1" style={{ borderRadius: 3 }}>🚋 Mit Öffis erreichbar</span>
@@ -446,7 +451,14 @@ export default async function BlogPostPage({ params }: Props) {
               {post.bestSeason && (
                 <div className="flex justify-between gap-3">
                   <dt className="text-gray-500">Beste Zeit</dt>
-                  <dd className="font-medium text-gray-900 text-right">{post.bestSeason}</dd>
+                  <dd className="font-medium text-gray-900 text-right">
+                    {post.bestSeason}
+                    {season && (
+                      <span className={`block mt-1.5 text-xs font-medium px-1.5 py-0.5 border ${SEASON_LABEL[season].cls}`} style={{ borderRadius: 3 }}>
+                        {SEASON_LABEL[season].emoji} {SEASON_LABEL[season].label}
+                      </span>
+                    )}
+                  </dd>
                 </div>
               )}
               <div className="flex justify-between gap-3">
