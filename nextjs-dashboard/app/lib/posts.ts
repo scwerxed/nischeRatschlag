@@ -5678,6 +5678,7 @@ Die Bergbahnen und die meisten Hütten haben in der Regel von **Juni bis Oktober
 - Bergbahnen sparen Zeit und Höhenmeter, Betriebszeiten aber saisonal, vorab prüfen
 - Hochalpine Touren in Silvretta und Rätikon verlangen Trittsicherheit und Erfahrung
 - Wetterumschwünge in den Bergketten rundum können rasch kommen – Bergwetter checken
+- Anfahrt meist über Bludenz, von dort ist auch ein Abstecher in die Altstadt von [Feldkirch](/blog/feldkirch-altstadt-schattenburg) gut machbar
     `,
     affiliateLinks: [
       { label: 'Unterkünfte im Montafon – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Montafon' },
@@ -5882,7 +5883,7 @@ Anders als an klassischen Strandbädern verteilen sich die Badeplätze auf mehre
 Der See gilt als eines der besten Segelreviere im Waldviertel; nordwestlich der Staumauer haben sich Segel- und Surfschulen mit Bootsverleih angesiedelt. Auch Kajak und Stand-up-Paddling sind auf dem weitläufigen Gewässer beliebt – ideal für alle, die neben dem Baden auch aktiv aufs Wasser wollen.
 
 ## Rund um den See
-Waldreiche Ufer laden zusätzlich zum Wandern und Radfahren ein, oft mit Blick auf die schmalen Wasserarme des Stausees. Wer mehrere Tage im Waldviertel verbringt, kombiniert den Ottensteiner Stausee gut mit einem Abstecher zum ruhigeren [Lunzer See](/blog/lunzer-see-baden) im Mostviertel oder einem Stadtbummel in Zwettl.
+Waldreiche Ufer laden zusätzlich zum Wandern und Radfahren ein, oft mit Blick auf die schmalen Wasserarme des Stausees. Wer mehrere Tage im Waldviertel verbringt, kombiniert den Ottensteiner Stausee gut mit einem Abstecher zum ruhigeren [Lunzer See](/blog/lunzer-see-baden) im Mostviertel, einem Stadtbummel in Zwettl oder – für einen ganz anderen Naturcharakter – der Flussschlucht im [Nationalpark Thayatal](/blog/nationalpark-thayatal-hardegg) weiter nördlich.
 
 ## Beste Reisezeit
 Die Hauptsaison für Baden und Wassersport liegt zwischen **Juni und September**; das Waldviertel ist klimatisch etwas kühler als das östliche Niederösterreich, wärmste Wassertemperaturen sind daher meist erst im Hochsommer zu erwarten.
@@ -5959,6 +5960,70 @@ Die Wandersaison reicht etwa von **Juni bis September**, wobei hochalpine Wege j
     `,
     affiliateLinks: [
       { label: 'Unterkünfte in Lech am Arlberg – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Lech+am+Arlberg' },
+    ],
+  },
+  {
+    slug: 'feldkirch-altstadt-schattenburg',
+    startCoords: [47.2385, 9.5965],
+    title: 'Feldkirch – mittelalterliche Altstadt und die Schattenburg',
+    excerpt: 'Feldkirch ist die älteste Stadt Vorarlbergs: verwinkelte Lauben-Gassen, Türme aus dem Mittelalter und hoch über der Altstadt die Schattenburg – ein kompakter Stadtausflug im Walgau, nahe der Grenze zu Liechtenstein und der Schweiz.',
+    date: '2026-09-08', category: 'Ausflug', region: 'vorarlberg', bestSeason: 'April–Oktober',
+    highlights: ['Mittelalterliche Altstadt mit Lauben-Arkaden', 'Schattenburg hoch über der Stadt', 'Ardetzenberg mit Wildpark direkt am Stadtrand'],
+    content: `
+**Feldkirch** gilt als die älteste Stadt Vorarlbergs und liegt am Fluss Ill im Walgau – nur wenige Kilometer von Liechtenstein und der Schweizer Grenze entfernt. Wer sonst nur Bregenz und den Bodensee ansteuert, findet hier ein ganz anderes, kleinstädtisch-mittelalterliches Vorarlberg.
+
+## Die Altstadt
+Das Herzstück ist die kompakte Altstadt rund um die **Neustadt**-Gasse: Häuser mit vorgezogenen Bogengängen, den sogenannten **Lauben**, säumen die Straße und boten früher Schutz vor Wind und Wetter beim Marktgeschehen. Dazwischen stehen mittelalterliche Wehrtürme wie der **Katzenturm** mit einer der größten Glocken Mitteleuropas. Die Pfarrkirche St. Nikolaus prägt mit ihrem spitzen Turm die Silhouette der Stadt.
+
+## Die Schattenburg
+Über der Altstadt thront die **Schattenburg**, die einstige Residenz der Grafen von Montfort, die die Stadt im Mittelalter gründeten. Heute beherbergt die gut erhaltene Burg ein Heimatmuseum mit Waffen- und Wohnkultur-Sammlung sowie eine Burgschänke – der Aufstieg von der Altstadt dauert nur wenige Minuten und wird mit einem weiten Blick über die Dächer der Stadt und ins Rheintal belohnt.
+
+## Ardetzenberg
+Direkt am Rand der Altstadt erhebt sich der bewaldete **Ardetzenberg** mit einem kleinen, kostenlos zugänglichen Wildpark (unter anderem Rothirsche und Wildschweine) und einfachen Spazier- und Waldwegen – ein angenehmer Ausklang nach dem Stadtbummel, auch für Familien mit Kindern geeignet.
+
+## Beste Reisezeit
+Die Altstadt lässt sich **ganzjährig** besuchen, am angenehmsten zwischen **April und Oktober**, wenn Gastgärten und Innenhöfe geöffnet sind. Feldkirch ist zudem ein guter Ausgangspunkt für Wanderungen im Walgau und ins angrenzende Rätikon.
+
+## Praktische Infos
+- Bahnhof Feldkirch liegt nur wenige Gehminuten von der Altstadt entfernt – gut mit der Bahn erreichbar
+- Parkgaragen rund um die Altstadt vorhanden, im Zentrum selbst ist Parken begrenzt und kostenpflichtig
+- Schattenburg und Wildpark sind eigenständige Programmpunkte – für beides zusammen mit der Altstadt realistisch einen halben Tag einplanen
+- Gute Ergänzung zu einem Ausflug in den [Bregenzerwald](/blog/bregenzerwald-wandern) oder ins Montafon
+    `,
+    affiliateLinks: [
+      { label: 'Unterkünfte in Feldkirch – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Feldkirch' },
+    ],
+  },
+  {
+    slug: 'nationalpark-thayatal-hardegg',
+    startCoords: [48.8339, 15.8407],
+    title: 'Nationalpark Thayatal – Flussschlucht an der tschechischen Grenze',
+    excerpt: 'Der Nationalpark Thayatal im nördlichen Waldviertel folgt der Thaya durch eine wilde Flussschlucht bis nach Hardegg, Österreichs kleinster Stadt – gemeinsam mit dem tschechischen Nachbarpark Podyjí eines der ursprünglichsten Flusstäler Mitteleuropas.',
+    date: '2026-09-08', category: 'Wandern', region: 'niederoesterreich', difficulty: 'mittel', bestSeason: 'April–Oktober',
+    highlights: ['Wilde Flussschlucht direkt an der Grenze zu Tschechien', 'Grenzüberschreitendes Schutzgebiet mit dem Nationalpark Podyjí', 'Burgruine Kaja und Österreichs kleinste Stadt Hardegg'],
+    content: `
+Im äußersten Norden des **Waldviertels**, dort wo die Thaya in engen Windungen die Grenze zu Tschechien markiert, liegt der **Nationalpark Thayatal** – mit rund 13 km² einer der kleinsten, aber landschaftlich eindrucksvollsten Nationalparks Österreichs. Zusammen mit dem angrenzenden tschechischen Nationalpark Podyjí bildet er ein grenzüberschreitendes Schutzgebiet um eines der naturbelassensten Flusstäler Mitteleuropas.
+
+## Die Flussschlucht
+Die Thaya hat sich hier tief in das Granit- und Gneisgestein des Waldviertler Hochlands eingeschnitten und ein enges, bewaldetes Tal mit schroffen Felsformationen geschaffen. Wanderwege führen entlang und oberhalb der Schlucht, mit immer wieder freien Aussichtspunkten auf Fluss und Wald – im Herbst sorgt der Laubmischwald für kräftige Farben.
+
+## Hardegg – Österreichs kleinste Stadt
+Am Rand des Nationalparks liegt **Hardegg**, mit nur rund 80 Einwohnern die kleinste Stadt Österreichs. Über dem Ort thront die Burg Hardegg, gegenüber am tschechischen Ufer liegt die Ruine Neuhäusl – beide gut sichtbar vom Wanderweg entlang der Thaya. Die kleine Stadt eignet sich als Ausgangspunkt für Touren in den Nationalpark und als Einkehrmöglichkeit.
+
+## Natur und Wanderwege
+Das Tal beherbergt eine für das Waldviertel ungewöhnlich artenreiche Flora und Fauna, begünstigt durch die geschützte Lage und die unterschiedlichen Sonnen- und Schattenhänge – darunter seltene Orchideenarten und Trockenrasen-Vegetation an den steileren Hangpartien. Das Besucherzentrum am Ortsrand von Hardegg informiert über die Wanderrouten unterschiedlicher Länge und Schwierigkeit, die meisten führen in Schleifen entlang des Flusses.
+
+## Beste Reisezeit
+Der Nationalpark ist **ganzjährig** zugänglich, am schönsten wandert es sich zwischen **April und Oktober**. Die schmalen Pfade entlang der Schlucht können nach Regen rutschig sein – festes Schuhwerk ist empfehlenswert.
+
+## Praktische Infos
+- Besucherzentrum am Ortsrand von Hardegg mit Infos zu Wegen und Führungen
+- Parkplätze in Hardegg vorhanden, im Ort selbst ist die Zufahrt teils eng
+- Die Wege entlang der Schlucht führen streckenweise dicht am Steilhang – bei Nässe besonders vorsichtig
+- Guter Kontrast zum eher sanften [Stausee Ottenstein](/blog/stausee-ottenstein-waldviertel) im selben Waldviertel
+    `,
+    affiliateLinks: [
+      { label: 'Unterkünfte im Waldviertel – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Waldviertel' },
     ],
   },
 
