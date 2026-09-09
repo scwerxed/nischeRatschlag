@@ -13,6 +13,8 @@ import RecentlyViewed from '@/app/ui/recently-viewed';
 import { readingTime, relatedPosts } from '@/app/lib/blog-utils';
 import { themenFor, oeffiAnreise } from '@/app/lib/themenseiten';
 import { seasonStatus, SEASON_LABEL } from '@/app/lib/season';
+import { unterkuenfte } from '@/app/lib/unterkuenfte';
+import { nearestCityKm, distKm } from '@/app/lib/wochenendtrip';
 import { BASE, SITE_NAME, CATEGORY_KEYWORDS, REGION_META, regionName, articleSchema, breadcrumbSchema, sportsActivitySchema, trailRouteSchema, OFFICIAL_REGION_SITES } from '@/app/lib/seo';
 
 type Props = { params: Promise<{ slug: string }> };
@@ -198,6 +200,21 @@ export default async function BlogPostPage({ params }: Props) {
     ? `/karte?lat=${mapPoint[0]}&lng=${mapPoint[1]}&zoom=${mapZoom}&name=${encodeURIComponent(precise ? post.title : regionName(post.region))}`
     : '/karte';
   const mapCtaLabel = precise ? 'Startpunkt auf Karte' : 'Region auf Karte';
+
+  // Weite Anfahrt von allen 6 Startstädten? Dann lohnt sich ggf. eine Übernachtung vor Ort statt
+  // eines langen Tagesausflugs. MAX_STAY_KM verhindert, dass in geografisch gespaltenen Regionen
+  // (z. B. Tirol: Nordtirol/Osttirol) eine weit entfernte Unterkunft der Region vorgeschlagen wird.
+  const FAR_KM = 100;
+  const MAX_STAY_KM = 60;
+  const nearbyStays = (precise && nearestCityKm(precise) > FAR_KM
+    ? unterkuenfte
+        .filter((u) => u.region === post.region)
+        .map((u) => ({ u, km: distKm(precise, [u.lat, u.lng]) }))
+        .filter((x) => x.km <= MAX_STAY_KM)
+        .sort((a, b) => a.km - b.km)
+        .slice(0, 2)
+        .map((x) => x.u)
+    : []);
 
   const jsonLd = [
     articleSchema({ title: post.title, excerpt: post.excerpt, date: post.date, slug: post.slug, category: post.category, region: post.region }),
@@ -530,6 +547,27 @@ export default async function BlogPostPage({ params }: Props) {
                   Navigation starten ↗
                 </a>
               )}
+            </div>
+          )}
+
+          {/* Weite Anfahrt: Übernachtung vor Ort statt langem Tagesausflug (Affiliate) */}
+          {nearbyStays.length > 0 && (
+            <div className="border border-violet-200 bg-violet-50 p-5" style={{ borderRadius: 8 }}>
+              <p className="eyebrow mb-1">Weite Anfahrt</p>
+              <h3 className="font-serif text-base font-bold text-gray-900 mb-3">Lieber übernachten statt lange pendeln?</h3>
+              <p className="text-sm text-gray-700 leading-relaxed mb-3">
+                Von Wien, Graz, Salzburg, Linz, Innsbruck und Klagenfurt aus ist es ein gutes Stück hierher – wer nicht alles an einem Tag hin und zurück fahren will, findet in der Nähe Unterkünfte.
+              </p>
+              <div className="space-y-2.5">
+                {nearbyStays.map((u) => (
+                  <a key={u.id} href={cloak(u.bookingUrl)} target="_blank" rel="noopener noreferrer sponsored"
+                    className="group block border border-violet-200 bg-white px-3 py-2.5 hover:border-violet-400 transition-colors" style={{ borderRadius: 6 }}>
+                    <span className="block text-xs font-semibold text-violet-700 uppercase tracking-wide">{u.typ} · {u.see}</span>
+                    <span className="block text-sm font-semibold text-gray-900 group-hover:text-violet-700 leading-snug mt-0.5">{u.name} →</span>
+                  </a>
+                ))}
+              </div>
+              <p className="text-[11px] text-gray-400 mt-3">* Affiliate-Links – ohne Mehrkosten für dich.</p>
             </div>
           )}
 

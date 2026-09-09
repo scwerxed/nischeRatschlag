@@ -67,6 +67,11 @@ export function distKm(a: [number, number], b: [number, number]): number {
   return 2 * R * Math.asin(Math.sqrt(x));
 }
 
+/** Kürzeste Luftlinie von `coords` zu einer der 6 Startstädte (für "weite Anfahrt"-Heuristiken). */
+export function nearestCityKm(coords: [number, number]): number {
+  return Math.min(...Object.values(TRIP_CITIES).map((city) => distKm(coords, city.geo)));
+}
+
 export type TripItem = { post: Post; km: number };
 export type TripGroup = { bucket: (typeof TIME_BUCKETS)[number]; items: TripItem[] };
 
