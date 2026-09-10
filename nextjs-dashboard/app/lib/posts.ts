@@ -5175,9 +5175,42 @@ Ganzjährig: Museen, Dom und Grottenbahn funktionieren bei jedem Wetter, was Lin
 - Ideal als Stopp auf der Fahrt ins Salzkammergut oder in die Wachau
 - Für Ars Electronica und Lentos zusammen einen halben Tag einplanen
 - Museums-Kombitickets prüfen, wenn mehreres geplant ist
+- Wer das ruhigere Innviertel entdecken will: [Schärding](/blog/schaerding-altstadt-innviertel) mit seiner Silberzeile liegt gut eine Autostunde westlich
     `,
     affiliateLinks: [
       { label: 'Hotels in Linz – booking.com', url: 'https://www.booking.com/city/at/linz.de.html' },
+    ],
+  },
+  {
+    slug: 'schaerding-altstadt-innviertel',
+    startCoords: [48.4491, 13.4319],
+    title: 'Schärding – barocke Silberzeile am Inn',
+    excerpt: 'Schärding im Innviertel gilt mit seiner bunten „Silberzeile" am Inn als eine der schönsten Kleinstädte Österreichs – barocker Stadtplatz, alte Sternschanzen und nur einen Katzensprung von Passau entfernt.',
+    date: '2026-09-10', category: 'Ausflug', region: 'oberoesterreich', bestSeason: 'Ganzjährig',
+    highlights: ['Die berühmte „Silberzeile" am Inn-Ufer', 'Barocker Stadtplatz mit Sternschanzen', 'Nur eine kurze Fahrt von Passau entfernt'],
+    content: `
+Im äußersten Westen Oberösterreichs, dort wo der Inn die Grenze zu Bayern bildet, liegt **Schärding** – eine der am besten erhaltenen Barockstädte des Landes und zugleich eine der am wenigsten überlaufenen.
+
+## Die Silberzeile
+Namensgebend für die Stadt ist die **Silberzeile**: eine Reihe pastellfarbener Bürgerhäuser mit Staffelgiebeln direkt am Inn-Ufer, einst von Salzhändlern erbaut, die am Innschiff-Handel reich wurden. Die geschlossene Fassadenfront gilt als eines der meistfotografierten Ensembles Österreichs, besonders am Abend, wenn die Fassaden beleuchtet sind und sich im Fluss spiegeln.
+
+## Stadtplatz und Sternschanzen
+Der **Obere Stadtplatz** mit seiner barocken Dreifaltigkeitssäule bildet das Zentrum der Altstadt, umgeben von weiteren bunten Fassaden und schattigen Laubengängen. Am Rand der Innenstadt haben sich Teile der historischen **Sternschanzen** erhalten – sternförmige Erdwälle einer barocken Stadtbefestigung, heute eine begrünte Parkanlage, die zum Spazierengehen einlädt.
+
+## Das Innviertel und die Nähe zu Bayern
+Das **Innviertel** gehörte bis 1779 zu Bayern und kam erst danach zu Österreich – das erklärt die kulturelle und sprachliche Nähe zum bayerischen Nachbarn bis heute. Die Grenzstadt **Passau** mit ihrer Dreiflüsse-Lage ist von Schärding aus nur eine kurze Fahrt entfernt und lässt sich gut mit dem Altstadtbesuch verbinden. Verglichen mit dem touristisch bekannteren Salzkammergut bleibt das Innviertel ein Geheimtipp.
+
+## Beste Reisezeit
+Die Altstadt lässt sich **ganzjährig** besuchen. Besonders stimmungsvoll ist ein Abendspaziergang entlang der beleuchteten Silberzeile, in der Adventzeit sorgt der Christkindlmarkt am Stadtplatz für zusätzliche Atmosphäre.
+
+## Praktische Infos
+- Altstadt ist kompakt und fußläufig erkundbar, Parkplätze am Rand des Zentrums suchen
+- Für einen Abstecher nach Passau Ausweis oder Reisepass mitführen
+- Cafés und Wirtshäuser rund um den Stadtplatz laden zum Verweilen ein
+- Gute Ergänzung zu einem Ausflug nach [Linz](/blog/linz-ausflug), rund eine Autostunde östlich
+    `,
+    affiliateLinks: [
+      { label: 'Unterkünfte in Schärding – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Sch%C3%A4rding' },
     ],
   },
 
@@ -5740,6 +5773,7 @@ Nach der Schneeschmelze im Frühjahr führen die Bäche am meisten Wasser, gleic
 - Festes Schuhwerk und etwas Kondition sind nötig, der Steig ist kein reiner Spazierweg
 - Bei Nässe sind Stege und Steinstufen rutschig – Vorsicht walten lassen
 - Gute Kombination mit einer Übernachtung im Mostviertel oder einem Abstecher zum [Lunzer See](/blog/lunzer-see-baden)
+- Wer es ruhiger angehen will: im nahen [Pielachtal](/blog/pielachtal-dirndlweg-frankenfels) warten sanftere Talwanderungen
     `,
     affiliateLinks: [
       { label: 'Unterkünfte im Mostviertel – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Mostviertel' },
@@ -6024,6 +6058,38 @@ Der Nationalpark ist **ganzjährig** zugänglich, am schönsten wandert es sich 
     `,
     affiliateLinks: [
       { label: 'Unterkünfte im Waldviertel – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Waldviertel' },
+    ],
+  },
+  {
+    slug: 'pielachtal-dirndlweg-frankenfels',
+    startCoords: [47.9975, 15.2975],
+    title: 'Pielachtal – Wandern im „Dirndltal" bei Frankenfels und Rabenstein',
+    excerpt: 'Das Pielachtal im Mostviertel nennt sich selbstbewusst „Dirndltal" – benannt nach der Dirndlkirsche, die hier besonders zahlreich wächst. Zwischen Frankenfels und Rabenstein an der Pielach warten sanfte Talwanderungen abseits des Ötscher-Trubels.',
+    date: '2026-09-10', category: 'Wandern', region: 'niederoesterreich', difficulty: 'leicht', bestSeason: 'April–Oktober',
+    highlights: ['Das „Dirndltal" – benannt nach der Dirndlkirsche', 'Sanfte Talwanderungen abseits der Ötscher-Trubel', 'Ruhige Ausgangsbasis Richtung Naturpark Ötscher-Tormäuer'],
+    content: `
+Im Mostviertel, entlang des kleinen Flusses Pielach zwischen den Orten **Frankenfels**, **Rabenstein an der Pielach** und **Schwarzenbach an der Pielach**, liegt eine Gegend, die sich selbst das **„Dirndltal"** nennt – deutlich ruhiger als der nahe, bekanntere Ötscher, aber landschaftlich keineswegs weniger reizvoll.
+
+## Die Dirndlkirsche
+Namensgeberin ist die **Dirndlkirsche** (Kornelkirsche), im regionalen Dialekt schlicht „Dirndl" genannt. Der Strauch blüht bereits im zeitigen Frühjahr als einer der ersten Blüher der Saison mit auffälligen gelben Blüten, im Spätsommer reifen die roten, säuerlichen Früchte. In der Region wird die Dirndl traditionell zu Marmelade, Saft oder Schnaps verarbeitet und als kulinarische Spezialität vermarktet – ein kleines, aber eigenständiges Identitätsmerkmal des Tals.
+
+## Sanftes Wandern im Tal
+Anders als die anspruchsvollen Steige der [Ötschergräben](/blog/oetscher-tormaeuer-wandern) verlaufen die Wege im Pielachtal überwiegend flach bis leicht hügelig entlang des Flusses und zwischen den Dörfern – gut geeignet für Familien, gemütliche Wanderer oder alle, die nach einer anstrengenderen Bergtour einen ruhigen Ausklang suchen.
+
+## Nähe zum Ötscher
+Die Dörfer des Pielachtals liegen am Rand des Mostviertler Berglands und eignen sich als ruhigere, weniger überlaufene Ausgangsbasis für alle, die den **Naturpark Ötscher-Tormäuer** in der Nähe erkunden wollen, ohne direkt an den stark frequentierten Haupteinstiegen zu starten.
+
+## Beste Reisezeit
+Wanderungen im Tal sind von **April bis Oktober** am angenehmsten. Die Dirndlblüte fällt meist schon in den März, die Erntezeit der Früchte liegt im Spätsommer bis frühen Herbst.
+
+## Praktische Infos
+- Parkmöglichkeiten in den Ortszentren von Frankenfels und Rabenstein an der Pielach
+- Die Talwege sind unproblematisch, normales festes Schuhwerk reicht
+- Einkehrmöglichkeiten in den Dörfern entlang der Strecke
+- Gute Ergänzung zu einer anspruchsvolleren Tour in den [Ötschergräben](/blog/oetscher-tormaeuer-wandern)
+    `,
+    affiliateLinks: [
+      { label: 'Unterkünfte im Mostviertel – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Mostviertel' },
     ],
   },
 
