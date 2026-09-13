@@ -149,6 +149,7 @@ export const REGEN_GROUPS: { title: string; note: string; picks: { slug: string;
       { slug: 'museumsquartier-wien', warum: 'Mehrere Museen auf einem Areal, dazwischen überdachte Arkaden – ein ganzer Regentag ohne Umsteigen.' },
       { slug: 'schloss-belvedere-wien', warum: 'Klimt-Sammlung im Oberen Belvedere; der Garten geht auch bei Nieselwetter.' },
       { slug: 'hofburg-schatzkammer-wien', warum: 'Kaiserappartements und Schatzkammer sind reines Innenprogramm mitten in der Innenstadt.' },
+      { slug: 'hundertwasserhaus-kunsthauswien', warum: 'Die Fassade wirkt bei jedem Wetter, das KunstHausWien daneben ist reines Innenprogramm.' },
       { slug: 'linz-ausflug', warum: 'Ars Electronica Center und Lentos liegen zentral – Linz punktet gerade bei Schlechtwetter.' },
       { slug: 'klagenfurt-stadtfuehrung', warum: 'Kompakte Altstadt mit Innenhöfen und Lokalen, gut als Wörthersee-Ersatzprogramm.' },
     ],

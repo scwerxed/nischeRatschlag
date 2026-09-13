@@ -4934,6 +4934,7 @@ Ganzjährig – gerade deshalb ist das MQ der klassische Plan B bei Regen. Im Ho
 - Für ein einzelnes Museum reichen 2–3 Stunden, für mehrere Häuser einen ganzen Tag einplanen
 - Gut kombinierbar mit Stephansdom und Innenstadt – alles fußläufig, ebenso mit der nahen [Hofburg](/blog/hofburg-schatzkammer-wien)
 - Große Sonderausstellungen sind am Wochenende voll; unter der Woche vormittags ist es deutlich ruhiger
+- Für einen weiteren Kunst-Ausflug mit ganz anderer Architektur: das [Hundertwasserhaus samt KunstHausWien](/blog/hundertwasserhaus-kunsthauswien) im 3. Bezirk
     `,
     affiliateLinks: [
       { label: 'Hotels in Wien – booking.com', url: 'https://www.booking.com/city/at/vienna.de.html' },
@@ -5004,6 +5005,38 @@ Ganzjährig – als reines Innenprogramm ist die Hofburg wetterunabhängig und d
     affiliateLinks: [
       { label: 'Hotels in Wien – booking.com', url: 'https://www.booking.com/city/at/vienna.de.html' },
       { label: 'Wien: Touren & Tickets – GetYourGuide', url: 'https://www.getyourguide.de/s/?q=Hofburg%20Wien' },
+    ],
+  },
+  {
+    slug: 'hundertwasserhaus-kunsthauswien',
+    startCoords: [48.2065, 16.3931],
+    title: 'Hundertwasserhaus & KunstHausWien – Wiens bunteste Architektur',
+    excerpt: 'Keine gerade Linie, dafür bunte Fassaden, ungleiche Böden und Bäume auf dem Dach: Das Hundertwasserhaus und das benachbarte KunstHausWien zeigen Wien von seiner schrägsten Seite.',
+    date: '2026-09-13', category: 'Ausflug', region: 'wien', bestSeason: 'Ganzjährig',
+    highlights: ['Wellige Fassade ganz ohne gerade Linie', 'KunstHausWien gleich um die Ecke', 'Kompakt im 3. Bezirk, gut zu Fuß erreichbar'],
+    content: `
+Mitten im 3. Wiener Gemeindebezirk steht eines der meistfotografierten Wohnhäuser der Welt: das **Hundertwasserhaus** des Künstlers und Architekten Friedensreich Hundertwasser.
+
+## Die Idee dahinter
+Hundertwasser lehnte die „gerade Linie" als gottlos und unmenschlich ab. Sein 1983–85 errichtetes Gemeindebau-Projekt folgt konsequent dieser Philosophie: kein Fußboden ist eben, keine Fassade gleicht der nächsten, Farben wechseln von Wohnung zu Wohnung, und über 250 Bäume und Sträucher wachsen aus Fensternischen, Terrassen und vom Dach – die sogenannten „Baummieter". Auch das berühmte „Fensterrecht" stammt von ihm: Jeder Bewohner durfte selbst entscheiden, wie weit die eigenen Fenster in die Fassade hineinragen und wie sie bemalt werden.
+
+## Wohnhaus bleibt Wohnhaus
+Wichtig zu wissen: Das Hundertwasserhaus ist ein **bewohntes Gemeindebau-Wohnhaus** und kann nicht von innen besichtigt werden – man bewundert die Fassade von außen, am besten von der gegenüberliegenden Straßenseite. Direkt daneben liegt das **„Hundertwasser Village"**, ein kleines Geschäfts- und Cafépassagen-Ensemble im selben Stil, das einen Eindruck der Innenraumgestaltung vermittelt, ohne die Privatsphäre der Bewohner zu stören.
+
+## KunstHausWien
+Nur wenige Gehminuten entfernt liegt das **KunstHausWien** – ein von Hundertwasser selbst gestaltetes ehemaliges Fabrikgebäude, das heute als Museum seine Gemälde, grafischen Arbeiten und architektonischen Entwürfe zeigt, ergänzt durch wechselnde Fotografie-Ausstellungen. Da es sich um ein reguläres Museum handelt, lässt es sich – anders als das Wohnhaus – ganz normal von innen besuchen.
+
+## Beste Reisezeit
+Ganzjährig: Die Fassade wirkt bei jedem Wetter, das KunstHausWien ist als Innenraum ohnehin wetterunabhängig und damit auch bei Regen ein verlässliches Ziel.
+
+## Praktische Infos
+- Nächste Station: Straßenbahnlinie 1 „Hetzgasse" oder U-Bahn U3/U4 „Landstraße" plus kurzer Fußweg
+- Fassade am besten von der gegenüberliegenden Straßenseite fotografieren, Rücksicht auf die Bewohner nehmen
+- Gut kombinierbar mit einem Spaziergang durch den nahen Stadtpark oder weiter zum [Schloss Belvedere](/blog/schloss-belvedere-wien)
+- Wer Hundertwassers Ideen im großen Maßstab erleben will, findet sie in der Oststeiermark auch als begehbare Therme: [Rogner Bad Blumau](/blog/rogner-bad-blumau-therme)
+    `,
+    affiliateLinks: [
+      { label: 'Hotels in Wien – booking.com', url: 'https://www.booking.com/city/at/vienna.de.html' },
     ],
   },
 
@@ -5208,9 +5241,42 @@ Die Altstadt lässt sich **ganzjährig** besuchen. Besonders stimmungsvoll ist e
 - Für einen Abstecher nach Passau Ausweis oder Reisepass mitführen
 - Cafés und Wirtshäuser rund um den Stadtplatz laden zum Verweilen ein
 - Gute Ergänzung zu einem Ausflug nach [Linz](/blog/linz-ausflug), rund eine Autostunde östlich
+- Landeinwärts, eine knappe halbe Autostunde entfernt, liegt mit [Ried im Innkreis](/blog/ried-im-innkreis-antiesental) und dem Antiesental ein ruhigerer Teil des Innviertels
     `,
     affiliateLinks: [
       { label: 'Unterkünfte in Schärding – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Sch%C3%A4rding' },
+    ],
+  },
+  {
+    slug: 'ried-im-innkreis-antiesental',
+    startCoords: [48.2075, 13.4893],
+    title: 'Ried im Innkreis & Antiesental – Innviertler Land abseits der Route',
+    excerpt: 'Ried im Innkreis ist die ruhige Bezirkshauptstadt des Innviertels, das Antiesental dahinter eine sanfte Fluss- und Obstlandschaft ohne Tourismustrubel – ein Gegenentwurf zum Salzkammergut.',
+    date: '2026-09-13', category: 'Ausflug', region: 'oberoesterreich', bestSeason: 'April–Oktober',
+    highlights: ['Historischer Kirchenplatz mit Messe-Tradition', 'Antiesental: ruhige Obst- und Flusslandschaft', 'Kaum Tagestouristen – ehrlicher Geheimtipp'],
+    content: `
+Während sich Reisende im Salzkammergut vor den Fotospots stauen, bleibt das **Innviertel** rund um Ried weitgehend unter dem Radar – zu Unrecht, wie ein Abstecher zeigt.
+
+## Ried im Innkreis
+Als Bezirkshauptstadt des Innviertels ist **Ried im Innkreis** kein Postkartenort, sondern ein gewachsenes Marktstädtchen mit ruhigem **Kirchenplatz**, Bürgerhäusern und der Stadtpfarrkirche im Zentrum. Bekannt ist Ried vor allem für die **Rieder Messe** – eine der traditionsreichsten Handels- und Landwirtschaftsmessen Österreichs, die im Herbst tausende Besucher aus der Region anzieht. Außerhalb der Messezeit geht es entsprechend beschaulich zu.
+
+## Das Antiesental
+Südlich der Stadt begleitet die **Antiesen** – ein kleiner Nebenfluss des Inn – ein sanftes Tal aus Wiesen, Streuobstbeständen und ruhigen Dörfern wie Aurolzmünster oder Antiesenhofen. Anders als in den alpinen Regionen Oberösterreichs geht es hier flach zu: gut geeignete Rad- und Spazierwege entlang des Flusses, vorbei an Obstbäumen, die im Frühling in voller Blüte stehen. Ein Ziel für alle, die Landschaft ohne Höhenmeter und ohne Menschenmassen suchen.
+
+## Innviertel-Kontext
+Zusammen mit dem bereits vorgestellten [Schärding](/blog/schaerding-altstadt-innviertel) an der Grenze zu Bayern zeigt Ried, dass das Innviertel mehr zu bieten hat als seinen bekanntesten Punkt. Die Region kam erst 1779 zu Österreich und hat bis heute einen eigenen, bayerisch geprägten Dialekt und eine eigene Wirtshauskultur bewahrt.
+
+## Beste Reisezeit
+Die Antiesental-Wege sind von **April bis Oktober** am schönsten, mit der Obstblüte im Frühling als besonderem Höhepunkt. Ried selbst lässt sich ganzjährig besuchen, im Herbst dann meist im Messe-Trubel.
+
+## Praktische Infos
+- Ried ist per Bahn (Strecke Wels–Passau) und Auto gut erreichbar
+- Wege im Antiesental sind meist eben und auch für Familien mit Kinderwagen oder Rad geeignet
+- Wirtshäuser am Kirchenplatz eignen sich gut für eine Einkehr
+- Nur eine knappe halbe Autostunde von [Schärding](/blog/schaerding-altstadt-innviertel) entfernt – gut als gemeinsamer Innviertel-Tag kombinierbar
+    `,
+    affiliateLinks: [
+      { label: 'Unterkünfte in Ried im Innkreis – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Ried%20im%20Innkreis' },
     ],
   },
 
