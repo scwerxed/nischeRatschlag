@@ -118,6 +118,9 @@ export default function WandernBadenPage() {
         <Link href="/badeplaetze" className="inline-block border border-sky-500 text-sky-700 text-sm font-semibold px-5 py-2.5 hover:bg-sky-50 transition-colors" style={{ borderRadius: 6 }}>
           Badeplatz-Check
         </Link>
+        <Link href="/zwei-ausfluege-an-einem-tag" className="inline-block border border-gray-300 text-gray-700 text-sm font-semibold px-5 py-2.5 hover:border-green-600 hover:text-green-700 transition-colors" style={{ borderRadius: 6 }}>
+          Zwei Ausflüge an einem Tag
+        </Link>
       </div>
     </div>
   );

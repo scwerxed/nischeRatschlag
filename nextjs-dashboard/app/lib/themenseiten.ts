@@ -2,6 +2,7 @@ import { BADEPLAETZE } from '@/app/lib/badeplaetze';
 import { LAKES, SEE_THEMEN } from '@/app/lib/seen';
 import { MONATE } from '@/app/lib/monatstipps';
 import { combosByRegion } from '@/app/lib/wandern-baden';
+import { combosByRegion as tagesCombosByRegion } from '@/app/lib/tagescombo';
 import { TRIP_CITIES, tripsFrom } from '@/app/lib/wochenendtrip';
 import {
   HITZE_GROUPS,
@@ -133,6 +134,19 @@ for (const c of FEIERABEND_CITIES) {
 }
 
 addGroups(SONNENUNTERGANG_GROUPS, '/sonnenuntergang-spots', 'Sonnenuntergang-Spots', 'Die besten Golden-Hour-Ziele', 13);
+
+for (const g of tagesCombosByRegion()) {
+  for (const c of g.combos) {
+    for (const p of [c.first, c.second]) {
+      add(p.slug, {
+        href: '/zwei-ausfluege-an-einem-tag',
+        label: 'Zwei Ausflüge an einem Tag',
+        note: 'Kombinierbar mit einem nahen Halbtags-Ziel',
+        rank: 14,
+      });
+    }
+  }
+}
 
 // Der Seen-Hub ist bewusst die schwächste Quelle: Er greift nur, wenn oben
 // nichts Spezifischeres übrig geblieben ist.

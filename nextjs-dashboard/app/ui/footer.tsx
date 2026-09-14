@@ -14,6 +14,7 @@ const QUICK_LINKS = [
   { href: '/regentaugliche-ausfluege', label: 'Ausflüge bei Regen' },
   { href: '/aussicht-ohne-anstrengung', label: 'Aussicht ohne Anstrengung' },
   { href: '/sonnenuntergang-spots', label: 'Sonnenuntergang-Spots' },
+  { href: '/zwei-ausfluege-an-einem-tag', label: 'Zwei Ausflüge an einem Tag' },
   { href: '/merkliste', label: 'Merkliste' },
   { href: '/reiseinfos', label: 'Reiseinfos' },
   { href: '/#regionen', label: 'Regionen' },
