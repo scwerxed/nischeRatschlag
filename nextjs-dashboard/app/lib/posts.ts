@@ -5310,6 +5310,7 @@ Wer die Wachau zu Fuß erleben will, folgt dem **Welterbesteig**: Der Weitwander
 - Im Herbst Weinlese, Sturm und der „Wachau-Herbst" mit goldenen Weingärten
 - Tickets für die Donauschifffahrt in der Hauptsaison vorab sichern
 - Nur wenige Minuten entfernt liegt mit [Schloss Grafenegg](/blog/schloss-grafenegg-kamptal) ein ganz anderer Kontrast: Neugotik statt Barock, Klassikfestival statt Weinlese
+- Donauabwärts, östlich von Wien, wartet mit [Carnuntum](/blog/carnuntum-archaeologiepark) ein noch viel älteres Donau-Kapitel: römische Ruinen statt Weinterrassen
     `,
     affiliateLinks: [
       { label: 'Hotels in der Wachau – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Wachau' },
@@ -6088,7 +6089,7 @@ Die Altstadt lässt sich **ganzjährig** besuchen, am angenehmsten zwischen **Ap
 - Bahnhof Feldkirch liegt nur wenige Gehminuten von der Altstadt entfernt – gut mit der Bahn erreichbar
 - Parkgaragen rund um die Altstadt vorhanden, im Zentrum selbst ist Parken begrenzt und kostenpflichtig
 - Schattenburg und Wildpark sind eigenständige Programmpunkte – für beides zusammen mit der Altstadt realistisch einen halben Tag einplanen
-- Gute Ergänzung zu einem Ausflug in den [Bregenzerwald](/blog/bregenzerwald-wandern) oder ins Montafon
+- Gute Ergänzung zu einem Ausflug in den [Bregenzerwald](/blog/bregenzerwald-wandern), ins Montafon oder in die nahe „Rosenstadt" [Hohenems](/blog/hohenems-rosenstadt-schloss)
     `,
     affiliateLinks: [
       { label: 'Unterkünfte in Feldkirch – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Feldkirch' },
@@ -6156,6 +6157,74 @@ Wanderungen im Tal sind von **April bis Oktober** am angenehmsten. Die Dirndlbl�
     `,
     affiliateLinks: [
       { label: 'Unterkünfte im Mostviertel – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Mostviertel' },
+    ],
+  },
+  {
+    slug: 'hohenems-rosenstadt-schloss',
+    startCoords: [47.3606, 9.6867],
+    title: 'Hohenems – Rosenstadt mit Schloss und jüdischem Erbe',
+    excerpt: 'Hohenems im Rheintal nennt sich selbstbewusst „Rosenstadt": ein Renaissanceschloss der Grafen von Hohenems, eine der bedeutendsten jüdischen Landgemeinden Mitteleuropas und eine kompakte Altstadt – ein oft übersehener Vorarlberg-Ausflug abseits von Bregenz und Bodensee.',
+    date: '2026-09-15', category: 'Ausflug', region: 'vorarlberg', bestSeason: 'April–Oktober',
+    highlights: ['Renaissanceschloss der Grafen von Hohenems', 'Eine der bedeutendsten jüdischen Landgemeinden Mitteleuropas', 'Rosenstadt-Flair mit Rosenbeeten in der ganzen Altstadt'],
+    content: `
+Zwischen Bregenz und Feldkirch, am Fuß des Bregenzerwaldgebirges im Rheintal, liegt **Hohenems** – eine Kleinstadt, die zwei sehr unterschiedliche Kapitel der Vorarlberger Geschichte in sich vereint: ein weit vernetztes Adelsgeschlecht und eine der bedeutendsten jüdischen Landgemeinden im heutigen Österreich.
+
+## Die Rosenstadt
+Hohenems nennt sich selbstbewusst **„Rosenstadt"** – ein Beiname, der auf die zahlreichen Rosenbeete zurückgeht, die seit Jahrzehnten Straßenzüge und Plätze der Altstadt schmücken. Zur Rosenblüte im Frühsommer verwandelt sich das Zentrum in ein duftendes Blumenmeer, ein für eine Vorarlberger Kleinstadt eher ungewöhnliches Bild.
+
+## Schloss Hohenems
+Über der Altstadt erhebt sich das **Schloss Hohenems**, eine Renaissanceresidenz der Grafen von Hohenems aus dem 16. Jahrhundert. Die Grafenfamilie war einst weit über die Region hinaus vernetzt und stand in Verbindung mit bedeutenden Adelshäusern Süddeutschlands und Italiens. Das Schloss ist heute unter anderem Schauplatz der **Schubertiade**, eines international renommierten Festivals für Liedkunst und Kammermusik, das jährlich zwischen Hohenems und Schwarzenberg im Bregenzerwald stattfindet.
+
+## Jüdisches Viertel
+Ab dem frühen 17. Jahrhundert entstand in Hohenems eine der bedeutendsten jüdischen Landgemeinden im heutigen Österreich, nachdem der Ortsherr jüdischen Familien gezielt Ansiedlung und Schutz gewährte. Über Jahrhunderte florierte hier jüdisches Leben mit eigener Synagoge, Schule und regem Handel. Das gut erhaltene **jüdische Viertel** mit ehemaligen Wohnhäusern und dem jüdischen Friedhof sowie das **Jüdische Museum Hohenems** erzählen diese Geschichte – von der Blütezeit bis zur Vertreibung und Vernichtung im Nationalsozialismus. Das Museum gilt als eines der bedeutenderen zur jüdischen Geschichte im deutschsprachigen Raum.
+
+## Beste Reisezeit
+Die Altstadt und das jüdische Viertel lassen sich **ganzjährig** besuchen, am angenehmsten zwischen **April und Oktober**, wenn auch die Rosenbeete blühen und Gastgärten geöffnet sind.
+
+## Praktische Infos
+- Bahnhof Hohenems liegt rund 15 Gehminuten von der Altstadt entfernt
+- Parkmöglichkeiten rund um das Zentrum vorhanden
+- Für Schloss und jüdisches Viertel zusammen realistisch 2–3 Stunden einplanen
+- Öffnungszeiten von Museum und Schloss vorab prüfen, da nicht ganzjährig durchgehend geöffnet
+- Gute Ergänzung zu einem Ausflug nach [Feldkirch](/blog/feldkirch-altstadt-schattenburg), rund 15 Autominuten weiter im Walgau
+    `,
+    affiliateLinks: [
+      { label: 'Unterkünfte in Hohenems – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Hohenems' },
+    ],
+  },
+  {
+    slug: 'carnuntum-archaeologiepark',
+    startCoords: [48.1170, 16.8650],
+    title: 'Carnuntum – Römerstadt an der Donau im Marchfeld',
+    excerpt: 'Der Archäologiepark Carnuntum bei Petronell zeigt die Reste einer der größten Städte des Römischen Reichs: rekonstruierte Wohnhäuser und Thermen, ein Amphitheater und das einsam in den Feldern stehende Heidentor – ein römisches Tagesausflugsziel eine knappe Autostunde östlich von Wien.',
+    date: '2026-09-15', category: 'Ausflug', region: 'niederoesterreich', bestSeason: 'April–Oktober',
+    highlights: ['Rekonstruierte Häuser der römischen Zivilstadt', 'Das Heidentor – frei zugänglich, mitten im Feld', 'Funde im Museum Carnuntinum in Bad Deutsch-Altenburg'],
+    content: `
+Wo die Donau aus dem Wiener Becken ins Marchfeld fließt, lag einst **Carnuntum** – eine der größten Städte des Römischen Reichs nördlich der Alpen und Hauptstadt der Provinz Pannonia superior. Heute erinnern ein Archäologiepark, ein Museum und ein frei stehendes Torbauwerk mitten in den Feldern an diese Vergangenheit.
+
+## Archäologiepark Petronell
+Im Ort **Petronell-Carnuntum** wurden Teile der römischen Zivilstadt originalgetreu rekonstruiert: Wohnhäuser mit Innenhöfen, eine öffentliche Therme und eine Taverne lassen erahnen, wie das Leben in einer römischen Provinzstadt aussah. Archäologische Funde vor Ort und Nachbauten römischer Handwerkstechniken machen den Alltag greifbar, ergänzt um die Reste des Amphitheaters der Zivilstadt.
+
+## Das Heidentor
+Wenige Gehminuten vom Ortszentrum entfernt steht mitten im offenen Feld das **Heidentor** – ein monumentales, teils erhaltenes Torbauwerk aus dem 4. Jahrhundert, ursprünglich Teil eines noch größeren Ehrenmonuments. Frei und jederzeit zugänglich, ist es eines der bekanntesten römischen Wahrzeichen Österreichs und ein beliebtes Fotomotiv, besonders in der Abendsonne.
+
+## Museum Carnuntinum
+Im nahen **Bad Deutsch-Altenburg** zeigt das Museum Carnuntinum die bedeutendsten Fundstücke der Ausgrabungen – von Alltagsgegenständen bis zu Statuen und Mosaiken. Zusammen mit dem Freilichtbereich in Petronell ergibt sich ein umfassendes Bild der römischen Grenzstadt am Limes.
+
+## Kontrast zur Wachau
+Während die [Wachau](/blog/wachau-duernstein) donauaufwärts von Wien für Weinterrassen und ein mittelalterliches Stiftsstädtchen steht, erzählt Carnuntum donauabwärts ein ganz anderes, deutlich älteres Kapitel der Donau-Geschichte.
+
+## Beste Reisezeit
+Der Freilichtbereich des Archäologieparks ist überwiegend von **April bis Oktober** zugänglich, das Heidentor als Freiluftmonument ganzjährig. Am angenehmsten lässt es sich bei stabilem Wetter besuchen, da ein Großteil des Rundgangs im Freien stattfindet.
+
+## Praktische Infos
+- Rund 40 Kilometer bzw. eine knappe Autostunde östlich von Wien, auch mit der Bahn erreichbar
+- Archäologiepark (Petronell), Heidentor und Museum Carnuntinum (Bad Deutsch-Altenburg) liegen einige Kilometer auseinander – als Tagesausflug am besten mit dem Auto kombinierbar
+- Freilichtanlagen sind wettergeprägt – festes Schuhwerk und ggf. Sonnenschutz einplanen
+- Aktuelle Öffnungszeiten und Programmpunkte (Führungen, Werkstätten) vorab prüfen
+    `,
+    affiliateLinks: [
+      { label: 'Unterkünfte bei Hainburg an der Donau – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Hainburg%20an%20der%20Donau' },
     ],
   },
 
