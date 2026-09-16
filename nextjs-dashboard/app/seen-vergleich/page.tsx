@@ -47,6 +47,13 @@ export default function SeenVergleichPage() {
         >
           Badeplatz-Check (gratis, Schatten, flach …) →
         </Link>
+        <Link
+          href="/unterkuenfte/am-see"
+          className="text-sm font-medium px-4 py-1.5 bg-sky-50 text-sky-700 border border-sky-200 hover:bg-sky-100 transition-colors"
+          style={{ borderRadius: 999 }}
+        >
+          Unterkünfte direkt am See →
+        </Link>
       </div>
 
       {/* Tabelle (Desktop) */}

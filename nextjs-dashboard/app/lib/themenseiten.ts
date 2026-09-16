@@ -4,6 +4,7 @@ import { MONATE } from '@/app/lib/monatstipps';
 import { combosByRegion } from '@/app/lib/wandern-baden';
 import { combosByRegion as tagesCombosByRegion } from '@/app/lib/tagescombo';
 import { TRIP_CITIES, tripsFrom } from '@/app/lib/wochenendtrip';
+import { unterkuenfteAmSee } from '@/app/lib/unterkuenfte';
 import {
   HITZE_GROUPS,
   AUSSICHT_GROUPS,
@@ -145,6 +146,20 @@ for (const g of tagesCombosByRegion()) {
         rank: 14,
       });
     }
+  }
+}
+
+// Seen mit einer Unterkunft direkt am Wasser verlinken zusätzlich auf die
+// Buchungs-Landingpage – nur dort, wo es tatsächlich eine solche Unterkunft gibt.
+const SEEN_MIT_UNTERKUNFT = new Set(unterkuenfteAmSee().map((u) => u.see));
+for (const lake of LAKES) {
+  if (lake.slug && SEEN_MIT_UNTERKUNFT.has(lake.name.replace(/ \(.+\)$/, ''))) {
+    add(lake.slug, {
+      href: '/unterkuenfte/am-see',
+      label: 'Unterkünfte am See',
+      note: 'Hotels, Ferienwohnungen & Camping direkt am Wasser',
+      rank: 15,
+    });
   }
 }
 

@@ -313,7 +313,9 @@ export default async function RegionPage({ params }: Props) {
                   </a>
                 ))}
               </div>
-              <p className="text-[11px] text-gray-400 mt-3">* Affiliate-Links – ohne Mehrkosten für dich.</p>
+              <p className="text-[11px] text-gray-400 mt-3">
+                * Affiliate-Links – ohne Mehrkosten für dich. <Link href="/unterkuenfte/am-see" className="text-green-700 hover:underline">Alle Unterkünfte direkt am See →</Link>
+              </p>
             </section>
           )}
 

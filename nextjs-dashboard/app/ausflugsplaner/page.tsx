@@ -40,6 +40,7 @@ const GROUPS: Group[] = [
       { href: '/seen-vergleich', title: 'Seen-Vergleich', desc: 'Wassertemperatur, Größe & Charakter der beliebtesten Seen im direkten Vergleich.' },
       { href: '/badeplaetze', title: 'Badeplatz-Check', desc: 'Konkrete Badeplätze, filterbar nach gratis, Schatten, flach, WC, Hund.' },
       { href: '/wandern-baden', title: 'Wandern + Baden', desc: 'Wanderung und Badesee kombiniert – erst der Gipfel, dann die Abkühlung.' },
+      { href: '/unterkuenfte/am-see', title: 'Unterkünfte am See', desc: 'Hotels, Ferienwohnungen & Camping direkt am Wasser – nach Bundesland sortiert.' },
     ],
   },
   {

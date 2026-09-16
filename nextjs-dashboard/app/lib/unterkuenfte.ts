@@ -1,3 +1,5 @@
+import { LAKES } from '@/app/lib/seen';
+
 export type Unterkunft = {
   id: string;
   region: string;       // Bundesland-Slug (kaernten, salzburg, …)
@@ -74,3 +76,23 @@ export const TYP_INFO: Record<Unterkunft['typ'], { color: string; short: string 
   Camping:       { color: '#15803d', short: 'C' },
   Glamping:      { color: '#db2777', short: 'G' },
 };
+
+// Welche `see`-Werte sind tatsächlich Badeseen (nicht Fluss/Tal/Berg/Therme)?
+// Bewusst als Whitelist statt Heuristik – neue Einträge oben müssen hier
+// ergänzt werden, damit sie auf /unterkuenfte/am-see auftauchen.
+const BADESEE_NAMEN = new Set([
+  'Wörthersee', 'Millstätter See', 'Weissensee', 'Faaker See', 'Ossiacher See',
+  'Klopeiner See', 'Zeller See', 'Wolfgangsee', 'Achensee', 'Neusiedler See',
+  'Alte Donau', 'Hallstätter See', 'Traunsee', 'Attersee', 'Lunzer See',
+  'Bodensee', 'Lünersee',
+]);
+
+/** Unterkünfte, die direkt an einem Badesee liegen (für /unterkuenfte/am-see). */
+export function unterkuenfteAmSee(): Unterkunft[] {
+  return unterkuenfte.filter((u) => BADESEE_NAMEN.has(u.see));
+}
+
+/** Passender Artikel-Slug aus den Seen-Vergleichsdaten, falls vorhanden (z. B. für "Bodensee" → "Bodensee (Bregenz)"). */
+export function lakeSlugFor(see: string): string | undefined {
+  return LAKES.find((l) => l.name === see || l.name.startsWith(`${see} (`))?.slug;
+}
