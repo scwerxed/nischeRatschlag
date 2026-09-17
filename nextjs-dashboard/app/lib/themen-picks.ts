@@ -257,6 +257,7 @@ export const BAHNHOF_GROUPS: { title: string; note: string; picks: { slug: strin
       { slug: 'wien-prater', anreise: 'U1/U2 Praterstern' },
       { slug: 'alte-donau-baden-wien', anreise: 'U1 Alte Donau' },
       { slug: 'wien-stephansdom-altstadt', anreise: 'U1/U3 Stephansplatz – Ausstieg direkt am Dom' },
+      { slug: 'naschmarkt-wien', anreise: 'U1/U2/U4 Karlsplatz oder U4 Kettenbrückengasse – beide direkt am Markt' },
       { slug: 'salzburg-stadt-altstadt', anreise: 'Vom Hauptbahnhof per Bus oder 20 Min. zu Fuß' },
       { slug: 'graz-altstadt-sehenswuerdigkeiten', anreise: 'Straßenbahn ab Hauptbahnhof ins Zentrum' },
       { slug: 'innsbruck-sehenswuerdigkeiten', anreise: 'Altstadt 10 Min. vom Hauptbahnhof' },

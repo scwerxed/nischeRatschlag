@@ -4935,6 +4935,7 @@ Ganzjährig – gerade deshalb ist das MQ der klassische Plan B bei Regen. Im Ho
 - Gut kombinierbar mit Stephansdom und Innenstadt – alles fußläufig, ebenso mit der nahen [Hofburg](/blog/hofburg-schatzkammer-wien)
 - Große Sonderausstellungen sind am Wochenende voll; unter der Woche vormittags ist es deutlich ruhiger
 - Für einen weiteren Kunst-Ausflug mit ganz anderer Architektur: das [Hundertwasserhaus samt KunstHausWien](/blog/hundertwasserhaus-kunsthauswien) im 3. Bezirk
+- Direkt ums Eck, Richtung Karlsplatz, beginnt der [Naschmarkt](/blog/naschmarkt-wien) mit seinen Otto-Wagner-Häusern
     `,
     affiliateLinks: [
       { label: 'Hotels in Wien – booking.com', url: 'https://www.booking.com/city/at/vienna.de.html' },
@@ -5039,6 +5040,42 @@ Ganzjährig: Die Fassade wirkt bei jedem Wetter, das KunstHausWien ist als Innen
       { label: 'Hotels in Wien – booking.com', url: 'https://www.booking.com/city/at/vienna.de.html' },
     ],
   },
+  {
+    slug: 'naschmarkt-wien',
+    startCoords: [48.1978, 16.3644],
+    title: 'Naschmarkt – Wiens größter Markt zwischen Ständen und Flohmarkt',
+    excerpt: 'Der Naschmarkt ist Wiens bekanntester Markt: über 170 Stände mit Obst, Gewürzen und Streetfood auf gut einem Kilometer, dazu Otto Wagners Jugendstilhäuser und samstags ein großer Flohmarkt.',
+    date: '2026-09-17', category: 'Ausflug', region: 'wien', bestSeason: 'Ganzjährig',
+    highlights: ['Über 170 Marktstände auf gut einem Kilometer', 'Samstags direkt anschließend der Flohmarkt', 'Otto Wagners Jugendstilhäuser am Rand des Markts'],
+    content: `
+Zwischen Karlsplatz und Kettenbrückengasse zieht sich Wiens bekanntester Markt: der **Naschmarkt** – seit rund 200 Jahren ein fixer Bestandteil der Stadt und bis heute ihr lebendigster Ort für Obst, Gewürze und Streetfood.
+
+## Ein Markt mit langer Geschichte
+Der Name „Naschmarkt" ist seit etwa 1820 belegt, offiziell trägt der Markt ihn seit 1905. Seine heutige Form erhielt er, als um 1900 der **Wienfluss** reguliert und darüber die **Stadtbahn** gebaut wurde – geplant vom Architekten **Otto Wagner**. Die rund 170 Marktstände stehen unter Denkmalschutz und dürfen baulich nicht verändert werden, was dem Markt bis heute sein historisches Gesicht bewahrt.
+
+## Zwischen den Ständen
+Obst, Gemüse, Gewürze, Käse, Fisch und Antipasti wechseln sich mit kleinen Imbissständen und Lokalen ab, an denen man mitten im Trubel stehend oder sitzend isst. Der Markt ist täglich außer Sonntag geöffnet, wobei die genauen Öffnungszeiten je Stand variieren – wer die Auswahl in Ruhe genießen will, kommt am besten am Vormittag.
+
+## Samstags: der Flohmarkt
+Direkt an das südwestliche Ende des Marktes schließt seit 1977 der **Flohmarkt** an – Trödel, Antiquitäten und Kuriositäten auf engem Raum, an Samstagen deutlich voller als der Markt selbst. Handeln gehört hier zum guten Ton.
+
+## Otto Wagners Jugendstilhäuser
+Am Rand des Marktes, an der Linken Wienzeile, stehen zwei der bekanntesten Wiener Jugendstilbauten: das **Majolikahaus** (Linke Wienzeile 40) mit seiner floralen Keramikfassade und das benachbarte **Ruferinnen-Haus** (Nr. 38) – beide 1898/99 von Otto Wagner errichtet und auch von Nicht-Architektur-Fans auf den ersten Blick zu erkennen.
+
+## Beste Reisezeit
+Ganzjährig, der Markt ist auch im Winter geöffnet. Wer den Flohmarkt sehen möchte, kommt an einem Samstagvormittag.
+
+## Praktische Infos
+- U-Bahn: Karlsplatz (U1/U2/U4) am nordöstlichen Ende, Kettenbrückengasse (U4) am südwestlichen
+- Montag ruhiger als Samstag – am Wochenende ist es an den Ständen und vor allem am Flohmarkt voll
+- Sonntags ist der Markt geschlossen
+- Gut kombinierbar mit dem nahen [MuseumsQuartier](/blog/museumsquartier-wien), nur wenige Gehminuten entfernt
+- Bei Regen bietet sich als Alternative der überdachte Bereich einiger Standln an, größere Programmpunkte dann eher im MuseumsQuartier
+    `,
+    affiliateLinks: [
+      { label: 'Hotels in Wien – booking.com', url: 'https://www.booking.com/city/at/vienna.de.html' },
+    ],
+  },
 
   // ═══════════════════════ OBERÖSTERREICH ═══════════════════════
   {
@@ -5071,7 +5108,7 @@ Tagsüber ist Hallstatt sehr voll, vor allem mittags durch Tagestouristen. **Fr�
 ## Praktische Infos
 - Anreise per Bahn (Station Hallstatt + Fähre über den See) empfehlenswert
 - Parkplätze im Ort stark begrenzt & kostenpflichtig – Parkleitsystem nutzen
-- Gut mit Dachstein-Krippenstein, Gosausee oder Bad Ischl an einem Tag kombinierbar
+- Gut mit Dachstein-Krippenstein, Gosausee oder [Bad Ischl](/blog/bad-ischl-kaiservilla) an einem Tag kombinierbar
 - Für die Salzwelten festes Schuhwerk und eine Jacke (im Berg ist es kühl)
     `,
     affiliateLinks: [
@@ -5277,6 +5314,41 @@ Die Antiesental-Wege sind von **April bis Oktober** am schönsten, mit der Obstb
     `,
     affiliateLinks: [
       { label: 'Unterkünfte in Ried im Innkreis – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Ried%20im%20Innkreis' },
+    ],
+  },
+  {
+    slug: 'bad-ischl-kaiservilla',
+    startCoords: [47.7113, 13.6247],
+    title: 'Bad Ischl – die heimliche Hauptstadt der Donaumonarchie',
+    excerpt: 'Bad Ischl war die Sommerresidenz von Kaiser Franz Joseph und Sisi und 2024 Kulturhauptstadt Europas – Kaiservilla, Kurpark und ein Stück Habsburger-Geschichte mitten im Salzkammergut.',
+    date: '2026-09-17', category: 'Ausflug', region: 'oberoesterreich', bestSeason: 'April–Oktober',
+    highlights: ['Kaiservilla: Sommerresidenz von Franz Joseph und Sisi', 'Kulturhauptstadt Europas 2024', 'Kurpark und Esplanade an der Traun'],
+    content: `
+Jahrzehntelang verbrachte hier der Kaiser seine Sommer – **Bad Ischl** im Salzkammergut war einst so etwas wie die heimliche zweite Hauptstadt der Donaumonarchie, und diese Geschichte prägt den Ort bis heute.
+
+## Die Kaiservilla
+1853, zur Verlobung mit **Elisabeth (Sisi)**, erhielt **Kaiser Franz Joseph I.** die spätere **Kaiservilla** als Geschenk seiner Mutter Sophie – im klassizistischen Stil umgestaltet vom Hofarchitekten Antonio Legrenzi. Zwischen Anfang Juli und Ende August war die Villa über Jahrzehnte das Zentrum des Hofstaats: Empfänge, Familientreffen und Regierungsgeschäfte fanden hier statt, weit weg vom Wiener Hofzeremoniell. Hier unterzeichnete Franz Joseph 1914 auch das Manifest „An meine Völker", das den Kriegseintritt gegen Serbien und damit den Beginn des Ersten Weltkriegs markierte.
+
+## Kurstadt mit Tradition
+Der Name **Salzkammergut** ist seit 1656 für die Region um Ischl belegt – benannt nach dem für die Habsburger wirtschaftlich bedeutenden Salzabbau. Als sich die heilende Wirkung der Ischler Solequellen herumsprach, entwickelte sich der Ort im 19. Jahrhundert zur mondänen **Kurstadt**, in der neben dem Kaiserhaus auch Künstler und Komponisten logierten – etwa **Franz Lehár**, dessen Operettenvilla an der Traun heute als Museum besichtigt werden kann.
+
+## Kulturhauptstadt Europas 2024
+2024 war Bad Ischl gemeinsam mit 22 Gemeinden der Region **Kulturhauptstadt Europas** – erstmals ging der Titel an eine ländliche Alpenregion statt an eine einzelne Großstadt. Das Jahr brachte zahlreiche neue und sanierte Kulturräume in die Region, deren Programm auch danach vielerorts weiterwirkt.
+
+## Kurpark & Esplanade
+Auch ohne Museumsbesuch lohnt ein Spaziergang durch den **Kurpark** und entlang der **Esplanade** an der Traun – schattige Wege, Blick auf die umliegenden Berge und die für Kurorte typische ruhige Atmosphäre.
+
+## Beste Reisezeit
+**April bis Oktober**, wenn Kaiservilla, Kaiserpark und die Museen der Stadt geöffnet sind. Im Winter ist Bad Ischl deutlich ruhiger, aber auch dann als Zwischenstopp im Salzkammergut reizvoll.
+
+## Praktische Infos
+- Bahnhof Bad Ischl liegt zentral, gute Anbindung aus Salzburg und Linz
+- Kaiservilla, Kaiserpark und Museen sind kostenpflichtig, Öffnungszeiten saisonal – vorab prüfen
+- Gute Basis für Ausflüge zu [Hallstatt](/blog/hallstatt-salzkammergut), [Gosausee](/blog/gosausee-dachstein-spiegelung) oder [Dachstein-Krippenstein](/blog/dachstein-krippenstein)
+- Cafés und Konditoreien an der Esplanade eignen sich gut für eine Pause
+    `,
+    affiliateLinks: [
+      { label: 'Unterkünfte in Bad Ischl – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Bad%20Ischl' },
     ],
   },
 
