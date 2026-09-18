@@ -13,10 +13,12 @@ const DIFF_STYLE: Record<string, string> = {
   mittel: 'bg-yellow-100 text-yellow-700',
   schwer: 'bg-red-100 text-red-700',
 };
+const PAGE_SIZE = 24;
 
 export default function BlogSearch({ posts }: { posts: Post[] }) {
   const [query, setQuery] = useState('');
   const [cat, setCat] = useState<(typeof CATEGORIES)[number]>('Alle');
+  const [visible, setVisible] = useState(PAGE_SIZE);
 
   useEffect(() => {
     const q = new URLSearchParams(window.location.search).get('q');
@@ -38,6 +40,13 @@ export default function BlogSearch({ posts }: { posts: Post[] }) {
       return matchCat && matchText;
     });
   }, [posts, query, cat]);
+
+  useEffect(() => {
+    setVisible(PAGE_SIZE);
+  }, [query, cat]);
+
+  const visiblePosts = filtered.slice(0, visible);
+  const hasMore = visible < filtered.length;
 
   return (
     <div>
@@ -78,6 +87,7 @@ export default function BlogSearch({ posts }: { posts: Post[] }) {
       {/* Ergebnis-Zähler */}
       <p className="text-sm text-gray-400 mb-5">
         {filtered.length} {filtered.length === 1 ? 'Artikel' : 'Artikel'} gefunden
+        {hasMore && ` · ${visiblePosts.length} angezeigt`}
       </p>
 
       {/* Grid */}
@@ -91,7 +101,7 @@ export default function BlogSearch({ posts }: { posts: Post[] }) {
         </div>
       ) : (
         <div className="grid md:grid-cols-2 gap-6">
-          {filtered.map((post) => {
+          {visiblePosts.map((post) => {
             const mins = readingTime(post.content);
             return (
               <Link
@@ -141,6 +151,18 @@ export default function BlogSearch({ posts }: { posts: Post[] }) {
               </Link>
             );
           })}
+        </div>
+      )}
+
+      {hasMore && (
+        <div className="text-center mt-10">
+          <button
+            onClick={() => setVisible((v) => v + PAGE_SIZE)}
+            className="px-6 py-2.5 text-sm font-medium text-green-700 bg-green-50 hover:bg-green-100 transition-colors"
+            style={{ borderRadius: 4 }}
+          >
+            Mehr laden ({filtered.length - visiblePosts.length} weitere)
+          </button>
         </div>
       )}
     </div>
