@@ -127,6 +127,7 @@ export const REGEN_GROUPS: { title: string; note: string; picks: { slug: string;
       { slug: 'festung-kufstein', warum: 'Über die Standseilbahn hinauf, viel Ausstellung im Inneren der Festung.' },
       { slug: 'riegersburg-burg-ausflug', warum: 'Burgmuseum plus Schokoladen- und Haubenmanufaktur im Tal als Schlechtwetter-Reserve.' },
       { slug: 'eisenstadt-schloss-esterhazy', warum: 'Schlossräume und Haydnsaal – kompakter Kulturausflug für einen Regenvormittag.' },
+      { slug: 'stift-klosterneuburg', warum: 'Verduner Altar und Kaiserzimmer komplett drinnen, direkt vor den Toren Wiens – kein Auto nötig.' },
     ],
   },
   {

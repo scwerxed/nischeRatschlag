@@ -4826,6 +4826,7 @@ April bis Oktober ist die Hauptzeit. Im **Herbst** ist der Wienerwald mit Laubf�
 - Wasser mitnehmen, Quellen gibt es unterwegs kaum
 - Gut kombinierbar mit einem Heurigen-Abend als Ausklang
 - Am Wochenende sind die bekannten Aussichtspunkte gut besucht – unter der Woche deutlich ruhiger
+- Am Fuß des Leopoldsbergs liegt [Stift Klosterneuburg](/blog/stift-klosterneuburg) – lässt sich gut an eine Runde über die beiden Aussichtsberge anhängen
     `,
     affiliateLinks: [
       { label: 'Hotels in Wien – booking.com', url: 'https://www.booking.com/city/at/vienna.de.html' },
@@ -5383,6 +5384,7 @@ Wer die Wachau zu Fuß erleben will, folgt dem **Welterbesteig**: Der Weitwander
 - Tickets für die Donauschifffahrt in der Hauptsaison vorab sichern
 - Nur wenige Minuten entfernt liegt mit [Schloss Grafenegg](/blog/schloss-grafenegg-kamptal) ein ganz anderer Kontrast: Neugotik statt Barock, Klassikfestival statt Weinlese
 - Donauabwärts, östlich von Wien, wartet mit [Carnuntum](/blog/carnuntum-archaeologiepark) ein noch viel älteres Donau-Kapitel: römische Ruinen statt Weinterrassen
+- Donauabwärts, direkt am Übergang zum Wiener Becken, liegt [Stift Klosterneuburg](/blog/stift-klosterneuburg) – wie Stift Melk von den Babenbergern gegründet, nur deutlich näher an Wien
     `,
     affiliateLinks: [
       { label: 'Hotels in der Wachau – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Wachau' },
@@ -5850,7 +5852,7 @@ Die Bergbahnen und die meisten Hütten haben in der Regel von **Juni bis Oktober
 - Bergbahnen sparen Zeit und Höhenmeter, Betriebszeiten aber saisonal, vorab prüfen
 - Hochalpine Touren in Silvretta und Rätikon verlangen Trittsicherheit und Erfahrung
 - Wetterumschwünge in den Bergketten rundum können rasch kommen – Bergwetter checken
-- Anfahrt meist über Bludenz, von dort ist auch ein Abstecher in die Altstadt von [Feldkirch](/blog/feldkirch-altstadt-schattenburg) gut machbar
+- Anfahrt meist über [Bludenz](/blog/bludenz-alpenstadt-fuenf-taeler), von dort ist auch ein Abstecher in die Altstadt von [Feldkirch](/blog/feldkirch-altstadt-schattenburg) gut machbar
     `,
     affiliateLinks: [
       { label: 'Unterkünfte im Montafon – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Montafon' },
@@ -6161,7 +6163,7 @@ Die Altstadt lässt sich **ganzjährig** besuchen, am angenehmsten zwischen **Ap
 - Bahnhof Feldkirch liegt nur wenige Gehminuten von der Altstadt entfernt – gut mit der Bahn erreichbar
 - Parkgaragen rund um die Altstadt vorhanden, im Zentrum selbst ist Parken begrenzt und kostenpflichtig
 - Schattenburg und Wildpark sind eigenständige Programmpunkte – für beides zusammen mit der Altstadt realistisch einen halben Tag einplanen
-- Gute Ergänzung zu einem Ausflug in den [Bregenzerwald](/blog/bregenzerwald-wandern), ins Montafon oder in die nahe „Rosenstadt" [Hohenems](/blog/hohenems-rosenstadt-schloss)
+- Gute Ergänzung zu einem Ausflug in den [Bregenzerwald](/blog/bregenzerwald-wandern), ins [Montafon](/blog/montafon-tal-wandern), in die Alpenstadt [Bludenz](/blog/bludenz-alpenstadt-fuenf-taeler) oder in die nahe „Rosenstadt" [Hohenems](/blog/hohenems-rosenstadt-schloss)
     `,
     affiliateLinks: [
       { label: 'Unterkünfte in Feldkirch – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Feldkirch' },
@@ -6297,6 +6299,77 @@ Der Freilichtbereich des Archäologieparks ist überwiegend von **April bis Okto
     `,
     affiliateLinks: [
       { label: 'Unterkünfte bei Hainburg an der Donau – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Hainburg%20an%20der%20Donau' },
+    ],
+  },
+  {
+    slug: 'bludenz-alpenstadt-fuenf-taeler',
+    startCoords: [47.1594, 9.8228],
+    title: 'Bludenz – Alpenstadt im Fünf-Täler-Stern',
+    excerpt: 'Bludenz liegt am Schnittpunkt von fünf Vorarlberger Tälern: eine kompakte Altstadt mit Barockbrunnen und Zwiebelturm, die Muttersbergbahn direkt ab der Stadt und eine lange Fremdenverkehrsgeschichte als „Alpenstadt".',
+    date: '2026-09-20', category: 'Ausflug', region: 'vorarlberg', bestSeason: 'April–Oktober',
+    highlights: ['Altstadt mit Nepomukbrunnen und Laurentiuskirche', 'Muttersbergbahn direkt ab der Stadt', 'Knotenpunkt von fünf Tälern – Walgau, Montafon, Klostertal, Brandnertal, Großes Walsertal'],
+    content: `
+**Bludenz** liegt dort, wo sich gleich fünf Täler treffen: Walgau, Montafon, Klostertal, Brandnertal und Großes Walsertal laufen hier zusammen – ein Umstand, der der Stadt den Beinamen „Alpenstadt im Fünf-Täler-Stern" eingebracht hat. Wer nur auf der Durchfahrt ins Montafon oder an den Arlberg unterwegs ist, übersieht die kompakte Altstadt oft – zu Unrecht.
+
+## Die Altstadt
+
+Das Zentrum ist überschaubar und gut zu Fuß erkundbar. Auf dem Hauptplatz steht der barocke **Nepomukbrunnen** von 1730, geschaffen vom Bildhauer Johann Ladner. Hoch über der Altstadt thront die **Laurentiuskirche** mit ihrem markanten Zwiebelturm, das Wahrzeichen der Stadt. Am Rand der Altstadt liegt das **Kapuzinerkloster**, in den 1640er-Jahren erbaut und bis heute ein ruhiger Gegenpol zum Trubel der Fußgängerzone.
+
+## Muttersbergbahn
+
+Direkt von der Stadt aus führt die **Muttersbergbahn** in wenigen Minuten auf den Bludenzer Hausberg hinauf. Oben wartet ein Alpengasthof mit weiter Terrasse und Blick über den Fünf-Täler-Stern – ein leichter Einstieg in die Bergwelt, ganz ohne lange Anfahrt zu einer Talstation.
+
+## Geschichte
+
+Die Besiedlung des Platzes reicht bis in vorrömische Zeit zurück, urkundlich erwähnt wurde „Pludono" erstmals 842/843. Die günstige Lage am Schnittpunkt mehrerer Alpenpässe machte Bludenz schon früh zum Handelsplatz. Für die Bergsteigergeschichte Mitteleuropas war die Stadt sogar Schauplatz eines bedeutenden Moments: 1873 schlossen sich hier der Deutsche und der Österreichische Alpenverein zum damals größten Bergsteigerbund Europas zusammen.
+
+## Beste Reisezeit
+
+Die Altstadt lässt sich **ganzjährig** besuchen, für die Kombination mit der Muttersbergbahn und einem Ausklang am Gasthof eignet sich **April bis Oktober** am besten.
+
+## Praktische Infos
+- Bahnhof Bludenz liegt an der Arlbergbahn und ist ein wichtiger Bahnknotenpunkt – die Altstadt ist von dort in wenigen Gehminuten erreichbar
+- Von Bludenz aus starten die Straßen ins Montafon, Klostertal, Brandnertal und Große Walsertal – guter Ausgangspunkt für einen mehrtägigen Aufenthalt in der Region
+- Gute Ergänzung zu einem Ausflug ins nahe [Montafon](/blog/montafon-tal-wandern) oder in die Altstadt von [Feldkirch](/blog/feldkirch-altstadt-schattenburg)
+    `,
+    affiliateLinks: [
+      { label: 'Unterkünfte in Bludenz – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Bludenz' },
+    ],
+  },
+  {
+    slug: 'stift-klosterneuburg',
+    startCoords: [48.3057, 16.3273],
+    title: 'Stift Klosterneuburg – Verduner Altar und ältestes Weingut Österreichs',
+    excerpt: 'Das Augustiner-Chorherrenstift Klosterneuburg wurde 1114 von Markgraf Leopold III. gegründet: der mittelalterliche Verduner Altar, die Gruft des Landespatrons und das älteste Weingut Österreichs – ein Tagesausflug direkt vor den Toren Wiens.',
+    date: '2026-09-20', category: 'Ausflug', region: 'niederoesterreich', bestSeason: 'Ganzjährig',
+    highlights: ['Gegründet 1114 von Landespatron Leopold III.', 'Verduner Altar – eines der bedeutendsten Kunstwerke des Mittelalters', 'Ältestes Weingut Österreichs, direkt am Stift'],
+    content: `
+Nur eine kurze Fahrt von der Wiener Innenstadt entfernt liegt eines der bedeutendsten Klöster Österreichs: das **Stift Klosterneuburg**, gegründet 1114 vom Babenberger Markgrafen **Leopold III.** und seiner Frau Agnes. 1133 übergaben sie das Stift den Augustiner-Chorherren, die es bis heute führen.
+
+## Leopold III. und die Gründungslegende
+
+Leopold III. wurde später zum Landespatron Österreichs und heiliggesprochen; sein Gedenktag, der Leopolditag am 15. November, ist bis heute in Wien und Niederösterreich ein Feiertag. Er starb 1136, wenige Monate nach der Weihe der Stiftskirche, und wurde in einer Gruft unter der heutigen Leopoldikapelle beigesetzt – bis heute ein Wallfahrtsort.
+
+## Der Verduner Altar
+
+Das Herzstück der Stiftssammlung ist der **Verduner Altar**: 1181 vom Goldschmied Nikolaus von Verdun als Kanzelverkleidung aus 51 Emailtafeln geschaffen, erzählt er in drei Bildzeilen die Heilsgeschichte von Altem und Neuem Testament. Nach einem verheerenden Stiftsbrand 1330 wurde er zum heutigen Flügelaltar umgestaltet – der Überlieferung nach retteten Mönche die Emailtafeln, indem sie sie mit Wein übergossen. Der Verduner Altar zählt zu den bedeutendsten Kunstwerken des europäischen Mittelalters.
+
+## Ältestes Weingut Österreichs
+
+Das Stift besitzt das **älteste Weingut Österreichs** – die klösterliche Weinbautradition reicht bis in die Gründungszeit zurück und prägt die Weinberge rund um Klosterneuburg bis heute.
+
+## Beste Reisezeit
+
+Das Stift lässt sich **ganzjährig** besuchen, die Innenräume – Kaiserzimmer, Sammlungen und Verduner Altar – funktionieren auch als Schlechtwetter-Programm. Für einen Spaziergang durch die Weinberge und die Altstadt eignen sich die wärmeren Monate besser.
+
+## Praktische Infos
+- Von Wien aus mit der S-Bahn (S40, Richtung Tulln) bis Klosterneuburg-Kierling oder mit U4 bis Heiligenstadt und weiter mit dem Bus erreichbar – kein eigenes Auto nötig
+- Führungen und aktuelle Öffnungszeiten vorab auf der Stiftsseite prüfen, da nicht alle Bereiche ganzjährig gleich zugänglich sind
+- Klosterneuburg liegt am Fuß des [Leopoldsbergs](/blog/wienerwald-wandern) – wer mag, kombiniert den Stiftsbesuch mit einer Wanderung durch den Wienerwald
+- Für Donau-Weiterreisende ist Klosterneuburg der Auftakt Richtung [Wachau](/blog/wachau-duernstein), donauaufwärts von Wien
+    `,
+    affiliateLinks: [
+      { label: 'Unterkünfte in Klosterneuburg – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Klosterneuburg' },
     ],
   },
 
