@@ -501,11 +501,22 @@ export default async function BlogPostPage({ params }: Props) {
             )}
           </div>
 
-          {/* Mit Öffis erreichbar */}
+          {/* Mit Öffis erreichbar / Auto oder Öffis */}
           {oeffi && (
             <div className="border border-sky-200 bg-sky-50 p-5" style={{ borderRadius: 8 }}>
-              <p className="eyebrow mb-3">Mit Öffis erreichbar</p>
+              <p className="eyebrow mb-3">{precise && !post.startPoint ? 'Auto oder Öffis?' : 'Mit Öffis erreichbar'}</p>
               <p className="text-sm text-gray-700 leading-relaxed">🚋 {oeffi}</p>
+              {precise && !post.startPoint && (
+                <a
+                  href={`https://www.google.com/maps/dir/?api=1&destination=${precise[0]},${precise[1]}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-3 flex items-center justify-center gap-1.5 w-full text-sm font-medium px-4 py-2.5 border border-sky-300 bg-white text-gray-700 hover:bg-sky-100 transition-colors"
+                  style={{ borderRadius: 6 }}
+                >
+                  <span aria-hidden>🚗</span> Route für die Anreise mit dem Auto ↗
+                </a>
+              )}
               <Link href="/bahnhofsausfluege" className="mt-3 inline-flex items-center gap-1 text-sm font-medium text-green-700 hover:text-green-800">
                 Weitere Öffi-Ziele ansehen →
               </Link>
