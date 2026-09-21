@@ -13,6 +13,15 @@ const OVERPASS_QUERY = encodeURIComponent(
   '[out:json][timeout:25];node["natural"="peak"]["name"](46.3,12.9,47.1,15.2);out body;'
 );
 
+/** HTML-Entities escapen. Wird fuer alles gebraucht, was aus fremder Quelle
+ *  (URL-Parameter, OpenStreetMap-Tags) in Popup-HTML eingesetzt wird. */
+const HTML_ENTITIES: Record<string, string> = {
+  '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;',
+};
+function escapeHtml(v: string): string {
+  return v.replace(/[&<>"']/g, (c) => HTML_ENTITIES[c] ?? c);
+}
+
 // ── tiny SVG checkmark ──────────────────────────────────────────────────────
 function Checkmark() {
   return (
@@ -122,8 +131,9 @@ export default function MapClient() {
             .slice(0, MAX_VISIBLE_PEAKS);
           setVisibleCount(sorted.length);
           sorted.forEach((el) => {
-            const name = el.tags?.name ?? 'Gipfel';
-            const ele  = el.tags?.ele ? `${el.tags.ele} m` : '';
+            // OSM-Tags sind fremde, von jedem editierbare Daten -> escapen.
+            const name = escapeHtml(String(el.tags?.name ?? 'Gipfel'));
+            const ele  = el.tags?.ele ? `${escapeHtml(String(el.tags.ele))} m` : '';
             L.circleMarker([el.lat, el.lon] as [number, number], {
               radius: 6, color: '#14532d', fillColor: '#16a34a', fillOpacity: 0.9, weight: 1.5,
             })
@@ -144,7 +154,8 @@ export default function MapClient() {
         if (Number.isFinite(dlLat) && Number.isFinite(dlLng)) {
           const dz = parseInt(sp.get('zoom') ?? '', 10);
           map.setView([dlLat, dlLng], Number.isFinite(dz) ? dz : 14);
-          const nm = (sp.get('name') ?? 'Startpunkt').replace(/[<>]/g, '').slice(0, 80);
+          // Der Name stammt aus der URL, landet also in fremd steuerbarem HTML.
+          const nm = escapeHtml((sp.get('name') ?? 'Startpunkt').slice(0, 80));
           const startIcon = L.divIcon({
             className: '',
             html: `<div style="width:22px;height:22px;background:#15803d;border:3px solid #fff;border-radius:50% 50% 50% 0;transform:rotate(-45deg);box-shadow:0 1px 5px rgba(0,0,0,.45)"></div>`,

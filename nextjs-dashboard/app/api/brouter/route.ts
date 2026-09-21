@@ -3,6 +3,8 @@ import { NextRequest, NextResponse } from 'next/server';
 // ── Missbrauchsschutz ────────────────────────────────────────────────────────
 // Diese Route ruft fremde Gratis-APIs (BRouter, Overpass) in unserem Namen auf.
 // Ohne Schutz könnte sie als kostenloser Routing-Proxy missbraucht werden.
+// Schutzschichten: Same-Origin-Check, Rate-Limit pro IP, strikte Validierung der
+// Wegpunkte (Anzahl + Wertebereich) und eine auf das Nötige gekürzte Antwort.
 
 /** Erlaubt nur Aufrufe von der eigenen Domain (Referer-Host == Host).
  *  Fehlt der Referer ganz, blocken wir nicht hart – dafür greift das Rate-Limit. */
@@ -31,8 +33,40 @@ function rateLimited(ip: string): boolean {
   return e.count > RATE.limit;
 }
 
-async function snapToTrail(lat: number, lng: number): Promise<{ lat: number; lng: number }> {
-  // Find nodes on foot-accessible ways within 500 m
+// ── Eingabevalidierung ───────────────────────────────────────────────────────
+// Ohne Obergrenze könnte eine einzige Anfrage mit tausenden Wegpunkten ebenso
+// viele parallele Overpass-Aufrufe auslösen – also ein Verstärkungsangriff über
+// unsere Domain. Zusätzlich fangen wir NaN und Koordinaten außerhalb des
+// Planungsgebiets ab, damit keine Müll-Anfragen bei den Fremd-APIs landen.
+const MAX_POINTS = 12;
+const MAX_RAW_LEN = 400;
+/** Grobe Bounding-Box Österreich inkl. Grenzregionen – weiter plant die Seite nicht. */
+const BOUNDS = { latMin: 45.5, latMax: 49.5, lngMin: 9.0, lngMax: 17.5 };
+
+type Point = { lat: number; lng: number };
+
+function parseLonLats(raw: string): Point[] | null {
+  const parts = raw.split('|');
+  if (parts.length < 2 || parts.length > MAX_POINTS) return null;
+
+  const out: Point[] = [];
+  for (const part of parts) {
+    const seg = part.split(',');
+    if (seg.length !== 2) return null;
+    const lng = Number(seg[0]);
+    const lat = Number(seg[1]);
+    if (!Number.isFinite(lat) || !Number.isFinite(lng)) return null;
+    if (lat < BOUNDS.latMin || lat > BOUNDS.latMax) return null;
+    if (lng < BOUNDS.lngMin || lng > BOUNDS.lngMax) return null;
+    out.push({ lat, lng });
+  }
+  return out;
+}
+
+async function snapToTrail(lat: number, lng: number): Promise<Point> {
+  // Find nodes on foot-accessible ways within 500 m.
+  // lat/lng sind hier bereits validierte endliche Zahlen (siehe parseLonLats),
+  // toFixed(6) liefert daher garantiert eine reine Zahl in die Query.
   const q = `[out:json][timeout:8];way(around:500,${lat.toFixed(6)},${lng.toFixed(6)})[highway~"^(path|footway|track|bridleway)$"][foot!="no"];node(w);out skel;`;
   try {
     const res = await fetch(
@@ -42,12 +76,14 @@ async function snapToTrail(lat: number, lng: number): Promise<{ lat: number; lng
     if (!res.ok) return { lat, lng };
     const data = await res.json();
 
-    const nodes: any[] = (data.elements ?? []).filter((e: any) => e.type === 'node');
+    const nodes: { lat?: number; lon?: number; type?: string }[] =
+      (data.elements ?? []).filter((e: { type?: string }) => e.type === 'node');
     if (!nodes.length) return { lat, lng };
 
     let best = { lat, lng };
     let minD = Infinity;
     for (const n of nodes) {
+      if (typeof n.lat !== 'number' || typeof n.lon !== 'number') continue;
       const d = (n.lat - lat) ** 2 + (n.lon - lng) ** 2;
       if (d < minD) { minD = d; best = { lat: n.lat, lng: n.lon }; }
     }
@@ -67,15 +103,19 @@ export async function GET(request: NextRequest) {
   }
 
   const lonlats = request.nextUrl.searchParams.get('lonlats');
-  if (!lonlats) return NextResponse.json({ error: 'lonlats required' }, { status: 400 });
+  if (!lonlats || lonlats.length > MAX_RAW_LEN) {
+    return NextResponse.json({ error: 'lonlats fehlt oder ist zu lang.' }, { status: 400 });
+  }
 
-  const parsed = lonlats.split('|').map((pt) => {
-    const [lng, lat] = pt.split(',').map(Number);
-    return { lat, lng };
-  });
-  if (parsed.length < 2) return NextResponse.json({ error: 'Need at least 2 points' }, { status: 400 });
+  const parsed = parseLonLats(lonlats);
+  if (!parsed) {
+    return NextResponse.json(
+      { error: `Ungültige Wegpunkte – erwartet werden 2 bis ${MAX_POINTS} Punkte innerhalb Österreichs.` },
+      { status: 400 },
+    );
+  }
 
-  // Snap all waypoints to nearest hiking trail in parallel
+  // Snap all waypoints to nearest hiking trail in parallel (max. MAX_POINTS Aufrufe)
   const snapped = await Promise.all(parsed.map((p) => snapToTrail(p.lat, p.lng)));
   const snappedLonlats = snapped.map((p) => `${p.lng.toFixed(6)},${p.lat.toFixed(6)}`).join('|');
 
@@ -87,8 +127,28 @@ export async function GET(request: NextRequest) {
     if (!res.ok) return NextResponse.json({ error: `BRouter ${res.status}` }, { status: 502 });
 
     const data = await res.json();
-    // Attach snapped positions so the client can move markers to trail
-    return NextResponse.json({ ...data, snappedWaypoints: snapped });
+    const feature = Array.isArray(data?.features) ? data.features[0] : undefined;
+    const coordinates = feature?.geometry?.coordinates;
+    if (!Array.isArray(coordinates)) {
+      return NextResponse.json({ error: 'BRouter lieferte keine Route.' }, { status: 502 });
+    }
+
+    // Antwort auf das Nötige kürzen: nur die Felder, die der Routenplaner liest.
+    // So geben wir keine fremden Rohdaten (Sprachhinweise, interne Felder) weiter.
+    const props = feature?.properties ?? {};
+    return NextResponse.json({
+      features: [
+        {
+          geometry: { coordinates },
+          properties: {
+            'track-length': props['track-length'] ?? '0',
+            'filtered ascend': props['filtered ascend'] ?? '0',
+            'plain-ascend': props['plain-ascend'] ?? '0',
+          },
+        },
+      ],
+      snappedWaypoints: snapped,
+    });
   } catch {
     return NextResponse.json({ error: 'BRouter nicht erreichbar' }, { status: 504 });
   }

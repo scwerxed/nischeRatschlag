@@ -102,7 +102,9 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ ok: true });
     }
 
-    console.error('Brevo-Anmeldung fehlgeschlagen:', res.status, detail.slice(0, 300));
+    // Nur den Status loggen – die Brevo-Fehlerantwort enthaelt die Mailadresse,
+    // die damit sonst in den Server-Logs landen wuerde.
+    console.error('Brevo-Anmeldung fehlgeschlagen:', res.status);
     return NextResponse.json({ error: 'Die Anmeldung hat gerade nicht geklappt. Bitte später noch einmal versuchen.' }, { status: 502 });
   } catch {
     return NextResponse.json({ error: 'Der Newsletter-Dienst ist gerade nicht erreichbar.' }, { status: 504 });

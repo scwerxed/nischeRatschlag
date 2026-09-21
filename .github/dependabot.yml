@@ -1,0 +1,41 @@
+# Dependency-Scanning für bergseen-guide.
+#
+# Läuft auf GitHub-Seite – das ist hier wichtig, weil auf der Entwickler-
+# maschine kein Node/pnpm installiert ist und `pnpm audit` deshalb nicht
+# lokal laufen kann.
+#
+# Ergänzend im Repo aktivieren (GitHub → Settings → Code security):
+#   • Dependabot alerts        – meldet bekannte Schwachstellen
+#   • Dependabot security updates – öffnet automatisch Fix-PRs
+version: 2
+updates:
+  # Next.js-App (liegt im Unterordner, nicht im Repo-Root)
+  - package-ecosystem: npm
+    directory: /nextjs-dashboard
+    schedule:
+      interval: weekly
+      day: monday
+    open-pull-requests-limit: 5
+    commit-message:
+      prefix: "deps"
+    groups:
+      # Patch-/Minor-Updates gebündelt, damit nicht jede Woche 10 PRs aufgehen.
+      minor-and-patch:
+        update-types:
+          - minor
+          - patch
+    ignore:
+      # next/react/react-dom sind bewusst exakt gepinnt (siehe CLAUDE.md) und
+      # werden nur absichtlich angehoben – keine automatischen Major-Sprünge.
+      - dependency-name: next
+        update-types: ["version-update:semver-major"]
+      - dependency-name: react
+        update-types: ["version-update:semver-major"]
+      - dependency-name: react-dom
+        update-types: ["version-update:semver-major"]
+
+  # GitHub Actions selbst aktuell halten (falls künftig Workflows dazukommen)
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: monthly
