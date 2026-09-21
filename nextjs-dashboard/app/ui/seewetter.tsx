@@ -2,9 +2,12 @@
 
 import { useEffect, useState } from 'react';
 
-const LAKES = [
-  { name: 'Wörthersee (K)',    lat: 46.62, lng: 14.14, water: 26 },
-  { name: 'Klopeiner See (K)', lat: 46.62, lng: 14.57, water: 28 },
+// `waterStation` = exakter "gewaesser"-Name in der Kärntner Live-Datenquelle
+// (/api/seewetter). Nur gesetzt, wo es eine offizielle Live-Messstelle gibt –
+// alle anderen Seen bleiben beim saisonalen Richtwert in `water`.
+const LAKES: { name: string; lat: number; lng: number; water: number; waterStation?: string }[] = [
+  { name: 'Wörthersee (K)',    lat: 46.62, lng: 14.14, water: 26, waterStation: 'Wörthersee' },
+  { name: 'Klopeiner See (K)', lat: 46.62, lng: 14.57, water: 28, waterStation: 'Klopeiner See' },
   { name: 'Neusiedler See (B)',lat: 47.84, lng: 16.75, water: 25 },
   { name: 'Zeller See (S)',    lat: 47.32, lng: 12.80, water: 22 },
   { name: 'Achensee (T)',      lat: 47.45, lng: 11.71, water: 20 },
@@ -16,27 +19,39 @@ function isSwimSeason() {
   return m >= 5 && m <= 9;
 }
 
-type Row = { name: string; water: number; air: number | null };
+type Row = { name: string; water: number; air: number | null; liveWater: boolean };
+type WaterStation = { gewaesser: string; wasser: number };
 
 export default function Seewetter() {
-  const [rows, setRows]   = useState<Row[]>(LAKES.map((l) => ({ name: l.name, water: l.water, air: null })));
+  const [rows, setRows]   = useState<Row[]>(LAKES.map((l) => ({ name: l.name, water: l.water, air: null, liveWater: false })));
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const lat = LAKES.map((l) => l.lat).join(',');
     const lng = LAKES.map((l) => l.lng).join(',');
-    fetch(`https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lng}&current=temperature_2m&timezone=auto`)
-      .then((r) => r.json())
-      .then((data) => {
-        const arr = Array.isArray(data) ? data : [data];
-        setRows(LAKES.map((l, i) => ({
-          name:  l.name,
-          water: l.water,
-          air:   Math.round(arr[i]?.current?.temperature_2m ?? NaN) || null,
-        })));
-      })
-      .catch(() => {})
-      .finally(() => setLoading(false));
+
+    Promise.all([
+      fetch(`https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lng}&current=temperature_2m&timezone=auto`)
+        .then((r) => r.json())
+        .catch(() => null),
+      // Eigene Route statt direktem Fetch: die Kärntner Quelle sendet keine CORS-Header.
+      fetch('/api/seewetter')
+        .then((r) => r.json())
+        .catch(() => null),
+    ]).then(([air, water]) => {
+      const airArr = Array.isArray(air) ? air : air ? [air] : [];
+      const stations: WaterStation[] = Array.isArray(water?.stations) ? water.stations : [];
+
+      setRows(LAKES.map((l, i) => {
+        const live = l.waterStation ? stations.find((s) => s.gewaesser === l.waterStation) : undefined;
+        return {
+          name: l.name,
+          water: live ? Math.round(live.wasser * 10) / 10 : l.water,
+          liveWater: Boolean(live),
+          air: Math.round(airArr[i]?.current?.temperature_2m ?? NaN) || null,
+        };
+      }));
+    }).finally(() => setLoading(false));
   }, []);
 
   const swim = isSwimSeason();
@@ -76,8 +91,13 @@ export default function Seewetter() {
                 ) : row.air !== null ? `${row.air} °C Luft` : '—'}
               </span>
               {swim && (
-                <span className="font-semibold text-green-800 bg-green-50 border border-green-200 px-2 py-0.5 text-xs tabular-nums" style={{ borderRadius: 3 }}>
+                <span
+                  className="font-semibold text-green-800 bg-green-50 border border-green-200 px-2 py-0.5 text-xs tabular-nums inline-flex items-center gap-1"
+                  style={{ borderRadius: 3 }}
+                  title={row.liveWater ? 'Live-Messwert Hydrographischer Dienst Kärnten' : 'Saisonaler Richtwert'}
+                >
                   {row.water} °C Wasser
+                  {row.liveWater && <span className="w-1.5 h-1.5 rounded-full bg-green-500" aria-hidden />}
                 </span>
               )}
             </div>
@@ -85,12 +105,12 @@ export default function Seewetter() {
         ))}
       </div>
       <p className="text-[11px] text-gray-400 px-5 py-2.5 bg-gray-50 border-t border-gray-100 flex items-center gap-1.5">
-        <svg width="10" height="10" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.5" className="text-gray-300">
+        <svg width="10" height="10" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.5" className="text-gray-300 shrink-0">
           <circle cx="8" cy="8" r="6" />
           <path d="M8 5v4" strokeLinecap="round" />
           <circle cx="8" cy="11" r="0.5" fill="currentColor" />
         </svg>
-        Luft: live via Open-Meteo · Wasser: saisonale Richtwerte
+        Luft: live via Open-Meteo · Wasser: live für Kärntner Seen (●, Hydrographischer Dienst Kärnten) · sonst saisonale Richtwerte
       </p>
     </div>
   );
