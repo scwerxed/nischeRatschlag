@@ -4759,6 +4759,7 @@ Ganzjährig. Frühling und Herbst sind für Stadtspaziergänge am angenehmsten; 
 - Zu Gottesdienstzeiten ist die Besichtigung eingeschränkt – Zeiten vorab prüfen
 - Angemessene Kleidung wird erwartet, es ist eine aktive Kirche
 - Der Dom ist auch bei Schlechtwetter ein guter Programmpunkt
+- Wer es ruhiger mag: der weitläufige [Wiener Zentralfriedhof](/blog/wiener-zentralfriedhof) mit seinen Ehrengräbern liegt am anderen Ende der Innenstadt, per Straßenbahn erreichbar
     `,
     affiliateLinks: [
       { label: 'Hotels in Wien – booking.com', url: 'https://www.booking.com/city/at/vienna.de.html' },
@@ -5853,6 +5854,7 @@ Die Bergbahnen und die meisten Hütten haben in der Regel von **Juni bis Oktober
 - Hochalpine Touren in Silvretta und Rätikon verlangen Trittsicherheit und Erfahrung
 - Wetterumschwünge in den Bergketten rundum können rasch kommen – Bergwetter checken
 - Anfahrt meist über [Bludenz](/blog/bludenz-alpenstadt-fuenf-taeler), von dort ist auch ein Abstecher in die Altstadt von [Feldkirch](/blog/feldkirch-altstadt-schattenburg) gut machbar
+- Wer es ruhiger und tiefer hinein in die Walser-Kultur mag, findet das gleich nebenan liegende [Große Walsertal](/blog/grosses-walsertal-biosphaerenpark)
     `,
     affiliateLinks: [
       { label: 'Unterkünfte im Montafon – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Montafon' },
@@ -6329,7 +6331,7 @@ Die Altstadt lässt sich **ganzjährig** besuchen, für die Kombination mit der 
 
 ## Praktische Infos
 - Bahnhof Bludenz liegt an der Arlbergbahn und ist ein wichtiger Bahnknotenpunkt – die Altstadt ist von dort in wenigen Gehminuten erreichbar
-- Von Bludenz aus starten die Straßen ins Montafon, Klostertal, Brandnertal und Große Walsertal – guter Ausgangspunkt für einen mehrtägigen Aufenthalt in der Region
+- Von Bludenz aus starten die Straßen ins Montafon, Klostertal, Brandnertal und [Große Walsertal](/blog/grosses-walsertal-biosphaerenpark) – guter Ausgangspunkt für einen mehrtägigen Aufenthalt in der Region
 - Gute Ergänzung zu einem Ausflug ins nahe [Montafon](/blog/montafon-tal-wandern) oder in die Altstadt von [Feldkirch](/blog/feldkirch-altstadt-schattenburg)
     `,
     affiliateLinks: [
@@ -6370,6 +6372,82 @@ Das Stift lässt sich **ganzjährig** besuchen, die Innenräume – Kaiserzimmer
     `,
     affiliateLinks: [
       { label: 'Unterkünfte in Klosterneuburg – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Klosterneuburg' },
+    ],
+  },
+  {
+    slug: 'wiener-zentralfriedhof',
+    startCoords: [48.1486, 16.4373],
+    title: 'Wiener Zentralfriedhof – Ehrengräber, Parkanlage und Kaiser-Dom',
+    excerpt: 'Der Wiener Zentralfriedhof ist mit 2,5 km² einer der größten Friedhöfe Europas: Ehrengräber von Beethoven, Schubert und Falco, die grüne Kuppel der Karl-Borromäus-Kirche und ruhige Alleen zum Spazieren.',
+    date: '2026-09-22', category: 'Ausflug', region: 'wien', bestSeason: 'Ganzjährig',
+    highlights: ['Ehrengräber von Beethoven, Schubert, Falco und Wiesenthal', 'Rund 330.000 Gräber auf 2,5 km²', 'Karl-Borromäus-Kirche mit weithin sichtbarer grüner Kuppel'],
+    content: `
+Auf den ersten Blick ist es ein ungewöhnliches Ausflugsziel – doch der **Wiener Zentralfriedhof** ist weit mehr als eine Begräbnisstätte. Mit 2,5 km² Fläche und rund 330.000 Gräbern zählt er zu den größten Friedhöfen Europas, seine breiten Alleen und alten Bäume machen ihn zu einem der ruhigsten Parks der Stadt – und an seinem Ehrengräber-Feld liegt ein gutes Stück Wiener Musikgeschichte begraben.
+
+## Eröffnet 1874 – zunächst wenig beliebt
+
+Der Zentralfriedhof wurde am 1. November 1874 eröffnet, weit vor den Toren der damaligen Stadt. Die weite, beschwerliche Anfahrt sorgte lange für ein schlechtes Image – der Wiener Schmäh dichtete ihm nach, er sei „halb so groß wie Zürich, aber doppelt so lustig". Um die Attraktivität zu steigern, beschloss der Gemeinderat 1881, ein eigenes Ehrengräber-Feld einzurichten.
+
+## Die Ehrengräber
+
+1888 wurden dafür die sterblichen Überreste bedeutender Persönlichkeiten von anderen Friedhöfen hierher überführt, darunter **Ludwig van Beethoven** und **Franz Schubert** vom Währinger Friedhof. In der Gruppe 32A liegen sie heute nahe beieinander, ergänzt um ein Denkmal für **Wolfgang Amadeus Mozart** (sein tatsächliches Grab liegt am Sankt Marxer Friedhof). Mittlerweile gibt es rund 950 Ehrengräber auf dem Zentralfriedhof – von Johannes Brahms und Antonio Salieri bis zu neueren Gräbern wie dem des Musikers **Falco** oder des Nazi-Jägers **Simon Wiesenthal**.
+
+## Die Karl-Borromäus-Kirche
+
+Mitten auf dem Friedhof steht die weithin sichtbare **Dr.-Karl-Lueger-Gedächtniskirche** (offiziell Karl-Borromäus-Kirche) mit ihrer markanten grünen Jugendstil-Kuppel – ein Bauwerk, das die parkähnliche Anlage architektonisch zusammenhält und von vielen Alleen aus als Orientierungspunkt dient.
+
+## Mehr als nur die Ehrengräber
+
+Abseits der prominenten Namen lohnt ein Spaziergang durch die weitläufigen, teils schon alten und bewachsenen Grabfelder – jüdische, protestantische und orthodoxe Abteilungen erzählen von der religiösen Vielfalt der Stadt. Wer Ruhe und Grün sucht, findet hier – anders als im belebten Prater oder Stadtpark – fast menschenleere Alleen.
+
+## Beste Reisezeit
+
+**Ganzjährig** geöffnet und begehbar. Im Herbst sorgt das Laub der alten Bäume für eine besonders stimmungsvolle Kulisse, im Frühling blühen viele der älteren Grabfelder regelrecht auf.
+
+## Praktische Infos
+- Haupteingang Tor 2, Simmeringer Hauptstraße 234, 1110 Wien – direkt mit der Straßenbahnlinie 6 oder 71 sowie der S-Bahn (S7) erreichbar
+- Der Friedhof ist sehr weitläufig – am Eingang liegen Übersichtspläne für den Weg zu den Ehrengräbern aus, festes Schuhwerk zahlt sich aus
+- Eintritt frei, genaue Öffnungszeiten variieren je nach Jahreszeit und stehen am Eingangstor
+- Gut kombinierbar mit einem Abstecher zum nahen [Wienerwald](/blog/wienerwald-wandern) oder zurück ins Zentrum zum [Stephansdom](/blog/wien-stephansdom-altstadt)
+    `,
+    affiliateLinks: [
+      { label: 'Hotels in Wien – booking.com', url: 'https://www.booking.com/city/at/vienna.de.html' },
+    ],
+  },
+  {
+    slug: 'grosses-walsertal-biosphaerenpark',
+    startCoords: [47.2072, 9.9210],
+    title: 'Großes Walsertal – Wandern im UNESCO-Biosphärenpark',
+    excerpt: 'Das Große Walsertal ist seit 2000 UNESCO-Biosphärenpark: sechs Walser-Gemeinden, 230 km markierte Wanderwege und eine 700-jährige Siedlungsgeschichte zwischen Bludenz und dem Bregenzerwald.',
+    date: '2026-09-22', category: 'Wandern', region: 'vorarlberg', bestSeason: 'Mai–Oktober',
+    highlights: ['UNESCO-Biosphärenpark seit dem Jahr 2000', '230 km markierte Wanderwege', 'Sechs Walser-Gemeinden mit 700-jähriger Siedlungsgeschichte'],
+    content: `
+Östlich von Bludenz zweigt ein Tal ab, das in Vorarlberg eine Sonderstellung einnimmt: das **Große Walsertal**. Seit November 2000 ist es von der UNESCO als **Biosphärenpark** anerkannt – eine von weltweit nur wenigen Modellregionen, in denen Naturschutz, sanfter Tourismus und traditionelle Landwirtschaft bewusst zusammengedacht werden.
+
+## Sechs Gemeinden, ein Tal
+
+Auf rund 192 km² leben nur etwa 3.400 Menschen, verteilt auf sechs eigenständige Gemeinden: **Blons, Fontanella, Raggal, St. Gerold, Sonntag** und **Thüringerberg**. Von Thüringerberg bei Bludenz aus führt die Talstraße hinein bis nach Fontanella-Faschina, dem am höchsten gelegenen und sonnigsten Ort des Tals.
+
+## Die Walser – 700 Jahre Siedlungsgeschichte
+
+Namensgebend sind die **Walser**: Im 13. und 14. Jahrhundert wanderten Siedler aus dem Wallis über die Alpen ein und rodeten die hoch gelegenen Weiler des Tals. Viehzucht blieb seither eine der tragenden Lebensgrundlagen. Bis heute prägen charakteristische, gedrungene **Walserhäuser** aus Holz das Ortsbild, und Dialekt sowie Trachten haben sich in Teilen erhalten – zu sehen etwa in der Ausstellung „Walser auf dem Weg" im Biosphärenpark.Haus in Sonntag-Stein, wo auch der regionale Bergkäse „Walserstolz" produziert wird.
+
+## Wandern zwischen Alp und Gipfel
+
+Rund **230 Kilometer markierte Wanderwege** durchziehen das Tal, dazu mehrere Themenwege wie ein Walderlebnisweg und ein Blumenlehrpfad. Wer höher hinaus will, findet Gipfelziele wie die Kirchlespitze oder den Saluver, dazwischen liegen bewirtschaftete Alpen, auf denen im Sommer noch Vieh weidet. Das Große Walsertal zählt zu den offiziell ausgezeichneten **Bergsteigerdörfern** Österreichs – Orte, die bewusst auf sanften statt auf Massentourismus setzen.
+
+## Beste Reisezeit
+
+Für Wanderungen eignen sich **Mai bis Oktober** am besten, wenn die Hochlagen schneefrei sind. Im Frühsommer blühen die Bergwiesen, im Herbst sorgt die Almabtrieb-Zeit für zusätzliche Stimmung im Tal.
+
+## Praktische Infos
+- Anfahrt über die Landesstraße L82 von Thüringerberg (bei Bludenz) aus – innerhalb des Tals verkehrt auch ein Regionalbus zwischen den Gemeinden
+- Das Biosphärenpark.Haus in Sonntag-Stein ist ein guter Ausgangspunkt: Ausstellung, Infomaterial zu den Wanderwegen und ein kleines Bistro
+- Gute Ergänzung zu einem Ausflug ins nahe [Bludenz](/blog/bludenz-alpenstadt-fuenf-taeler), von wo aus das Tal erreichbar ist, oder ins benachbarte [Montafon](/blog/montafon-tal-wandern)
+- Festes Schuhwerk für die Höhenwege empfehlenswert, viele Talwege sind aber auch für weniger geübte Wanderer geeignet
+    `,
+    affiliateLinks: [
+      { label: 'Unterkünfte im Großen Walsertal – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Gro%C3%9Fes%20Walsertal' },
     ],
   },
 
