@@ -343,3 +343,58 @@ export const FEIERABEND_CITIES: { name: string; note: string; picks: { slug: str
   },
 ];
 
+
+// Kuratierte Familien-Ziele – „tipp“ = konkreter Hinweis für den Ausflug mit Kindern.
+// Jede Aussage stützt sich auf den jeweiligen Artikel, keine Preise/Öffnungszeiten.
+export const FAMILIEN_GROUPS: { title: string; note: string; picks: { slug: string; tipp: string }[] }[] = [
+  {
+    title: 'Tiere hautnah',
+    note: 'Füttern, streicheln, mitwandern: Tiererlebnisse funktionieren schon mit ganz Kleinen – und bleiben lange in Erinnerung.',
+    picks: [
+      { slug: 'eselwanderung-kaernten', tipp: 'Das geduldigste Tier für kleine Kinder – werden die Beine müde, darf man meist ein Stück mitreiten.' },
+      { slug: 'alpaka-wanderung-kaernten', tipp: 'Gemütliches, kindgerechtes Tempo; Mindestalter je Hof vorab erfragen.' },
+      { slug: 'schloss-rosegg-tierpark-ausflug', tipp: 'Damwild und Waschbären, Tiere füttern ist erlaubt – ein entspannter halber Tag.' },
+      { slug: 'steppentierpark-pamhagen', tipp: 'Weitläufiges Freigelände mit Streichelbereich, gut mit einem Badetag kombinierbar.' },
+      { slug: 'greifvogelschau-adler-kaernten', tipp: 'Moderierte, kindgerechte Flugvorführungen – Vorführzeiten vorab prüfen.' },
+      { slug: 'lainzer-tiergarten-wien', tipp: 'Freilaufendes Wild in Wien, breite Forstwege – einzelne Runden sind kinderwagentauglich.' },
+      { slug: 'rust-stoerche-altstadt', tipp: 'Von Frühling bis Spätsommer brüten die Störche direkt auf den Kaminen – Fernglas mitnehmen.' },
+    ],
+  },
+  {
+    title: 'Erlebniswelten & Freizeitparks',
+    note: 'Planbare Ziele mit viel Programm auf kleinem Raum. Familienkarten gibt es oft – Tarife aber immer beim Betreiber prüfen.',
+    picks: [
+      { slug: 'familypark-st-margarethen', tipp: 'Österreichs größter Freizeitpark, klar auf jüngere Kinder ausgerichtet – ein ganzer Tag.' },
+      { slug: 'minimundus-klagenfurt', tipp: 'Fahrende Modellbahnen und Schiffe, dazu ein Spielplatz zum Toben.' },
+      { slug: 'wien-schoenbrunn', tipp: 'Ältester Zoo der Welt plus Kindermuseum im Schloss – leicht ein ganzer Tag.' },
+      { slug: 'wien-prater', tipp: 'Die schmalspurige Liliputbahn ist bei Kindern ein Fixpunkt.' },
+      { slug: 'salzwelten-hallein-duerrnberg', tipp: 'Grubenbahn, Bergmannsrutschen und Salzsee-Floß – auch bei Regen. Drinnen ist es kühl.' },
+      { slug: 'pyramidenkogel-woerthersee', tipp: 'Per Lift hinauf, auf Wunsch über die lange Indoor-Rutsche wieder hinunter.' },
+      { slug: 'swarovski-kristallwelten', tipp: 'Im Garten warten Spielturm, Karussell und Wasserspiele.' },
+    ],
+  },
+  {
+    title: 'Baden mit flachem Einstieg',
+    note: 'Warmes Wasser, das langsam tiefer wird, und Platz zum Buddeln. Auch am flachen Ufer gilt: Kinder im Wasser nie aus den Augen lassen.',
+    picks: [
+      { slug: 'stubenbergsee-baden', tipp: 'Warmer Familienbadesee mit flachen Einstiegen, Tretbooten und Spielplätzen.' },
+      { slug: 'klopeiner-see-badeurlaub', tipp: 'Flaches Becken, sehr warmes Wasser – für Familien mit Kindern erste Wahl.' },
+      { slug: 'podersdorf-am-see', tipp: 'Langgezogenes Strandbad mit flachem Einstieg; bei Wind kühlt der Steppensee rasch ab.' },
+      { slug: 'alte-donau-baden-wien', tipp: 'Ruhiges Wasser ohne Strömung, per U-Bahn erreichbar.' },
+      { slug: 'donauinsel-wien', tipp: 'Mehrere flach abfallende Abschnitte mit Spielplätzen in Wassernähe.' },
+      { slug: 'lunzer-see-baden', tipp: 'Kurzer, flacher Rundweg um den See – Baden und Bewegung ohne Anstrengung.' },
+      { slug: 'therme-burgenland-lutzmannsburg', tipp: 'Wenn der See zu kalt ist: lange Rutschen, Baby- und Kleinkindbereich.' },
+    ],
+  },
+  {
+    title: 'Kurze Wege, große Natur',
+    note: 'Echte Bergkulisse ohne Kinder-Gequengel: kurze, flache Wege oder eine Bahn, die den Aufstieg übernimmt.',
+    picks: [
+      { slug: 'gosausee-dachstein-spiegelung', tipp: 'Fast ebener Uferrundweg von gut einer Stunde – kinderwagentauglich.' },
+      { slug: 'gruener-see-tragoess', tipp: 'Leichter Spazierweg rund um den See, knapp eine Stunde.' },
+      { slug: 'krimmler-wasserfaelle', tipp: 'Bis zum untersten Fall sind es nur rund 30 Minuten – Regenjacke gegen den Sprühnebel.' },
+      { slug: 'rax-seilbahn', tipp: 'Die Seilbahn übernimmt den Aufstieg, oben bleiben die Höhenunterschiede gering.' },
+      { slug: 'schneeberg-wandern', tipp: 'Zahnradbahn hinauf, dann eine leichte Gipfelrunde von 1,5–2 Stunden.' },
+    ],
+  },
+];

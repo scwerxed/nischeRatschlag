@@ -44,6 +44,13 @@ const GROUPS: Group[] = [
     ],
   },
   {
+    title: 'Mit Kindern',
+    note: 'Ziele, bei denen Kinder nicht nur mitkommen, sondern Spaß haben.',
+    items: [
+      { href: '/familienausfluege', title: 'Familienausflüge', desc: 'Tiere, Erlebniswelten, Badeseen mit flachem Einstieg & kurze Naturwege – mit Tipp je Ziel.' },
+    ],
+  },
+  {
     title: 'Nach Monat',
     note: 'Nicht jedes Ziel passt zu jeder Jahreszeit.',
     items: [

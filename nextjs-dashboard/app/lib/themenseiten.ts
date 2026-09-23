@@ -13,6 +13,7 @@ import {
   BAHNHOF_GROUPS,
   FEIERABEND_CITIES,
   SONNENUNTERGANG_GROUPS,
+  FAMILIEN_GROUPS,
 } from '@/app/lib/themen-picks';
 
 // Rückwärts-Index: zu welchen Themenseiten gehört ein Artikel?
@@ -135,6 +136,7 @@ for (const c of FEIERABEND_CITIES) {
 }
 
 addGroups(SONNENUNTERGANG_GROUPS, '/sonnenuntergang-spots', 'Sonnenuntergang-Spots', 'Die besten Golden-Hour-Ziele', 13);
+addGroups(FAMILIEN_GROUPS, '/familienausfluege', 'Familienausflüge', 'Ausflugsziele mit Kindern', 16);
 
 for (const g of tagesCombosByRegion()) {
   for (const c of g.combos) {
