@@ -5248,6 +5248,7 @@ Ganzjährig: Museen, Dom und Grottenbahn funktionieren bei jedem Wetter, was Lin
 - Für Ars Electronica und Lentos zusammen einen halben Tag einplanen
 - Museums-Kombitickets prüfen, wenn mehreres geplant ist
 - Wer das ruhigere Innviertel entdecken will: [Schärding](/blog/schaerding-altstadt-innviertel) mit seiner Silberzeile liegt gut eine Autostunde westlich
+- Donauaufwärts Richtung Passau lohnt die [Schlögener Schlinge](/blog/schloegener-schlinge-donau): die Donau macht dort eine fast vollständige Kehrtwende, der Aussichtspunkt ist in einer kurzen Wanderung erreichbar
     `,
     affiliateLinks: [
       { label: 'Hotels in Linz – booking.com', url: 'https://www.booking.com/city/at/linz.de.html' },
@@ -6298,6 +6299,7 @@ Der Freilichtbereich des Archäologieparks ist überwiegend von **April bis Okto
 - Archäologiepark (Petronell), Heidentor und Museum Carnuntinum (Bad Deutsch-Altenburg) liegen einige Kilometer auseinander – als Tagesausflug am besten mit dem Auto kombinierbar
 - Freilichtanlagen sind wettergeprägt – festes Schuhwerk und ggf. Sonnenschutz einplanen
 - Aktuelle Öffnungszeiten und Programmpunkte (Führungen, Werkstätten) vorab prüfen
+- Naturkontrast zur Römerstadt: donauaufwärts liegt der [Nationalpark Donau-Auen](/blog/nationalpark-donau-auen-orth) mit Besucherzentrum im Schloss Orth
     `,
     affiliateLinks: [
       { label: 'Unterkünfte bei Hainburg an der Donau – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Hainburg%20an%20der%20Donau' },
@@ -6451,6 +6453,74 @@ Für Wanderungen eignen sich **Mai bis Oktober** am besten, wenn die Hochlagen s
     ],
   },
 
+  {
+    slug: 'schloegener-schlinge-donau',
+    startCoords: [48.4225, 13.8710],
+    title: 'Schlögener Schlinge – Wanderung zum Aussichtspunkt über der Donauschleife',
+    excerpt: 'Bei Schlögen im oberen Donautal macht die Donau eine fast vollständige Kehrtwende – die Schlögener Schlinge ist eines der bekanntesten Naturbilder Oberösterreichs. Eine kurze, aber knackige Wanderung führt zum Schlögener Blick, unten am Ufer liegen die Reste eines römischen Kastells.',
+    date: '2026-09-25', category: 'Wandern', region: 'oberoesterreich', difficulty: 'leicht', bestSeason: 'April–Oktober',
+    highlights: ['Fast 180-Grad-Wende der Donau vom Schlögener Blick aus', 'Reste eines römischen Kastells – Teil des UNESCO-Welterbes Donaulimes', 'Rundweg über Au mit Überfuhr zurück nach Schlögen'],
+    content: `
+Zwischen Passau und Linz hat sich die Donau tief in das Granit- und Gneisgestein des Mühlviertler Hochlands eingegraben. Bei **Schlögen** (Gemeinde Haibach ob der Donau) trifft der Fluss auf einen harten Gesteinsriegel und weicht in einer fast vollständigen Kehrtwende aus – die **Schlögener Schlinge**. Das Bild der engen, bewaldeten Flussschleife gehört zu den meistfotografierten Landschaften Oberösterreichs, und der beste Blick darauf ist schon mit einer kurzen Wanderung zu haben.
+
+## Der Schlögener Blick
+Vom Ufer in Schlögen führt ein markierter Waldweg bergauf zum **Schlögener Blick**, einem Aussichtspunkt hoch über dem Fluss. Von dort sieht man die Donau in einem weiten Bogen um den bewaldeten Bergrücken fließen und in die Gegenrichtung zurückkehren. Der Aufstieg ist nicht lang, aber stellenweise steil – für normal geübte Wanderer gut machbar, mit Kindern etwas mehr Zeit einplanen.
+
+## Rundweg über Au
+Wer mehr als den Aussichtspunkt will, wählt eine der Runden durch die **Donauleiten**, die bewaldeten Steilhänge des Donautals. Beliebt ist die Variante über den Aussichtspunkt bei **Au** und am Fels vorbei hinunter zum Weiler Au an der Innenseite der Schlinge; von dort bringt eine kleine **Überfuhr** (Fähre) Wanderer zurück ans Ufer von Schlögen. Rund um die Schlinge verlaufen außerdem Etappen des **Donausteigs**, eines Weitwanderwegs entlang beider Donauufer, sowie ausgeschilderte Themenwege wie der Ciconia-Rundweg ab Haibach.
+
+## Römer an der Donau
+Direkt am Ufer in Schlögen liegen die Reste eines kleinen **römischen Kastells** aus dem späten 3. Jahrhundert, das die Schifffahrt auf der Donau überwachen sollte, samt Spuren eines kleinen Badegebäudes der zugehörigen Siedlung. Schlögen gehört damit zum **UNESCO-Welterbe „Grenzen des Römischen Reiches – Donaulimes"**, das 2021 eingetragen wurde und sich entlang der Donau von Bayern bis in die Slowakei zieht.
+
+## Beste Reisezeit
+Die Wege sind von **April bis Oktober** am angenehmsten. Im Frühjahr ist der Laubwald der Donauleiten frisch grün, im Herbst leuchtet er in kräftigen Farben – dann ist die Schlinge von oben besonders fotogen. An Herbstmorgen liegt oft Nebel im Tal; mit etwas Glück ragt der Aussichtspunkt darüber hinaus, manchmal sieht man aber auch gar nichts – etwas Flexibilität bei der Planung hilft.
+
+## Praktische Infos
+- Ausgangspunkt ist Schlögen direkt an der Donau, Parkmöglichkeiten im Ort; alternativ Start im Ortszentrum von Haibach ob der Donau
+- Die Überfuhr zwischen Au und Schlögen verkehrt saisonal – Betriebszeiten vorab prüfen, sonst die Runde auf dem gleichen Weg zurückgehen
+- Der Anstieg zum Aussichtspunkt ist bei Nässe rutschig, festes Schuhwerk empfehlenswert
+- Schlögen ist auch ein beliebter Etappenort am **Donauradweg** – am Ufer ist an schönen Wochenenden entsprechend Betrieb
+- Gut kombinierbar mit einem Stadtbesuch in [Linz](/blog/linz-ausflug) donauabwärts oder einem Abstecher ins Innviertel nach [Schärding](/blog/schaerding-altstadt-innviertel)
+    `,
+    affiliateLinks: [
+      { label: 'Unterkünfte an der Schlögener Schlinge – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Haibach%20ob%20der%20Donau' },
+      { label: 'Wanderschuhe für den Donausteig – Amazon', url: 'https://www.amazon.de/s?k=wanderschuhe+herren+damen' },
+    ],
+  },
+  {
+    slug: 'nationalpark-donau-auen-orth',
+    startCoords: [48.1467, 16.7003],
+    title: 'Nationalpark Donau-Auen – Auwildnis zwischen Wien und Hainburg',
+    excerpt: 'Östlich von Wien fließt die Donau noch frei durch eine der größten weitgehend intakten Aulandschaften Mitteleuropas. Der Nationalpark Donau-Auen mit dem Nationalpark-Zentrum im Schloss Orth ist ein ruhiges Naturziel für Wanderer, Familien und Vogelbeobachter.',
+    date: '2026-09-25', category: 'Wandern', region: 'niederoesterreich', difficulty: 'leicht', bestSeason: 'April–Oktober',
+    highlights: ['Frei fließende Donau und urwaldartige Auwälder', 'Nationalpark-Zentrum schlossORTH mit Ausstellung und Schlossinsel', 'Flache Wege – ideal für Familien und Radfahrer'],
+    content: `
+Zwischen Wien und der Mündung der March an der slowakischen Grenze fließt die Donau auf einem ihrer letzten längeren freien Abschnitte in Österreich – ohne Staustufe. Entlang dieses Flussabschnitts liegt der **Nationalpark Donau-Auen**, 1996 gegründet und mit rund 96 km² eines der größten weitgehend intakten Augebiete Mitteleuropas. Er erstreckt sich über zwei Bundesländer: vom Wiener Stadtgebiet (Lobau) bis nach Niederösterreich Richtung Hainburg.
+
+## Warum es diesen Nationalpark gibt
+Die Geschichte des Nationalparks ist eng mit einem Wendepunkt der österreichischen Umweltbewegung verbunden: Als in den 1980er-Jahren ein Donaukraftwerk bei Hainburg gebaut werden sollte, besetzten im Winter 1984 tausende Menschen die **Hainburger Au**. Das Kraftwerk wurde nicht gebaut – gut ein Jahrzehnt später wurde das Gebiet stattdessen als Nationalpark unter Schutz gestellt.
+
+## Die Au erleben
+Typisch für die Landschaft sind Seitenarme, Altwässer, Schotterbänke und dichte Auwälder, die sich mit dem schwankenden Wasserstand der Donau ständig verändern. Markierte Wanderwege und Themenwege führen durch den Wald und an die Ufer – das Gelände ist fast durchgehend **flach**, ideal für gemütliche Wanderungen, Familien und Radtouren. Mit etwas Geduld lassen sich Graureiher, Kormorane oder Eisvögel beobachten; der Seeadler brütet wieder im Gebiet, ist aber selten zu sehen.
+
+## schlossORTH – das Nationalpark-Zentrum
+In **Orth an der Donau** dient das Schloss als Besucherzentrum des Nationalparks. Die Ausstellung zeigt, wie die Au entsteht und sich wandelt, und auf der angrenzenden **Schlossinsel** kann man Lebensräume der Au im Kleinen erkunden – auch einen Blick unter die Wasseroberfläche. Von hier aus starten Wege in die umliegenden Auwälder, außerdem werden geführte Touren angeboten, zum Beispiel Bootsfahrten in die Seitenarme.
+
+## Beste Reisezeit
+Am schönsten ist der Nationalpark von **April bis Oktober**. Im Frühling ist die Vogelwelt am lebhaftesten und die Au saftig grün. Im Hochsommer können **Gelsen** (Stechmücken) nach Hochwasser sehr lästig werden – langärmelige Kleidung und Mückenschutz einpacken. Im Herbst ist es ruhiger, und das Laub färbt sich gelb.
+
+## Praktische Infos
+- Orth an der Donau liegt rund 30 km östlich von Wien; Parkmöglichkeiten beim Schloss
+- Aus Wien erreicht man den Wiener Teil des Nationalparks (Lobau) auch mit Öffis – das ist die schnellste Variante für einen kurzen Au-Spaziergang
+- Öffnungszeiten von schlossORTH sowie Termine für Führungen und Bootstouren vorab prüfen
+- Nach Hochwasser können Wege gesperrt oder überflutet sein – aktuelle Hinweise beachten
+- Gut kombinierbar mit dem [Archäologiepark Carnuntum](/blog/carnuntum-archaeologiepark) ein Stück weiter donauabwärts; wer lieber baden will, findet in Wien an der [Alten Donau](/blog/alte-donau-baden-wien) oder auf der [Donauinsel](/blog/donauinsel-wien) die passende Ergänzung
+    `,
+    affiliateLinks: [
+      { label: 'Unterkünfte im Marchfeld & bei Hainburg – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Hainburg%20an%20der%20Donau' },
+      { label: 'Fernglas für die Vogelbeobachtung – Amazon', url: 'https://www.amazon.de/s?k=fernglas+vogelbeobachtung' },
+    ],
+  },
 ];
 
 export function getPostBySlug(slug: string): Post | undefined {
