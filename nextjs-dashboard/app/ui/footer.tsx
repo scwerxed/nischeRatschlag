@@ -9,6 +9,7 @@ const QUICK_LINKS = [
   { href: '/badeplaetze', label: 'Badeplatz-Check' },
   { href: '/wandern-baden', label: 'Wandern + Baden' },
   { href: '/unterkuenfte/am-see', label: 'Unterkünfte am See' },
+  { href: '/unterkuenfte/basislager', label: 'Basislager' },
   { href: '/wochenendtrip', label: 'Wochenendtrips' },
   { href: '/beste-ausfluege', label: 'Beste Ausflüge' },
   { href: '/ausfluege-nach-dauer', label: 'Ausflüge nach Dauer' },

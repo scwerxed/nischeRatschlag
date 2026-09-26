@@ -51,7 +51,7 @@ export const TIME_BUCKETS = [
   { key: '2-3', label: '2–3 Stunden', maxKm: 220 },
 ] as const;
 
-function coordsOf(p: Post): [number, number] | undefined {
+export function coordsOf(p: Post): [number, number] | undefined {
   return p.startCoords ?? p.trails?.[0]?.coords?.[0];
 }
 

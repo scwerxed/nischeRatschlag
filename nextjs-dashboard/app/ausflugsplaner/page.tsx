@@ -31,6 +31,7 @@ const GROUPS: Group[] = [
       { href: '/feierabend-ausfluege', title: 'Feierabend-Ausflüge', desc: 'Ab Wien, Graz & Salzburg – abendtauglich, unter 45 Minuten Anfahrt.' },
       { href: '/sonnenuntergang-spots', title: 'Sonnenuntergang-Spots', desc: 'Berge, Seen & Türme mit dem besten Blick zur Golden Hour – inkl. Rückweg-Hinweisen.' },
       { href: '/wochenendtrip', title: 'Wochenendtrips', desc: 'Kurztrips ab Wien, Graz, Salzburg, Linz, Innsbruck & Klagenfurt, nach Fahrzeit sortiert.' },
+      { href: '/unterkuenfte/basislager', title: 'Basislager', desc: 'Urlaubsorte mit den meisten Ausflugszielen im Umkreis – einmal einchecken, jeden Tag ein neues Ziel.' },
     ],
   },
   {

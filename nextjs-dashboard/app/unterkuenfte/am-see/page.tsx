@@ -114,6 +114,9 @@ export default function UnterkuenfteAmSeePage() {
         <Link href="/wandern-baden" className="inline-block border border-gray-300 text-gray-700 text-sm font-semibold px-5 py-2.5 hover:border-green-600 hover:text-green-700 transition-colors" style={{ borderRadius: 6 }}>
           Wandern + Baden
         </Link>
+        <Link href="/unterkuenfte/basislager" className="inline-block border border-violet-500 text-violet-700 text-sm font-semibold px-5 py-2.5 hover:bg-violet-50 transition-colors" style={{ borderRadius: 6 }}>
+          Basislager für mehrere Ausflüge
+        </Link>
         <Link href="/ausflugsplaner" className="inline-block border border-gray-300 text-gray-700 text-sm font-semibold px-5 py-2.5 hover:border-green-600 hover:text-green-700 transition-colors" style={{ borderRadius: 6 }}>
           Alle Themenseiten
         </Link>
