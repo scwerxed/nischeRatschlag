@@ -5062,7 +5062,7 @@ Obst, Gemüse, Gewürze, Käse, Fisch und Antipasti wechseln sich mit kleinen Im
 Direkt an das südwestliche Ende des Marktes schließt seit 1977 der **Flohmarkt** an – Trödel, Antiquitäten und Kuriositäten auf engem Raum, an Samstagen deutlich voller als der Markt selbst. Handeln gehört hier zum guten Ton.
 
 ## Otto Wagners Jugendstilhäuser
-Am Rand des Marktes, an der Linken Wienzeile, stehen zwei der bekanntesten Wiener Jugendstilbauten: das **Majolikahaus** (Linke Wienzeile 40) mit seiner floralen Keramikfassade und das benachbarte **Ruferinnen-Haus** (Nr. 38) – beide 1898/99 von Otto Wagner errichtet und auch von Nicht-Architektur-Fans auf den ersten Blick zu erkennen.
+Am Rand des Marktes, an der Linken Wienzeile, stehen zwei der bekanntesten Wiener Jugendstilbauten: das **Majolikahaus** (Linke Wienzeile 40) mit seiner floralen Keramikfassade und das benachbarte **Ruferinnen-Haus** (Nr. 38) – beide 1898/99 von Otto Wagner errichtet und auch von Nicht-Architektur-Fans auf den ersten Blick zu erkennen. Eines seiner bekanntesten Werke steht dagegen am Stadtrand: die [Kirche am Steinhof](/blog/otto-wagner-kirche-steinhof) mit ihrer goldenen Kuppel.
 
 ## Beste Reisezeit
 Ganzjährig, der Markt ist auch im Winter geöffnet. Wer den Flohmarkt sehen möchte, kommt an einem Samstagvormittag.
@@ -6447,6 +6447,7 @@ Für Wanderungen eignen sich **Mai bis Oktober** am besten, wenn die Hochlagen s
 - Das Biosphärenpark.Haus in Sonntag-Stein ist ein guter Ausgangspunkt: Ausstellung, Infomaterial zu den Wanderwegen und ein kleines Bistro
 - Gute Ergänzung zu einem Ausflug ins nahe [Bludenz](/blog/bludenz-alpenstadt-fuenf-taeler), von wo aus das Tal erreichbar ist, oder ins benachbarte [Montafon](/blog/montafon-tal-wandern)
 - Festes Schuhwerk für die Höhenwege empfehlenswert, viele Talwege sind aber auch für weniger geübte Wanderer geeignet
+- Nicht verwechseln: Das [Kleinwalsertal](/blog/kleinwalsertal-wandern) ist ein eigenes, ebenfalls von Walsern besiedeltes Tal im Norden Vorarlbergs – per Straße aber nur über das Allgäu erreichbar
     `,
     affiliateLinks: [
       { label: 'Unterkünfte im Großen Walsertal – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Gro%C3%9Fes%20Walsertal' },
@@ -6519,6 +6520,79 @@ Am schönsten ist der Nationalpark von **April bis Oktober**. Im Frühling ist d
     affiliateLinks: [
       { label: 'Unterkünfte im Marchfeld & bei Hainburg – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Hainburg%20an%20der%20Donau' },
       { label: 'Fernglas für die Vogelbeobachtung – Amazon', url: 'https://www.amazon.de/s?k=fernglas+vogelbeobachtung' },
+    ],
+  },
+  {
+    slug: 'otto-wagner-kirche-steinhof',
+    startCoords: [48.2107, 16.2787],
+    title: 'Otto-Wagner-Kirche am Steinhof – Jugendstil-Juwel mit goldener Kuppel',
+    excerpt: 'Hoch über Penzing thront die Kirche am Steinhof: 1907 von Otto Wagner vollendet, gilt sie als eine der bedeutendsten Jugendstilkirchen der Welt. Dazu Glasfenster von Koloman Moser und die Steinhofgründe direkt nebenan.',
+    date: '2026-09-27', category: 'Ausflug', region: 'wien', bestSeason: 'Mai–September',
+    highlights: ['Otto Wagners Jugendstilkirche von 1904–1907 mit weithin sichtbarer Goldkuppel', 'Glasmosaikfenster nach Entwürfen von Koloman Moser', 'Grüne Steinhofgründe als Spazier- und Wandergebiet gleich nebenan'],
+    content: `
+Am westlichen Stadtrand, auf der **Baumgartner Höhe** im 14. Bezirk, leuchtet eine goldene Kuppel über den Baumwipfeln: die **Kirche am Steinhof**, offiziell Kirche zum heiligen Leopold. Otto Wagner, der Wegbereiter der modernen Architektur in Wien, hat sie entworfen – und sie gilt heute als eine der bedeutendsten Jugendstilkirchen der Welt und als einer der ersten modernen Kirchenbauten Europas.
+
+## Eine Kirche für eine Heilanstalt
+
+Die Kirche entstand von 1904 bis 1907 als Anstaltskirche der damals neu errichteten Niederösterreichischen Landes-Heil- und Pflegeanstalt „Am Steinhof" – eines der größten psychiatrischen Krankenhäuser seiner Zeit. Wagner plante nicht nur die Kirche, sondern auch die Gesamtanlage mit ihren Pavillons, die sich terrassenförmig den Hang hinaufziehen. Die Kirche setzte er an den höchsten Punkt des Geländes. Am 8. Oktober 1907 wurde sie im Beisein von Erzherzog Franz Ferdinand eröffnet.
+
+## Jugendstil bis ins Detail
+
+Von außen prägen weiße Marmorplatten, die mit sichtbaren Metallnieten befestigt sind, und die vergoldete Kuppel das Bild. Innen ist der Raum überraschend hell und weit: Wagner dachte die Kirche auch funktional – mit gutem Blick auf den Altar von allen Plätzen, leicht zu reinigenden Oberflächen und durchdachter Belüftung, passend zum Krankenhaus-Umfeld. Künstlerischer Höhepunkt sind die großen **Glasmosaikfenster nach Entwürfen von Koloman Moser**, einem Mitbegründer der Wiener Werkstätte; sie wurden im Zuge einer umfassenden Restaurierung abgenommen und instand gesetzt.
+
+## Steinhofgründe und Otto-Wagner-Areal
+
+Rund um die Kirche liegt das weitläufige **Otto-Wagner-Areal** mit seinen Jugendstil-Pavillons, das man auf den Wegen zwischen den Gebäuden durchstreifen kann. Gleich angrenzend öffnen sich die **Steinhofgründe**, ein rund 42 Hektar großes Erholungsgebiet mit Wiesen und Wald – ideal für einen Spaziergang vor oder nach dem Kirchenbesuch. Wer weiter will, wandert von hier Richtung Wilhelminenberg oder hinein in den [Wienerwald](/blog/wienerwald-wandern).
+
+## Beste Reisezeit
+
+Die Kirche ist in der Regel nur in der wärmeren Jahreszeit für Besucher geöffnet und hat eine längere Winterpause – daher sind **Mai bis September** die sichere Wahl. Das Areal und die Steinhofgründe selbst sind ganzjährig ein lohnendes Spazierziel, im Herbst mit besonders schöner Laubfärbung.
+
+## Praktische Infos
+- Öffentlich gut erreichbar: mit der U3 bis zur Endstation Ottakring, von dort mit dem Bus 48A hinauf zum Otto-Wagner-Areal; alternativ halten auch weitere Buslinien in der Nähe
+- Öffnungszeiten der Kirche sind saisonal begrenzt und eingeschränkt, Eintritt und Führungen sind möglich – aktuelle Zeiten unbedingt vorab beim Wien Museum bzw. der Erzdiözese prüfen
+- Das Areal ist ein aktives Klinik- bzw. Nachnutzungsgelände – bitte rücksichtsvoll und leise bewegen
+- Wer Jugendstil sehen will, verbindet den Besuch mit Klimt und Co. im [Schloss Belvedere](/blog/schloss-belvedere-wien), einem Streifzug durch das [MuseumsQuartier](/blog/museumsquartier-wien) oder Wagners Jugendstilhäusern am [Naschmarkt](/blog/naschmarkt-wien)
+    `,
+    affiliateLinks: [
+      { label: 'Hotels in Wien – booking.com', url: 'https://www.booking.com/city/at/vienna.de.html' },
+    ],
+  },
+  {
+    slug: 'kleinwalsertal-wandern',
+    startCoords: [47.3573, 10.1870],
+    title: 'Kleinwalsertal – Wandern im Vorarlberger Tal, das nur über Deutschland erreichbar ist',
+    excerpt: 'Das Kleinwalsertal gehört zu Vorarlberg, ist per Straße aber nur aus dem Allgäu erreichbar. Walser-Dörfer von Riezlern bis Baad, Bergbahnen auf Kanzelwand und Walmendingerhorn und der markante Hohe Ifen machen es zum Wanderziel für alle Ansprüche.',
+    date: '2026-09-27', category: 'Wandern', region: 'vorarlberg', bestSeason: 'Juni–Oktober',
+    highlights: ['Österreichisches Tal, per Straße nur über Oberstdorf im Allgäu erreichbar', 'Walser-Dörfer Riezlern, Hirschegg, Mittelberg und Baad', 'Bergbahnen, Hoher Ifen und Gottesackerplateau für Gipfel- und Höhenwege'],
+    content: `
+Das **Kleinwalsertal** ist eine geografische Kuriosität: Es gehört politisch zu Vorarlberg und damit zu Österreich, ist mit dem Auto aber **nur von Deutschland aus** erreichbar – über Oberstdorf im Allgäu. Hohe Berge riegeln das rund 15 Kilometer lange Tal der Breitach gegen den Rest Vorarlbergs ab. Für Wanderer bedeutet das: ein ruhiges, geschlossenes Hochtal mit Wegen für jede Kondition.
+
+## Eine Gemeinde, vier Orte
+
+Das ganze Tal bildet die Gemeinde **Mittelberg** im Bezirk Bregenz. Die Orte gehen fast nahtlos ineinander über: vom Taleingang in **Riezlern** (rund 1.100 m) über **Hirschegg** und **Mittelberg** bis hinauf nach **Baad** am Talschluss, wo die Breitach entspringt. Wegen der Straßenanbindung ist das Tal seit 1891 ein österreichisches Zollausschlussgebiet und wirtschaftlich eng mit dem deutschen Nachbarn verbunden.
+
+## Walser-Geschichte
+
+Wie beim [Großen Walsertal](/blog/grosses-walsertal-biosphaerenpark) geht auch hier der Name auf die **Walser** zurück: Gegen Ende des 13. Jahrhunderts kamen Siedlerfamilien aus dem Walliser Raum über die Pässe in das damals unbewohnte Breitachtal, rodeten es und machten es urbar. Der Walser Dialekt und die typische Holzbauweise prägen das Tal bis heute.
+
+## Wandern: vom Talweg bis zum Hohen Ifen
+
+Wer es gemütlich mag, folgt dem **Talwanderweg** entlang der Breitach von Ort zu Ort oder den Panoramawegen an den Sonnenhängen – mit Bus-Anbindung für den Rückweg. Für Höhenwanderungen helfen die Bergbahnen: Von Riezlern führt die **Kanzelwandbahn** in die Höhe, von Mittelberg aus die **Walmendingerhornbahn**. Markantester Berg ist der **Hohe Ifen** mit seinem breiten Felsplateau; daneben liegt das **Gottesackerplateau**, eine ausgedehnte Karstlandschaft aus zerklüftetem Schrattenkalk – eindrucksvoll, aber nur bei guter Sicht und mit Trittsicherheit zu begehen, da Spalten und Karstlöcher die Orientierung erschweren. Am Talschluss bei Baad wacht der **Widderstein**, hinter dem der Hochtannberg Richtung [Lech](/blog/lech-zuers-am-arlberg) liegt.
+
+## Beste Reisezeit
+
+Für Wanderungen eignen sich **Juni bis Oktober**, wenn die Höhenwege schneefrei sind und die Bergbahnen im Sommerbetrieb laufen. Der Talwanderweg ist auch in der Vor- und Nachsaison gut machbar; im Winter ist das Tal ein Ski- und Winterwandergebiet.
+
+## Praktische Infos
+- Anfahrt mit dem Auto über Oberstdorf (Allgäu), mit Öffis per Bahn bis Oberstdorf und weiter mit dem Bus ins Tal; innerhalb des Tals verkehren regelmäßig Busse zwischen den Orten
+- Direkt am Taleingang, auf deutscher Seite, liegt die **Breitachklamm** – eine eindrucksvolle, kostenpflichtige Felsschlucht und ein beliebter Zusatzstopp
+- Betriebszeiten und Tarife der Bergbahnen vorab prüfen; in der Unterkunft nach einer Gästekarte fragen, die oft Vergünstigungen für Bus und Bahnen bietet
+- Für Gottesackerplateau und Ifen-Überschreitung: gutes Schuhwerk, stabiles Wetter und genug Zeit einplanen
+- Wer mehr Vorarlberg-Wandern sucht, findet im [Bregenzerwald](/blog/bregenzerwald-wandern) weitere Touren – allerdings nur über einen weiten Umweg per Straße
+    `,
+    affiliateLinks: [
+      { label: 'Unterkünfte im Kleinwalsertal – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Kleinwalsertal' },
     ],
   },
 ];
