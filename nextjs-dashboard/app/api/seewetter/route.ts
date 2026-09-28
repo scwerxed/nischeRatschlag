@@ -13,7 +13,8 @@ const SBG_URL = 'https://www.salzburg.gv.at/wasser/hydro/grafiken/data.json';
 const OOE_URL = 'https://data.ooe.gv.at/files/hydro/HDOOE_Export_WT.zrxp';
 
 // In Frankfurt statt im Vercel-Standard (Washington) ausführen: der Kärntner Server antwortet
-// Anfragen aus den USA nicht, außerdem sind alle drei Quellen von hier aus deutlich näher.
+// Anfragen aus den USA nicht (TimeoutError). Auf dem Hobby-Plan greift diese Route-Einstellung
+// allein nicht – maßgeblich ist `"regions": ["fra1"]` in vercel.json (gilt für alle Functions).
 export const preferredRegion = 'fra1';
 
 /** Ältere Werte (z. B. ausgefallene Station) werden verworfen, statt veraltet als „live“ zu erscheinen. */
