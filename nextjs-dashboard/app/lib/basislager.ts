@@ -49,3 +49,27 @@ export function basislagerByRegion(): BasislagerGroup[] {
     }))
     .sort((a, b) => b.lager[0].ziele.length - a.lager[0].ziele.length);
 }
+
+let _lagerCache: Basislager[] | undefined;
+
+/**
+ * Bestes Basislager für einen Artikel: das Basislager mit den meisten Zielen, zu dessen Umkreis
+ * der Artikel selbst gehört (bei Gleichstand das nähere). `undefined`, wenn der Artikel in keinem
+ * Basislager liegt (z. B. kein Startpunkt, Unterkunft-Artikel oder zu abgelegen).
+ */
+export function basislagerFuer(slug: string): { lager: Basislager; km: number } | undefined {
+  _lagerCache ??= basislagerByRegion().flatMap((g) => g.lager);
+  let best: { lager: Basislager; km: number } | undefined;
+  for (const lager of _lagerCache) {
+    const hit = lager.ziele.find((z) => z.post.slug === slug);
+    if (!hit) continue;
+    if (
+      !best ||
+      lager.ziele.length > best.lager.ziele.length ||
+      (lager.ziele.length === best.lager.ziele.length && hit.km < best.km)
+    ) {
+      best = { lager, km: hit.km };
+    }
+  }
+  return best;
+}

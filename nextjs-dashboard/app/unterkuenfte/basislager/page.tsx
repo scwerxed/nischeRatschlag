@@ -61,7 +61,7 @@ export default function BasislagerPage() {
       </p>
 
       {groups.map((g) => (
-        <section key={g.region} className="mb-12">
+        <section key={g.region} id={g.region} className="mb-12 scroll-mt-24">
           <h2 className="font-serif text-2xl font-bold mb-5 text-gray-900">
             {regionName(g.region)}
             <Link href={`/regionen/${g.region}`} className="ml-3 text-sm font-sans font-normal text-green-700 hover:underline">

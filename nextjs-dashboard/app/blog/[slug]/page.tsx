@@ -15,6 +15,7 @@ import { themenFor, oeffiAnreise } from '@/app/lib/themenseiten';
 import { seasonStatus, SEASON_LABEL } from '@/app/lib/season';
 import { unterkuenfte } from '@/app/lib/unterkuenfte';
 import { nearestCityKm, distKm } from '@/app/lib/wochenendtrip';
+import { basislagerFuer, BASISLAGER_RADIUS_KM } from '@/app/lib/basislager';
 import { BASE, SITE_NAME, CATEGORY_KEYWORDS, REGION_META, regionName, articleSchema, breadcrumbSchema, sportsActivitySchema, trailRouteSchema, OFFICIAL_REGION_SITES } from '@/app/lib/seo';
 
 type Props = { params: Promise<{ slug: string }> };
@@ -215,6 +216,14 @@ export default async function BlogPostPage({ params }: Props) {
         .slice(0, 2)
         .map((x) => x.u)
     : []);
+
+  // Basislager: liegt dieses Ziel im Umkreis eines Unterkunft-Standorts mit vielen weiteren Zielen?
+  // Nicht zeigen, wenn dieselbe Unterkunft schon in der „Weite Anfahrt“-Karte steht.
+  const basis = basislagerFuer(post.slug);
+  const basisLager = basis && !nearbyStays.some((u) => u.id === basis.lager.stay.id) ? basis : undefined;
+  const basisAndere = basisLager
+    ? basisLager.lager.ziele.filter((z) => z.post.slug !== post.slug).slice(0, 3)
+    : [];
 
   const jsonLd = [
     articleSchema({ title: post.title, excerpt: post.excerpt, date: post.date, slug: post.slug, category: post.category, region: post.region }),
@@ -579,6 +588,42 @@ export default async function BlogPostPage({ params }: Props) {
                 ))}
               </div>
               <p className="text-[11px] text-gray-400 mt-3">* Affiliate-Links – ohne Mehrkosten für dich.</p>
+              <Link href="/unterkuenfte/basislager" className="mt-2 inline-flex items-center gap-1 text-sm font-medium text-green-700 hover:text-green-800">
+                Beste Ausgangsorte ansehen →
+              </Link>
+            </div>
+          )}
+
+          {/* Basislager: guter Standort für mehrere Tage in der Gegend (Affiliate) */}
+          {basisLager && (
+            <div className="border border-violet-200 bg-violet-50 p-5" style={{ borderRadius: 8 }}>
+              <p className="eyebrow mb-1">Mehrere Tage bleiben?</p>
+              <h3 className="font-serif text-base font-bold text-gray-900 mb-2">Basislager {basisLager.lager.stay.ort}</h3>
+              <p className="text-sm text-gray-700 leading-relaxed mb-3">
+                Rund {Math.max(1, Math.round(basisLager.km))}&nbsp;km Luftlinie von hier – und insgesamt{' '}
+                <strong>{basisLager.lager.ziele.length} unserer Ziele</strong> im Umkreis von {BASISLAGER_RADIUS_KM}&nbsp;km.
+                {basisAndere.length > 0 && ' Zum Beispiel:'}
+              </p>
+              {basisAndere.length > 0 && (
+                <ul className="space-y-1 mb-3">
+                  {basisAndere.map((z) => (
+                    <li key={z.post.slug} className="text-sm leading-snug">
+                      <Link href={`/blog/${z.post.slug}`} className="text-gray-800 hover:text-green-700 hover:underline">
+                        {z.post.title}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              )}
+              <a href={cloak(basisLager.lager.stay.bookingUrl)} target="_blank" rel="noopener noreferrer sponsored"
+                className="group block border border-violet-200 bg-white px-3 py-2.5 hover:border-violet-400 transition-colors" style={{ borderRadius: 6 }}>
+                <span className="block text-xs font-semibold text-violet-700 uppercase tracking-wide">{basisLager.lager.stay.typ} · {basisLager.lager.stay.see}</span>
+                <span className="block text-sm font-semibold text-gray-900 group-hover:text-violet-700 leading-snug mt-0.5">{basisLager.lager.stay.name} →</span>
+              </a>
+              <p className="text-[11px] text-gray-400 mt-3">* Affiliate-Link – ohne Mehrkosten für dich. Entfernungen als Luftlinie.</p>
+              <Link href={`/unterkuenfte/basislager#${basisLager.lager.stay.region}`} className="mt-2 inline-flex items-center gap-1 text-sm font-medium text-green-700 hover:text-green-800">
+                Alle Basislager in {regionName(basisLager.lager.stay.region)} →
+              </Link>
             </div>
           )}
 
