@@ -16,6 +16,9 @@ import { seasonStatus, SEASON_LABEL } from '@/app/lib/season';
 import { unterkuenfte } from '@/app/lib/unterkuenfte';
 import { nearestCityKm, distKm } from '@/app/lib/wochenendtrip';
 import { basislagerFuer, BASISLAGER_RADIUS_KM } from '@/app/lib/basislager';
+import { seeMessstellenFuer, badestelleFuer, AGES_EINSTUFUNG } from '@/app/lib/gewaesser';
+import { QUELLEN_LABEL } from '@/app/lib/seen-messstellen';
+import SeeLive from '@/app/ui/see-live';
 import { BASE, SITE_NAME, CATEGORY_KEYWORDS, REGION_META, regionName, articleSchema, breadcrumbSchema, sportsActivitySchema, trailRouteSchema, OFFICIAL_REGION_SITES } from '@/app/lib/seo';
 
 type Props = { params: Promise<{ slug: string }> };
@@ -224,6 +227,20 @@ export default async function BlogPostPage({ params }: Props) {
   const basisAndere = basisLager
     ? basisLager.lager.ziele.filter((z) => z.post.slug !== post.slug).slice(0, 3)
     : [];
+
+  // Gewässer-Daten: Live-Wassertemperatur (offizielle See-Messstellen der Länder) und
+  // AGES-Badewasserqualität (nur Bade-Artikel). Beide leer, wenn nichts Passendes in der Nähe liegt.
+  const seeStationen = seeMessstellenFuer(post).map((m) => ({
+    id: m.id, see: m.see, ort: m.ort, km: m.km, quelle: QUELLEN_LABEL[m.quelle],
+  }));
+  const badestelle = await badestelleFuer(post);
+  const einstufung = badestelle?.einstufung ? AGES_EINSTUFUNG[badestelle.einstufung.code] : undefined;
+  const probe = badestelle?.letzteProbe;
+  const EINSTUFUNG_CLS = {
+    gut: 'bg-green-100 text-green-800 border-green-200',
+    mittel: 'bg-amber-100 text-amber-800 border-amber-200',
+    schlecht: 'bg-red-100 text-red-800 border-red-200',
+  } as const;
 
   const jsonLd = [
     articleSchema({ title: post.title, excerpt: post.excerpt, date: post.date, slug: post.slug, category: post.category, region: post.region }),
@@ -509,6 +526,57 @@ export default async function BlogPostPage({ params }: Props) {
               </Link>
             )}
           </div>
+
+          {/* Live-Wassertemperatur */}
+          {seeStationen.length > 0 && <SeeLive stationen={seeStationen} />}
+
+          {/* Badewasser-Qualität (AGES) */}
+          {badestelle && (
+            <div className="border border-sky-200 p-5" style={{ borderRadius: 8 }}>
+              <p className="eyebrow mb-1">Badewasser-Qualität</p>
+              <h3 className="font-serif text-base font-bold text-gray-900 leading-snug">{badestelle.name}</h3>
+              <p className="text-xs text-gray-500 mt-0.5">
+                Offizielle EU-Badestelle{badestelle.km >= 0.5 ? ` · ≈ ${Math.max(1, Math.round(badestelle.km))} km vom Startpunkt` : ''}
+              </p>
+              {badestelle.gesperrt && (
+                <p className="mt-3 text-sm font-semibold text-red-800 bg-red-50 border border-red-200 px-2.5 py-1.5" style={{ borderRadius: 4 }}>
+                  ⚠️ Derzeit gesperrt{badestelle.sperrgrund ? `: ${badestelle.sperrgrund}` : ''}
+                </p>
+              )}
+              <dl className="mt-3 space-y-2 text-sm">
+                {badestelle.einstufung && einstufung && (
+                  <div className="flex justify-between items-center gap-3">
+                    <dt className="text-gray-500">Einstufung {badestelle.einstufung.jahr}</dt>
+                    <dd className={`text-xs font-semibold px-2 py-0.5 border ${EINSTUFUNG_CLS[einstufung.tone]}`} style={{ borderRadius: 3 }}>
+                      {einstufung.label}
+                    </dd>
+                  </div>
+                )}
+                {probe && (
+                  <div className="flex justify-between gap-3">
+                    <dt className="text-gray-500">Letzte Probe</dt>
+                    <dd className="font-medium text-gray-900">{probe.datum}</dd>
+                  </div>
+                )}
+                {probe && probe.wasser !== null && (
+                  <div className="flex justify-between gap-3">
+                    <dt className="text-gray-500">Wasser bei der Probe</dt>
+                    <dd className="font-medium text-gray-900 tabular-nums">{probe.wasser.toLocaleString('de-AT')} °C</dd>
+                  </div>
+                )}
+                {probe && probe.sichttiefe !== null && (
+                  <div className="flex justify-between gap-3">
+                    <dt className="text-gray-500">Sichttiefe</dt>
+                    <dd className="font-medium text-gray-900 tabular-nums">{probe.sichttiefe.toLocaleString('de-AT')} m</dd>
+                  </div>
+                )}
+              </dl>
+              <p className="text-[11px] text-gray-400 mt-3">
+                Hygiene-Kontrolle nach EU-Badegewässerrichtlinie{probe && badestelle.probenSaison > 0 ? ` (${badestelle.probenSaison} Proben in der Saison ${probe.datum.slice(6)})` : ''}.
+                Quelle: AGES, CC BY 3.0 AT.
+              </p>
+            </div>
+          )}
 
           {/* Mit Öffis erreichbar / Auto oder Öffis */}
           {oeffi && (
