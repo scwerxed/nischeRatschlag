@@ -12,6 +12,10 @@ const KTN_URL = 'https://info.ktn.gv.at/asp/hydro/daten/json/hdkaernten_see.json
 const SBG_URL = 'https://www.salzburg.gv.at/wasser/hydro/grafiken/data.json';
 const OOE_URL = 'https://data.ooe.gv.at/files/hydro/HDOOE_Export_WT.zrxp';
 
+// In Frankfurt statt im Vercel-Standard (Washington) ausführen: der Kärntner Server antwortet
+// Anfragen aus den USA nicht, außerdem sind alle drei Quellen von hier aus deutlich näher.
+export const preferredRegion = 'fra1';
+
 /** Ältere Werte (z. B. ausgefallene Station) werden verworfen, statt veraltet als „live“ zu erscheinen. */
 const MAX_ALTER_MS = 72 * 60 * 60 * 1000;
 
@@ -124,11 +128,17 @@ export async function GET(request: NextRequest) {
   // Jede Quelle einzeln absichern: fällt ein Land aus, liefern die anderen trotzdem.
   // Ohne Wert fällt der Client auf saisonale Richtwerte zurück bzw. blendet die Anzeige aus.
   const messwerte: Werte = {};
-  await Promise.allSettled([kaernten(messwerte), salzburg(messwerte), oberoesterreich(messwerte)]);
+  const quellen = ['ktn', 'sbg', 'ooe'] as const;
+  const results = await Promise.allSettled([kaernten(messwerte), salzburg(messwerte), oberoesterreich(messwerte)]);
+  // Welche Quelle ist ausgefallen? Nur die Kennung + Fehlertyp (z. B. TimeoutError), keine Details.
+  const ausfall = results.flatMap((r, i) =>
+    r.status === 'rejected' ? [`${quellen[i]}: ${r.reason instanceof Error ? r.reason.name : 'Fehler'}`] : []
+  );
 
   return NextResponse.json(
     {
       messwerte,
+      ausfall,
       quelle: 'Hydrographische Dienste Kärnten, Salzburg und Oberösterreich (CC BY 4.0)',
     },
     { headers: { 'Cache-Control': 'public, max-age=300, stale-while-revalidate=1800' } }
