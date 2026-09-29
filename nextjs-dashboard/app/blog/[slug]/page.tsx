@@ -63,13 +63,6 @@ const DIFFICULTY_STYLES: Record<string, { label: string; dot: string; cls: strin
   schwer: { label: 'Schwer', dot: 'bg-red-500',   cls: 'bg-red-50 text-red-700 border-red-200' },
 };
 
-const CATEGORY_GRADIENT: Record<string, string> = {
-  Wandern:    'from-green-700 to-green-900',
-  Baden:      'from-sky-600 to-green-800',
-  Ausflug:    'from-emerald-700 to-green-900',
-  Unterkunft: 'from-teal-700 to-green-900',
-};
-
 /** Erzeugt eine stabile Anker-ID aus einer Überschrift (umlaut-sicher). */
 function slugifyHeading(text: string): string {
   return text
@@ -99,7 +92,7 @@ function renderInline(text: string): React.ReactNode {
   const parts = text.split(INLINE_RE);
   return parts.map((part, i) => {
     if (part.startsWith('**') && part.endsWith('**')) {
-      return <strong key={i} className="font-semibold text-gray-900">{part.slice(2, -2)}</strong>;
+      return <strong key={i} className="font-semibold text-ink">{part.slice(2, -2)}</strong>;
     }
     const link = /^\[([^\]]+)\]\(([^)]+)\)$/.exec(part);
     if (link) {
@@ -127,11 +120,11 @@ function renderContent(content: string) {
   const flushList = () => {
     if (listItems.length > 0) {
       elements.push(
-        <ul key={`list-${listKey++}`} className="list-none space-y-2 text-gray-700 mb-5 ml-0 border-l-2 border-green-200 pl-4">
+        <ul key={`list-${listKey++}`} className="list-none space-y-2.5 text-body text-ink mb-6 max-w-prose ml-0 border-l-2 border-green-200 pl-5">
           {listItems.map((item, i) => (
             <li key={i} className="flex items-start gap-2">
               <span className="shrink-0 mt-[0.6em] w-2.5 h-px bg-green-500 inline-block" />
-              <span className="leading-relaxed">{renderInline(item)}</span>
+              <span>{renderInline(item)}</span>
             </li>
           ))}
         </ul>
@@ -144,14 +137,14 @@ function renderContent(content: string) {
     if (line.startsWith('## ')) {
       flushList();
       elements.push(
-        <h2 key={i} id={slugifyHeading(line.slice(3))} className="font-serif text-2xl font-bold mt-12 mb-4 text-gray-900 border-b border-gray-200 pb-3 scroll-mt-20">
+        <h2 key={i} id={slugifyHeading(line.slice(3))} className="font-serif text-display-sm font-bold mt-16 mb-5 text-ink border-b border-hairline pb-3 scroll-mt-24">
           {renderInline(line.slice(3))}
         </h2>
       );
     } else if (line.startsWith('### ')) {
       flushList();
       elements.push(
-        <h3 key={i} className="font-serif text-lg font-bold mt-7 mb-2.5 text-gray-800">
+        <h3 key={i} className="font-serif text-tagline font-bold mt-10 mb-3 text-ink">
           {renderInline(line.slice(4))}
         </h3>
       );
@@ -159,13 +152,13 @@ function renderContent(content: string) {
       listItems.push(line.slice(2));
     } else if (line.trim() === '---') {
       flushList();
-      elements.push(<hr key={i} className="my-8 border-gray-200" />);
+      elements.push(<hr key={i} className="my-12 border-hairline" />);
     } else if (line.trim() === '') {
       flushList();
     } else {
       flushList();
       elements.push(
-        <p key={i} className="text-gray-700 leading-relaxed mb-4 text-base">
+        <p key={i} className="text-body text-ink mb-6 max-w-prose">
           {renderInline(line)}
         </p>
       );
@@ -191,7 +184,6 @@ export default async function BlogPostPage({ params }: Props) {
   const headings = extractHeadings(post.content);
   const regionSite = OFFICIAL_REGION_SITES[post.region];
   const officialLinks = [...(post.officialLinks ?? []), ...(regionSite ? [regionSite] : [])];
-  const gradient = CATEGORY_GRADIENT[post.category] ?? 'from-green-700 to-green-900';
 
   // Startpunkt: explizit gesetzt oder erster Wegpunkt der ersten Tour.
   // Fallback: Region-Mittelpunkt, damit jeder Artikel einen Karten-CTA hat.
@@ -270,8 +262,8 @@ export default async function BlogPostPage({ params }: Props) {
         <div className="absolute inset-0">
           <PostArtwork seed={post.slug} category={post.category} className="h-full w-full" />
         </div>
-        <div className={`absolute inset-0 bg-gradient-to-t ${gradient}`} style={{ opacity: 0.82 }} />
-        <div className="relative max-w-6xl mx-auto px-6 py-12 md:py-16">
+        <div className="absolute inset-0 bg-gradient-to-t from-green-900/95 via-green-900/80 to-green-900/55" />
+        <div className="relative max-w-6xl mx-auto px-6 py-16 md:py-24">
           {/* Breadcrumb */}
           <nav className="flex flex-wrap items-center gap-2 text-xs text-white/70 mb-5">
             <Link href="/" className="hover:text-white">Startseite</Link>
@@ -282,29 +274,29 @@ export default async function BlogPostPage({ params }: Props) {
           </nav>
 
           <div className="flex flex-wrap items-center gap-2 mb-4 text-xs">
-            <span className="font-semibold bg-white/15 border border-white/20 px-2.5 py-1 uppercase tracking-wide" style={{ borderRadius: 3 }}>
+            <span className="font-semibold bg-white/15 border border-white/20 px-3 py-1 uppercase tracking-wide rounded-full">
               {post.category}
             </span>
             {post.difficulty && (
-              <span className="inline-flex items-center gap-1.5 bg-white/15 border border-white/20 px-2.5 py-1" style={{ borderRadius: 3 }}>
+              <span className="inline-flex items-center gap-1.5 bg-white/15 border border-white/20 px-3 py-1 rounded-full">
                 <span className={`w-2 h-2 rounded-full shrink-0 ${DIFFICULTY_STYLES[post.difficulty].dot}`} />
                 {DIFFICULTY_STYLES[post.difficulty].label}
               </span>
             )}
             {post.bestSeason && (
-              <span className="inline-flex items-center gap-1.5 bg-white/15 border border-white/20 px-2.5 py-1" style={{ borderRadius: 3 }}>
+              <span className="inline-flex items-center gap-1.5 bg-white/15 border border-white/20 px-3 py-1 rounded-full">
                 {season && <span aria-hidden>{SEASON_LABEL[season].emoji}</span>}
                 {post.bestSeason}
               </span>
             )}
             {oeffi && (
-              <span className="bg-white/15 border border-white/20 px-2.5 py-1" style={{ borderRadius: 3 }}>🚋 Mit Öffis erreichbar</span>
+              <span className="bg-white/15 border border-white/20 px-3 py-1 rounded-full">🚋 Mit Öffis erreichbar</span>
             )}
             <span className="text-white/60 ml-auto">{post.date} · {minutes} Min. Lesen</span>
           </div>
 
-          <h1 className="font-serif text-3xl md:text-5xl font-bold leading-[1.1] max-w-3xl">{post.title}</h1>
-          <p className="text-white/85 text-lg mt-4 max-w-2xl leading-relaxed">{post.excerpt}</p>
+          <h1 className="font-serif text-display-sm md:text-hero font-bold max-w-3xl">{post.title}</h1>
+          <p className="text-white/85 text-lead-airy font-light mt-5 max-w-2xl">{post.excerpt}</p>
         </div>
       </header>
 
@@ -318,7 +310,7 @@ export default async function BlogPostPage({ params }: Props) {
               <p className="eyebrow mb-3">Auf einen Blick</p>
               <ul className="space-y-1.5">
                 {post.highlights.map((h, i) => (
-                  <li key={i} className="flex items-start gap-2.5 text-sm text-gray-700">
+                  <li key={i} className="flex items-start gap-2.5 text-sm text-ink-muted">
                     <span className="shrink-0 mt-1.5 w-3 h-px bg-green-600 inline-block" />
                     {h}
                   </li>
@@ -336,8 +328,8 @@ export default async function BlogPostPage({ params }: Props) {
               <ul className="space-y-3">
                 {post.planningMistakes.map((m) => (
                   <li key={m.fehler} className="text-sm leading-relaxed">
-                    <p className="text-gray-800"><span className="font-semibold text-red-700">✗</span> {m.fehler}</p>
-                    <p className="text-gray-600 mt-0.5 pl-4"><span className="font-semibold text-green-700">→</span> {m.besser}</p>
+                    <p className="text-ink"><span className="font-semibold text-red-700">✗</span> {m.fehler}</p>
+                    <p className="text-ink-muted mt-0.5 pl-4"><span className="font-semibold text-green-700">→</span> {m.besser}</p>
                   </li>
                 ))}
               </ul>
@@ -348,23 +340,23 @@ export default async function BlogPostPage({ params }: Props) {
           {post.routeVariants && post.routeVariants.length > 0 && (
             <div className="mt-10">
               <p className="eyebrow mb-2">Kurz oder lang?</p>
-              <h2 className="font-serif text-2xl font-bold text-gray-900 mb-4">Deine Routen-Varianten</h2>
+              <h2 className="font-serif text-2xl font-bold text-ink mb-4">Deine Routen-Varianten</h2>
               <div className="space-y-3">
                 {post.routeVariants.map((v) => (
-                  <div key={v.label} className="flex flex-wrap items-center gap-x-4 gap-y-1 border border-gray-200 px-4 py-3" style={{ borderRadius: 8 }}>
+                  <div key={v.label} className="flex flex-wrap items-center gap-x-4 gap-y-1 border border-hairline px-4 py-3" style={{ borderRadius: 18 }}>
                     <span className={`w-2 h-2 rounded-full shrink-0 ${DIFFICULTY_STYLES[v.difficulty].dot}`} />
-                    <span className="font-semibold text-gray-900 flex-1 min-w-[160px]">{v.label}</span>
-                    <span className="text-sm text-gray-600 whitespace-nowrap">{v.length}</span>
-                    <span className="text-sm text-gray-600 whitespace-nowrap">{v.duration}</span>
-                    {v.ascent && <span className="text-sm text-gray-600 whitespace-nowrap">↑ {v.ascent}</span>}
+                    <span className="font-semibold text-ink flex-1 min-w-[160px]">{v.label}</span>
+                    <span className="text-sm text-ink-muted whitespace-nowrap">{v.length}</span>
+                    <span className="text-sm text-ink-muted whitespace-nowrap">{v.duration}</span>
+                    {v.ascent && <span className="text-sm text-ink-muted whitespace-nowrap">↑ {v.ascent}</span>}
                     <span className={`text-xs font-medium px-2 py-0.5 rounded-full border ${DIFFICULTY_STYLES[v.difficulty].cls}`}>
                       {DIFFICULTY_STYLES[v.difficulty].label}
                     </span>
-                    {v.note && <span className="w-full text-xs text-gray-500">{v.note}</span>}
+                    {v.note && <span className="w-full text-xs text-ink-soft">{v.note}</span>}
                   </div>
                 ))}
               </div>
-              <p className="text-xs text-gray-400 mt-2">Angaben ca. – je nach Startpunkt und Tempo.</p>
+              <p className="text-xs text-ink-soft mt-2">Angaben ca. – je nach Startpunkt und Tempo.</p>
             </div>
           )}
 
@@ -372,11 +364,11 @@ export default async function BlogPostPage({ params }: Props) {
           {post.trails && post.trails.length > 0 && (
             <div className="mt-12">
               <p className="eyebrow mb-2">Wanderkarte</p>
-              <h2 className="font-serif text-2xl font-bold text-gray-900 mb-1">
+              <h2 className="font-serif text-2xl font-bold text-ink mb-1">
                 {post.trails.length > 1 ? 'Wähle deinen Weg' : 'Der Weg auf der Karte'}
               </h2>
               {post.trails.length > 1 && (
-                <p className="text-sm text-gray-500 mb-4">Tippe auf eine Tour, um den vorgegebenen Wegverlauf zu sehen.</p>
+                <p className="text-sm text-ink-soft mb-4">Tippe auf eine Tour, um den vorgegebenen Wegverlauf zu sehen.</p>
               )}
               <TrailMapWrapper trails={post.trails} />
             </div>
@@ -386,10 +378,10 @@ export default async function BlogPostPage({ params }: Props) {
           {post.category === 'Wandern' && (
             <div className="mt-6 space-y-3">
               <div className="grid sm:grid-cols-2 gap-4">
-                <Link href={mapHref} className="flex items-center justify-center bg-green-700 text-white font-medium text-sm px-5 py-3 hover:bg-green-800 transition-colors" style={{ borderRadius: 6 }}>
+                <Link href={mapHref} className="flex items-center justify-center bg-green-700 text-white font-medium text-sm px-5 py-3 hover:bg-green-800 transition-colors" style={{ borderRadius: 9999 }}>
                   {mapCtaLabel}
                 </Link>
-                <Link href="/routenplaner" className="flex items-center justify-center border border-green-700 text-green-700 font-medium text-sm px-5 py-3 hover:bg-green-50 transition-colors" style={{ borderRadius: 6 }}>
+                <Link href="/routenplaner" className="flex items-center justify-center border border-green-700 text-green-700 font-medium text-sm px-5 py-3 hover:bg-green-50 transition-colors" style={{ borderRadius: 9999 }}>
                   Route planen
                 </Link>
               </div>
@@ -398,8 +390,8 @@ export default async function BlogPostPage({ params }: Props) {
                   href={`https://www.google.com/maps/dir/?api=1&destination=${precise[0]},${precise[1]}`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center justify-center gap-1.5 border border-gray-300 text-gray-700 font-medium text-sm px-5 py-3 hover:bg-gray-50 transition-colors"
-                  style={{ borderRadius: 6 }}
+                  className="flex items-center justify-center gap-1.5 border border-gray-300 text-ink-muted font-medium text-sm px-5 py-3 hover:bg-gray-50 transition-colors"
+                  style={{ borderRadius: 9999 }}
                 >
                   <span aria-hidden>🧭</span> Route in Google Maps öffnen ↗
                 </a>
@@ -415,12 +407,12 @@ export default async function BlogPostPage({ params }: Props) {
           {/* Verwandte Artikel */}
           {related.length > 0 && (
             <div className="mt-12">
-              <h2 className="font-serif text-xl font-bold text-gray-900 mb-4">Das könnte dich auch interessieren</h2>
+              <h2 className="font-serif text-xl font-bold text-ink mb-4">Das könnte dich auch interessieren</h2>
               <div className="grid sm:grid-cols-2 gap-4">
                 {related.map((r) => (
-                  <Link key={r.slug} href={`/blog/${r.slug}`} className="group block border border-gray-200 p-4 hover:border-green-400 hover:shadow-sm transition-all" style={{ borderRadius: 8 }}>
+                  <Link key={r.slug} href={`/blog/${r.slug}`} className="group block border border-hairline p-4 hover:border-green-400 transition-all" style={{ borderRadius: 18 }}>
                     <span className="eyebrow">{r.category}</span>
-                    <h3 className="mt-1.5 text-sm font-semibold text-gray-900 group-hover:text-green-700 leading-snug">{r.title}</h3>
+                    <h3 className="mt-1.5 text-sm font-semibold text-ink group-hover:text-green-700 leading-snug">{r.title}</h3>
                   </Link>
                 ))}
               </div>
@@ -430,15 +422,15 @@ export default async function BlogPostPage({ params }: Props) {
           {/* Themenseiten, auf denen dieser Artikel vorkommt */}
           {themen.length > 0 && (
             <div className="mt-12">
-              <h2 className="font-serif text-xl font-bold text-gray-900 mb-1">Dieses Ziel steht auch auf diesen Listen</h2>
-              <p className="text-sm text-gray-500 mb-4">Passt der Ausflug gerade nicht? Über die Themenseiten findest du Alternativen mit demselben Anspruch.</p>
+              <h2 className="font-serif text-xl font-bold text-ink mb-1">Dieses Ziel steht auch auf diesen Listen</h2>
+              <p className="text-sm text-ink-soft mb-4">Passt der Ausflug gerade nicht? Über die Themenseiten findest du Alternativen mit demselben Anspruch.</p>
               <div className="grid sm:grid-cols-2 gap-3">
                 {themen.map((t) => (
-                  <Link key={t.href} href={t.href} className="group flex items-start gap-3 border border-gray-200 p-4 hover:border-green-400 hover:shadow-sm transition-all" style={{ borderRadius: 8 }}>
+                  <Link key={t.href} href={t.href} className="group flex items-start gap-3 border border-hairline p-4 hover:border-green-400 transition-all" style={{ borderRadius: 18 }}>
                     <span className="shrink-0 mt-2 w-3 h-px bg-green-600 inline-block" />
                     <span>
-                      <span className="block text-sm font-semibold text-gray-900 group-hover:text-green-700 leading-snug">{t.label}</span>
-                      <span className="block mt-0.5 text-xs text-gray-500 leading-snug">{t.note}</span>
+                      <span className="block text-sm font-semibold text-ink group-hover:text-green-700 leading-snug">{t.label}</span>
+                      <span className="block mt-0.5 text-xs text-ink-soft leading-snug">{t.note}</span>
                     </span>
                   </Link>
                 ))}
@@ -460,12 +452,12 @@ export default async function BlogPostPage({ params }: Props) {
         <aside className="space-y-6 lg:sticky lg:top-20 self-start">
           {/* Inhaltsverzeichnis */}
           {headings.length >= 3 && (
-            <nav className="border border-gray-200 p-5" style={{ borderRadius: 8 }} aria-label="Inhaltsverzeichnis">
+            <nav className="border border-hairline p-5" style={{ borderRadius: 18 }} aria-label="Inhaltsverzeichnis">
               <p className="eyebrow mb-3">Inhalt</p>
               <ol className="space-y-1.5 text-sm">
                 {headings.map((h) => (
                   <li key={h.id}>
-                    <a href={`#${h.id}`} className="text-gray-600 hover:text-green-700 transition-colors block leading-snug">
+                    <a href={`#${h.id}`} className="text-ink-muted hover:text-green-700 transition-colors block leading-snug">
                       {h.text}
                     </a>
                   </li>
@@ -475,17 +467,17 @@ export default async function BlogPostPage({ params }: Props) {
           )}
 
           {/* Schnellinfo */}
-          <div className="border border-gray-200 p-5" style={{ borderRadius: 8 }}>
+          <div className="border border-hairline p-5" style={{ borderRadius: 18 }}>
             <p className="eyebrow mb-3">Schnellinfo</p>
             <dl className="space-y-2.5 text-sm">
               <div className="flex justify-between gap-3">
-                <dt className="text-gray-500">Kategorie</dt>
-                <dd className="font-medium text-gray-900">{post.category}</dd>
+                <dt className="text-ink-soft">Kategorie</dt>
+                <dd className="font-medium text-ink">{post.category}</dd>
               </div>
               {post.difficulty && (
                 <div className="flex justify-between gap-3">
-                  <dt className="text-gray-500">Schwierigkeit</dt>
-                  <dd className="font-medium text-gray-900 inline-flex items-center gap-1.5">
+                  <dt className="text-ink-soft">Schwierigkeit</dt>
+                  <dd className="font-medium text-ink inline-flex items-center gap-1.5">
                     <span className={`w-2 h-2 rounded-full ${DIFFICULTY_STYLES[post.difficulty].dot}`} />
                     {DIFFICULTY_STYLES[post.difficulty].label}
                   </dd>
@@ -493,11 +485,11 @@ export default async function BlogPostPage({ params }: Props) {
               )}
               {post.bestSeason && (
                 <div className="flex justify-between gap-3">
-                  <dt className="text-gray-500">Beste Zeit</dt>
-                  <dd className="font-medium text-gray-900 text-right">
+                  <dt className="text-ink-soft">Beste Zeit</dt>
+                  <dd className="font-medium text-ink text-right">
                     {post.bestSeason}
                     {season && (
-                      <span className={`block mt-1.5 text-xs font-medium px-1.5 py-0.5 border ${SEASON_LABEL[season].cls}`} style={{ borderRadius: 3 }}>
+                      <span className={`block mt-1.5 text-xs font-medium px-1.5 py-0.5 border ${SEASON_LABEL[season].cls}`} style={{ borderRadius: 8 }}>
                         {SEASON_LABEL[season].emoji} {SEASON_LABEL[season].label}
                       </span>
                     )}
@@ -505,12 +497,12 @@ export default async function BlogPostPage({ params }: Props) {
                 </div>
               )}
               <div className="flex justify-between gap-3">
-                <dt className="text-gray-500">Lesezeit</dt>
-                <dd className="font-medium text-gray-900">{minutes} Min.</dd>
+                <dt className="text-ink-soft">Lesezeit</dt>
+                <dd className="font-medium text-ink">{minutes} Min.</dd>
               </div>
               <div className="flex justify-between gap-3">
-                <dt className="text-gray-500">Region</dt>
-                <dd className="font-medium text-gray-900">{regionLabel}</dd>
+                <dt className="text-ink-soft">Region</dt>
+                <dd className="font-medium text-ink">{regionLabel}</dd>
               </div>
             </dl>
             <div className="mt-4 pt-4 border-t border-gray-100">
@@ -520,7 +512,7 @@ export default async function BlogPostPage({ params }: Props) {
               <Link
                 href={mapHref}
                 className="mt-3 flex items-center justify-center gap-1.5 w-full text-sm font-medium px-4 py-2.5 border border-green-700 text-green-700 hover:bg-green-50 transition-colors"
-                style={{ borderRadius: 6 }}
+                style={{ borderRadius: 9999 }}
               >
                 <span aria-hidden>📍</span> {precise ? 'Startpunkt auf Karte öffnen' : 'Region auf Karte öffnen'}
               </Link>
@@ -532,46 +524,46 @@ export default async function BlogPostPage({ params }: Props) {
 
           {/* Badewasser-Qualität (AGES) */}
           {badestelle && (
-            <div className="border border-sky-200 p-5" style={{ borderRadius: 8 }}>
+            <div className="border border-sky-200 p-5" style={{ borderRadius: 18 }}>
               <p className="eyebrow mb-1">Badewasser-Qualität</p>
-              <h3 className="font-serif text-base font-bold text-gray-900 leading-snug">{badestelle.name}</h3>
-              <p className="text-xs text-gray-500 mt-0.5">
+              <h3 className="font-serif text-base font-bold text-ink leading-snug">{badestelle.name}</h3>
+              <p className="text-xs text-ink-soft mt-0.5">
                 Offizielle EU-Badestelle{badestelle.km >= 0.5 ? ` · ≈ ${Math.max(1, Math.round(badestelle.km))} km vom Startpunkt` : ''}
               </p>
               {badestelle.gesperrt && (
-                <p className="mt-3 text-sm font-semibold text-red-800 bg-red-50 border border-red-200 px-2.5 py-1.5" style={{ borderRadius: 4 }}>
+                <p className="mt-3 text-sm font-semibold text-red-800 bg-red-50 border border-red-200 px-2.5 py-1.5" style={{ borderRadius: 8 }}>
                   ⚠️ Derzeit gesperrt{badestelle.sperrgrund ? `: ${badestelle.sperrgrund}` : ''}
                 </p>
               )}
               <dl className="mt-3 space-y-2 text-sm">
                 {badestelle.einstufung && einstufung && (
                   <div className="flex justify-between items-center gap-3">
-                    <dt className="text-gray-500">Einstufung {badestelle.einstufung.jahr}</dt>
-                    <dd className={`text-xs font-semibold px-2 py-0.5 border ${EINSTUFUNG_CLS[einstufung.tone]}`} style={{ borderRadius: 3 }}>
+                    <dt className="text-ink-soft">Einstufung {badestelle.einstufung.jahr}</dt>
+                    <dd className={`text-xs font-semibold px-2 py-0.5 border ${EINSTUFUNG_CLS[einstufung.tone]}`} style={{ borderRadius: 8 }}>
                       {einstufung.label}
                     </dd>
                   </div>
                 )}
                 {probe && (
                   <div className="flex justify-between gap-3">
-                    <dt className="text-gray-500">Letzte Probe</dt>
-                    <dd className="font-medium text-gray-900">{probe.datum}</dd>
+                    <dt className="text-ink-soft">Letzte Probe</dt>
+                    <dd className="font-medium text-ink">{probe.datum}</dd>
                   </div>
                 )}
                 {probe && probe.wasser !== null && (
                   <div className="flex justify-between gap-3">
-                    <dt className="text-gray-500">Wasser bei der Probe</dt>
-                    <dd className="font-medium text-gray-900 tabular-nums">{probe.wasser.toLocaleString('de-AT')} °C</dd>
+                    <dt className="text-ink-soft">Wasser bei der Probe</dt>
+                    <dd className="font-medium text-ink tabular-nums">{probe.wasser.toLocaleString('de-AT')} °C</dd>
                   </div>
                 )}
                 {probe && probe.sichttiefe !== null && (
                   <div className="flex justify-between gap-3">
-                    <dt className="text-gray-500">Sichttiefe</dt>
-                    <dd className="font-medium text-gray-900 tabular-nums">{probe.sichttiefe.toLocaleString('de-AT')} m</dd>
+                    <dt className="text-ink-soft">Sichttiefe</dt>
+                    <dd className="font-medium text-ink tabular-nums">{probe.sichttiefe.toLocaleString('de-AT')} m</dd>
                   </div>
                 )}
               </dl>
-              <p className="text-[11px] text-gray-400 mt-3">
+              <p className="text-[11px] text-ink-soft mt-3">
                 Hygiene-Kontrolle nach EU-Badegewässerrichtlinie{probe && badestelle.probenSaison > 0 ? ` (${badestelle.probenSaison} Proben in der Saison ${probe.datum.slice(6)})` : ''}.
                 Quelle: AGES, CC BY 3.0 AT.
               </p>
@@ -580,16 +572,16 @@ export default async function BlogPostPage({ params }: Props) {
 
           {/* Mit Öffis erreichbar / Auto oder Öffis */}
           {oeffi && (
-            <div className="border border-sky-200 bg-sky-50 p-5" style={{ borderRadius: 8 }}>
+            <div className="border border-sky-200 bg-sky-50 p-5" style={{ borderRadius: 18 }}>
               <p className="eyebrow mb-3">{precise && !post.startPoint ? 'Auto oder Öffis?' : 'Mit Öffis erreichbar'}</p>
-              <p className="text-sm text-gray-700 leading-relaxed">🚋 {oeffi}</p>
+              <p className="text-sm text-ink-muted leading-relaxed">🚋 {oeffi}</p>
               {precise && !post.startPoint && (
                 <a
                   href={`https://www.google.com/maps/dir/?api=1&destination=${precise[0]},${precise[1]}`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="mt-3 flex items-center justify-center gap-1.5 w-full text-sm font-medium px-4 py-2.5 border border-sky-300 bg-white text-gray-700 hover:bg-sky-100 transition-colors"
-                  style={{ borderRadius: 6 }}
+                  className="mt-3 flex items-center justify-center gap-1.5 w-full text-sm font-medium px-4 py-2.5 border border-sky-300 bg-white text-ink-muted hover:bg-sky-100 transition-colors"
+                  style={{ borderRadius: 9999 }}
                 >
                   <span aria-hidden>🚗</span> Route für die Anreise mit dem Auto ↗
                 </a>
@@ -602,25 +594,25 @@ export default async function BlogPostPage({ params }: Props) {
 
           {/* Startpunkt & Parken */}
           {post.startPoint && (
-            <div className="border border-sand-200 bg-sand-50 p-5" style={{ borderRadius: 8 }}>
+            <div className="border border-sand-200 bg-sand-50 p-5" style={{ borderRadius: 18 }}>
               <p className="eyebrow mb-3">Startpunkt &amp; Parken</p>
-              <p className="font-semibold text-gray-900 text-sm leading-snug">🅿️ {post.startPoint.name}</p>
+              <p className="font-semibold text-ink text-sm leading-snug">🅿️ {post.startPoint.name}</p>
               <dl className="mt-3 space-y-2 text-sm">
                 {post.startPoint.parking && (
                   <div>
-                    <dt className="text-gray-500 text-xs uppercase tracking-wide">Parken</dt>
-                    <dd className="text-gray-700 mt-0.5">{post.startPoint.parking}</dd>
+                    <dt className="text-ink-soft text-xs uppercase tracking-wide">Parken</dt>
+                    <dd className="text-ink-muted mt-0.5">{post.startPoint.parking}</dd>
                   </div>
                 )}
                 {post.startPoint.arrival && (
                   <div>
-                    <dt className="text-gray-500 text-xs uppercase tracking-wide">Beste Ankunft</dt>
-                    <dd className="text-gray-700 mt-0.5">{post.startPoint.arrival}</dd>
+                    <dt className="text-ink-soft text-xs uppercase tracking-wide">Beste Ankunft</dt>
+                    <dd className="text-ink-muted mt-0.5">{post.startPoint.arrival}</dd>
                   </div>
                 )}
               </dl>
               {post.startPoint.note && (
-                <p className="mt-3 text-xs text-gray-600 border-l-2 border-amber-400 bg-amber-50 px-2.5 py-1.5">
+                <p className="mt-3 text-xs text-ink-muted border-l-2 border-amber-400 bg-amber-50 px-2.5 py-1.5">
                   {post.startPoint.note}
                 </p>
               )}
@@ -630,7 +622,7 @@ export default async function BlogPostPage({ params }: Props) {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="mt-4 flex items-center justify-center gap-1.5 w-full text-sm font-medium px-4 py-2.5 bg-green-700 text-white hover:bg-green-800 transition-colors"
-                  style={{ borderRadius: 6 }}
+                  style={{ borderRadius: 9999 }}
                 >
                   Navigation starten ↗
                 </a>
@@ -640,22 +632,22 @@ export default async function BlogPostPage({ params }: Props) {
 
           {/* Weite Anfahrt: Übernachtung vor Ort statt langem Tagesausflug (Affiliate) */}
           {nearbyStays.length > 0 && (
-            <div className="border border-violet-200 bg-violet-50 p-5" style={{ borderRadius: 8 }}>
+            <div className="border border-violet-200 bg-violet-50 p-5" style={{ borderRadius: 18 }}>
               <p className="eyebrow mb-1">Weite Anfahrt</p>
-              <h3 className="font-serif text-base font-bold text-gray-900 mb-3">Lieber übernachten statt lange pendeln?</h3>
-              <p className="text-sm text-gray-700 leading-relaxed mb-3">
+              <h3 className="font-serif text-base font-bold text-ink mb-3">Lieber übernachten statt lange pendeln?</h3>
+              <p className="text-sm text-ink-muted leading-relaxed mb-3">
                 Von Wien, Graz, Salzburg, Linz, Innsbruck und Klagenfurt aus ist es ein gutes Stück hierher – wer nicht alles an einem Tag hin und zurück fahren will, findet in der Nähe Unterkünfte.
               </p>
               <div className="space-y-2.5">
                 {nearbyStays.map((u) => (
                   <a key={u.id} href={cloak(u.bookingUrl)} target="_blank" rel="noopener noreferrer sponsored"
-                    className="group block border border-violet-200 bg-white px-3 py-2.5 hover:border-violet-400 transition-colors" style={{ borderRadius: 6 }}>
+                    className="group block border border-violet-200 bg-white px-3 py-2.5 hover:border-violet-400 transition-colors" style={{ borderRadius: 9999 }}>
                     <span className="block text-xs font-semibold text-violet-700 uppercase tracking-wide">{u.typ} · {u.see}</span>
-                    <span className="block text-sm font-semibold text-gray-900 group-hover:text-violet-700 leading-snug mt-0.5">{u.name} →</span>
+                    <span className="block text-sm font-semibold text-ink group-hover:text-violet-700 leading-snug mt-0.5">{u.name} →</span>
                   </a>
                 ))}
               </div>
-              <p className="text-[11px] text-gray-400 mt-3">* Affiliate-Links – ohne Mehrkosten für dich.</p>
+              <p className="text-[11px] text-ink-soft mt-3">* Affiliate-Links – ohne Mehrkosten für dich.</p>
               <Link href="/unterkuenfte/basislager" className="mt-2 inline-flex items-center gap-1 text-sm font-medium text-green-700 hover:text-green-800">
                 Beste Ausgangsorte ansehen →
               </Link>
@@ -664,10 +656,10 @@ export default async function BlogPostPage({ params }: Props) {
 
           {/* Basislager: guter Standort für mehrere Tage in der Gegend (Affiliate) */}
           {basisLager && (
-            <div className="border border-violet-200 bg-violet-50 p-5" style={{ borderRadius: 8 }}>
+            <div className="border border-violet-200 bg-violet-50 p-5" style={{ borderRadius: 18 }}>
               <p className="eyebrow mb-1">Mehrere Tage bleiben?</p>
-              <h3 className="font-serif text-base font-bold text-gray-900 mb-2">Basislager {basisLager.lager.stay.ort}</h3>
-              <p className="text-sm text-gray-700 leading-relaxed mb-3">
+              <h3 className="font-serif text-base font-bold text-ink mb-2">Basislager {basisLager.lager.stay.ort}</h3>
+              <p className="text-sm text-ink-muted leading-relaxed mb-3">
                 Rund {Math.max(1, Math.round(basisLager.km))}&nbsp;km Luftlinie von hier – und insgesamt{' '}
                 <strong>{basisLager.lager.ziele.length} unserer Ziele</strong> im Umkreis von {BASISLAGER_RADIUS_KM}&nbsp;km.
                 {basisAndere.length > 0 && ' Zum Beispiel:'}
@@ -676,7 +668,7 @@ export default async function BlogPostPage({ params }: Props) {
                 <ul className="space-y-1 mb-3">
                   {basisAndere.map((z) => (
                     <li key={z.post.slug} className="text-sm leading-snug">
-                      <Link href={`/blog/${z.post.slug}`} className="text-gray-800 hover:text-green-700 hover:underline">
+                      <Link href={`/blog/${z.post.slug}`} className="text-ink hover:text-green-700 hover:underline">
                         {z.post.title}
                       </Link>
                     </li>
@@ -684,11 +676,11 @@ export default async function BlogPostPage({ params }: Props) {
                 </ul>
               )}
               <a href={cloak(basisLager.lager.stay.bookingUrl)} target="_blank" rel="noopener noreferrer sponsored"
-                className="group block border border-violet-200 bg-white px-3 py-2.5 hover:border-violet-400 transition-colors" style={{ borderRadius: 6 }}>
+                className="group block border border-violet-200 bg-white px-3 py-2.5 hover:border-violet-400 transition-colors" style={{ borderRadius: 9999 }}>
                 <span className="block text-xs font-semibold text-violet-700 uppercase tracking-wide">{basisLager.lager.stay.typ} · {basisLager.lager.stay.see}</span>
-                <span className="block text-sm font-semibold text-gray-900 group-hover:text-violet-700 leading-snug mt-0.5">{basisLager.lager.stay.name} →</span>
+                <span className="block text-sm font-semibold text-ink group-hover:text-violet-700 leading-snug mt-0.5">{basisLager.lager.stay.name} →</span>
               </a>
-              <p className="text-[11px] text-gray-400 mt-3">* Affiliate-Link – ohne Mehrkosten für dich. Entfernungen als Luftlinie.</p>
+              <p className="text-[11px] text-ink-soft mt-3">* Affiliate-Link – ohne Mehrkosten für dich. Entfernungen als Luftlinie.</p>
               <Link href={`/unterkuenfte/basislager#${basisLager.lager.stay.region}`} className="mt-2 inline-flex items-center gap-1 text-sm font-medium text-green-700 hover:text-green-800">
                 Alle Basislager in {regionName(basisLager.lager.stay.region)} →
               </Link>
@@ -697,25 +689,25 @@ export default async function BlogPostPage({ params }: Props) {
 
           {/* Erlebnisse & Tickets */}
           {(post.category === 'Ausflug' || post.category === 'Wandern') && (
-            <div className="border border-gray-200 p-5" style={{ borderRadius: 8 }}>
+            <div className="border border-hairline p-5" style={{ borderRadius: 18 }}>
               <p className="eyebrow mb-1">Erlebnisse &amp; Tickets</p>
-              <h3 className="font-serif text-base font-bold text-gray-900 mb-3">Ausflüge in {regionLabel} buchen</h3>
+              <h3 className="font-serif text-base font-bold text-ink mb-3">Ausflüge in {regionLabel} buchen</h3>
               <div className="space-y-2.5">
                 {excursionsFor(post.region).map((ex) => (
                   <a key={ex.url} href={cloak(ex.url)} target="_blank" rel="noopener noreferrer sponsored"
-                    className="group block border border-gray-200 px-3 py-2.5 hover:border-green-400 hover:bg-green-50 transition-colors" style={{ borderRadius: 6 }}>
-                    <span className="block text-sm font-semibold text-gray-900 group-hover:text-green-700 leading-snug">{ex.label} →</span>
-                    <span className="block text-xs text-gray-500 mt-0.5">{ex.note}</span>
+                    className="group block border border-hairline px-3 py-2.5 hover:border-green-400 hover:bg-green-50 transition-colors" style={{ borderRadius: 9999 }}>
+                    <span className="block text-sm font-semibold text-ink group-hover:text-green-700 leading-snug">{ex.label} →</span>
+                    <span className="block text-xs text-ink-soft mt-0.5">{ex.note}</span>
                   </a>
                 ))}
               </div>
-              <p className="text-[11px] text-gray-400 mt-2.5">* Partner-Links (GetYourGuide)</p>
+              <p className="text-[11px] text-ink-soft mt-2.5">* Partner-Links (GetYourGuide)</p>
             </div>
           )}
 
           {/* Empfehlungen */}
           {post.affiliateLinks && post.affiliateLinks.length > 0 && (
-            <div className="border border-green-100 bg-green-50 p-5" style={{ borderRadius: 8 }}>
+            <div className="border border-green-100 bg-green-50 p-5" style={{ borderRadius: 18 }}>
               <p className="eyebrow mb-3">Empfehlungen</p>
               <ul className="space-y-2.5">
                 {post.affiliateLinks.map((link) => (
@@ -727,7 +719,7 @@ export default async function BlogPostPage({ params }: Props) {
                   </li>
                 ))}
               </ul>
-              <p className="text-[11px] text-gray-400 mt-3">* Affiliate-Links – ohne Mehrkosten für dich.</p>
+              <p className="text-[11px] text-ink-soft mt-3">* Affiliate-Links – ohne Mehrkosten für dich.</p>
             </div>
           )}
 
@@ -736,19 +728,19 @@ export default async function BlogPostPage({ params }: Props) {
 
           {/* Offizielle Infos & Quellen (keine Affiliate-Links) */}
           {officialLinks.length > 0 && (
-            <div className="border border-gray-200 p-5" style={{ borderRadius: 8 }}>
+            <div className="border border-hairline p-5" style={{ borderRadius: 18 }}>
               <p className="eyebrow mb-3">Offizielle Infos</p>
               <ul className="space-y-2.5">
                 {officialLinks.map((link) => (
                   <li key={link.url}>
                     <a href={link.url} target="_blank" rel="noopener noreferrer"
-                      className="text-gray-700 hover:text-green-700 text-sm leading-snug block">
+                      className="text-ink-muted hover:text-green-700 text-sm leading-snug block">
                       {link.label} ↗
                     </a>
                   </li>
                 ))}
               </ul>
-              <p className="text-[11px] text-gray-400 mt-3">Aktuelle Öffnungszeiten &amp; Preise bitte auf den offiziellen Seiten prüfen.</p>
+              <p className="text-[11px] text-ink-soft mt-3">Aktuelle Öffnungszeiten &amp; Preise bitte auf den offiziellen Seiten prüfen.</p>
             </div>
           )}
         </aside>

@@ -36,9 +36,9 @@ export default function SaveButton({ slug, title, category }: SavedItem) {
       className={`flex items-center justify-center gap-2 w-full text-sm font-medium px-4 py-2.5 border transition-colors ${
         saved
           ? 'bg-green-700 text-white border-green-700 hover:bg-green-800'
-          : 'border-gray-300 text-gray-700 hover:border-green-600 hover:text-green-700'
+          : 'border-gray-300 text-ink-muted hover:border-green-600 hover:text-green-700'
       }`}
-      style={{ borderRadius: 6 }}
+      style={{ borderRadius: 9999 }}
     >
       <svg width="16" height="16" viewBox="0 0 16 16" fill={saved ? 'currentColor' : 'none'} stroke="currentColor" strokeWidth="1.6">
         <path d="M8 14s-5-3.3-5-7a3 3 0 0 1 5-2.2A3 3 0 0 1 13 7c0 3.7-5 7-5 7z" strokeLinejoin="round" />

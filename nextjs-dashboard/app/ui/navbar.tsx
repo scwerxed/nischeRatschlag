@@ -23,10 +23,10 @@ function Logo({ onClick }: { onClick?: () => void }) {
         </svg>
       </span>
       <span className="leading-none">
-        <span className="block font-serif text-lg font-bold text-gray-900 tracking-tightish">
+        <span className="block font-serif text-lg font-bold text-ink tracking-tightish">
           Bergseen&nbsp;Guide
         </span>
-        <span className="block text-[10px] uppercase tracking-[0.22em] text-gray-400 mt-0.5">
+        <span className="block text-[10px] uppercase tracking-[0.22em] text-ink-soft mt-0.5">
           Österreich · Seen &amp; Berge
         </span>
       </span>
@@ -55,9 +55,9 @@ function SearchForm({ onSubmit }: { onSubmit?: () => void }) {
         onChange={(e) => setQ(e.target.value)}
         placeholder="Suchen…"
         aria-label="Artikel durchsuchen"
-        className="w-full pl-8 pr-3 py-1.5 text-sm border border-gray-300 rounded-md outline-none focus:border-green-500 focus:ring-1 focus:ring-green-500"
+        className="w-full pl-9 pr-4 py-2 text-caption bg-canvas border border-hairline rounded-full outline-none transition-colors focus:border-green-600"
       />
-      <svg className="absolute left-2.5 top-1/2 -translate-y-1/2 text-gray-400" width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.6" aria-hidden>
+      <svg className="absolute left-3 top-1/2 -translate-y-1/2 text-ink-soft" width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.6" aria-hidden>
         <circle cx="7" cy="7" r="5" /><path d="M11 11l3.5 3.5" strokeLinecap="round" />
       </svg>
     </form>
@@ -66,7 +66,7 @@ function SearchForm({ onSubmit }: { onSubmit?: () => void }) {
 
 function Heart({ count }: { count: number }) {
   return (
-    <Link href="/merkliste" aria-label={`Merkliste (${count})`} className="relative text-gray-500 hover:text-green-700 transition-colors">
+    <Link href="/merkliste" aria-label={`Merkliste (${count})`} className="relative text-ink-soft hover:text-green-700 transition-colors">
       <svg width="22" height="22" viewBox="0 0 16 16" fill={count > 0 ? 'currentColor' : 'none'} stroke="currentColor" strokeWidth="1.5">
         <path d="M8 14s-5-3.3-5-7a3 3 0 0 1 5-2.2A3 3 0 0 1 13 7c0 3.7-5 7-5 7z" strokeLinejoin="round" />
       </svg>
@@ -110,7 +110,7 @@ export default function Navbar() {
     href === '/' ? pathname === '/' : pathname.startsWith(href);
 
   return (
-    <nav className="sticky top-0 z-[1200] bg-white/90 backdrop-blur border-b border-gray-200">
+    <nav className="sticky top-0 z-[1200] bg-white/90 backdrop-blur border-b border-hairline">
       <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
         <Logo />
 
@@ -121,7 +121,7 @@ export default function Navbar() {
           </div>
 
           {/* Desktop-Navigation */}
-          <div className="hidden md:flex items-center gap-6 text-sm text-gray-600">
+          <div className="hidden md:flex items-center gap-6 text-sm text-ink-muted">
             {LINKS.map((l) => (
               <Link
                 key={l.href}
@@ -147,9 +147,9 @@ export default function Navbar() {
             aria-label={open ? 'Menü schließen' : 'Menü öffnen'}
             aria-expanded={open}
           >
-            <span className={`block w-6 h-0.5 bg-gray-800 transition-all duration-300 ${open ? 'translate-y-[7px] rotate-45' : ''}`} />
+            <span className={`block w-6 h-0.5 bg-ink transition-all duration-300 ${open ? 'translate-y-[7px] rotate-45' : ''}`} />
             <span className={`block w-6 h-0.5 bg-gray-800 my-1.5 transition-all duration-300 ${open ? 'opacity-0' : ''}`} />
-            <span className={`block w-6 h-0.5 bg-gray-800 transition-all duration-300 ${open ? '-translate-y-[7px] -rotate-45' : ''}`} />
+            <span className={`block w-6 h-0.5 bg-ink transition-all duration-300 ${open ? '-translate-y-[7px] -rotate-45' : ''}`} />
           </button>
         </div>
       </div>
@@ -163,18 +163,18 @@ export default function Navbar() {
         <div className="px-6 pt-5 pb-1">
           <SearchForm onSubmit={() => setOpen(false)} />
         </div>
-        <div className="flex flex-col px-6 py-4 divide-y divide-gray-100">
+        <div className="flex flex-col px-6 py-4 divide-y divide-hairline">
           {[...LINKS, { href: '/merkliste', label: 'Merkliste' }, { href: '/kontakt', label: 'Kontakt' }].map((l) => (
             <Link
               key={l.href}
               href={l.href}
               onClick={() => setOpen(false)}
               className={`flex items-center justify-between py-4 font-serif text-xl ${
-                isActive(l.href) ? 'text-green-700 font-bold' : 'text-gray-800'
+                isActive(l.href) ? 'text-green-700 font-bold' : 'text-ink'
               }`}
             >
               {l.label}
-              <span className="text-gray-300 text-base">→</span>
+              <span className="text-ink-soft text-base">→</span>
             </Link>
           ))}
         </div>
@@ -183,8 +183,8 @@ export default function Navbar() {
           <Link
             href="/karte"
             onClick={() => setOpen(false)}
-            className="block w-full text-center bg-green-700 text-white font-semibold py-3 hover:bg-green-800 transition-colors"
-            style={{ borderRadius: 4 }}
+            className="btn-primary w-full"
+            style={{ borderRadius: 8 }}
           >
             Wanderkarte öffnen
           </Link>

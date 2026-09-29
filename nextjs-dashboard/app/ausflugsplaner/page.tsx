@@ -94,8 +94,8 @@ export default function AusflugsplanerPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
       <p className="eyebrow mb-2">Übersicht</p>
-      <h1 className="font-serif text-4xl font-bold mb-3 text-gray-900">Der Ausflugsplaner</h1>
-      <p className="text-gray-500 max-w-2xl mb-12 leading-relaxed">
+      <h1 className="font-serif text-4xl font-bold mb-3 text-ink">Der Ausflugsplaner</h1>
+      <p className="text-ink-soft max-w-2xl mb-12 leading-relaxed">
         Statt durch alle Artikel zu scrollen: Hier sind alle Themenseiten des Bergseen Guide an
         einem Ort – sortiert nach Wetter, Zeitfenster, Monat, Anreise oder Badesee. Einfach das
         passende Kriterium wählen und direkt zu den kuratierten Zielen springen.
@@ -103,18 +103,18 @@ export default function AusflugsplanerPage() {
 
       {GROUPS.map((g) => (
         <section key={g.title} className="mb-12">
-          <h2 className="font-serif text-2xl font-bold mb-1 text-gray-900">{g.title}</h2>
-          <p className="text-sm text-gray-500 mb-5 max-w-2xl">{g.note}</p>
+          <h2 className="font-serif text-2xl font-bold mb-1 text-ink">{g.title}</h2>
+          <p className="text-sm text-ink-soft mb-5 max-w-2xl">{g.note}</p>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {g.items.map((item) => (
               <Link
                 key={item.href}
                 href={item.href}
-                className="group block border border-gray-200 p-5 hover:border-green-400 hover:shadow-md transition-all"
-                style={{ borderRadius: 8 }}
+                className="group block border border-hairline p-5 hover:border-green-400 transition-all"
+                style={{ borderRadius: 18 }}
               >
-                <h3 className="font-serif text-lg font-bold text-gray-900 group-hover:text-green-700">{item.title}</h3>
-                <p className="text-sm text-gray-600 mt-1.5 leading-relaxed">{item.desc}</p>
+                <h3 className="font-serif text-lg font-bold text-ink group-hover:text-green-700">{item.title}</h3>
+                <p className="text-sm text-ink-muted mt-1.5 leading-relaxed">{item.desc}</p>
                 <span className="mt-3 inline-block text-sm font-medium text-green-700">Ansehen →</span>
               </Link>
             ))}
@@ -123,10 +123,10 @@ export default function AusflugsplanerPage() {
       ))}
 
       <div className="mt-4 flex flex-wrap gap-3">
-        <Link href="/blog" className="inline-block bg-green-700 text-white text-sm font-semibold px-5 py-2.5 hover:bg-green-800 transition-colors" style={{ borderRadius: 6 }}>
+        <Link href="/blog" className="inline-block bg-green-700 text-white text-sm font-semibold px-5 py-2.5 hover:bg-green-800 transition-colors" style={{ borderRadius: 9999 }}>
           Alle Artikel im Magazin
         </Link>
-        <Link href="/#regionen" className="inline-block border border-green-700 text-green-700 text-sm font-semibold px-5 py-2.5 hover:bg-green-50 transition-colors" style={{ borderRadius: 6 }}>
+        <Link href="/#regionen" className="inline-block border border-green-700 text-green-700 text-sm font-semibold px-5 py-2.5 hover:bg-green-50 transition-colors" style={{ borderRadius: 9999 }}>
           Nach Bundesland stöbern
         </Link>
       </div>

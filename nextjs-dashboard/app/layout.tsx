@@ -96,7 +96,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           crossOrigin="anonymous"
         />
       </head>
-      <body className="font-sans antialiased bg-white text-gray-900">
+      <body className="font-sans antialiased bg-white text-ink">
         {/* Globales Schema: Organization + WebSite (Sitelinks Searchbox) */}
         <script
           type="application/ld+json"

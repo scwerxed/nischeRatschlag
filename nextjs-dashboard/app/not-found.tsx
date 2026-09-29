@@ -19,10 +19,10 @@ export default function NotFound() {
       </div>
 
       <p className="font-serif text-7xl font-bold text-green-700 mb-2">404</p>
-      <h1 className="font-serif text-2xl font-bold text-gray-900 mt-2 mb-3">
+      <h1 className="font-serif text-2xl font-bold text-ink mt-2 mb-3">
         Diese Seite gibt es (noch) nicht
       </h1>
-      <p className="text-gray-500 mb-8 leading-relaxed">
+      <p className="text-ink-soft mb-8 leading-relaxed">
         Vielleicht wurde sie verschoben oder du hast dich vertippt. Kein Problem –
         hier geht&apos;s zurück ins Magazin oder direkt zu deiner Region.
       </p>
@@ -30,22 +30,22 @@ export default function NotFound() {
       <div className="flex flex-wrap justify-center gap-3">
         <Link
           href="/"
-          className="inline-block bg-green-700 text-white text-sm font-semibold px-6 py-3 hover:bg-green-800 hover:shadow-lg transition-all"
-          style={{ borderRadius: 6 }}
+          className="inline-block bg-green-700 text-white text-sm font-semibold px-6 py-3 hover:bg-green-800 transition-all"
+          style={{ borderRadius: 9999 }}
         >
           Zur Startseite
         </Link>
         <Link
           href="/blog"
-          className="inline-block border border-gray-300 text-gray-700 text-sm font-semibold px-6 py-3 hover:border-green-600 hover:text-green-700 transition-all"
-          style={{ borderRadius: 6 }}
+          className="inline-block border border-gray-300 text-ink-muted text-sm font-semibold px-6 py-3 hover:border-green-600 hover:text-green-700 transition-all"
+          style={{ borderRadius: 9999 }}
         >
           Zum Magazin
         </Link>
         <Link
           href="/#regionen"
-          className="inline-block border border-gray-300 text-gray-700 text-sm font-semibold px-6 py-3 hover:border-green-600 hover:text-green-700 transition-all"
-          style={{ borderRadius: 6 }}
+          className="inline-block border border-gray-300 text-ink-muted text-sm font-semibold px-6 py-3 hover:border-green-600 hover:text-green-700 transition-all"
+          style={{ borderRadius: 9999 }}
         >
           Regionen
         </Link>

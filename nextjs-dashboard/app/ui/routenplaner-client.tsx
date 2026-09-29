@@ -230,15 +230,15 @@ export default function RoutenplanerClient() {
 
       {/* ── Left sidebar ─────────────────────────────────────────────────── */}
       <div className="xl:w-64 shrink-0 space-y-4">
-        <div className="bg-white border border-gray-200 rounded-xl p-4">
-          <h2 className="font-semibold text-gray-800 mb-1">Wegpunkte</h2>
-          <p className="text-xs text-gray-400 mb-3">
+        <div className="bg-white border border-hairline rounded-xl p-4">
+          <h2 className="font-semibold text-ink mb-1">Wegpunkte</h2>
+          <p className="text-xs text-ink-soft mb-3">
             Auf die Karte klicken um Punkte zu setzen (max. {MAX_WAYPOINTS})
           </p>
 
           {waypoints.length === 0 ? (
-            <div className="bg-gray-50 border border-gray-200 p-3" style={{ borderRadius: 4 }}>
-              <p className="text-xs text-gray-600 leading-relaxed">
+            <div className="bg-gray-50 border border-hairline p-3" style={{ borderRadius: 8 }}>
+              <p className="text-xs text-ink-muted leading-relaxed">
                 Klicke auf die Karte um den ersten Wegpunkt zu setzen.
               </p>
             </div>
@@ -249,7 +249,7 @@ export default function RoutenplanerClient() {
                   <span className={`w-6 h-6 rounded-full flex items-center justify-center text-white text-xs font-bold shrink-0 ${
                     i === 0 ? 'bg-green-700' : i === waypoints.length - 1 ? 'bg-red-700' : 'bg-blue-700'
                   }`}>{i + 1}</span>
-                  <span className="text-gray-600 truncate flex-1">{wp.label}</span>
+                  <span className="text-ink-muted truncate flex-1">{wp.label}</span>
                   <button onClick={() => removeWaypoint(i)} className="text-gray-300 hover:text-red-500 text-lg leading-none" aria-label="Entfernen">×</button>
                 </li>
               ))}
@@ -257,7 +257,7 @@ export default function RoutenplanerClient() {
           )}
 
           {waypoints.length === 1 && (
-            <p className="mt-3 text-xs text-gray-400">
+            <p className="mt-3 text-xs text-ink-soft">
               Noch einen Punkt auf der Karte setzen um die Route zu berechnen.
             </p>
           )}
@@ -294,15 +294,15 @@ export default function RoutenplanerClient() {
         </div>
 
         {savedRoutes.length > 0 && (
-          <div className="bg-white border border-gray-200 rounded-xl p-4">
-            <h2 className="font-semibold text-gray-800 mb-3">Gespeicherte Routen</h2>
+          <div className="bg-white border border-hairline rounded-xl p-4">
+            <h2 className="font-semibold text-ink mb-3">Gespeicherte Routen</h2>
             <ul className="space-y-2">
               {savedRoutes.map((route) => (
                 <li key={route.id} className="border border-gray-100 rounded-lg p-2.5">
                   <div className="flex items-start justify-between gap-2">
                     <div className="min-w-0">
-                      <p className="text-sm font-medium text-gray-800 truncate">{route.name}</p>
-                      <p className="text-xs text-gray-400">{route.date} · {route.waypoints.length} Punkte</p>
+                      <p className="text-sm font-medium text-ink truncate">{route.name}</p>
+                      <p className="text-xs text-ink-soft">{route.date} · {route.waypoints.length} Punkte</p>
                     </div>
                     <button onClick={() => handleDelete(route.id)} className="text-gray-300 hover:text-red-500 text-lg leading-none shrink-0">×</button>
                   </div>
@@ -317,7 +317,7 @@ export default function RoutenplanerClient() {
       </div>
 
       {/* ── Map ──────────────────────────────────────────────────────────── */}
-      <div className="relative flex-1 rounded-xl overflow-hidden border border-gray-200 shadow-sm min-h-[520px]">
+      <div className="relative flex-1 rounded-xl overflow-hidden border border-hairline min-h-[520px]">
         <div
           ref={containerRef}
           style={{ height: 520, cursor: waypoints.length < MAX_WAYPOINTS ? 'crosshair' : 'default' }}
@@ -325,7 +325,7 @@ export default function RoutenplanerClient() {
         {/* Floating hint – only before first waypoint */}
         {waypoints.length === 0 && (
           <div className="pointer-events-none absolute inset-0 flex items-center justify-center z-[1000]">
-            <div className="bg-white/90 backdrop-blur border border-gray-300 px-5 py-2.5 text-sm text-gray-600 tracking-wide" style={{ borderRadius: 3 }}>
+            <div className="bg-white/90 backdrop-blur border border-gray-300 px-5 py-2.5 text-sm text-ink-muted tracking-wide" style={{ borderRadius: 8 }}>
               Auf die Karte klicken — Wegpunkte setzen
             </div>
           </div>
@@ -336,7 +336,7 @@ export default function RoutenplanerClient() {
       <div className="xl:w-72 shrink-0 space-y-4">
 
         {loading && (
-          <div className="bg-white border border-gray-200 rounded-xl p-5 flex items-center gap-3 text-sm text-gray-500">
+          <div className="bg-white border border-hairline rounded-xl p-5 flex items-center gap-3 text-sm text-ink-soft">
             <svg className="animate-spin h-4 w-4 text-green-600 shrink-0" fill="none" viewBox="0 0 24 24">
               <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" />
               <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v8z" />
@@ -353,7 +353,7 @@ export default function RoutenplanerClient() {
 
         {routeInfo && !loading && (
           <>
-            <div className="bg-white border border-gray-200 p-5" style={{ borderRadius: 4 }}>
+            <div className="bg-white border border-hairline p-5" style={{ borderRadius: 8 }}>
               <p className="eyebrow mb-4">Routendetails</p>
               <div className="grid grid-cols-2 gap-px bg-gray-200">
                 {[
@@ -363,20 +363,20 @@ export default function RoutenplanerClient() {
                   { v: `↓ ${routeInfo.descent} m`,                     l: 'Abstieg' },
                 ].map((s) => (
                   <div key={s.l} className="bg-white px-3 py-3 text-center">
-                    <p className="font-serif text-lg font-bold text-gray-900 leading-none">{s.v}</p>
-                    <p className="text-xs text-gray-500 mt-1 uppercase tracking-wider">{s.l}</p>
+                    <p className="font-serif text-lg font-bold text-ink leading-none">{s.v}</p>
+                    <p className="text-xs text-ink-soft mt-1 uppercase tracking-wider">{s.l}</p>
                   </div>
                 ))}
               </div>
             </div>
 
             {routeInfo.elevations.length > 2 && (
-              <div className="bg-white border border-gray-200 p-5" style={{ borderRadius: 4 }}>
+              <div className="bg-white border border-hairline p-5" style={{ borderRadius: 8 }}>
                 <p className="eyebrow mb-3">Höhenprofil</p>
                 <ElevationProfile elevations={routeInfo.elevations} />
                 <div className="flex justify-between mt-1">
-                  <span className="text-xs text-gray-400">Start</span>
-                  <span className="text-xs text-gray-400">Ziel</span>
+                  <span className="text-xs text-ink-soft">Start</span>
+                  <span className="text-xs text-ink-soft">Ziel</span>
                 </div>
               </div>
             )}
@@ -384,31 +384,31 @@ export default function RoutenplanerClient() {
             {(() => {
               const diff = difficultyFromRoute(routeInfo.distance / 1000, routeInfo.ascent);
               return (
-                <div className="bg-white border border-gray-200 p-5" style={{ borderRadius: 4 }}>
+                <div className="bg-white border border-hairline p-5" style={{ borderRadius: 8 }}>
                   <p className="eyebrow mb-3">Einschätzung</p>
-                  <span className={`inline-flex items-center gap-2 px-3 py-1.5 border text-xs font-semibold ${diff.color}`} style={{ borderRadius: 3 }}>
+                  <span className={`inline-flex items-center gap-2 px-3 py-1.5 border text-xs font-semibold ${diff.color}`} style={{ borderRadius: 8 }}>
                     <span className={`w-2 h-2 rounded-full shrink-0 ${
                       diff.label === 'Leicht' ? 'bg-green-500' : diff.label === 'Mittel' ? 'bg-yellow-400' : 'bg-red-500'
                     }`} />
                     {diff.label}
                   </span>
-                  <p className="text-xs text-gray-400 mt-2 leading-relaxed">
+                  <p className="text-xs text-ink-soft mt-2 leading-relaxed">
                     {(routeInfo.distance / 1000).toFixed(1)} km &middot; {routeInfo.ascent} m Aufstieg
                   </p>
                 </div>
               );
             })()}
 
-            <p className="text-xs text-gray-400 text-center">
-              Routing: <a href="https://brouter.de" target="_blank" rel="noopener noreferrer" className="underline hover:text-gray-600">BRouter</a> &middot; Wanderprofil
+            <p className="text-xs text-ink-soft text-center">
+              Routing: <a href="https://brouter.de" target="_blank" rel="noopener noreferrer" className="underline hover:text-ink-muted">BRouter</a> &middot; Wanderprofil
             </p>
           </>
         )}
 
         {!routeInfo && !loading && !routeError && (
-          <div className="border border-gray-200 p-6 text-center" style={{ borderRadius: 4 }}>
-            <p className="text-sm font-semibold text-gray-700 mb-1">Noch keine Route</p>
-            <p className="text-xs text-gray-400 leading-relaxed">
+          <div className="border border-hairline p-6 text-center" style={{ borderRadius: 8 }}>
+            <p className="text-sm font-semibold text-ink-muted mb-1">Noch keine Route</p>
+            <p className="text-xs text-ink-soft leading-relaxed">
               Mindestens 2 Punkte auf der Karte setzen — Distanz, Gehzeit und Höhenprofil erscheinen hier.
             </p>
           </div>

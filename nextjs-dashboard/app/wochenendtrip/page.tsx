@@ -32,8 +32,8 @@ export default function WochenendtripHub() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
       <p className="eyebrow mb-2">Wochenendtrips</p>
-      <h1 className="font-serif text-4xl font-bold mb-3 text-gray-900">Ausflüge nach Startstadt</h1>
-      <p className="text-gray-500 max-w-2xl mb-10 leading-relaxed">
+      <h1 className="font-serif text-4xl font-bold mb-3 text-ink">Ausflüge nach Startstadt</h1>
+      <p className="text-ink-soft max-w-2xl mb-10 leading-relaxed">
         Wähle deine Startstadt – wir bündeln die schönsten Ausflugsziele Österreichs nach Fahrzeit,
         von „unter 1 Stunde“ bis zum Wochenendtrip. Ideal, um spontan das passende Ziel zu finden.
       </p>
@@ -46,16 +46,16 @@ export default function WochenendtripHub() {
             <Link
               key={city.slug}
               href={`/wochenendtrip/${city.slug}`}
-              className="group block border border-gray-200 overflow-hidden hover:border-green-400 hover:shadow-lg transition-all"
-              style={{ borderRadius: 8 }}
+              className="group block border border-hairline overflow-hidden hover:border-green-400 transition-all"
+              style={{ borderRadius: 18 }}
             >
               <div className={`h-2 bg-gradient-to-r ${accent}`} />
               <div className="p-6">
                 <p className="eyebrow mb-1.5">Ab {city.name}</p>
-                <h2 className="font-serif text-xl font-bold text-gray-900 group-hover:text-green-700">
+                <h2 className="font-serif text-xl font-bold text-ink group-hover:text-green-700">
                   Wochenendtrip ab {city.name}
                 </h2>
-                <p className="text-sm text-gray-500 mt-1.5">{count} Ausflugsziele nach Fahrzeit sortiert</p>
+                <p className="text-sm text-ink-soft mt-1.5">{count} Ausflugsziele nach Fahrzeit sortiert</p>
                 <span className="mt-4 inline-block text-sm font-medium text-green-700 group-hover:text-green-600">
                   Ziele ansehen →
                 </span>

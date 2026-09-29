@@ -118,10 +118,10 @@ export default function TrailMapClient({ trails }: { trails: Trail[] }) {
   const t = trails[selected];
 
   return (
-    <div className="border border-gray-200 overflow-hidden" style={{ borderRadius: 4 }}>
+    <div className="border border-hairline overflow-hidden" style={{ borderRadius: 8 }}>
       {/* Trail-Auswahl */}
       {trails.length > 1 && (
-        <div className="flex gap-1.5 p-2 bg-gray-50 border-b border-gray-200 overflow-x-auto">
+        <div className="flex gap-1.5 p-2 bg-gray-50 border-b border-hairline overflow-x-auto">
           {trails.map((tr, i) => (
             <button
               key={i}
@@ -129,9 +129,9 @@ export default function TrailMapClient({ trails }: { trails: Trail[] }) {
               className={`shrink-0 text-xs font-medium px-3 py-1.5 transition-colors ${
                 i === selected
                   ? 'bg-green-700 text-white'
-                  : 'bg-white text-gray-600 border border-gray-200 hover:border-green-400'
+                  : 'bg-white text-ink-muted border border-hairline hover:border-green-400'
               }`}
-              style={{ borderRadius: 3 }}
+              style={{ borderRadius: 8 }}
             >
               {tr.name}
             </button>
@@ -143,7 +143,7 @@ export default function TrailMapClient({ trails }: { trails: Trail[] }) {
       <div className="relative">
         <div ref={containerRef} style={{ height: 380 }} />
         {loading && (
-          <div className="absolute top-2 left-2 z-[1000] bg-white/90 border border-gray-200 px-2.5 py-1 text-xs text-gray-600 flex items-center gap-1.5" style={{ borderRadius: 3 }}>
+          <div className="absolute top-2 left-2 z-[1000] bg-white/90 border border-hairline px-2.5 py-1 text-xs text-ink-muted flex items-center gap-1.5" style={{ borderRadius: 8 }}>
             <span className="w-2.5 h-2.5 border border-gray-300 border-t-green-600 rounded-full animate-spin" />
             Wegverlauf wird geladen…
           </div>
@@ -151,20 +151,20 @@ export default function TrailMapClient({ trails }: { trails: Trail[] }) {
       </div>
 
       {/* Stats-Leiste */}
-      <div className="flex flex-wrap items-center gap-x-5 gap-y-1.5 px-4 py-3 bg-white border-t border-gray-200">
+      <div className="flex flex-wrap items-center gap-x-5 gap-y-1.5 px-4 py-3 bg-white border-t border-hairline">
         <span className={`text-xs font-semibold px-2 py-0.5 rounded ${DIFF[t.difficulty].cls}`}>
           {DIFF[t.difficulty].label}
         </span>
-        <span className="text-sm text-gray-700 font-medium">{t.name}</span>
-        <span className="flex items-center gap-1 text-sm text-gray-500">
-          <span className="text-gray-400">↔</span> {t.length}
+        <span className="text-sm text-ink-muted font-medium">{t.name}</span>
+        <span className="flex items-center gap-1 text-sm text-ink-soft">
+          <span className="text-ink-soft">↔</span> {t.length}
         </span>
-        <span className="flex items-center gap-1 text-sm text-gray-500">
-          <span className="text-gray-400">⏱</span> {t.duration}
+        <span className="flex items-center gap-1 text-sm text-ink-soft">
+          <span className="text-ink-soft">⏱</span> {t.duration}
         </span>
         {t.ascent && (
-          <span className="flex items-center gap-1 text-sm text-gray-500">
-            <span className="text-gray-400">↑</span> {t.ascent}
+          <span className="flex items-center gap-1 text-sm text-ink-soft">
+            <span className="text-ink-soft">↑</span> {t.ascent}
           </span>
         )}
       </div>

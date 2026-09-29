@@ -60,7 +60,7 @@ export default function Seewetter() {
   const swim = isSwimSeason();
 
   return (
-    <div className="border border-gray-200 overflow-hidden h-full flex flex-col" style={{ borderRadius: 10 }}>
+    <div className="border border-hairline overflow-hidden h-full flex flex-col" style={{ borderRadius: 18 }}>
       <div className="bg-green-800 text-white px-5 py-4 flex items-baseline justify-between">
         <div>
           <h3 className="font-serif text-lg font-bold flex items-center gap-2">
@@ -86,17 +86,17 @@ export default function Seewetter() {
             className="flex items-center justify-between px-5 py-3 hover:bg-green-50/50 transition-colors"
             style={{ animationDelay: `${i * 50}ms` }}
           >
-            <span className="text-sm font-medium text-gray-700">{row.name}</span>
+            <span className="text-sm font-medium text-ink-muted">{row.name}</span>
             <div className="flex items-center gap-4 text-sm">
-              <span className="text-gray-500 tabular-nums">
+              <span className="text-ink-soft tabular-nums">
                 {loading ? (
-                  <span className="inline-block w-12 h-4 bg-gray-100 animate-pulse" style={{ borderRadius: 3 }} />
+                  <span className="inline-block w-12 h-4 bg-gray-100 animate-pulse" style={{ borderRadius: 8 }} />
                 ) : row.air !== null ? `${row.air} °C Luft` : '—'}
               </span>
               {(swim || row.liveWater) && (
                 <span
                   className="font-semibold text-green-800 bg-green-50 border border-green-200 px-2 py-0.5 text-xs tabular-nums inline-flex items-center gap-1"
-                  style={{ borderRadius: 3 }}
+                  style={{ borderRadius: 8 }}
                   title={row.liveWater ? 'Offizieller Live-Messwert des Hydrographischen Diensts' : row.water !== null ? 'Saisonaler Richtwert' : 'Derzeit kein Messwert'}
                 >
                   {row.water !== null ? `${row.water.toLocaleString('de-AT')} °C Wasser` : '— Wasser'}
@@ -107,7 +107,7 @@ export default function Seewetter() {
           </div>
         ))}
       </div>
-      <p className="text-[11px] text-gray-400 px-5 py-2.5 bg-gray-50 border-t border-gray-100 flex items-center gap-1.5">
+      <p className="text-[11px] text-ink-soft px-5 py-2.5 bg-gray-50 border-t border-gray-100 flex items-center gap-1.5">
         <svg width="10" height="10" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.5" className="text-gray-300 shrink-0">
           <circle cx="8" cy="8" r="6" />
           <path d="M8 5v4" strokeLinecap="round" />

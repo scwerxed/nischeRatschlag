@@ -244,7 +244,7 @@ export default function MapClient() {
   return (
     <div
       className="relative border border-gray-300 overflow-hidden"
-      style={{ borderRadius: 3, minHeight: 560 }}
+      style={{ borderRadius: 8, minHeight: 560 }}
     >
       {/* Error */}
       {error && (
@@ -260,18 +260,18 @@ export default function MapClient() {
       {mapReady && (
         <div
           className="absolute top-2 right-2 z-[1000] bg-white border border-gray-300 select-none"
-          style={{ borderRadius: 3, minWidth: 176, boxShadow: '0 1px 4px rgba(0,0,0,.12)' }}
+          style={{ borderRadius: 8, minWidth: 176, boxShadow: '0 1px 4px rgba(0,0,0,.12)' }}
         >
           {/* Basiskarte */}
           <div className="px-3 pt-2.5 pb-1.5">
-            <p className="text-[10px] font-semibold text-gray-400 uppercase tracking-widest mb-2">
+            <p className="text-[10px] font-semibold text-ink-soft uppercase tracking-widest mb-2">
               Karte
             </p>
             {(['osm', 'topo'] as const).map((id) => (
               <button
                 key={id}
                 onClick={() => switchBase(id)}
-                className="flex items-center gap-2 w-full py-1 text-left hover:text-gray-900 transition-colors"
+                className="flex items-center gap-2 w-full py-1 text-left hover:text-ink transition-colors"
               >
                 <span
                   className={`w-3.5 h-3.5 rounded-full border-2 flex items-center justify-center shrink-0 ${
@@ -282,31 +282,31 @@ export default function MapClient() {
                     <span className="w-1.5 h-1.5 rounded-full bg-green-600 block" />
                   )}
                 </span>
-                <span className={`text-sm ${baseLayer === id ? 'text-gray-800 font-medium' : 'text-gray-500'}`}>
+                <span className={`text-sm ${baseLayer === id ? 'text-ink font-medium' : 'text-ink-soft'}`}>
                   {id === 'osm' ? 'Standard' : 'Topografisch'}
                 </span>
               </button>
             ))}
           </div>
 
-          <div className="border-t border-gray-200" />
+          <div className="border-t border-hairline" />
 
           {/* Ebenen */}
           <div className="px-3 pt-2 pb-2.5">
-            <p className="text-[10px] font-semibold text-gray-400 uppercase tracking-widest mb-2">
+            <p className="text-[10px] font-semibold text-ink-soft uppercase tracking-widest mb-2">
               Ebenen
             </p>
 
             {/* Wanderwege */}
             <button
               onClick={toggleTrails}
-              className="flex items-center gap-2 w-full py-1 text-left hover:text-gray-900 transition-colors"
+              className="flex items-center gap-2 w-full py-1 text-left hover:text-ink transition-colors"
             >
               <span
                 className={`w-3.5 h-3.5 border flex items-center justify-center shrink-0 transition-colors ${
                   showTrails ? 'bg-green-600 border-green-600' : 'border-gray-300'
                 }`}
-                style={{ borderRadius: 2 }}
+                style={{ borderRadius: 8 }}
               >
                 {showTrails && <Checkmark />}
               </span>
@@ -315,7 +315,7 @@ export default function MapClient() {
                 <svg width="20" height="8" viewBox="0 0 20 8">
                   <path d="M1 4 H6 M9 4 H14 M17 4 H20" stroke="#f97316" strokeWidth="2.5" strokeLinecap="round" />
                 </svg>
-                <span className={`text-sm ${showTrails ? 'text-gray-800' : 'text-gray-400'}`}>
+                <span className={`text-sm ${showTrails ? 'text-ink' : 'text-ink-soft'}`}>
                   Wanderwege
                 </span>
               </span>
@@ -324,13 +324,13 @@ export default function MapClient() {
             {/* Gipfel */}
             <button
               onClick={togglePeaks}
-              className="flex items-center gap-2 w-full py-1 text-left hover:text-gray-900 transition-colors mt-0.5"
+              className="flex items-center gap-2 w-full py-1 text-left hover:text-ink transition-colors mt-0.5"
             >
               <span
                 className={`w-3.5 h-3.5 border flex items-center justify-center shrink-0 transition-colors ${
                   showPeaks ? 'bg-green-600 border-green-600' : 'border-gray-300'
                 }`}
-                style={{ borderRadius: 2 }}
+                style={{ borderRadius: 8 }}
               >
                 {showPeaks && <Checkmark />}
               </span>
@@ -339,10 +339,10 @@ export default function MapClient() {
                 <svg width="10" height="10" viewBox="0 0 10 10">
                   <circle cx="5" cy="5" r="4" fill="#16a34a" stroke="#14532d" strokeWidth="1" />
                 </svg>
-                <span className={`text-sm ${showPeaks ? 'text-gray-800' : 'text-gray-400'}`}>
+                <span className={`text-sm ${showPeaks ? 'text-ink' : 'text-ink-soft'}`}>
                   Gipfel
                   {showPeaks && zoom >= MIN_ZOOM_PEAKS && visibleCount > 0 && (
-                    <span className="ml-1 text-xs text-gray-400">({visibleCount})</span>
+                    <span className="ml-1 text-xs text-ink-soft">({visibleCount})</span>
                   )}
                 </span>
               </span>
@@ -350,7 +350,7 @@ export default function MapClient() {
 
             {/* Hint if peaks are on but zoom is too low */}
             {showPeaks && zoom < MIN_ZOOM_PEAKS && (
-              <p className="text-[11px] text-gray-400 mt-1.5 pl-5 leading-tight">
+              <p className="text-[11px] text-ink-soft mt-1.5 pl-5 leading-tight">
                 Weiter reinzoomen um<br />Gipfel anzuzeigen
               </p>
             )}
@@ -358,13 +358,13 @@ export default function MapClient() {
             {/* Unterkünfte */}
             <button
               onClick={toggleStays}
-              className="flex items-center gap-2 w-full py-1 text-left hover:text-gray-900 transition-colors mt-0.5"
+              className="flex items-center gap-2 w-full py-1 text-left hover:text-ink transition-colors mt-0.5"
             >
               <span
                 className={`w-3.5 h-3.5 border flex items-center justify-center shrink-0 transition-colors ${
                   showStays ? 'bg-green-600 border-green-600' : 'border-gray-300'
                 }`}
-                style={{ borderRadius: 2 }}
+                style={{ borderRadius: 8 }}
               >
                 {showStays && <Checkmark />}
               </span>
@@ -372,19 +372,19 @@ export default function MapClient() {
                 <svg width="11" height="11" viewBox="0 0 11 11">
                   <rect x="1.5" y="1.5" width="8" height="8" rx="1.5" fill="#2563eb" stroke="#1e40af" strokeWidth="1" />
                 </svg>
-                <span className={`text-sm ${showStays ? 'text-gray-800' : 'text-gray-400'}`}>
+                <span className={`text-sm ${showStays ? 'text-ink' : 'text-ink-soft'}`}>
                   Unterkünfte
                 </span>
               </span>
             </button>
           </div>
 
-          <div className="border-t border-gray-200" />
+          <div className="border-t border-hairline" />
 
           {/* Reset-to-Kärnten */}
           <button
             onClick={resetView}
-            className="flex items-center gap-2 w-full px-3 py-2 text-xs text-gray-500 hover:text-gray-800 hover:bg-gray-50 transition-colors"
+            className="flex items-center gap-2 w-full px-3 py-2 text-xs text-ink-soft hover:text-ink hover:bg-gray-50 transition-colors"
           >
             <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
               <path d="M6 1v2M6 9v2M1 6h2M9 6h2M3.05 3.05l1.41 1.41M7.54 7.54l1.41 1.41M3.05 8.95l1.41-1.41M7.54 4.46l1.41-1.41" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" />
@@ -396,15 +396,15 @@ export default function MapClient() {
 
       {/* ── Loading state – minimal bar ──────────────────────────────────── */}
       {!mapReady && !error && (
-        <div className="absolute bottom-0 left-0 right-0 z-[1000] bg-white border-t border-gray-200 px-3 py-1.5 flex items-center gap-2">
+        <div className="absolute bottom-0 left-0 right-0 z-[1000] bg-white border-t border-hairline px-3 py-1.5 flex items-center gap-2">
           <div className="w-3 h-3 border-2 border-green-600 border-t-transparent rounded-full animate-spin shrink-0" />
-          <span className="text-xs text-gray-500">Karte wird geladen…</span>
+          <span className="text-xs text-ink-soft">Karte wird geladen…</span>
         </div>
       )}
 
       {/* ── Peak loading indicator ───────────────────────────────────────── */}
       {mapReady && peakCount === null && (
-        <div className="absolute bottom-2 left-2 z-[1000] bg-white border border-gray-200 px-2.5 py-1 text-xs text-gray-400 flex items-center gap-1.5" style={{ borderRadius: 2 }}>
+        <div className="absolute bottom-2 left-2 z-[1000] bg-white border border-hairline px-2.5 py-1 text-xs text-ink-soft flex items-center gap-1.5" style={{ borderRadius: 8 }}>
           <div className="w-2.5 h-2.5 border border-gray-300 border-t-gray-600 rounded-full animate-spin" />
           Gipfel laden…
         </div>

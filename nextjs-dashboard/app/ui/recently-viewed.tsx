@@ -30,7 +30,7 @@ export default function RecentlyViewed({ currentSlug }: { currentSlug?: string }
   if (items.length === 0) return null;
 
   return (
-    <div className="border border-gray-200 p-5" style={{ borderRadius: 8 }}>
+    <div className="border border-hairline p-5" style={{ borderRadius: 18 }}>
       <p className="eyebrow mb-3">Zuletzt angesehen</p>
       <div className="space-y-2.5">
         {items.map((item) => (
@@ -40,7 +40,7 @@ export default function RecentlyViewed({ currentSlug }: { currentSlug?: string }
             className="group flex items-start gap-2.5 text-sm"
           >
             <span className={`shrink-0 mt-2 w-1.5 h-1.5 rounded-full ${CATEGORY_DOT[item.category] ?? 'bg-gray-400'}`} />
-            <span className="text-gray-700 group-hover:text-green-700 leading-snug transition-colors">
+            <span className="text-ink-muted group-hover:text-green-700 leading-snug transition-colors">
               {item.title}
             </span>
           </Link>

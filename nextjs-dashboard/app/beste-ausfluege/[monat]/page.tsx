@@ -58,24 +58,24 @@ export default async function MonatPage({ params }: Props) {
     <div className="max-w-5xl mx-auto px-6 py-12">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
-      <nav className="flex flex-wrap items-center gap-2 text-xs text-gray-400 mb-5">
+      <nav className="flex flex-wrap items-center gap-2 text-xs text-ink-soft mb-5">
         <Link href="/" className="hover:text-green-700">Startseite</Link>
         <span>/</span>
         <Link href="/beste-ausfluege" className="hover:text-green-700">Beste Ausflüge</Link>
         <span>/</span>
-        <span className="text-gray-600">{m.name}</span>
+        <span className="text-ink-muted">{m.name}</span>
       </nav>
 
       <p className="eyebrow mb-2">Monats-Tipps</p>
-      <h1 className="font-serif text-4xl font-bold mb-3 text-gray-900">Beste Ausflüge im {m.name}</h1>
-      <p className="text-gray-500 max-w-2xl mb-10 leading-relaxed">{m.intro}</p>
+      <h1 className="font-serif text-4xl font-bold mb-3 text-ink">Beste Ausflüge im {m.name}</h1>
+      <p className="text-ink-soft max-w-2xl mb-10 leading-relaxed">{m.intro}</p>
 
       <div className="grid sm:grid-cols-2 gap-5">
         {picks.map(({ slug, warum, post }) => (
           <Link
             key={slug}
             href={`/blog/${slug}`}
-            className="group block border border-gray-200 rounded-xl overflow-hidden hover:border-green-400 hover:shadow-md transition-all"
+            className="group block border border-hairline rounded-xl overflow-hidden hover:border-green-400 transition-all"
           >
             <div className="aspect-[16/7]">
               <PostArtwork seed={slug} category={post!.category} />
@@ -85,10 +85,10 @@ export default async function MonatPage({ params }: Props) {
                 <span className={`text-xs font-semibold uppercase tracking-wide ${CATEGORY_STYLE[post!.category]?.text ?? 'text-green-700'}`}>
                   {post!.category}
                 </span>
-                <span className="text-xs text-gray-400">{regionName(post!.region)}</span>
+                <span className="text-xs text-ink-soft">{regionName(post!.region)}</span>
               </div>
-              <h2 className="font-semibold text-gray-900 group-hover:text-green-700 leading-snug">{post!.title}</h2>
-              <p className="mt-2 text-sm text-gray-600 border-l-2 border-green-300 pl-2.5">
+              <h2 className="font-semibold text-ink group-hover:text-green-700 leading-snug">{post!.title}</h2>
+              <p className="mt-2 text-sm text-ink-muted border-l-2 border-green-300 pl-2.5">
                 <strong className="font-semibold text-green-800">Warum jetzt?</strong> {warum}
               </p>
             </div>
@@ -103,12 +103,12 @@ export default async function MonatPage({ params }: Props) {
             key={x.slug}
             href={`/beste-ausfluege/${x.slug}`}
             className="text-sm font-medium px-4 py-1.5 bg-green-50 text-green-700 border border-green-200 hover:bg-green-100 transition-colors"
-            style={{ borderRadius: 999 }}
+            style={{ borderRadius: 9999 }}
           >
             Beste Ausflüge im {x.name} →
           </Link>
         ))}
-        <Link href="/wandern-baden" className="text-sm font-medium px-4 py-1.5 border border-gray-300 text-gray-600 hover:border-green-600 hover:text-green-700 transition-colors" style={{ borderRadius: 999 }}>
+        <Link href="/wandern-baden" className="text-sm font-medium px-4 py-1.5 border border-gray-300 text-ink-muted hover:border-green-600 hover:text-green-700 transition-colors" style={{ borderRadius: 9999 }}>
           Wandern + Baden
         </Link>
       </div>

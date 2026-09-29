@@ -39,29 +39,29 @@ export default function DauerPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
       <p className="eyebrow mb-2">Planungshilfe</p>
-      <h1 className="font-serif text-4xl font-bold mb-3 text-gray-900">Wie viel Zeit hast du?</h1>
-      <p className="text-gray-500 max-w-2xl mb-10 leading-relaxed">
+      <h1 className="font-serif text-4xl font-bold mb-3 text-ink">Wie viel Zeit hast du?</h1>
+      <p className="text-ink-soft max-w-2xl mb-10 leading-relaxed">
         Zwei Stunden Luft, ein freier Nachmittag oder ein ganzes Wochenende? Hier sind unsere
         Ziele nach Zeitfenster sortiert – mit realistischer Dauer statt Wunschdenken.
       </p>
 
       {GROUPS.map((g) => (
         <section key={g.title} className="mb-14">
-          <h2 className="font-serif text-2xl font-bold mb-1 text-gray-900">{g.title}</h2>
-          <p className="text-sm text-gray-500 mb-5 max-w-2xl">{g.note}</p>
+          <h2 className="font-serif text-2xl font-bold mb-1 text-ink">{g.title}</h2>
+          <p className="text-sm text-ink-soft mb-5 max-w-2xl">{g.note}</p>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {g.picks.map(({ slug, zeit }) => {
               const post = getPostBySlug(slug);
               if (!post) return null;
               return (
-                <Link key={slug} href={`/blog/${slug}`} className="group block border border-gray-200 rounded-xl overflow-hidden hover:border-green-400 hover:shadow-md transition-all">
+                <Link key={slug} href={`/blog/${slug}`} className="group block border border-hairline rounded-xl overflow-hidden hover:border-green-400 transition-all">
                   <div className="aspect-[16/7]">
                     <PostArtwork seed={slug} category={post.category} />
                   </div>
                   <div className="p-4">
-                    <span className="text-xs text-gray-400">{regionName(post.region)}</span>
-                    <h3 className="font-semibold text-gray-900 group-hover:text-green-700 leading-snug mt-0.5">{post.title}</h3>
-                    <p className="mt-2 text-sm text-gray-600"><span aria-hidden>⏱</span> {zeit}</p>
+                    <span className="text-xs text-ink-soft">{regionName(post.region)}</span>
+                    <h3 className="font-semibold text-ink group-hover:text-green-700 leading-snug mt-0.5">{post.title}</h3>
+                    <p className="mt-2 text-sm text-ink-muted"><span aria-hidden>⏱</span> {zeit}</p>
                   </div>
                 </Link>
               );
@@ -71,19 +71,19 @@ export default function DauerPage() {
       ))}
 
       <div className="mt-6 flex flex-wrap gap-3">
-        <Link href="/wochenendtrip" className="inline-block bg-green-700 text-white text-sm font-semibold px-5 py-2.5 hover:bg-green-800 transition-colors" style={{ borderRadius: 6 }}>
+        <Link href="/wochenendtrip" className="inline-block bg-green-700 text-white text-sm font-semibold px-5 py-2.5 hover:bg-green-800 transition-colors" style={{ borderRadius: 9999 }}>
           Wochenendtrips nach Startstadt
         </Link>
-        <Link href="/feierabend-ausfluege" className="inline-block border border-green-700 text-green-700 text-sm font-semibold px-5 py-2.5 hover:bg-green-50 transition-colors" style={{ borderRadius: 6 }}>
+        <Link href="/feierabend-ausfluege" className="inline-block border border-green-700 text-green-700 text-sm font-semibold px-5 py-2.5 hover:bg-green-50 transition-colors" style={{ borderRadius: 9999 }}>
           Feierabend-Ausflüge
         </Link>
-        <Link href="/bahnhofsausfluege" className="inline-block border border-green-700 text-green-700 text-sm font-semibold px-5 py-2.5 hover:bg-green-50 transition-colors" style={{ borderRadius: 6 }}>
+        <Link href="/bahnhofsausfluege" className="inline-block border border-green-700 text-green-700 text-sm font-semibold px-5 py-2.5 hover:bg-green-50 transition-colors" style={{ borderRadius: 9999 }}>
           Ausflüge ab Bahnhof
         </Link>
-        <Link href="/zwei-ausfluege-an-einem-tag" className="inline-block border border-green-700 text-green-700 text-sm font-semibold px-5 py-2.5 hover:bg-green-50 transition-colors" style={{ borderRadius: 6 }}>
+        <Link href="/zwei-ausfluege-an-einem-tag" className="inline-block border border-green-700 text-green-700 text-sm font-semibold px-5 py-2.5 hover:bg-green-50 transition-colors" style={{ borderRadius: 9999 }}>
           Zwei Ausflüge an einem Tag
         </Link>
-        <Link href="/ausflugsplaner" className="inline-block border border-gray-300 text-gray-700 text-sm font-semibold px-5 py-2.5 hover:border-green-600 hover:text-green-700 transition-colors" style={{ borderRadius: 6 }}>
+        <Link href="/ausflugsplaner" className="inline-block border border-gray-300 text-ink-muted text-sm font-semibold px-5 py-2.5 hover:border-green-600 hover:text-green-700 transition-colors" style={{ borderRadius: 9999 }}>
           Alle Themenseiten
         </Link>
       </div>

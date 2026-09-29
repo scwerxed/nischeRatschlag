@@ -58,35 +58,35 @@ export default async function WochenendtripStadtPage({ params }: Props) {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
       {/* Breadcrumb */}
-      <nav className="flex flex-wrap items-center gap-2 text-xs text-gray-400 mb-5">
+      <nav className="flex flex-wrap items-center gap-2 text-xs text-ink-soft mb-5">
         <Link href="/" className="hover:text-green-700">Startseite</Link>
         <span>/</span>
         <Link href="/wochenendtrip" className="hover:text-green-700">Wochenendtrips</Link>
         <span>/</span>
-        <span className="text-gray-600">Ab {city.name}</span>
+        <span className="text-ink-muted">Ab {city.name}</span>
       </nav>
 
       <p className="eyebrow mb-2">Wochenendtrip</p>
-      <h1 className="font-serif text-4xl font-bold mb-3 text-gray-900">Ausflüge & Kurztrips ab {city.name}</h1>
-      <p className="text-gray-500 max-w-2xl mb-4 leading-relaxed">{city.intro}</p>
-      <p className="text-xs text-gray-400 mb-10">Entfernungen als Luftlinie – die tatsächliche Fahrzeit hängt von Route und Verkehr ab.</p>
+      <h1 className="font-serif text-4xl font-bold mb-3 text-ink">Ausflüge & Kurztrips ab {city.name}</h1>
+      <p className="text-ink-soft max-w-2xl mb-4 leading-relaxed">{city.intro}</p>
+      <p className="text-xs text-ink-soft mb-10">Entfernungen als Luftlinie – die tatsächliche Fahrzeit hängt von Route und Verkehr ab.</p>
 
       {groups.length === 0 && (
-        <p className="text-gray-500">Für diese Stadt sind noch keine Ausflüge hinterlegt.</p>
+        <p className="text-ink-soft">Für diese Stadt sind noch keine Ausflüge hinterlegt.</p>
       )}
 
       {groups.map((g) => (
         <section key={g.bucket.key} className="mb-14">
-          <h2 className="font-serif text-2xl font-bold mb-5 text-gray-900 flex items-baseline gap-2">
+          <h2 className="font-serif text-2xl font-bold mb-5 text-ink flex items-baseline gap-2">
             {g.bucket.label}
-            <span className="text-sm font-sans font-normal text-gray-400">{g.items.length} Ziele</span>
+            <span className="text-sm font-sans font-normal text-ink-soft">{g.items.length} Ziele</span>
           </h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {g.items.map(({ post, km }) => (
               <Link
                 key={post.slug}
                 href={`/blog/${post.slug}`}
-                className="group block border border-gray-200 rounded-xl overflow-hidden hover:border-green-400 hover:shadow-md transition-all"
+                className="group block border border-hairline rounded-xl overflow-hidden hover:border-green-400 transition-all"
               >
                 <div className="aspect-[16/9]">
                   <PostArtwork seed={post.slug} category={post.category} />
@@ -96,10 +96,10 @@ export default async function WochenendtripStadtPage({ params }: Props) {
                     <span className={`text-xs font-semibold uppercase tracking-wide ${CATEGORY_STYLE[post.category]?.text ?? 'text-green-700'}`}>
                       {post.category}
                     </span>
-                    <span className="text-xs text-gray-400 whitespace-nowrap">≈ {Math.round(km)} km</span>
+                    <span className="text-xs text-ink-soft whitespace-nowrap">≈ {Math.round(km)} km</span>
                   </div>
-                  <h3 className="font-semibold text-gray-900 group-hover:text-green-700 leading-snug">{post.title}</h3>
-                  <span className="mt-1 block text-xs text-gray-500">{regionName(post.region)}</span>
+                  <h3 className="font-semibold text-ink group-hover:text-green-700 leading-snug">{post.title}</h3>
+                  <span className="mt-1 block text-xs text-ink-soft">{regionName(post.region)}</span>
                 </div>
               </Link>
             ))}
@@ -108,10 +108,10 @@ export default async function WochenendtripStadtPage({ params }: Props) {
       ))}
 
       <div className="mt-6 flex flex-wrap gap-3">
-        <Link href="/wochenendtrip" className="inline-block border border-green-700 text-green-700 text-sm font-semibold px-5 py-2.5 hover:bg-green-50 transition-colors" style={{ borderRadius: 6 }}>
+        <Link href="/wochenendtrip" className="inline-block border border-green-700 text-green-700 text-sm font-semibold px-5 py-2.5 hover:bg-green-50 transition-colors" style={{ borderRadius: 9999 }}>
           Andere Startstädte
         </Link>
-        <Link href="/blog" className="inline-block border border-gray-300 text-gray-700 text-sm font-semibold px-5 py-2.5 hover:border-green-600 hover:text-green-700 transition-colors" style={{ borderRadius: 6 }}>
+        <Link href="/blog" className="inline-block border border-gray-300 text-ink-muted text-sm font-semibold px-5 py-2.5 hover:border-green-600 hover:text-green-700 transition-colors" style={{ borderRadius: 9999 }}>
           Alle Artikel
         </Link>
       </div>

@@ -36,7 +36,7 @@ export default function Newsletter() {
   }
 
   return (
-    <div className="relative bg-green-800 text-white overflow-hidden" style={{ borderRadius: 12 }}>
+    <div className="relative bg-green-800 text-white overflow-hidden" style={{ borderRadius: 18 }}>
       {/* Decorative mountain silhouette */}
       <svg className="absolute bottom-0 left-0 right-0 text-green-900/30" viewBox="0 0 800 120" preserveAspectRatio="none" style={{ height: 120 }}>
         <path d="M0 120 L0 80 L150 30 L250 70 L350 20 L450 60 L550 10 L650 50 L800 20 L800 120 Z" fill="currentColor" />
@@ -44,7 +44,7 @@ export default function Newsletter() {
 
       <div className="relative px-6 py-14">
         <div className="max-w-xl mx-auto text-center">
-          <div className="inline-flex items-center gap-2 bg-white/10 border border-white/15 px-3 py-1.5 mb-5" style={{ borderRadius: 20 }}>
+          <div className="inline-flex items-center gap-2 bg-white/10 border border-white/15 px-3 py-1.5 mb-5" style={{ borderRadius: 18 }}>
             <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.6" className="text-sand-300">
               <rect x="1" y="3" width="14" height="10" rx="1" />
               <path d="M1 3l7 5 7-5" />
@@ -60,7 +60,7 @@ export default function Newsletter() {
           </p>
 
           {status === 'done' ? (
-            <div className="bg-white/10 border border-white/20 px-5 py-4 text-sm inline-flex items-start gap-2 text-left" style={{ borderRadius: 8 }}>
+            <div className="bg-white/10 border border-white/20 px-5 py-4 text-sm inline-flex items-start gap-2 text-left" style={{ borderRadius: 18 }}>
               <svg width="18" height="18" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="2" className="text-green-300 shrink-0 mt-0.5">
                 <path d="M3 8l3 3 7-7" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
@@ -81,19 +81,19 @@ export default function Newsletter() {
                   aria-label="E-Mail-Adresse"
                   aria-invalid={status === 'error'}
                   disabled={status === 'sending'}
-                  className="flex-1 px-4 py-3 text-gray-800 text-sm outline-none focus:ring-2 focus:ring-sand-300 bg-white disabled:opacity-70" style={{ borderRadius: 6 }}
+                  className="flex-1 px-4 py-3 text-ink text-sm outline-none focus:ring-2 focus:ring-sand-300 bg-white disabled:opacity-70" style={{ borderRadius: 9999 }}
                 />
                 <button
                   type="submit"
                   disabled={status === 'sending'}
-                  className="bg-sand-200 text-green-900 font-semibold text-sm px-6 py-3 hover:bg-sand-100 active:bg-sand-300 transition-colors disabled:opacity-70 disabled:cursor-not-allowed" style={{ borderRadius: 6 }}
+                  className="bg-sand-200 text-green-900 font-semibold text-sm px-6 py-3 hover:bg-sand-100 active:bg-sand-300 transition-colors disabled:opacity-70 disabled:cursor-not-allowed" style={{ borderRadius: 9999 }}
                 >
                   {status === 'sending' ? 'Wird gesendet …' : 'Anmelden'}
                 </button>
               </form>
 
               {status === 'error' && (
-                <p role="alert" className="mt-3 text-sm text-sand-100 bg-red-900/30 border border-red-300/30 px-4 py-2.5 inline-block" style={{ borderRadius: 6 }}>
+                <p role="alert" className="mt-3 text-sm text-sand-100 bg-red-900/30 border border-red-300/30 px-4 py-2.5 inline-block" style={{ borderRadius: 9999 }}>
                   {error}
                 </p>
               )}

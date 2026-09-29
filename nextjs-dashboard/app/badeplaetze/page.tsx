@@ -36,27 +36,27 @@ export default function BadeplaetzePage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
       <p className="eyebrow mb-2">Badeplatz-Check</p>
-      <h1 className="font-serif text-4xl font-bold mb-3 text-gray-900">Welcher Badeplatz passt zu dir?</h1>
-      <p className="text-gray-500 max-w-2xl mb-8 leading-relaxed">
+      <h1 className="font-serif text-4xl font-bold mb-3 text-ink">Welcher Badeplatz passt zu dir?</h1>
+      <p className="text-ink-soft max-w-2xl mb-8 leading-relaxed">
         „See" ist nicht gleich „See": Mal brauchst du einen flachen Einstieg fürs Kind, mal Schatten,
         mal einfach einen Gratis-Zugang. Filtere unsere Badeplätze nach dem, was dir wichtig ist.
       </p>
 
       <BadeplatzFilter plaetze={BADEPLAETZE} />
 
-      <p className="text-xs text-gray-400 mt-8">
+      <p className="text-xs text-ink-soft mt-8">
         Angaben nach bestem Wissen, ohne Gewähr – Ausstattung, Eintritt und Hunde-Regeln können sich
         ändern. Im Zweifel vor der Abfahrt auf der Seite des Betreibers prüfen.
       </p>
 
       <div className="mt-8 flex flex-wrap gap-3">
-        <Link href="/seen-vergleich" className="inline-block bg-green-700 text-white text-sm font-semibold px-5 py-2.5 hover:bg-green-800 transition-colors" style={{ borderRadius: 6 }}>
+        <Link href="/seen-vergleich" className="inline-block bg-green-700 text-white text-sm font-semibold px-5 py-2.5 hover:bg-green-800 transition-colors" style={{ borderRadius: 9999 }}>
           Seen im Vergleich
         </Link>
-        <Link href="/wandern-baden" className="inline-block border border-green-700 text-green-700 text-sm font-semibold px-5 py-2.5 hover:bg-green-50 transition-colors" style={{ borderRadius: 6 }}>
+        <Link href="/wandern-baden" className="inline-block border border-green-700 text-green-700 text-sm font-semibold px-5 py-2.5 hover:bg-green-50 transition-colors" style={{ borderRadius: 9999 }}>
           Wandern + Baden
         </Link>
-        <Link href="/hitzefreundliche-ausfluege" className="inline-block border border-amber-500 text-amber-700 text-sm font-semibold px-5 py-2.5 hover:bg-amber-50 transition-colors" style={{ borderRadius: 6 }}>
+        <Link href="/hitzefreundliche-ausfluege" className="inline-block border border-amber-500 text-amber-700 text-sm font-semibold px-5 py-2.5 hover:bg-amber-50 transition-colors" style={{ borderRadius: 9999 }}>
           Kühle Ziele für Hitzetage
         </Link>
       </div>

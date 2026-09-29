@@ -45,17 +45,17 @@ export default function WandernBadenPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
       <p className="eyebrow mb-2">Sommer-Special</p>
-      <h1 className="font-serif text-4xl font-bold mb-3 text-gray-900">Wandern + Baden: erst Gipfel, dann See</h1>
-      <p className="text-gray-500 max-w-2xl mb-4 leading-relaxed">
+      <h1 className="font-serif text-4xl font-bold mb-3 text-ink">Wandern + Baden: erst Gipfel, dann See</h1>
+      <p className="text-ink-soft max-w-2xl mb-4 leading-relaxed">
         Die perfekte Sommer-Formel: vormittags wandern, nachmittags ins kühle Wasser. Wir haben
         Wanderungen mit dem jeweils nächstgelegenen Badeziel kombiniert – je Bundesland, mit
         Entfernung zwischen Tour und See.
       </p>
-      <p className="text-xs text-gray-400 mb-10">Entfernungen als Luftlinie zwischen den Startpunkten.</p>
+      <p className="text-xs text-ink-soft mb-10">Entfernungen als Luftlinie zwischen den Startpunkten.</p>
 
       {groups.map((g) => (
         <section key={g.region} className="mb-12">
-          <h2 className="font-serif text-2xl font-bold mb-5 text-gray-900">
+          <h2 className="font-serif text-2xl font-bold mb-5 text-ink">
             {regionName(g.region)}
             <Link href={`/regionen/${g.region}`} className="ml-3 text-sm font-sans font-normal text-green-700 hover:underline">
               Alle Artikel →
@@ -63,7 +63,7 @@ export default function WandernBadenPage() {
           </h2>
           <div className="grid md:grid-cols-2 gap-5">
             {g.combos.map((c) => (
-              <div key={`${c.wandern.slug}-${c.baden.slug}`} className="border border-gray-200 rounded-xl overflow-hidden hover:shadow-md transition-shadow">
+              <div key={`${c.wandern.slug}-${c.baden.slug}`} className="border border-hairline rounded-xl overflow-hidden transition-shadow">
                 {/* Wanderung */}
                 <Link href={`/blog/${c.wandern.slug}`} className="group block p-4 hover:bg-green-50 transition-colors">
                   <div className="flex items-center gap-2 mb-1">
@@ -74,20 +74,20 @@ export default function WandernBadenPage() {
                       </span>
                     )}
                   </div>
-                  <p className="font-semibold text-gray-900 group-hover:text-green-700 leading-snug">{c.wandern.title}</p>
+                  <p className="font-semibold text-ink group-hover:text-green-700 leading-snug">{c.wandern.title}</p>
                 </Link>
 
                 {/* Verbinder */}
                 <div className="flex items-center gap-3 px-4">
                   <span className="h-px flex-1 bg-gray-200" />
-                  <span className="text-xs text-gray-400 whitespace-nowrap">↓ danach ≈ {Math.round(c.km)} km zum Wasser</span>
+                  <span className="text-xs text-ink-soft whitespace-nowrap">↓ danach ≈ {Math.round(c.km)} km zum Wasser</span>
                   <span className="h-px flex-1 bg-gray-200" />
                 </div>
 
                 {/* Badeziel */}
                 <Link href={`/blog/${c.baden.slug}`} className="group block p-4 hover:bg-sky-50 transition-colors">
                   <span className="text-xs font-semibold uppercase tracking-wide text-sky-700">Baden</span>
-                  <p className="font-semibold text-gray-900 group-hover:text-sky-700 leading-snug mt-1">{c.baden.title}</p>
+                  <p className="font-semibold text-ink group-hover:text-sky-700 leading-snug mt-1">{c.baden.title}</p>
                 </Link>
               </div>
             ))}
@@ -98,27 +98,27 @@ export default function WandernBadenPage() {
       {/* Live-Wassertemperaturen */}
       <section className="mt-14">
         <p className="eyebrow mb-2">Live</p>
-        <h2 className="font-serif text-2xl font-bold mb-5 text-gray-900">Wie warm ist das Wasser gerade?</h2>
+        <h2 className="font-serif text-2xl font-bold mb-5 text-ink">Wie warm ist das Wasser gerade?</h2>
         <Seewetter />
       </section>
 
       <div className="mt-10 flex flex-wrap gap-3">
-        <Link href="/seen-vergleich" className="inline-block bg-green-700 text-white text-sm font-semibold px-5 py-2.5 hover:bg-green-800 transition-colors" style={{ borderRadius: 6 }}>
+        <Link href="/seen-vergleich" className="inline-block bg-green-700 text-white text-sm font-semibold px-5 py-2.5 hover:bg-green-800 transition-colors" style={{ borderRadius: 9999 }}>
           Seen im Vergleich
         </Link>
-        <Link href="/wochenendtrip" className="inline-block border border-green-700 text-green-700 text-sm font-semibold px-5 py-2.5 hover:bg-green-50 transition-colors" style={{ borderRadius: 6 }}>
+        <Link href="/wochenendtrip" className="inline-block border border-green-700 text-green-700 text-sm font-semibold px-5 py-2.5 hover:bg-green-50 transition-colors" style={{ borderRadius: 9999 }}>
           Wochenendtrips
         </Link>
-        <Link href="/hitzefreundliche-ausfluege" className="inline-block border border-amber-500 text-amber-700 text-sm font-semibold px-5 py-2.5 hover:bg-amber-50 transition-colors" style={{ borderRadius: 6 }}>
+        <Link href="/hitzefreundliche-ausfluege" className="inline-block border border-amber-500 text-amber-700 text-sm font-semibold px-5 py-2.5 hover:bg-amber-50 transition-colors" style={{ borderRadius: 9999 }}>
           Kühle Ziele für Hitzetage
         </Link>
-        <Link href="/ausflugsplaner" className="inline-block border border-gray-300 text-gray-700 text-sm font-semibold px-5 py-2.5 hover:border-green-600 hover:text-green-700 transition-colors" style={{ borderRadius: 6 }}>
+        <Link href="/ausflugsplaner" className="inline-block border border-gray-300 text-ink-muted text-sm font-semibold px-5 py-2.5 hover:border-green-600 hover:text-green-700 transition-colors" style={{ borderRadius: 9999 }}>
           Alle Themenseiten
         </Link>
-        <Link href="/badeplaetze" className="inline-block border border-sky-500 text-sky-700 text-sm font-semibold px-5 py-2.5 hover:bg-sky-50 transition-colors" style={{ borderRadius: 6 }}>
+        <Link href="/badeplaetze" className="inline-block border border-sky-500 text-sky-700 text-sm font-semibold px-5 py-2.5 hover:bg-sky-50 transition-colors" style={{ borderRadius: 9999 }}>
           Badeplatz-Check
         </Link>
-        <Link href="/zwei-ausfluege-an-einem-tag" className="inline-block border border-gray-300 text-gray-700 text-sm font-semibold px-5 py-2.5 hover:border-green-600 hover:text-green-700 transition-colors" style={{ borderRadius: 6 }}>
+        <Link href="/zwei-ausfluege-an-einem-tag" className="inline-block border border-gray-300 text-ink-muted text-sm font-semibold px-5 py-2.5 hover:border-green-600 hover:text-green-700 transition-colors" style={{ borderRadius: 9999 }}>
           Zwei Ausflüge an einem Tag
         </Link>
       </div>

@@ -20,14 +20,14 @@ export default function BesteAusfluegeHub() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
       <p className="eyebrow mb-2">Saisonal</p>
-      <h1 className="font-serif text-4xl font-bold mb-3 text-gray-900">Beste Ausflüge nach Monat</h1>
-      <p className="text-gray-500 max-w-2xl mb-10 leading-relaxed">
+      <h1 className="font-serif text-4xl font-bold mb-3 text-ink">Beste Ausflüge nach Monat</h1>
+      <p className="text-ink-soft max-w-2xl mb-10 leading-relaxed">
         Nicht jedes Ziel passt zu jeder Jahreszeit. Hier bündeln wir unsere Artikel für alle 12 Monate –
         mit ehrlicher Begründung, warum sich ein Ausflug genau jetzt lohnt.
       </p>
 
       <div className="mb-8">
-        <Link href="/ausflugsplaner" className="inline-block border border-gray-300 text-gray-700 text-sm font-semibold px-5 py-2.5 hover:border-green-600 hover:text-green-700 transition-colors" style={{ borderRadius: 6 }}>
+        <Link href="/ausflugsplaner" className="inline-block border border-gray-300 text-ink-muted text-sm font-semibold px-5 py-2.5 hover:border-green-600 hover:text-green-700 transition-colors" style={{ borderRadius: 9999 }}>
           Alle Themenseiten
         </Link>
       </div>
@@ -37,11 +37,11 @@ export default function BesteAusfluegeHub() {
           <Link
             key={m.slug}
             href={`/beste-ausfluege/${m.slug}`}
-            className="group block border border-gray-200 p-6 hover:border-green-400 hover:shadow-md transition-all"
-            style={{ borderRadius: 8 }}
+            className="group block border border-hairline p-6 hover:border-green-400 transition-all"
+            style={{ borderRadius: 18 }}
           >
             <p className="eyebrow mb-1.5">{m.picks.length} Ziele</p>
-            <h2 className="font-serif text-xl font-bold text-gray-900 group-hover:text-green-700">{m.name}</h2>
+            <h2 className="font-serif text-xl font-bold text-ink group-hover:text-green-700">{m.name}</h2>
             <span className="mt-3 inline-block text-sm font-medium text-green-700">Tipps ansehen →</span>
           </Link>
         ))}

@@ -11,22 +11,22 @@ export default function UeberUnsPage() {
   return (
     <div className="max-w-2xl mx-auto px-6 py-12">
       <p className="eyebrow mb-2">Über uns</p>
-      <h1 className="font-serif text-4xl font-bold mb-6 text-gray-900">
+      <h1 className="font-serif text-4xl font-bold mb-6 text-ink">
         Österreich, wie wir es wirklich erleben
       </h1>
 
-      <p className="text-gray-700 leading-relaxed mb-4">
+      <p className="text-ink-muted leading-relaxed mb-4">
         Der Bergseen Guide ist ein unabhängiges Reise-Magazin über Österreichs Seen und Berge.
         Wir schreiben über Wanderungen, Badestellen, Ausflüge und Unterkünfte – nicht aus
         Hochglanzprospekten abgeschrieben, sondern aus eigener Erfahrung vor Ort.
       </p>
-      <p className="text-gray-700 leading-relaxed mb-4">
+      <p className="text-ink-muted leading-relaxed mb-4">
         Unser Anspruch: konkrete, ehrliche Tipps mit echten Preisen, klaren Empfehlungen und
         auch mal einem kritischen Wort. Wir nennen Gratis-Alternativen zu teuren Strandbädern,
         sagen, wann ein Ort überlaufen ist, und zeigen Routen mit nachvollziehbaren Geh- und
         Höhenangaben.
       </p>
-      <p className="text-gray-700 leading-relaxed mb-4">
+      <p className="text-ink-muted leading-relaxed mb-4">
         Damit dieses Angebot kostenlos bleiben kann, finanzieren wir uns über Werbung und
         Affiliate-Partnerschaften. Das beeinflusst unsere Empfehlungen nicht – wir verlinken nur,
         wovon wir selbst überzeugt sind. Details dazu im{' '}
@@ -35,7 +35,7 @@ export default function UeberUnsPage() {
 
       <div className="border-l-4 border-green-600 bg-green-50 px-5 py-4 mt-8">
         <p className="eyebrow mb-2">Unser Versprechen</p>
-        <ul className="space-y-1.5 text-sm text-gray-700">
+        <ul className="space-y-1.5 text-sm text-ink-muted">
           {[
             'Selbst recherchiert statt abgeschrieben',
             'Echte Preise und ehrliche Einschätzungen',
@@ -50,7 +50,7 @@ export default function UeberUnsPage() {
         </ul>
       </div>
 
-      <p className="text-gray-700 leading-relaxed mt-8">
+      <p className="text-ink-muted leading-relaxed mt-8">
         Fragen oder Anregungen? Schreib uns über die{' '}
         <Link href="/kontakt" className="text-green-700 hover:underline">Kontaktseite</Link>.
       </p>

@@ -11,11 +11,23 @@
 
   body {
     font-feature-settings: 'kern', 'liga';
+    /* Apple-Grammatik: Fließtext 17px / 1.47. Gilt überall dort, wo keine
+       explizite Größenklasse gesetzt ist. */
+    font-size: 17px;
+    line-height: 1.47;
+    letter-spacing: -0.011em;
+    color: #1d1d1f;
   }
 
-  /* Editoriale Überschriften: Serif, enger Satz */
+  /* Editoriale Überschriften: Serif, eng gesetzt. Negatives Tracking wächst
+     mit der Schriftgröße – das ist der „tight cadence"-Effekt. */
   h1, h2, h3 {
     letter-spacing: -0.015em;
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
   }
 
   /* Markierungs-Farbe passend zur Marke */
@@ -28,18 +40,102 @@
   :focus-visible {
     outline: 2px solid #2f6b54;
     outline-offset: 2px;
+    border-radius: 2px;
+  }
+
+  /* Bilder nie über ihren Container hinaus */
+  img, svg, video {
+    max-width: 100%;
   }
 }
 
-/* Dezente, „handgesetzte" Eyebrow-Label-Optik */
 @layer components {
+  /* Dezente, „handgesetzte" Eyebrow-Label-Optik */
   .eyebrow {
-    @apply text-xs font-semibold uppercase tracking-[0.18em] text-green-600;
+    @apply text-fine font-semibold uppercase tracking-[0.18em] text-green-600;
   }
 
-  /* Feiner Link-Unterstrich-Hover für Fließtext-Links */
-  .link-underline {
-    @apply relative text-green-700;
+  /* ── Flächen ──────────────────────────────────────────────────────────
+     Regel aus der Design-Sprache: KEINE Schatten auf Karten. Abgrenzung
+     erfolgt über eine 1px-Hairline; beim Hover wandert nur die Linie auf
+     den Akzent, die Karte springt nicht. */
+  .surface-card {
+    @apply bg-canvas border border-hairline rounded-lg;
+    transition: border-color 200ms cubic-bezier(0.25, 0.1, 0.25, 1),
+                background-color 200ms cubic-bezier(0.25, 0.1, 0.25, 1);
+  }
+  .surface-card-interactive {
+    @apply surface-card;
+  }
+  .surface-card-interactive:hover {
+    @apply border-green-400;
+  }
+
+  /* Ruhige Sektionsfläche – der Farbwechsel IST der Trenner,
+     deshalb braucht es dazwischen keine Linien. */
+  .surface-parchment {
+    @apply bg-parchment;
+  }
+
+  /* ── Buttons ──────────────────────────────────────────────────────────
+     Pill-Radius ist ausschließlich für Aktionen reserviert. */
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-full
+           text-body font-medium px-6 py-3 no-underline;
+    transition: background-color 200ms cubic-bezier(0.25, 0.1, 0.25, 1),
+                color 200ms cubic-bezier(0.25, 0.1, 0.25, 1),
+                border-color 200ms cubic-bezier(0.25, 0.1, 0.25, 1),
+                transform 100ms cubic-bezier(0.25, 0.1, 0.25, 1);
+  }
+  .btn:active { transform: scale(0.96); }
+
+  .btn-primary {
+    @apply btn bg-green-600 text-white;
+  }
+  .btn-primary:hover { @apply bg-green-700; }
+
+  .btn-secondary {
+    @apply btn bg-transparent text-green-700 border border-green-600;
+  }
+  .btn-secondary:hover { @apply bg-green-50; }
+
+  .btn-quiet {
+    @apply btn bg-transparent text-ink-muted border border-hairline;
+  }
+  .btn-quiet:hover { @apply border-green-600 text-green-700; }
+
+  /* Kompakte Variante für Chips/Filter */
+  .btn-sm { @apply text-caption px-4 py-2; }
+
+  /* ── Artikel-Typografie ───────────────────────────────────────────────
+     Wird von /blog/[slug] genutzt. Fließtext auf Lesegröße, ruhiger
+     vertikaler Rhythmus, Überschriften mit klarer Hierarchie. */
+  .prose-style {
+    @apply text-body text-ink;
+  }
+  .prose-style > p {
+    @apply mb-6 max-w-prose;
+  }
+  .prose-style > h2 {
+    @apply font-serif text-display-sm font-bold text-ink mt-14 mb-4;
+  }
+  .prose-style > h3 {
+    @apply font-serif text-tagline font-bold text-ink mt-10 mb-3;
+  }
+  .prose-style > ul {
+    @apply mb-6 max-w-prose;
+  }
+  .prose-style strong {
+    @apply font-semibold text-ink;
+  }
+  .prose-style a {
+    @apply text-green-700 underline underline-offset-2 decoration-green-300;
+  }
+  .prose-style a:hover {
+    @apply decoration-green-600;
+  }
+  .prose-style > hr {
+    @apply my-12 border-hairline;
   }
 }
 
@@ -54,6 +150,16 @@
   @keyframes parallax-shift {
     from { transform: translateY(0); }
     to { transform: translateY(-30px); }
+  }
+}
+
+/* Bewegung respektieren */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
   }
 }
 

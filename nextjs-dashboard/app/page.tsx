@@ -20,15 +20,15 @@ export const metadata: Metadata = {
 };
 
 const POPULAR_DESTINATIONS = [
-  { slug: 'kaernten',          name: 'Kärnten',          tag: 'Wörthersee & Badeseen',     note: 'Wärmstes Seewasser Österreichs',      bar: 'from-sky-400 to-cyan-600' },
-  { slug: 'salzburg',          name: 'Salzburg',         tag: 'Zeller See & Großglockner', note: 'Mozartstadt trifft Hohe Tauern',      bar: 'from-violet-400 to-purple-600' },
-  { slug: 'tirol',             name: 'Tirol',            tag: 'Achensee & Ötztal',         note: 'Das Herz der Alpen',                  bar: 'from-blue-400 to-indigo-600' },
-  { slug: 'steiermark',        name: 'Steiermark',       tag: 'Grüner See & Dachstein',    note: 'Das grüne Herz Österreichs',          bar: 'from-green-500 to-emerald-700' },
-  { slug: 'burgenland',        name: 'Burgenland',       tag: 'Neusiedler See & Wein',     note: 'Pannonische Sonne am Steppensee',     bar: 'from-amber-400 to-orange-600' },
-  { slug: 'oberoesterreich',   name: 'Oberösterreich',   tag: 'Salzkammergut & Hallstatt', note: 'Glasklare Seen, Atter- & Traunsee',   bar: 'from-teal-400 to-cyan-600' },
-  { slug: 'niederoesterreich', name: 'Niederösterreich', tag: 'Wachau & Wiener Alpen',     note: 'Donautal, Wein, Schneeberg & Rax',    bar: 'from-rose-400 to-pink-600' },
-  { slug: 'vorarlberg',        name: 'Vorarlberg',       tag: 'Bodensee & Bergseen',       note: 'Von Bregenz bis zum Lünersee',        bar: 'from-cyan-400 to-teal-600' },
-  { slug: 'wien',              name: 'Wien',             tag: 'Kaiserstadt & Alte Donau',  note: 'Kultur, Kaffeehaus & Baden',          bar: 'from-red-400 to-rose-600' },
+  { slug: 'kaernten',          name: 'Kärnten',          tag: 'Wörthersee & Badeseen',     note: 'Wärmstes Seewasser Österreichs' },
+  { slug: 'salzburg',          name: 'Salzburg',         tag: 'Zeller See & Großglockner', note: 'Mozartstadt trifft Hohe Tauern' },
+  { slug: 'tirol',             name: 'Tirol',            tag: 'Achensee & Ötztal',         note: 'Das Herz der Alpen' },
+  { slug: 'steiermark',        name: 'Steiermark',       tag: 'Grüner See & Dachstein',    note: 'Das grüne Herz Österreichs' },
+  { slug: 'burgenland',        name: 'Burgenland',       tag: 'Neusiedler See & Wein',     note: 'Pannonische Sonne am Steppensee' },
+  { slug: 'oberoesterreich',   name: 'Oberösterreich',   tag: 'Salzkammergut & Hallstatt', note: 'Glasklare Seen, Atter- & Traunsee' },
+  { slug: 'niederoesterreich', name: 'Niederösterreich', tag: 'Wachau & Wiener Alpen',     note: 'Donautal, Wein, Schneeberg & Rax' },
+  { slug: 'vorarlberg',        name: 'Vorarlberg',       tag: 'Bodensee & Bergseen',       note: 'Von Bregenz bis zum Lünersee' },
+  { slug: 'wien',              name: 'Wien',             tag: 'Kaiserstadt & Alte Donau',  note: 'Kultur, Kaffeehaus & Baden' },
 ];
 
 export default function HomePage() {
@@ -52,13 +52,13 @@ export default function HomePage() {
         <div className="flex flex-wrap gap-3">
           <Link
             href="/blog"
-            className="inline-block bg-white text-green-800 font-semibold px-7 py-3 hover:bg-green-50 transition-colors"
+            className="btn bg-white text-green-800 hover:bg-green-50"
           >
             Zum Magazin
           </Link>
           <Link
             href="/karte"
-            className="inline-block border border-white/60 text-white font-semibold px-7 py-3 hover:bg-white/10 transition-colors"
+            className="btn border border-white/60 text-white hover:bg-white/10"
           >
             Wanderkarte öffnen
           </Link>
@@ -67,7 +67,7 @@ export default function HomePage() {
 
       {/* ── Saisonaler Akzent-Banner ───────────────────────────────────── */}
       <FadeIn direction="none" duration={400}>
-        <section className="border-b border-gray-200 bg-gradient-to-r from-green-800 to-green-900 text-white">
+        <section className="border-b border-hairline bg-green-900 text-white">
           <div className="max-w-6xl mx-auto px-6 py-3.5 flex items-center justify-between">
             <p className="text-sm">
               <span className="mr-2">{season.icon}</span>
@@ -84,17 +84,17 @@ export default function HomePage() {
 
       {/* ── Kennzahlen-Band ────────────────────────────────────────────── */}
       <FadeIn direction="up" delay={100}>
-        <section className="border-b border-gray-200 bg-sand-50">
-          <div className="max-w-6xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 divide-x divide-gray-200">
+        <section className="border-b border-hairline bg-sand-50">
+          <div className="max-w-6xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 divide-x divide-hairline">
             {[
-              { value: String(posts.length), label: 'Insider-Artikel', color: 'text-green-700' },
-              { value: String(activeRegions), label: 'Bundesländer', color: 'text-sky-600' },
-              { value: '4', label: 'Kategorien', color: 'text-amber-600' },
-              { value: '100 %', label: 'ehrlich recherchiert', color: 'text-violet-600' },
+              { value: String(posts.length), label: 'Insider-Artikel' },
+              { value: String(activeRegions), label: 'Bundesländer' },
+              { value: '4', label: 'Kategorien' },
+              { value: '100 %', label: 'ehrlich recherchiert' },
             ].map((s) => (
-              <div key={s.label} className="py-7 px-4 text-center">
-                <p className={`font-serif text-2xl md:text-3xl font-bold leading-none ${s.color}`}>{s.value}</p>
-                <p className="text-xs text-gray-500 mt-2 uppercase tracking-wider">{s.label}</p>
+              <div key={s.label} className="py-9 px-4 text-center">
+                <p className="font-serif text-display-sm font-bold leading-none text-ink">{s.value}</p>
+                <p className="text-xs text-ink-soft mt-2 uppercase tracking-wider">{s.label}</p>
               </div>
             ))}
           </div>
@@ -103,10 +103,10 @@ export default function HomePage() {
 
       {/* ── Ausflugsplaner-Teaser ──────────────────────────────────────── */}
       <FadeIn direction="none" duration={400}>
-        <section className="border-b border-gray-200 bg-sand-50">
+        <section className="border-b border-hairline bg-sand-50">
           <div className="max-w-6xl mx-auto px-6 py-4 flex flex-wrap items-center justify-between gap-3">
-            <p className="text-sm text-gray-600">
-              <strong className="text-gray-900">Nicht sicher, wohin?</strong>{' '}
+            <p className="text-sm text-ink-muted">
+              <strong className="text-ink">Nicht sicher, wohin?</strong>{' '}
               Der Ausflugsplaner sortiert alle Ziele nach Wetter, Zeitfenster und Monat.
             </p>
             <Link href="/ausflugsplaner" className="inline-flex items-center gap-1.5 text-sm font-semibold text-green-700 hover:text-green-600 transition-colors">
@@ -132,13 +132,13 @@ export default function HomePage() {
       </section>
 
       {/* ── Beliebte Reiseziele ────────────────────────────────────────── */}
-      <section id="regionen" className="bg-gradient-to-b from-sand-50 to-white scroll-mt-20">
+      <section id="regionen" className="surface-parchment scroll-mt-20">
        <div className="max-w-6xl mx-auto px-6 py-16">
         <FadeIn direction="up">
           <div className="text-center mb-9">
             <p className="eyebrow mb-2">Beliebte Reiseziele</p>
-            <h2 className="font-serif text-3xl font-bold text-gray-900">Wohin in Österreich?</h2>
-            <p className="text-gray-500 mt-2 max-w-xl mx-auto">
+            <h2 className="font-serif text-display font-bold text-ink">Wohin in Österreich?</h2>
+            <p className="text-ink-soft mt-2 max-w-xl mx-auto">
               Wähle dein Bundesland – jede Region mit eigenen Wanderungen, Badeseen und Ausflugstipps.
             </p>
           </div>
@@ -149,16 +149,14 @@ export default function HomePage() {
             <FadeIn key={d.slug} direction="up" delay={i * 60} duration={500}>
               <Link
                 href={`/regionen/${d.slug}`}
-                className="group block border border-gray-200 overflow-hidden hover:border-green-400 hover:shadow-lg hover:-translate-y-1 transition-all duration-300"
-                style={{ borderRadius: 8 }}
+                className="surface-card-interactive group block overflow-hidden"
               >
-                <div className={`h-2 bg-gradient-to-r ${d.bar} transition-all duration-300 group-hover:h-3`} />
-                <div className="p-6">
-                  <p className={`text-xs font-semibold uppercase tracking-[0.14em] mb-1.5 bg-gradient-to-r ${d.bar} bg-clip-text text-transparent`}>{d.tag}</p>
-                  <h3 className="font-serif text-xl font-bold text-gray-900 group-hover:text-green-700 leading-snug transition-colors">
+                <div className="p-7">
+                  <p className="eyebrow mb-2">{d.tag}</p>
+                  <h3 className="font-serif text-tagline font-bold text-ink group-hover:text-green-700 leading-snug transition-colors">
                     {d.name}
                   </h3>
-                  <p className="text-sm text-gray-500 mt-1.5">{d.note}</p>
+                  <p className="text-sm text-ink-soft mt-1.5">{d.note}</p>
                   <span className="mt-4 inline-flex items-center gap-1.5 text-sm font-medium text-green-700 group-hover:text-green-600 transition-colors">
                     Tipps &amp; Hotels
                     <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="2" className="transition-transform duration-300 group-hover:translate-x-1">
@@ -180,12 +178,12 @@ export default function HomePage() {
       </section>
 
       {/* ── Featured: Magazin-Layout (1 groß + Liste) ──────────────────── */}
-      <section className="max-w-6xl mx-auto px-6 pb-16 border-t border-gray-100 pt-16">
+      <section className="max-w-6xl mx-auto px-6 pb-16 border-t border-hairline pt-16">
         <FadeIn direction="up">
           <div className="flex items-end justify-between mb-8">
             <div>
               <p className="eyebrow mb-2">Aus dem Magazin</p>
-              <h2 className="font-serif text-3xl font-bold text-gray-900">Aktuelle Tipps</h2>
+              <h2 className="font-serif text-display font-bold text-ink">Aktuelle Tipps</h2>
             </div>
             <Link href="/blog" className="text-sm font-medium text-green-700 hover:text-green-600 hidden sm:block transition-colors">
               Alle {posts.length} Artikel →
@@ -196,13 +194,13 @@ export default function HomePage() {
         <div className="grid md:grid-cols-2 gap-8">
           <FadeIn direction="left">
             <Link href={`/blog/${lead.slug}`} className="group block">
-              <div className="relative aspect-[16/10] mb-4 overflow-hidden" style={{ borderRadius: 8 }}>
+              <div className="relative aspect-[16/10] mb-4 overflow-hidden" style={{ borderRadius: 18 }}>
                 <PostArtwork seed={lead.slug} category={lead.category} className="absolute inset-0 transition-transform duration-700 group-hover:scale-105" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
                 <span className="absolute bottom-0 left-0 p-6 font-serif text-2xl text-white leading-snug">{lead.title}</span>
               </div>
               <p className="eyebrow mb-1.5">{lead.category}{lead.bestSeason ? ` · ${lead.bestSeason}` : ''}</p>
-              <p className="text-gray-600 leading-relaxed">{lead.excerpt}</p>
+              <p className="text-ink-muted leading-relaxed">{lead.excerpt}</p>
               <span className="mt-3 inline-flex items-center gap-1.5 text-sm font-medium text-green-700 group-hover:text-green-600 transition-colors">
                 Weiterlesen
                 <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="2" className="transition-transform duration-300 group-hover:translate-x-1">
@@ -213,16 +211,16 @@ export default function HomePage() {
           </FadeIn>
 
           <FadeIn direction="right" delay={150}>
-            <div className="divide-y divide-gray-100">
+            <div className="divide-y divide-hairline">
               {rest.map((post) => (
                 <Link key={post.slug} href={`/blog/${post.slug}`} className="group flex gap-4 py-5 first:pt-0">
                   <span className={`shrink-0 mt-2.5 w-1.5 h-1.5 rounded-full ${CATEGORY_DOT[post.category] ?? 'bg-gray-400'}`} />
                   <div>
                     <p className="eyebrow mb-1">{post.category}</p>
-                    <h3 className="font-serif text-lg font-bold text-gray-900 group-hover:text-green-700 leading-snug transition-colors">
+                    <h3 className="font-serif text-lg font-bold text-ink group-hover:text-green-700 leading-snug transition-colors">
                       {post.title}
                     </h3>
-                    <p className="mt-1 text-sm text-gray-500 line-clamp-2">{post.excerpt}</p>
+                    <p className="mt-1 text-sm text-ink-soft line-clamp-2">{post.excerpt}</p>
                   </div>
                 </Link>
               ))}
@@ -237,37 +235,37 @@ export default function HomePage() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <p className="eyebrow mb-3">Interaktiv</p>
-              <h2 className="font-serif text-3xl font-bold text-gray-900 mb-4 leading-tight">
+              <h2 className="font-serif text-display font-bold text-ink mb-4 leading-tight">
                 Wege, Gipfel und Unterkünfte auf einer Karte
               </h2>
-              <p className="text-gray-600 mb-7 leading-relaxed">
+              <p className="text-ink-muted mb-7 leading-relaxed">
                 Unsere Wanderkarte verbindet das offizielle Wegenetz mit live geladenen Gipfeln
                 und handverlesenen Unterkünften direkt am See – Verfügbarkeit mit einem Klick.
               </p>
               <div className="flex flex-wrap gap-3">
-                <Link href="/karte" className="inline-block bg-green-700 text-white font-semibold px-7 py-3 hover:bg-green-800 transition-colors hover:shadow-lg" style={{ borderRadius: 4 }}>
+                <Link href="/karte" className="inline-block bg-green-700 text-white font-semibold px-7 py-3 hover:bg-green-800 transition-colors" style={{ borderRadius: 8 }}>
                   Karte öffnen
                 </Link>
-                <Link href="/routenplaner" className="inline-block border border-gray-300 text-gray-700 font-semibold px-7 py-3 hover:border-green-600 hover:text-green-700 transition-colors" style={{ borderRadius: 4 }}>
+                <Link href="/routenplaner" className="inline-block border border-gray-300 text-ink-muted font-semibold px-7 py-3 hover:border-green-600 hover:text-green-700 transition-colors" style={{ borderRadius: 8 }}>
                   Route planen
                 </Link>
               </div>
             </div>
-            <div className="border-t border-gray-200">
+            <div className="border-t border-hairline">
               {[
                 { t: 'Unterkünfte', d: 'Hotels, Camping & Ferienwohnungen direkt am See', icon: 'M3 7h10l-1.5-4H4.5L3 7zM2 8v6h1v2h2v-2h6v2h2v-2h1V8H2z' },
                 { t: 'Wanderwege', d: 'Offizielles Wegenetz mit Höhenprofil im Routenplaner', icon: 'M3 13l3-5 3 3 4-7 3 5' },
                 { t: 'Gipfel', d: 'Über 1.000 benannte Gipfel, live von OpenStreetMap', icon: 'M2 14L8 3l6 11H2z' },
               ].map((c) => (
-                <div key={c.t} className="flex gap-4 py-5 border-b border-gray-200 group">
-                  <span className="shrink-0 w-8 h-8 bg-green-50 border border-green-200 flex items-center justify-center" style={{ borderRadius: 6 }}>
+                <div key={c.t} className="flex gap-4 py-5 border-b border-hairline group">
+                  <span className="shrink-0 w-8 h-8 bg-green-50 border border-green-200 flex items-center justify-center" style={{ borderRadius: 9999 }}>
                     <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.5" className="text-green-700">
                       <path d={c.icon} strokeLinecap="round" strokeLinejoin="round" />
                     </svg>
                   </span>
                   <div>
-                    <p className="font-semibold text-gray-900">{c.t}</p>
-                    <p className="text-sm text-gray-500 mt-0.5">{c.d}</p>
+                    <p className="font-semibold text-ink">{c.t}</p>
+                    <p className="text-sm text-ink-soft mt-0.5">{c.d}</p>
                   </div>
                 </div>
               ))}
