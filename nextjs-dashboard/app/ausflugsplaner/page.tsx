@@ -90,7 +90,7 @@ export default function AusflugsplanerPage() {
   ];
 
   return (
-    <div className="max-w-5xl mx-auto px-6 py-12">
+    <div className="max-w-5xl mx-auto px-6 py-14 md:py-section">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
       <p className="eyebrow mb-2">Übersicht</p>

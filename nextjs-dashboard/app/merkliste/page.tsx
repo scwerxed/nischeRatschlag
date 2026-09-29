@@ -21,7 +21,7 @@ export default function MerklistePage() {
   }
 
   return (
-    <div className="max-w-3xl mx-auto px-6 py-12">
+    <div className="max-w-3xl mx-auto px-6 py-14 md:py-section">
       <p className="eyebrow mb-2">Deine Merkliste</p>
       <h1 className="font-serif text-display font-bold mb-3 text-ink">Gemerkte Artikel</h1>
       <p className="text-ink-soft mb-8">

@@ -35,7 +35,7 @@ export default function DauerPage() {
   ];
 
   return (
-    <div className="max-w-5xl mx-auto px-6 py-12">
+    <div className="max-w-5xl mx-auto px-6 py-14 md:py-section">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
       <p className="eyebrow mb-2">Planungshilfe</p>
@@ -46,7 +46,7 @@ export default function DauerPage() {
       </p>
 
       {GROUPS.map((g) => (
-        <section key={g.title} className="mb-14">
+        <section key={g.title} className="mb-16 md:mb-20">
           <h2 className="font-serif text-lead font-bold mb-1 text-ink">{g.title}</h2>
           <p className="text-caption text-ink-soft mb-5 max-w-2xl">{g.note}</p>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">

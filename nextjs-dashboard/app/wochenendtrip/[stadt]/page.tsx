@@ -54,7 +54,7 @@ export default async function WochenendtripStadtPage({ params }: Props) {
   ];
 
   return (
-    <div className="max-w-5xl mx-auto px-6 py-12">
+    <div className="max-w-5xl mx-auto px-6 py-14 md:py-section">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
       {/* Breadcrumb */}
@@ -76,7 +76,7 @@ export default async function WochenendtripStadtPage({ params }: Props) {
       )}
 
       {groups.map((g) => (
-        <section key={g.bucket.key} className="mb-14">
+        <section key={g.bucket.key} className="mb-16 md:mb-20">
           <h2 className="font-serif text-lead font-bold mb-5 text-ink flex items-baseline gap-2">
             {g.bucket.label}
             <span className="text-caption font-sans font-normal text-ink-soft">{g.items.length} Ziele</span>

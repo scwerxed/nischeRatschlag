@@ -137,7 +137,7 @@ function renderContent(content: string) {
     if (line.startsWith('## ')) {
       flushList();
       elements.push(
-        <h2 key={i} id={slugifyHeading(line.slice(3))} className="font-serif text-display-sm font-bold mt-16 mb-5 text-ink border-b border-hairline pb-3 scroll-mt-24">
+        <h2 key={i} id={slugifyHeading(line.slice(3))} className="font-serif text-lead md:text-display-sm font-bold mt-16 mb-5 text-ink border-b border-hairline pb-3 scroll-mt-24">
           {renderInline(line.slice(3))}
         </h2>
       );
@@ -301,7 +301,7 @@ export default async function BlogPostPage({ params }: Props) {
       </header>
 
       {/* ── Zweispaltiger Inhalt ─────────────────────────────────────────── */}
-      <div className="max-w-6xl mx-auto px-6 py-12 grid lg:grid-cols-[minmax(0,1fr)_320px] gap-10 lg:gap-14">
+      <div className="max-w-6xl mx-auto px-6 py-14 md:py-section grid lg:grid-cols-[minmax(0,1fr)_320px] gap-10 lg:gap-14">
 
         {/* Hauptspalte */}
         <article className="min-w-0">

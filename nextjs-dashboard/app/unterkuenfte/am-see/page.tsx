@@ -36,7 +36,7 @@ export default function UnterkuenfteAmSeePage() {
   ];
 
   return (
-    <div className="max-w-5xl mx-auto px-6 py-12">
+    <div className="max-w-5xl mx-auto px-6 py-14 md:py-section">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
       <nav className="flex flex-wrap items-center gap-2 text-fine text-ink-soft mb-5">

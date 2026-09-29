@@ -18,7 +18,7 @@ const IMPRESSUM = {
 
 export default function ImpressumPage() {
   return (
-    <div className="max-w-2xl mx-auto px-6 py-12">
+    <div className="max-w-2xl mx-auto px-6 py-14 md:py-section">
       <p className="eyebrow mb-2">Rechtliches</p>
       <h1 className="font-serif text-display font-bold mb-8 text-ink">Impressum</h1>
 

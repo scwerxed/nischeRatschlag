@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 
 export default function UeberUnsPage() {
   return (
-    <div className="max-w-2xl mx-auto px-6 py-12">
+    <div className="max-w-2xl mx-auto px-6 py-14 md:py-section">
       <p className="eyebrow mb-2">Über uns</p>
       <h1 className="font-serif text-display font-bold mb-6 text-ink">
         Österreich, wie wir es wirklich erleben

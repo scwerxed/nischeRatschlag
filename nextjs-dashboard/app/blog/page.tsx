@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 
 export default function BlogPage() {
   return (
-    <div className="max-w-5xl mx-auto px-6 py-12">
+    <div className="max-w-5xl mx-auto px-6 py-14 md:py-section">
       <p className="eyebrow mb-2">Magazin</p>
       <h1 className="font-serif text-display font-bold mb-2 text-ink">Österreich in {posts.length} Geschichten</h1>
       <p className="text-ink-soft mb-10 max-w-2xl">

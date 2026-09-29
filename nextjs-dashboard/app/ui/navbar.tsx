@@ -66,7 +66,11 @@ function SearchForm({ onSubmit }: { onSubmit?: () => void }) {
 
 function Heart({ count }: { count: number }) {
   return (
-    <Link href="/merkliste" aria-label={`Merkliste (${count})`} className="relative text-ink-soft hover:text-green-700 transition-colors">
+    <Link
+      href="/merkliste"
+      aria-label={`Merkliste (${count})`}
+      className="relative text-ink-soft hover:text-green-700 transition-colors after:absolute after:content-[''] after:-inset-2"
+    >
       <svg width="22" height="22" viewBox="0 0 16 16" fill={count > 0 ? 'currentColor' : 'none'} stroke="currentColor" strokeWidth="1.5">
         <path d="M8 14s-5-3.3-5-7a3 3 0 0 1 5-2.2A3 3 0 0 1 13 7c0 3.7-5 7-5 7z" strokeLinejoin="round" />
       </svg>
@@ -126,7 +130,7 @@ export default function Navbar() {
               <Link
                 key={l.href}
                 href={l.href}
-                className={`relative transition-colors after:absolute after:left-0 after:-bottom-1.5 after:h-px after:bg-green-600 after:transition ${
+                className={`relative transition-colors before:absolute before:content-[''] before:-inset-x-1.5 before:-inset-y-2.5 after:absolute after:left-0 after:-bottom-1.5 after:h-px after:bg-green-600 after:transition ${
                   isActive(l.href)
                     ? 'text-green-700 after:w-full'
                     : 'hover:text-green-700 after:w-0 hover:after:w-full'

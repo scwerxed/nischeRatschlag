@@ -73,7 +73,7 @@ export default async function RegionPage({ params }: Props) {
   const stays = unterkuenfte.filter((u) => u.region === bundesland);
 
   return (
-    <div className="max-w-5xl mx-auto px-6 py-12">
+    <div className="max-w-5xl mx-auto px-6 py-14 md:py-section">
       {/* Breadcrumb für alle aktiven Regionen */}
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema([
         { name: 'Startseite', url: BASE },
@@ -216,7 +216,7 @@ export default async function RegionPage({ params }: Props) {
             const catPosts = regionPosts.filter((p) => p.category === cat);
             if (catPosts.length === 0) return null;
             return (
-              <section key={cat} id={cat.toLowerCase()} className="mb-14">
+              <section key={cat} id={cat.toLowerCase()} className="mb-16 md:mb-20">
                 <h2 className="font-serif text-lead font-bold mb-5 text-ink flex items-baseline gap-2">
                   {cat}
                   <span className="text-caption font-sans font-normal text-ink-soft">{catPosts.length} Artikel</span>
@@ -292,7 +292,7 @@ export default async function RegionPage({ params }: Props) {
 
           {/* Unterkünfte (Affiliate) */}
           {stays.length > 0 && (
-            <section className="mb-14">
+            <section className="mb-16 md:mb-20">
               <p className="eyebrow mb-2">Unterkünfte</p>
               <h2 className="font-serif text-lead font-bold mb-1 text-ink">Hotels & Ferienwohnungen in {region.name}</h2>
               <p className="text-caption text-ink-soft mb-5">Verfügbarkeit & Preise direkt über booking.com prüfen.</p>

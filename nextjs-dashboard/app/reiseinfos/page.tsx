@@ -20,7 +20,7 @@ function Block({ title, children }: { title: string; children: React.ReactNode }
 
 export default function ReiseinfosPage() {
   return (
-    <div className="max-w-2xl mx-auto px-6 py-12">
+    <div className="max-w-2xl mx-auto px-6 py-14 md:py-section">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema([
