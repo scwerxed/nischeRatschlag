@@ -2404,34 +2404,62 @@ Im Sommer gibt es oft Ritterfeste und Kinderführungen – ein Erlebnis für die
     ],
   },
   {
-    slug: 'therme-burgenland-lutzmannsburg',
+    slug: 'thermen-burgenland-ueberblick',
     startCoords: [47.4640, 16.6360],
-    title: 'Thermen im Burgenland – von der Familientherme bis zur Ruheoase',
-    excerpt: 'St. Martins Therme, Sonnentherme Lutzmannsburg und mehr: Das Burgenland hat Thermen für jeden – ob Familienspaß mit Riesenrutschen oder Wellness in der Lagune.',
+    title: 'Thermen im Burgenland – welche passt zu wem?',
+    excerpt: 'Familientherme oder Ruheoase? Das Burgenland hat beides – dieser Überblick ordnet die Häuser nach Charakter, damit du nicht im falschen Becken landest.',
     date: '2026-06-09',
     category: 'Ausflug',
     region: 'burgenland',
     bestSeason: 'Ganzjährig',
-    highlights: ['Europas familienfreundlichste Therme (Lutzmannsburg)', 'St. Martins Therme mit Naturbadesee', 'Ideal bei Regen & im Winter'],
+    highlights: ['Welche Therme zu welchem Urlaub passt', 'Warum es hier ueberhaupt Thermalwasser gibt', 'Ideal bei Regen & im Winter'],
     content: `
-Das pannonische Klima und Thermalquellen machen das Burgenland zu einer Wohlfühlregion. Die Thermen sind ganzjährig ein verlässliches Ziel – ob Familienurlaub oder Wellness-Wochenende.
+Das Burgenland hat vergleichsweise wenige Berge, aber ungewöhnlich viel Thermalwasser. Für Schlechtwettertage, kalte Monate und Familienurlaube ist das die wichtigste Karte der Region – und die Thermen unterscheiden sich stärker voneinander, als man erwartet.
 
-## Sonnentherme Lutzmannsburg
-Gilt als eine der **familienfreundlichsten Thermen Europas** – mit langen Rutschen, eigenem Babybereich und Kleinkind-Welt. Perfekt für Familien mit kleinen Kindern.
+## Die drei Charaktere
+**Familien mit kleinen Kindern:** Die [Sonnentherme Lutzmannsburg](/blog/therme-lutzmannsburg) im Mittelburgenland ist konsequent auf Kinder ausgerichtet, mit eigener Baby- und Kleinkindwelt und langen Rutschen für ältere Geschwister. Wer mit Kleinkind anreist, fährt hierher.
 
-## St. Martins Therme & Lodge (Frauenkirchen)
-Eine Besonderheit: Therme kombiniert mit einem **Naturbadesee** und geführten Touren in den angrenzenden Nationalpark. Wellness und Natur in einem.
+**Erwachsene und Ruhesuchende:** Die St. Martins Therme im Seewinkel setzt auf eine andere Idee – Lagunenlandschaft, Naturbadesee und Anbindung an die Nationalparklandschaft ringsum. Der Fokus liegt stärker auf Wellness als auf Rutschen.
 
-## Tipps
-- **Wochentags** ruhiger und günstiger als am Wochenende
-- Familien: Lutzmannsburg; Paare/Ruhe: St. Martins oder Erwachsenenbereiche
-- Thermenhotels mit direktem Zugang sparen Anfahrt
+**Kur und Gesundheit:** Im Süden liegen Betriebe mit klassischem Kur- und Heilwasserprofil, in denen Behandlung und Ruhe im Vordergrund stehen.
 
-## Praktische Infos
-- Region: Mittel- und Nordburgenland
-- Anfahrt: Von Wien je nach Therme 1–1,5 Stunden
-- Gut mit See- und Weinregion kombinierbar
-    `,
+## Warum es hier Thermalwasser gibt
+Das Burgenland liegt am Rand des Pannonischen Beckens. Unter der Ebene liegen wasserführende Schichten in großer Tiefe, aus denen warmes Wasser gefördert wird. Dieselbe Geologie prägt auch das benachbarte Steirische Vulkanland und Westungarn – die Thermendichte in dieser Ecke Mitteleuropas ist kein Zufall.
+
+## Beste Zeit
+**November bis März** ist Thermenhochsaison – und genau dann ist das Burgenland sonst am wenigsten attraktiv, weil Seen und Radwege ausfallen. Die Kombination passt also gut.
+
+Die vollsten Zeiten sind Weihnachts- und Semesterferien sowie verlängerte Wochenenden. Wer Ruhe will, kommt an einem Wochentag im November oder März.
+
+Im Hochsommer sind die Thermen der Plan B für Regentage – dann konkurrieren sie mit dem Neusiedler See.
+
+## Anreise
+Die burgenländischen Thermen liegen weit auseinander: Lutzmannsburg im Mittelburgenland, St. Martins im Seewinkel im Norden, weitere im Süden. Von Wien sind es je nach Ziel eine bis zwei Stunden.
+
+Mit öffentlichen Verkehrsmitteln ist das Burgenland dünn erschlossen – für Thermenbesuche ist das Auto praktisch Voraussetzung.
+
+## Was du mitnehmen solltest
+- Bademantel und Badeschuhe (Verleih ist meist möglich, aber aufpreispflichtig)
+- Für die Sauna ein zweites Handtuch
+- Bei Familien: Schwimmhilfen, auch wenn vor Ort welche verfügbar sind
+- Genug Zeit – Thermen lohnen sich ab einem halben Tag
+
+## Ehrlich gesagt
+Thermen sind teuer, und die Preise unterscheiden sich deutlich zwischen den Häusern. Wer nur schwimmen will, ist in einem Hallenbad besser bedient.
+
+Außerdem: An einem verregneten Sonntag in den Ferien sind burgenländische Thermen voll – dann ist von Erholung wenig zu spüren. Die Kontingente sind teils begrenzt; ein Anruf oder Online-Check vor der Anfahrt erspart Enttäuschungen.
+
+Und die Häuser sind unterschiedlich ausgerichtet: Wer als Paar Ruhe sucht und in einer Familientherme landet, hat den falschen Tag gebucht. Diese Entscheidung vorher zu treffen, ist wichtiger als der Preisvergleich.
+
+## Gut kombinierbar
+- [Sonnentherme Lutzmannsburg](/blog/therme-lutzmannsburg) – der Einzelartikel zur Familientherme
+- [Neusiedler See](/blog/neusiedler-see-baden-segeln) – im Sommer die Alternative
+- [Burg Lockenhaus](/blog/burg-lockenhaus) – nahe Lutzmannsburg für den zweiten Tag
+
+---
+
+**Kurz gesagt:** Erst entscheiden, ob Familienrutschen oder Ruhe gesucht ist – die burgenländischen Thermen sind sehr unterschiedlich.
+`,
     affiliateLinks: [
       { label: 'Thermenhotels Burgenland – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Lutzmannsburg' },
       { label: 'Badezubehör für Kinder – Amazon', url: 'https://www.amazon.de/s?k=schwimmhilfe+kinder' },
@@ -3604,7 +3632,7 @@ Und das Goldene Dachl enttäuscht regelmäßig Besucher, die eine große Fassade
 
 ## Gut kombinierbar
 - [Swarovski Kristallwelten](/blog/swarovski-kristallwelten) – 20 Minuten östlich
-- [Stubaier Gletscher](/blog/stubaier-gletscher) – rund 45 Minuten südlich
+- [Stubaier Gletscher](/blog/stubaital-stubaier-gletscher) – rund 45 Minuten südlich
 - [Zillertal](/blog/zillertal-wandern) – das große Wandertal nebenan
 
 ---
@@ -3748,7 +3776,7 @@ Und die Talstraße ist die einzige Verbindung – bei Stau gibt es keine Alterna
 
 ## Gut kombinierbar
 - [Pitztaler Gletscher](/blog/pitztaler-gletscher) – das Nachbartal, ruhiger
-- [Stubaier Gletscher](/blog/stubaier-gletscher) – näher an Innsbruck
+- [Stubaier Gletscher](/blog/stubaital-stubaier-gletscher) – näher an Innsbruck
 - [Innsbruck](/blog/innsbruck-sehenswuerdigkeiten) – eine Stunde talauswärts
 
 ---
@@ -5026,25 +5054,61 @@ April bis Oktober, mit angenehmen Temperaturen auch an heißen Sommertagen dank 
     date: '2026-06-14', category: 'Ausflug', region: 'tirol', bestSeason: 'Ganzjährig',
     highlights: ['Größtes Gletscherskigebiet Österreichs', 'Aussichtsplattform auf 3.210 m', 'Wandern & Skifahren ganzjährig'],
     content: `
-Das Stubaital südlich von Innsbruck endet am mächtigen Stubaier Gletscher – einem Ganzjahres-Skigebiet und Hochgebirgs-Erlebnis ohne alpinistische Anforderungen.
+Das **Stubaital** südlich von Innsbruck endet nach rund 35 Kilometern an einem Gletscher – und genau diese Kombination macht es aus: In 45 Minuten ist man aus der Stadt auf über 3.000 Metern, ganzjährig im Schnee.
 
-## Gletscher & Aussicht
-Bergbahnen bringen dich bequem ins ewige Eis. Die Plattform **„TOP OF TYROL"** auf 3.210 m bietet einen Rundblick über mehr als 100 Dreitausender.
+## Der Gletscher
+Der **Stubaier Gletscher** am Talschluss bei Mutterbergalm ist das größte Gletscherskigebiet Österreichs. Der Skibetrieb reicht weit über die übliche Wintersaison hinaus – im Herbst wird hier früher aufgesperrt als fast überall sonst, im Frühjahr länger gefahren.
 
-## Sommer
-Höhenwanderungen, der Wilde-Wasser-Weg entlang tosender Bäche und Klettersteige – das Tal ist auch im Sommer ein Wanderparadies.
+Für Sommergäste ist der Gletscher trotzdem interessant: Die Bahnen fahren auch außerhalb der Skisaison, und oben steht man in einer Hochgebirgswelt, die sonst nur Bergsteigern offensteht.
 
-## Geschichte
-Das Skigebiet am Stubaier Gletscher wurde ab den 1970er-Jahren erschlossen und zählte zu den ersten Gletscherskigebieten der Alpen. Der Ausbau machte ganzjähriges Skifahren in dieser Höhenlage möglich und verwandelte das zuvor vor allem von Almwirtschaft und Bergsteigern geprägte Tal in eines der meistbesuchten Ausflugsziele Tirols.
+## Top of Tyrol
+Die Aussichtsplattform **"Top of Tyrol"** liegt auf rund 3.210 Metern und ragt als schmaler Steg über den Abgrund. Von dort reicht der Blick über die Stubaier Alpen und bei klarer Sicht weit nach Süden Richtung Dolomiten.
 
-## Beste Reisezeit
-Wintersport ist am Gletscher praktisch ganzjährig möglich, am zuverlässigsten aber von Herbst bis Frühsommer. Für Wanderungen und den Wilde-Wasser-Weg eignen sich die Sommermonate Juni bis September am besten, wenn die tieferen Talabschnitte schneefrei sind.
+Der Weg von der Bergstation dorthin ist kurz, aber auf dieser Höhe spürbar anstrengend – langsam gehen hilft mehr, als man denkt.
 
-## Praktische Infos
-- Anfahrt: Von Innsbruck ca. 45 Minuten
-- Auch im Sommer warm anziehen (Gletscher!)
-- Bergbahn-Tickets online oft günstiger
-    `,
+## Wandern im Tal
+Der Gletscher ist nicht das einzige Argument. Das Stubaital ist ein sehr gut erschlossenes Wandertal:
+
+**Stubaier Höhenweg:** Eine mehrtägige Hüttenrunde hoch über dem Tal – anspruchsvoll, hochalpin und eine der bekannteren Routen der Ostalpen.
+
+**Elferhütte und Panoramaweg:** Von Neustift aus mit der Bahn erreichbar, oben leichte Höhenwege mit Blick auf die gegenüberliegende Bergkette.
+
+**Grawa-Wasserfall:** Einer der breitesten Wasserfälle der Ostalpen, direkt an der Talstraße und ohne Aufstieg erreichbar. Der Sprühnebel gilt als besonders wohltuend für die Atemwege; es gibt eine Plattform zum Verweilen.
+
+**Wilde-Wasser-Weg:** Ein Themenweg entlang der Gletscherbäche im hinteren Tal – in Etappen begehbar und auch mit Kindern machbar.
+
+## Beste Zeit
+**Juni bis Oktober** für Wanderungen im Tal, **Oktober bis Mai** für den Gletscherskibetrieb. Am Gletscher selbst ist ganzjährig Schnee.
+
+Entscheidend ist wie bei allen Hochgebirgszielen die Sicht: Bei Wolken auf Gipfelhöhe sieht man von der Plattform nichts. Webcams und Bergwetterprognose vorher prüfen – die Auffahrt ist zu teuer für einen Blindflug.
+
+## Anreise
+Von Innsbruck rund 45 Minuten bis zum Talschluss. Der Stubaitalbus fährt ab Innsbruck regelmäßig durch das gesamte Tal bis zur Gletscherbahn – das ist eine der besten Öffi-Anbindungen zu einem Gletscher in Österreich.
+
+Historisch fuhr auch die Stubaitalbahn ab Innsbruck; sie verkehrt heute als Straßenbahnlinie in den vorderen Talbereich.
+
+## Was du mitnehmen solltest
+- **Warme Kleidung**: Auf 3.200 Metern kann es auch im Juli um den Gefrierpunkt sein
+- Sonnenbrille und hoher Lichtschutzfaktor – Schnee und Höhe verstärken die Strahlung erheblich
+- Feste Schuhe, auch für die kurzen Wege oben
+- Ruhe: Wer direkt aus dem Tal auf 3.200 Meter fährt, merkt die Höhe
+
+## Ehrlich gesagt
+Der Gletscher ist ein durchorganisiertes Skigebiet mit Liften, Gastronomie und Betrieb – wer unberührtes Hochgebirge erwartet, ist am Stubaier Höhenweg besser aufgehoben als an der Bergstation.
+
+Die Auffahrt ist außerdem teuer, und bei schlechter Sicht zahlt man für eine graue Wand. Das ist der häufigste Ärger an diesem Ziel.
+
+Und die Talstraße ist im Winter an Wochenenden stark belastet – mit dem Bus fährt man dann entspannter.
+
+## Gut kombinierbar
+- [Innsbruck](/blog/innsbruck-sehenswuerdigkeiten) – 45 Minuten talauswärts
+- [Swarovski Kristallwelten](/blog/swarovski-kristallwelten) – der Plan B bei schlechter Sicht
+- [Zillertal](/blog/zillertal-wandern) – das große Nachbartal
+
+---
+
+**Kurz gesagt:** Gletscher, Wasserfall und Höhenwege in einem Tal – aber nur bei klarer Sicht hinauffahren.
+`,
     officialLinks: [
       { label: 'Stubaier Gletscher (stubaier-gletscher.com)', url: 'https://www.stubaier-gletscher.com' },
     ],
@@ -6147,31 +6211,6 @@ Und bei schlechter Sicht hat er wenig zu bieten – die Aussicht ist praktisch d
     affiliateLinks: [
       { label: 'Hotels in Salzburg – booking.com', url: 'https://www.booking.com/city/at/salzburg.de.html' },
       { label: 'Wanderschuhe – Amazon', url: 'https://www.amazon.de/s?k=wanderschuhe' },
-    ],
-  },
-  {
-    slug: 'stubaier-gletscher',
-    title: 'Stubaier Gletscher – Schnee und Bergpanorama auch im Sommer',
-    excerpt: 'Tirols größtes Gletscherskigebiet im Stubaital bietet Pisten bis in den Frühsommer und mit der Aussichtsplattform „Top of Tyrol" einen Logenblick auf über 3.200 m.',
-    date: '2026-06-16', category: 'Ausflug', region: 'tirol', bestSeason: 'Ganzjährig',
-    startCoords: [46.9700, 11.1300],
-    highlights: ['Tirols größtes Gletscherskigebiet', 'Aussichtsplattform „Top of Tyrol" (3.210 m)', 'Schnee bis in den Frühsommer'],
-    content: `
-Am Talschluss des **Stubaitals**, rund 45 Minuten von Innsbruck, liegt Tirols größtes Gletscherskigebiet. Dank der Höhe liegt hier oft bis in den Frühsommer Schnee.
-
-## Im Sommer
-Auch ohne Ski lohnt die Auffahrt: Die Aussichtsplattform **„Top of Tyrol"** auf 3.210 m schwebt förmlich über dem Gletscher, ringsum ein Meer aus Dreitausendern. Ein kurzer Steig führt vom Bergrestaurant hin.
-
-## Gut zu wissen
-Oben ist es auch im Sommer kalt – warme Jacke, Sonnenbrille und Sonnencreme (Gletscherstrahlung!) sind Pflicht. Feste Schuhe für die Plattform-Wege.
-
-## Praktische Infos
-- Mehrstufige Gondelauffahrt ab Mutterbergalm
-- Wetter vorab prüfen – bei Nebel lohnt es kaum
-- Familienfreundlich, vieles auch ohne Wanderung erlebbar
-    `,
-    affiliateLinks: [
-      { label: 'Unterkünfte im Stubaital – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Stubaital' },
     ],
   },
   {

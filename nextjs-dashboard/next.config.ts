@@ -20,6 +20,22 @@ const nextConfig: NextConfig = {
   async headers() {
     return [{ source: '/:path*', headers: securityHeaders }];
   },
+  // Zusammengefuehrte bzw. umbenannte Artikel: alte URLs dauerhaft umleiten,
+  // damit bestehende Links und der Suchmaschinen-Index nicht ins Leere laufen.
+  async redirects() {
+    return [
+      {
+        source: '/blog/stubaier-gletscher',
+        destination: '/blog/stubaital-stubaier-gletscher',
+        permanent: true,
+      },
+      {
+        source: '/blog/therme-burgenland-lutzmannsburg',
+        destination: '/blog/thermen-burgenland-ueberblick',
+        permanent: true,
+      },
+    ];
+  },
 };
 
 export default nextConfig;

@@ -121,7 +121,7 @@ export const MONATE: Monat[] = [
       { slug: 'giglachseen-schladminger-tauern', warum: 'Die Bergseen sind schneefrei und die Almen in voller Blüte.' },
       { slug: 'bregenzer-festspiele-seebuehne', warum: 'Die Festspiele auf der Seebühne starten – Oper unter Sternen.' },
       { slug: 'gosausee-dachstein-spiegelung', warum: 'Früh am Morgen: perfekte Dachstein-Spiegelung vor der Tageshitze.' },
-      { slug: 'stubaier-gletscher', warum: 'Oben liegt noch Schnee – Sommer und Winter an einem Tag.' },
+      { slug: 'stubaital-stubaier-gletscher', warum: 'Oben liegt noch Schnee – Sommer und Winter an einem Tag.' },
     ],
   },
   {
@@ -182,7 +182,7 @@ export const MONATE: Monat[] = [
     picks: [
       { slug: 'kulinarik-burgenland-martiniloben', warum: 'Rund um den Martinitag wird der junge Wein verkostet – burgenländische Tradition.' },
       { slug: 'rogner-bad-blumau-therme', warum: 'Warmes Wasser und Hundertwasser-Architektur, während draußen der Nebel hängt.' },
-      { slug: 'therme-burgenland-lutzmannsburg', warum: 'Familien-Therme für den Fall, dass draußen gar nichts geht.' },
+      { slug: 'therme-lutzmannsburg', warum: 'Familien-Therme für den Fall, dass draußen gar nichts geht.' },
       { slug: 'untersberg-salzburg', warum: 'Bei Inversionswetter steht man oben in der Sonne, über dem Nebelmeer.' },
       { slug: 'wien-stephansdom-altstadt', warum: 'Dom, Katakomben und Kaffeehaus – der klassische Wiener Novembertag.' },
       { slug: 'graz-altstadt-sehenswuerdigkeiten', warum: 'Kompakte Altstadt mit Museen und Innenhöfen, kurze Wege zwischen Trockenzonen.' },

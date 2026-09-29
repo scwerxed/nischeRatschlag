@@ -20,7 +20,7 @@ export const HITZE_GROUPS: { title: string; note: string; picks: { slug: string;
     title: 'Höhenluft: über 1.500 m ist es kühler',
     note: 'Pro 1.000 Höhenmeter sinkt die Temperatur um rund 6 °C – oben wandert es sich auch im Hochsommer angenehm.',
     picks: [
-      { slug: 'stubaier-gletscher', warum: 'Auf über 3.000 m liegt selbst im Juli Schnee.' },
+      { slug: 'stubaital-stubaier-gletscher', warum: 'Auf über 3.000 m liegt selbst im Juli Schnee.' },
       { slug: 'hintertuxer-gletscher', warum: 'Ganzjahres-Gletscher – Winterluft mitten im Sommer.' },
       { slug: 'dachstein-gletscher-skywalk', warum: 'Gletscherluft und Fernblick statt Tal-Hitze.' },
       { slug: 'luenersee-wandern', warum: 'Uferrundweg auf knapp 2.000 m – frische Bergluft garantiert.' },
@@ -101,7 +101,7 @@ export const REGEN_GROUPS: { title: string; note: string; picks: { slug: string;
     picks: [
       { slug: 'therme-loipersdorf-steiermark', warum: 'Große Thermenlandschaft mit Sauna- und Familienbereich – ein Regentag vergeht hier schnell.' },
       { slug: 'rogner-bad-blumau-therme', warum: 'Hundertwasser-Architektur als Sehenswürdigkeit für sich – schauen und baden zugleich.' },
-      { slug: 'therme-burgenland-lutzmannsburg', warum: 'Stark auf Familien mit kleinen Kindern ausgelegt, viel überdachter Wasserspaß.' },
+      { slug: 'therme-lutzmannsburg', warum: 'Stark auf Familien mit kleinen Kindern ausgelegt, viel überdachter Wasserspaß.' },
       { slug: 'bad-kleinkirchheim-therme-ski', warum: 'Thermalwasser mit Bergblick – funktioniert bei Regen genauso wie bei Sonne.' },
     ],
   },
@@ -383,7 +383,7 @@ export const FAMILIEN_GROUPS: { title: string; note: string; picks: { slug: stri
       { slug: 'alte-donau-baden-wien', tipp: 'Ruhiges Wasser ohne Strömung, per U-Bahn erreichbar.' },
       { slug: 'donauinsel-wien', tipp: 'Mehrere flach abfallende Abschnitte mit Spielplätzen in Wassernähe.' },
       { slug: 'lunzer-see-baden', tipp: 'Kurzer, flacher Rundweg um den See – Baden und Bewegung ohne Anstrengung.' },
-      { slug: 'therme-burgenland-lutzmannsburg', tipp: 'Wenn der See zu kalt ist: lange Rutschen, Baby- und Kleinkindbereich.' },
+      { slug: 'therme-lutzmannsburg', tipp: 'Wenn der See zu kalt ist: lange Rutschen, Baby- und Kleinkindbereich.' },
     ],
   },
   {
