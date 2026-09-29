@@ -2860,19 +2860,52 @@ Und der Gipfel ist mit 884 Metern kein alpines Erlebnis. Der Reiz liegt in der R
     bestSeason: 'April–Oktober',
     highlights: ['Älteste Burg des Burgenlands', 'Auf erloschenem Vulkankegel', 'Weiter Blick über das Südburgenland'],
     content: `
-Burg Güssing wurde im 12. Jahrhundert auf einem erloschenen Vulkankegel errichtet und ist die älteste Burg des Burgenlands. Sie prägt das Bild des grünen, hügeligen Südburgenlands.
+Die **Burg Güssing** thront auf einem erloschenen Vulkankegel über dem südburgenländischen Pinkatal – weithin sichtbar, weil ringsum alles flach bis leicht hügelig ist. Sie gilt als die älteste Burg des Burgenlands, ihre Anfänge reichen ins 12. Jahrhundert zurück.
 
-## Die Burg
-Über einen Schrägaufzug oder zu Fuß erreicht man die Anlage. Oben warten ein Burgmuseum, eine Schatzkammer und ein herrlicher Rundblick über die sanfte Landschaft bis nach Ungarn.
+## Die Lage
+Der Basaltkegel, auf dem die Burg steht, ist der Rest eines Vulkans – dieselbe geologische Geschichte wie bei der Riegersburg in der Steiermark. Weil der Fels steil aufragt, war die Anlage über Jahrhunderte praktisch uneinnehmbar.
 
-## Region Südburgenland
-Güssing liegt mitten in einer ruhigen Genussregion – Uhudler-Wein, Thermen und das Naturparkland laden zum Verweilen.
+Vom Bergfried reicht der Blick weit über das Pinkatal, nach Ungarn hinüber und bei klarer Sicht bis zu den Alpenausläufern. Das ist der Hauptgrund für den Besuch.
 
-## Praktische Infos
-- Anfahrt: Von Graz ca. 1 Stunde, von Wien ca. 1,5 Stunden
-- Öffnungszeiten saisonal
-- Gut mit einer Uhudler-Verkostung kombinierbar
-    `,
+Hinauf kommt man zu Fuß über einen Weg oder mit einem Schrägaufzug, der den steilsten Teil überbrückt.
+
+## Die Burg und die Batthyány
+Über Jahrhunderte war die Burg Sitz der **Familie Batthyány**, die die Region prägte. Die Anlage beherbergt heute ein Museum mit Waffen, Bildern und Objekten aus der Familiengeschichte sowie eine Burgkapelle.
+
+Im Sommer finden auf der Burg Veranstaltungen statt, unter anderem Konzerte und Theater. Programm und Öffnungszeiten wechseln saisonal – vorher nachsehen lohnt sich, weil die Burg nicht ganzjährig durchgehend geöffnet hat.
+
+## Güssing und die Umgebung
+Die Stadt unterhalb ist klein und ruhig. Bekannt geworden ist Güssing über die Region hinaus durch sein Energiekonzept: Die Gemeinde stellte ihre Versorgung konsequent auf erneuerbare Quellen aus der Region um und wurde dafür international beachtet.
+
+Rundherum liegt der **Naturpark Raab-Örség-Goričko**, ein grenzüberschreitendes Schutzgebiet zwischen Österreich, Ungarn und Slowenien – eine der stillsten Ecken Mitteleuropas.
+
+## Beste Zeit
+**April bis Oktober.** Der Herbst ist besonders schön, weil dann im Südburgenland Kastanien- und Weinsaison ist und die Hügel sich färben. Im Sommer ist die Burg ein guter Vormittagsplan, bevor es in der Ebene heiß wird.
+
+## Anreise & Parken
+Von Wien rund zwei Stunden, von Graz etwa 1,5, von Eisenstadt gut eineinhalb. Parkplätze gibt es unterhalb der Burg.
+
+Mit öffentlichen Verkehrsmitteln ist Güssing schwer erreichbar – Bahn bis Oberwart oder Fürstenfeld, dann Regionalbus mit dünnem Takt. Realistisch ein Autoziel.
+
+## Was du mitnehmen solltest
+- Feste Schuhe: Kopfsteinpflaster, Treppen und ein steiler Aufgang
+- Eine Jacke, auf dem Kegel ist es windig
+- Bargeld für kleinere Betriebe in der Umgebung
+
+## Ehrlich gesagt
+Güssing ist kein großes Erlebnisprogramm. Die Burg ist überschaubar, das Museum klassisch gehalten – wer eine inszenierte Ritterwelt erwartet, wird enttäuscht. Für Kinder ist Forchtenstein im Nordburgenland die dankbarere Adresse.
+
+Die Anfahrt ist außerdem lang, gemessen an der Besuchsdauer von ein bis zwei Stunden. Sinnvoll ist die Burg deshalb als Teil einer Südburgenland-Runde, nicht als alleiniges Tagesziel.
+
+## Gut kombinierbar
+- [Weinidylle-Radweg](/blog/weinidylle-radweg-suedburgenland) – die Weinregion rundherum
+- [Uhudler im Südburgenland](/blog/uhudler-suedburgenland-wein) – der Wein, den es sonst kaum gibt
+- [Friedensburg Stadtschlaining](/blog/friedensburg-stadtschlaining) – rund 40 Minuten nördlich
+
+---
+
+**Kurz gesagt:** Die älteste Burg des Burgenlands auf einem Vulkankegel – am besten als Teil einer Südburgenland-Runde.
+`,
     affiliateLinks: [
       { label: 'Unterkünfte in Güssing – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=G%C3%BCssing' },
       { label: 'Burgenland: Ausflüge – GetYourGuide', url: 'https://www.getyourguide.de/s/?q=Burgenland' },
@@ -3514,19 +3547,55 @@ Außerdem ist das Ausseerland wetterempfindlich: Die Berge halten Wolken fest, u
     date: '2026-06-12', category: 'Baden', region: 'steiermark', bestSeason: 'Juni–September',
     highlights: ['Größter See der Steiermark', '"Drei-Seen-Tour" zum Toplitzsee', 'Unberührte Bergkulisse'],
     content: `
-Der Grundlsee bei Bad Aussee wird liebevoll „steirisches Meer" genannt – ein langgestreckter, klarer See, umgeben von steilen Bergflanken.
+Der **Grundlsee** ist der größte See des Ausseerlands und trägt deshalb den Beinamen "steirisches Meer". Er ist knapp sechs Kilometer lang, von bewaldeten Hängen und den Wänden des Toten Gebirges gerahmt – und deutlich zugänglicher als sein stiller Nachbar, der Altausseer See.
 
-## Baden & Bootfahren
-Mehrere Badeplätze und Bootsverleihe säumen das Ufer. Das Wasser ist sauber und ruhig – ideal für Familien und Ruhesuchende.
+## Baden am Grundlsee
+Anders als viele Bergseen hat der Grundlsee mehrere gut erschlossene Badeplätze mit Liegewiesen, flachen Einstiegen und Infrastruktur. Das Wasser ist klar und – für einen See auf gut 700 Metern – im Hochsommer angenehm.
 
-## Drei-Seen-Tour
-Ein Klassiker: vom Grundlsee per Boot und zu Fuß weiter zum **Toplitzsee** (Schauplatz vieler Legenden) und zum kleinen Kammersee, der Quelle der Traun. Geführte Plättenfahrten machen es zum Erlebnis.
+Kalt bleibt er trotzdem im Vergleich zu den Kärntner Seen. Wer ein Badeziel mit Wärmegarantie sucht, ist hier falsch; wer klares Wasser mit Bergkulisse will, richtig.
 
-## Praktische Infos
-- Anfahrt: Von Bad Aussee ca. 10 Minuten
-- Drei-Seen-Touren saisonal, Boot empfehlenswert
-- Festes Schuhwerk für die Wege zwischen den Seen
-    `,
+## Die Drei-Seen-Tour
+Das ist der Klassiker der Region und der Grund, warum viele überhaupt herkommen: Mit dem Schiff über den Grundlsee nach **Gößl** am Ostende, dann zu Fuß weiter zum **Toplitzsee**, dort mit einer Plätte über den dunklen, von Felswänden umschlossenen See, und schließlich noch ein Stück bis zum **Kammersee**.
+
+Der Kammersee gilt als Ursprung der Traun – hier tritt das Wasser aus dem Berg aus. Der Weg dorthin ist flach und auch für ungeübte Wanderer machbar.
+
+Für die gesamte Runde sollte man einen halben bis ganzen Tag einplanen. Fahrpläne von Schiff und Plätten sind saisonal – vorab prüfen, sonst passt die Anschlussverbindung nicht.
+
+## Der Toplitzsee
+Um den Toplitzsee ranken sich Geschichten über am Ende des Zweiten Weltkriegs versenkte Kisten. Tatsächlich wurden dort Fälschungen von Banknoten gefunden, die im Rahmen einer NS-Operation hergestellt worden waren. Vieles andere gehört ins Reich der Legende – vor Ort wird das erfreulich nüchtern eingeordnet.
+
+## Beste Zeit
+**Mai bis Oktober.** Für die Drei-Seen-Tour ist der Frühsommer ideal, weil dann alles fährt und die Wasserfälle am Kammersee kräftig sind. Zum Baden Juli und August.
+
+Der Oktober bringt Nebelstimmungen über dem See, die fotografisch stark sind – dann fahren allerdings nicht mehr alle Boote.
+
+## Anreise
+Bad Aussee ist mit der Salzkammergutbahn erreichbar, von dort verkehrt ein Bus zum Grundlsee. Für eine Seeregion in dieser Lage ist die Anbindung ungewöhnlich gut.
+
+Mit dem Auto von Salzburg rund 1,5 Stunden, von Graz etwa zwei, von Linz gut 1,5. Parkplätze gibt es an den Badeplätzen und in Gößl; an Sommerwochenenden werden sie knapp.
+
+## Was du mitnehmen solltest
+- Badesachen und Handtuch, auch wenn du nur die Seentour planst
+- Feste Schuhe für den Weg zum Kammersee
+- Regenschutz: Das Ausseerland ist wetterwendisch
+- Bargeld für Plätten und kleine Betriebe
+
+## Ehrlich gesagt
+Die Drei-Seen-Tour ist zu Recht bekannt – und entsprechend gut besucht. An schönen Sommertagen fährt man in vollen Booten und geht in einer Schlange zum Kammersee. Wer das Erlebnis für sich will, kommt früh oder in der Nebensaison.
+
+Außerdem hängt die Tour komplett an Fahrplänen. Fällt ein Schiff aus oder verpasst man den Anschluss, wird aus dem runden Tag ein langer Fußmarsch.
+
+Und das Wetter: Die Berge halten Wolken fest, graue Tage sind im Ausseerland häufiger als anderswo im Salzkammergut.
+
+## Gut kombinierbar
+- [Altausseer See](/blog/altausseer-see-baden) – der stille Nachbar, zehn Minuten entfernt
+- [Bad Aussee & Ausseerland](/blog/bad-aussee-ausseerland) – der Überblick über die Region
+- [Hallstatt](/blog/hallstatt-salzkammergut) – rund eine Stunde entfernt
+
+---
+
+**Kurz gesagt:** Der zugänglichste See des Ausseerlands – und Startpunkt für die Drei-Seen-Tour, die man früh am Tag beginnen sollte.
+`,
     affiliateLinks: [
       { label: 'Unterkünfte am Grundlsee – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Grundlsee' },
       { label: 'Ausseerland: Touren – GetYourGuide', url: 'https://www.getyourguide.de/s/?q=Ausseerland' },
@@ -3540,19 +3609,53 @@ Ein Klassiker: vom Grundlsee per Boot und zu Fuß weiter zum **Toplitzsee** (Sch
     date: '2026-06-12', category: 'Baden', region: 'steiermark', bestSeason: 'Mai–September',
     highlights: ['Warmer, flacher Familienbadesee', 'Tretboote, Strandbäder & Spielplätze', 'Tierwelt Herberstein in der Nähe'],
     content: `
-Der Stubenbergsee bei Stubenberg ist ein künstlich angelegter, aber herrlich warmer Badesee – einer der Top-Familienseen der Oststeiermark.
+Der **Stubenbergsee** in der Oststeiermark ist kein Naturidyll, sondern ein gut ausgebauter Badesee – und genau deshalb funktioniert er für Familien so verlässlich. Flaches Ufer, große Liegewiesen, Gastronomie, Spielplätze und ein Rundweg: Hier muss man nichts improvisieren.
 
-## Baden & Aktivitäten
-Flache Einstiege, mehrere Strandbäder, Tretboote und Liegewiesen. Das Wasser wird im Sommer angenehm warm – ideal für Kinder.
+## Baden
+Der See ist künstlich angelegt und entsprechend gestaltet: breite, gepflegte Liegewiesen, mehrere Einstiege und flache Uferzonen, in denen Kinder lange stehen können. Das Wasser erwärmt sich schnell – der Stubenbergsee gehört zu den wärmeren Badegewässern der Steiermark.
 
-## In der Nähe
-Die **Tierwelt Herberstein** (Zoo + Schloss + Gironcoli-Museum) liegt nur wenige Minuten entfernt – eine perfekte Ergänzung für einen Familientag.
+Es gibt Strandbäder mit Infrastruktur ebenso wie freier zugängliche Abschnitte. Bootsverleih, Tretboote und Wasserspielgeräte gehören zum Angebot.
 
-## Praktische Infos
-- Anfahrt: Von Graz ca. 45 Minuten
-- Eintritt in die Strandbäder, einige freie Uferzonen
-- Sonnenschutz mitnehmen – wenig Schatten
-    `,
+## Rund um den See
+Ein Rundweg von wenigen Kilometern führt einmal herum – flach, breit und auch mit Kinderwagen oder Laufrad machbar. Für eine gemütliche Runde reicht eine knappe Stunde.
+
+Der See liegt im **Feistritztal**, einer sanften Hügellandschaft mit Obstbau und Buschenschanken. Wer den Badetag verlängern will, findet ringsum unkomplizierte Radrouten.
+
+## Die Tierwelt Herberstein
+Ganz in der Nähe liegt die **Tierwelt Herberstein** mit dem zugehörigen Schloss und dem historischen Gartenanlagen – ein Tierpark, der sich gut mit einem Badetag verbinden lässt. Für Familien ist das die naheliegende Kombination: vormittags Tiere, nachmittags See.
+
+## Beste Zeit
+**Juni bis September.** Juli und August sind die verlässlichsten Badewochen, aber auch die vollsten – an heißen Wochenenden ist der Stubenbergsee ein Ziel für die halbe Oststeiermark.
+
+Im Mai und September ist es deutlich ruhiger; dann ist der See eher etwas für den Rundweg als fürs Schwimmen.
+
+## Anreise & Parken
+Von Graz rund eine Stunde, von Wien etwa zweieinhalb. Es gibt große Parkflächen, die an Spitzentagen trotzdem gut ausgelastet sind – früh anreisen hilft.
+
+Mit öffentlichen Verkehrsmitteln ist die Anreise umständlich: Bahn bis Gleisdorf oder Hartberg, dann Regionalbus. Für einen Badetag mit Familie realistisch nur mit Auto.
+
+## Was du mitnehmen solltest
+- Sonnenschutz – die Liegewiesen sind offen, Schatten ist begrenzt
+- Badeschuhe für den Einstieg
+- Genug zu trinken, besonders an Hitzetagen
+- Bargeld für kleinere Stände
+
+## Ehrlich gesagt
+Der Stubenbergsee ist ein Freizeitsee, kein stiller Naturplatz. Wer Ruhe, unverbautes Ufer und Bergkulisse sucht, ist hier definitiv falsch – dafür gibt es die Seen im Salzkammergut oder in Kärnten.
+
+An Hochsommerwochenenden wird es außerdem richtig voll, und dann wirkt der See klein. Wer die Wahl hat, kommt unter der Woche.
+
+Und: Wie bei allen flachen, künstlich angelegten Seen kann die Wasserqualität in sehr heißen, trockenen Phasen schwanken. Die offiziellen Badegewässer-Daten geben darüber Auskunft – wir zeigen sie, wo verfügbar, direkt im Artikel an.
+
+## Gut kombinierbar
+- [Pöllauer Tal](/blog/poellauer-tal-naturpark) – der Naturpark nebenan
+- [Riegersburg](/blog/riegersburg-burg-ausflug) – rund 40 Minuten südlich
+- [Therme Loipersdorf](/blog/therme-loipersdorf-steiermark) – der Plan B, wenn das Wetter kippt
+
+---
+
+**Kurz gesagt:** Der unkomplizierteste Familien-Badesee der Oststeiermark – warm, flach und gut ausgestattet, aber kein Naturerlebnis.
+`,
     affiliateLinks: [
       { label: 'Unterkünfte bei Stubenberg – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Stubenberg+am+See' },
       { label: 'Strandzubehör – Amazon', url: 'https://www.amazon.de/s?k=strandmuschel' },
@@ -3566,19 +3669,51 @@ Die **Tierwelt Herberstein** (Zoo + Schloss + Gironcoli-Museum) liegt nur wenige
     date: '2026-06-12', category: 'Wandern', region: 'steiermark', difficulty: 'schwer', bestSeason: 'Juni–Oktober',
     highlights: ['Wilde, einsame Karstberge', 'Große Gämsbestände', 'Anspruchsvolle Gipfeltouren'],
     content: `
-Das Hochschwabgebiet nördlich von Bruck an der Mur ist eine raue Kalk-Hochfläche – wenig erschlossen, dafür ursprünglich und tierreich.
+Der **Hochschwab** in der Obersteiermark ist eines der größten und wildesten Karstmassive Österreichs – ein Hochplateau auf über 2.000 Metern, das wenig mit den sanften Almen weiter westlich zu tun hat. Der Hauptgipfel erreicht 2.277 Meter.
 
-## Die Touren
-Der Gipfel des Hochschwab (2.277 m) ist ein langer, konditionsfordernder Anstieg, oft über Karstgelände und vorbei am Schiestlhaus. Trittsicherheit und Ausdauer sind Pflicht.
+## Was den Hochschwab besonders macht
+Oben gibt es kaum Wasser, kaum Bäume und kaum Wege im klassischen Sinn – stattdessen weite Karstflächen, Dolinen und Schuttfelder. Das wirkt rau und leer, fast wie eine Mondlandschaft mit Gras.
 
-## Tierwelt
-Das Gebiet beherbergt einen der größten Gämsbestände der Alpen – mit etwas Glück sieht man ganze Rudel. Auch Steinadler kreisen hier.
+Gleichzeitig ist das Massiv einer der wichtigsten **Wasserspeicher Österreichs**: Aus den Quellen der Region wird ein Teil des Wiener Trinkwassers gespeist. Deshalb ist große Teile des Gebiets Quellschutzgebiet, was man an den Hinweistafeln merkt.
 
-## Praktische Infos
-- Wasser mitnehmen: Karst führt kaum Oberflächenwasser, Hütten sind rar
-- Früh starten, Wetter ernst nehmen (Nebelgefahr auf der Hochfläche)
-- Ausgangspunkte u. a. Seewiesen, Bodenbauer
-    `,
+Der Hochschwab hat außerdem einen ungewöhnlich großen **Gams- und Steinwildbestand**. Wildbeobachtung ist hier realistisch, besonders früh morgens.
+
+## Die Routen
+**Der Klassiker:** Vom Bodenbauer im Thörler Tal über die Voisthaler Hütte aufs Plateau und weiter zum Gipfel. Dafür sollte man einen ganzen Tag einplanen – rund 1.300 Höhenmeter, sieben bis neun Stunden für Auf- und Abstieg.
+
+**Mit Übernachtung:** Auf dem Plateau liegt das Schiestlhaus, eine Schutzhütte nahe dem Gipfel. Die Tour auf zwei Tage zu verteilen, ist die angenehmere und sicherere Variante – und der Sonnenaufgang über dem Karst ist das Argument.
+
+**Leichter:** Die Zustiege bis zu den Hütten sind für sich schon lohnende Halbtagestouren, ohne bis zum Gipfel gehen zu müssen.
+
+## Beste Zeit
+**Mitte Juni bis Anfang Oktober.** Vorher liegt in den Karstmulden noch Schnee, der lange hält und die Orientierung erschwert.
+
+Der September ist die beste Zeit: stabiles Wetter, klare Fernsicht, Hütten meist noch geöffnet. Im Hochsommer sind Nachmittagsgewitter die Regel – auf dem offenen Plateau ist das ernst zu nehmen, weil es keinen Unterstand gibt.
+
+## Anreise
+Ausgangspunkte liegen im Raum Thörl, Seewiesen und Aflenz. Von Graz rund 1,5 Stunden, von Wien etwa zwei. Öffentlich ist es mühsam: Bahn bis Kapfenberg oder Bruck an der Mur, dann Bus mit dünnem Takt.
+
+## Was du mitnehmen solltest
+- Knöchelhohe Bergschuhe – Karst ist scharfkantig und uneben
+- **Viel Wasser**: Auf dem Plateau gibt es keine Quellen. Das ist der häufigste Planungsfehler
+- Karte oder GPS: Bei Nebel verliert man auf dem Plateau schnell die Orientierung, weil Geländemarken fehlen
+- Wetterschutz und warme Schicht
+- Bargeld für die Hütten
+
+## Ehrlich gesagt
+Der Hochschwab ist kein Anfängerberg. Die Wege sind markiert, aber lang, steinig und teils weglos wirkend. Bei Nebel wird das Plateau gefährlich – jedes Jahr gibt es Einsätze, weil Leute die Orientierung verlieren.
+
+Die Kombination aus großer Distanz, fehlendem Wasser und schnellen Wetterumschwüngen verlangt Erfahrung und eine ehrliche Selbsteinschätzung. Wer das mitbringt, bekommt eine der eindrucksvollsten Hochgebirgslandschaften des Landes – und meist erstaunlich wenig Begegnungen.
+
+## Gut kombinierbar
+- [Gesäuse Nationalpark](/blog/gesaeuse-nationalpark-wandern) – das Nachbarmassiv im Westen
+- [Mariazell](/blog/mariazell-wallfahrt-ausflug) – nördlich, gut als ruhiger Tag danach
+- [Wasserlochklamm Palfau](/blog/wasserlochklamm-palfau) – der kurze Gegenentwurf
+
+---
+
+**Kurz gesagt:** Wildes Karstplateau für erfahrene Bergwanderer – mit genug Wasser, Karte und Respekt vor dem Wetter.
+`,
     affiliateLinks: [
       { label: 'Wanderausrüstung – Amazon', url: 'https://www.amazon.de/s?k=wanderrucksack+30l' },
       { label: 'Unterkünfte Obersteiermark – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Bruck+an+der+Mur' },
@@ -3649,19 +3784,53 @@ Die Mautstraße stört manche – ohne sie wäre der Zustieg allerdings deutlich
     date: '2026-06-12', category: 'Ausflug', region: 'steiermark', bestSeason: 'Mai–Oktober',
     highlights: ['Mittelalterliches Stadtbild', 'Murauer Brauerei mit Bierschau', 'Nostalgische Dampf-Schmalspurbahn'],
     content: `
-Murau im oberen Murtal ist ein hübsches mittelalterliches Städtchen – dominiert von Schloss Murau und der weithin bekannten Murauer Brauerei.
+**Murau** in der Obersteiermark ist einer der Orte, an denen nichts überlaufen ist – eine kleine Stadt an der Mur, überragt von einem Schloss, mit einer Brauerei mitten im Zentrum und einer Schmalspurbahn, die seit über hundert Jahren durchs Tal fährt.
 
-## Stadt & Bier
-Die Altstadt mit Bürgerhäusern, Kirche und Schloss lädt zum Bummeln. Die Murauer Brauerei bietet Führungen und eine „Bierwelt" zum Verkosten.
+## Die Murtalbahn
+Die **Murtalbahn** ist eine Schmalspurstrecke, die das obere Murtal von Unzmarkt bis Tamsweg im Lungau verbindet. Sie ist kein Museumsbetrieb am Rande, sondern eine echte Bahnlinie – und im Sommer verkehren zusätzlich **Dampfzüge**.
 
-## Murtalbahn
-Die nostalgische Schmalspurbahn fährt durchs Murtal – an manchen Tagen mit Dampflok. Man kann sogar selbst eine Draisine mieten und auf den Schienen strampeln.
+Die Fahrt geht gemächlich durch Wiesen, an der Mur entlang und durch kleine Orte. Genau darin liegt der Reiz: Es ist eine Reiseform, bei der die Strecke das Ziel ist. Fahrpläne und Dampftermine wechseln saisonal und sollten vorab geprüft werden.
 
-## Praktische Infos
-- Anfahrt: im oberen Murtal, gut über die Murtal-Bundesstraße
-- Brauereiführung & Dampffahrten an festen Terminen – vorab prüfen
-- Kombinierbar mit dem Murradweg
-    `,
+Für Radfahrer ist die Bahn besonders praktisch: Man radelt eine Etappe des Murradwegs und lässt sich mit dem Rad zurückbringen.
+
+## Murau selbst
+Der Stadtkern ist überschaubar und geschlossen: Bürgerhäuser, die gotische Stadtpfarrkirche St. Matthäus und das **Schloss Murau** über den Dächern.
+
+Bekannt ist Murau vor allem für seine **Brauerei**, die zu den traditionsreichsten des Landes zählt und im Ort präsent ist – unter anderem mit einem Brauereimuseum und Führungen. Das Brauwasser stammt aus der Region, und das ist hier kein Werbespruch, sondern der Grund, warum die Brauerei überhaupt hier steht.
+
+## Wandern und Radfahren
+Murau liegt zwischen Niederen Tauern im Norden und Gurktaler Alpen im Süden. Die Wanderungen ringsum sind mittelgebirgig: Wald, Almen, sanfte Rücken – landschaftlich schön, aber ohne Hochgebirgsdrama.
+
+Der **Murradweg** führt direkt durch die Stadt. Die Etappen im Oberen Murtal gehören zu den ruhigsten der gesamten Strecke.
+
+## Beste Zeit
+**Mai bis Oktober.** Der Sommer ist Dampfzug- und Radsaison, der Herbst bringt Farben und leere Wege. Im Winter ist die Region ruhig, mit kleinen, familiären Skigebieten in der Umgebung.
+
+## Anreise
+Mit der Bahn über Unzmarkt, dort Umstieg auf die Murtalbahn – das ist die stimmigste Anreise, weil sie selbst schon Teil des Ausflugs ist. Mit dem Auto von Graz rund 1,5 Stunden, von Salzburg etwa zwei über den Tauern.
+
+## Was du mitnehmen solltest
+- Für Dampffahrten: Kleidung, die etwas Ruß verträgt, und keine hellen Sachen
+- Bargeld für kleine Betriebe
+- Fahrrad oder Wanderschuhe, je nach Plan
+- Zeit – hier funktioniert nichts im Eiltempo
+
+## Ehrlich gesagt
+Murau ist ruhig, und wer Programm sucht, findet wenig. Es gibt keine große Attraktion, die einen Tag füllt – der Reiz liegt in der Kombination aus Bahn, Stadt, Bier und Landschaft.
+
+Die Murtalbahn ist außerdem langsam. Wer sie als Transportmittel betrachtet, wird ungeduldig; wer sie als Teil des Ausflugs versteht, hat den richtigen Zugang.
+
+Und im Winter sowie in der Nebensaison ist im Ort spürbar wenig los.
+
+## Gut kombinierbar
+- [Murradweg](/blog/murradweg-steiermark) – die Radstrecke, die hier durchführt
+- [Giglachseen](/blog/giglachseen-schladminger-tauern) – die Bergseen nördlich in den Tauern
+- [Nockalmstraße](/blog/nockalmstrasse-panoramastrasse) – die Panoramastraße südlich in Kärnten
+
+---
+
+**Kurz gesagt:** Schmalspurbahn, Schloss und Brauerei in einem sehr ruhigen Tal – am besten mit dem Rad kombiniert.
+`,
     affiliateLinks: [
       { label: 'Unterkünfte in Murau – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Murau' },
       { label: 'Steiermark: Touren – GetYourGuide', url: 'https://www.getyourguide.de/s/?q=Steiermark' },
@@ -4723,19 +4892,56 @@ Ski- und Gletscherausflüge sind ganzjährig möglich, am stabilsten meist von H
     date: '2026-06-15', category: 'Ausflug', region: 'salzburg', bestSeason: 'Ganzjährig',
     highlights: ['Ältestes Salzbergwerk-Erlebnis der Welt', 'Bergmannsrutschen & Salzsee-Floß', 'Ganzjährig – ideal bei Regen'],
     content: `
-Am Dürrnberg bei Hallein wurde schon vor über 2.500 Jahren von den Kelten Salz abgebaut. Heute führt eine Erlebnisführung tief in den Berg.
+Die **Salzwelten Hallein** auf dem Dürrnberg sind das älteste Schaubergwerk der Welt – und gleichzeitig der Ort, an dem die Geschichte Salzburgs beginnt. Der Name der Stadt kommt nicht von ungefähr: Ohne das Salz vom Dürrnberg hätte es die Salzburger Machtstellung nie gegeben.
 
-## Das Erlebnis
-Mit der Grubenbahn geht's hinein, über zwei lange **Bergmannsrutschen** hinab, und mit einem beleuchteten Floß über einen unterirdischen Salzsee. Dazu Einblicke in keltische Geschichte.
+## Was dich unter Tage erwartet
+Der Besuch beginnt mit dem Umziehen in Bergmannskleidung – das ist keine Verkleidung, sondern praktisch, weil es unten kühl und eng wird. Dann geht es mit einer Grubenbahn in den Berg hinein.
 
-## Für wen?
-Familien (Kinder lieben die Rutschen), Geschichtsinteressierte – und alle, die ein wetterunabhängiges Ziel suchen.
+Im Inneren folgt eine Mischung aus Stollen, Ausstellungsräumen und den berühmten **Bergmannsrutschen**: hölzernen Rutschen, über die früher die Knappen von Stollen zu Stollen wechselten. Für viele Besucher ist das der eigentliche Höhepunkt, und es ist tatsächlich schneller, als man erwartet.
 
-## Praktische Infos
-- Im Berg konstant ~10 °C – warme Jacke (Overall wird gestellt)
-- Anfahrt: von Salzburg ca. 20 Minuten
-- Festes Schuhwerk, Führung mit fixen Zeiten
-    `,
+Dazu kommt eine Fahrt über den unterirdischen **Salzsee** auf einem Floß – dunkel, still, und akustisch beeindruckend.
+
+Eine Besonderheit: Das Grubengebäude reicht unter die Staatsgrenze. Man überschreitet unter Tage die Grenze nach Bayern und kommt wieder zurück.
+
+## Die Kelten vom Dürrnberg
+Lange vor den Salzburger Fürsterzbischöfen bauten hier **Kelten** Salz ab – der Dürrnberg war eine der bedeutendsten keltischen Siedlungen des Alpenraums. Die Funde aus den Gräbern zählen zu den wichtigsten ihrer Art.
+
+An der Oberfläche vermittelt ein rekonstruiertes Keltendorf, wie hier vor über 2.000 Jahren gearbeitet und gelebt wurde. Für Kinder ist das die anschaulichere Hälfte des Besuchs.
+
+## Beste Zeit
+**Ganzjährig** – und genau das ist der Punkt: Im Berg herrschen immer etwa dieselben Bedingungen, unabhängig vom Wetter draußen. Damit sind die Salzwelten einer der verlässlichsten Regenschlechtwetter-Pläne im Salzburger Land und im Hochsommer angenehm kühl.
+
+Die stärksten Besuchertage sind Regentage in der Hauptsaison – dann kommen alle auf dieselbe Idee. Führungen starten in Intervallen, Wartezeiten sind möglich; ein Ticket vorab zu buchen spart Zeit.
+
+## Anreise
+Hallein liegt rund 20 Autominuten südlich von Salzburg, der Dürrnberg darüber. Mit der Bahn bis Hallein, dann Bus hinauf – eine gut funktionierende Verbindung.
+
+Parkplätze gibt es oben am Besucherbergwerk.
+
+## Was du mitnehmen solltest
+- **Warme Kleidung**: Unter Tage sind es konstant um die zehn Grad, auch im August
+- Feste Schuhe, die schmutzig werden dürfen
+- Keine Enge-Ängste: Manche Stollenabschnitte sind niedrig und schmal
+- Für die Rutschen: nichts in den Hosentaschen
+
+## Ehrlich gesagt
+Die Führung ist getaktet und läuft in Gruppen – individuelles Tempo ist nicht vorgesehen. Wer gern eigenständig herumgeht, wird das als einschränkend empfinden.
+
+Außerdem ist der Besuch stark inszeniert: Licht, Ton, Projektionen. Das funktioniert gut für Familien, ist aber weit entfernt von einem nüchternen Technikmuseum.
+
+Und der Eintritt ist nicht günstig, besonders für Familien. Dafür ist es ein vollwertiges Programm von rund eineinhalb bis zwei Stunden unter Tage.
+
+Menschen mit eingeschränkter Mobilität sollten vorab klären, was machbar ist – Grubenbahn und Rutschen setzen eine gewisse Beweglichkeit voraus.
+
+## Gut kombinierbar
+- [Salzburger Altstadt](/blog/salzburg-stadt-altstadt) – 20 Minuten entfernt
+- [Schloss Hellbrunn](/blog/schloss-hellbrunn-salzburg) – liegt auf halbem Weg
+- [Eisriesenwelt Werfen](/blog/eisriesenwelt-werfen) – die zweite große Untertage-Attraktion der Region
+
+---
+
+**Kurz gesagt:** Der beste Schlechtwetter-Plan im Salzburger Land – warm anziehen und vorab ein Ticket sichern.
+`,
     officialLinks: [
       { label: 'Salzwelten (salzwelten.at)', url: 'https://www.salzwelten.at' },
     ],
