@@ -3544,19 +3544,49 @@ Die nostalgische Schmalspurbahn fährt durchs Murtal – an manchen Tagen mit Da
     date: '2026-06-12', category: 'Ausflug', region: 'steiermark', bestSeason: 'Mai–Oktober',
     highlights: ['Mittelpunkt Österreichs', 'Narzissenfest im Frühsommer', 'Tracht, Tradition & Salzkammergut-Flair'],
     content: `
-Bad Aussee ist die Kurstadt im Herzen des Ausseerlands – ein Landstrich, der für seine ursprüngliche Tradition, Tracht und Naturschönheit berühmt ist.
+Das **Ausseerland** liegt im steirischen Teil des Salzkammerguts – eingerahmt vom Dachstein, dem Toten Gebirge und drei Seen, die unterschiedlicher kaum sein könnten. Bad Aussee ist der Hauptort und ein guter Ausgangspunkt, um die Gegend ohne Hektik zu erkunden.
 
-## Stadt & Tradition
-Der hübsche Kurort lebt gelebtes Brauchtum: Trachten, Handwerk und das berühmte **Narzissenfest** (Ende Mai/Anfang Juni) mit kunstvollen Blumenfiguren.
+## Die drei Seen
+**Altausseer See:** Der stimmungsvollste der drei. Ein Rundweg von rund sieben Kilometern führt fast durchgehend am Ufer entlang, ist flach und auch mit Kinderwagen machbar. Auf der einen Seite die Wasserfläche, auf der anderen die Wand des Losers – ein Motiv, das man so schnell nicht vergisst.
 
-## Natur ringsum
-Drei Seen (Altausseer See, Grundlsee, Toplitzsee), der Loser als Hausberg und Salz­bergwerke machen das Ausseerland zum Naturparadies.
+**Grundlsee:** Der größte der drei, gern "steirisches Meer" genannt. Hier gibt es Strandbäder, Bootsverleih und eine Schifffahrt, die weiter zum abgelegenen Toplitzsee führt.
 
-## Praktische Infos
-- Anreise per Bahn (Salzkammergutbahn) gut möglich
-- Narzissenfest: früh Unterkunft buchen
-- Idealer Ausgangspunkt für die Seen-Ausflüge
-    `,
+**Toplitzsee:** Dunkel, von Felswänden umschlossen und nur zu Fuß oder per Boot erreichbar. Berühmt vor allem durch die Geschichten über versenkte Kisten aus dem Zweiten Weltkrieg – was tatsächlich gefunden wurde und was Legende ist, erfährt man vor Ort in nüchterner Form.
+
+## Bad Aussee selbst
+Der Ort trägt das "Bad" wegen seiner Solequellen. Sehenswert sind der Kurpark, das Kammerhofmuseum und das geschlossene Ortsbild rund um den Chlumeckyplatz.
+
+Bekannt ist Bad Aussee außerdem für das **Narzissenfest** Ende Mai oder Anfang Juni, bei dem kunstvoll mit Blüten besteckte Figuren und Boote durch Ort und über den See ziehen. Der genaue Termin wechselt jährlich – wer deshalb kommt, sollte ihn vorab prüfen und früh eine Unterkunft buchen.
+
+Die Ausseer Tracht ist hier kein Kostüm, sondern Alltagskleidung – das fällt auf und gehört zum Charakter der Gegend.
+
+## Wandern & Aussicht
+Der **Loser** über Altaussee ist der naheliegende Aussichtsberg; eine Panoramastraße führt bis in Höhe der Loseralm, von dort sind es noch Gehminuten zu weiten Blicken über das Tote Gebirge. Wer lieber unten bleibt, hat mit den Seerundwegen genug Programm für mehrere Tage.
+
+Für Ambitionierte beginnen im Toten Gebirge ernsthafte Bergtouren – karstiges, wegarmes Gelände, das Erfahrung verlangt.
+
+## Beste Zeit
+**Mai bis Oktober.** Die Narzissenblüte fällt in den späten Frühling, der Herbst bringt klare Luft und Farben. Im Hochsommer sind die Seen warm genug zum Baden, aber nicht so warm wie die Kärntner Seen – das Ausseerland liegt höher und schattiger.
+
+Im Winter ist die Gegend ruhig und schneesicherer als viele Nachbarregionen.
+
+## Anreise
+Bad Aussee liegt an der Salzkammergutbahn und ist mit dem Zug gut erreichbar – das ist hier ein echtes Argument, weil man die Seen anschließend per Bus und zu Fuß erreicht. Mit dem Auto von Salzburg rund 1,5 Stunden, von Graz etwa zwei.
+
+## Ehrlich gesagt
+Das Ausseerland ist wetterabhängiger als andere Salzkammergut-Ecken: Die Berge rundum halten Wolken fest, und graue Tage sind hier keine Seltenheit. Bei Nebel verliert die Landschaft viel.
+
+Außerdem ist die Region bewusst zurückhaltend im Angebot – wer Erlebnisbäder und volles Abendprogramm sucht, ist in Schladming besser aufgehoben. Und in der Woche des Narzissenfests ist der Ort so voll, dass der eigentliche Reiz, die Ruhe, verloren geht.
+
+## Gut kombinierbar
+- [Altausseer See](/blog/altausseer-see-baden) – der Rundweg im Detail
+- [Grundlsee](/blog/grundlsee-steirisches-meer) – der große Nachbar mit Schifffahrt
+- [Hallstatt](/blog/hallstatt-salzkammergut) – rund eine Stunde entfernt, ungleich voller
+
+---
+
+**Kurz gesagt:** Das Ausseerland ist Salzkammergut ohne Hallstatt-Trubel – dafür muss man mit wechselhafterem Wetter leben.
+`,
     affiliateLinks: [
       { label: 'Hotels in Bad Aussee – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Bad+Aussee' },
       { label: 'Ausseerland: Erlebnisse – GetYourGuide', url: 'https://www.getyourguide.de/s/?q=Ausseerland' },
@@ -3570,19 +3600,47 @@ Drei Seen (Altausseer See, Grundlsee, Toplitzsee), der Loser als Hausberg und Sa
     date: '2026-06-12', category: 'Ausflug', region: 'steiermark', bestSeason: 'Ganzjährig',
     highlights: ['Therme als Hundertwasser-Gesamtkunstwerk', 'Vulkanisches Thermalwasser', 'Ganzjähriges Wellness-Ziel'],
     content: `
-Die Therme Rogner Bad Blumau ist weltweit einzigartig: ein vollständig nach den Ideen von Friedensreich Hundertwasser gestaltetes Thermendorf – bunt, organisch, ohne gerade Linien.
+Bad Blumau in der Oststeiermark ist keine Therme mit Architektur – es ist Architektur, in der man baden kann. **Friedensreich Hundertwasser** hat hier ein ganzes Thermendorf entworfen: bunte Säulen, goldene Kuppeln, Wiesen auf den Dächern und möglichst keine gerade Linie.
 
-## Architektur & Therme
-Begrünte Dächer, schiefe Säulen, goldene Zwiebeltürme – und mittendrin warmes Thermalwasser aus vulkanischem Untergrund. Baden im Kunstwerk.
+## Was dich erwartet
+Der erste Eindruck ist ungewöhnlich: Von außen sieht die Anlage aus wie ein begrünter Hügel, aus dem Fenster in unterschiedlichen Höhen und Formen herausschauen. Böden sind wellig, Wände geschwungen, Farben kräftig. Man mag das oder nicht – gleichgültig lässt es niemanden.
 
-## Für wen?
-Wellness-Suchende, Architektur-Fans und alle, die etwas Außergewöhnliches wollen. Tagesgäste wie Übernachtungsgäste.
+Das Thermalwasser stammt aus einer Tiefbohrung im Steirischen Vulkanland. Es gibt Innen- und Außenbecken, ein großzügiges Saunaareal und viel Liegewiese – letzteres ist im Sommer ein echtes Argument, weil man hier nicht zwischen Betonflächen sitzt, sondern im Grünen.
 
-## Praktische Infos
-- Anfahrt: Von Graz ca. 1 Stunde
-- Tageskarten oder Übernachtung im Thermendorf
-- Wochentags ruhiger
-    `,
+## Tagesgast oder Hotelgast?
+Das ist die entscheidende Frage. Bad Blumau ist in erster Linie ein Hotelresort – wer dort übernachtet, hat die Anlage auch abends und früh morgens weitgehend für sich, wenn die Tagesgäste weg sind. Als Tagesgast erlebt man vor allem die Hauptzeiten.
+
+Die Kontingente für Tagesgäste sind begrenzt und an manchen Tagen ausgebucht. Vorab online nachsehen oder anrufen spart die Anfahrt umsonst.
+
+## Beste Zeit
+Thermen funktionieren ganzjährig, aber Bad Blumau hat zwei besonders gute Momente: **Winterabende**, wenn man im warmen Außenbecken sitzt und es darüber schneit – und **milde Herbsttage**, wenn die Liegewiesen noch nutzbar sind und trotzdem weniger los ist als im Sommer.
+
+Am vollsten wird es in den Weihnachts- und Semesterferien sowie an verlängerten Wochenenden.
+
+## Anreise
+Von Graz rund eine Stunde, von Wien knapp zwei. Die Anlage hat eigene Parkplätze. Mit der Bahn geht es bis Bad Blumau, von dort ist es ein kurzes Stück – die Verbindung vorab prüfen, das Angebot ist überschaubar.
+
+## Was du mitnehmen solltest
+- Bademantel und Badeschuhe (Verleih vor Ort möglich, aber aufpreispflichtig)
+- Etwas zu lesen – die Anlage lädt zum Bleiben ein, nicht zum Durchrauschen
+- Für die Sauna ein zweites Handtuch
+
+## Ehrlich gesagt
+Bad Blumau liegt preislich deutlich über einer gewöhnlichen Landestherme, und das merkt man am Publikum ebenso wie an der Rechnung. Wer einfach nur schwimmen will, bekommt das anderswo günstiger.
+
+Die Architektur ist außerdem Geschmackssache. Hundertwassers Formensprache wirkt auf manche verspielt und lebendig, auf andere unruhig – schiefe Böden und schräge Türrahmen sind Absicht, können aber irritieren. Mit Kinderwagen oder eingeschränkter Mobilität ist das bewusst Unebene nicht immer praktisch.
+
+Für Familien mit kleinen Kindern gibt es in der Region passendere Adressen; Bad Blumau ist eher auf Erwachsene ausgerichtet, die Ruhe suchen.
+
+## Gut kombinierbar
+- [Steirisches Vulkanland](/blog/steirisches-vulkanland) – Vulkanhügel, Buschenschanken und regionale Küche ringsum
+- [Riegersburg](/blog/riegersburg-burg-ausflug) – die wuchtige Burg auf dem Vulkanfelsen, rund eine halbe Stunde entfernt
+- [Therme Loipersdorf](/blog/therme-loipersdorf-steiermark) – die größere, familienorientierte Alternative in der Nachbarschaft
+
+---
+
+**Kurz gesagt:** Bad Blumau lohnt sich, wenn dich die Architektur reizt und du bereit bist, dafür mehr zu zahlen als für ein reines Schwimmbad.
+`,
     affiliateLinks: [
       { label: 'Thermenhotels Oststeiermark – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Bad+Blumau' },
       { label: 'Bademantel & Wellness – Amazon', url: 'https://www.amazon.de/s?k=bademantel+unisex' },
@@ -3596,19 +3654,48 @@ Wellness-Suchende, Architektur-Fans und alle, die etwas Außergewöhnliches woll
     date: '2026-06-12', category: 'Ausflug', region: 'steiermark', bestSeason: 'April–Oktober',
     highlights: ['Genuss-Naturpark mit Hirschbirne', 'Barockes Schloss & "steirischer Petersdom"', 'Sanfte Wander- & Radwege'],
     content: `
-Der Naturpark Pöllauer Tal ist eine sanfte, grüne Hügellandschaft – bekannt für die seltene Hirschbirne und kulinarische Spezialitäten daraus (Most, Brand, Schokolade).
+Der **Naturpark Pöllauer Tal** in der Oststeiermark ist eine dieser Regionen, an denen die meisten vorbeifahren – meist auf dem Weg nach Graz oder zu den Thermen. Dabei liegt hier eine der freundlichsten Kulturlandschaften des Landes: Streuobstwiesen, sanfte Hügel, Buschenschanken und ein Ortskern mit einer Kirche, die man in dieser Größe nicht erwartet.
 
-## Genuss & Kultur
-Die Streuobstwiesen prägen das Tal. Sehenswert sind das Schloss Pöllau und die Wallfahrtskirche Pöllauberg, der „steirische Petersdom".
+## Die Hirschbirne
+Wer das Pöllauer Tal verstehen will, muss die **Hirschbirne** kennen. Die alte Mostbirnen-Sorte prägt das Landschaftsbild: Hunderte hochstämmige Bäume stehen verstreut auf den Wiesen, statt in Reih und Glied wie in einer Plantage. Verarbeitet wird sie zu Most, Edelbrand, Saft und Dörrobst.
 
-## Aktiv
-Gemütliche Wander- und Radwege durch Obstgärten und Wälder – ideal für entspannte Tage mit Einkehr bei Buschenschänken und Mostheurigen.
+Der **Hirschbirnweg** führt als Rundwanderweg durch genau diese Landschaft. Er ist konditionell moderat, dafür aussichtsreich, und unterwegs liegen Buschenschanken, in denen man die Produkte direkt probieren kann. Deren Öffnungszeiten wechseln saisonal – vorher nachsehen lohnt sich, sonst steht man vor verschlossenen Türen.
 
-## Praktische Infos
-- Anfahrt: Von Hartberg ca. 15 Minuten
-- Herbst (Ernte) besonders stimmungsvoll
-- Hofläden mit Hirschbirnen-Spezialitäten
-    `,
+## Pöllau selbst
+Der Hauptort überrascht mit der Pfarrkirche St. Veit, die wegen ihrer Größe und barocken Ausstattung gern als "steirischer Petersdom" bezeichnet wird. Daneben liegt das ehemalige Augustiner-Chorherrenstift mit Schlosspark – ein guter Platz für eine Pause.
+
+## Wandern: der Masenberg
+Der Masenberg ist mit gut 1.260 Metern der höchste Punkt der Region. Der Aufstieg ist kein alpines Unterfangen, sondern eine lange, gleichmäßige Wanderung durch Wald und über Wiesen. Oben steht ein Aussichtsturm, von dem der Blick bei klarer Luft weit über die Oststeiermark bis ins Wechselgebiet reicht.
+
+## Beste Zeit
+Zwei Zeitfenster stechen heraus: **Ende April bis Mai**, wenn die Birnbäume blühen und die Wiesen weiß gesprenkelt sind – und **September bis Oktober**, wenn geerntet wird und die Buschenschanken Hochbetrieb haben. Der Sommer dazwischen ist angenehm, aber unspektakulärer.
+
+Im Winter ist das Tal sehr ruhig; viele Betriebe haben geschlossen.
+
+## Anreise & Parken
+Von Graz aus rund eine Stunde über die Süd- und Wechselautobahn Richtung Hartberg, dann ins Tal. Von Wien etwa zwei Stunden. Parken ist im Ortszentrum und an den Wanderausgangspunkten unkompliziert.
+
+Ohne Auto wird es mühsam: Bahn bis Hartberg, dann Regionalbus – und im Tal selbst ist man ohne Fahrzeug wenig flexibel. Für dieses Ziel ist das Auto klar im Vorteil.
+
+## Was du mitnehmen solltest
+- Bequeme Schuhe – die Wege sind gutmütig, aber lang
+- Bargeld für Buschenschanken und Hofläden
+- Eine Tasche für Mitbringsel, das ist hier der halbe Ausflug
+
+## Ehrlich gesagt
+Das Pöllauer Tal ist kein Ziel für Leute, die eine Hauptattraktion abhaken wollen – es gibt keine. Der Reiz liegt im Gesamtbild aus Landschaft, Obst und Gastlichkeit, und wer damit nichts anfangen kann, wird sich langweilen.
+
+Außerdem hängt viel an den Öffnungszeiten der kleinen Betriebe. An einem Montag im November kann das Tal sehr verschlossen wirken. Wer spontan kommt, sollte zumindest wissen, wo unterwegs etwas offen hat.
+
+## Gut kombinierbar
+- [Riegersburg](/blog/riegersburg-burg-ausflug) – die Burg auf dem Vulkanfelsen, rund 45 Minuten südlich
+- [Bad Blumau](/blog/rogner-bad-blumau-therme) – Hundertwasser-Therme in der Nachbarschaft
+- [Steirisches Vulkanland](/blog/steirisches-vulkanland) – dieselbe Idee, andere Hügel
+
+---
+
+**Kurz gesagt:** Das Pöllauer Tal ist ein Ziel zum Langsamfahren – am schönsten zur Birnblüte im Frühjahr und zur Ernte im Herbst.
+`,
     affiliateLinks: [
       { label: 'Unterkünfte im Pöllauer Tal – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=P%C3%B6llau' },
       { label: 'Steiermark: Genusstouren – GetYourGuide', url: 'https://www.getyourguide.de/s/?q=Steiermark' },
@@ -3798,19 +3885,47 @@ Die mittelalterliche Burg ist heute teils Hotel, beherbergt eine Sternwarte und 
     date: '2026-06-13', category: 'Ausflug', region: 'burgenland', bestSeason: 'April–Oktober',
     highlights: ['Gut erhaltene mittelalterliche Burg', 'Europäisches Friedenszentrum', 'Hübsches historisches Städtchen'],
     content: `
-Die Friedensburg Schlaining in Stadtschlaining ist eine der eindrucksvollsten Burgen des Südburgenlands – und ein besonderer Ort: Sie beherbergt das Österreichische Studienzentrum für Frieden und Konfliktlösung.
+Die **Friedensburg Stadtschlaining** im Südburgenland ist eine mittelalterliche Burg mit einer ungewöhnlichen zweiten Karriere: Seit den 1980er-Jahren beherbergt sie das Österreichische Studienzentrum für Frieden und Konfliktlösung. Aus einer Wehranlage wurde ein Ort, an dem über Friedensarbeit geforscht und gelehrt wird.
 
-## Burg & Museum
-Die wuchtige Anlage mit Bergfried und Arkadenhof beherbergt Ausstellungen rund um Krieg und Frieden. Das kleine Städtchen ringsum ist hübsch erhalten.
+## Was dich erwartet
+Die Burg selbst stammt im Kern aus dem 13. Jahrhundert und steht gut sichtbar über dem kleinen Ort Stadtschlaining. Sie ist kompakt, gut erhalten und nicht überlaufen – hier drängt sich niemand durch Torbögen.
 
-## Für wen?
-Geschichts- und Kulturinteressierte – ein nachdenklicher, ruhiger Kontrast zu reinen Naturzielen.
+Im Inneren gibt es ein **Friedensmuseum**, das die Geschichte von Kriegen und Friedensbemühungen aufarbeitet. Das ist bewusst kein Ritter-Erlebnis mit Rüstungen und Schwertern, sondern eine inhaltliche Ausstellung – wer mit dieser Erwartung kommt, nimmt mehr mit.
 
-## Praktische Infos
-- Anfahrt: Südburgenland, von Oberwart ca. 15 Minuten
-- Museum mit saisonalen Öffnungszeiten
-- Gut mit Bernstein & Güssing kombinierbar
-    `,
+Für Kinder ist die Burg deshalb weniger spektakulär als etwa Forchtenstein oder Riegersburg. Für Jugendliche und Erwachsene ist sie dafür einer der nachdenklichsten Orte im Burgenland.
+
+## Der Ort Stadtschlaining
+Stadtschlaining ist winzig und wirkt fast unverändert. Rund um die Burg liegen ein kleiner Hauptplatz, eine Synagoge, die an die jüdische Geschichte des Ortes erinnert, und der ehemalige jüdische Friedhof. Zusammen mit der Burg ergibt das einen Rundgang, der in eineinhalb Stunden gut zu schaffen ist.
+
+## Beste Zeit
+Von **April bis Oktober**, wenn Museum und Gastronomie verlässlich geöffnet haben. Die genauen Zeiten wechseln saisonal und sollten vorab geprüft werden – das Südburgenland ist keine Region mit durchgehendem Ganzjahresbetrieb.
+
+Der Herbst ist besonders schön, weil die bewaldeten Hügel ringsum sich färben und im Südburgenland dann Kastanien- und Weinsaison ist.
+
+## Anreise & Parken
+Von Wien rund zwei Stunden, von Graz etwa 1,5 Stunden, von Eisenstadt gut eine Stunde. Parken ist unterhalb der Burg möglich und unkompliziert.
+
+Mit öffentlichen Verkehrsmitteln ist Stadtschlaining schwierig zu erreichen: Bahn bis Oberwart oder Pinkafeld, dann Regionalbus mit dünnem Takt. Für dieses Ziel ist das Auto deutlich praktischer.
+
+## Was du mitnehmen solltest
+- Zeit zum Lesen – die Ausstellung lebt von Texten, nicht von Objekten
+- Bequeme Schuhe für den steilen Aufgang zur Burg
+- Bargeld für kleine Betriebe im Ort
+
+## Ehrlich gesagt
+Stadtschlaining ist kein Ziel für einen spontanen Familienausflug mit kleinen Kindern – dafür fehlt das Spielerische. Und wer eine große, stark inszenierte Burganlage erwartet, wird die Dimension unterschätzen: Die Friedensburg ist überschaubar.
+
+Außerdem liegt der Ort wirklich abgelegen. Als einziges Tagesziel ist die Anfahrt aus Wien lang; sinnvoller ist eine Kombination mit anderen Zielen im Südburgenland.
+
+## Gut kombinierbar
+- [Burg Bernstein](/blog/burg-bernstein-edelserpentin) – rund 20 Minuten entfernt, ebenso still
+- [Burg Güssing](/blog/burg-guessing-suedburgenland) – die Burg auf dem Vulkankegel im Süden
+- [Weinidylle-Radweg](/blog/weinidylle-radweg-suedburgenland) – Weingärten und Kellerstöckl ringsum
+
+---
+
+**Kurz gesagt:** Eine Burg, die statt Rüstungen Inhalte zeigt – lohnend für alle, die sich auf das Thema einlassen, und kombinierbar mit dem stillen Südburgenland ringsum.
+`,
     affiliateLinks: [
       { label: 'Unterkünfte bei Stadtschlaining – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Stadtschlaining' },
       { label: 'Burgenland: Touren – GetYourGuide', url: 'https://www.getyourguide.de/s/?q=Burgenland' },
@@ -3856,19 +3971,51 @@ April bis Oktober, wenn der Park durchgehend geöffnet hat. In der prallen Mitta
     date: '2026-06-13', category: 'Ausflug', region: 'burgenland', bestSeason: 'April–Oktober',
     highlights: ['Hügelige Genuss-Radtour', 'Kellerstöckl & Uhudler', 'Ruhig & wenig befahren'],
     content: `
-Der Weinidylle-Radweg erschließt das südliche Burgenland rund um Güssing, Heiligenbrunn und Eberau – eine sanfte, von Weingärten geprägte Hügellandschaft.
+Das Südburgenland ist der stillste Teil des Burgenlands – weit weg vom Trubel am Neusiedler See, mit sanften Hügeln, Kastanienbäumen und Weingärten, die sich an die Hänge legen. Der **Weinidylle-Radweg** erschließt genau diese Gegend: kein Sportprogramm, sondern eine Route zum Bummeln.
 
-## Die Tour
-Im Gegensatz zum flachen Neusiedler-See-Radweg geht es hier wellig auf und ab – mit E-Bike entspannt machbar. Unterwegs locken Kellerstöckl, Buschenschänke und der einzigartige Uhudler.
+## Was dich erwartet
+Die Landschaft hier heißt nicht ohne Grund "Weinidylle". Es geht durch kleine Orte wie Eisenberg, Deutsch Schützen, Rechnitz und über den Csaterberg – dazwischen Wiesen, Wald und immer wieder der Blick nach Ungarn hinüber, das nur ein paar Kilometer entfernt liegt.
 
-## Genuss
-Hofläden, Mostheurige und Weingüter säumen die Strecke. Die Region ist deutlich ruhiger und ursprünglicher als der Norden.
+Das Wahrzeichen der Region sind die **Kellerstöckl**: kleine, oft weiß gekalkte Presshäuser, die verstreut in den Weingärten stehen. Viele werden heute als Ferienunterkunft vermietet – wer eines mietet, wohnt mitten zwischen den Reben.
 
-## Praktische Infos
-- E-Bike-Verleih in größeren Orten empfehlenswert
-- Buschenschank-Öffnungszeiten („ausg'steckt") prüfen
-- Kombinierbar mit Burg Güssing
-    `,
+## Der Uhudler
+Die Region ist Heimat des **Uhudlers**, eines Weins aus Direktträgerreben mit einem unverwechselbaren, an Walderdbeeren erinnernden Aroma. Er ist umstritten, war zeitweise sogar verboten und gilt heute als kulinarisches Markenzeichen des Südburgenlands. Probieren sollte man ihn hier – anderswo bekommt man ihn kaum.
+
+Buschenschanken und Weingüter liegen dicht an der Route. Öffnungszeiten sind saisonal und wechseln, also vorab kurz prüfen.
+
+## Der Radweg in der Praxis
+Die Strecke verläuft überwiegend auf ruhigen Nebenstraßen und Güterwegen. Flach ist sie nicht: Das Südburgenland ist hügelig, und die Anstiege zwischen den Weinorten sind kurz, aber merklich. Mit einem E-Bike wird daraus ein Genussprogramm, ohne eines eine ordentliche Tagesleistung.
+
+Die Route lässt sich gut in Etappen aufteilen und mit Übernachtungen verbinden – das ist ohnehin der schönere Weg, weil der Reiz in den Pausen liegt.
+
+## Beste Zeit
+**Mai bis Oktober.** Der Frühsommer ist am grünsten, der Oktober am stimmungsvollsten – dann färben sich die Weingärten und die Kastanien haben Saison. Im Hochsommer kann es im Südburgenland richtig heiß werden; dann früh starten und mittags pausieren.
+
+## Anreise
+Von Wien rund zwei Stunden mit dem Auto, von Graz etwa eineinhalb. Mit der Bahn erreicht man Oberwart oder Güssing-Nähe über Umstiege – die Verbindungen sind dünn, das Rad mitzunehmen will geplant sein.
+
+## Was du mitnehmen solltest
+- Fahrradhelm und ausreichend Wasser – zwischen den Orten gibt es lange Abschnitte ohne Versorgung
+- Bargeld: viele Buschenschanken und Hofläden nehmen keine Karte
+- Sonnenschutz, die Weinberge liegen offen
+- Eine Radtasche für Einkäufe
+
+## Ehrlich gesagt
+Wer spektakuläre Landschaft sucht, ist hier falsch – das Südburgenland ist lieblich, nicht atemberaubend. Der Reiz liegt in der Ruhe, und Ruhe ist für manche schlicht Langeweile.
+
+Die Infrastruktur ist außerdem dünner als etwa am Neusiedler See: weniger Verleihstationen, weniger Gastronomie entlang der Strecke, weniger Beschilderungsdichte. Ohne vorherige Planung kann ein Tag hier zäh werden.
+
+Und der Uhudler polarisiert stark. Wer trockene, klassische Weine erwartet, sollte sich auf etwas anderes einstellen.
+
+## Gut kombinierbar
+- [Uhudler im Südburgenland](/blog/uhudler-suedburgenland-wein) – mehr zur Geschichte und zu den Betrieben
+- [Burg Güssing](/blog/burg-guessing-suedburgenland) – die Burg auf dem Vulkankegel, gut sichtbar von weitem
+- [Burg Bernstein](/blog/burg-bernstein-edelserpentin) – Edelserpentin und eine der stillsten Burgen des Landes
+
+---
+
+**Kurz gesagt:** Der Weinidylle-Radweg ist eine Route für Leute, die das Fahrrad als Fortbewegungsmittel zwischen Buschenschanken verstehen – nicht als Sportgerät.
+`,
     affiliateLinks: [
       { label: 'Unterkünfte im Südburgenland – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=G%C3%BCssing' },
       { label: 'Fahrradzubehör – Amazon', url: 'https://www.amazon.de/s?k=fahrradtasche+gep%C3%A4cktr%C3%A4ger' },
@@ -4125,19 +4272,51 @@ Wintersportler kommen ganzjährig auf ihre Kosten, am ruhigsten ist es außerhal
     date: '2026-06-14', category: 'Ausflug', region: 'tirol', bestSeason: 'Mai–Oktober',
     highlights: ['Gekürtes „schönstes Dorf Österreichs"', 'Einheitliche Tiroler Holzarchitektur', 'Familienfreundliches Wandergebiet'],
     content: `
-Alpbach im Alpbachtal gilt als eines der schönsten Dörfer der Alpen – berühmt für seine einheitliche, traditionelle Holzbauweise mit blumengeschmückten Balkonen.
+Alpbach wurde 1983 zum **schönsten Dorf Österreichs** gewählt – ein Titel, mit dem viele Orte werben, den hier aber eine strenge Bauordnung seit Jahrzehnten absichert: Neubauten müssen sich an der traditionellen Holzbauweise orientieren. Das Ergebnis ist ein Ortsbild aus dunklen Holzfassaden, Blumenkästen und Schindeldächern, das erstaunlich geschlossen wirkt.
 
-## Dorf & Tradition
-Strenge Bauvorschriften haben das harmonische Ortsbild bewahrt. Alpbach ist auch durch das Europäische Forum (Denkertreffen) international bekannt.
+## Was dich erwartet
+Alpbach liegt auf rund 1.000 Metern in einem Seitental des Inntals, sonnseitig und ohne Durchzugsverkehr – die Straße endet praktisch im Ort. Das merkt man: Es ist ruhig, und der Blick geht über Wiesen statt über Parkplätze.
 
-## Aktiv
-Das Wandergebiet rund um das Wiedersbergerhorn ist familienfreundlich, mit Bergbahnen, Almen und Erlebniswegen. Im Winter ein gemütliches Skigebiet.
+Der Ort ist außerdem seit 1945 Sitz des **Europäischen Forums Alpbach**, einer internationalen Tagungsreihe. Im Spätsommer ist deshalb mehr los als die Ortsgröße vermuten lässt, und man trifft ein ungewöhnlich internationales Publikum.
 
-## Praktische Infos
-- Anfahrt: von der A12, Abfahrt Brixlegg/Kramsach
-- Gut mit dem Reintalersee (Baden) kombinierbar
-- Sommercard mit Bergbahnen
-    `,
+## Wandern rund um Alpbach
+Die Wiedersbergerhornbahn bringt dich auf gut 1.850 Meter und spart den mühsamsten Teil des Aufstiegs. Oben verlaufen aussichtsreiche Höhenwege, die auch mit Kindern machbar sind – der Untergrund ist überwiegend breit und gutmütig.
+
+Wer lieber im Tal bleibt: Die Wege entlang der Alpbacher Ache sind flach, schattig und auch an heißen Tagen angenehm. Für Gipfelsammler ist das Wiedersbergerhorn selbst das naheliegende Ziel.
+
+Der **Reither See** im Nachbarort ist ein kleiner, warmer Badesee – kein Erlebnisbad, sondern eine Liegewiese mit Bergblick. Perfekt als Abschluss einer Wanderung.
+
+## Beste Zeit
+Juni bis Oktober für Wanderer. Der Juni bringt Almrosenblüte, der September klare Sicht und leere Wege. Im Winter gehört Alpbach zum Skigebiet Ski Juwel Alpbachtal Wildschönau und ist entsprechend belebt.
+
+Wer das Dorfbild in Ruhe sehen will, kommt außerhalb der Ferienzeiten – dann hat man die Gassen fast für sich.
+
+## Anreise & Parken
+Von Innsbruck rund 45 Minuten, von München knapp zwei Stunden. Abfahrt Kramsach oder Brixlegg von der Inntalautobahn, dann ins Tal hinauf. Im Ort gibt es bewirtschaftete Parkplätze.
+
+Mit öffentlichen Verkehrsmitteln funktioniert Alpbach gut: Bahn bis Brixlegg, dann Regionalbus ins Tal. Die Fahrzeit ab Innsbruck liegt bei etwa einer Stunde.
+
+## Was du mitnehmen solltest
+- Feste Schuhe – auch die leichten Höhenwege sind keine Spazierwege
+- Badesachen, falls der Reither See auf dem Programm steht
+- Eine Windjacke für die Bergstation
+
+## Ehrlich gesagt
+Alpbach ist schön – und es weiß das. In der Hauptsaison ist der Ortskern ein beliebtes Fotomotiv, entsprechend viel Betrieb herrscht auf der Hauptstraße. Wer ein unentdecktes Bergdorf sucht, findet es hier nicht.
+
+Die strenge Bauordnung hat außerdem eine Kehrseite: Vieles wirkt sehr durchgestaltet, fast wie ein Freilichtmuseum. Wem gewachsene Unregelmäßigkeit lieber ist, dem kann Alpbach zu glatt geraten.
+
+Und: Das Wandergebiet ist solide, aber nicht spektakulär. Für Hochgebirgskulisse fährt man besser ins Zillertal oder Stubaital.
+
+## Gut kombinierbar
+- [Zillertal](/blog/zillertal-wandern) – rund eine halbe Stunde entfernt, deutlich hochalpiner
+- [Festung Kufstein](/blog/festung-kufstein) – etwa 30 Minuten nordwärts
+- [Innsbruck](/blog/innsbruck-sehenswuerdigkeiten) – für einen Stadttag zwischendurch
+
+---
+
+**Kurz gesagt:** Alpbach ist der richtige Ort für ein ruhiges Basislager mit hübschem Ortsbild – aber nicht für alpine Dramatik.
+`,
     affiliateLinks: [
       { label: 'Hotels im Alpbachtal – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Alpbach' },
       { label: 'Tirol: Erlebnisse – GetYourGuide', url: 'https://www.getyourguide.de/s/?q=Alpbachtal' },
@@ -4279,19 +4458,48 @@ Familien (Kinder lieben die Rutschen), Geschichtsinteressierte – und alle, die
     date: '2026-06-15', category: 'Baden', region: 'salzburg', bestSeason: 'Juni–September',
     highlights: ['Klares Salzkammergut-Wasser', 'Schafbergbahn mit Traumblick', 'Nostalgische Raddampfer'],
     content: `
-Der Wolfgangsee liegt malerisch zwischen St. Gilgen (Salzburg) und St. Wolfgang – eine der bekanntesten Postkartenkulissen Österreichs.
+**St. Gilgen** liegt am westlichen Ende des Wolfgangsees, dort wo der See dem Salzkammergut zugewandt ist und Salzburg nur eine halbe Stunde entfernt liegt. Der Ort ist kleiner und ruhiger als das gegenüberliegende St. Wolfgang – und genau das ist sein Argument.
 
-## Baden & Schifffahrt
-Sauberes, im Sommer angenehm warmes Wasser, mehrere Strandbäder und nostalgische Schaufelraddampfer, die die Orte verbinden.
+## Was dich erwartet
+Ein überschaubarer Ortskern mit Seepromenade, ein Badeplatz, die Talstation der Zwölferhornbahn und Schiffsanlegestellen. St. Gilgen ist kein Ort, der sich aufdrängt; man kommt hierher, um den See zu nutzen, nicht um ein Programm abzuarbeiten.
 
-## Schafberg
-Mit der historischen Zahnradbahn geht es auf den Schafberg (1.783 m) – der Panoramablick über den See und die Salzkammergut-Seen ist legendär.
+Historisch interessant: Mozarts Mutter wurde in St. Gilgen geboren, seine Schwester Nannerl lebte später hier. Das Mozarthaus am Hauptplatz erinnert daran – ein kleiner, ruhiger Kontrapunkt zum Mozart-Rummel in Salzburg.
 
-## Praktische Infos
-- Anfahrt: Von Salzburg ca. 40 Minuten nach St. Gilgen
-- Schafbergbahn saisonal, früh buchen
-- St. Gilgen mit Mozart-Bezug (Geburtsort der Mutter)
-    `,
+## Der Zwölferhorn
+Die Seilbahn bringt dich auf rund 1.500 Meter. Oben öffnet sich der Blick über den gesamten Wolfgangsee, hinüber zum Schafberg und bei guter Sicht bis ins Tennengebirge. Die Wege am Gipfelplateau sind gutmütig und auch mit Kindern machbar.
+
+Der Abstieg zu Fuß ins Tal ist möglich, dauert aber und geht auf die Knie – die meisten fahren wieder mit der Bahn.
+
+## Baden
+Der Wolfgangsee gehört zu den wärmeren Seen des Salzkammerguts und erreicht im Hochsommer angenehme Temperaturen. In St. Gilgen gibt es ein Strandbad mit Liegewiese; daneben existieren kleinere öffentliche Zugänge.
+
+Wer mehr Platz sucht, fährt mit dem Schiff an eine andere Bucht – die Schifffahrt verbindet St. Gilgen, Strobl und St. Wolfgang und ist selbst schon ein Ausflug.
+
+## Die Schifffahrt als Programm
+Das ist der Tipp für einen Tag ohne Auto: mit dem Bus aus Salzburg nach St. Gilgen, mit dem Schiff nach St. Wolfgang, dort mit der Schafbergbahn hinauf und denselben Weg zurück. Ein voller, aber sehr runder Tag – Fahrpläne vorab prüfen, weil Schiff und Bergbahn saisonal verkehren.
+
+## Beste Zeit
+**Mai bis Oktober.** Im Juni und September ist es am angenehmsten: warm genug, aber ohne die Hochsaison-Enge. Juli und August sind voll, besonders an Wochenenden.
+
+## Anreise & Parken
+Von Salzburg rund 30 Minuten über die Wolfgangseestraße. Parkplätze gibt es im Ort, sie sind im Sommer kostenpflichtig und am Nachmittag knapp.
+
+St. Gilgen ist mit dem Bus ab Salzburg sehr gut erreichbar – die Verbindung ist dicht und dauert kaum länger als die Autofahrt. An heißen Wochenenden ist das klar die bessere Wahl.
+
+## Ehrlich gesagt
+Der Wolfgangsee ist touristisch stark erschlossen, und das spürt man auch in St. Gilgen. Wer Abgeschiedenheit sucht, ist hier falsch – dafür gibt es stillere Seen in der Region.
+
+Das Ufer ist außerdem größtenteils verbaut oder privat; frei zugängliche Stellen sind begrenzt. Und die Zwölferhornbahn lohnt sich nur bei klarer Sicht – bei Hochnebel zahlt man für eine graue Wand.
+
+## Gut kombinierbar
+- [Fuschlsee](/blog/fuschlsee-baden) – zehn Minuten Richtung Salzburg, kleiner und ruhiger
+- [Bad Ischl](/blog/bad-ischl-kaiservilla) – das Zentrum des Salzkammerguts, rund 40 Minuten entfernt
+- [Mondsee](/blog/mondsee-baden-salzkammergut) – der wärmste See der Gegend
+
+---
+
+**Kurz gesagt:** St. Gilgen ist die ruhigere Seite des Wolfgangsees und der beste Startpunkt für einen Seetag ganz ohne Auto.
+`,
     affiliateLinks: [
       { label: 'Hotels am Wolfgangsee – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=St.+Gilgen' },
       { label: 'Salzkammergut: Touren – GetYourGuide', url: 'https://www.getyourguide.de/s/?q=Wolfgangsee' },
@@ -4305,19 +4513,55 @@ Mit der historischen Zahnradbahn geht es auf den Schafberg (1.783 m) – der Pan
     date: '2026-06-15', category: 'Baden', region: 'salzburg', bestSeason: 'Juni–September',
     highlights: ['Trinkwasserqualität, smaragdgrün', 'Naturbelassenes Ufer', 'Nur 20 Min. von Salzburg'],
     content: `
-Der Fuschlsee östlich von Salzburg besticht durch sein klares, grün schimmerndes Wasser und ein weitgehend naturbelassenes Ufer.
+Der **Fuschlsee** liegt nur rund 20 Autominuten östlich von Salzburg und ist damit der nächstgelegene richtige Badesee der Stadt. Er ist klein, tiefgrün und von bewaldeten Hängen umschlossen – ein See, der eher an einen Bergsee erinnert als an einen Ferienort.
 
-## Baden & Natur
-Mehrere Badeplätze, dazu ein 6,5 km langer Seerundweg durch Wald und am Wasser entlang. Das Schloss Fuschl thront elegant am Ufer.
+## Wasserqualität und Temperatur
+Der Fuschlsee hat Trinkwasserqualität – motorisierte Boote sind nicht erlaubt, und das merkt man an Klarheit und Ruhe. Im Hochsommer erreicht das Wasser in flachen Uferzonen angenehme Badetemperaturen; in der Seemitte bleibt es deutlich kühler, weil der See recht tief ist.
 
-## Ruhe statt Trubel
-Im Vergleich zu den großen Salzkammergut-Seen geht es hier ruhiger zu – ideal für entspannte Badetage und Spaziergänge.
+Die aktuellen Messwerte veröffentlicht der Hydrographische Dienst Salzburg laufend – wir zeigen sie, wo verfügbar, direkt im Artikel an.
 
-## Praktische Infos
-- Anfahrt: Von Salzburg ca. 20 Minuten
-- Begrenzte Parkplätze – früh kommen
-- Gut mit Wolfgangsee/St. Gilgen kombinierbar
-    `,
+## Baden am Fuschlsee
+Es gibt mehrere Zugänge: das Strandbad in Fuschl am See mit Liegewiese und Infrastruktur sowie kleinere, öffentliche Uferstellen. Ein durchgehend frei zugängliches Ufer hat der See nicht – Teile sind privat oder gehören zu Hotels.
+
+Das Strandbad ist die entspannteste Variante, wenn du mit Kindern kommst: flacher Einstieg, Wiese, Gastronomie in der Nähe.
+
+## Der Rundweg
+Rund um den See führt ein Wanderweg von etwa elf Kilometern. Er ist überwiegend flach, verläuft phasenweise direkt am Wasser und lässt sich in gut drei Stunden gehen. Am Südufer geht es ruhiger zu als am Nordufer, wo die Straße näher liegt.
+
+Der Weg ist ein guter Kompromiss für Tage, an denen es zum Bergsteigen zu heiß ist: viel Schatten, immer wieder Gelegenheit zum Hineinspringen.
+
+## Schloss Fuschl
+Am Nordufer liegt Schloss Fuschl, ein ehemaliges Jagdschloss in prominenter Lage über dem Wasser. Der Zugang zum Gelände ist als Hotelgast oder Gast der Gastronomie möglich – von außen und vom Rundweg aus sieht man es ohnehin am besten.
+
+## Beste Zeit
+**Juni bis September** zum Baden, wobei Juli und August die verlässlichsten Monate sind. Für den Rundweg ist auch der Oktober ideal: Laubfärbung, klare Luft, leere Wege.
+
+An heißen Wochenenden ist der See ein Ziel für halb Salzburg – dann früh kommen oder auf einen Wochentag ausweichen.
+
+## Anreise & Parken
+Von Salzburg über die Wolfgangseestraße rund 20 bis 25 Minuten. Parkplätze gibt es in Fuschl am See, an Sommerwochenenden sind sie am Nachmittag knapp und kostenpflichtig.
+
+Mit dem Bus ist der Fuschlsee von Salzburg aus gut erreichbar – die Linie Richtung St. Gilgen hält in Fuschl. Das ist an heißen Tagen die stressfreiere Variante.
+
+## Was du mitnehmen solltest
+- Badeschuhe: das Ufer ist stellenweise steinig
+- Ein Handtuch mehr, der See kühlt schnell
+- Für den Rundweg Wasser – unterwegs gibt es nicht überall Versorgung
+
+## Ehrlich gesagt
+Der Fuschlsee ist schön, aber klein – und genau das wird an heißen Wochenenden zum Problem. Die öffentlichen Uferstellen sind begrenzt, und wer spät kommt, sucht lange nach einem Platz.
+
+Wer viel Platz und lange Liegewiesen sucht, fährt besser weiter an den Wallersee oder in den Salzburger Seenlandbereich. Der Fuschlsee ist das kompakte, schnelle Ziel – nicht das großzügige.
+
+## Gut kombinierbar
+- [Wolfgangsee & St. Gilgen](/blog/wolfgangsee-st-gilgen) – zehn Minuten weiter, deutlich größer
+- [Salzburger Seenland](/blog/salzburger-seenland-baden) – flachere, wärmere Seen im Flachgau
+- [Salzburger Altstadt](/blog/salzburg-stadt-altstadt) – der Stadttag davor oder danach
+
+---
+
+**Kurz gesagt:** Der beste Badesee für alle, die von Salzburg aus schnell ins Wasser wollen – aber komm früh.
+`,
     affiliateLinks: [
       { label: 'Unterkünfte am Fuschlsee – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Fuschl+am+See' },
       { label: 'Strandzubehör – Amazon', url: 'https://www.amazon.de/s?k=badetuch+mikrofaser' },
@@ -4331,19 +4575,50 @@ Im Vergleich zu den großen Salzkammergut-Seen geht es hier ruhiger zu – ideal
     date: '2026-06-15', category: 'Ausflug', region: 'salzburg', bestSeason: 'Ganzjährig',
     highlights: ['Wasserfall mitten im Ortszentrum', 'Belle-Époque-Architektur', 'Heilende Gasteiner Thermen'],
     content: `
-Bad Gastein im Gasteinertal ist ein einzigartiges Bergdorf: An steile Hänge gebaut, mit einem **Wasserfall mitten im Zentrum** und prachtvollen Hotelpalästen aus der Belle Époque.
+Kaum ein Ort in Österreich sieht so aus wie **Bad Gastein**. Die Gasteiner Ache stürzt mitten durch das Zentrum in mehreren Stufen den Hang hinunter – und drumherum klebt eine Kulisse aus Belle-Époque-Hotels an den steilen Hängen, als hätte jemand ein Stück Riviera in ein Hochtal gestellt.
 
-## Atmosphäre
-Lange etwas verschlafen, erlebt der Ort ein stilvolles Comeback – mit Designhotels, Kunst und dem morbiden Charme der alten Grandhotels.
+## Der Wasserfall
+Der Wasserfall ist das Wahrzeichen und keine Attraktion am Ortsrand, sondern die Hauptachse: Straßen, Brücken und Hotels ordnen sich um ihn herum an. Insgesamt überwindet die Ache im Ortsbereich mehrere hundert Höhenmeter in mehreren Stufen.
 
-## Thermen & Berge
-Das heilende Thermalwasser (Felsentherme, Alpentherme) ist berühmt. Ringsum: Skifahren im Winter, Wandern im Sommer.
+Der **Wasserfallweg** führt entlang der Kaskaden, mit Aussichtspunkten und Brücken über die Gischt. Die Strecke ist kurz, aber steil – als kompletter Rundgang durch den Ort gerechnet sollte man ein bis zwei Stunden einplanen.
 
-## Praktische Infos
-- Anreise bequem per Bahn (Tauernbahn)
-- Wasserfallweg führt mitten durch den Ort
-- Kombinierbar mit dem Nationalpark Hohe Tauern
-    `,
+Am eindrucksvollsten ist der Wasserfall nach der Schneeschmelze im späten Frühjahr und nach ergiebigem Regen. Im Winter vereisen Teile und werden beleuchtet – ein völlig anderes, sehr fotogenes Bild.
+
+## Die Architektur
+Bad Gastein war im 19. Jahrhundert ein mondäner Kurort für europäischen Hochadel. Aus dieser Zeit stammt die Hotelarchitektur, die dem Ort bis heute sein Gesicht gibt.
+
+Ein Teil dieser Gebäude stand jahrzehntelang leer und verfiel sichtbar – das gehört zur Wahrheit über Bad Gastein und macht seinen eigentümlichen Reiz mit aus. In den letzten Jahren wurden mehrere dieser Häuser saniert und wiederbelebt. Wer den Ort besucht, sieht deshalb beides nebeneinander: frisch Restauriertes und Verfallenes.
+
+## Thermalwasser
+Die Gasteiner Quellen sind der historische Grund für den Ort. Es gibt öffentliche Thermenbäder mit Innen- und Außenbecken sowie den Heilstollen im Nachbarort Bad Hofgastein beziehungsweise Böckstein – letzterer ist eine medizinische Einrichtung, kein Ausflugsziel im üblichen Sinn.
+
+## Beste Zeit
+**Mai und Juni** für den kräftigsten Wasserfall, **September und Oktober** für klare Luft und Farben, **Winter** für die vereiste Variante und den Skibetrieb. Der Hochsommer ist angenehm, aber nicht der spektakulärste Moment.
+
+## Anreise
+Bad Gastein liegt an der Tauernbahn und ist mit dem Zug hervorragend erreichbar – der Bahnhof liegt oberhalb des Ortszentrums. Das ist einer der wenigen Alpenorte, für die man wirklich kein Auto braucht.
+
+Mit dem Auto von Salzburg rund 1,5 Stunden. Achtung: Der Ort ist steil und die Parkplatzsituation im Zentrum angespannt.
+
+## Was du mitnehmen solltest
+- Schuhe mit Profil – die Stufen am Wasserfallweg sind durch die Gischt dauerhaft feucht
+- Eine Regenjacke, auch bei Sonne: an manchen Stellen steht man im Sprühnebel
+- Kondition für Steigungen; der gesamte Ort ist ein Hang
+
+## Ehrlich gesagt
+Bad Gastein polarisiert. Manche finden die Mischung aus Grandhotel-Fassaden, Beton aus den 1970ern und Leerstand faszinierend, andere schlicht trostlos. Wer ein gemütliches Alpendorf erwartet, wird überrascht sein – das hier ist eine kleine, in die Berge gebaute Stadt.
+
+Barrierefrei ist der Ort außerdem kaum: Fast jeder Weg führt über Treppen oder steile Abschnitte. Mit Kinderwagen ist das mühsam.
+
+## Gut kombinierbar
+- [Grossarltal](/blog/grossarltal-tal-der-almen) – das ruhige Almtal nebenan
+- [Liechtensteinklamm](/blog/liechtensteinklamm) – rund 30 Minuten nördlich
+- [Hohe Tauern Nationalpark](/blog/hohe-tauern-nationalpark-salzburg) – die Bergwelt ringsum
+
+---
+
+**Kurz gesagt:** Ein Wasserfall mitten in der Stadt und eine Kulisse, die es so kein zweites Mal gibt – am stärksten im Frühsommer.
+`,
     affiliateLinks: [
       { label: 'Hotels in Bad Gastein – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Bad+Gastein' },
       { label: 'Salzburg: Erlebnisse – GetYourGuide', url: 'https://www.getyourguide.de/s/?q=Gastein' },
@@ -4357,19 +4632,46 @@ Das heilende Thermalwasser (Felsentherme, Alpentherme) ist berühmt. Ringsum: Sk
     date: '2026-06-15', category: 'Ausflug', region: 'salzburg', bestSeason: 'April–Oktober',
     highlights: ['900 Jahre alte Höhenburg', 'Historische Greifvogel-Flugschau', 'Gegenüber der Eisriesenwelt'],
     content: `
-Burg Hohenwerfen wacht seit über 900 Jahren über das Salzachtal bei Werfen – eine der eindrucksvollsten Höhenburgen Österreichs.
+Hoch über dem Salzachtal, auf einem freistehenden Felsen zwischen Tennengebirge und Hochkönig, steht die **Festung Hohenwerfen** – eine der spektakulärsten Burglagen Österreichs. Ihre Geschichte reicht bis ins 11. Jahrhundert zurück.
 
-## Burg & Falknerei
-Neben Waffenkammer, Verlies und Türmen ist die **historische Falknerei** das Highlight: Adler, Geier und Falken im freien Flug vor der Bergkulisse.
+## Die Lage ist der halbe Besuch
+Man versteht die Burg erst, wenn man oben steht. Der Felskegel liegt genau dort, wo das Salzachtal am engsten ist – wer hier saß, kontrollierte den Nord-Süd-Verkehr durch die Alpen. Genau dafür wurde sie gebaut, und genau deshalb wirkt sie bis heute wehrhaft statt romantisch.
 
-## Lage
-Direkt gegenüber liegt die Eisriesenwelt – beide lassen sich gut zu einem vollen Ausflugstag verbinden.
+Der Blick von den Mauern reicht über das Tal, hinüber zum Hochkönig und auf die Wände des Tennengebirges. Für Fotos ist der späte Nachmittag am besten, wenn die Sonne die Felswände gegenüber anleuchtet.
 
-## Praktische Infos
-- Anfahrt: Von Salzburg ca. 45 Minuten
-- Schrägaufzug oder Fußweg hinauf
-- Flugvorführungszeiten vorab prüfen
-    `,
+## Die Greifvogelschau
+Das eigentliche Herzstück ist der Landesfalkenhof. Adler, Geier, Falken und Eulen fliegen mehrmals täglich – nicht über einer Arena, sondern über dem offenen Tal, sodass die Vögel echte Kreise ziehen und erst nach Minuten zurückkommen. Das ist etwas anderes als eine Vorführung in einer Voliere.
+
+Die Flugzeiten stehen tagesaktuell am Eingang und auf der Website der Burg; sie richten sich auch nach dem Wetter, weil bei starkem Wind nicht geflogen wird. Wer die Schau sehen will, sollte den Besuch danach planen und nicht umgekehrt.
+
+## Der Rundgang
+Innen geht es durch Wehrgänge, Waffenkammer, Kapelle und Verliese. Für Kinder ist vor allem der Burghof interessant, für Erwachsene die Ausstellung zur Geschichte der Festung – die auch die weniger heroischen Kapitel nicht ausspart: Hohenwerfen war über Jahrhunderte auch Gefängnis.
+
+Ein Panoramalift bringt Besucher einen Teil der Höhe hinauf, den Rest geht man zu Fuß. Der Fußweg von unten ist ebenfalls möglich und dauert etwa 20 Minuten bergauf.
+
+## Anreise & Parken
+Werfen liegt direkt an der Tauernautobahn, rund 40 Autominuten südlich von Salzburg. Parkplätze gibt es am Fuß des Burgbergs. Mit der Bahn ist Werfen gut erreichbar – vom Bahnhof zur Burg sind es zu Fuß etwa 20 bis 25 Minuten bergauf, saisonal verkehrt ein Shuttle.
+
+## Praktisches
+- Fester Schuh oder zumindest Profilsohle: Kopfsteinpflaster und Burgtreppen sind glatt
+- Auch im Sommer eine Jacke – auf dem Felsen zieht es fast immer
+- Der Rundgang ist nicht barrierefrei; Treppen und Schwellen lassen sich nicht umgehen
+- Für Rundgang plus Greifvogelschau mindestens zweieinhalb Stunden einplanen
+
+## Ehrlich gesagt
+Hohenwerfen ist kein Geheimtipp – an Sommertagen und besonders bei Regenwetter im Salzburger Land ist es voll, weil dann halb Salzburg dieselbe Idee hat. Wer Ruhe sucht, kommt unter der Woche oder am späten Nachmittag.
+
+Und: Die Burg ist stark auf Publikum ausgerichtet. Wer eine stille, unrestaurierte Ruine erwartet, wird enttäuscht – hier gibt es Shop, Gastronomie und mehrsprachige Beschilderung. Das ist für Familien ein Vorteil und für Romantiker einer zu viel.
+
+## Gut kombinierbar
+- [Eisriesenwelt Werfen](/blog/eisriesenwelt-werfen) – im selben Ort, die größte Eishöhle der Welt. Beides an einem Tag ist sportlich, aber machbar
+- [Liechtensteinklamm](/blog/liechtensteinklamm) – rund 30 Minuten südlich
+- [Salzburger Altstadt](/blog/salzburg-stadt-altstadt) – knapp 40 Minuten nördlich
+
+---
+
+**Kurz gesagt:** Für die Greifvogelschau über dem offenen Tal lohnt sich der Weg auch dann, wenn du Burgen sonst eher links liegen lässt.
+`,
     affiliateLinks: [
       { label: 'Unterkünfte bei Werfen – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Werfen' },
       { label: 'Salzburg: Tickets – GetYourGuide', url: 'https://www.getyourguide.de/s/?q=Werfen' },
@@ -4435,19 +4737,47 @@ Vom kurzen Gipfelweg bis zu längeren Plateau-Touren – festes Schuhwerk und We
     date: '2026-06-15', category: 'Ausflug', region: 'salzburg', bestSeason: 'Ganzjährig',
     highlights: ['Ganzjähriger Gletscher über Kaprun', 'Plattform "Top of Salzburg" (3.029 m)', 'Gletscher-Erlebniswelt & Stollen'],
     content: `
-Das Kitzsteinhorn über Kaprun ist Salzburgs einziges Gletscherskigebiet – und ein beeindruckendes Hochgebirgserlebnis, das man bequem per Bahn erreicht.
+Das **Kitzsteinhorn** über Kaprun ist einer der wenigen Orte in Österreich, an denen man auch im Hochsommer auf einem Gletscher stehen kann – und zwar ohne Bergsteigerausrüstung. Von der Bergstation sind es nur ein paar Schritte bis zu Panoramaplattformen auf rund 3.000 Metern.
 
-## Top of Salzburg
-Die Aussichtsplattform und der Aussichtsstollen auf rund 3.000 m bieten einen Rundblick über die Hohen Tauern und den Großglockner.
+## Gipfelwelt 3000
+Die Aussichtsplattform "Top of Salzburg" liegt auf gut 3.000 Metern und blickt direkt auf den Großglockner und die Gletscherwelt der Hohen Tauern. Bei klarer Sicht ist das einer der eindrucksvollsten Ausblicke, die man in Österreich ohne eigene Bergerfahrung erreichen kann.
 
-## Ganzjährig
-Skifahren bis in den Frühsommer, dazu eine Gletscher-Erlebniswelt mit Infos über Eis und Permafrost.
+Dazu gehört die **Nationalpark Gallery**, ein in den Fels getriebener Stollen mit Ausstellungsstationen zum Nationalpark Hohe Tauern, und ein Panoramakino. Das Ganze ist so angelegt, dass auch ein Besuch bei schlechtem Wetter nicht völlig umsonst ist – wobei die Aussicht dann natürlich fehlt.
 
-## Praktische Infos
-- Anfahrt: über Zell am See nach Kaprun
-- Warme Kleidung – auch im Sommer Gletschertemperaturen
-- Kombi mit Zeller See & Tauern Spa möglich
-    `,
+## Ganzjähriger Skibetrieb
+Das Kitzsteinhorn ist ein Gletscherskigebiet und hat deshalb eine ungewöhnlich lange Saison. Im Sommer trainieren hier Skiteams, im Herbst starten Wintersportler früher als anderswo. Für Sommergäste heißt das vor allem: Man kann im August auf Schnee stehen – auch wenn die Pisten dann begrenzt sind.
+
+## Wandern
+Rund um die Mittelstationen beginnen markierte Wege. Der **Gipfelweg** und die Wege auf Höhe der Alpincenter-Station bieten Hochgebirgskulisse bei überschaubarem Aufwand. Wichtig: Das ist Hochgebirge, nicht Almwanderung – Wetterumschwünge kommen schnell, und die Wege sind steinig.
+
+## Beste Zeit
+Von Juni bis Oktober für Aussicht und Wandern, von Herbst bis Frühjahr für Wintersport. Entscheidend ist weniger der Monat als die Sicht: Bei Hochnebel oder Wolken über 2.500 Metern steht man oben im Grau und sieht nichts.
+
+Deshalb der wichtigste Tipp: **Vorher die Bergwetterprognose und die Webcams prüfen.** Bei zweifelhaftem Wetter lieber verschieben – die Auffahrt ist zu teuer für einen Blindflug.
+
+## Anreise
+Kaprun liegt rund eine Stunde südlich von Salzburg, direkt neben Zell am See. Von dort führen Shuttlebusse zur Talstation; es gibt auch Parkplätze. Mit der Bahn bis Zell am See, dann Bus nach Kaprun – das funktioniert verlässlich.
+
+## Was du mitnehmen solltest
+- Warme Jacke, Mütze und Handschuhe – auf 3.000 Metern kann es auch im Juli um den Gefrierpunkt sein
+- Sonnenbrille und hoher Lichtschutzfaktor: Schnee und Höhe verstärken die Strahlung erheblich
+- Feste Schuhe, auch für die kurzen Wege oben
+- Bei Kreislaufproblemen: den Höhenunterschied nicht unterschätzen
+
+## Ehrlich gesagt
+Die Auffahrt ist teuer – deutlich teurer als eine gewöhnliche Bergbahn. Das ist bei einem Gletscherskigebiet mit entsprechendem Aufwand nachvollziehbar, macht einen Fehlversuch bei schlechter Sicht aber besonders ärgerlich.
+
+Außerdem ist das Kitzsteinhorn ein durchgeplantes Ausflugsziel mit Gastronomie, Shop und viel Betrieb an schönen Tagen – wer Bergeinsamkeit sucht, findet sie hier nicht. Und die Höhe macht manchen zu schaffen: Kopfweh und Kurzatmigkeit sind auf 3.000 Metern normal, wenn man direkt aus dem Tal hochfährt.
+
+## Gut kombinierbar
+- [Zell am See](/blog/zell-am-see-zeller-see) – der See direkt nebenan, ideal als Kontrastprogramm
+- [Hohe Tauern Nationalpark](/blog/hohe-tauern-nationalpark-salzburg) – dieselbe Bergwelt zu Fuß
+- [Heiligenblut & Großglockner](/blog/heiligenblut-grossglockner-dorf) – die Kärntner Seite des Massivs
+
+---
+
+**Kurz gesagt:** Hochgebirge ohne Bergsteigen – aber nur an einem Tag mit garantiert klarer Sicht buchen.
+`,
     affiliateLinks: [
       { label: 'Hotels in Kaprun – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Kaprun' },
       { label: 'Zell am See–Kaprun: Tickets – GetYourGuide', url: 'https://www.getyourguide.de/s/?q=Kaprun' },
@@ -4487,19 +4817,50 @@ Festes, rutschfestes Schuhwerk und Regenschutz – in der Klamm ist es feucht un
     date: '2026-06-15', category: 'Wandern', region: 'salzburg', difficulty: 'leicht', bestSeason: 'Juni–Oktober',
     highlights: ['Markante Bischofsmütze als Kulisse', 'Sanfte Almwanderungen', 'Ruhig & familienfreundlich'],
     content: `
-Filzmoos im Salzburger Pongau liegt idyllisch zu Füßen der Gosaukamm-Berge mit der markanten **Bischofsmütze**. Ein ruhiger Ort für Genusswanderer.
+Filzmoos liegt auf gut 1.050 Metern im Salzburger Pongau, eingebettet zwischen sanften Almwiesen und der schroffen Kulisse des Gosaukamms. Über allem thront die **Bischofsmütze** – ein Doppelgipfel, der seinem Namen alle Ehre macht und den Ort von fast jedem Wanderweg aus begleitet.
 
-## Wandern
-Sanfte Almwege, der Almerlebnisbus und gemütliche Hütten machen das Wandern familienfreundlich. Für Geübte locken Touren Richtung Hofpürglhütte und Gosaukamm.
+## Was Filzmoos anders macht
+Der Ort hat eine Entscheidung getroffen, die man ihm heute anmerkt: keine Hotelburgen, keine Liftschneisen bis ins Dorf, kein Après-Ski-Lärm. Stattdessen Bauernhöfe, ein überschaubares Ortszentrum und viel Wiese. Wer aus Schladming oder Saalbach kommt, merkt den Unterschied sofort – hier ist abends um zehn Ruhe.
 
-## Charakter
-Filzmoos ist bewusst ruhig geblieben – kein Massentourismus, dafür Bergidylle, gute Luft und Sternenhimmel.
+Das macht Filzmoos zu einem der wenigen Orte im Pongau, in denen man auch mit kleinen Kindern oder als Ruhesuchender gut aufgehoben ist, ohne auf Bergkulisse verzichten zu müssen.
 
-## Praktische Infos
-- Anfahrt: Von Salzburg ca. 1 Stunde
-- Sommercard mit Bergbahn & Bus
-- Im Winter familienfreundliches Skigebiet
-    `,
+## Die Wanderungen
+**Für Genusswanderer und Familien:** Die Almwege rund um Sulzenalm und Neustattalm steigen gemächlich an, sind breit und gut markiert. Man geht überwiegend über offenes Almgelände – also mit Aussicht statt im Wald. Einkehren lässt sich unterwegs; die Hütten haben im Sommer in der Regel geöffnet, die genauen Zeiten wechseln aber jährlich.
+
+**Für Ambitionierte:** Der Weg zur **Hofpürglhütte** auf rund 1.700 Metern ist der Klassiker. Von dort steht man direkt unter den Wänden der Bischofsmütze. Wer weitergeht, kommt in hochalpines Gelände mit Drahtseilsicherungen – das ist dann keine Familienwanderung mehr.
+
+**Für die Aussicht:** Der Rossbrand zwischen Filzmoos und Radstadt gilt als einer der großen Panoramaberge der Ostalpen. Von oben reicht der Blick über eine beeindruckende Zahl an Gipfeln – und der Aufstieg ist dafür erstaunlich moderat.
+
+## Beste Zeit
+Von Juni bis Oktober. Im Juni blüht es auf den Almen am schönsten, im September ist die Luft am klarsten und die Wege sind leerer. Juli und August sind die vollsten Monate, bleiben aber auch dann deutlich entspannter als die bekannten Nachbartäler.
+
+Im Jänner ist Filzmoos für seine Ballonfahrten bekannt – die Termine wechseln von Jahr zu Jahr, also vorab beim Tourismusverband nachsehen.
+
+## Anreise & Parken
+Von Salzburg aus rund eine Stunde über die Tauernautobahn bis Eben im Pongau, dann ins Tal hinein. Am Ortsrand und an den Wanderausgangspunkten gibt es Parkplätze; an schönen Sommerwochenenden sind die beliebten früh voll – vor neun Uhr da zu sein, macht einen spürbaren Unterschied.
+
+Mit öffentlichen Verkehrsmitteln ist Filzmoos machbar, aber umständlich: Bahn bis Radstadt oder Eben, dann Bus. Für einen Tagesausflug ohne Auto ist das knapp, für einen mehrtägigen Aufenthalt funktioniert es gut – vor Ort verkehrt im Sommer ein Wanderbus.
+
+## Was du mitnehmen solltest
+- Feste Schuhe mit Profil – Almwege werden nach Regen rutschig
+- Eine Schicht mehr als im Tal, auf 1.700 Metern ist es auch im August frisch
+- Sonnenschutz: auf offenen Almwiesen gibt es kaum Schatten
+- Bargeld für kleinere Hütten
+
+## Ehrlich gesagt
+Filzmoos ist landschaftlich großartig, aber kein Ort für Leute, die abends etwas erleben wollen – das Angebot beschränkt sich auf ein paar Gasthäuser. Und wer auf spektakuläre Klammen oder Wasserfälle hofft, ist hier falsch: Die Stärke des Tals sind weite Almen und die Felskulisse, nicht die dramatische Einzelattraktion.
+
+Bei tiefhängenden Wolken verliert Filzmoos außerdem viel von seinem Reiz, weil die Bischofsmütze – das eigentliche Motiv – dann schlicht nicht zu sehen ist. Ein Schlechtwettertag lässt sich hier weniger gut retten als in einer Region mit Thermen oder Höhlen.
+
+## Gut kombinierbar
+- [Liechtensteinklamm](/blog/liechtensteinklamm) – gut eine halbe Stunde entfernt, der passende Plan B bei Regen
+- [Eisriesenwelt Werfen](/blog/eisriesenwelt-werfen) – die größte Eishöhle der Welt, auch im Hochsommer kühl
+- [Grossarltal](/blog/grossarltal-tal-der-almen) – noch mehr Almen, wenn dir Filzmoos gefallen hat
+
+---
+
+**Kurz gesagt:** Filzmoos ist die richtige Wahl, wenn du Bergkulisse ohne Trubel suchst und dafür auf Abendprogramm verzichten kannst.
+`,
     affiliateLinks: [
       { label: 'Hotels in Filzmoos – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Filzmoos' },
       { label: 'Wanderstöcke – Amazon', url: 'https://www.amazon.de/s?k=wanderst%C3%B6cke+teleskop' },
