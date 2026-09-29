@@ -2611,22 +2611,56 @@ Und: Ohne Führung sieht man den Tagebau nur von außen. Spontan vorbeifahren fu
     bestSeason: 'April–Oktober',
     highlights: ['Größter Klosterbibliothekssaal der Welt', 'Prachtvolle Barock-Deckenfresken', 'Museen & Naturkundesammlung im Stift'],
     content: `
-Stift Admont liegt am Tor zum Nationalpark Gesäuse – und beherbergt einen der schönsten Räume Österreichs: den größten klösterlichen Bibliothekssaal der Welt.
+Im **Stift Admont** in der Obersteiermark steht der größte Klosterbibliothekssaal der Welt – rund 70 Meter lang, mit Deckenfresken, weißen Regalen und Goldornamenten. Wer den Raum betritt, versteht sofort, warum er als einer der schönsten Innenräume Österreichs gilt.
 
-## Der Bibliothekssaal
-70 Meter lang, mit sieben Kuppeln, vergoldeten Verzierungen und Deckenfresken, die das menschliche Wissen darstellen. Rund 70.000 Bände – ein überwältigender Anblick.
+## Die Bibliothek
+Der Saal wurde im 18. Jahrhundert fertiggestellt und ist als Gesamtkunstwerk angelegt: Die sieben Deckenkuppeln stellen die Stufen der menschlichen Erkenntnis dar, das Licht kommt von allen Seiten, und die Bücherregale sind Teil der Architektur, nicht nachträglich hineingestellt.
 
-## Mehr als nur Bücher
-Das Stift beherbergt auch ein Kunsthistorisches Museum, eine bedeutende Naturkundesammlung und moderne Kunst – eine seltene Mischung aus Barock und Gegenwart.
+Zwischen den Regalen stehen Skulpturen von **Josef Stammel**, darunter die berühmten "Vier letzten Dinge" – Tod, Gericht, Himmel und Hölle – als drastisch gestaltete Holzfiguren. Sie sind der Gegenpol zur hellen Heiterkeit des Raums und machen den Besuch erst rund.
 
-## Kombi-Tipp
-Ideal mit einem Besuch im **Nationalpark Gesäuse** zu verbinden – Kultur am Vormittag, Natur am Nachmittag.
+Der Bestand umfasst rund 200.000 Bände, darunter zahlreiche mittelalterliche Handschriften.
 
-## Praktische Infos
-- Ort: Admont, Obersteiermark
-- Anfahrt: Von Liezen ca. 25 Minuten
-- Öffnungszeiten saisonal – vorab prüfen
-    `,
+## Mehr als die Bibliothek
+Das Stift beherbergt außerdem:
+
+- ein **Naturhistorisches Museum** mit einer historischen Insektensammlung und Präparaten
+- ein **Kunsthistorisches Museum** mit sakraler Kunst
+- eine Abteilung für **Gegenwartskunst** – ungewöhnlich für ein Benediktinerstift und ein bewusster Kontrast zum Barock
+
+Das gesamte Museumsareal füllt leicht zwei bis drei Stunden.
+
+## Der Ort
+Admont liegt direkt am Eingang zum **Nationalpark Gesäuse**, umgeben von den Wänden der Ennstaler Alpen. Die Kulisse aus barocker Stiftsanlage vor senkrechtem Fels ist für sich ein Motiv.
+
+## Beste Zeit
+Das Stift ist saisonal geöffnet, in der Regel von Frühjahr bis Herbst, mit eingeschränkten Zeiten im Winter – vorab prüfen.
+
+Ein Vormittag ist ideal, weil das Licht im Bibliothekssaal dann am besten ist. Als **Schlechtwetterplan** ist Admont eine der besten Adressen der Obersteiermark: Man verbringt Stunden im Inneren.
+
+## Anreise
+Admont liegt im oberen Ennstal. Von Graz rund 1,5 Stunden, von Linz etwa zwei, von Salzburg gut zwei.
+
+Mit der Bahn ist Admont über die Ennstalstrecke erreichbar; vom Bahnhof zum Stift sind es wenige Gehminuten. Für ein Ziel dieser Lage ist das ausgesprochen bequem.
+
+## Was du mitnehmen solltest
+- Zeit: Wer nur die Bibliothek sehen will, ist in 20 Minuten durch – das wäre schade
+- Bequeme Schuhe für das große Museumsareal
+- Fotografieren ist in Teilen eingeschränkt; die Regeln stehen vor Ort
+
+## Ehrlich gesagt
+Für Kinder ist Admont wenig aufregend. Die Bibliothek ist ein Raum, den man anschaut, kein Erlebnis zum Anfassen; das Naturkundemuseum hilft, reicht aber nicht immer.
+
+Und: Der Bibliothekssaal ist beeindruckend, aber er ist ein einzelner Raum. Wer allein dafür zwei Stunden anfährt, sollte die übrigen Sammlungen einplanen – sonst steht das Verhältnis von Anfahrt und Aufenthalt schief.
+
+## Gut kombinierbar
+- [Gesäuse Nationalpark](/blog/gesaeuse-nationalpark-wandern) – beginnt praktisch vor der Tür
+- [Erzberg](/blog/erzberg-eisenerz-steiermark) – rund 40 Minuten östlich
+- [Wasserlochklamm Palfau](/blog/wasserlochklamm-palfau) – auf derselben Route Richtung Norden
+
+---
+
+**Kurz gesagt:** Der schönste Bibliothekssaal der Welt – aber plane die anderen Sammlungen mit ein, sonst ist der Besuch zu kurz.
+`,
     affiliateLinks: [
       { label: 'Unterkünfte in Admont – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Admont' },
       { label: 'Reiseführer Steiermark – Amazon', url: 'https://www.amazon.de/s?k=reisef%C3%BChrer+steiermark' },
@@ -3314,21 +3348,62 @@ Die Seen sind weniger überlaufen als die berühmten Salzkammergut-Seen, das Was
     bestSeason: 'Mai–Oktober',
     highlights: ['Größte Eishöhle der Welt', 'Spektakuläre Lage mit Seilbahn', 'Auch im Hochsommer eisig schön'],
     content: `
-Hoch über dem Salzachtal bei Werfen liegt die Eisriesenwelt – mit über 42 km Länge die größte Eishöhle der Welt. Der zugängliche Teil zeigt monumentale Eisformationen.
+Die **Eisriesenwelt** bei Werfen ist die größte Eishöhle der Welt – ein über 40 Kilometer langes Höhlensystem im Tennengebirge, von dem der erste, vereiste Kilometer für Besucher zugänglich ist. Was man dort sieht, gibt es in dieser Dimension nirgendwo sonst.
 
-## Der Besuch
-Eine kurvige Bergstraße, ein steiler Fußweg und eine **Seilbahn** bringen dich zum Höhleneingang auf 1.640 m. Drinnen führt eine geführte Tour (mit Karbidlampen) durch glitzernde Eishallen und an gewaltigen Eisfiguren vorbei.
+## Warum es hier Eis gibt
+Im Winter zieht kalte Luft in die Höhle und kühlt das Gestein aus. Im Frühjahr fließt Schmelzwasser hinein und gefriert an diesem kalten Fels. So entstehen über Jahrzehnte Eisformationen von mehreren Metern Höhe – Wälle, Vorhänge, ganze Eisberge.
 
-## Wichtig
-- In der Höhle ist es **um 0 °C** – warm anziehen, auch im Hochsommer!
-- Festes Schuhwerk, es geht über viele Stufen
-- Nicht für Gehbehinderte geeignet (anstrengender Weg)
+Das Eis beschränkt sich auf den vorderen Teil; weiter hinten ist die Höhle trocken und nicht für Besucher erschlossen.
 
-## Praktische Infos
-- Anfahrt: Von Salzburg ca. 45 Minuten
-- Mehrere Stunden einplanen (Anfahrt, Aufstieg, Führung)
-- Kombinierbar mit der Burg Hohenwerfen direkt gegenüber
-    `,
+## Der Weg dorthin
+Der Zugang ist kein Spaziergang, und das unterschätzen viele:
+
+1. **Auffahrt** über eine schmale Bergstraße zum Parkplatz
+2. **Fußweg** von etwa 20 Minuten bergauf zur Talstation
+3. **Seilbahn** hinauf – eine der steilsten Österreichs
+4. Noch einmal **rund 15 Minuten Fußweg** zum Höhleneingang
+
+Für den gesamten Besuch inklusive Führung sollte man mindestens drei bis vier Stunden einplanen, die Anfahrt nicht eingerechnet.
+
+## In der Höhle
+Die Führung dauert rund 70 Minuten und führt über etwa **700 Stufen** – auf und ab, auf teils feuchten und rutschigen Tritten. Beleuchtet wird traditionell mit Karbidlampen, die die Gruppenführer tragen; elektrisches Licht gibt es nur punktuell.
+
+Die Temperatur liegt durchgehend **um oder unter dem Gefrierpunkt**. Das ist keine Formulierung, sondern wörtlich zu nehmen: Wer in Sommerkleidung kommt, friert nach zehn Minuten erbärmlich.
+
+Fotografieren ist in der Höhle nicht gestattet.
+
+## Beste Zeit
+Die Eisriesenwelt ist **saisonal geöffnet**, üblicherweise von Mai bis Oktober; die genauen Termine wechseln jährlich.
+
+Die Eisformationen sind im **Frühsommer** am ausgeprägtesten, weil sich dann das Eis des vergangenen Winters aufgebaut hat. Im Spätsommer ist es zurückgegangen.
+
+Vormittags ist es deutlich ruhiger. An Regentagen in der Hochsaison sind die Wartezeiten am längsten.
+
+## Anreise
+Werfen liegt rund 40 Autominuten südlich von Salzburg an der Tauernautobahn. Mit der Bahn bis Werfen, dann saisonaler Shuttle zum Parkplatz – das funktioniert, sollte aber im Fahrplan geprüft werden.
+
+## Was du mitnehmen solltest
+- **Warme Kleidung**: Jacke, lange Hose, Mütze, Handschuhe. Auch im August
+- Feste Schuhe mit Profil – nasse Stufen, Kälte, 700 Treppen
+- Etwas zu trinken für den Aufstieg
+- Kondition: Ohne Grundfitness wird der Besuch anstrengend
+
+## Ehrlich gesagt
+Die Eisriesenwelt ist kein barrierefreies Ausflugsziel und für Menschen mit Herz-Kreislauf-Problemen, Knieproblemen oder starker Platzangst nur bedingt geeignet. Die 700 Stufen bei Frost sind ernst gemeint.
+
+Mit kleinen Kindern funktioniert es schlecht – es ist kalt, dunkel, laut vom Hall und lang. Der empfohlene Mindestaltersbereich wird vor Ort kommuniziert.
+
+Und es ist ein Massenziel: In der Hauptsaison können Wartezeiten auf Seilbahn und Führung entstehen. Eine frühe Anreise ist der wirksamste Hebel.
+
+## Gut kombinierbar
+- [Burg Hohenwerfen](/blog/burg-hohenwerfen) – im selben Ort, mit Greifvogelschau
+- [Liechtensteinklamm](/blog/liechtensteinklamm) – rund 30 Minuten südlich
+- [Salzwelten Hallein](/blog/salzwelten-hallein-duerrnberg) – das andere große Untertage-Ziel der Region
+
+---
+
+**Kurz gesagt:** Ein Naturwunder mit Aufwand – warm anziehen, früh kommen und 700 Stufen einplanen.
+`,
     officialLinks: [
       { label: 'Eisriesenwelt Werfen (eisriesenwelt.at)', url: 'https://www.eisriesenwelt.at' },
     ],
@@ -3413,19 +3488,58 @@ Und im Sommer gilt: Viele der Wege sind Forststraßen und breite Pisten – gut 
     bestSeason: 'April–Oktober',
     highlights: ['Historische Wasserspiele zum Staunen', 'Sound-of-Music-Pavillon im Park', 'Familienfreundlich & verspielt'],
     content: `
-Schloss Hellbrunn am Stadtrand von Salzburg wurde im 17. Jahrhundert als fürsterzbischöfliches Lustschloss erbaut – berühmt für seine raffinierten Wasserspiele.
+**Schloss Hellbrunn** südlich von Salzburg ist keine Residenz, sondern ein gebauter Scherz. Fürsterzbischof Markus Sittikus ließ die Anlage Anfang des 17. Jahrhunderts als Lustschloss errichten – mit Wasserspielen, die seine Gäste nass machen sollten. Das Prinzip funktioniert bis heute.
 
 ## Die Wasserspiele
-Bei der Führung durch den Park aktivieren versteckte Fontänen unerwartet das Wasser – ein verspielter Spaß, der schon vor 400 Jahren die Gäste überraschte. Auf trockene Sitzplätze sollte man nicht zu sehr vertrauen!
+Der Rundgang durch die **Wasserspiele** ist der Grund, warum die meisten kommen. Verborgene Düsen in Sitzbänken, Wegen und Grotten setzen unvermittelt ein – die Führerinnen und Führer entscheiden, wen es trifft. Man wird nass, und das ist die Absicht.
 
-## Sound of Music
-Der gläserne Pavillon („Sixteen Going on Seventeen") aus dem berühmten Film steht im Schlosspark – ein beliebtes Fotomotiv.
+Technisch bemerkenswert: Die gesamte Anlage funktioniert **ohne Pumpen**, allein über den natürlichen Wasserdruck aus dem Hangwasser. Sie läuft im Original seit über 400 Jahren.
 
-## Praktische Infos
-- Wasserspiele nur in der warmen Jahreszeit (April–Okt.)
-- Wechselkleidung für Kinder kann sinnvoll sein – man wird (absichtlich) nass
-- Anfahrt: Vom Salzburger Zentrum ca. 15 Minuten, gut mit dem Bus erreichbar
-    `,
+Zum Rundgang gehört das **Mechanische Theater**, ein wasserbetriebenes Figurenwerk mit über 200 beweglichen Figuren, die eine ganze Stadt darstellen. Das ist Feinmechanik aus dem 18. Jahrhundert und in dieser Form selten erhalten.
+
+## Der Park
+Der Schlosspark ist frei zugänglich und ganzjährig geöffnet – ein großer, alter Landschaftspark mit Teichen, Alleen und Wiesen. Für Salzburger ist er ein Naherholungsgebiet, und auch ohne Wasserspiele lohnt sich ein Spaziergang.
+
+Im Park steht der gläserne **Pavillon**, der durch eine Szene aus "The Sound of Music" bekannt wurde. Er wurde nachträglich hierher versetzt und ist zu bestimmten Zeiten zugänglich.
+
+Am **Steintheater** in einem alten Steinbruch wurde nach überlieferter Darstellung eine der ersten Opernaufführungen nördlich der Alpen gegeben.
+
+Direkt benachbart liegt der **Zoo Salzburg**, was Hellbrunn zu einem naheliegenden Familientag macht.
+
+## Beste Zeit
+Die Wasserspiele sind **saisonal** in Betrieb, in der Regel von Frühjahr bis Herbst – im Winter sind sie abgestellt, weil die Leitungen einfrieren würden. Die genauen Termine wechseln jährlich.
+
+Ideal ist ein **warmer Tag**: Nass werden macht dann Spaß statt Ärger. An kühlen Tagen im Frühjahr oder Herbst ist es weniger vergnüglich.
+
+Der Park ist ganzjährig geöffnet und im Herbst besonders schön.
+
+## Anreise
+Rund 15 Minuten südlich der Salzburger Altstadt. Der Obus fährt direkt bis Hellbrunn – eine der bequemsten Anbindungen überhaupt, und deutlich stressfreier als die Parkplatzsuche.
+
+Zu Fuß oder mit dem Rad über die **Hellbrunner Allee**, eine historische Lindenallee ab Salzburg-Nonntal – ein schöner Anmarsch von rund einer Stunde.
+
+## Was du mitnehmen solltest
+- **Wechselshirt**, besonders für Kinder – du wirst nass, nicht durchnässt, aber nass
+- Regenjacke als freiwilliger Schutz (nimmt allerdings den halben Spaß)
+- Wasserdichte Handyhülle
+- Sandalen oder Schuhe, die Spritzer vertragen
+
+## Ehrlich gesagt
+Die Wasserspiele sind nur mit Führung zugänglich, in festen Gruppen und mit festem Tempo. Wer das nicht mag, sollte es wissen.
+
+Und sie polarisieren: Für Kinder sind sie ein Riesenspaß, für Erwachsene, die trocken bleiben wollen, eine halbe Stunde Anspannung. Wer die Anlage vor allem architektonisch sehen will, kommt besser außerhalb der Saison in den Park.
+
+An heißen Sommertagen ist es voll, die Gruppen sind groß und man wartet zwischen den Stationen.
+
+## Gut kombinierbar
+- [Salzburger Altstadt](/blog/salzburg-stadt-altstadt) – 15 Minuten nördlich
+- [Untersberg](/blog/untersberg-salzburg) – liegt praktisch nebenan
+- [Salzwelten Hallein](/blog/salzwelten-hallein-duerrnberg) – zehn Minuten weiter südlich
+
+---
+
+**Kurz gesagt:** Ein 400 Jahre alter Scherz, der immer noch funktioniert – an einem warmen Tag und mit Wechselshirt.
+`,
     affiliateLinks: [
       { label: 'Salzburg: Touren & Tickets – GetYourGuide', url: 'https://www.getyourguide.de/s/?q=Salzburg' },
       { label: 'Hotels in Salzburg – booking.com', url: 'https://www.booking.com/city/at/salzburg.de.html' },
@@ -3444,19 +3558,59 @@ Der gläserne Pavillon („Sixteen Going on Seventeen") aus dem berühmten Film 
     bestSeason: 'Ganzjährig',
     highlights: ['Goldenes Dachl & Kaiserliche Hofburg', 'Nordkettenbahn von der Stadt aufs Hochgebirge', 'Alpenpanorama mitten in der Stadt'],
     content: `
-Innsbruck ist die einzige Großstadt der Alpen, in der man in 20 Minuten von der barocken Altstadt auf 2.000 m Höhe gelangt – das macht die Tiroler Landeshauptstadt einzigartig.
+**Innsbruck** ist die einzige Landeshauptstadt Europas, in der man aus der Altstadt in gut 20 Minuten auf über 2.000 Meter fährt. Genau diese Nähe von Stadt und Hochgebirge macht den Ort aus – und sie prägt, wie man den Besuch am besten plant.
 
-## Altstadt
-Das **Goldene Dachl** mit seinen 2.657 vergoldeten Schindeln ist das Wahrzeichen. Dazu die Kaiserliche Hofburg, der Dom und die bunten Bürgerhäuser – kompakt und sehenswert.
+## Die Altstadt
+Herzstück ist das **Goldene Dachl**, ein spätgotischer Prunkerker mit über 2.600 vergoldeten Schindeln, den Kaiser Maximilian I. um 1500 anbringen ließ. Es ist kleiner, als die meisten erwarten – der Wert liegt im Detail und in der Geschichte, nicht in der Größe.
 
-## Nordkettenbahn
-Von der Innenstadt fährt die futuristische Hungerburgbahn (von Stararchitektin Zaha Hadid) und weiter die Seilbahn aufs **Hafelekar (2.256 m)** – Hochgebirge mit Blick über die ganze Stadt, in Minuten erreichbar.
+Rundherum liegen die Herzog-Friedrich-Straße mit ihren Laubengängen, die **Hofburg** und die **Hofkirche**. Letztere beherbergt das monumentale Grabmal Maximilians mit den überlebensgroßen Bronzefiguren, im Volksmund "Schwarze Mander" genannt – kunsthistorisch das Bedeutendste, was Innsbruck zu bieten hat.
 
-## Praktische Infos
-- Anreise: Bahn-Knotenpunkt, gut aus DE/AT/CH erreichbar
-- Innsbruck Card: Bergbahnen, Museen & öffentlicher Verkehr inklusive
-- Tipp: Sonnenuntergang vom Hafelekar ist spektakulär
-    `,
+Von der **Maria-Theresien-Straße** hat man den klassischen Blick: Barockfassaden, dahinter senkrecht die Nordkette. Dieses Bild erklärt Innsbruck in einer Sekunde.
+
+## Auf die Nordkette
+Die Nordkettenbahnen führen in drei Abschnitten von der Innenstadt bis auf das **Hafelekar** auf rund 2.250 Metern: zuerst die Standseilbahn zur Hungerburg, dann die Seilbahn zur Seegrube, schließlich weiter zum Grat.
+
+Oben steht man direkt über der Stadt – der Tiefblick auf Innsbruck ist ungewöhnlich steil und einer der spektakulärsten Stadtausblicke der Alpen. Vom Hafelekar führen Wege weiter ins Karwendel.
+
+Auf halber Höhe liegt der **Alpenzoo**, der höchstgelegene Zoo Europas, mit Tieren des Alpenraums.
+
+## Bergisel
+Die **Bergiselschanze** über der Stadt ist Schanze, Aussichtsturm und Architekturobjekt zugleich. Von der Plattform blickt man über Innsbruck und ins Inntal. Am Fuß liegt das Bergisel-Museum zur Tiroler Geschichte.
+
+## Schloss Ambras
+Am Stadtrand liegt **Schloss Ambras** mit einer der ältesten Kunst- und Wunderkammern der Welt – eine Sammlung, die noch in der ursprünglichen Ordnung des 16. Jahrhunderts präsentiert wird. Für Kulturinteressierte der lohnendste Programmpunkt.
+
+## Beste Zeit
+**Mai bis Oktober** für die Kombination Stadt und Berg. Der **Herbst** ist besonders gut: klare Luft, Fernsicht von der Nordkette, weniger Betrieb.
+
+Im Dezember ist Innsbruck wegen der Christkindlmärkte sehr voll. Im Winter ist die Nordkette ein Skigebiet direkt über der Stadt.
+
+## Anreise
+Innsbruck liegt an der Hauptstrecke München–Brenner und ist mit der Bahn hervorragend erreichbar. Vom Hauptbahnhof ist die Altstadt zu Fuß in gut zehn Minuten erreicht.
+
+Mit dem Auto: Parken in der Innenstadt ist teuer und knapp – die Park-and-ride-Angebote am Stadtrand sind die bessere Wahl.
+
+## Was du mitnehmen solltest
+- Warme Jacke für die Nordkette, auch im Hochsommer: Der Temperaturunterschied zur Stadt beträgt leicht zehn Grad
+- Feste Schuhe, wenn du oben auch nur ein kurzes Stück gehen willst
+- Sonnenschutz für den Grat
+
+## Ehrlich gesagt
+Innsbruck ist kompakt – die Altstadt ist in zwei Stunden abgegangen. Wer nur die Sehenswürdigkeiten abhakt, ist am frühen Nachmittag fertig. Der eigentliche Wert liegt in der Kombination mit dem Berg, und dafür braucht es gutes Wetter.
+
+Die Nordkettenbahnen sind außerdem teuer. Bei Wolken auf Gipfelhöhe lohnt sich die Auffahrt nicht – vorher die Webcams ansehen.
+
+Und das Goldene Dachl enttäuscht regelmäßig Besucher, die eine große Fassade erwarten. Es ist ein Erker.
+
+## Gut kombinierbar
+- [Swarovski Kristallwelten](/blog/swarovski-kristallwelten) – 20 Minuten östlich
+- [Stubaier Gletscher](/blog/stubaier-gletscher) – rund 45 Minuten südlich
+- [Zillertal](/blog/zillertal-wandern) – das große Wandertal nebenan
+
+---
+
+**Kurz gesagt:** Stadt und Hochgebirge an einem Tag – aber nur bei klarer Sicht, sonst fehlt die Hälfte.
+`,
     officialLinks: [
       { label: 'Innsbruck Tourismus (innsbruck.info)', url: 'https://www.innsbruck.info' },
       { label: 'Nordkettenbahnen (nordkette.com)', url: 'https://www.nordkette.com' },
@@ -3477,21 +3631,61 @@ Von der Innenstadt fährt die futuristische Hungerburgbahn (von Stararchitektin 
     bestSeason: 'Juni–September',
     highlights: ['Tirols größter See – tiefblau & klar', 'Top zum Segeln & Surfen (verlässlicher Wind)', 'Wandern im Karwendel & Rofan'],
     content: `
-Der Achensee liegt auf 930 m zwischen den Karwendel- und Rofangebirgen – ein tiefblauer, klarer Bergsee, der wegen seiner langgestreckten Form auch „Tiroler Fjord" genannt wird.
+Der **Achensee** ist mit rund neun Kilometern Länge der größte See Tirols – und einer der eigenwilligsten. Er liegt auf fast 930 Metern in einem Trog zwischen Karwendel und Rofan, ist tief, sehr klar und deutlich kühler als die Seen im Salzkammergut oder in Kärnten.
 
-## Wasser & Wind
-Das Wasser ist klar und im Hochsommer angenehm (bis ~20 °C). Der verlässliche Wind macht den Achensee zu einem der besten **Segel- und Surfreviere** der Alpen. Strandbäder gibt es in Pertisau und Maurach.
+## Warum hier ständig Wind geht
+Der See liegt in einer Nord-Süd-Rinne zwischen zwei Gebirgszügen, durch die verlässlich Wind zieht. Das macht ihn zu einem der besten **Segel- und Surfreviere** der Alpen – und gleichzeitig zu einem See, an dem man selten windstill in der Sonne liegt.
 
-## Berge ringsum
-- **Rofan-Seilbahn** mit Aussicht und dem „Airrofan Skyglider"
-- **Karwendel:** anspruchsvolle Wanderungen und Almen
-- Schifffahrt über den See als entspannte Alternative
+Wer Badeurlaub im klassischen Sinn sucht, sollte das wissen: Das Wasser erreicht im Hochsommer angenehme, aber keine warmen Temperaturen, und der Wind kühlt zusätzlich.
 
-## Praktische Infos
-- Anfahrt: Von Innsbruck ca. 45 Minuten
-- Nostalgische Anreise mit der Achenseebahn (Zahnrad-Dampfbahn) von Jenbach
-- Achensee Card mit Übernachtung: Bergbahnen & Schiff oft inkludiert
-    `,
+## Rund um den See
+**Pertisau** am Westufer ist der Hauptort für Urlauber, mit Strandbädern, Promenade und Bergbahnen. Von dort führen Wege ins Karwendel, unter anderem in die weiten Talböden des Falzthurn- und Gerntals.
+
+Ein Klassiker ist der Weg zur **Gaisalm** – der einzigen Alm Tirols direkt am Seeufer. Sie ist nur zu Fuß über einen Uferweg oder mit dem Schiff erreichbar. Der Weg ist teils schmal und felsig, aber landschaftlich einer der schönsten am See.
+
+## Die Achenseeschifffahrt
+Mehrere Schiffe verkehren im Sommer zwischen den Orten. Die Fahrt ist der einfachste Weg, den See in seiner Länge zu erleben, und lässt sich gut mit einer Wanderung in eine Richtung kombinieren.
+
+## Die Achenseebahn
+Von Jenbach im Inntal führte historisch eine **Zahnrad-Dampfbahn** hinauf – eine der ältesten ihrer Art. Ihr Betrieb war in den letzten Jahren nicht durchgehend gesichert; wer deswegen kommt, sollte vorab prüfen, ob und in welchem Umfang gefahren wird.
+
+## Die Berge
+**Rofan** im Osten: Über die Rofanseilbahn erreicht man schnell Höhe; oben gibt es leichte Wege und weite Blicke über den See. Hier startet auch ein bekannter Seilrutschen-Flug über den Hang.
+
+**Karwendel** im Westen: Ruhiger, wilder und größtenteils Naturpark. Die Talwanderungen sind gemütlich, die Gipfeltouren ernsthaft.
+
+## Beste Zeit
+**Mai bis Oktober.** Der Frühsommer ist am grünsten, der September am klarsten. Zum Baden sind Juli und August realistisch.
+
+Im Winter ist die Region ein ruhiges Skigebiet mit vielen Langlaufloipen – der Achensee gehört zu den besseren Langlaufrevieren Tirols.
+
+## Anreise
+Von Jenbach an der Inntal-Bahnstrecke führt eine Straße hinauf zum See, Busse verkehren regelmäßig. Von Innsbruck rund 45 Minuten, von München knapp zwei Stunden.
+
+Parkplätze in Pertisau und Maurach sind vorhanden, in der Hochsaison aber knapp und kostenpflichtig.
+
+## Was du mitnehmen solltest
+- **Windjacke** – das ist am Achensee keine Vorsichtsmaßnahme, sondern Grundausstattung
+- Badeschuhe: Die Ufer sind vielerorts steinig
+- Feste Schuhe für den Weg zur Gaisalm
+- Eine warme Schicht auch im August
+
+## Ehrlich gesagt
+Der Achensee wird gern als "Tiroler Meer" vermarktet – das weckt Erwartungen, die er nicht erfüllt. Er ist kühl, windig und hat wenig flache Liegeufer. Als Badeziel für Familien mit kleinen Kindern gibt es passendere Seen, etwa den Plansee oder Seen im Salzburger Seenland.
+
+Als Segel-, Wander- und Panoramaziel ist er dagegen hervorragend. Es kommt darauf an, weswegen man kommt.
+
+Und: Pertisau und Maurach sind in der Hochsaison stark frequentiert. Ruhe findet man in den Seitentälern des Karwendels.
+
+## Gut kombinierbar
+- [Alpbachtal](/blog/alpbachtal-schoenstes-dorf) – rund 40 Minuten östlich
+- [Innsbruck](/blog/innsbruck-sehenswuerdigkeiten) – 45 Minuten südlich
+- [Festung Kufstein](/blog/festung-kufstein) – knapp eine Stunde nordöstlich
+
+---
+
+**Kurz gesagt:** Großartig zum Segeln, Wandern und Schauen – aber kein warmer Badesee, und die Windjacke gehört immer dazu.
+`,
     affiliateLinks: [
       { label: 'Hotels am Achensee – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Achensee' },
       { label: 'Neoprenanzug / Wassersport – Amazon', url: 'https://www.amazon.de/s?k=neoprenanzug' },
@@ -3740,19 +3934,54 @@ Mit Kleinkindern ist der Innenbereich anstrengend – dunkel, laut und ohne Plat
     bestSeason: 'Juni–Oktober',
     highlights: ['Spektakuläre Felskulisse', 'Familienwege & Bergsteiger-Touren', 'Bekannte Filmkulisse (Bergdoktor)'],
     content: `
-Der Wilde Kaiser im Tiroler Unterland ragt mit schroffen Kalkwänden über sanften grünen Almen auf – eine der fotogensten Bergkulissen Österreichs und bekannt aus der TV-Serie „Der Bergdoktor".
+Der **Wilde Kaiser** ist eines der markantesten Bergmassive der Ostalpen: eine geschlossene Kette aus senkrechten Kalkwänden und Zacken, die sich über dem sanften Hügelland zwischen Kufstein und St. Johann in Tirol erhebt. Der Kontrast zwischen grünen Almwiesen und der grauen Wand dahinter ist das Bild, das hängen bleibt.
 
-## Für Familien & Einsteiger
-Rund um Ellmau, Going und Scheffau führen viele leichte Almwege – mit Einkehrhütten und Spielstationen. Bergbahnen (z. B. in Söll) erleichtern den Aufstieg.
+## Wilder und Zahmer Kaiser
+Das Kaisergebirge besteht aus zwei Ketten. Der **Wilde Kaiser** im Süden ist der schroffe, berühmte Teil – ein Kletterrevier von historischem Rang. Der **Zahme Kaiser** im Norden ist niedriger, bewaldeter und deutlich ruhiger.
 
-## Für Bergsteiger
-Die schroffen Gipfel des Kaisergebirges sind ein Eldorado für erfahrene Bergsteiger und Kletterer – ausgesetzte Steige und alpine Touren.
+Für Wanderer heißt das: Die Gipfel des Wilden Kaisers sind fast durchgehend Kletterziele. Was man als Wanderer erlebt, sind die Wege **unterhalb** der Wände – und die sind großartig.
 
-## Praktische Infos
-- Region „Wilder Kaiser" um Ellmau, Going, Scheffau, Söll
-- Anfahrt: Von Innsbruck ca. 1 Stunde, von Kufstein ca. 20 Minuten
-- Festes Schuhwerk; bei alpinen Touren entsprechende Ausrüstung
-    `,
+## Die Wanderungen
+**Das Kaisertal:** Von Kufstein aus erreichbar, lange Zeit eines der letzten Täler Österreichs ohne Straßenanbindung. Ein ruhiges, waldiges Tal mit Almen – der Zustieg führt über eine lange Treppe oder eine seither errichtete Zufahrt.
+
+**Wochenbrunner Alm und Gruttenhütte:** Von Ellmau aus der klassische Zustieg direkt unter die Wände. Die Gruttenhütte liegt auf rund 1.620 Metern, der Aufstieg ist moderat und der Blick auf die Felsen aus der Nähe eindrucksvoll.
+
+**Stripsenjoch:** Der Übergang zwischen Wildem und Zahmem Kaiser, mit dem Stripsenjochhaus. Von dort sieht man in die berühmte Steinerne Rinne – eine Schlucht zwischen zwei Felswänden.
+
+**Hintersteiner See:** Auf rund 880 Metern liegt einer der schönsten Badeseen Tirols, mit Blick auf die Kaiserwände. Klar, kühl und im Sommer stark besucht; die Zufahrt ist in der Hochsaison zeitweise beschränkt.
+
+## Beste Zeit
+**Juni bis Oktober.** Der Juni bringt Almrosen und volle Wasserläufe, der September klare Luft und ruhigere Wege. Im Hochsommer ist die Region Familienurlaubsgebiet und entsprechend gut gebucht.
+
+Die Hütten sind in der Regel von Anfang Juni bis Anfang Oktober bewirtschaftet – Termine wechseln jährlich.
+
+## Anreise
+Die Orte Ellmau, Going, Scheffau und Söll liegen an der Straße zwischen Kufstein und St. Johann. Mit der Bahn bis Kufstein oder St. Johann in Tirol, dann Regionalbus – das funktioniert gut.
+
+Mit dem Auto von Innsbruck rund eine Stunde, von München etwa 1,5.
+
+## Was du mitnehmen solltest
+- Feste Bergschuhe – die Wege unter den Wänden sind steinig
+- Wetterschutz: Am Kaiser bilden sich nachmittags schnell Gewitter
+- Badesachen für den Hintersteiner See
+- Bargeld für die Hütten
+
+## Ehrlich gesagt
+Die Region ist stark touristisch entwickelt. Ellmau ist durch eine Fernsehserie zusätzlich bekannt geworden, was im Sommer spürbar ist – wer Ruhe sucht, weicht auf den Zahmen Kaiser oder ins Kaisertal aus.
+
+Und die wichtigste Einordnung: Der Wilde Kaiser ist ein Kletterberg. Wer erwartet, auf einen der markanten Gipfel wandern zu können, wird enttäuscht – dafür braucht es Klettererfahrung und Ausrüstung. Die Wanderziele liegen darunter.
+
+Der Hintersteiner See ist außerdem an heißen Wochenenden überlaufen, und die Zufahrt wird dann reguliert.
+
+## Gut kombinierbar
+- [Festung Kufstein](/blog/festung-kufstein) – am westlichen Ende des Massivs
+- [Walchsee im Kaiserwinkl](/blog/walchsee-kaiserwinkl) – der wärmere Badesee nördlich
+- [Alpbachtal](/blog/alpbachtal-schoenstes-dorf) – rund 40 Minuten westlich
+
+---
+
+**Kurz gesagt:** Wandern unter den Wänden, nicht auf ihnen – und der Hintersteiner See als Belohnung danach.
+`,
     affiliateLinks: [
       { label: 'Hotels am Wilden Kaiser – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Ellmau' },
       { label: 'Wanderschuhe – Amazon', url: 'https://www.amazon.de/s?k=wanderschuhe' },
