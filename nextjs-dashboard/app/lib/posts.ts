@@ -5144,7 +5144,7 @@ Badesaison ist etwa Juni bis September, wobei der tiefe See auch im Hochsommer e
 - Wasser auch im Hochsommer eher frisch, Neoprenanzug für längeres Schwimmen sinnvoll
 - Fahrpläne der Schifffahrt sind saisonal – vorab prüfen
 - Traunstein-Besteigung nur für geübte Bergsteiger mit entsprechender Ausrüstung
-- Gut mit einem Abstecher zum Attersee oder ins Salzkammergut kombinierbar
+- Gut mit einem Abstecher zum Attersee oder ins Salzkammergut kombinierbar; ruhiger und naturbelassener ist der [Almsee](/blog/almsee-gruenau-almtal) am Ende des benachbarten Almtals
     `,
     affiliateLinks: [
       { label: 'Hotels am Traunsee – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Gmunden+Traunsee' },
@@ -5249,6 +5249,7 @@ Ganzjährig: Museen, Dom und Grottenbahn funktionieren bei jedem Wetter, was Lin
 - Museums-Kombitickets prüfen, wenn mehreres geplant ist
 - Wer das ruhigere Innviertel entdecken will: [Schärding](/blog/schaerding-altstadt-innviertel) mit seiner Silberzeile liegt gut eine Autostunde westlich
 - Donauaufwärts Richtung Passau lohnt die [Schlögener Schlinge](/blog/schloegener-schlinge-donau): die Donau macht dort eine fast vollständige Kehrtwende, der Aussichtspunkt ist in einer kurzen Wanderung erreichbar
+- Rund 40 km nördlich liegt [Freistadt](/blog/freistadt-muehlviertel-altstadt) im Mühlviertel – eine fast vollständig ummauerte mittelalterliche Altstadt mit Linzertor und eigener Brautradition
     `,
     affiliateLinks: [
       { label: 'Hotels in Linz – booking.com', url: 'https://www.booking.com/city/at/linz.de.html' },
@@ -6593,6 +6594,84 @@ Für Wanderungen eignen sich **Juni bis Oktober**, wenn die Höhenwege schneefre
     `,
     affiliateLinks: [
       { label: 'Unterkünfte im Kleinwalsertal – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Kleinwalsertal' },
+    ],
+  },
+  {
+    slug: 'freistadt-muehlviertel-altstadt',
+    startCoords: [48.5113, 14.5046],
+    title: 'Freistadt im Mühlviertel – mittelalterliche Stadtmauer, Linzertor und Braukultur',
+    excerpt: 'Freistadt ist eine der am besten erhaltenen mittelalterlichen Städte Österreichs: fast vollständig ummauert, mit dem mächtigen Linzertor, einem Stadtgraben zum Spazieren und einer Brautradition, die bis ins 14. Jahrhundert zurückreicht.',
+    date: '2026-09-29', category: 'Ausflug', region: 'oberoesterreich', bestSeason: 'April–Oktober',
+    highlights: ['Fast vollständig erhaltene Stadtbefestigung mit Linzertor und Böhmertor', 'Handelsstadt an der alten Salz- und Eisenroute nach Böhmen', 'Braucommune: Bier aus einer Brautradition seit 1363'],
+    content: `
+Rund 38 km nordöstlich von Linz, kurz vor der tschechischen Grenze, liegt **Freistadt** – die Bezirkshauptstadt des unteren Mühlviertels und eine der am besten erhaltenen mittelalterlichen Städte Österreichs. Stadtmauer, Wehrtürme, Tore und Graben umschließen die Altstadt bis heute fast vollständig. Wer das Mühlviertel bisher nur vom Durchfahren kennt, findet hier ein kompaktes, gut zu Fuß erkundbares Ausflugsziel.
+
+## Handelsstadt an der Straße nach Böhmen
+
+Freistadt wurde ab etwa 1220 planmäßig angelegt und 1241 erstmals urkundlich erwähnt. Ihren Reichtum verdankte die Stadt dem Handel: Über Freistadt liefen Salz aus dem Salzkammergut und Eisen Richtung **Böhmen**, zurück kamen Waren aus dem Norden. Vom 14. bis ins 16. Jahrhundert erlebte die Stadt ihre Blütezeit, nach dem Dreißigjährigen Krieg verlor sie ihre Handelsvorrechte – ein Grund, warum das mittelalterliche Stadtbild später kaum überbaut wurde.
+
+## Stadtmauer, Graben und Tore
+
+Im 14. Jahrhundert wurde die Befestigung massiv ausgebaut: äußere und innere Stadtmauer, dazwischen Zwinger und davor ein Graben. Von den ursprünglich acht Türmen stehen noch sechs. Wahrzeichen ist das **Linzertor** im Süden – mit rund 28 m einer der mächtigsten Tortürme Mitteleuropas. Im Norden markiert das **Böhmertor** den alten Weg nach Böhmen. Besonders schön ist ein Rundgang durch den **Stadtgraben**, der heute als grüner Spazierweg rund um die Altstadt führt.
+
+## Hauptplatz, Stadtpfarrkirche und Schloss
+
+Mittelpunkt ist der weite **Hauptplatz** mit seinen bunten Bürgerhäusern. Die **Stadtpfarrkirche** gilt als einzige fünfschiffige Basilika Österreichs. Im Schloss mit seinem hohen Bergfried ist das **Mühlviertler Schlossmuseum** untergebracht, das Handwerk und Alltag der Region zeigt – Öffnungszeiten vorab prüfen.
+
+## Bier aus der Braucommune
+
+1363 erhielt Freistadt das Braurecht, und jeder Hausbesitzer innerhalb der Stadtmauern durfte Bier brauen. Daraus entstand 1770 die **Braucommune Freistadt**, deren Brauerei 1777 gegründet wurde – bis heute sind die Hausbesitzer der Innenstadt ihre Mitglieder. Freistädter Bier ist in der Stadt und der Region allgegenwärtig; Führungen und Verkostungen werden angeboten, Termine vorab prüfen.
+
+## Beste Reisezeit
+
+Die Altstadt ist ganzjährig einen Besuch wert, am angenehmsten sind aber **April bis Oktober**, wenn der Stadtgraben grün ist und man draußen sitzen kann. Im Mühlviertler Hochland ist es spürbar kühler als in Linz – auch im Sommer eine Jacke für den Abend einpacken.
+
+## Praktische Infos
+- Freistadt liegt an der **Summerauerbahn** (Linz–Budweis); der Bahnhof liegt etwas außerhalb, in die Altstadt geht man ein Stück zu Fuß
+- Mit dem Auto über die Mühlviertler Schnellstraße; Parkplätze rund um die Altstadt, im Zentrum teils gebührenpflichtig
+- In der Umgebung erinnert die historische **Pferdeeisenbahn** Linz–Budweis, eine der frühesten Eisenbahnen des Kontinents, an die Handelsgeschichte der Region
+- Gut kombinierbar mit einem Stadtbesuch in [Linz](/blog/linz-ausflug) oder – für den Kontrast von Granithochland und Flusslandschaft – mit der [Schlögener Schlinge](/blog/schloegener-schlinge-donau) an der Donau
+    `,
+    affiliateLinks: [
+      { label: 'Unterkünfte in Freistadt & im Mühlviertel – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Freistadt' },
+    ],
+  },
+  {
+    slug: 'almsee-gruenau-almtal',
+    startCoords: [47.7680, 13.9560],
+    title: 'Almsee im Almtal – Rundweg am Fuß des Toten Gebirges',
+    excerpt: 'Der Almsee bei Grünau im Almtal ist ein stiller Bergsee im Naturschutzgebiet: kristallklar, flach, von den Felswänden des Toten Gebirges umrahmt. Ein leichter Rundweg führt einmal um den See – mit Glück begleitet von den Graugänsen der Konrad-Lorenz-Forschungsstelle.',
+    date: '2026-09-29', category: 'Wandern', region: 'oberoesterreich', difficulty: 'leicht', bestSeason: 'Mai–Oktober',
+    highlights: ['Leichter Rundweg von gut 6 km um den ganzen See', 'Naturschutzgebiet mit Graugänsen der Konrad-Lorenz-Forschungsstelle', 'Kulisse der Nordwände des Toten Gebirges'],
+    content: `
+Am südlichen Ende des Almtals, rund 11 km hinter **Grünau im Almtal**, endet die Straße an einem der ruhigsten Seen Oberösterreichs: dem **Almsee**. Auf rund 590 m Seehöhe liegt er direkt vor den steilen Nordabstürzen des **Toten Gebirges**. Der See ist gut 2 km lang, großteils nur wenige Meter tief und so klar, dass man vom Ufer aus bis auf den Grund sieht. Motorboote, Badebuchten mit Liegewiesen oder Uferpromenaden gibt es hier nicht – genau das macht den Reiz aus.
+
+## Naturschutzgebiet mit Geschichte
+
+Der Almsee steht seit Jahrzehnten unter Naturschutz; das Schutzgebiet wurde später auf die umliegenden Feuchtwiesen, Auwälder und Zuflüsse ausgeweitet und 2024 neu geregelt. Die Ufer sind weitgehend naturbelassen, mit Schilfzonen und Moorwiesen, in denen zahlreiche Wasservogelarten leben. Bekannt wurde das Almtal durch den Verhaltensforscher **Konrad Lorenz**: Die nach ihm benannte **Konrad-Lorenz-Forschungsstelle** in Grünau (seit 1973, heute Teil der Universität Wien) erforscht frei fliegende Graugänse, Kolkraben und Waldrappe – die Gänse sind oft auch am Almsee zu sehen.
+
+## Der Almsee-Rundweg
+
+Die klassische Runde um den See ist gut **6 km** lang und in rund **1,5 bis 2 Stunden** gemütlich zu gehen – fast ohne Höhenmeter und damit ideal für Familien. Der Weg führt am Ufer entlang, durch Auwald und an Schilfzonen vorbei, abschnittsweise auch auf einer ruhigen Straße. Am Seeausfluss, der **Seeklause**, verlässt die Alm den See Richtung Norden. Unterwegs lohnt ein Halt beim **Gasthof Seehaus** direkt am See. Wer mehr will, wandert entlang der Alm talauswärts (Almuferweg) oder steigt – deutlich anspruchsvoller – über die Wände ins Tote Gebirge Richtung Pühringer Hütte auf.
+
+## Baden im Almsee?
+
+Baden ist im Naturschutzgebiet erlaubt, der See wird aber von kalten Quellen gespeist und erneuert sein Wasser sehr schnell – er bleibt daher selbst im Hochsommer **deutlich kühler** als die großen Salzkammergutseen. Wer ein kurzes, erfrischendes Bad sucht, ist hier richtig; für längere Badetage sind [Attersee](/blog/attersee-baden) oder [Traunsee](/blog/traunsee-gmunden) die bessere Wahl. Die aktuelle Wassertemperatur misst der Hydrographische Dienst Oberösterreich direkt am See.
+
+## Beste Reisezeit
+
+Für den Rundweg eignen sich **Mai bis Oktober**. Im Frühsommer blühen die Feuchtwiesen, im Herbst spiegeln sich die verfärbten Laubwälder und die ersten verschneiten Gipfel im Wasser – besonders an windstillen Morgen. Im Winter ist der See ein stilles Winterwanderziel, bei Schnee und Eis aber nur mit passender Ausrüstung.
+
+## Praktische Infos
+- Anfahrt über Scharnstein und Grünau im Almtal bis zum Talende; der Parkplatz am See ist kostenpflichtig und an schönen Wochenenden früh voll
+- Mit Öffis per Bahn bis Grünau im Almtal, weiter zum See nur eingeschränkt per Bus oder Rad – Verbindungen vorab prüfen
+- Paddeln ist nur saisonal und zu bestimmten Tageszeiten erlaubt, Surfen, Segeln und Tauchen nicht – die Regeln des Naturschutzgebiets beachten und auf den Wegen bleiben
+- Im Tal liegt außerdem der **Cumberland Wildpark** mit heimischen Wildtieren – eine gute Ergänzung für Familien
+- Gut kombinierbar mit dem [Traunsee](/blog/traunsee-gmunden) rund um Gmunden oder der Kaiserstadt [Bad Ischl](/blog/bad-ischl-kaiservilla)
+    `,
+    affiliateLinks: [
+      { label: 'Unterkünfte in Grünau im Almtal – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Gr%C3%BCnau%20im%20Almtal' },
+      { label: 'Wanderschuhe für leichte Touren – Amazon', url: 'https://www.amazon.de/s?k=wanderschuhe+herren+damen' },
     ],
   },
 ];
