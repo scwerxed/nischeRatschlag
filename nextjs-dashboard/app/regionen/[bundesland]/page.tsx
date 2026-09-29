@@ -91,7 +91,7 @@ export default async function RegionPage({ params }: Props) {
       )}
       {/* Header */}
       <div className="mb-8">
-        <Link href="/" className="text-sm text-green-600 hover:underline">
+        <Link href="/" className="text-caption text-green-600 hover:underline">
           ← Zurück zur Startseite
         </Link>
         <h1 className="font-serif text-display font-bold mt-3 mb-2 text-ink">{region.name}</h1>
@@ -100,15 +100,15 @@ export default async function RegionPage({ params }: Props) {
 
       {/* Inaktive Region */}
       {!region.aktiv && (
-        <div className="bg-green-50 border border-green-200 rounded-xl p-8 text-center">
-          <p className="text-2xl mb-2">🏔️</p>
-          <h2 className="text-lg font-semibold text-ink mb-1">Demnächst verfügbar</h2>
-          <p className="text-ink-soft text-sm">
+        <div className="bg-green-50 border border-green-200 rounded-lg p-8 text-center">
+          <p className="text-lead mb-2">🏔️</p>
+          <h2 className="text-tagline font-semibold text-ink mb-1">Demnächst verfügbar</h2>
+          <p className="text-ink-soft text-caption">
             Wir arbeiten gerade an Inhalten für {region.name}. Schau bald wieder vorbei!
           </p>
           <Link
             href="/#regionen"
-            className="mt-5 inline-block bg-green-700 text-white text-sm font-medium px-5 py-2.5 rounded-lg hover:bg-green-800 transition-colors"
+            className="mt-5 inline-block bg-green-700 text-white text-caption font-medium px-5 py-2.5 rounded-lg hover:bg-green-800 transition-colors"
           >
             Verfügbare Regionen ansehen
           </Link>
@@ -123,12 +123,12 @@ export default async function RegionPage({ params }: Props) {
             <div className="bg-green-800 text-white p-8 mb-8 border-l-4 border-sand-300">
               <p className="eyebrow text-green-300 mb-2">{content.intro.eyebrow}</p>
               <h2 className="font-serif text-lead font-bold mb-3">{content.intro.title}</h2>
-              <p className="text-green-100 text-sm leading-relaxed mb-6 max-w-2xl">{content.intro.text}</p>
+              <p className="text-green-100 text-caption leading-relaxed mb-6 max-w-2xl">{content.intro.text}</p>
               <div className="grid grid-cols-4 gap-px bg-white/15 border border-white/15 max-w-md">
                 {[{ v: String(regionPosts.length), l: 'Artikel' }, ...content.intro.stats].map((s) => (
                   <div key={s.l} className="bg-green-800 py-3 text-center">
-                    <p className="font-serif font-bold text-lg">{s.v}</p>
-                    <p className="text-green-200 text-xs mt-0.5">{s.l}</p>
+                    <p className="font-serif font-bold text-tagline">{s.v}</p>
+                    <p className="text-green-200 text-fine mt-0.5">{s.l}</p>
                   </div>
                 ))}
               </div>
@@ -146,8 +146,8 @@ export default async function RegionPage({ params }: Props) {
                   className={`flex flex-col items-center border ${st?.bg ?? 'bg-parchment'} ${st?.border ?? 'border-hairline'} py-3 px-2 text-center transition rounded-sm`}
                 >
                   <span className={`w-2.5 h-2.5 rounded-full mb-2 ${CATEGORY_DOT[cat] ?? 'bg-gray-400'}`} />
-                  <span className={`text-xs font-semibold uppercase tracking-wide ${st?.text ?? 'text-ink-muted'}`}>{cat}</span>
-                  <span className="text-xs text-ink-soft font-medium mt-0.5">{counts[cat]} Artikel</span>
+                  <span className={`text-fine font-semibold uppercase tracking-wide ${st?.text ?? 'text-ink-muted'}`}>{cat}</span>
+                  <span className="text-fine text-ink-soft font-medium mt-0.5">{counts[cat]} Artikel</span>
                 </a>
               );
             })}
@@ -157,30 +157,30 @@ export default async function RegionPage({ params }: Props) {
           <div className="grid sm:grid-cols-2 gap-4 mb-10">
             <Link
               href="/karte"
-              className="group flex items-start gap-4 bg-green-700 text-white rounded-xl p-5 hover:bg-green-800 transition-colors"
+              className="group flex items-start gap-4 bg-green-700 text-white rounded-lg p-5 hover:bg-green-800 transition-colors"
             >
-              <span className="text-3xl">🗺️</span>
+              <span className="text-display-sm">🗺️</span>
               <div>
-                <p className="font-semibold text-lg leading-tight">Interaktive Wanderkarte</p>
-                <p className="text-green-100 text-sm mt-1">
+                <p className="font-semibold text-tagline leading-tight">Interaktive Wanderkarte</p>
+                <p className="text-green-100 text-caption mt-1">
                   Wanderwege, Gipfel und Unterkünfte auf einen Blick – inkl. Waymarked Trails Overlay.
                 </p>
-                <span className="mt-3 inline-block text-sm font-medium underline underline-offset-2">
+                <span className="mt-3 inline-block text-caption font-medium underline underline-offset-2">
                   Karte öffnen →
                 </span>
               </div>
             </Link>
             <Link
               href="/routenplaner"
-              className="group flex items-start gap-4 border-2 border-green-700 text-green-700 rounded-xl p-5 hover:bg-green-50 transition-colors"
+              className="group flex items-start gap-4 border-2 border-green-700 text-green-700 rounded-lg p-5 hover:bg-green-50 transition-colors"
             >
-              <span className="text-3xl">📍</span>
+              <span className="text-display-sm">📍</span>
               <div>
-                <p className="font-semibold text-lg leading-tight">Routenplaner</p>
-                <p className="text-ink-soft text-sm mt-1">
+                <p className="font-semibold text-tagline leading-tight">Routenplaner</p>
+                <p className="text-ink-soft text-caption mt-1">
                   Eigene Wanderroute planen – Wegpunkte setzen, Distanz und Gehzeit berechnen.
                 </p>
-                <span className="mt-3 inline-block text-sm font-medium underline underline-offset-2">
+                <span className="mt-3 inline-block text-caption font-medium underline underline-offset-2">
                   Route planen →
                 </span>
               </div>
@@ -195,16 +195,16 @@ export default async function RegionPage({ params }: Props) {
                 {content.seasons.map((s) => (
                   <div
                     key={s.season}
-                    className="border border-hairline rounded-xl p-4"
+                    className="border border-hairline rounded-lg p-4"
                   >
                     <div className="flex items-center gap-2 mb-2">
-                      <span className="text-xl">{s.icon}</span>
+                      <span className="text-tagline">{s.icon}</span>
                       <div>
-                        <p className="font-semibold text-sm text-ink">{s.season}</p>
-                        <p className="text-xs text-ink-soft">{s.months}</p>
+                        <p className="font-semibold text-caption text-ink">{s.season}</p>
+                        <p className="text-fine text-ink-soft">{s.months}</p>
                       </div>
                     </div>
-                    <p className="text-xs text-ink-muted leading-relaxed">{s.tip}</p>
+                    <p className="text-fine text-ink-muted leading-relaxed">{s.tip}</p>
                   </div>
                 ))}
               </div>
@@ -219,14 +219,14 @@ export default async function RegionPage({ params }: Props) {
               <section key={cat} id={cat.toLowerCase()} className="mb-14">
                 <h2 className="font-serif text-lead font-bold mb-5 text-ink flex items-baseline gap-2">
                   {cat}
-                  <span className="text-sm font-sans font-normal text-ink-soft">{catPosts.length} Artikel</span>
+                  <span className="text-caption font-sans font-normal text-ink-soft">{catPosts.length} Artikel</span>
                 </h2>
                 <div className="grid md:grid-cols-2 gap-5">
                   {catPosts.map((post) => (
                     <Link
                       key={post.slug}
                       href={`/blog/${post.slug}`}
-                      className="group block border border-hairline rounded-xl p-6 overflow-hidden hover:border-green-400 transition"
+                      className="group block border border-hairline rounded-lg p-6 overflow-hidden hover:border-green-400 transition"
                     >
                       <div className="aspect-[16/9] -mx-6 -mt-6 mb-4 overflow-hidden">
                         <PostArtwork seed={post.slug} category={post.category} />
@@ -234,18 +234,18 @@ export default async function RegionPage({ params }: Props) {
                       {/* Meta */}
                       <div className="flex items-center justify-between mb-2 flex-wrap gap-1">
                         <div className="flex items-center gap-2">
-                          <span className={`text-xs font-medium uppercase tracking-wide ${CATEGORY_STYLE[post.category]?.text ?? 'text-green-600'}`}>
+                          <span className={`text-fine font-medium uppercase tracking-wide ${CATEGORY_STYLE[post.category]?.text ?? 'text-green-600'}`}>
                             {post.category}
                           </span>
                           {post.difficulty && (
                             <span
-                              className={`text-xs font-medium px-2 py-0.5 rounded-full ${DIFFICULTY_STYLES[post.difficulty].cls}`}
+                              className={`text-fine font-medium px-2 py-0.5 rounded-full ${DIFFICULTY_STYLES[post.difficulty].cls}`}
                             >
                               {DIFFICULTY_STYLES[post.difficulty].label}
                             </span>
                           )}
                           {isOeffiErreichbar(post.slug) && (
-                            <span className="text-xs font-medium px-2 py-0.5 rounded-full bg-blue-50 text-blue-700 border border-blue-200">
+                            <span className="text-fine font-medium px-2 py-0.5 rounded-full bg-blue-50 text-blue-700 border border-blue-200">
                               🚋 Öffis
                             </span>
                           )}
@@ -253,7 +253,7 @@ export default async function RegionPage({ params }: Props) {
                         {post.bestSeason && (() => {
                           const season = seasonStatus(post.bestSeason);
                           return (
-                            <span className="inline-flex items-center gap-1 text-xs text-ink-soft">
+                            <span className="inline-flex items-center gap-1 text-fine text-ink-soft">
                               {season && <span className={`w-1.5 h-1.5 rounded-full shrink-0 ${SEASON_LABEL[season].dot}`} title={SEASON_LABEL[season].label} />}
                               {post.bestSeason}
                             </span>
@@ -262,7 +262,7 @@ export default async function RegionPage({ params }: Props) {
                       </div>
 
                       {/* Titel */}
-                      <h3 className="font-semibold text-lg text-ink group-hover:text-green-700 leading-snug mb-2">
+                      <h3 className="font-semibold text-tagline text-ink group-hover:text-green-700 leading-snug mb-2">
                         {post.title}
                       </h3>
 
@@ -270,17 +270,17 @@ export default async function RegionPage({ params }: Props) {
                       {post.highlights && post.highlights.length > 0 ? (
                         <ul className="space-y-0.5 mb-3">
                           {post.highlights.map((h, i) => (
-                            <li key={i} className="text-xs text-ink-soft flex items-start gap-1.5">
+                            <li key={i} className="text-fine text-ink-soft flex items-start gap-1.5">
                               <span className="text-green-500 mt-0.5 shrink-0">✓</span>
                               {h}
                             </li>
                           ))}
                         </ul>
                       ) : (
-                        <p className="mt-2 text-sm text-ink-soft mb-3">{post.excerpt}</p>
+                        <p className="mt-2 text-caption text-ink-soft mb-3">{post.excerpt}</p>
                       )}
 
-                      <span className="inline-block text-sm text-green-600 font-medium">
+                      <span className="inline-block text-caption text-green-600 font-medium">
                         Weiterlesen →
                       </span>
                     </Link>
@@ -295,7 +295,7 @@ export default async function RegionPage({ params }: Props) {
             <section className="mb-14">
               <p className="eyebrow mb-2">Unterkünfte</p>
               <h2 className="font-serif text-lead font-bold mb-1 text-ink">Hotels & Ferienwohnungen in {region.name}</h2>
-              <p className="text-sm text-ink-soft mb-5">Verfügbarkeit & Preise direkt über booking.com prüfen.</p>
+              <p className="text-caption text-ink-soft mb-5">Verfügbarkeit & Preise direkt über booking.com prüfen.</p>
               <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
                 {stays.map((u) => (
                   <a
@@ -305,9 +305,9 @@ export default async function RegionPage({ params }: Props) {
                     rel="noopener noreferrer sponsored"
                     className="group block border border-hairline p-4 hover:border-green-400 hover:bg-green-50 transition-colors rounded-lg"
                   >
-                    <span className="block text-xs font-semibold text-green-700 uppercase tracking-wide">{u.typ} · {u.see}</span>
+                    <span className="block text-fine font-semibold text-green-700 uppercase tracking-wide">{u.typ} · {u.see}</span>
                     <span className="block font-semibold text-ink group-hover:text-green-700 mt-1 leading-snug">{u.name}</span>
-                    <span className="block text-sm text-ink-soft mt-0.5">{u.ort} · ab {u.abPreis}&thinsp;€/Nacht →</span>
+                    <span className="block text-caption text-ink-soft mt-0.5">{u.ort} · ab {u.abPreis}&thinsp;€/Nacht →</span>
                   </a>
                 ))}
               </div>

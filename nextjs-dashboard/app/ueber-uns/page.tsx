@@ -35,7 +35,7 @@ export default function UeberUnsPage() {
 
       <div className="border-l-4 border-green-600 bg-green-50 px-5 py-4 mt-8">
         <p className="eyebrow mb-2">Unser Versprechen</p>
-        <ul className="space-y-1.5 text-sm text-ink-muted">
+        <ul className="space-y-1.5 text-caption text-ink-muted">
           {[
             'Selbst recherchiert statt abgeschrieben',
             'Echte Preise und ehrliche Einschätzungen',

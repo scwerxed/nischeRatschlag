@@ -63,14 +63,14 @@ export default function Seewetter() {
     <div className="border border-hairline overflow-hidden h-full flex flex-col rounded-lg">
       <div className="bg-green-800 text-white px-5 py-4 flex items-baseline justify-between">
         <div>
-          <h3 className="font-serif text-lg font-bold flex items-center gap-2">
+          <h3 className="font-serif text-tagline font-bold flex items-center gap-2">
             <svg width="18" height="18" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.5" className="text-green-300">
               <circle cx="8" cy="5" r="3" />
               <path d="M1 14c1-2 3-3 4-3s2 2 3 2 2-2 3-2 3 1 4 3" />
             </svg>
             Seewetter
           </h3>
-          <p className="text-green-200 text-xs mt-0.5">
+          <p className="text-green-200 text-fine mt-0.5">
             Aktuelle Luft- &amp; Wassertemperatur an Österreichs beliebtesten Seen
           </p>
         </div>
@@ -86,8 +86,8 @@ export default function Seewetter() {
             className="flex items-center justify-between px-5 py-3 hover:bg-green-50/50 transition-colors"
             style={{ animationDelay: `${i * 50}ms` }}
           >
-            <span className="text-sm font-medium text-ink-muted">{row.name}</span>
-            <div className="flex items-center gap-4 text-sm">
+            <span className="text-caption font-medium text-ink-muted">{row.name}</span>
+            <div className="flex items-center gap-4 text-caption">
               <span className="text-ink-soft tabular-nums">
                 {loading ? (
                   <span className="inline-block w-12 h-4 bg-parchment animate-pulse rounded-sm" />
@@ -95,7 +95,7 @@ export default function Seewetter() {
               </span>
               {(swim || row.liveWater) && (
                 <span
-                  className="font-semibold text-green-800 bg-green-50 border border-green-200 px-2 py-0.5 text-xs tabular-nums inline-flex items-center gap-1 rounded-sm"
+                  className="font-semibold text-green-800 bg-green-50 border border-green-200 px-2 py-0.5 text-fine tabular-nums inline-flex items-center gap-1 rounded-sm"
                   title={row.liveWater ? 'Offizieller Live-Messwert des Hydrographischen Diensts' : row.water !== null ? 'Saisonaler Richtwert' : 'Derzeit kein Messwert'}
                 >
                   {row.water !== null ? `${row.water.toLocaleString('de-AT')} °C Wasser` : '— Wasser'}

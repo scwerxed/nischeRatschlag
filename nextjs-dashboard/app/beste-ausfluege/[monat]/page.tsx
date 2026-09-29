@@ -58,7 +58,7 @@ export default async function MonatPage({ params }: Props) {
     <div className="max-w-5xl mx-auto px-6 py-12">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
-      <nav className="flex flex-wrap items-center gap-2 text-xs text-ink-soft mb-5">
+      <nav className="flex flex-wrap items-center gap-2 text-fine text-ink-soft mb-5">
         <Link href="/" className="hover:text-green-700">Startseite</Link>
         <span>/</span>
         <Link href="/beste-ausfluege" className="hover:text-green-700">Beste Ausflüge</Link>
@@ -75,20 +75,20 @@ export default async function MonatPage({ params }: Props) {
           <Link
             key={slug}
             href={`/blog/${slug}`}
-            className="group block border border-hairline rounded-xl overflow-hidden hover:border-green-400 transition"
+            className="surface-card-interactive group block overflow-hidden"
           >
             <div className="aspect-[16/7]">
               <PostArtwork seed={slug} category={post!.category} />
             </div>
             <div className="p-4">
               <div className="flex items-center justify-between gap-2 mb-1">
-                <span className={`text-xs font-semibold uppercase tracking-wide ${CATEGORY_STYLE[post!.category]?.text ?? 'text-green-700'}`}>
+                <span className={`text-fine font-semibold uppercase tracking-wide ${CATEGORY_STYLE[post!.category]?.text ?? 'text-green-700'}`}>
                   {post!.category}
                 </span>
-                <span className="text-xs text-ink-soft">{regionName(post!.region)}</span>
+                <span className="text-fine text-ink-soft">{regionName(post!.region)}</span>
               </div>
               <h2 className="font-semibold text-ink group-hover:text-green-700 leading-snug">{post!.title}</h2>
-              <p className="mt-2 text-sm text-ink-muted border-l-2 border-green-300 pl-2.5">
+              <p className="mt-2 text-caption text-ink-muted border-l-2 border-green-300 pl-2.5">
                 <strong className="font-semibold text-green-800">Warum jetzt?</strong> {warum}
               </p>
             </div>
@@ -102,12 +102,12 @@ export default async function MonatPage({ params }: Props) {
           <Link
             key={x.slug}
             href={`/beste-ausfluege/${x.slug}`}
-            className="text-sm font-medium px-4 py-1.5 bg-green-50 text-green-700 border border-green-200 hover:bg-green-100 transition-colors rounded-full"
+            className="text-caption font-medium px-4 py-1.5 bg-green-50 text-green-700 border border-green-200 hover:bg-green-100 transition-colors rounded-full"
           >
             Beste Ausflüge im {x.name} →
           </Link>
         ))}
-        <Link href="/wandern-baden" className="text-sm font-medium px-4 py-1.5 border border-hairline text-ink-muted hover:border-green-600 hover:text-green-700 transition-colors rounded-full">
+        <Link href="/wandern-baden" className="text-caption font-medium px-4 py-1.5 border border-hairline text-ink-muted hover:border-green-600 hover:text-green-700 transition-colors rounded-full">
           Wandern + Baden
         </Link>
       </div>

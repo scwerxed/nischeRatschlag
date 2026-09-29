@@ -48,7 +48,7 @@ export default function FeierabendPage() {
       {/* Feierabend-Regeln */}
       <div className="border-l-4 border-amber-400 bg-amber-50 px-5 py-4 mb-12 max-w-2xl">
         <p className="eyebrow mb-2">Kurz gecheckt, entspannt losgefahren</p>
-        <ul className="space-y-1.5 text-sm text-ink-muted">
+        <ul className="space-y-1.5 text-caption text-ink-muted">
           <li className="flex items-start gap-2.5"><span className="shrink-0 mt-1.5 w-3 h-px bg-amber-500 inline-block" />Letzte Talfahrt von Seil- und Bergbahnen prüfen – am Abend fährt nichts nach</li>
           <li className="flex items-start gap-2.5"><span className="shrink-0 mt-1.5 w-3 h-px bg-amber-500 inline-block" />Sonnenuntergangszeit checken und Stirnlampe einpacken, wenn es knapp wird</li>
           <li className="flex items-start gap-2.5"><span className="shrink-0 mt-1.5 w-3 h-px bg-amber-500 inline-block" />Buschenschanken &amp; Hütten haben Schließtage – vorher kurz anrufen</li>
@@ -58,20 +58,20 @@ export default function FeierabendPage() {
       {CITIES.map((c) => (
         <section key={c.name} className="mb-14">
           <h2 className="font-serif text-lead font-bold mb-1 text-ink">{c.name}</h2>
-          <p className="text-sm text-ink-soft mb-5 max-w-2xl">{c.note}</p>
+          <p className="text-caption text-ink-soft mb-5 max-w-2xl">{c.note}</p>
           <div className="grid sm:grid-cols-2 gap-5">
             {c.picks.map(({ slug, abend }) => {
               const post = getPostBySlug(slug);
               if (!post) return null;
               return (
-                <Link key={slug} href={`/blog/${slug}`} className="group block border border-hairline rounded-xl overflow-hidden hover:border-green-400 transition">
+                <Link key={slug} href={`/blog/${slug}`} className="surface-card-interactive group block overflow-hidden">
                   <div className="aspect-[16/6]">
                     <PostArtwork seed={slug} category={post.category} />
                   </div>
                   <div className="p-4">
-                    <span className="text-xs text-ink-soft">{regionName(post.region)}</span>
+                    <span className="text-fine text-ink-soft">{regionName(post.region)}</span>
                     <h3 className="font-semibold text-ink group-hover:text-green-700 leading-snug mt-0.5">{post.title}</h3>
-                    <p className="mt-2 text-sm text-ink-muted border-l-2 border-amber-300 pl-2.5">
+                    <p className="mt-2 text-caption text-ink-muted border-l-2 border-amber-300 pl-2.5">
                       <span aria-hidden>🌇</span> {abend}
                     </p>
                   </div>
@@ -83,19 +83,19 @@ export default function FeierabendPage() {
       ))}
 
       <div className="mt-6 flex flex-wrap gap-3">
-        <Link href="/wochenendtrip" className="inline-block bg-green-700 text-white text-sm font-semibold px-5 py-2.5 hover:bg-green-800 transition-colors rounded-full">
+        <Link href="/wochenendtrip" className="inline-block bg-green-700 text-white text-caption font-semibold px-5 py-2.5 hover:bg-green-800 transition-colors rounded-full">
           Mehr Zeit? Wochenendtrips
         </Link>
-        <Link href="/ausfluege-nach-dauer" className="inline-block border border-green-700 text-green-700 text-sm font-semibold px-5 py-2.5 hover:bg-green-50 transition-colors rounded-full">
+        <Link href="/ausfluege-nach-dauer" className="btn btn-secondary btn-sm">
           Ausflüge nach Dauer
         </Link>
-        <Link href="/bahnhofsausfluege" className="inline-block border border-green-700 text-green-700 text-sm font-semibold px-5 py-2.5 hover:bg-green-50 transition-colors rounded-full">
+        <Link href="/bahnhofsausfluege" className="btn btn-secondary btn-sm">
           Ausflüge ab Bahnhof
         </Link>
-        <Link href="/sonnenuntergang-spots" className="inline-block border border-green-700 text-green-700 text-sm font-semibold px-5 py-2.5 hover:bg-green-50 transition-colors rounded-full">
+        <Link href="/sonnenuntergang-spots" className="btn btn-secondary btn-sm">
           Sonnenuntergang-Spots
         </Link>
-        <Link href="/ausflugsplaner" className="inline-block border border-hairline text-ink-muted text-sm font-semibold px-5 py-2.5 hover:border-green-600 hover:text-green-700 transition-colors rounded-full">
+        <Link href="/ausflugsplaner" className="btn btn-quiet btn-sm">
           Alle Themenseiten
         </Link>
       </div>

@@ -12,7 +12,7 @@ export default function KartePage() {
       <div className="flex items-baseline justify-between mb-3">
         <div>
           <h1 className="font-serif text-lead font-bold text-ink">Interaktive Wanderkarte</h1>
-          <p className="text-sm text-ink-soft mt-0.5">
+          <p className="text-caption text-ink-soft mt-0.5">
             Wanderwege, Gipfel und Unterkünfte (aktuell Fokus Kärnten) — Karte, Topografie und Layer rechts oben ein-/ausblenden
           </p>
         </div>
@@ -21,16 +21,16 @@ export default function KartePage() {
       <MapWrapper />
 
       <div className="mt-2 flex flex-wrap gap-x-4 gap-y-0.5">
-        <span className="text-xs text-ink-soft">
+        <span className="text-fine text-ink-soft">
           © <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer" className="hover:text-ink-muted">OpenStreetMap</a>
         </span>
-        <span className="text-xs text-ink-soft">
+        <span className="text-fine text-ink-soft">
           Wanderwege: <a href="https://hiking.waymarkedtrails.org" target="_blank" rel="noopener noreferrer" className="hover:text-ink-muted">Waymarked Trails</a>
         </span>
-        <span className="text-xs text-ink-soft">
+        <span className="text-fine text-ink-soft">
           Topo: <a href="https://opentopomap.org" target="_blank" rel="noopener noreferrer" className="hover:text-ink-muted">OpenTopoMap</a>
         </span>
-        <span className="text-xs text-ink-soft">
+        <span className="text-fine text-ink-soft">
           Gipfel: <a href="https://overpass-api.de" target="_blank" rel="noopener noreferrer" className="hover:text-ink-muted">Overpass API</a>
         </span>
       </div>

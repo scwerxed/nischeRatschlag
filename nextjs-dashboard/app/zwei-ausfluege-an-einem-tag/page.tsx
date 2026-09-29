@@ -54,7 +54,7 @@ export default function ZweiAusfluegeAnEinemTagPage() {
         die nah genug beieinander liegen, um beide an einem Tag zu schaffen – vormittags das eine,
         nachmittags das andere.
       </p>
-      <p className="text-xs text-ink-soft mb-10">
+      <p className="text-fine text-ink-soft mb-10">
         Entfernungen als Luftlinie zwischen den Startpunkten. Anspruchsvolle Wanderungen (mittel/schwer)
         sind bewusst ausgeschlossen – die füllen einen Tag allein.
       </p>
@@ -63,16 +63,16 @@ export default function ZweiAusfluegeAnEinemTagPage() {
         <section key={g.region} className="mb-12">
           <h2 className="font-serif text-lead font-bold mb-5 text-ink">
             {regionName(g.region)}
-            <Link href={`/regionen/${g.region}`} className="ml-3 text-sm font-sans font-normal text-green-700 hover:underline">
+            <Link href={`/regionen/${g.region}`} className="ml-3 text-caption font-sans font-normal text-green-700 hover:underline">
               Alle Artikel →
             </Link>
           </h2>
           <div className="grid md:grid-cols-2 gap-5">
             {g.combos.map((c) => (
-              <div key={`${c.first.slug}-${c.second.slug}`} className="border border-hairline rounded-xl overflow-hidden transition-shadow">
+              <div key={`${c.first.slug}-${c.second.slug}`} className="border border-hairline rounded-lg overflow-hidden transition-shadow">
                 {/* Vormittag */}
                 <Link href={`/blog/${c.first.slug}`} className={`group block p-4 ${HOVER_BG[c.first.category]} transition-colors`}>
-                  <span className={`text-xs font-semibold uppercase tracking-wide ${CATEGORY_STYLE[c.first.category].text}`}>
+                  <span className={`text-fine font-semibold uppercase tracking-wide ${CATEGORY_STYLE[c.first.category].text}`}>
                     Vormittag · {CATEGORY_LABEL[c.first.category]}
                   </span>
                   <p className="font-semibold text-ink group-hover:text-green-700 leading-snug mt-1">{c.first.title}</p>
@@ -81,13 +81,13 @@ export default function ZweiAusfluegeAnEinemTagPage() {
                 {/* Verbinder */}
                 <div className="flex items-center gap-3 px-4">
                   <span className="h-px flex-1 bg-hairline" />
-                  <span className="text-xs text-ink-soft whitespace-nowrap">↓ danach ≈ {Math.round(c.km)} km weiter</span>
+                  <span className="text-fine text-ink-soft whitespace-nowrap">↓ danach ≈ {Math.round(c.km)} km weiter</span>
                   <span className="h-px flex-1 bg-hairline" />
                 </div>
 
                 {/* Nachmittag */}
                 <Link href={`/blog/${c.second.slug}`} className={`group block p-4 ${HOVER_BG[c.second.category]} transition-colors`}>
-                  <span className={`text-xs font-semibold uppercase tracking-wide ${CATEGORY_STYLE[c.second.category].text}`}>
+                  <span className={`text-fine font-semibold uppercase tracking-wide ${CATEGORY_STYLE[c.second.category].text}`}>
                     Nachmittag · {CATEGORY_LABEL[c.second.category]}
                   </span>
                   <p className="font-semibold text-ink group-hover:text-green-700 leading-snug mt-1">{c.second.title}</p>
@@ -99,16 +99,16 @@ export default function ZweiAusfluegeAnEinemTagPage() {
       ))}
 
       <div className="mt-10 flex flex-wrap gap-3">
-        <Link href="/ausfluege-nach-dauer" className="inline-block bg-green-700 text-white text-sm font-semibold px-5 py-2.5 hover:bg-green-800 transition-colors rounded-full">
+        <Link href="/ausfluege-nach-dauer" className="inline-block bg-green-700 text-white text-caption font-semibold px-5 py-2.5 hover:bg-green-800 transition-colors rounded-full">
           Ausflüge nach Dauer
         </Link>
-        <Link href="/wandern-baden" className="inline-block border border-sky-500 text-sky-700 text-sm font-semibold px-5 py-2.5 hover:bg-sky-50 transition-colors rounded-full">
+        <Link href="/wandern-baden" className="inline-block border border-sky-500 text-sky-700 text-caption font-semibold px-5 py-2.5 hover:bg-sky-50 transition-colors rounded-full">
           Wandern + Baden
         </Link>
-        <Link href="/wochenendtrip" className="inline-block border border-green-700 text-green-700 text-sm font-semibold px-5 py-2.5 hover:bg-green-50 transition-colors rounded-full">
+        <Link href="/wochenendtrip" className="btn btn-secondary btn-sm">
           Wochenendtrips
         </Link>
-        <Link href="/ausflugsplaner" className="inline-block border border-hairline text-ink-muted text-sm font-semibold px-5 py-2.5 hover:border-green-600 hover:text-green-700 transition-colors rounded-full">
+        <Link href="/ausflugsplaner" className="btn btn-quiet btn-sm">
           Alle Themenseiten
         </Link>
       </div>

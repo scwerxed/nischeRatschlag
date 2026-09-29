@@ -52,7 +52,7 @@ export default async function SeeThemaPage({ params }: Props) {
     <div className="max-w-4xl mx-auto px-6 py-12">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
-      <nav className="flex flex-wrap items-center gap-2 text-xs text-ink-soft mb-5">
+      <nav className="flex flex-wrap items-center gap-2 text-fine text-ink-soft mb-5">
         <Link href="/" className="hover:text-green-700">Startseite</Link>
         <span>/</span>
         <Link href="/seen-vergleich" className="hover:text-green-700">Seen-Vergleich</Link>
@@ -71,10 +71,10 @@ export default async function SeeThemaPage({ params }: Props) {
               <h2 className="font-serif text-tagline font-bold text-ink">
                 {l.slug ? <Link href={`/blog/${l.slug}`} className="text-green-700 hover:underline">{l.name}</Link> : l.name}
               </h2>
-              <span className="text-sm font-semibold text-sky-700 whitespace-nowrap">{l.maxTemp} · {l.region}</span>
+              <span className="text-caption font-semibold text-sky-700 whitespace-nowrap">{l.maxTemp} · {l.region}</span>
             </div>
-            <p className="text-sm text-ink-muted mt-1.5">{l.charakter} · {l.groesse} · ideal für {l.idealFuer}</p>
-            <p className="text-sm text-ink-soft mt-2">
+            <p className="text-caption text-ink-muted mt-1.5">{l.charakter} · {l.groesse} · ideal für {l.idealFuer}</p>
+            <p className="text-caption text-ink-soft mt-2">
               <strong className="font-semibold text-ink">Tipp:</strong> {l.tipp}
               {l.gratis ? ' · Gratis-Bademöglichkeit vorhanden' : ' · Strandbad mit Eintritt'}
             </p>
@@ -88,17 +88,17 @@ export default async function SeeThemaPage({ params }: Props) {
           <Link
             key={x.slug}
             href={`/seen-vergleich/${x.slug}`}
-            className="text-sm font-medium px-4 py-1.5 bg-sky-50 text-sky-700 border border-sky-200 hover:bg-sky-100 transition-colors rounded-full"
+            className="text-caption font-medium px-4 py-1.5 bg-sky-50 text-sky-700 border border-sky-200 hover:bg-sky-100 transition-colors rounded-full"
           >
             {x.h1} →
           </Link>
         ))}
-        <Link href="/seen-vergleich" className="text-sm font-medium px-4 py-1.5 border border-hairline text-ink-muted hover:border-green-600 hover:text-green-700 transition-colors rounded-full">
+        <Link href="/seen-vergleich" className="text-caption font-medium px-4 py-1.5 border border-hairline text-ink-muted hover:border-green-600 hover:text-green-700 transition-colors rounded-full">
           Alle Seen im Vergleich
         </Link>
       </div>
 
-      <p className="text-xs text-ink-soft mt-8">Wassertemperaturen sind sommerliche Höchstwerte (Juli/August) und können je nach Wetter schwanken.</p>
+      <p className="text-fine text-ink-soft mt-8">Wassertemperaturen sind sommerliche Höchstwerte (Juli/August) und können je nach Wetter schwanken.</p>
     </div>
   );
 }

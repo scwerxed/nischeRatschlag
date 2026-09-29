@@ -57,11 +57,11 @@ export default function SeeLive({ stationen }: { stationen: Station[] }) {
           <p className="font-serif text-display font-bold text-ink tabular-nums">
             {state.wert.wasser.toLocaleString('de-AT', { minimumFractionDigits: 1, maximumFractionDigits: 1 })}&nbsp;°C
           </p>
-          <p className="text-sm text-ink-muted mt-1 leading-snug">
+          <p className="text-caption text-ink-muted mt-1 leading-snug">
             {state.station.see}, Messstelle {state.station.ort}
             {state.station.km >= 1 && <span className="text-ink-soft"> · ≈ {Math.round(state.station.km)} km von hier</span>}
           </p>
-          <p className="text-xs text-ink-soft mt-1">Stand: {formatStand(state.wert.stand)} Uhr</p>
+          <p className="text-fine text-ink-soft mt-1">Stand: {formatStand(state.wert.stand)} Uhr</p>
           <p className="text-[11px] text-ink-soft mt-3">
             Offizieller Messwert: {state.station.quelle} (CC BY 4.0). An einzelnen Badeplätzen kann die Temperatur davon abweichen.
           </p>

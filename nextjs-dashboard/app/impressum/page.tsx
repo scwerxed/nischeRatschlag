@@ -98,7 +98,7 @@ export default function ImpressumPage() {
         </p>
       </section>
 
-      <p className="text-xs text-ink-soft mt-10">Stand: {new Date().toLocaleDateString('de-AT', { month: 'long', year: 'numeric' })}</p>
+      <p className="text-fine text-ink-soft mt-10">Stand: {new Date().toLocaleDateString('de-AT', { month: 'long', year: 'numeric' })}</p>
     </div>
   );
 }

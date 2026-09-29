@@ -7,7 +7,7 @@ import type { Trail } from '@/app/lib/posts';
 const TrailMapClient = dynamic(() => import('@/app/ui/trail-map-client'), {
   ssr: false,
   loading: () => (
-    <div className="h-[380px] bg-parchment flex items-center justify-center text-ink-soft text-sm rounded-sm">
+    <div className="h-[380px] bg-parchment flex items-center justify-center text-ink-soft text-caption rounded-sm">
       Karte wird geladen…
     </div>
   ),

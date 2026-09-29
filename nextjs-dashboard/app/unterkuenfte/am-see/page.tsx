@@ -39,7 +39,7 @@ export default function UnterkuenfteAmSeePage() {
     <div className="max-w-5xl mx-auto px-6 py-12">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
-      <nav className="flex flex-wrap items-center gap-2 text-xs text-ink-soft mb-5">
+      <nav className="flex flex-wrap items-center gap-2 text-fine text-ink-soft mb-5">
         <Link href="/" className="hover:text-green-700">Startseite</Link>
         <span>/</span>
         <Link href="/seen-vergleich" className="hover:text-green-700">Seen</Link>
@@ -54,7 +54,7 @@ export default function UnterkuenfteAmSeePage() {
         Hotels, Ferienwohnungen und Campingplätze mit direkter Lage an einem der beliebtesten
         Badeseen Österreichs – nach Bundesland sortiert.
       </p>
-      <p className="text-xs text-ink-soft mb-10">* Affiliate-Links über booking.com – ohne Mehrkosten für dich.</p>
+      <p className="text-fine text-ink-soft mb-10">* Affiliate-Links über booking.com – ohne Mehrkosten für dich.</p>
 
       {regions.map((region) => {
         const regionStays = stays.filter((s) => s.region === region);
@@ -62,7 +62,7 @@ export default function UnterkuenfteAmSeePage() {
           <section key={region} className="mb-12">
             <h2 className="font-serif text-lead font-bold mb-5 text-ink">
               {regionName(region)}
-              <Link href={`/regionen/${region}`} className="ml-3 text-sm font-sans font-normal text-green-700 hover:underline">
+              <Link href={`/regionen/${region}`} className="ml-3 text-caption font-sans font-normal text-green-700 hover:underline">
                 Alle Artikel →
               </Link>
             </h2>
@@ -77,13 +77,13 @@ export default function UnterkuenfteAmSeePage() {
                     rel="noopener noreferrer sponsored"
                     className="group block border border-hairline p-4 hover:border-green-400 hover:bg-green-50 transition-colors rounded-lg"
                   >
-                    <span className="block text-xs font-semibold text-green-700 uppercase tracking-wide">
+                    <span className="block text-fine font-semibold text-green-700 uppercase tracking-wide">
                       {u.typ} · {u.see}
                     </span>
                     <span className="block font-semibold text-ink group-hover:text-green-700 mt-1 leading-snug">{u.name}</span>
-                    <span className="block text-sm text-ink-soft mt-0.5">{u.ort} · ab {u.abPreis}&thinsp;€/Nacht →</span>
+                    <span className="block text-caption text-ink-soft mt-0.5">{u.ort} · ab {u.abPreis}&thinsp;€/Nacht →</span>
                     {seeSlug && (
-                      <span className="block text-xs text-sky-700 mt-2">Mehr über {u.see} im Artikel</span>
+                      <span className="block text-fine text-sky-700 mt-2">Mehr über {u.see} im Artikel</span>
                     )}
                   </a>
                 );
@@ -94,7 +94,7 @@ export default function UnterkuenfteAmSeePage() {
       })}
 
       {/* Legende der Unterkunftstypen */}
-      <div className="mb-10 flex flex-wrap gap-4 text-xs text-ink-soft">
+      <div className="mb-10 flex flex-wrap gap-4 text-fine text-ink-soft">
         {Object.entries(TYP_INFO).map(([typ, info]) => (
           <span key={typ} className="flex items-center gap-1.5">
             <span className="inline-block w-2.5 h-2.5 rounded-full" style={{ backgroundColor: info.color }} />
@@ -104,24 +104,24 @@ export default function UnterkuenfteAmSeePage() {
       </div>
 
       <div className="mt-4 flex flex-wrap gap-3">
-        <Link href="/seen-vergleich" className="inline-block bg-green-700 text-white text-sm font-semibold px-5 py-2.5 hover:bg-green-800 transition-colors rounded-full">
+        <Link href="/seen-vergleich" className="inline-block bg-green-700 text-white text-caption font-semibold px-5 py-2.5 hover:bg-green-800 transition-colors rounded-full">
           Seen im Vergleich
         </Link>
-        <Link href="/karte" className="inline-block border border-green-700 text-green-700 text-sm font-semibold px-5 py-2.5 hover:bg-green-50 transition-colors rounded-full">
+        <Link href="/karte" className="btn btn-secondary btn-sm">
           Auf der Karte ansehen
         </Link>
-        <Link href="/wandern-baden" className="inline-block border border-hairline text-ink-muted text-sm font-semibold px-5 py-2.5 hover:border-green-600 hover:text-green-700 transition-colors rounded-full">
+        <Link href="/wandern-baden" className="btn btn-quiet btn-sm">
           Wandern + Baden
         </Link>
-        <Link href="/unterkuenfte/basislager" className="inline-block border border-violet-500 text-violet-700 text-sm font-semibold px-5 py-2.5 hover:bg-violet-50 transition-colors rounded-full">
+        <Link href="/unterkuenfte/basislager" className="inline-block border border-violet-500 text-violet-700 text-caption font-semibold px-5 py-2.5 hover:bg-violet-50 transition-colors rounded-full">
           Basislager für mehrere Ausflüge
         </Link>
-        <Link href="/ausflugsplaner" className="inline-block border border-hairline text-ink-muted text-sm font-semibold px-5 py-2.5 hover:border-green-600 hover:text-green-700 transition-colors rounded-full">
+        <Link href="/ausflugsplaner" className="btn btn-quiet btn-sm">
           Alle Themenseiten
         </Link>
       </div>
 
-      <p className="text-xs text-ink-soft mt-6">Preise sind Richtwerte („ab“-Preise) und können je nach Saison und Verfügbarkeit abweichen – aktuelle Preise direkt beim Anbieter prüfen.</p>
+      <p className="text-fine text-ink-soft mt-6">Preise sind Richtwerte („ab“-Preise) und können je nach Saison und Verfügbarkeit abweichen – aktuelle Preise direkt beim Anbieter prüfen.</p>
     </div>
   );
 }

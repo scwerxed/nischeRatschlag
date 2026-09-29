@@ -42,10 +42,10 @@ export default function HomePage() {
       {/* ── Hero ───────────────────────────────────────────────────────── */}
       <HeroSlideshow>
         <p className="eyebrow text-green-200 mb-4">Reisemagazin · Österreich</p>
-        <h1 className="font-serif text-4xl md:text-6xl font-bold leading-[1.05] mb-5">
+        <h1 className="font-serif text-display md:text-6xl font-bold leading-[1.05] mb-5">
           Österreichs Seen &amp; Berge,<br />ehrlich erklärt.
         </h1>
-        <p className="text-lg text-white/85 mb-8 max-w-xl leading-relaxed">
+        <p className="text-tagline text-white/85 mb-8 max-w-xl leading-relaxed">
           Handverlesene Wanderungen, Badeseen und Ausflüge in ganz Österreich – mit klaren
           Empfehlungen, echten Startpunkten und Routen, die du sonst nirgends findest.
         </p>
@@ -69,13 +69,13 @@ export default function HomePage() {
       <FadeIn direction="none" duration={400}>
         <section className="border-b border-hairline bg-green-900 text-white">
           <div className="max-w-6xl mx-auto px-6 py-3.5 flex items-center justify-between">
-            <p className="text-sm">
+            <p className="text-caption">
               <span className="mr-2">{season.icon}</span>
               <span className="font-medium">{season.greeting}</span>
               <span className="text-green-200 mx-2">·</span>
               <span className="text-green-200">{posts.length} Insider-Tipps für dich</span>
             </p>
-            <Link href="/blog" className="text-xs font-semibold text-green-200 hover:text-white transition-colors hidden sm:block">
+            <Link href="/blog" className="text-fine font-semibold text-green-200 hover:text-white transition-colors hidden sm:block">
               {season.cta} →
             </Link>
           </div>
@@ -94,7 +94,7 @@ export default function HomePage() {
             ].map((s) => (
               <div key={s.label} className="py-9 px-4 text-center">
                 <p className="font-serif text-display-sm font-bold leading-none text-ink">{s.value}</p>
-                <p className="text-xs text-ink-soft mt-2 uppercase tracking-wider">{s.label}</p>
+                <p className="text-fine text-ink-soft mt-2 uppercase tracking-wider">{s.label}</p>
               </div>
             ))}
           </div>
@@ -105,11 +105,11 @@ export default function HomePage() {
       <FadeIn direction="none" duration={400}>
         <section className="border-b border-hairline bg-sand-50">
           <div className="max-w-6xl mx-auto px-6 py-4 flex flex-wrap items-center justify-between gap-3">
-            <p className="text-sm text-ink-muted">
+            <p className="text-caption text-ink-muted">
               <strong className="text-ink">Nicht sicher, wohin?</strong>{' '}
               Der Ausflugsplaner sortiert alle Ziele nach Wetter, Zeitfenster und Monat.
             </p>
-            <Link href="/ausflugsplaner" className="inline-flex items-center gap-1.5 text-sm font-semibold text-green-700 hover:text-green-600 transition-colors">
+            <Link href="/ausflugsplaner" className="inline-flex items-center gap-1.5 text-caption font-semibold text-green-700 hover:text-green-600 transition-colors">
               Ausflugsplaner öffnen
               <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="2">
                 <path d="M6 3l5 5-5 5" strokeLinecap="round" strokeLinejoin="round" />
@@ -156,8 +156,8 @@ export default function HomePage() {
                   <h3 className="font-serif text-tagline font-bold text-ink group-hover:text-green-700 leading-snug transition-colors">
                     {d.name}
                   </h3>
-                  <p className="text-sm text-ink-soft mt-1.5">{d.note}</p>
-                  <span className="mt-4 inline-flex items-center gap-1.5 text-sm font-medium text-green-700 group-hover:text-green-600 transition-colors">
+                  <p className="text-caption text-ink-soft mt-1.5">{d.note}</p>
+                  <span className="mt-4 inline-flex items-center gap-1.5 text-caption font-medium text-green-700 group-hover:text-green-600 transition-colors">
                     Tipps &amp; Hotels
                     <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="2" className="transition-transform duration-300 group-hover:translate-x-1">
                       <path d="M6 3l5 5-5 5" strokeLinecap="round" strokeLinejoin="round" />
@@ -185,7 +185,7 @@ export default function HomePage() {
               <p className="eyebrow mb-2">Aus dem Magazin</p>
               <h2 className="font-serif text-display font-bold text-ink">Aktuelle Tipps</h2>
             </div>
-            <Link href="/blog" className="text-sm font-medium text-green-700 hover:text-green-600 hidden sm:block transition-colors">
+            <Link href="/blog" className="text-caption font-medium text-green-700 hover:text-green-600 hidden sm:block transition-colors">
               Alle {posts.length} Artikel →
             </Link>
           </div>
@@ -197,11 +197,11 @@ export default function HomePage() {
               <div className="relative aspect-[16/10] mb-4 overflow-hidden rounded-lg">
                 <PostArtwork seed={lead.slug} category={lead.category} className="absolute inset-0 transition-transform duration-700 group-hover:scale-105" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
-                <span className="absolute bottom-0 left-0 p-6 font-serif text-2xl text-white leading-snug">{lead.title}</span>
+                <span className="absolute bottom-0 left-0 p-6 font-serif text-lead text-white leading-snug">{lead.title}</span>
               </div>
               <p className="eyebrow mb-1.5">{lead.category}{lead.bestSeason ? ` · ${lead.bestSeason}` : ''}</p>
               <p className="text-ink-muted leading-relaxed">{lead.excerpt}</p>
-              <span className="mt-3 inline-flex items-center gap-1.5 text-sm font-medium text-green-700 group-hover:text-green-600 transition-colors">
+              <span className="mt-3 inline-flex items-center gap-1.5 text-caption font-medium text-green-700 group-hover:text-green-600 transition-colors">
                 Weiterlesen
                 <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="2" className="transition-transform duration-300 group-hover:translate-x-1">
                   <path d="M6 3l5 5-5 5" strokeLinecap="round" strokeLinejoin="round" />
@@ -217,10 +217,10 @@ export default function HomePage() {
                   <span className={`shrink-0 mt-2.5 w-1.5 h-1.5 rounded-full ${CATEGORY_DOT[post.category] ?? 'bg-gray-400'}`} />
                   <div>
                     <p className="eyebrow mb-1">{post.category}</p>
-                    <h3 className="font-serif text-lg font-bold text-ink group-hover:text-green-700 leading-snug transition-colors">
+                    <h3 className="font-serif text-tagline font-bold text-ink group-hover:text-green-700 leading-snug transition-colors">
                       {post.title}
                     </h3>
-                    <p className="mt-1 text-sm text-ink-soft line-clamp-2">{post.excerpt}</p>
+                    <p className="mt-1 text-caption text-ink-soft line-clamp-2">{post.excerpt}</p>
                   </div>
                 </Link>
               ))}
@@ -265,7 +265,7 @@ export default function HomePage() {
                   </span>
                   <div>
                     <p className="font-semibold text-ink">{c.t}</p>
-                    <p className="text-sm text-ink-soft mt-0.5">{c.d}</p>
+                    <p className="text-caption text-ink-soft mt-0.5">{c.d}</p>
                   </div>
                 </div>
               ))}

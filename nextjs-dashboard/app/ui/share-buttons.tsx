@@ -33,7 +33,7 @@ export default function ShareButtons({ title }: { title: string }) {
 
   return (
     <div className="flex flex-wrap items-center gap-2">
-      <span className="text-xs text-ink-soft font-medium uppercase tracking-wider mr-1">Teilen</span>
+      <span className="text-fine text-ink-soft font-medium uppercase tracking-wider mr-1">Teilen</span>
       <button onClick={nativeShare} className={cls}>
         <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.5">
           <circle cx="12" cy="3" r="2" />

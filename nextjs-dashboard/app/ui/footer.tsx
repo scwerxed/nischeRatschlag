@@ -59,11 +59,11 @@ export default function Footer() {
             </svg>
             <span className="font-serif text-tagline font-bold text-white">Bergseen Guide</span>
           </div>
-          <p className="text-sm leading-relaxed mb-6">
+          <p className="text-caption leading-relaxed mb-6">
             Unabhängiger Reiseführer für Österreich: Wanderungen, Badeseen, Ausflüge und
             ehrliche Unterkunfts-Tipps – recherchiert statt abgeschrieben.
           </p>
-          <div className="flex items-center gap-3 text-xs text-green-300/70">
+          <div className="flex items-center gap-3 text-fine text-green-300/70">
             <span className="flex items-center gap-1.5">
               <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.4">
                 <circle cx="8" cy="8" r="6" />
@@ -78,8 +78,8 @@ export default function Footer() {
 
         {/* Entdecken */}
         <div>
-          <p className="text-xs uppercase tracking-[0.18em] text-green-300 mb-4 font-semibold">Entdecken</p>
-          <ul className="space-y-2.5 text-sm">
+          <p className="text-fine uppercase tracking-[0.18em] text-green-300 mb-4 font-semibold">Entdecken</p>
+          <ul className="space-y-2.5 text-caption">
             {QUICK_LINKS.map((l) => (
               <li key={l.href}>
                 <Link href={l.href} className="hover:text-white transition-colors inline-flex items-center gap-1 group">
@@ -95,15 +95,15 @@ export default function Footer() {
 
         {/* Regionen */}
         <div>
-          <p className="text-xs uppercase tracking-[0.18em] text-green-300 mb-4 font-semibold">Regionen</p>
-          <ul className="space-y-2.5 text-sm">
+          <p className="text-fine uppercase tracking-[0.18em] text-green-300 mb-4 font-semibold">Regionen</p>
+          <ul className="space-y-2.5 text-caption">
             {REGIONS.map((l) => (
               <li key={l.href}>
                 <Link href={l.href} className="hover:text-white transition-colors">{l.label}</Link>
               </li>
             ))}
             <li>
-              <Link href="/#regionen" className="text-green-300 hover:text-white transition-colors text-xs">
+              <Link href="/#regionen" className="text-green-300 hover:text-white transition-colors text-fine">
                 Alle 9 Bundesländer →
               </Link>
             </li>
@@ -112,8 +112,8 @@ export default function Footer() {
 
         {/* Service */}
         <div>
-          <p className="text-xs uppercase tracking-[0.18em] text-green-300 mb-4 font-semibold">Service</p>
-          <ul className="space-y-2.5 text-sm">
+          <p className="text-fine uppercase tracking-[0.18em] text-green-300 mb-4 font-semibold">Service</p>
+          <ul className="space-y-2.5 text-caption">
             {LEGAL.map((l) => (
               <li key={l.href}>
                 <Link href={l.href} className="hover:text-white transition-colors">{l.label}</Link>
@@ -124,7 +124,7 @@ export default function Footer() {
       </div>
 
       <div className="border-t border-white/10">
-        <div className="max-w-6xl mx-auto px-6 py-5 flex flex-col sm:flex-row justify-between items-center gap-3 text-xs text-green-300/70">
+        <div className="max-w-6xl mx-auto px-6 py-5 flex flex-col sm:flex-row justify-between items-center gap-3 text-fine text-green-300/70">
           <p>© {new Date().getFullYear()} Bergseen Guide. Alle Angaben ohne Gewähr.</p>
           <div className="flex items-center gap-4">
             <span>Enthält Affiliate-Links</span>

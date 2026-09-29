@@ -37,7 +37,7 @@ export default function RecentlyViewed({ currentSlug }: { currentSlug?: string }
           <Link
             key={item.slug}
             href={`/blog/${item.slug}`}
-            className="group flex items-start gap-2.5 text-sm"
+            className="group flex items-start gap-2.5 text-caption"
           >
             <span className={`shrink-0 mt-2 w-1.5 h-1.5 rounded-full ${CATEGORY_DOT[item.category] ?? 'bg-gray-400'}`} />
             <span className="text-ink-muted group-hover:text-green-700 leading-snug transition-colors">

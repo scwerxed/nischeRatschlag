@@ -54,8 +54,8 @@ export default function WochenendtripHub() {
                 <h2 className="font-serif text-tagline font-bold text-ink group-hover:text-green-700">
                   Wochenendtrip ab {city.name}
                 </h2>
-                <p className="text-sm text-ink-soft mt-1.5">{count} Ausflugsziele nach Fahrzeit sortiert</p>
-                <span className="mt-4 inline-block text-sm font-medium text-green-700 group-hover:text-green-600">
+                <p className="text-caption text-ink-soft mt-1.5">{count} Ausflugsziele nach Fahrzeit sortiert</p>
+                <span className="mt-4 inline-block text-caption font-medium text-green-700 group-hover:text-green-600">
                   Ziele ansehen →
                 </span>
               </div>

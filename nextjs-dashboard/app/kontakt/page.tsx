@@ -24,7 +24,7 @@ export default function KontaktPage() {
         {EMAIL}
       </a>
 
-      <p className="text-sm text-ink-soft mt-10">
+      <p className="text-caption text-ink-soft mt-10">
         Vollständige Anbieterkennzeichnung im{' '}
         <a href="/impressum" className="text-green-700 hover:underline">Impressum</a>.
       </p>

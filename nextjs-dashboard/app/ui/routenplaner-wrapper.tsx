@@ -6,7 +6,7 @@ import 'leaflet/dist/leaflet.css';
 const RoutenplanerClient = dynamic(() => import('@/app/ui/routenplaner-client'), {
   ssr: false,
   loading: () => (
-    <div className="h-[560px] rounded-xl bg-parchment flex items-center justify-center text-ink-soft text-sm">
+    <div className="h-[560px] rounded-lg bg-parchment flex items-center justify-center text-ink-soft text-caption">
       Karte wird geladen…
     </div>
   ),

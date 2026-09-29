@@ -248,7 +248,7 @@ export default function MapClient() {
       {/* Error */}
       {error && (
         <div className="absolute inset-0 z-10 flex items-center justify-center bg-parchment">
-          <span className="text-sm text-red-600">{error}</span>
+          <span className="text-caption text-red-600">{error}</span>
         </div>
       )}
 
@@ -280,7 +280,7 @@ export default function MapClient() {
                     <span className="w-1.5 h-1.5 rounded-full bg-green-600 block" />
                   )}
                 </span>
-                <span className={`text-sm ${baseLayer === id ? 'text-ink font-medium' : 'text-ink-soft'}`}>
+                <span className={`text-caption ${baseLayer === id ? 'text-ink font-medium' : 'text-ink-soft'}`}>
                   {id === 'osm' ? 'Standard' : 'Topografisch'}
                 </span>
               </button>
@@ -310,7 +310,7 @@ export default function MapClient() {
                 <svg width="20" height="8" viewBox="0 0 20 8">
                   <path d="M1 4 H6 M9 4 H14 M17 4 H20" stroke="#f97316" strokeWidth="2.5" strokeLinecap="round" />
                 </svg>
-                <span className={`text-sm ${showTrails ? 'text-ink' : 'text-ink-soft'}`}>
+                <span className={`text-caption ${showTrails ? 'text-ink' : 'text-ink-soft'}`}>
                   Wanderwege
                 </span>
               </span>
@@ -331,10 +331,10 @@ export default function MapClient() {
                 <svg width="10" height="10" viewBox="0 0 10 10">
                   <circle cx="5" cy="5" r="4" fill="#16a34a" stroke="#14532d" strokeWidth="1" />
                 </svg>
-                <span className={`text-sm ${showPeaks ? 'text-ink' : 'text-ink-soft'}`}>
+                <span className={`text-caption ${showPeaks ? 'text-ink' : 'text-ink-soft'}`}>
                   Gipfel
                   {showPeaks && zoom >= MIN_ZOOM_PEAKS && visibleCount > 0 && (
-                    <span className="ml-1 text-xs text-ink-soft">({visibleCount})</span>
+                    <span className="ml-1 text-fine text-ink-soft">({visibleCount})</span>
                   )}
                 </span>
               </span>
@@ -361,7 +361,7 @@ export default function MapClient() {
                 <svg width="11" height="11" viewBox="0 0 11 11">
                   <rect x="1.5" y="1.5" width="8" height="8" rx="1.5" fill="#2563eb" stroke="#1e40af" strokeWidth="1" />
                 </svg>
-                <span className={`text-sm ${showStays ? 'text-ink' : 'text-ink-soft'}`}>
+                <span className={`text-caption ${showStays ? 'text-ink' : 'text-ink-soft'}`}>
                   Unterkünfte
                 </span>
               </span>
@@ -373,7 +373,7 @@ export default function MapClient() {
           {/* Reset-to-Kärnten */}
           <button
             onClick={resetView}
-            className="flex items-center gap-2 w-full px-3 py-2 text-xs text-ink-soft hover:text-ink hover:bg-parchment transition-colors"
+            className="flex items-center gap-2 w-full px-3 py-2 text-fine text-ink-soft hover:text-ink hover:bg-parchment transition-colors"
           >
             <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
               <path d="M6 1v2M6 9v2M1 6h2M9 6h2M3.05 3.05l1.41 1.41M7.54 7.54l1.41 1.41M3.05 8.95l1.41-1.41M7.54 4.46l1.41-1.41" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" />
@@ -387,13 +387,13 @@ export default function MapClient() {
       {!mapReady && !error && (
         <div className="absolute bottom-0 left-0 right-0 z-[1000] bg-white border-t border-hairline px-3 py-1.5 flex items-center gap-2">
           <div className="w-3 h-3 border-2 border-green-600 border-t-transparent rounded-full animate-spin shrink-0" />
-          <span className="text-xs text-ink-soft">Karte wird geladen…</span>
+          <span className="text-fine text-ink-soft">Karte wird geladen…</span>
         </div>
       )}
 
       {/* ── Peak loading indicator ───────────────────────────────────────── */}
       {mapReady && peakCount === null && (
-        <div className="absolute bottom-2 left-2 z-[1000] bg-white border border-hairline px-2.5 py-1 text-xs text-ink-soft flex items-center gap-1.5 rounded-sm">
+        <div className="absolute bottom-2 left-2 z-[1000] bg-white border border-hairline px-2.5 py-1 text-fine text-ink-soft flex items-center gap-1.5 rounded-sm">
           <div className="w-2.5 h-2.5 border border-hairline border-t-gray-600 rounded-full animate-spin" />
           Gipfel laden…
         </div>

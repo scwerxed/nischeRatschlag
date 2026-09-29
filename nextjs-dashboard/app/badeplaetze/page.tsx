@@ -44,19 +44,19 @@ export default function BadeplaetzePage() {
 
       <BadeplatzFilter plaetze={BADEPLAETZE} />
 
-      <p className="text-xs text-ink-soft mt-8">
+      <p className="text-fine text-ink-soft mt-8">
         Angaben nach bestem Wissen, ohne Gewähr – Ausstattung, Eintritt und Hunde-Regeln können sich
         ändern. Im Zweifel vor der Abfahrt auf der Seite des Betreibers prüfen.
       </p>
 
       <div className="mt-8 flex flex-wrap gap-3">
-        <Link href="/seen-vergleich" className="inline-block bg-green-700 text-white text-sm font-semibold px-5 py-2.5 hover:bg-green-800 transition-colors rounded-full">
+        <Link href="/seen-vergleich" className="inline-block bg-green-700 text-white text-caption font-semibold px-5 py-2.5 hover:bg-green-800 transition-colors rounded-full">
           Seen im Vergleich
         </Link>
-        <Link href="/wandern-baden" className="inline-block border border-green-700 text-green-700 text-sm font-semibold px-5 py-2.5 hover:bg-green-50 transition-colors rounded-full">
+        <Link href="/wandern-baden" className="btn btn-secondary btn-sm">
           Wandern + Baden
         </Link>
-        <Link href="/hitzefreundliche-ausfluege" className="inline-block border border-amber-500 text-amber-700 text-sm font-semibold px-5 py-2.5 hover:bg-amber-50 transition-colors rounded-full">
+        <Link href="/hitzefreundliche-ausfluege" className="inline-block border border-amber-500 text-amber-700 text-caption font-semibold px-5 py-2.5 hover:bg-amber-50 transition-colors rounded-full">
           Kühle Ziele für Hitzetage
         </Link>
       </div>

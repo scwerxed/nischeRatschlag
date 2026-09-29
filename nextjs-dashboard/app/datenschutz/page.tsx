@@ -144,7 +144,7 @@ export default function DatenschutzPage() {
         </p>
       </Section>
 
-      <p className="text-xs text-ink-soft mt-10">
+      <p className="text-fine text-ink-soft mt-10">
         Stand: {new Date().toLocaleDateString('de-AT', { month: 'long', year: 'numeric' })}
       </p>
     </div>

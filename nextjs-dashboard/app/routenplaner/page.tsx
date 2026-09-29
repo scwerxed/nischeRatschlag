@@ -16,7 +16,7 @@ export default function RoutenplanerPage() {
         Wanderweg, samt Distanz, Gehzeit und Höhenprofil.
       </p>
       <RoutenplanerWrapper />
-      <p className="text-xs text-ink-soft mt-3">
+      <p className="text-fine text-ink-soft mt-3">
         Kartendaten: © OpenStreetMap · Wanderwege: © Waymarked Trails · Routing: BRouter
       </p>
     </div>

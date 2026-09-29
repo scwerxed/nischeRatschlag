@@ -104,7 +104,7 @@ export default function AusflugsplanerPage() {
       {GROUPS.map((g) => (
         <section key={g.title} className="mb-12">
           <h2 className="font-serif text-lead font-bold mb-1 text-ink">{g.title}</h2>
-          <p className="text-sm text-ink-soft mb-5 max-w-2xl">{g.note}</p>
+          <p className="text-caption text-ink-soft mb-5 max-w-2xl">{g.note}</p>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {g.items.map((item) => (
               <Link
@@ -112,9 +112,9 @@ export default function AusflugsplanerPage() {
                 href={item.href}
                 className="group block border border-hairline p-5 hover:border-green-400 transition rounded-lg"
               >
-                <h3 className="font-serif text-lg font-bold text-ink group-hover:text-green-700">{item.title}</h3>
-                <p className="text-sm text-ink-muted mt-1.5 leading-relaxed">{item.desc}</p>
-                <span className="mt-3 inline-block text-sm font-medium text-green-700">Ansehen →</span>
+                <h3 className="font-serif text-tagline font-bold text-ink group-hover:text-green-700">{item.title}</h3>
+                <p className="text-caption text-ink-muted mt-1.5 leading-relaxed">{item.desc}</p>
+                <span className="mt-3 inline-block text-caption font-medium text-green-700">Ansehen →</span>
               </Link>
             ))}
           </div>
@@ -122,10 +122,10 @@ export default function AusflugsplanerPage() {
       ))}
 
       <div className="mt-4 flex flex-wrap gap-3">
-        <Link href="/blog" className="inline-block bg-green-700 text-white text-sm font-semibold px-5 py-2.5 hover:bg-green-800 transition-colors rounded-full">
+        <Link href="/blog" className="inline-block bg-green-700 text-white text-caption font-semibold px-5 py-2.5 hover:bg-green-800 transition-colors rounded-full">
           Alle Artikel im Magazin
         </Link>
-        <Link href="/#regionen" className="inline-block border border-green-700 text-green-700 text-sm font-semibold px-5 py-2.5 hover:bg-green-50 transition-colors rounded-full">
+        <Link href="/#regionen" className="btn btn-secondary btn-sm">
           Nach Bundesland stöbern
         </Link>
       </div>

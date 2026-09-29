@@ -34,20 +34,20 @@ export default function SeenVergleichPage() {
           <Link
             key={t.slug}
             href={`/seen-vergleich/${t.slug}`}
-            className="text-sm font-medium px-4 py-1.5 bg-sky-50 text-sky-700 border border-sky-200 hover:bg-sky-100 transition-colors rounded-full"
+            className="text-caption font-medium px-4 py-1.5 bg-sky-50 text-sky-700 border border-sky-200 hover:bg-sky-100 transition-colors rounded-full"
           >
             {t.h1} →
           </Link>
         ))}
         <Link
           href="/badeplaetze"
-          className="text-sm font-medium px-4 py-1.5 bg-sky-50 text-sky-700 border border-sky-200 hover:bg-sky-100 transition-colors rounded-full"
+          className="text-caption font-medium px-4 py-1.5 bg-sky-50 text-sky-700 border border-sky-200 hover:bg-sky-100 transition-colors rounded-full"
         >
           Badeplatz-Check (gratis, Schatten, flach …) →
         </Link>
         <Link
           href="/unterkuenfte/am-see"
-          className="text-sm font-medium px-4 py-1.5 bg-sky-50 text-sky-700 border border-sky-200 hover:bg-sky-100 transition-colors rounded-full"
+          className="text-caption font-medium px-4 py-1.5 bg-sky-50 text-sky-700 border border-sky-200 hover:bg-sky-100 transition-colors rounded-full"
         >
           Unterkünfte direkt am See →
         </Link>
@@ -55,7 +55,7 @@ export default function SeenVergleichPage() {
 
       {/* Tabelle (Desktop) */}
       <div className="hidden md:block overflow-x-auto border border-hairline rounded-lg">
-        <table className="w-full text-sm">
+        <table className="w-full text-caption">
           <thead>
             <tr className="bg-green-800 text-white text-left">
               <th className="px-4 py-3 font-semibold">See</th>
@@ -94,14 +94,14 @@ export default function SeenVergleichPage() {
         {LAKES.map((l) => (
           <div key={l.name} className="border border-hairline p-4 rounded-lg">
             <div className="flex items-baseline justify-between">
-              <h2 className="font-serif text-lg font-bold text-ink">
+              <h2 className="font-serif text-tagline font-bold text-ink">
                 {l.slug ? <Link href={`/blog/${l.slug}`} className="text-green-700">{l.name}</Link> : l.name}
               </h2>
-              <span className="text-sm font-semibold text-cyan-700">{l.maxTemp}</span>
+              <span className="text-caption font-semibold text-cyan-700">{l.maxTemp}</span>
             </div>
-            <p className="text-sm text-ink-muted mt-1">{l.region} · {l.charakter} · {l.groesse}</p>
-            <p className="text-sm text-ink-soft mt-1">Ideal für: {l.idealFuer}</p>
-            <p className="text-xs text-ink-soft mt-2">{l.gratis ? '✓ Gratis-Bademöglichkeit' : 'Strandbad mit Eintritt'} · {l.tipp}</p>
+            <p className="text-caption text-ink-muted mt-1">{l.region} · {l.charakter} · {l.groesse}</p>
+            <p className="text-caption text-ink-soft mt-1">Ideal für: {l.idealFuer}</p>
+            <p className="text-fine text-ink-soft mt-2">{l.gratis ? '✓ Gratis-Bademöglichkeit' : 'Strandbad mit Eintritt'} · {l.tipp}</p>
           </div>
         ))}
       </div>
@@ -109,7 +109,7 @@ export default function SeenVergleichPage() {
       {/* Tipps-Spalte */}
       <div className="mt-8 border-l-4 border-green-600 bg-green-50 px-5 py-4">
         <p className="eyebrow mb-3">Kurz-Empfehlung</p>
-        <ul className="space-y-1.5 text-sm text-ink-muted">
+        <ul className="space-y-1.5 text-caption text-ink-muted">
           <li className="flex items-start gap-2.5"><span className="shrink-0 mt-1.5 w-3 h-px bg-green-600 inline-block" /><strong className="font-semibold text-ink">Wärmstes Wasser:</strong>&nbsp;Klopeiner See &amp; Wörthersee (bis 28 °C)</li>
           <li className="flex items-start gap-2.5"><span className="shrink-0 mt-1.5 w-3 h-px bg-green-600 inline-block" /><strong className="font-semibold text-ink">Familien:</strong>&nbsp;Klopeiner See &amp; Weissensee (flach, ruhig)</li>
           <li className="flex items-start gap-2.5"><span className="shrink-0 mt-1.5 w-3 h-px bg-green-600 inline-block" /><strong className="font-semibold text-ink">Ruhe &amp; Natur:</strong>&nbsp;Weissensee &amp; Achensee</li>
@@ -120,12 +120,12 @@ export default function SeenVergleichPage() {
       </div>
 
       <div className="mt-8 flex flex-wrap gap-3">
-        <Link href="/blog" className="inline-block bg-green-700 text-white text-sm font-semibold px-5 py-2.5 hover:bg-green-800 transition-colors rounded-sm">Alle Badeseen-Artikel</Link>
-        <Link href="/karte" className="inline-block border border-green-700 text-green-700 text-sm font-semibold px-5 py-2.5 hover:bg-green-50 transition-colors rounded-sm">Auf der Karte ansehen</Link>
-        <Link href="/ausflugsplaner" className="inline-block border border-hairline text-ink-muted text-sm font-semibold px-5 py-2.5 hover:border-green-600 hover:text-green-700 transition-colors rounded-sm">Alle Themenseiten</Link>
+        <Link href="/blog" className="inline-block bg-green-700 text-white text-caption font-semibold px-5 py-2.5 hover:bg-green-800 transition-colors rounded-sm">Alle Badeseen-Artikel</Link>
+        <Link href="/karte" className="inline-block border border-green-700 text-green-700 text-caption font-semibold px-5 py-2.5 hover:bg-green-50 transition-colors rounded-sm">Auf der Karte ansehen</Link>
+        <Link href="/ausflugsplaner" className="inline-block border border-hairline text-ink-muted text-caption font-semibold px-5 py-2.5 hover:border-green-600 hover:text-green-700 transition-colors rounded-sm">Alle Themenseiten</Link>
       </div>
 
-      <p className="text-xs text-ink-soft mt-6">Wassertemperaturen sind sommerliche Höchstwerte (Juli/August) und können je nach Wetter schwanken.</p>
+      <p className="text-fine text-ink-soft mt-6">Wassertemperaturen sind sommerliche Höchstwerte (Juli/August) und können je nach Wetter schwanken.</p>
     </div>
   );
 }

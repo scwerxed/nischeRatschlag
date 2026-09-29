@@ -27,7 +27,7 @@ export default function BesteAusfluegeHub() {
       </p>
 
       <div className="mb-8">
-        <Link href="/ausflugsplaner" className="inline-block border border-hairline text-ink-muted text-sm font-semibold px-5 py-2.5 hover:border-green-600 hover:text-green-700 transition-colors rounded-full">
+        <Link href="/ausflugsplaner" className="btn btn-quiet btn-sm">
           Alle Themenseiten
         </Link>
       </div>
@@ -41,7 +41,7 @@ export default function BesteAusfluegeHub() {
           >
             <p className="eyebrow mb-1.5">{m.picks.length} Ziele</p>
             <h2 className="font-serif text-tagline font-bold text-ink group-hover:text-green-700">{m.name}</h2>
-            <span className="mt-3 inline-block text-sm font-medium text-green-700">Tipps ansehen →</span>
+            <span className="mt-3 inline-block text-caption font-medium text-green-700">Tipps ansehen →</span>
           </Link>
         ))}
       </div>

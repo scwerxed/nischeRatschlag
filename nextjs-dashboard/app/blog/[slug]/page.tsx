@@ -265,7 +265,7 @@ export default async function BlogPostPage({ params }: Props) {
         <div className="absolute inset-0 bg-gradient-to-t from-green-900/95 via-green-900/80 to-green-900/55" />
         <div className="relative max-w-6xl mx-auto px-6 py-16 md:py-24">
           {/* Breadcrumb */}
-          <nav className="flex flex-wrap items-center gap-2 text-xs text-white/70 mb-5">
+          <nav className="flex flex-wrap items-center gap-2 text-fine text-white/70 mb-5">
             <Link href="/" className="hover:text-white">Startseite</Link>
             <span>/</span>
             <Link href={`/regionen/${post.region}`} className="hover:text-white">{regionLabel}</Link>
@@ -273,7 +273,7 @@ export default async function BlogPostPage({ params }: Props) {
             <span className="text-white/90">{post.category}</span>
           </nav>
 
-          <div className="flex flex-wrap items-center gap-2 mb-4 text-xs">
+          <div className="flex flex-wrap items-center gap-2 mb-4 text-fine">
             <span className="font-semibold bg-white/15 border border-white/20 px-3 py-1 uppercase tracking-wide rounded-full">
               {post.category}
             </span>
@@ -310,7 +310,7 @@ export default async function BlogPostPage({ params }: Props) {
               <p className="eyebrow mb-3">Auf einen Blick</p>
               <ul className="space-y-1.5">
                 {post.highlights.map((h, i) => (
-                  <li key={i} className="flex items-start gap-2.5 text-sm text-ink-muted">
+                  <li key={i} className="flex items-start gap-2.5 text-caption text-ink-muted">
                     <span className="shrink-0 mt-1.5 w-3 h-px bg-green-600 inline-block" />
                     {h}
                   </li>
@@ -327,7 +327,7 @@ export default async function BlogPostPage({ params }: Props) {
               <p className="eyebrow mb-3 !text-red-700">Schlecht geplant, wenn …</p>
               <ul className="space-y-3">
                 {post.planningMistakes.map((m) => (
-                  <li key={m.fehler} className="text-sm leading-relaxed">
+                  <li key={m.fehler} className="text-caption leading-relaxed">
                     <p className="text-ink"><span className="font-semibold text-red-700">✗</span> {m.fehler}</p>
                     <p className="text-ink-muted mt-0.5 pl-4"><span className="font-semibold text-green-700">→</span> {m.besser}</p>
                   </li>
@@ -346,17 +346,17 @@ export default async function BlogPostPage({ params }: Props) {
                   <div key={v.label} className="flex flex-wrap items-center gap-x-4 gap-y-1 border border-hairline px-4 py-3 rounded-lg">
                     <span className={`w-2 h-2 rounded-full shrink-0 ${DIFFICULTY_STYLES[v.difficulty].dot}`} />
                     <span className="font-semibold text-ink flex-1 min-w-[160px]">{v.label}</span>
-                    <span className="text-sm text-ink-muted whitespace-nowrap">{v.length}</span>
-                    <span className="text-sm text-ink-muted whitespace-nowrap">{v.duration}</span>
-                    {v.ascent && <span className="text-sm text-ink-muted whitespace-nowrap">↑ {v.ascent}</span>}
-                    <span className={`text-xs font-medium px-2 py-0.5 rounded-full border ${DIFFICULTY_STYLES[v.difficulty].cls}`}>
+                    <span className="text-caption text-ink-muted whitespace-nowrap">{v.length}</span>
+                    <span className="text-caption text-ink-muted whitespace-nowrap">{v.duration}</span>
+                    {v.ascent && <span className="text-caption text-ink-muted whitespace-nowrap">↑ {v.ascent}</span>}
+                    <span className={`text-fine font-medium px-2 py-0.5 rounded-full border ${DIFFICULTY_STYLES[v.difficulty].cls}`}>
                       {DIFFICULTY_STYLES[v.difficulty].label}
                     </span>
-                    {v.note && <span className="w-full text-xs text-ink-soft">{v.note}</span>}
+                    {v.note && <span className="w-full text-fine text-ink-soft">{v.note}</span>}
                   </div>
                 ))}
               </div>
-              <p className="text-xs text-ink-soft mt-2">Angaben ca. – je nach Startpunkt und Tempo.</p>
+              <p className="text-fine text-ink-soft mt-2">Angaben ca. – je nach Startpunkt und Tempo.</p>
             </div>
           )}
 
@@ -368,7 +368,7 @@ export default async function BlogPostPage({ params }: Props) {
                 {post.trails.length > 1 ? 'Wähle deinen Weg' : 'Der Weg auf der Karte'}
               </h2>
               {post.trails.length > 1 && (
-                <p className="text-sm text-ink-soft mb-4">Tippe auf eine Tour, um den vorgegebenen Wegverlauf zu sehen.</p>
+                <p className="text-caption text-ink-soft mb-4">Tippe auf eine Tour, um den vorgegebenen Wegverlauf zu sehen.</p>
               )}
               <TrailMapWrapper trails={post.trails} />
             </div>
@@ -378,10 +378,10 @@ export default async function BlogPostPage({ params }: Props) {
           {post.category === 'Wandern' && (
             <div className="mt-6 space-y-3">
               <div className="grid sm:grid-cols-2 gap-4">
-                <Link href={mapHref} className="flex items-center justify-center bg-green-700 text-white font-medium text-sm px-5 py-3 hover:bg-green-800 transition-colors rounded-full">
+                <Link href={mapHref} className="flex items-center justify-center bg-green-700 text-white font-medium text-caption px-5 py-3 hover:bg-green-800 transition-colors rounded-full">
                   {mapCtaLabel}
                 </Link>
-                <Link href="/routenplaner" className="flex items-center justify-center border border-green-700 text-green-700 font-medium text-sm px-5 py-3 hover:bg-green-50 transition-colors rounded-full">
+                <Link href="/routenplaner" className="flex items-center justify-center border border-green-700 text-green-700 font-medium text-caption px-5 py-3 hover:bg-green-50 transition-colors rounded-full">
                   Route planen
                 </Link>
               </div>
@@ -390,7 +390,7 @@ export default async function BlogPostPage({ params }: Props) {
                   href={`https://www.google.com/maps/dir/?api=1&destination=${precise[0]},${precise[1]}`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center justify-center gap-1.5 border border-hairline text-ink-muted font-medium text-sm px-5 py-3 hover:bg-parchment transition-colors rounded-full"
+                  className="flex items-center justify-center gap-1.5 border border-hairline text-ink-muted font-medium text-caption px-5 py-3 hover:bg-parchment transition-colors rounded-full"
                 >
                   <span aria-hidden>🧭</span> Route in Google Maps öffnen ↗
                 </a>
@@ -411,7 +411,7 @@ export default async function BlogPostPage({ params }: Props) {
                 {related.map((r) => (
                   <Link key={r.slug} href={`/blog/${r.slug}`} className="group block border border-hairline p-4 hover:border-green-400 transition rounded-lg">
                     <span className="eyebrow">{r.category}</span>
-                    <h3 className="mt-1.5 text-sm font-semibold text-ink group-hover:text-green-700 leading-snug">{r.title}</h3>
+                    <h3 className="mt-1.5 text-caption font-semibold text-ink group-hover:text-green-700 leading-snug">{r.title}</h3>
                   </Link>
                 ))}
               </div>
@@ -422,26 +422,26 @@ export default async function BlogPostPage({ params }: Props) {
           {themen.length > 0 && (
             <div className="mt-12">
               <h2 className="font-serif text-tagline font-bold text-ink mb-1">Dieses Ziel steht auch auf diesen Listen</h2>
-              <p className="text-sm text-ink-soft mb-4">Passt der Ausflug gerade nicht? Über die Themenseiten findest du Alternativen mit demselben Anspruch.</p>
+              <p className="text-caption text-ink-soft mb-4">Passt der Ausflug gerade nicht? Über die Themenseiten findest du Alternativen mit demselben Anspruch.</p>
               <div className="grid sm:grid-cols-2 gap-3">
                 {themen.map((t) => (
                   <Link key={t.href} href={t.href} className="group flex items-start gap-3 border border-hairline p-4 hover:border-green-400 transition rounded-lg">
                     <span className="shrink-0 mt-2 w-3 h-px bg-green-600 inline-block" />
                     <span>
-                      <span className="block text-sm font-semibold text-ink group-hover:text-green-700 leading-snug">{t.label}</span>
-                      <span className="block mt-0.5 text-xs text-ink-soft leading-snug">{t.note}</span>
+                      <span className="block text-caption font-semibold text-ink group-hover:text-green-700 leading-snug">{t.label}</span>
+                      <span className="block mt-0.5 text-fine text-ink-soft leading-snug">{t.note}</span>
                     </span>
                   </Link>
                 ))}
               </div>
-              <Link href="/ausflugsplaner" className="inline-block mt-4 text-sm text-green-700 hover:underline font-medium">
+              <Link href="/ausflugsplaner" className="inline-block mt-4 text-caption text-green-700 hover:underline font-medium">
                 Alle Themenseiten im Ausflugsplaner →
               </Link>
             </div>
           )}
 
           <div className="mt-10 pt-6 border-t border-divider-soft">
-            <Link href={`/regionen/${post.region}`} className="text-sm text-green-700 hover:underline font-medium">
+            <Link href={`/regionen/${post.region}`} className="text-caption text-green-700 hover:underline font-medium">
               ← Alle {regionLabel}-Artikel anzeigen
             </Link>
           </div>
@@ -453,7 +453,7 @@ export default async function BlogPostPage({ params }: Props) {
           {headings.length >= 3 && (
             <nav className="border border-hairline p-5 rounded-lg" aria-label="Inhaltsverzeichnis">
               <p className="eyebrow mb-3">Inhalt</p>
-              <ol className="space-y-1.5 text-sm">
+              <ol className="space-y-1.5 text-caption">
                 {headings.map((h) => (
                   <li key={h.id}>
                     <a href={`#${h.id}`} className="text-ink-muted hover:text-green-700 transition-colors block leading-snug">
@@ -468,7 +468,7 @@ export default async function BlogPostPage({ params }: Props) {
           {/* Schnellinfo */}
           <div className="border border-hairline p-5 rounded-lg">
             <p className="eyebrow mb-3">Schnellinfo</p>
-            <dl className="space-y-2.5 text-sm">
+            <dl className="space-y-2.5 text-caption">
               <div className="flex justify-between gap-3">
                 <dt className="text-ink-soft">Kategorie</dt>
                 <dd className="font-medium text-ink">{post.category}</dd>
@@ -488,7 +488,7 @@ export default async function BlogPostPage({ params }: Props) {
                   <dd className="font-medium text-ink text-right">
                     {post.bestSeason}
                     {season && (
-                      <span className={`block mt-1.5 text-xs font-medium px-1.5 py-0.5 border ${SEASON_LABEL[season].cls} rounded-sm`}>
+                      <span className={`block mt-1.5 text-fine font-medium px-1.5 py-0.5 border ${SEASON_LABEL[season].cls} rounded-sm`}>
                         {SEASON_LABEL[season].emoji} {SEASON_LABEL[season].label}
                       </span>
                     )}
@@ -510,7 +510,7 @@ export default async function BlogPostPage({ params }: Props) {
             {mapPoint && (
               <Link
                 href={mapHref}
-                className="mt-3 flex items-center justify-center gap-1.5 w-full text-sm font-medium px-4 py-2.5 border border-green-700 text-green-700 hover:bg-green-50 transition-colors rounded-full"
+                className="mt-3 flex items-center justify-center gap-1.5 w-full text-caption font-medium px-4 py-2.5 border border-green-700 text-green-700 hover:bg-green-50 transition-colors rounded-full"
               >
                 <span aria-hidden>📍</span> {precise ? 'Startpunkt auf Karte öffnen' : 'Region auf Karte öffnen'}
               </Link>
@@ -524,20 +524,20 @@ export default async function BlogPostPage({ params }: Props) {
           {badestelle && (
             <div className="border border-sky-200 p-5 rounded-lg">
               <p className="eyebrow mb-1">Badewasser-Qualität</p>
-              <h3 className="font-serif text-base font-bold text-ink leading-snug">{badestelle.name}</h3>
-              <p className="text-xs text-ink-soft mt-0.5">
+              <h3 className="font-serif text-body font-bold text-ink leading-snug">{badestelle.name}</h3>
+              <p className="text-fine text-ink-soft mt-0.5">
                 Offizielle EU-Badestelle{badestelle.km >= 0.5 ? ` · ≈ ${Math.max(1, Math.round(badestelle.km))} km vom Startpunkt` : ''}
               </p>
               {badestelle.gesperrt && (
-                <p className="mt-3 text-sm font-semibold text-red-800 bg-red-50 border border-red-200 px-2.5 py-1.5 rounded-sm">
+                <p className="mt-3 text-caption font-semibold text-red-800 bg-red-50 border border-red-200 px-2.5 py-1.5 rounded-sm">
                   ⚠️ Derzeit gesperrt{badestelle.sperrgrund ? `: ${badestelle.sperrgrund}` : ''}
                 </p>
               )}
-              <dl className="mt-3 space-y-2 text-sm">
+              <dl className="mt-3 space-y-2 text-caption">
                 {badestelle.einstufung && einstufung && (
                   <div className="flex justify-between items-center gap-3">
                     <dt className="text-ink-soft">Einstufung {badestelle.einstufung.jahr}</dt>
-                    <dd className={`text-xs font-semibold px-2 py-0.5 border ${EINSTUFUNG_CLS[einstufung.tone]} rounded-sm`}>
+                    <dd className={`text-fine font-semibold px-2 py-0.5 border ${EINSTUFUNG_CLS[einstufung.tone]} rounded-sm`}>
                       {einstufung.label}
                     </dd>
                   </div>
@@ -572,18 +572,18 @@ export default async function BlogPostPage({ params }: Props) {
           {oeffi && (
             <div className="border border-sky-200 bg-sky-50 p-5 rounded-lg">
               <p className="eyebrow mb-3">{precise && !post.startPoint ? 'Auto oder Öffis?' : 'Mit Öffis erreichbar'}</p>
-              <p className="text-sm text-ink-muted leading-relaxed">🚋 {oeffi}</p>
+              <p className="text-caption text-ink-muted leading-relaxed">🚋 {oeffi}</p>
               {precise && !post.startPoint && (
                 <a
                   href={`https://www.google.com/maps/dir/?api=1&destination=${precise[0]},${precise[1]}`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="mt-3 flex items-center justify-center gap-1.5 w-full text-sm font-medium px-4 py-2.5 border border-sky-300 bg-white text-ink-muted hover:bg-sky-100 transition-colors rounded-full"
+                  className="mt-3 flex items-center justify-center gap-1.5 w-full text-caption font-medium px-4 py-2.5 border border-sky-300 bg-white text-ink-muted hover:bg-sky-100 transition-colors rounded-full"
                 >
                   <span aria-hidden>🚗</span> Route für die Anreise mit dem Auto ↗
                 </a>
               )}
-              <Link href="/bahnhofsausfluege" className="mt-3 inline-flex items-center gap-1 text-sm font-medium text-green-700 hover:text-green-800">
+              <Link href="/bahnhofsausfluege" className="mt-3 inline-flex items-center gap-1 text-caption font-medium text-green-700 hover:text-green-800">
                 Weitere Öffi-Ziele ansehen →
               </Link>
             </div>
@@ -593,23 +593,23 @@ export default async function BlogPostPage({ params }: Props) {
           {post.startPoint && (
             <div className="border border-sand-200 bg-sand-50 p-5 rounded-lg">
               <p className="eyebrow mb-3">Startpunkt &amp; Parken</p>
-              <p className="font-semibold text-ink text-sm leading-snug">🅿️ {post.startPoint.name}</p>
-              <dl className="mt-3 space-y-2 text-sm">
+              <p className="font-semibold text-ink text-caption leading-snug">🅿️ {post.startPoint.name}</p>
+              <dl className="mt-3 space-y-2 text-caption">
                 {post.startPoint.parking && (
                   <div>
-                    <dt className="text-ink-soft text-xs uppercase tracking-wide">Parken</dt>
+                    <dt className="text-ink-soft text-fine uppercase tracking-wide">Parken</dt>
                     <dd className="text-ink-muted mt-0.5">{post.startPoint.parking}</dd>
                   </div>
                 )}
                 {post.startPoint.arrival && (
                   <div>
-                    <dt className="text-ink-soft text-xs uppercase tracking-wide">Beste Ankunft</dt>
+                    <dt className="text-ink-soft text-fine uppercase tracking-wide">Beste Ankunft</dt>
                     <dd className="text-ink-muted mt-0.5">{post.startPoint.arrival}</dd>
                   </div>
                 )}
               </dl>
               {post.startPoint.note && (
-                <p className="mt-3 text-xs text-ink-muted border-l-2 border-amber-400 bg-amber-50 px-2.5 py-1.5">
+                <p className="mt-3 text-fine text-ink-muted border-l-2 border-amber-400 bg-amber-50 px-2.5 py-1.5">
                   {post.startPoint.note}
                 </p>
               )}
@@ -618,7 +618,7 @@ export default async function BlogPostPage({ params }: Props) {
                   href={`https://www.google.com/maps/dir/?api=1&destination=${precise[0]},${precise[1]}`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="mt-4 flex items-center justify-center gap-1.5 w-full text-sm font-medium px-4 py-2.5 bg-green-700 text-white hover:bg-green-800 transition-colors rounded-full"
+                  className="mt-4 flex items-center justify-center gap-1.5 w-full text-caption font-medium px-4 py-2.5 bg-green-700 text-white hover:bg-green-800 transition-colors rounded-full"
                 >
                   Navigation starten ↗
                 </a>
@@ -630,21 +630,21 @@ export default async function BlogPostPage({ params }: Props) {
           {nearbyStays.length > 0 && (
             <div className="border border-violet-200 bg-violet-50 p-5 rounded-lg">
               <p className="eyebrow mb-1">Weite Anfahrt</p>
-              <h3 className="font-serif text-base font-bold text-ink mb-3">Lieber übernachten statt lange pendeln?</h3>
-              <p className="text-sm text-ink-muted leading-relaxed mb-3">
+              <h3 className="font-serif text-body font-bold text-ink mb-3">Lieber übernachten statt lange pendeln?</h3>
+              <p className="text-caption text-ink-muted leading-relaxed mb-3">
                 Von Wien, Graz, Salzburg, Linz, Innsbruck und Klagenfurt aus ist es ein gutes Stück hierher – wer nicht alles an einem Tag hin und zurück fahren will, findet in der Nähe Unterkünfte.
               </p>
               <div className="space-y-2.5">
                 {nearbyStays.map((u) => (
                   <a key={u.id} href={cloak(u.bookingUrl)} target="_blank" rel="noopener noreferrer sponsored"
                     className="group block border border-violet-200 bg-white px-3 py-2.5 hover:border-violet-400 transition-colors rounded-full">
-                    <span className="block text-xs font-semibold text-violet-700 uppercase tracking-wide">{u.typ} · {u.see}</span>
-                    <span className="block text-sm font-semibold text-ink group-hover:text-violet-700 leading-snug mt-0.5">{u.name} →</span>
+                    <span className="block text-fine font-semibold text-violet-700 uppercase tracking-wide">{u.typ} · {u.see}</span>
+                    <span className="block text-caption font-semibold text-ink group-hover:text-violet-700 leading-snug mt-0.5">{u.name} →</span>
                   </a>
                 ))}
               </div>
               <p className="text-[11px] text-ink-soft mt-3">* Affiliate-Links – ohne Mehrkosten für dich.</p>
-              <Link href="/unterkuenfte/basislager" className="mt-2 inline-flex items-center gap-1 text-sm font-medium text-green-700 hover:text-green-800">
+              <Link href="/unterkuenfte/basislager" className="mt-2 inline-flex items-center gap-1 text-caption font-medium text-green-700 hover:text-green-800">
                 Beste Ausgangsorte ansehen →
               </Link>
             </div>
@@ -654,8 +654,8 @@ export default async function BlogPostPage({ params }: Props) {
           {basisLager && (
             <div className="border border-violet-200 bg-violet-50 p-5 rounded-lg">
               <p className="eyebrow mb-1">Mehrere Tage bleiben?</p>
-              <h3 className="font-serif text-base font-bold text-ink mb-2">Basislager {basisLager.lager.stay.ort}</h3>
-              <p className="text-sm text-ink-muted leading-relaxed mb-3">
+              <h3 className="font-serif text-body font-bold text-ink mb-2">Basislager {basisLager.lager.stay.ort}</h3>
+              <p className="text-caption text-ink-muted leading-relaxed mb-3">
                 Rund {Math.max(1, Math.round(basisLager.km))}&nbsp;km Luftlinie von hier – und insgesamt{' '}
                 <strong>{basisLager.lager.ziele.length} unserer Ziele</strong> im Umkreis von {BASISLAGER_RADIUS_KM}&nbsp;km.
                 {basisAndere.length > 0 && ' Zum Beispiel:'}
@@ -663,7 +663,7 @@ export default async function BlogPostPage({ params }: Props) {
               {basisAndere.length > 0 && (
                 <ul className="space-y-1 mb-3">
                   {basisAndere.map((z) => (
-                    <li key={z.post.slug} className="text-sm leading-snug">
+                    <li key={z.post.slug} className="text-caption leading-snug">
                       <Link href={`/blog/${z.post.slug}`} className="text-ink hover:text-green-700 hover:underline">
                         {z.post.title}
                       </Link>
@@ -673,11 +673,11 @@ export default async function BlogPostPage({ params }: Props) {
               )}
               <a href={cloak(basisLager.lager.stay.bookingUrl)} target="_blank" rel="noopener noreferrer sponsored"
                 className="group block border border-violet-200 bg-white px-3 py-2.5 hover:border-violet-400 transition-colors rounded-full">
-                <span className="block text-xs font-semibold text-violet-700 uppercase tracking-wide">{basisLager.lager.stay.typ} · {basisLager.lager.stay.see}</span>
-                <span className="block text-sm font-semibold text-ink group-hover:text-violet-700 leading-snug mt-0.5">{basisLager.lager.stay.name} →</span>
+                <span className="block text-fine font-semibold text-violet-700 uppercase tracking-wide">{basisLager.lager.stay.typ} · {basisLager.lager.stay.see}</span>
+                <span className="block text-caption font-semibold text-ink group-hover:text-violet-700 leading-snug mt-0.5">{basisLager.lager.stay.name} →</span>
               </a>
               <p className="text-[11px] text-ink-soft mt-3">* Affiliate-Link – ohne Mehrkosten für dich. Entfernungen als Luftlinie.</p>
-              <Link href={`/unterkuenfte/basislager#${basisLager.lager.stay.region}`} className="mt-2 inline-flex items-center gap-1 text-sm font-medium text-green-700 hover:text-green-800">
+              <Link href={`/unterkuenfte/basislager#${basisLager.lager.stay.region}`} className="mt-2 inline-flex items-center gap-1 text-caption font-medium text-green-700 hover:text-green-800">
                 Alle Basislager in {regionName(basisLager.lager.stay.region)} →
               </Link>
             </div>
@@ -687,13 +687,13 @@ export default async function BlogPostPage({ params }: Props) {
           {(post.category === 'Ausflug' || post.category === 'Wandern') && (
             <div className="border border-hairline p-5 rounded-lg">
               <p className="eyebrow mb-1">Erlebnisse &amp; Tickets</p>
-              <h3 className="font-serif text-base font-bold text-ink mb-3">Ausflüge in {regionLabel} buchen</h3>
+              <h3 className="font-serif text-body font-bold text-ink mb-3">Ausflüge in {regionLabel} buchen</h3>
               <div className="space-y-2.5">
                 {excursionsFor(post.region).map((ex) => (
                   <a key={ex.url} href={cloak(ex.url)} target="_blank" rel="noopener noreferrer sponsored"
                     className="group block border border-hairline px-3 py-2.5 hover:border-green-400 hover:bg-green-50 transition-colors rounded-full">
-                    <span className="block text-sm font-semibold text-ink group-hover:text-green-700 leading-snug">{ex.label} →</span>
-                    <span className="block text-xs text-ink-soft mt-0.5">{ex.note}</span>
+                    <span className="block text-caption font-semibold text-ink group-hover:text-green-700 leading-snug">{ex.label} →</span>
+                    <span className="block text-fine text-ink-soft mt-0.5">{ex.note}</span>
                   </a>
                 ))}
               </div>
@@ -709,7 +709,7 @@ export default async function BlogPostPage({ params }: Props) {
                 {post.affiliateLinks.map((link) => (
                   <li key={link.url}>
                     <a href={cloak(link.url)} target="_blank" rel="noopener noreferrer sponsored"
-                      className="text-green-700 hover:underline font-medium text-sm leading-snug block">
+                      className="text-green-700 hover:underline font-medium text-caption leading-snug block">
                       {link.label} →
                     </a>
                   </li>
@@ -730,7 +730,7 @@ export default async function BlogPostPage({ params }: Props) {
                 {officialLinks.map((link) => (
                   <li key={link.url}>
                     <a href={link.url} target="_blank" rel="noopener noreferrer"
-                      className="text-ink-muted hover:text-green-700 text-sm leading-snug block">
+                      className="text-ink-muted hover:text-green-700 text-caption leading-snug block">
                       {link.label} ↗
                     </a>
                   </li>

@@ -16,7 +16,7 @@ export default function RegionSelector() {
       <select
         defaultValue=""
         onChange={handleChange}
-        className="w-full sm:flex-1 border border-hairline rounded-lg px-4 py-3 text-ink-muted bg-white focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-green-500 text-base"
+        className="w-full sm:flex-1 border border-hairline rounded-sm px-4 py-3 text-ink-muted bg-canvas outline-none transition-colors focus:border-green-600 focus-visible:ring-2 focus-visible:ring-green-600 text-body"
       >
         <option value="" disabled>Bundesland wählen…</option>
         {regionen.map((r) => (
@@ -25,7 +25,7 @@ export default function RegionSelector() {
           </option>
         ))}
       </select>
-      <span className="text-sm text-ink-soft whitespace-nowrap">→ Tipps & Hotels</span>
+      <span className="text-caption text-ink-soft whitespace-nowrap">→ Tipps & Hotels</span>
     </div>
   );
 }

@@ -66,7 +66,7 @@ export default function ReiseinfosPage() {
           <li className="flex gap-2"><span className="shrink-0 mt-[0.6em] w-2.5 h-px bg-green-500" />Strandbad-Eintritt: ~5–8 €/Tag</li>
           <li className="flex gap-2"><span className="shrink-0 mt-[0.6em] w-2.5 h-px bg-green-500" />Hauptgericht im Gasthaus: ~14–20 €</li>
         </ul>
-        <p className="text-sm text-ink-soft">Spar-Tipp: Viele Regionen geben mit der Übernachtung eine <strong className="font-semibold text-ink">Gästekarte</strong> aus (z. B. Kärnten Card, SalzburgerLand Card, Tirols Gästekarten) – oft mit freiem Eintritt zu zahlreichen Ausflugszielen oder Bergbahnen.</p>
+        <p className="text-caption text-ink-soft">Spar-Tipp: Viele Regionen geben mit der Übernachtung eine <strong className="font-semibold text-ink">Gästekarte</strong> aus (z. B. Kärnten Card, SalzburgerLand Card, Tirols Gästekarten) – oft mit freiem Eintritt zu zahlreichen Ausflugszielen oder Bergbahnen.</p>
       </Block>
 
       <Block title="Notfallnummern">
@@ -83,11 +83,11 @@ export default function ReiseinfosPage() {
 
       {/* CTA */}
       <div className="border-l-4 border-green-600 bg-green-50 px-5 py-4 mt-10">
-        <p className="font-serif text-lg font-bold text-ink mb-1">Bereit für die Planung?</p>
-        <p className="text-sm text-ink-muted mb-3">Stöbere durch unsere Tipps oder plane direkt deine Wanderroute.</p>
+        <p className="font-serif text-tagline font-bold text-ink mb-1">Bereit für die Planung?</p>
+        <p className="text-caption text-ink-muted mb-3">Stöbere durch unsere Tipps oder plane direkt deine Wanderroute.</p>
         <div className="flex flex-wrap gap-3">
-          <Link href="/blog" className="inline-block bg-green-700 text-white text-sm font-semibold px-5 py-2.5 hover:bg-green-800 transition-colors rounded-sm">Zum Magazin</Link>
-          <Link href="/routenplaner" className="inline-block border border-green-700 text-green-700 text-sm font-semibold px-5 py-2.5 hover:bg-green-100 transition-colors rounded-sm">Route planen</Link>
+          <Link href="/blog" className="inline-block bg-green-700 text-white text-caption font-semibold px-5 py-2.5 hover:bg-green-800 transition-colors rounded-sm">Zum Magazin</Link>
+          <Link href="/routenplaner" className="inline-block border border-green-700 text-green-700 text-caption font-semibold px-5 py-2.5 hover:bg-green-100 transition-colors rounded-sm">Route planen</Link>
         </div>
       </div>
     </div>

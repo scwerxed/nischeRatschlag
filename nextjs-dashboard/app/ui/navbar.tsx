@@ -23,7 +23,7 @@ function Logo({ onClick }: { onClick?: () => void }) {
         </svg>
       </span>
       <span className="leading-none">
-        <span className="block font-serif text-lg font-bold text-ink tracking-tightish">
+        <span className="block font-serif text-tagline font-bold text-ink tracking-tightish">
           Bergseen&nbsp;Guide
         </span>
         <span className="block text-[10px] uppercase tracking-[0.22em] text-ink-soft mt-0.5">
@@ -121,7 +121,7 @@ export default function Navbar() {
           </div>
 
           {/* Desktop-Navigation */}
-          <div className="hidden md:flex items-center gap-6 text-sm text-ink-muted">
+          <div className="hidden md:flex items-center gap-6 text-caption text-ink-muted">
             {LINKS.map((l) => (
               <Link
                 key={l.href}
@@ -172,12 +172,12 @@ export default function Navbar() {
               key={l.href}
               href={l.href}
               onClick={() => setOpen(false)}
-              className={`flex items-center justify-between py-4 font-serif text-xl ${
+              className={`flex items-center justify-between py-4 font-serif text-tagline ${
                 isActive(l.href) ? 'text-green-700 font-bold' : 'text-ink'
               }`}
             >
               {l.label}
-              <span className="text-ink-soft text-base">→</span>
+              <span className="text-ink-soft text-body">→</span>
             </Link>
           ))}
         </div>

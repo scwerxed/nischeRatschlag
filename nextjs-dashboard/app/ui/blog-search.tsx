@@ -97,7 +97,7 @@ export default function BlogSearch({ posts }: { posts: Post[] }) {
             <circle cx="7" cy="7" r="5" /><path d="M11 11l3.5 3.5" strokeLinecap="round" />
           </svg>
           <p className="font-medium text-ink-soft mb-1">Keine Artikel gefunden</p>
-          <p className="text-sm">Versuch einen anderen Suchbegriff oder wähle eine andere Kategorie.</p>
+          <p className="text-caption">Versuch einen anderen Suchbegriff oder wähle eine andere Kategorie.</p>
         </div>
       ) : (
         <div className="grid md:grid-cols-2 gap-6">
@@ -120,22 +120,22 @@ export default function BlogSearch({ posts }: { posts: Post[] }) {
                 <div className="p-6">
                   <div className="flex items-center justify-between mb-2">
                     <div className="flex items-center gap-2">
-                      <span className={`flex items-center gap-1.5 text-xs font-semibold uppercase tracking-wide ${CATEGORY_STYLE[post.category]?.text ?? 'text-green-700'}`}>
+                      <span className={`flex items-center gap-1.5 text-fine font-semibold uppercase tracking-wide ${CATEGORY_STYLE[post.category]?.text ?? 'text-green-700'}`}>
                         <span className={`w-1.5 h-1.5 rounded-full ${CATEGORY_DOT[post.category] ?? 'bg-gray-400'}`} />
                         {post.category}
                       </span>
                       {post.difficulty && (
-                        <span className={`text-xs font-medium px-2 py-0.5 rounded-full ${DIFF_STYLE[post.difficulty]}`}>
+                        <span className={`text-fine font-medium px-2 py-0.5 rounded-full ${DIFF_STYLE[post.difficulty]}`}>
                           {post.difficulty}
                         </span>
                       )}
                       {isOeffiErreichbar(post.slug) && (
-                        <span className="text-xs font-medium px-2 py-0.5 rounded-full bg-blue-50 text-blue-700 border border-blue-200">
+                        <span className="text-fine font-medium px-2 py-0.5 rounded-full bg-blue-50 text-blue-700 border border-blue-200">
                           🚋 Öffis
                         </span>
                       )}
                     </div>
-                    <span className="text-xs text-ink-soft">{post.date}</span>
+                    <span className="text-fine text-ink-soft">{post.date}</span>
                   </div>
                   <h2 className="font-serif font-bold text-tagline text-ink group-hover:text-green-700 leading-snug transition-colors">
                     {post.title}

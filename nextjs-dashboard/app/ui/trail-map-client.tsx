@@ -126,7 +126,7 @@ export default function TrailMapClient({ trails }: { trails: Trail[] }) {
             <button
               key={i}
               onClick={() => setSelected(i)}
-              className={`shrink-0 text-xs font-medium px-3 py-1.5 transition-colors ${ i === selected ? 'bg-green-700 text-white' : 'bg-white text-ink-muted border border-hairline hover:border-green-400' } rounded-sm`}
+              className={`shrink-0 text-fine font-medium px-3 py-1.5 transition-colors ${ i === selected ? 'bg-green-700 text-white' : 'bg-white text-ink-muted border border-hairline hover:border-green-400' } rounded-sm`}
             >
               {tr.name}
             </button>
@@ -138,7 +138,7 @@ export default function TrailMapClient({ trails }: { trails: Trail[] }) {
       <div className="relative">
         <div ref={containerRef} style={{ height: 380 }} />
         {loading && (
-          <div className="absolute top-2 left-2 z-[1000] bg-white/90 border border-hairline px-2.5 py-1 text-xs text-ink-muted flex items-center gap-1.5 rounded-sm">
+          <div className="absolute top-2 left-2 z-[1000] bg-white/90 border border-hairline px-2.5 py-1 text-fine text-ink-muted flex items-center gap-1.5 rounded-sm">
             <span className="w-2.5 h-2.5 border border-hairline border-t-green-600 rounded-full animate-spin" />
             Wegverlauf wird geladen…
           </div>
@@ -147,18 +147,18 @@ export default function TrailMapClient({ trails }: { trails: Trail[] }) {
 
       {/* Stats-Leiste */}
       <div className="flex flex-wrap items-center gap-x-5 gap-y-1.5 px-4 py-3 bg-white border-t border-hairline">
-        <span className={`text-xs font-semibold px-2 py-0.5 rounded ${DIFF[t.difficulty].cls}`}>
+        <span className={`text-fine font-semibold px-2 py-0.5 rounded ${DIFF[t.difficulty].cls}`}>
           {DIFF[t.difficulty].label}
         </span>
-        <span className="text-sm text-ink-muted font-medium">{t.name}</span>
-        <span className="flex items-center gap-1 text-sm text-ink-soft">
+        <span className="text-caption text-ink-muted font-medium">{t.name}</span>
+        <span className="flex items-center gap-1 text-caption text-ink-soft">
           <span className="text-ink-soft">↔</span> {t.length}
         </span>
-        <span className="flex items-center gap-1 text-sm text-ink-soft">
+        <span className="flex items-center gap-1 text-caption text-ink-soft">
           <span className="text-ink-soft">⏱</span> {t.duration}
         </span>
         {t.ascent && (
-          <span className="flex items-center gap-1 text-sm text-ink-soft">
+          <span className="flex items-center gap-1 text-caption text-ink-soft">
             <span className="text-ink-soft">↑</span> {t.ascent}
           </span>
         )}
