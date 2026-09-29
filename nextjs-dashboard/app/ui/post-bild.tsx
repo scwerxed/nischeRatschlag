@@ -51,7 +51,6 @@ export default function PostBild({
  * Sichtbare Namensnennung – Pflicht bei CC-BY- und CC-BY-SA-Fotos.
  * Wird am Artikelkopf ausgegeben.
  */
- */
 export function Bildnachweis({ slug, hell = false }: { slug: string; hell?: boolean }) {
   const bild = bildFuer(slug);
   if (!bild) return null;
