@@ -2733,19 +2733,53 @@ Ideal für Familien mit Kindern von etwa 2 bis 12 Jahren. Ein voller Tag ist lei
     bestSeason: 'Juli–August',
     highlights: ['Oper in monumentaler Felskulisse', 'Historischer Steinbruch der Römer', 'Eindrucksvoll auch ohne Vorstellung'],
     content: `
-Schon die Römer brachen hier den Stein für ihre Bauten – heute ist der Römersteinbruch St. Margarethen eine der eindrucksvollsten Naturbühnen Europas.
+Der **Römersteinbruch St. Margarethen** im Burgenland ist einer der ältesten Steinbrüche Europas – und heute eine der ungewöhnlichsten Opernbühnen der Welt. Wo über Jahrhunderte Kalksandstein herausgebrochen wurde, sitzt im Sommer ein Publikum vor einer Kulisse aus gewachsenem Fels.
+
+## Die Geschichte des Steins
+Der Stein aus St. Margarethen wurde bereits in römischer Zeit abgebaut. Später wanderte er in prominente Bauwerke – unter anderem wurde er beim **Stephansdom** und bei Bauten der Wiener Ringstraße verwendet.
+
+Sichtbar ist das bis heute: Die Wände zeigen die Spuren des jahrhundertelangen Abbaus, teils als Werkzeugspuren, teils als riesige, glatt geschnittene Flächen. Diese Struktur ist es, die den Ort so eindrucksvoll macht – kein Architekt hätte das so entworfen.
 
 ## Oper im Steinbruch
-Im Sommer wird die gewaltige Felskulisse zur Bühne für große Opernproduktionen unter freiem Himmel. Die Akustik und das Ambiente sind einzigartig – ein Höhepunkt des burgenländischen Kultursommers.
+Im Sommer finden hier großformatige Opernproduktionen unter freiem Himmel statt. Die Bühne nutzt die Felswände als Hintergrund, die Inszenierungen sind entsprechend groß angelegt.
 
-## Auch tagsüber lohnend
-Außerhalb der Festspiele ist der Steinbruch ein beeindruckendes Naturdenkmal mit Skulpturen und Wanderwegen.
+Programm, Termine und Karten wechseln jährlich – wer deshalb kommt, sollte früh buchen, weil populäre Termine schnell vergeben sind. Bei Regen wird gegebenenfalls unterbrochen oder abgesagt; die Regelungen dazu stehen in den Ticketbedingungen.
 
-## Praktische Infos
-- Anfahrt: Nahe St. Margarethen, ca. 15 Min. von Eisenstadt
-- Festspiel-Karten früh sichern
-- Gut mit Familypark (gleicher Ort) kombinierbar
-    `,
+Neben der Oper finden im Steinbruch weitere Veranstaltungen statt, darunter Passionsspiele in mehrjährigem Abstand.
+
+## Der Steinbruch tagsüber
+Auch ohne Vorstellung ist der Ort interessant. Außerhalb der Veranstaltungszeiten ist Teile des Geländes zugänglich; dazu gibt es in der Umgebung einen Skulpturenpark, der auf jahrzehntelange Bildhauersymposien zurückgeht. Über die aktuellen Zugangsmöglichkeiten informiert die Website – sie hängen vom Veranstaltungsbetrieb ab.
+
+## Beste Zeit
+**Juli und August** für die Opernsaison – das ist der Hauptgrund, hierherzukommen. Der **Frühling und Herbst** eignen sich besser, wenn man den Steinbruch als geologisches und historisches Ziel in Ruhe sehen will.
+
+Für eine Abendvorstellung gilt: Es kühlt nach Sonnenuntergang deutlich ab, auch im Hochsommer.
+
+## Anreise & Parken
+St. Margarethen liegt zwischen Eisenstadt und Rust, rund eine Stunde von Wien. An Veranstaltungstagen gibt es ausgewiesene Parkflächen und ein Verkehrskonzept – die Hinweise auf der Ticketseite ernst nehmen, weil sonst der Abendverkehr zäh wird.
+
+Mit öffentlichen Verkehrsmitteln: Bahn bis Eisenstadt, dann Bus oder Shuttle. Zu Veranstaltungen werden meist zusätzliche Verbindungen eingerichtet.
+
+## Was du mitnehmen solltest
+- Eine warme Schicht für den Abend, auch im Hochsommer
+- Regenschutz – Ponchos statt Schirm, weil Schirme die Sicht der Hinterleute blockieren
+- Ein Sitzkissen, wenn du empfindlich bist: Die Ränge sind nicht gepolstert
+- Feste Schuhe für den unebenen Untergrund
+
+## Ehrlich gesagt
+Eine Freiluftoper ist nicht mit einem Opernhaus vergleichbar: Der Klang wird verstärkt, es kann windig sein, und die Akustik ist von Platz zu Platz unterschiedlich. Wer Klangpuristen-Ansprüche mitbringt, sollte das wissen.
+
+Die Preise für gute Plätze sind außerdem hoch. Und der Reiz des Ortes lebt stark vom Wetter – ein verregneter Abend im Steinbruch ist deutlich weniger magisch als ein lauer.
+
+## Gut kombinierbar
+- [Rust](/blog/rust-stoerche-altstadt) – die Storchenstadt, zehn Minuten entfernt
+- [Eisenstadt & Schloss Esterházy](/blog/eisenstadt-schloss-esterhazy) – Haydn und Barock, rund 15 Minuten
+- [Familypark St. Margarethen](/blog/familypark-st-margarethen) – im selben Ort, für Familien der zweite Baustein
+
+---
+
+**Kurz gesagt:** Oper vor gewachsenem Fels – ein Ort, der schon ohne Musik beeindruckt, mit ihr aber unvergesslich wird.
+`,
     affiliateLinks: [
       { label: 'Unterkünfte bei St. Margarethen – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=St.+Margarethen+im+Burgenland' },
       { label: 'Burgenland: Tickets – GetYourGuide', url: 'https://www.getyourguide.de/s/?q=Burgenland' },
@@ -2763,19 +2797,53 @@ Außerhalb der Festspiele ist der Steinbruch ein beeindruckendes Naturdenkmal mi
     bestSeason: 'April–November',
     highlights: ['Höchster Berg des Burgenlands (884 m)', 'Aussichtsturm mit Blick AT/Ungarn', 'Sanfte, schattige Waldwanderung'],
     content: `
-Der Geschriebenstein im Günser Gebirge ist mit 884 m der höchste Berg des Burgenlands – und liegt genau auf der Grenze zu Ungarn. Eine entspannte Wanderung für alle Levels.
+Mit 884 Metern ist der **Geschriebenstein** der höchste Berg des Burgenlands – und gleichzeitig der höchste Punkt des gesamten Günser Gebirges. Die Grenze zu Ungarn verläuft direkt über den Gipfel; auf ungarischer Seite heißt er Írottkő.
+
+## Der Gipfel
+Oben steht ein **Aussichtsturm**, der genau auf der Staatsgrenze errichtet ist – man kann also im Turm von Österreich nach Ungarn gehen. Von der Plattform reicht der Blick über das Burgenland, die ungarische Tiefebene und bei klarer Sicht bis zu den Alpenausläufern im Westen.
+
+Das ist der eigentliche Grund für die Tour: Weil ringsum alles flach ist, wirkt die vergleichsweise geringe Höhe deutlich mehr, als die Zahl vermuten lässt.
 
 ## Die Wanderung
-Sanfte, gut beschilderte Waldwege führen zum Gipfel – angenehm schattig, daher auch im Hochsommer machbar. Mehrere Ausgangspunkte (z. B. Lockenhaus, Rechnitz).
+Es gibt mehrere Zustiege, unter anderem von **Rechnitz** und von **Lockenhaus** aus. Die Wege führen überwiegend durch geschlossenen Buchen- und Mischwald, sind gut markiert und technisch einfach. Je nach Route sollte man für Auf- und Abstieg zwischen zwei und vier Stunden einplanen.
 
-## Am Gipfel
-Ein **Aussichtsturm** bietet Rundblick über das Günser Gebirge, das Burgenland und nach Ungarn hinein. Eine Schutzhütte lädt zur Rast.
+Kondition braucht es mehr als Trittsicherheit – es geht stetig bergauf, aber nirgends ausgesetzt. Das macht den Geschriebenstein zu einem guten Ziel für Familien mit größeren Kindern und für Einsteiger.
 
-## Praktische Infos
-- Naturpark Geschriebenstein-Írottkő
-- Festes Schuhwerk reicht, kein alpines Terrain
-- Kombinierbar mit der Ritterburg Lockenhaus
-    `,
+## Naturpark Geschriebenstein
+Der Berg liegt im grenzüberschreitenden **Naturpark Geschriebenstein-Írottkő**. Die Wälder hier sind alt und ungewöhnlich ruhig; Wildbeobachtung ist in den Morgenstunden realistisch.
+
+Rundherum liegen kleine Orte mit Buschenschanken und Weingütern – die Region ist Teil des burgenländischen Weinbaugebiets, und ein Abstecher nach der Wanderung gehört dazu.
+
+## Beste Zeit
+**April bis November.** Der Frühling ist am schönsten, wenn der Buchenwald frisch austreibt; der Oktober bringt die Laubfärbung. Im Hochsommer ist der Wald angenehm schattig – der Geschriebenstein ist deshalb auch an heißen Tagen machbar, anders als viele offene Wanderungen im Burgenland.
+
+Im Winter ist die Tour bei Schnee reizvoll, aber die Wege sind dann nicht geräumt.
+
+## Anreise
+Von Wien rund 1,5 Stunden, von Eisenstadt knapp eine, von Graz etwa zwei. Parkplätze gibt es an den Ausgangspunkten bei Rechnitz und Lockenhaus.
+
+Mit öffentlichen Verkehrsmitteln ist die Anreise mühsam – Bahn bis Oberwart oder Oberpullendorf, dann Regionalbus. Für einen Tagesausflug realistisch nur mit Auto.
+
+## Was du mitnehmen solltest
+- Feste Schuhe – Waldwege, die nach Regen tief werden
+- Wasser: unterwegs gibt es kaum Versorgung
+- Zeckenschutz; der Buchenwald ist ein klassisches Zeckengebiet
+- Fernglas für den Turm
+
+## Ehrlich gesagt
+Die Wanderung führt fast durchgehend durch Wald – Aussicht gibt es erst oben. Wer unterwegs Panorama erwartet, wird die Strecke als eintönig empfinden.
+
+Und der Gipfel ist mit 884 Metern kein alpines Erlebnis. Der Reiz liegt in der Ruhe, im alten Wald und in der Grenzlage, nicht in Höhenmetern. Wer aus den Alpen kommt, sollte die Erwartungen entsprechend setzen.
+
+## Gut kombinierbar
+- [Burg Lockenhaus](/blog/burg-lockenhaus) – direkt am Fuß des Gebirges
+- [Burg Bernstein](/blog/burg-bernstein-edelserpentin) – rund 20 Minuten entfernt
+- [Naturpark Rosalia-Kogelberg](/blog/naturpark-rosalia-kogelberg) – die nördliche Fortsetzung derselben Hügelkette
+
+---
+
+**Kurz gesagt:** Der höchste Punkt des Burgenlands mit Aussichtsturm auf der Staatsgrenze – eine ruhige Waldwanderung, kein Alpenerlebnis.
+`,
     affiliateLinks: [
       { label: 'Unterkünfte im Südburgenland – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Lockenhaus' },
       { label: 'Wanderschuhe – Amazon', url: 'https://www.amazon.de/s?k=wanderschuhe' },
@@ -3524,19 +3592,51 @@ Das Gebiet beherbergt einen der größten Gämsbestände der Alpen – mit etwas
     date: '2026-06-12', category: 'Wandern', region: 'steiermark', difficulty: 'mittel', bestSeason: 'Juli–September',
     highlights: ['Zwei türkise Bergseen auf 1.900 m', 'Urige Hütten zum Einkehren', 'Auch für geübte Familien machbar'],
     content: `
-Die Giglachseen in den Schladminger Tauern sind ein Wanderklassiker – zwei glasklare Bergseen, eingebettet in eine sanfte Hochgebirgslandschaft.
+Die **Giglachseen** in den Schladminger Tauern sind zwei Bergseen auf rund 1.900 Metern – umgeben von grasigen Tauerngipfeln, ohne Wald, ohne Straße, ohne Lärm. Für viele sind sie das schönste Ziel der ganzen Region, und der Aufwand dorthin ist erstaunlich gering.
 
-## Die Wanderung
-Vom Parkplatz Ursprungalm führt ein gut markierter Weg in 1,5–2 Stunden zu den Seen. Mäßige Steigung, technisch einfach – auch für trittsichere Familien geeignet.
+## Der Weg zu den Seen
+Ausgangspunkt ist die **Ursprungalm** im hinteren Obertal, die über eine mautpflichtige Bergstraße erreichbar ist. Von dort führt ein breiter, gleichmäßig ansteigender Weg in etwa einer Stunde zum Unteren Giglachsee.
 
-## Einkehr & Übernachtung
-Die Giglachseehütte und die Ignaz-Mattis-Hütte liegen direkt am Wasser – ideal für eine Brettljause oder als Etappe auf der Schladminger Tauern-Höhenrunde.
+Der Aufstieg ist technisch einfach und auch mit wanderfähigen Kindern machbar. Es geht durch offenes Almgelände – also mit Aussicht von Anfang an, nicht erst am Ziel.
 
-## Praktische Infos
-- Mautstraße zur Ursprungalm (Ausgangspunkt)
-- Anfahrt: Von Schladming ca. 45 Minuten
-- Wetterumschwung möglich – Regenschutz & warme Schicht
-    `,
+Am See steht die **Ignaz-Mattis-Hütte**, eine bewirtschaftete Schutzhütte direkt am Ufer. Wer will, geht weiter zum Oberen Giglachsee, der nur wenige Minuten entfernt liegt und meist noch stiller ist.
+
+## Weiter hinaus
+Die Giglachseen sind ein Knotenpunkt des **Schladminger Tauern Höhenwegs**. Von hier führen mehrtägige Übergänge zu weiteren Hütten und Seen – eine der klassischen Hüttentouren der Ostalpen.
+
+Für Tagesgäste bieten sich Rundwege an, etwa über die umliegenden Scharten. Das ist dann deutlich anspruchsvoller: steinig, steil und wetterabhängig.
+
+## Beste Zeit
+**Mitte Juni bis Anfang Oktober.** Vorher liegt oft noch Schnee in den Mulden, und die Mautstraße zur Ursprungalm ist nicht immer geöffnet. Im Hochsommer sind die Seen das beliebteste Ziel der Region – an Wochenenden im Juli und August ist der Parkplatz an der Ursprungalm früh voll.
+
+Die schönste Zeit ist der **September**: klare Luft, warme Farben, deutlich weniger Betrieb, Hütte meist noch offen.
+
+## Anreise & Parken
+Von Schladming ins Obertal, dann auf der Mautstraße zur Ursprungalm. Die Straße ist schmal und kurvig, aber gut befahrbar. Die Maut wird vor Ort kassiert.
+
+Ohne Auto ist das Ziel schwierig: Bahn bis Schladming, dann Wanderbus ins Obertal – der verkehrt saisonal und nicht dicht. Fahrplan vorher prüfen, sonst steht man am Nachmittag fest.
+
+## Was du mitnehmen solltest
+- Feste Schuhe – der Hauptweg ist gutmütig, alle Varianten darüber hinaus nicht
+- Warme Schicht und Windjacke: Auf 1.900 Metern ist es auch im August frisch, besonders am Wasser
+- Sonnenschutz; es gibt oben praktisch keinen Schatten
+- Bargeld für die Hütte
+- Badesachen nur für Hartgesottene – das Wasser ist ausgesprochen kalt
+
+## Ehrlich gesagt
+Die Giglachseen sind kein Geheimtipp mehr. An schönen Sommerwochenenden ist der Weg gut besucht, und die Hütte entsprechend voll. Wer Einsamkeit sucht, kommt unter der Woche, früh am Morgen oder im September.
+
+Die Mautstraße stört manche – ohne sie wäre der Zustieg allerdings deutlich länger. Und das Wetter kann in den Tauern schnell umschlagen: Nachmittagsgewitter sind im Sommer die Regel, nicht die Ausnahme. Früh starten ist hier nicht nur bequemer, sondern sicherer.
+
+## Gut kombinierbar
+- [Schladming & Dachstein](/blog/schladming-dachstein-wandern) – die Region rundherum
+- [Dachstein Gletscher & Skywalk](/blog/dachstein-gletscher-skywalk) – das Kontrastprogramm gegenüber
+- [Murau & Murtalbahn](/blog/murau-murtalbahn) – die ruhige Seite der Tauern im Süden
+
+---
+
+**Kurz gesagt:** Eine Stunde bergauf für zwei Bergseen auf 1.900 Metern – das beste Verhältnis von Aufwand zu Wirkung in der Region.
+`,
     affiliateLinks: [
       { label: 'Hotels in Schladming – booking.com', url: 'https://www.booking.com/city/at/schladming.de.html' },
       { label: 'Wanderschuhe – Amazon', url: 'https://www.amazon.de/s?k=wanderschuhe' },
@@ -3897,19 +3997,51 @@ April bis Oktober, wenn Park und Ausstellungen zugänglich sind. Im Frühsommer 
     date: '2026-06-13', category: 'Wandern', region: 'burgenland', difficulty: 'leicht', bestSeason: 'April–Oktober',
     highlights: ['Sanfte Wälder mit Seeblick', 'Kellergassen & Weingüter', 'Familientaugliche Wege'],
     content: `
-Das Leithagebirge im Nordwesten des Neusiedler Sees ist ein bewaldeter Höhenzug mit gemütlichen Wanderwegen und herrlichem Blick über die pannonische Ebene.
+Das **Leithagebirge** ist der bewaldete Höhenzug zwischen Neusiedler See und dem Wiener Becken – ein Mittelgebirge, das kaum über 480 Meter kommt und trotzdem einen erstaunlichen Unterschied macht: Unten Weingärten und Seeklima, oben kühler, schattiger Wald.
 
-## Wandern
-Leichte bis mittlere Wege führen durch Eichen- und Buchenwälder zu Aussichtspunkten über den See. Ideal für Familien und Genusswanderer.
+## Warum Purbach der beste Ausgangspunkt ist
+**Purbach am Neusiedler See** liegt genau an der Nahtstelle: Der Ort zieht sich vom Seeufer bis an den Hangfuß des Leithagebirges. Man kann also am See starten, durch Weingärten aufsteigen und oben im Wald verschwinden – alles an einem Vormittag.
 
-## Wein & Kultur
-Orte wie Purbach und Donnerskirchen sind für ihren Wein (Leithaberg DAC) und ihre Kellergassen bekannt – perfekt für eine Einkehr nach der Tour.
+Purbach selbst ist ein typischer Weinort mit Kellergasse, historischem Ortskern und dem berühmten **Purbacher Türken**, einer Figur im Rauchfang, um die sich eine Sage aus der Zeit der Türkenkriege rankt. Der Ort ist außerdem von einer teilweise erhaltenen Ortsmauer umgeben.
 
-## Praktische Infos
-- Anfahrt: Von Eisenstadt ca. 15 Minuten
-- Gut mit Weinverkostung kombinierbar (nicht selbst fahren)
-- Feste Schuhe reichen, kein alpines Gelände
-    `,
+## Die Wanderungen
+Vom Ortsrand führen markierte Wege hinauf ins Leithagebirge. Die Steigungen sind moderat, die Wege breit – das ist Wandern ohne Bergerfahrung, gut machbar mit Kindern.
+
+Charakteristisch sind die alten Buchen- und Eichenbestände und die aufgelassenen **Steinbrüche** im Gebirge: Aus dem Leithakalk wurden über Jahrhunderte Bausteine gewonnen, unter anderem für Wiener Bauwerke. Manche der alten Brüche sind heute begehbar und wirken wie kleine Felsentheater.
+
+Wer die volle Runde will, kombiniert den Aufstieg mit einem Abstieg Richtung Donnerskirchen oder Breitenbrunn und kommt am See entlang zurück.
+
+## Wein und Einkehr
+Purbach liegt mitten im Leithaberg-Weinbaugebiet. Die Kellergasse ist keine Kulisse, sondern in Betrieb – Buschenschanken öffnen im Wechsel, die Termine hängen aus und stehen auf den Websites der Gemeinden.
+
+## Beste Zeit
+**März bis November.** Der Frühling ist besonders schön, weil das Leithagebirge früh grün wird und die Vogelwelt am Neusiedler See dann in Bewegung ist. Der Oktober bringt Laubfärbung und Weinlese.
+
+Im Hochsommer ist der Wald die kühlere Alternative zum offenen Seeufer – ein guter Plan für Hitzetage im Burgenland, wo Schatten sonst knapp ist.
+
+## Anreise
+Von Wien rund 45 Minuten mit dem Auto. Purbach liegt außerdem an der Bahnstrecke nach Neusiedl am See – mit dem Zug ist der Ort gut erreichbar, und die Wanderwege beginnen in Gehweite vom Bahnhof. Das ist eine der wenigen Wanderungen im Burgenland, die ganz ohne Auto funktioniert.
+
+## Was du mitnehmen solltest
+- Bequeme Schuhe – mehr braucht es nicht, das Gelände ist gutmütig
+- Zeckenschutz: Laubwald im Osten Österreichs
+- Wasser, besonders im Sommer
+- Bargeld für Buschenschanken
+
+## Ehrlich gesagt
+Das Leithagebirge ist ein Mittelgebirge, und das merkt man: Es gibt keine Gipfelerlebnisse und nur wenige echte Aussichtspunkte, weil der Wald dicht steht. Wer Panorama sucht, ist auf dem Geschriebenstein oder gleich in den Alpen besser aufgehoben.
+
+Der Reiz liegt in der Kombination – Wald, Weingärten, See und Ortsbild auf engem Raum. Als reine Wanderung wäre die Strecke unspektakulär.
+
+## Gut kombinierbar
+- [Neusiedler See](/blog/neusiedler-see-baden-segeln) – der See direkt unterhalb
+- [Nationalpark Seewinkel](/blog/seewinkel-nationalpark-voegel) – die Vogelwelt am Ostufer
+- [Rust](/blog/rust-stoerche-altstadt) – die Storchenstadt, rund 20 Minuten südlich
+
+---
+
+**Kurz gesagt:** Die beste Kombination aus Wald, Wein und See im Nordburgenland – und mit dem Zug erreichbar.
+`,
     affiliateLinks: [
       { label: 'Unterkünfte in Purbach – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Purbach+am+Neusiedler+See' },
       { label: 'Wanderschuhe leicht – Amazon', url: 'https://www.amazon.de/s?k=wanderschuhe+leicht' },
@@ -3923,19 +4055,50 @@ Orte wie Purbach und Donnerskirchen sind für ihren Wein (Leithaberg DAC) und ih
     date: '2026-06-13', category: 'Ausflug', region: 'burgenland', bestSeason: 'April–Oktober',
     highlights: ['Seltener Edelserpentin („Bernsteiner Jade")', 'Burg mit Hotel & Sternwarte', 'Ursprüngliches Südburgenland'],
     content: `
-Bernstein liegt in den sanften Hügeln des Südburgenlands – bekannt für eine geologische Besonderheit: den grünen Edelserpentin, der hier seit Generationen verarbeitet wird.
+**Burg Bernstein** im Südburgenland ist eine der wenigen Burgen Österreichs, die sich nie in eine Attraktion verwandelt haben. Sie steht seit Jahrhunderten in Familienbesitz, wird als kleines Hotel geführt – und wirkt genau deshalb noch wie ein bewohntes Haus statt wie ein Museum.
 
-## Edelserpentin
-Der „Bernsteiner Edelserpentin" (auch „steirische Jade" genannt) wird in örtlichen Werkstätten zu Schmuck und Skulpturen verarbeitet – Schauwerkstätten geben Einblick.
+## Die Burg
+Der Kern stammt aus dem Mittelalter, die heutige Gestalt vor allem aus der Zeit nach den Umbauten zur Renaissance- und Barockzeit. Dicke Mauern, ein Innenhof, alte Möbel, knarrende Böden – hier ist nichts durchgestylt.
 
-## Burg Bernstein
-Die mittelalterliche Burg ist heute teils Hotel, beherbergt eine Sternwarte und ist mit dem Forscher Graf Almásy („Der englische Patient") verbunden.
+Ein Besuch ist vor allem als Gast möglich: Wer im Burghotel übernachtet oder dort isst, sieht die Räume von innen. Für Tagesgäste ist das Angebot begrenzt und saisonabhängig – vorher anfragen lohnt sich unbedingt, sonst steht man vor einem verschlossenen Tor.
 
-## Praktische Infos
-- Anfahrt: Südburgenland, von Oberwart ca. 20 Minuten
-- Schauwerkstätten & Burg mit eigenen Öffnungszeiten
-- Ruhige Region – ideal zum Entschleunigen
-    `,
+## Die Almásy-Geschichte
+Auf Burg Bernstein wurde **László Almásy** geboren, der Wüstenforscher, dessen Leben Vorlage für den Roman und Film "Der englische Patient" war. Die Familie Almásy war über Generationen mit der Burg verbunden. Die tatsächliche Biografie unterscheidet sich erheblich von der filmischen Erzählung – vor Ort bekommt man davon ein realistischeres Bild.
+
+## Der Edelserpentin
+Bernstein ist in Fachkreisen für etwas anderes bekannt: den **Edelserpentin**, einen grünen, gut polierbaren Stein, der hier abgebaut und seit dem 19. Jahrhundert zu Schmuck und Kunsthandwerk verarbeitet wird. Im Ort gibt es ein Felsenmuseum, das den Stein, seine Entstehung und die Verarbeitung zeigt – inklusive nachgebauter Stollen.
+
+Das ist eine echte lokale Besonderheit: Edelserpentin in dieser Qualität kommt in Europa kaum anderswo vor.
+
+## Die Umgebung
+Bernstein liegt im hügeligen, waldreichen Teil des Südburgenlands nahe der Grenze zur Steiermark. Rundherum verlaufen ruhige Wanderwege durch Buchenwald; Massentourismus gibt es hier nicht.
+
+## Beste Zeit
+**April bis Oktober.** Im Herbst färbt sich der Buchenwald, außerdem ist das die Zeit der Kastanien und des Weins im Südburgenland. Im Winter ist die Gegend sehr ruhig und vieles geschlossen.
+
+## Anreise
+Von Wien rund zwei Stunden, von Graz etwa eineinhalb, von Eisenstadt gut eine Stunde. Ohne Auto ist Bernstein schwer erreichbar – Bahn bis Oberwart oder Pinkafeld, dann Regionalbus mit dünnem Takt.
+
+## Was du mitnehmen solltest
+- Feste Schuhe für den Burgweg und die Wanderwege ringsum
+- Eine Jacke: In den Burgräumen ist es auch im Sommer kühl
+- Bargeld für Museum und kleine Betriebe
+- Vor allem: eine vorherige Anfrage zur Zugänglichkeit
+
+## Ehrlich gesagt
+Burg Bernstein ist kein Ausflugsziel im üblichen Sinn. Es gibt keinen Schauraum-Rundgang, keinen Shop und kein Programm für Kinder. Wer mit Erwartungen wie an Forchtenstein oder Riegersburg anreist, wird enttäuscht sein.
+
+Der Reiz liegt genau darin: Das hier ist eine private, bewohnte Burg. Wer das schätzt und den Besuch vorher abstimmt, erlebt etwas, das es sonst kaum noch gibt. Wer spontan vorbeifährt, steht womöglich vor dem Tor.
+
+## Gut kombinierbar
+- [Friedensburg Stadtschlaining](/blog/friedensburg-stadtschlaining) – rund 20 Minuten entfernt
+- [Burg Lockenhaus](/blog/burg-lockenhaus) – die dritte Burg im Bunde, mit mehr Programm
+- [Geschriebenstein](/blog/geschriebenstein-wandern-burgenland) – der höchste Berg des Burgenlands, gleich in der Nähe
+
+---
+
+**Kurz gesagt:** Eine bewohnte Burg statt eines Museums – lohnend für alle, die vorher anfragen und das Stille suchen.
+`,
     affiliateLinks: [
       { label: 'Unterkünfte in Bernstein – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Bernstein+Burgenland' },
       { label: 'Burgenland: Erlebnisse – GetYourGuide', url: 'https://www.getyourguide.de/s/?q=Burgenland' },
@@ -4285,19 +4448,54 @@ Und: Die Festung ist eindrucksvoll, aber die Innenräume sind über Jahrhunderte
     date: '2026-06-14', category: 'Wandern', region: 'tirol', difficulty: 'mittel', bestSeason: 'Juni–Oktober',
     highlights: ['Schroffe Dolomiten-Kulisse', 'Sonnenstadt Lienz', 'Ruhig & wenig überlaufen'],
     content: `
-Osttirol ist vom übrigen Tirol durch hohe Berge getrennt und dadurch ursprünglich geblieben. Über der Bezirksstadt Lienz ragen die markanten Lienzer Dolomiten auf.
+Die **Lienzer Dolomiten** südlich von Lienz sind das schroffste Bergmassiv Osttirols: helle Kalkwände, steile Türme und Schuttfelder, die sich deutlich von den grünen Tauern auf der Nordseite des Tals abheben. Wer aus dem Norden kommt, sieht sie plötzlich wie eine Mauer über der Stadt stehen.
 
-## Wandern
-Vom gemütlichen Talweg bis zur hochalpinen Tour über Klettersteige reicht das Angebot. Die Dolomitenhütte ist ein beliebter Ausgangspunkt mit spektakulärem Blick.
+## Die Dolomitenhütte als Schlüssel
+Der einfachste Zugang führt über die **Dolomitenhütte** auf rund 1.620 Metern. Sie liegt spektakulär auf einem Felsvorsprung, mit direktem Blick in die Wände – allein die Terrasse ist die Auffahrt wert.
 
-## Lienz & Umgebung
-Die „Sonnenstadt" Lienz mit ihrer italienisch anmutenden Altstadt, dazu Schloss Bruck und die Nähe zum Nationalpark Hohe Tauern.
+Erreichbar ist sie über eine mautpflichtige, schmale und kurvige Bergstraße ab dem Tal. Die Strecke verlangt etwas Fahrpraxis; sehr breite Fahrzeuge und Wohnmobile sind dafür nicht gedacht.
 
-## Praktische Infos
-- Anfahrt: über Felbertauern oder von Kärnten (Drautal)
-- Hochtouren nur für Geübte mit Ausrüstung
-- Geheimtipp – auch in der Hochsaison ruhiger
-    `,
+## Zum Karlsbader See
+Von der Dolomitenhütte führt der Weg weiter zur **Karlsbader Hütte** am Laserzsee auf rund 2.260 Metern. Der Aufstieg dauert je nach Route etwa zwei Stunden und ist konditionell fordernd, aber technisch machbar.
+
+Oben liegt ein türkisgrüner Bergsee in einem Kessel aus Felswänden – eines der bekanntesten Motive Osttirols, und zu Recht. Wer dort ankommt, versteht, warum sich der Aufstieg lohnt.
+
+## Für Erfahrene
+Rund um die Karlsbader Hütte beginnen Klettersteige und alpine Touren, unter anderem Richtung Laserzwand und Große Sandspitze. Der **Spitzkofel** ist mit über 2.700 Metern der markanteste Gipfel des Massivs – eine ernsthafte Bergtour, keine Wanderung.
+
+## Beste Zeit
+**Juli bis Anfang Oktober.** Vorher liegt in den Kesseln oft noch Schnee, und die Hütten sind geschlossen. Der September ist ideal: stabile Wetterlagen, klare Luft, weniger Betrieb.
+
+Osttirol gilt als besonders sonnenreich, aber im Hochgebirge gilt trotzdem: Nachmittagsgewitter sind im Sommer normal. Früh starten ist Pflicht, nicht Empfehlung.
+
+## Anreise
+Lienz ist mit der Bahn über das Drautal gut erreichbar. Von dort führt die Mautstraße zur Dolomitenhütte; ein Wanderbus verkehrt saisonal.
+
+Mit dem Auto: von Salzburg rund 2,5 Stunden, von Klagenfurt etwa 1,5, von Innsbruck über Felbertauern oder Italien je nach Route rund 2 Stunden.
+
+## Was du mitnehmen solltest
+- Knöchelhohe Bergschuhe – das Gelände ist steinig und schotterig
+- Wetterschutz und warme Schicht: Auf 2.260 Metern ist es auch im August kühl
+- Genug Wasser für den Aufstieg
+- Bargeld für die Hütten
+- Realistische Selbsteinschätzung: Die Wege sind gut, aber lang
+
+## Ehrlich gesagt
+Die Lienzer Dolomiten sind kein Einsteigergebiet. Was von der Dolomitenhütte aus so nah aussieht, bedeutet mehrere hundert Höhenmeter über Schutt und Fels. Wer den Laserzsee "schnell" besuchen will, unterschätzt die Tour regelmäßig.
+
+Außerdem ist die Mautstraße ein echter Faktor: schmal, kurvig, mit Gegenverkehr. Wer sich damit unwohl fühlt, sollte den Wanderbus nehmen.
+
+Und Osttirol ist abgelegen. Für einen Tagesausflug ist die Anfahrt aus dem Norden Österreichs zu weit – das Ziel lohnt sich als Teil eines längeren Aufenthalts.
+
+## Gut kombinierbar
+- [Heiligenblut & Großglockner](/blog/heiligenblut-grossglockner-dorf) – über die Hochalpenstraße erreichbar
+- [Hohe Tauern Nationalpark](/blog/hohe-tauern-nationalpark-salzburg) – die grüne Gegenseite
+- [Karawanken-Grenzwanderung](/blog/karawanken-grenzwanderung-oesterreich-slowenien) – ein ähnlich stiller Grenzraum weiter östlich
+
+---
+
+**Kurz gesagt:** Der Laserzsee unter den Felswänden ist eines der stärksten Bergmotive Österreichs – aber es ist eine echte Bergtour, keine Almwanderung.
+`,
     affiliateLinks: [
       { label: 'Hotels in Lienz/Osttirol – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Lienz' },
       { label: 'Wanderausrüstung – Amazon', url: 'https://www.amazon.de/s?k=wanderausr%C3%BCstung' },
