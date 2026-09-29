@@ -3,7 +3,7 @@
 import { useEffect, useMemo, useState } from 'react';
 import Link from 'next/link';
 import type { Post } from '@/app/lib/posts';
-import { CATEGORY_DOT, CATEGORY_STYLE, readingTime } from '@/app/lib/blog-utils';
+import { CATEGORY_DOT, CATEGORY_STYLE } from '@/app/lib/blog-utils';
 import { isOeffiErreichbar } from '@/app/lib/themenseiten';
 import PostArtwork from '@/app/ui/post-artwork';
 
@@ -15,15 +15,44 @@ const DIFF_STYLE: Record<string, string> = {
 };
 const PAGE_SIZE = 24;
 
-export default function BlogSearch({ posts }: { posts: Post[] }) {
+/**
+ * Nur die Felder, die die Karten anzeigen – bewusst ohne `content`.
+ * Der Artikeltext wuerde sonst fuer alle Artikel als RSC-Payload in den
+ * Browser wandern (gemessen rund 700 KB). Die Volltextsuche laedt ihren
+ * Index stattdessen bei Bedarf von /api/suchindex nach.
+ */
+export type CardPost = Pick<
+  Post,
+  'slug' | 'title' | 'excerpt' | 'date' | 'category' | 'region' | 'difficulty' | 'bestSeason' | 'highlights'
+> & { mins: number };
+
+export default function BlogSearch({ posts }: { posts: CardPost[] }) {
   const [query, setQuery] = useState('');
   const [cat, setCat] = useState<(typeof CATEGORIES)[number]>('Alle');
   const [visible, setVisible] = useState(PAGE_SIZE);
+  const [index, setIndex] = useState<Record<string, string> | null>(null);
 
   useEffect(() => {
     const q = new URLSearchParams(window.location.search).get('q');
     if (q) setQuery(q);
   }, []);
+
+  // Volltext-Index erst holen, wenn wirklich gesucht wird – und nur einmal.
+  useEffect(() => {
+    if (index || query.trim().length < 2) return;
+    let abgebrochen = false;
+    fetch('/api/suchindex')
+      .then((r) => (r.ok ? r.json() : null))
+      .then((rows: [string, string][] | null) => {
+        if (!abgebrochen && rows) setIndex(Object.fromEntries(rows));
+      })
+      .catch(() => {
+        /* Suche funktioniert dann eben nur ueber Titel und Teaser weiter */
+      });
+    return () => {
+      abgebrochen = true;
+    };
+  }, [query, index]);
 
   const filtered = useMemo(() => {
     const q = query.trim().toLowerCase();
@@ -34,12 +63,12 @@ export default function BlogSearch({ posts }: { posts: Post[] }) {
         p.title.toLowerCase().includes(q) ||
         p.excerpt.toLowerCase().includes(q) ||
         p.region.toLowerCase().includes(q) ||
-        p.content.toLowerCase().includes(q) ||
         (p.bestSeason ?? '').toLowerCase().includes(q) ||
-        (p.highlights ?? []).some((h) => h.toLowerCase().includes(q));
+        (p.highlights ?? []).some((h) => h.toLowerCase().includes(q)) ||
+        (index?.[p.slug] ?? '').includes(q);
       return matchCat && matchText;
     });
-  }, [posts, query, cat]);
+  }, [posts, query, cat, index]);
 
   useEffect(() => {
     setVisible(PAGE_SIZE);
@@ -102,7 +131,7 @@ export default function BlogSearch({ posts }: { posts: Post[] }) {
       ) : (
         <div className="grid md:grid-cols-2 gap-6">
           {visiblePosts.map((post) => {
-            const mins = readingTime(post.content);
+            const mins = post.mins;
             return (
               <Link
                 key={post.slug}
