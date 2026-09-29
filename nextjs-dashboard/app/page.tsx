@@ -4,7 +4,7 @@ import { regionen } from '@/app/lib/regionen';
 import HeroSlideshow from '@/app/ui/hero-slideshow';
 import RegionSelector from '@/app/ui/region-selector';
 import Newsletter from '@/app/ui/newsletter';
-import PostArtwork from '@/app/ui/post-artwork';
+import PostBild from '@/app/ui/post-bild';
 import Seewetter from '@/app/ui/seewetter';
 import TippDesTages from '@/app/ui/tipp-des-tages';
 import FadeIn from '@/app/ui/fade-in';
@@ -195,7 +195,7 @@ export default function HomePage() {
           <FadeIn direction="left">
             <Link href={`/blog/${lead.slug}`} className="group block">
               <div className="relative aspect-[16/10] mb-4 overflow-hidden rounded-lg">
-                <PostArtwork seed={lead.slug} category={lead.category} className="absolute inset-0 transition-transform duration-700 group-hover:scale-105" />
+                <PostBild slug={lead.slug} category={lead.category} className="absolute inset-0 transition-transform duration-700 group-hover:scale-105" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
                 <span className="absolute bottom-0 left-0 p-6 font-serif text-lead text-white leading-snug">{lead.title}</span>
               </div>

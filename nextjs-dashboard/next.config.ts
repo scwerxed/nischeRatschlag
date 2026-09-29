@@ -17,6 +17,12 @@ const nextConfig: NextConfig = {
   turbopack: {
     root: path.resolve(__dirname),
   },
+  images: {
+    // Ortsfotos liegen bei Wikimedia Commons (siehe app/lib/post-bilder.ts).
+    // Next lädt sie beim Optimieren einmal und liefert sie danach aus dem
+    // eigenen Cache – Commons wird also nicht bei jedem Seitenaufruf getroffen.
+    remotePatterns: [{ protocol: 'https', hostname: 'upload.wikimedia.org' }],
+  },
   async headers() {
     return [{ source: '/:path*', headers: securityHeaders }];
   },

@@ -7,7 +7,7 @@ import { cloak, excursionsFor } from '@/app/lib/affiliate';
 import TrailMapWrapper from '@/app/ui/trail-map-wrapper';
 import ShareButtons from '@/app/ui/share-buttons';
 import SaveButton from '@/app/ui/save-button';
-import PostArtwork from '@/app/ui/post-artwork';
+import PostBild, { Bildnachweis } from '@/app/ui/post-bild';
 import ViewTracker from '@/app/ui/view-tracker';
 import RecentlyViewed from '@/app/ui/recently-viewed';
 import { readingTime, relatedPosts } from '@/app/lib/blog-utils';
@@ -260,9 +260,12 @@ export default async function BlogPostPage({ params }: Props) {
       {/* ── Kopfbereich mit Landschaftsmotiv ─────────────────────────────── */}
       <header className="relative text-white overflow-hidden">
         <div className="absolute inset-0">
-          <PostArtwork seed={post.slug} category={post.category} className="h-full w-full" />
+          <PostBild slug={post.slug} category={post.category} className="h-full w-full" />
         </div>
         <div className="absolute inset-0 bg-gradient-to-t from-green-900/95 via-green-900/80 to-green-900/55" />
+        <div className="absolute bottom-2 right-4 z-10">
+          <Bildnachweis slug={post.slug} hell />
+        </div>
         <div className="relative max-w-6xl mx-auto px-6 py-16 md:py-24">
           {/* Breadcrumb */}
           <nav className="flex flex-wrap items-center gap-2 text-fine text-white/70 mb-5">

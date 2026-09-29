@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import type { Post } from '@/app/lib/posts';
-import PostArtwork from '@/app/ui/post-artwork';
+import PostBild from '@/app/ui/post-bild';
 import { CATEGORY_STYLE } from '@/app/lib/blog-utils';
 
 function dayOfYear(): number {
@@ -17,7 +17,7 @@ export default function TippDesTages({ posts }: { posts: Post[] }) {
   return (
     <Link href={`/blog/${post.slug}`} className="group block border border-hairline overflow-hidden hover:border-green-400 transition rounded-lg">
       <div className="relative aspect-[21/9] overflow-hidden">
-        <PostArtwork seed={post.slug} category={post.category} className="absolute inset-0 transition-transform duration-700 group-hover:scale-105" />
+        <PostBild slug={post.slug} category={post.category} className="absolute inset-0 transition-transform duration-700 group-hover:scale-105" />
         <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
         <div className="absolute top-4 left-4">
           <span className="inline-flex items-center gap-1.5 bg-white/90 backdrop-blur text-fine font-bold uppercase tracking-wider px-3 py-1.5 text-green-800 rounded-sm">

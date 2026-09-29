@@ -2,7 +2,7 @@ import Link from 'next/link';
 import type { Metadata } from 'next';
 import { getPostBySlug } from '@/app/lib/posts';
 import { BASE, regionName, breadcrumbSchema } from '@/app/lib/seo';
-import PostArtwork from '@/app/ui/post-artwork';
+import PostBild from '@/app/ui/post-bild';
 import { REGEN_GROUPS as GROUPS } from '@/app/lib/themen-picks';
 
 export const metadata: Metadata = {
@@ -73,7 +73,7 @@ export default function RegenPage() {
                   className="surface-card-interactive group block overflow-hidden"
                 >
                   <div className="aspect-[16/7]">
-                    <PostArtwork seed={slug} category={post.category} />
+                    <PostBild slug={slug} category={post.category} />
                   </div>
                   <div className="p-4">
                     <span className="text-fine text-ink-soft">{regionName(post.region)}</span>

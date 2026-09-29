@@ -9,7 +9,7 @@ import { FAQS_BY_REGION } from '@/app/lib/faqs';
 import { REGION_CONTENT } from '@/app/lib/regionen-content';
 import { unterkuenfte } from '@/app/lib/unterkuenfte';
 import { cloak } from '@/app/lib/affiliate';
-import PostArtwork from '@/app/ui/post-artwork';
+import PostBild from '@/app/ui/post-bild';
 import { CATEGORY_STYLE } from '@/app/lib/blog-utils';
 import { isOeffiErreichbar } from '@/app/lib/themenseiten';
 import { seasonStatus, SEASON_LABEL } from '@/app/lib/season';
@@ -229,7 +229,7 @@ export default async function RegionPage({ params }: Props) {
                       className="group block border border-hairline rounded-lg p-6 overflow-hidden hover:border-green-400 transition"
                     >
                       <div className="aspect-[16/9] -mx-6 -mt-6 mb-4 overflow-hidden">
-                        <PostArtwork seed={post.slug} category={post.category} />
+                        <PostBild slug={post.slug} category={post.category} />
                       </div>
                       {/* Meta */}
                       <div className="flex items-center justify-between mb-2 flex-wrap gap-1">

@@ -5,7 +5,7 @@ import Link from 'next/link';
 import type { Post } from '@/app/lib/posts';
 import { CATEGORY_DOT, CATEGORY_STYLE } from '@/app/lib/blog-utils';
 import { isOeffiErreichbar } from '@/app/lib/themenseiten';
-import PostArtwork from '@/app/ui/post-artwork';
+import PostBild from '@/app/ui/post-bild';
 
 const CATEGORIES = ['Alle', 'Wandern', 'Baden', 'Ausflug', 'Unterkunft'] as const;
 const DIFF_STYLE: Record<string, string> = {
@@ -139,7 +139,7 @@ export default function BlogSearch({ posts }: { posts: CardPost[] }) {
                 className="surface-card-interactive group block overflow-hidden"
               >
                 <div className="aspect-[16/9] overflow-hidden relative">
-                  <PostArtwork seed={post.slug} category={post.category} className="transition-transform duration-700 group-hover:scale-105" />
+                  <PostBild slug={post.slug} category={post.category} className="transition-transform duration-700 group-hover:scale-105" />
                   <div className="absolute top-3 right-3">
                     <span className="bg-canvas/90 backdrop-blur text-fine font-medium text-ink-muted px-2.5 py-1 rounded-full">
                       {mins} Min.

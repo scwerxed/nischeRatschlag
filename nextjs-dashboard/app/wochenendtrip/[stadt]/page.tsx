@@ -4,7 +4,7 @@ import type { Metadata } from 'next';
 import { TRIP_CITIES, tripsFrom } from '@/app/lib/wochenendtrip';
 import { BASE, regionName, breadcrumbSchema } from '@/app/lib/seo';
 import { CATEGORY_STYLE } from '@/app/lib/blog-utils';
-import PostArtwork from '@/app/ui/post-artwork';
+import PostBild from '@/app/ui/post-bild';
 
 type Props = { params: Promise<{ stadt: string }> };
 
@@ -89,7 +89,7 @@ export default async function WochenendtripStadtPage({ params }: Props) {
                 className="surface-card-interactive group block overflow-hidden"
               >
                 <div className="aspect-[16/9]">
-                  <PostArtwork seed={post.slug} category={post.category} />
+                  <PostBild slug={post.slug} category={post.category} />
                 </div>
                 <div className="p-4">
                   <div className="flex items-center justify-between gap-2 mb-1">
