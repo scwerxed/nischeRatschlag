@@ -3389,19 +3389,50 @@ Rund um den See führen Rad- und Spazierwege; die Gegend ist auch bei Stand-up-P
     date: '2026-06-12', category: 'Baden', region: 'steiermark', bestSeason: 'Juni–September',
     highlights: ['Glasklares, sauberes Wasser', 'Seeumrundung in 2 Std. (flach)', 'Traditionelle Plätten-Bootsfahrten'],
     content: `
-Der Altausseer See im steirischen Salzkammergut ist ein Postkartenmotiv: tiefgrünes, kristallklares Wasser vor der Kulisse von Loser und Trisselwand.
+Der **Altausseer See** ist für viele der schönste See des Salzkammerguts – und das liegt weniger an seiner Größe als an der Kulisse: Über dem Wasser steht die Wand des Losers, und weil auf dem See keine Motorboote fahren dürfen, ist es außerordentlich still.
 
-## Baden & Bootfahren
-Das Wasser ist sauber und im Hochsommer erfrischend (bis ~20 °C). Ruderboote und die traditionellen flachen „Plätten" kann man mieten – die ruhigste Art, den See zu erleben.
+## Der Rundweg
+Das Beste am Altausseer See ist, dass man einmal ganz herumgehen kann. Der Rundweg misst rund sieben Kilometer, ist fast durchgehend flach und verläuft über weite Strecken direkt am Ufer. In etwa zwei Stunden ist man herum – mit Pausen deutlich länger, weil sich ständig neue Blicke auftun.
 
-## Seeumrundung
-Ein flacher, knapp 8 km langer Rundweg führt um den See – familientauglich, schattig, mit traumhaften Ausblicken. Ideal zum Spazieren oder Radeln.
+Der Weg ist so gut ausgebaut, dass er auch mit Kinderwagen und weitgehend barrierearm machbar ist. Das ist bei Seerundwegen in den Alpen selten.
 
-## Praktische Infos
-- Anfahrt: Von Bad Aussee wenige Minuten
-- Parkplätze gebührenpflichtig, früh kommen
-- Kombinierbar mit der Loser-Panoramastraße
-    `,
+Auf halber Strecke liegt die **Seewiese**, eine Lichtung am gegenüberliegenden Ufer – ein klassischer Rastplatz mit Einkehrmöglichkeit.
+
+## Baden
+Das Wasser hat Trinkwasserqualität und ist entsprechend klar. Es ist allerdings **kühl**: Der See liegt auf gut 700 Metern, ist tief und wird von kalten Zuflüssen gespeist. Selbst im Hochsommer bleibt er deutlich frischer als die Kärntner Seen.
+
+Zum Baden gibt es ein Strandbad sowie einzelne öffentliche Einstiege am Rundweg. Wer Wärme sucht, ist am Grundlsee oder weiter südlich besser aufgehoben; wer klares, ruhiges Wasser will, ist hier genau richtig.
+
+## Mit der Plätte über den See
+Statt zu gehen, kann man sich in einer **Plätte** über den See rudern lassen – dem traditionellen flachen Holzboot der Region. Das ist kein Freizeitpark-Angebot, sondern eine örtliche Tradition, und vom Wasser aus wirkt die Loserwand noch einmal anders.
+
+## Altaussee und das Salzbergwerk
+Der Ort Altaussee selbst ist klein und hat sich seinen Charakter bewahrt. Oberhalb liegt das **Salzbergwerk**, das über die Region hinaus bekannt wurde, weil dort gegen Ende des Zweiten Weltkriegs riesige Mengen geraubter Kunstwerke eingelagert und vor der Zerstörung bewahrt wurden. Die Führung greift diese Geschichte auf – ein ungewöhnlich ernster Stoff für ein Schaubergwerk.
+
+## Beste Zeit
+**Mai bis Oktober.** Der Frühsommer ist am grünsten, der Oktober bringt Farben und Nebelstimmung über dem Wasser. Zum Baden sind Juli und August realistisch, und auch dann braucht es Überwindung.
+
+Im Winter ist der Rundweg bei Schnee oft gut begehbar und sehr ruhig.
+
+## Anreise
+Bad Aussee ist mit der Salzkammergutbahn erreichbar, von dort verkehrt ein Bus nach Altaussee – für einen See in dieser Lage eine erstaunlich gute Öffi-Anbindung. Mit dem Auto von Salzburg rund 1,5 Stunden, von Graz etwa zwei.
+
+Parkplätze gibt es in Altaussee, an Sommerwochenenden werden sie knapp.
+
+## Ehrlich gesagt
+Der See ist kein Badesee im klassischen Sinn – dafür ist er zu kalt und das Ufer zu wenig auf Liegewiesen ausgelegt. Wer mit der Erwartung "Badeurlaub" kommt, wird enttäuscht.
+
+Außerdem ist das Ausseerland wetterempfindlich: Die Berge halten Wolken fest, und an grauen Tagen verliert der See viel von seiner Wirkung, weil die Loserwand dann verschwindet.
+
+## Gut kombinierbar
+- [Bad Aussee & Ausseerland](/blog/bad-aussee-ausseerland) – der Überblick über die ganze Region
+- [Grundlsee](/blog/grundlsee-steirisches-meer) – der größere, wärmere Nachbarsee
+- [Hallstatt](/blog/hallstatt-salzkammergut) – rund eine Stunde entfernt
+
+---
+
+**Kurz gesagt:** Der stillste See des Salzkammerguts, am besten zu Fuß einmal herum – und mit realistischen Erwartungen an die Wassertemperatur.
+`,
     affiliateLinks: [
       { label: 'Unterkünfte im Ausseerland – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Altaussee' },
       { label: 'Steiermark: Erlebnisse – GetYourGuide', url: 'https://www.getyourguide.de/s/?q=Steiermark' },
@@ -3709,19 +3740,52 @@ Außerdem hängt viel an den Öffnungszeiten der kleinen Betriebe. An einem Mont
     date: '2026-06-12', category: 'Ausflug', region: 'steiermark', bestSeason: 'Mai–Oktober',
     highlights: ['Spektakuläre Schlucht mit Hängebrücken', 'Smaragdgrünes Quellwasser', 'Familientauglicher Steig'],
     content: `
-Die Wasserlochklamm bei Palfau im Gesäuse-Vorland ist eine der schönsten erschlossenen Klammen der Steiermark – mit fünf Wasserfällen und leuchtend grünem Wasser.
+Die **Wasserlochklamm** bei Palfau im steirischen Salzatal ist eine der schönsten kleinen Klammen Österreichs – und deutlich weniger bekannt als ihre Konkurrenz in Salzburg oder Tirol. Vier Wasserfälle, Holzstege und eine Hängebrücke auf einer kompakten Strecke.
 
-## Der Klammweg
-Gut gesicherte Steige, Holzbrücken und eine Hängebrücke führen entlang der Wasserfälle bergauf zum „Wasserloch", dem smaragdgrünen Quelltopf. Hin und zurück ca. 2 Stunden.
+## Der Weg
+Vom Eingang führt ein gut ausgebauter Steig entlang des Wasserlochbachs die Schlucht hinauf. Der Weg besteht aus Holztreppen, Brücken und Galerien, die direkt über und neben dem Wasser verlaufen – man ist die ganze Zeit nah dran.
 
-## Für wen?
-Familientauglich (Kinder lieben die Brücken), aber festes Schuhwerk nötig – es ist nass und teils steil.
+Auf dem Weg passiert man vier Wasserfälle, die von unten nach oben an Höhe zunehmen. Für den Hin- und Rückweg sollte man etwa eineinhalb Stunden einplanen; wer Zeit mitbringt, geht oben noch ein Stück weiter.
 
-## Praktische Infos
-- Eintritt/Parkgebühr vor Ort
-- Rutschfeste Schuhe & Regenjacke
-- Anfahrt: nahe Palfau, gut mit dem Gesäuse kombinierbar
-    `,
+Es geht durchgehend bergauf – nicht steil, aber stetig. Rund 200 Höhenmeter kommen zusammen.
+
+## Warum die Klamm besonders ist
+Der Bach entspringt aus einer Karstquelle, die nach starken Regenfällen und zur Schneeschmelze enorme Wassermengen ausstoßen kann. Dann verwandelt sich die ruhige Schlucht in ein tosendes Spektakel – beeindruckend, aber auch der Grund, warum die Klamm bei Unwetter geschlossen wird.
+
+Umgekehrt kann in sehr trockenen Sommern deutlich weniger Wasser fließen. Wer die Wasserfälle in voller Wucht sehen will, kommt im Mai oder Juni.
+
+## Beste Zeit
+Die Klamm ist **saisonal geöffnet**, üblicherweise vom Frühjahr bis in den Herbst; die genauen Termine und Zeiten wechseln jährlich und stehen auf der offiziellen Seite.
+
+Ideal ist der späte Frühling wegen der Wassermenge und der Frühherbst wegen der Farben. Im Hochsommer ist die Klamm angenehm kühl – ein guter Plan für heiße Tage.
+
+## Anreise & Parken
+Palfau liegt im Salzatal zwischen Gesäuse und Mariazell. Von Graz rund zwei Stunden, von Wien etwa 2,5, von Linz gut eineinhalb. Am Eingang gibt es einen Parkplatz.
+
+Mit öffentlichen Verkehrsmitteln ist die Anreise aufwendig – die Region ist dünn erschlossen. Realistisch ist das ein Autoziel.
+
+## Was du mitnehmen solltest
+- **Rutschfeste Schuhe** – die Holzstege sind durch die Gischt dauerhaft feucht
+- Regenjacke, auch bei Sonnenschein
+- Eine warme Schicht: In der Schlucht ist es merklich kühler
+- Kein Kinderwagen; mit Kindern ab Kindergartenalter funktioniert es gut, kleinere brauchen eine Trage
+
+## Ehrlich gesagt
+Die Wasserlochklamm ist kürzer als die großen Namen wie die Liechtensteinklamm – wer ein stundenlanges Erlebnis erwartet, wird überrascht sein. Als Halbtagesausflug ist sie ideal, als alleiniges Tagesziel bei langer Anfahrt eher knapp.
+
+Der Steig ist außerdem eng; bei Gegenverkehr muss man aneinander vorbei. An schönen Sommerwochenenden empfiehlt sich der frühe Vormittag.
+
+Und: Der Eintritt ist kostenpflichtig, und bei Gewittergefahr wird kurzfristig gesperrt. Ein Blick auf die Wetterlage vor der Abfahrt gehört dazu.
+
+## Gut kombinierbar
+- [Gesäuse Nationalpark](/blog/gesaeuse-nationalpark-wandern) – die wilde Bergwelt gleich westlich
+- [Mariazell](/blog/mariazell-wallfahrt-ausflug) – rund eine Stunde östlich
+- [Erzberg](/blog/erzberg-eisenerz-steiermark) – der abgestufte Berg, gut kombinierbar auf derselben Route
+
+---
+
+**Kurz gesagt:** Eine der schönsten kleinen Klammen des Landes, am stärksten im Mai und Juni – und noch ohne den großen Andrang.
+`,
     affiliateLinks: [
       { label: 'Unterkünfte bei Palfau – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Palfau' },
       { label: 'Wanderschuhe rutschfest – Amazon', url: 'https://www.amazon.de/s?k=wanderschuhe+wasserdicht' },
@@ -4162,19 +4226,52 @@ Ganzjährig ein Ziel: Dezember bis März für Langlauf und Winterwandern, Juni b
     date: '2026-06-14', category: 'Ausflug', region: 'tirol', bestSeason: 'April–Oktober',
     highlights: ['Mächtige Festung über dem Inn', 'Berühmte Heldenorgel', 'Charmante Altstadt (Römerhofgasse)'],
     content: `
-Kufstein, das „Tor zu Tirol", wird überragt von einer der eindrucksvollsten Festungsanlagen Österreichs.
+Die **Festung Kufstein** thront auf einem Felsen mitten über der Stadt und dem Inn – so nah, dass man vom Stadtplatz aus den Kopf in den Nacken legen muss. Sie ist eine der markantesten Burganlagen Tirols und liegt genau dort, wo Tirol und Bayern aufeinandertreffen.
 
-## Die Festung
-Über einen Panoramaaufzug oder zu Fuß erreichbar, bietet sie Museen, den Kaiserturm und einen weiten Blick über das Inntal. Täglich erklingt die **Heldenorgel** – eine der größten Freiluftorgeln der Welt.
+## Die Heldenorgel
+Das Ungewöhnlichste an der Festung ist ihr Klang. Im Bürgerturm steht die **Heldenorgel**, eine der größten Freiluftorgeln der Welt. Sie wird täglich gespielt – der Klang trägt über die ganze Stadt und ist noch weit außerhalb zu hören.
 
-## Altstadt
-Die malerische Römerhofgasse mit ihren Gasthäusern (bekannt durch das Lied „Kufsteinlied") lädt zum Bummeln und Einkehren.
+Das Besondere: Der Spieltisch steht nicht bei den Pfeifen, sondern getrennt davon, und man hört das Instrument am besten nicht in der Festung, sondern unten in der Stadt. Wer es erleben will, sollte die Spielzeit vorher nachsehen und sich entscheiden, wo er stehen möchte.
 
-## Praktische Infos
-- Anfahrt: An der A12/Grenze zu Bayern, ca. 1 Std. von Innsbruck
-- Heldenorgel täglich zur Mittagszeit
-- Gut mit dem Kaisergebirge (Wandern) kombinierbar
-    `,
+## Der Rundgang
+Die Anlage ist groß und lässt sich gut in ein bis zwei Stunden begehen. Zum Kern gehören der mächtige **Kaiserturm** mit meterdicken Mauern, die Kasematten und der tiefe Brunnen. Im Kaiserturm waren über Jahrhunderte Gefangene untergebracht – die Zellen sind erhalten und Teil des Rundgangs.
+
+Dazu kommen wechselnde Ausstellungen und ein Museum zur Regionalgeschichte. Von den Wehrgängen reicht der Blick über das Inntal, den Wilden Kaiser und die bayerische Seite.
+
+## Hinauf kommen
+Eine Panoramabahn fährt vom Stadtzentrum hinauf – bequem und auch für Menschen geeignet, die Steigungen vermeiden wollen. Alternativ führt ein gepflasterter Fußweg hinauf, für den man etwa 15 bis 20 Minuten braucht.
+
+Innerhalb der Anlage geht es dann aber über Treppen und Kopfsteinpflaster; vollständig barrierefrei ist die Festung nicht.
+
+## Beste Zeit
+Ganzjährig geöffnet, mit saisonal unterschiedlichen Zeiten. Am schönsten ist der **Spätnachmittag im Sommer**, wenn das Licht flach über das Inntal fällt, oder ein klarer **Herbsttag**.
+
+Kufstein ist außerdem ein guter Regentag-Ersatz, weil ein großer Teil des Rundgangs im Inneren stattfindet.
+
+## Anreise
+Kufstein liegt direkt an der Inntalautobahn und an der Bahnstrecke München–Innsbruck – die Anreise mit dem Zug ist ausgesprochen einfach, der Bahnhof liegt in Gehweite zur Altstadt. Von Innsbruck rund 50 Minuten, von München knapp eine Stunde.
+
+Parkplätze gibt es in der Stadt; direkt an der Festung ist das Parken begrenzt.
+
+## Was du mitnehmen solltest
+- Feste Schuhe – Kopfsteinpflaster und alte Treppen
+- Eine Jacke: In den Kasematten und im Kaiserturm ist es auch im Sommer kühl
+- Zeit für die Altstadt unterhalb, die eigenständig sehenswert ist
+
+## Ehrlich gesagt
+Kufstein ist ein beliebtes Ausflugsziel für Tages- und Busgäste, besonders aus Bayern. An Wochenenden und in der Hochsaison ist entsprechend viel los.
+
+Und: Die Festung ist eindrucksvoll, aber die Innenräume sind über Jahrhunderte stark verändert worden – wer originale mittelalterliche Substanz erwartet, findet vor allem spätere Umbauten. Der eigentliche Wert liegt in der Lage, im Kaiserturm und in der Orgel.
+
+## Gut kombinierbar
+- [Alpbachtal](/blog/alpbachtal-schoenstes-dorf) – rund 30 Minuten entfernt
+- [Wilder Kaiser](/blog/wilder-kaiser-wandern) – das Bergmassiv gleich nebenan
+- [Walchsee im Kaiserwinkl](/blog/walchsee-kaiserwinkl) – der Badesee der Region
+
+---
+
+**Kurz gesagt:** Wegen der Lage, des Kaiserturms und der Orgel – und weil man mit dem Zug direkt davor aussteigt.
+`,
     affiliateLinks: [
       { label: 'Hotels in Kufstein – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Kufstein' },
       { label: 'Tirol: Tickets – GetYourGuide', url: 'https://www.getyourguide.de/s/?q=Kufstein' },
@@ -4685,19 +4782,52 @@ Und: Die Burg ist stark auf Publikum ausgerichtet. Wer eine stille, unrestaurier
     date: '2026-06-15', category: 'Wandern', region: 'salzburg', difficulty: 'mittel', bestSeason: 'Juni–Oktober',
     highlights: ['Höchste Almendichte der Alpen', 'Über 40 bewirtschaftete Almen', 'Familienfreundliche Touren'],
     content: `
-Das Großarltal im Salzburger Pongau trägt seinen Beinamen „Tal der Almen" zu Recht – nirgends gibt es so viele bewirtschaftete Almen auf engem Raum.
+Das **Großarltal** trägt seinen Beinamen "Tal der Almen" nicht aus Marketinggründen: Auf verhältnismäßig kleinem Raum liegen hier rund vierzig bewirtschaftete Almen – eine Dichte, die es in dieser Form kaum ein zweites Mal gibt. Wandern heißt hier fast automatisch: von Hütte zu Hütte.
 
-## Wandern & Einkehr
-Von der gemütlichen Almwanderung bis zur Gipfeltour ist alles dabei – und überall lockt eine Alm mit hausgemachter Jause, Buttermilch und Kaiserschmarrn.
+## Was das Tal ausmacht
+Das Großarltal zweigt vom Gasteinertal ab und endet nach etwa 20 Kilometern im Talschluss bei Hüttschlag, wo der Nationalpark Hohe Tauern beginnt. Es ist ein Sackgassental – es führt keine Durchzugsstraße hindurch, und das merkt man am Verkehr wie an der Ruhe.
 
-## Für Familien
-Viele Wege sind kinderwagentauglich oder kurz, mit Tieren zum Streicheln auf den Almen.
+Die Almen sind keine Kulisse, sondern in Betrieb: Es wird gesennt, es stehen Kühe auf den Wiesen, und die Jause auf der Hütte kommt oft aus eigener Produktion. Wer Almkultur nicht als Museum, sondern als Wirtschaftsform erleben will, ist hier richtig.
 
-## Praktische Infos
-- Anfahrt: über St. Johann im Pongau ins Großarltal
-- Bergbahn Großarl erleichtert den Einstieg
-- Almsaison ca. Juni bis September
-    `,
+## Die Wanderungen
+**Für Einsteiger und Familien:** Viele Almen sind über breite, gleichmäßig ansteigende Wege erreichbar. Der Weg zur Kreealm oder ins hintere Tal lässt sich gut mit Kindern gehen, Einkehr inklusive.
+
+**Für Ambitionierte:** Vom Talschluss führen Touren hinauf in die Hohen Tauern – deutlich alpiner, teils über 2.000 Meter, mit entsprechendem Anspruch an Kondition und Wetterurteil.
+
+**Der Klassiker:** Die Almwanderung als Mehrtagestour, bei der man sich Etappen entlang der Hütten zusammenstellt. Das Tal ist dafür wie gemacht, weil die Abstände stimmen.
+
+Die Bergbahn in Großarl spart bei mehreren Touren den ersten, steilsten Teil.
+
+## Beste Zeit
+**Juni bis September** – das ist die Almsaison, und sie bestimmt alles. Außerhalb dieser Monate sind die meisten Hütten geschlossen, und dann fehlt dem Tal genau das, was es besonders macht.
+
+Der **Almabtrieb** im September ist ein Erlebnis, aber auch der vollste Termin. Ende Juni und Anfang Juli bieten den besten Kompromiss: Hütten offen, Wiesen in Blüte, noch keine Ferienspitze.
+
+## Anreise & Parken
+Von Salzburg rund eine Stunde: Tauernautobahn bis St. Johann im Pongau, dann ins Tal. Parkplätze gibt es in Großarl, Hüttschlag und an den Wanderausgangspunkten.
+
+Mit dem Zug bis St. Johann im Pongau, weiter mit dem Postbus ins Tal. Die Verbindung funktioniert, ist aber nicht dicht getaktet – die letzte Rückfahrt sollte man kennen, bevor man startet.
+
+## Was du mitnehmen solltest
+- **Bargeld** – viele Almen nehmen keine Karte, das ist der häufigste Anfängerfehler
+- Feste Schuhe; Almwege sind nach Regen tief und rutschig
+- Wetterschutz: Im Tal kann die Sonne scheinen, während oben schon eine Front steht
+- Respekt vor Weidevieh: Hunde an der Leine, Abstand zu Mutterkühen
+
+## Ehrlich gesagt
+Das Großarltal ist ein Wandertal – und sonst wenig. Wer Attraktionen, Museen oder Abendprogramm sucht, wird es als langweilig empfinden. Bei anhaltendem Regen gibt es kaum Alternativen vor Ort; man muss dann ins Gasteinertal oder nach St. Johann ausweichen.
+
+Außerdem gilt: "Almwanderung" klingt gemütlicher, als es ist. Die meisten Hütten liegen mehrere hundert Höhenmeter über dem Tal, und der Weg zurück kommt nach der Jause.
+
+## Gut kombinierbar
+- [Bad Gastein](/blog/bad-gastein-wasserfall) – das Nachbartal, komplett anderes Gesicht
+- [Liechtensteinklamm](/blog/liechtensteinklamm) – der Plan B bei Regen, rund 20 Minuten entfernt
+- [Filzmoos](/blog/filzmoos-bischofsmuetze) – noch mehr Almen, andere Kulisse
+
+---
+
+**Kurz gesagt:** Das beste Tal in Salzburg, wenn Wandern für dich heißt: Hütte, Aussicht, Jause, nächste Hütte. Bargeld nicht vergessen.
+`,
     affiliateLinks: [
       { label: 'Hotels im Großarltal – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Gro%C3%9Farl' },
       { label: 'Wanderschuhe – Amazon', url: 'https://www.amazon.de/s?k=wanderschuhe+damen' },
@@ -4711,19 +4841,54 @@ Viele Wege sind kinderwagentauglich oder kurz, mit Tieren zum Streicheln auf den
     date: '2026-06-15', category: 'Wandern', region: 'salzburg', difficulty: 'mittel', bestSeason: 'Mai–Oktober',
     highlights: ['Seilbahn von Salzburg aufs Hochplateau', 'Panorama über Stadt & Alpen', 'Sagenumwobener Berg'],
     content: `
-Der Untersberg an der Grenze zu Bayern ist Salzburgs markanter Hausberg – ein wuchtiges Kalkmassiv, um das sich zahlreiche Sagen ranken (Kaiser Karl soll im Berg schlafen).
+Der **Untersberg** ist Salzburgs Hausberg – ein massiver Karststock direkt an der Grenze zu Bayern, der die Stadt nach Süden hin abschließt. Von fast jedem Punkt der Altstadt aus sieht man ihn, und mit der Seilbahn steht man in zehn Minuten oben.
 
-## Hinauf
-Die Untersbergbahn bringt dich in wenigen Minuten von St. Leonhard auf 1.776 m. Oben: Aussichtsplattform, Gipfelkreuz-Wanderungen und Blick über Salzburg.
+## Die Auffahrt
+Die Untersbergbahn startet in St. Leonhard, rund 15 Autominuten südlich von Salzburg, und bringt dich auf das **Geiereck** auf etwa 1.776 Metern. Der Höhenunterschied ist beachtlich – man fährt vom grünen Tal direkt in eine karge Felslandschaft.
 
-## Wandern
-Vom kurzen Gipfelweg bis zu längeren Plateau-Touren – festes Schuhwerk und Wetterfestigkeit vorausgesetzt.
+Oben verändert sich alles: statt Wiesen und Wald ein verkarstetes Plateau mit Dolinen, Felsrinnen und niedrigem Latschenbewuchs. Es wirkt deutlich rauer, als die kurze Fahrzeit vermuten lässt.
 
-## Praktische Infos
-- Anfahrt: Von Salzburg ca. 20 Minuten zur Talstation
-- Oben deutlich kühler – warme Schicht mitnehmen
-- Bei guter Fernsicht besonders lohnend
-    `,
+## Oben unterwegs
+Vom Bergrestaurant sind es wenige Minuten zu den ersten Aussichtspunkten mit Blick über Salzburg, das Alpenvorland und bei klarer Sicht weit nach Bayern hinein. Nach Süden steht man den Berchtesgadener Bergen gegenüber.
+
+Der Weg zum **Salzburger Hochthron**, dem höchsten Punkt auf österreichischer Seite bei rund 1.850 Metern, dauert von der Bergstation etwa eine halbe bis dreiviertel Stunde und ist markiert, aber steinig – feste Schuhe sind hier keine Empfehlung, sondern Voraussetzung.
+
+Wer mehr will: Das Plateau bietet längere Übergänge, unter anderem Richtung deutsche Seite. Das ist echtes Karstgelände – ohne Erfahrung und bei Nebel schnell unübersichtlich.
+
+## Aufstieg zu Fuß
+Der Untersberg lässt sich auch komplett zu Fuß besteigen, etwa über den Dopplersteig oder den Reitsteig. Das sind ernsthafte Bergtouren mit über 1.300 Höhenmetern und teils ausgesetzten Passagen – nichts für einen spontanen Nachmittag.
+
+## Die Sage
+Um den Untersberg rankt sich die bekannteste Sage des Landes: Im Inneren des Berges schlafe ein Kaiser mit seinem Gefolge und erwache, wenn die Zeit gekommen sei. Der Berg gilt vielen als besonderer Ort – das gehört zur Erzählung dieser Gegend und begegnet einem vor Ort immer wieder.
+
+## Beste Zeit
+**Mai bis Oktober.** Entscheidend ist die Sicht: Bei Hochnebel im Tal steht man oben oft in strahlender Sonne über dem Nebelmeer – das ist der beste Fall. Bei Wolken auf Gipfelhöhe sieht man dagegen nichts.
+
+Im Winter ist die Bahn in Betrieb, das Plateau dann aber winterlich und nur mit entsprechender Ausrüstung begehbar. Die Bahn hat jährliche Revisionszeiten – vorab prüfen.
+
+## Anreise
+Mit dem Auto von Salzburg rund 15 Minuten nach St. Leonhard, Parkplatz an der Talstation. Mit dem Bus ab Salzburg Hauptbahnhof oder Zentrum direkt bis zur Talstation – eine der bequemsten Öffi-Verbindungen zu einem Berg in Österreich.
+
+## Was du mitnehmen solltest
+- Feste Schuhe mit Profil – das Karstgelände ist scharfkantig und uneben
+- Warme Jacke: Der Temperaturunterschied zum Tal beträgt oft zehn Grad und mehr
+- Sonnenschutz; oben gibt es kaum Schatten
+- Genug Wasser, auf dem Plateau gibt es keine Quellen
+
+## Ehrlich gesagt
+Der Untersberg ist bequem erreichbar – und entsprechend gut besucht. An schönen Wochenenden bilden sich an der Talstation Wartezeiten.
+
+Wichtiger noch: Viele unterschätzen das Gelände oben. Weil die Auffahrt so einfach ist, laufen Leute in Turnschuhen ins Karstfeld. Das Plateau ist Hochgebirge, Wetterumschwünge kommen schnell, und bei Nebel verliert man die Markierungen leicht aus den Augen.
+
+## Gut kombinierbar
+- [Salzburger Altstadt](/blog/salzburg-stadt-altstadt) – 15 Minuten entfernt, ideal als Nachmittagsprogramm
+- [Schloss Hellbrunn](/blog/schloss-hellbrunn-salzburg) – liegt praktisch auf dem Weg
+- [Gaisberg](/blog/gaisberg-salzburg-aussicht) – der zweite Salzburger Aussichtsberg, deutlich sanfter
+
+---
+
+**Kurz gesagt:** In zehn Minuten vom Tal ins Hochgebirge – großartig, solange man es nicht für einen Spaziergang hält.
+`,
     affiliateLinks: [
       { label: 'Hotels bei Salzburg – booking.com', url: 'https://www.booking.com/city/at/salzburg.de.html' },
       { label: 'Wanderausrüstung – Amazon', url: 'https://www.amazon.de/s?k=wanderrucksack+20l' },
@@ -4791,19 +4956,52 @@ Außerdem ist das Kitzsteinhorn ein durchgeplantes Ausflugsziel mit Gastronomie,
     date: '2026-06-15', category: 'Ausflug', region: 'salzburg', bestSeason: 'Mai–Oktober',
     highlights: ['Eine der tiefsten Klammen der Alpen', 'Neue Stege & spektakuläre Wendeltreppe', 'Tosendes Wasser & Wasserfall'],
     content: `
-Die Liechtensteinklamm bei St. Johann im Pongau ist eine der eindrucksvollsten Schluchten der Alpen – stellenweise nur wenige Meter breit und über 300 m tief.
+Die **Liechtensteinklamm** bei St. Johann im Pongau gehört zu den längsten und tiefsten Schluchten der Alpen. Stellenweise stehen die Felswände nur wenige Meter auseinander und ragen über 300 Meter auf – man geht durch einen Spalt im Berg, durch den unten die Großarler Ache tost.
 
-## Der Klammweg
-Moderne Stege, Brücken und eine spektakuläre Wendeltreppe führen entlang der tosenden Salzach-Ache bis zum Wasserfall am Ende. Hin und zurück ca. 1–1,5 Stunden.
+## Der Weg durch die Klamm
+Stege und Brücken führen entlang der Wasserlinie immer tiefer in die Schlucht hinein. Der Weg endet an einem Wasserfall am hinteren Ende. Hin und zurück sollte man ein bis eineinhalb Stunden einplanen – nicht wegen der Länge, sondern weil man ständig stehen bleibt.
 
-## Wichtig
-Festes, rutschfestes Schuhwerk und Regenschutz – in der Klamm ist es feucht und kühl.
+Nach einem Felssturz wurde die Klamm umfassend neu erschlossen. Seither führt unter anderem eine **freitragende Wendeltreppe** durch den engsten Abschnitt, die als Bauwerk fast so beeindruckend ist wie die Schlucht selbst. Der Weg ist dadurch sicherer und breiter als früher, wirkt an manchen Stellen aber auch technischer.
 
-## Praktische Infos
-- Eintritt/Parkgebühr vor Ort
-- Anfahrt: Von Salzburg ca. 50 Minuten
-- Bei Starkregen kann die Klamm gesperrt sein
-    `,
+## Wie es sich anfühlt
+Es ist laut, feucht und deutlich kühler als draußen – auch an einem 30-Grad-Tag. Das Licht fällt nur schmal von oben herein, und die Gischt steht in der Luft. Genau deshalb ist die Klamm ein perfektes Ziel für Hitzetage und für Nachmittage, an denen Wandern im Freien keinen Spaß macht.
+
+## Beste Zeit
+Die Klamm ist saisonal geöffnet, in der Regel vom Frühjahr bis in den Herbst. Die genauen Termine wechseln jährlich – vorab auf der offiziellen Seite nachsehen.
+
+**Wasserreich und am spektakulärsten** ist sie nach der Schneeschmelze im Mai und Juni. Im Spätsommer führt die Ache weniger Wasser, dafür ist es angenehmer zu gehen.
+
+Bei Starkregen oder Unwettergefahr wird die Klamm gesperrt – das ist keine Schikane, sondern Notwendigkeit. Wer bei zweifelhafter Prognose anreist, sollte vorher anrufen.
+
+## Anreise & Parken
+St. Johann im Pongau liegt rund 50 Autominuten südlich von Salzburg an der Tauernautobahn. Zur Klamm führt eine Stichstraße zu einem Parkplatz; von dort ist es noch ein Stück zu Fuß bis zum Eingang.
+
+Mit der Bahn bis St. Johann im Pongau, danach braucht es Bus oder Taxi – die letzten Kilometer sind ohne Auto der schwächste Teil der Anreise.
+
+An Sommerwochenenden und besonders an Regentagen wird es voll, weil dann alle dieselbe Idee haben. Früher Vormittag ist deutlich angenehmer.
+
+## Was du mitnehmen solltest
+- **Rutschfeste Schuhe** – die Stege sind dauerhaft nass, das ist der wichtigste Punkt
+- Regen- oder Windjacke: in der Klamm steht Sprühnebel in der Luft
+- Eine zusätzliche Schicht; der Temperaturunterschied zum Tal ist erheblich
+- Kein Kinderwagen – der Weg ist dafür nicht geeignet; Tragen funktionieren
+
+## Ehrlich gesagt
+Die Klamm ist ein Einbahn-Erlebnis: Man geht hinein, man geht heraus, und bei Gegenverkehr auf schmalen Stegen wird es eng. Wer Platz und Ruhe braucht, sollte Stoßzeiten meiden.
+
+Außerdem ist es dort tatsächlich kalt und nass – wer in Sandalen und T-Shirt kommt, friert. Und für Menschen mit ausgeprägter Höhenangst können die Stege über der Schlucht unangenehm sein, auch wenn sie durchgehend gesichert sind.
+
+Der Eintritt ist kostenpflichtig; die genaue Höhe steht auf der offiziellen Seite.
+
+## Gut kombinierbar
+- [Burg Hohenwerfen](/blog/burg-hohenwerfen) – rund 30 Minuten nördlich, mit Greifvogelschau
+- [Eisriesenwelt Werfen](/blog/eisriesenwelt-werfen) – die zweite große Kühl-Attraktion der Gegend
+- [Grossarltal](/blog/grossarltal-tal-der-almen) – das Tal, aus dem die Ache kommt
+
+---
+
+**Kurz gesagt:** Der verlässlichste Plan für heiße und für verregnete Tage im Pongau – mit rutschfesten Schuhen und einer Jacke.
+`,
     affiliateLinks: [
       { label: 'Unterkünfte bei St. Johann/Pongau – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=St.+Johann+im+Pongau' },
       { label: 'Regenjacke – Amazon', url: 'https://www.amazon.de/s?k=regenjacke+wandern' },
