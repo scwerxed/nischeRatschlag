@@ -30,7 +30,7 @@ export default function RecentlyViewed({ currentSlug }: { currentSlug?: string }
   if (items.length === 0) return null;
 
   return (
-    <div className="border border-hairline p-5" style={{ borderRadius: 18 }}>
+    <div className="border border-hairline p-5 rounded-lg">
       <p className="eyebrow mb-3">Zuletzt angesehen</p>
       <div className="space-y-2.5">
         {items.map((item) => (

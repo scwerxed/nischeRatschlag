@@ -16,7 +16,7 @@ export default function RegionSelector() {
       <select
         defaultValue=""
         onChange={handleChange}
-        className="w-full sm:flex-1 border border-gray-300 rounded-lg px-4 py-3 text-ink-muted bg-white focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-green-500 text-base"
+        className="w-full sm:flex-1 border border-hairline rounded-lg px-4 py-3 text-ink-muted bg-white focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-green-500 text-base"
       >
         <option value="" disabled>Bundesland wählen…</option>
         {regionen.map((r) => (

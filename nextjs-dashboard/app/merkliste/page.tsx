@@ -23,7 +23,7 @@ export default function MerklistePage() {
   return (
     <div className="max-w-3xl mx-auto px-6 py-12">
       <p className="eyebrow mb-2">Deine Merkliste</p>
-      <h1 className="font-serif text-4xl font-bold mb-3 text-ink">Gemerkte Artikel</h1>
+      <h1 className="font-serif text-display font-bold mb-3 text-ink">Gemerkte Artikel</h1>
       <p className="text-ink-soft mb-8">
         Deine gespeicherten Tipps – gespeichert nur in diesem Browser, ganz ohne Konto.
       </p>
@@ -31,17 +31,17 @@ export default function MerklistePage() {
       {items === null ? (
         <p className="text-ink-soft text-sm">Lädt…</p>
       ) : items.length === 0 ? (
-        <div className="border border-dashed border-gray-300 p-8 text-center" style={{ borderRadius: 18 }}>
+        <div className="border border-dashed border-hairline p-8 text-center rounded-lg">
           <p className="text-ink-muted font-medium mb-1">Noch nichts gemerkt</p>
           <p className="text-sm text-ink-soft mb-4">
             Tippe in einem Artikel auf <strong className="font-semibold">„Merken"</strong>, um ihn hier zu sammeln.
           </p>
-          <Link href="/blog" className="inline-block bg-green-700 text-white text-sm font-semibold px-5 py-2.5 hover:bg-green-800 transition-colors" style={{ borderRadius: 8 }}>
+          <Link href="/blog" className="inline-block bg-green-700 text-white text-sm font-semibold px-5 py-2.5 hover:bg-green-800 transition-colors rounded-sm">
             Zum Magazin
           </Link>
         </div>
       ) : (
-        <ul className="divide-y divide-gray-100 border-y border-gray-100">
+        <ul className="divide-y divide-divider-soft border-y border-divider-soft">
           {items.map((item) => (
             <li key={item.slug} className="flex items-center gap-4 py-4">
               <div className="min-w-0 flex-1">
@@ -52,7 +52,7 @@ export default function MerklistePage() {
               </div>
               <button
                 onClick={() => remove(item.slug)}
-                className="shrink-0 text-gray-300 hover:text-red-500 text-xl leading-none"
+                className="shrink-0 text-ink-soft/50 hover:text-red-500 text-xl leading-none"
                 aria-label="Aus Merkliste entfernen"
               >×</button>
             </li>

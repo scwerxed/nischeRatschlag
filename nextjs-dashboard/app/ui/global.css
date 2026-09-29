@@ -43,6 +43,19 @@
     border-radius: 2px;
   }
 
+  /* Touch: 300ms-Klickverzögerung raus, kein grauer Tap-Blitz auf iOS.
+     Gilt nur für echte Bedienelemente, damit Pinch-Zoom auf der Karte
+     und auf Bildern erhalten bleibt. */
+  button, a, [role='button'], summary, label, input, select {
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  /* Zahlen in Tabellen/Messwerten springen beim Aktualisieren nicht */
+  time, [data-numeric] {
+    font-variant-numeric: tabular-nums;
+  }
+
   /* Bilder nie über ihren Container hinaus */
   img, svg, video {
     max-width: 100%;
@@ -103,6 +116,13 @@
     @apply btn bg-transparent text-ink-muted border border-hairline;
   }
   .btn-quiet:hover { @apply border-green-600 text-green-700; }
+
+  /* Overlay-Panels: Scrollen im Panel darf die Seite dahinter nicht
+     mitziehen (Scroll-Chaining), z. B. das mobile Menü. */
+  .scroll-panel {
+    overscroll-behavior: contain;
+    -webkit-overflow-scrolling: touch;
+  }
 
   /* Kompakte Variante für Chips/Filter */
   .btn-sm { @apply text-caption px-4 py-2; }

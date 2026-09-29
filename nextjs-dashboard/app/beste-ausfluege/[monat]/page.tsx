@@ -67,7 +67,7 @@ export default async function MonatPage({ params }: Props) {
       </nav>
 
       <p className="eyebrow mb-2">Monats-Tipps</p>
-      <h1 className="font-serif text-4xl font-bold mb-3 text-ink">Beste Ausflüge im {m.name}</h1>
+      <h1 className="font-serif text-display font-bold mb-3 text-ink">Beste Ausflüge im {m.name}</h1>
       <p className="text-ink-soft max-w-2xl mb-10 leading-relaxed">{m.intro}</p>
 
       <div className="grid sm:grid-cols-2 gap-5">
@@ -75,7 +75,7 @@ export default async function MonatPage({ params }: Props) {
           <Link
             key={slug}
             href={`/blog/${slug}`}
-            className="group block border border-hairline rounded-xl overflow-hidden hover:border-green-400 transition-all"
+            className="group block border border-hairline rounded-xl overflow-hidden hover:border-green-400 transition"
           >
             <div className="aspect-[16/7]">
               <PostArtwork seed={slug} category={post!.category} />
@@ -102,13 +102,12 @@ export default async function MonatPage({ params }: Props) {
           <Link
             key={x.slug}
             href={`/beste-ausfluege/${x.slug}`}
-            className="text-sm font-medium px-4 py-1.5 bg-green-50 text-green-700 border border-green-200 hover:bg-green-100 transition-colors"
-            style={{ borderRadius: 9999 }}
+            className="text-sm font-medium px-4 py-1.5 bg-green-50 text-green-700 border border-green-200 hover:bg-green-100 transition-colors rounded-full"
           >
             Beste Ausflüge im {x.name} →
           </Link>
         ))}
-        <Link href="/wandern-baden" className="text-sm font-medium px-4 py-1.5 border border-gray-300 text-ink-muted hover:border-green-600 hover:text-green-700 transition-colors" style={{ borderRadius: 9999 }}>
+        <Link href="/wandern-baden" className="text-sm font-medium px-4 py-1.5 border border-hairline text-ink-muted hover:border-green-600 hover:text-green-700 transition-colors rounded-full">
           Wandern + Baden
         </Link>
       </div>

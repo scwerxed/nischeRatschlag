@@ -9,9 +9,9 @@ import PostArtwork from '@/app/ui/post-artwork';
 
 const CATEGORIES = ['Alle', 'Wandern', 'Baden', 'Ausflug', 'Unterkunft'] as const;
 const DIFF_STYLE: Record<string, string> = {
-  leicht: 'bg-green-100 text-green-700',
-  mittel: 'bg-yellow-100 text-yellow-700',
-  schwer: 'bg-red-100 text-red-700',
+  leicht: 'bg-green-50 text-green-700 border border-green-200',
+  mittel: 'bg-amber-50 text-amber-700 border border-amber-200',
+  schwer: 'bg-rose-50 text-rose-700 border border-rose-200',
 };
 const PAGE_SIZE = 24;
 
@@ -61,8 +61,8 @@ export default function BlogSearch({ posts }: { posts: Post[] }) {
             value={query}
             onChange={(e) => setQuery(e.target.value)}
             placeholder="Suche nach Ort, Aktivität, Tipp…"
-            className="w-full pl-10 pr-4 py-2.5 border border-gray-300 text-sm outline-none focus:border-green-500 focus:ring-1 focus:ring-green-500 transition-colors"
-            style={{ borderRadius: 8 }}
+            aria-label="Artikel durchsuchen"
+            className="w-full pl-10 pr-4 py-3 bg-canvas border border-hairline text-caption text-ink placeholder:text-ink-soft outline-none transition-colors focus:border-green-600 focus-visible:ring-2 focus-visible:ring-green-600 rounded-full"
           />
         </div>
       </div>
@@ -72,12 +72,12 @@ export default function BlogSearch({ posts }: { posts: Post[] }) {
           <button
             key={c}
             onClick={() => setCat(c)}
-            className={`text-sm font-medium px-4 py-1.5 transition-all duration-200 ${
+            aria-pressed={cat === c}
+            className={`text-caption font-medium px-4 py-2 border transition duration-200 rounded-full ${
               cat === c
-                ? `${c === 'Alle' ? 'bg-green-700' : CATEGORY_STYLE[c]?.chip ?? 'bg-green-700'} text-white`
-                : 'bg-gray-100 text-ink-muted hover:bg-green-50 hover:text-green-700'
+                ? `${c === 'Alle' ? 'bg-green-700' : CATEGORY_STYLE[c]?.chip ?? 'bg-green-700'} border-transparent text-white`
+                : 'border-hairline text-ink-muted hover:border-green-600 hover:text-green-700'
             }`}
-            style={{ borderRadius: 8 }}
           >
             {c}
           </button>
@@ -85,7 +85,7 @@ export default function BlogSearch({ posts }: { posts: Post[] }) {
       </div>
 
       {/* Ergebnis-Zähler */}
-      <p className="text-sm text-ink-soft mb-5">
+      <p className="text-caption text-ink-soft mb-5" role="status" aria-live="polite" data-numeric>
         {filtered.length} {filtered.length === 1 ? 'Artikel' : 'Artikel'} gefunden
         {hasMore && ` · ${visiblePosts.length} angezeigt`}
       </p>
@@ -93,7 +93,7 @@ export default function BlogSearch({ posts }: { posts: Post[] }) {
       {/* Grid */}
       {filtered.length === 0 ? (
         <div className="text-center py-16 text-ink-soft">
-          <svg className="mx-auto mb-4 text-gray-300" width="48" height="48" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1">
+          <svg className="mx-auto mb-4 text-hairline" width="48" height="48" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1">
             <circle cx="7" cy="7" r="5" /><path d="M11 11l3.5 3.5" strokeLinecap="round" />
           </svg>
           <p className="font-medium text-ink-soft mb-1">Keine Artikel gefunden</p>
@@ -107,12 +107,12 @@ export default function BlogSearch({ posts }: { posts: Post[] }) {
               <Link
                 key={post.slug}
                 href={`/blog/${post.slug}`}
-                className="group block border border-hairline rounded-xl overflow-hidden hover:border-green-400 hover:-translate-y-0.5 transition-all duration-300"
+                className="surface-card-interactive group block overflow-hidden"
               >
                 <div className="aspect-[16/9] overflow-hidden relative">
                   <PostArtwork seed={post.slug} category={post.category} className="transition-transform duration-700 group-hover:scale-105" />
                   <div className="absolute top-3 right-3">
-                    <span className="bg-white/90 backdrop-blur text-xs font-medium text-ink-muted px-2 py-1" style={{ borderRadius: 8 }}>
+                    <span className="bg-canvas/90 backdrop-blur text-fine font-medium text-ink-muted px-2.5 py-1 rounded-full">
                       {mins} Min.
                     </span>
                   </div>
@@ -137,11 +137,11 @@ export default function BlogSearch({ posts }: { posts: Post[] }) {
                     </div>
                     <span className="text-xs text-ink-soft">{post.date}</span>
                   </div>
-                  <h2 className="font-serif font-bold text-lg text-ink group-hover:text-green-700 leading-snug transition-colors">
+                  <h2 className="font-serif font-bold text-tagline text-ink group-hover:text-green-700 leading-snug transition-colors">
                     {post.title}
                   </h2>
-                  <p className="mt-2 text-sm text-ink-soft line-clamp-2">{post.excerpt}</p>
-                  <span className="mt-4 inline-flex items-center gap-1.5 text-sm text-green-600 font-medium">
+                  <p className="mt-2 text-caption text-ink-soft line-clamp-2">{post.excerpt}</p>
+                  <span className="mt-4 inline-flex items-center gap-1.5 text-caption text-green-700 font-medium">
                     Weiterlesen
                     <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="2" className="transition-transform duration-300 group-hover:translate-x-1">
                       <path d="M6 3l5 5-5 5" strokeLinecap="round" strokeLinejoin="round" />
@@ -158,8 +158,7 @@ export default function BlogSearch({ posts }: { posts: Post[] }) {
         <div className="text-center mt-10">
           <button
             onClick={() => setVisible((v) => v + PAGE_SIZE)}
-            className="px-6 py-2.5 text-sm font-medium text-green-700 bg-green-50 hover:bg-green-100 transition-colors"
-            style={{ borderRadius: 8 }}
+            className="btn btn-secondary btn-sm"
           >
             Mehr laden ({filtered.length - visiblePosts.length} weitere)
           </button>

@@ -11,7 +11,7 @@ export default function KartePage() {
     <div className="max-w-7xl mx-auto px-4 sm:px-6 pt-6 pb-4">
       <div className="flex items-baseline justify-between mb-3">
         <div>
-          <h1 className="font-serif text-2xl font-bold text-ink">Interaktive Wanderkarte</h1>
+          <h1 className="font-serif text-lead font-bold text-ink">Interaktive Wanderkarte</h1>
           <p className="text-sm text-ink-soft mt-0.5">
             Wanderwege, Gipfel und Unterkünfte (aktuell Fokus Kärnten) — Karte, Topografie und Layer rechts oben ein-/ausblenden
           </p>

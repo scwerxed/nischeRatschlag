@@ -79,7 +79,7 @@ export default function HeroSlideshow({ children }: { children: React.ReactNode 
           <button
             key={i}
             onClick={() => setCurrent(i)}
-            className={`h-1 rounded-full transition-all duration-500 ${i === current ? 'w-10 bg-white' : 'w-4 bg-white/40 hover:bg-white/70'}`}
+            className={`h-1 rounded-full transition duration-500 ${i === current ? 'w-10 bg-white' : 'w-4 bg-white/40 hover:bg-white/70'}`}
             aria-label={`Bild ${i + 1}`}
           />
         ))}

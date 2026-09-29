@@ -57,7 +57,7 @@ export default function Footer() {
               <path d="M2 21 L9.5 7 L14 15 L17 10 L24 21 Z" fill="#e6d8c3" />
               <circle cx="19" cy="6" r="2.4" fill="#e6d8c3" opacity="0.6" />
             </svg>
-            <span className="font-serif text-xl font-bold text-white">Bergseen Guide</span>
+            <span className="font-serif text-tagline font-bold text-white">Bergseen Guide</span>
           </div>
           <p className="text-sm leading-relaxed mb-6">
             Unabhängiger Reiseführer für Österreich: Wanderungen, Badeseen, Ausflüge und
@@ -84,7 +84,7 @@ export default function Footer() {
               <li key={l.href}>
                 <Link href={l.href} className="hover:text-white transition-colors inline-flex items-center gap-1 group">
                   {l.label}
-                  <svg width="12" height="12" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.5" className="opacity-0 -translate-x-1 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-200">
+                  <svg width="12" height="12" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.5" className="opacity-0 -translate-x-1 group-hover:opacity-100 group-hover:translate-x-0 transition duration-200">
                     <path d="M6 3l5 5-5 5" strokeLinecap="round" strokeLinejoin="round" />
                   </svg>
                 </Link>

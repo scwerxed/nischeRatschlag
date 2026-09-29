@@ -12,15 +12,14 @@ export default function KontaktPage() {
   return (
     <div className="max-w-2xl mx-auto px-6 py-12">
       <p className="eyebrow mb-2">Kontakt</p>
-      <h1 className="font-serif text-4xl font-bold mb-6 text-ink">Schreib uns</h1>
+      <h1 className="font-serif text-display font-bold mb-6 text-ink">Schreib uns</h1>
       <p className="text-ink-muted leading-relaxed mb-8">
         Hast du Fragen, Anregungen, einen Korrekturhinweis oder eine Kooperationsanfrage?
         Wir freuen uns über jede Nachricht und antworten in der Regel innerhalb weniger Tage.
       </p>
       <a
         href={`mailto:${EMAIL}`}
-        className="inline-block bg-green-700 text-white font-semibold px-6 py-3 hover:bg-green-800 transition-colors"
-        style={{ borderRadius: 8 }}
+        className="inline-block bg-green-700 text-white font-semibold px-6 py-3 hover:bg-green-800 transition-colors rounded-sm"
       >
         {EMAIL}
       </a>

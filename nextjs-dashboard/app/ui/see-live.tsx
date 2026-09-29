@@ -42,19 +42,19 @@ export default function SeeLive({ stationen }: { stationen: Station[] }) {
   if (state === 'none') return null;
 
   return (
-    <div className="border border-sky-200 bg-sky-50 p-5" style={{ borderRadius: 18 }}>
+    <div className="border border-sky-200 bg-sky-50 p-5 rounded-lg">
       <p className="eyebrow mb-1 flex items-center gap-1.5">
         <span className="w-1.5 h-1.5 rounded-full bg-green-500 animate-pulse" aria-hidden />
         Wassertemperatur live
       </p>
       {state === 'loading' ? (
         <div className="space-y-2 mt-2" aria-hidden>
-          <span className="block w-24 h-8 bg-sky-100 animate-pulse" style={{ borderRadius: 8 }} />
-          <span className="block w-40 h-4 bg-sky-100 animate-pulse" style={{ borderRadius: 8 }} />
+          <span className="block w-24 h-8 bg-sky-100 animate-pulse rounded-sm" />
+          <span className="block w-40 h-4 bg-sky-100 animate-pulse rounded-sm" />
         </div>
       ) : (
         <>
-          <p className="font-serif text-3xl font-bold text-ink tabular-nums">
+          <p className="font-serif text-display font-bold text-ink tabular-nums">
             {state.wert.wasser.toLocaleString('de-AT', { minimumFractionDigits: 1, maximumFractionDigits: 1 })}&nbsp;°C
           </p>
           <p className="text-sm text-ink-muted mt-1 leading-snug">

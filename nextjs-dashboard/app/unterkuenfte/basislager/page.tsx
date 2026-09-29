@@ -49,7 +49,7 @@ export default function BasislagerPage() {
       </nav>
 
       <p className="eyebrow mb-2">Übernachten</p>
-      <h1 className="font-serif text-4xl font-bold mb-3 text-ink">Basislager: einmal einchecken, jeden Tag ein neues Ziel</h1>
+      <h1 className="font-serif text-display font-bold mb-3 text-ink">Basislager: einmal einchecken, jeden Tag ein neues Ziel</h1>
       <p className="text-ink-soft max-w-2xl mb-4 leading-relaxed">
         Wer mehrere Tage bleibt, will nicht jeden Morgen den Koffer packen. Hier siehst du, welche
         Urlaubsorte die meisten unserer Wanderungen, Badeziele und Ausflüge im Umkreis von
@@ -62,7 +62,7 @@ export default function BasislagerPage() {
 
       {groups.map((g) => (
         <section key={g.region} id={g.region} className="mb-12 scroll-mt-24">
-          <h2 className="font-serif text-2xl font-bold mb-5 text-ink">
+          <h2 className="font-serif text-lead font-bold mb-5 text-ink">
             {regionName(g.region)}
             <Link href={`/regionen/${g.region}`} className="ml-3 text-sm font-sans font-normal text-green-700 hover:underline">
               Alle Artikel →
@@ -71,9 +71,9 @@ export default function BasislagerPage() {
           <div className="grid md:grid-cols-2 gap-5">
             {g.lager.map((b) => (
               <div key={b.stay.id} className="border border-hairline rounded-xl overflow-hidden transition-shadow flex flex-col">
-                <div className="p-4 border-b border-gray-100">
+                <div className="p-4 border-b border-divider-soft">
                   <span className="block text-xs font-semibold text-violet-700 uppercase tracking-wide">{b.stay.typ} · {b.stay.see}</span>
-                  <p className="font-serif text-xl font-bold text-ink mt-1">{b.stay.ort}</p>
+                  <p className="font-serif text-tagline font-bold text-ink mt-1">{b.stay.ort}</p>
                   <p className="text-sm text-ink-soft mt-0.5">
                     <strong className="text-ink">{b.ziele.length} Ziele</strong> im Umkreis von {BASISLAGER_RADIUS_KM}&nbsp;km
                   </p>
@@ -81,7 +81,7 @@ export default function BasislagerPage() {
                     {Object.entries(b.counts).map(([cat, n]) => {
                       const s = CATEGORY_STYLE[cat];
                       return (
-                        <span key={cat} className={`text-xs font-medium px-2 py-0.5 rounded-full ${s ? `${s.bg} ${s.text}` : 'bg-gray-100 text-ink-muted'}`}>
+                        <span key={cat} className={`text-xs font-medium px-2 py-0.5 rounded-full ${s ? `${s.bg} ${s.text}` : 'bg-parchment text-ink-muted'}`}>
                           {n}× {cat}
                         </span>
                       );
@@ -118,19 +118,19 @@ export default function BasislagerPage() {
       ))}
 
       <div className="mt-10 flex flex-wrap gap-3">
-        <Link href="/unterkuenfte/am-see" className="inline-block bg-green-700 text-white text-sm font-semibold px-5 py-2.5 hover:bg-green-800 transition-colors" style={{ borderRadius: 9999 }}>
+        <Link href="/unterkuenfte/am-see" className="inline-block bg-green-700 text-white text-sm font-semibold px-5 py-2.5 hover:bg-green-800 transition-colors rounded-full">
           Unterkünfte am See
         </Link>
-        <Link href="/wochenendtrip" className="inline-block border border-green-700 text-green-700 text-sm font-semibold px-5 py-2.5 hover:bg-green-50 transition-colors" style={{ borderRadius: 9999 }}>
+        <Link href="/wochenendtrip" className="inline-block border border-green-700 text-green-700 text-sm font-semibold px-5 py-2.5 hover:bg-green-50 transition-colors rounded-full">
           Wochenendtrips
         </Link>
-        <Link href="/zwei-ausfluege-an-einem-tag" className="inline-block border border-gray-300 text-ink-muted text-sm font-semibold px-5 py-2.5 hover:border-green-600 hover:text-green-700 transition-colors" style={{ borderRadius: 9999 }}>
+        <Link href="/zwei-ausfluege-an-einem-tag" className="inline-block border border-hairline text-ink-muted text-sm font-semibold px-5 py-2.5 hover:border-green-600 hover:text-green-700 transition-colors rounded-full">
           Zwei Ausflüge an einem Tag
         </Link>
-        <Link href="/karte" className="inline-block border border-gray-300 text-ink-muted text-sm font-semibold px-5 py-2.5 hover:border-green-600 hover:text-green-700 transition-colors" style={{ borderRadius: 9999 }}>
+        <Link href="/karte" className="inline-block border border-hairline text-ink-muted text-sm font-semibold px-5 py-2.5 hover:border-green-600 hover:text-green-700 transition-colors rounded-full">
           Auf der Karte ansehen
         </Link>
-        <Link href="/ausflugsplaner" className="inline-block border border-gray-300 text-ink-muted text-sm font-semibold px-5 py-2.5 hover:border-green-600 hover:text-green-700 transition-colors" style={{ borderRadius: 9999 }}>
+        <Link href="/ausflugsplaner" className="inline-block border border-hairline text-ink-muted text-sm font-semibold px-5 py-2.5 hover:border-green-600 hover:text-green-700 transition-colors rounded-full">
           Alle Themenseiten
         </Link>
       </div>

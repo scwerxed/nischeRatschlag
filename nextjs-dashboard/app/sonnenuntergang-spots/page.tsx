@@ -39,7 +39,7 @@ export default function SonnenuntergangPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
       <p className="eyebrow mb-2">Golden Hour</p>
-      <h1 className="font-serif text-4xl font-bold mb-3 text-ink">Sonnenuntergang-Spots: die besten Golden-Hour-Ziele</h1>
+      <h1 className="font-serif text-display font-bold mb-3 text-ink">Sonnenuntergang-Spots: die besten Golden-Hour-Ziele</h1>
       <p className="text-ink-soft max-w-2xl mb-8 leading-relaxed">
         Aussichtsberge, Seen mit Spiegelung und Türme mit freiem Blick nach Westen – kuratierte
         Ziele für den Abend, wenn das Licht am schönsten ist.
@@ -59,7 +59,7 @@ export default function SonnenuntergangPage() {
 
       {GROUPS.map((g) => (
         <section key={g.title} className="mb-14">
-          <h2 className="font-serif text-2xl font-bold mb-1 text-ink">{g.title}</h2>
+          <h2 className="font-serif text-lead font-bold mb-1 text-ink">{g.title}</h2>
           <p className="text-sm text-ink-soft mb-5 max-w-2xl">{g.note}</p>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {g.picks.map(({ slug, warum }) => {
@@ -69,7 +69,7 @@ export default function SonnenuntergangPage() {
                 <Link
                   key={slug}
                   href={`/blog/${slug}`}
-                  className="group block border border-hairline rounded-xl overflow-hidden hover:border-green-400 transition-all"
+                  className="group block border border-hairline rounded-xl overflow-hidden hover:border-green-400 transition"
                 >
                   <div className="aspect-[16/7]">
                     <PostArtwork seed={slug} category={post.category} />
@@ -89,16 +89,16 @@ export default function SonnenuntergangPage() {
       ))}
 
       <div className="mt-6 flex flex-wrap gap-3">
-        <Link href="/feierabend-ausfluege" className="inline-block bg-green-700 text-white text-sm font-semibold px-5 py-2.5 hover:bg-green-800 transition-colors" style={{ borderRadius: 9999 }}>
+        <Link href="/feierabend-ausfluege" className="inline-block bg-green-700 text-white text-sm font-semibold px-5 py-2.5 hover:bg-green-800 transition-colors rounded-full">
           Feierabend-Ausflüge
         </Link>
-        <Link href="/aussicht-ohne-anstrengung" className="inline-block border border-green-700 text-green-700 text-sm font-semibold px-5 py-2.5 hover:bg-green-50 transition-colors" style={{ borderRadius: 9999 }}>
+        <Link href="/aussicht-ohne-anstrengung" className="inline-block border border-green-700 text-green-700 text-sm font-semibold px-5 py-2.5 hover:bg-green-50 transition-colors rounded-full">
           Aussicht ohne Anstrengung
         </Link>
-        <Link href="/seen-vergleich" className="inline-block border border-green-700 text-green-700 text-sm font-semibold px-5 py-2.5 hover:bg-green-50 transition-colors" style={{ borderRadius: 9999 }}>
+        <Link href="/seen-vergleich" className="inline-block border border-green-700 text-green-700 text-sm font-semibold px-5 py-2.5 hover:bg-green-50 transition-colors rounded-full">
           Alle Seen im Vergleich
         </Link>
-        <Link href="/ausflugsplaner" className="inline-block border border-gray-300 text-ink-muted text-sm font-semibold px-5 py-2.5 hover:border-green-600 hover:text-green-700 transition-colors" style={{ borderRadius: 9999 }}>
+        <Link href="/ausflugsplaner" className="inline-block border border-hairline text-ink-muted text-sm font-semibold px-5 py-2.5 hover:border-green-600 hover:text-green-700 transition-colors rounded-full">
           Alle Themenseiten
         </Link>
       </div>

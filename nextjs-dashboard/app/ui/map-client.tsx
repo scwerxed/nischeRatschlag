@@ -243,12 +243,11 @@ export default function MapClient() {
 
   return (
     <div
-      className="relative border border-gray-300 overflow-hidden"
-      style={{ borderRadius: 8, minHeight: 560 }}
+      className="relative border border-hairline overflow-hidden rounded-sm" style={{ minHeight: 560 }}
     >
       {/* Error */}
       {error && (
-        <div className="absolute inset-0 z-10 flex items-center justify-center bg-gray-50">
+        <div className="absolute inset-0 z-10 flex items-center justify-center bg-parchment">
           <span className="text-sm text-red-600">{error}</span>
         </div>
       )}
@@ -259,8 +258,7 @@ export default function MapClient() {
       {/* ── Layer control panel – top-right ─────────────────────────────── */}
       {mapReady && (
         <div
-          className="absolute top-2 right-2 z-[1000] bg-white border border-gray-300 select-none"
-          style={{ borderRadius: 8, minWidth: 176, boxShadow: '0 1px 4px rgba(0,0,0,.12)' }}
+          className="absolute top-2 right-2 z-[1000] bg-white border border-hairline select-none rounded-sm" style={{ minWidth: 176, boxShadow: '0 1px 4px rgba(0,0,0,.12)' }}
         >
           {/* Basiskarte */}
           <div className="px-3 pt-2.5 pb-1.5">
@@ -275,7 +273,7 @@ export default function MapClient() {
               >
                 <span
                   className={`w-3.5 h-3.5 rounded-full border-2 flex items-center justify-center shrink-0 ${
-                    baseLayer === id ? 'border-green-600' : 'border-gray-300'
+                    baseLayer === id ? 'border-green-600' : 'border-hairline'
                   }`}
                 >
                   {baseLayer === id && (
@@ -303,10 +301,7 @@ export default function MapClient() {
               className="flex items-center gap-2 w-full py-1 text-left hover:text-ink transition-colors"
             >
               <span
-                className={`w-3.5 h-3.5 border flex items-center justify-center shrink-0 transition-colors ${
-                  showTrails ? 'bg-green-600 border-green-600' : 'border-gray-300'
-                }`}
-                style={{ borderRadius: 8 }}
+                className={`w-3.5 h-3.5 border flex items-center justify-center shrink-0 transition-colors ${ showTrails ? 'bg-green-600 border-green-600' : 'border-hairline' } rounded-sm`}
               >
                 {showTrails && <Checkmark />}
               </span>
@@ -327,10 +322,7 @@ export default function MapClient() {
               className="flex items-center gap-2 w-full py-1 text-left hover:text-ink transition-colors mt-0.5"
             >
               <span
-                className={`w-3.5 h-3.5 border flex items-center justify-center shrink-0 transition-colors ${
-                  showPeaks ? 'bg-green-600 border-green-600' : 'border-gray-300'
-                }`}
-                style={{ borderRadius: 8 }}
+                className={`w-3.5 h-3.5 border flex items-center justify-center shrink-0 transition-colors ${ showPeaks ? 'bg-green-600 border-green-600' : 'border-hairline' } rounded-sm`}
               >
                 {showPeaks && <Checkmark />}
               </span>
@@ -361,10 +353,7 @@ export default function MapClient() {
               className="flex items-center gap-2 w-full py-1 text-left hover:text-ink transition-colors mt-0.5"
             >
               <span
-                className={`w-3.5 h-3.5 border flex items-center justify-center shrink-0 transition-colors ${
-                  showStays ? 'bg-green-600 border-green-600' : 'border-gray-300'
-                }`}
-                style={{ borderRadius: 8 }}
+                className={`w-3.5 h-3.5 border flex items-center justify-center shrink-0 transition-colors ${ showStays ? 'bg-green-600 border-green-600' : 'border-hairline' } rounded-sm`}
               >
                 {showStays && <Checkmark />}
               </span>
@@ -384,7 +373,7 @@ export default function MapClient() {
           {/* Reset-to-Kärnten */}
           <button
             onClick={resetView}
-            className="flex items-center gap-2 w-full px-3 py-2 text-xs text-ink-soft hover:text-ink hover:bg-gray-50 transition-colors"
+            className="flex items-center gap-2 w-full px-3 py-2 text-xs text-ink-soft hover:text-ink hover:bg-parchment transition-colors"
           >
             <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
               <path d="M6 1v2M6 9v2M1 6h2M9 6h2M3.05 3.05l1.41 1.41M7.54 7.54l1.41 1.41M3.05 8.95l1.41-1.41M7.54 4.46l1.41-1.41" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" />
@@ -404,8 +393,8 @@ export default function MapClient() {
 
       {/* ── Peak loading indicator ───────────────────────────────────────── */}
       {mapReady && peakCount === null && (
-        <div className="absolute bottom-2 left-2 z-[1000] bg-white border border-hairline px-2.5 py-1 text-xs text-ink-soft flex items-center gap-1.5" style={{ borderRadius: 8 }}>
-          <div className="w-2.5 h-2.5 border border-gray-300 border-t-gray-600 rounded-full animate-spin" />
+        <div className="absolute bottom-2 left-2 z-[1000] bg-white border border-hairline px-2.5 py-1 text-xs text-ink-soft flex items-center gap-1.5 rounded-sm">
+          <div className="w-2.5 h-2.5 border border-hairline border-t-gray-600 rounded-full animate-spin" />
           Gipfel laden…
         </div>
       )}

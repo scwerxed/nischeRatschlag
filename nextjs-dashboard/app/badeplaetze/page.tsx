@@ -36,7 +36,7 @@ export default function BadeplaetzePage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
       <p className="eyebrow mb-2">Badeplatz-Check</p>
-      <h1 className="font-serif text-4xl font-bold mb-3 text-ink">Welcher Badeplatz passt zu dir?</h1>
+      <h1 className="font-serif text-display font-bold mb-3 text-ink">Welcher Badeplatz passt zu dir?</h1>
       <p className="text-ink-soft max-w-2xl mb-8 leading-relaxed">
         „See" ist nicht gleich „See": Mal brauchst du einen flachen Einstieg fürs Kind, mal Schatten,
         mal einfach einen Gratis-Zugang. Filtere unsere Badeplätze nach dem, was dir wichtig ist.
@@ -50,13 +50,13 @@ export default function BadeplaetzePage() {
       </p>
 
       <div className="mt-8 flex flex-wrap gap-3">
-        <Link href="/seen-vergleich" className="inline-block bg-green-700 text-white text-sm font-semibold px-5 py-2.5 hover:bg-green-800 transition-colors" style={{ borderRadius: 9999 }}>
+        <Link href="/seen-vergleich" className="inline-block bg-green-700 text-white text-sm font-semibold px-5 py-2.5 hover:bg-green-800 transition-colors rounded-full">
           Seen im Vergleich
         </Link>
-        <Link href="/wandern-baden" className="inline-block border border-green-700 text-green-700 text-sm font-semibold px-5 py-2.5 hover:bg-green-50 transition-colors" style={{ borderRadius: 9999 }}>
+        <Link href="/wandern-baden" className="inline-block border border-green-700 text-green-700 text-sm font-semibold px-5 py-2.5 hover:bg-green-50 transition-colors rounded-full">
           Wandern + Baden
         </Link>
-        <Link href="/hitzefreundliche-ausfluege" className="inline-block border border-amber-500 text-amber-700 text-sm font-semibold px-5 py-2.5 hover:bg-amber-50 transition-colors" style={{ borderRadius: 9999 }}>
+        <Link href="/hitzefreundliche-ausfluege" className="inline-block border border-amber-500 text-amber-700 text-sm font-semibold px-5 py-2.5 hover:bg-amber-50 transition-colors rounded-full">
           Kühle Ziele für Hitzetage
         </Link>
       </div>

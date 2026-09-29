@@ -118,20 +118,15 @@ export default function TrailMapClient({ trails }: { trails: Trail[] }) {
   const t = trails[selected];
 
   return (
-    <div className="border border-hairline overflow-hidden" style={{ borderRadius: 8 }}>
+    <div className="border border-hairline overflow-hidden rounded-sm">
       {/* Trail-Auswahl */}
       {trails.length > 1 && (
-        <div className="flex gap-1.5 p-2 bg-gray-50 border-b border-hairline overflow-x-auto">
+        <div className="flex gap-1.5 p-2 bg-parchment border-b border-hairline overflow-x-auto">
           {trails.map((tr, i) => (
             <button
               key={i}
               onClick={() => setSelected(i)}
-              className={`shrink-0 text-xs font-medium px-3 py-1.5 transition-colors ${
-                i === selected
-                  ? 'bg-green-700 text-white'
-                  : 'bg-white text-ink-muted border border-hairline hover:border-green-400'
-              }`}
-              style={{ borderRadius: 8 }}
+              className={`shrink-0 text-xs font-medium px-3 py-1.5 transition-colors ${ i === selected ? 'bg-green-700 text-white' : 'bg-white text-ink-muted border border-hairline hover:border-green-400' } rounded-sm`}
             >
               {tr.name}
             </button>
@@ -143,8 +138,8 @@ export default function TrailMapClient({ trails }: { trails: Trail[] }) {
       <div className="relative">
         <div ref={containerRef} style={{ height: 380 }} />
         {loading && (
-          <div className="absolute top-2 left-2 z-[1000] bg-white/90 border border-hairline px-2.5 py-1 text-xs text-ink-muted flex items-center gap-1.5" style={{ borderRadius: 8 }}>
-            <span className="w-2.5 h-2.5 border border-gray-300 border-t-green-600 rounded-full animate-spin" />
+          <div className="absolute top-2 left-2 z-[1000] bg-white/90 border border-hairline px-2.5 py-1 text-xs text-ink-muted flex items-center gap-1.5 rounded-sm">
+            <span className="w-2.5 h-2.5 border border-hairline border-t-green-600 rounded-full animate-spin" />
             Wegverlauf wird geladen…
           </div>
         )}

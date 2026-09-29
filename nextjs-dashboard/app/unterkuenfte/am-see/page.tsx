@@ -48,7 +48,7 @@ export default function UnterkuenfteAmSeePage() {
       </nav>
 
       <p className="eyebrow mb-2">Übernachten</p>
-      <h1 className="font-serif text-4xl font-bold mb-3 text-ink">Unterkünfte direkt am See</h1>
+      <h1 className="font-serif text-display font-bold mb-3 text-ink">Unterkünfte direkt am See</h1>
       <p className="text-ink-soft max-w-2xl mb-4 leading-relaxed">
         Wer morgens vor dem Frühstück schon im Wasser sein will, sollte auch dort übernachten:
         Hotels, Ferienwohnungen und Campingplätze mit direkter Lage an einem der beliebtesten
@@ -60,7 +60,7 @@ export default function UnterkuenfteAmSeePage() {
         const regionStays = stays.filter((s) => s.region === region);
         return (
           <section key={region} className="mb-12">
-            <h2 className="font-serif text-2xl font-bold mb-5 text-ink">
+            <h2 className="font-serif text-lead font-bold mb-5 text-ink">
               {regionName(region)}
               <Link href={`/regionen/${region}`} className="ml-3 text-sm font-sans font-normal text-green-700 hover:underline">
                 Alle Artikel →
@@ -75,8 +75,7 @@ export default function UnterkuenfteAmSeePage() {
                     href={cloak(u.bookingUrl)}
                     target="_blank"
                     rel="noopener noreferrer sponsored"
-                    className="group block border border-hairline p-4 hover:border-green-400 hover:bg-green-50 transition-colors"
-                    style={{ borderRadius: 18 }}
+                    className="group block border border-hairline p-4 hover:border-green-400 hover:bg-green-50 transition-colors rounded-lg"
                   >
                     <span className="block text-xs font-semibold text-green-700 uppercase tracking-wide">
                       {u.typ} · {u.see}
@@ -105,19 +104,19 @@ export default function UnterkuenfteAmSeePage() {
       </div>
 
       <div className="mt-4 flex flex-wrap gap-3">
-        <Link href="/seen-vergleich" className="inline-block bg-green-700 text-white text-sm font-semibold px-5 py-2.5 hover:bg-green-800 transition-colors" style={{ borderRadius: 9999 }}>
+        <Link href="/seen-vergleich" className="inline-block bg-green-700 text-white text-sm font-semibold px-5 py-2.5 hover:bg-green-800 transition-colors rounded-full">
           Seen im Vergleich
         </Link>
-        <Link href="/karte" className="inline-block border border-green-700 text-green-700 text-sm font-semibold px-5 py-2.5 hover:bg-green-50 transition-colors" style={{ borderRadius: 9999 }}>
+        <Link href="/karte" className="inline-block border border-green-700 text-green-700 text-sm font-semibold px-5 py-2.5 hover:bg-green-50 transition-colors rounded-full">
           Auf der Karte ansehen
         </Link>
-        <Link href="/wandern-baden" className="inline-block border border-gray-300 text-ink-muted text-sm font-semibold px-5 py-2.5 hover:border-green-600 hover:text-green-700 transition-colors" style={{ borderRadius: 9999 }}>
+        <Link href="/wandern-baden" className="inline-block border border-hairline text-ink-muted text-sm font-semibold px-5 py-2.5 hover:border-green-600 hover:text-green-700 transition-colors rounded-full">
           Wandern + Baden
         </Link>
-        <Link href="/unterkuenfte/basislager" className="inline-block border border-violet-500 text-violet-700 text-sm font-semibold px-5 py-2.5 hover:bg-violet-50 transition-colors" style={{ borderRadius: 9999 }}>
+        <Link href="/unterkuenfte/basislager" className="inline-block border border-violet-500 text-violet-700 text-sm font-semibold px-5 py-2.5 hover:bg-violet-50 transition-colors rounded-full">
           Basislager für mehrere Ausflüge
         </Link>
-        <Link href="/ausflugsplaner" className="inline-block border border-gray-300 text-ink-muted text-sm font-semibold px-5 py-2.5 hover:border-green-600 hover:text-green-700 transition-colors" style={{ borderRadius: 9999 }}>
+        <Link href="/ausflugsplaner" className="inline-block border border-hairline text-ink-muted text-sm font-semibold px-5 py-2.5 hover:border-green-600 hover:text-green-700 transition-colors rounded-full">
           Alle Themenseiten
         </Link>
       </div>

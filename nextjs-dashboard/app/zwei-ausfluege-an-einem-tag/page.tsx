@@ -48,7 +48,7 @@ export default function ZweiAusfluegeAnEinemTagPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
       <p className="eyebrow mb-2">Tagesplaner</p>
-      <h1 className="font-serif text-4xl font-bold mb-3 text-ink">Zwei Ausflüge an einem Tag</h1>
+      <h1 className="font-serif text-display font-bold mb-3 text-ink">Zwei Ausflüge an einem Tag</h1>
       <p className="text-ink-soft max-w-2xl mb-4 leading-relaxed">
         Wenn ein Ziel allein den Tag nicht füllt: Wir haben halbtagstaugliche Ausflüge kombiniert,
         die nah genug beieinander liegen, um beide an einem Tag zu schaffen – vormittags das eine,
@@ -61,7 +61,7 @@ export default function ZweiAusfluegeAnEinemTagPage() {
 
       {groups.map((g) => (
         <section key={g.region} className="mb-12">
-          <h2 className="font-serif text-2xl font-bold mb-5 text-ink">
+          <h2 className="font-serif text-lead font-bold mb-5 text-ink">
             {regionName(g.region)}
             <Link href={`/regionen/${g.region}`} className="ml-3 text-sm font-sans font-normal text-green-700 hover:underline">
               Alle Artikel →
@@ -80,9 +80,9 @@ export default function ZweiAusfluegeAnEinemTagPage() {
 
                 {/* Verbinder */}
                 <div className="flex items-center gap-3 px-4">
-                  <span className="h-px flex-1 bg-gray-200" />
+                  <span className="h-px flex-1 bg-hairline" />
                   <span className="text-xs text-ink-soft whitespace-nowrap">↓ danach ≈ {Math.round(c.km)} km weiter</span>
-                  <span className="h-px flex-1 bg-gray-200" />
+                  <span className="h-px flex-1 bg-hairline" />
                 </div>
 
                 {/* Nachmittag */}
@@ -99,16 +99,16 @@ export default function ZweiAusfluegeAnEinemTagPage() {
       ))}
 
       <div className="mt-10 flex flex-wrap gap-3">
-        <Link href="/ausfluege-nach-dauer" className="inline-block bg-green-700 text-white text-sm font-semibold px-5 py-2.5 hover:bg-green-800 transition-colors" style={{ borderRadius: 9999 }}>
+        <Link href="/ausfluege-nach-dauer" className="inline-block bg-green-700 text-white text-sm font-semibold px-5 py-2.5 hover:bg-green-800 transition-colors rounded-full">
           Ausflüge nach Dauer
         </Link>
-        <Link href="/wandern-baden" className="inline-block border border-sky-500 text-sky-700 text-sm font-semibold px-5 py-2.5 hover:bg-sky-50 transition-colors" style={{ borderRadius: 9999 }}>
+        <Link href="/wandern-baden" className="inline-block border border-sky-500 text-sky-700 text-sm font-semibold px-5 py-2.5 hover:bg-sky-50 transition-colors rounded-full">
           Wandern + Baden
         </Link>
-        <Link href="/wochenendtrip" className="inline-block border border-green-700 text-green-700 text-sm font-semibold px-5 py-2.5 hover:bg-green-50 transition-colors" style={{ borderRadius: 9999 }}>
+        <Link href="/wochenendtrip" className="inline-block border border-green-700 text-green-700 text-sm font-semibold px-5 py-2.5 hover:bg-green-50 transition-colors rounded-full">
           Wochenendtrips
         </Link>
-        <Link href="/ausflugsplaner" className="inline-block border border-gray-300 text-ink-muted text-sm font-semibold px-5 py-2.5 hover:border-green-600 hover:text-green-700 transition-colors" style={{ borderRadius: 9999 }}>
+        <Link href="/ausflugsplaner" className="inline-block border border-hairline text-ink-muted text-sm font-semibold px-5 py-2.5 hover:border-green-600 hover:text-green-700 transition-colors rounded-full">
           Alle Themenseiten
         </Link>
       </div>

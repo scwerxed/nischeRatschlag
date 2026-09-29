@@ -61,14 +61,14 @@ export default async function SeeThemaPage({ params }: Props) {
       </nav>
 
       <p className="eyebrow mb-2">Entscheidungshilfe</p>
-      <h1 className="font-serif text-4xl font-bold mb-3 text-ink">{t.h1}</h1>
+      <h1 className="font-serif text-display font-bold mb-3 text-ink">{t.h1}</h1>
       <p className="text-ink-soft max-w-2xl mb-10 leading-relaxed">{t.intro}</p>
 
       <div className="space-y-4">
         {lakes.map((l) => (
-          <div key={l.name} className="border border-hairline p-5" style={{ borderRadius: 18 }}>
+          <div key={l.name} className="border border-hairline p-5 rounded-lg">
             <div className="flex items-baseline justify-between gap-3 flex-wrap">
-              <h2 className="font-serif text-xl font-bold text-ink">
+              <h2 className="font-serif text-tagline font-bold text-ink">
                 {l.slug ? <Link href={`/blog/${l.slug}`} className="text-green-700 hover:underline">{l.name}</Link> : l.name}
               </h2>
               <span className="text-sm font-semibold text-sky-700 whitespace-nowrap">{l.maxTemp} · {l.region}</span>
@@ -88,13 +88,12 @@ export default async function SeeThemaPage({ params }: Props) {
           <Link
             key={x.slug}
             href={`/seen-vergleich/${x.slug}`}
-            className="text-sm font-medium px-4 py-1.5 bg-sky-50 text-sky-700 border border-sky-200 hover:bg-sky-100 transition-colors"
-            style={{ borderRadius: 9999 }}
+            className="text-sm font-medium px-4 py-1.5 bg-sky-50 text-sky-700 border border-sky-200 hover:bg-sky-100 transition-colors rounded-full"
           >
             {x.h1} →
           </Link>
         ))}
-        <Link href="/seen-vergleich" className="text-sm font-medium px-4 py-1.5 border border-gray-300 text-ink-muted hover:border-green-600 hover:text-green-700 transition-colors" style={{ borderRadius: 9999 }}>
+        <Link href="/seen-vergleich" className="text-sm font-medium px-4 py-1.5 border border-hairline text-ink-muted hover:border-green-600 hover:text-green-700 transition-colors rounded-full">
           Alle Seen im Vergleich
         </Link>
       </div>

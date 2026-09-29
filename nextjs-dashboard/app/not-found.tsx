@@ -19,7 +19,7 @@ export default function NotFound() {
       </div>
 
       <p className="font-serif text-7xl font-bold text-green-700 mb-2">404</p>
-      <h1 className="font-serif text-2xl font-bold text-ink mt-2 mb-3">
+      <h1 className="font-serif text-lead font-bold text-ink mt-2 mb-3">
         Diese Seite gibt es (noch) nicht
       </h1>
       <p className="text-ink-soft mb-8 leading-relaxed">
@@ -30,22 +30,19 @@ export default function NotFound() {
       <div className="flex flex-wrap justify-center gap-3">
         <Link
           href="/"
-          className="inline-block bg-green-700 text-white text-sm font-semibold px-6 py-3 hover:bg-green-800 transition-all"
-          style={{ borderRadius: 9999 }}
+          className="inline-block bg-green-700 text-white text-sm font-semibold px-6 py-3 hover:bg-green-800 transition rounded-full"
         >
           Zur Startseite
         </Link>
         <Link
           href="/blog"
-          className="inline-block border border-gray-300 text-ink-muted text-sm font-semibold px-6 py-3 hover:border-green-600 hover:text-green-700 transition-all"
-          style={{ borderRadius: 9999 }}
+          className="inline-block border border-hairline text-ink-muted text-sm font-semibold px-6 py-3 hover:border-green-600 hover:text-green-700 transition rounded-full"
         >
           Zum Magazin
         </Link>
         <Link
           href="/#regionen"
-          className="inline-block border border-gray-300 text-ink-muted text-sm font-semibold px-6 py-3 hover:border-green-600 hover:text-green-700 transition-all"
-          style={{ borderRadius: 9999 }}
+          className="inline-block border border-hairline text-ink-muted text-sm font-semibold px-6 py-3 hover:border-green-600 hover:text-green-700 transition rounded-full"
         >
           Regionen
         </Link>

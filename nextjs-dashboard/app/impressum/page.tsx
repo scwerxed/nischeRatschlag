@@ -20,10 +20,10 @@ export default function ImpressumPage() {
   return (
     <div className="max-w-2xl mx-auto px-6 py-12">
       <p className="eyebrow mb-2">Rechtliches</p>
-      <h1 className="font-serif text-4xl font-bold mb-8 text-ink">Impressum</h1>
+      <h1 className="font-serif text-display font-bold mb-8 text-ink">Impressum</h1>
 
       <section className="mb-8">
-        <h2 className="font-serif text-xl font-bold mb-3 text-ink">
+        <h2 className="font-serif text-tagline font-bold mb-3 text-ink">
           Medieninhaber &amp; für den Inhalt verantwortlich
         </h2>
         <p className="text-ink-muted leading-relaxed">
@@ -35,7 +35,7 @@ export default function ImpressumPage() {
       </section>
 
       <section className="mb-8">
-        <h2 className="font-serif text-xl font-bold mb-3 text-ink">Kontakt</h2>
+        <h2 className="font-serif text-tagline font-bold mb-3 text-ink">Kontakt</h2>
         <p className="text-ink-muted leading-relaxed">
           E-Mail:{' '}
           <a href={`mailto:${IMPRESSUM.email}`} className="text-green-700 hover:underline">
@@ -50,7 +50,7 @@ export default function ImpressumPage() {
       </section>
 
       <section className="mb-8">
-        <h2 className="font-serif text-xl font-bold mb-3 text-ink">
+        <h2 className="font-serif text-tagline font-bold mb-3 text-ink">
           Offenlegung gemäß § 25 MedienG
         </h2>
         <p className="text-ink-muted leading-relaxed">
@@ -61,7 +61,7 @@ export default function ImpressumPage() {
       </section>
 
       <section className="mb-8">
-        <h2 className="font-serif text-xl font-bold mb-3 text-ink">Haftung für Inhalte</h2>
+        <h2 className="font-serif text-tagline font-bold mb-3 text-ink">Haftung für Inhalte</h2>
         <p className="text-ink-muted leading-relaxed">
           Alle Inhalte wurden mit größtmöglicher Sorgfalt erstellt. Für die Richtigkeit,
           Vollständigkeit und Aktualität der Inhalte – insbesondere bei Preis-, Öffnungs- und
@@ -71,7 +71,7 @@ export default function ImpressumPage() {
       </section>
 
       <section className="mb-8">
-        <h2 className="font-serif text-xl font-bold mb-3 text-ink">Haftung für Links</h2>
+        <h2 className="font-serif text-tagline font-bold mb-3 text-ink">Haftung für Links</h2>
         <p className="text-ink-muted leading-relaxed">
           Diese Website enthält Links zu externen Websites Dritter, auf deren Inhalte wir keinen
           Einfluss haben. Für diese fremden Inhalte ist stets der jeweilige Anbieter verantwortlich.
@@ -79,7 +79,7 @@ export default function ImpressumPage() {
       </section>
 
       <section className="mb-8">
-        <h2 className="font-serif text-xl font-bold mb-3 text-ink">Affiliate- &amp; Werbehinweis</h2>
+        <h2 className="font-serif text-tagline font-bold mb-3 text-ink">Affiliate- &amp; Werbehinweis</h2>
         <p className="text-ink-muted leading-relaxed">
           Diese Website finanziert sich über Werbung (Google AdSense) und Affiliate-Partnerschaften
           (u. a. Amazon, booking.com). Bei Käufen über entsprechend gekennzeichnete Links erhalten
@@ -88,7 +88,7 @@ export default function ImpressumPage() {
       </section>
 
       <section className="mb-8">
-        <h2 className="font-serif text-xl font-bold mb-3 text-ink">Online-Streitbeilegung</h2>
+        <h2 className="font-serif text-tagline font-bold mb-3 text-ink">Online-Streitbeilegung</h2>
         <p className="text-ink-muted leading-relaxed">
           Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit:{' '}
           <a href="https://ec.europa.eu/consumers/odr" target="_blank" rel="noopener noreferrer" className="text-green-700 hover:underline">

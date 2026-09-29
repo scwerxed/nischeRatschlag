@@ -11,7 +11,7 @@ export default function UeberUnsPage() {
   return (
     <div className="max-w-2xl mx-auto px-6 py-12">
       <p className="eyebrow mb-2">Über uns</p>
-      <h1 className="font-serif text-4xl font-bold mb-6 text-ink">
+      <h1 className="font-serif text-display font-bold mb-6 text-ink">
         Österreich, wie wir es wirklich erleben
       </h1>
 

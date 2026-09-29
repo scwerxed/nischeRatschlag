@@ -67,7 +67,7 @@ export default async function WochenendtripStadtPage({ params }: Props) {
       </nav>
 
       <p className="eyebrow mb-2">Wochenendtrip</p>
-      <h1 className="font-serif text-4xl font-bold mb-3 text-ink">Ausflüge & Kurztrips ab {city.name}</h1>
+      <h1 className="font-serif text-display font-bold mb-3 text-ink">Ausflüge & Kurztrips ab {city.name}</h1>
       <p className="text-ink-soft max-w-2xl mb-4 leading-relaxed">{city.intro}</p>
       <p className="text-xs text-ink-soft mb-10">Entfernungen als Luftlinie – die tatsächliche Fahrzeit hängt von Route und Verkehr ab.</p>
 
@@ -77,7 +77,7 @@ export default async function WochenendtripStadtPage({ params }: Props) {
 
       {groups.map((g) => (
         <section key={g.bucket.key} className="mb-14">
-          <h2 className="font-serif text-2xl font-bold mb-5 text-ink flex items-baseline gap-2">
+          <h2 className="font-serif text-lead font-bold mb-5 text-ink flex items-baseline gap-2">
             {g.bucket.label}
             <span className="text-sm font-sans font-normal text-ink-soft">{g.items.length} Ziele</span>
           </h2>
@@ -86,7 +86,7 @@ export default async function WochenendtripStadtPage({ params }: Props) {
               <Link
                 key={post.slug}
                 href={`/blog/${post.slug}`}
-                className="group block border border-hairline rounded-xl overflow-hidden hover:border-green-400 transition-all"
+                className="group block border border-hairline rounded-xl overflow-hidden hover:border-green-400 transition"
               >
                 <div className="aspect-[16/9]">
                   <PostArtwork seed={post.slug} category={post.category} />
@@ -108,10 +108,10 @@ export default async function WochenendtripStadtPage({ params }: Props) {
       ))}
 
       <div className="mt-6 flex flex-wrap gap-3">
-        <Link href="/wochenendtrip" className="inline-block border border-green-700 text-green-700 text-sm font-semibold px-5 py-2.5 hover:bg-green-50 transition-colors" style={{ borderRadius: 9999 }}>
+        <Link href="/wochenendtrip" className="inline-block border border-green-700 text-green-700 text-sm font-semibold px-5 py-2.5 hover:bg-green-50 transition-colors rounded-full">
           Andere Startstädte
         </Link>
-        <Link href="/blog" className="inline-block border border-gray-300 text-ink-muted text-sm font-semibold px-5 py-2.5 hover:border-green-600 hover:text-green-700 transition-colors" style={{ borderRadius: 9999 }}>
+        <Link href="/blog" className="inline-block border border-hairline text-ink-muted text-sm font-semibold px-5 py-2.5 hover:border-green-600 hover:text-green-700 transition-colors rounded-full">
           Alle Artikel
         </Link>
       </div>

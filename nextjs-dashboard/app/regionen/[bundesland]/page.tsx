@@ -94,7 +94,7 @@ export default async function RegionPage({ params }: Props) {
         <Link href="/" className="text-sm text-green-600 hover:underline">
           ← Zurück zur Startseite
         </Link>
-        <h1 className="font-serif text-4xl font-bold mt-3 mb-2 text-ink">{region.name}</h1>
+        <h1 className="font-serif text-display font-bold mt-3 mb-2 text-ink">{region.name}</h1>
         <p className="text-ink-soft max-w-2xl">{region.beschreibung}</p>
       </div>
 
@@ -122,7 +122,7 @@ export default async function RegionPage({ params }: Props) {
           {content && (
             <div className="bg-green-800 text-white p-8 mb-8 border-l-4 border-sand-300">
               <p className="eyebrow text-green-300 mb-2">{content.intro.eyebrow}</p>
-              <h2 className="font-serif text-2xl font-bold mb-3">{content.intro.title}</h2>
+              <h2 className="font-serif text-lead font-bold mb-3">{content.intro.title}</h2>
               <p className="text-green-100 text-sm leading-relaxed mb-6 max-w-2xl">{content.intro.text}</p>
               <div className="grid grid-cols-4 gap-px bg-white/15 border border-white/15 max-w-md">
                 {[{ v: String(regionPosts.length), l: 'Artikel' }, ...content.intro.stats].map((s) => (
@@ -143,8 +143,7 @@ export default async function RegionPage({ params }: Props) {
                 <a
                   key={cat}
                   href={`#${cat.toLowerCase()}`}
-                  className={`flex flex-col items-center border ${st?.bg ?? 'bg-gray-50'} ${st?.border ?? 'border-hairline'} py-3 px-2 text-center transition-all`}
-                  style={{ borderRadius: 8 }}
+                  className={`flex flex-col items-center border ${st?.bg ?? 'bg-parchment'} ${st?.border ?? 'border-hairline'} py-3 px-2 text-center transition rounded-sm`}
                 >
                   <span className={`w-2.5 h-2.5 rounded-full mb-2 ${CATEGORY_DOT[cat] ?? 'bg-gray-400'}`} />
                   <span className={`text-xs font-semibold uppercase tracking-wide ${st?.text ?? 'text-ink-muted'}`}>{cat}</span>
@@ -191,7 +190,7 @@ export default async function RegionPage({ params }: Props) {
           {/* Beste Reisezeit */}
           {content && (
             <section className="mb-12">
-              <h2 className="font-serif text-2xl font-bold mb-5 text-ink">Beste Reisezeit für {region.name}</h2>
+              <h2 className="font-serif text-lead font-bold mb-5 text-ink">Beste Reisezeit für {region.name}</h2>
               <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-3">
                 {content.seasons.map((s) => (
                   <div
@@ -218,7 +217,7 @@ export default async function RegionPage({ params }: Props) {
             if (catPosts.length === 0) return null;
             return (
               <section key={cat} id={cat.toLowerCase()} className="mb-14">
-                <h2 className="font-serif text-2xl font-bold mb-5 text-ink flex items-baseline gap-2">
+                <h2 className="font-serif text-lead font-bold mb-5 text-ink flex items-baseline gap-2">
                   {cat}
                   <span className="text-sm font-sans font-normal text-ink-soft">{catPosts.length} Artikel</span>
                 </h2>
@@ -227,7 +226,7 @@ export default async function RegionPage({ params }: Props) {
                     <Link
                       key={post.slug}
                       href={`/blog/${post.slug}`}
-                      className="group block border border-hairline rounded-xl p-6 overflow-hidden hover:border-green-400 transition-all"
+                      className="group block border border-hairline rounded-xl p-6 overflow-hidden hover:border-green-400 transition"
                     >
                       <div className="aspect-[16/9] -mx-6 -mt-6 mb-4 overflow-hidden">
                         <PostArtwork seed={post.slug} category={post.category} />
@@ -295,7 +294,7 @@ export default async function RegionPage({ params }: Props) {
           {stays.length > 0 && (
             <section className="mb-14">
               <p className="eyebrow mb-2">Unterkünfte</p>
-              <h2 className="font-serif text-2xl font-bold mb-1 text-ink">Hotels & Ferienwohnungen in {region.name}</h2>
+              <h2 className="font-serif text-lead font-bold mb-1 text-ink">Hotels & Ferienwohnungen in {region.name}</h2>
               <p className="text-sm text-ink-soft mb-5">Verfügbarkeit & Preise direkt über booking.com prüfen.</p>
               <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
                 {stays.map((u) => (
@@ -304,8 +303,7 @@ export default async function RegionPage({ params }: Props) {
                     href={cloak(u.bookingUrl)}
                     target="_blank"
                     rel="noopener noreferrer sponsored"
-                    className="group block border border-hairline p-4 hover:border-green-400 hover:bg-green-50 transition-colors"
-                    style={{ borderRadius: 18 }}
+                    className="group block border border-hairline p-4 hover:border-green-400 hover:bg-green-50 transition-colors rounded-lg"
                   >
                     <span className="block text-xs font-semibold text-green-700 uppercase tracking-wide">{u.typ} · {u.see}</span>
                     <span className="block font-semibold text-ink group-hover:text-green-700 mt-1 leading-snug">{u.name}</span>
@@ -337,7 +335,7 @@ export default async function RegionPage({ params }: Props) {
                 }}
               />
               <p className="eyebrow mb-2">FAQ</p>
-              <h2 className="font-serif text-2xl font-bold mb-5 text-ink">Häufige Fragen zu {region.name}</h2>
+              <h2 className="font-serif text-lead font-bold mb-5 text-ink">Häufige Fragen zu {region.name}</h2>
               <Faq items={FAQS_BY_REGION[bundesland]} />
             </section>
           )}

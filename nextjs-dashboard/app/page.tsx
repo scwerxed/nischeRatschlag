@@ -194,7 +194,7 @@ export default function HomePage() {
         <div className="grid md:grid-cols-2 gap-8">
           <FadeIn direction="left">
             <Link href={`/blog/${lead.slug}`} className="group block">
-              <div className="relative aspect-[16/10] mb-4 overflow-hidden" style={{ borderRadius: 18 }}>
+              <div className="relative aspect-[16/10] mb-4 overflow-hidden rounded-lg">
                 <PostArtwork seed={lead.slug} category={lead.category} className="absolute inset-0 transition-transform duration-700 group-hover:scale-105" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
                 <span className="absolute bottom-0 left-0 p-6 font-serif text-2xl text-white leading-snug">{lead.title}</span>
@@ -243,10 +243,10 @@ export default function HomePage() {
                 und handverlesenen Unterkünften direkt am See – Verfügbarkeit mit einem Klick.
               </p>
               <div className="flex flex-wrap gap-3">
-                <Link href="/karte" className="inline-block bg-green-700 text-white font-semibold px-7 py-3 hover:bg-green-800 transition-colors" style={{ borderRadius: 8 }}>
+                <Link href="/karte" className="inline-block bg-green-700 text-white font-semibold px-7 py-3 hover:bg-green-800 transition-colors rounded-sm">
                   Karte öffnen
                 </Link>
-                <Link href="/routenplaner" className="inline-block border border-gray-300 text-ink-muted font-semibold px-7 py-3 hover:border-green-600 hover:text-green-700 transition-colors" style={{ borderRadius: 8 }}>
+                <Link href="/routenplaner" className="inline-block border border-hairline text-ink-muted font-semibold px-7 py-3 hover:border-green-600 hover:text-green-700 transition-colors rounded-sm">
                   Route planen
                 </Link>
               </div>
@@ -258,7 +258,7 @@ export default function HomePage() {
                 { t: 'Gipfel', d: 'Über 1.000 benannte Gipfel, live von OpenStreetMap', icon: 'M2 14L8 3l6 11H2z' },
               ].map((c) => (
                 <div key={c.t} className="flex gap-4 py-5 border-b border-hairline group">
-                  <span className="shrink-0 w-8 h-8 bg-green-50 border border-green-200 flex items-center justify-center" style={{ borderRadius: 9999 }}>
+                  <span className="shrink-0 w-8 h-8 bg-green-50 border border-green-200 flex items-center justify-center rounded-full">
                     <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.5" className="text-green-700">
                       <path d={c.icon} strokeLinecap="round" strokeLinejoin="round" />
                     </svg>

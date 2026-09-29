@@ -102,8 +102,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify([orgSchema(), websiteSchema()]) }}
         />
+        <a
+          href="#inhalt"
+          className="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-[2000] focus:bg-green-700 focus:text-white focus:px-4 focus:py-2 focus:rounded-full"
+        >
+          Zum Inhalt springen
+        </a>
         <Navbar />
-        <main>{children}</main>
+        <main id="inhalt">{children}</main>
         <Footer />
         <ScrollToTop />
         {/* Vercel Web Analytics (Besucherstatistik) + Speed Insights (Ladezeiten/SEO) */}

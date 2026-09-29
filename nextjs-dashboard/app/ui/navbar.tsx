@@ -55,7 +55,7 @@ function SearchForm({ onSubmit }: { onSubmit?: () => void }) {
         onChange={(e) => setQ(e.target.value)}
         placeholder="Suchen…"
         aria-label="Artikel durchsuchen"
-        className="w-full pl-9 pr-4 py-2 text-caption bg-canvas border border-hairline rounded-full outline-none transition-colors focus:border-green-600"
+        className="w-full pl-9 pr-4 py-2 text-caption bg-canvas border border-hairline rounded-full outline-none transition-colors focus:border-green-600 focus-visible:ring-2 focus-visible:ring-green-600"
       />
       <svg className="absolute left-3 top-1/2 -translate-y-1/2 text-ink-soft" width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.6" aria-hidden>
         <circle cx="7" cy="7" r="5" /><path d="M11 11l3.5 3.5" strokeLinecap="round" />
@@ -126,7 +126,7 @@ export default function Navbar() {
               <Link
                 key={l.href}
                 href={l.href}
-                className={`relative transition-colors after:absolute after:left-0 after:-bottom-1.5 after:h-px after:bg-green-600 after:transition-all ${
+                className={`relative transition-colors after:absolute after:left-0 after:-bottom-1.5 after:h-px after:bg-green-600 after:transition ${
                   isActive(l.href)
                     ? 'text-green-700 after:w-full'
                     : 'hover:text-green-700 after:w-0 hover:after:w-full'
@@ -147,18 +147,21 @@ export default function Navbar() {
             aria-label={open ? 'Menü schließen' : 'Menü öffnen'}
             aria-expanded={open}
           >
-            <span className={`block w-6 h-0.5 bg-ink transition-all duration-300 ${open ? 'translate-y-[7px] rotate-45' : ''}`} />
-            <span className={`block w-6 h-0.5 bg-gray-800 my-1.5 transition-all duration-300 ${open ? 'opacity-0' : ''}`} />
-            <span className={`block w-6 h-0.5 bg-ink transition-all duration-300 ${open ? '-translate-y-[7px] -rotate-45' : ''}`} />
+            <span className={`block w-6 h-0.5 bg-ink transition duration-300 ${open ? 'translate-y-[7px] rotate-45' : ''}`} />
+            <span className={`block w-6 h-0.5 bg-gray-800 my-1.5 transition duration-300 ${open ? 'opacity-0' : ''}`} />
+            <span className={`block w-6 h-0.5 bg-ink transition duration-300 ${open ? '-translate-y-[7px] -rotate-45' : ''}`} />
           </button>
         </div>
       </div>
 
       {/* Mobiles Overlay-Menü */}
       <div
-        className={`md:hidden fixed inset-0 top-16 z-[1190] bg-white transition-[opacity,transform] duration-300 ${
-          open ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-full pointer-events-none'
+        className={`md:hidden fixed inset-0 top-16 z-[1190] overflow-y-auto scroll-panel bg-canvas transition-[opacity,transform,visibility] duration-300 ${
+          open
+            ? 'visible opacity-100 translate-x-0'
+            : 'invisible opacity-0 translate-x-full pointer-events-none'
         }`}
+        aria-hidden={!open}
       >
         <div className="px-6 pt-5 pb-1">
           <SearchForm onSubmit={() => setOpen(false)} />
@@ -183,8 +186,7 @@ export default function Navbar() {
           <Link
             href="/karte"
             onClick={() => setOpen(false)}
-            className="btn-primary w-full"
-            style={{ borderRadius: 8 }}
+            className="btn-primary w-full rounded-sm"
           >
             Wanderkarte öffnen
           </Link>

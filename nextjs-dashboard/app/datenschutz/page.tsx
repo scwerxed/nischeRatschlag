@@ -11,7 +11,7 @@ const KONTAKT_EMAIL = 'gabriel.seebacher@gmail.com';
 function Section({ title, children }: { title: string; children: React.ReactNode }) {
   return (
     <section className="mb-8">
-      <h2 className="font-serif text-xl font-bold mb-3 text-ink">{title}</h2>
+      <h2 className="font-serif text-tagline font-bold mb-3 text-ink">{title}</h2>
       <div className="text-ink-muted leading-relaxed space-y-3">{children}</div>
     </section>
   );
@@ -21,7 +21,7 @@ export default function DatenschutzPage() {
   return (
     <div className="max-w-2xl mx-auto px-6 py-12">
       <p className="eyebrow mb-2">Rechtliches</p>
-      <h1 className="font-serif text-4xl font-bold mb-3 text-ink">Datenschutzerklärung</h1>
+      <h1 className="font-serif text-display font-bold mb-3 text-ink">Datenschutzerklärung</h1>
       <p className="text-ink-soft mb-10">
         Wir nehmen den Schutz deiner Daten ernst. Nachfolgend informieren wir dich gemäß
         Datenschutz-Grundverordnung (DSGVO) über die Verarbeitung personenbezogener Daten.

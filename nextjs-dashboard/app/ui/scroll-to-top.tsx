@@ -15,10 +15,8 @@ export default function ScrollToTop() {
     <button
       onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
       aria-label="Nach oben"
-      className="fixed bottom-5 right-5 z-[1500] w-11 h-11 bg-green-700/90 backdrop-blur text-white shadow-lg hover:bg-green-800 hover:-translate-y-0.5 active:translate-y-0 transition-all duration-300 flex items-center justify-center"
-      style={{
-        borderRadius: 18,
-        opacity: show ? 1 : 0,
+      className="fixed bottom-5 right-5 z-[1500] w-11 h-11 bg-green-700/90 backdrop-blur text-white shadow-lg hover:bg-green-800 hover:-translate-y-0.5 active:translate-y-0 transition duration-300 flex items-center justify-center rounded-lg"
+      style={{ opacity: show ? 1 : 0,
         transform: show ? 'translateY(0)' : 'translateY(16px)',
         pointerEvents: show ? 'auto' : 'none',
         transition: 'opacity 300ms, transform 300ms cubic-bezier(.16,1,.3,1), background-color 200ms, box-shadow 200ms',

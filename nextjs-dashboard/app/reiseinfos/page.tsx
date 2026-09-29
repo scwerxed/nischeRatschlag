@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 function Block({ title, children }: { title: string; children: React.ReactNode }) {
   return (
     <section className="mb-10">
-      <h2 className="font-serif text-2xl font-bold mb-4 text-ink border-b border-hairline pb-2">{title}</h2>
+      <h2 className="font-serif text-lead font-bold mb-4 text-ink border-b border-hairline pb-2">{title}</h2>
       <div className="text-ink-muted leading-relaxed space-y-3">{children}</div>
     </section>
   );
@@ -30,7 +30,7 @@ export default function ReiseinfosPage() {
       />
 
       <p className="eyebrow mb-2">Praktisches</p>
-      <h1 className="font-serif text-4xl font-bold mb-3 text-ink">Österreich Reiseinfos</h1>
+      <h1 className="font-serif text-display font-bold mb-3 text-ink">Österreich Reiseinfos</h1>
       <p className="text-ink-soft mb-10">
         Das Wichtigste für die Planung deines Österreich-Urlaubs auf einen Blick – Anreise, Maut,
         Kosten und was in den Koffer gehört.
@@ -86,8 +86,8 @@ export default function ReiseinfosPage() {
         <p className="font-serif text-lg font-bold text-ink mb-1">Bereit für die Planung?</p>
         <p className="text-sm text-ink-muted mb-3">Stöbere durch unsere Tipps oder plane direkt deine Wanderroute.</p>
         <div className="flex flex-wrap gap-3">
-          <Link href="/blog" className="inline-block bg-green-700 text-white text-sm font-semibold px-5 py-2.5 hover:bg-green-800 transition-colors" style={{ borderRadius: 8 }}>Zum Magazin</Link>
-          <Link href="/routenplaner" className="inline-block border border-green-700 text-green-700 text-sm font-semibold px-5 py-2.5 hover:bg-green-100 transition-colors" style={{ borderRadius: 8 }}>Route planen</Link>
+          <Link href="/blog" className="inline-block bg-green-700 text-white text-sm font-semibold px-5 py-2.5 hover:bg-green-800 transition-colors rounded-sm">Zum Magazin</Link>
+          <Link href="/routenplaner" className="inline-block border border-green-700 text-green-700 text-sm font-semibold px-5 py-2.5 hover:bg-green-100 transition-colors rounded-sm">Route planen</Link>
         </div>
       </div>
     </div>
