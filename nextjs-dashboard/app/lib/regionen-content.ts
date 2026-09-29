@@ -16,7 +16,7 @@ export const REGION_CONTENT: Record<string, RegionContent> = {
     intro: {
       eyebrow: 'Österreichs Seenland',
       title: 'Alpenwandern und Badesommer in einem',
-      text: 'Über 1.270 Seen, Gipfel bis 3.798 m und das wärmste Seewasser Österreichs. Hier findest du kuratierte Insider-Tipps – mit konkreten Preisen, ehrlichen Bewertungen und Kombinationsrouten, die andere Websites nicht zeigen.',
+      text: 'Über 1.270 Seen, Gipfel bis 3.798 m und das wärmste Seewasser Österreichs. Hier findest du kuratierte Insider-Tipps – mit konkreten Startpunkten, ehrlichen Bewertungen und Kombinationsrouten, die andere Websites nicht zeigen.',
       stats: [{ v: '1.270+', l: 'Seen' }, { v: '29 °C', l: 'max. Wassertemp.' }, { v: '3.798 m', l: 'höchster Gipfel' }],
     },
     seasons: [

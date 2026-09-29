@@ -127,7 +127,7 @@ export default async function RegionPage({ params }: Props) {
               <div className="grid grid-cols-4 gap-px bg-white/15 border border-white/15 max-w-md">
                 {[{ v: String(regionPosts.length), l: 'Artikel' }, ...content.intro.stats].map((s) => (
                   <div key={s.l} className="bg-green-800 py-3 text-center">
-                    <p className="font-serif font-bold text-tagline">{s.v}</p>
+                    <p className="font-serif font-bold text-tagline whitespace-nowrap" data-numeric>{s.v}</p>
                     <p className="text-green-200 text-fine mt-0.5">{s.l}</p>
                   </div>
                 ))}
