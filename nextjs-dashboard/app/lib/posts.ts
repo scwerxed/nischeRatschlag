@@ -2643,20 +2643,55 @@ Ideal mit einem Besuch im **Nationalpark Gesäuse** zu verbinden – Kultur am V
     bestSeason: 'Ganzjährig',
     highlights: ['Größte erschlossene Tropfsteinhöhle Österreichs', 'Konstant kühl – perfekt bei Hitze', 'Geführte Touren für Familien'],
     content: `
-Die Lurgrotte zwischen Peggau und Semriach nördlich von Graz ist die größte wasserführende und erschlossene Tropfsteinhöhle Österreichs – ein faszinierendes unterirdisches Naturwunder.
+Die **Lurgrotte** nördlich von Graz ist die größte aktive Wasserhöhle Österreichs – "aktiv" heißt: Durch sie fließt bis heute ein Bach, und die Höhle verändert sich weiter. Das unterscheidet sie von trockenen Schauhöhlen, in denen die Zeit gewissermaßen stehen geblieben ist.
 
-## Was dich erwartet
-Geführte Rundgänge durch riesige Hallen, vorbei an bizarren Tropfsteinen und dem unterirdischen Lurbach. Der größte Tropfstein, „der Riese", ist über 13 m hoch.
+## Zwei Eingänge, zwei Erlebnisse
+Die Höhle hat zwei Zugänge: **Peggau** im Westen und **Semriach** im Osten. Beide werden getrennt geführt und zeigen unterschiedliche Abschnitte.
 
-## Ideal als Wetter-Joker
-In der Höhle herrschen konstant rund 10 °C – das perfekte Ziel an heißen Sommertagen oder bei Regen.
+Von Peggau aus geht es auf einem verhältnismäßig kurzen Rundgang in die vorderen Hallen – gut geeignet für Familien und kurze Besuche. Von Semriach aus führen längere Touren tiefer hinein, teils mehrere Kilometer, mit entsprechend höherem Anspruch.
 
-## Praktische Infos
-- Zwei Eingänge: Peggau (kürzere Tour) und Semriach (längere Tour)
-- **Warme Jacke** und feste Schuhe mitnehmen
-- Führungen zu festen Zeiten – vorab Zeiten prüfen
-- Anfahrt: Von Graz ca. 25 Minuten
-    `,
+Die Durchquerung von einem Eingang zum anderen ist ein Sonderprogramm und nur unter Begleitung möglich.
+
+## Der Riese
+Das bekannteste Objekt ist ein gewaltiger Tropfstein, genannt "Der Riese" – einer der größten frei stehenden Sinterzapfen Mitteleuropas. Daneben gibt es Sinterbecken, Vorhänge und Hallen von beträchtlicher Größe.
+
+## Warum "aktiv" auch ein Risiko ist
+Der Lurbach kann nach starken Regenfällen stark anschwellen. 1894 wurde eine Forschergruppe im Inneren eingeschlossen und musste tagelang ausharren – die Rettung gilt als frühes Kapitel der Höhlenforschungsgeschichte.
+
+Heute wird der Betrieb bei entsprechender Wetterlage eingestellt. Wer nach Starkregen anreist, sollte vorher anrufen.
+
+## Beste Zeit
+**Ganzjährig** – mit saisonal unterschiedlichen Führungszeiten. In der Höhle herrschen konstant rund **acht bis zehn Grad**, unabhängig von der Jahreszeit.
+
+Damit ist die Lurgrotte einer der besten Pläne für zwei Situationen: heiße Sommertage, an denen man Kühle sucht, und Regentage rund um Graz.
+
+## Anreise
+Peggau liegt rund 20 Autominuten nördlich von Graz und hat einen Bahnhof an der Strecke nach Bruck an der Mur – der Eingang ist von dort in Gehweite. Das ist eine der wenigen Höhlen Österreichs, die man ganz ohne Auto erreicht.
+
+Semriach erreicht man über eine kurvige Straße von Graz aus in etwa 30 Minuten; öffentlich mit Bus.
+
+## Was du mitnehmen solltest
+- **Warme Jacke** – acht Grad fühlen sich nach einer Stunde deutlich kälter an
+- Feste Schuhe mit Profil: Die Wege sind feucht und teils rutschig
+- Keine Platzangst-Probleme: Manche Passagen sind eng
+- Für Kinder: eine zusätzliche Schicht, sie frieren schneller
+
+## Ehrlich gesagt
+Die Führungen sind getaktet und in Gruppen – eigenes Tempo ist nicht vorgesehen. Wer Höhlen lieber in Ruhe erkundet, wird das als Einschränkung empfinden.
+
+Die kurze Peggauer Variante ist für manche zu kurz, um die Anfahrt zu rechtfertigen; die langen Semriacher Touren sind für kleine Kinder zu anstrengend. Vorher zu prüfen, welche Führung zur Gruppe passt, ist hier wichtiger als bei anderen Zielen.
+
+Und es ist wirklich nass und kühl – wer in kurzer Hose kommt, friert.
+
+## Gut kombinierbar
+- [Grazer Altstadt](/blog/graz-altstadt-sehenswuerdigkeiten) – 20 Minuten südlich
+- [Schöckl](/blog/schoeckl-graz-hausberg) – der Hausberg gleich nebenan
+- [Stift Admont](/blog/stift-admont-bibliothek) – rund eine Stunde nordwestlich
+
+---
+
+**Kurz gesagt:** Der verlässlichste Kühl- und Regenplan rund um Graz – warm anziehen und vorher die passende Führung wählen.
+`,
     affiliateLinks: [
       { label: 'Unterkünfte bei Graz – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Peggau' },
       { label: 'Stirnlampe für Höhlen – Amazon', url: 'https://www.amazon.de/s?k=stirnlampe' },
@@ -2705,24 +2740,53 @@ Mariazeller **Lebkuchen** und Kräuterliköre sind beliebte Mitbringsel – die 
     bestSeason: 'Mai–Oktober',
     highlights: ['Genussregion: Kernöl, Wein, Schokolade', 'Riegersburg & Zotter mittendrin', 'Vulkanland-Thermen zum Entspannen'],
     content: `
-Vor Millionen Jahren brodelten hier Vulkane – heute ist das Steirische Vulkanland eine sanfte Hügellandschaft und eine der bekanntesten Genussregionen Österreichs.
+Das **Steirische Vulkanland** im Südosten der Steiermark ist eine Landschaft, die man auf den ersten Blick unterschätzt: sanfte Hügel, Obstgärten, Weingärten, kleine Orte. Der Name kommt von der Geologie – hier waren vor Millionen Jahren Vulkane aktiv, und ihre Reste prägen die Gegend bis heute.
 
-## Genuss pur
-Die Region steht für höchste Produktqualität: steirisches **Kürbiskernöl** („grünes Gold"), Wein, Edelbrände, Käferbohnen und die weltbekannte **Zotter-Schokolade**.
+## Die Vulkane
+Sichtbar sind sie als markante Kegel, die aus dem Hügelland aufragen. Der bekannteste trägt die **Riegersburg**, die auf einem Basaltfelsen sitzt – eine Burg, die genau deshalb über Jahrhunderte als uneinnehmbar galt.
 
-## Sehenswertes
-- **Riegersburg** – mächtige Burg auf einem Vulkanfelsen
-- **Zotter Schokoladenmanufaktur** mit Verkostung
-- Vulkanland-Thermen (Loipersdorf, Bad Gleichenberg)
+Rund um **Bad Gleichenberg** liegt ein weiterer Vulkanrest; die dortigen Mineralquellen verdanken ihre Existenz derselben Geologie. Der Kurpark ist mit seinem alten Baumbestand eine eigene Sehenswürdigkeit.
 
-## Genuss-Tour
-Eine Rundfahrt durch das Vulkanland verbindet Buschenschänke, Hofläden und Aussichtspunkte. Ideal mit dem Auto oder E-Bike.
+## Was man hier isst und trinkt
+Das Vulkanland ist Kernland des **steirischen Kürbiskernöls** – des dunkelgrünen, nussigen Öls mit geschützter Herkunftsbezeichnung. Ölmühlen bieten Führungen und Verkostungen an.
 
-## Praktische Infos
-- Anfahrt: Von Graz ca. 45–60 Minuten
-- Hofläden & Buschenschänke haben wechselnde Öffnungszeiten
-- Gut mit Riegersburg + Therme zu einem Tag kombinierbar
-    `,
+Dazu kommen Wein (rund um Klöch besonders Traminer), Obstbrände, Apfelsäfte und eine sehr lebendige Buschenschank-Kultur. Die Betriebe öffnen abwechselnd nach Aushang – vorher prüfen, sonst steht man vor geschlossenen Türen.
+
+Das ist das eigentliche Programm hier: Man fährt von Hof zu Hof, probiert, kauft ein und isst zwischendurch eine Brettljause.
+
+## Orte, die sich lohnen
+**Straden** gilt als eines der schönsten Dörfer der Steiermark, auf einem Hügel mit gleich mehreren Kirchen. **Kapfenstein** und **Klöch** sind Weinorte mit Aussicht. Und die **Riegersburg** ist das eine Ziel, das man auch ohne Interesse an Kulinarik ansteuert.
+
+## Beste Zeit
+**Mai bis Oktober.** Der Herbst ist die stärkste Zeit: Weinlese, Kürbisernte, Farben und ein volles Veranstaltungsprogramm. Der Frühsommer ist grüner und ruhiger.
+
+Im Winter ist die Region sehr still, viele Betriebe sind geschlossen.
+
+## Anreise
+Von Graz rund eine Stunde, von Wien etwa 2,5. Die Region ist weitläufig und die Ziele liegen verstreut – ohne Auto ist sie kaum sinnvoll zu erschließen. Bahn bis Feldbach oder Gleisdorf, danach wird es dünn.
+
+## Was du mitnehmen solltest
+- **Bargeld** – viele Hofläden und Buschenschanken nehmen keine Karte
+- Eine Kühltasche, wenn du einkaufen willst (Öl, Käse, Fleisch)
+- Bequeme Schuhe für Ortsrundgänge und kurze Wanderungen
+- Einen Plan, wer geöffnet hat: Das entscheidet über den Tag
+
+## Ehrlich gesagt
+Das Vulkanland ist keine Sehenswürdigkeits-Region. Außer der Riegersburg gibt es kein Ziel, das allein eine Anreise rechtfertigt. Der Wert liegt in der Summe – Landschaft, Essen, Ortsbilder –, und das setzt voraus, dass man Zeit mitbringt und sich treiben lässt.
+
+Wer mit Kindern kommt, wird feststellen: Buschenschanken und Ölmühlen sind für die wenig spannend. Die Riegersburg mit Greifvogelwarte und die Schokoladenmanufaktur dort sind die Ausnahme.
+
+Und: An einem Montag außerhalb der Saison kann die ganze Region sehr verschlossen wirken.
+
+## Gut kombinierbar
+- [Riegersburg](/blog/riegersburg-burg-ausflug) – das Wahrzeichen der Region
+- [Bad Blumau](/blog/rogner-bad-blumau-therme) – die Hundertwasser-Therme im Norden
+- [Therme Loipersdorf](/blog/therme-loipersdorf-steiermark) – der Plan B bei Regen
+
+---
+
+**Kurz gesagt:** Eine Genussregion zum Langsamfahren – am schönsten im Herbst und nur mit Auto und Bargeld sinnvoll.
+`,
     affiliateLinks: [
       { label: 'Unterkünfte im Vulkanland – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Bad+Gleichenberg' },
       { label: 'Steirisches Kürbiskernöl – Amazon', url: 'https://www.amazon.de/s?k=steirisches+k%C3%BCrbiskern%C3%B6l' },
@@ -3117,20 +3181,59 @@ Familien (flacher See, viele Aktivitäten), Aktive (Wandern, Radfahren, Wassersp
     bestSeason: 'Mai–Oktober',
     highlights: ['380 m – höchster Wasserfall Europas', 'Gut angelegter Wasserfallweg', 'Heilklima durch Wassernebel'],
     content: `
-Die Krimmler Wasserfälle im Nationalpark Hohe Tauern stürzen in drei gewaltigen Stufen 380 Meter in die Tiefe – ein Naturschauspiel, das jährlich Hunderttausende anzieht.
+Die **Krimmler Wasserfälle** im hinteren Salzburger Pinzgau sind mit rund 380 Metern Fallhöhe die höchsten Wasserfälle Österreichs – und einer der wenigen Orte, an denen die schiere Wassermenge körperlich spürbar wird. Man hört sie, bevor man sie sieht.
 
 ## Der Wasserfallweg
-Ein gut angelegter, stetig ansteigender Weg führt entlang der Kaskaden zu mehreren Aussichtskanzeln. Hin und zurück ca. 3–4 Stunden (mit Pausen), aber auch kürzere Abschnitte lohnen.
+Der Aufstieg führt in Serpentinen an allen drei Fallstufen vorbei. Insgesamt sind es rund 400 Höhenmeter bis zum obersten Aussichtspunkt; für Auf- und Abstieg sollte man zwei bis drei Stunden einplanen.
 
-## Gesundes Mikroklima
-Der feine Wassernebel gilt als heilsam für die Atemwege – die Krimmler Wasserfälle werden sogar für Allergiker-Studien genutzt.
+Unterwegs gibt es mehrere **Kanzeln**, die direkt in den Sprühnebel hineinreichen. An der untersten Stufe wird man garantiert nass – das gehört dazu und ist an heißen Tagen ausgesprochen angenehm.
 
-## Praktische Infos
-- Festes Schuhwerk & Regenschutz (es ist nass und kann rutschig sein)
-- Eintritt/Parkgebühr vor Ort
-- Anfahrt: Im Oberpinzgau, von Zell am See ca. 1 Stunde
-- Kombinierbar mit dem Nationalpark Hohe Tauern
-    `,
+Der Weg ist gut ausgebaut und breit, aber durchgehend steigend. Kinderwagen funktionieren nur auf dem untersten Abschnitt.
+
+Wer nicht den ganzen Weg gehen will: Schon der erste Aussichtspunkt nach etwa 15 Minuten zeigt die unterste Stufe in voller Höhe. Der Rest ist Zugabe – schön, aber nicht zwingend.
+
+## Warum die Luft hier besonders ist
+Der Sprühnebel der Fälle erzeugt ein Aerosol mit sehr feinen Wassertröpfchen. Der Effekt dieser Luft auf die Atemwege wurde wissenschaftlich untersucht, und in Krimml gibt es dazu ein eigenes Gesundheitsangebot. Auch ohne medizinisches Interesse: Die Luft am Wasserfall fühlt sich messbar anders an.
+
+## Wann am meisten Wasser fließt
+Die Fälle werden von Gletscher- und Schmelzwasser gespeist. Am gewaltigsten sind sie deshalb von **Ende Mai bis Juli**, wenn die Schneeschmelze in den Hohen Tauern auf Hochtouren läuft.
+
+Im Spätsommer und Herbst führen sie deutlich weniger Wasser. Sie sind dann immer noch sehenswert, aber nicht mehr überwältigend. Wer die volle Wucht will, kommt im Frühsommer – am besten früh am Tag.
+
+## Beste Zeit
+Der Wasserfallweg ist in der Regel von **April/Mai bis Oktober** geöffnet; im Winter ist er wegen Lawinen- und Eisgefahr gesperrt. Die genauen Termine wechseln jährlich.
+
+Vormittags ist es deutlich ruhiger. Ab Mittag kommen die Reisebusse.
+
+## Anreise
+Krimml liegt am Ende des Oberpinzgaus, rund 1,5 Stunden von Salzburg und knapp eine Stunde von Zell am See. Es gibt Parkplätze am Ortsrand, von dort sind es wenige Minuten zum Eingang.
+
+Öffentlich gut machbar: Pinzgauer Lokalbahn bis Krimml beziehungsweise Bus ab Zell am See. Das ist eine der besseren Öffi-Verbindungen zu einem Naturziel in Salzburg.
+
+Von Tiroler Seite führt die Gerlos Alpenstraße herüber – mautpflichtig, aber landschaftlich lohnend.
+
+## Was du mitnehmen solltest
+- **Regenjacke**, unbedingt: An den unteren Kanzeln steht man im Sprühnebel
+- Schuhe mit Profil – der Weg ist dauerhaft feucht
+- Wechselshirt, wenn du mit Kindern kommst
+- Wasserdichte Hülle fürs Handy
+
+## Ehrlich gesagt
+Die Krimmler Wasserfälle sind eines der bekanntesten Naturziele Österreichs, und das merkt man. In der Hochsaison ist der untere Wegabschnitt stark frequentiert, teils mit Gruppen.
+
+Der Eintritt zum Wasserfallweg ist kostenpflichtig – für viele überraschend bei einem Naturdenkmal, erklärt sich aber durch die Erhaltung des Wegs.
+
+Und: Wer im September kommt und die Bilder vom Juni im Kopf hat, wird enttäuscht sein. Die Wassermenge macht hier den Unterschied zwischen "schön" und "beeindruckend".
+
+## Gut kombinierbar
+- [Hohe Tauern Nationalpark](/blog/hohe-tauern-nationalpark-salzburg) – das Schutzgebiet, in dem die Fälle liegen
+- [Zell am See](/blog/zell-am-see-zeller-see) – rund eine Stunde talauswärts
+- [Zillertal](/blog/zillertal-wandern) – über die Gerlosstraße auf der Tiroler Seite
+
+---
+
+**Kurz gesagt:** Im Juni sind sie überwältigend, im September nur noch schön – die Jahreszeit entscheidet hier mehr als alles andere.
+`,
     affiliateLinks: [
       { label: 'Unterkünfte in Krimml/Oberpinzgau – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Krimml' },
       { label: 'Regenjacke für Ausflüge – Amazon', url: 'https://www.amazon.de/s?k=regenjacke+wandern' },
@@ -3245,21 +3348,55 @@ Eine kurvige Bergstraße, ein steiler Fußweg und eine **Seilbahn** bringen dich
     bestSeason: 'Dezember–März & Juni–September',
     highlights: ['Skicircus: 270 km Pisten', 'Top Mountainbike-Region im Sommer', 'Bergbahnen für bequeme Wanderungen'],
     content: `
-Saalbach-Hinterglemm im Pinzgau ist eine der bekanntesten Bergsportregionen Österreichs – im Winter Teil des riesigen „Skicircus", im Sommer ein Eldorado für Biker und Wanderer.
+**Saalbach Hinterglemm** im Salzburger Pinzgau ist im Winter eines der größten zusammenhängenden Skigebiete Österreichs – und im Sommer vor allem eines: ein Mountainbike-Revier. Wer wandert, findet hier gute Wege; wer fährt, findet ein durchgeplantes System.
 
-## Winter
-Der **Skicircus Saalbach Hinterglemm Leogang Fieberbrunn** bietet rund 270 Pistenkilometer – eines der größten zusammenhängenden Skigebiete Österreichs, ideal für ausgedehnte Skitage.
+## Das Tal
+Das Glemmtal zieht rund 15 Kilometer von Saalbach nach Westen und endet im **Talschluss** bei Lindlingalm – einem flachen, offenen Talende, das mit dem Rad oder zu Fuß gut erreichbar ist und deutlich ruhiger wirkt als der Hauptort.
 
-## Sommer
-- **Mountainbiking:** zahlreiche Trails und Bikeparks, Bergbahnen mit Radtransport
-- **Wandern:** Höhenwege mit Panoramablick, viele Hütten
-- Familienangebote rund um die Bergbahnen
+Beide Talseiten sind von Bergbahnen erschlossen. Das heißt: Man kommt schnell auf Höhe und kann oben lange gehen, ohne viel steigen zu müssen – für Familien und für Genusswanderer ein echtes Argument.
 
-## Praktische Infos
-- Anfahrt: Von Zell am See ca. 20 Minuten
-- Sommer- bzw. Skipass-Karten oft mit Übernachtung vergünstigt
-- Lebhaftes Aprés-Ski im Winter – wer Ruhe sucht, weicht aus
-    `,
+## Wandern
+Auf den Höhenrücken verlaufen weitläufige Wege über Almgelände, mit Blick auf die Hohen Tauern im Süden. Die **Almenrunden** lassen sich fast beliebig lang zusammenstellen, weil an mehreren Punkten Bahnen ins Tal führen.
+
+Ein beliebtes Ziel ist der **Baumzipfelweg** mit der langen Hängebrücke über das Tal – ein Steg in Baumwipfelhöhe, der auch mit Kindern funktioniert.
+
+## Mountainbike
+Saalbach hat sich konsequent auf Mountainbiking ausgerichtet: markierte Trails unterschiedlicher Schwierigkeit, Bike-Transport in den Bahnen, Verleih und Schulen im Ort. Wer das Thema ernsthaft betreibt, findet hier eine der dichtesten Infrastrukturen der Alpen.
+
+Für Wanderer bedeutet das allerdings auch: Auf manchen Wegen ist mit Radverkehr zu rechnen. Die Wege sind überwiegend getrennt, aber nicht überall.
+
+## Beste Zeit
+**Juni bis September** für Wandern und Biken. Der Juni ist am grünsten, der September am klarsten. Im Hochsommer ist Familienzeit und entsprechend Betrieb.
+
+Im Winter ist Saalbach ein Großskigebiet mit allem, was dazugehört – auch mit einem ausgeprägten Aprés-Ski-Ruf.
+
+## Anreise
+Von Salzburg rund 1,5 Stunden, von Zell am See etwa 20 Minuten. Öffentlich: Bahn bis Zell am See, dann Bus ins Glemmtal – eine solide Verbindung.
+
+Im Ort selbst gibt es Skibusse beziehungsweise im Sommer Wanderbusse, die die Talstationen verbinden.
+
+## Was du mitnehmen solltest
+- Feste Schuhe – die Höhenwege sind gutmütig, aber lang
+- Windjacke für die Rücken, dort zieht es
+- Bargeld für Almen
+- Bei Radverkehr: Kinder an der Hand, besonders auf gemeinsam genutzten Wegen
+
+## Ehrlich gesagt
+Saalbach ist ein durchgeplanter Tourismusort. Das Tal ist dicht bebaut, und im Ortszentrum reiht sich Hotel an Hotel. Wer ein ursprüngliches Bergdorf sucht, ist hier klar falsch – dafür gibt es im Pinzgau bessere Adressen.
+
+Landschaftlich ist das Glemmtal solide, aber nicht spektakulär: sanfte Grasberge, keine Felsdramatik. Die Berge ringsum liegen unter 2.100 Metern. Wer Hochgebirge will, muss weiter südlich.
+
+Und im Sommer gilt: Viele der Wege sind Forststraßen und breite Pisten – gut zu gehen, aber weniger reizvoll als schmale Steige.
+
+## Gut kombinierbar
+- [Zell am See](/blog/zell-am-see-zeller-see) – 20 Minuten entfernt, mit See
+- [Kitzsteinhorn](/blog/kitzsteinhorn-kaprun) – das Hochgebirge nebenan
+- [Krimmler Wasserfälle](/blog/krimmler-wasserfaelle) – rund eine Stunde talauswärts
+
+---
+
+**Kurz gesagt:** Stark für Mountainbiker und für bequeme Höhenwanderungen – aber landschaftlich kein Hochgebirge.
+`,
     affiliateLinks: [
       { label: 'Hotels in Saalbach-Hinterglemm – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Saalbach+Hinterglemm' },
       { label: 'Skiausrüstung – Amazon', url: 'https://www.amazon.de/s?k=skihelm+mit+visier' },
@@ -3371,21 +3508,59 @@ Das Wasser ist klar und im Hochsommer angenehm (bis ~20 °C). Der verlässliche 
     bestSeason: 'Ganzjährig',
     highlights: ['Gletscher-Skigebiet Sölden', 'Aqua Dome Therme', 'Hochalpine Touren bis 3.000 m'],
     content: `
-Das Ötztal zieht sich tief in die Ötztaler Alpen – ein Tal der Superlative mit Gletschern, Dreitausendern und dem actionreichen Sölden.
+Das **Ötztal** ist mit rund 65 Kilometern eines der längsten Seitentäler der Alpen und führt von Inntal bis auf über 2.800 Meter Straßenhöhe. **Sölden** liegt im hinteren Teil und ist der bekannteste Ort – aber bei weitem nicht der einzige Grund, hierherzukommen.
 
-## Sölden
-Bekannt durch den Ski-Weltcup-Auftakt und das Gletscherskigebiet (Schnee bis in den Frühsommer). Die „Gaislachkogl"-Bahn führt zum Gipfelrestaurant und zur 007-ELEMENTS-James-Bond-Erlebniswelt.
+## Die Ötztaler Gletscherstraße
+Von Sölden führt die höchstgelegene asphaltierte Straße Österreichs hinauf zu den Gletschern am Rettenbach- und Tiefenbachferner. Der Scheitelpunkt liegt bei rund 2.800 Metern – man fährt also mit dem Auto in eine Höhe, für die man anderswo einen ganzen Tag steigen müsste.
 
-## Sommer im Ötztal
-- **Wandern:** von Talwegen bis zu hochalpinen Touren (z. B. rund um Obergurgl, das höchste Kirchdorf Österreichs)
-- **Aqua Dome** in Längenfeld: spektakuläre Thermenlandschaft mit Bergblick
-- Klettersteige, Rafting und Bikeparks
+Oben ist es auch im Hochsommer kalt und kahl. Die Straße ist mautpflichtig und saisonal geöffnet.
 
-## Praktische Infos
-- Anfahrt: Von Innsbruck ca. 1 Stunde
-- Hochalpine Touren nur mit Erfahrung & Ausrüstung
-- Aqua Dome ideal als Schlechtwetter- oder Aprés-Programm
-    `,
+## Gaislachkogl und 007 Elements
+Die Gaislachkoglbahn bringt dich auf knapp 3.000 Meter. Dort oben steht **007 Elements**, eine Installation zum James-Bond-Film, der hier gedreht wurde – architektonisch eindrucksvoll in den Berg gebaut.
+
+Der Rundblick vom Gaislachkogl über die Ötztaler Alpen ist einer der weitesten Tirols.
+
+## Der Stuibenfall
+Bei Umhausen im mittleren Ötztal stürzt der **Stuibenfall**, der höchste Wasserfall Tirols, rund 150 Meter über eine Felsstufe. Ein Steiganlage mit vielen Stufen und einer Hängebrücke führt daran vorbei – deutlich weniger überlaufen als die großen Namen und landschaftlich stark.
+
+## Aqua Dome
+In Längenfeld liegt die Thermenanlage **Aqua Dome** mit ihren markanten Außenbecken in Schalenform. Für Regentage und für den Abend nach einer langen Tour ist das der naheliegende Plan.
+
+## Ötzi
+Der bekannteste Fund der Region wurde 1991 am Tisenjoch in den Ötztaler Alpen entdeckt – die Gletschermumie **Ötzi**. Die Fundstelle liegt knapp auf Südtiroler Seite, die Mumie selbst ist in Bozen ausgestellt. In Umhausen gibt es ein Freilichtmuseum, das die Lebenswelt dieser Zeit zeigt.
+
+## Beste Zeit
+**Juni bis Oktober** für Wanderungen, wobei die hochgelegenen Touren erst ab Juli sinnvoll sind. Ende Oktober findet in Sölden traditionell der Auftakt des alpinen Ski-Weltcups statt – dann ist der Ort ausgebucht.
+
+Der **September** bietet die beste Kombination aus stabilem Wetter, klarer Luft und moderatem Betrieb.
+
+## Anreise
+Von Innsbruck rund eine Stunde bis Sölden, Abfahrt Ötztal von der Inntalautobahn und dann das gesamte Tal hinein. Achtung: Die Talstraße ist an Wintersamstagen und in der Hochsaison stark belastet.
+
+Öffentlich: Bahn bis Ötztal Bahnhof, dann Regionalbus ins Tal. Die Verbindung ist gut getaktet.
+
+## Was du mitnehmen solltest
+- Warme Kleidung für die Gletscherstraße – 2.800 Meter sind auch im Juli winterlich
+- Sonnenschutz: In dieser Höhe ist die Strahlung extrem
+- Feste Schuhe für den Stuibenfall-Steig (viele Stufen)
+- Badesachen für den Aqua Dome
+
+## Ehrlich gesagt
+Sölden ist ein durch und durch touristischer Ort – Hotelbauten, Aprés-Ski, Betrieb. Wer Tiroler Idylle sucht, ist im mittleren Ötztal (Umhausen, Längenfeld) oder im Seitental Vent deutlich besser aufgehoben.
+
+Die Gletscherstraße ist beeindruckend, aber sie führt in eine Landschaft aus Schotter, Liftanlagen und Skiinfrastruktur. Wer unberührtes Hochgebirge erwartet, wird überrascht.
+
+Und die Talstraße ist die einzige Verbindung – bei Stau gibt es keine Alternative.
+
+## Gut kombinierbar
+- [Pitztaler Gletscher](/blog/pitztaler-gletscher) – das Nachbartal, ruhiger
+- [Stubaier Gletscher](/blog/stubaier-gletscher) – näher an Innsbruck
+- [Innsbruck](/blog/innsbruck-sehenswuerdigkeiten) – eine Stunde talauswärts
+
+---
+
+**Kurz gesagt:** Für Gletscherstraße, Gaislachkogl und Stuibenfall – aber wer Ruhe will, bleibt im mittleren Ötztal.
+`,
     affiliateLinks: [
       { label: 'Hotels in Sölden/Ötztal – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=S%C3%B6lden' },
       { label: 'Ötztal: Tickets & Touren – GetYourGuide', url: 'https://www.getyourguide.de/s/?q=%C3%96tztal' },
@@ -3403,22 +3578,54 @@ Bekannt durch den Ski-Weltcup-Auftakt und das Gletscherskigebiet (Schnee bis in 
     bestSeason: 'Juni–Oktober',
     highlights: ['Von Almwanderung bis Hochtour', 'Hintertuxer Gletscher – Schnee im Sommer', 'Dichtes Netz an Hütten'],
     content: `
-Das Zillertal südlich von Jenbach ist ein Wanderklassiker – breit gefächert von gemütlichen Talwegen bis zu ernsthaften Hochtouren am vergletscherten Hauptkamm.
+Das **Zillertal** ist eines der bekanntesten Täler Tirols – und größer und vielfältiger, als der Name vermuten lässt. Es zieht rund 30 Kilometer nach Süden, fächert sich dann in vier Seitentäler auf und endet am Gletscher. Wandern lässt sich hier auf jedem Niveau.
 
-## Für Einsteiger & Familien
-Almwanderungen und Höhenwege mit Bergbahn-Unterstützung (z. B. am Penken oder in Mayrhofen). Viele bewirtschaftete Almen mit Tiroler Schmankerln.
+## Die drei Ebenen des Tals
+**Talboden:** Flach, breit und dicht besiedelt. Hier verläuft die **Zillertalbahn**, eine Schmalspurstrecke, auf der im Sommer auch Dampfzüge fahren. Die Radwege im Tal sind familientauglich.
 
-## Für Geübte
-Der **Berliner Höhenweg** ist eine bekannte mehrtägige Hüttentour über den Zillertaler Hauptkamm – für trittsichere, konditionsstarke Bergwanderer.
+**Mittelgebirge:** Über beiden Talseiten liegen Sonnenterrassen mit Almen und Höhenwegen. Die **Zillertaler Höhenstraße** erschließt die Westseite mit dem Auto; von den Almen dort starten aussichtsreiche, moderate Wanderungen.
 
-## Hintertuxer Gletscher
-Das einzige ganzjährige Skigebiet Österreichs – auch im Sommer Schnee und ein begehbares Natureispalast-Erlebnis im Gletscher.
+**Hochgebirge:** Die Seitentäler – Tuxertal, Zemmgrund, Stilluptal, Zillergrund – führen ins Herz der Zillertaler Alpen. Hier wird es ernsthaft alpin.
 
-## Praktische Infos
-- Anfahrt: Von Innsbruck ca. 1 Stunde
-- Zillertal Card mit Bergbahnen & Bussen
-- Wetter und Tourenschwierigkeit ernst nehmen
-    `,
+## Die Klassiker
+**Schlegeis Stausee:** Türkisgrünes Wasser vor Dreitausendern, erreichbar über eine mautpflichtige Alpenstraße. Der Rundweg um den Stausee ist einfach und aussichtsreich; von dort starten anspruchsvollere Touren zu Hütten und Übergängen.
+
+**Ahornbahn:** Die Bahn auf den Ahorn bei Mayrhofen hat eine der größten Seilbahnkabinen Österreichs. Oben beginnt ein leichtes, weitläufiges Plateau – ideal für einen entspannten Tag.
+
+**Berliner Höhenweg:** Die Königsdisziplin – eine mehrtägige Hüttenrunde durch das Hochgebirge, teils mit versicherten Passagen und Gletscherberührung. Das verlangt Erfahrung, Ausrüstung und gute Planung.
+
+## Beste Zeit
+**Mitte Juni bis Anfang Oktober** für Wanderungen. Die hochgelegenen Übergänge sind oft erst ab Juli schneefrei. Der September ist die stabilste und klarste Zeit.
+
+Der Hintertuxer Gletscher am Talende ist ganzjährig in Betrieb – das ist der Grund, warum das Zillertal auch im Sommer Wintersportler anzieht.
+
+## Anreise
+Mit der Bahn bis Jenbach, dort Umstieg auf die Zillertalbahn – eine der bequemsten Talanreisen Tirols, weil man ohne Auto bis Mayrhofen kommt.
+
+Mit dem Auto von Innsbruck rund 45 Minuten bis Mayrhofen, von München etwa zwei Stunden. In den Seitentälern sind mehrere Straßen mautpflichtig.
+
+## Was du mitnehmen solltest
+- Feste Bergschuhe, sobald du das Mittelgebirge verlässt
+- Wetterschutz: In den Seitentälern schlägt das Wetter schnell um
+- Bargeld für Hütten und Mautstellen
+- Für den Schlegeis: früh kommen, der Parkplatz ist im Sommer schnell voll
+
+## Ehrlich gesagt
+Das Zillertal ist stark erschlossen und in der Hauptsaison voll – wer das ursprüngliche Tirol sucht, findet es hier nur in den hinteren Seitentälern. Mayrhofen ist ein Tourismusort mit allem, was dazugehört, inklusive Partybetrieb im Winter.
+
+Die Maut auf den Seitentalstraßen summiert sich außerdem, wenn man mehrere Täler abfahren will.
+
+Und: "Zillertal" ist kein einheitliches Wandergebiet. Wer im Talboden wohnt und spontan losgeht, landet leicht auf einem Radweg statt auf einem Bergweg – die guten Touren beginnen weiter oben und brauchen Anfahrt.
+
+## Gut kombinierbar
+- [Hintertuxer Gletscher](/blog/hintertuxer-gletscher) – am Ende des Tuxertals, ganzjährig
+- [Alpbachtal](/blog/alpbachtal-schoenstes-dorf) – das ruhige Nachbartal
+- [Krimmler Wasserfälle](/blog/krimmler-wasserfaelle) – über die Gerlosstraße erreichbar
+
+---
+
+**Kurz gesagt:** Ein Tal für jedes Niveau – aber die lohnenden Wanderungen beginnen erst oberhalb des Talbodens.
+`,
     affiliateLinks: [
       { label: 'Hotels im Zillertal – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Zillertal' },
       { label: 'Wanderstöcke – Amazon', url: 'https://www.amazon.de/s?k=wanderst%C3%B6cke+teleskop' },
