@@ -2482,22 +2482,54 @@ Vom alpinen Oberlauf geht es stetig sanft bergab durch das Murtal – an Schladm
     bestSeason: 'April–Oktober',
     highlights: ['Panorama über die ganze Steiermark', 'Seilbahn oder Aufstieg zu Fuß', 'Hängebrücke & Motorikpark am Gipfel'],
     content: `
-Der 1.445 m hohe Schöckl ist der Hausberg von Graz – an klaren Tagen reicht der Blick über das Grazer Becken bis zu den Gipfeln der Tauern.
+Der **Schöckl** ist mit 1.445 Metern der Hausberg von Graz – nah genug für einen Nachmittag, hoch genug für ein echtes Gipfelgefühl. Von oben reicht der Blick über die Stadt, das steirische Hügelland und bis zu den Alpen im Westen.
 
-## Hinauf
-Bequem per **Seilbahn** in wenigen Minuten, oder zu Fuß über mehrere Wanderwege (1,5–2 Std., mittel). Eine beliebte Kombination: hinauf wandern, hinunter mit der Bahn.
+## Hinaufkommen
+**Mit der Seilbahn:** Von St. Radegund führt eine Seilbahn in wenigen Minuten auf den Gipfel. Das ist die bequeme Variante und auch für Familien mit kleinen Kindern die richtige.
 
-## Oben am Gipfel
-- Panorama-Rundblick über die Steiermark
-- **Hängebrücke** und Aussichtsplattform
-- Gipfelhaus zum Einkehren
-- Im Sommer Motorikpark & Wanderwege
+**Zu Fuß:** Mehrere markierte Wege führen von St. Radegund, Radegund-Ursprung oder von der Südseite hinauf. Je nach Route sind es zwischen 700 und 900 Höhenmeter, für den Aufstieg sollte man zwei bis drei Stunden rechnen. Die Wege sind gut markiert und technisch unproblematisch, aber durchgehend steigend.
 
-## Praktische Infos
-- Anfahrt: Von Graz ca. 25 Minuten nach St. Radegund
-- Festes Schuhwerk für den Aufstieg
-- Bei guter Fernsicht besonders lohnend – Wetter checken
-    `,
+**Mit dem Rad:** Der Schöckl ist ein bekannter Mountainbike-Berg mit ausgewiesenen Strecken – auch international, weil hier seit Jahren Testfahrten und Rennen stattfinden.
+
+## Oben
+Das Gipfelplateau ist überraschend weitläufig und offen. Es gibt eine Hütte zur Einkehr, einen Aussichtspunkt und ausgeschilderte Wege über den Rücken.
+
+Der Schöckl ist einer der beliebtesten **Startplätze für Paragleiter** in der Steiermark – bei guten Bedingungen starten hier laufend Schirme, was für Zuschauer ein eigenes Schauspiel ist.
+
+Für Familien gibt es zusätzlich eine Sommerrodelbahn im Bereich der Talstation.
+
+## Beste Zeit
+**Ganzjährig.** Im Sommer ist der Schöckl der schnellste Weg aus der Grazer Hitze in kühlere Luft – oben sind es oft mehrere Grad weniger. Im Herbst steht Graz häufig unter Hochnebel, während man auf dem Schöckl in der Sonne sitzt. Das ist der beste Moment des Jahres.
+
+Im Winter ist der Berg bei Schnee ein beliebtes Ziel für Winterwanderungen und Rodler.
+
+## Anreise
+Von Graz rund 30 Autominuten nach St. Radegund. Es gibt Parkplätze an der Talstation, die an schönen Wochenenden gut ausgelastet sind.
+
+Mit öffentlichen Verkehrsmitteln: Bus ab Graz nach St. Radegund – das funktioniert und macht den Schöckl zu einem der wenigen Berge, die man aus einer Landeshauptstadt heraus ohne Auto erreicht.
+
+## Was du mitnehmen solltest
+- Windjacke – auf dem offenen Plateau zieht es fast immer
+- Feste Schuhe, auch wenn du mit der Bahn hochfährst
+- Sonnenschutz, oben gibt es wenig Schatten
+- Für Hochnebel-Tage: Die Webcams vorher ansehen, es lohnt sich
+
+## Ehrlich gesagt
+Der Schöckl ist der Ausflugsberg der Grazer, und das merkt man an Wochenenden deutlich. Wer Einsamkeit sucht, ist hier falsch.
+
+Auf dem Gipfel stehen außerdem Sendemasten – das gehört zum Bild dazu und stört manche beim Fotografieren. Und das Plateau ist offen, ohne Windschutz: Bei Wind ist der Aufenthalt oben ungemütlich, auch im Sommer.
+
+Wer die Seilbahn nimmt, sollte wissen, dass der Gipfelbereich dann in einer Viertelstunde abgegangen ist – die Wanderwege über den Rücken sind das, was den Besuch ausfüllt.
+
+## Gut kombinierbar
+- [Grazer Altstadt](/blog/graz-altstadt-sehenswuerdigkeiten) – 30 Minuten entfernt
+- [Schloss Eggenberg](/blog/schloss-eggenberg-graz) – der ruhige Vormittag davor
+- [Lurgrotte](/blog/lurgrotte-tropfsteinhoehle-steiermark) – der Plan B bei schlechtem Wetter
+
+---
+
+**Kurz gesagt:** Der beste Ausflug an einem Grazer Hochnebeltag – oben scheint oft die Sonne, wenn unten alles grau ist.
+`,
     affiliateLinks: [
       { label: 'Graz: Touren & Tickets – GetYourGuide', url: 'https://www.getyourguide.de/s/?q=Graz' },
       { label: 'Wanderschuhe – Amazon', url: 'https://www.amazon.de/s?k=wanderschuhe' },
@@ -2514,21 +2546,55 @@ Bequem per **Seilbahn** in wenigen Minuten, oder zu Fuß über mehrere Wanderweg
     bestSeason: 'Mai–Oktober',
     highlights: ['Größter Tagebau Mitteleuropas', 'Mitfahrt im 860-PS-Hauly-Truck', 'Bergwerksstollen zum Erleben'],
     content: `
-Der Erzberg ist ein 700 m hoher, terrassenförmig abgetragener Berg aus Eisenerz – ein industrielles Wahrzeichen der Steiermark und ein überraschend spannendes Ausflugsziel.
+Der **Erzberg** bei Eisenerz ist der größte Tagebau Mitteleuropas und eines der markantesten Landschaftsbilder Österreichs: ein ganzer Berg, in konzentrische Stufen abgetragen, rostrot leuchtend. Seit über tausend Jahren wird hier Eisenerz gefördert – der Abbau läuft bis heute.
 
-## Abenteuer Erzberg
-- **Hauly-Fahrt:** Mitfahrt in einem gigantischen Schwerlast-Truck über die Abbauterrassen
-- **Schaubergwerk:** Mit der Grubenbahn in die Stollen des historischen Untertagebaus
-- Spektakuläre Einblicke in den aktiven Erzabbau
+## Die Terrassen
+Der Berg wurde in rund 60 Meter hohen Etagen abgebaut, was ihm die charakteristische Stufenform gibt. Aus der Ferne wirkt er wie eine Pyramide; aus der Nähe versteht man die Dimension erst, wenn ein Muldenkipper danebensteht.
 
-## Für wen?
-Familien, Technik-Fans und alle, die mal etwas anderes als Seen und Berge sehen wollen. Robuste Kleidung empfohlen.
+Die Farbe kommt vom Siderit, dem hier vorkommenden Eisenkarbonat. Bei tiefstehender Sonne leuchtet der Berg intensiv rot – das ist der beste Zeitpunkt für Fotos.
 
-## Praktische Infos
-- Ort: Eisenerz, Obersteiermark
-- Touren nur mit Anmeldung/zu festen Zeiten – vorab buchen
-- Warme Jacke für die Stollen (auch im Sommer kühl)
-    `,
+## Hauly-Fahrt
+Der Publikumsmagnet ist die Fahrt mit dem **Hauly**, einem umgebauten Schwerlast-Muldenkipper mit Sitzplätzen. Das Fahrzeug ist mehrere Meter hoch, und die Fahrt führt über die Abbauterrassen bis weit hinauf.
+
+Die Perspektive ist der eigentliche Wert: Man sieht den aktiven Tagebau aus nächster Nähe und bekommt eine Vorstellung davon, in welchem Maßstab hier gearbeitet wird.
+
+## Das Schaubergwerk
+Vor dem Tagebau wurde der Erzberg unter Tage abgebaut. Diese alten Stollen sind als **Schaubergwerk** zugänglich – man fährt mit einer Grubenbahn hinein und geht durch Abschnitte, in denen die Abbautechnik verschiedener Epochen gezeigt wird.
+
+Unter Tage ist es konstant kühl, rund acht bis zehn Grad. Eine warme Jacke ist Pflicht, Helm und Umhang werden gestellt.
+
+## Beste Zeit
+Der Besucherbetrieb ist **saisonal**, üblicherweise von Frühjahr bis Herbst. Termine und Führungszeiten wechseln jährlich und sollten vorab geprüft werden.
+
+Einmal im Jahr findet am Erzberg das **Erzbergrodeo** statt, eines der härtesten Motorrad-Enduro-Rennen der Welt. In dieser Zeit ist die Region ausgebucht und der normale Besucherbetrieb eingeschränkt.
+
+## Anreise
+Eisenerz liegt in der Obersteiermark zwischen Hochschwab und Gesäuse. Von Graz rund 1,5 Stunden, von Linz etwa zwei, von Wien knapp 2,5.
+
+Mit öffentlichen Verkehrsmitteln: Bahn bis Leoben oder Hieflau, dann Bus – machbar, aber mit Planung.
+
+## Was du mitnehmen solltest
+- **Warme Jacke** für das Schaubergwerk, auch im Hochsommer
+- Feste Schuhe, die staubig werden dürfen
+- Für die Hauly-Fahrt: Sonnenschutz, das Fahrzeug ist oben offen
+- Zeit: Beide Programme zusammen füllen einen halben bis ganzen Tag
+
+## Ehrlich gesagt
+Der Erzberg ist ein Industriedenkmal, kein Naturerlebnis. Wer Landschaft im herkömmlichen Sinn sucht, wird von einem abgetragenen Berg wenig begeistert sein – der Reiz liegt im Maßstab und in der Geschichte.
+
+Eisenerz selbst ist außerdem eine Stadt, die stark geschrumpft ist, seit die Bergbau-Arbeitsplätze weniger wurden. Das sieht man an leerstehenden Häusern. Wer das als trostlos empfindet, sollte es wissen; wer sich für Strukturwandel interessiert, findet es aufschlussreich.
+
+Und: Ohne Führung sieht man den Tagebau nur von außen. Spontan vorbeifahren funktioniert nicht.
+
+## Gut kombinierbar
+- [Gesäuse Nationalpark](/blog/gesaeuse-nationalpark-wandern) – gleich nebenan, der komplette Gegenentwurf
+- [Wasserlochklamm Palfau](/blog/wasserlochklamm-palfau) – auf derselben Route Richtung Norden
+- [Stift Admont](/blog/stift-admont-bibliothek) – die größte Klosterbibliothek der Welt, rund 40 Minuten entfernt
+
+---
+
+**Kurz gesagt:** Der Maßstab ist das Erlebnis – Hauly und Schaubergwerk lohnen sich, aber nur mit vorher gebuchter Führung.
+`,
     affiliateLinks: [
       { label: 'Unterkünfte in Eisenerz – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Eisenerz' },
       { label: 'Steiermark: Erlebnisse – GetYourGuide', url: 'https://www.getyourguide.de/s/?q=Steiermark' },
@@ -3401,19 +3467,52 @@ Die bemalten Bürgerhäuser der Vorderstadt geben Kitzbühel sein unverwechselba
     bestSeason: 'Ganzjährig',
     highlights: ['Kunstvolle Kristall-Wunderkammern', 'Großer Spiel- & Erlebnisgarten', 'Auch bei Regen ein top Ziel'],
     content: `
-Die Swarovski Kristallwelten in Wattens bei Innsbruck sind ein Mix aus Kunst, Design und Inszenierung – und eines der beliebtesten Ausflugsziele Tirols.
+Die **Swarovski Kristallwelten** in Wattens bei Innsbruck sind ein ungewöhnliches Ausflugsziel: kein Museum im klassischen Sinn, sondern eine Folge begehbarer Kunsträume, die von wechselnden Künstlerinnen und Künstlern gestaltet wurden.
 
-## Die Wunderkammern
-Renommierte Künstler haben Räume rund um das Thema Kristall gestaltet – von funkelnden Installationen bis zu begehbaren Kunstwerken. Der „Riese" speit Wasser am Eingang.
+## Der Riese
+Der Eingang führt durch den **Riesen** – einen begrünten Kopf im Hang, aus dessen Mund ein Wasserfall in einen Teich stürzt. Dahinter beginnen die **Wunderkammern**, eine Abfolge von Räumen, die jeweils eigenständige Installationen sind: Spiegelkabinette, Lichträume, Klanginstallationen.
 
-## Für Familien
-Der weitläufige Garten mit Spielturm, Karussell und Wasserspielen begeistert Kinder. Drinnen wie draußen gibt es viel zu entdecken – ideal auch bei wechselhaftem Wetter.
+Der Charakter wechselt stark von Raum zu Raum, und einzelne Kammern werden über die Jahre erneuert – wer vor Jahren schon einmal da war, sieht heute nicht dasselbe.
 
-## Praktische Infos
-- Anfahrt: Von Innsbruck ca. 20 Minuten, Shuttle-Bus verfügbar
-- Tickets online oft günstiger und ohne Anstehen
-- Mehrere Stunden einplanen
-    `,
+## Der Garten
+Draußen liegt ein großzügiger Park mit **Kristallwolke** – einer schwebenden Konstruktion aus zehntausenden handmontierten Kristallen über einem flachen Wasserbecken. Bei Sonne und bei Dämmerung wirkt sie völlig unterschiedlich.
+
+Für Familien gibt es einen mehrstöckigen **Spielturm** und einen Labyrinth-Bereich. Der Außenbereich ist der Teil, in dem Kinder am längsten bleiben wollen.
+
+## Beste Zeit
+Ganzjährig geöffnet. Besonders stimmungsvoll ist es in der **Dämmerung**, wenn die Lichtinstallationen zur Geltung kommen – im Winter beginnt das entsprechend früher am Nachmittag.
+
+Regentage sind gut geeignet, weil ein großer Teil der Wunderkammern im Inneren liegt; dann ist es allerdings auch am vollsten. Die Öffnungszeiten variieren saisonal.
+
+## Anreise
+Wattens liegt rund 20 Autominuten östlich von Innsbruck an der Inntalautobahn. Es gibt Parkplätze am Gelände.
+
+Mit öffentlichen Verkehrsmitteln funktioniert es gut: Bus ab Innsbruck direkt zu den Kristallwelten, außerdem Bahn bis Fritzens-Wattens. Für ein Ausflugsziel dieser Größe ist die Anbindung erfreulich unkompliziert.
+
+## Was du mitnehmen solltest
+- Für den Garten wetterfeste Kleidung, der Außenbereich ist ein wesentlicher Teil
+- Kamera oder Handy mit Speicherplatz – hier wird viel fotografiert
+- Für Familien: mindestens drei Stunden Zeit, sonst wird der Spielbereich zum Streitpunkt
+- Bei Fotoempfindlichkeit: Einige Räume arbeiten mit blinkenden Lichtern
+
+## Ehrlich gesagt
+Die Kristallwelten sind ein kommerzielles Erlebnisziel und machen daraus keinen Hehl: Der Weg führt am Ende durch einen großen Verkaufsbereich. Wer damit ein Problem hat, sollte das vorher wissen.
+
+Der Eintritt ist gemessen an der Besuchsdauer nicht günstig, besonders für Familien. Und die Wunderkammern polarisieren: Manche finden sie beeindruckend, andere überinszeniert.
+
+Außerdem ist es an Regentagen und in der Hauptsaison sehr voll, gerade in den Innenräumen, die teils eng sind. Ein früher Vormittag oder der späte Nachmittag sind deutlich angenehmer.
+
+Mit Kleinkindern ist der Innenbereich anstrengend – dunkel, laut und ohne Platz zum Laufen. Für die ist der Garten der eigentliche Grund herzukommen.
+
+## Gut kombinierbar
+- [Innsbruck](/blog/innsbruck-sehenswuerdigkeiten) – 20 Minuten entfernt
+- [Zillertal](/blog/zillertal-wandern) – das Tal beginnt gleich nebenan
+- [Alpbachtal](/blog/alpbachtal-schoenstes-dorf) – rund 25 Minuten östlich
+
+---
+
+**Kurz gesagt:** Lichtkunst und ein sehr guter Garten für Kinder – wenn man weiß, dass am Ende ein Shop steht.
+`,
     officialLinks: [
       { label: 'Swarovski Kristallwelten (kristallwelten.swarovski.com)', url: 'https://kristallwelten.swarovski.com' },
     ],
@@ -4674,23 +4773,58 @@ Und Osttirol ist abgelegen. Für einen Tagesausflug ist die Anfahrt aus dem Nord
     slug: 'reschensee-versunkener-kirchturm',
     startCoords: [46.8100, 10.5400],
     title: 'Reschensee – der versunkene Kirchturm im Wasser',
-    excerpt: 'Ein einzelner Kirchturm ragt aus dem Wasser: Der Reschensee im äußersten Westen Tirols/Südtirols ist eines der meistfotografierten Motive der Alpen.',
+    excerpt: 'Ein einzelner Kirchturm ragt aus dem Wasser: Der Reschensee liegt knapp hinter dem Reschenpass in Südtirol – und ist einer der klassischen Tagesausflüge aus dem Tiroler Oberland.',
     date: '2026-06-14', category: 'Ausflug', region: 'tirol', bestSeason: 'Mai–Oktober',
-    highlights: ['Ikonischer versunkener Kirchturm', 'Fotomotiv von Weltrang', 'Top-Spot für Wind- & Kitesurfer'],
+    highlights: ['Ikonischer versunkener Kirchturm', 'Liegt in Südtirol – Ausweis mitnehmen', 'Top-Spot für Wind- & Kitesurfer'],
     content: `
-Der Reschensee am Reschenpass entstand 1950 durch einen Stausee – ein ganzes Dorf wurde geflutet. Geblieben ist der romanische Kirchturm, der bis heute aus dem Wasser ragt.
+Der Kirchturm, der aus dem Wasser ragt, ist eines der bekanntesten Bilder des Alpenraums – und ein Bild mit einer bitteren Geschichte. Wichtig vorweg: Der **Reschensee liegt nicht in Österreich**, sondern knapp hinter dem Reschenpass in Südtirol. Er ist aber einer der klassischen Tagesausflüge aus dem Tiroler Oberland und vom Vinschgau aus.
 
-## Das Wahrzeichen
-Der einsame Turm im türkisen Wasser vor Bergkulisse ist eines der berühmtesten Fotomotive der Alpen – im Winter, wenn der See gefroren ist, sogar begehbar.
+## Die Geschichte hinter dem Motiv
+In den 1950er-Jahren wurden für ein Stauseeprojekt mehrere Ortschaften geflutet, darunter **Graun** und Teile von Reschen. Häuser wurden gesprengt, Familien zwangsumgesiedelt, Höfe aufgegeben. Übrig blieb allein der romanische Kirchturm der alten Grauner Kirche, der unter Denkmalschutz stand.
 
-## Aktiv
-Durch den beständigen Wind ist der Reschensee ein Hotspot für **Kite- und Windsurfer**. Ein Rad-/Wanderweg führt um den See.
+Dieser Turm steht heute im Wasser und ist zum Wahrzeichen geworden. Wer davorsteht, sollte wissen: Für die Menschen der Region ist das kein Postkartenmotiv, sondern die Erinnerung an einen Verlust.
 
-## Praktische Infos
-- Lage: Reschenpass, Grenze Tirol/Südtirol/Schweiz
-- Anfahrt: von Landeck ca. 1 Stunde
-- Gut mit einem Ausflug ins Südtiroler Vinschgau kombinierbar
-    `,
+## Was du vor Ort machen kannst
+Rund um den See führt ein gut ausgebauter **Rundweg** von etwa 15 Kilometern, der sich zu Fuß oder mit dem Rad bewältigen lässt. Er ist flach, die Aussicht auf den Ortler im Süden ist beeindruckend.
+
+Der See selbst ist bekannt für **Wind** – deshalb ist er ein Zentrum für Kite- und Windsurfer. Zum Baden ist er dagegen kaum geeignet: Das Wasser ist sehr kalt, der Pegel schwankt.
+
+Im Winter gefriert der See regelmäßig zu, und man kann bei entsprechender Eisdicke bis zum Turm gehen – das ist das zweite große Motiv. Ob das Eis tragfähig ist, entscheidet sich vor Ort und wird offiziell beurteilt; auf eigene Faust hinauszugehen ist gefährlich.
+
+## Beste Zeit
+**Juni bis Oktober** für Rundweg und Radtour, **Jänner bis März** für das Eis. Im Frühjahr, wenn der Pegel niedrig ist, steht der Turm teils weiter im Trockenen – das ändert das Motiv erheblich.
+
+Der Sommer bringt zuverlässig Wind, was für Surfer ideal und für Radfahrer anstrengend ist.
+
+## Anreise
+Aus dem Tiroler Oberland über den Reschenpass – von Landeck rund eine Stunde, von Innsbruck etwa 1,5 bis 2 Stunden. Der Pass ist ganzjährig befahrbar.
+
+**Wichtig:** Es geht über die Staatsgrenze nach Italien. Ausweis mitnehmen, Vignette und Mautregeln der jeweiligen Seite beachten, und bei Mietwagen vorab die Erlaubnis für Auslandsfahrten prüfen.
+
+Öffentlich: Bahn bis Landeck-Zams oder Mals, dann Bus. Machbar, aber mit Umstiegen.
+
+## Was du mitnehmen solltest
+- Winddichte Jacke – am See zieht es fast immer
+- Ausweis für den Grenzübertritt
+- Sonnenschutz: Auf knapp 1.500 Metern ist die Strahlung stark
+- Etwas Bargeld in Euro, das gilt beidseits
+
+## Ehrlich gesagt
+Der Turm ist ein starkes Motiv – aber ein Motiv, das in fünf Minuten fotografiert ist. Wer nur dafür anreist, steht schnell wieder am Auto. Der Ausflug lohnt sich, wenn man den Rundweg geht oder die Fahrt mit dem Vinschgau verbindet.
+
+Und es ist voll: Der Parkplatz am bekanntesten Fotopunkt ist in der Saison stark frequentiert, teils mit Bussen.
+
+Schließlich noch einmal der Hinweis: Für einen Österreich-Urlaub ist das ein Ausflug ins Ausland, kein Ziel im Land selbst.
+
+## Gut kombinierbar
+- [Pitztaler Gletscher](/blog/pitztaler-gletscher) – auf der Tiroler Seite des Oberlands
+- [St. Anton am Arlberg](/blog/st-anton-am-arlberg) – rund eine Stunde nordwestlich
+- [Ötztal & Sölden](/blog/oetztal-soelden) – das Nachbartal Richtung Osten
+
+---
+
+**Kurz gesagt:** Ein eindrucksvolles Bild mit ernster Geschichte – knapp hinter der Grenze, also Ausweis einpacken und mehr einplanen als das eine Foto.
+`,
     affiliateLinks: [
       { label: 'Unterkünfte am Reschensee – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Reschensee' },
       { label: 'Kamera-Zubehör – Amazon', url: 'https://www.amazon.de/s?k=reisestativ' },
@@ -5527,19 +5661,53 @@ Modelleisenbahnen, Schiffe und Flugzeuge in Bewegung begeistern Kinder. Es gibt 
     startCoords: [47.8050, 13.1110],
     highlights: ['Rundblick über Salzburg & Salzkammergut', 'Per Wanderung oder Bus erreichbar', 'Beliebter Startplatz für Paragleiter'],
     content: `
-Der **Gaisberg** (1.287 m) ist der Hausberg der Stadt Salzburg – ein bewaldeter Rücken im Osten, von dem aus du die Altstadt, das Alpenvorland und bei klarer Sicht die Seen des Salzkammerguts überblickst.
+Der **Gaisberg** ist der Aussichtsberg von Salzburg: 1.287 Meter hoch, direkt östlich der Stadt und über eine Straße bis fast zum Gipfel erreichbar. Von oben liegt Salzburg wie auf einem Modell unter einem, dahinter das Alpenvorland und im Süden die Berchtesgadener Alpen.
 
-## Hinauf
-Mehrere Wanderwege führen vom Stadtrand in 2–3 Stunden hinauf. Wer es bequem mag, nimmt den **Gaisberg-Bus** bis zum Gipfelplateau und spaziert oben nur die Rundwege.
+## Der Blick
+Das Gipfelplateau ist offen und bietet Rundumsicht. Nach Westen und Norden geht der Blick über die Stadt und das Flachgauer Seengebiet bis weit nach Bayern hinein, nach Süden auf Untersberg, Watzmann und die Tennengebirgskette.
 
-## Oben
-Ein leichter Gipfelrundweg, Almwiesen und meist mehrere Paragleiter, die hier starten. Bei Föhn ist die Fernsicht spektakulär.
+Besonders lohnend ist der Gaisberg bei **Inversionswetterlagen** im Herbst und Winter: Dann liegt Salzburg unter Hochnebel, und man steht oben in der Sonne über einem Nebelmeer. Das ist das stärkste Bild, das dieser Berg zu bieten hat.
 
-## Praktische Infos
-- Vom Gipfel kurze Spazierwege für alle Niveaus
-- Gasthaus am Plateau
-- Festes Schuhwerk; oben oft kühler & windiger als in der Stadt
-    `,
+## Hinaufkommen
+**Mit dem Auto:** Die Gaisbergstraße führt in Kehren fast bis zum Gipfel. Oben gibt es Parkplätze.
+
+**Mit dem Bus:** Von Salzburg fährt eine Buslinie zum Gaisberg – saisonal und nicht dicht getaktet, aber sie existiert, und das macht den Berg auch ohne Auto erreichbar. Fahrplan vorher prüfen.
+
+**Zu Fuß:** Mehrere Wege führen von der Stadtseite hinauf, etwa von Aigen oder über die Zistelalm. Je nach Route sind es rund 800 bis 900 Höhenmeter und zwei bis drei Stunden Aufstieg. Die Wege sind gut markiert und führen überwiegend durch Wald.
+
+**Mit dem Rad:** Die Gaisbergstraße ist ein Klassiker unter Rennradfahrern und eine der bekanntesten Bergauffahrten im Salzburger Raum.
+
+## Oben unterwegs
+Rund um den Gipfel verlaufen mehrere kurze Rundwege über die Almflächen – gutmütig, aussichtsreich und auch mit Kindern machbar. Einkehren lässt sich auf der **Zistelalm** auf halber Höhe oder am Gipfel.
+
+Der Gaisberg ist außerdem einer der bekanntesten **Paragleiter-Startplätze** Österreichs. Bei guten Bedingungen ist am Hang laufend Betrieb.
+
+## Beste Zeit
+**Ganzjährig.** Im Sommer ist es oben spürbar kühler als in der Stadt; im Herbst und Winter ist die Chance auf eine Nebelobergrenze unter dem Gipfel am größten.
+
+Für Fotos ist der frühe Morgen oder der Sonnenuntergang am besten – Letzterer ist entsprechend beliebt.
+
+## Was du mitnehmen solltest
+- Windjacke: Der Gipfel ist offen und es zieht fast immer
+- Feste Schuhe, wenn du die Rundwege gehen willst
+- Für Sonnenuntergänge: eine Stirnlampe für den Rückweg und warme Kleidung
+
+## Ehrlich gesagt
+Weil man bis fast ganz oben fahren kann, ist der Gaisberg gut besucht – besonders bei Sonnenuntergang und an Wochenenden. Ruhe findet man hier selten.
+
+Auf dem Gipfel steht außerdem ein markanter Sendeturm, und es gibt Parkflächen direkt am Plateau. Wer ein unberührtes Bergerlebnis erwartet, wird enttäuscht sein; der Gaisberg ist ein Aussichtsbalkon mit Straße, nicht ein Gipfel im alpinen Sinn.
+
+Und bei schlechter Sicht hat er wenig zu bieten – die Aussicht ist praktisch der ganze Grund, hier hinaufzufahren.
+
+## Gut kombinierbar
+- [Salzburger Altstadt](/blog/salzburg-stadt-altstadt) – 20 Minuten entfernt
+- [Untersberg](/blog/untersberg-salzburg) – der wildere Gegenpol im Süden
+- [Fuschlsee](/blog/fuschlsee-baden) – der Badesee gleich östlich
+
+---
+
+**Kurz gesagt:** Der schnellste Weg zu einem großen Blick über Salzburg – am schönsten an einem Hochnebeltag im Herbst.
+`,
     affiliateLinks: [
       { label: 'Hotels in Salzburg – booking.com', url: 'https://www.booking.com/city/at/salzburg.de.html' },
       { label: 'Wanderschuhe – Amazon', url: 'https://www.amazon.de/s?k=wanderschuhe' },
@@ -5578,19 +5746,55 @@ Oben ist es auch im Sommer kalt – warme Jacke, Sonnenbrille und Sonnencreme (G
     startCoords: [47.0739, 15.3906],
     highlights: ['UNESCO-Welterbe in Graz', 'Planetensaal & Prunkräume', 'Großer Park mit freilaufenden Pfauen'],
     content: `
-Am westlichen Stadtrand von Graz liegt **Schloss Eggenberg**, die prächtigste Barockanlage der Steiermark und Teil des UNESCO-Welterbes.
+**Schloss Eggenberg** am westlichen Stadtrand von Graz ist kein gewöhnliches Barockschloss – es ist ein begehbarer Kalender. Das gesamte Gebäude ist als Abbild von Zeit und Kosmos angelegt, und wer das einmal weiß, sieht die Anlage mit anderen Augen.
 
-## Symbolik in Stein
-Die Anlage ist als Abbild des Kosmos angelegt: **365 Außenfenster** für die Tage des Jahres und im Mittelpunkt der prunkvolle **Planetensaal** mit seinen Deckengemälden.
+## Die Zahlensymbolik
+Das Schloss hat 365 Außenfenster – so viele wie das Jahr Tage. Es gibt vier Ecktürme für die Jahreszeiten, 24 Prunkräume für die Stunden des Tages und in jedem Stockwerk 31 Räume für die Tage des Monats.
+
+Im **Planetensaal**, dem Höhepunkt des Rundgangs, setzt sich das fort: Deckengemälde zeigen Planeten, Tierkreiszeichen und Elemente in einem durchdachten Programm. Der Saal ist einer der bedeutendsten Räume seiner Art in Mitteleuropa.
+
+Der Rundgang durch die Prunkräume ist nur mit Führung möglich und saisonal – die Termine vorab prüfen, sonst sieht man nur Park und Museum.
+
+## Alte Galerie und Sammlungen
+Im Schloss sind mehrere Sammlungen des Universalmuseums Joanneum untergebracht, darunter die **Alte Galerie** mit Kunst vom Mittelalter bis zum Barock und ein archäologisches Museum, zu dem der berühmte **Kultwagen von Strettweg** gehört – ein bronzezeitliches Fundstück von europäischem Rang.
 
 ## Der Park
-Rund um das Schloss erstreckt sich ein weitläufiger Landschaftspark – beliebt für Spaziergänge und berühmt für die **Pfauen**, die hier frei umherlaufen.
+Rund um das Schloss liegt ein großer Landschaftspark mit altem Baumbestand, Teichen und einem lichten Wiesenbereich. Bekannt ist er für seine frei laufenden **Pfauen**, die zum Bild des Parks gehören.
 
-## Praktische Infos
-- Mit der Straßenbahn aus der Grazer Innenstadt erreichbar
-- Prunkräume nur mit Führung, Park frei zugänglich
-- Gut kombinierbar mit Alter Galerie & Münzkabinett vor Ort
-    `,
+Der Park ist auch ohne Museumsbesuch zugänglich und ein beliebter Rückzugsort für Grazer – ein guter Ort für eine Pause zwischen zwei Programmpunkten.
+
+## UNESCO-Welterbe
+Schloss Eggenberg gehört gemeinsam mit der Grazer Altstadt zum UNESCO-Welterbe. Das ist keine reine Auszeichnung für Schönheit, sondern für die außergewöhnliche Geschlossenheit des Konzepts.
+
+## Beste Zeit
+Der Park ist ganzjährig reizvoll, besonders im **Frühling** und im **Oktober**. Die Prunkraum-Führungen finden in der wärmeren Jahreshälfte statt; im Winter ist das Angebot eingeschränkt.
+
+Für Fotos ist der späte Nachmittag am besten, wenn die Sonne die Westfassade trifft.
+
+## Anreise
+Mit der Straßenbahn aus der Grazer Innenstadt direkt bis zum Schloss – rund 15 Minuten, unkompliziert und der klar bessere Weg als mit dem Auto. Parkplätze in der Umgebung sind begrenzt.
+
+Von Wien nach Graz rund 2,5 Stunden mit Auto oder Bahn.
+
+## Was du mitnehmen solltest
+- Zeit für die Führung: Sie dauert ungefähr eine Stunde und lohnt sich
+- Bequeme Schuhe für Park und Treppen
+- Für den Park: eine Decke, wenn du bleiben willst
+
+## Ehrlich gesagt
+Ohne Führung sieht man die eigentliche Attraktion nicht – die Prunkräume sind nur in Begleitung zugänglich, und die Termine sind begrenzt. Wer spontan kommt, steht unter Umständen vor dem Park und einem Museum, aber nicht im Planetensaal.
+
+Für Kinder ist der Rundgang außerdem eher zäh; der Park und die Pfauen retten den Besuch. Die Zahlensymbolik ist faszinierend, aber sie will erklärt werden – wer einfach durchgeht, sieht hübsche Räume und verpasst den Punkt.
+
+## Gut kombinierbar
+- [Grazer Altstadt](/blog/graz-altstadt-sehenswuerdigkeiten) – 15 Straßenbahnminuten entfernt, gemeinsames Welterbe
+- [Schöckl](/blog/schoeckl-graz-hausberg) – der Hausberg für den Nachmittag
+- [Südsteirische Weinstraße](/blog/suedsteirische-weinstrasse) – für den Tag danach
+
+---
+
+**Kurz gesagt:** Ein Schloss, das als Kalender gebaut wurde – aber nur mit Führung erschließt sich, worum es eigentlich geht.
+`,
     affiliateLinks: [
       { label: 'Hotels in Graz – booking.com', url: 'https://www.booking.com/city/at/graz.de.html' },
     ],
