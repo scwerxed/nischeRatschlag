@@ -14,7 +14,7 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'Bergseen Guide – Wandern, Baden & Urlaub in Österreich',
-  description: 'Insider-Tipps für ganz Österreich: die schönsten Wanderwege, wärmsten Badeseen und Ausflugsziele in Kärnten, Salzburg, Tirol, der Steiermark und im Burgenland – ehrlich recherchiert mit echten Preisen.',
+  description: 'Insider-Tipps für ganz Österreich: die schönsten Wanderwege, wärmsten Badeseen und Ausflugsziele in Kärnten, Salzburg, Tirol, der Steiermark und im Burgenland – ehrlich recherchiert, mit konkreten Routen und Startpunkten.',
   keywords: ['Bergseen Guide', 'Urlaub Österreich', 'Wandern Österreich', 'Badeseen Österreich', 'Bergseen Österreich', 'Ausflugsziele Österreich', 'Wörthersee', 'Neusiedler See', 'Achensee', 'Zeller See'],
   alternates: { canonical: '/' },
 };
@@ -46,8 +46,8 @@ export default function HomePage() {
           Österreichs Seen &amp; Berge,<br />ehrlich erklärt.
         </h1>
         <p className="text-lg text-white/85 mb-8 max-w-xl leading-relaxed">
-          Handverlesene Wanderungen, Badeseen und Ausflüge in ganz Österreich – mit echten Preisen,
-          klaren Empfehlungen und Routen, die du sonst nirgends findest.
+          Handverlesene Wanderungen, Badeseen und Ausflüge in ganz Österreich – mit klaren
+          Empfehlungen, echten Startpunkten und Routen, die du sonst nirgends findest.
         </p>
         <div className="flex flex-wrap gap-3">
           <Link

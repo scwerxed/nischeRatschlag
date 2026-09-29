@@ -21,7 +21,7 @@ export default function UeberUnsPage() {
         Hochglanzprospekten abgeschrieben, sondern aus eigener Erfahrung vor Ort.
       </p>
       <p className="text-ink-muted leading-relaxed mb-4">
-        Unser Anspruch: konkrete, ehrliche Tipps mit echten Preisen, klaren Empfehlungen und
+        Unser Anspruch: konkrete, ehrliche Tipps mit klaren Empfehlungen und
         auch mal einem kritischen Wort. Wir nennen Gratis-Alternativen zu teuren Strandbädern,
         sagen, wann ein Ort überlaufen ist, und zeigen Routen mit nachvollziehbaren Geh- und
         Höhenangaben.

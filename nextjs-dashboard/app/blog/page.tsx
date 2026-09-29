@@ -4,7 +4,7 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'Magazin – Österreich Tipps & Wanderwege',
-  description: 'Insider-Artikel für ganz Österreich: Wanderwege, Badeseen, Ausflüge, Tiertouren und Unterkünfte in Kärnten, Salzburg, Tirol, der Steiermark und im Burgenland – mit echten Preisen und ehrlichen Bewertungen.',
+  description: 'Insider-Artikel für ganz Österreich: Wanderwege, Badeseen, Ausflüge, Tiertouren und Unterkünfte in Kärnten, Salzburg, Tirol, der Steiermark und im Burgenland – vor Ort recherchiert, mit ehrlichen Einschätzungen und Gratis-Alternativen.',
   keywords: ['Österreich Blog', 'Wandern Österreich', 'Badeseen Österreich', 'Ausflugsziele Österreich', 'Reisetipps Österreich', 'Bergseen Österreich'],
   alternates: { canonical: '/blog' },
 };
@@ -16,7 +16,7 @@ export default function BlogPage() {
       <h1 className="font-serif text-display font-bold mb-2 text-ink">Österreich in {posts.length} Geschichten</h1>
       <p className="text-ink-soft mb-10 max-w-2xl">
         Insider-Tipps für Wandern, Baden, Ausflüge und Unterkünfte – recherchiert vor Ort,
-        mit echten Preisen und ehrlichen Einschätzungen.
+        mit ehrlichen Einschätzungen statt Hochglanz-Prosa.
       </p>
 
       <BlogSearch posts={posts} />
