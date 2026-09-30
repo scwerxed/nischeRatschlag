@@ -61,6 +61,7 @@ export type Badestelle = {
 };
 
 type AgesSpot = {
+  BADEGEWAESSERID?: string;
   BADEGEWAESSERNAME?: string;
   GEMEINDE?: string;
   LATITUDE?: string;
@@ -115,8 +116,24 @@ export async function badestelleFuer(post: Post): Promise<Badestelle | undefined
     if (km <= AGES_MAX_KM && (!best || km < best.km)) best = { spot, km };
   }
   if (!best) return undefined;
-  const { spot, km } = best;
+  return toBadestelle(best.spot, best.km);
+}
 
+/**
+ * Offizielle Badestellen per AGES-ID (`BADEGEWAESSERID`) – für kuratierte Listen wie den
+ * Badeplatz-Check, deren Einträge fest einer Messstelle zugeordnet sind. Unbekannte IDs fehlen im Ergebnis.
+ */
+export async function badestellenById(ids: string[]): Promise<Record<string, Badestelle>> {
+  const wanted = new Set(ids);
+  const result: Record<string, Badestelle> = {};
+  for (const spot of await agesSpots()) {
+    const id = spot.BADEGEWAESSERID;
+    if (typeof id === 'string' && wanted.has(id)) result[id] = toBadestelle(spot, 0);
+  }
+  return result;
+}
+
+function toBadestelle(spot: AgesSpot, km: number): Badestelle {
   // Jüngste vorhandene Jahres-Einstufung (Felder QUALITAET_JJJJ, das laufende Jahr ist bis Saisonende leer).
   let einstufung: Badestelle['einstufung'];
   for (const [key, value] of Object.entries(spot)) {

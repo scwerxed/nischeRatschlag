@@ -2,10 +2,22 @@
 
 import { useMemo, useState } from 'react';
 import Link from 'next/link';
-import { FEATURES, type Badeplatz, type FeatureKey } from '@/app/lib/badeplaetze';
+import { FEATURES, type Badeplatz, type BadeplatzQualitaet, type FeatureKey } from '@/app/lib/badeplaetze';
+
+const EINSTUFUNG_CLS = {
+  gut: 'bg-green-100 text-green-800 border-green-200',
+  mittel: 'bg-amber-100 text-amber-800 border-amber-200',
+  schlecht: 'bg-red-100 text-red-800 border-red-200',
+} as const;
 
 // Interaktiver Badeplatz-Check: Chips togglen Eigenschaften (UND-Logik).
-export default function BadeplatzFilter({ plaetze }: { plaetze: Badeplatz[] }) {
+export default function BadeplatzFilter({
+  plaetze,
+  qualitaet = {},
+}: {
+  plaetze: Badeplatz[];
+  qualitaet?: Record<string, BadeplatzQualitaet>;
+}) {
   const [active, setActive] = useState<FeatureKey[]>([]);
 
   const toggle = (k: FeatureKey) =>
@@ -68,10 +80,39 @@ export default function BadeplatzFilter({ plaetze }: { plaetze: Badeplatz[] }) {
                 ))}
               </div>
               <p className="text-caption text-ink-muted mt-2.5 leading-relaxed">{p.hinweis}</p>
+              {p.agesId && qualitaet[p.agesId] && <Qualitaet q={qualitaet[p.agesId]} />}
             </div>
           ))}
         </div>
       )}
+    </div>
+  );
+}
+
+// Offizielle Badewasser-Qualität (AGES) der zugeordneten EU-Badestelle.
+function Qualitaet({ q }: { q: BadeplatzQualitaet }) {
+  return (
+    <div className="mt-3 pt-3 border-t border-hairline text-fine">
+      {q.gesperrt && (
+        <p className="mb-2 font-semibold text-red-800 bg-red-50 border border-red-200 px-2.5 py-1.5 rounded-sm">
+          ⚠️ Badestelle derzeit gesperrt{q.sperrgrund ? `: ${q.sperrgrund}` : ''}
+        </p>
+      )}
+      <div className="flex flex-wrap items-center gap-x-2 gap-y-1">
+        <span className="text-ink-soft">Badewasser</span>
+        {q.einstufung && (
+          <span className={`font-semibold px-2 py-0.5 border ${EINSTUFUNG_CLS[q.einstufung.tone]} rounded-sm`}>
+            {q.einstufung.label} ({q.einstufung.jahr})
+          </span>
+        )}
+        {q.letzteProbe && (
+          <span className="text-ink-soft">
+            · Probe {q.letzteProbe}
+            {q.wasser !== null && <span className="tabular-nums">: {q.wasser.toLocaleString('de-AT')} °C</span>}
+          </span>
+        )}
+      </div>
+      <p className="text-ink-soft mt-1">Messstelle: {q.messstelle}</p>
     </div>
   );
 }
