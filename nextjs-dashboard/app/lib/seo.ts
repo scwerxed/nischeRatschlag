@@ -36,8 +36,8 @@ export const REGION_META: Record<
   burgenland: { name: 'Burgenland', geo: { lat: 47.75, lng: 16.55 }, keywords: ['Burgenland', 'Neusiedler See', 'Rust', 'pannonisch', 'Urlaub Burgenland'] },
   wien:              { name: 'Wien',              geo: { lat: 48.21, lng: 16.37 }, keywords: ['Wien', 'Schönbrunn', 'Prater', 'Alte Donau', 'Wienerwald', 'Hundertwasserhaus', 'Naschmarkt', 'Zentralfriedhof', 'Kirche am Steinhof', 'Urlaub Wien'] },
   oberoesterreich:   { name: 'Oberösterreich',    geo: { lat: 47.95, lng: 13.80 }, keywords: ['Oberösterreich', 'Salzkammergut', 'Hallstatt', 'Traunsee', 'Attersee', 'Linz', 'Steyr', 'Nationalpark Kalkalpen', 'Innviertel', 'Schärding', 'Ried im Innkreis', 'Bad Ischl', 'Schlögener Schlinge', 'Freistadt', 'Mühlviertel', 'Almsee'] },
-  niederoesterreich: { name: 'Niederösterreich',  geo: { lat: 48.20, lng: 15.62 }, keywords: ['Niederösterreich', 'Wachau', 'Stift Melk', 'Schneeberg', 'Rax', 'Wein Niederösterreich', 'Ötscher', 'Semmering', 'Pielachtal', 'Mostviertel', 'Carnuntum', 'Klosterneuburg', 'Nationalpark Donau-Auen'] },
-  vorarlberg:        { name: 'Vorarlberg',        geo: { lat: 47.25, lng: 9.92 },  keywords: ['Vorarlberg', 'Bodensee', 'Bregenz', 'Bregenzerwald', 'Lünersee', 'Montafon', 'Hohenems', 'Bludenz', 'Großes Walsertal', 'Biosphärenpark', 'Kleinwalsertal'] },
+  niederoesterreich: { name: 'Niederösterreich',  geo: { lat: 48.20, lng: 15.62 }, keywords: ['Niederösterreich', 'Wachau', 'Stift Melk', 'Schneeberg', 'Rax', 'Wein Niederösterreich', 'Ötscher', 'Semmering', 'Pielachtal', 'Mostviertel', 'Carnuntum', 'Klosterneuburg', 'Nationalpark Donau-Auen', 'Schloss Hof', 'Marchfeld'] },
+  vorarlberg:        { name: 'Vorarlberg',        geo: { lat: 47.25, lng: 9.92 },  keywords: ['Vorarlberg', 'Bodensee', 'Bregenz', 'Bregenzerwald', 'Lünersee', 'Montafon', 'Hohenems', 'Bludenz', 'Großes Walsertal', 'Biosphärenpark', 'Kleinwalsertal', 'Brandnertal'] },
 };
 
 /** Anzeigename einer Region (Fallback: Slug kapitalisiert). */

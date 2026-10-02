@@ -7337,7 +7337,7 @@ Für Geübte ist der See Ausgangspunkt: Die **Totalphütte** auf rund 2.380 m is
 Die Bahn läuft üblicherweise von **Juni bis Oktober**; davor liegt am Ufer oft noch Schnee. Der Hochsommer ist am verlässlichsten, September bringt klare Sicht und weniger Andrang. Betriebszeiten und mögliche Revisionspausen vor der Anreise prüfen.
 
 ## Praktische Infos
-- Talstation am Lünerseebahn-Parkplatz im Brandnertal, Parken kostenpflichtig
+- Talstation am Lünerseebahn-Parkplatz im [Brandnertal](/blog/brandnertal-wandern), Parken kostenpflichtig
 - Uferrundweg auch für Familien machbar, aber nicht durchgehend kinderwagentauglich
 - Baden ist wegen der Wassertemperatur praktisch keine Option – der See bleibt eiskalt
 - Frühzeitig starten: weniger Andrang an der Bahn, geringere Gewittergefahr am Nachmittag
@@ -7943,6 +7943,7 @@ Der Freilichtbereich des Archäologieparks ist überwiegend von **April bis Okto
 - Freilichtanlagen sind wettergeprägt – festes Schuhwerk und ggf. Sonnenschutz einplanen
 - Aktuelle Öffnungszeiten und Programmpunkte (Führungen, Werkstätten) vorab prüfen
 - Naturkontrast zur Römerstadt: donauaufwärts liegt der [Nationalpark Donau-Auen](/blog/nationalpark-donau-auen-orth) mit Besucherzentrum im Schloss Orth
+- Barocker Kontrast jenseits der Donau: [Schloss Hof](/blog/schloss-hof-marchfeld) im Marchfeld, Prinz Eugens Landsitz an der March
     `,
     affiliateLinks: [
       { label: 'Unterkünfte bei Hainburg an der Donau – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Hainburg%20an%20der%20Donau' },
@@ -7976,7 +7977,7 @@ Die Altstadt lässt sich **ganzjährig** besuchen, für die Kombination mit der 
 
 ## Praktische Infos
 - Bahnhof Bludenz liegt an der Arlbergbahn und ist ein wichtiger Bahnknotenpunkt – die Altstadt ist von dort in wenigen Gehminuten erreichbar
-- Von Bludenz aus starten die Straßen ins Montafon, Klostertal, Brandnertal und [Große Walsertal](/blog/grosses-walsertal-biosphaerenpark) – guter Ausgangspunkt für einen mehrtägigen Aufenthalt in der Region
+- Von Bludenz aus starten die Straßen ins Montafon, Klostertal, [Brandnertal](/blog/brandnertal-wandern) und [Große Walsertal](/blog/grosses-walsertal-biosphaerenpark) – guter Ausgangspunkt für einen mehrtägigen Aufenthalt in der Region
 - Gute Ergänzung zu einem Ausflug ins nahe [Montafon](/blog/montafon-tal-wandern) oder in die Altstadt von [Feldkirch](/blog/feldkirch-altstadt-schattenburg)
     `,
     affiliateLinks: [
@@ -8313,6 +8314,88 @@ Für den Rundweg eignen sich **Mai bis Oktober**. Im Frühsommer blühen die Feu
     `,
     affiliateLinks: [
       { label: 'Unterkünfte in Grünau im Almtal – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Gr%C3%BCnau%20im%20Almtal' },
+      { label: 'Wanderschuhe für leichte Touren – Amazon', url: 'https://www.amazon.de/s?k=wanderschuhe+herren+damen' },
+    ],
+  },
+  {
+    slug: 'schloss-hof-marchfeld',
+    startCoords: [48.2170, 16.9370],
+    title: 'Schloss Hof im Marchfeld – Prinz Eugens Barockgarten an der March',
+    excerpt: 'Schloss Hof ist nach Schönbrunn die größte Schlossanlage Österreichs: Prinz Eugens Landsitz mit sieben Gartenterrassen bis zur March, einem barocken Gutshof mit Tieren und der Fahrradbrücke der Freiheit hinüber in die Slowakei.',
+    date: '2026-10-02', category: 'Ausflug', region: 'niederoesterreich', bestSeason: 'April–Oktober',
+    highlights: ['Barockgarten mit sieben Terrassen, seit 2019 wieder vollständig hergestellt', 'Gutshof mit Orangerien, Stallungen und Tieren', 'Fahrradbrücke der Freiheit über die March nach Bratislava'],
+    content: `
+Ganz im Osten Niederösterreichs, kurz bevor die March in die Donau mündet, liegt eine der eindrucksvollsten Barockanlagen des Landes: **Schloss Hof** in der Gemeinde Engelhartstetten. Mit mehr als 50 Hektar ist es nach Schönbrunn die größte Schlossanlage Österreichs – und trotzdem deutlich ruhiger als die Wiener Klassiker.
+
+## Vom Feldherrn zur Kaiserin
+
+1725 erwarb **Prinz Eugen von Savoyen**, einer der erfolgreichsten Feldherren der Habsburger, das damalige Renaissanceschloss samt dem Ort Hof. Sein Hofarchitekt **Johann Lucas von Hildebrandt** – derselbe, der auch das [Belvedere](/blog/schloss-belvedere-wien) in Wien plante – baute es bis 1729 zu einem barocken Jagd- und Landschloss um. Nach Eugens Tod kaufte **Maria Theresia** die Anlage 1755 von seinen Erben. Unter ihr wurde das Schloss in den 1770er-Jahren um ein Stockwerk erhöht und erweitert und erhielt damit im Wesentlichen sein heutiges Aussehen.
+
+## Der Barockgarten
+
+Das eigentliche Herzstück ist der Garten: **sieben Terrassen** stufen sich von der Schlossfront nach Osten sanft zur March hinunter, mit Broderieparterres, Wasserbecken und Skulpturen. Über Jahre wurde der Garten auf Basis historischer Pläne und archäologischer Grabungen rekonstruiert – 2018 wurde die **Große Kaskade** fertig, 2019 folgte die siebte und größte Terrasse. Seitdem lässt sich der Garten wieder so durchwandern, wie er im 18. Jahrhundert angelegt war. Von der untersten Terrasse blickt man über die Marchauen hinüber zu den Hügeln der Slowakei.
+
+## Der Gutshof
+
+Nördlich und westlich des Schlosses liegt der barocke **Meierhof** mit zwei Orangerien, großen Stallungen und Scheunen, die zwischen 2004 und 2011 umfassend saniert wurden. Hier leben verschiedene, teils seltene Haustierrassen – für Familien oft der heimliche Höhepunkt des Besuchs. Dazu kommen Schaugärten und saisonale Veranstaltungen; was gerade läuft, steht im Programm der Schlossverwaltung.
+
+## Rüber in die Slowakei: die Fahrradbrücke der Freiheit
+
+Seit 2012 verbindet die rund 550 m lange **Fahrradbrücke der Freiheit** Schlosshof mit Devínska Nová Ves, einem Stadtteil von Bratislava – nur für Fußgänger und Radfahrer. Wer mit dem Rad kommt, kann so eine kleine Zwei-Länder-Runde drehen. Grenzkontrollen gibt es keine, einen Ausweis sollte man trotzdem dabeihaben.
+
+## Beste Reisezeit
+
+Am schönsten ist Schloss Hof von **April bis Oktober**, wenn der Garten bepflanzt und der Gutshof belebt ist; im Frühling blühen die Parterres, im Herbst ist es angenehm ruhig. Der Marchfeld-Sommer kann heiß und schattenarm sein – an Hitzetagen lieber vormittags kommen. Öffnungszeiten der einzelnen Bereiche und Veranstaltungstermine vorab prüfen – die Anlage ist nicht ganzjährig gleich geöffnet.
+
+## Praktische Infos
+- Mit dem Auto von Wien aus durchs Marchfeld; Parkplätze direkt bei der Anlage
+- Öffentlich ist Schloss Hof nur eingeschränkt erreichbar – Verbindungen vorab prüfen; beliebt ist die Anreise mit dem Rad, etwa als Etappe einer Tour durchs Marchfeld
+- Eintritt kostenpflichtig; für Garten, Schloss und Gutshof gut einen halben Tag einplanen
+- In der Nähe liegt das kleinere **Schloss Niederweiden**, ebenfalls ein Barockbau aus der Zeit Prinz Eugens
+- Gut kombinierbar mit der Römerstadt [Carnuntum](/blog/carnuntum-archaeologiepark) und dem [Nationalpark Donau-Auen](/blog/nationalpark-donau-auen-orth) auf der anderen Donauseite
+    `,
+    affiliateLinks: [
+      { label: 'Unterkünfte im Marchfeld – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Marchegg' },
+    ],
+  },
+  {
+    slug: 'brandnertal-wandern',
+    startCoords: [47.1030, 9.7380],
+    title: 'Brandnertal – Wandern zwischen Walserdorf und Rätikon',
+    excerpt: 'Das Brandnertal zieht sich von Bludenz rund 12 km hinauf bis zum Lünersee: ein Walser-Tal mit dem Bergdorf Brand, Bergbahnen direkt aus dem Ort, der wilden Bürser Schlucht und der Schesaplana als höchstem Gipfel des Rätikon.',
+    date: '2026-10-02', category: 'Wandern', region: 'vorarlberg', difficulty: 'leicht', bestSeason: 'Juni–Oktober',
+    highlights: ['Walserdorf Brand, urkundlich erstmals 1347 erwähnt', 'Bergbahnen direkt aus dem Ort zu leichten Höhenwegen', 'Bürser Schlucht am Taleingang und Lünersee am Talschluss'],
+    content: `
+Wer von Bludenz aus Richtung Süden blickt, sieht den Eingang zu einem der kompaktesten Wandertäler Vorarlbergs: Das **Brandnertal** zieht sich über rund 12 km von **Bürs** über **Bürserberg** bis nach **Brand** und weiter zum [Lünersee](/blog/luenersee-wandern) am Talschluss. Ringsum stehen die Kalkgipfel des **Rätikon**, allen voran die **Schesaplana** (2.964 m) an der Grenze zur Schweiz.
+
+## Ein Walser-Tal
+
+Brand ist eine **Walsersiedlung**: Im 14. Jahrhundert ließen sich Walser Familien in dem bis dahin nur als Alpe genutzten Hochtal nieder, urkundlich erwähnt wird die Siedlung 1347. Lange Zeit hatten die Brandner keine eigene Kirche und gehörten kirchlich zu Bürs. Die Walser-Herkunft teilt das Tal mit dem [Großen Walsertal](/blog/grosses-walsertal-biosphaerenpark) und dem [Kleinwalsertal](/blog/kleinwalsertal-wandern) – wer sich für die Siedlungsgeschichte interessiert, findet in allen drei Tälern Spuren davon, von Hausformen bis zu Flurnamen.
+
+## Wandern ab dem Ort
+
+Der große Vorteil des Brandnertals: Die Sommerbahnen starten direkt in den Dörfern. Von Brand aus bringen die **Dorfbahn** und weitere Sommerbahnen Wanderer auf die Hänge oberhalb des Tals. Oben verbinden breite, gut beschilderte Wege die Almen – ideal für gemütliche Halbtagestouren mit wenig Aufstieg. An der Dorfbahn gibt es einen **Barfußweg**, ein Wildtierpfad führt von dort über die Innere Parpfienzalpe zur Palüdbahn, und an mehreren Stationen erfährt man Wissenswertes über die Natur des Tals. Insgesamt umfasst das Wegenetz im Tal mehrere hundert Kilometer markierter Wanderwege, vom Talspaziergang an der Alvier bis zu alpinen Steigen.
+
+## Bürser Schlucht und Lünersee
+
+Am Taleingang hat sich der Bach **Alvier** tief in den Fels gegraben: Die **Bürser Schlucht** ist ein kurzer, schattiger Ausflug, der sich gut mit einem Stadtbummel in [Bludenz](/blog/bludenz-alpenstadt-fuenf-taeler) verbinden lässt. Am anderen Ende des Tals endet die Straße an der Talstation der Lünerseebahn – von dort geht es hinauf zum türkisen [Lünersee](/blog/luenersee-wandern) mit seinem leichten Uferrundweg.
+
+## Für Geübte: Schesaplana
+
+Die **Schesaplana** ist der höchste Gipfel des Rätikon und vom Brandnertal aus über den Lünersee und die Totalphütte erreichbar. Das ist allerdings eine lange, alpine Tour mit Geröll und ausgesetzten Passagen – nur mit Trittsicherheit, Kondition und stabilem Wetter. Für die meisten Besucher reicht der Blick vom See oder von den Almen hinauf völlig.
+
+## Beste Reisezeit
+
+Für Wanderungen eignen sich **Juni bis Oktober**, wenn die Sommerbahnen fahren und die Almen bewirtschaftet sind. Im Juni liegt in höheren Lagen teils noch Schnee, der September bringt oft die klarste Sicht. Betriebszeiten der Bahnen schwanken je nach Saison – vor der Anreise prüfen.
+
+## Praktische Infos
+- Anreise per Bahn bis Bludenz und weiter mit dem Bus ins Tal; mit dem Auto über die A14 bis Bludenz
+- Bergbahnen kostenpflichtig, Betriebszeiten und Tarife vorab prüfen
+- Der Parkplatz an der Lünerseebahn füllt sich an Schönwettertagen früh, die Bergstraße zum Talschluss ist schmal
+- Gut kombinierbar mit dem benachbarten [Montafon](/blog/montafon-tal-wandern), das ebenfalls von Bludenz aus erreichbar ist
+    `,
+    affiliateLinks: [
+      { label: 'Unterkünfte im Brandnertal – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Brand%2C%20Vorarlberg' },
       { label: 'Wanderschuhe für leichte Touren – Amazon', url: 'https://www.amazon.de/s?k=wanderschuhe+herren+damen' },
     ],
   },
