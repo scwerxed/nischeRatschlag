@@ -80,6 +80,9 @@ export default async function BadeplaetzePage() {
         <Link href="/seen-vergleich" className="inline-block bg-green-700 text-white text-caption font-semibold px-5 py-2.5 hover:bg-green-800 transition-colors rounded-full">
           Seen im Vergleich
         </Link>
+        <Link href="/wassertemperatur" className="btn btn-secondary btn-sm">
+          Wassertemperatur live
+        </Link>
         <Link href="/wandern-baden" className="btn btn-secondary btn-sm">
           Wandern + Baden
         </Link>

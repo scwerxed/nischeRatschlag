@@ -100,6 +100,9 @@ export default function WandernBadenPage() {
         <p className="eyebrow mb-2">Live</p>
         <h2 className="font-serif text-lead font-bold mb-5 text-ink">Wie warm ist das Wasser gerade?</h2>
         <Seewetter />
+        <p className="text-caption mt-3">
+          <Link href="/wassertemperatur" className="text-green-700 hover:underline">Alle 33 Messstellen live ansehen →</Link>
+        </p>
       </section>
 
       <div className="mt-10 flex flex-wrap gap-3">

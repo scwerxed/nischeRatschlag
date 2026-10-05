@@ -7,6 +7,7 @@ const QUICK_LINKS = [
   { href: '/routenplaner', label: 'Routenplaner' },
   { href: '/seen-vergleich', label: 'Seen-Vergleich' },
   { href: '/badeplaetze', label: 'Badeplatz-Check' },
+  { href: '/wassertemperatur', label: 'Wassertemperatur live' },
   { href: '/wandern-baden', label: 'Wandern + Baden' },
   { href: '/unterkuenfte/am-see', label: 'Unterkünfte am See' },
   { href: '/unterkuenfte/basislager', label: 'Basislager' },

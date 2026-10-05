@@ -46,6 +46,12 @@ export default function SeenVergleichPage() {
           Badeplatz-Check (gratis, Schatten, flach …) →
         </Link>
         <Link
+          href="/wassertemperatur"
+          className="text-caption font-medium px-4 py-1.5 bg-sky-50 text-sky-700 border border-sky-200 hover:bg-sky-100 transition-colors rounded-full"
+        >
+          Wassertemperatur live →
+        </Link>
+        <Link
           href="/unterkuenfte/am-see"
           className="text-caption font-medium px-4 py-1.5 bg-sky-50 text-sky-700 border border-sky-200 hover:bg-sky-100 transition-colors rounded-full"
         >
