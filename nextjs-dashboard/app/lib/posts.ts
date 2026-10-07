@@ -6715,6 +6715,7 @@ Ganzjährig, der Markt ist auch im Winter geöffnet. Wer den Flohmarkt sehen mö
 - Sonntags ist der Markt geschlossen
 - Gut kombinierbar mit dem nahen [MuseumsQuartier](/blog/museumsquartier-wien), nur wenige Gehminuten entfernt
 - Bei Regen bietet sich als Alternative der überdachte Bereich einiger Standln an, größere Programmpunkte dann eher im MuseumsQuartier
+- Mit Kindern lohnt bei Schlechtwetter das [Haus des Meeres](/blog/haus-des-meeres-wien) im Flakturm des Esterházyparks, ein kurzes Stück Richtung Mariahilfer Straße
     `,
     affiliateLinks: [
       { label: 'Hotels in Wien – booking.com', url: 'https://www.booking.com/city/at/vienna.de.html' },
@@ -6892,6 +6893,7 @@ Ganzjährig: Museen, Dom und Grottenbahn funktionieren bei jedem Wetter, was Lin
 - Wer das ruhigere Innviertel entdecken will: [Schärding](/blog/schaerding-altstadt-innviertel) mit seiner Silberzeile liegt gut eine Autostunde westlich
 - Donauaufwärts Richtung Passau lohnt die [Schlögener Schlinge](/blog/schloegener-schlinge-donau): die Donau macht dort eine fast vollständige Kehrtwende, der Aussichtspunkt ist in einer kurzen Wanderung erreichbar
 - Rund 40 km nördlich liegt [Freistadt](/blog/freistadt-muehlviertel-altstadt) im Mühlviertel – eine fast vollständig ummauerte mittelalterliche Altstadt mit Linzertor und eigener Brautradition
+- Nur rund 15 km südöstlich liegt [Stift St. Florian](/blog/stift-st-florian) – Oberösterreichs größtes Barockkloster mit der Bruckner-Orgel und Bruckners Grab
     `,
     affiliateLinks: [
       { label: 'Hotels in Linz – booking.com', url: 'https://www.booking.com/city/at/linz.de.html' },
@@ -8397,6 +8399,80 @@ Für Wanderungen eignen sich **Juni bis Oktober**, wenn die Sommerbahnen fahren 
     affiliateLinks: [
       { label: 'Unterkünfte im Brandnertal – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Brand%2C%20Vorarlberg' },
       { label: 'Wanderschuhe für leichte Touren – Amazon', url: 'https://www.amazon.de/s?k=wanderschuhe+herren+damen' },
+    ],
+  },
+  {
+    slug: 'haus-des-meeres-wien',
+    startCoords: [48.1975, 16.3530],
+    title: 'Haus des Meeres in Wien – Aquarium und Tropenhaus im Flakturm',
+    excerpt: 'Im ehemaligen Flakturm im Esterházypark leben heute Haie, Krokodile und tausende Fische: Das Haus des Meeres ist Wiens Aqua-Terra-Zoo auf vielen Stockwerken – mit Tropenhaus, Dachterrasse samt Stadtblick und einer Kletterwand an der Außenfassade.',
+    date: '2026-10-07', category: 'Ausflug', region: 'wien', bestSeason: 'Ganzjährig',
+    highlights: ['Über 10.000 Tiere auf mehr als 5.000 m² in einem Weltkriegs-Flakturm', 'Haibecken, Tropenhaus und Terrarien – komplett drinnen, ideal bei Regen', 'Dachterrasse mit Café und Blick über Wien'],
+    content: `
+Mitten in Mariahilf, nur ein paar Schritte von der Mariahilfer Straße entfernt, ragt ein grauer Betonklotz aus dem Grün des **Esterházyparks**. Was von außen wie ein Relikt aussieht, ist innen eines der beliebtesten Familienziele Wiens: das **Haus des Meeres – Aqua Terra Zoo**. Auf vielen Stockwerken leben hier über 10.000 Tiere aus rund 600 Arten – von Haien und Krokodilen über Schlangen und Spinnen bis zu Schwärmen tropischer Fische.
+
+## Vom Flakturm zum Zoo
+
+Der Turm wurde 1943/44 nach Plänen des Berliner Architekten **Friedrich Tamms** als sogenannter **Leitturm** errichtet – Teil der Wiener Flaktürme, die im Zweiten Weltkrieg der Luftabwehr dienten. Rund 50 m hoch und mit meterdicken Stahlbetonwänden ließ er sich nach dem Krieg kaum abreißen. Seit **1957** ist das Haus des Meeres darin untergebracht und wurde seither Stockwerk für Stockwerk erweitert. Seit 2013 gehört der Turm dem Verein selbst; im selben Jahr kam ein Dachaufbau mit zusätzlichen Etagen, einem großen Haibecken, Café und Dachterrasse dazu. Die Geschichte des Gebäudes wird im Haus selbst thematisiert – ein seltener Ort, an dem Kriegsarchitektur und Tierwelt so direkt aufeinandertreffen.
+
+## Was es zu sehen gibt
+
+Der Rundgang führt durch thematische Bereiche: **tropisches Süß- und Salzwasser** mit Korallenriff-Becken, **heimische Gewässer** und das **Mittelmeer**, dazu große **Terrarien** mit Reptilien, Amphibien und Insekten. Ein Höhepunkt ist das **Haibecken**, ein anderer das **Tropenhaus**, in dem man zwischen Pflanzen und Wasserläufen spaziert und sich ein Teil der Tiere frei um die Besucher bewegt. Auch Krokodile gehören zu den Publikumslieblingen. Regelmäßig gibt es Fütterungen mit Erklärungen – welche Fütterung wann stattfindet, steht im Tagesprogramm vor Ort bzw. auf der Website.
+
+## Oben: Dachterrasse mit Stadtblick
+
+Ganz oben liegt eine **Dachterrasse** mit Café. Von hier reicht der Blick über die Dächer von Mariahilf und Neubau bis zum Stephansdom und zum Wienerwald – ein Aussichtspunkt, den man in diesem Teil der Stadt kaum erwartet. Wer es sportlicher mag: An einer Außenwand des Turms betreibt der Alpenverein seit 1998 eine rund 700 m² große **Kletterwand** – die Nutzung ist dort gesondert geregelt.
+
+## Beste Reisezeit
+
+Das Haus des Meeres ist ein **Ganzjahresziel** und gerade an Regentagen und im Winter eine der besten Optionen in Wien, weil fast alles drinnen liegt. Genau dann ist es aber auch am vollsten: An Wochenenden, Feiertagen und in den Ferien wird es in den schmalen Gängen eng. Ruhiger ist es meist an Wochentagen am Vormittag oder am späteren Nachmittag. Öffnungszeiten vorab prüfen.
+
+## Praktische Infos
+- Mit Öffis am bequemsten: **U3 Neubaugasse**, von dort einige Gehminuten durch die Seitengassen zum Esterházypark; Parkplätze in der Gegend sind knapp
+- Eintritt kostenpflichtig; für einen gemütlichen Rundgang über alle Etagen rund zwei bis drei Stunden einplanen
+- Der Weg führt über viele Stockwerke – Aufzüge sind vorhanden, mit Kinderwagen zu Stoßzeiten aber Geduld einplanen
+- Gut kombinierbar mit einem Bummel über den [Naschmarkt](/blog/naschmarkt-wien) oder einem Museumsbesuch im nahen [MuseumsQuartier](/blog/museumsquartier-wien)
+- Lieber echte Tiere unter freiem Himmel? Dann ist der [Lainzer Tiergarten](/blog/lainzer-tiergarten-wien) am Stadtrand die Schönwetter-Alternative
+    `,
+    affiliateLinks: [
+      { label: 'Hotels in Wien-Mariahilf – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Mariahilf%2C%20Wien' },
+    ],
+  },
+  {
+    slug: 'stift-st-florian',
+    startCoords: [48.2064, 14.3786],
+    title: 'Stift St. Florian bei Linz – Barockkloster, Bruckner-Orgel und Altdorfer-Altar',
+    excerpt: 'Stift St. Florian ist das größte Barockkloster Oberösterreichs: Seit 1071 leben hier Augustiner-Chorherren, unter der berühmten Bruckner-Orgel liegt der Komponist begraben, und in der Galerie hängt der Sebastiansaltar von Albrecht Altdorfer.',
+    date: '2026-10-07', category: 'Ausflug', region: 'oberoesterreich', bestSeason: 'Mai–Oktober',
+    highlights: ['Größte Barockklosteranlage Oberösterreichs, erbaut ab 1686 von Carlone und Prandtauer', 'Bruckner-Orgel in der Stiftsbasilika, Bruckners Sarkophag in der Gruft darunter', 'Stiftsbibliothek mit rund 150.000 Bänden und Altdorfers Sebastiansaltar'],
+    content: `
+Rund 15 km südöstlich von [Linz](/blog/linz-ausflug) taucht zwischen Feldern und Hügeln eine Klosterfassade auf, die eher an ein Schloss erinnert: **Stift St. Florian**. Das Augustiner-Chorherrenstift ist die größte barocke Klosteranlage Oberösterreichs – und für Musikfreunde ein Pilgerort, denn hier liegt **Anton Bruckner** begraben.
+
+## Über dem Grab des heiligen Florian
+
+Der Name geht auf den heiligen **Florian** zurück, einen römischen Beamten, der im Jahr 304 wegen seines christlichen Glaubens in der Enns ertränkt wurde. Der Überlieferung nach wurde er an der Stelle des heutigen Stifts bestattet. Florian ist bis heute Landespatron Oberösterreichs und Schutzpatron der Feuerwehr. Die Gemeinschaft der **Augustiner-Chorherren** lebt seit **1071** hier, als Bischof Altmann von Passau das Stift neu begründete – sie zählt damit zu den ältesten durchgehend bestehenden Klöstern Österreichs.
+
+## Barock in Vollendung
+
+Zwischen **1686 und 1708** ließ das Stift die Anlage durch **Carlo Antonio Carlone** neu errichten; nach dessen Tod führte **Jakob Prandtauer** – der Baumeister von [Stift Melk](/blog/stift-melk) – die Arbeiten weiter. Das Ergebnis ist ein weitläufiger Komplex mit Prunkstiegenhaus, **Marmorsaal**, Kaiserzimmern und der **Stiftsbasilika**. Die **Stiftsbibliothek** umfasst rund 150.000 Bände; zum Musikarchiv gehört eine Neumenhandschrift aus dem frühen 9. Jahrhundert, eine der ältesten Musikquellen Österreichs. In der Stiftsgalerie hängen Tafeln des **Sebastiansaltars** von **Albrecht Altdorfer**, einem Hauptmeister der Donauschule.
+
+## Bruckner und seine Orgel
+
+Anton Bruckner, 1824 im nahen Ansfelden geboren, kam 1837 als Sängerknabe nach St. Florian und wirkte später bis 1855 als Stiftsorganist, bevor er nach Linz und Wien ging. Er blieb dem Stift sein Leben lang verbunden – und wollte hier begraben werden: Sein **Sarkophag steht in der Gruft direkt unter der großen Orgel** der Basilika, die heute seinen Namen trägt. Die **Bruckner-Orgel** mit über 100 Registern gehört zu den bedeutendsten Orgeln Österreichs; Orgelkonzerte und Orgelvorführungen finden regelmäßig statt, Termine vorab prüfen.
+
+## Beste Reisezeit
+
+Die Stiftsführungen sind auf die Hauptsaison ausgerichtet, am besten passen daher **Mai bis Oktober** – außerhalb dieser Zeit sind Besichtigungen oft nur eingeschränkt oder auf Anfrage möglich. Da sich fast alles drinnen abspielt, ist St. Florian auch ein gutes Ziel für einen Regentag. Konzerte, etwa im Rahmen der Brucknertage, bringen das Stift im Sommer besonders zum Klingen.
+
+## Praktische Infos
+- Die Prunkräume, Bibliothek und Gruft sind in der Regel nur im Rahmen einer **Führung** zugänglich – Führungszeiten und Eintritt (kostenpflichtig) vorab prüfen; die Basilika selbst ist meist frei zugänglich
+- Mit dem Auto in rund 20 Minuten von Linz; Parkplätze beim Stift
+- Mit Öffis per Bus ab Linz erreichbar – Verbindungen vorab prüfen
+- Gut kombinierbar mit einem Stadtbesuch in [Linz](/blog/linz-ausflug) oder der Altstadt von [Steyr](/blog/steyr-altstadt-ausflug)
+- Wer Klöster vergleichen will: [Stift Melk](/blog/stift-melk) und [Stift Admont](/blog/stift-admont-bibliothek) sind die großen Gegenstücke in Niederösterreich und der Steiermark
+    `,
+    affiliateLinks: [
+      { label: 'Unterkünfte rund um St. Florian & Linz – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Sankt%20Florian%2C%20Ober%C3%B6sterreich' },
     ],
   },
 ];

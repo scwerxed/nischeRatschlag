@@ -128,6 +128,7 @@ export const REGEN_GROUPS: { title: string; note: string; picks: { slug: string;
       { slug: 'riegersburg-burg-ausflug', warum: 'Burgmuseum plus Schokoladen- und Haubenmanufaktur im Tal als Schlechtwetter-Reserve.' },
       { slug: 'eisenstadt-schloss-esterhazy', warum: 'Schlossräume und Haydnsaal – kompakter Kulturausflug für einen Regenvormittag.' },
       { slug: 'stift-klosterneuburg', warum: 'Verduner Altar und Kaiserzimmer komplett drinnen, direkt vor den Toren Wiens – kein Auto nötig.' },
+      { slug: 'stift-st-florian', warum: 'Prunkräume, Bibliothek, Basilika und Bruckners Gruft – alles drinnen, nur eine knappe halbe Stunde von Linz.' },
     ],
   },
   {
@@ -136,6 +137,7 @@ export const REGEN_GROUPS: { title: string; note: string; picks: { slug: string;
     picks: [
       { slug: 'swarovski-kristallwelten', warum: 'Die Wunderkammern sind komplett drinnen; Garten und Spielturm liegen im Freien.' },
       { slug: 'minimundus-klagenfurt', warum: 'Ehrlich gesagt eher ein Schönwetter-Ziel – die Modelle stehen im Park. Nur bei leichtem Nieselregen sinnvoll.' },
+      { slug: 'haus-des-meeres-wien', warum: 'Haie, Krokodile und Tropenhaus auf vielen Stockwerken im Flakturm – komplett drinnen. An Regenwochenenden aber entsprechend voll.' },
     ],
   },
   {
@@ -259,6 +261,7 @@ export const BAHNHOF_GROUPS: { title: string; note: string; picks: { slug: strin
       { slug: 'alte-donau-baden-wien', anreise: 'U1 Alte Donau' },
       { slug: 'wien-stephansdom-altstadt', anreise: 'U1/U3 Stephansplatz – Ausstieg direkt am Dom' },
       { slug: 'naschmarkt-wien', anreise: 'U1/U2/U4 Karlsplatz oder U4 Kettenbrückengasse – beide direkt am Markt' },
+      { slug: 'haus-des-meeres-wien', anreise: 'U3 Neubaugasse, einige Gehminuten zum Esterházypark' },
       { slug: 'salzburg-stadt-altstadt', anreise: 'Vom Hauptbahnhof per Bus oder 20 Min. zu Fuß' },
       { slug: 'graz-altstadt-sehenswuerdigkeiten', anreise: 'Straßenbahn ab Hauptbahnhof ins Zentrum' },
       { slug: 'innsbruck-sehenswuerdigkeiten', anreise: 'Altstadt 10 Min. vom Hauptbahnhof' },
@@ -358,6 +361,7 @@ export const FAMILIEN_GROUPS: { title: string; note: string; picks: { slug: stri
       { slug: 'greifvogelschau-adler-kaernten', tipp: 'Moderierte, kindgerechte Flugvorführungen – Vorführzeiten vorab prüfen.' },
       { slug: 'lainzer-tiergarten-wien', tipp: 'Freilaufendes Wild in Wien, breite Forstwege – einzelne Runden sind kinderwagentauglich.' },
       { slug: 'rust-stoerche-altstadt', tipp: 'Von Frühling bis Spätsommer brüten die Störche direkt auf den Kaminen – Fernglas mitnehmen.' },
+      { slug: 'haus-des-meeres-wien', tipp: 'Haie, Krokodile und Fütterungen mit Erklärung – wetterfest, aber Ferien und Wochenenden meiden, dann wird es in den Gängen eng.' },
     ],
   },
   {
