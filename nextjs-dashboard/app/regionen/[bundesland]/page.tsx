@@ -221,6 +221,15 @@ export default async function RegionPage({ params }: Props) {
                   {cat}
                   <span className="text-caption font-sans font-normal text-ink-soft">{catPosts.length} Artikel</span>
                 </h2>
+                {/* Jede Region hat auf /wassertemperatur einen eigenen Abschnitt (live bzw. letzte offizielle Probe). */}
+                {cat === 'Baden' && (
+                  <p className="text-caption text-ink-soft -mt-3 mb-5">
+                    Wie warm ist das Wasser?{' '}
+                    <Link href={`/wassertemperatur#${bundesland}`} className="text-sky-700 font-medium hover:underline">
+                      {region.name}: Wassertemperatur der Badegewässer →
+                    </Link>
+                  </p>
+                )}
                 <div className="grid md:grid-cols-2 gap-5">
                   {catPosts.map((post) => (
                     <Link

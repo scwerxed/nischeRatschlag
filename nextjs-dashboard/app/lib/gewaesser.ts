@@ -50,6 +50,7 @@ export const AGES_EINSTUFUNG: Record<string, { label: string; tone: 'gut' | 'mit
 };
 
 export type Badestelle = {
+  id: string;
   name: string;
   gemeinde: string;
   km: number;
@@ -61,6 +62,7 @@ export type Badestelle = {
 };
 
 type AgesSpot = {
+  BUNDESLAND?: string; // vom übergeordneten Bundesland-Eintrag übernommen (siehe loadAges)
   BADEGEWAESSERID?: string;
   BADEGEWAESSERNAME?: string;
   GEMEINDE?: string;
@@ -82,7 +84,11 @@ async function loadAges(): Promise<AgesSpot[]> {
     if (!res.ok) return [];
     const json = await res.json();
     const laender: any[] = Array.isArray(json?.BUNDESLAENDER) ? json.BUNDESLAENDER : [];
-    return laender.flatMap((l) => (Array.isArray(l?.BADEGEWAESSER) ? l.BADEGEWAESSER : []));
+    return laender.flatMap((l) =>
+      Array.isArray(l?.BADEGEWAESSER)
+        ? l.BADEGEWAESSER.map((spot: AgesSpot) => ({ ...spot, BUNDESLAND: typeof l.BUNDESLAND === 'string' ? l.BUNDESLAND : '' }))
+        : [],
+    );
   } catch {
     return [];
   }
@@ -133,6 +139,64 @@ export async function badestellenById(ids: string[]): Promise<Record<string, Bad
   return result;
 }
 
+export type AgesProbe = {
+  id: string;
+  name: string;
+  gemeinde: string;
+  lat: number;
+  lng: number;
+  gesperrt: boolean;
+  /** Jüngste Probe der aktuellsten Saison mit plausibler Temperatur; fehlt, wenn es in dieser Saison keine gibt. */
+  probe?: { datum: string; wasser: number };
+};
+
+/**
+ * Alle offiziellen Badestellen der genannten Bundesländer (Schreibweise wie im AGES-Feed, z. B. „Tirol“)
+ * mit der Wassertemperatur der jüngsten Probe – für /wassertemperatur, wo es für diese Länder keinen
+ * Live-Messdienst gibt. Gezählt wird nur die aktuellste Saison im Feed (im Winter die des letzten Sommers),
+ * damit kein Vorjahreswert wie ein aktueller dasteht. 0 °C im Feed steht für „nicht gemessen“ und wird übersprungen.
+ */
+export async function agesProbenNachBundesland(
+  bundeslaender: string[],
+): Promise<{ saison: number; stellen: Record<string, AgesProbe[]> }> {
+  const spots = await agesSpots();
+
+  let saison = 0;
+  for (const spot of spots) {
+    for (const p of Array.isArray(spot.MESSWERTE) ? spot.MESSWERTE : []) {
+      if (typeof p.D === 'string' && /^\d{2}\.\d{2}\.\d{4}$/.test(p.D)) saison = Math.max(saison, Number(p.D.slice(6)));
+    }
+  }
+
+  const wanted = new Set(bundeslaender);
+  const stellen: Record<string, AgesProbe[]> = {};
+  for (const spot of spots) {
+    const land = spot.BUNDESLAND ?? '';
+    const lat = Number(spot.LATITUDE);
+    const lng = Number(spot.LONGITUDE);
+    if (!wanted.has(land) || typeof spot.BADEGEWAESSERID !== 'string' || !Number.isFinite(lat) || !Number.isFinite(lng)) continue;
+
+    let probe: AgesProbe['probe'];
+    for (const p of Array.isArray(spot.MESSWERTE) ? spot.MESSWERTE : []) {
+      if (typeof p.D !== 'string' || !/^\d{2}\.\d{2}\.\d{4}$/.test(p.D) || Number(p.D.slice(6)) !== saison) continue;
+      if (typeof p.W !== 'number' || p.W <= 0) continue;
+      if (!probe || dateKey(p.D) > dateKey(probe.datum)) probe = { datum: p.D, wasser: p.W };
+    }
+
+    (stellen[land] ??= []).push({
+      id: spot.BADEGEWAESSERID,
+      name: spot.BADEGEWAESSERNAME ?? 'Badestelle',
+      gemeinde: spot.GEMEINDE ?? '',
+      lat,
+      lng,
+      gesperrt: spot.TGESPERRT === '1',
+      probe,
+    });
+  }
+  for (const liste of Object.values(stellen)) liste.sort((a, b) => a.name.localeCompare(b.name, 'de'));
+  return { saison, stellen };
+}
+
 function toBadestelle(spot: AgesSpot, km: number): Badestelle {
   // Jüngste vorhandene Jahres-Einstufung (Felder QUALITAET_JJJJ, das laufende Jahr ist bis Saisonende leer).
   let einstufung: Badestelle['einstufung'];
@@ -150,6 +214,7 @@ function toBadestelle(spot: AgesSpot, km: number): Badestelle {
   const saison = letzte ? (letzte.D as string).slice(6) : '';
 
   return {
+    id: spot.BADEGEWAESSERID ?? '',
     name: spot.BADEGEWAESSERNAME ?? 'Badestelle',
     gemeinde: spot.GEMEINDE ?? '',
     km,
@@ -159,7 +224,7 @@ function toBadestelle(spot: AgesSpot, km: number): Badestelle {
     letzteProbe: letzte
       ? {
           datum: letzte.D as string,
-          wasser: typeof letzte.W === 'number' ? letzte.W : null,
+          wasser: typeof letzte.W === 'number' && letzte.W > 0 ? letzte.W : null, // 0 = nicht gemessen
           sichttiefe: typeof letzte.S === 'number' ? letzte.S : null,
         }
       : undefined,
