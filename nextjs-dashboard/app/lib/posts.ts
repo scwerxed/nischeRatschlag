@@ -7032,6 +7032,7 @@ Wer die Wachau zu Fuß erleben will, folgt dem **Welterbesteig**: Der Weitwander
 - Nur wenige Minuten entfernt liegt mit [Schloss Grafenegg](/blog/schloss-grafenegg-kamptal) ein ganz anderer Kontrast: Neugotik statt Barock, Klassikfestival statt Weinlese
 - Donauabwärts, östlich von Wien, wartet mit [Carnuntum](/blog/carnuntum-archaeologiepark) ein noch viel älteres Donau-Kapitel: römische Ruinen statt Weinterrassen
 - Donauabwärts, direkt am Übergang zum Wiener Becken, liegt [Stift Klosterneuburg](/blog/stift-klosterneuburg) – wie Stift Melk von den Babenbergern gegründet, nur deutlich näher an Wien
+- Auf der anderen Donauseite, auf einem Berg südlich von Krems, thront [Stift Göttweig](/blog/stift-goettweig) – mit Kaiserstiege und weitem Blick über Kremstal und Wachau
     `,
     affiliateLinks: [
       { label: 'Hotels in der Wachau – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Wachau' },
@@ -7102,6 +7103,7 @@ Das Stift ist ganzjährig zugänglich. Zur Marillenblüte im Frühling oder zur 
 - Führungen oder Besuch auf eigene Faust, Audioguide verfügbar
 - Toller Auftakt für eine Wachau-Tour Richtung Krems und Dürnstein
 - Beides an einem Tag ist machbar, aber sportlich – wer Zeit hat, verteilt es besser auf zwei Tage
+- Das zweite große Benediktinerstift der Gegend, [Stift Göttweig](/blog/stift-goettweig), liegt auf einem Berg südlich von Krems – meist ruhiger als Melk und mit dem größten barocken Treppenhaus Österreichs
     `,
     affiliateLinks: [
       { label: 'Hotels rund um Melk – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Melk' },
@@ -7230,7 +7232,7 @@ Strandbäder und die lange **Seepromenade** laden im Sommer zum Baden und Flanie
 Die **Pfänderbahn** bringt dich in wenigen Minuten auf den Hausberg (rund 1.060 m) mit weitem Blick über den Bodensee und auf die Alpen dreier Länder. Oben warten ein **Alpenwildpark** mit heimischen Tieren, eine Greifvogelschau in der Saison und ein Panorama-Rundweg, der auch mit Kindern gut machbar ist. Wer will, geht zu Fuß hinunter – bergab ist der Weg deutlich angenehmer als hinauf.
 
 ## Bodensee-Radweg
-Bregenz ist eine der klassischen Etappenstationen am **Bodensee-Radweg**, der einmal um den ganzen See führt. Der Uferabschnitt Richtung Lindau ist flach und familientauglich; Räder lassen sich vor Ort leihen, und die Kursschiffe nehmen sie in der Regel mit.
+Bregenz ist eine der klassischen Etappenstationen am **Bodensee-Radweg**, der einmal um den ganzen See führt. Der Uferabschnitt Richtung Lindau ist flach und familientauglich; Räder lassen sich vor Ort leihen, und die Kursschiffe nehmen sie in der Regel mit. In die andere Richtung führt der Weg über Hard ins [Rheindelta](/blog/rheindelta-bodensee-naturschutzgebiet), das größte Feuchtgebiet am Bodensee mit Badestrand am Rohrspitz.
 
 ## Beste Reisezeit
 Badesaison ist etwa Juni bis September – der Bodensee erwärmt sich als flacherer See im Hochsommer angenehm. Juli und August stehen zugleich im Zeichen der **Bregenzer Festspiele**, dann ist die Stadt voll und Unterkünfte sind knapp. Frühling und Frühherbst sind ruhiger und für Pfänder und Radweg oft die schönere Zeit.
@@ -8473,6 +8475,87 @@ Die Stiftsführungen sind auf die Hauptsaison ausgerichtet, am besten passen dah
     `,
     affiliateLinks: [
       { label: 'Unterkünfte rund um St. Florian & Linz – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Sankt%20Florian%2C%20Ober%C3%B6sterreich' },
+    ],
+  },
+  {
+    slug: 'stift-goettweig',
+    startCoords: [48.3666, 15.6123],
+    title: 'Stift Göttweig – Benediktinerabtei mit Kaiserstiege hoch über der Wachau',
+    excerpt: 'Weithin sichtbar thront Stift Göttweig auf seinem Berg südlich von Krems: eine Benediktinerabtei seit 1094, mit dem größten barocken Treppenhaus Österreichs samt Troger-Fresko, einem Museum im Kaisertrakt und einer Terrasse mit Blick über Kremstal und Wachau.',
+    date: '2026-10-10', category: 'Ausflug', region: 'niederoesterreich', bestSeason: 'April–Oktober',
+    highlights: ['Kaiserstiege – größtes barockes Treppenhaus Österreichs, Deckenfresko von Paul Troger (1739)', 'Benediktinerabtei seit 1094, Teil des UNESCO-Welterbes Kulturlandschaft Wachau', 'Stiftsterrasse mit Blick über Kremstal, Donau und Wachau'],
+    content: `
+Wer in der Wachau unterwegs ist, sieht es schon von Weitem: Auf einem Ausläufer des Dunkelsteinerwalds südlich der Donau thront **Stift Göttweig**, eine mächtige Klosteranlage, die wegen ihrer Berglage gern das **„österreichische Montecassino"** genannt wird. Gemeinsam mit [Stift Melk](/blog/stift-melk), der Altstadt von Krems und der [Wachau](/blog/wachau-duernstein) gehört das Stift zum UNESCO-Welterbe – und ist dabei oft spürbar ruhiger als die großen Klassiker an der Donau.
+
+## Gegründet vom heiligen Altmann
+Gegründet wurde Göttweig **1083** von Bischof **Altmann von Passau** – demselben Altmann, der gut ein Jahrzehnt zuvor auch [St. Florian](/blog/stift-st-florian) neu begründet hatte. Zunächst lebte hier eine Gemeinschaft nach der Augustinusregel, **1094** wurde das Kloster den **Benediktinern** übergeben, die bis heute hier leben. Altmanns Reliquien ruhen in einem barocken Schrein in der **Krypta** der Stiftskirche. Von den mittelalterlichen Bauten sind nur Reste erhalten, darunter die Erentrudiskapelle sowie Krypta und Chor der Kirche.
+
+## Ein barocker Neubau – zu zwei Dritteln
+Nach einem verheerenden **Brand im Jahr 1718** ließ Abt **Gottfried Bessel** das Stift neu errichten. Die Pläne stammen von **Johann Lucas von Hildebrandt** – dem Architekten des [Belvedere](/blog/schloss-belvedere-wien) in Wien und des Umbaus von [Schloss Hof](/blog/schloss-hof-marchfeld). Gebaut wurde ab 1720, doch das gewaltige Vorhaben wurde nur zu etwa zwei Dritteln verwirklicht. Bessel machte Göttweig zugleich zu einem Zentrum von Kunst und Wissenschaft: Die **Graphische Sammlung** des Stifts zählt mit rund 30.000 Blättern nach der Albertina zu den größten Österreichs, die Bibliothek umfasst rund 140.000 Bände. Beide sind allerdings nicht frei zugänglich.
+
+## Kaiserstiege und Museum im Kaisertrakt
+Das Glanzstück für Besucher ist die **Kaiserstiege** – das größte barocke Treppenhaus Österreichs, einst nur Gästen allerhöchsten Ranges vorbehalten. An die Decke malte **Paul Troger** 1739 gemeinsam mit Johann Baptist Bys ein Fresko, das Kaiser **Karl VI.** als Helios-Apoll auf einem goldenen Wagen zeigt. Die Stiege gehört zum **Museum im Kaisertrakt**, das in den Fürsten- und Kaiserzimmern einen kompakten Überblick über die Geschichte und die Barockarchitektur des Klosters gibt. Die **Stiftskirche** mit romanischem Kern und barocker Ausstattung lohnt ebenfalls einen Blick, ebenso die Krypta mit dem Altmann-Schrein.
+
+## Aussicht und Einkehr
+Viele kommen aber schlicht wegen des Blicks: Von der **Terrasse des Stiftsrestaurants** im Nordteil der Anlage schaut man über das Kremstal, die Donau und hinüber in die Wachau. Auf der Karte steht österreichische Küche, dazu Weine aus den Stiftsweingärten; vor Ort gibt es außerdem Stiftsweine und Wachauer Marillenprodukte zu kaufen. An schönen Wochenenden ist die Terrasse gefragt – eine Tischreservierung ist dann sinnvoll.
+
+## Zu Fuß hinauf
+Wer sich den Ausblick lieber erarbeitet: Von **Furth bei Göttweig** (rund 210 m) führt ein beschilderter Weg über den Villenweg hinauf zum Stift auf gut 420 m – rund 200 Höhenmeter, also kurz, aber stellenweise steil. Der Villenweg liegt nahe der Haltestelle Furth-Göttweig an der Bahnstrecke Krems–St. Pölten, dort halten allerdings nicht alle Züge; der Bahnhof Furth-Palt liegt rund anderthalb Kilometer entfernt. Unten im Tal laden zudem Wein-Wanderwege durch die Rieden von Furth ein, mit immer neuen Blicken hinauf zum Stift.
+
+## Beste Reisezeit
+Museum und Stiftsrestaurant haben eine Saison, die im Frühjahr beginnt und im Spätherbst endet – am besten passen daher **April bis Oktober**. Zur **Marillenblüte** Ende März/Anfang April zeigen sich die Hänge rund um die Wachau von ihrer schönsten Seite, im Herbst färben sich die Weingärten golden. Weil Kaiserstiege und Museum drinnen liegen, ist Göttweig auch an einem trüben Tag ein gutes Ziel – nur die Aussicht leidet dann. Öffnungszeiten und Führungen vorab prüfen.
+
+## Praktische Infos
+- Mit dem Auto nur wenige Kilometer von Krems über die Donau; Parkplätze beim Stift
+- Eintritt ins Museum im Kaisertrakt kostenpflichtig, für Museum, Kirche und Terrasse gut zwei Stunden einplanen
+- Mit Öffis per Bahn bis Furth-Göttweig oder Furth-Palt und zu Fuß hinauf – Verbindungen vorab prüfen
+- Ideal kombinierbar mit einem Tag in der [Wachau](/blog/wachau-duernstein) oder einem Abstecher zu [Schloss Grafenegg](/blog/schloss-grafenegg-kamptal) auf der anderen Donauseite
+- Wer Klöster vergleichen will: [Stift Melk](/blog/stift-melk) liegt rund 25 km Luftlinie donauaufwärts, [Stift Klosterneuburg](/blog/stift-klosterneuburg) vor den Toren Wiens
+    `,
+    affiliateLinks: [
+      { label: 'Unterkünfte rund um Krems & Göttweig – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Krems%20an%20der%20Donau' },
+    ],
+  },
+  {
+    slug: 'rheindelta-bodensee-naturschutzgebiet',
+    startCoords: [47.4908, 9.6658],
+    planningMistakes: [
+      { fehler: 'Im Winter zum Vogelbeobachten in die Fußacher Bucht', besser: 'Die Bucht ist von Oktober bis März für Besucher gesperrt, weil dort tausende Wasservögel rasten – im Winter lieber an der Neuen Rheinmündung beobachten.' },
+      { fehler: 'Mit dem Auto bis ans Ufer fahren wollen', besser: 'Direkt am Wasser darf nicht geparkt werden – am entspanntesten kommt man mit dem Rad, der Rohrspitz ist ohnehin am schönsten per Rad oder zu Fuß.' },
+      { fehler: 'An einem Hochsommertag ohne Sonnenschutz losgehen', besser: 'Die Wege führen durch offene Riedlandschaft mit kaum Schatten – Kopfbedeckung, Wasser und Sonnencreme einpacken.' },
+    ],
+    title: 'Rheindelta am Bodensee – Vogelparadies zwischen Altem und Neuem Rhein',
+    excerpt: 'Wo der Rhein in den Bodensee mündet, liegt mit rund 2.000 Hektar das größte Feuchtgebiet am See: Schilf, Streuwiesen und Auwald, rund 330 beobachtete Vogelarten, ein flacher Badestrand am Rohrspitz und ebene Wege auf den Dämmen.',
+    date: '2026-10-10', category: 'Wandern', region: 'vorarlberg', difficulty: 'leicht', bestSeason: 'Ganzjährig',
+    highlights: ['Größtes Feuchtgebiet am Bodensee, Ramsar- und Natura-2000-Gebiet', 'Rund 330 beobachtete Vogelarten – im Oktober rasten hier Hunderte Große Brachvögel', 'Flacher Badestrand am Rohrspitz und ebene Wege ohne Höhenmeter'],
+    content: `
+Ganz im Westen Vorarlbergs, zwischen Bregenz und der Schweizer Grenze, verliert sich der Rhein in einer weiten, flachen Landschaft aus Schilf, Streuwiesen und Wasser: Das **Rheindelta** ist mit rund 2.000 Hektar das größte Feuchtgebiet am Bodensee und ein europaweit bedeutendes Brut- und Rastgebiet für Vögel. Es reicht vom **Alten Rhein** an der Schweizer Grenze bis zur Dornbirner Ach und umfasst Teile der Gemeinden **Hard, Fußach, Höchst und Gaißau**. Rund zwei Drittel der Schutzgebietsfläche sind Wasser – der Rest Schilf, Riedwiesen und Auwald.
+
+## Ein Delta, das der Mensch verlegt hat
+Bis um 1900 mündete der Rhein im Westen beim **Rheinspitz** in den See. Um die Hochwassergefahr zu bannen, wurde er um die Jahrhundertwende mit einem Durchstich zwischen Lustenau und Fußach in ein neues Bett gelegt – seither mündet er östlich des **Rohrspitz** in die **Fußacher Bucht**. Das alte Flussbett, der Alte Rhein, bildet heute die Grenze zur Schweiz. Weil der Fluss große Mengen Geschiebe mitbringt, wächst das Delta weiter in den See hinaus; die Mündungsdämme werden deshalb immer wieder verlängert, damit das Material ins tiefere Wasser getragen wird. Der Rohrspitz selbst ist der Rest eines alten Schwemmkegels. Zwischen 1956 und 1963 entstand außerdem der rund 8 km lange **Polderdamm**, der viele Riedwiesen vom schwankenden Seespiegel abtrennte – ein Eingriff, der das Grundwasser absenkte und von Naturschützern lange kritisiert wurde.
+
+## Ein Schutzgebiet mit langer Geschichte
+Naturschutzgebiet ist das Rheindelta seit **1976**, seit 2002 dauerhaft. Seit Anfang der 1980er-Jahre steht es zudem auf der Liste international bedeutender Feuchtgebiete der **Ramsar-Konvention**, seit 2003 ist es Natura-2000-Gebiet. Betreut wird es vom **Naturschutzverein Rheindelta**, den das Land Vorarlberg gemeinsam mit den vier Deltagemeinden gegründet hat. Sein Informationszentrum ist das **Rheindeltahaus** an der Grenze zwischen Hard und Fußach, das auch Exkursionen anbietet.
+
+## Vögel beobachten
+Rund **330 Vogelarten** wurden im Rheindelta bereits beobachtet. Für einige Brutvögel ist es von nationaler Bedeutung – etwa für die **Kolbenente**, deren österreichischer Brutbestand zu rund der Hälfte hier lebt, aber auch für Zwergdommel und Uferschnepfe. Im Winter ist das Delta das wichtigste Überwinterungsgebiet für Wasservögel in Österreich, im Oktober sammeln sich hier Hunderte **Große Brachvögel**, und auf dem Zug im Frühjahr und Herbst rasten zahlreiche Watvögel auf den Schlickflächen, die bei niedrigem Wasserstand in der Fußacher Bucht trockenfallen. Ein Fernglas gehört unbedingt ins Gepäck, für Wasservögel weit draußen lohnt sich ein Spektiv. Auch botanisch ist das Delta ein Schatz: Auf den Streuwiesen blühen im Frühsommer unter anderem die **Sibirische Schwertlilie** und die Sumpf-Gladiole.
+
+## Spazieren, Radeln, Baden
+Das Gelände ist topfeben. Gegangen wird meist auf Damm- und Bewirtschaftungswegen durch die offene Riedlandschaft – ideal für gemütliche Runden ohne Höhenmeter, aber mit wenig Schatten. Schöne Abschnitte sind die **Rheindämme**, die weit in den See hinausragen, und der Weg durch das **Rheinholz**, den Auwald am Rheinspitz, bis ans Seeufer. Mit dem Rad lässt sich das Delta gut ab Fußach entlang von Altem und Neuem Rhein erkunden; auf manchen Dammabschnitten, etwa am Polderdamm, ist Radfahren allerdings nicht erlaubt – Beschilderung beachten. Zum Baden lockt der rund 300 m lange **Strand am Rohrspitz**, an dem man an manchen Stellen weit ins seichte Wasser hinauswaten kann, dazu naturbelassene Kiesstrände im Rheinholz. Am Rohrspitz gibt es Gastronomie und ausgewiesene Grillplätze – gegrillt werden darf nur dort.
+
+## Beste Reisezeit
+Das Rheindelta ist ein **Ganzjahresziel**, nur mit wechselndem Schwerpunkt: Im **Frühjahr und Herbst** ziehen die Zugvögel durch – dann gibt es an Dämmen und Ufer am meisten zu sehen, an schönen Tagen ist aber auch am meisten los. Im **Sommer** stehen Baden und Radfahren im Vordergrund; einzelne Bereiche sind während der Brutzeit nicht betretbar. Von **Oktober bis März** gehört die Fußacher Bucht den rastenden Wasservögeln und ist für Besucher gesperrt – beobachten lässt sich dann gut an der Neuen Rheinmündung. Für Boote gilt in der Fußacher Bucht zudem von September bis April ein Fahrverbot.
+
+## Praktische Infos
+- Aktuelle Sperrzonen, Regeln und Exkursionstermine beim Naturschutzverein Rheindelta erfragen; Öffnungszeiten des Rheindeltahauses vorab prüfen
+- Auf den Wegen bleiben und Sperrbereiche respektieren; Hunde in einem Vogelschutzgebiet am besten an der kurzen Leine führen und die Regeln vor Ort beachten
+- Parken direkt am Wasser ist nicht erlaubt – bequem ist die Anreise mit dem Rad, etwa entlang des Bodensee-Radwegs von [Bregenz](/blog/bregenz-bodensee) über Hard
+- Mit Öffis per Landbus in die Deltagemeinden – Verbindungen vorab prüfen
+- Gut kombinierbar mit einem Badetag in [Bregenz](/blog/bregenz-bodensee) oder dem Dornbirner Hausberg [Karren](/blog/karren-dornbirn), von dem man über das Rheintal bis zum Bodensee blickt
+    `,
+    affiliateLinks: [
+      { label: 'Unterkünfte am Bodensee rund um Hard – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Hard%2C%20Vorarlberg' },
+      { label: 'Ferngläser für die Vogelbeobachtung – Amazon', url: 'https://www.amazon.de/s?k=fernglas+vogelbeobachtung' },
     ],
   },
 ];

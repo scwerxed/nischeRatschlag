@@ -89,6 +89,7 @@ export const AUSSICHT_GROUPS: { title: string; note: string; picks: { slug: stri
       { slug: 'gosausee-dachstein-spiegelung', warum: 'Flacher Uferweg, und der Dachstein spiegelt sich im See – eines der schönsten Motive Österreichs.' },
       { slug: 'wienerwald-wandern', warum: 'Kahlenberg und Leopoldsberg sind mit Bus erreichbar, der Blick über Wien beginnt am Parkplatz.' },
       { slug: 'maria-woerth-woerthersee', warum: 'Die Halbinsel-Kirche liegt eben am Ufer – Postkartenblick über den See ohne jeden Anstieg.' },
+      { slug: 'stift-goettweig', warum: 'Mit dem Auto bis zum Stift auf dem Berg – von der Restaurant-Terrasse reicht der Blick über Kremstal, Donau und Wachau.' },
     ],
   },
 ];
@@ -129,6 +130,7 @@ export const REGEN_GROUPS: { title: string; note: string; picks: { slug: string;
       { slug: 'eisenstadt-schloss-esterhazy', warum: 'Schlossräume und Haydnsaal – kompakter Kulturausflug für einen Regenvormittag.' },
       { slug: 'stift-klosterneuburg', warum: 'Verduner Altar und Kaiserzimmer komplett drinnen, direkt vor den Toren Wiens – kein Auto nötig.' },
       { slug: 'stift-st-florian', warum: 'Prunkräume, Bibliothek, Basilika und Bruckners Gruft – alles drinnen, nur eine knappe halbe Stunde von Linz.' },
+      { slug: 'stift-goettweig', warum: 'Kaiserstiege mit Troger-Fresko und Museum im Kaisertrakt liegen drinnen – nur der Terrassenblick über die Wachau braucht klare Sicht.' },
     ],
   },
   {
@@ -387,6 +389,7 @@ export const FAMILIEN_GROUPS: { title: string; note: string; picks: { slug: stri
       { slug: 'alte-donau-baden-wien', tipp: 'Ruhiges Wasser ohne Strömung, per U-Bahn erreichbar.' },
       { slug: 'donauinsel-wien', tipp: 'Mehrere flach abfallende Abschnitte mit Spielplätzen in Wassernähe.' },
       { slug: 'lunzer-see-baden', tipp: 'Kurzer, flacher Rundweg um den See – Baden und Bewegung ohne Anstrengung.' },
+      { slug: 'rheindelta-bodensee-naturschutzgebiet', tipp: 'Rund 300 m Strand am Rohrspitz, an manchen Stellen weit hinaus seicht – am besten per Rad anreisen, Schatten ist rar.' },
       { slug: 'therme-lutzmannsburg', tipp: 'Wenn der See zu kalt ist: lange Rutschen, Baby- und Kleinkindbereich.' },
     ],
   },

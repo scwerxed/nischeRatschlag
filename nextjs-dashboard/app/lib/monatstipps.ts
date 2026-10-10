@@ -167,6 +167,7 @@ export const MONATE: Monat[] = [
       { slug: 'nockalmstrasse-panoramastrasse', warum: 'Die Nockberge leuchten golden; die Straße schließt für den Winter, also jetzt fahren.' },
       { slug: 'grossglockner-tagesausflug', warum: 'Letzte Wochen vor der Wintersperre – Öffnungszeitraum vorab prüfen.' },
       { slug: 'seewinkel-nationalpark-voegel', warum: 'Herbstlicher Vogelzug über dem Seewinkel – jetzt ist am meisten los.' },
+      { slug: 'rheindelta-bodensee-naturschutzgebiet', warum: 'Herbstzug am Bodensee: Hunderte Große Brachvögel rasten im Delta. Die Fußacher Bucht ist ab Oktober gesperrt, beobachtet wird an der Neuen Rheinmündung.' },
       { slug: 'alpbachtal-schoenstes-dorf', warum: 'Almabtriebe und geschmückte Kühe – Tiroler Herbst wie im Bilderbuch.' },
       { slug: 'schoeckl-graz-hausberg', warum: 'Klare Herbstluft sorgt für die weiteste Fernsicht des Jahres.' },
       { slug: 'lienzer-dolomiten-osttirol', warum: 'Osttirol im Herbst: stabile Tage, kaum Andrang, dramatische Felskulisse.' },
