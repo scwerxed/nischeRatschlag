@@ -34,6 +34,16 @@ export function seeMessstellenFuer(post: Post): MessstelleTreffer[] {
   return treffer.filter((m) => m.see === treffer[0].see);
 }
 
+/**
+ * Liegt eine AGES-Badestelle an einem See mit Live-Messstelle? Gleicher Namensabgleich (`match`) wie bei den
+ * Artikeln, bewusst ohne Abstandsprüfung (manche Badestellen haben im Feed die Koordinaten 0/0). Für
+ * /wassertemperatur, wo Badestellen an Seen ohne eigene Messstelle zusätzlich mit der letzten Probe erscheinen.
+ */
+export function hatLiveMessstelle(badestellenName: string): boolean {
+  const text = normalize(badestellenName);
+  return SEE_MESSSTELLEN.some((m) => new RegExp(m.match).test(text));
+}
+
 // ── AGES Badegewässer ────────────────────────────────────────────────────────
 // Offizielle Messungen aller rund 260 EU-Badestellen Österreichs (E. coli, Enterokokken,
 // Wassertemperatur, Sichttiefe; mind. 5 Proben je Saison) + jährliche Qualitätseinstufung.
@@ -153,8 +163,9 @@ export type AgesProbe = {
 /**
  * Alle offiziellen Badestellen der genannten Bundesländer (Schreibweise wie im AGES-Feed, z. B. „Tirol“)
  * mit der Wassertemperatur der jüngsten Probe – für /wassertemperatur, wo es für diese Länder keinen
- * Live-Messdienst gibt. Gezählt wird nur die aktuellste Saison im Feed (im Winter die des letzten Sommers),
- * damit kein Vorjahreswert wie ein aktueller dasteht. 0 °C im Feed steht für „nicht gemessen“ und wird übersprungen.
+ * Live-Messdienst gibt (bzw. in Kärnten, Salzburg und OÖ für die Seen ohne eigene Messstelle). Gezählt wird
+ * nur die aktuellste Saison im Feed (im Winter die des letzten Sommers), damit kein Vorjahreswert wie ein
+ * aktueller dasteht. 0 °C im Feed steht für „nicht gemessen“ und wird übersprungen.
  */
 export async function agesProbenNachBundesland(
   bundeslaender: string[],

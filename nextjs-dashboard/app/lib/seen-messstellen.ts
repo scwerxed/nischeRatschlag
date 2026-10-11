@@ -8,7 +8,9 @@
 //   ooe – Hydrographischer Dienst Oberösterreich, ZRXP-Text (CC BY 4.0, Land Oberösterreich – data.gv.at)
 //
 // `id` = Quelle + Kennung im jeweiligen Feed (ktn: properties.id, sbg: number, ooe: SANR).
-// `match` = Suchbegriff (Regex, klein, Umlaute ausgeschrieben) für Titel/Slug/Excerpt eines Artikels.
+// `match` = Suchbegriff (Regex, klein, Umlaute ausgeschrieben) für Titel/Slug/Excerpt eines Artikels –
+// und für die Namen der AGES-Badestellen (/wassertemperatur: welche Badestelle liegt an einem See mit
+// Live-Messstelle?). Dort heißt der Irrsee „Irr- oder Zellersee“, daher die zweite Variante.
 // Mondsee und Attersee-Unterach stehen in Salzburg UND Oberösterreich im Feed (dieselbe Station) –
 // hier nur einmal (Salzburg) geführt.
 
@@ -67,7 +69,7 @@ export const SEE_MESSSTELLEN: SeeMessstelle[] = [
   { id: 'ooe-4130', quelle: 'ooe', see: 'Hallstätter See', ort: 'Hallstatt-Lahn',    lat: 47.55329, lng: 13.65217, match: 'hallst' },
   { id: 'ooe-4190', quelle: 'ooe', see: 'Hallstätter See', ort: 'Steeg',             lat: 47.60938, lng: 13.63487, match: 'hallst' },
   { id: 'ooe-4310', quelle: 'ooe', see: 'Wolfgangsee',     ort: 'Strobl',            lat: 47.72351, lng: 13.48488, match: 'wolfgang' },
-  { id: 'ooe-5005', quelle: 'ooe', see: 'Irrsee',          ort: 'Zell am Moos',      lat: 47.90249, lng: 13.31273, match: 'irrsee' },
+  { id: 'ooe-5005', quelle: 'ooe', see: 'Irrsee',          ort: 'Zell am Moos',      lat: 47.90249, lng: 13.31273, match: 'irrsee|irr- oder zeller' },
   { id: 'ooe-6120', quelle: 'ooe', see: 'Almsee',          ort: 'Grünau im Almtal',  lat: 47.76676, lng: 13.95762, match: 'almsee' },
 ];
 

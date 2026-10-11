@@ -1,8 +1,9 @@
 import Link from 'next/link';
 import type { Metadata } from 'next';
+import type { ReactNode } from 'react';
 import { posts } from '@/app/lib/posts';
 import { BADEPLAETZE } from '@/app/lib/badeplaetze';
-import { agesProbenNachBundesland, badestelleFuer, seeMessstellenFuer, type AgesProbe } from '@/app/lib/gewaesser';
+import { agesProbenNachBundesland, badestelleFuer, hatLiveMessstelle, seeMessstellenFuer, type AgesProbe } from '@/app/lib/gewaesser';
 import { SEE_MESSSTELLEN, QUELLEN_LABEL, type SeeQuelle } from '@/app/lib/seen-messstellen';
 import { distKm } from '@/app/lib/wochenendtrip';
 import { BASE, breadcrumbSchema } from '@/app/lib/seo';
@@ -13,15 +14,16 @@ export const revalidate = 86400;
 
 export const metadata: Metadata = {
   title: 'Wassertemperatur der Seen in Österreich – live',
-  description: 'Aktuelle Wassertemperaturen von 33 offiziellen Messstellen an Österreichs Badeseen: Wörthersee, Millstätter See, Wolfgangsee, Attersee, Traunsee, Zeller See & Co. Dazu für Tirol, Steiermark, Burgenland, Niederösterreich, Wien und Vorarlberg die letzte offizielle Probe an jeder EU-Badestelle – vom Achensee bis zum Neusiedler See.',
-  keywords: ['Wassertemperatur Seen Österreich', 'Wassertemperatur aktuell', 'Wassertemperatur Wörthersee', 'Wassertemperatur Attersee', 'Wassertemperatur Wolfgangsee', 'Wassertemperatur Achensee', 'Wassertemperatur Neusiedler See', 'Wassertemperatur Bodensee', 'Wassertemperatur Alte Donau', 'Badeseen Temperatur live', 'Seetemperatur Kärnten', 'Seetemperatur Salzkammergut'],
+  description: 'Aktuelle Wassertemperaturen von 33 offiziellen Messstellen an Österreichs Badeseen: Wörthersee, Millstätter See, Wolfgangsee, Attersee, Traunsee, Zeller See & Co. Dazu die letzte offizielle Probe an jeder weiteren EU-Badestelle – vom Achensee über Gleinkersee und Hintersee bis zum Neusiedler See.',
+  keywords: ['Wassertemperatur Seen Österreich', 'Wassertemperatur aktuell', 'Wassertemperatur Wörthersee', 'Wassertemperatur Attersee', 'Wassertemperatur Wolfgangsee', 'Wassertemperatur Achensee', 'Wassertemperatur Neusiedler See', 'Wassertemperatur Bodensee', 'Wassertemperatur Alte Donau', 'Wassertemperatur Gleinkersee', 'Wassertemperatur Hintersee', 'Badeseen Temperatur live', 'Seetemperatur Kärnten', 'Seetemperatur Salzkammergut'],
   alternates: { canonical: '/wassertemperatur' },
 };
 
-const GRUPPEN: { quelle: SeeQuelle; titel: string; region: string; hinweis?: string }[] = [
-  { quelle: 'ktn', titel: 'Kärnten', region: 'kaernten' },
-  { quelle: 'sbg', titel: 'Salzburg', region: 'salzburg', hinweis: 'inkl. der grenznahen Messstellen am Mondsee und am Attersee (Unterach)' },
-  { quelle: 'ooe', titel: 'Oberösterreich', region: 'oberoesterreich' },
+/** Live-Messnetze. `bundesland` = AGES-Schreibweise – für die Badestellen an Seen ohne eigene Messstelle unter der Tabelle. */
+const GRUPPEN: { quelle: SeeQuelle; titel: string; region: string; bundesland: string; hinweis?: string }[] = [
+  { quelle: 'ktn', titel: 'Kärnten', region: 'kaernten', bundesland: 'Kärnten' },
+  { quelle: 'sbg', titel: 'Salzburg', region: 'salzburg', bundesland: 'Salzburg', hinweis: 'inkl. der grenznahen Messstellen am Mondsee und am Attersee (Unterach)' },
+  { quelle: 'ooe', titel: 'Oberösterreich', region: 'oberoesterreich', bundesland: 'Oberösterreich' },
 ];
 
 /** Bundesländer ohne offenes Live-Messnetz → letzte offizielle Probe der EU-Badestellen (AGES-Schreibweise). */
@@ -98,6 +100,59 @@ function formatGrad(v: number): string {
   return `${v.toLocaleString('de-AT', { minimumFractionDigits: 1, maximumFractionDigits: 1 })} °C`;
 }
 
+/** Tabelle „Badestelle · Gemeinde · Letzte Probe“ – für die Länder ohne Messnetz und die Seen ohne eigene Messstelle. */
+function ProbenTabelle({ stellen, artikel, saison }: { stellen: AgesProbe[]; artikel: Map<string, string>; saison: number }) {
+  return (
+    <div className="border border-hairline rounded-lg overflow-hidden">
+      <table className="w-full text-left">
+        <thead className="bg-parchment text-fine uppercase tracking-wide text-ink-soft">
+          <tr>
+            <th scope="col" className="px-4 py-2 font-semibold">Badestelle</th>
+            <th scope="col" className="px-4 py-2 font-semibold hidden sm:table-cell">Gemeinde</th>
+            <th scope="col" className="px-4 py-2 font-semibold text-right">Letzte Probe</th>
+          </tr>
+        </thead>
+        <tbody>
+          {stellen.map((s) => {
+            const slug = artikel.get(s.id);
+            return (
+              <tr key={s.id} className="border-t border-hairline">
+                <td className="px-4 py-3 align-top">
+                  {slug ? (
+                    <Link href={`/blog/${slug}`} className="font-semibold text-ink hover:text-sky-700 hover:underline">
+                      {s.name}
+                    </Link>
+                  ) : (
+                    <span className="font-semibold text-ink">{s.name}</span>
+                  )}
+                  <span className="block sm:hidden text-caption text-ink-muted">{s.gemeinde}</span>
+                  {s.gesperrt && <span className="block text-fine font-semibold text-red-700">derzeit behördlich gesperrt</span>}
+                </td>
+                <td className="px-4 py-3 align-top text-caption text-ink-muted hidden sm:table-cell">{s.gemeinde}</td>
+                <td className="px-4 py-3 align-top text-right">
+                  {s.probe ? (
+                    <>
+                      <span className="font-semibold text-ink tabular-nums">{formatGrad(s.probe.wasser)}</span>
+                      <span className="block text-fine text-ink-soft">am {s.probe.datum}</span>
+                    </>
+                  ) : (
+                    <span className="text-caption text-ink-soft">keine Probe {saison}</span>
+                  )}
+                </td>
+              </tr>
+            );
+          })}
+        </tbody>
+      </table>
+    </div>
+  );
+}
+
+/** „Kärnten, Salzburg, Oberösterreich“ → „Kärnten, Salzburg und Oberösterreich“. */
+function aufzaehlung(namen: string[]): string {
+  return namen.join(', ').replace(/, ([^,]*)$/, ' und $1');
+}
+
 export default async function WassertemperaturPage() {
   const artikel = artikelJeStation();
 
@@ -112,11 +167,37 @@ export default async function WassertemperaturPage() {
       .sort((a, b) => a.see.localeCompare(b.see, 'de') || a.ort.localeCompare(b.ort, 'de')),
   }));
 
-  // Letzte offizielle Proben (AGES, täglich neu). Fällt die Quelle aus, entfällt dieser Teil einfach.
-  const { saison, stellen } = await agesProbenNachBundesland(PROBEN_LAENDER.map((l) => l.bundesland));
+  // Letzte offizielle Proben (AGES, täglich neu): alle Badestellen der Länder ohne Live-Messnetz, dazu in Kärnten,
+  // Salzburg und OÖ die an Seen ohne eigene Messstelle. Fällt die Quelle aus, entfallen diese Teile einfach.
+  const { saison, stellen } = await agesProbenNachBundesland([
+    ...PROBEN_LAENDER.map((l) => l.bundesland),
+    ...GRUPPEN.map((g) => g.bundesland),
+  ]);
   const probenGruppen = PROBEN_LAENDER.map((l) => ({ ...l, stellen: stellen[l.bundesland] ?? [] })).filter((g) => g.stellen.length > 0);
+  const weitereGruppen = GRUPPEN.map((g) => ({
+    key: g.region,
+    bundesland: g.bundesland,
+    stellen: (stellen[g.bundesland] ?? []).filter((s) => !hatLiveMessstelle(s.name)),
+  })).filter((g) => g.stellen.length > 0);
   const anzahlProben = probenGruppen.reduce((n, g) => n + g.stellen.length, 0);
-  const artikelProbe = await artikelJeBadestelle(probenGruppen.flatMap((g) => g.stellen));
+  const anzahlWeitere = weitereGruppen.reduce((n, g) => n + g.stellen.length, 0);
+  const mitProben = anzahlProben + anzahlWeitere > 0;
+  const artikelProbe = await artikelJeBadestelle([...probenGruppen, ...weitereGruppen].flatMap((g) => g.stellen));
+
+  // Unter der jeweiligen Live-Tabelle: Badestellen an Seen ohne eigene Messstelle (serverseitig gerendert).
+  const zusatz: Record<string, ReactNode> = {};
+  for (const g of weitereGruppen) {
+    zusatz[g.key] = (
+      <div className="mt-8">
+        <h3 className="font-serif text-tagline font-bold mb-1 text-ink">Weitere Badeseen in {g.bundesland}: letzte Probe</h3>
+        <p className="text-fine text-ink-soft mb-4">
+          {g.stellen.length} offizielle {g.stellen.length === 1 ? 'EU-Badestelle' : 'EU-Badestellen'} an Seen ohne eigene
+          Live-Messstelle · Wassertemperatur der jüngsten Probe {saison} · Quelle: AGES-Badegewässerdatenbank
+        </p>
+        <ProbenTabelle stellen={g.stellen} artikel={artikelProbe} saison={saison} />
+      </div>
+    );
+  }
 
   // ItemList: jeder See einmal (mehrere Messstellen am selben See zusammengefasst).
   const seen = new Map<string, string | undefined>();
@@ -165,6 +246,13 @@ export default async function WassertemperaturPage() {
             der letzten offiziellen Probe an {anzahlProben} EU-Badestellen.
           </>
         )}
+        {anzahlWeitere > 0 && (
+          <>
+            {' '}Die letzte Probe zeigen wir außerdem für {anzahlWeitere} weitere Badestellen in{' '}
+            {aufzaehlung(weitereGruppen.map((g) => g.bundesland))} an Seen ohne eigene Messstelle – jeweils direkt unter
+            der Live-Tabelle des Bundeslands.
+          </>
+        )}
       </p>
       <p className="text-fine text-ink-soft mb-10">
         Springe zu:{' '}
@@ -176,14 +264,14 @@ export default async function WassertemperaturPage() {
         ))}
       </p>
 
-      <WassertemperaturLive gruppen={gruppen} />
+      <WassertemperaturLive gruppen={gruppen} zusatz={zusatz} />
 
       {/* Bundesländer ohne Live-Messnetz: letzte Probe der EU-Badestellen (serverseitig, also auch für Suchmaschinen lesbar) */}
       {probenGruppen.length > 0 && (
         <section className="mb-12">
           <p className="eyebrow mb-1">Letzte offizielle Probe</p>
           <h2 className="font-serif text-lead font-bold mb-2 text-ink">
-            {probenGruppen.map((g) => g.bundesland).join(', ').replace(/, ([^,]*)$/, ' und $1')}: Wassertemperatur der letzten Probe
+            {aufzaehlung(probenGruppen.map((g) => g.bundesland))}: Wassertemperatur der letzten Probe
           </h2>
           <p className="text-ink-soft max-w-2xl mb-8 leading-relaxed">
             An jeder offiziellen EU-Badestelle werden während der Badesaison mehrmals Wasserproben genommen – für die
@@ -201,48 +289,7 @@ export default async function WassertemperaturPage() {
                 </Link>
               </h3>
               <p className="text-fine text-ink-soft mb-4">{g.stellen.length} offizielle Badestellen · Quelle: AGES-Badegewässerdatenbank</p>
-              <div className="border border-hairline rounded-lg overflow-hidden">
-                <table className="w-full text-left">
-                  <thead className="bg-parchment text-fine uppercase tracking-wide text-ink-soft">
-                    <tr>
-                      <th scope="col" className="px-4 py-2 font-semibold">Badestelle</th>
-                      <th scope="col" className="px-4 py-2 font-semibold hidden sm:table-cell">Gemeinde</th>
-                      <th scope="col" className="px-4 py-2 font-semibold text-right">Letzte Probe</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    {g.stellen.map((s) => {
-                      const slug = artikelProbe.get(s.id);
-                      return (
-                        <tr key={s.id} className="border-t border-hairline">
-                          <td className="px-4 py-3 align-top">
-                            {slug ? (
-                              <Link href={`/blog/${slug}`} className="font-semibold text-ink hover:text-sky-700 hover:underline">
-                                {s.name}
-                              </Link>
-                            ) : (
-                              <span className="font-semibold text-ink">{s.name}</span>
-                            )}
-                            <span className="block sm:hidden text-caption text-ink-muted">{s.gemeinde}</span>
-                            {s.gesperrt && <span className="block text-fine font-semibold text-red-700">derzeit behördlich gesperrt</span>}
-                          </td>
-                          <td className="px-4 py-3 align-top text-caption text-ink-muted hidden sm:table-cell">{s.gemeinde}</td>
-                          <td className="px-4 py-3 align-top text-right">
-                            {s.probe ? (
-                              <>
-                                <span className="font-semibold text-ink tabular-nums">{formatGrad(s.probe.wasser)}</span>
-                                <span className="block text-fine text-ink-soft">am {s.probe.datum}</span>
-                              </>
-                            ) : (
-                              <span className="text-caption text-ink-soft">keine Probe {saison}</span>
-                            )}
-                          </td>
-                        </tr>
-                      );
-                    })}
-                  </tbody>
-                </table>
-              </div>
+              <ProbenTabelle stellen={g.stellen} artikel={artikelProbe} saison={saison} />
             </div>
           ))}
         </section>
@@ -264,9 +311,9 @@ export default async function WassertemperaturPage() {
             <strong>Nur frische Werte.</strong> Messungen, die älter als 72 Stunden sind, blenden wir aus, statt sie als
             „aktuell“ zu verkaufen. Im Winter melden manche Stationen keine Werte.
           </li>
-          {anzahlProben > 0 && (
+          {mitProben && (
             <li>
-              <strong>„Letzte Probe“ ist kein Live-Wert.</strong> Die Temperaturen für die Bundesländer ohne Messnetz
+              <strong>„Letzte Probe“ ist kein Live-Wert.</strong> Die Temperaturen der Badestellen ohne Live-Messstelle
               zeigen, wie warm das Wasser am Probentag war – achte auf das Datum daneben.
             </li>
           )}
@@ -281,7 +328,7 @@ export default async function WassertemperaturPage() {
         Quellen: Hydrographischer Dienst Kärnten, Hydrographischer Dienst Salzburg und Hydrographischer Dienst
         Oberösterreich (Open Government Data, CC BY 4.0). Werte werden alle 15 Minuten neu abgerufen. Für die übrigen
         Bundesländer gibt es derzeit keinen vergleichbaren offenen Live-Datensatz für Seen
-        {anzahlProben > 0 ? (
+        {mitProben ? (
           <> – die Werte der letzten Probe stammen aus der Badegewässer-Datenbank der AGES (CC BY 3.0 AT) und werden täglich aktualisiert.</>
         ) : (
           '.'

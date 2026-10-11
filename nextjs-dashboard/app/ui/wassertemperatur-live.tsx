@@ -1,13 +1,15 @@
 'use client';
 
 import Link from 'next/link';
-import { useEffect, useState } from 'react';
+import { type ReactNode, useEffect, useState } from 'react';
 import type { SeeMesswert } from '@/app/lib/seen-messstellen';
 
 // Live-Tabelle aller offiziellen See-Messstellen für /wassertemperatur. Welche Stationen es gibt
 // und welcher Artikel zu welchem See passt, liefert der Server (app/wassertemperatur/page.tsx);
 // hier werden nur die aktuellen Werte über /api/seewetter geholt (gleiche Route wie Seewetter-Widget
 // und Artikel-Sidebar, 15-Minuten-Cache). Station ohne aktuellen Wert → „keine aktuelle Messung“.
+// `zusatz` (je Gruppen-Key) hängt serverseitig gerenderte Inhalte unter die jeweilige Tabelle –
+// z. B. die Badestellen an Seen ohne eigene Live-Messstelle.
 
 export type WtStation = { id: string; see: string; ort: string; slug?: string };
 export type WtGruppe = { key: string; titel: string; hinweis?: string; region: string; quelle: string; stationen: WtStation[] };
@@ -26,7 +28,7 @@ function formatGrad(v: number): string {
   return `${v.toLocaleString('de-AT', { minimumFractionDigits: 1, maximumFractionDigits: 1 })} °C`;
 }
 
-export default function WassertemperaturLive({ gruppen }: { gruppen: WtGruppe[] }) {
+export default function WassertemperaturLive({ gruppen, zusatz }: { gruppen: WtGruppe[]; zusatz?: Record<string, ReactNode> }) {
   const [messwerte, setMesswerte] = useState<Record<string, SeeMesswert> | null>(null);
   const [fehler, setFehler] = useState(false);
 
@@ -166,6 +168,7 @@ export default function WassertemperaturLive({ gruppen }: { gruppen: WtGruppe[] 
               </tbody>
             </table>
           </div>
+          {zusatz?.[g.key]}
         </section>
       ))}
     </div>
