@@ -6788,6 +6788,7 @@ Badesaison ist etwa Juni bis September, wobei der tiefe See auch im Hochsommer e
 - Fahrpläne der Schifffahrt sind saisonal – vorab prüfen
 - Traunstein-Besteigung nur für geübte Bergsteiger mit entsprechender Ausrüstung
 - Gut mit einem Abstecher zum Attersee oder ins Salzkammergut kombinierbar; ruhiger und naturbelassener ist der [Almsee](/blog/almsee-gruenau-almtal) am Ende des benachbarten Almtals
+- Von Ebensee am Südende sind es rund zehn Kilometer zum [Offensee](/blog/offensee-baden-ebensee), einem stillen Badesee im Naturschutzgebiet – Paddeln und SUP sind dort im Sommer allerdings nicht erlaubt
     `,
     affiliateLinks: [
       { label: 'Hotels am Traunsee – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Gmunden+Traunsee' },
@@ -7626,6 +7627,7 @@ Die Hauptwandersaison liegt zwischen **Mai und Oktober**; in höheren Lagen kann
 - Kernzonen sind Wildnisgebiete – auf den markierten Wegen bleiben und Rücksicht auf Wildtiere nehmen
 - Handyempfang ist in den abgelegenen Tälern stellenweise eingeschränkt
 - Gute Kombination mit einer Nacht in einem der umliegenden Orte des Nationalparks, etwa in [Steyr](/blog/steyr-altstadt-ausflug)
+- Zum Abkühlen nach der Tour: Bei Windischgarsten liegt der kleine [Gleinkersee](/blog/gleinkersee-baden) mit Badestegen am Nordufer
     `,
     affiliateLinks: [
       { label: 'Unterkünfte rund um den Nationalpark Kalkalpen – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Molln' },
@@ -8315,6 +8317,7 @@ Für den Rundweg eignen sich **Mai bis Oktober**. Im Frühsommer blühen die Feu
 - Paddeln ist nur saisonal und zu bestimmten Tageszeiten erlaubt, Surfen, Segeln und Tauchen nicht – die Regeln des Naturschutzgebiets beachten und auf den Wegen bleiben
 - Im Tal liegt außerdem der **Cumberland Wildpark** mit heimischen Wildtieren – eine gute Ergänzung für Familien
 - Gut kombinierbar mit dem [Traunsee](/blog/traunsee-gmunden) rund um Gmunden oder der Kaiserstadt [Bad Ischl](/blog/bad-ischl-kaiservilla)
+- Auf der anderen Seite der Berge liegt der [Offensee](/blog/offensee-baden-ebensee) bei Ebensee – zu Fuß über Weg 420 verbunden (lange Bergtour), mit dem Auto über Ebensee erreichbar
     `,
     affiliateLinks: [
       { label: 'Unterkünfte in Grünau im Almtal – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Gr%C3%BCnau%20im%20Almtal' },
@@ -8556,6 +8559,105 @@ Das Rheindelta ist ein **Ganzjahresziel**, nur mit wechselndem Schwerpunkt: Im *
     affiliateLinks: [
       { label: 'Unterkünfte am Bodensee rund um Hard – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Hard%2C%20Vorarlberg' },
       { label: 'Ferngläser für die Vogelbeobachtung – Amazon', url: 'https://www.amazon.de/s?k=fernglas+vogelbeobachtung' },
+    ],
+  },
+  {
+    slug: 'gleinkersee-baden',
+    startCoords: [47.6895, 14.2954],
+    planningMistakes: [
+      { fehler: 'Rund um den See nach einem freien Badeplatz suchen', besser: 'Gebadet wird am Nordufer mit seinen Badestegen – der Rest des Ufers ist bewaldet und fällt steil ab. Wer Platz auf der Wiese will, kommt früh oder unter der Woche.' },
+      { fehler: 'Den Seespitz als kurze Zugabe nach dem Baden einplanen', besser: 'Über den Michael-Kniewasser-Steig sind es rund 2,5 Stunden Aufstieg ab dem See – eine eigene Bergtour mit Kondition, festen Schuhen und Zeitreserve. Für den Nachmittag reicht die Uferrunde.' },
+    ],
+    title: 'Gleinkersee – Badesee unterm Seespitz bei Spital am Pyhrn',
+    excerpt: 'Der kleine Gleinkersee im Windischgarstner Becken ist ein grüner Bergsee auf 806 m: Badestege am Nordufer, eine kurze Uferrunde, der Seespitz direkt darüber – und ein Name, der auf ein Kloster bei Steyr zurückgeht.',
+    date: '2026-10-12', category: 'Baden', region: 'oberoesterreich', bestSeason: 'Juni–September',
+    highlights: ['Kleiner Bergsee auf 806 m, seit 1965 Naturschutzgebiet', 'Drei Badestege am Nordufer, Gasthof und Bootsverleih in der Saison', 'Kurze Uferrunde und Aufstieg zum Seespitz (1.574 m) direkt ab dem See'],
+    content: `
+Ganz im Süden Oberösterreichs, dort wo die Pyhrnautobahn Richtung Steiermark zieht, liegt im **Windischgarstner Becken** ein kleiner, grüner Bergsee: der **Gleinkersee**. Auf 806 m Seehöhe, eingerahmt von Wald und den Felswänden des **Seespitz** (1.574 m), ist er nur rund 570 m lang und gut 300 m breit – man überblickt ihn mit einem Blick. Der See gehört zur Gemeinde **Spital am Pyhrn**, liegt näher am Ortszentrum von Roßleithen und ist ein beliebtes Ausflugsziel der ganzen Region.
+
+## Woher der Name kommt
+Mit seinem Namen führt der See auf eine falsche Fährte: Im Mittelalter gehörte er dem **Benediktinerstift Gleink** bei [Steyr](/blog/steyr-altstadt-ausflug), gut 40 km Luftlinie weiter nördlich. 1589 überließ Gleink den See zunächst vorübergehend dem nahen Stift Spital am Pyhrn, 1608 trat es ihn endgültig ab – jeweils für 200 Gulden. Der Name blieb. Heute gehört der Gleinkersee den Österreichischen Bundesforsten. Eine Volkssage erzählt übrigens, das Stift Spital habe während der Franzosenkriege ein Fass voll Gold im See versenkt, das danach nicht mehr zu bergen war.
+
+## Ein Karstsee unter Naturschutz
+Geformt hat das Becken ein Gletscher aus den Karen des Toten Gebirges. Gespeist wird der See vor allem von unterirdischen Karstquellen; sein Abfluss, der Seebach, fließt über Teichl und Steyr Richtung Enns. Seit **1965** steht der Gleinkersee unter Naturschutz, im Wasser lebt unter anderem der in Österreich selten gewordene **Edelkrebs**. Der kleine See ist dabei durchaus empfindlich – Uferweg und Badebetrieb setzen ihm zu. Also auf den Wegen bleiben und an den Badestellen ins Wasser gehen.
+
+## Baden am Gleinkersee
+Gebadet wird am **Nordufer**: Dort ist das Ufer am flachsten, und drei **Badestege** erleichtern den Einstieg. Das übrige Ufer ist bewaldet und fällt steil ab – zum Baden ungeeignet. Der Zugang zum See ist frei; daneben betreibt der Gasthof **Seebauer** in der Saison eine gepflegte Liegewiese mit Spielplatz, die Eintritt kostet. Eine weitere Wiese gehört zum Campingplatz und ist dessen Gästen vorbehalten. In der Saison werden außerdem Tret- und Ruderboote verliehen.
+
+Für einen See auf über 800 m erwärmt sich der Gleinkersee im Sommer erstaunlich gut: Bei den offiziellen Proben zwischen Ende Mai und Mitte August 2026 lag das Wasser zwischen rund 19 und knapp 23 °C. Die Badewasserqualität stuft die AGES seit Jahren als ausgezeichnet ein – die letzte Probe steht hier im Artikel, alle Seen im Vergleich auf der Seite [Wassertemperatur der Seen in Österreich](/wassertemperatur).
+
+## Die kurze Uferrunde
+Ein Weg führt einmal rund um den See – je nach Messung 1,5 bis 1,8 km, also in einer halben bis dreiviertel Stunde gemütlich gegangen. Er verläuft knapp am Ufer, auf der Südseite durch Wald unter den Felswänden. Ideal als Runde nach dem Essen beim Seebauer oder am frühen Abend, wenn die meisten Badegäste schon weg sind.
+
+Wer ohne Auto kommt, kann den See auch erwandern: Von der Stiftskirche in **Spital am Pyhrn** führt der markierte Weg Nr. 1 in knapp zwei Stunden (rund 5 km) bis zum Parkplatz am See.
+
+## Hinauf auf den Seespitz
+Direkt über dem See ragt der **Seespitz** auf. Vom Ufer geht es durch den Seegraben und dann über den **Michael-Kniewasser-Steig** (Nr. 292) zum Gipfelkreuz – rund 2,5 Stunden Aufstieg, oben mit weitem Blick über das Windischgarstner Becken und hinunter auf den See. Das ist eine richtige Bergtour: Kondition, festes Schuhwerk und stabiles Wetter gehören dazu. Weitere Wege führen vom See zur **Dümlerhütte** Richtung Warscheneck (Nr. 218 über den Präwald oder Nr. 299 durch den Seegraben). In der Nähe liegt außerdem der **Pießling-Ursprung** bei Roßleithen, eine große Karstquelle – ein lohnender kurzer Abstecher.
+
+## Beste Reisezeit
+Badesaison ist **Juni bis September**; Gasthaus und Liegewiese haben in dieser Zeit geöffnet, das Gasthaus teils schon ab Mai – Öffnungstage vorab prüfen. Juli und August sind am wärmsten, an heißen Wochenenden aber auch am vollsten. Im Herbst ist der See ein stilles Wanderziel, wenn sich der Wald an den Hängen verfärbt.
+
+## Praktische Infos
+- Anfahrt über die A9 (Abfahrt Roßleithen) Richtung Windischgarsten, dann der Beschilderung zum Gleinkersee folgen; ein großer Parkplatz liegt rund 100 m vom Nordufer entfernt
+- Mit Öffis per Pyhrnbahn nach Spital am Pyhrn und zu Fuß über Weg Nr. 1 zum See – Verbindungen vorab prüfen
+- Direkt am See liegt der Campingplatz Seebauer, geöffnet etwa von Mai bis September – Saison und Tarife vorab prüfen
+- Gut kombinierbar mit einer Tour im [Nationalpark Kalkalpen](/blog/nationalpark-kalkalpen-wandern), für den Windischgarsten einer der Ausgangsorte ist
+- Über den Pyhrnpass ist es nicht weit in die Steiermark – zum [Stift Admont](/blog/stift-admont-bibliothek) und in den [Nationalpark Gesäuse](/blog/gesaeuse-nationalpark-wandern)
+    `,
+    affiliateLinks: [
+      { label: 'Unterkünfte rund um Windischgarsten & Spital am Pyhrn – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Windischgarsten' },
+      { label: 'Badeschuhe für Stein- und Kiesufer – Amazon', url: 'https://www.amazon.de/s?k=badeschuhe' },
+    ],
+  },
+  {
+    slug: 'offensee-baden-ebensee',
+    startCoords: [47.7508, 13.8385],
+    planningMistakes: [
+      { fehler: 'SUP, Luftmatratze oder Kajak einpacken', besser: 'Im Sommer ist das am Offensee wegen des Schutzgebiets untersagt – hier wird geschwommen, nicht gepaddelt. Für Wassersport sind die großen Salzkammergutseen die bessere Wahl.' },
+      { fehler: 'Mit dem Hund zum Badetag kommen', besser: 'Hunde müssen an die Leine oder einen Maulkorb tragen, dürfen nicht auf die große Liegewiese und an den öffentlichen Badeplätzen nicht ins Wasser. Für einen Spaziergang mit Hund passt der Rundweg, für einen Badetag mit Hund ein anderes Ziel.' },
+      { fehler: 'Spontan im Auto am See übernachten', besser: 'Übernachten im Fahrzeug ist auf den Parkplätzen nachts verboten, tagsüber sind sie gebührenpflichtig – eine Unterkunft in Ebensee oder Bad Ischl einplanen.' },
+    ],
+    title: 'Offensee bei Ebensee – stiller Badesee im Naturschutzgebiet',
+    excerpt: 'Hinter Ebensee, am Nordrand des Toten Gebirges, liegt der Offensee: ein klarer Bergsee im Natur- und Europaschutzgebiet, mit Kiesstränden, einer großen Liegewiese an der Seeau und einem fast ebenen Rundweg – SUP, Kajak und Luftmatratze bleiben im Sommer an Land.',
+    date: '2026-10-12', category: 'Baden', region: 'oberoesterreich', bestSeason: 'Juni–September',
+    highlights: ['Natur- und Europaschutzgebiet am Nordrand des Toten Gebirges', 'Kiesstrände und große Liegewiese bei der Jausenstation Seeau', 'Fast ebener Rundweg von rund 4,5 km um den See'],
+    content: `
+Von Ebensee führt eine Straße rund zehn Kilometer nach Südosten in ein Waldtal am Nordrand des **Toten Gebirges** – und endet an einem See, der wie eine kleine, stille Ausgabe der großen Salzkammergutseen wirkt: dem **Offensee**. Auf 649 m Seehöhe ist er knapp einen Kilometer lang und fast ebenso breit, bis zu 38 m tief und an den Seiten von steilen Waldhängen eingefasst – im Westen vom Eibeneck, im Osten vom Gschirreck. Nord- und Südufer dagegen sind flach, mit Wiesen und Kiesstränden.
+
+## Natur- und Europaschutzgebiet
+Der Offensee und seine Ufer stehen seit **1965** unter Naturschutz und gehören heute auch zum Europaschutzgebiet (Natura 2000); Eigentümer sind die Österreichischen Bundesforste. Das prägt den Charakter: keine Uferpromenade, keine Hotels am Wasser, und im Sommer bleiben **SUPs, Luftmatratzen, Schlauchboote, Kanus und Kajaks** an Land. Hier wird geschwommen, gelegen und gewandert – nicht gepaddelt. Leer ist der See an heißen Tagen trotzdem nicht: Er ist ein beliebtes Ausflugsziel, besonders im Sommer.
+
+## Holz, Salz und ein Kaiser
+Lange bevor hier jemand zum Baden kam, war der Offensee ein Arbeitsort. Das Gebiet gehörte einst dem Kloster Traunkirchen; mit der Saline in Ebensee wurden die Wälder rund um den See ab dem frühen 17. Jahrhundert zum Holzlieferanten für die Salzsiederei. Am Seeausfluss staute eine **Klause** das Wasser, um die Stämme den Offenseebach hinunterzutriften, und von 1909 bis 1954 fuhr eine Waldbahn, die **Offenseebahn**. Ein Arbeitsplatz ist der See bis heute: Ein Wehr der Energie AG nördlich des Sees regelt den Abfluss für die Kraftwerke Offensee 1 und 2, die seit 1908/09 Strom erzeugen – der Wasserspiegel kann deshalb um knapp einen Meter schwanken.
+
+Am Nordufer steht das ehemalige **Jagdschloss**, das Kaiser Franz Joseph I. für seine Jagden nutzte – den Sommer verbrachte er ohnehin im nahen [Bad Ischl](/blog/bad-ischl-kaiservilla). Ab 1920 war darin eine Lungenheilstätte untergebracht, heute sind es Privatwohnungen; das Gebäude ist nicht öffentlich zugänglich.
+
+## Baden am Offensee
+Die große **Liegewiese** liegt im hinteren, südlichen Teil des Sees bei der **Jausenstation Seeau**, die in der warmen Jahreszeit Kleinigkeiten und Getränke anbietet – Öffnungszeiten vorab prüfen. Vom linken Parkplatz geht man rund 15 bis 20 Minuten dorthin. Dazu kommen naturbelassene **Kiesstrände**. Der See selbst ist frei zugänglich.
+
+Das Wasser ist klar und für einen Bergsee angenehm: Bei den offiziellen Proben zwischen Ende Mai und Mitte August 2026 lag es zwischen rund 17,5 und gut 22 °C, die gemessene Sichttiefe betrug meist mehrere Meter. Die Badewasserqualität stuft die AGES seit Jahren als ausgezeichnet ein – die letzte Probe steht hier im Artikel, alle Seen im Vergleich auf der Seite [Wassertemperatur der Seen in Österreich](/wassertemperatur).
+
+## Der Rundweg
+Einmal um den See sind es rund **4,5 km** – fast eben, zwischen etwa 650 und 680 m Seehöhe, in gut anderthalb Stunden gemütlich zu gehen. Empfohlen wird der Start am linken Parkplatz: auf einer breiten Schotterstraße zur Seeau und dann am Ufer entlang zurück. Unterwegs ist die Seeau die einzige Einkehr.
+
+Im Winter friert der Offensee zu; die linke Seeseite ist dann meist geräumt und als Winterspaziergang beliebt, bei passenden Bedingungen wird auf dem See auch eisgelaufen und Eisstock geschossen. Das Eis aber nur betreten, wenn es vor Ort ausdrücklich als sicher gilt – im Zweifel am Ufer bleiben.
+
+## Für Bergwanderer
+Der Offensee ist auch ein Tor ins Tote Gebirge. Der Weg **212** steigt über die **Rinnerhütte** zum Wildensee auf dem Plateau und weiter bis nach [Altaussee](/blog/altausseer-see-baden), der Weg **420** führt hinüber zum [Almsee](/blog/almsee-gruenau-almtal) im Almtal. Beides sind ausgewachsene Bergtouren, keine Spaziergänge: Kondition, Karte und stabiles Wetter gehören dazu, Route und Gehzeit vorab prüfen.
+
+## Beste Reisezeit
+Zum Baden eignen sich **Juni bis Anfang September**, am wärmsten ist der See im Juli und August. Im Herbst – mit verfärbtem Wald und dem ersten Schnee auf den Gipfeln – ist der Rundweg am schönsten, im Winter der zugefrorene See. An Schönwetter-Wochenenden gilt das ganze Jahr: früh kommen.
+
+## Praktische Infos
+- Anfahrt über Ebensee und die Offenseestraße bis zu den Parkplätzen am Nordufer; weiter darf man nicht fahren, die Parkplätze sind tagsüber gebührenpflichtig
+- Am linken Parkplatz gibt es ein ganzjährig geöffnetes öffentliches WC
+- Mit Öffis per Bahn bis Ebensee, die restlichen Kilometer zum See am besten mit dem Rad – Busverbindungen vorab prüfen
+- In trockenen Sommern gilt im Bezirk Gmunden häufig ein Feuer- und Rauchverbot im Wald – Aushänge vor Ort beachten
+- Gut kombinierbar mit dem [Traunsee](/blog/traunsee-gmunden), an dessen Südende Ebensee liegt, oder der Kaiserstadt [Bad Ischl](/blog/bad-ischl-kaiservilla)
+    `,
+    affiliateLinks: [
+      { label: 'Unterkünfte in Ebensee am Traunsee – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Ebensee' },
+      { label: 'Badeschuhe für Kiesstrände – Amazon', url: 'https://www.amazon.de/s?k=badeschuhe' },
     ],
   },
 ];

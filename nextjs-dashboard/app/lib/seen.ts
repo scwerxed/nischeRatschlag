@@ -40,6 +40,8 @@ export const LAKES: Lake[] = [
   { name: 'Keutschacher See', region: 'Kärnten', slug: 'keutschacher-seental-radtour', maxTemp: '27 °C', groesse: 'klein', charakter: 'Warm & unaufgeregt', idealFuer: 'Familien, Radtour im Seental', gratis: true, tipp: 'Ruhigere Alternative zum Wörthersee gleich nebenan', tags: ['warm', 'familie', 'ruhig'] },
   { name: 'Bodensee (Bregenz)', region: 'Vorarlberg', slug: 'bregenz-bodensee', maxTemp: '23 °C', groesse: 'sehr groß', charakter: 'Weit & städtisch', idealFuer: 'Segeln, Promenade, Familien', gratis: true, tipp: 'Baden mit Alpenblick, Pfänderbahn direkt dahinter', tags: ['warm', 'familie', 'wassersport'] },
   { name: 'Gosausee', region: 'Oberösterreich', slug: 'gosausee-dachstein-spiegelung', maxTemp: '18 °C', groesse: 'klein', charakter: 'Eiskalt & spektakulär', idealFuer: 'Fotografie, Uferrunde, Wandern', gratis: true, tipp: 'Dachstein-Spiegelung am Morgen – zum Baden ehrlich zu kalt', tags: ['wanderung', 'ruhig'] },
+  { name: 'Gleinkersee', region: 'Oberösterreich', slug: 'gleinkersee-baden', maxTemp: '23 °C', groesse: 'klein', charakter: 'Klein & grün', idealFuer: 'Familien, Baden + Bergtour', gratis: true, tipp: 'Badestege, Spielplatz und Bootsverleih – der Seespitz direkt darüber', tags: ['wanderung', 'familie'] },
+  { name: 'Offensee', region: 'Oberösterreich', slug: 'offensee-baden-ebensee', maxTemp: '23 °C', groesse: 'klein', charakter: 'Naturschutz & klar', idealFuer: 'Ruhe, Rundweg, Natur', gratis: true, tipp: 'Kein SUP, kein Kajak im Sommer – dafür Kiesstrände und ein ebener Rundweg', tags: ['ruhig', 'wanderung'] },
 ];
 
 export type SeeThema = { slug: string; tag: LakeTag; title: string; h1: string; intro: string };

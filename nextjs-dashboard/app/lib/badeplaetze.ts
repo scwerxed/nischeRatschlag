@@ -56,6 +56,8 @@ export const BADEPLAETZE: Badeplatz[] = [
   // Oberösterreich
   { name: 'Freie Einstiege Attersee-Ostufer', see: 'Attersee', region: 'Oberösterreich', slug: 'attersee-baden', features: ['gratis', 'wandern'], agesId: 'AT3150006900010070', hinweis: 'Glasklares Wasser; wenige Parkplätze – Rad oder Bus nutzen.' },
   { name: 'Strandbad Gmunden', see: 'Traunsee', region: 'Oberösterreich', slug: 'traunsee-gmunden', features: ['wc', 'gastro', 'schatten'], agesId: 'AT3150000500270040', hinweis: 'Kühles, tiefes Wasser unterm Traunstein.' },
+  { name: 'Badestege am Nordufer', see: 'Gleinkersee', region: 'Oberösterreich', slug: 'gleinkersee-baden', features: ['gratis', 'gastro', 'wandern'], agesId: 'AT3140001900150010', hinweis: 'Kleiner Bergsee unterm Seespitz – Ufer frei, die Liegewiese beim Seebauer kostet in der Saison Eintritt.' },
+  { name: 'Liegewiese an der Seeau', see: 'Offensee', region: 'Oberösterreich', slug: 'offensee-baden-ebensee', features: ['gratis', 'gastro', 'wandern'], agesId: 'AT3150000400240010', hinweis: 'Naturschutzgebiet: im Sommer kein SUP, Kajak oder Luftmatratze; vom Parkplatz rund 15–20 Min. zu Fuß.' },
   // Tirol
   { name: 'Uferzonen Pertisau', see: 'Achensee', region: 'Tirol', slug: 'achensee-tirol', features: ['gratis', 'wandern', 'wc'], agesId: 'AT3350005600010030', hinweis: 'Alpin-frisch – nach einer Karwendel-Wanderung genau richtig.' },
   { name: 'Badeplätze am Plansee', see: 'Plansee', region: 'Tirol', slug: 'plansee-tirol-baden', features: ['gratis', 'schatten'], agesId: 'AT3310002800190010', hinweis: 'Ruhig und naturbelassen – der Fjord Tirols.' },
