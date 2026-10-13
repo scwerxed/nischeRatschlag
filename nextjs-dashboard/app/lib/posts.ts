@@ -803,43 +803,45 @@ Von Villach ca. 20 Minuten mit dem Auto. Direktzug von Villach Hauptbahnhof nach
   {
     slug: 'gratis-badestellen-kaernten-insider',
     title: 'Gratis Baden in Kärnten – 8 geheime Badestellen abseits der Touristenströme',
-    excerpt: 'Während Strandbäder im Sommer Eintritt kosten und überlaufen sind, gibt es in Kärnten noch echte Geheimtipps: kostenlose Badestellen in unberührter Natur, kaum bekannt bei Touristen.',
+    excerpt: 'Während die großen Strandbäder im Sommer Eintritt kosten und überlaufen sind, gibt es in Kärnten Alternativen: freie Uferstellen an kleinen Seen und die Gratis-Badeplätze der Stadt Villach – ruhiger und kaum bekannt bei Touristen.',
     date: '2026-05-26',
     category: 'Baden',
     region: 'kaernten',
     bestSeason: 'Juli–August',
-    highlights: ['8 kostenlose Badestellen – nur bei Einheimischen bekannt', 'Naturbelassen, ruhig und ohne Gedränge', 'Von Waldseen bis Alpenseen auf 1.400 m'],
+    highlights: ['8 Badestellen abseits der großen Strandbäder', 'Naturbelassen, ruhig und ohne Gedränge', 'Vom Waldsee über dem Wörthersee bis zu den Gratis-„Beaches“ der Stadt Villach'],
     content: `
-Kärntens bekannteste Strandbäder kosten Eintritt und sind im Hochsommer überlaufen. Aber das Bundesland hat über 1.270 Seen – und viele davon haben kostenlose, nahezu unbekannte Zugänge, an denen man fast alleine ist.
+Kärntens bekannteste Strandbäder kosten Eintritt und sind im Hochsommer überlaufen. Aber das Bundesland hat über 1.270 Seen – und viele davon haben freie, wenig bekannte Zugänge, an denen es deutlich ruhiger zugeht.
 
-## 8 geheime Gratis-Badestellen
+Wichtig vorab: Ob Eintritt oder Parkgebühr anfällt, kann sich ändern und ist nicht an jedem Ufer gleich – an manchen Seen gibt es neben freien Uferstellen auch ein kostenpflichtiges Strandbad. Vor Ort auf die Beschilderung achten.
 
-### 1. Forstsee bei Klagenfurt
-Kleiner Waldsee im Stadtwald – 15 Minuten vom Stadtzentrum entfernt. Kristallklares Wasser, Liegewiesen unter alten Bäumen. Fast nur Klagenfurter kennen ihn. Kein Eintritt.
+## 8 Badestellen abseits der Strandbäder
 
-### 2. Brennsee bei Steindorf (Ossiacher See)
-Kleiner Badesee hinter dem Ossiacher See, den kaum jemand kennt. Im August bis 28°C warm. Kleiner Parkplatz direkt am Ufer.
+### 1. Forstsee bei Techelsberg
+Kleiner Waldsee auf dem Hügel über dem Nordufer des Wörthersees (Gemeinde Techelsberg, zwischen Pörtschach und Velden). Er ist ein Speichersee für ein Kraftwerk der Kelag, frei zugänglich und mit einem großen Parkplatz für Wanderer – ein Strandbad gibt es nicht. Weil der See ein Kraftwerksspeicher ist, kann der Wasserstand schwanken; der See wurde in der Vergangenheit auch schon abgelassen.
 
-### 3. Keutschacher See – Nordufer (kostenlos)
-Am bekannten Keutschacher See gibt es am Nordufer einen kaum frequentierten Freiabschnitt – Liegewiese, Schilf, perfekt für Frühschwimmer ohne Gedränge.
+### 2. Brennsee bei Feld am See
+Kleiner Badesee im Gegendtal nördlich von Villach, nahe dem Afritzer See – auch als Feldsee bekannt und offizielle EU-Badestelle. Wie warm er gerade ist, zeigt unsere Seite [Wassertemperatur der Seen in Österreich](/wassertemperatur).
 
-### 4. Rauschelesee auf der Villacher Alpe
-Kleiner Bergsee auf 1.027 m Höhe, ca. 2 km Fußweg vom Parkplatz. Kühleres Wasser (max. 22°C), aber absolute Stille und Bergpanorama statt Gedränge.
+### 3. Keutschacher See – Nordufer
+Am bekannten Keutschacher See gibt es am Nordufer einen ruhigeren Uferabschnitt – Liegewiese, Schilf, gut für Frühschwimmer ohne Gedränge. Mehr zum Tal mit seinen vier Seen im Artikel zum [Keutschacher Seental](/blog/keutschacher-seental-radtour).
 
-### 5. Silbersee Spittal an der Drau
-Ehemaliger Schotterteich, heute naturbelassenes Badegewässer. Tiefes, klares Wasser – besonders gut für Schwimmer, die auch mal tauchen möchten.
+### 4. Rauschelesee im Keutschacher Seental
+Der östlichste der vier Seen im Keutschacher Tal, auf gut 500 m Seehöhe – ruhiger als der Keutschacher See nebenan, als Bade- und Angelgewässer genutzt und offizielle EU-Badestelle.
 
-### 6. Almsee Flattnitz (Nockberge)
-Auf 1.400 m Höhe – kalt (max. 18°C), aber nach einer Wanderung ein unvergessliches Erlebnis. Kein anderer Badegast weit und breit.
+### 5. Silbersee in Villach
+Kleiner See am Stadtrand von Villach, an dessen Ufer der Drauradweg vorbeiführt. Die Stadt Villach betreibt hier den „actionbeach Silbersee“ – laut Stadt mit kostenlosem Zugang.
 
-### 7. Lärchach-Teiche Villach
-Drei kleine Teiche in einem Naturschutzgebiet am Stadtrand von Villach. Warm, ruhig, kostenlos – und trotzdem kaum bekannt.
+### 6. Vassacher See in Villach
+Ebenfalls ein Badeplatz der Stadt Villach: der „naturebeach Vassacher See“, laut Stadt bei freiem Eintritt und mit einer Rutsche für Kinder.
 
-### 8. Längsee (St. Veit an der Glan)
-Kleiner Waldsee mit historischem Damm und glasklarem Wasser. Das ehemalige Kloster direkt daneben macht den Ort magisch.
+### 7. Magdalenensee in Villach-St. Magdalen
+Das ehemalige Zellstoffbad ist heute der „relaxbeach“ der Stadt Villach – laut Stadt ganzjährig frei zugänglich.
+
+### 8. Längsee bei St. Georgen
+Kleiner See in der Hügellandschaft nahe St. Veit an der Glan, überragt vom ehemaligen Kloster St. Georgen am Längsee. Offizielle EU-Badestelle.
 
 ## Verhaltenstipps
-Müll immer mitnehmen – nur so bleiben diese Stellen erhalten. Früh morgens kommen, da Einheimische früh starten. Manche Stellen sind nicht offiziell ausgewiesen – Baden auf eigene Verantwortung.
+Müll immer mitnehmen – nur so bleiben diese Stellen erhalten. Früh morgens kommen, da Einheimische früh starten. Manche Stellen sind nicht offiziell ausgewiesen – Baden auf eigene Verantwortung. Die Badewasser-Qualität der offiziellen EU-Badestellen veröffentlicht die AGES; einen Überblick über konkrete Badeplätze mit Ausstattung gibt unser [Badeplatz-Check](/badeplaetze).
     `,
     affiliateLinks: [
       { label: 'Wasserdichte Tasche für Ausflüge – Amazon', url: 'https://www.amazon.de/s?k=wasserdichte+tasche+strand' },
@@ -1497,40 +1499,44 @@ Das Restaurant am Schlosseingang bietet Kärntner Küche in historischem Ambient
     slug: 'keutschacher-seental-radtour',
     startCoords: [46.5950, 14.1300],
     title: 'Keutschacher Seental – Entspannte Radtour durch Kärntens schönste Seenlandschaft',
-    excerpt: 'Das Keutschacher Seental südlich des Wörthersees beherbergt fünf kleine Seen in einem Tal – ideal für Fahrradtouren, Schwimmen in Ruhe und Naturbeobachtung fernab der Touristenströme.',
+    excerpt: 'Das Keutschacher Seental südlich des Wörthersees reiht vier Seen aneinander – Hafnersee, Keutschacher See, Baßgeigensee und Rauschelesee. Ideal für Radtouren auf ruhigen Wegen, Baden abseits der großen Strandbäder und Naturbeobachtung.',
     date: '2026-06-01',
     category: 'Ausflug',
     region: 'kaernten',
     bestSeason: 'Mai–Oktober',
-    highlights: ['Fünf Seen in einem Tal – alle kostenlos zugänglich', 'Flache Radroute für alle Altersgruppen', 'Naturparadies 15 Minuten vom Wörthersee'],
+    highlights: ['Vier Seen in einem Tal, seit 1970 Landschaftsschutzgebiet', 'Pfahlbau-Insel im Keutschacher See – UNESCO-Welterbe seit 2011', 'Radwege und ruhige Nebenstraßen direkt hinter dem Wörthersee'],
     content: `
-Wer am Wörthersee urlaubt, übersieht meist das Seental direkt dahinter. Das Keutschacher Tal liegt keine 15 Fahrminuten südlich des Wörthersees und beherbergt gleich fünf kleinere Seen: den Keutschacher See, den Rauschelesee, den Hafnersee, den Gösselsdorfer See und den Silbersee. Alle sind kostenlos zugänglich, alle deutlich ruhiger als die großen Kärntner Seen.
+Wer am Wörthersee urlaubt, übersieht meist das Seental direkt dahinter. Zwischen dem Pyramidenkogel im Norden und dem bewaldeten Sattnitzzug im Süden reihen sich im Keutschacher Tal vier Seen aneinander – von West nach Ost der **Hafnersee**, der **Keutschacher See**, der winzige **Baßgeigensee** und der **Rauschelesee**. Alle sind deutlich ruhiger als die großen Kärntner Seen, und große Teile des Tals stehen seit 1970 als Landschaftsschutzgebiet (rund 2.500 Hektar) unter Schutz.
 
-## Die Radtour
+## Mit dem Rad durchs Seental
 
-Die Runde durch das Seental ist 18 km lang, weitgehend flach und ideal für Familien. Ausgangspunkt ist Klagenfurt-Süd oder der Parkplatz am Keutschacher See. Bikeverleih in Klagenfurt oder Reifnitz.
+Eine einzige, offiziell beschilderte „Seental-Runde“ mit fester Länge gibt es nicht – die Seen lassen sich aber gut auf Radwegen und ruhigen Nebenstraßen verbinden. Von Klagenfurt-Viktring geht es zunächst bergauf am Treimischer Teich vorbei zum Rauschelesee, dann durchs Tal nach Keutschach und weiter am Hafnersee vorbei Richtung Schiefling. Der Talboden selbst ist flach, die Steigungen liegen an den Zufahrten – vom Wörthersee aus geht es in jedem Fall erst einmal bergauf. Räder gibt es in Klagenfurt und in den Orten am Wörthersee zu leihen.
 
 ### Keutschacher See
-Der größte der fünf Seen, mit Freistrand am Nordufer. Wasser bis 24°C im Sommer, Ruderbootverleih vor Ort.
+Der größte der vier Seen und einer der wärmsten Badeseen Kärntens – die aktuelle Wassertemperatur zeigt die Live-Karte in diesem Artikel. Am Ostufer bei Keutschach liegt ein Strandbad. Unter der Wasseroberfläche liegt Geschichte: Eine Insel im See ist die Fundstelle einer jungsteinzeitlichen **Pfahlbausiedlung** und gehört seit 2011 zum UNESCO-Welterbe „Prähistorische Pfahlbauten um die Alpen“ – gemeinsam mit Fundstellen am Attersee und Mondsee. Ein Rundweg um den See ist rund 7 km lang, zu Fuß gut zwei Stunden.
+
+### Hafnersee
+Der westlichste See, rund 15 Hektar groß, sein Abfluss mündet nach wenigen hundert Metern in den Keutschacher See. Nördlich davon führt der Weg durch eine Moorlandschaft mit Infotafeln; zum Baden gibt es eine ausgewiesene Badestelle.
+
+### Baßgeigensee
+Mit knapp 2 Hektar der Zwerg im Tal – von oben sieht er aus wie eine Bassgeige, daher der Name. Gespeist wird er von einer kräftigen Quelle am Fuß der Sattnitz, der Müllnerquelle, weshalb er auch Müllnersee heißt.
 
 ### Rauschelesee
-Kleiner Bergsee auf 1.027 m – 2 km Fußweg vom nächsten Parkplatz. Kühl, ruhig, kaum besucht. Lohnt sich als Abstecher.
-
-### Gösselsdorfer See
-Der abgelegenste der fünf – umgeben von Schilf und Wiesen. Naturschutzgebiet, kein Strandbad, aber Fischereibetrieb und ein kleines Fischlokal direkt am Wasser.
+Der östlichste See, auf gut 500 m Seehöhe, rund 19 Hektar groß und bis zu 12 m tief. Er wird zum Baden und Angeln genutzt und ist ruhiger als sein großer Nachbar. Sein Abfluss, der Viktringer Bach, fließt Richtung Klagenfurt.
 
 ## Kombinationsmöglichkeiten
 
-Das Keutschacher Seental liegt direkt am Weg zwischen Klagenfurt und Maria Wörth. Eine Kombinationsroute: Klagenfurt → Keutschacher Seental → Maria Wörth → Wörthersee-Promenade → zurück. Ca. 45 km, 3–4 Stunden mit Pausen.
+Wer eine Tagestour sucht, verbindet Seental und Wörthersee zu einer großen Runde – etwa von Pörtschach auf dem Radweg nach Klagenfurt, über Viktring ins Seental und über Schiefling zurück an den See: knapp 50 km auf Radwegen und ruhigen Nebenstraßen. Kürzer ist der Abstecher von [Maria Wörth](/blog/maria-woerth-woerthersee) hinauf ins Tal; mit dem Auto lohnt dazu der Aussichtsturm am [Pyramidenkogel](/blog/pyramidenkogel-woerthersee) direkt über dem Tal.
 
 ## Naturbeobachtung
 
-Das Schilf rund um die kleineren Seen ist ein Vogelparadies – Blässhühner, Rohrsänger, gelegentlich auch Eisvögel. Im Mai und Juni Morgenstunden besonders lohnend.
+Schilfgürtel und Moorwiesen rund um die kleineren Seen sind ein guter Lebensraum für Wasservögel – Blässhühner und Rohrsänger gehören zu den häufigen Arten. Am lohnendsten sind die Morgenstunden im Mai und Juni.
 
 ## Praktische Infos
-- Startpunkt: Parkplatz Keutschacher See (kostenlos)
-- Radverleih: In Klagenfurt oder vor Ort
-- Gastronomie: Fischlokal am Gösselsdorfer See, Gasthöfe in Keutschach
+- Parken in Keutschach und an den Badeplätzen – ob Gebühren anfallen, vor Ort prüfen
+- Radverleih in Klagenfurt und in den Wörthersee-Orten
+- Gasthöfe in Keutschach und an den Seen; Öffnungszeiten saisonal
+- Wassertemperatur der Kärntner Seen im Vergleich: [Wassertemperatur der Seen in Österreich](/wassertemperatur)
     `,
     affiliateLinks: [
       { label: 'Faltrad / Klapprad für Urlaub – Amazon', url: 'https://www.amazon.de/s?k=klapprad+20+zoll+erwachsene' },
@@ -4342,6 +4348,7 @@ Die Mautstraße stört manche – ohne sie wäre der Zustieg allerdings deutlich
   },
   {
     slug: 'murau-murtalbahn',
+    startCoords: [47.1090, 14.1736],
     title: 'Murau & die Murtalbahn – Bier, Holz und Nostalgie-Dampf',
     excerpt: 'Das mittelalterliche Murau in der Obersteiermark ist bekannt für seine Brauerei und die nostalgische Murtalbahn. Eine charmante Auszeit abseits des Trubels.',
     date: '2026-06-12', category: 'Ausflug', region: 'steiermark', bestSeason: 'Mai–Oktober',
@@ -6131,6 +6138,7 @@ Das Highlight für Kinder (und Mutige): die **52 m lange Indoor-Rutsche**, eine 
   },
   {
     slug: 'minimundus-klagenfurt',
+    startCoords: [46.6199, 14.2642],
     title: 'Minimundus in Klagenfurt – die kleine Welt am Wörthersee',
     excerpt: 'Eiffelturm, Taj Mahal und Petersdom auf einem Spaziergang: Der Miniaturpark Minimundus zeigt über 150 Bauwerke aus aller Welt im Maßstab 1:25 – ein Klassiker für Familien.',
     date: '2026-06-17', category: 'Ausflug', region: 'kaernten', bestSeason: 'April–Oktober',

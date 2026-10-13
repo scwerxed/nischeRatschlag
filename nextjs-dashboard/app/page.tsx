@@ -12,9 +12,13 @@ import { CATEGORY_DOT } from '@/app/lib/blog-utils';
 import { currentSeason } from '@/app/lib/season';
 import type { Metadata } from 'next';
 
+// „Tipp des Tages“ und Saison-Band hängen vom Datum ab – stündlich neu erzeugen,
+// statt bis zum nächsten Deploy auf dem Build-Tag stehen zu bleiben.
+export const revalidate = 3600;
+
 export const metadata: Metadata = {
   title: 'Bergseen Guide – Wandern, Baden & Urlaub in Österreich',
-  description: 'Insider-Tipps für ganz Österreich: die schönsten Wanderwege, wärmsten Badeseen und Ausflugsziele in Kärnten, Salzburg, Tirol, der Steiermark und im Burgenland – ehrlich recherchiert, mit konkreten Routen und Startpunkten.',
+  description: 'Insider-Tipps für ganz Österreich: die schönsten Wanderwege, Badeseen und Ausflugsziele in allen neun Bundesländern – ehrlich recherchiert, mit konkreten Routen und Startpunkten.',
   keywords: ['Bergseen Guide', 'Urlaub Österreich', 'Wandern Österreich', 'Badeseen Österreich', 'Bergseen Österreich', 'Ausflugsziele Österreich', 'Wörthersee', 'Neusiedler See', 'Achensee', 'Zeller See'],
   alternates: { canonical: '/' },
 };

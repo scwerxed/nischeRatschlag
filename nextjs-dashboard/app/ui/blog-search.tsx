@@ -3,7 +3,7 @@
 import { useEffect, useMemo, useState } from 'react';
 import Link from 'next/link';
 import type { Post } from '@/app/lib/posts';
-import { CATEGORY_DOT, CATEGORY_STYLE } from '@/app/lib/blog-utils';
+import { CATEGORY_DOT, CATEGORY_STYLE, formatDatum } from '@/app/lib/blog-utils';
 import { isOeffiErreichbar } from '@/app/lib/themenseiten';
 import PostBild from '@/app/ui/post-bild';
 
@@ -164,7 +164,7 @@ export default function BlogSearch({ posts }: { posts: CardPost[] }) {
                         </span>
                       )}
                     </div>
-                    <span className="text-fine text-ink-soft">{post.date}</span>
+                    <time dateTime={post.date} className="text-fine text-ink-soft">{formatDatum(post.date)}</time>
                   </div>
                   <h2 className="font-serif font-bold text-tagline text-ink group-hover:text-green-700 leading-snug transition-colors">
                     {post.title}

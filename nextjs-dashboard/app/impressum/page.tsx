@@ -98,7 +98,9 @@ export default function ImpressumPage() {
         </p>
       </section>
 
-      <p className="text-fine text-ink-soft mt-10">Stand: {new Date().toLocaleDateString('de-AT', { month: 'long', year: 'numeric' })}</p>
+      {/* Datum der letzten inhaltlichen Änderung – bei jeder Textänderung hier mitziehen
+          (nicht `new Date()`: das wäre nur das Build-Datum und täuscht eine Aktualisierung vor). */}
+      <p className="text-fine text-ink-soft mt-10">Stand: Juni 2026</p>
     </div>
   );
 }

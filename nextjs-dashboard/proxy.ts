@@ -27,7 +27,7 @@ const BLOCKED_UA = [
 // Sicher: Google/Bing/AdSense crawlen NICHT aus diesen Ländern.
 const BLOCKED_COUNTRIES = ['CN', 'RU', 'HK'];
 
-export function middleware(req: NextRequest) {
+export function proxy(req: NextRequest) {
   const ua = (req.headers.get('user-agent') || '').toLowerCase();
 
   // 1) Bot per User-Agent blocken

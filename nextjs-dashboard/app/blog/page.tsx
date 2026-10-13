@@ -5,7 +5,7 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'Magazin – Österreich Tipps & Wanderwege',
-  description: 'Insider-Artikel für ganz Österreich: Wanderwege, Badeseen, Ausflüge, Tiertouren und Unterkünfte in Kärnten, Salzburg, Tirol, der Steiermark und im Burgenland – vor Ort recherchiert, mit ehrlichen Einschätzungen und Gratis-Alternativen.',
+  description: 'Insider-Artikel für ganz Österreich: Wanderwege, Badeseen, Ausflüge, Tiertouren und Unterkünfte in allen neun Bundesländern – recherchiert, mit ehrlichen Einschätzungen und Gratis-Alternativen.',
   keywords: ['Österreich Blog', 'Wandern Österreich', 'Badeseen Österreich', 'Ausflugsziele Österreich', 'Reisetipps Österreich', 'Bergseen Österreich'],
   alternates: { canonical: '/blog' },
 };

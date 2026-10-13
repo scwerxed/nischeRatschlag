@@ -69,7 +69,7 @@ export function orgSchema() {
     '@type': 'Organization',
     name: SITE_NAME,
     url: BASE,
-    description: 'Unabhängiger Reiseführer für Österreich: Wanderungen, Bergseen, Badeseen und Ausflüge in Kärnten, Salzburg, Tirol, der Steiermark und im Burgenland.',
+    description: 'Unabhängiger Reiseführer für Österreich: Wanderungen, Bergseen, Badeseen und Ausflüge in allen neun Bundesländern.',
     areaServed: { '@type': 'Country', name: 'Österreich' },
   };
 }

@@ -10,12 +10,12 @@ import { SEE_MESSSTELLEN, type SeeMesswert } from '@/app/lib/seen-messstellen';
 // Ergebnis: Messwert je Station-ID aus app/lib/seen-messstellen.ts.
 const KTN_URL = 'https://info.ktn.gv.at/asp/hydro/daten/json/hdkaernten_see.json';
 const SBG_URL = 'https://www.salzburg.gv.at/wasser/hydro/grafiken/data.json';
-const OOE_URL = 'https://data.ooe.gv.at/files/hydro/HDOOE_Export_WT.zrxp';
+// Seit Herbst 2026 per 301 von data.ooe.gv.at/files/hydro/… hierher umgezogen.
+const OOE_URL = 'https://www.land-oberoesterreich.gv.at/files/ogd/hydro/HDOOE_Export_WT.zrxp';
 
-// In Frankfurt statt im Vercel-Standard (Washington) ausführen: der Kärntner Server antwortet
-// Anfragen aus den USA nicht (TimeoutError). Auf dem Hobby-Plan greift diese Route-Einstellung
-// allein nicht – maßgeblich ist `"regions": ["fra1"]` in vercel.json (gilt für alle Functions).
-export const preferredRegion = 'fra1';
+// Die Function muss in Frankfurt laufen statt im Vercel-Standard (Washington): der Kärntner Server
+// antwortet Anfragen aus den USA nicht (TimeoutError). Das regelt `"regions": ["fra1"]` in vercel.json
+// (gilt für alle Functions) – ein `preferredRegion` hier ist veraltet und auf dem Hobby-Plan wirkungslos.
 
 /** Ältere Werte (z. B. ausgefallene Station) werden verworfen, statt veraltet als „live“ zu erscheinen. */
 const MAX_ALTER_MS = 72 * 60 * 60 * 1000;
@@ -34,8 +34,12 @@ function add(out: Werte, id: string, wasser: number, stand: Date) {
   out[id] = { wasser: Math.round(wasser * 10) / 10, stand: stand.toISOString() };
 }
 
+// Bewusst `no-store` statt `next: { revalidate }`: Der Next-Data-Cache liefert nach einer ruhigen Phase
+// zuerst die alte Kopie aus (Stale-while-revalidate ohne Altersgrenze) – waren deren Werte älter als
+// MAX_ALTER_MS, kam eine leere Antwort zurück. Gecacht wird stattdessen die fertige Antwort im CDN
+// (s-maxage unten), deren Alter damit klar begrenzt ist.
 async function fetchSource(url: string): Promise<Response> {
-  const res = await fetch(url, { next: { revalidate: 900 }, signal: AbortSignal.timeout(8000) });
+  const res = await fetch(url, { cache: 'no-store', signal: AbortSignal.timeout(8000) });
   if (!res.ok) throw new Error(`upstream ${res.status}`);
   return res;
 }
@@ -89,9 +93,9 @@ async function oberoesterreich(out: Werte) {
 
 // ── Missbrauchsschutz ────────────────────────────────────────────────────────
 // Analog zu /api/brouter: diese Route ruft fremde Gratis-Datenquellen in
-// unserem Namen auf. Der 15-Minuten-Cache (next.revalidate) hält die Last bei
-// den Landesdiensten ohnehin niedrig, das Rate-Limit ist nur zusätzliche
-// Absicherung gegen direktes Traffic-Abgreifen über unsere Route.
+// unserem Namen auf. Der CDN-Cache der Antwort (s-maxage, höchstens rund
+// 15 Minuten alt) hält die Last bei den Landesdiensten ohnehin niedrig, das
+// Rate-Limit ist nur zusätzliche Absicherung gegen direktes Traffic-Abgreifen.
 
 function sameOrigin(req: NextRequest): boolean {
   const ref = req.headers.get('referer');
@@ -136,12 +140,18 @@ export async function GET(request: NextRequest) {
     r.status === 'rejected' ? [`${quellen[i]}: ${r.reason instanceof Error ? r.reason.name : 'Fehler'}`] : []
   );
 
+  // Vollständige Antwort: 10 Min. im CDN (+ 5 Min. stale), im Browser 2 Min. Ist eine Quelle
+  // ausgefallen, nur kurz cachen, damit die fehlenden Seen bald wieder erscheinen.
+  const cacheControl = ausfall.length === 0
+    ? 'public, max-age=120, s-maxage=600, stale-while-revalidate=300'
+    : 'public, max-age=60, s-maxage=60';
+
   return NextResponse.json(
     {
       messwerte,
       ausfall,
       quelle: 'Hydrographische Dienste Kärnten, Salzburg und Oberösterreich (CC BY 4.0)',
     },
-    { headers: { 'Cache-Control': 'public, max-age=300, stale-while-revalidate=1800' } }
+    { headers: { 'Cache-Control': cacheControl } }
   );
 }

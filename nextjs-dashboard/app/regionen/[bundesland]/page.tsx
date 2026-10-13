@@ -16,6 +16,10 @@ import { seasonStatus, SEASON_LABEL } from '@/app/lib/season';
 
 type Props = { params: Promise<{ bundesland: string }> };
 
+// Die Saison-Ampel auf den Artikelkarten hängt vom aktuellen Monat ab – ohne Revalidierung
+// bliebe sie auf dem Stand des letzten Deploys stehen.
+export const revalidate = 86400;
+
 export async function generateStaticParams() {
   return regionen.map((r) => ({ bundesland: r.slug }));
 }

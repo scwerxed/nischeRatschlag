@@ -10,7 +10,7 @@ import SaveButton from '@/app/ui/save-button';
 import PostBild, { Bildnachweis } from '@/app/ui/post-bild';
 import ViewTracker from '@/app/ui/view-tracker';
 import RecentlyViewed from '@/app/ui/recently-viewed';
-import { readingTime, relatedPosts } from '@/app/lib/blog-utils';
+import { readingTime, relatedPosts, formatDatum } from '@/app/lib/blog-utils';
 import { themenFor, oeffiAnreise } from '@/app/lib/themenseiten';
 import { seasonStatus, SEASON_LABEL } from '@/app/lib/season';
 import { unterkuenfte } from '@/app/lib/unterkuenfte';
@@ -23,8 +23,21 @@ import { BASE, SITE_NAME, CATEGORY_KEYWORDS, REGION_META, regionName, articleSch
 
 type Props = { params: Promise<{ slug: string }> };
 
+// Täglich neu erzeugen: Saison-Ampel (aktueller Monat) und AGES-Badewasserkarte sollen nicht auf dem
+// Stand des letzten Deploys stehen bleiben. Ein `fetch`-revalidate in gewaesser.ts allein reicht nicht –
+// dessen Promise wird modulweit geteilt, sodass die meisten Seiten den Fetch beim Build gar nicht sehen.
+export const revalidate = 86400;
+
 export async function generateStaticParams() {
   return posts.map((p) => ({ slug: p.slug }));
+}
+
+/** Kürzt auf max. Zeichen an einer Wortgrenze (mit „…“), statt mitten im Wort abzuschneiden. */
+function kuerzen(text: string, max = 160): string {
+  if (text.length <= max) return text;
+  const cut = text.slice(0, max - 1);
+  const space = cut.lastIndexOf(' ');
+  return `${(space > max * 0.6 ? cut.slice(0, space) : cut).replace(/[\s,;:·–-]+$/, '')}…`;
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
@@ -36,16 +49,16 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const regionKw = REGION_META[post.region]?.keywords ?? [];
   const keywords = [...catKw, ...regionKw, post.bestSeason ?? ''].filter(Boolean);
   const hlText = post.highlights?.slice(0, 2).join(' · ') ?? '';
-  const description = hlText ? `${post.excerpt} ${hlText}` : post.excerpt;
+  const description = kuerzen(hlText ? `${post.excerpt} ${hlText}` : post.excerpt);
 
   return {
     title: post.title,
-    description: description.slice(0, 160),
+    description,
     keywords,
     alternates: { canonical: `/blog/${post.slug}` },
     openGraph: {
       title: post.title,
-      description: description.slice(0, 160),
+      description,
       type: 'article',
       publishedTime: post.date,
       url: `${BASE}/blog/${post.slug}`,
@@ -295,7 +308,7 @@ export default async function BlogPostPage({ params }: Props) {
             {oeffi && (
               <span className="bg-white/15 border border-white/20 px-3 py-1 rounded-full">🚋 Mit Öffis erreichbar</span>
             )}
-            <span className="text-white/60 ml-auto">{post.date} · {minutes} Min. Lesen</span>
+            <span className="text-white/60 ml-auto"><time dateTime={post.date}>{formatDatum(post.date)}</time> · {minutes} Min. Lesen</span>
           </div>
 
           <h1 className="font-serif text-display-sm md:text-hero font-bold max-w-3xl">{post.title}</h1>

@@ -1,5 +1,18 @@
 import type { Post } from '@/app/lib/posts';
 
+const MONATE_AT = ['Jänner', 'Februar', 'März', 'April', 'Mai', 'Juni', 'Juli', 'August', 'September', 'Oktober', 'November', 'Dezember'];
+
+/**
+ * „2026-10-12“ → „12. Oktober 2026“. Bewusst ohne `Intl`/`toLocaleDateString`: Server und Browser
+ * würden je nach ICU-Daten u. U. unterschiedlich formatieren (Hydration-Mismatch). Unbekanntes Format → unverändert.
+ */
+export function formatDatum(iso: string): string {
+  const m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(iso);
+  if (!m) return iso;
+  const monat = MONATE_AT[Number(m[2]) - 1];
+  return monat ? `${Number(m[3])}. ${monat} ${m[1]}` : iso;
+}
+
 /** Grobe Lesezeit in Minuten (~200 Wörter/Min). */
 export function readingTime(content: string): number {
   const words = content.trim().split(/\s+/).length;
