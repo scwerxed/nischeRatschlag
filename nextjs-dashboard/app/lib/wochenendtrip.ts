@@ -96,3 +96,25 @@ export function tripsFrom(citySlug: string): TripGroup[] {
     return { bucket, items };
   }).filter((g) => g.items.length > 0);
 }
+
+/** Radius für „Weitere Ziele im Umkreis“ auf der Artikelseite – wie bei /zwei-ausfluege-an-einem-tag. */
+export const UMKREIS_KM = 15;
+
+/**
+ * Die nächstgelegenen anderen Artikel um den Startpunkt von `post` (Luftlinie, max. `UMKREIS_KM`),
+ * nächste zuerst. Anders als `relatedPosts` bewusst regionsübergreifend (Salzkammergut, Dachstein,
+ * Arlberg …). Leer, wenn der Artikel keinen Startpunkt hat.
+ */
+export function nearbyPosts(post: Post, limit = 4): TripItem[] {
+  const home = coordsOf(post);
+  if (!home) return [];
+  return posts
+    .filter((p) => p.slug !== post.slug)
+    .map((p) => {
+      const c = coordsOf(p);
+      return c ? { post: p, km: distKm(home, c) } : null;
+    })
+    .filter((x): x is TripItem => x !== null && x.km <= UMKREIS_KM)
+    .sort((a, b) => a.km - b.km)
+    .slice(0, limit);
+}

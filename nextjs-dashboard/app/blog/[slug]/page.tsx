@@ -10,11 +10,11 @@ import SaveButton from '@/app/ui/save-button';
 import PostBild, { Bildnachweis } from '@/app/ui/post-bild';
 import ViewTracker from '@/app/ui/view-tracker';
 import RecentlyViewed from '@/app/ui/recently-viewed';
-import { readingTime, relatedPosts, formatDatum } from '@/app/lib/blog-utils';
+import { readingTime, relatedPosts, formatDatum, CATEGORY_STYLE } from '@/app/lib/blog-utils';
 import { themenFor, oeffiAnreise } from '@/app/lib/themenseiten';
 import { seasonStatus, SEASON_LABEL } from '@/app/lib/season';
 import { unterkuenfte } from '@/app/lib/unterkuenfte';
-import { nearestCityKm, distKm } from '@/app/lib/wochenendtrip';
+import { nearestCityKm, distKm, nearbyPosts, UMKREIS_KM } from '@/app/lib/wochenendtrip';
 import { basislagerFuer, BASISLAGER_RADIUS_KM } from '@/app/lib/basislager';
 import { seeMessstellenFuer, badestelleFuer, AGES_EINSTUFUNG } from '@/app/lib/gewaesser';
 import { QUELLEN_LABEL } from '@/app/lib/seen-messstellen';
@@ -190,7 +190,13 @@ export default async function BlogPostPage({ params }: Props) {
   const regionLabel = regionName(post.region);
 
   const minutes = readingTime(post.content);
-  const related = relatedPosts(post, posts);
+  // Ziele im Umkreis (Luftlinie, regionsübergreifend). Was dort schon steht, nicht noch einmal
+  // unter „Das könnte dich auch interessieren“ zeigen – lieber andere Artikel der Region.
+  const nearby = nearbyPosts(post);
+  const nearbySlugs = new Set(nearby.map((n) => n.post.slug));
+  const related = relatedPosts(post, posts, 3 + nearby.length)
+    .filter((r) => !nearbySlugs.has(r.slug))
+    .slice(0, 3);
   const themen = themenFor(slug);
   const oeffi = oeffiAnreise(slug);
   const season = seasonStatus(post.bestSeason);
@@ -418,6 +424,32 @@ export default async function BlogPostPage({ params }: Props) {
           <div className="mt-10 pt-6 border-t border-divider-soft">
             <ShareButtons title={post.title} />
           </div>
+
+          {/* Weitere Ziele im Umkreis (Luftlinie, auch über Bundesländergrenzen) */}
+          {nearby.length > 0 && (
+            <div className="mt-12">
+              <h2 className="font-serif text-tagline font-bold text-ink mb-1">Weitere Ziele im Umkreis</h2>
+              <p className="text-caption text-ink-soft mb-4">
+                Andere Ziele bis {UMKREIS_KM}&nbsp;km Luftlinie vom Startpunkt, das nächste zuerst. Im Gebirge ist der tatsächliche Weg oft deutlich länger.
+              </p>
+              <div className="grid sm:grid-cols-2 gap-4">
+                {nearby.map((n) => (
+                  <Link key={n.post.slug} href={`/blog/${n.post.slug}`} className="group block border border-hairline p-4 hover:border-green-400 transition rounded-lg">
+                    <span className="flex items-baseline justify-between gap-3">
+                      <span className={`eyebrow ${CATEGORY_STYLE[n.post.category].text}`}>{n.post.category}</span>
+                      <span className="text-fine text-ink-soft whitespace-nowrap tabular-nums">
+                        {n.km < 1 ? 'gleiche Gegend' : `≈ ${Math.round(n.km)} km`}
+                      </span>
+                    </span>
+                    <h3 className="mt-1.5 text-caption font-semibold text-ink group-hover:text-green-700 leading-snug">{n.post.title}</h3>
+                    {n.post.region !== post.region && (
+                      <span className="block mt-1 text-fine text-ink-soft">{regionName(n.post.region)}</span>
+                    )}
+                  </Link>
+                ))}
+              </div>
+            </div>
+          )}
 
           {/* Verwandte Artikel */}
           {related.length > 0 && (
