@@ -146,7 +146,7 @@ export const MONATE: Monat[] = [
     name: 'September',
     intro: 'Der Geheimtipp-Monat: Die Seen sind noch warm, die Preise fallen, die Wanderwege leeren sich – und im Osten beginnt die Weinlese.',
     picks: [
-      { slug: 'millstaetter-see-wandern-und-schwimmen', warum: 'Noch 22–24 °C Wassertemperatur, aber die Strände sind leer.' },
+      { slug: 'millstaetter-see-wandern-und-schwimmen', warum: 'Oft noch badewarm, aber die Strände sind deutlich leerer.' },
       { slug: 'suedsteirische-weinstrasse', warum: 'Weinlese und Buschenschank-Zeit – die Steiermark von ihrer besten Seite.' },
       { slug: 'wachau-duernstein', warum: 'Die Weinterrassen färben sich golden, die Lese beginnt.' },
       { slug: 'uhudler-suedburgenland-wein', warum: 'Uhudler-Herbst im Südburgenland – jetzt wird verkostet.' },

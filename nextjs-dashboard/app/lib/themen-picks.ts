@@ -32,7 +32,7 @@ export const HITZE_GROUPS: { title: string; note: string; picks: { slug: string;
     title: 'Wasser direkt vor der Tür',
     note: 'Wenn schon Hitze, dann mit Abkühlung in Reichweite: Ziele, bei denen der Sprung ins Wasser dazugehört.',
     picks: [
-      { slug: 'weissensee-kaernten-geheimtipp', warum: 'Höchstgelegener Badesee der Alpen-Südseite – erfrischend statt badewannenwarm.' },
+      { slug: 'weissensee-kaernten-geheimtipp', warum: 'Bergsee auf 930 m mit Trinkwasserqualität – erfrischend statt badewannenwarm.' },
       { slug: 'achensee-tirol', warum: 'Alpin-frisches Wasser, dazu kühlender Talwind.' },
       { slug: 'plansee-tirol-baden', warum: 'Stiller, kühler Bergsee – der Fjord Tirols.' },
       { slug: 'gosausee-dachstein-spiegelung', warum: 'Früh starten: schattiger Uferweg + kaltes Gletscherwasser.' },

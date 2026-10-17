@@ -534,116 +534,152 @@ Familienfreundliche Hotels mit Kinderbetreuung findet man am besten über bookin
   {
     slug: 'weissensee-kaernten-geheimtipp',
     startCoords: [46.7164, 13.3017],
+    planningMistakes: [
+      { fehler: 'Eine gemütliche Runde um den ganzen See einplanen', besser: 'Der See ist 11,6 km lang, und zwischen West- und Ostufer gibt es keine Straße. Bequemer ist der Seeuferweg in eine Richtung – zurück geht es mit dem Schiff.' },
+      { fehler: 'Ohne Blick auf den Schiffsfahrplan zum Ostufer loswandern', besser: 'Am Ostende bist du auf das Schiff angewiesen, und unterwegs gibt es keine reguläre Einkehr. Fahrplan vor dem Start prüfen, Wasser und Jause mitnehmen.' },
+    ],
     title: 'Weissensee – Kärntens kristallklarer Geheimtipp',
-    excerpt: 'Der Weissensee gehört zu den saubersten Seen Europas. Was ihn so besonders macht und welche Wanderungen rund um den See lohnen.',
+    excerpt: 'Trinkwasserqualität, ein zu zwei Dritteln unverbautes Ufer und keine Straße ans Ostende: Was den Weissensee in den Gailtaler Alpen besonders macht und wie die schönste Uferwanderung mit dem Schiff zurück funktioniert.',
     date: '2026-05-25',
     category: 'Wandern',
     region: 'kaernten',
     difficulty: 'leicht',
     bestSeason: 'Juni–September',
-    highlights: ['Sauberster See Europas – Sichttiefe bis 8 m', 'Motorbootverbot garantiert absolute Stille', 'Wanderrouten für alle Fitnesslevel'],
+    highlights: ['11,6 km langer Bergsee auf 930 m, Ufer zu zwei Dritteln unverbaut', 'Trinkwasserqualität, keine privaten Motorboote', 'Seeuferweg zum Ostufer, zurück mit dem Schiff'],
     content: `
-Der Weissensee liegt auf 930 Metern Seehöhe in einem Hochtal der Karnischen Alpen – abgelegen, ruhig und von beeindruckender Reinheit. Mit einer Sichttiefe von bis zu 8 Metern zählt er zu den saubersten Seen Europas.
+Der **Weissensee** liegt auf 930 m Seehöhe in den **Gailtaler Alpen**, zwischen Drau- und Gailtal im Südwesten Kärntens. Er ist 11,6 km lang, aber höchstens rund 900 m breit – ein schmales, fast fjordartiges Band aus türkisem Wasser, an der tiefsten Stelle knapp 100 m tief. Mit 6,5 km² ist er der viertgrößte See Kärntens. Was ihn von den großen Badeseen im Land unterscheidet: Rund **zwei Drittel des Ufers sind unverbaut**, und zwischen West- und Ostufer gibt es **keine Straße**. Laut Naturpark ist er der einzige See Kärntens ohne Umfahrungsstraße.
 
-## Seerundweg Weissensee (leicht, 22 km)
-Die komplette Umrundung des Sees dauert etwa 6 Stunden und ist flach genug für die ganze Familie. Wer nicht die ganze Strecke gehen will, nimmt das Schiff für die Rückfahrt.
+## Warum das Wasser so klar ist
+Seit 1969 leitet eine Ringkanalisation die Abwässer der Orte am Ufer am See vorbei – der Weissensee hat heute **Trinkwasserqualität**. Seit 1970 ist er Landschaftsschutzgebiet, seit 1995 gehört er zum **Naturpark Weissensee** (Gemeinden Weissensee und Stockenboi). Private Motorboote sind auf dem See nicht erlaubt, unterwegs sind vor allem die Linienschiffe – entsprechend still ist es auf dem Wasser. Im kühlen, sauerstoffreichen Tiefenwasser lebt die **Seeforelle**, und in den lichten, kalkreichen Wäldern rund um den See blüht von Anfang Juni bis Mitte Juli der geschützte **Gelbe Frauenschuh**.
 
-## Gipfeltour Reißkofel (schwer, 5–6 Stunden)
-Der 2.371 m hohe Reißkofel bietet einen der spektakulärsten Blicke über die Karnischen Alpen. Kondition und Trittsicherheit erforderlich.
+## Der Klassiker: Seeuferweg zum Ostufer
+Der bekannteste Weg am See beginnt in **Neusach** an der Schiffsanlegestelle Ronacherfels und führt nach Osten, zunächst am Ufer entlang, dann auf einem wurzeligen Waldweg meist direkt am Wasser bis ans **Ostufer**. Der Naturpark gibt rund **8,5 km und etwa 3 Stunden** an, fast ohne Höhenmeter; als „Slow Trail" ist der Weg eigens ausgeschildert. Zurück geht es mit dem **Schiff** – oder man fährt zuerst ans Ostufer und wandert zurück. Bis zum Ostende gibt es unterwegs keine reguläre Einkehr, Wasser und Jause gehören also in den Rucksack.
 
-## Goldeckrunde vom Weissensee (mittel, 4 Stunden)
-Durch Almwiesen hinauf zur Goldeckhütte – herrliche Panoramaaussicht und eine gemütliche Einkehr.
+## Mit dem Schiff über den See
+In der Sommersaison verbinden Schiffe die Anlegestellen zwischen Techendorf und dem Ostufer – damit sind sie fester Teil des Wandernetzes. Am See fahren zwei Schifffahrtsunternehmen: Vorab klären, welches Schiff wann an deiner Anlegestelle hält und ob dein Ticket dort gilt. Fahrpläne und Tarife ändern sich je nach Saison.
 
-## Wasserwanderweg Techendorf
-Ein thematischer Weg entlang des Ufers, der die Geschichte des Sees und seiner Bewohner erzählt. Ideal für Kinder.
+## Baden im Weissensee
+Im Sommer erwärmt sich die Oberfläche auf rund 24 °C – für einen See auf über 900 m angenehm, aber spürbar frischer als Wörthersee oder Klopeiner See. Offizielle EU-Badestellen gibt es in Techendorf und auf der Stockenboier Seite im Osten. Die Badewasserqualität steht im [Badeplatz-Check](/badeplaetze), aktuelle Messwerte zeigt die Seite [Wassertemperatur der Seen in Österreich](/wassertemperatur).
 
-## Besonderheit: Motorbootverbot
-Auf dem Weissensee sind Motorboote verboten. Das sorgt für eine einzigartige Ruhe und hervorragende Wasserqualität – hier ist wirklich noch Urlaub wie früher.
+## Wandern rund um den See
+Rund 200 km markierte Wege durchziehen den Naturpark – vom Uferspaziergang bis zu Touren auf die Almen und Gipfel der Gailtaler Alpen. Für die Bergtouren gilt: Route, Hütten und Wetter vorab prüfen und im Hochsommer früh starten, weil am Nachmittag oft Gewitter aufziehen.
 
-## Unterkunft
-Die Auswahl an Hotels und Pensionen am Weissensee ist klein aber fein. Frühzeitig buchen!
+## Im Winter: Natureis
+In kalten Wintern friert der Weissensee komplett zu. Dann wird die ganze Fläche zur Natureisbahn – betreten aber nur dort, wo das Eis freigegeben ist. Szenen des James-Bond-Films „Der Hauch des Todes" (1987) wurden auf dem zugefrorenen See gedreht. Mehr dazu im Artikel [Weissensee im Winter](/blog/weissensee-winter-schlittschuhlaufen).
+
+## Beste Reisezeit
+Juni bis September zum Baden und Uferwandern. Im Juni und Juli kommt die Frauenschuh-Blüte dazu, im September wird es am See besonders ruhig.
+
+## Praktische Infos
+- Anreise mit dem Auto über die Weißensee Straße von Greifenburg im Drautal oder aus dem Gailtal; das Ostufer erreicht man nur von der Stockenboier Seite – entlang des Sees gibt es keine Verbindung
+- Für die Uferwanderung zum Ostufer: Schiffsfahrplan vorab prüfen
+- Die Auswahl an Unterkünften ist überschaubar – für die Sommerferien früh buchen
     `,
     affiliateLinks: [
       { label: 'Unterkünfte am Weissensee – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Weissensee+K%C3%A4rnten' },
       { label: 'Wanderrucksack für alpine Touren – Amazon', url: 'https://www.amazon.de/s?k=wanderrucksack+30l' },
     ],
-    trails: [
-      {
-        name: 'Seerundweg Weissensee',
-        difficulty: 'leicht', length: '22 km', duration: '6 Std.', ascent: '150 hm',
-        coords: [[46.7164, 13.3017], [46.7150, 13.3300], [46.7120, 13.3600], [46.7080, 13.3850], [46.7150, 13.3700], [46.7200, 13.3300], [46.7164, 13.3017]],
-      },
+    officialLinks: [
+      { label: 'Naturpark Weissensee – Naturparke Österreich', url: 'https://www.naturparke.at/naturpark/kaernten/weissensee/' },
     ],
   },
   {
     slug: 'millstaetter-see-wandern-und-schwimmen',
     startCoords: [46.8044, 13.5783],
+    planningMistakes: [
+      { fehler: 'Am Südufer nach Badeorten und Einkehr suchen', besser: 'Seeboden, Millstatt und Döbriach mit ihren Strandbädern und Promenaden liegen alle am Nordufer. Das Südufer ist größtenteils bewaldet und kaum besiedelt – ruhig, aber mit wenig Infrastruktur.' },
+      { fehler: 'Auf der Millstätter Alpe fest mit der Einkehr in der Alexanderhütte rechnen', besser: 'Die Hütte wurde 2021 bei einem Brand teilweise zerstört und wird wieder aufgebaut. Ob und wie sie bewirtschaftet ist, vorab prüfen und genug Proviant einpacken.' },
+    ],
     title: 'Millstätter See – Wandern mit Seeblick und traumhafte Badebuchten',
-    excerpt: 'Der Millstätter See vereint Wanderberge, klares Wasser und die charmante Altstadt Millstatts. Die schönsten Touren und Badeorte.',
+    excerpt: 'Der Millstätter See ist Kärntens tiefster und wasserreichster See, direkt über dem Nordufer beginnen die Nockberge. Die schönsten Touren auf die Millstätter Alpe, die Badeorte und das Stift Millstatt.',
     date: '2026-05-22',
     category: 'Wandern',
     region: 'kaernten',
     difficulty: 'mittel',
     bestSeason: 'Mai–Oktober',
-    highlights: ['Wandern & Baden perfekt kombinierbar', 'Nockberge-Panorama direkt am See', 'Historisches Stift Millstatt aus dem 11. Jh.'],
+    highlights: ['Kärntens tiefster See (141 m) mit Trinkwasserqualität', 'Gipfelrunde auf der Millstätter Alpe hoch über dem Nordufer', 'Stift Millstatt mit romanischem Portal und Kreuzgang'],
     content: `
-Der Millstätter See ist mit 13 km Länge der zweitgrößte See Kärntens. Seine Besonderheit: direkt am Ufer erheben sich die Nockberge – Wandern und Baden lassen sich hier perfekt kombinieren.
+Der **Millstätter See** liegt auf 588 m Seehöhe nördlich des Drautals bei Spittal an der Drau. Mit 13,3 km² ist er nach dem [Wörthersee](/blog/beste-badestellen-woerthersee) der zweitgrößte See Kärntens – 11,5 km lang, bis zu 1,8 km breit. Mit bis zu **141 m** ist er aber der tiefste und wasserreichste See des Landes. Seine Besonderheit: Über dem Nordufer steigen direkt die **Nockberge** an, mit Gipfeln um 2.000 m. Im Süden begrenzt ihn ein bewaldeter Höhenrücken, im Osten der Mirnock (2.110 m). Wandern und Baden lassen sich hier deshalb an einem Tag verbinden.
 
-## Millstätter Höhenweg (mittel, Mehrtagestour)
-Der bekannteste Wanderweg der Region führt in drei Etappen über die Nockberge. Wunderschöne Almlandschaft, gut markiert und mit Hüttenübernachtungen.
+## Wasser und Badeorte
+Alle größeren Orte liegen am sonnigen **Nordufer**: **Seeboden** im Westen, **Millstatt** in der Mitte und **Döbriach** im Osten. Dort finden sich Strandbäder, Promenaden und die offiziellen EU-Badestellen; eine weitere liegt am ruhigen, bewaldeten Südufer. Ob ein Bad Eintritt kostet, ist von Ort zu Ort verschieden – vorab prüfen. Der See gehört zu den wärmsten Kärntens: In Seemitte erreicht die Oberfläche im Sommer bis etwa 22 °C, am Ufer bis 26 °C, in windstillen Buchten auch mehr. Aktuelle Werte zeigt die Seite [Wassertemperatur der Seen in Österreich](/wassertemperatur).
 
-## Gipfeltour Millstätter Alpe (mittel, 4 Stunden)
-Von Seeboden auf die Millstätter Alpe (1.765 m) – herrlicher Blick auf den See und die umliegenden Berge.
+Dass das Wasser so sauber ist, ist kein Zufall: Zwischen 1969 und 1973 wurde rund um den See eine Ringkanalisation gebaut, seither gilt der Millstätter See offiziell als **trinkwassertauglich**. Im See wächst sogar das Biegsame Nixenkraut, eine empfindliche Wasserpflanze, deren einzige bekannte Fundstelle in Österreich er ist.
 
-## Lendspitz-Maiernigg Naturschutzgebiet
-Ein einzigartiges Schilfgebiet am Westufer, ideal für Naturliebhaber und Vogelbeobachter. Flacher Spazierweg.
+## Gipfelrunde auf der Millstätter Alpe (mittel)
+Die Almen und Kuppen der **Millstätter Alpe** liegen direkt über Millstatt. Eine aussichtsreiche Runde startet an der **Litzlhofalm**: über das Millstätter Törl (1.905 m) und den Nockhöhensteig steil hinauf auf den **Hochpalfennock** (2.099 m) mit Gipfelkreuz und Tiefblick auf den See, dann über offenes Almgelände zum Tschierweger Nock (2.010 m) und hinunter zur **Alexanderhütte** (rund 1.780 m). Zurück geht es an der Millstätter Hütte vorbei. Laut Tourenbeschreibung sind es gut 8,5 km und etwa 2,5 Stunden reine Gehzeit. Gleich daneben liegt der **Tschiernock** (2.088 m), ein weiterer Aussichtsgipfel der Millstätter Alpe. Zufahrt und Parken an der Litzlhofalm vorab prüfen.
 
-## Badestellen am Millstätter See
-Am besten badet man in Seeboden (kostenloser Badestrand) oder beim Strandbad Millstatt mit Parkplatz und Gastronomie. Das Wasser erreicht im Sommer bis zu 26°C.
+## Millstätter Höhenweg (mehrtägig)
+Wer mehr Zeit hat, geht den **Millstätter Höhenweg**: eine familienfreundliche Etappentour über drei Tage von der Pichlhütte (1.336 m) bis zur Lammersdorfer Hütte (1.644 m), mit Übernachtung auf der Millstätter Hütte. Die vier Gipfel am Weg lassen sich überschreiten oder auf einfacheren Wegen umgehen. In **Seeboden** endet außerdem der 128 km lange **Nockberge-Trail**, der in acht Etappen vom Katschberg durch die [Nockberge](/blog/nockberge-biosphaerenpark-wandern) herunterführt.
 
-## Altstadt Millstatt
-Das Stift Millstatt aus dem 11. Jahrhundert ist eines der bedeutendsten Kunstdenkmäler Kärntens. Ein Besuch nach der Wanderung lohnt sich.
+## Stift Millstatt
+Um 1070 gründeten die bayerischen Grafen Aribo und Poto aus dem Geschlecht der Aribonen in Millstatt ein **Benediktinerkloster**. Seine Blütezeit erlebte es im 12. Jahrhundert, aus dem Skriptorium jener Zeit stammt die berühmte „Millstätter Handschrift". Bis heute bedeutend sind die **romanischen Steinmetzarbeiten** am Portal der Stiftskirche und im **Kreuzgang**. 1469 wurde das Kloster aufgehoben und Hauptsitz des St.-Georgs-Ritterordens. Ein Rundgang durch Stiftskirche und Kreuzgang lässt sich gut mit einem Badenachmittag verbinden; Öffnungszeiten des Stiftsmuseums vorab prüfen.
+
+## Mit dem Schiff über den See
+Von etwa Mai bis Oktober verkehren Ausflugsschiffe zwischen den Anlegestellen rund um den See. Damit lässt sich eine Uferwanderung abkürzen oder der Rückweg sparen – Fahrplan vorab prüfen.
+
+## Beste Reisezeit
+Juli und August zum Baden. Im Juni und im Herbst sind die Almen der Millstätter Alpe am schönsten, und auf den Wegen ist weniger los. Im September ist der See oft noch badewarm, die Strände sind dann deutlich leerer.
     `,
     affiliateLinks: [
       { label: 'Hotels am Millstätter See – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Millstatt+am+See' },
       { label: 'Wanderstöcke für Bergtouren – Amazon', url: 'https://www.amazon.de/s?k=wanderstock+carbon' },
     ],
+    officialLinks: [
+      { label: 'Stiftsmuseum Millstatt', url: 'https://www.stiftsmuseum.at' },
+    ],
   },
   {
     slug: 'nockberge-biosphaerenpark-wandern',
-    startCoords: [46.8800, 13.7800],
+    startCoords: [46.8622, 13.8292],
+    planningMistakes: [
+      { fehler: 'Die sanften Kuppen unterschätzen', besser: 'Felswände gibt es kaum, die Wege sind aber oft lang: Auf den Rosennock sind es ab dem Erlacherhaus rund 4,5 Stunden und knapp 900 Höhenmeter. Auf den baumfreien Kuppen gibt es zudem kaum Schatten oder Schutz vor Gewittern – früh starten.' },
+      { fehler: 'Die Nockalmstraße außerhalb der Saison oder mit dem Wohnwagen einplanen', besser: 'Die Mautstraße ist nur etwa von Mai bis Oktober geöffnet, Gespanne mit Wohnwagen sind gesperrt. Öffnungszeiten und Maut vorab prüfen.' },
+    ],
     title: 'Nockberge – Wandern im UNESCO-Biosphärenpark',
-    excerpt: 'Sanfte Rundberge, Almen und eine einzigartige Flora: Der Biosphärenpark Nockberge ist das Wanderparadies für alle, die Ruhe suchen.',
+    excerpt: 'Sanfte Kuppen, Almen und Speik statt schroffer Felsen: Die Kärntner Nockberge gehören zum UNESCO-Biosphärenpark. Die schönsten Touren auf Rosennock und Falkert, der Nockberge-Trail und die beste Zeit für die Almrauschblüte.',
     date: '2026-05-18',
     category: 'Wandern',
     region: 'kaernten',
-    difficulty: 'leicht',
+    difficulty: 'mittel',
     bestSeason: 'Juni–September',
-    highlights: ['UNESCO-Biosphärenpark seit 2012', 'Sanfte Almwanderungen ohne Felsklettern', 'Alpenrosen-Blüte im Juli/August spektakulär'],
+    highlights: ['Seit 2012 Teil des UNESCO-Biosphärenparks', 'Rosennock (2.440 m) – höchster Gipfel der Kärntner Nockberge', 'Almrauschblüte ab Mitte/Ende Juni'],
     content: `
-Die Nockberge sind anders als die meisten Kärntner Berge: keine steilen Felswände, sondern weich geformte Kuppen, saftige Almen und blumenreiche Wiesen. Im Jahr 2012 wurden sie als UNESCO-Biosphärenpark anerkannt.
+Die **Nockberge** sind anders als die meisten Kärntner Berge: keine schroffen Felswände, sondern weich geformte, oft bis zum Gipfel begrünte Kuppen – die „Nocken". Sie sind der westlichste und höchste Teil der **Gurktaler Alpen** und reichen von Kärnten bis in den Salzburger Lungau und die Steiermark. Ihre runden Formen verdanken sie einer sehr langen Abtragung; in der letzten Eiszeit bildeten sich hier nur kleine Gletscher, die das Relief kaum zugeschärft haben.
 
-## Rundtour Innernock (leicht, 3 Stunden)
-Eine der schönsten Almenrunden Kärntens. Über die Flattnitz hinauf auf den Innernock (2.074 m) – fantastische Aussicht bei wenig Höhenmeter.
+## Vom Nationalpark zum Biosphärenpark
+1987 wurde der Kärntner Teil als **Nationalpark Nockberge** unter Schutz gestellt. 2012 wurde er in den **UNESCO-Biosphärenpark Salzburger Lungau & Kärntner Nockberge** überführt – ein Schutzgebiet, in dem Almwirtschaft, Tourismus und Naturschutz bewusst nebeneinander bestehen. Das prägt das Bild: Kühe und Pferde auf den Almen, bewirtschaftete Hütten und dazwischen weite, baumfreie Hochflächen.
 
-## Nockalm-Weg (mittel, 5 Stunden)
-Ein Weitwanderweg, der die bedeutendsten Gipfel der Nockberge verbindet. Wer nur einen Abschnitt geht, nimmt die Nockalmstraße als Shuttle.
+## Rosennock: der höchste Kärntner Nock (mittel)
+Mit **2.440 m** ist der Rosennock der höchste Gipfel der Kärntner Nockberge – nur der Eisenhut auf steirischer Seite ist einen Meter höher. Der klassische Anstieg beginnt beim **Erlacherhaus** (1.636 m) im Langalmtal und führt über den Nassbodensee (rund 2.030 m) zum Gipfel. Tourenportale geben für die Runde rund 11 km, etwa 4,5 Stunden und knapp 900 Höhenmeter an – eine lange, aber technisch einfache Bergwanderung. Zum Erlacherhaus führt eine mautpflichtige Straße von Radenthein über Kaning; im Sommer fährt auch der Rufbus „Nockmobil".
 
-## Nockalmstraße – Fahrt mit Panorama
-Die 35 km lange Hochalpenstraße ist auch ohne Wandern ein Erlebnis. Zahlreiche Aussichtspunkte und Parkplätze für kurze Ausflüge.
+## Falkert über dem Falkertsee (mittel)
+Der kleine **Falkertsee** liegt auf rund 1.870 m nördlich von Patergassen. Direkt darüber erhebt sich der **Falkert** (2.308 m) mit seiner felsigen Südflanke. Der direkte Anstieg vom See ist kurz, aber steil. Für eine längere Runde geht es zuerst auf den Rödresnock und dann zum Falkert, laut Bergwelten knapp 8 km mit rund 650 Höhenmetern und etwa 4 Stunden. Für diese Gipfelrunde sind Trittsicherheit und Schwindelfreiheit gefragt.
 
-## Villacher Alpe (Dobratsch) Einstieg
-Von der Nockalmstraße aus gut erreichbar, bietet der Dobratsch bei klarem Wetter Sicht bis zum Triglav und zur Adria.
+## Nockberge-Trail: acht Tage durch den Biosphärenpark
+Der **Nockberge-Trail** ist der Weitwanderweg der Region: 128 km in acht Tagesetappen vom **Katschberg** bis nach **Seeboden** am [Millstätter See](/blog/millstaetter-see-wandern-und-schwimmen). Unterwegs geht es über die Neue Bonner Hütte, Innerkrems, die Turracher Höhe, den Falkertsee, Bad Kleinkirchheim und das Erlacherhaus; höchster Punkt ist der Große Königstuhl (2.336 m). Pro Tag sind 3 bis 7 Stunden Gehzeit einzuplanen. Wer nur einen Abschnitt gehen will, sucht sich eine Etappe mit guter An- und Abreise heraus.
+
+## Nockalmstraße: mit dem Auto mitten hinein
+Die **Nockalmstraße** zwischen Innerkrems und Ebene Reichenau erschließt den Biosphärenpark auf rund 34 km und in 52 Kehren; freigegeben wurde sie 1981. Die Mautstraße führt über die Eisentalhöhe und die Schiestelscharte (beide gut 2.000 m hoch) und ist etwa von Mai bis Oktober geöffnet. An den Parkplätzen beginnen kurze Wege, etwa der steile Elisabethweg vom Windebensee hinauf zur Schiestelscharte. Mehr dazu im Artikel [Nockalmstraße](/blog/nockalmstrasse-panoramastrasse).
+
+## Almrausch und Speik
+Ab etwa Mitte bis Ende Juni färbt der **Almrausch** (Alpenrose) die Hänge rot – die Blüte ist der Höhepunkt der Saison und zieht sich je nach Höhenlage bis in den Juli. In den Rasen über rund 2.100 m wächst unter anderem der **Speik**, ein kleiner, duftender Verwandter des Baldrians.
 
 ## Beste Reisezeit
-Juni bis September – im Juli und August blühen die Alpenrosen in voller Pracht. Ein unvergessliches Farbenspektakel.
+Juni bis September. Für die Almrauschblüte ab Mitte/Ende Juni kommen, im Frühherbst ist die Fernsicht oft am besten. Im Hochsommer früh starten: Auf den baumfreien Kuppen gibt es kaum Schatten, und am Nachmittag ziehen oft Gewitter auf.
 
-## Hütten entlang des Weges
-Mehrere Alm- und Schutzhütten laden zur Einkehr ein. Kärntner Brettljause und hausgemachter Topfenstrudel sind Pflicht.
+## Praktische Infos
+- Gute Ausgangsorte sind [Bad Kleinkirchheim](/blog/bad-kleinkirchheim-therme-ski), Innerkrems, die Turracher Höhe und die Orte am Millstätter See
+- Mautstraßen (Nockalmstraße, Zufahrt zum Erlacherhaus): Tarife und Öffnungszeiten vorab prüfen
+- Viele Hütten sind nur im Sommer bewirtschaftet – Öffnungszeiten vorab prüfen
     `,
     affiliateLinks: [
       { label: 'Unterkünfte in den Nockbergen – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Nockberge+K%C3%A4rnten' },
       { label: 'Wanderführer Kärnten – Amazon', url: 'https://www.amazon.de/s?k=wanderf%C3%BChrer+k%C3%A4rnten' },
+    ],
+    officialLinks: [
+      { label: 'Biosphärenpark Nockberge – Kärnten Werbung', url: 'https://www.kaernten.at/wandern/schutzgebiete/biosphaerenpark-nockberge/' },
+      { label: 'Nockberge-Trail – Kärnten Werbung', url: 'https://www.kaernten.at/wandern/weitwandern/nockberge-trail' },
     ],
   },
   {
