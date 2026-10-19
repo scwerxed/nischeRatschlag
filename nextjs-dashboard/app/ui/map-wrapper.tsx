@@ -2,6 +2,7 @@
 
 import dynamic from 'next/dynamic';
 import 'leaflet/dist/leaflet.css';
+import type { MapSpot } from '@/app/ui/map-client';
 
 const MapClient = dynamic(() => import('@/app/ui/map-client'), {
   ssr: false,
@@ -12,6 +13,6 @@ const MapClient = dynamic(() => import('@/app/ui/map-client'), {
   ),
 });
 
-export default function MapWrapper() {
-  return <MapClient />;
+export default function MapWrapper({ spots }: { spots: MapSpot[] }) {
+  return <MapClient spots={spots} />;
 }

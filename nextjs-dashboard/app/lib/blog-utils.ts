@@ -51,6 +51,14 @@ export const CATEGORY_DOT: Record<string, string> = {
   Ausflug:   'bg-amber-500',
 };
 
+// Dieselben Punkt-Farben als Hex – für Leaflet-Marker-/Popup-HTML (/karte), wo keine Tailwind-Klassen greifen.
+export const CATEGORY_HEX: Record<string, string> = {
+  Wandern:   '#2f6b54', // green-600 (eigene Palette, tailwind.config.ts)
+  Baden:     '#0ea5e9', // sky-500
+  Unterkunft:'#8b5cf6', // violet-500
+  Ausflug:   '#f59e0b', // amber-500
+};
+
 // Vollständiges Farbsystem je Kategorie (Text / Tint-Hintergrund / Rahmen /
 // Voll-Chip / Verlauf). Klassen stehen als Literale → Tailwind-JIT erfasst sie.
 export const CATEGORY_STYLE: Record<

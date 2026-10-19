@@ -64,7 +64,7 @@ const GROUPS: Group[] = [
     note: 'Für die Anreise- und Routenplanung.',
     items: [
       { href: '/bahnhofsausfluege', title: 'Ausflüge ab Bahnhof', desc: 'Ziele direkt an der Bahnstrecke oder mit Schiff-/Bus-Anschluss – ohne Auto.' },
-      { href: '/karte', title: 'Wanderkarte', desc: 'Interaktive Karte mit Wanderwegen, Gipfeln und Unterkünften.' },
+      { href: '/karte', title: 'Wanderkarte', desc: 'Interaktive Karte mit den Ausflugszielen aus dem Magazin, Wanderwegen, Gipfeln und Unterkünften.' },
       { href: '/routenplaner', title: 'Routenplaner', desc: 'Eigene Wanderroute planen, mit Höhenprofil und Schwierigkeitseinschätzung.' },
     ],
   },

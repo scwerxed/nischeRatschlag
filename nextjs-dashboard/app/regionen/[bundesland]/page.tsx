@@ -167,7 +167,7 @@ export default async function RegionPage({ params }: Props) {
               <div>
                 <p className="font-semibold text-tagline leading-tight">Interaktive Wanderkarte</p>
                 <p className="text-green-100 text-caption mt-1">
-                  Wanderwege, Gipfel und Unterkünfte auf einen Blick – inkl. Waymarked Trails Overlay.
+                  Ausflugsziele aus dem Magazin, Wanderwege und Unterkünfte auf einen Blick – inkl. Waymarked Trails Overlay.
                 </p>
                 <span className="mt-3 inline-block text-caption font-medium underline underline-offset-2">
                   Karte öffnen →

@@ -3,9 +3,28 @@
 import { useEffect, useRef, useState } from 'react';
 import { unterkuenfte, TYP_INFO } from '@/app/lib/unterkuenfte';
 import { cloak } from '@/app/lib/affiliate';
+import { CATEGORY_HEX } from '@/app/lib/blog-utils';
+
+/** Ein Pin der Ebene „Ausflugsziele“: alle Artikel mit demselben Startpunkt (z. B. die
+ *  fünf Wörthersee-Artikel mit Sammel-Koordinate). Kommt schlank von der Server-Page,
+ *  damit posts.ts nicht im Client-Bundle landet. */
+export type MapSpot = {
+  lat: number;
+  lng: number;
+  articles: { slug: string; title: string; category: string; region: string }[];
+};
 
 const KAERNTEN_CENTER: [number, number] = [46.83, 13.83];
 const KAERNTEN_ZOOM = 9;
+const AUSTRIA_BOUNDS: [[number, number], [number, number]] = [[46.37, 9.53], [49.02, 17.16]];
+const MULTI_SPOT_COLOR = '#374151';
+const LEGEND: [string, string][] = [
+  [CATEGORY_HEX.Wandern, 'Wandern'],
+  [CATEGORY_HEX.Baden, 'Baden'],
+  [CATEGORY_HEX.Ausflug, 'Ausflug'],
+  [CATEGORY_HEX.Unterkunft, 'Unterkunft'],
+  [MULTI_SPOT_COLOR, 'mehrere'],
+];
 const MIN_ZOOM_PEAKS = 11;
 const MAX_VISIBLE_PEAKS = 25;
 
@@ -22,6 +41,39 @@ function escapeHtml(v: string): string {
   return v.replace(/[&<>"']/g, (c) => HTML_ENTITIES[c] ?? c);
 }
 
+/** Kategorie-Punkt + „Kategorie · Bundesland“ über dem Artikeltitel im Popup. */
+function articleEyebrow(a: MapSpot['articles'][number]): string {
+  const color = CATEGORY_HEX[a.category] ?? '#6b7280';
+  return `<div style="display:flex;align-items:center;gap:5px;font-size:10px;color:#6b7280;font-weight:600;text-transform:uppercase;letter-spacing:.06em;margin-bottom:3px">
+    <span style="display:inline-block;width:7px;height:7px;border-radius:50%;background:${color}"></span>${escapeHtml(a.category)} &middot; ${escapeHtml(a.region)}
+  </div>`;
+}
+
+function spotPopupHtml(s: MapSpot): string {
+  if (s.articles.length === 1) {
+    const a = s.articles[0];
+    const href = `/blog/${encodeURIComponent(a.slug)}`;
+    return `<div style="min-width:190px;max-width:240px;font-family:system-ui,sans-serif">
+      ${articleEyebrow(a)}
+      <div style="font-size:14px;font-weight:700;color:#111827;line-height:1.3;margin-bottom:8px">${escapeHtml(a.title)}</div>
+      <a href="${href}"
+         style="display:block;text-align:center;background:#15803d;color:#fff;font-size:12px;font-weight:600;padding:7px 10px;border-radius:3px;text-decoration:none;letter-spacing:.01em">
+         Zum Artikel
+      </a>
+    </div>`;
+  }
+  const items = s.articles
+    .map((a) => `<a href="/blog/${encodeURIComponent(a.slug)}" style="display:block;padding:6px 0;border-top:1px solid #e5e7eb;text-decoration:none">
+        ${articleEyebrow(a)}
+        <span style="display:block;font-size:13px;font-weight:700;color:#111827;line-height:1.3">${escapeHtml(a.title)}</span>
+      </a>`)
+    .join('');
+  return `<div style="min-width:200px;max-width:250px;font-family:system-ui,sans-serif">
+    <div style="font-size:11px;font-weight:700;color:${MULTI_SPOT_COLOR};margin-bottom:4px">${s.articles.length} Artikel an diesem Ort</div>
+    ${items}
+  </div>`;
+}
+
 // ── tiny SVG checkmark ──────────────────────────────────────────────────────
 function Checkmark() {
   return (
@@ -31,7 +83,7 @@ function Checkmark() {
   );
 }
 
-export default function MapClient() {
+export default function MapClient({ spots }: { spots: MapSpot[] }) {
   const containerRef  = useRef<HTMLDivElement>(null);
   const mapRef        = useRef<any>(null);
   const osmLayerRef   = useRef<any>(null);
@@ -39,6 +91,7 @@ export default function MapClient() {
   const hikingLayerRef= useRef<any>(null);
   const peaksLayerRef = useRef<any>(null);
   const staysLayerRef = useRef<any>(null);
+  const articlesLayerRef = useRef<any>(null);
   const allPeaksRef   = useRef<any[]>([]);
   const showPeaksRef  = useRef(true);
 
@@ -46,6 +99,7 @@ export default function MapClient() {
   const [showTrails,    setShowTrails]    = useState(true);
   const [showPeaks,     setShowPeaks]     = useState(true);
   const [showStays,     setShowStays]     = useState(true);
+  const [showArticles,  setShowArticles]  = useState(true);
   const [peakCount,     setPeakCount]     = useState<number | null>(null);
   const [visibleCount,  setVisibleCount]  = useState(0);
   const [zoom,          setZoom]          = useState(KAERNTEN_ZOOM);
@@ -113,6 +167,27 @@ export default function MapClient() {
               { closeButton: true }
             )
             .addTo(staysLayerRef.current);
+        });
+
+        // Ausflugsziele (Artikel-Startpunkte) layer – ein Pin je Ort, mehrere Artikel → Zahl im Pin
+        articlesLayerRef.current = L.layerGroup().addTo(map);
+        spots.forEach((s) => {
+          const multi = s.articles.length > 1;
+          const color = multi ? MULTI_SPOT_COLOR : CATEGORY_HEX[s.articles[0].category] ?? '#6b7280';
+          const size = multi ? 22 : 16;
+          const icon = L.divIcon({
+            className: '',
+            html: `<div style="display:flex;align-items:center;justify-content:center;width:${size}px;height:${size}px;background:${color};color:#fff;font-size:11px;font-weight:700;border:2px solid #fff;border-radius:50%;box-shadow:0 1px 3px rgba(0,0,0,.4)">${multi ? s.articles.length : ''}</div>`,
+            iconSize: [size, size],
+            iconAnchor: [size / 2, size / 2],
+            popupAnchor: [0, -size / 2],
+          });
+          L.marker([s.lat, s.lng], {
+            icon,
+            title: multi ? `${s.articles.length} Artikel an diesem Ort` : s.articles[0].title,
+          })
+            .bindPopup(spotPopupHtml(s), { closeButton: true })
+            .addTo(articlesLayerRef.current);
         });
 
         const updatePeaks = () => {
@@ -234,12 +309,25 @@ export default function MapClient() {
     setShowStays((v) => !v);
   }
 
+  function toggleArticles() {
+    const map = mapRef.current;
+    if (!map || !articlesLayerRef.current) return;
+    if (showArticles) map.removeLayer(articlesLayerRef.current);
+    else map.addLayer(articlesLayerRef.current);
+    setShowArticles((v) => !v);
+  }
+
   function resetView() {
     mapRef.current?.setView(KAERNTEN_CENTER, KAERNTEN_ZOOM);
   }
 
+  function showAustria() {
+    mapRef.current?.fitBounds(AUSTRIA_BOUNDS);
+  }
+
   // ── render ────────────────────────────────────────────────────────────────
   const mapH = 'calc(100vh - 160px)';
+  const articleCount = spots.reduce((n, s) => n + s.articles.length, 0);
 
   return (
     <div
@@ -295,10 +383,45 @@ export default function MapClient() {
               Ebenen
             </p>
 
+            {/* Ausflugsziele (Artikel) */}
+            <button
+              onClick={toggleArticles}
+              className="flex items-center gap-2 w-full py-1 text-left hover:text-ink transition-colors"
+            >
+              <span
+                className={`w-3.5 h-3.5 border flex items-center justify-center shrink-0 transition-colors ${ showArticles ? 'bg-green-600 border-green-600' : 'border-hairline' } rounded-sm`}
+              >
+                {showArticles && <Checkmark />}
+              </span>
+              <span className="flex items-center gap-2">
+                {/* Swatch: two category dots */}
+                <svg width="14" height="9" viewBox="0 0 14 9">
+                  <circle cx="4.5" cy="4.5" r="3.5" fill={CATEGORY_HEX.Wandern} stroke="#fff" strokeWidth="1" />
+                  <circle cx="9.5" cy="4.5" r="3.5" fill={CATEGORY_HEX.Ausflug} stroke="#fff" strokeWidth="1" />
+                </svg>
+                <span className={`text-caption ${showArticles ? 'text-ink' : 'text-ink-soft'}`}>
+                  Ausflugsziele
+                  <span className="ml-1 text-fine text-ink-soft">({articleCount})</span>
+                </span>
+              </span>
+            </button>
+
+            {/* Legend: category colors of the article pins */}
+            {showArticles && (
+              <div className="grid grid-cols-2 gap-x-2 gap-y-0.5 pl-5 mt-0.5 mb-1">
+                {LEGEND.map(([color, label]) => (
+                  <span key={label} className="flex items-center gap-1 text-[10px] text-ink-soft leading-tight">
+                    <span className="w-2 h-2 rounded-full shrink-0" style={{ background: color }} />
+                    {label}
+                  </span>
+                ))}
+              </div>
+            )}
+
             {/* Wanderwege */}
             <button
               onClick={toggleTrails}
-              className="flex items-center gap-2 w-full py-1 text-left hover:text-ink transition-colors"
+              className="flex items-center gap-2 w-full py-1 text-left hover:text-ink transition-colors mt-0.5"
             >
               <span
                 className={`w-3.5 h-3.5 border flex items-center justify-center shrink-0 transition-colors ${ showTrails ? 'bg-green-600 border-green-600' : 'border-hairline' } rounded-sm`}
@@ -370,16 +493,24 @@ export default function MapClient() {
 
           <div className="border-t border-hairline" />
 
-          {/* Reset-to-Kärnten */}
-          <button
-            onClick={resetView}
-            className="flex items-center gap-2 w-full px-3 py-2 text-fine text-ink-soft hover:text-ink hover:bg-parchment transition-colors"
-          >
-            <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
-              <path d="M6 1v2M6 9v2M1 6h2M9 6h2M3.05 3.05l1.41 1.41M7.54 7.54l1.41 1.41M3.05 8.95l1.41-1.41M7.54 4.46l1.41-1.41" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" />
-            </svg>
-            Kärnten anzeigen
-          </button>
+          {/* Ansicht: ganz Österreich / zurück zu Kärnten */}
+          <div className="flex">
+            <button
+              onClick={showAustria}
+              className="flex items-center gap-1.5 flex-1 px-3 py-2 text-fine text-ink-soft hover:text-ink hover:bg-parchment transition-colors"
+            >
+              <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+                <path d="M6 1v2M6 9v2M1 6h2M9 6h2M3.05 3.05l1.41 1.41M7.54 7.54l1.41 1.41M3.05 8.95l1.41-1.41M7.54 4.46l1.41-1.41" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" />
+              </svg>
+              Österreich
+            </button>
+            <button
+              onClick={resetView}
+              className="flex-1 px-3 py-2 text-fine text-ink-soft hover:text-ink hover:bg-parchment transition-colors border-l border-hairline"
+            >
+              Kärnten
+            </button>
+          </div>
         </div>
       )}
 

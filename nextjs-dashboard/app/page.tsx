@@ -240,11 +240,12 @@ export default function HomePage() {
             <div>
               <p className="eyebrow mb-3">Interaktiv</p>
               <h2 className="font-serif text-display font-bold text-ink mb-4 leading-tight">
-                Wege, Gipfel und Unterkünfte auf einer Karte
+                Ziele, Wege und Unterkünfte auf einer Karte
               </h2>
               <p className="text-ink-muted mb-7 leading-relaxed">
-                Unsere Wanderkarte verbindet das offizielle Wegenetz mit live geladenen Gipfeln
-                und handverlesenen Unterkünften direkt am See – Verfügbarkeit mit einem Klick.
+                Unsere Wanderkarte zeigt die Ausflugsziele aus dem Magazin als Pins – ein Klick führt
+                zum Artikel. Dazu das offizielle Wegenetz, live geladene Gipfel und handverlesene
+                Unterkünfte mit Verfügbarkeit auf einen Klick.
               </p>
               <div className="flex flex-wrap gap-3">
                 <Link href="/karte" className="inline-block bg-green-700 text-white font-semibold px-7 py-3 hover:bg-green-800 transition-colors rounded-sm">
