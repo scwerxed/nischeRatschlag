@@ -71,6 +71,7 @@ Jeder Lauf startet **ohne Gedächtnis** an frühere Sessions — dieses File + `
 - Artikel: „1 Nacht reicht?"-Block für Tagesziele mit langer Anfahrt
 - `/karte` weiter ausbauen (Artikel-Layer seit 2026-10-19 live): (a) Kategorie-Filter innerhalb der Ebene „Ausflugsziele“ (nur Wandern/Baden/Ausflug), (b) Gipfel-Abfrage (Overpass, aktuell nur Kärnten-Bounding-Box) auf ganz Österreich ausweiten – dabei Antwortgröße/Timeout beachten, ggf. nur den aktuellen Kartenausschnitt abfragen, (c) Regionsseiten-CTA mit `?region=`-Deep-Link auf das Bundesland zoomen (heute landet man immer auf Kärnten), (d) Startansicht ganz Österreich statt Kärnten, sobald (b) erledigt ist.
 - „Weitere Ziele im Umkreis“ (seit 2026-10-14) ist nur so gut wie die Koordinaten. Siehe Content-Punkt „grobe `startCoords` präzisieren“.
+- ⚠️ `/karte` **Gipfel-Ebene prüfen:** Beim Live-Test am 2026-10-19 schlug der Overpass-Abruf im Browser mit CORS-Fehler fehl, die Anzeige „Gipfel laden…“ blieb dann dauerhaft stehen (der `catch` in `map-client.tsx` setzt nichts). Per curl antwortet overpass-api.de ohne User-Agent mit **406**, mit Browser-UA mit 200 – evtl. nur vorübergehend überlastet (Fehlerantworten ohne CORS-Header), evtl. eine neue Zugriffsregel. Erst reproduzieren; falls dauerhaft, über eine eigene Route (Muster `/api/brouter`, mit Cache) abrufen und im Fehlerfall „Gipfel gerade nicht verfügbar“ statt Endlos-Ladeanzeige zeigen.
 - Technisch: `any`-Typen in den Leaflet-Dateien durch `@types/leaflet` ersetzen
 
 ### Content
