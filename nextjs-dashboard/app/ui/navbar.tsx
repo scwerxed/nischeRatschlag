@@ -213,6 +213,7 @@ export default function Navbar() {
   const groupActive = (g: NavGroup) => g.links.some((l) => isActive(l.href));
 
   return (
+    <>
     <nav ref={navRef} className="sticky top-0 z-[1200] bg-white/90 backdrop-blur border-b border-hairline">
       <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between gap-4">
         <Logo />
@@ -262,8 +263,11 @@ export default function Navbar() {
           </button>
         </div>
       </div>
+    </nav>
 
-      {/* Mobiles Overlay-Menü */}
+      {/* Mobiles Overlay-Menü – bewusst AUSSERHALB von <nav>: `backdrop-blur` macht die Leiste zum
+          Bezugsrahmen für position:fixed, das Overlay schrumpfte darin auf 0 px Höhe und war
+          unsichtbar (bis 2026-10-20 ließ sich das Menü auf dem Handy gar nicht öffnen). */}
       <div
         className={`md:hidden fixed inset-0 top-16 z-[1190] overflow-y-auto scroll-panel bg-canvas transition-[opacity,transform,visibility] duration-300 ${
           open
@@ -331,6 +335,6 @@ export default function Navbar() {
           ))}
         </div>
       </div>
-    </nav>
+    </>
   );
 }
