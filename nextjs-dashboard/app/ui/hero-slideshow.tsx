@@ -19,17 +19,6 @@ import Link from 'next/link';
  */
 const SLIDES = [
   {
-    src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Hallstatt_2021.jpg/3840px-Hallstatt_2021.jpg',
-    alt: 'Hallstatt mit seiner Pfarrkirche am Ufer des Hallstätter Sees',
-    ort: 'Hallstatt',
-    region: 'Oberösterreich',
-    slug: 'hallstatt-salzkammergut',
-    autor: 'Marco Almbauer',
-    lizenz: 'CC BY-SA 4.0',
-    quelle: 'https://commons.wikimedia.org/wiki/File:Hallstatt_2021.jpg',
-    pos: '42% 50%',
-  },
-  {
     src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Salzburg_Altstadt_Panorama_20240728_Gold_P.jpg/3840px-Salzburg_Altstadt_Panorama_20240728_Gold_P.jpg',
     alt: 'Salzburger Altstadt mit Festung Hohensalzburg und Dom über der Salzach im Abendlicht',
     ort: 'Salzburger Altstadt',
@@ -39,6 +28,17 @@ const SLIDES = [
     lizenz: 'CC BY-SA 4.0',
     quelle: 'https://commons.wikimedia.org/wiki/File:Salzburg_Altstadt_Panorama_20240728_Gold_P.jpg',
     pos: '45% 45%',
+  },
+  {
+    src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Hallstatt_2021.jpg/3840px-Hallstatt_2021.jpg',
+    alt: 'Hallstatt mit seiner Pfarrkirche am Ufer des Hallstätter Sees',
+    ort: 'Hallstatt',
+    region: 'Oberösterreich',
+    slug: 'hallstatt-salzkammergut',
+    autor: 'Marco Almbauer',
+    lizenz: 'CC BY-SA 4.0',
+    quelle: 'https://commons.wikimedia.org/wiki/File:Hallstatt_2021.jpg',
+    pos: '42% 50%',
   },
   {
     src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Sch%C3%B6nbrunn_September_2023_1.jpg/3840px-Sch%C3%B6nbrunn_September_2023_1.jpg',
@@ -93,28 +93,39 @@ const KB_TRANSFORMS = [
 ];
 
 export default function HeroSlideshow({ children }: { children: React.ReactNode }) {
-  const [current, setCurrent] = useState(0);
-  // Bilder werden erst kurz vor ihrem Auftritt eingehängt (aktuelles + nächstes), statt beim
+  const last = SLIDES.length - 1;
+  // `target` = gewünschtes Bild, `shown` = tatsächlich sichtbares. Übergeblendet wird erst, wenn
+  // das Zielbild geladen ist – sonst stünde beim ersten Abruf eines Motivs (Vercel rechnet das
+  // 3840-px-Original dann noch herunter) kurz nur die grüne Fläche da.
+  const [target, setTarget] = useState(0);
+  const [shown, setShown] = useState(0);
+  const [loaded, setLoaded] = useState<boolean[]>(() => SLIDES.map((_, i) => i === 0));
+  // Bilder werden erst kurz vor ihrem Auftritt eingehängt (sichtbares + nächstes), statt beim
   // ersten Laden alle sechs großen Fotos auf einmal zu ziehen – spart vor allem mobil Datenvolumen.
   const [mountedUpTo, setMountedUpTo] = useState(1);
 
-  const last = SLIDES.length - 1;
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrent((prev) => (prev + 1) % SLIDES.length);
-      // Das jeweils übernächste Bild schon vorladen, damit beim Überblenden nichts fehlt.
-      setMountedUpTo((m) => Math.min(m + 1, last));
-    }, 6500);
-    return () => clearInterval(interval);
-  }, [last]);
-
   const goTo = (i: number) => {
-    setCurrent(i);
+    setTarget(i);
     setMountedUpTo((m) => Math.max(m, Math.min(i + 1, last)));
   };
 
-  const slide = SLIDES[current];
+  // Ziel geladen → zeigen
+  useEffect(() => {
+    if (loaded[target]) setShown(target);
+  }, [target, loaded]);
+
+  // Nächstes Bild 6,5 s nachdem das aktuelle wirklich sichtbar wurde
+  useEffect(() => {
+    const t = setTimeout(() => goTo((shown + 1) % SLIDES.length), 6500);
+    return () => clearTimeout(t);
+    // goTo ist stabil genug (nur Setter); bewusst nur an `shown` gekoppelt
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [shown]);
+
+  const markLoaded = (i: number) =>
+    setLoaded((prev) => (prev[i] ? prev : prev.map((v, j) => (j === i ? true : v))));
+
+  const slide = SLIDES[shown];
 
   return (
     // min-h statt fester Höhe: Auf schmalen Handys ist der Text höher als 560px und
@@ -124,15 +135,15 @@ export default function HeroSlideshow({ children }: { children: React.ReactNode 
         <div
           key={img.src}
           className="absolute inset-0 transition-opacity duration-[1400ms] ease-in-out"
-          style={{ opacity: i === current ? 1 : 0, zIndex: i === current ? 1 : 0 }}
-          aria-hidden={i !== current}
+          style={{ opacity: i === shown ? 1 : 0, zIndex: i === shown ? 1 : 0 }}
+          aria-hidden={i !== shown}
         >
-          {i <= mountedUpTo && (
+          {(i <= mountedUpTo || i === target) && (
             <div
               className="absolute inset-0"
               style={{
-                transform: i === current ? KB_TRANSFORMS[i % KB_TRANSFORMS.length] : 'scale(1.04)',
-                transition: i === current ? 'transform 8s cubic-bezier(.25,.1,.25,1)' : 'none',
+                transform: i === shown ? KB_TRANSFORMS[i % KB_TRANSFORMS.length] : 'scale(1.04)',
+                transition: i === shown ? 'transform 8s cubic-bezier(.25,.1,.25,1)' : 'none',
               }}
             >
               <Image
@@ -143,6 +154,9 @@ export default function HeroSlideshow({ children }: { children: React.ReactNode 
                 className="object-cover"
                 style={{ objectPosition: img.pos }}
                 priority={i === 0}
+                onLoad={() => markLoaded(i)}
+                // Lädt ein Foto gar nicht (Quelle weg), nicht stehen bleiben, sondern weiterspringen
+                onError={() => { if (i === target) goTo((i + 1) % SLIDES.length); }}
               />
             </div>
           )}
@@ -185,9 +199,9 @@ export default function HeroSlideshow({ children }: { children: React.ReactNode 
               <button
                 key={s.src}
                 onClick={() => goTo(i)}
-                className={`h-1 rounded-full transition duration-500 ${i === current ? 'w-8 bg-white' : 'w-3 bg-white/40 hover:bg-white/70'}`}
+                className={`h-1 rounded-full transition duration-500 ${i === shown ? 'w-8 bg-white' : 'w-3 bg-white/40 hover:bg-white/70'}`}
                 aria-label={`Bild ${i + 1}: ${s.ort}`}
-                aria-current={i === current}
+                aria-current={i === shown}
               />
             ))}
           </div>
