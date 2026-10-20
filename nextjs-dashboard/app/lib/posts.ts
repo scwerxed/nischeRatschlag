@@ -758,82 +758,120 @@ Von Villach ca. 1,5 Stunden, von Klagenfurt ca. 2 Stunden über Heiligenblut.
   },
   {
     slug: 'klopeiner-see-badeurlaub',
-    startCoords: [46.6228, 14.5697],
-    title: 'Klopeiner See – Baden im wärmsten See Österreichs',
-    excerpt: 'Mit bis zu 29°C Wassertemperatur ist der Klopeiner See Österreichs wärmster Badesee – und deutlich günstiger als der Wörthersee. Hier erfährst du die besten Badestellen und Insider-Tipps.',
+    startCoords: [46.6072, 14.5861],
+    planningMistakes: [
+      { fehler: 'Mit freiem Eintritt in jedes Strandbad rechnen', besser: 'Die meisten Bäder am See sind privat und den Gästen der Hotels und Pensionen vorbehalten, die Strände der Gemeinde kosten Eintritt. Vorab klären, welches Bad Tagesgäste nimmt.' },
+      { fehler: 'Den Hund zum Abkühlen in den See lassen', besser: 'In manchen Strandbädern dürfen Hunde an der Leine mit auf die Liegewiese – baden dürfen sie im Klopeiner See aber nicht.' },
+    ],
+    title: 'Klopeiner See – Baden in einem der wärmsten Seen Österreichs',
+    excerpt: 'Bis zu 48 m tief und trotzdem einer der wärmsten Badeseen Österreichs: woher das warme Wasser kommt, wie die Promenade rund um den See verläuft, was für Strandbäder und Hunde gilt – und wann Turnersee und Kleinsee die ruhigere Wahl sind.',
     date: '2026-05-24',
     category: 'Baden',
     region: 'kaernten',
-    bestSeason: 'Juli–August',
-    highlights: ['Wärmster See Österreichs – bis zu 29°C', 'Deutlich günstiger und ruhiger als Wörthersee', 'Gratis-Badestrand und Geheim-Waldsee inklusive'],
+    bestSeason: 'Juni–September',
+    highlights: ['Im Hochsommer meist 24–27 °C (offizielle Proben 2026)', 'Durchgehende, fast ebene Promenade rund um den See', 'Keine Motorboote – auch keine elektrischen'],
     content: `
-Der Klopeiner See in Südkärnten ist mit einer Durchschnittstemperatur von 26–29°C der wärmste See Österreichs – und das ist kein Marketing-Slogan, sondern durch Messreihen seit Jahrzehnten belegt. Der Grund: Das flache Becken (max. 10 m tief), viel Sonne und kaum Wind wärmen das Wasser schneller als jeden anderen heimischen See.
+Der **Klopeiner See** liegt auf 446 m Seehöhe in der Gemeinde **St. Kanzian** südwestlich von Völkermarkt, gut 20 km Luftlinie östlich von Klagenfurt. Er ist nur rund 1,8 km lang und 800 m breit (1,1 km²), aber bis zu **48 m tief**. Entstanden ist er als Rest eines größeren nacheiszeitlichen Sees, der einst das Gebiet um Kühnsdorf bedeckte. Klopein am Nordufer, Seelach im Nordwesten und Unterburg im Südosten – früher drei getrennte Sommerfrischen – sind heute weitgehend zusammengewachsen. Die ersten Gäste kamen 1885, damals vor allem zur Kur bei Lungenkrankheiten.
 
-## Warum der Klopeiner See anders ist
+## Warum das Wasser so warm wird
+Der Tourismus bewirbt den Klopeiner See als wärmsten Badesee Europas. Mit einem flachen Becken hat das nichts zu tun – der See ist tief. Eine wichtige Rolle spielt, dass er kaum durchströmt wird: Nur ein paar kleine Zuflüsse und das Grundwasser speisen ihn, er gehört zu den am geringsten durchfluteten Seen Kärntens. Das Wasser bleibt lange im Becken und kann sich über den Sommer aufwärmen.
 
-Kein Glamour wie am Wörthersee, keine Promis – dafür ehrliche Badefamilien, günstigere Preise und tatsächlich das wärmste Wasser Österreichs. Wer echte Sommerfrische sucht, ist hier goldrichtig.
+Bei den offiziellen Proben im Sommer 2026 hatte der See zwischen rund 22 °C (Anfang Juni) und gut 27 °C (Ende Juni), im Juli und August meist zwischen 24,5 und 26,5 °C; in heißen Sommern sind bis zu 29 °C möglich. Ganz allein an der Spitze steht er damit nicht – der Pressegger See im Gailtal war bei einzelnen Proben sogar etwas wärmer. Aktuelle Werte zeigt die Seite [Wassertemperatur der Seen in Österreich](/wassertemperatur#kaernten).
 
-## Die besten Badestellen
+Für die Wasserqualität leitet die Gemeinde seit 1975 sauerstoffarmes, nährstoffreiches Tiefenwasser aus dem See ab; so wird die sauerstoffreiche Schicht darüber dicker. Beide offiziellen EU-Badestellen, in St. Kanzian und in Unterburg, wurden zuletzt mit „ausgezeichnet" bewertet – die aktuelle Einstufung steht im [Badeplatz-Check](/badeplaetze).
 
-### Strandbad Klopein (mit Eintritt, ca. 8 €)
-Das Hauptstrandbad mit Wasserrutsche, Sprungturm und Beachvolleyball. Für Familien mit Kindern erste Wahl. Gastronomie direkt am Strand.
+## Strandbäder: Was man wissen sollte
+Rund ums Ufer reiht sich ein Strandbad an das nächste, viele mit Buffet. Die meisten sind aber **privat** und den Gästen der Hotels und Pensionen vorbehalten. Dazu kommen Strände der Gemeinde, die gegen Eintritt allen offenstehen. Wie flach der Einstieg ist und was es an Spielflächen gibt, unterscheidet sich von Bad zu Bad – mit kleinen Kindern vorab nachfragen.
 
-### Freistrand St. Kanzian (kostenlos)
-Der beste Gratisstrand am See – ruhige Lage, flacher Einstieg, Liegewiese mit Bäumen für Schatten. Früh ankommen lohnt sich.
+## Die Promenade rund um den See
+Eine durchgehende Promenade führt rund um den ganzen See. Laut Tourenportal Bergwelten sind es rund **5,3 km** und etwa 1¼ Stunden, fast eben, nur am Südufer mit einer kleinen Steigung – auch mit Kinderwagen oder Rollstuhl machbar. Das Nordufer ist belebter, mit mehreren Lokalen; das Südufer ist ruhiger und naturnäher. Im Hochsommer am besten früh morgens gehen und danach ins Wasser.
 
-### Schwarzensee (kostenlos) – Geheimtipp
-Ein kleiner Waldsee 2 km vom Klopeiner See entfernt – noch ruhiger, noch wärmer, noch unbekannter. Kein Tourist, keine Gebühr.
+## Boote und Wassersport
+Motorboote sind auf dem Klopeiner See verboten – laut Gemeinde auch solche mit Elektromotor. Unterwegs ist man mit Ruder- oder Tretboot, Kajak oder SUP, entsprechend ruhig ist es auf dem Wasser.
 
-## Tipp: Kombination Spaziergang + Baden
-Die Seepromenade rund um den Klopeiner See (7 km, flach) geht man am besten früh morgens – bevor die Hitze kommt. Danach direkt ins Wasser.
+## Mit Hund
+Laut Kärnten Werbung dürfen Hunde in den Strandbädern am Klopeiner See teilweise an der Leine mitkommen, im Strandbad Unterburg etwa, solange sie auf der Liegewiese bleiben. Baden dürfen sie im See aber nicht.
 
-## Praktische Infos
-- Anfahrt: Von Klagenfurt ca. 30 Minuten über die B70
-- Parken: Strandbad Klopein ca. 5 €/Tag; Straßenparken am Freistrand kostenlos, aber begrenzt
-- Übernachtung: Ferienwohnungen ab 60 €/Nacht – deutlich günstiger als Wörthersee
+## Ruhigere Alternativen: Turnersee und Kleinsee
+Etwa 2 km südlich, bei Unternarrach, liegt der **Turnersee**: bis 13 m tief, geschützt und ruhig, am Rand des Naturschutzgebiets Sablatnigmoor. Er hat eine eigene EU-Badestelle in St. Primus, zuletzt ebenfalls „ausgezeichnet". Der **Kleinsee** nordwestlich des Klopeiner Sees ist höchstens 9 m tief und vor allem bei Fischern beliebt.
+
+## Aussicht vom Kitzelberg
+Über dem See liegt der Kitzelberg (rund 700 m) mit einer Aussichtsplattform, von der man über das Jauntal schaut. Hinauf führt der Slow Trail Kitzelberg.
+
+## Beste Reisezeit
+Zum Baden Juni bis September, am wärmsten ist das Wasser im Juli und August. Im Juni und September ist an der Promenade deutlich weniger los.
+
+## Anreise
+- Mit dem Auto über die A2, Ausfahrt Grafenstein und weiter auf der B70 nach St. Kanzian – oder Ausfahrt Völkermarkt Ost über Kühnsdorf
+- Parken etwa am Auffangparkplatz bei der Tourismusinformation in Klopein; Gebühren vorab prüfen
+- Mit der Bahn: Der nächste Bahnhof ist Kühnsdorf-Klopeiner See, rund 4 km nordöstlich des Sees. Welche Züge dort halten und wie man weiter zum See kommt, im aktuellen Fahrplan prüfen
     `,
     affiliateLinks: [
       { label: 'Unterkünfte am Klopeiner See – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Klopeiner+See' },
       { label: 'Strandaccessoires auf Amazon', url: 'https://www.amazon.de/s?k=strand+set+sommer' },
     ],
+    officialLinks: [
+      { label: 'Klopeiner See – Kärnten Werbung', url: 'https://www.kaernten.at/seen/klopeiner-see/' },
+      { label: 'Baden mit Hund an Kärntner Seen – Kärnten Werbung', url: 'https://www.kaernten.at/urlaub-mit-hund/baden-mit-hund-an-kaerntner-seen' },
+    ],
   },
   {
     slug: 'faaker-see-badestellen',
-    startCoords: [46.5736, 13.9214],
-    title: 'Faaker See – Türkisblaues Bergwasser mit Panoramablick',
-    excerpt: 'Der Faaker See leuchtet türkisblau wie die Adria, im Hintergrund thront der markante Mittagskogel. Warum dieser See der schönste Kärntens sein könnte – und wie man ihn am besten genießt.',
+    startCoords: [46.5678, 13.9211],
+    planningMistakes: [
+      { fehler: 'Anfang September einen ruhigen Badetag am See einplanen', besser: 'Dann findet rund um den See die European Bike Week statt, das große Harley-Davidson-Treffen – Straßen, Lokale und Unterkünfte sind entsprechend voll. Den Termin vorab prüfen.' },
+      { fehler: 'Den Hund zum Abkühlen in den See lassen', besser: 'Am Faaker See gilt grundsätzlich ein Hundebadeverbot. Laut Kärnten Werbung bieten sich Worounitza oder Gail als Alternativen an.' },
+      { fehler: 'Mit vielen freien Badeplätzen rund ums Ufer rechnen', besser: 'Der See selbst ist in Privatbesitz, viele Uferabschnitte gehören zu Hotels oder Campingplätzen. Gebaden wird meist in den Strandbädern – ob und was sie kosten, vorab prüfen.' },
+    ],
+    title: 'Faaker See – türkises Wasser unterm Mittagskogel',
+    excerpt: 'Türkis durch feine Kalkteilchen, keine Boote mit Verbrennungsmotor und der Mittagskogel als Kulisse: Was den Faaker See bei Villach ausmacht, wo man baden kann, warum Hunde hier nicht ins Wasser dürfen und wann im September die Motorräder kommen.',
     date: '2026-05-21',
     category: 'Baden',
     region: 'kaernten',
     bestSeason: 'Juni–September',
-    highlights: ['Türkisblaues Wasser wie die Adria', 'Bergpanorama mit Mittagskogel (2.143 m)', 'Ruhiger und naturnaher als der Wörthersee'],
+    highlights: ['Türkises Wasser durch feine Kalkteilchen aus der Worounitza', 'Mittagskogel (2.145 m) als Kulisse, Burgruine Finkenstein über dem See', 'Keine Boote mit Verbrennungsmotor, Bahnhof in Faak am See'],
     content: `
-Der Faaker See liegt 15 km südlich von Villach und ist einer der schönsten Seen Kärntens – nicht der bekannteste, aber vielleicht der malerischste. Das türkisblaue Wasser entsteht durch den kalkhaltigen Untergrund, und im Hintergrund thront unverkennbar der Mittagskogel (2.143 m).
+Der **Faaker See** liegt auf 554 m Seehöhe südlich von Villach und der Drau, rund 7 km Luftlinie von der Villacher Innenstadt entfernt, direkt am Fuß der Karawanken. Mit 2,2 km² ist er der fünftgrößte See Kärntens: 2,3 km lang, 1,7 km breit und bis 29,5 m tief. Politisch teilen ihn sich die Stadt **Villach** mit Drobollach und Egg im Norden und Osten und die Gemeinde **Finkenstein am Faaker See** mit Faak am See im Südwesten. Über dem Südufer steht der **Mittagskogel** (2.145 m) – seine Pyramide gehört zu fast jedem Foto des Sees.
 
-## Was den Faaker See besonders macht
+## Woher das Türkis kommt
+Die Farbe hat einen einfachen Grund: Der Hauptzufluss, die **Worounitza**, die am Mittagskogel entspringt, bringt feine Kalkteilchen mit. Sie schweben lange im Wasser und reflektieren das Sonnenlicht, bevor sie absinken. Außerdem speisen Rotschitza, Mühlbach und Quellen den See; über den Faaker Seebach fließt er zur Gail ab.
 
-Kein Massentourismus wie am Wörthersee. Das Wasser erwärmt sich im Sommer auf 25–27°C – kühler als der Klopeiner See, dafür außergewöhnlich klar. Die Landschaft erinnert an Südtirol.
+Ein Unterwasserrücken teilt den See in zwei Becken. Darauf erhebt sich die bewaldete, gut 8 ha große **Insel** – auf ihr steht ein Hotel, erreichbar nur übers Wasser. Ungewöhnlich für Österreich: Nicht nur die Insel, sondern der **ganze See ist in Privatbesitz**. 1918 kaufte Ludwig Wittgenstein, ein Onkel des gleichnamigen Philosophen, See und Insel von den Fürsten von Liechtenstein; seit 1924 gehören sie den Nachkommen seiner beiden Adoptivtöchter.
 
-## Beste Badestellen
+## Baden im Faaker See
+Bei den offiziellen Proben im Sommer 2026 lag das Wasser zwischen rund 20 °C Anfang Juni und gut 26 °C Ende Juni, im Juli und August meist zwischen 22,5 und 25 °C – etwas frischer als im [Klopeiner See](/blog/klopeiner-see-badeurlaub). Offizielle EU-Badestellen gibt es in **Faak am See** und in **Drobollach**, beide zuletzt mit „ausgezeichnet" bewertet; die aktuelle Einstufung steht im [Badeplatz-Check](/badeplaetze), Live-Werte zeigt die Seite [Wassertemperatur der Seen in Österreich](/wassertemperatur#kaernten).
 
-### Strandbad Egg (mit Eintritt)
-Das schönste Strandbad mit direktem Blick auf den Mittagskogel. Boot- und SUP-Verleih vor Ort, gute Gastronomie.
+Weil viele Uferabschnitte zu Hotels und Campingplätzen gehören, badet man meist in einem der Strandbäder. Die Gemeinde Finkenstein betreibt das **Strandbad Faak am See**, in Drobollach liegt unter anderem die „Panorama Beach". Eintritt und Saisonzeiten ändern sich – vorab prüfen.
 
-### Freistrand an der Seepromenade (kostenlos)
-Mehrere öffentliche Zugänge entlang der Westseite – ruhig, naturnah, bei Einheimischen beliebt.
+## Boote und Wassersport
+Motorboote mit Verbrennungsmotor sind auf dem Faaker See verboten; erlaubt sind Elektro-, Ruder-, Segel- und Tretboote. Beliebt sind SUP, Kajak und Kanu, außerdem wird am See gefischt. Entsprechend still ist es auf dem Wasser.
 
-## Wichtig: Harley-Davidson-Woche im September
-Jeden September findet die European Bike Week statt – dann ist der ganze Ort voll mit Motorradfahrern. Wer das vermeiden möchte, kommt besser vorher oder nach Oktober.
+## Slow Trail am Ufer
+Direkt am See verläuft der **Slow Trail Faaker See** in zwei Varianten, beide enden an der Halbinsel – laut Tourenportal ab Drobollach rund 4 km (etwa eine Stunde), ab Faak am See knapp 3 km. Gedacht ist er zum langsamen Gehen, mit Pausen am Wasser.
 
-## Rund um den See
-Die Seerundfahrt mit dem Fahrrad (9 km, flach) schafft man in 45 Minuten. Anschließend lohnt ein Besuch der Burgruine Finkenstein mit Ausblick auf See und Mittagskogel.
+## Burgruine Finkenstein
+Auf einem steilen Felsen am Fuß der Karawanken, hoch über dem See, steht die **Burgruine Finkenstein**. Erstmals erwähnt wurde die Burg 1142, von 1508 bis 1861 gehörte sie den Dietrichsteinern, bewohnt ist sie seit dem späten 18. Jahrhundert nicht mehr. Bekannt ist die **Burgarena** mit rund 1.150 Plätzen, in der im Sommer Konzerte und Aufführungen stattfinden. Seit 2022 renovieren die neuen Eigentümer die Anlage – Zugang und Programm vorab prüfen.
 
-## Anfahrt
-Von Villach ca. 20 Minuten mit dem Auto. Direktzug von Villach Hauptbahnhof nach Faak am See (ÖBB, ca. 20 Min.).
+## Auf den Mittagskogel
+Der Mittagskogel an der Grenze zu Slowenien ist ein Ziel für trittsichere Bergwanderer. Der übliche Weg führt über die **Bertahütte** (1.567 m); von dort sind es laut Bergwelten auf dem Normalweg zwei bis zweieinhalb Stunden zum Gipfel. Route und Hütte vorab prüfen.
+
+## European Bike Week
+Jedes Jahr Anfang September wird der Faaker See zum Treffpunkt der Harley-Davidson-Szene. Die European Bike Week (früher „Harley-Treffen") dauert mehrere Tage, die große Parade ist ein Höhepunkt. Wer Ruhe sucht, meidet diese Woche; wer Motorräder mag, plant sie gezielt ein und bucht früh.
+
+## Beste Reisezeit
+Juni bis September. Im Juni ist es am See noch ruhiger und das Wasser oft schon angenehm, im Juli und August ist es am wärmsten. Nach der Bike Week wird es im September wieder still.
+
+## Anreise
+- Mit dem Auto sind es von Villach nur wenige Kilometer
+- Mit der Bahn: Der Bahnhof Faak am See liegt an der Strecke Villach–Rosenbach – Verbindungen im ÖBB-Fahrplan prüfen
     `,
     affiliateLinks: [
       { label: 'Hotels am Faaker See – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Faaker+See' },
       { label: 'SUP Board für den Urlaub – Amazon', url: 'https://www.amazon.de/s?k=sup+board+set' },
+    ],
+    officialLinks: [
+      { label: 'Faaker See – Kärnten Werbung', url: 'https://www.kaernten.at/seen/faaker-see/' },
+      { label: 'Faaker See – Region Villach', url: 'https://www.visitvillach.at/de/faaker-see.html' },
     ],
   },
   {
@@ -1669,47 +1707,67 @@ Hinfahrt per Schiff, Rückfahrt am Seeradweg – oder umgekehrt. 17 km Radweg am
   },
   {
     slug: 'gailtaler-alpen-wandern-geheimtipp',
-    startCoords: [46.6500, 13.4000],
-    title: 'Gailtaler Alpen – Kärntens vergessene Wanderregion',
-    excerpt: 'Zwischen Nassfeld und Weissensee liegen die Gailtaler Alpen – wild, wenig besucht und mit einigen der einsamsten Gipfeltouren Kärntens. Für alle, die Wandern ohne Gedränge suchen.',
+    startCoords: [46.6272, 13.3672],
+    planningMistakes: [
+      { fehler: 'Den Karnischen Höhenweg in den Gailtaler Alpen suchen', besser: 'Er verläuft auf dem Karnischen Kamm südlich von Gail- und Lesachtal, an der Grenze zu Italien – also auf der anderen Talseite. Ausgangsorte, Hütten und Wanderkarte entsprechend wählen.' },
+      { fehler: 'Reißkofel oder Spitzegel als gemütliche Familienwanderung einplanen', besser: 'Die Region Nassfeld stuft beide Gipfel als schwierig ein: steile Felsflanken, am Spitzegel zum Schluss leichte Kletterei. Nur mit Trittsicherheit und Schwindelfreiheit gehen und früh starten – im Hochsommer ziehen nachmittags oft Gewitter auf.' },
+      { fehler: 'Nach starkem Regen in die Garnitzenklamm', besser: 'Die Wege sind dann nass, wurzelig und rutschig; bei starkem Regen sollte man die Klamm meiden. In der Klamm gibt es weder Einkehr noch WC – Wasser und Jause mitnehmen.' },
+    ],
+    title: 'Gailtaler Alpen – ruhige Wanderberge zwischen Drau und Gail',
+    excerpt: 'Reißkofel, Spitzegel und Dobratsch: Die Gailtaler Alpen ziehen sich vom Gailbergsattel bis Villach und sind weit weniger bekannt als Kärntens Seen. Welche Touren sich lohnen – und warum Garnitzenklamm und Karnischer Höhenweg auf der anderen Talseite liegen.',
     date: '2026-06-01',
     category: 'Wandern',
     region: 'kaernten',
     difficulty: 'mittel',
     bestSeason: 'Juni–Oktober',
-    highlights: ['Eine der einsamsten Wanderregionen Kärntens', 'Karnischer Höhenweg: Panoramakamm an der Grenze', 'Kaum Touristen selbst im Hochsommer'],
+    highlights: ['Reißkofel (2.371 m) – höchster Gipfel der Kärntner Gailtaler Alpen', 'Gailtaler Höhenweg über Golz, Spitzegel und Vellacher Egel', 'Gegenüber im Karnischen Kamm: Garnitzenklamm und Karnischer Höhenweg'],
     content: `
-Das Gailtal und die Gailtaler Alpen sind das große Geheimnis Kärntens. Zwischen Nassfeld im Westen und dem Drautal im Osten liegt eine Bergwelt, die im Vergleich zu Wörthersee oder Großglockner kaum besucht wird – und gerade deshalb für Wanderer interessant ist.
+Die **Gailtaler Alpen** sind der Gebirgszug zwischen dem **Drautal** im Norden und dem **Gailtal** im Süden. Im weiteren Sinn reichen sie rund 100 km weit – von den Lienzer Dolomiten in Osttirol bis zum Dobratsch bei Villach. Der Kärntner Teil, die Gailtaler Alpen im engeren Sinn, zieht sich auf etwa 65 km vom Gailbergsattel bis zum Zusammenfluss von Gail und Drau bei Villach. Sein höchster Gipfel ist der **Reißkofel** (2.371 m); die höchsten Berge der ganzen Gruppe, Große Sandspitze (2.770 m) und Spitzkofel (2.718 m), stehen in den Lienzer Dolomiten.
+
+Im Kärntner Teil bauen helle Kalke die markanten Gipfel auf – Jauken, Reißkofel, Spitzegel und Dobratsch. Mitten in den Bergen liegt der [Weissensee](/blog/weissensee-kaernten-geheimtipp). Verglichen mit den großen Seen oder dem Großglockner sind die Gailtaler Alpen wenig bekannt, und viele Touren beginnen weit unten im Tal. Wer Kondition mitbringt, findet hier lange, ruhige Wege.
+
+## Gailtaler Alpen oder Karnische Alpen?
+Das Gailtal trennt zwei Gebirge, und hier passiert die häufigste Verwechslung: **Nördlich** der Gail liegen die Gailtaler Alpen, **südlich** davon der Karnische Kamm an der Grenze zu Italien und weiter östlich die Karawanken. Nassfeld, Gartnerkofel, Garnitzenklamm und der Karnische Höhenweg gehören also **nicht** zu den Gailtaler Alpen, sondern liegen auf der Südseite des Tals. Von Hermagor aus erreicht man beide Seiten – wer eine Wanderkarte oder einen Führer kauft, sollte aber wissen, welches Gebirge er sucht.
 
 ## Das Gailtal
+Das Tal ist dreigeteilt: das **Lesachtal** bis Kötschach-Mauthen, das **Obere Gailtal** bis Hermagor und das **Untere Gailtal** von Hermagor bis Fürnitz bei Villach. Während das obere Tal deutschsprachig ist, lebt im unteren Gailtal östlich von Hermagor bis heute auch eine slowenische Volksgruppe mit eigenem Dialekt. Bekanntester Brauch ist das **Kufenstechen**, ein Reiterspiel, das in vielen Dörfern gepflegt wird – am bekanntesten am Pfingstmontag in Feistritz an der Gail. Hauptort und guter Ausgangspunkt für beide Talseiten ist **Hermagor**.
 
-Das Haupttal ist 100 km lang und hat eine eigene Sprache (Kärntner Slowenisch), eine eigene Küche und eine Tradition als Durchgangstal nach Italien. Hermagor ist das Zentrum, Nassfeld das bekannteste Ziel. Aber das Tal hält mehr bereit.
+## Reißkofel (2.371 m) – der Höchste (schwer)
+Der Reißkofel ist ein nach allen Seiten steil abfallender Felsberg über dem oberen Gailtal. Der übliche Weg beginnt an der **Jochalm** oberhalb von Reisach: durch lichten Wald hinauf zur Alpelspitz (1.960 m), dann entweder über den seilversicherten Hochfleck oder Richtung Kleiner Reißkofel auf dem Weg 229 zum Gipfel, nach etwa zweieinhalb Stunden. Die Region Nassfeld gibt für die ganze Tour rund 8 km, knapp 5 Stunden und rund 1.000 Höhenmeter an und stuft sie als **schwierig** ein: Trittsicherheit, Schwindelfreiheit und feste Bergschuhe sind Pflicht. Über den Gipfel führt auch der Gailtaler Höhenweg.
+
+## Spitzegel (2.119 m) und der Gailtaler Höhenweg (schwer)
+Über Hermagor erhebt sich der **Spitzegel**, der höchste Gipfel der Spitzegelgruppe. Von Obervellach im Tal ist es ein langer Bergtag: Laut Region Nassfeld rund 20 km, knapp 9 Stunden und etwa 1.500 Höhenmeter, zum Schluss mit leichter Kletterei (Schwierigkeitsgrad I) – nur für trittsichere, schwindelfreie Bergsteiger. Stützpunkt unterhalb des Gipfels ist die **Laudinzenhütte** (1.676 m); ob und wann sie bewirtschaftet ist, vorab prüfen. Belohnt wird man mit einem Tiefblick ins Gailtal, als säße man im Flugzeug.
+
+Wer mehrere Tage hat, folgt dem **Gailtaler Höhenweg** (Weg 229) über den Kamm. Ein Abschnitt führt von Weißbriach über Mittagsnock (1.473 m), Naggler Alm, Golz (2.004 m), Spitzegel und Vellacher Egel (2.108 m) zur Windischen Höhe – laut Region Nassfeld 33,6 km und rund 14 Stunden Gehzeit, also eine Mehrtagestour. Der Grat zwischen Spitzegel und Vellacher Egel ist lang und an manchen Stellen ausgesetzt.
+
+## Dobratsch (2.166 m) – der leichte Gipfel im Osten
+Ganz im Osten steht der **Dobratsch** (Villacher Alpe), der Hausberg von Villach. Über die mautpflichtige Villacher Alpenstraße fährt man bis zur Rosstratte (rund 1.730 m); von dort führt ein markierter Weg zum Gipfelhaus, laut Hüttenbeschreibung in etwa 1¾ Stunden mit rund 400 Höhenmetern. Mehr dazu im Artikel [Villacher Alpe (Dobratsch)](/blog/villacher-alpe-dobratsch-wanderung).
+
+## Gegenüber: Garnitzenklamm (Karnische Alpen)
+Bei Möderndorf, rund 2 km von Hermagor, hat sich der Garnitzenbach, der am Gartnerkofel entspringt, eine gut 4,5 km lange Klamm gegraben. Der Weg ist in **vier Abschnitte** geteilt: Der erste dauert rund 40 Minuten, der dritte ist der anspruchsvollste. Je nach Runde ist man laut Kärnten Werbung 3, 4 oder 5 Stunden unterwegs; über den vierten Abschnitt geht es weiter zur Kühweger Alm und bis aufs Nassfeld. Die Wege sind nass, wurzelig und teils steil – knöchelhohe, feste Schuhe, Trittsicherheit und Schwindelfreiheit sind nötig. Kinder unter sechs Jahren sollten nur bis zum ersten Wasserfall, der Idawarte (rund 30 Minuten), gehen. Geöffnet ist die Klamm etwa von Mitte Mai bis Mitte Oktober, eingehoben wird ein Wegerhaltungsbeitrag. Die Parkplätze am Eingang sind knapp – früh kommen.
 
 ## Karnischer Höhenweg
+Der Weitwanderweg 403, auch „Friedensweg" genannt, folgt dem Karnischen Hauptkamm entlang der Grenze zu Italien von Sillian in Osttirol bis Thörl-Maglern bei Arnoldstein – über einen Kamm, auf dem im Ersten Weltkrieg die Front verlief. Länge und Etappenzahl gehen je nach Quelle und Variante weit auseinander (von rund 110 bis über 150 km, 8 bis 14 Etappen); realistisch sind ein bis zwei Wochen. Hütten, Etappen und Rückfahrt am besten mit einem aktuellen Wanderführer planen.
 
-Der bekannteste Weitwanderweg der Gailtaler Alpen führt 12 Etappen lang auf dem Grenzkamm zwischen Österreich und Italien. Spektakuläre Panoramas, gut ausgestattete Hütten, kaum Menschenmassen.
+## Nach der Tour: Pressegger See
+Gleich östlich von Hermagor liegt der **Pressegger See**: Mit 55 ha ist er der neuntgrößte See Kärntens, typisch sind die großen Schilfflächen. Bei den offiziellen Proben im Sommer 2026 hatte das Wasser zwischen gut 22 und knapp 28 °C. Aktuelle Werte zeigt die Seite [Wassertemperatur der Seen in Österreich](/wassertemperatur#kaernten).
 
-### Empfehlenswerte Einzeletappe: Plöckenpass – Porzehütte
-- Länge: 12 km, ca. 5 Stunden
-- Höhenmeter: 600 aufwärts, 400 abwärts
-- Höhepunkt: Blick auf das Karnische Kamm und die südlichen Alpen
-
-## Garnitzenklamm
-
-Eine der schönsten Klammen Kärntens, direkt bei Hermagor. Im Winter ist sie mit Eis und Schnee bespannt (Natureis), im Sommer ein angenehm kühler Weg durch enges Felsgelände. 2 Stunden, leicht.
-
-## Warum kaum jemand hier wandert
-
-Das Gailtal hat kein Marketingbudget wie der Wörthersee. Keine glamourösen Fotolocations. Keine Influencer-Spots. Dafür: echte Stille, freundliche Hüttenwirte die einen kennenlernen wollen, und Wanderwege ohne Schlangestehen beim Gipfelfoto.
+## Beste Reisezeit
+Juni bis Oktober. Für die hohen Gipfel ist der Spätsommer und Frühherbst oft am angenehmsten; im Hochsommer früh starten, weil nachmittags häufig Gewitter aufziehen. Die Garnitzenklamm ist nur in der Sommersaison geöffnet – Termine vorab prüfen.
 
 ## Praktische Infos
-- Anreise Hermagor: Von Villach ca. 45 Minuten
-- Übernachtung: Gasthöfe im Tal (günstig) oder Alm-/Schutzhütten am Höhenweg
-- Karte: AV-Karte 1:25.000 „Gailtaler Alpen Ost" empfohlen
+- Anreise mit dem Auto über die A2 (Ausfahrt Hermagor) und die B111 durchs Gailtal
+- Hermagor hat einen Bahnhof an der Gailtalbahn, die in Arnoldstein an die Strecke Villach–Italien anschließt – Verbindungen im ÖBB-Fahrplan prüfen
+- Für die Gipfeltouren eine aktuelle Wanderkarte mitnehmen und Hütten vorab kontaktieren
     `,
     affiliateLinks: [
       { label: 'Hotels in Hermagor – booking.com', url: 'https://www.booking.com/city/at/hermagor.de.html' },
       { label: 'Wanderführer Karnischer Höhenweg – Amazon', url: 'https://www.amazon.de/s?k=karnischer+h%C3%B6henweg+wanderf%C3%BChrer' },
+    ],
+    officialLinks: [
+      { label: 'Reißkofel – Tourenbeschreibung der Region Nassfeld', url: 'https://www.nassfeld.at/de/Tour/Reisskofel-2371-m_t_35069' },
+      { label: 'Spitzegel – Tourenbeschreibung der Region Nassfeld', url: 'https://www.nassfeld.at/de/Tour/Spitzegel-2118-m_t_28068' },
+      { label: 'Garnitzenklamm bei Hermagor – Kärnten Werbung', url: 'https://www.kaernten.at/wandern/geschichten/garnitzenklamm-bei-hermagor/' },
     ],
   },
   {

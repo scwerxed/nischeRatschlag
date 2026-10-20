@@ -112,7 +112,7 @@ export const MONATE: Monat[] = [
     name: 'Juli',
     intro: 'Hochsommer: Die Badeseen haben Bestwerte, in den Bergen ist Hochsaison – und wer der Hitze entkommen will, geht in die Höhe oder ans Wasser.',
     picks: [
-      { slug: 'klopeiner-see-badeurlaub', warum: 'Jetzt erreicht Österreichs wärmster Badesee seine 28 °C.' },
+      { slug: 'klopeiner-see-badeurlaub', warum: 'Einer der wärmsten Badeseen Österreichs – bei den offiziellen Proben im Juli 2026 lag das Wasser um 25 °C.' },
       { slug: 'alte-donau-baden-wien', warum: 'Abkühlung mitten in Wien – perfekt für heiße Stadttage.' },
       { slug: 'krimmler-wasserfaelle', warum: 'Der Sprühnebel der Fälle kühlt spürbar – natürliche Klimaanlage.' },
       { slug: 'luenersee-wandern', warum: 'Auf knapp 2.000 m ist es auch im Hochsommer angenehm frisch.' },
@@ -132,7 +132,7 @@ export const MONATE: Monat[] = [
       { slug: 'moerbisch-seefestspiele', warum: 'Operette auf der Seebühne im Neusiedler See – nur im Sommer.' },
       { slug: 'roemersteinbruch-st-margarethen-oper', warum: 'Oper im Steinbruch unter freiem Himmel – August ist Festivalzeit.' },
       { slug: 'bregenzer-festspiele-seebuehne', warum: 'Letzte Chance: Mitte August enden die Festspiele.' },
-      { slug: 'faaker-see-badestellen', warum: 'Das türkise Wasser hat jetzt Badewannen-Temperatur.' },
+      { slug: 'faaker-see-badestellen', warum: 'Das türkise Wasser hat jetzt seine wärmsten Wochen – bei den offiziellen Proben im Hochsommer 2026 meist 22–25 °C.' },
       { slug: 'weissensee-kaernten-geheimtipp', warum: 'Deutlich ruhiger als die großen Seen – auch im Hochsommer.' },
       { slug: 'achensee-tirol', warum: 'Frisches Wasser und thermischer Wind – ideal, wenn es überall sonst zu heiß ist.' },
       { slug: 'plansee-tirol-baden', warum: 'Der stille Fjord Tirols – Abkühlung ohne Trubel.' },

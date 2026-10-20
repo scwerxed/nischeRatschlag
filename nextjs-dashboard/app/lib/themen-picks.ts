@@ -384,7 +384,7 @@ export const FAMILIEN_GROUPS: { title: string; note: string; picks: { slug: stri
     note: 'Warmes Wasser, das langsam tiefer wird, und Platz zum Buddeln. Auch am flachen Ufer gilt: Kinder im Wasser nie aus den Augen lassen.',
     picks: [
       { slug: 'stubenbergsee-baden', tipp: 'Warmer Familienbadesee mit flachen Einstiegen, Tretbooten und Spielplätzen.' },
-      { slug: 'klopeiner-see-badeurlaub', tipp: 'Flaches Becken, sehr warmes Wasser – für Familien mit Kindern erste Wahl.' },
+      { slug: 'klopeiner-see-badeurlaub', tipp: 'Sehr warmes Wasser und eine fast ebene Promenade für den Kinderwagen. Wie flach der Einstieg ist, unterscheidet sich von Bad zu Bad – viele Strandbäder gehören zu Hotels, vorab nachfragen.' },
       { slug: 'podersdorf-am-see', tipp: 'Langgezogenes Strandbad mit flachem Einstieg; bei Wind kühlt der Steppensee rasch ab.' },
       { slug: 'alte-donau-baden-wien', tipp: 'Ruhiges Wasser ohne Strömung, per U-Bahn erreichbar.' },
       { slug: 'donauinsel-wien', tipp: 'Mehrere flach abfallende Abschnitte mit Spielplätzen in Wassernähe.' },

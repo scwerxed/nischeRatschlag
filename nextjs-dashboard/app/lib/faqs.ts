@@ -3,7 +3,7 @@ import type { FaqItem } from '@/app/ui/faq';
 // Region-spezifische FAQ – liefert Content + FAQPage-Rich-Snippets pro Region.
 export const FAQS_BY_REGION: Record<string, FaqItem[]> = {
   kaernten: [
-    { q: 'Welcher ist der wärmste Badesee in Kärnten?', a: 'Der Klopeiner See in Südkärnten ist mit durchschnittlich 26–29 °C der wärmste Badesee Österreichs – durch das flache Becken und die geschützte Lage erwärmt er sich besonders schnell.' },
+    { q: 'Welcher ist der wärmste Badesee in Kärnten?', a: 'Der Klopeiner See in Südkärnten gilt als wärmster Badesee Kärntens: Im Hochsommer hat er meist 24–27 °C, in heißen Sommern bis zu 29 °C. Ein flaches Becken ist nicht der Grund – er ist bis zu 48 m tief –, sondern dass er kaum durchströmt wird. Ähnlich warm wird zum Beispiel der Pressegger See im Gailtal.' },
     { q: 'Wann ist die beste Reisezeit für Kärnten?', a: 'Juli und August sind am wärmsten, aber am vollsten. Geheimtipp ist der September: Die Seen haben noch 22–25 °C, die Preise fallen deutlich und die Strände sind leer. Für Wanderungen ist Juni ideal.' },
     { q: 'Gibt es kostenlose Badestellen am Wörthersee?', a: 'Ja, z. B. der Freistrand Maria Wörth und die Badebucht Reifnitz. Auch kleinere Seen wie der Keutschacher See bieten kostenlose Zugänge.' },
     { q: 'Welche Wanderung lohnt sich für Anfänger?', a: 'Die Seepromenade Klagenfurt–Pörtschach (flach) und der Nockberge-Höhenweg sind ideal für Einsteiger und Familien. Den Wegverlauf siehst du auf unserer interaktiven Karte.' },
