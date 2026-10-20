@@ -119,7 +119,7 @@ function DesktopGroup({
         onClick={onOpen}
         aria-expanded={open}
         aria-controls={panelId}
-        className={`inline-flex items-center gap-1.5 py-5 transition-colors ${active || open ? 'text-green-700' : 'hover:text-green-700'}`}
+        className={`inline-flex items-center gap-1.5 py-5 whitespace-nowrap transition-colors ${active || open ? 'text-green-700' : 'hover:text-green-700'}`}
       >
         {group.label}
         <Chevron open={open} />
@@ -226,7 +226,7 @@ export default function Navbar() {
 
         <div className="flex items-center gap-5">
           {/* Desktop-Navigation */}
-          <div className="hidden md:flex items-center gap-5 lg:gap-6 text-caption text-ink-muted">
+          <div className="hidden md:flex items-center gap-4 lg:gap-6 text-caption text-ink-muted">
             {NAV_GROUPS.map((g) => (
               <DesktopGroup
                 key={g.label}
@@ -241,17 +241,27 @@ export default function Navbar() {
               <Link
                 key={l.href}
                 href={l.href}
-                className={`py-5 transition-colors ${isActive(l.href) ? 'text-green-700' : 'hover:text-green-700'}`}
+                className={`py-5 whitespace-nowrap transition-colors ${isActive(l.href) ? 'text-green-700' : 'hover:text-green-700'}`}
               >
                 {l.label}
               </Link>
             ))}
           </div>
 
-          {/* Desktop-Suche */}
-          <div className="hidden lg:block w-48">
+          {/* Desktop-Suche – erst ab xl, darunter reicht der Platz neben vier Menügruppen nicht
+              (sonst brach z. B. „Seen & Baden“ zweizeilig um); mobil steht die Suche im Menü */}
+          <div className="hidden xl:block w-48">
             <SearchForm />
           </div>
+          <Link
+            href="/blog"
+            aria-label="Artikel durchsuchen"
+            className="hidden md:inline-flex xl:hidden text-ink-soft hover:text-green-700 transition-colors"
+          >
+            <svg width="20" height="20" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.6" aria-hidden>
+              <circle cx="7" cy="7" r="5" /><path d="M11 11l3.5 3.5" strokeLinecap="round" />
+            </svg>
+          </Link>
 
           {/* Merkliste-Herz (immer sichtbar) */}
           <Heart count={count} />
