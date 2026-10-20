@@ -14,18 +14,24 @@ interface Props {
 }
 
 const OFFSET: Record<Direction, string> = {
-  up: 'translateY(24px)',
-  down: 'translateY(-24px)',
-  left: 'translateX(24px)',
-  right: 'translateX(-24px)',
+  up: 'translateY(16px)',
+  down: 'translateY(-16px)',
+  left: 'translateX(16px)',
+  right: 'translateX(-16px)',
   none: 'none',
 };
+
+// Inhalte werden schon ~250px BEVOR sie ins Bild scrollen eingeblendet. Früher lief die
+// Animation erst, wenn ein Block sichtbar war – beim schnellen Scrollen blieben dadurch
+// ganze Abschnitte leer stehen (siehe Audit 2026-10-20). Die Animation ist jetzt nur noch
+// ein leichter Akzent, nie eine Bedingung dafür, dass Inhalt zu sehen ist.
+const OBSERVER_OPTIONS: IntersectionObserverInit = { threshold: 0, rootMargin: '0px 0px 250px 0px' };
 
 export default function FadeIn({
   children,
   direction = 'up',
   delay = 0,
-  duration = 600,
+  duration = 500,
   className = '',
   once = true,
 }: Props) {
@@ -36,6 +42,14 @@ export default function FadeIn({
   useEffect(() => {
     const el = ref.current;
     if (!el) return;
+
+    // Wer reduzierte Bewegung eingestellt hat, sieht alles sofort – ohne Ein-/Ausblenden.
+    if (window.matchMedia?.('(prefers-reduced-motion: reduce)').matches) return;
+
+    // Was beim Laden schon im (erweiterten) Sichtbereich liegt, bleibt einfach stehen –
+    // kein Flackern von sichtbar → unsichtbar → sichtbar direkt nach dem Hydrieren.
+    const rect = el.getBoundingClientRect();
+    if (rect.top < window.innerHeight + 250) return;
 
     setMounted(true);
 
@@ -48,7 +62,7 @@ export default function FadeIn({
           setVisible(false);
         }
       },
-      { threshold: 0.08, rootMargin: '0px 0px -20px 0px' },
+      OBSERVER_OPTIONS,
     );
 
     observer.observe(el);

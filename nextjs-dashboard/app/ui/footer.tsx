@@ -1,43 +1,14 @@
 import Link from 'next/link';
+import { NAV_GROUPS, NAV_REGIONEN, NAV_SINGLE, NAV_SERVICE, type NavLink } from '@/app/lib/navigation';
 
-const QUICK_LINKS = [
-  { href: '/ausflugsplaner', label: 'Ausflugsplaner' },
-  { href: '/blog', label: 'Magazin' },
-  { href: '/karte', label: 'Wanderkarte' },
-  { href: '/routenplaner', label: 'Routenplaner' },
-  { href: '/seen-vergleich', label: 'Seen-Vergleich' },
-  { href: '/badeplaetze', label: 'Badeplatz-Check' },
-  { href: '/wassertemperatur', label: 'Wassertemperatur live' },
-  { href: '/wandern-baden', label: 'Wandern + Baden' },
-  { href: '/unterkuenfte/am-see', label: 'Unterkünfte am See' },
-  { href: '/unterkuenfte/basislager', label: 'Basislager' },
-  { href: '/wochenendtrip', label: 'Wochenendtrips' },
-  { href: '/beste-ausfluege', label: 'Beste Ausflüge' },
-  { href: '/ausfluege-nach-dauer', label: 'Ausflüge nach Dauer' },
-  { href: '/regentaugliche-ausfluege', label: 'Ausflüge bei Regen' },
-  { href: '/aussicht-ohne-anstrengung', label: 'Aussicht ohne Anstrengung' },
-  { href: '/sonnenuntergang-spots', label: 'Sonnenuntergang-Spots' },
-  { href: '/zwei-ausfluege-an-einem-tag', label: 'Zwei Ausflüge an einem Tag' },
-  { href: '/familienausfluege', label: 'Familienausflüge' },
-  { href: '/merkliste', label: 'Merkliste' },
-  { href: '/reiseinfos', label: 'Reiseinfos' },
-  { href: '/#regionen', label: 'Regionen' },
-];
-
-const REGIONS = [
-  { href: '/regionen/kaernten', label: 'Kärnten' },
-  { href: '/regionen/salzburg', label: 'Salzburg' },
-  { href: '/regionen/tirol', label: 'Tirol' },
-  { href: '/regionen/steiermark', label: 'Steiermark' },
-  { href: '/regionen/oberoesterreich', label: 'Oberösterreich' },
-  { href: '/regionen/vorarlberg', label: 'Vorarlberg' },
-];
-
-const LEGAL = [
-  { href: '/ueber-uns', label: 'Über uns' },
-  { href: '/kontakt', label: 'Kontakt' },
-  { href: '/impressum', label: 'Impressum' },
-  { href: '/datenschutz', label: 'Datenschutz' },
+// Footer-Spalten aus derselben Struktur wie das Menü (app/lib/navigation.ts) –
+// neue Themenseiten tauchen damit automatisch an beiden Stellen auf.
+const byLabel = (label: string) => NAV_GROUPS.find((g) => g.label === label)?.links ?? [];
+const COLUMNS: { title: string; links: NavLink[] }[] = [
+  { title: 'Ausflugsideen', links: byLabel('Ausflugsideen') },
+  { title: 'Seen & Karte', links: [...byLabel('Seen & Baden'), ...byLabel('Karte'), ...NAV_SINGLE] },
+  { title: 'Regionen', links: NAV_REGIONEN },
+  { title: 'Service', links: NAV_SERVICE },
 ];
 
 export default function Footer() {
@@ -50,9 +21,9 @@ export default function Footer() {
         </svg>
       </div>
 
-      <div className="max-w-6xl mx-auto px-6 py-14 grid gap-10 md:grid-cols-5">
+      <div className="max-w-6xl mx-auto px-6 py-14 grid gap-10 sm:grid-cols-2 lg:grid-cols-6">
         {/* Marke */}
-        <div className="md:col-span-2 max-w-sm">
+        <div className="sm:col-span-2 lg:col-span-2 max-w-sm">
           <div className="flex items-center gap-2.5 mb-4">
             <svg width="28" height="28" viewBox="0 0 26 26" fill="none" aria-hidden>
               <path d="M2 21 L9.5 7 L14 15 L17 10 L24 21 Z" fill="#e6d8c3" />
@@ -73,55 +44,27 @@ export default function Footer() {
               Regelmäßig aktualisiert
             </span>
             <span>·</span>
-            <span>Seit 2024</span>
+            <span>Seit 2026</span>
           </div>
         </div>
 
-        {/* Entdecken */}
-        <div>
-          <p className="text-fine uppercase tracking-[0.18em] text-green-300 mb-4 font-semibold">Entdecken</p>
-          <ul className="space-y-2.5 text-caption">
-            {QUICK_LINKS.map((l) => (
-              <li key={l.href}>
-                <Link href={l.href} className="hover:text-white transition-colors inline-flex items-center gap-1 group">
-                  {l.label}
-                  <svg width="12" height="12" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.5" className="opacity-0 -translate-x-1 group-hover:opacity-100 group-hover:translate-x-0 transition duration-200">
-                    <path d="M6 3l5 5-5 5" strokeLinecap="round" strokeLinejoin="round" />
-                  </svg>
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </div>
-
-        {/* Regionen */}
-        <div>
-          <p className="text-fine uppercase tracking-[0.18em] text-green-300 mb-4 font-semibold">Regionen</p>
-          <ul className="space-y-2.5 text-caption">
-            {REGIONS.map((l) => (
-              <li key={l.href}>
-                <Link href={l.href} className="hover:text-white transition-colors">{l.label}</Link>
-              </li>
-            ))}
-            <li>
-              <Link href="/#regionen" className="text-green-300 hover:text-white transition-colors text-fine">
-                Alle 9 Bundesländer →
-              </Link>
-            </li>
-          </ul>
-        </div>
-
-        {/* Service */}
-        <div>
-          <p className="text-fine uppercase tracking-[0.18em] text-green-300 mb-4 font-semibold">Service</p>
-          <ul className="space-y-2.5 text-caption">
-            {LEGAL.map((l) => (
-              <li key={l.href}>
-                <Link href={l.href} className="hover:text-white transition-colors">{l.label}</Link>
-              </li>
-            ))}
-          </ul>
-        </div>
+        {COLUMNS.map((col) => (
+          <div key={col.title}>
+            <p className="text-fine uppercase tracking-[0.18em] text-green-300 mb-4 font-semibold">{col.title}</p>
+            <ul className="space-y-2.5 text-caption">
+              {col.links.map((l) => (
+                <li key={l.href}>
+                  <Link href={l.href} className="hover:text-white transition-colors inline-flex items-center gap-1 group">
+                    {l.label}
+                    <svg width="12" height="12" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.5" className="opacity-0 -translate-x-1 group-hover:opacity-100 group-hover:translate-x-0 transition duration-200">
+                      <path d="M6 3l5 5-5 5" strokeLinecap="round" strokeLinejoin="round" />
+                    </svg>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))}
       </div>
 
       <div className="border-t border-white/10">

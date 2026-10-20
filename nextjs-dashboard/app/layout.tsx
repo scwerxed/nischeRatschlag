@@ -29,6 +29,28 @@ gtag('consent', 'default', {
 gtag('set', 'ads_data_redaction', true);
 `;
 
+// PostHog (EU-Cloud, Frankfurt) – Reichweitenmessung und Heatmaps, bewusst COOKIELOS:
+// `cookieless_mode: 'always'` setzt weder Cookies noch Local/Session Storage, die Besucher-ID
+// bildet PostHog serverseitig aus einem täglich wechselnden Hash (im Projekt muss dafür
+// „Cookieless server hash mode“ aktiv sein – ist seit 2026-10-20 eingeschaltet). Keine
+// Session-Aufzeichnung, keine Umfragen. Lädt nur auf der Produktionsdomain, damit Vercel-
+// Previews und lokale Tests die Zahlen nicht verfälschen. Der Projekt-Key ist öffentlich
+// (nur zum Senden von Events). Loader-Code 1:1 aus der PostHog-Doku (docs/libraries/js).
+const POSTHOG_KEY = 'phc_sZagM3TYW4idYJo5p5xLu8phTmJzd89t63tTM9Ew4ueM';
+const POSTHOG_SNIPPET = `
+if (location.hostname === 'www.bergseen-guide.com') {
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.crossOrigin="anonymous",p.async=!0,p.src=s.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],Object.defineProperty(u,"toString",{configurable:!0,enumerable:!0,writable:!0,value:function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e}}),Object.defineProperty(u.people,"toString",{configurable:!0,enumerable:!0,writable:!0,value:function(){return u.toString(1)+".people (stub)"}}),o="init capture register register_once register_for_session unregister unregister_for_session getFeatureFlag getFeatureFlagResult isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSessionId getSurveys getActiveMatchingSurveys renderSurvey canRenderSurvey getNextSurveyStep identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException loadToolbar get_property getSessionProperty createPersonProfile opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing clear_opt_in_out_capturing debug".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('${POSTHOG_KEY}', {
+  api_host: 'https://eu.i.posthog.com',
+  defaults: '2026-05-30',
+  cookieless_mode: 'always',
+  respect_dnt: true,
+  disable_session_recording: true,
+  disable_surveys: true,
+});
+}
+`;
+
 export const metadata: Metadata = {
   metadataBase: new URL(BASE),
   title: {
@@ -115,6 +137,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         {/* Vercel Web Analytics (Besucherstatistik) + Speed Insights (Ladezeiten/SEO) */}
         <Analytics />
         <SpeedInsights />
+        {/* PostHog cookielos (siehe POSTHOG_SNIPPET oben) – nach der Hydrierung, blockiert nichts. */}
+        <Script id="posthog-init" strategy="afterInteractive" dangerouslySetInnerHTML={{ __html: POSTHOG_SNIPPET }} />
         {/* GetYourGuide Conversion-Tracking – unkritisch, daher erst nach allem anderen laden. */}
         <Script
           src="https://widget.getyourguide.com/dist/pa.umd.production.min.js"

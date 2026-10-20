@@ -2,16 +2,8 @@
 
 import Link from 'next/link';
 import { usePathname, useRouter } from 'next/navigation';
-import { useEffect, useState } from 'react';
-
-const LINKS = [
-  { href: '/blog', label: 'Magazin' },
-  { href: '/karte', label: 'Karte' },
-  { href: '/routenplaner', label: 'Routenplaner' },
-  { href: '/seen-vergleich', label: 'Seen-Vergleich' },
-  { href: '/#regionen', label: 'Regionen' },
-  { href: '/ueber-uns', label: 'Über uns' },
-];
+import { useEffect, useRef, useState } from 'react';
+import { NAV_GROUPS, NAV_SINGLE, NAV_SERVICE, type NavGroup } from '@/app/lib/navigation';
 
 function Logo({ onClick }: { onClick?: () => void }) {
   return (
@@ -53,7 +45,7 @@ function SearchForm({ onSubmit }: { onSubmit?: () => void }) {
         type="search"
         value={q}
         onChange={(e) => setQ(e.target.value)}
-        placeholder="Suchen…"
+        placeholder="Ziel oder See suchen…"
         aria-label="Artikel durchsuchen"
         className="w-full pl-9 pr-4 py-2 text-caption bg-canvas border border-hairline rounded-full outline-none transition-colors focus:border-green-600 focus-visible:ring-2 focus-visible:ring-green-600"
       />
@@ -83,17 +75,120 @@ function Heart({ count }: { count: number }) {
   );
 }
 
+function Chevron({ open }: { open: boolean }) {
+  return (
+    <svg width="10" height="10" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden className={`transition-transform duration-200 ${open ? 'rotate-180' : ''}`}>
+      <path d="M3 6l5 5 5-5" strokeLinecap="round" strokeLinejoin="round" />
+    </svg>
+  );
+}
+
+/** Desktop: Hauptpunkt mit aufklappendem Panel (Hover, Klick und Tastatur). */
+function DesktopGroup({
+  group,
+  open,
+  active,
+  onOpen,
+  onClose,
+}: {
+  group: NavGroup;
+  open: boolean;
+  active: boolean;
+  onOpen: () => void;
+  onClose: () => void;
+}) {
+  const wrapRef = useRef<HTMLDivElement>(null);
+  const panelId = `nav-panel-${group.label.toLowerCase().replace(/[^a-z]+/g, '-')}`;
+  const isRegionen = group.label === 'Regionen';
+  const twoCols = group.links.length > 6;
+
+  return (
+    <div
+      ref={wrapRef}
+      className="relative"
+      onMouseEnter={onOpen}
+      onMouseLeave={onClose}
+      onBlur={(e) => {
+        if (!wrapRef.current?.contains(e.relatedTarget as Node | null)) onClose();
+      }}
+    >
+      {/* Klick öffnet nur (Hover hat das Panel meist schon geöffnet – ein Toggle würde es dann
+          wieder schließen). Zu geht es über Escape, Klick daneben, Verlassen mit Maus oder Fokus. */}
+      <button
+        type="button"
+        onClick={onOpen}
+        aria-expanded={open}
+        aria-controls={panelId}
+        className={`inline-flex items-center gap-1.5 py-5 transition-colors ${active || open ? 'text-green-700' : 'hover:text-green-700'}`}
+      >
+        {group.label}
+        <Chevron open={open} />
+      </button>
+
+      <div
+        id={panelId}
+        className={`absolute left-1/2 top-full -translate-x-1/2 pt-1 transition-[opacity,transform,visibility] duration-150 ${
+          open ? 'visible opacity-100 translate-y-0' : 'invisible opacity-0 -translate-y-1 pointer-events-none'
+        }`}
+      >
+        <div className={`bg-canvas border border-hairline rounded-lg shadow-xl shadow-black/5 p-5 max-w-[calc(100vw-2rem)] ${isRegionen ? 'w-[440px]' : twoCols ? 'w-[520px]' : 'w-[300px]'}`}>
+          <ul className={`grid gap-x-6 gap-y-1 ${isRegionen ? 'grid-cols-3' : twoCols ? 'grid-cols-2' : 'grid-cols-1'}`}>
+            {group.links.map((l) => (
+              <li key={l.href}>
+                <Link
+                  href={l.href}
+                  onClick={onClose}
+                  className="block rounded-sm px-2 py-1.5 -mx-2 text-caption text-ink hover:bg-parchment hover:text-green-700 transition-colors"
+                >
+                  <span className="font-medium">{l.label}</span>
+                  {l.note && <span className="block text-fine text-ink-soft">{l.note}</span>}
+                </Link>
+              </li>
+            ))}
+          </ul>
+          {isRegionen && (
+            <Link href={group.href} onClick={onClose} className="mt-4 pt-3 border-t border-hairline block text-fine font-semibold text-green-700 hover:text-green-600">
+              Alle 9 Bundesländer im Überblick →
+            </Link>
+          )}
+        </div>
+      </div>
+    </div>
+  );
+}
+
 export default function Navbar() {
   const [open, setOpen] = useState(false);
+  const [openGroup, setOpenGroup] = useState<string | null>(null);
   const [count, setCount] = useState(0);
   const pathname = usePathname();
+  const navRef = useRef<HTMLElement>(null);
 
-  useEffect(() => { setOpen(false); }, [pathname]);
+  useEffect(() => { setOpen(false); setOpenGroup(null); }, [pathname]);
+
+  // Klick/Tipp außerhalb der Navigation schließt ein offenes Desktop-Panel (wichtig auf Tablets ohne Hover)
+  useEffect(() => {
+    if (!openGroup) return;
+    const onDown = (e: PointerEvent) => {
+      if (!navRef.current?.contains(e.target as Node)) setOpenGroup(null);
+    };
+    document.addEventListener('pointerdown', onDown);
+    return () => document.removeEventListener('pointerdown', onDown);
+  }, [openGroup]);
 
   useEffect(() => {
     document.body.style.overflow = open ? 'hidden' : '';
     return () => { document.body.style.overflow = ''; };
   }, [open]);
+
+  // Escape schließt offene Menüs
+  useEffect(() => {
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') { setOpenGroup(null); setOpen(false); }
+    };
+    window.addEventListener('keydown', onKey);
+    return () => window.removeEventListener('keydown', onKey);
+  }, []);
 
   // Merklisten-Zähler live aktualisieren
   useEffect(() => {
@@ -110,35 +205,45 @@ export default function Navbar() {
     };
   }, []);
 
-  const isActive = (href: string) =>
-    href === '/' ? pathname === '/' : pathname.startsWith(href);
+  const isActive = (href: string) => {
+    const path = href.split('#')[0];
+    if (!path || path === '/') return false;
+    return pathname === path || pathname.startsWith(`${path}/`);
+  };
+  const groupActive = (g: NavGroup) => g.links.some((l) => isActive(l.href));
 
   return (
-    <nav className="sticky top-0 z-[1200] bg-white/90 backdrop-blur border-b border-hairline">
-      <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+    <nav ref={navRef} className="sticky top-0 z-[1200] bg-white/90 backdrop-blur border-b border-hairline">
+      <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between gap-4">
         <Logo />
 
         <div className="flex items-center gap-5">
-          {/* Desktop-Suche */}
-          <div className="hidden lg:block w-44">
-            <SearchForm />
-          </div>
-
           {/* Desktop-Navigation */}
-          <div className="hidden md:flex items-center gap-6 text-caption text-ink-muted">
-            {LINKS.map((l) => (
+          <div className="hidden md:flex items-center gap-5 lg:gap-6 text-caption text-ink-muted">
+            {NAV_GROUPS.map((g) => (
+              <DesktopGroup
+                key={g.label}
+                group={g}
+                open={openGroup === g.label}
+                active={groupActive(g)}
+                onOpen={() => setOpenGroup(g.label)}
+                onClose={() => setOpenGroup((cur) => (cur === g.label ? null : cur))}
+              />
+            ))}
+            {NAV_SINGLE.map((l) => (
               <Link
                 key={l.href}
                 href={l.href}
-                className={`relative transition-colors before:absolute before:content-[''] before:-inset-x-1.5 before:-inset-y-2.5 after:absolute after:left-0 after:-bottom-1.5 after:h-px after:bg-green-600 after:transition ${
-                  isActive(l.href)
-                    ? 'text-green-700 after:w-full'
-                    : 'hover:text-green-700 after:w-0 hover:after:w-full'
-                }`}
+                className={`py-5 transition-colors ${isActive(l.href) ? 'text-green-700' : 'hover:text-green-700'}`}
               >
                 {l.label}
               </Link>
             ))}
+          </div>
+
+          {/* Desktop-Suche */}
+          <div className="hidden lg:block w-48">
+            <SearchForm />
           </div>
 
           {/* Merkliste-Herz (immer sichtbar) */}
@@ -167,18 +272,40 @@ export default function Navbar() {
         }`}
         aria-hidden={!open}
       >
-        <div className="px-6 pt-5 pb-1">
+        <div className="px-6 pt-5 pb-2">
           <SearchForm onSubmit={() => setOpen(false)} />
         </div>
-        <div className="flex flex-col px-6 py-4 divide-y divide-hairline">
-          {[...LINKS, { href: '/merkliste', label: 'Merkliste' }, { href: '/kontakt', label: 'Kontakt' }].map((l) => (
+
+        <div className="px-6 py-2 divide-y divide-hairline">
+          {NAV_GROUPS.map((g) => (
+            <details key={g.label} className="group py-1" open={groupActive(g)}>
+              <summary className="flex items-center justify-between py-3.5 font-serif text-tagline text-ink cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+                <span className={groupActive(g) ? 'text-green-700 font-bold' : ''}>{g.label}</span>
+                <span className="text-ink-soft transition-transform duration-200 group-open:rotate-180">
+                  <Chevron open={false} />
+                </span>
+              </summary>
+              <ul className={`pb-4 grid gap-x-4 gap-y-0.5 ${g.label === 'Regionen' ? 'grid-cols-2' : 'grid-cols-1'}`}>
+                {g.links.map((l) => (
+                  <li key={l.href}>
+                    <Link
+                      href={l.href}
+                      onClick={() => setOpen(false)}
+                      className={`block py-2 text-body ${isActive(l.href) ? 'text-green-700 font-semibold' : 'text-ink-muted'}`}
+                    >
+                      {l.label}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </details>
+          ))}
+          {NAV_SINGLE.map((l) => (
             <Link
               key={l.href}
               href={l.href}
               onClick={() => setOpen(false)}
-              className={`flex items-center justify-between py-4 font-serif text-tagline ${
-                isActive(l.href) ? 'text-green-700 font-bold' : 'text-ink'
-              }`}
+              className={`flex items-center justify-between py-4 font-serif text-tagline ${isActive(l.href) ? 'text-green-700 font-bold' : 'text-ink'}`}
             >
               {l.label}
               <span className="text-ink-soft text-body">→</span>
@@ -186,7 +313,7 @@ export default function Navbar() {
           ))}
         </div>
 
-        <div className="px-6 pt-4">
+        <div className="px-6 pt-3">
           <Link
             href="/karte"
             onClick={() => setOpen(false)}
@@ -194,6 +321,14 @@ export default function Navbar() {
           >
             Wanderkarte öffnen
           </Link>
+        </div>
+
+        <div className="px-6 pt-6 pb-10 flex flex-wrap gap-x-5 gap-y-2 text-caption text-ink-soft">
+          {NAV_SERVICE.map((l) => (
+            <Link key={l.href} href={l.href} onClick={() => setOpen(false)} className="hover:text-green-700">
+              {l.label}
+            </Link>
+          ))}
         </div>
       </div>
     </nav>

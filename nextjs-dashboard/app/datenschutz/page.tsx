@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'Datenschutzerklärung',
-  description: 'Informationen zur Verarbeitung personenbezogener Daten gemäß DSGVO – Google AdSense, Hosting, Cookies und deine Rechte.',
+  description: 'Informationen zur Verarbeitung personenbezogener Daten gemäß DSGVO – Hosting, cookielose Reichweitenmessung, Google AdSense, Cookies und deine Rechte.',
   alternates: { canonical: '/datenschutz' },
 };
 
@@ -58,9 +58,44 @@ export default function DatenschutzPage() {
           „Einwilligen“, „Nicht einwilligen“ und „Optionen verwalten“. Deine Auswahl kannst du
           jederzeit über dieses Fenster ändern.
         </p>
+        <p>
+          Die Reichweitenmessung (Punkt 4) arbeitet ohne Cookies und ohne Speicherung in deinem
+          Browser und ist daher nicht Teil dieser Einwilligungsabfrage.
+        </p>
       </Section>
 
-      <Section title="4. Google AdSense">
+      <Section title="4. Reichweitenmessung (Vercel Web Analytics, PostHog)">
+        <p>
+          Um zu verstehen, welche Seiten gelesen werden und wo die Website verbessert werden
+          muss, nutzen wir zwei Statistikdienste, die beide <strong>ohne Cookies</strong> und ohne
+          Einträge im Local oder Session Storage deines Browsers arbeiten:
+        </p>
+        <p>
+          <strong>Vercel Web Analytics und Speed Insights</strong> (Vercel Inc., siehe Punkt 2)
+          zählen Seitenaufrufe und messen Ladezeiten. Besuche werden über einen kurzlebigen Hash aus
+          Anfragedaten unterschieden, der nach 24 Stunden verworfen wird.
+        </p>
+        <p>
+          <strong>PostHog</strong> (PostHog Inc., 2261 Market Street #4008, San Francisco, CA 94114,
+          USA) nutzen wir in der EU-Cloud mit Serverstandort Frankfurt am Main. PostHog erfasst
+          Seitenaufrufe, Klicks und Scrolltiefe (auch als Heatmap) sowie technische Angaben wie
+          Browser, Betriebssystem, Gerätetyp und die verweisende Seite. Wir verwenden den
+          cookielosen Modus: Zur Unterscheidung von Besuchen bildet PostHog auf dem Server einen
+          Hash aus IP-Adresse, Browserkennung und einem täglich wechselnden Zufallswert, der nach der
+          Verarbeitung gelöscht wird. IP-Adressen werden nicht gespeichert, Sitzungsaufzeichnungen
+          sind ausgeschaltet, und es wird kein Profil über mehrere Tage oder Websites hinweg gebildet.
+        </p>
+        <p>
+          Rechtsgrundlage ist unser berechtigtes Interesse an einer datensparsamen Reichweitenmessung
+          (Art. 6 Abs. 1 lit. f DSGVO). Mit PostHog besteht ein Auftragsverarbeitungsvertrag gemäß
+          Art. 28 DSGVO; soweit Daten in die USA übermittelt werden, erfolgt dies auf Basis der
+          EU-Standardvertragsklauseln. Du kannst der Messung durch PostHog jederzeit widersprechen,
+          indem du die Option „Do Not Track“ in deinem Browser aktivierst (wir werten sie aus) oder
+          einen Skript-Blocker nutzt.
+        </p>
+      </Section>
+
+      <Section title="5. Google AdSense">
         <p>
           Diese Website nutzt Google AdSense, einen Dienst der Google Ireland Limited
           (Gordon House, Barrow Street, Dublin 4, Irland), zur Einbindung von Werbeanzeigen.
@@ -86,7 +121,7 @@ export default function DatenschutzPage() {
         </p>
       </Section>
 
-      <Section title="5. Affiliate-Links">
+      <Section title="6. Affiliate-Links">
         <p>
           Diese Website enthält Affiliate-Links (u. a. Amazon, booking.com). Klickst du auf einen
           solchen Link, kann der jeweilige Partner Cookies setzen, um einen Kaufabschluss uns
@@ -96,7 +131,7 @@ export default function DatenschutzPage() {
         </p>
       </Section>
 
-      <Section title="6. Externe Dienste & Karten">
+      <Section title="7. Externe Dienste & Karten">
         <p>
           Auf den Karten- und Routenseiten binden wir Kartenmaterial und Daten externer Anbieter
           ein: OpenStreetMap, OpenTopoMap, Waymarked Trails, Overpass API, BRouter sowie das
@@ -106,7 +141,7 @@ export default function DatenschutzPage() {
         </p>
       </Section>
 
-      <Section title="7. Newsletter">
+      <Section title="8. Newsletter">
         <p>
           Wenn du dich für den Newsletter anmeldest, verarbeiten wir deine E-Mail-Adresse
           ausschließlich zum Versand der Informationen, in die du eingewilligt hast
@@ -126,7 +161,7 @@ export default function DatenschutzPage() {
         </p>
       </Section>
 
-      <Section title="8. Deine Rechte">
+      <Section title="9. Deine Rechte">
         <p>
           Du hast jederzeit das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der
           Verarbeitung, Datenübertragbarkeit sowie auf Widerspruch gegen die Verarbeitung.
@@ -136,7 +171,7 @@ export default function DatenschutzPage() {
         </p>
       </Section>
 
-      <Section title="9. Beschwerderecht">
+      <Section title="10. Beschwerderecht">
         <p>
           Du hast das Recht, dich bei einer Aufsichtsbehörde zu beschweren. In Österreich ist dies
           die Österreichische Datenschutzbehörde (dsb.gv.at), in Deutschland die jeweils zuständige
@@ -146,7 +181,7 @@ export default function DatenschutzPage() {
 
       {/* Datum der letzten inhaltlichen Änderung – bei jeder Textänderung hier mitziehen
           (nicht `new Date()`: das wäre nur das Build-Datum und täuscht eine Aktualisierung vor). */}
-      <p className="text-fine text-ink-soft mt-10">Stand: August 2026</p>
+      <p className="text-fine text-ink-soft mt-10">Stand: Oktober 2026</p>
     </div>
   );
 }

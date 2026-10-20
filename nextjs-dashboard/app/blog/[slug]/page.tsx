@@ -318,7 +318,7 @@ export default async function BlogPostPage({ params }: Props) {
           </div>
 
           <h1 className="font-serif text-display-sm md:text-hero font-bold max-w-3xl">{post.title}</h1>
-          <p className="text-white/85 text-lead-airy font-light mt-5 max-w-2xl">{post.excerpt}</p>
+          <p className="text-white/85 text-body sm:text-tagline md:text-lead-airy font-light mt-5 max-w-2xl">{post.excerpt}</p>
         </div>
       </header>
 
@@ -327,6 +327,72 @@ export default async function BlogPostPage({ params }: Props) {
 
         {/* Hauptspalte */}
         <article className="min-w-0">
+          {/* Mobil: Schnellinfo + Inhaltsverzeichnis gleich unter dem Kopf. Die Sidebar steht auf
+              schmalen Bildschirmen erst NACH dem ganzen Artikel – dort fand man beides bisher nicht. */}
+          <div className="lg:hidden mb-8 space-y-3">
+            <div className="border border-hairline p-4 rounded-lg">
+              <dl className="grid grid-cols-2 gap-x-4 gap-y-3 text-caption">
+                {post.bestSeason && (
+                  <div className="col-span-2">
+                    <dt className="text-fine text-ink-soft">Beste Zeit</dt>
+                    <dd className="font-medium text-ink">
+                      {post.bestSeason}
+                      {season && (
+                        <span className={`ml-2 text-fine font-medium px-1.5 py-0.5 border ${SEASON_LABEL[season].cls} rounded-sm whitespace-nowrap`}>
+                          {SEASON_LABEL[season].emoji} {SEASON_LABEL[season].label}
+                        </span>
+                      )}
+                    </dd>
+                  </div>
+                )}
+                {post.difficulty && (
+                  <div>
+                    <dt className="text-fine text-ink-soft">Schwierigkeit</dt>
+                    <dd className="font-medium text-ink inline-flex items-center gap-1.5">
+                      <span className={`w-2 h-2 rounded-full ${DIFFICULTY_STYLES[post.difficulty].dot}`} />
+                      {DIFFICULTY_STYLES[post.difficulty].label}
+                    </dd>
+                  </div>
+                )}
+                <div>
+                  <dt className="text-fine text-ink-soft">Region</dt>
+                  <dd className="font-medium text-ink">{regionLabel}</dd>
+                </div>
+              </dl>
+              <div className={`mt-4 grid gap-2 ${mapPoint ? 'grid-cols-2' : 'grid-cols-1'}`}>
+                {mapPoint && (
+                  <Link
+                    href={mapHref}
+                    className="flex items-center justify-center gap-1.5 text-caption font-medium px-3 py-2.5 border border-green-700 text-green-700 hover:bg-green-50 transition-colors rounded-full"
+                  >
+                    <span aria-hidden>📍</span> Auf der Karte
+                  </Link>
+                )}
+                <SaveButton slug={post.slug} title={post.title} category={post.category} />
+              </div>
+            </div>
+
+            {headings.length >= 3 && (
+              <details className="group border border-hairline rounded-lg">
+                <summary className="flex items-center justify-between gap-3 px-4 py-3 cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+                  <span className="eyebrow">Inhalt · {headings.length} Abschnitte</span>
+                  <svg width="12" height="12" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden className="text-ink-soft transition-transform duration-200 group-open:rotate-180">
+                    <path d="M3 6l5 5 5-5" strokeLinecap="round" strokeLinejoin="round" />
+                  </svg>
+                </summary>
+                <ol className="px-4 pb-4 space-y-2 text-caption">
+                  {headings.map((h) => (
+                    <li key={h.id}>
+                      <a href={`#${h.id}`} className="text-ink-muted hover:text-green-700 transition-colors block leading-snug">
+                        {h.text}
+                      </a>
+                    </li>
+                  ))}
+                </ol>
+              </details>
+            )}
+          </div>
+
           {post.highlights && post.highlights.length > 0 && (
             <div className="border-l-4 border-green-600 bg-green-50 px-5 py-4 mb-8">
               <p className="eyebrow mb-3">Auf einen Blick</p>
@@ -499,7 +565,7 @@ export default async function BlogPostPage({ params }: Props) {
         <aside className="space-y-6 lg:sticky lg:top-20 self-start">
           {/* Inhaltsverzeichnis */}
           {headings.length >= 3 && (
-            <nav className="border border-hairline p-5 rounded-lg" aria-label="Inhaltsverzeichnis">
+            <nav className="hidden lg:block border border-hairline p-5 rounded-lg" aria-label="Inhaltsverzeichnis">
               <p className="eyebrow mb-3">Inhalt</p>
               <ol className="space-y-1.5 text-caption">
                 {headings.map((h) => (
@@ -513,8 +579,8 @@ export default async function BlogPostPage({ params }: Props) {
             </nav>
           )}
 
-          {/* Schnellinfo */}
-          <div className="border border-hairline p-5 rounded-lg">
+          {/* Schnellinfo (Desktop – mobil steht die Kurzfassung oben im Artikel) */}
+          <div className="hidden lg:block border border-hairline p-5 rounded-lg">
             <p className="eyebrow mb-3">Schnellinfo</p>
             <dl className="space-y-2.5 text-caption">
               <div className="flex justify-between gap-3">

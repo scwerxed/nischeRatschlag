@@ -27,7 +27,9 @@ export default function HeroSlideshow({ children }: { children: React.ReactNode 
   }, []);
 
   return (
-    <section className="relative h-[560px] md:h-[620px] flex items-end overflow-hidden">
+    // min-h statt fester Höhe: Auf schmalen Handys ist der Text höher als 560px und
+    // wurde oben unter der Navigation abgeschnitten (Audit 2026-10-20).
+    <section className="relative min-h-[520px] md:min-h-[600px] flex items-end overflow-hidden">
       {images.map((img, i) => (
         <div
           key={img.src}
@@ -70,7 +72,7 @@ export default function HeroSlideshow({ children }: { children: React.ReactNode 
         style={{ zIndex: 2, background: 'linear-gradient(to top, rgba(15,30,24,.85) 0%, rgba(15,30,24,.4) 40%, rgba(15,30,24,.08) 100%)' }}
       />
 
-      <div className="relative w-full max-w-6xl mx-auto px-6 pb-16 md:pb-20" style={{ zIndex: 3 }}>
+      <div className="relative w-full max-w-6xl mx-auto px-6 pt-20 pb-14 md:pb-20" style={{ zIndex: 3 }}>
         <div className="max-w-2xl text-white">{children}</div>
       </div>
 
