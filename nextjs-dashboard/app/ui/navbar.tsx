@@ -172,8 +172,14 @@ export default function Navbar() {
     const onDown = (e: PointerEvent) => {
       if (!navRef.current?.contains(e.target as Node)) setOpenGroup(null);
     };
+    // Beim Scrollen zu – sonst hängt das Panel über dem Inhalt, wenn der Zeiger zufällig auf der Leiste ruht.
+    const onScroll = () => setOpenGroup(null);
     document.addEventListener('pointerdown', onDown);
-    return () => document.removeEventListener('pointerdown', onDown);
+    window.addEventListener('scroll', onScroll, { passive: true });
+    return () => {
+      document.removeEventListener('pointerdown', onDown);
+      window.removeEventListener('scroll', onScroll);
+    };
   }, [openGroup]);
 
   useEffect(() => {

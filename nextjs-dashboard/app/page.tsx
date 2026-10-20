@@ -303,8 +303,8 @@ export default function HomePage() {
               </h2>
               <p className="text-ink-muted mb-7 leading-relaxed">
                 Unsere Wanderkarte zeigt die Ausflugsziele aus dem Magazin als Pins – ein Klick führt
-                zum Artikel. Dazu das offizielle Wegenetz, live geladene Gipfel und handverlesene
-                Unterkünfte mit Verfügbarkeit auf einen Klick.
+                zum Artikel. Dazu das markierte Wanderwegenetz und handverlesene Unterkünfte mit
+                Verfügbarkeit auf einen Klick.
               </p>
               <div className="flex flex-wrap gap-3">
                 <Link href="/karte" className="btn-primary">
