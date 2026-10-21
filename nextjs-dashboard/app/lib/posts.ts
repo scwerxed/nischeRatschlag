@@ -685,34 +685,67 @@ Juni bis September. Für die Almrauschblüte ab Mitte/Ende Juni kommen, im Früh
   {
     slug: 'ossiacher-see-badeurlaub',
     startCoords: [46.6747, 13.9839],
-    title: 'Ossiacher See – Der entspannte Badesee Kärntens',
-    excerpt: 'Flaches, warmes Wasser und entspannte Atmosphäre: Der Ossiacher See ist ideal für Familien und alle, die einfach abschalten wollen.',
+    planningMistakes: [
+      { fehler: 'Mit einem kostenlosen Strandbad in jedem Ort rechnen', besser: 'Die meisten Strandbäder am See verlangen Eintritt. Ohne Eintritt baden kann man laut Region Villach im Seebad Bodensdorf und in der bikebeach St. Andrä – dort kostet in der Saison aber das Parken.' },
+      { fehler: 'Den Hund in einem beliebigen Strandbad mit ins Wasser nehmen', besser: 'In den meisten Strandbädern sind Hunde nicht oder nur angeleint erlaubt. Laut Kärnten Werbung gibt es eigene Bereiche, etwa den Hundebadestrand beim ZIS Lauritsch und einen frei zugänglichen Uferabschnitt am Seeabfluss beim Slatinweg – Leinenpflicht und Beschilderung beachten.' },
+      { fehler: 'Im Winter einfach aufs Eis gehen, sobald der See zugefroren aussieht', besser: 'Der Ossiacher See friert nicht jedes Jahr tragfähig zu; die Behörden haben das Betreten des Eises auch schon ausdrücklich verboten, etwa im Jänner 2017. Nur betreten, wenn es offiziell freigegeben ist.' },
+    ],
+    title: 'Ossiacher See – Baden zwischen Gerlitzen und Stift Ossiach',
+    excerpt: 'Kärntens drittgrößter See: Wo man am Ossiacher See ohne Eintritt baden kann, wie warm das Wasser laut den offiziellen Proben wird, wo Hunde ins Wasser dürfen – und was Stift Ossiach, die Gerlitzen und die Burgruine Landskron rundherum bieten.',
     date: '2026-05-12',
     category: 'Baden',
     region: 'kaernten',
     bestSeason: 'Juni–September',
-    highlights: ['Familienfreundlichster Kärntner See', 'SUP & Kanu-Verleih vor Ort', 'Deutlich günstiger und ruhiger als Wörthersee'],
+    highlights: ['Drittgrößter See Kärntens, alle offiziellen Badestellen zuletzt „ausgezeichnet"', 'Seebad Bodensdorf und bikebeach St. Andrä ohne Eintritt (Parken kostet)', 'Stift Ossiach, Kanzelbahn auf die Gerlitzen, Burgruine Landskron'],
     content: `
-Der Ossiacher See liegt zwischen Villach und Feldkirchen und ist mit seiner flachen Uferzone und dem warmen Wasser besonders bei Familien beliebt. Kein Glamour wie am Wörthersee – dafür authentisch und entspannt.
+Der **Ossiacher See** liegt auf 501 m Seehöhe nordöstlich von Villach, eingebettet zwischen der **Gerlitzen** im Norden und den bewaldeten Hängen der Ossiacher Tauern im Süden. Mit rund 10,5 km² ist er der **drittgrößte See Kärntens** – etwa 10 km lang, bis gut 1,5 km breit und bis 52 m tief. An der schmalsten Stelle, zwischen Bodensdorf und Ossiach, sind es nur rund 600 m von Ufer zu Ufer.
 
-## Freistrand Ossiach (kostenlos)
-Der schönste Gratisstrand am See. Gut erreichbar, mit Wiese zum Liegen und flachem Einstieg. Im Sommer bevölkert, aber nicht überlaufen.
+Den See teilen sich vier Gemeinden: **Villach** mit Landskron und St. Andrä am Westende, **Treffen** mit Annenheim und Sattendorf und **Steindorf** mit Bodensdorf am Nordufer sowie **Ossiach** am Südufer. Gespeist wird er vor allem von der **Tiebel**, die im Osten durch das Bleistätter Moor in den See fließt; über den Seebach fließt er zur Drau ab. Ein stiller Geheimtipp ist er nicht: Mit rund zwei Millionen Nächtigungen im Jahr gehört die Region zu den großen Urlaubsgebieten Kärntens, das Nordufer mit Bahn und Bundesstraße ist im Sommer belebt, das Südufer ruhiger.
 
-## Strandbad Bodensdorf (mit Eintritt)
-Gut ausgestattetes Strandbad mit Wasserrutsche, Beachvolleyball und Gastronomie. Besonders beliebt bei Jugendlichen.
+## Wassertemperatur und Wasserqualität
+An vier offiziellen EU-Badestellen – Annenheim, Bodensdorf, Ossiach und Heiligengestade (Villach) – wird das Wasser im Sommer regelmäßig beprobt. Alle vier waren zuletzt mit „ausgezeichnet" bewertet. Bei den Proben 2026 lag das Wasser zwischen gut 21 °C Anfang Juni und knapp 28 °C Ende Juni, im Juli und August meist zwischen 24 und 27 °C. Die aktuelle Einstufung steht im [Badeplatz-Check](/badeplaetze), den Live-Wert der Messstelle St. Andrä zeigt die Seite [Wassertemperatur der Seen in Österreich](/wassertemperatur#kaernten).
 
-## SUP und Kanu am Ossiacher See
-Der See ist ideal für Stand-Up-Paddling und Kanufahren. Mehrere Verleihstationen rund um den See.
+## Wo man baden kann
+Die meisten Strandbäder am See verlangen Eintritt. Zwei Ausnahmen nennt die Region Villach:
+
+- **Seebad Bodensdorf** – das Strandbad der Gemeinde Steindorf am Nordufer, laut Region Villach der größte kostenfreie Seezugang am Ossiacher See. Dazu gibt es einen Abenteuer-Spielplatz und eine Seeterrasse mit Essen und Getränken; die Parkplätze davor sind kostenpflichtig.
+- **bikebeach St. Andrä** – am Westende des Sees in Landskron, mit großer, teils schattiger Liegewiese, zwei Stegen und Strandbuffet. Eintritt frei, in der Saison kostet das Parken.
+
+Weitere Strandbäder gibt es in Annenheim, Sattendorf und Steindorf, einige davon mit Boots- oder Kanuverleih. In Annenheim liegt außerdem eine Segel- und Surfschule. Eintritt, Saisonzeiten und Verleih ändern sich – vorab prüfen.
+
+## Schiff und Radweg
+Im Sommer verkehren Linienschiffe zwischen den Orten am See – praktisch, um eine Wanderung oder Radtour am anderen Ufer zu beenden. Fahrplan vorab prüfen. Rund um den See führt der **Ossiacher-See-Radweg (R2)**, je nach Variante etwa 25 bis 30 km lang, teils auf eigenen Wegen, teils am Straßenrand. Auch der Alpe-Adria-Trail kommt hier vorbei.
 
 ## Stift Ossiach
-Das ehemalige Benediktinerstift direkt am Seeufer ist heute Kulturzentrum und Veranstaltungsort der Carinthischen Musiksommer. Ein Besuch lohnt sich.
+Am Südufer steht **Stift Ossiach**, gegründet kurz vor 1028 von Graf Ozi und seiner Frau als Benediktinerkloster. Kaiser Joseph II. ließ es 1783 aufheben; danach diente es unter anderem als Gestüt und Kaserne, nach der Renovierung 1974/75 zog ein Hotel ein, seit 1996 gehört es dem Land Kärnten. Die **Stiftskirche** hat einen romanischen Kern, wurde nach einem Brand 1484 gotisch erneuert und 1737 bis 1744 barock ausgestaltet. An ihrer Nordwand erinnert ein Marmorrelief an den polnischen König **Boleslaw II.**, der der Legende nach unerkannt als Büßer in Ossiach gelebt haben soll – ob das stimmt, ist nicht geklärt.
 
-## Unterkunft-Tipp
-Campingplätze direkt am Seeufer sind die günstigste und schönste Art, den Ossiacher See zu genießen.
+Seit 1969 sind Stiftskirche und Säle Spielort des Musikfestivals **Carinthischer Sommer**. Programm und Termine stehen jedes Jahr neu fest.
+
+## Gerlitzen
+Über dem Nordufer erhebt sich die **Gerlitzen** (1.909 m) mit weitem Rundblick über große Teile Kärntens. Von **Annenheim** fährt seit 1928 die **Kanzelbahn** – die älteste Bergbahn Kärntens – auf die Kanzelhöhe (1.524 m), wo auch das Sonnenobservatorium der Universität Graz steht. Mit dem Auto geht es ab Bodensdorf über die mautpflichtige Gerlitzen Alpenstraße bis auf rund 1.800 m. Im Winter ist die Gerlitzen ein Skigebiet. Betriebszeiten der Bahn vorab prüfen.
+
+## Burgruine Landskron
+Am Westende, auf einem Hügel über Villach-Landskron, steht die **Burgruine Landskron**. Dort gibt es die **Adler Arena** mit Flugvorführungen von Greifvögeln und Eulen (mehr dazu im Artikel [Adlerflugschau & Greifvögel in Kärnten](/blog/greifvogelschau-adler-kaernten)) und am Hang darunter den **Affenberg Landskron**, ein Freigehege mit Japanmakaken, das man nur mit Führung besucht. Saison und Vorführungszeiten vorab prüfen.
+
+## Mit Hund am See
+In den Strandbädern sind Hunde meist nicht oder nur an der Leine erlaubt. Laut Kärnten Werbung gibt es am Ossiacher See aber eigene Möglichkeiten: den **Hundebadestrand beim ZIS Lauritsch**, einen eigenen Bereich mit Seezugang für Gäste mit Hund (auf den Liegeflächen an der Leine, ins Wasser nur in der markierten Zone) und einen frei zugänglichen Uferabschnitt am **Seeabfluss beim Slatinweg**, wo auf Wiese und Ufer Leinenpflicht gilt.
+
+## Beste Reisezeit
+Juni bis September. Im Juni ist es an den Ufern noch ruhiger und das Wasser oft schon angenehm, im Juli und August am wärmsten und am vollsten. Im September wird es still, das Wasser kühlt dann langsam ab.
+
+## Anreise
+- Mit dem Auto über die A10 bis zum Knoten Villach, Abfahrt Villach-Ossiacher See
+- Mit der Bahn: Das Nordufer liegt an der Strecke Villach–Feldkirchen; ans Südufer kommt man nur mit dem Bus. Verbindungen im ÖBB-Fahrplan prüfen
+- Übernachten: Am See gibt es zahlreiche Hotels, Pensionen und Campingplätze direkt am Ufer
     `,
     affiliateLinks: [
       { label: 'Hotels am Ossiacher See – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Ossiacher+See' },
       { label: 'SUP Board günstig – Amazon', url: 'https://www.amazon.de/s?k=sup+board+set' },
+    ],
+    officialLinks: [
+      { label: 'Ossiacher See – Kärnten Werbung', url: 'https://www.kaernten.at/seen/ossiacher-see/' },
+      { label: 'Gerlitzen Alpe & Ossiacher See – Region Villach', url: 'https://www.visitvillach.at/de/gerlitzen-alpe-ossiacher-see.html' },
+      { label: 'Baden mit Hund an Kärntner Seen – Kärnten Werbung', url: 'https://www.kaernten.at/urlaub-mit-hund/baden-mit-hund-an-kaerntner-seen' },
     ],
   },
   {
@@ -1201,62 +1234,83 @@ Es gibt keine naturverbundenere Art, Kärntens Seen zu erleben, als morgens das 
   },
   {
     slug: 'villacher-alpe-dobratsch-wanderung',
-    startCoords: [46.6000, 13.6700],
-    routeVariants: [ { label: 'Rundweg ab Rosstratte', difficulty: 'leicht', length: '4 km', duration: '1,5 Std.', ascent: '150 hm', note: 'familienfreundlich' }, { label: 'Gipfelweg auf den Dobratsch (2.166 m)', difficulty: 'mittel', length: '9 km', duration: '3,5 Std.', ascent: '450 hm' } ],
-    title: 'Villacher Alpe (Dobratsch) – Kärntens Hausberg mit Blick bis zur Adria',
-    excerpt: 'Der Dobratsch ist von fast überall in Kärnten sichtbar – und vom Gipfel sieht man bei klarem Wetter bis zur Adria und zum Triglav. Naturpark, 1.000 Pflanzenarten und einfache Gipfelwanderung.',
+    startCoords: [46.5939, 13.7103],
+    startPoint: {
+      name: 'Rosstratte – Ende der Villacher Alpenstraße (rund 1.730 m)',
+      parking: 'Alpenstraße etwa Mitte April bis Mitte November mautpflichtig; im Winter frei befahrbar, dann kosten die oberen Parkplätze',
+      note: 'Ab der Rosstratte kein Rad- und Mountainbike-Verkehr; Betriebszeiten der Straße vorab prüfen',
+    },
+    routeVariants: [
+      { label: 'Panoramagipfelweg (Weg 291) ab Rosstratte', difficulty: 'leicht', length: '8,2 km', duration: 'ca. 3 Std.', ascent: '424 hm', note: 'hin und zurück, laut Betreiber familientauglich' },
+      { label: 'Jägersteig (Weg 294) ab Rosstratte', difficulty: 'mittel', length: '4,3 km', duration: 'ca. 3 Std.', ascent: '434 hm', note: 'Angaben laut Betreiber; stellenweise steil und ausgesetzt, nur für Trittsichere' },
+      { label: 'Aichingerhütte – Gamsblick', difficulty: 'leicht', length: '2,7 km', duration: 'ca. 1¾ Std.', ascent: '134 hm', note: 'hin und zurück, Start am Parkplatz P8' },
+    ],
+    planningMistakes: [
+      { fehler: 'Den Jägersteig mit Kindern als Abkürzung nehmen', besser: 'Der Jägersteig (Weg 294) ist stellenweise steil, schmal und ausgesetzt. Mit Kindern oder ohne Trittsicherheit den Panoramagipfelweg (Weg 291) gehen – den nennt der Betreiber ausdrücklich familientauglich.' },
+      { fehler: 'Mit dem Mountainbike bis zum Gipfel fahren wollen', besser: 'Ab der Rosstratte sind Radfahren und Mountainbiken nicht erlaubt – das Rad bleibt am Parkplatz.' },
+      { fehler: 'Für den Sonnenuntergang spät mit dem Motorrad hinauffahren', besser: 'Für Motorräder gilt auf der Alpenstraße von 20 bis 7 Uhr ein Fahrverbot, und auch für Autos ist die Einfahrt nachts gesperrt – die Zeiten ändern sich je nach Saison. Vorab auf der Seite der Villacher Alpenstraße prüfen.' },
+    ],
+    title: 'Villacher Alpe (Dobratsch) – leichter Gipfelweg über Villach',
+    excerpt: 'Über die Villacher Alpenstraße bis auf gut 1.700 m, dann in eineinhalb bis zwei Stunden zum Gipfelhaus: Welche Wege am Dobratsch für wen passen, was es mit dem Bergsturz von 1348 und dem Skywalk an der Roten Wand auf sich hat und was man vor der Fahrt wissen sollte.',
     date: '2026-05-13',
     category: 'Wandern',
     region: 'kaernten',
-    difficulty: 'mittel',
-    bestSeason: 'Mai–Oktober',
-    highlights: ['Panorama: Triglav, Großglockner, Adria sichtbar', 'Naturpark mit über 1.000 Pflanzenarten', 'Mit Auto bis 1.732 m – kurzer Gipfelaufstieg möglich'],
+    difficulty: 'leicht',
+    bestSeason: 'Juni–Oktober',
+    highlights: ['Naturpark seit 2002 – der erste in Kärnten', 'Panoramagipfelweg ab der Rosstratte, auch für Familien', 'Skywalk über der Roten Wand und Alpengarten an der Alpenstraße'],
     content: `
-Der Dobratsch, offiziell Villacher Alpe genannt, ist Kärntens unverwechselbares Wahrzeichen – von fast überall im Bundesland sichtbar. Als Naturpark geschützt und durch die mautpflichtige Villacher Alpenstraße bis auf 1.732 m erreichbar, ist er ein ideales Ziel für alle Fitnesslevel.
+Der **Dobratsch** (2.166 m), auch **Villacher Alpe** genannt, ist der östlichste Ausläufer der Gailtaler Alpen und steht direkt westlich von Villach. Weil der mächtige Kalkstock frei über Drau- und Gailtal aufragt – seine Schartenhöhe beträgt über 1.200 m –, sieht man ihn aus weiten Teilen Unterkärntens. Seit 2002 ist der Berg **Naturpark**, als erster in Kärnten.
 
-## Warum der Dobratsch besonders ist
-- Panorama der Extraklasse: Bei klarem Wetter Triglav (Slowenien), Großglockner und sogar die Adria
-- Naturpark seit 1996: Über 1.000 Pflanzenarten auf engstem Raum – einmalig in Kärnten
-- Zugänglich: Straße bis fast zum Gipfel – kurze Wanderung für jeden machbar
+Dass der Gipfel so leicht erreichbar ist, liegt an der **Villacher Alpenstraße**: Sie führt auf 16,5 km von Villach bis zur **Rosstratte** auf rund 1.730 m, dem höchsten befahrbaren Punkt. Von dort sind es noch gut 400 Höhenmeter bis ganz oben.
 
-## Wanderrouten
+## Die Villacher Alpenstraße
+Entlang der Straße liegen elf nummerierte Parkplätze (P1 bis P11), an vielen beginnen Wege. Von etwa Mitte April bis Mitte November ist die Straße mautpflichtig; im Winter ist sie frei befahrbar, dafür kosten dann die oberen Parkplätze. Für Motorräder gilt nachts ein Fahrverbot (20 bis 7 Uhr), ab der Rosstratte sind Radfahren und Mountainbiken nicht erlaubt. Im Sommer fährt außerdem ein Naturpark-Bus. Tarife, Öffnungszeiten und Fahrplan stehen auf den Seiten der Alpenstraße und des Naturparks.
 
-### Route 1: Rosenalm – Gipfel (mittel, 2 Stunden)
-Von der Rosenalm (Parkplatz auf 1.732 m) auf den Gipfel (2.166 m): 434 Höhenmeter, gut markierter Weg. Das Panorama vom Gipfelkreuz ist der Höhepunkt jedes Kärnten-Urlaubs.
+## Wege auf den Gipfel
 
-### Route 2: Kräuterwanderweg (leicht, 1,5 Stunden)
-Thematischer Weg ab dem Naturparkhaus mit Infotafeln zu Heilpflanzen und Kräutern. Ideal für Familien und naturinteressierte Wanderer.
+### Panoramagipfelweg (Weg 291) – der Normalweg
+Von der Rosstratte führt der Weg über Almwiesen hinauf zum Gipfel. Die Villacher Alpenstraße gibt dafür 8,2 km hin und zurück, rund 3 Stunden und 424 Höhenmeter an und nennt ihn auch für Familien mit kleinen Kindern geeignet. Für den Aufstieg allein rechnen die meisten Beschreibungen mit eineinhalb bis knapp zwei Stunden.
 
-### Route 3: Aufstieg aus Villach (schwer, 5–6 Stunden)
-Direkt aus dem Stadtgebiet – 1.600 Höhenmeter. Nur für Konditionsstarke mit guten Bergschuhen.
+### Jägersteig (Weg 294) – für Trittsichere
+Die anspruchsvollere Variante beginnt ebenfalls an der Rosstratte, folgt zuerst dem Weg 291 und quert dann über eine Almwiese zur Aussichtsplattform **Gams- und Gipfelblick**. Weiter oben verläuft der Steig an der steilen Südseite, stellenweise schmal und ausgesetzt – nur für trittsichere, schwindelfreie Geher. Dafür schaut man tief ins Gailtal und hinüber zu den Julischen Alpen. Hinunter geht es bequem über den Panoramagipfelweg.
 
-## Naturpark-Highlight: Orchideen im Juni
-Im Juni und Juli blühen auf der Rosenalm seltene Orchideenarten, Enzian und Alpenpflanzen. In keinem anderen Kärntner Gebiet gibt es eine solche Pflanzenvielfalt auf kleinem Raum.
+### Kurz und fast eben
+Von der Rosstratte erreicht man die Plattform Gams- und Gipfelblick in rund 20 Minuten. Ab der Aichingerhütte (Parkplatz P8) führt ein leichter Familienweg zum Gamsblick – laut Betreiber 2,7 km hin und zurück, etwa 1¾ Stunden und 134 Höhenmeter.
 
-## Geologische Besonderheit: Das Erdbeben von 1348
-Der Dobratsch birgt Spuren einer Naturkatastrophe: Das Erdbeben von 1348 löste einen massiven Bergsturz aus, dessen Trümmerfelder im Tal noch heute sichtbar sind. Informationstafeln erklären die Geschichte.
+## Am Gipfel
+Knapp unter dem Gipfel steht das **Dobratsch Gipfelhaus** (2.143 m) der Alpenvereinssektion Villach. Der Neubau wurde im Dezember 2010 eröffnet und ersetzt das alte Ludwig-Walter-Haus, dessen Anfänge auf eine Schutzhütte von 1810 zurückgehen. Daneben stehen zwei Kirchen: die **Deutsche Kirche** „Maria am Stein", 1692 erbaut und 1693 geweiht, und rund 300 m weiter westlich die **Windische Kirche** – laut Alpenstraße die beiden höchstgelegenen Wallfahrtskirchen der Ostalpen. Unübersehbar ist außerdem der 165 m hohe Sendeturm von 1971, der Radio und Fernsehen bis in die Steiermark, nach Italien und Slowenien ausstrahlt.
 
-## Praktische Infos
-- Villacher Alpenstraße: Mautpflichtig, ca. 12 €, keine Jahreskarte anwendbar
-- Parkplatz Rosenalm: Kostenlos nach der Mautstation
-- Naturparkhaus: Gratis Ausstellung zu Natur und Geschichte
-- Restaurant Kanzelhöhe (1.520 m): Beliebt, im Sommer oft voll – früh kommen oder reservieren
+Bei klarer Sicht reicht der Blick über Unterkärnten zu den Karawanken und den Julischen Alpen, ins untere Gailtal und Richtung Italien.
+
+## Der Bergsturz von 1348 und die Rote Wand
+Am 25. Jänner 1348 löste ein schweres Erdbeben in Friaul an der Südseite des Dobratsch einen gewaltigen Bergsturz aus: Rund 150 Millionen m³ Fels brachen aus der **Roten Wand** ins Gailtal. Die Gail wurde aufgestaut, es entstand ein etwa 3 km langer See. Alte Quellen sprechen von 17 verschütteten Dörfern; die Trümmer gingen aber großteils auf Flächen nieder, die schon ein viel älterer, prähistorischer Bergsturz bedeckt hatte. Das Ablagerungsgebiet, die **Schütt**, steht heute unter Naturschutz.
+
+Wie steil die Abbruchkante ist, zeigt der **Skywalk Rote Wand**: Der barrierefreie Weg beginnt am Parkplatz P6 und führt zu einer Aussichtsplattform, die laut Betreiber 400 m über dem Abgrund schwebt.
+
+## Alpengarten
+Auf rund 1.500 m, ebenfalls beim Parkplatz P6, liegt der **Alpengarten Villacher Alpe**. Seit 1973 werden hier auf rund einem Hektar mehr als 800 Alpenpflanzen gezeigt. Geöffnet ist er nur im Sommer – Zeiten vorab prüfen.
+
+## Naturpark statt Skigebiet
+An der Ostseite des Berges gab es früher ein kleines Skigebiet; es wurde 2002 aus Naturschutzgründen geschlossen – im selben Jahr, in dem der Naturpark entstand. Heute ist der Dobratsch im Winter ein Ziel für Skitouren, Schneeschuhwanderungen und den Rodelhang an der Rosstratte. Im Sommer bietet der Naturpark Ranger-Führungen an; wer mehrere Tage Zeit hat, umrundet den Berg auf der fünf Etappen langen **Dobratsch-Runde**. Über den Gipfel führen außerdem der Gailtaler Höhenweg und der Julius-Kugy-Alpinweg – mehr zum ganzen Gebirgszug im Artikel [Gailtaler Alpen](/blog/gailtaler-alpen-wandern-geheimtipp).
+
+## Einkehr
+Einkehren kann man im Gipfelhaus, an der Rosstratte und in der Aichingerhütte. Öffnungszeiten, vor allem in der Vor- und Nachsaison, vorab prüfen.
+
+## Beste Zeit
+Juni bis Oktober. Im Frühsommer kann oben noch Schnee liegen, an klaren Herbsttagen ist die Fernsicht oft besonders gut. Im Hochsommer ziehen nachmittags häufig Gewitter auf – früh starten.
+
+## Anreise
+- Die Villacher Alpenstraße beginnt im Westen von Villach an der Mautstelle Möltschach
+- Ohne Auto: im Sommer mit dem Naturpark-Bus – Fahrplan auf der Seite des Naturparks
+- Weitere Ziele mit wenig Höhenmetern: [Aussicht ohne Anstrengung](/aussicht-ohne-anstrengung)
     `,
     affiliateLinks: [
       { label: 'Bergschuhe für Kärntner Wanderungen – Amazon', url: 'https://www.amazon.de/s?k=bergschuhe+herren+mittelhoch' },
       { label: 'Hotels in Villach – booking.com', url: 'https://www.booking.com/city/at/villach.de.html' },
     ],
-    trails: [
-      {
-        name: 'Rosenalm – Dobratsch Gipfel',
-        difficulty: 'mittel', length: '6 km', duration: '2 Std.', ascent: '434 hm',
-        coords: [[46.5985, 13.6720], [46.6010, 13.6790], [46.6035, 13.6850], [46.6064, 13.6903]],
-      },
-      {
-        name: 'Kräuterwanderweg',
-        difficulty: 'leicht', length: '4 km', duration: '1,5 Std.', ascent: '120 hm',
-        coords: [[46.5950, 13.6680], [46.5965, 13.6720], [46.5980, 13.6760], [46.5960, 13.6700]],
-      },
+    officialLinks: [
+      { label: 'Wandern am Dobratsch – Villacher Alpenstraße', url: 'https://www.villacher-alpenstrasse.at/de/naturerlebnis-villach/wandern-spazieren' },
+      { label: 'Naturpark Dobratsch', url: 'https://www.naturpark-dobratsch.at/' },
     ],
   },
   {
@@ -1346,50 +1400,68 @@ Auch im Sommer empfehlenswert: Die Therme ist ganzjährig geöffnet, und die Wan
   },
   {
     slug: 'nassfeld-skigebiet-hermagor',
-    startCoords: [46.5600, 13.2900],
-    title: 'Nassfeld – Kärntens größtes Skigebiet mit Blick bis Italien',
-    excerpt: 'Das Nassfeld bei Hermagor ist Kärntens größtes zusammenhängendes Skigebiet – 110 km Pisten, direkter Blick nach Italien und Pistenkilometer bis auf slowenisches Terrain. Alles was du wissen musst.',
+    startCoords: [46.6116, 13.2795],
+    startPoint: {
+      name: 'Talstation Millennium-Express in Tröpolach',
+      parking: 'Parkplätze an der Talstation – Konditionen vorab prüfen',
+      note: 'Alternativ über die ganzjährig offene Passstraße hinauf zum Nassfeld und dort einsteigen',
+    },
+    planningMistakes: [
+      { fehler: 'Auf eine Skirunde über die Grenze nach Italien hoffen', besser: 'Alle Lifte stehen auf Kärntner Seite. Nach Italien kommt man am Nassfeldpass – mit dem Auto, zu Fuß oder auf der Langlaufloipe rund um den Lago di Pramollo.' },
+      { fehler: 'Im Frühjahr fest mit der Talabfahrt nach Tröpolach rechnen', besser: 'Die Carnia endet auf rund 600 m. Bei wenig Schnee oder spät in der Saison kann sie geschlossen sein, während oben noch gefahren wird – dann geht es mit dem Millennium-Express hinunter. Pistenbericht vorab prüfen.' },
+      { fehler: 'Die Garnitzenklamm als Winterausflug einplanen', besser: 'Die Klamm bei Hermagor ist nur etwa von Mitte Mai bis Mitte Oktober geöffnet. Im Winter ist sie keine Alternative zum Skitag.' },
+    ],
+    title: 'Nassfeld – Kärntens größtes Skigebiet an der Grenze zu Italien',
+    excerpt: 'Rund 110 Pistenkilometer zwischen Tröpolach im Gailtal und dem Karnischen Kamm: Wie man mit dem Millennium-Express ins Skigebiet kommt, welche Pisten wofür passen, was es mit der Grenze zu Italien auf sich hat und was man neben dem Skifahren wissen sollte.',
     date: '2026-05-29',
     category: 'Ausflug',
     region: 'kaernten',
     bestSeason: 'Dezember–April',
-    highlights: ['Kärntens größtes Skigebiet – 110 km Pisten', 'Grenzübergang Österreich–Italien auf der Piste', 'Besonders schneesicher durch Südlage'],
+    highlights: ['Rund 110 Pistenkilometer – das größte Skigebiet Kärntens', 'Millennium-Express: knapp 6 km Kabinenbahn ab Tröpolach', 'Talabfahrt Carnia mit beleuchtetem Flutlicht-Abschnitt'],
     content: `
-Das Nassfeld liegt im Gailtal an der Grenze zu Italien – und das merkt man. Die Pistenkulisse zeigt südliche Berge, die Sonne scheint häufig (Südlage), und auf manchen Pisten kann man buchstäblich die Grenze überqueren.
+Das **Nassfeld** liegt im Süden Kärntens über dem Gailtal bei Hermagor, direkt an der Grenze zu Italien. Seinen Namen hat das Skigebiet vom **Nassfeldpass** (1.530 m), einem Sattel am Karnischen Hauptkamm zwischen dem Gailtal und dem italienischen Kanaltal bei Pontebba. Mit rund **110 Pistenkilometern** gilt es als das größte Skigebiet Kärntens; die Region nennt 29 Bergbahnen und Lifte (andere Quellen zählen 28 bis 30). Die Pisten reichen von rund 600 m im Tal bis auf gut 2.000 m.
 
-## Zahlen zum Gebiet
-- 110 km markierte Pisten
-- 30 Liftanlagen
-- Höhe: 600–2.020 m
-- Schwerpunkt: 60% blau/rot, 40% schwarz
+## Mit dem Millennium-Express ins Gebiet
+Haupteinstieg ist die Talstation in **Tröpolach** (Gemeinde Hermagor-Pressegger See). Von dort fährt der **Millennium-Express**, eine Kabinenbahn in drei Sektionen, laut Betreiber zusammen knapp 6 km lang, in rund einer Viertelstunde hinauf ins Skigebiet. Wer mit dem Auto kommt, kann auch über die ganzjährig offene Passstraße hinauf zum Nassfeld fahren und dort einsteigen.
 
-## Warum Nassfeld anders ist
+## Die Pisten
+Der Großteil der Abfahrten ist **mittelschwer**: Von den rund 110 km sind laut Gebietsangaben etwa 30 km leicht, 69 km mittel und 11 km schwer. Für Fortgeschrittene ist das ideal; Anfänger finden eigene Übungsgelände, etwa an der Tressdorfer Alm und am Eggerboden. Die längste Abfahrt ist die **Carnia** hinunter nach Tröpolach, laut Pistenliste zusammen rund 7,6 km. Ihr unterster Abschnitt (2,2 km) ist als **Flutlichtpiste** beleuchtet und wird als längste der Alpen beworben – an welchen Abenden Nachtskilauf ist, vorab prüfen.
 
-### Schneesicherheit
-Das Nassfeld liegt schneesicherer als die meisten Kärntner Gebiete – durch die südlichere Lage und die Höhe. Schneekanonen gibt es auch, aber oft braucht man sie nicht.
+Beschneit wird großflächig: Die Region nennt rund 540 Schneeerzeuger und wirbt mit durchschnittlich 7 bis 8 Metern Schnee pro Winter. Wie gut die Bedingungen gerade sind, hängt trotzdem vom Winter ab – Pistenbericht vor der Anreise prüfen.
 
-### Grenzpisten nach Italien (Passo Pramollo)
-Vom Gipfel fährt man auf italienischem Terrain ab – andere Schilder, andere Hütten, anderes Flair. Kurz, aber eines der schönsten Grenz-Erlebnisse in den Alpen. Kein Pass, keine Kontrolle (Schengen).
+## Die Grenze zu Italien
+Auf der Passhöhe liegt gleich hinter der Grenze der kleine **Lago di Pramollo**. Die Lifte stehen allerdings alle auf Kärntner Seite; eine Anbindung aus dem italienischen Kanaltal wird seit Jahren diskutiert. Hinüber kommt man am Pass – zu Fuß, mit dem Auto oder auf der **Langlaufloipe** rund um den Lago di Pramollo, die hinter dem ehemaligen Zollhaus auf italienischer Seite beginnt.
 
-### Hermagor – unterschätztes Tal
-Das Gailtal unter dem Nassfeld ist eine der wenig touristischen Regionen Kärntens. Günstigere Unterkünfte, authentische Gasthäuser, wenig Après-Ski-Gedränge.
+Ruhig war die Grenze nicht immer: Im Ersten Weltkrieg verlief hier die Front, ein Soldatenfriedhof in Tröpolach erinnert an die Gefallenen beider Seiten. Schon lange davor nutzten Händler den Pass bis ins 16. Jahrhundert als Ausweichroute zu Saifnitz und Predil, bis diese zu Fahrstraßen ausgebaut wurden.
 
-## Für wen ist das Nassfeld ideal?
-- Fortgeschrittene Skifahrer, die abwechslungsreiche Pisten wollen
-- Familien, die Wert auf Schneesicherheit legen
-- Paare, die Kulisse über Aprés-Ski-Lärm stellen
+## Gartnerkofel und Wulfenie
+Über dem Skigebiet steht der **Gartnerkofel** (2.195 m). Nur auf einem kleinen Gebiet am Gartnerkofel und auf den angrenzenden Almen wächst in den Alpen die **Kärntner Wulfenie**, eine blaue Blume, die in Kärnten vollkommen geschützt ist und im Juni und Juli blüht – ein Grund, im Sommer wiederzukommen. Dann ist das Nassfeld ein Wandergebiet mit vielen bewirtschafteten Hütten. Die Berge auf der anderen Talseite stellt der Artikel [Gailtaler Alpen](/blog/gailtaler-alpen-wandern-geheimtipp) vor.
 
-## Nicht-Ski-Aktivitäten
-Schneeschuhwandern auf der Garnitzenklamm (auch im Winter offen), Langlaufen im Gailtal (22 km Loipen), Rodeln auf der 5 km langen Familienstrecke.
+## Abseits der Piste
+Wer zwischendurch nicht Ski fahren will, findet am Pass die Langlaufloipe rund um den Lago di Pramollo; welche Loipen und Winterwege gerade gespurt sind, steht im Winterbericht der Region. Unten im Tal liegt der Pressegger See – ob dort Eislaufen möglich ist, hängt vom Frost ab. Die **Garnitzenklamm** bei Hermagor ist dagegen keine Winteralternative: Sie ist nur etwa von Mitte Mai bis Mitte Oktober geöffnet.
 
-## Praktische Infos
-- Skipässe: Nassfeld-only oder kombiniert (Skiverbund Kärnten mit weiteren Gebieten)
-- Anreise: Von Villach ca. 50 Minuten, von Klagenfurt ca. 90 Minuten
-- Parken: Parkhaus direkt an der Talstation, ca. 8 €/Tag
+## Skipass
+Neben den Tageskarten für das Gebiet gehört das Nassfeld zum Verbund **TopSkiPass Kärnten & Osttirol**, der in rund 30 Skigebieten der beiden Länder gilt – interessant für mehrere Skitage an verschiedenen Orten. Preise ändern sich jede Saison, deshalb hier keine Beträge.
+
+## Für wen das Nassfeld passt
+- Fortgeschrittene, die viele rote Pisten und lange Abfahrten suchen
+- Familien – es gibt Übungsgelände und leichte Pisten, die Mehrheit ist aber mittelschwer
+- Wer viel Sonne mag: Die Region wirbt mit 100 Sonnenstunden mehr als in den Nordalpen
+
+## Beste Zeit
+Dezember bis April. Saisonstart und -ende hängen vom Schnee ab – Termine und Pistenbericht auf der Seite der Region prüfen.
+
+## Anreise
+- Mit dem Auto durch das Gailtal (B111) nach Hermagor und weiter nach Tröpolach
+- Mit Öffis: mit der Bahn bis Hermagor, weiter mit dem Bus – Verbindungen vorab prüfen
+- Übernachten: in Tröpolach, Hermagor oder direkt oben am Nassfeld
     `,
     affiliateLinks: [
       { label: 'Hotels am Nassfeld / Hermagor – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Nassfeld+K%C3%A4rnten' },
       { label: 'Skihelm mit Visier – Amazon', url: 'https://www.amazon.de/s?k=skihelm+mit+visier' },
+    ],
+    officialLinks: [
+      { label: 'Skigebiet Nassfeld – Region Nassfeld-Pressegger See', url: 'https://www.nassfeld.at/de/Winter-World/Sun-Ski-World/Skigebiet-Nassfeld' },
     ],
   },
   {
@@ -1894,7 +1966,7 @@ Auf einem freistehenden Felsblock. 14 original erhaltene Tore. Kein Vergleichsob
 Motorbootverbot, 8 m Sichttiefe, kristallklares Wasser. Im Winter Europas größte Natureisfläche. Zwei Stunden Fahrt von Klagenfurt, aber es lohnt sich.
 
 ## 5. Villacher Alpe (Dobratsch)
-Mit dem Auto fast bis zum Gipfel. Panorama: Triglav, Großglockner, Adria. Naturpark mit 1.000 Pflanzenarten. Halbtagesausflug.
+Über die mautpflichtige Villacher Alpenstraße bis zur Rosstratte (rund 1.730 m), von dort in eineinhalb bis zwei Stunden auf dem familientauglichen Panoramagipfelweg zum Gipfel (2.166 m). Seit 2002 Naturpark, dazu Skywalk an der Roten Wand und Alpengarten an der Straße. Halbtagesausflug – mehr im Artikel [Villacher Alpe (Dobratsch)](/blog/villacher-alpe-dobratsch-wanderung).
 
 ## 6. Nockberge im UNESCO-Biosphärenpark
 Sanfte Almberge, keine Felswände. Im Juli/August Alpenrosenblüte. Wandern ohne Kletterkenntnisse, Hütten zum Einkehren. Für alle.

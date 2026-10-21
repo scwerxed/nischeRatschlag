@@ -282,7 +282,7 @@ export const SONNENUNTERGANG_GROUPS: { title: string; note: string; picks: { slu
       { slug: 'untersberg-salzburg', warum: 'Salzburgs Sagenberg mit freiem Rundblick weit über die Alpen – die Bahn bringt dich entspannt zur letzten Fahrt hinauf.' },
       { slug: 'schoeckl-graz-hausberg', warum: 'Grazer Hausberg mit offenem Blick übers Grazer Becken nach Westen.' },
       { slug: 'karren-dornbirn', warum: 'Über dem Rheintal: weiter Blick zum Bodensee und in die Schweizer Berge, wenn die Sonne tiefer steht.' },
-      { slug: 'villacher-alpe-dobratsch-wanderung', warum: 'Kärntens Hausberg mit freiem Rundblick bis zu den Karawanken – die Passstraße führt fast bis zum Gipfel.' },
+      { slug: 'villacher-alpe-dobratsch-wanderung', warum: 'Villachs Hausberg mit freiem Rundblick bis zu den Karawanken – die Alpenstraße führt bis auf gut 1.700 m. Nachts ist die Einfahrt gesperrt, Zeiten vorab prüfen.' },
       { slug: 'rax-seilbahn', warum: 'Weites Hochplateau mit Blick übers Wiener Becken – Österreichs älteste Seilbahn bringt dich in Ruhe hinauf.' },
       { slug: 'geschriebenstein-wandern-burgenland', warum: 'Höchster Punkt des Burgenlands, Aussichtsturm mit freiem Blick übers Hügelland.' },
     ],
