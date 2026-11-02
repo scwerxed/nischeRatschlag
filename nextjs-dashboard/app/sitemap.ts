@@ -4,6 +4,7 @@ import { regionen } from '@/app/lib/regionen';
 import { TRIP_CITIES } from '@/app/lib/wochenendtrip';
 import { MONATE } from '@/app/lib/monatstipps';
 import { SEE_THEMEN } from '@/app/lib/seen';
+import { LIVE_SEEN } from '@/app/lib/seen-messstellen';
 
 const BASE = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://www.bergseen-guide.com';
 
@@ -36,6 +37,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }));
 
+  const seeSteckbriefPages = LIVE_SEEN.map((s) => ({
+    url: `${BASE}/wassertemperatur/${s.slug}`,
+    lastModified: new Date(),
+    changeFrequency: 'daily' as const,
+    priority: 0.7,
+  }));
+
   const postPages = posts.map((post) => ({
     url: `${BASE}/blog/${post.slug}`,
     lastModified: new Date(post.date),
@@ -50,5 +58,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: r.aktiv ? 0.9 : 0.3,
   }));
 
-  return [...staticPages, ...tripPages, ...monatPages, ...seeThemaPages, ...postPages, ...regionPages];
+  return [...staticPages, ...tripPages, ...monatPages, ...seeThemaPages, ...seeSteckbriefPages, ...postPages, ...regionPages];
 }

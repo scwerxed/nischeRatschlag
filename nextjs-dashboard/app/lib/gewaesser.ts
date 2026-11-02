@@ -160,6 +160,17 @@ export type AgesProbe = {
   probe?: { datum: string; wasser: number };
 };
 
+/** Jüngste Saison (Jahr) mit Proben im Feed – im Winter die des letzten Sommers. */
+function aktuelleSaison(spots: AgesSpot[]): number {
+  let saison = 0;
+  for (const spot of spots) {
+    for (const p of Array.isArray(spot.MESSWERTE) ? spot.MESSWERTE : []) {
+      if (typeof p.D === 'string' && /^\d{2}\.\d{2}\.\d{4}$/.test(p.D)) saison = Math.max(saison, Number(p.D.slice(6)));
+    }
+  }
+  return saison;
+}
+
 /**
  * Alle offiziellen Badestellen der genannten Bundesländer (Schreibweise wie im AGES-Feed, z. B. „Tirol“)
  * mit der Wassertemperatur der jüngsten Probe – für /wassertemperatur, wo es für diese Länder keinen
@@ -171,13 +182,7 @@ export async function agesProbenNachBundesland(
   bundeslaender: string[],
 ): Promise<{ saison: number; stellen: Record<string, AgesProbe[]> }> {
   const spots = await agesSpots();
-
-  let saison = 0;
-  for (const spot of spots) {
-    for (const p of Array.isArray(spot.MESSWERTE) ? spot.MESSWERTE : []) {
-      if (typeof p.D === 'string' && /^\d{2}\.\d{2}\.\d{4}$/.test(p.D)) saison = Math.max(saison, Number(p.D.slice(6)));
-    }
-  }
+  const saison = aktuelleSaison(spots);
 
   const wanted = new Set(bundeslaender);
   const stellen: Record<string, AgesProbe[]> = {};
@@ -206,6 +211,38 @@ export async function agesProbenNachBundesland(
   }
   for (const liste of Object.values(stellen)) liste.sort((a, b) => a.name.localeCompare(b.name, 'de'));
   return { saison, stellen };
+}
+
+export type WaermsteProbe = { wasser: number; datum: string; stelle: string };
+
+/**
+ * Offizielle Badestellen an einem See mit Live-Messstelle (gleicher Namensabgleich `match` wie bei
+ * `hatLiveMessstelle`) samt Einstufung und letzter Probe, dazu die Zahl der Proben und die wärmste Probe der
+ * aktuellsten Saison – für die Seen-Steckbriefe /wassertemperatur/[see]. Bewusst nur das Maximum, keine Spanne:
+ * Einzelne Ausreißer nach unten (2026 am Wörthersee 11,2 °C in Klagenfurt am selben Tag wie 28,7 °C in Velden)
+ * gäben sonst ein falsches Bild. Ohne AGES-Daten: keine Badestellen.
+ */
+export async function agesBadestellenAmSee(
+  match: string,
+): Promise<{ saison: number; stellen: Badestelle[]; proben: number; waermste?: WaermsteProbe }> {
+  const spots = await agesSpots();
+  const saison = aktuelleSaison(spots);
+  const re = new RegExp(match);
+  const amSee = spots.filter((s) => typeof s.BADEGEWAESSERID === 'string' && re.test(normalize(s.BADEGEWAESSERNAME ?? '')));
+
+  let proben = 0;
+  let waermste: WaermsteProbe | undefined;
+  for (const spot of amSee) {
+    for (const p of Array.isArray(spot.MESSWERTE) ? spot.MESSWERTE : []) {
+      if (typeof p.D !== 'string' || !/^\d{2}\.\d{2}\.\d{4}$/.test(p.D) || Number(p.D.slice(6)) !== saison) continue;
+      if (typeof p.W !== 'number' || p.W <= 0) continue;
+      proben++;
+      if (!waermste || p.W > waermste.wasser) waermste = { wasser: p.W, datum: p.D, stelle: spot.BADEGEWAESSERNAME ?? 'Badestelle' };
+    }
+  }
+
+  const stellen = amSee.map((s) => toBadestelle(s, 0)).sort((a, b) => a.name.localeCompare(b.name, 'de'));
+  return { saison, stellen, proben, waermste };
 }
 
 function toBadestelle(spot: AgesSpot, km: number): Badestelle {

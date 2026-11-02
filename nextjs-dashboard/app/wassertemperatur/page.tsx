@@ -3,8 +3,8 @@ import type { Metadata } from 'next';
 import type { ReactNode } from 'react';
 import { posts } from '@/app/lib/posts';
 import { BADEPLAETZE } from '@/app/lib/badeplaetze';
-import { agesProbenNachBundesland, badestelleFuer, hatLiveMessstelle, seeMessstellenFuer, type AgesProbe } from '@/app/lib/gewaesser';
-import { SEE_MESSSTELLEN, QUELLEN_LABEL, type SeeQuelle } from '@/app/lib/seen-messstellen';
+import { agesProbenNachBundesland, badestelleFuer, hatLiveMessstelle, type AgesProbe } from '@/app/lib/gewaesser';
+import { LIVE_SEEN, SEE_MESSSTELLEN, QUELLEN_LABEL, seeSlug, type SeeQuelle } from '@/app/lib/seen-messstellen';
 import { distKm } from '@/app/lib/wochenendtrip';
 import { BASE, breadcrumbSchema } from '@/app/lib/seo';
 import WassertemperaturLive, { type WtGruppe } from '@/app/ui/wassertemperatur-live';
@@ -35,18 +35,6 @@ const PROBEN_LAENDER: { bundesland: string; region: string }[] = [
   { bundesland: 'Vorarlberg', region: 'vorarlberg' },
   { bundesland: 'Wien', region: 'wien' },
 ];
-
-/** Passender Artikel je Messstelle – über dieselbe Zuordnung wie die „Wassertemperatur live“-Karte im Artikel. Bade-Artikel zuerst. */
-function artikelJeStation(): Map<string, string> {
-  const map = new Map<string, string>();
-  const sortiert = [...posts].sort((a, b) => Number(b.category === 'Baden') - Number(a.category === 'Baden'));
-  for (const post of sortiert) {
-    for (const m of seeMessstellenFuer(post)) {
-      if (!map.has(m.id)) map.set(m.id, post.slug);
-    }
-  }
-  return map;
-}
 
 /** „Achensee, Nord“ / „Grundlsee Nord-West“ → „achensee“ / „grundlsee“: derselbe See, andere Badestelle. */
 function seeSchluessel(name: string): string {
@@ -154,8 +142,7 @@ function aufzaehlung(namen: string[]): string {
 }
 
 export default async function WassertemperaturPage() {
-  const artikel = artikelJeStation();
-
+  // Seename → Steckbrief /wassertemperatur/[see] (dort stehen alle Messstellen, Badestellen und Artikel zum See).
   const gruppen: WtGruppe[] = GRUPPEN.map((g) => ({
     key: g.region,
     titel: g.titel,
@@ -163,7 +150,7 @@ export default async function WassertemperaturPage() {
     hinweis: g.hinweis,
     quelle: QUELLEN_LABEL[g.quelle],
     stationen: SEE_MESSSTELLEN.filter((m) => m.quelle === g.quelle)
-      .map((m) => ({ id: m.id, see: m.see, ort: m.ort, slug: artikel.get(m.id) }))
+      .map((m) => ({ id: m.id, see: m.see, ort: m.ort, steckbrief: seeSlug(m.see) }))
       .sort((a, b) => a.see.localeCompare(b.see, 'de') || a.ort.localeCompare(b.ort, 'de')),
   }));
 
@@ -199,13 +186,6 @@ export default async function WassertemperaturPage() {
     );
   }
 
-  // ItemList: jeder See einmal (mehrere Messstellen am selben See zusammengefasst).
-  const seen = new Map<string, string | undefined>();
-  for (const s of gruppen.flatMap((g) => g.stationen)) {
-    if (!seen.has(s.see) || (!seen.get(s.see) && s.slug)) seen.set(s.see, s.slug);
-  }
-  const seeListe = [...seen.entries()].sort((a, b) => a[0].localeCompare(b[0], 'de'));
-
   const sprungziele = [
     ...gruppen.map((g) => ({ key: g.key, titel: g.titel })),
     ...probenGruppen.map((g) => ({ key: g.region, titel: g.bundesland })),
@@ -220,12 +200,12 @@ export default async function WassertemperaturPage() {
       '@context': 'https://schema.org',
       '@type': 'ItemList',
       name: 'Seen in Österreich mit Live-Wassertemperatur',
-      numberOfItems: seeListe.length,
-      itemListElement: seeListe.map(([see, slug], i) => ({
+      numberOfItems: LIVE_SEEN.length,
+      itemListElement: LIVE_SEEN.map((s, i) => ({
         '@type': 'ListItem',
         position: i + 1,
-        name: see,
-        url: slug ? `${BASE}/blog/${slug}` : `${BASE}/wassertemperatur`,
+        name: s.see,
+        url: `${BASE}/wassertemperatur/${s.slug}`,
       })),
     },
   ];
@@ -238,8 +218,9 @@ export default async function WassertemperaturPage() {
       <h1 className="font-serif text-display font-bold mb-3 text-ink">Wassertemperatur der Seen in Österreich</h1>
       <p className="text-ink-soft max-w-2xl mb-4 leading-relaxed">
         Wie warm ist der See gerade? Hier stehen die aktuellen Messwerte von {SEE_MESSSTELLEN.length} offiziellen
-        Messstellen an {seeListe.length} Seen in Kärnten, Salzburg und Oberösterreich – keine Schätzungen, sondern
-        die Werte der Hydrographischen Dienste der Länder.
+        Messstellen an {LIVE_SEEN.length} Seen in Kärnten, Salzburg und Oberösterreich – keine Schätzungen, sondern
+        die Werte der Hydrographischen Dienste der Länder. Ein Klick auf den Seenamen öffnet seinen Steckbrief mit allen
+        Messstellen, den offiziellen Badestellen und passenden Artikeln.
         {anzahlProben > 0 && (
           <>
             {' '}Für die übrigen Bundesländer gibt es kein offenes Live-Messnetz – dort zeigen wir die Wassertemperatur

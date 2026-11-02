@@ -17,7 +17,7 @@ import { unterkuenfte } from '@/app/lib/unterkuenfte';
 import { nearestCityKm, distKm, nearbyPosts, UMKREIS_KM } from '@/app/lib/wochenendtrip';
 import { basislagerFuer, BASISLAGER_RADIUS_KM } from '@/app/lib/basislager';
 import { seeMessstellenFuer, badestelleFuer, AGES_EINSTUFUNG } from '@/app/lib/gewaesser';
-import { QUELLEN_LABEL } from '@/app/lib/seen-messstellen';
+import { QUELLEN_LABEL, seeSlug } from '@/app/lib/seen-messstellen';
 import SeeLive from '@/app/ui/see-live';
 import { BASE, SITE_NAME, CATEGORY_KEYWORDS, REGION_META, regionName, articleSchema, breadcrumbSchema, sportsActivitySchema, trailRouteSchema, OFFICIAL_REGION_SITES } from '@/app/lib/seo';
 
@@ -632,7 +632,7 @@ export default async function BlogPostPage({ params }: Props) {
           </div>
 
           {/* Live-Wassertemperatur */}
-          {seeStationen.length > 0 && <SeeLive stationen={seeStationen} />}
+          {seeStationen.length > 0 && <SeeLive stationen={seeStationen} steckbrief={seeSlug(seeStationen[0].see)} />}
 
           {/* Badewasser-Qualität (AGES) */}
           {badestelle && (

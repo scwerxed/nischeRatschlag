@@ -1,6 +1,6 @@
 // Offizielle See-Messstellen mit Live-Wassertemperatur (Hydrographische Dienste der Länder).
-// Reine Daten ohne Imports – wird von /api/seewetter (Werte holen) und app/lib/gewaesser.ts
-// (Messstelle zu einem Artikel finden) gemeinsam genutzt.
+// Reine Daten ohne Imports – wird von /api/seewetter (Werte holen), app/lib/gewaesser.ts
+// (Messstelle zu einem Artikel finden) und den Seen-Steckbriefen /wassertemperatur/[see] gemeinsam genutzt.
 //
 // Quellen (alle kostenlos, ohne API-Key, Open Government Data):
 //   ktn – Hydrographischer Dienst Kärnten, GeoJSON          (CC BY 4.0, Land Kärnten – data.gv.at)
@@ -45,7 +45,7 @@ export const SEE_MESSSTELLEN: SeeMessstelle[] = [
   { id: 'ktn-2001018', quelle: 'ktn', see: 'Millstätter See',    ort: 'Millstatt',           lat: 46.80151,  lng: 13.571331, match: 'millstaett' },
   { id: 'ktn-2001082', quelle: 'ktn', see: 'Ossiacher See',      ort: 'St. Andrä',           lat: 46.651912, lng: 13.902914, match: 'ossiach' },
   { id: 'ktn-2001037', quelle: 'ktn', see: 'Pressegger See',     ort: 'Presseggen',          lat: 46.628361, lng: 13.438264, match: 'pressegg' },
-  { id: 'ktn-2002213', quelle: 'ktn', see: 'Rauschele See',      ort: 'Keutschach',          lat: 46.586104, lng: 14.219993, match: 'rauschele' },
+  { id: 'ktn-2002213', quelle: 'ktn', see: 'Rauschelesee',       ort: 'Keutschach',          lat: 46.586104, lng: 14.219993, match: 'rauschele' },
   { id: 'ktn-2900222', quelle: 'ktn', see: 'Turnersee',          ort: 'Obersammelsdorf',     lat: 46.587692, lng: 14.572778, match: 'turnersee' },
   { id: 'ktn-2001022', quelle: 'ktn', see: 'Weißensee',          ort: 'Techendorf',          lat: 46.715558, lng: 13.294456, match: 'weissensee' },
   { id: 'ktn-2001056', quelle: 'ktn', see: 'Wörthersee',         ort: 'Pörtschach',          lat: 46.6342,   lng: 14.138018, match: 'woerthersee' },
@@ -72,6 +72,46 @@ export const SEE_MESSSTELLEN: SeeMessstelle[] = [
   { id: 'ooe-5005', quelle: 'ooe', see: 'Irrsee',          ort: 'Zell am Moos',      lat: 47.90249, lng: 13.31273, match: 'irrsee|irr- oder zeller' },
   { id: 'ooe-6120', quelle: 'ooe', see: 'Almsee',          ort: 'Grünau im Almtal',  lat: 47.76676, lng: 13.95762, match: 'almsee' },
 ];
+
+// ── Seen-Steckbriefe (/wassertemperatur/[see]) ─────────────────────────────
+
+/** URL-Teil eines Sees: „Hallstätter See“ → „hallstaetter-see“, „Brennsee (Feldsee)“ → „brennsee-feldsee“. */
+export function seeSlug(see: string): string {
+  return see
+    .toLowerCase()
+    .replace(/ä/g, 'ae').replace(/ö/g, 'oe').replace(/ü/g, 'ue').replace(/ß/g, 'ss')
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-|-$/g, '');
+}
+
+const QUELLE_REGION: Record<SeeQuelle, string> = { ktn: 'kaernten', sbg: 'salzburg', ooe: 'oberoesterreich' };
+
+/**
+ * Bundesland (Regions-Slug), wo es nicht das Land des ersten Messnetzes ist – laut den AGES-Badestellen am See:
+ * Mondsee und Attersee liegen in Oberösterreich, der Wolfgangsee hat Badestellen in Salzburg und Oberösterreich.
+ */
+const SEE_REGIONEN: Record<string, string[]> = {
+  Mondsee: ['oberoesterreich'],
+  Attersee: ['oberoesterreich'],
+  Wolfgangsee: ['salzburg', 'oberoesterreich'],
+};
+
+export type LiveSee = { slug: string; see: string; regionen: string[]; match: string; stationen: SeeMessstelle[] };
+
+/** Jeder See mit Live-Messstelle genau einmal (Stationen in Listenreihenfolge), alphabetisch. */
+export const LIVE_SEEN: LiveSee[] = Object.values(
+  SEE_MESSSTELLEN.reduce<Record<string, LiveSee>>((acc, m) => {
+    const eintrag = (acc[m.see] ??= {
+      slug: seeSlug(m.see),
+      see: m.see,
+      regionen: SEE_REGIONEN[m.see] ?? [QUELLE_REGION[m.quelle]],
+      match: m.match,
+      stationen: [],
+    });
+    eintrag.stationen.push(m);
+    return acc;
+  }, {}),
+).sort((a, b) => a.see.localeCompare(b.see, 'de'));
 
 /** Live-Messwert einer Station, wie ihn /api/seewetter liefert. */
 export type SeeMesswert = { wasser: number; stand: string };

@@ -5,13 +5,13 @@ import { type ReactNode, useEffect, useState } from 'react';
 import type { SeeMesswert } from '@/app/lib/seen-messstellen';
 
 // Live-Tabelle aller offiziellen See-Messstellen für /wassertemperatur. Welche Stationen es gibt
-// und welcher Artikel zu welchem See passt, liefert der Server (app/wassertemperatur/page.tsx);
-// hier werden nur die aktuellen Werte über /api/seewetter geholt (gleiche Route wie Seewetter-Widget
-// und Artikel-Sidebar, 15-Minuten-Cache). Station ohne aktuellen Wert → „keine aktuelle Messung“.
+// und zu welchem Steckbrief (/wassertemperatur/[see]) der Seename führt, liefert der Server
+// (app/wassertemperatur/page.tsx); hier werden nur die aktuellen Werte über /api/seewetter geholt
+// (gleiche Route wie Seewetter-Widget und Artikel-Sidebar). Station ohne aktuellen Wert → „keine aktuelle Messung“.
 // `zusatz` (je Gruppen-Key) hängt serverseitig gerenderte Inhalte unter die jeweilige Tabelle –
 // z. B. die Badestellen an Seen ohne eigene Live-Messstelle.
 
-export type WtStation = { id: string; see: string; ort: string; slug?: string };
+export type WtStation = { id: string; see: string; ort: string; steckbrief: string };
 export type WtGruppe = { key: string; titel: string; hinweis?: string; region: string; quelle: string; stationen: WtStation[] };
 
 function formatStand(iso: string): string {
@@ -93,13 +93,9 @@ export default function WassertemperaturLive({ gruppen, zusatz }: { gruppen: WtG
                   <p className="text-fine font-semibold uppercase tracking-wide text-sky-700">Platz {i + 1}</p>
                   <p className="font-serif text-display font-bold text-ink tabular-nums">{formatGrad(wert.wasser)}</p>
                   <p className="font-semibold text-ink leading-snug">
-                    {station.slug ? (
-                      <Link href={`/blog/${station.slug}`} className="hover:text-sky-700 hover:underline">
-                        {station.see}
-                      </Link>
-                    ) : (
-                      station.see
-                    )}
+                    <Link href={`/wassertemperatur/${station.steckbrief}`} className="hover:text-sky-700 hover:underline">
+                      {station.see}
+                    </Link>
                   </p>
                   <p className="text-caption text-ink-muted">Messstelle {station.ort}</p>
                 </div>
@@ -140,13 +136,9 @@ export default function WassertemperaturLive({ gruppen, zusatz }: { gruppen: WtG
                   return (
                     <tr key={s.id} className="border-t border-hairline">
                       <td className="px-4 py-3 align-top">
-                        {s.slug ? (
-                          <Link href={`/blog/${s.slug}`} className="font-semibold text-ink hover:text-sky-700 hover:underline">
-                            {s.see}
-                          </Link>
-                        ) : (
-                          <span className="font-semibold text-ink">{s.see}</span>
-                        )}
+                        <Link href={`/wassertemperatur/${s.steckbrief}`} className="font-semibold text-ink hover:text-sky-700 hover:underline">
+                          {s.see}
+                        </Link>
                         <span className="block sm:hidden text-caption text-ink-muted">{s.ort}</span>
                       </td>
                       <td className="px-4 py-3 align-top text-caption text-ink-muted hidden sm:table-cell">{s.ort}</td>

@@ -1,11 +1,13 @@
 'use client';
 
+import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import type { SeeMesswert } from '@/app/lib/seen-messstellen';
 
 // Live-Wassertemperatur für die Artikel-Sidebar. Welche Messstellen passen, entscheidet der Server
 // (app/lib/gewaesser.ts → seeMessstellenFuer); hier wird nur der aktuelle Wert über /api/seewetter
 // geholt. Erste Station mit gültigem Wert gewinnt; ohne Wert wird die Karte gar nicht angezeigt.
+// `steckbrief` verlinkt auf /wassertemperatur/[see] (alle Messstellen und Badestellen am See).
 
 type Station = { id: string; see: string; ort: string; km: number; quelle: string };
 
@@ -19,7 +21,7 @@ function formatStand(iso: string): string {
   });
 }
 
-export default function SeeLive({ stationen }: { stationen: Station[] }) {
+export default function SeeLive({ stationen, steckbrief }: { stationen: Station[]; steckbrief?: string }) {
   const [state, setState] = useState<'loading' | 'none' | { station: Station; wert: SeeMesswert }>('loading');
 
   useEffect(() => {
@@ -65,6 +67,11 @@ export default function SeeLive({ stationen }: { stationen: Station[] }) {
           <p className="text-[11px] text-ink-soft mt-3">
             Offizieller Messwert: {state.station.quelle} (CC BY 4.0). An einzelnen Badeplätzen kann die Temperatur davon abweichen.
           </p>
+          {steckbrief && (
+            <Link href={`/wassertemperatur/${steckbrief}`} className="mt-3 inline-flex items-center gap-1 text-caption font-medium text-green-700 hover:text-green-800">
+              Alle Messstellen &amp; Badestellen am See →
+            </Link>
+          )}
         </>
       )}
     </div>

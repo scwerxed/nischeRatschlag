@@ -2,6 +2,10 @@ import Link from 'next/link';
 import type { Metadata } from 'next';
 import { BASE, breadcrumbSchema } from '@/app/lib/seo';
 import { LAKES, SEE_THEMEN } from '@/app/lib/seen';
+import { LIVE_SEEN, seeSlug } from '@/app/lib/seen-messstellen';
+
+// Seen mit Live-Messstelle → Link auf ihren Steckbrief /wassertemperatur/[see].
+const LIVE = new Set(LIVE_SEEN.map((s) => s.slug));
 
 export const metadata: Metadata = {
   title: 'Österreichs Seen im Vergleich – welcher Badesee passt zu dir?',
@@ -80,7 +84,14 @@ export default function SeenVergleichPage() {
                   {l.slug ? <Link href={`/blog/${l.slug}`} className="text-green-700 hover:underline">{l.name}</Link> : l.name}
                 </td>
                 <td className="px-4 py-3 text-ink-muted whitespace-nowrap">{l.region}</td>
-                <td className="px-4 py-3 text-ink-muted whitespace-nowrap">{l.maxTemp}</td>
+                <td className="px-4 py-3 text-ink-muted whitespace-nowrap">
+                  {l.maxTemp}
+                  {LIVE.has(seeSlug(l.name)) && (
+                    <Link href={`/wassertemperatur/${seeSlug(l.name)}`} className="block text-fine font-medium text-sky-700 hover:underline">
+                      jetzt live →
+                    </Link>
+                  )}
+                </td>
                 <td className="px-4 py-3 text-ink-muted">{l.groesse}</td>
                 <td className="px-4 py-3 text-ink-muted">{l.charakter}</td>
                 <td className="px-4 py-3 text-ink-muted">{l.idealFuer}</td>
@@ -108,6 +119,11 @@ export default function SeenVergleichPage() {
             <p className="text-caption text-ink-muted mt-1">{l.region} · {l.charakter} · {l.groesse}</p>
             <p className="text-caption text-ink-soft mt-1">Ideal für: {l.idealFuer}</p>
             <p className="text-fine text-ink-soft mt-2">{l.gratis ? '✓ Gratis-Bademöglichkeit' : 'Strandbad mit Eintritt'} · {l.tipp}</p>
+            {LIVE.has(seeSlug(l.name)) && (
+              <Link href={`/wassertemperatur/${seeSlug(l.name)}`} className="inline-block mt-2 text-fine font-medium text-sky-700 hover:underline">
+                Wassertemperatur jetzt live →
+              </Link>
+            )}
           </div>
         ))}
       </div>
