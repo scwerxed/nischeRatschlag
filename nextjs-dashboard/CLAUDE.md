@@ -172,3 +172,14 @@ Tailwind CSS 3.4 with a **custom forest-green palette** (overrides Tailwind's de
 - `eslint` + `eslint-config-next` + `@eslint/eslintrc` — linting (dev)
 
 `next`/`react`/`react-dom` are pinned to exact versions (16.3.6 / 19.2.7) for reproducible builds — bump deliberately, not via `latest`. (2026-09-28: 16.2.7 → 16.3.6 wegen 11 bekannter Next-Sicherheitslücken, u. a. 2× kritische RCE, fix ab 16.3.3; per OSV-Abgleich des Lockfiles geprüft. `eslint-config-next` immer mit `next` mitziehen.)
+
+## graphify
+
+This project has a knowledge graph at graphify-out/ with god nodes, community structure, and cross-file relationships.
+
+Rules:
+- When graphify-out/graph.json exists, run `graphify query "<question>"` before your first grep, search or source-file read for a codebase question, and put this rule in every subagent prompt that explores code. Read raw files only for lines the graph or an earlier read already located. Use `graphify path "<A>" "<B>"` for relationships and `graphify explain "<concept>"` for focused concepts. These return a scoped subgraph, usually much smaller than GRAPH_REPORT.md or raw grep output.
+- If graphify-out/wiki/index.md exists, use it for broad navigation instead of raw source browsing.
+- Read graphify-out/GRAPH_REPORT.md only for broad architecture review or when query/path/explain do not surface enough context.
+- After modifying code, run `graphify update .` to keep the graph current (AST-only, no API cost).
+- A committed graphify-out/graph.json is rewritten whole on every build, so a large diff to it in a pull request is expected. Do not flag it as churn or suggest skipping the graph rebuild or its hooks.

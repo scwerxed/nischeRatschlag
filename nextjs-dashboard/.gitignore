@@ -35,3 +35,9 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# graphify (lokaler Wissensgraph, wird bei Bedarf mit `graphify update .` neu gebaut)
+graphify-out/
+.claude/settings.local.json
+.claude/skills/
+.claude/CLAUDE.md
