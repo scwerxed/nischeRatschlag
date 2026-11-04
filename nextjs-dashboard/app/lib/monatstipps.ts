@@ -10,8 +10,8 @@ export const MONATE: Monat[] = [
     name: 'Jänner',
     intro: 'Der Monat der Extreme: Skisaison auf Hochtouren, Thermen als warmer Gegenpol zur Kälte draußen – und die ruhigste Zeit für Städtetrips, kurz nach den Feiertagen.',
     picks: [
-      { slug: 'weissensee-winter-schlittschuhlaufen', warum: 'Bei stabiler Kälte verwandelt sich der See in Europas größte Natureisfläche – bis zu 8 km am Stück.' },
-      { slug: 'bad-kleinkirchheim-therme-ski', warum: 'Skifahren am Vormittag, Thermalwasser am Nachmittag – im Hochwinter naheliegend kombinierbar.' },
+      { slug: 'weissensee-winter-schlittschuhlaufen', warum: 'Bei stabiler Kälte wird der See zur größten präparierten Natureisfläche Europas, mit rund 25 km Rundbahn, wenn alles freigegeben ist.' },
+      { slug: 'bad-kleinkirchheim-therme-ski', warum: 'Skifahren am Vormittag, Thermalwasser am Nachmittag – die Weltcupabfahrt endet direkt am Thermal Römerbad.' },
       { slug: 'hintertuxer-gletscher', warum: 'Ganzjahresgletscher – hier liegt garantiert Schnee, auch wenn er sonst gerade fehlt.' },
       { slug: 'st-anton-am-arlberg', warum: 'Hochsaison am Arlberg: verlässlicher Schnee und volle Pisten.' },
       { slug: 'saalbach-hinterglemm', warum: 'Großes zusammenhängendes Skigebiet, im Jänner meist bestens präpariert.' },
@@ -46,7 +46,7 @@ export const MONATE: Monat[] = [
     picks: [
       { slug: 'wien-prater', warum: 'Die Fahrgeschäfte im Wurstelprater starten wieder in die Saison.' },
       { slug: 'lainzer-tiergarten-wien', warum: 'Erste Frühlingsboten im Tiergarten, noch bevor der große Blätterschub einsetzt.' },
-      { slug: 'weissensee-winter-schlittschuhlaufen', warum: 'Meist die letzte Chance auf die Natureisfläche, bevor es taut.' },
+      { slug: 'weissensee-winter-schlittschuhlaufen', warum: 'Oft trägt das Eis noch bis Anfang März – meist die letzte Chance auf die Natureisfläche, Eisbericht vorher prüfen.' },
       { slug: 'st-anton-am-arlberg', warum: 'Ausklang der Skisaison mit oft sonnigen Firnhängen.' },
       { slug: 'hintertuxer-gletscher', warum: 'Ganzjahresgletscher – hier hält der Winter am längsten.' },
       { slug: 'kitzsteinhorn-kaprun', warum: 'Gletscherskigebiet mit stabiler Schneelage bis weit ins Frühjahr.' },

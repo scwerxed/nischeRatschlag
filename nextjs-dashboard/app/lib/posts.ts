@@ -1356,46 +1356,59 @@ Das Loretto-Strandbad liegt 10 Gehminuten vom Ortskern. Sauberes Wasser, ordentl
   },
   {
     slug: 'bad-kleinkirchheim-therme-ski',
-    startCoords: [46.8125, 13.7944],
-    title: 'Bad Kleinkirchheim – Therme und Skigebiet in einem',
-    excerpt: 'Bad Kleinkirchheim ist Kärntens einziger Ort, wo man direkt vom Skigebiet in eine der schönsten Alpentherme Österreichs einfahren kann. Was es kostet, wie man kombiniert, und welche Pisten wirklich lohnen.',
+    startCoords: [46.8123, 13.7989],
+    startPoint: {
+      name: 'Talstation Kaiserburgbahn beim Thermal Römerbad',
+      parking: 'Parkplätze an den Talstationen – Konditionen vorab prüfen',
+      note: 'In der Skisaison verbindet ein kostenloser Ski-Thermen-Bus Unterkünfte, Parkplätze, Talstationen und beide Thermen',
+    },
+    planningMistakes: [
+      { fehler: 'Zwischen Piste, Therme und Unterkunft ständig das Auto umparken', besser: 'In der Skisaison fährt tagsüber ein kostenloser Ski-Thermen-Bus durch den Ort. Er verbindet Unterkünfte und Parkplätze mit den Talstationen und beiden Thermen.' },
+      { fehler: 'Skipass und Thermeneintritt einzeln kaufen, ohne nach einer Kombination zu fragen', besser: 'Mehrtägige Skipässe lassen sich laut Region mit dem Eintritt ins Thermal Römerbad kombinieren. Vorab vergleichen, was sich für deinen Aufenthalt rechnet.' },
+      { fehler: 'Mit Teenagern ganz selbstverständlich in die Saunawelt der Therme St. Kathrein', besser: 'Der Saunabereich in St. Kathrein ist laut Region erst ab 16 Jahren. Mit jüngeren Kindern bleiben die Becken und die Rutsche – Altersregeln beider Thermen vorab prüfen.' },
+    ],
+    title: 'Bad Kleinkirchheim – Skifahren und Therme in den Nockbergen',
+    excerpt: 'In Bad Kleinkirchheim endet die Weltcupabfahrt direkt am Thermal Römerbad: rund 100 Pistenkilometer in den Nockbergen, zwei Thermen und eine Quelle, über der seit dem 15. Jahrhundert eine Kapelle steht. Wie man Ski und Therme verbindet und was man vorab wissen sollte.',
     date: '2026-05-28',
     category: 'Ausflug',
     region: 'kaernten',
     bestSeason: 'Dezember–März (Ski), Ganzjährig (Therme)',
-    highlights: ['Einziges Skigebiet mit Direkt-Thermenanschluss in Kärnten', '101 km Pisten, ideal für Familien und Fortgeschrittene', 'St. Kathrein Therme direkt an der Talstation'],
+    highlights: ['Weltcupabfahrt „Kärnten – Franz Klammer“ endet am Thermal Römerbad', 'Laut Region 103 Pistenkilometer und 24 Lifte und Bahnen', 'Zwei Thermen, in der Skisaison per Gratis-Bus verbunden'],
     content: `
-Bad Kleinkirchheim (BKK) ist das einzige Skigebiet Österreichs, bei dem man buchstäblich von der Piste direkt in eine Therme einfahren kann. Das macht es einzigartig – und erklärt, warum es trotz vergleichsweise teurer Skipässe regelmäßig ausgebucht ist.
+**Bad Kleinkirchheim** liegt auf rund 1.100 m in einem etwa 5 km langen Tal der **Nockberge**, zwischen dem Millstätter See und dem oberen Gurktal. Bekannt ist der Ort für zwei Dinge, die hier ungewöhnlich nah beieinanderliegen: ein großes Skigebiet und Thermalwasser, das im Ort selbst entspringt. Die Weltcupabfahrt endet direkt am **Thermal Römerbad** – aus dem beheizten Außenbecken sieht man auf die Piste, die man gerade heruntergefahren ist.
 
 ## Das Skigebiet
+Laut Kärnten Werbung hat das Gebiet **103 Pistenkilometer** aller Schwierigkeitsgrade und 24 Lifte und Bahnen; fast alle Pisten können beschneit werden. Die **Kaiserburgbahn** führt in zwei Sektionen von der Talstation beim Römerbad (rund 1.070 m) auf gut 2.000 m, knapp unter die Kaiserburg (2.055 m). Zum Gebiet gehört auch der Ortsteil **St. Oswald** mit der Biosphärenparkbahn Brunnach, einem Kinderbereich und einem Lift, an dem an einzelnen Abenden Nachtskilauf angeboten wird.
 
-101 km Pisten, 25 Liftanlagen, Seehöhe bis 2.055 m. Für wen ist BKK ideal?
-- **Familien**: Breite, gut präparierte Anfänger- und Mittelklassepisten, kaum gefährliche Steilhänge
-- **Fortgeschrittene**: Der Kaiserburg-Hang ist eine der schönsten schwarzen Pisten Kärntens – aber ehrlich gesagt gibt es wildere Gebiete in Tirol
-- **Thermafans**: Alle
+Bad Kleinkirchheim ist ein Gebiet für Pistenskifahrer: präparierte Abfahrten, eine Rennstrecke mit Zeitnehmung und ein Snowpark. Wer vor allem Freeride und Tiefschnee sucht, ist in den hochalpinen Gebieten Tirols und Salzburgs meist besser aufgehoben. Saisonstart und -ende hängen vom Winter ab – Termine und Pistenbericht vorab prüfen.
 
-### Was BKK nicht ist
-BKK ist kein Freeride-Gebiet und nichts für Powder-Jäger. Wer extreme Hänge sucht, ist in Saalbach oder Lech besser aufgehoben. BKK ist für komfortables, entspanntes Skifahren mit Pool-Garantie danach.
+## Weltcup und Franz Klammer
+Am 11. und 12. März 1978 fanden hier die ersten Weltcuprennen statt, die Abfahrt gewann Annemarie Moser-Pröll. Die Herren fuhren zuletzt im Dezember 2007 um Weltcuppunkte, die Damen im Jänner 2018. Die heutige Strecke heißt **„Kärnten – Franz Klammer“** – nach dem Abfahrts-Olympiasieger von 1976, der in Bad Kleinkirchheim schon 1971 sein erstes Europacup-Rennen gewann.
 
-## Die Römerquelle und St. Kathrein Therme
+## Zwei Thermen
+Das Thermalwasser entspringt laut Region direkt in den Nockbergen und speist zwei Bäder:
+- **Thermal Römerbad**: direkt an der Talstation der Kaiserburgbahn, über drei Ebenen mit Innen-, Außen- und Kinderbecken und einer großen Saunawelt (laut Region 13 Saunen und Dampfbäder)
+- **Therme St. Kathrein**: im Ort, gilt als besonders kinderfreundlich, mit Außenbecken und Wasserrutsche; das Wasser kommt laut Region mit 36 °C aus der Quelle
 
-Zwei Thermen im Ort: Die **St. Kathrein Therme** ist direkt an der Talstation – ideal für nach dem Ski. Die **Römerquelle Therme** ist etwas größer, mit Außenbecken und Panoramablick auf die verschneiten Berge. Eintritt je ca. 18–22 € für 3 Stunden.
+Eintritt, Öffnungszeiten und Kombitickets ändern sich je nach Saison – deshalb hier keine Beträge. Aktuelle Tarife stehen auf den Seiten der Thermen.
 
-### Kombiangebot Ski + Therme
-Viele Skischulen und Hotels bieten Kombi-Tagestickets an. Oft günstiger als Einzelkauf.
+## Eine Quelle mit langer Geschichte
+Der Legende nach wurde die Heilquelle im 11. Jahrhundert entdeckt und dem Stift Millstatt geschenkt. Um 1492 ließ das Stift über ihr die Kapelle **St. Katharina im Bade** errichten – an sie erinnert der Name der Therme St. Kathrein. Schriftlich belegt ist der Badebetrieb seit 1670; das Thermal-Freibad öffnete 1934, das Römerbad 1979. Seit 1977 ist Bad Kleinkirchheim offiziell Thermalbad.
 
-## Sommer in BKK
+## Im Sommer
+Die Thermen sind keine reine Wintersache. Im Sommer starten in Bad Kleinkirchheim Wanderungen in die [Nockberge](/blog/nockberge-biosphaerenpark-wandern), und Richtung Osten ist es nicht weit nach Ebene Reichenau, wo die [Nockalmstraße](/blog/nockalmstrasse-panoramastrasse) beginnt. Vormittags wandern, nachmittags ins Thermalwasser – das funktioniert hier auch im Juli. Über Schließzeiten in der Zwischensaison vorab informieren.
 
-Auch im Sommer empfehlenswert: Die Therme ist ganzjährig geöffnet, und die Wanderwege um BKK (Nockberge) sind im Sommer hervorragend. Kombination Wanderung + Therme = perfekter Urlaubstag.
-
-## Praktische Infos
-- Skipass: Tageskarte ca. 55 € (Erwachsene), günstiger bei Mehrtages-Tickets
-- Anreise: Von Villach oder Spittal ca. 45 Minuten
-- Unterkunft: Hotels direkt an der Piste, aber früh buchen – BKK ist im Winter sehr beliebt
+## Anreise
+- Mit dem Auto über die Kleinkirchheimer Straße (B 88), die einzige Straßenverbindung des Orts: von Westen über Radenthein (aus Richtung Millstätter See oder Villach), von Osten aus dem Gurktal über Patergassen
+- Mit Öffis: Nächster Bahnhof ist Spittal-Millstättersee (rund 30 km), von dort fährt der Postbus über Radenthein – Fahrplan vorab prüfen
+- Übernachten: Hotels nahe den Talstationen sind im Hochwinter gefragt – früh buchen
     `,
     affiliateLinks: [
       { label: 'Hotels in Bad Kleinkirchheim – booking.com', url: 'https://www.booking.com/city/at/bad-kleinkirchheim.de.html' },
       { label: 'Skibekleidung & Zubehör – Amazon', url: 'https://www.amazon.de/s?k=skibekleidung+set+erwachsene' },
+    ],
+    officialLinks: [
+      { label: 'Skifahren und Therme in Bad Kleinkirchheim – Kärnten Werbung', url: 'https://www.kaernten.at/aktivitaeten/winter/skifahren-und-therme/' },
     ],
   },
   {
@@ -1466,50 +1479,61 @@ Dezember bis April. Saisonstart und -ende hängen vom Schnee ab – Termine und 
   },
   {
     slug: 'weissensee-winter-schlittschuhlaufen',
-    startCoords: [46.7164, 13.3017],
-    title: 'Weissensee im Winter – Europas größte Natureisfläche',
-    excerpt: 'Im Winter verwandelt sich der Weissensee in Europas größte natürliche Eislaufbahn. Bis zu 8 km Länge, kristallklares Eis, absolute Stille und null Lift-Gedränge. Ein Wintererlebnis der anderen Art.',
+    startCoords: [46.7135, 13.2942],
+    startPoint: {
+      name: 'Parkplatz Weissenseehaus in Techendorf (Südufer)',
+      parking: 'Parkkonditionen vorab prüfen',
+      note: 'Eis nur in freigegebenen, markierten Bereichen betreten – den Eisbericht des Tourismusverbands vor der Anreise prüfen',
+    },
+    planningMistakes: [
+      { fehler: 'Fix mit Eis rechnen, weil der See „ja jedes Jahr“ zufriert', besser: 'Ob und wie lange das Eis trägt, hängt vom Winter ab. Meist ist es etwa von Mitte Dezember bis Anfang März tragfähig, sicher ist das nie – den täglichen Eisbericht des Tourismusverbands vor der Anreise prüfen.' },
+      { fehler: 'Auf eigene Faust über nicht freigegebene Flächen laufen', besser: 'Die Eismeister geben Flächen je nach Größe und Dicke der Eisschicht frei und sperren gefährliche Bereiche ab. Der tiefere Ostteil friert später zu als der Westteil. Nur auf markierten, freigegebenen Bahnen laufen – schwaches Eis ist lebensgefährlich.' },
+      { fehler: 'Zur Alternativen Elfstedentocht einen ruhigen Eislauftag erwarten', besser: 'Im Jänner kommen zu den Rennen und Touren tausende Niederländer an den See, Unterkünfte sind dann früh ausgebucht. Wer Ruhe sucht, kommt außerhalb der Veranstaltungswochen – Termine vorab prüfen.' },
+    ],
+    title: 'Weissensee im Winter – Eislaufen auf Europas größter präparierter Natureisfläche',
+    excerpt: 'Friert der Weissensee zu, wird er zur größten präparierten Natureisfläche Europas: eine rund 25 km lange Rundbahn über den See, Eisstockbahnen, Loipen am Ufer und im Jänner die Alternative Elfstedentocht der Niederländer. Wann das Eis trägt, wie die Freigabe funktioniert und was man vorher wissen sollte.',
     date: '2026-05-30',
     category: 'Ausflug',
     region: 'kaernten',
-    bestSeason: 'Januar–März',
-    highlights: ['Europas größte Natureisfläche – bis 8 km', 'Eislaufen, Eisstockschießen & Langlaufen', 'Absolute Stille ohne Motorboote'],
+    bestSeason: 'Januar–Februar',
+    highlights: ['Laut Region mit 6,5 km² die größte präparierte Natureisfläche Europas', 'Rund 25 km lange Rundbahn über den See, wenn alles freigegeben ist', 'Seit 1989 Schauplatz der Alternativen Elfstedentocht'],
     content: `
-Im Sommer ist der Weissensee für sein kristallklares Wasser bekannt. Im Winter wird er zu einem der spektakulärsten Wintersportziele Europas: Die Natureisfläche ist die größte auf dem Kontinent – bei Volleis bis zu 8 km lang und 1,5 km breit.
+Im Sommer ist der [Weissensee](/blog/weissensee-kaernten-geheimtipp) für sein klares Wasser bekannt, im Winter für sein Eis. Der schmale See auf 930 m in den Gailtaler Alpen friert in kalten Wintern ganz zu – dann wird seine Fläche von 6,5 km² zur, wie die Region sagt, **größten präparierten Natureisfläche Europas**. „Präpariert“ ist dabei das entscheidende Wort: Ein Eismeister und sein Team prüfen das Eis laufend, geben Flächen frei und halten die Bahnen in Schuss.
 
-## Was ist das Besondere?
+## Wann das Eis trägt
+Der kleinere, flachere Westteil um Techendorf friert meist zuerst zu, der bis knapp 100 m tiefe Ostteil später. Tragfähig ist das Eis meist ungefähr von **Mitte Dezember bis Anfang März** – fix ist das nie, es hängt ganz vom Winter ab. Die Eismeister geben die Flächen je nach Größe und Dicke der Eisschicht frei, gefährliche Bereiche werden abgesperrt. Den aktuellen Stand nennt der tägliche **Eisbericht** des Tourismusverbands; vor der Anreise unbedingt nachsehen.
 
-Kein Massentourismus. Kein Lifttrubel. Die Weissensee-Saison hängt komplett vom Frost ab – wenn das Eis nicht trägt, öffnet die Fläche nicht. Das macht jeden Winter zu einem anderen Erlebnis und hält die Besucherzahlen auf natürlichem Niveau.
+## Eislaufen
+Ist der ganze See freigegeben, führt eine markierte **Rundbahn von rund 25 km** über das Eis, dazu kommt eine 400-m-Bahn für Eisschnellläufer. Einstiege gibt es unter anderem in Praditz, in Techendorf Süd, hinter dem Weissenseehaus und in Gatschach. Schlittschuhe kann man am See ausleihen, und für Einsteiger gibt es Natureis-Laufschulen.
 
-## Aktivitäten auf dem Eis
+Für die Eispflege zahlen Tagesgäste einen **Förderbeitrag** und bekommen dafür ein Armband, das auch für die Loipen gilt. Gäste von Partnerbetrieben der PremiumCard nutzen das Eis ohne Aufpreis. Wie hoch der Beitrag ist und ab welchem Alter er gilt, ändert sich von Saison zu Saison – vorab beim Tourismusverband prüfen.
 
-### Eislaufen
-Die offizielle Eislaufbahn ist gespurt und markiert. Schlittschuhe kann man ausleihen (ca. 10 €/Tag). Ein Erlebnis der eigenen Art: Man gleitet über einen ganzen See.
+## Eisstock, Pondhockey und Eislochfischen
+Neben den Laufbahnen gibt es auf dem Eis Bahnen zum **Eisstockschießen** und Felder für **Pondhockey**, die Freiluftvariante des Eishockeys; auch Eislochfischen und sogar Eistauchen werden angeboten. Was davon gerade aufgebaut ist, hängt von der freigegebenen Fläche ab.
 
-### Eisstockschießen
-Tiroler Tradition, in Kärnten am See zum Spektakel. Stöcke ausleihen, Bahnen reservieren – ideal für Gruppen.
+## Die Alternative Elfstedentocht
+Jedes Jahr im Jänner wird es am Weissensee niederländisch. Die klassische Elfstedentocht führt über 200 km durch elf Städte in Friesland, kann aber nur stattfinden, wenn die Kanäle dort tragen – zuletzt war das 1997. Seit 1989 gibt es deshalb die **Alternative Elfstedentocht** auf dem Weissensee: rund zwei Wochen mit einem 200-km-Rennen der Profis und Touren für Hobbyläufer, die tausende Niederländer an den See bringen. In zu milden Wintern fällt sie allerdings auch hier aus. Zuschauen lohnt sich – wer aber Ruhe sucht, kommt besser außerhalb dieser Wochen.
 
-### Langlaufen
-Rund um den zugefrorenen See gibt es 25 km Langlaufloipen. Das flache Terrain ist auch für Anfänger perfekt.
+## James Bond auf dem Eis
+Für den James-Bond-Film „Der Hauch des Todes“ (1987) wurden Szenen auf dem zugefrorenen Weissensee gedreht.
 
-### Eishockey und Curling
-Anlässlich des „Weissensee Eis"-Events finden jährlich Eishockey- und Curling-Turniere statt. Atmosphäre wie aus einem anderen Jahrhundert.
+## Langlaufen, Winterwandern, Skifahren
+- **Langlaufen**: Rund um den See zieht sich ein Loipennetz, je nach Quelle und Schneelage 40 bis 55 km lang.
+- **Winterwandern**: Die Winterwege führen an Land, am Ufer entlang und hinauf zu Almen. Ob eine Hütte im Winter geöffnet hat, vorab prüfen.
+- **Skifahren**: Direkt am See liegt ein kleines **Familienskigebiet** – laut Kärnten Werbung rund 7 Pistenkilometer und 6 Lifte, dazu eine Rodelbahn. Ideal für Kinder, nichts für einen großen Skitag. Wer mehr Pisten will, fährt über den Kreuzbergsattel und Hermagor zum [Nassfeld](/blog/nassfeld-skigebiet-hermagor), dem größten Skigebiet Kärntens.
 
-## Wenn das Eis nicht trägt
-
-Nicht jedes Jahr friert der See vollständig zu – das hängt vom Winter ab. Prüfe vor der Anreise die offizielle Website des Weissensees oder ruf beim Tourismusverband an. Enttäuschungsfahrten lassen sich so vermeiden.
-
-## Kombination mit Skifahren
-Das nächste Skigebiet (Nassfeld) ist 60 Minuten entfernt. Eis + Ski an zwei Tagen ist eine perfekte Wintertour durch das westliche Kärnten.
-
-## Praktische Infos
-- Anreise: Von Villach ca. 1,5 Stunden, von Klagenfurt ca. 2 Stunden
-- Eislaufen: Kostenpflichtig (ca. 5–8 € Tageskarte), Schlittschuhverleih am See
-- Unterkunft: Hotels und Pensionen direkt am Seeufer – im Winter deutlich günstiger als im Sommer
+## Anreise
+- Mit dem Auto über die Weißensee Straße (B 87): aus dem Drautal von Greifenburg oder aus dem Gailtal von Hermagor über den Kreuzbergsattel (1.074 m)
+- Mit Öffis: mit der Drautalbahn bis Greifenburg-Weißensee, weiter mit dem Regionalbus nach Techendorf – Verbindungen vorab prüfen
+- Übernachten: in Techendorf und den anderen Orten am See; rund um die Elfstedentocht im Jänner früh buchen
     `,
     affiliateLinks: [
       { label: 'Unterkünfte am Weissensee – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Weissensee+K%C3%A4rnten' },
       { label: 'Schlittschuhe für Erwachsene – Amazon', url: 'https://www.amazon.de/s?k=schlittschuhe+erwachsene' },
+    ],
+    officialLinks: [
+      { label: 'Eislaufen am Weissensee – Tourismusregion Weissensee', url: 'https://www.weissensee.com/de/Winter-World/Ice-World/Eislaufen' },
+      { label: 'Elf-Städte-Tour am Weissensee – Kärnten Werbung', url: 'https://www.kaernten.at/content/elf-staedte-tour-am-weissensee/' },
     ],
   },
   {
@@ -1949,39 +1973,39 @@ Oktober: Viehscheiden auf den Almen. Das Almvieh wird zum letzten Mal für die S
     category: 'Ausflug',
     region: 'kaernten',
     bestSeason: 'Ganzjährig',
-    highlights: ['Top 10 ohne Marketingfloskel – ehrlich bewertet', 'Für Erstbesucher und Wiederkehrer', 'Mit konkreten Fahrtzeiten und Preisen'],
+    highlights: ['Zehn Kärntner Klassiker – vom Wörthersee bis zum Gurker Dom', 'Für Erstbesucher und Wiederkehrer', 'Mit Links zu den ausführlichen Artikeln'],
     content: `
-Du hast 5 Tage in Kärnten. Was muss man gesehen haben? Nicht nach dem Tourismus-Hochglanzprosekt, sondern ehrlich: Was ist wirklich außergewöhnlich?
+Du hast fünf Tage in Kärnten – was sollte man gesehen haben? Hier sind zehn Ziele, die wir für Erstbesucher am lohnendsten finden, jeweils mit einem ehrlichen Hinweis, wofür sie sich eignen und was man vorab wissen sollte.
 
-## 1. Wörthersee (immer)
-Kein Bundesland Österreichs hat einen See wie den Wörthersee – warm, groß, zentralgelegen und infrastrukturell perfekt. Egal was man sonst macht: einmal schwimmen, einmal mit dem Schiff fahren, einmal von Maria Wörth auf die Halbinsel schauen. Das ist Kärnten.
+## 1. Wörthersee
+Mit rund 19 km² der größte See Kärntens und im Sommer angenehm warm: Bei den offiziellen Badewasser-Proben 2026 wurden in Velden bis 28,7 °C gemessen. Einmal baden, einmal mit dem Schiff fahren und einmal nach Maria Wörth auf seiner Halbinsel – dann hat man den See gesehen. Mehr in [Badestellen am Wörthersee](/blog/beste-badestellen-woerthersee), [Wörthersee-Schifffahrt](/blog/woerthersee-schifffahrt) und [Maria Wörth](/blog/maria-woerth-woerthersee); aktuelle Werte zeigt die Seite [Wassertemperatur Wörthersee](/wassertemperatur/woerthersee).
 
-## 2. Großglockner Hochalpenstraße (Juni–Oktober)
-Österreichs höchster Berg, eine legendäre Panoramastraße, Gletscher zum Anfassen. Mautpflichtig, aber jeden Cent wert. Mindestens 4 Stunden einplanen.
+## 2. Großglockner Hochalpenstraße
+Die Panoramastraße führt über den Alpenhauptkamm zwischen Salzburg und Kärnten. Auf Kärntner Seite zweigt die Straße zur Kaiser-Franz-Josefs-Höhe ab – mit Blick auf den Großglockner (3.798 m), den höchsten Berg Österreichs, und die Pasterze, den größten Gletscher des Landes. Die Straße ist mautpflichtig und nur im Sommerhalbjahr offen, in der Regel etwa von Anfang Mai bis Anfang November, je nach Schnee. Mit Pausen einen ganzen Tag einplanen. Mehr im Artikel [Großglockner Hochalpenstraße](/blog/grossglockner-tagesausflug).
 
-## 3. Burg Hochosterwitz (Mai–Oktober)
-Auf einem freistehenden Felsblock. 14 original erhaltene Tore. Kein Vergleichsobjekt in Österreich. 1,5 Stunden reichen.
+## 3. Burg Hochosterwitz
+Die Burg steht auf einem freistehenden Felsen bei St. Georgen am Längsee, östlich von St. Veit an der Glan. Der Weg hinauf führt durch **14 Tore**, mit denen Georg Khevenhüller den Aufstieg zwischen 1570 und 1586 sichern ließ. Wer nicht zu Fuß gehen will, fährt mit dem Lift. Geöffnet ist im Sommerhalbjahr – Termine vorab prüfen. Mehr im Artikel [Burg Hochosterwitz](/blog/burg-hochosterwitz-ausflug).
 
 ## 4. Weissensee
-Motorbootverbot, 8 m Sichttiefe, kristallklares Wasser. Im Winter Europas größte Natureisfläche. Zwei Stunden Fahrt von Klagenfurt, aber es lohnt sich.
+Ein schmaler Bergsee auf 930 m in den Gailtaler Alpen, mit Trinkwasserqualität, einem zu zwei Dritteln unverbauten Ufer und ohne private Motorboote. Im Sommer lohnt der Seeuferweg zum Ostufer mit dem Schiff zurück, in kalten Wintern wird der See zur – laut Region – größten präparierten Natureisfläche Europas. Er liegt weit im Westen des Landes, von Klagenfurt aus ist das ein voller Tagesausflug. Mehr in [Weissensee](/blog/weissensee-kaernten-geheimtipp) und [Weissensee im Winter](/blog/weissensee-winter-schlittschuhlaufen).
 
 ## 5. Villacher Alpe (Dobratsch)
 Über die mautpflichtige Villacher Alpenstraße bis zur Rosstratte (rund 1.730 m), von dort in eineinhalb bis zwei Stunden auf dem familientauglichen Panoramagipfelweg zum Gipfel (2.166 m). Seit 2002 Naturpark, dazu Skywalk an der Roten Wand und Alpengarten an der Straße. Halbtagesausflug – mehr im Artikel [Villacher Alpe (Dobratsch)](/blog/villacher-alpe-dobratsch-wanderung).
 
-## 6. Nockberge im UNESCO-Biosphärenpark
-Sanfte Almberge, keine Felswände. Im Juli/August Alpenrosenblüte. Wandern ohne Kletterkenntnisse, Hütten zum Einkehren. Für alle.
+## 6. Nockberge
+Sanfte, runde Almberge statt schroffer Felswände – die Kärntner Nockberge gehören zum UNESCO-Biosphärenpark Salzburger Lungau & Kärntner Nockberge. Ab etwa Mitte bis Ende Juni färbt der Almrausch die Hänge rot, je nach Höhe bis in den Juli. Viele Touren brauchen keine Kletterkenntnisse, Kondition aber schon. Mehr im Artikel [Nockberge](/blog/nockberge-biosphaerenpark-wandern), dazu die Panoramastraße [Nockalmstraße](/blog/nockalmstrasse-panoramastrasse).
 
 ## 7. Gurker Dom
-Der eindrucksvollste Romanikbau Österreichs. Die Krypta mit 100 Marmorsäulen hat kein Pendant in Europa. Kaum bekannt, kaum besucht. Kostenloser Eintritt.
+Einer der bedeutendsten romanischen Kirchenbauten Österreichs, errichtet im 12. Jahrhundert. Unter dem Dom liegt die Krypta, deren Gewölbe auf 100 Marmorsäulen ruht, mit dem Grab der heiligen Hemma von Gurk. Der Dom selbst ist frei zugänglich, für die Krypta wird ein Erhaltungsbeitrag eingehoben, dazu gibt es Führungen – aktuelle Zeiten beim Domladen prüfen. Mehr im Artikel [Gurker Dom](/blog/gurker-dom-romanik-kaernten).
 
-## 8. Karawanken-Grenzkamm
-Wandern exakt auf der Grenze Österreich/Slowenien. Blick auf Wörthersee und Ljubljana gleichzeitig. Nur für Wanderer mit guter Kondition.
+## 8. Karawanken
+Die Karawanken bilden über weite Strecken die Grenze zu Slowenien. Touren auf den Grenzkamm – etwa auf den **Hochstuhl** (Stol), den höchsten Gipfel der Karawanken – sind anspruchsvolle Bergwanderungen mit Trittsicherheit und Kondition. Am Kamm ist man Gewittern ausgesetzt, also früh starten und den Wetterbericht ernst nehmen.
 
 ## 9. Heiligenblut
-Das Dorf mit der gotischen Kirche vor dem Großglockner. Eines der meistfotografierten Motive Österreichs. Kein Tourismustrubel. Originaler Bergort.
+Die gotische Wallfahrtskirche vor dem Großglockner ist eines der bekanntesten Postkartenmotive Österreichs. Der Ort liegt an der Glocknerstraße und ist Ausgangspunkt für Touren im Nationalpark Hohe Tauern – an Sommertagen ist hier also einiges los. Mehr im Artikel [Heiligenblut](/blog/heiligenblut-grossglockner-dorf).
 
-## 10. Kärntner Kulinarik probieren
-Käsknödel, Kärntner Nudeln, Reindling. Am authentischsten auf einer Almhütte in den Nockbergen oder Gailtaler Alpen. Ein gutes Mittagessen hier wiegt schwerer als jede Sehenswürdigkeit.
+## 10. Kärntner Küche
+Kasnudeln, Reindling, Speck und Almkäse – am besten dort, wo sie herkommen: auf bewirtschafteten Almhütten in den Nockbergen oder den Gailtaler Alpen und in Gasthäusern auf dem Land. Mehr im Artikel [Kärntner Küche](/blog/kaernten-kulinarik-kaesknodel-reindling).
     `,
     affiliateLinks: [
       { label: 'Reiseführer Kärnten – Amazon', url: 'https://www.amazon.de/s?k=reisef%C3%BChrer+k%C3%A4rnten' },
