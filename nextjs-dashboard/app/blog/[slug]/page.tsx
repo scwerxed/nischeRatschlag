@@ -16,7 +16,7 @@ import { seasonStatus, SEASON_LABEL } from '@/app/lib/season';
 import { unterkuenfte } from '@/app/lib/unterkuenfte';
 import { nearestCityKm, distKm, nearbyPosts, UMKREIS_KM } from '@/app/lib/wochenendtrip';
 import { basislagerFuer, BASISLAGER_RADIUS_KM } from '@/app/lib/basislager';
-import { seeMessstellenFuer, badestelleFuer, AGES_EINSTUFUNG } from '@/app/lib/gewaesser';
+import { seeMessstellenFuer, badestelleFuer, steckbriefFuerBadestelle, AGES_EINSTUFUNG } from '@/app/lib/gewaesser';
 import { QUELLEN_LABEL, seeSlug } from '@/app/lib/seen-messstellen';
 import SeeLive from '@/app/ui/see-live';
 import { BASE, SITE_NAME, CATEGORY_KEYWORDS, REGION_META, regionName, articleSchema, breadcrumbSchema, sportsActivitySchema, trailRouteSchema, OFFICIAL_REGION_SITES } from '@/app/lib/seo';
@@ -247,6 +247,12 @@ export default async function BlogPostPage({ params }: Props) {
   const badestelle = await badestelleFuer(post);
   const einstufung = badestelle?.einstufung ? AGES_EINSTUFUNG[badestelle.einstufung.code] : undefined;
   const probe = badestelle?.letzteProbe;
+  // Seen-Steckbrief zur Badestelle (auch Seen nur mit Proben, z. B. Achensee) – nicht doppelt, wenn die Live-Karte ihn schon verlinkt.
+  const badestelleSteckbrief = badestelle ? steckbriefFuerBadestelle(badestelle.name) : undefined;
+  const badestelleSteckbriefLink =
+    badestelleSteckbrief && (seeStationen.length === 0 || seeSlug(seeStationen[0].see) !== badestelleSteckbrief)
+      ? badestelleSteckbrief
+      : undefined;
   const EINSTUFUNG_CLS = {
     gut: 'bg-green-100 text-green-800 border-green-200',
     mittel: 'bg-amber-100 text-amber-800 border-amber-200',
@@ -679,6 +685,11 @@ export default async function BlogPostPage({ params }: Props) {
                 Hygiene-Kontrolle nach EU-Badegewässerrichtlinie{probe && badestelle.probenSaison > 0 ? ` (${badestelle.probenSaison} Proben in der Saison ${probe.datum.slice(6)})` : ''}.
                 Quelle: AGES, CC BY 3.0 AT.
               </p>
+              {badestelleSteckbriefLink && (
+                <Link href={`/wassertemperatur/${badestelleSteckbriefLink}`} className="mt-3 inline-flex items-center gap-1 text-caption font-medium text-green-700 hover:text-green-800">
+                  Alle Badestellen &amp; Proben am See →
+                </Link>
+              )}
             </div>
           )}
 

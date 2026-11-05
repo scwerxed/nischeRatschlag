@@ -1,6 +1,6 @@
 import type { Post } from '@/app/lib/posts';
 import { coordsOf, distKm } from '@/app/lib/wochenendtrip';
-import { SEE_MESSSTELLEN, type SeeMessstelle } from '@/app/lib/seen-messstellen';
+import { SEE_MESSSTELLEN, STECKBRIEF_SEEN, type SeeMessstelle } from '@/app/lib/seen-messstellen';
 
 // Serverseitige Helfer für Gewässer-Daten auf Artikelseiten:
 //  1. Welche Live-See-Messstelle passt zu einem Artikel?  (Werte kommen clientseitig über /api/seewetter)
@@ -32,6 +32,17 @@ export function seeMessstellenFuer(post: Post): MessstelleTreffer[] {
     .sort((a, b) => a.km - b.km);
   if (treffer.length === 0) return [];
   return treffer.filter((m) => m.see === treffer[0].see);
+}
+
+/**
+ * Gehört ein Artikel zu einem See ohne Live-Messstelle (Seen-Steckbriefe)? Dieselbe Regel wie oben: Seename
+ * (`match`) in Slug/Titel/Excerpt UND Startpunkt höchstens 8 km von einem der Punkte (Badestellen am See).
+ */
+export function liegtAmSee(post: Post, match: string, punkte: [number, number][]): boolean {
+  const c = coordsOf(post);
+  if (!c || punkte.length === 0) return false;
+  if (!new RegExp(match).test(normalize(`${post.slug} ${post.title} ${post.excerpt}`))) return false;
+  return punkte.some((q) => distKm(c, q) <= SEE_MAX_KM);
 }
 
 /**
@@ -215,16 +226,26 @@ export async function agesProbenNachBundesland(
 
 export type WaermsteProbe = { wasser: number; datum: string; stelle: string };
 
+/** Wärmste Probe je Monat (1–12) der aktuellsten Saison über alle Badestellen eines Sees. */
+export type MonatsHoechstwert = { monat: number; wasser: number; proben: number };
+
 /**
- * Offizielle Badestellen an einem See mit Live-Messstelle (gleicher Namensabgleich `match` wie bei
- * `hatLiveMessstelle`) samt Einstufung und letzter Probe, dazu die Zahl der Proben und die wärmste Probe der
- * aktuellsten Saison – für die Seen-Steckbriefe /wassertemperatur/[see]. Bewusst nur das Maximum, keine Spanne:
- * Einzelne Ausreißer nach unten (2026 am Wörthersee 11,2 °C in Klagenfurt am selben Tag wie 28,7 °C in Velden)
- * gäben sonst ein falsches Bild. Ohne AGES-Daten: keine Badestellen.
+ * Offizielle Badestellen an einem See (Namensabgleich `match` wie bei `hatLiveMessstelle`) samt Einstufung und
+ * letzter Probe, dazu für die aktuellste Saison die Zahl der Proben, die wärmste und die jüngste Probe und die
+ * wärmste je Monat – für die Seen-Steckbriefe /wassertemperatur/[see]. `punkte` = Koordinaten der Badestellen
+ * (ohne die mit 0/0 im Feed). Bewusst Höchstwerte statt Spannen: Einzelne Ausreißer nach unten (2026 am
+ * Wörthersee 11,2 °C in Klagenfurt am selben Tag wie 28,7 °C in Velden) gäben sonst ein falsches Bild.
+ * Ohne AGES-Daten: keine Badestellen.
  */
-export async function agesBadestellenAmSee(
-  match: string,
-): Promise<{ saison: number; stellen: Badestelle[]; proben: number; waermste?: WaermsteProbe }> {
+export async function agesBadestellenAmSee(match: string): Promise<{
+  saison: number;
+  stellen: Badestelle[];
+  proben: number;
+  waermste?: WaermsteProbe;
+  juengste?: WaermsteProbe;
+  monate: MonatsHoechstwert[];
+  punkte: [number, number][];
+}> {
   const spots = await agesSpots();
   const saison = aktuelleSaison(spots);
   const re = new RegExp(match);
@@ -232,17 +253,45 @@ export async function agesBadestellenAmSee(
 
   let proben = 0;
   let waermste: WaermsteProbe | undefined;
+  let juengste: WaermsteProbe | undefined;
+  const jeMonat = new Map<number, MonatsHoechstwert>();
   for (const spot of amSee) {
     for (const p of Array.isArray(spot.MESSWERTE) ? spot.MESSWERTE : []) {
       if (typeof p.D !== 'string' || !/^\d{2}\.\d{2}\.\d{4}$/.test(p.D) || Number(p.D.slice(6)) !== saison) continue;
       if (typeof p.W !== 'number' || p.W <= 0) continue;
       proben++;
-      if (!waermste || p.W > waermste.wasser) waermste = { wasser: p.W, datum: p.D, stelle: spot.BADEGEWAESSERNAME ?? 'Badestelle' };
+      const stelle = spot.BADEGEWAESSERNAME ?? 'Badestelle';
+      if (!waermste || p.W > waermste.wasser) waermste = { wasser: p.W, datum: p.D, stelle };
+      if (!juengste || dateKey(p.D) > dateKey(juengste.datum)) juengste = { wasser: p.W, datum: p.D, stelle };
+      const monat = Number(p.D.slice(3, 5));
+      const m = jeMonat.get(monat);
+      if (!m) jeMonat.set(monat, { monat, wasser: p.W, proben: 1 });
+      else {
+        m.proben++;
+        if (p.W > m.wasser) m.wasser = p.W;
+      }
     }
   }
 
+  const punkte: [number, number][] = [];
+  for (const s of amSee) {
+    const lat = Number(s.LATITUDE);
+    const lng = Number(s.LONGITUDE);
+    if (Number.isFinite(lat) && Number.isFinite(lng) && lat !== 0 && lng !== 0) punkte.push([lat, lng]);
+  }
+
   const stellen = amSee.map((s) => toBadestelle(s, 0)).sort((a, b) => a.name.localeCompare(b.name, 'de'));
-  return { saison, stellen, proben, waermste };
+  const monate = [...jeMonat.values()].sort((a, b) => a.monat - b.monat);
+  return { saison, stellen, proben, waermste, juengste, monate, punkte };
+}
+
+/**
+ * Slug des Seen-Steckbriefs (/wassertemperatur/[see]), zu dem eine AGES-Badestelle gehört – Seen mit
+ * Live-Messstelle und Seen nur mit Proben, gleicher Namensabgleich. Sonst `undefined`.
+ */
+export function steckbriefFuerBadestelle(badestellenName: string): string | undefined {
+  const text = normalize(badestellenName);
+  return STECKBRIEF_SEEN.find((s) => new RegExp(s.match).test(text))?.slug;
 }
 
 function toBadestelle(spot: AgesSpot, km: number): Badestelle {

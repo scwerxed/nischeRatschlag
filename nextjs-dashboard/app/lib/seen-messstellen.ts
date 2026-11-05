@@ -115,3 +115,106 @@ export const LIVE_SEEN: LiveSee[] = Object.values(
 
 /** Live-Messwert einer Station, wie ihn /api/seewetter liefert. */
 export type SeeMesswert = { wasser: number; stand: string };
+
+// ── Seen ohne Live-Messstelle, aber mit offiziellen Proben (AGES) ───────────
+// Bekannte Badeseen ohne offenes Live-Messnetz (v. a. Tirol, Steiermark, Burgenland, Wien, Vorarlberg) bekommen
+// ebenfalls einen Steckbrief – Wassertemperatur und Qualität dann nur aus den AGES-Proben der EU-Badestellen.
+// Aufgenommen sind Seen mit eigenem Artikel oder mehreren EU-Badestellen. `match` wie oben: Regex (klein, Umlaute
+// ausgeschrieben) auf die AGES-Badestellennamen und auf Slug/Titel/Excerpt der Artikel; jede AGES-Badestelle darf
+// nur zu einem See passen (z. B. „stausee… ottenstein“ statt „ottenstein“, sonst träfe es das Waldbad Rappottenstein).
+// `punkt` = eine Badestelle am See laut AGES (für Abstände zwischen den Seen, auch wenn der Feed ausfällt).
+// `dativ` nur bei weiblichen Gewässern („an der Alten Donau“), `schemaTyp` nur, wo es kein natürlicher See ist.
+
+/** schema.org-Typ für das JSON-LD des Steckbriefs (Standard: LakeBodyOfWater). */
+export type GewaesserTyp = 'LakeBodyOfWater' | 'Reservoir' | 'Canal';
+
+export type ProbenSee = {
+  slug: string;
+  see: string;
+  regionen: string[];
+  match: string;
+  punkt: [number, number];
+  dativ?: string;
+  schemaTyp?: GewaesserTyp;
+};
+
+const PROBEN_SEEN_DATEN: Omit<ProbenSee, 'slug'>[] = [
+  { see: 'Achensee',           regionen: ['tirol'],             match: 'achensee',              punkt: [47.434398, 11.7257] },
+  { see: 'Alte Donau',         regionen: ['wien'],              match: 'alte donau',            punkt: [48.2434, 16.417999], dativ: 'Alten Donau' },
+  { see: 'Altausseer See',     regionen: ['steiermark'],        match: 'altausseer ?see',       punkt: [47.634799, 13.7782] },
+  { see: 'Bodensee',           regionen: ['vorarlberg'],        match: 'bodensee',              punkt: [47.506599, 9.73427] },
+  { see: 'Gleinkersee',        regionen: ['oberoesterreich'],   match: 'gleinker ?see',         punkt: [47.689498, 14.295399] },
+  { see: 'Grundlsee',          regionen: ['steiermark'],        match: 'grundlsee',             punkt: [47.6217, 13.838399] },
+  { see: 'Heiterwanger See',   regionen: ['tirol'],             match: 'heiterwang',            punkt: [47.456001, 10.7606] },
+  { see: 'Hintersteiner See',  regionen: ['tirol'],             match: 'hintersteiner ?see',    punkt: [47.541999, 12.222299] },
+  { see: 'Lunzer See',         regionen: ['niederoesterreich'], match: 'lunzer ?see',           punkt: [47.853401, 15.0444] },
+  { see: 'Neue Donau',         regionen: ['wien'],              match: 'neue donau',            punkt: [48.2262, 16.416599], dativ: 'Neuen Donau', schemaTyp: 'Canal' },
+  { see: 'Neusiedler See',     regionen: ['burgenland'],        match: 'neusiedler ?see',       punkt: [47.859699, 16.824499] },
+  { see: 'Offensee',           regionen: ['oberoesterreich'],   match: 'offensee',              punkt: [47.750801, 13.8385] },
+  { see: 'Plansee',            regionen: ['tirol'],             match: 'plansee',               punkt: [47.4855, 10.841899] },
+  { see: 'Reintaler See',      regionen: ['tirol'],             match: 'reintaler ?see',        punkt: [47.4622, 11.8956] },
+  { see: 'Stausee Ottenstein', regionen: ['niederoesterreich'], match: 'stausee[ ,-]*ottenstein', punkt: [48.590301, 15.322299], schemaTyp: 'Reservoir' },
+  { see: 'Stubenbergsee',      regionen: ['steiermark'],        match: 'stubenberg',            punkt: [47.229801, 15.8027] },
+  { see: 'Thiersee',           regionen: ['tirol'],             match: 'thiersee',              punkt: [47.5923, 12.1201] },
+  { see: 'Walchsee',           regionen: ['tirol'],             match: 'walchsee',              punkt: [47.650798, 12.326299] },
+];
+
+export const PROBEN_SEEN: ProbenSee[] = PROBEN_SEEN_DATEN.map((s) => ({ ...s, slug: seeSlug(s.see) }));
+
+// ── Alle Steckbriefe (/wassertemperatur/[see]) ──────────────────────────────
+
+/** Satzbausteine: „der Achensee / am Achensee / zum Achensee / um den Achensee“, bei weiblichen Gewässern „die Alte Donau / an der Alten Donau …“. */
+export type SeeFormen = { der: string; am: string; zum: string; den: string };
+
+function seeFormen(see: string, dativ?: string): SeeFormen {
+  return dativ
+    ? { der: `die ${see}`, am: `an der ${dativ}`, zum: `zur ${dativ}`, den: `die ${see}` }
+    : { der: `der ${see}`, am: `am ${see}`, zum: `zum ${see}`, den: `den ${see}` };
+}
+
+export type SteckbriefSee = {
+  slug: string;
+  see: string;
+  regionen: string[];
+  match: string;
+  /** Live-Messstellen am See – leer bei Seen, die nur offizielle Proben haben. */
+  stationen: SeeMessstelle[];
+  /** Messstellen bzw. eine Badestelle laut Liste – für Abstände zwischen den Seen. */
+  punkte: [number, number][];
+  formen: SeeFormen;
+  schemaTyp: GewaesserTyp;
+};
+
+/** Jeder See mit Steckbrief genau einmal: zuerst die mit Live-Messstelle, dann die nur mit Proben (je alphabetisch). */
+export const STECKBRIEF_SEEN: SteckbriefSee[] = [
+  ...LIVE_SEEN.map((s): SteckbriefSee => ({
+    ...s,
+    punkte: s.stationen.map((m): [number, number] => [m.lat, m.lng]),
+    formen: seeFormen(s.see),
+    schemaTyp: 'LakeBodyOfWater',
+  })),
+  ...[...PROBEN_SEEN]
+    .sort((a, b) => a.see.localeCompare(b.see, 'de'))
+    .map((s): SteckbriefSee => ({
+      slug: s.slug,
+      see: s.see,
+      regionen: s.regionen,
+      match: s.match,
+      stationen: [],
+      punkte: [s.punkt],
+      formen: seeFormen(s.see, s.dativ),
+      schemaTyp: s.schemaTyp ?? 'LakeBodyOfWater',
+    })),
+];
+
+/**
+ * Steckbrief zu einem Seenamen, z. B. aus dem Seen-Vergleich („Bodensee (Bregenz)“ → bodensee); `live` = mit
+ * Live-Messstelle. Ohne Steckbrief `undefined`.
+ */
+export function steckbriefFuer(name: string): { slug: string; live: boolean } | undefined {
+  for (const slug of [seeSlug(name), seeSlug(name.replace(/\s*\(.*\)\s*$/, ''))]) {
+    const s = STECKBRIEF_SEEN.find((x) => x.slug === slug);
+    if (s) return { slug: s.slug, live: s.stationen.length > 0 };
+  }
+  return undefined;
+}

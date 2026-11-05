@@ -2,11 +2,11 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
 import { LAKES, SEE_THEMEN } from '@/app/lib/seen';
-import { LIVE_SEEN, seeSlug } from '@/app/lib/seen-messstellen';
+import { steckbriefFuer } from '@/app/lib/seen-messstellen';
 import { BASE, breadcrumbSchema } from '@/app/lib/seo';
 
-// Seen mit Live-Messstelle → Link auf ihren Steckbrief /wassertemperatur/[see].
-const LIVE = new Set(LIVE_SEEN.map((s) => s.slug));
+// Seen mit Steckbrief /wassertemperatur/[see] → Link darauf („jetzt live“ bzw. „letzte Probe“ bei Seen ohne Live-Messstelle).
+const STECKBRIEF = new Map(LAKES.map((l) => [l.name, steckbriefFuer(l.name)] as const));
 
 type Props = { params: Promise<{ thema: string }> };
 
@@ -82,9 +82,9 @@ export default async function SeeThemaPage({ params }: Props) {
               <strong className="font-semibold text-ink">Tipp:</strong> {l.tipp}
               {l.gratis ? ' · Gratis-Bademöglichkeit vorhanden' : ' · Strandbad mit Eintritt'}
             </p>
-            {LIVE.has(seeSlug(l.name)) && (
-              <Link href={`/wassertemperatur/${seeSlug(l.name)}`} className="inline-block mt-2 text-fine font-medium text-sky-700 hover:underline">
-                Wassertemperatur {l.name} jetzt live →
+            {STECKBRIEF.get(l.name) && (
+              <Link href={`/wassertemperatur/${STECKBRIEF.get(l.name)?.slug}`} className="inline-block mt-2 text-fine font-medium text-sky-700 hover:underline">
+                Wassertemperatur {l.name}{STECKBRIEF.get(l.name)?.live ? ' jetzt live' : ': letzte Probe'} →
               </Link>
             )}
           </div>

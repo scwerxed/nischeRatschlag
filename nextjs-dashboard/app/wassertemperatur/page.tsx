@@ -3,8 +3,8 @@ import type { Metadata } from 'next';
 import type { ReactNode } from 'react';
 import { posts } from '@/app/lib/posts';
 import { BADEPLAETZE } from '@/app/lib/badeplaetze';
-import { agesProbenNachBundesland, badestelleFuer, hatLiveMessstelle, type AgesProbe } from '@/app/lib/gewaesser';
-import { LIVE_SEEN, SEE_MESSSTELLEN, QUELLEN_LABEL, seeSlug, type SeeQuelle } from '@/app/lib/seen-messstellen';
+import { agesProbenNachBundesland, badestelleFuer, hatLiveMessstelle, steckbriefFuerBadestelle, type AgesProbe } from '@/app/lib/gewaesser';
+import { LIVE_SEEN, SEE_MESSSTELLEN, STECKBRIEF_SEEN, QUELLEN_LABEL, seeSlug, type SeeQuelle } from '@/app/lib/seen-messstellen';
 import { distKm } from '@/app/lib/wochenendtrip';
 import { BASE, breadcrumbSchema } from '@/app/lib/seo';
 import WassertemperaturLive, { type WtGruppe } from '@/app/ui/wassertemperatur-live';
@@ -88,7 +88,13 @@ function formatGrad(v: number): string {
   return `${v.toLocaleString('de-AT', { minimumFractionDigits: 1, maximumFractionDigits: 1 })} °C`;
 }
 
-/** Tabelle „Badestelle · Gemeinde · Letzte Probe“ – für die Länder ohne Messnetz und die Seen ohne eigene Messstelle. */
+/** Seen ohne Live-Messstelle, aber mit eigenem Steckbrief (nur offizielle Proben), alphabetisch. */
+const PROBEN_STECKBRIEFE = STECKBRIEF_SEEN.filter((s) => s.stationen.length === 0);
+
+/**
+ * Tabelle „Badestelle · Gemeinde · Letzte Probe“ – für die Länder ohne Messnetz und die Seen ohne eigene Messstelle.
+ * Der Name verlinkt auf den Seen-Steckbrief, falls der See einen hat (dort stehen auch die Artikel), sonst auf den Artikel.
+ */
 function ProbenTabelle({ stellen, artikel, saison }: { stellen: AgesProbe[]; artikel: Map<string, string>; saison: number }) {
   return (
     <div className="border border-hairline rounded-lg overflow-hidden">
@@ -102,12 +108,14 @@ function ProbenTabelle({ stellen, artikel, saison }: { stellen: AgesProbe[]; art
         </thead>
         <tbody>
           {stellen.map((s) => {
+            const steckbrief = steckbriefFuerBadestelle(s.name);
             const slug = artikel.get(s.id);
+            const href = steckbrief ? `/wassertemperatur/${steckbrief}` : slug ? `/blog/${slug}` : undefined;
             return (
               <tr key={s.id} className="border-t border-hairline">
                 <td className="px-4 py-3 align-top">
-                  {slug ? (
-                    <Link href={`/blog/${slug}`} className="font-semibold text-ink hover:text-sky-700 hover:underline">
+                  {href ? (
+                    <Link href={href} className="font-semibold text-ink hover:text-sky-700 hover:underline">
                       {s.name}
                     </Link>
                   ) : (
@@ -208,6 +216,18 @@ export default async function WassertemperaturPage() {
         url: `${BASE}/wassertemperatur/${s.slug}`,
       })),
     },
+    {
+      '@context': 'https://schema.org',
+      '@type': 'ItemList',
+      name: 'Seen in Österreich mit offiziellen Wasserproben',
+      numberOfItems: PROBEN_STECKBRIEFE.length,
+      itemListElement: PROBEN_STECKBRIEFE.map((s, i) => ({
+        '@type': 'ListItem',
+        position: i + 1,
+        name: s.see,
+        url: `${BASE}/wassertemperatur/${s.slug}`,
+      })),
+    },
   ];
 
   return (
@@ -224,7 +244,8 @@ export default async function WassertemperaturPage() {
         {anzahlProben > 0 && (
           <>
             {' '}Für die übrigen Bundesländer gibt es kein offenes Live-Messnetz – dort zeigen wir die Wassertemperatur
-            der letzten offiziellen Probe an {anzahlProben} EU-Badestellen.
+            der letzten offiziellen Probe an {anzahlProben} EU-Badestellen, und {PROBEN_STECKBRIEFE.length} bekannte Seen
+            vom Achensee bis zum Neusiedler See haben einen eigenen Steckbrief mit allen Proben.
           </>
         )}
         {anzahlWeitere > 0 && (
@@ -260,6 +281,24 @@ export default async function WassertemperaturPage() {
             Probe der Saison {saison} mit Datum. Das ist ein guter Anhaltspunkt, wie warm der See im Sommer wird, aber
             kein Live-Wert: Zwischen zwei Proben liegen oft Wochen, außerhalb der Badesaison kommen keine neuen dazu.
           </p>
+
+          {/* Seen-Steckbriefe für die bekannten Seen ohne Live-Messstelle (auch Gleinkersee & Co. unter den Live-Tabellen) */}
+          <div className="mb-10">
+            <p className="text-caption text-ink-soft mb-3">
+              Steckbriefe mit wärmster Probe, Höchstwert je Monat und Badewasser-Qualität aller Badestellen am See:
+            </p>
+            <div className="flex flex-wrap gap-2">
+              {PROBEN_STECKBRIEFE.map((s) => (
+                <Link
+                  key={s.slug}
+                  href={`/wassertemperatur/${s.slug}`}
+                  className="text-caption font-medium px-4 py-1.5 bg-sky-50 text-sky-700 border border-sky-200 hover:bg-sky-100 transition-colors rounded-full"
+                >
+                  {s.see}
+                </Link>
+              ))}
+            </div>
+          </div>
 
           {probenGruppen.map((g) => (
             <div key={g.region} id={g.region} className="mb-10 scroll-mt-24">
