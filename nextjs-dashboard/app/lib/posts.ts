@@ -445,7 +445,7 @@ Der Wörthersee ist einer der wärmsten Seen Österreichs – im Sommer erreicht
 ## Strandbad Klagenfurt (mit Eintritt)
 Das größte Strandbad Kärntens mit Wasserrutsche, Sprungturm und Gastronomie. Perfekt für einen ganzen Tag.
 
-## Loretto-Strandbad Velden (mit Eintritt)
+## Strandbad Velden (mit Eintritt)
 Im mondänen Velden gelegen, elegantes Strandbad mit gutem Service.
 
 ## Freistrand Maria Wörth (kostenlos)
@@ -956,45 +956,57 @@ Müll immer mitnehmen – nur so bleiben diese Stellen erhalten. Früh morgens k
   },
   {
     slug: 'burg-hochosterwitz-ausflug',
-    startCoords: [46.7580, 14.4520],
-    title: 'Burg Hochosterwitz – Mittelalter pur in Kärnten',
-    excerpt: 'Auf einem 176 Meter hohen Felsblock thronend ist Burg Hochosterwitz eine der eindrucksvollsten Burgen Österreichs – und soll Walt Disney als Vorlage für Dornröschens Schloss gedient haben.',
+    startCoords: [46.7559, 14.4524],
+    startPoint: {
+      name: 'Parkplatz am Fuß des Burgfelsens',
+      parking: 'Parkplatz direkt unterhalb der Burg – Konditionen vorab prüfen',
+      note: 'Hinauf zu Fuß durch die 14 Tore oder mit dem Schrägaufzug',
+    },
+    planningMistakes: [
+      { fehler: 'Im Winter oder an einem Novembertag spontan hinfahren', besser: 'Die Burg ist nur im Sommerhalbjahr geöffnet, ungefähr von Frühling bis Ende Oktober. Saisonbeginn, -ende und Zeiten ändern sich – vorab auf der Website der Burg prüfen.' },
+      { fehler: 'Den Lift nehmen und die Tore auslassen', besser: 'Das Besondere an Hochosterwitz ist der Burgweg durch die 14 Tore. Wer gut zu Fuß ist, geht hinauf und nimmt bei Bedarf den Schrägaufzug für den Rückweg.' },
+      { fehler: 'Bei Regen fest mit einem Schlechtwetterausflug rechnen', besser: 'Der Weg durch die Tore verläuft im Freien und ist gepflastert. Bei Nässe gutes Schuhwerk, bei Gewitter lieber den Lift oder einen anderen Tag wählen.' },
+    ],
+    title: 'Burg Hochosterwitz – durch 14 Tore auf den Burgfelsen',
+    excerpt: 'Auf einem Dolomitfelsen rund 160 bis 175 m über der Umgebung östlich von St. Veit an der Glan: Burg Hochosterwitz ist seit 1571 im Besitz der Khevenhüller, ihr Burgweg führt durch 14 Tore aus dem 16. Jahrhundert. Was man über Geschichte, Aufstieg und Anreise wissen sollte.',
     date: '2026-05-17',
     category: 'Ausflug',
     region: 'kaernten',
-    bestSeason: 'Mai–Oktober',
-    highlights: ['Spektakulärste Burganlage Österreichs', '14 original erhaltene Torabschnitte', 'Perfekte Kombination mit dem Gurker Dom'],
+    bestSeason: 'April–Oktober',
+    highlights: ['Burgweg durch 14 Tore aus den Jahren um 1570–1586', 'Seit 1571 durchgehend im Besitz der Familie Khevenhüller', 'Gut mit dem Dom zu Gurk zu einem Kulturtag kombinierbar'],
     content: `
-Es gibt Burgen, und dann gibt es Burg Hochosterwitz. Auf einem 176 Meter hohen, freistehenden Felsblock thronend ist sie eine der eindrucksvollsten und meistfotografierten Burgen Österreichs – Walt Disney soll sie als Inspiration für das Schloss im Dornröschen-Film genutzt haben.
+**Burg Hochosterwitz** steht auf einem freistehenden Dolomitfelsen in der Gemeinde St. Georgen am Längsee, östlich von St. Veit an der Glan. Der Fels ragt je nach Quelle rund 160 bis 175 m über die Umgebung auf, der höchste Punkt der Burg liegt auf etwa 711 m. Schon von der Straße aus sieht man, was die Burg ausmacht: Ein Weg windet sich in Kehren um den Felsen und führt dabei durch eine Kette von Toren nach oben.
 
 ## Geschichte
+Erstmals erwähnt wird der Ort 860 in einer Schenkung Ludwigs des Deutschen an das Erzbistum Salzburg, damals als „Astarwizza“. Später saßen hier lange die Schenken von Osterwitz; der letzte von ihnen starb nach dem Türkeneinfall von 1475 in Gefangenschaft. Die Burg fiel an den Landesfürsten, 1541 wurde sie an **Georg Khevenhüller** verpfändet, 1571 kaufte er sie.
 
-Die Burg wurde erstmals 860 n. Chr. urkundlich erwähnt und war jahrhundertelang ein zentrales Bollwerk gegen türkische Invasionen. Die 14 Torgassen auf dem Aufstieg wurden im 16. Jahrhundert erbaut und sind bis heute nahezu original erhalten – einzigartig in Europa.
+Khevenhüller ließ die Anlage ab 1570 zu ihrer heutigen Gestalt ausbauen – in einer Zeit, in der Kärnten seine Verteidigung gegen die Osmanen verstärkte. Seit 1571 ist die Burg **ununterbrochen im Besitz der Familie Khevenhüller**. Eine eigene Wasserversorgung bekam sie übrigens erst 1961, als man eine Quelle fand.
 
-## Der Aufstieg: Durch 14 Tore
+## Der Burgweg durch 14 Tore
+Die 14 Tore entstanden in den 1570er- und 1580er-Jahren, jedes mit eigenem Namen – vom Fähnrichtor am Beginn über Wächter-, Engel-, Löwen- und Khevenhüllertor bis zum Kulmertor oben. Am Khevenhüllertor erinnert ein Relief an den Bauherrn. Der gepflasterte Weg gewinnt auf dem Weg nach oben gut 100 Höhenmeter und ist für die meisten gut machbar, mit Pausen an den Toren rechnet man am besten mit einer halben Stunde oder etwas mehr.
 
-Jedes der 14 Tore hatte eine eigene Verteidigungsfunktion. Man wandert buchstäblich durch die Geschichte der Habsburgerzeit. Der Aufstieg dauert 30–40 Minuten und ist auch für ältere Besucher gut machbar. Oben erwartet eine vollständig erhaltene Burganlage mit beeindruckendem Waffenmuseum.
+Wer nicht gehen kann oder will, fährt mit dem **Schrägaufzug**, der seit 2017 in Betrieb ist und eine ältere Bahn ersetzt hat. Für Rollstuhl, Kinderwagen oder schmerzende Knie ist er die bessere Wahl; Fahrbedingungen vorab prüfen.
 
-## Was macht Hochosterwitz besonders?
-- Keine Massen wie bei Schloss Neuschwanstein
-- Originalerhaltene Verteidigungsanlage – kein Rekonstruktions-Klotz
-- Fantastische Aussicht über das gesamte Klagenfurter Becken
-- Romantisches Restaurant in der Burg – Mittagessen im Mittelalter-Ambiente
+## Oben auf der Burg
+In der Kernburg gibt es eine **Ausstellung mit Rüstungen und Waffen** aus der Geschichte der Familie, dazu die Burgkapelle (hl. Nikolaus) und weiter unten am Kirchentor die Burgkirche. Von den Mauern blickt man weit über das Land rund um St. Veit an der Glan. Was oben gerade zugänglich ist und ob die Burggastronomie geöffnet hat, steht auf der Website der Burg.
 
-## Praktische Infos
-- Öffnungszeiten: Mai–Oktober täglich 9–18 Uhr
-- Eintritt: Erwachsene ca. 14 €, Kinder ca. 7 €
-- Parken: Parkplatz am Fuß der Burg, kostenlos
-- Anfahrt: 30 km nordöstlich von Klagenfurt (A2, Abfahrt Brückl)
-- Tipp: Dienstag und Donnerstag nachmittags am wenigsten besucht
+Zur Burg gehört auch eine Sage: Margarete von Tirol soll sie belagert haben und durch eine List – die ausgehungerten Verteidiger warfen einen gefüllten Ochsen hinunter – der Überlieferung nach zum Abzug bewogen worden sein. Historisch gilt das als sehr unwahrscheinlich. Ebenso oft liest man, Walt Disney habe sich für ein Märchenschloss von Hochosterwitz inspirieren lassen – belegt ist das nicht.
 
-## Kombination: Hochosterwitz + Gurk an einem Tag
+## Anreise
+- Mit dem Auto: von Klagenfurt rund 25 km Richtung St. Veit an der Glan, Parkplatz am Fuß des Burgfelsens
+- Mit der Bahn: Der Bahnhof Launsdorf-Hochosterwitz liegt in der Nähe; den Fußweg zur Burg und Verbindungen vorab prüfen
+- Öffnungszeiten und Eintritt ändern sich je nach Saison – deshalb hier keine Zeiten und Beträge, aktuelle Angaben auf der Website der Burg
 
-Vom Hochosterwitz weiter nach Gurk zum romanischen Dom (12. Jahrhundert) – eines der bedeutendsten Kunstdenkmäler Österreichs, mit einzigartiger Krypta. Der Umweg beträgt nur 20 km. Ein perfekter Kärnten-Kulturtag.
+## Kombination: Hochosterwitz und Gurk an einem Tag
+Rund 20 km Luftlinie nordwestlich liegt im Gurktal der [Dom zu Gurk](/blog/gurker-dom-romanik-kaernten), einer der wichtigsten romanischen Kirchenbauten Österreichs. Vormittags die Burg, nachmittags Dom und Krypta – das passt gut in einen Tag. Für die Führung im Dom vorab anmelden. Weitere Klassiker der Region stehen in den [Kärnten-Top-10](/blog/kaernten-top-10-sehenswuerdigkeiten).
     `,
     affiliateLinks: [
       { label: 'Burg Hochosterwitz – Tickets & Touren auf GetYourGuide', url: 'https://www.getyourguide.de/s/?q=Hochosterwitz' },
       { label: 'Hotels in der Region St. Veit – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=St.+Veit+an+der+Glan' },
+    ],
+    officialLinks: [
+      { label: 'Burg Hochosterwitz – offizielle Website', url: 'https://www.burg-hochosterwitz.com/' },
+      { label: 'Burg Hochosterwitz – Kärnten Werbung', url: 'https://www.kaernten.at/sehenswertes/burgen-und-schloesser/burg-hochosterwitz' },
     ],
   },
   {
@@ -1317,41 +1329,50 @@ Juni bis Oktober. Im Frühsommer kann oben noch Schnee liegen, an klaren Herbstt
     slug: 'velden-am-woerthersee-urlaub',
     startCoords: [46.6147, 14.0411],
     title: 'Velden am Wörthersee – Glamour, Strandbad und echtes Dorfleben',
-    excerpt: 'Velden ist der bekannteste Urlaubsort Kärntens – und zu Unrecht als reine Promi-Location abgestempelt. Was der Ort wirklich zu bieten hat, und wann man ihn am besten besucht.',
+    excerpt: 'Velden umgreift die Westbucht des Wörthersees: Seecorso, Schloss Velden, das Casino und ein Strandbad mitten im Ort. Was hinter dem Glamour-Ruf steckt, wann es ruhig ist und wie man ohne Auto hinkommt.',
     date: '2026-05-27',
     category: 'Ausflug',
     region: 'kaernten',
     bestSeason: 'Mai–September',
-    highlights: ['Berühmte Seepromenade & Casino', 'Strandbad mit direktem Seezugang', 'Belebte Sommerabende mit Konzerten & Events'],
+    planningMistakes: [
+      { fehler: 'An einem Hochsommer-Wochenende mittags mit dem Auto ins Zentrum fahren', besser: 'Velden liegt an der Bahn zwischen Villach und Klagenfurt, der Bahnhof ist nah am Ortskern. Alternativ mit dem Schiff anreisen – Fahrplan der Wörthersee-Schifffahrt vorab prüfen.' },
+      { fehler: 'Das Strandbad Velden mit dem Strandbad Loretto verwechseln', besser: 'Loretto ist ein Bad in Klagenfurt am Ostende des Sees. In Velden liegt das Strandbad direkt an der Seepromenade im Ortszentrum, saisonal geöffnet und kostenpflichtig.' },
+    ],
+    highlights: ['Seecorso und Promenade an der Westbucht des Wörthersees', 'Schloss Velden (Spätrenaissance) und Casino seit 1922', 'Mit Bahn oder Schiff ohne Auto erreichbar'],
     content: `
-Velden polarisiert. Für manche ist es das mondäne Herz Kärntens – für andere der touristischste, überfüllteste Ort am Wörthersee. Beide Seiten haben recht. Aber wer zur richtigen Zeit kommt und die richtigen Orte kennt, erlebt hier eines der schönsten Seenorte Österreichs.
+**Velden am Wörther See** liegt an der Westbucht des Wörthersees und ist der bekannteste Urlaubsort an seinem Ufer: Promenade, Hotels, Bars, Bootsstege. Wer im Juli zur Mittagszeit kommt, erlebt einen vollen Ort. Wer früh am Morgen oder in der Vor- und Nachsaison kommt, sieht einen hübschen Seeort mit einer langen Geschichte.
 
-## Die Seepromenade
+## Ein Ort mit Badegeschichte
+Velden wird um 1150 erstmals erwähnt. Zum Urlaubsort wurde es im 19. Jahrhundert: 1853 begann die Linienschifffahrt auf dem Wörthersee, 1864 kam die Bahn – und im selben Jahr die erste Badeanstalt. Den Namenszusatz „am Wörther See“ trägt der Ort seit 1893, Marktgemeinde ist er seit 1947.
 
-Die rund 2 km lange Promenade zwischen Seeufer und historischen Villen ist der Kern von Velden. Morgens vor 9 Uhr ist sie fast leer – der beste Moment. Man läuft am Wasser entlang, sieht die alten Bootshäuser, trinkt Kaffee an einem der wenigen Lokale, die früh öffnen. Abends dieselbe Strecke wieder: Musik aus den Bars, Fußgänger, Gondeln auf dem See.
+## Seecorso und Promenade
+Das Leben spielt sich am **Seecorso** und an der Seepromenade ab, zwischen Schloss, Casino und den Anlegestellen. Am frühen Morgen ist es hier ruhig, abends im Sommer belebt. In der Hochsaison treten auf dem Corso und auf dem Platz vor dem Schloss oft Straßenkünstler auf; was gerade los ist, steht im Veranstaltungskalender des Orts.
+
+## Schloss Velden
+Das **Schloss Velden** aus der Spätrenaissance – das Portal trägt die Jahreszahl 1603 – ist heute Kern eines Schlosshotels. Einem breiten Publikum bekannt wurde es durch die Fernsehserie „Ein Schloss am Wörthersee“. Von der Promenade und vom Wasser aus hat man den besten Blick auf das Gebäude.
 
 ## Casino Velden
+Das **Casino Velden** wurde 1922 eröffnet und 1934 von der staatlichen Casino-Gesellschaft übernommen; das heutige Gebäude ist ein Neubau von 1989. Es liegt mitten am Corso – Eintrittsregeln und Dresscode stehen bei Casinos Austria.
 
-Das Schloss-Casino direkt am See ist eine Sehenswürdigkeit für sich – auch wenn man nicht spielt. Das Gebäude (Baujahr 1892) wurde mehrfach umgebaut und ist heute eines der schönsten Casinos Österreichs. Tagsüber ist die Terrasse zum See hin öffentlich zugänglich, und der Blick über den See ist spektakulär.
-
-## Strandbad Velden (Loretto)
-
-Das Loretto-Strandbad liegt 10 Gehminuten vom Ortskern. Sauberes Wasser, ordentliche Infrastruktur, Liegestühle zum Mieten. Eintritt ca. 8 € – in Velden für diese Qualität faire Preise.
+## Baden in Velden
+Das **Strandbad Velden** liegt direkt an der Seepromenade im Zentrum. Es ist in der Sommersaison geöffnet und kostenpflichtig – aktuelle Zeiten und Preise bei der Gemeinde prüfen. Weitere Bademöglichkeiten rund um den See stehen im Artikel [Badestellen am Wörthersee](/blog/beste-badestellen-woerthersee). Die aktuelle Wassertemperatur zeigt unser [Wörthersee-Steckbrief](/wassertemperatur/woerthersee).
 
 ## Wann kommen?
+- **Mai/Juni**: Der Ort ist ruhiger, für viele noch zu kühl zum Baden
+- **Juli/August**: Hochsaison mit vollem Programm – und vollen Parkplätzen
+- **September**: Der See ist oft noch angenehm, die Saison klingt aus; einzelne Betriebe schließen schon
 
-- **Mai/Juni**: Promenade fast menschenleer, Temperaturen angenehm, Hotelpreise deutlich unter Hochsaison
-- **Juli/August**: Lebhaftes Treiben, Konzerte auf der Promenade, Schiffsverkehr – aber auch Gedränge
-- **September**: Geheimtipp: Der Sommer verabschiedet sich, das Wasser ist noch warm (23–25°C), Touristen weg
-
-## Praktische Infos
-- Parken: Gebührenpflichtig im Ortszentrum, kostenloser Parkplatz ca. 1 km außerhalb
-- Anreise: ÖBB Direktzug von Klagenfurt (20 Min.), von Villach (25 Min.)
-- Tipp: Zimmer in Krumpendorf oder Pörtschach buchen – 40% günstiger, Bustransfer möglich
+## Anreise
+- Mit der Bahn: Velden liegt an der Drautalbahn, mit Zug- und S-Bahn-Verbindungen nach Villach und Klagenfurt
+- Mit dem Schiff: Die Wörthersee-Schifffahrt legt in der Saison in Velden an – siehe [Schifffahrt am Wörthersee](/blog/woerthersee-schifffahrt)
+- Mit dem Auto: über die A2, Anschlussstellen Velden West und Velden Ost; im Zentrum wird das Parken in der Saison knapp
     `,
     affiliateLinks: [
       { label: 'Erlebnisse rund um Velden & den Wörthersee – GetYourGuide', url: 'https://www.getyourguide.de/s/?q=Velden%20am%20W%C3%B6rthersee' },
       { label: 'Hotels in Velden – booking.com', url: 'https://www.booking.com/city/at/velden-am-worthersee.de.html' },
+    ],
+    officialLinks: [
+      { label: 'Velden – Kärnten Werbung', url: 'https://www.kaernten.at/reiseziele/orte/velden-am-woerthersee/' },
     ],
   },
   {
@@ -1715,40 +1736,51 @@ Schilfgürtel und Moorwiesen rund um die kleineren Seen sind ein guter Lebensrau
   {
     slug: 'gurker-dom-romanik-kaernten',
     startCoords: [46.8730, 14.2980],
-    title: 'Gurker Dom – Romanische Meisterwerk mitten in Kärnten',
-    excerpt: 'Der Gurker Dom ist einer der bedeutendsten romanischen Kirchenbauten Österreichs – und kaum jemand kennt ihn. Eine Krypta mit 100 Marmorsäulen, frühchristliche Wandmalereien und absolute Stille.',
+    planningMistakes: [
+      { fehler: 'Spontan zur Führung durch Krypta, Bischofskapelle und Fastentuch kommen', besser: 'Die Führungen finden zu festen Zeiten statt, um Voranmeldung beim Dom wird gebeten. Termine vorab erfragen – dann sieht man auch die Bischofskapelle, die sonst nicht frei zugänglich ist.' },
+      { fehler: 'Das Fastentuch im Sommer vor dem Hochaltar erwarten', besser: 'Das große Fastentuch von 1458 verhüllt in der Fastenzeit den Hochaltar. Wer es hängend sehen will, kommt zwischen Aschermittwoch und Karwoche – sonst zeigt die Führung, wie es aufgebaut ist.' },
+    ],
+    title: 'Dom zu Gurk – romanische Basilika mit der Krypta der hl. Hemma',
+    excerpt: 'Zwischen 1140 und 1200 erbaut, mit einer Krypta auf 100 Säulen und dem Grab der heiligen Hemma: Der Dom zu Gurk zählt zu den wichtigsten romanischen Kirchen Österreichs. Was man sieht, was nur mit Führung geht und wie man ihn mit Burg Hochosterwitz verbindet.',
     date: '2026-06-01',
     category: 'Ausflug',
     region: 'kaernten',
-    bestSeason: 'April–Oktober',
-    highlights: ['Bedeutendster Romanikbau Österreichs aus dem 12. Jh.', 'Krypta mit 100 Marmorsäulen – einzigartig in Europa', 'Fast unbekannt – kein Touristengedränge'],
+    bestSeason: 'Ganzjährig',
+    highlights: ['Hochromanische Pfeilerbasilika, um 1140 begonnen, 1200 geweiht', 'Krypta mit 100 Säulen und dem Grab der hl. Hemma (seit 1174)', 'Fastentuch von 1458 und Bischofskapelle mit Fresken aus dem 13. Jh.'],
     content: `
-In Gurk, einem 1.300-Seelen-Dorf im Gurktaler Bezirk, steht ein Kirchenbau, der in Paris oder Rom ein Weltbesuchermagnet wäre. Der Gurker Dom wurde im 12. Jahrhundert von Bischof Roman I. errichtet und ist einer der bedeutendsten romanischen Kirchenbauten im deutschsprachigen Raum – und so gut wie unbekannt im internationalen Tourismus.
+Im kleinen Markt **Gurk** im Gurktal steht eine Kirche, die man in diesem stillen Tal nicht erwarten würde: der **Dom zu Gurk**, eine hochromanische Pfeilerbasilika mit zwei 60 m hohen Westtürmen. Bis 1788 war er Bischofskirche der Diözese Gurk, dann zog das Domkapitel nach Klagenfurt. Heute ist der Dom Pfarrkirche, Konkathedrale und ein Wallfahrtsort.
 
-## Die Kirche
+## Hemma und die Anfänge
+Die Geschichte beginnt mit der **heiligen Hemma von Gurk**: Die Adelige gründete 1043 hier ein Frauenkloster. Nach dessen Auflösung entstand 1072 das Bistum Gurk. Unter Bischof Roman I. begann um 1140 der Bau der heutigen Kirche, der Hochaltar wurde 1200 geweiht, vor 1220 waren Dom und Stiftsgebäude fertig.
 
-Der Dom (offiziell: Collegiatstift Gurk) wurde zwischen 1140 und 1200 erbaut. Zwei mächtige Osttürme, der charakteristisch unveränderte romanische Außenbau, kein gotischer oder barocker Umbau – selten in Österreich. Die ursprüngliche Erscheinung ist fast vollständig erhalten.
+## Die Krypta
+Der älteste Teil der Kirche ist die **Krypta** unter dem Chor. Ihr Gewölbe ruht auf **100 Säulen** – ein dichter Säulenwald, der zu den eindrucksvollsten Räumen der Romanik in Österreich zählt. Seit 1174 liegt hier das **Grab der heiligen Hemma**, zu dem bis heute Pilger kommen.
 
-## Die Krypta – das Herzstück
+## Romanisch – und doch nicht nur
+Außen ist der Dom klar romanisch, innen haben die Jahrhunderte Spuren hinterlassen:
+- **Gotische Gewölbe**: Querhaus und Vierung um 1446/1450, der Chor mit Sternrippengewölbe um 1500, das Mittelschiff erst 1591
+- **Barocke Ausstattung**: Die Altäre ließ Propst Vizdom (1617–1632) errichten, die Zwiebelhelme der Türme kamen 1678 dazu
+- **Pietà von Georg Raphael Donner** (um 1740) am Kreuzaltar
+- **Westportal** als romanisches Trichterportal (um 1200), in der äußeren Vorhalle Wandmalereien um 1340
 
-Die Krypta unter dem Dom ist das Eindrucksvollste. 100 Marmorsäulen, alle unterschiedlich, tragen das niedrige Gewölbe. In der Mitte: das Hochgrab der heiligen Hemma von Gurk. Frühchristliche Wandmalereien aus dem 12. Jahrhundert bedecken die Wände. Diese Kombination – Säulen, Wandmalerei, Stille – ist in Europa ohne direktes Vorbild.
-
-## Bischofskapelle
-
-Die Kapelle über der Sakristei mit den ältesten erhaltenen Fresken Kärntens (um 1260). Führungen nötig, lohnen sich aber.
-
-## Kombination mit Burg Hochosterwitz
-
-Gurk liegt 20 km östlich von Hochosterwitz. Ein Tagesausflug „Romanik + Mittelalter" ist einer der kulturell reichhaltigsten Kärntentage, die man haben kann. Beide zusammen: ca. 3–4 Stunden, keine langen Fußmärsche.
+## Bischofskapelle und Fastentuch
+Über der Vorhalle liegt auf der Empore die **Bischofskapelle** mit Fresken aus dem 13. Jahrhundert – einem der bedeutendsten romanischen Freskenzyklen des Landes. Sie ist nur im Rahmen einer Führung zu sehen. Ebenfalls berühmt ist das große **Fastentuch** von 1458, das in der Fastenzeit den Hochaltar verhüllt.
 
 ## Praktische Infos
-- Öffnungszeiten: April–Oktober täglich 9–17 Uhr; Dom kostenlos, Kryptenführung ca. 5 €
-- Führungen: Mehrmals täglich, Anmeldung nicht nötig (außer Gruppen)
-- Parken: Kostenloser Dorfparkplatz 5 Gehminuten entfernt
-- Anfahrt: Von Klagenfurt ca. 45 Minuten, von St. Veit an der Glan ca. 20 Minuten
+- Der Dom ist tagsüber frei zugänglich; für die Krypta wird beim Domladen ein Erhaltungsbeitrag eingehoben
+- Führungen durch Dom, Krypta, Bischofskapelle und zum Fastentuch zu festen Zeiten, Voranmeldung erbeten – Zeiten und Preise auf der Website des Doms
+- Es ist eine Kirche: Während Gottesdiensten ist keine Besichtigung möglich, angemessene Kleidung
+- Anreise: mit dem Auto durch das Gurktal (von St. Veit an der Glan oder Feldkirchen); mit Öffis über den Bahnhof St. Veit und den Bus ins Gurktal – Fahrplan vorab prüfen
+
+## Kombination mit Burg Hochosterwitz
+Rund 20 km Luftlinie südöstlich von Gurk steht [Burg Hochosterwitz](/blog/burg-hochosterwitz-ausflug) mit ihren 14 Toren. Vormittags die Burg, nachmittags Dom und Krypta – das ergibt einen Kärntner Kulturtag ohne lange Fußwege. Beide stehen auch in unseren [Kärnten-Top-10](/blog/kaernten-top-10-sehenswuerdigkeiten).
     `,
     affiliateLinks: [
       { label: 'Hotels in St. Veit an der Glan – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=St+Veit+an+der+Glan' },
+    ],
+    officialLinks: [
+      { label: 'Dom zu Gurk – Diözese Gurk', url: 'https://www.kath-kirche-kaernten.at/dioezese/organisation/C2509/' },
+      { label: 'Dom zu Gurk – Kärnten Werbung', url: 'https://www.kaernten.at/sehenswertes/ausflugsziele-mit-qualitaetszertifikat/dom-zu-gurk/' },
     ],
   },
   {
