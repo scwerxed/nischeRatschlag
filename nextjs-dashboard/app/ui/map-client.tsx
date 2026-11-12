@@ -101,6 +101,7 @@ export default function MapClient({ spots }: { spots: MapSpot[] }) {
   const [showStays,     setShowStays]     = useState(true);
   const [showArticles,  setShowArticles]  = useState(true);
   const [peakCount,     setPeakCount]     = useState<number | null>(null);
+  const [peaksFailed,   setPeaksFailed]   = useState(false);
   const [visibleCount,  setVisibleCount]  = useState(0);
   const [zoom,          setZoom]          = useState(KAERNTEN_ZOOM);
   const [mapReady,      setMapReady]      = useState(false);
@@ -248,14 +249,20 @@ export default function MapClient({ spots }: { spots: MapSpot[] }) {
 
         // Fetch peaks (non-blocking)
         fetch(`https://overpass-api.de/api/interpreter?data=${OVERPASS_QUERY}`)
-          .then((r) => r.json())
+          .then((r) => {
+            if (!r.ok) throw new Error(`Overpass ${r.status}`);
+            return r.json();
+          })
           .then((data) => {
             if (cancelled) return;
             allPeaksRef.current = data.elements ?? [];
             setPeakCount(allPeaksRef.current.length);
             updatePeaks();
           })
-          .catch(() => {/* Karte bleibt nutzbar */});
+          .catch(() => {
+            // Karte bleibt nutzbar – nur die Gipfel-Ebene fehlt
+            if (!cancelled) setPeaksFailed(true);
+          });
       } catch {
         setError('Karte konnte nicht geladen werden.');
       }
@@ -523,10 +530,15 @@ export default function MapClient({ spots }: { spots: MapSpot[] }) {
       )}
 
       {/* ── Peak loading indicator ───────────────────────────────────────── */}
-      {mapReady && peakCount === null && (
+      {mapReady && peakCount === null && !peaksFailed && (
         <div className="absolute bottom-2 left-2 z-[1000] bg-white border border-hairline px-2.5 py-1 text-fine text-ink-soft flex items-center gap-1.5 rounded-sm">
           <div className="w-2.5 h-2.5 border border-hairline border-t-gray-600 rounded-full animate-spin" />
           Gipfel laden…
+        </div>
+      )}
+      {mapReady && peaksFailed && (
+        <div className="absolute bottom-2 left-2 z-[1000] bg-white border border-hairline px-2.5 py-1 text-fine text-ink-soft rounded-sm">
+          Gipfel gerade nicht verfügbar – Artikel, Unterkünfte und Wege funktionieren weiter.
         </div>
       )}
     </div>
