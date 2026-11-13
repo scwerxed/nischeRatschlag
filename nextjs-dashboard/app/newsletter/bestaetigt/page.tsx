@@ -29,7 +29,7 @@ export default function NewsletterBestaetigtPage() {
       </p>
 
       <div className="flex flex-wrap gap-3 justify-center">
-        <Link href="/ausflugsplaner" className="inline-block bg-green-700 text-white text-caption font-semibold px-5 py-2.5 hover:bg-green-800 transition-colors rounded-full">
+        <Link href="/ausflugsplaner" className="inline-block bg-green-700 text-white text-caption font-semibold px-5 py-2.5 hover:bg-green-800 transition-colors rounded-sm">
           Zum Ausflugsplaner
         </Link>
         <Link href="/blog" className="btn btn-secondary btn-sm">

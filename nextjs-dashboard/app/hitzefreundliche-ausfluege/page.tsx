@@ -88,7 +88,7 @@ export default function HitzePage() {
       ))}
 
       <div className="mt-6 flex flex-wrap gap-3">
-        <Link href="/wandern-baden" className="inline-block bg-green-700 text-white text-caption font-semibold px-5 py-2.5 hover:bg-green-800 transition-colors rounded-full">
+        <Link href="/wandern-baden" className="inline-block bg-green-700 text-white text-caption font-semibold px-5 py-2.5 hover:bg-green-800 transition-colors rounded-sm">
           Wandern + Baden Kombis
         </Link>
         <Link href="/seen-vergleich" className="btn btn-secondary btn-sm">

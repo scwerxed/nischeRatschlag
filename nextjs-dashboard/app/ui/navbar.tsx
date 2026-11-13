@@ -8,17 +8,17 @@ import { NAV_GROUPS, NAV_SINGLE, NAV_SERVICE, type NavGroup } from '@/app/lib/na
 function Logo({ onClick }: { onClick?: () => void }) {
   return (
     <Link href="/" onClick={onClick} className="flex items-center gap-2.5 group shrink-0">
-      <span className="text-green-700 group-hover:text-green-600 transition-colors">
+      <span className="text-ink">
         <svg width="26" height="26" viewBox="0 0 26 26" fill="none" aria-hidden>
           <path d="M2 21 L9.5 7 L14 15 L17 10 L24 21 Z" fill="currentColor" />
           <circle cx="19" cy="6" r="2.4" fill="currentColor" opacity="0.55" />
         </svg>
       </span>
       <span className="leading-none">
-        <span className="block font-serif text-tagline font-bold text-ink tracking-tightish">
+        <span className="block font-serif text-[22px] font-extrabold text-ink tracking-[-0.035em]">
           Bergseen&nbsp;Guide
         </span>
-        <span className="block text-[10px] uppercase tracking-[0.22em] text-ink-soft mt-0.5">
+        <span className="block font-mono text-[10px] uppercase tracking-[0.05em] text-ink-soft mt-1">
           Österreich · Seen &amp; Berge
         </span>
       </span>
@@ -47,7 +47,7 @@ function SearchForm({ onSubmit }: { onSubmit?: () => void }) {
         onChange={(e) => setQ(e.target.value)}
         placeholder="Ziel oder See suchen…"
         aria-label="Artikel durchsuchen"
-        className="w-full pl-9 pr-4 py-2 text-caption bg-canvas border border-hairline rounded-full outline-none transition-colors focus:border-green-600 focus-visible:ring-2 focus-visible:ring-green-600"
+        className="w-full pl-9 pr-4 py-2 text-caption bg-canvas border border-hairline rounded-sm outline-none transition-colors focus:border-green-600 focus-visible:ring-2 focus-visible:ring-green-600"
       />
       <svg className="absolute left-3 top-1/2 -translate-y-1/2 text-ink-soft" width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.6" aria-hidden>
         <circle cx="7" cy="7" r="5" /><path d="M11 11l3.5 3.5" strokeLinecap="round" />
@@ -67,7 +67,7 @@ function Heart({ count }: { count: number }) {
         <path d="M8 14s-5-3.3-5-7a3 3 0 0 1 5-2.2A3 3 0 0 1 13 7c0 3.7-5 7-5 7z" strokeLinejoin="round" />
       </svg>
       {count > 0 && (
-        <span className="absolute -top-1.5 -right-1.5 bg-green-700 text-white text-[10px] font-bold min-w-[16px] h-4 px-1 flex items-center justify-center rounded-full">
+        <span className="absolute -top-1.5 -right-1.5 bg-green-700 text-white text-[10px] font-bold min-w-[16px] h-4 px-1 flex items-center justify-center rounded-sm">
           {count}
         </span>
       )}
@@ -119,7 +119,7 @@ function DesktopGroup({
         onClick={onOpen}
         aria-expanded={open}
         aria-controls={panelId}
-        className={`inline-flex items-center gap-1.5 py-5 whitespace-nowrap transition-colors ${active || open ? 'text-green-700' : 'hover:text-green-700'}`}
+        className={`inline-flex items-center gap-1.5 py-5 whitespace-nowrap transition-colors ${active || open ? "text-ink underline decoration-signal decoration-2 underline-offset-[6px]" : "hover:underline decoration-signal decoration-2 underline-offset-[6px]"}`}
       >
         {group.label}
         <Chevron open={open} />
@@ -131,14 +131,14 @@ function DesktopGroup({
           open ? 'visible opacity-100 translate-y-0' : 'invisible opacity-0 -translate-y-1 pointer-events-none'
         }`}
       >
-        <div className={`bg-canvas border border-hairline rounded-lg shadow-xl shadow-black/5 p-5 max-w-[calc(100vw-2rem)] ${isRegionen ? 'w-[440px]' : twoCols ? 'w-[520px]' : 'w-[300px]'}`}>
+        <div className={`bg-canvas border border-ink rounded-sm p-5 max-w-[calc(100vw-2rem)] ${isRegionen ? 'w-[440px]' : twoCols ? 'w-[520px]' : 'w-[300px]'}`}>
           <ul className={`grid gap-x-6 gap-y-1 ${isRegionen ? 'grid-cols-3' : twoCols ? 'grid-cols-2' : 'grid-cols-1'}`}>
             {group.links.map((l) => (
               <li key={l.href}>
                 <Link
                   href={l.href}
                   onClick={onClose}
-                  className="block rounded-sm px-2 py-1.5 -mx-2 text-caption text-ink hover:bg-parchment hover:text-green-700 transition-colors"
+                  className="block rounded-sm px-2 py-1.5 -mx-2 text-caption text-ink hover:bg-parchment transition-colors"
                 >
                   <span className="font-medium">{l.label}</span>
                   {l.note && <span className="block text-fine text-ink-soft">{l.note}</span>}
@@ -220,7 +220,7 @@ export default function Navbar() {
 
   return (
     <>
-    <nav ref={navRef} className="sticky top-0 z-[1200] bg-white/90 backdrop-blur border-b border-hairline">
+    <nav ref={navRef} className="sticky top-0 z-[1200] bg-paper/95 backdrop-blur border-b border-ink">
       <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between gap-4">
         <Logo />
 
@@ -241,7 +241,7 @@ export default function Navbar() {
               <Link
                 key={l.href}
                 href={l.href}
-                className={`py-5 whitespace-nowrap transition-colors ${isActive(l.href) ? 'text-green-700' : 'hover:text-green-700'}`}
+                className={`py-5 whitespace-nowrap transition-colors ${isActive(l.href) ? "text-ink underline decoration-signal decoration-2 underline-offset-[6px]" : "hover:underline decoration-signal decoration-2 underline-offset-[6px]"}`}
               >
                 {l.label}
               </Link>

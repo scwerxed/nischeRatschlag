@@ -105,7 +105,6 @@ export default async function RegionPage({ params }: Props) {
       {/* Inaktive Region */}
       {!region.aktiv && (
         <div className="bg-green-50 border border-green-200 rounded-lg p-8 text-center">
-          <p className="text-lead mb-2">🏔️</p>
           <h2 className="text-tagline font-semibold text-ink mb-1">Demnächst verfügbar</h2>
           <p className="text-ink-soft text-caption">
             Wir arbeiten gerade an Inhalten für {region.name}. Schau bald wieder vorbei!
@@ -163,7 +162,6 @@ export default async function RegionPage({ params }: Props) {
               href="/karte"
               className="group flex items-start gap-4 bg-green-700 text-white rounded-lg p-5 hover:bg-green-800 transition-colors"
             >
-              <span className="text-display-sm">🗺️</span>
               <div>
                 <p className="font-semibold text-tagline leading-tight">Interaktive Wanderkarte</p>
                 <p className="text-green-100 text-caption mt-1">
@@ -178,7 +176,6 @@ export default async function RegionPage({ params }: Props) {
               href="/routenplaner"
               className="group flex items-start gap-4 border-2 border-green-700 text-green-700 rounded-lg p-5 hover:bg-green-50 transition-colors"
             >
-              <span className="text-display-sm">📍</span>
               <div>
                 <p className="font-semibold text-tagline leading-tight">Routenplaner</p>
                 <p className="text-ink-soft text-caption mt-1">
@@ -252,14 +249,14 @@ export default async function RegionPage({ params }: Props) {
                           </span>
                           {post.difficulty && (
                             <span
-                              className={`text-fine font-medium px-2 py-0.5 rounded-full ${DIFFICULTY_STYLES[post.difficulty].cls}`}
+                              className={`text-fine font-medium px-2 py-0.5 rounded-sm ${DIFFICULTY_STYLES[post.difficulty].cls}`}
                             >
                               {DIFFICULTY_STYLES[post.difficulty].label}
                             </span>
                           )}
                           {isOeffiErreichbar(post.slug) && (
-                            <span className="text-fine font-medium px-2 py-0.5 rounded-full bg-blue-50 text-blue-700 border border-blue-200">
-                              🚋 Öffis
+                            <span className="text-fine font-medium px-2 py-0.5 rounded-sm bg-blue-50 text-blue-700 border border-blue-200">
+                              Öffis
                             </span>
                           )}
                         </div>

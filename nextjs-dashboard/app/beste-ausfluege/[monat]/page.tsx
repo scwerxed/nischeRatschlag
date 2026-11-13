@@ -102,12 +102,12 @@ export default async function MonatPage({ params }: Props) {
           <Link
             key={x.slug}
             href={`/beste-ausfluege/${x.slug}`}
-            className="text-caption font-medium px-4 py-1.5 bg-green-50 text-green-700 border border-green-200 hover:bg-green-100 transition-colors rounded-full"
+            className="text-caption font-medium px-4 py-1.5 bg-green-50 text-green-700 border border-green-200 hover:bg-green-100 transition-colors rounded-sm"
           >
             Beste Ausflüge im {x.name} →
           </Link>
         ))}
-        <Link href="/wandern-baden" className="text-caption font-medium px-4 py-1.5 border border-hairline text-ink-muted hover:border-green-600 hover:text-green-700 transition-colors rounded-full">
+        <Link href="/wandern-baden" className="text-caption font-medium px-4 py-1.5 border border-hairline text-ink-muted hover:border-green-600 hover:text-green-700 transition-colors rounded-sm">
           Wandern + Baden
         </Link>
       </div>

@@ -123,7 +123,7 @@ export default function AusflugsplanerPage() {
       ))}
 
       <div className="mt-4 flex flex-wrap gap-3">
-        <Link href="/blog" className="inline-block bg-green-700 text-white text-caption font-semibold px-5 py-2.5 hover:bg-green-800 transition-colors rounded-full">
+        <Link href="/blog" className="inline-block bg-green-700 text-white text-caption font-semibold px-5 py-2.5 hover:bg-green-800 transition-colors rounded-sm">
           Alle Artikel im Magazin
         </Link>
         <Link href="/#regionen" className="btn btn-secondary btn-sm">

@@ -69,7 +69,7 @@ export default function WandernBadenPage() {
                   <div className="flex items-center gap-2 mb-1">
                     <span className="text-fine font-semibold uppercase tracking-wide text-green-700">Wanderung</span>
                     {c.wandern.difficulty && (
-                      <span className={`text-fine font-medium px-2 py-0.5 rounded-full ${DIFF_BADGE[c.wandern.difficulty]}`}>
+                      <span className={`text-fine font-medium px-2 py-0.5 rounded-sm ${DIFF_BADGE[c.wandern.difficulty]}`}>
                         {c.wandern.difficulty}
                       </span>
                     )}
@@ -106,19 +106,19 @@ export default function WandernBadenPage() {
       </section>
 
       <div className="mt-10 flex flex-wrap gap-3">
-        <Link href="/seen-vergleich" className="inline-block bg-green-700 text-white text-caption font-semibold px-5 py-2.5 hover:bg-green-800 transition-colors rounded-full">
+        <Link href="/seen-vergleich" className="inline-block bg-green-700 text-white text-caption font-semibold px-5 py-2.5 hover:bg-green-800 transition-colors rounded-sm">
           Seen im Vergleich
         </Link>
         <Link href="/wochenendtrip" className="btn btn-secondary btn-sm">
           Wochenendtrips
         </Link>
-        <Link href="/hitzefreundliche-ausfluege" className="inline-block border border-amber-500 text-amber-700 text-caption font-semibold px-5 py-2.5 hover:bg-amber-50 transition-colors rounded-full">
+        <Link href="/hitzefreundliche-ausfluege" className="inline-block border border-amber-500 text-amber-700 text-caption font-semibold px-5 py-2.5 hover:bg-amber-50 transition-colors rounded-sm">
           Kühle Ziele für Hitzetage
         </Link>
         <Link href="/ausflugsplaner" className="btn btn-quiet btn-sm">
           Alle Themenseiten
         </Link>
-        <Link href="/badeplaetze" className="inline-block border border-sky-500 text-sky-700 text-caption font-semibold px-5 py-2.5 hover:bg-sky-50 transition-colors rounded-full">
+        <Link href="/badeplaetze" className="inline-block border border-sky-500 text-sky-700 text-caption font-semibold px-5 py-2.5 hover:bg-sky-50 transition-colors rounded-sm">
           Badeplatz-Check
         </Link>
         <Link href="/zwei-ausfluege-an-einem-tag" className="btn btn-quiet btn-sm">

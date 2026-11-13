@@ -102,7 +102,7 @@ export default function BlogSearch({ posts }: { posts: CardPost[] }) {
             key={c}
             onClick={() => setCat(c)}
             aria-pressed={cat === c}
-            className={`text-caption font-medium px-4 py-2 border transition duration-200 rounded-full ${
+            className={`text-caption font-medium px-4 py-2 border transition duration-200 rounded-sm ${
               cat === c
                 ? `${c === 'Alle' ? 'bg-green-700' : CATEGORY_STYLE[c]?.chip ?? 'bg-green-700'} border-transparent text-white`
                 : 'border-hairline text-ink-muted hover:border-green-600 hover:text-green-700'
@@ -141,7 +141,7 @@ export default function BlogSearch({ posts }: { posts: CardPost[] }) {
                 <div className="aspect-[16/9] overflow-hidden relative">
                   <PostBild slug={post.slug} category={post.category} className="transition-transform duration-700 group-hover:scale-105" />
                   <div className="absolute top-3 right-3">
-                    <span className="bg-canvas/90 backdrop-blur text-fine font-medium text-ink-muted px-2.5 py-1 rounded-full">
+                    <span className="bg-canvas/90 backdrop-blur text-fine font-medium text-ink-muted px-2.5 py-1 rounded-sm">
                       {mins} Min.
                     </span>
                   </div>
@@ -154,13 +154,13 @@ export default function BlogSearch({ posts }: { posts: CardPost[] }) {
                         {post.category}
                       </span>
                       {post.difficulty && (
-                        <span className={`text-fine font-medium px-2 py-0.5 rounded-full ${DIFF_STYLE[post.difficulty]}`}>
+                        <span className={`text-fine font-medium px-2 py-0.5 rounded-sm ${DIFF_STYLE[post.difficulty]}`}>
                           {post.difficulty}
                         </span>
                       )}
                       {isOeffiErreichbar(post.slug) && (
-                        <span className="text-fine font-medium px-2 py-0.5 rounded-full bg-blue-50 text-blue-700 border border-blue-200">
-                          🚋 Öffis
+                        <span className="text-fine font-medium px-2 py-0.5 rounded-sm bg-blue-50 text-blue-700 border border-blue-200">
+                          Öffis
                         </span>
                       )}
                     </div>

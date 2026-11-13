@@ -38,26 +38,26 @@ export default function SeenVergleichPage() {
           <Link
             key={t.slug}
             href={`/seen-vergleich/${t.slug}`}
-            className="text-caption font-medium px-4 py-1.5 bg-sky-50 text-sky-700 border border-sky-200 hover:bg-sky-100 transition-colors rounded-full"
+            className="text-caption font-medium px-4 py-1.5 bg-sky-50 text-sky-700 border border-sky-200 hover:bg-sky-100 transition-colors rounded-sm"
           >
             {t.h1} →
           </Link>
         ))}
         <Link
           href="/badeplaetze"
-          className="text-caption font-medium px-4 py-1.5 bg-sky-50 text-sky-700 border border-sky-200 hover:bg-sky-100 transition-colors rounded-full"
+          className="text-caption font-medium px-4 py-1.5 bg-sky-50 text-sky-700 border border-sky-200 hover:bg-sky-100 transition-colors rounded-sm"
         >
           Badeplatz-Check (gratis, Schatten, flach …) →
         </Link>
         <Link
           href="/wassertemperatur"
-          className="text-caption font-medium px-4 py-1.5 bg-sky-50 text-sky-700 border border-sky-200 hover:bg-sky-100 transition-colors rounded-full"
+          className="text-caption font-medium px-4 py-1.5 bg-sky-50 text-sky-700 border border-sky-200 hover:bg-sky-100 transition-colors rounded-sm"
         >
           Wassertemperatur live →
         </Link>
         <Link
           href="/unterkuenfte/am-see"
-          className="text-caption font-medium px-4 py-1.5 bg-sky-50 text-sky-700 border border-sky-200 hover:bg-sky-100 transition-colors rounded-full"
+          className="text-caption font-medium px-4 py-1.5 bg-sky-50 text-sky-700 border border-sky-200 hover:bg-sky-100 transition-colors rounded-sm"
         >
           Unterkünfte direkt am See →
         </Link>

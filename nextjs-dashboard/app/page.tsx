@@ -9,12 +9,11 @@ import Newsletter from '@/app/ui/newsletter';
 import PostBild from '@/app/ui/post-bild';
 import Seewetter from '@/app/ui/seewetter';
 import TippDesTages from '@/app/ui/tipp-des-tages';
-import FadeIn from '@/app/ui/fade-in';
 import { CATEGORY_STYLE } from '@/app/lib/blog-utils';
 import { currentSeason } from '@/app/lib/season';
 import type { Metadata } from 'next';
 
-// „Tipp des Tages“, Saison-Band und „Jetzt im <Monat>“ hängen vom Datum ab – stündlich neu
+// „Tipp des Tages“, Saison-Zeile und „Jetzt im <Monat>“ hängen vom Datum ab – stündlich neu
 // erzeugen, statt bis zum nächsten Deploy auf dem Build-Tag stehen zu bleiben.
 export const revalidate = 3600;
 
@@ -25,34 +24,36 @@ export const metadata: Metadata = {
   alternates: { canonical: '/' },
 };
 
-// Je Bundesland ein Artikel mit geprüftem Ortsfoto (post-bilder.ts) als Kartenbild.
+// Je Bundesland ein Artikel mit geprüftem Ortsfoto (post-bilder.ts) als Vorschaubild.
 const POPULAR_DESTINATIONS = [
-  { slug: 'kaernten',          name: 'Kärnten',          tag: 'Wörthersee & Badeseen',     note: 'Das Land der warmen Badeseen',       bild: 'beste-badestellen-woerthersee' },
-  { slug: 'salzburg',          name: 'Salzburg',         tag: 'Seenland & Hohe Tauern',    note: 'Mozartstadt trifft Hohe Tauern',     bild: 'wolfgangsee-st-gilgen' },
-  { slug: 'tirol',             name: 'Tirol',            tag: 'Achensee & Ötztal',         note: 'Gletscher, Almen und Bergseen',      bild: 'achensee-tirol' },
-  { slug: 'steiermark',        name: 'Steiermark',       tag: 'Grüner See & Dachstein',    note: 'Das grüne Herz Österreichs',         bild: 'gruener-see-tragoess' },
-  { slug: 'oberoesterreich',   name: 'Oberösterreich',   tag: 'Salzkammergut & Donau',     note: 'Glasklare Seen, Atter- & Traunsee',  bild: 'traunsee-gmunden' },
-  { slug: 'niederoesterreich', name: 'Niederösterreich', tag: 'Wachau & Wiener Alpen',     note: 'Donautal, Wein, Schneeberg & Rax',   bild: 'wachau-duernstein' },
-  { slug: 'burgenland',        name: 'Burgenland',       tag: 'Neusiedler See & Wein',     note: 'Pannonische Sonne am Steppensee',    bild: 'rust-stoerche-altstadt' },
-  { slug: 'vorarlberg',        name: 'Vorarlberg',       tag: 'Bodensee & Bergseen',       note: 'Von Bregenz bis zum Lünersee',       bild: 'bregenzer-festspiele-seebuehne' },
-  { slug: 'wien',              name: 'Wien',             tag: 'Kaiserstadt & Alte Donau',  note: 'Kultur, Kaffeehaus & Baden',         bild: 'wien-schoenbrunn' },
+  { slug: 'kaernten',          name: 'Kärnten',          tag: 'Wörthersee & Badeseen',     bild: 'beste-badestellen-woerthersee' },
+  { slug: 'salzburg',          name: 'Salzburg',         tag: 'Seenland & Hohe Tauern',    bild: 'wolfgangsee-st-gilgen' },
+  { slug: 'tirol',             name: 'Tirol',            tag: 'Achensee & Ötztal',         bild: 'achensee-tirol' },
+  { slug: 'steiermark',        name: 'Steiermark',       tag: 'Grüner See & Dachstein',    bild: 'gruener-see-tragoess' },
+  { slug: 'oberoesterreich',   name: 'Oberösterreich',   tag: 'Salzkammergut & Donau',     bild: 'traunsee-gmunden' },
+  { slug: 'niederoesterreich', name: 'Niederösterreich', tag: 'Wachau & Wiener Alpen',     bild: 'wachau-duernstein' },
+  { slug: 'burgenland',        name: 'Burgenland',       tag: 'Neusiedler See & Wein',     bild: 'rust-stoerche-altstadt' },
+  { slug: 'vorarlberg',        name: 'Vorarlberg',       tag: 'Bodensee & Bergseen',       bild: 'bregenzer-festspiele-seebuehne' },
+  { slug: 'wien',              name: 'Wien',             tag: 'Kaiserstadt & Alte Donau',  bild: 'wien-schoenbrunn' },
 ];
 
-// „Was hast du vor?“ – direkte Einstiege in die Themenseiten, nach Anlass statt nach Ort.
+// „Direkt zu“ – Einstiege in die Themenseiten, nach Anlass statt nach Ort.
 const INTENTS = [
-  { href: '/badeplaetze', icon: '🏊', label: 'Baden gehen' },
-  { href: '/wassertemperatur', icon: '🌡️', label: 'Wassertemperatur' },
-  { href: '/regentaugliche-ausfluege', icon: '🌧️', label: 'Bei Regen' },
-  { href: '/hitzefreundliche-ausfluege', icon: '☀️', label: 'Hitzetag' },
-  { href: '/familienausfluege', icon: '🧒', label: 'Mit Kindern' },
-  { href: '/bahnhofsausfluege', icon: '🚆', label: 'Ohne Auto' },
-  { href: '/ausfluege-nach-dauer', icon: '⏱️', label: 'Wenig Zeit' },
+  { href: '/badeplaetze', label: 'Baden gehen' },
+  { href: '/wassertemperatur', label: 'Wassertemperatur' },
+  { href: '/regentaugliche-ausfluege', label: 'Bei Regen' },
+  { href: '/hitzefreundliche-ausfluege', label: 'Hitzetag' },
+  { href: '/familienausfluege', label: 'Mit Kindern' },
+  { href: '/bahnhofsausfluege', label: 'Ohne Auto' },
+  { href: '/ausfluege-nach-dauer', label: 'Wenig Zeit' },
 ];
+
+const zwei = (n: number) => String(n).padStart(2, '0');
 
 function Arrow() {
   return (
-    <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="2" className="transition-transform duration-300 group-hover:translate-x-1" aria-hidden>
-      <path d="M6 3l5 5-5 5" strokeLinecap="round" strokeLinejoin="round" />
+    <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.8" className="transition-transform duration-200 group-hover:translate-x-1" aria-hidden>
+      <path d="M2 8h11M9 4l4 4-4 4" strokeLinecap="square" />
     </svg>
   );
 }
@@ -73,39 +74,42 @@ export default function HomePage() {
       return post ? [{ pick, post }] : [];
     })
     .slice(0, 4);
+  const monatTop = monatPicks[0];
+  const monatRest = monatPicks.slice(1);
+  const neuTop = latest[0];
+  const neuRest = latest.slice(1);
 
   return (
     <>
       {/* ── Hero ───────────────────────────────────────────────────────── */}
       <HeroSlideshow>
-        <p className="eyebrow text-green-200 mb-4">Reisemagazin · Österreich</p>
-        <h1 className="font-serif text-display-sm sm:text-display md:text-6xl font-bold leading-[1.05] mb-5">
-          Österreichs Seen &amp; Berge,<br />ehrlich erklärt.
+        <p className="eyebrow !text-white/80 mb-5">Reiseführer für Österreich</p>
+        <h1 className="font-serif text-[40px] leading-[1.02] sm:text-hero md:text-[76px] md:leading-[0.98] font-extrabold tracking-[-0.035em] mb-6">
+          Seen &amp; Berge,<br />ehrlich erklärt.
         </h1>
-        <p className="text-body md:text-tagline text-white/85 mb-7 max-w-xl leading-relaxed">
-          Handverlesene Wanderungen, Badeseen und Ausflüge in allen neun Bundesländern – mit
-          echten Startpunkten, klaren Empfehlungen und offiziellen Live-Daten.
+        <p className="text-body md:text-tagline text-white/85 mb-8 max-w-xl">
+          Wanderungen, Badeseen und Ausflüge in allen neun Bundesländern – mit echten
+          Startpunkten, klaren Empfehlungen und offiziellen Messdaten.
         </p>
         <div className="flex flex-wrap gap-3">
-          <Link href="/blog" className="btn bg-white text-green-800 hover:bg-green-50">
+          <Link href="/blog" className="btn bg-white text-ink hover:bg-sand-100">
             Zum Magazin
           </Link>
-          <Link href="/karte" className="btn border border-white/60 text-white hover:bg-white/10">
+          <Link href="/karte" className="btn border border-white/70 text-white hover:bg-white hover:text-ink">
             Karte öffnen
           </Link>
         </div>
 
-        {/* Einstieg nach Anlass – auf dem Handy horizontal scrollbar statt fünf Zeilen hoch */}
-        <div className="mt-8">
-          <p className="text-fine uppercase tracking-[0.18em] text-white/60 mb-2.5 font-semibold">Was hast du vor?</p>
-          <div className="flex gap-2 overflow-x-auto pb-1 -mx-6 px-6 sm:mx-0 sm:px-0 sm:flex-wrap [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+        {/* Einstieg nach Anlass – schlichte Textlinks statt Chips */}
+        <div className="mt-9 border-t border-white/25 pt-4">
+          <p className="label-mono !text-white/60 mb-2">Direkt zu</p>
+          <div className="flex gap-x-5 gap-y-1.5 overflow-x-auto pb-1 -mx-6 px-6 sm:mx-0 sm:px-0 sm:flex-wrap [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
             {INTENTS.map((i) => (
               <Link
                 key={i.href}
                 href={i.href}
-                className="shrink-0 inline-flex items-center gap-1.5 rounded-full bg-white/10 border border-white/25 px-3.5 py-1.5 text-caption text-white backdrop-blur-sm hover:bg-white hover:text-green-800 transition-colors"
+                className="shrink-0 text-caption font-medium text-white underline decoration-white/40 underline-offset-4 hover:decoration-white"
               >
-                <span aria-hidden>{i.icon}</span>
                 {i.label}
               </Link>
             ))}
@@ -113,148 +117,176 @@ export default function HomePage() {
         </div>
       </HeroSlideshow>
 
-      {/* ── Saison-Band: ein Streifen statt drei ───────────────────────── */}
-      <section className="bg-green-900 text-white">
-        <div className="max-w-6xl mx-auto px-6 py-3.5 flex flex-wrap items-center justify-between gap-x-6 gap-y-2">
-          <p className="text-caption">
-            <span className="mr-2" aria-hidden>{season.icon}</span>
-            <span className="font-medium">{season.greeting}</span>
-            <span className="text-green-200 mx-2">·</span>
-            <span className="text-green-200">{posts.length} Ziele in {activeRegions} Bundesländern</span>
+      {/* ── Saison-Zeile ───────────────────────────────────────────────── */}
+      <section className="border-b-2 border-ink">
+        <div className="max-w-6xl mx-auto px-6 py-3 flex flex-wrap items-center justify-between gap-x-6 gap-y-1.5 font-mono text-[12px] uppercase tracking-[0.04em]">
+          <p className="text-ink">
+            {season.greeting}
+            <span className="text-ink-soft"> — {posts.length} Ziele, {activeRegions} Bundesländer</span>
           </p>
-          <div className="flex items-center gap-5 text-fine font-semibold">
-            <Link href={`/beste-ausfluege/${monat.slug}`} className="text-green-200 hover:text-white transition-colors">
-              Beste Ausflüge im {monat.name} →
+          <div className="flex items-center gap-5">
+            <Link href={`/beste-ausfluege/${monat.slug}`} className="text-ink underline decoration-signal underline-offset-4 hover:text-signal-dark">
+              Beste Ausflüge im {monat.name}
             </Link>
-            <Link href="/ausflugsplaner" className="text-green-200 hover:text-white transition-colors hidden sm:inline">
-              Ausflugsplaner →
+            <Link href="/ausflugsplaner" className="text-ink underline decoration-signal underline-offset-4 hover:text-signal-dark hidden sm:inline">
+              Ausflugsplaner
             </Link>
           </div>
         </div>
       </section>
 
-      {/* ── Jetzt im <Monat> ───────────────────────────────────────────── */}
-      {monatPicks.length > 0 && (
-        <section className="max-w-6xl mx-auto px-6 pt-16 pb-4">
-          <div className="flex items-end justify-between gap-4 mb-7">
+      {/* ── Jetzt im <Monat>: ein großer Tipp, daneben die weiteren als Liste ── */}
+      {monatTop && (
+        <section className="max-w-6xl mx-auto px-6 pt-16 pb-6">
+          <div className="flex items-end justify-between gap-6 mb-8">
             <div>
-              <p className="eyebrow mb-2">Passt gerade</p>
-              <h2 className="font-serif text-display-sm md:text-display font-bold text-ink">Jetzt im {monat.name}</h2>
-              <p className="text-ink-soft mt-2 max-w-2xl">{monat.intro}</p>
+              <p className="eyebrow mb-3">Passt gerade</p>
+              <h2 className="font-serif text-display-sm md:text-display font-extrabold text-ink">Jetzt im {monat.name}</h2>
             </div>
-            <Link href={`/beste-ausfluege/${monat.slug}`} className="group hidden md:inline-flex items-center gap-1.5 shrink-0 text-caption font-medium text-green-700 hover:text-green-600">
+            <Link href={`/beste-ausfluege/${monat.slug}`} className="group hidden md:inline-flex items-center gap-2 shrink-0 text-caption font-semibold text-ink hover:text-signal-dark">
               Alle {monat.picks.length} Tipps <Arrow />
             </Link>
           </div>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
-            {monatPicks.map(({ pick, post }) => (
-              <Link key={post.slug} href={`/blog/${post.slug}`} className="group block">
-                <div className="relative aspect-[4/3] overflow-hidden rounded-lg mb-3">
-                  <PostBild slug={post.slug} category={post.category} sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw" className="absolute inset-0 transition-transform duration-700 group-hover:scale-105" />
-                </div>
-                <p className={`eyebrow mb-1 ${CATEGORY_STYLE[post.category]?.text ?? ''}`}>{post.category}</p>
-                <h3 className="font-serif text-tagline font-bold text-ink group-hover:text-green-700 leading-snug transition-colors">
-                  {post.title}
-                </h3>
-                <p className="mt-1.5 text-caption text-ink-soft leading-relaxed">
-                  <span className="font-semibold text-ink-muted">Warum jetzt: </span>{pick.warum}
-                </p>
+
+          <div className="grid lg:grid-cols-[1.35fr_1fr] gap-x-12 gap-y-10">
+            <Link href={`/blog/${monatTop.post.slug}`} className="group block">
+              <div className="relative aspect-[3/2] overflow-hidden rounded-sm mb-5 bg-sand-100">
+                <PostBild slug={monatTop.post.slug} category={monatTop.post.category} sizes="(max-width: 1024px) 100vw, 60vw" className="absolute inset-0" />
+              </div>
+              <p className={`label-mono mb-2 ${CATEGORY_STYLE[monatTop.post.category]?.text ?? ''}`}>{monatTop.post.category}</p>
+              <h3 className="font-serif text-lead md:text-display-sm font-bold text-ink group-hover:underline decoration-signal decoration-2 underline-offset-4">
+                {monatTop.post.title}
+              </h3>
+              <p className="mt-3 text-ink-muted max-w-xl">
+                <span className="font-semibold text-ink">Warum jetzt: </span>{monatTop.pick.warum}
+              </p>
+            </Link>
+
+            <div>
+              <p className="text-ink-soft mb-5">{monat.intro}</p>
+              <ol className="border-t-2 border-ink">
+                {monatRest.map(({ pick, post }, i) => (
+                  <li key={post.slug} className="border-b border-hairline">
+                    <Link href={`/blog/${post.slug}`} className="group flex gap-4 py-4">
+                      <span className="font-mono text-fine text-signal pt-1 w-6 shrink-0">{zwei(i + 2)}</span>
+                      <span className="min-w-0 flex-1">
+                        <span className="block font-serif text-tagline font-bold text-ink leading-snug group-hover:underline decoration-signal decoration-2 underline-offset-4">
+                          {post.title}
+                        </span>
+                        <span className="block mt-1 text-caption text-ink-soft">{pick.warum}</span>
+                      </span>
+                      <span className="relative hidden sm:block w-24 h-[72px] shrink-0 overflow-hidden rounded-sm bg-sand-100">
+                        <PostBild slug={post.slug} category={post.category} sizes="96px" className="absolute inset-0" />
+                      </span>
+                    </Link>
+                  </li>
+                ))}
+              </ol>
+              <Link href={`/beste-ausfluege/${monat.slug}`} className="md:hidden mt-5 inline-flex items-center gap-2 text-caption font-semibold text-ink underline decoration-signal underline-offset-4">
+                Alle {monat.picks.length} Tipps für den {monat.name}
               </Link>
-            ))}
+            </div>
           </div>
-          <Link href={`/beste-ausfluege/${monat.slug}`} className="md:hidden mt-6 inline-flex items-center gap-1.5 text-caption font-medium text-green-700">
-            Alle {monat.picks.length} Tipps für den {monat.name} →
-          </Link>
         </section>
       )}
 
       {/* ── Heute: Tipp des Tages + Live-Seewetter ─────────────────────── */}
-      <section className="max-w-6xl mx-auto px-6 py-16">
+      <section className="max-w-6xl mx-auto px-6 py-14">
         <div className="grid md:grid-cols-2 gap-8">
-          <FadeIn direction="up">
-            <TippDesTages posts={posts} />
-          </FadeIn>
-          <FadeIn direction="up" delay={100}>
-            <Seewetter />
-          </FadeIn>
+          <TippDesTages posts={posts} />
+          <Seewetter />
         </div>
         <p className="mt-4 text-caption text-ink-soft">
           Alle {SEE_MESSSTELLEN.length} offiziellen See-Messstellen und die letzte Probe jeder EU-Badestelle:{' '}
-          <Link href="/wassertemperatur" className="font-medium text-green-700 hover:underline">Wassertemperatur live</Link>
+          <Link href="/wassertemperatur" className="font-medium text-ink underline decoration-signal underline-offset-4 hover:text-signal-dark">Wassertemperatur live</Link>
           {' '}·{' '}
-          <Link href="/badeplaetze" className="font-medium text-green-700 hover:underline">Badeplatz-Check</Link>
+          <Link href="/badeplaetze" className="font-medium text-ink underline decoration-signal underline-offset-4 hover:text-signal-dark">Badeplatz-Check</Link>
         </p>
       </section>
 
-      {/* ── Regionen mit Bild ──────────────────────────────────────────── */}
-      <section id="regionen" className="surface-parchment scroll-mt-20">
+      {/* ── Regionen als Verzeichnis ───────────────────────────────────── */}
+      <section id="regionen" className="surface-parchment scroll-mt-20 border-y border-hairline">
         <div className="max-w-6xl mx-auto px-6 py-16">
-          <div className="text-center mb-9">
-            <p className="eyebrow mb-2">Alle neun Bundesländer</p>
-            <h2 className="font-serif text-display-sm md:text-display font-bold text-ink">Wohin in Österreich?</h2>
-            <p className="text-ink-soft mt-2 max-w-xl mx-auto">
-              Jede Region mit eigenen Wanderungen, Badeseen, Ausflugstipps und Unterkünften.
-            </p>
-          </div>
+          <div className="grid lg:grid-cols-[1fr_2.2fr] gap-x-12 gap-y-8">
+            <div>
+              <p className="eyebrow mb-3">Neun Bundesländer</p>
+              <h2 className="font-serif text-display-sm md:text-display font-extrabold text-ink">Wohin in Österreich?</h2>
+              <p className="text-ink-muted mt-4">
+                Jede Region mit eigenen Wanderungen, Badeseen, Ausflugstipps und Unterkünften.
+              </p>
+              <div className="mt-6">
+                <RegionSelector />
+              </div>
+            </div>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
-            {POPULAR_DESTINATIONS.map((d, i) => (
-              <FadeIn key={d.slug} direction="up" delay={(i % 3) * 60} duration={450}>
-                <Link href={`/regionen/${d.slug}`} className="group relative block overflow-hidden rounded-lg aspect-[16/10] bg-green-900">
-                  <PostBild slug={d.bild} sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw" className="absolute inset-0 transition-transform duration-700 group-hover:scale-105" />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/25 to-black/0" />
-                  <div className="absolute inset-x-0 bottom-0 p-5 text-white">
-                    <p className="text-fine font-semibold uppercase tracking-[0.18em] text-white/75 mb-1">{d.tag}</p>
-                    <h3 className="font-serif text-lead font-bold leading-tight">{d.name}</h3>
-                    <p className="mt-1 flex items-center justify-between gap-3 text-caption text-white/80">
-                      <span>{d.note}</span>
-                      <span className="inline-flex items-center gap-1 shrink-0 font-medium text-white">
-                        {countByRegion[d.slug] ?? 0} Artikel <Arrow />
+            <ol className="grid sm:grid-cols-2 gap-x-10 border-t-2 border-ink">
+              {POPULAR_DESTINATIONS.map((d, i) => (
+                <li key={d.slug} className="border-b border-hairline">
+                  <Link href={`/regionen/${d.slug}`} className="group flex items-center gap-4 py-3.5">
+                    <span className="relative w-[76px] h-[57px] shrink-0 overflow-hidden rounded-sm bg-sand-100">
+                      <PostBild slug={d.bild} sizes="76px" className="absolute inset-0" />
+                    </span>
+                    <span className="min-w-0 flex-1">
+                      <span className="block font-serif text-tagline font-bold text-ink leading-tight group-hover:underline decoration-signal decoration-2 underline-offset-4">
+                        {d.name}
                       </span>
-                    </p>
-                  </div>
-                </Link>
-              </FadeIn>
-            ))}
+                      <span className="block text-caption text-ink-soft truncate">{d.tag}</span>
+                    </span>
+                    <span className="font-mono text-fine text-ink-soft shrink-0 text-right">
+                      <span className="text-signal">{zwei(i + 1)}</span>
+                      <span className="block">{countByRegion[d.slug] ?? 0} Art.</span>
+                    </span>
+                  </Link>
+                </li>
+              ))}
+            </ol>
           </div>
-
-          <div className="mt-8">
-            <RegionSelector />
-          </div>
-          <p className="mt-4 text-center text-fine text-ink-soft">
+          <p className="mt-6 text-fine text-ink-soft">
             Fotos unter freien Lizenzen (u. a. Wikimedia Commons) – Urheber und Lizenz stehen im jeweiligen Artikel.
           </p>
         </div>
       </section>
 
-      {/* ── Neu im Magazin ─────────────────────────────────────────────── */}
+      {/* ── Neu im Magazin: Aufmacher + Spalte ─────────────────────────── */}
       <section className="max-w-6xl mx-auto px-6 py-16">
-        <div className="flex items-end justify-between mb-8">
+        <div className="flex items-end justify-between gap-6 mb-8">
           <div>
-            <p className="eyebrow mb-2">Aus dem Magazin</p>
-            <h2 className="font-serif text-display-sm md:text-display font-bold text-ink">Neu &amp; frisch geprüft</h2>
+            <p className="eyebrow mb-3">Aus dem Magazin</p>
+            <h2 className="font-serif text-display-sm md:text-display font-extrabold text-ink">Neu &amp; frisch geprüft</h2>
           </div>
-          <Link href="/blog" className="group hidden sm:inline-flex items-center gap-1.5 text-caption font-medium text-green-700 hover:text-green-600 transition-colors">
+          <Link href="/blog" className="group hidden sm:inline-flex items-center gap-2 text-caption font-semibold text-ink hover:text-signal-dark">
             Alle {posts.length} Artikel <Arrow />
           </Link>
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-10">
-          {latest.map((post, i) => (
-            <FadeIn key={post.slug} direction="up" delay={(i % 3) * 60} duration={450}>
-              <Link href={`/blog/${post.slug}`} className="group block">
-                <div className="relative aspect-[16/10] overflow-hidden rounded-lg mb-4">
-                  <PostBild slug={post.slug} category={post.category} sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw" className="absolute inset-0 transition-transform duration-700 group-hover:scale-105" />
-                </div>
-                <p className={`eyebrow mb-1.5 ${CATEGORY_STYLE[post.category]?.text ?? ''}`}>
-                  {post.category}{post.bestSeason ? ` · ${post.bestSeason}` : ''}
-                </p>
-                <h3 className="font-serif text-tagline font-bold text-ink group-hover:text-green-700 leading-snug transition-colors">
-                  {post.title}
-                </h3>
-                <p className="mt-1.5 text-caption text-ink-soft line-clamp-2">{post.excerpt}</p>
-              </Link>
-            </FadeIn>
+        {neuTop && (
+          <Link href={`/blog/${neuTop.slug}`} className="group grid md:grid-cols-[1.4fr_1fr] gap-x-10 gap-y-5 items-end border-t-2 border-ink pt-6 mb-10">
+            <div className="relative aspect-[16/9] overflow-hidden rounded-sm bg-sand-100">
+              <PostBild slug={neuTop.slug} category={neuTop.category} sizes="(max-width: 768px) 100vw, 60vw" className="absolute inset-0" />
+            </div>
+            <div>
+              <p className={`label-mono mb-2 ${CATEGORY_STYLE[neuTop.category]?.text ?? ''}`}>
+                {neuTop.category}{neuTop.bestSeason ? ` · ${neuTop.bestSeason}` : ''}
+              </p>
+              <h3 className="font-serif text-lead md:text-display-sm font-bold text-ink group-hover:underline decoration-signal decoration-2 underline-offset-4">
+                {neuTop.title}
+              </h3>
+              <p className="mt-3 text-ink-muted line-clamp-4">{neuTop.excerpt}</p>
+            </div>
+          </Link>
+        )}
+
+        <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-x-6 gap-y-9">
+          {neuRest.map((post) => (
+            <Link key={post.slug} href={`/blog/${post.slug}`} className="group block">
+              <div className="relative aspect-[4/3] overflow-hidden rounded-sm mb-3 bg-sand-100">
+                <PostBild slug={post.slug} category={post.category} sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 20vw" className="absolute inset-0" />
+              </div>
+              <p className={`label-mono mb-1.5 ${CATEGORY_STYLE[post.category]?.text ?? ''}`}>{post.category}</p>
+              <h3 className="font-serif text-body font-bold text-ink leading-snug group-hover:underline decoration-signal decoration-2 underline-offset-4">
+                {post.title}
+              </h3>
+            </Link>
           ))}
         </div>
 
@@ -264,86 +296,75 @@ export default function HomePage() {
       </section>
 
       {/* ── So recherchieren wir ───────────────────────────────────────── */}
-      <section className="border-y border-hairline bg-sand-50">
+      <section className="bg-ink text-white">
         <div className="max-w-6xl mx-auto px-6 py-16 grid lg:grid-cols-[1fr_2fr] gap-10 lg:gap-16 items-start">
           <div>
-            <p className="eyebrow mb-2">Ehrlich recherchiert</p>
-            <h2 className="font-serif text-display-sm font-bold text-ink leading-tight">Was das bei uns konkret heißt</h2>
-            <p className="text-ink-soft mt-3 leading-relaxed">
+            <p className="eyebrow !text-white/70 mb-3">Ehrlich recherchiert</p>
+            <h2 className="font-serif text-display-sm font-extrabold">Was das bei uns konkret heißt</h2>
+            <p className="text-white/75 mt-4">
               Im Netz kursieren viele abgeschriebene Ausflugstipps. Wir prüfen gegen offizielle
               Quellen – und schreiben lieber „vorab prüfen“ als eine Zahl, die wir nicht belegen können.
             </p>
-            <Link href="/ueber-uns" className="group mt-5 inline-flex items-center gap-1.5 text-caption font-semibold text-green-700 hover:text-green-600">
+            <Link href="/ueber-uns" className="group mt-6 inline-flex items-center gap-2 text-caption font-semibold text-white underline decoration-signal decoration-2 underline-offset-4">
               Mehr über uns <Arrow />
             </Link>
           </div>
-          <div className="grid sm:grid-cols-3 gap-6">
+          <div className="grid sm:grid-cols-3 gap-8">
             {[
               { t: 'Faktencheck', d: 'Höhen, Seegrößen und Wegzeiten prüfen wir gegen Gemeinden, Tourismusverbände, Naturparks und Wikipedia – ältere Artikel gehen wir Schritt für Schritt neu durch.' },
               { t: 'Preise mit Vorbehalt', d: 'Eintritt, Maut und Öffnungszeiten ändern sich laufend. Statt scheinbar genauer Beträge sagen wir, wo du den aktuellen Stand nachsehen kannst.' },
               { t: 'Offizielle Live-Daten', d: `Wassertemperaturen von ${SEE_MESSSTELLEN.length} Messstellen der Landes-Hydrographie und die Badewasser-Proben der AGES – mit Quelle und Messzeit.` },
-            ].map((c) => (
-              <div key={c.t} className="border-t-2 border-green-600 pt-4">
-                <p className="font-semibold text-ink">{c.t}</p>
-                <p className="text-caption text-ink-soft mt-1.5 leading-relaxed">{c.d}</p>
+            ].map((c, i) => (
+              <div key={c.t} className="border-t border-white/30 pt-4">
+                <p className="font-mono text-fine text-signal mb-2">{zwei(i + 1)}</p>
+                <p className="font-serif text-tagline font-bold">{c.t}</p>
+                <p className="text-caption text-white/70 mt-2">{c.d}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* ── Karte-CTA ──────────────────────────────────────────────────── */}
-      <FadeIn direction="up">
-        <section className="max-w-6xl mx-auto px-6 py-20">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div>
-              <p className="eyebrow mb-3">Interaktiv</p>
-              <h2 className="font-serif text-display-sm md:text-display font-bold text-ink mb-4 leading-tight">
-                Ziele, Wege und Unterkünfte auf einer Karte
-              </h2>
-              <p className="text-ink-muted mb-7 leading-relaxed">
-                Unsere Wanderkarte zeigt die Ausflugsziele aus dem Magazin als Pins – ein Klick führt
-                zum Artikel. Dazu das markierte Wanderwegenetz und handverlesene Unterkünfte mit
-                Verfügbarkeit auf einen Klick.
-              </p>
-              <div className="flex flex-wrap gap-3">
-                <Link href="/karte" className="btn-primary">
-                  Karte öffnen
-                </Link>
-                <Link href="/routenplaner" className="btn-quiet">
-                  Route planen
-                </Link>
-              </div>
-            </div>
-            <div className="border-t border-hairline">
-              {[
-                { t: 'Ausflugsziele', d: 'Jeder Artikel mit Startpunkt als Pin – farbig nach Wandern, Baden und Ausflug', icon: 'M8 15s5-4.5 5-8.5A5 5 0 0 0 3 6.5C3 10.5 8 15 8 15zM8 8.5a2 2 0 1 0 0-4 2 2 0 0 0 0 4z' },
-                { t: 'Wanderwege', d: 'Offizielles Wegenetz mit Höhenprofil im Routenplaner', icon: 'M3 13l3-5 3 3 4-7 3 5' },
-                { t: 'Unterkünfte', d: 'Hotels, Camping & Ferienwohnungen direkt am See', icon: 'M3 7h10l-1.5-4H4.5L3 7zM2 8v6h1v2h2v-2h6v2h2v-2h1V8H2z' },
-              ].map((c) => (
-                <div key={c.t} className="flex gap-4 py-5 border-b border-hairline">
-                  <span className="shrink-0 w-8 h-8 bg-green-50 border border-green-200 flex items-center justify-center rounded-full">
-                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.5" className="text-green-700" aria-hidden>
-                      <path d={c.icon} strokeLinecap="round" strokeLinejoin="round" />
-                    </svg>
-                  </span>
-                  <div>
-                    <p className="font-semibold text-ink">{c.t}</p>
-                    <p className="text-caption text-ink-soft mt-0.5">{c.d}</p>
-                  </div>
-                </div>
-              ))}
+      {/* ── Karte ──────────────────────────────────────────────────────── */}
+      <section className="max-w-6xl mx-auto px-6 py-20">
+        <div className="grid md:grid-cols-2 gap-12 items-start">
+          <div>
+            <p className="eyebrow mb-3">Karte &amp; Routenplaner</p>
+            <h2 className="font-serif text-display-sm md:text-display font-extrabold text-ink mb-5">
+              Ziele, Wege und Unterkünfte auf einer Karte
+            </h2>
+            <p className="text-ink-muted mb-7">
+              Unsere Wanderkarte zeigt die Ausflugsziele aus dem Magazin als Pins – ein Klick führt
+              zum Artikel. Dazu das markierte Wanderwegenetz und ausgewählte Unterkünfte.
+            </p>
+            <div className="flex flex-wrap gap-3">
+              <Link href="/karte" className="btn-primary">
+                Karte öffnen
+              </Link>
+              <Link href="/routenplaner" className="btn-secondary">
+                Route planen
+              </Link>
             </div>
           </div>
-        </section>
-      </FadeIn>
+          <dl className="border-t-2 border-ink">
+            {[
+              { t: 'Ausflugsziele', d: 'Jeder Artikel mit Startpunkt als Pin – farbig nach Wandern, Baden und Ausflug' },
+              { t: 'Wanderwege', d: 'Offizielles Wegenetz mit Höhenprofil im Routenplaner' },
+              { t: 'Unterkünfte', d: 'Hotels, Camping & Ferienwohnungen direkt am See' },
+            ].map((c) => (
+              <div key={c.t} className="grid grid-cols-[9.5rem_1fr] gap-4 py-4 border-b border-hairline">
+                <dt className="font-serif font-bold text-ink">{c.t}</dt>
+                <dd className="text-caption text-ink-soft">{c.d}</dd>
+              </div>
+            ))}
+          </dl>
+        </div>
+      </section>
 
       {/* ── Newsletter ─────────────────────────────────────────────────── */}
-      <FadeIn direction="up">
-        <section className="max-w-5xl mx-auto px-6 pb-20">
-          <Newsletter />
-        </section>
-      </FadeIn>
+      <section className="max-w-6xl mx-auto px-6 pb-20">
+        <Newsletter />
+      </section>
     </>
   );
 }

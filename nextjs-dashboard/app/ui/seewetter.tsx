@@ -60,8 +60,8 @@ export default function Seewetter() {
   const swim = isSwimSeason();
 
   return (
-    <div className="border border-hairline overflow-hidden h-full flex flex-col rounded-lg">
-      <div className="bg-green-800 text-white px-5 py-4 flex items-baseline justify-between">
+    <div className="border border-ink bg-canvas overflow-hidden h-full flex flex-col rounded-sm">
+      <div className="bg-ink text-white px-5 py-4 flex items-baseline justify-between">
         <div>
           <h3 className="font-serif text-tagline font-bold flex items-center gap-2">
             <svg width="18" height="18" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.5" className="text-green-300">
@@ -70,11 +70,11 @@ export default function Seewetter() {
             </svg>
             Seewetter
           </h3>
-          <p className="text-green-200 text-fine mt-0.5">
+          <p className="text-white/65 text-fine mt-0.5">
             Aktuelle Luft- &amp; Wassertemperatur an Österreichs beliebtesten Seen
           </p>
         </div>
-        <span className="flex items-center gap-1.5 text-[11px] uppercase tracking-wider text-green-200">
+        <span className="flex items-center gap-1.5 font-mono text-[11px] uppercase tracking-wider text-white/70">
           <span className="w-1.5 h-1.5 rounded-full bg-green-300 animate-pulse" />
           Live
         </span>
@@ -88,14 +88,14 @@ export default function Seewetter() {
           >
             <span className="text-caption font-medium text-ink-muted">{row.name}</span>
             <div className="flex items-center gap-4 text-caption">
-              <span className="text-ink-soft tabular-nums">
+              <span className="text-ink-soft tabular-nums font-mono text-fine">
                 {loading ? (
                   <span className="inline-block w-12 h-4 bg-parchment animate-pulse rounded-sm" />
                 ) : row.air !== null ? `${row.air} °C Luft` : '—'}
               </span>
               {(swim || row.liveWater) && (
                 <span
-                  className="font-semibold text-green-800 bg-green-50 border border-green-200 px-2 py-0.5 text-fine tabular-nums inline-flex items-center gap-1 rounded-sm"
+                  className="font-mono font-medium text-ink bg-sand-50 border border-hairline px-2 py-0.5 text-fine tabular-nums inline-flex items-center gap-1 rounded-sm"
                   title={row.liveWater ? 'Offizieller Live-Messwert des Hydrographischen Diensts' : row.water !== null ? 'Saisonaler Richtwert' : 'Derzeit kein Messwert'}
                 >
                   {row.water !== null ? `${row.water.toLocaleString('de-AT')} °C Wasser` : '— Wasser'}

@@ -37,9 +37,9 @@ export default function BadeplatzFilter({
             key={k}
             onClick={() => toggle(k)}
             aria-pressed={active.includes(k)}
-            className={`text-caption font-medium px-4 py-1.5 border transition-colors ${ active.includes(k) ? 'bg-sky-600 border-sky-600 text-white' : 'bg-white border-hairline text-ink-muted hover:border-sky-400 hover:text-sky-700' } rounded-full`}
+            className={`text-caption font-medium px-4 py-1.5 border transition-colors ${ active.includes(k) ? 'bg-sky-600 border-sky-600 text-white' : 'bg-white border-hairline text-ink-muted hover:border-sky-400 hover:text-sky-700' } rounded-sm`}
           >
-            {FEATURES[k].icon} {FEATURES[k].label}
+            {FEATURES[k].label}
           </button>
         ))}
         {active.length > 0 && (
@@ -74,8 +74,8 @@ export default function BadeplatzFilter({
               </div>
               <div className="flex flex-wrap gap-1.5 mt-2.5">
                 {p.features.map((k) => (
-                  <span key={k} className="text-fine font-medium px-2 py-0.5 bg-sky-50 text-sky-700 border border-sky-200 rounded-full">
-                    {FEATURES[k].icon} {FEATURES[k].label}
+                  <span key={k} className="text-fine font-medium px-2 py-0.5 bg-sky-50 text-sky-700 border border-sky-200 rounded-sm">
+                    {FEATURES[k].label}
                   </span>
                 ))}
               </div>
@@ -95,7 +95,7 @@ function Qualitaet({ q }: { q: BadeplatzQualitaet }) {
     <div className="mt-3 pt-3 border-t border-hairline text-fine">
       {q.gesperrt && (
         <p className="mb-2 font-semibold text-red-800 bg-red-50 border border-red-200 px-2.5 py-1.5 rounded-sm">
-          ⚠️ Badestelle derzeit gesperrt{q.sperrgrund ? `: ${q.sperrgrund}` : ''}
+          Badestelle derzeit gesperrt{q.sperrgrund ? `: ${q.sperrgrund}` : ''}
         </p>
       )}
       <div className="flex flex-wrap items-center gap-x-2 gap-y-1">

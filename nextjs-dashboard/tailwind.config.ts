@@ -1,13 +1,13 @@
 import type { Config } from 'tailwindcss';
 
 /**
- * Design-System: Apple-Design-Sprache, adaptiert auf die Marke.
+ * Design-System „Wanderführer“ (seit 2026-11-13).
  *
- * Übernommen: Typo-Skala mit negativem Tracking, Radius-Grammatik, 80px-
- * Sektionsrhythmus, Hairline statt Schatten, EIN Akzent.
- * Adaptiert: Akzent ist unser Forest-Green (nicht Apple-Blau), das Parchment
- * ist warm (Sand) statt kühlgrau — passt zu Natur/Reise —, und Headlines
- * bleiben Serif (Markenidentität).
+ * Leitbild: ein gedruckter Alpen-Führer bzw. eine Wanderkarte – Papierton statt Weiß,
+ * dunkle Tinte, eckige Formen, Hairlines statt Schatten. Marke bleibt Forest-Green;
+ * dazu EIN Signalton (`signal`, das Rot der rot-weiß-roten Wegmarkierung), sparsam.
+ * Schriften: `font-serif` = Display-Grotesk für Überschriften (Name historisch),
+ * `font-sans` = Oberfläche, `font-reading` = Artikel-Fließtext, `font-mono` = Labels/Messwerte.
  */
 const config: Config = {
   content: [
@@ -18,8 +18,10 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['var(--font-inter)', 'system-ui', 'sans-serif'],
-        serif: ['var(--font-lusitana)', 'Georgia', 'serif'],
+        sans: ['var(--font-sans)', 'system-ui', 'sans-serif'],
+        serif: ['var(--font-display)', 'var(--font-sans)', 'system-ui', 'sans-serif'],
+        reading: ['var(--font-reading)', 'Georgia', 'serif'],
+        mono: ['var(--font-mono)', 'ui-monospace', 'SFMono-Regular', 'monospace'],
       },
       colors: {
         // Eigene, leicht entsättigte Forest-/Pine-Green-Palette
@@ -38,40 +40,45 @@ const config: Config = {
         },
         // Warmer Sand-Akzent für editoriale Kontraste
         sand: {
-          50:  '#faf7f2',
-          100: '#f3ece0',
+          50:  '#efeadf',
+          100: '#e9e2d3',
           200: '#e6d8c3',
           300: '#d4bd9c',
         },
         // ── Neutrale Systemfarben (Apple-Grammatik, warm getönt) ──
         ink: {
-          DEFAULT: '#1d1d1f',   // Fließtext & Headlines
-          muted:   '#3a3a3c',   // sekundär
-          soft:    '#6e6e73',   // tertiär / Captions
+          DEFAULT: '#161d19',   // Fließtext & Headlines
+          muted:   '#37413b',   // sekundär
+          soft:    '#66706a',   // tertiär / Captions
         },
         canvas: '#ffffff',
-        parchment: '#faf7f2',   // ruhige Sektionsfläche (= sand-50)
-        hairline: '#e5e1da',    // 1px-Trennlinie statt Schatten
-        'divider-soft': '#f0ede7',
+        paper: '#f7f4ed',       // Seitenhintergrund (Papier)
+        parchment: '#efeadf',   // ruhige Sektionsfläche (= sand-50)
+        signal: {               // Rot der Wegmarkierung – nur als Akzent
+          DEFAULT: '#c4412a',
+          dark:    '#a23320',
+        },
+        hairline: '#d9d3c5',    // 1px-Trennlinie statt Schatten
+        'divider-soft': '#e8e3d7',
       },
       fontSize: {
         // Apple-Skala: Display mit negativem Tracking, Body bei 17px/1.47
-        'hero':     ['56px', { lineHeight: '1.07', letterSpacing: '-0.02em' }],
-        'display':  ['40px', { lineHeight: '1.1',  letterSpacing: '-0.018em' }],
-        'display-sm':['34px',{ lineHeight: '1.15', letterSpacing: '-0.015em' }],
-        'lead':     ['28px', { lineHeight: '1.2',  letterSpacing: '-0.01em' }],
+        'hero':     ['60px', { lineHeight: '1.02', letterSpacing: '-0.03em' }],
+        'display':  ['42px', { lineHeight: '1.06', letterSpacing: '-0.028em' }],
+        'display-sm':['32px',{ lineHeight: '1.1', letterSpacing: '-0.024em' }],
+        'lead':     ['26px', { lineHeight: '1.18',  letterSpacing: '-0.02em' }],
         'lead-airy':['24px', { lineHeight: '1.5',  letterSpacing: '0' }],
-        'tagline':  ['21px', { lineHeight: '1.25', letterSpacing: '-0.005em' }],
-        'body':     ['17px', { lineHeight: '1.47', letterSpacing: '-0.011em' }],
-        'caption':  ['14px', { lineHeight: '1.43', letterSpacing: '-0.016em' }],
-        'fine':     ['12px', { lineHeight: '1.3',  letterSpacing: '-0.01em' }],
+        'tagline':  ['20px', { lineHeight: '1.25', letterSpacing: '-0.015em' }],
+        'body':     ['17px', { lineHeight: '1.5', letterSpacing: '0' }],
+        'caption':  ['14.5px', { lineHeight: '1.45', letterSpacing: '0' }],
+        'fine':     ['12.5px', { lineHeight: '1.35',  letterSpacing: '0' }],
       },
       borderRadius: {
         // Radius-Grammatik: nur diese Werte verwenden
-        xs: '5px',
-        sm: '8px',
-        md: '11px',
-        lg: '18px',
+        xs: '2px',
+        sm: '2px',
+        md: '3px',
+        lg: '4px',
       },
       spacing: {
         section: '80px',

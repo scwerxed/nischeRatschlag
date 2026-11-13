@@ -36,24 +36,14 @@ export default function Newsletter() {
   }
 
   return (
-    <div className="relative bg-green-800 text-white overflow-hidden rounded-lg">
-      {/* Decorative mountain silhouette */}
-      <svg className="absolute bottom-0 left-0 right-0 text-green-900/30" viewBox="0 0 800 120" preserveAspectRatio="none" style={{ height: 120 }}>
-        <path d="M0 120 L0 80 L150 30 L250 70 L350 20 L450 60 L550 10 L650 50 L800 20 L800 120 Z" fill="currentColor" />
-      </svg>
+    <div className="relative bg-green-900 text-white overflow-hidden rounded-sm">
 
-      <div className="relative px-6 py-14">
-        <div className="max-w-xl mx-auto text-center">
-          <div className="inline-flex items-center gap-2 bg-white/10 border border-white/15 px-3 py-1.5 mb-5 rounded-lg">
-            <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.6" className="text-sand-300">
-              <rect x="1" y="3" width="14" height="10" rx="1" />
-              <path d="M1 3l7 5 7-5" />
-            </svg>
-            <span className="text-fine font-semibold uppercase tracking-wider text-green-200">Newsletter</span>
-          </div>
+      <div className="relative px-6 sm:px-12 py-12">
+        <div className="max-w-2xl">
+          <p className="eyebrow !text-white/70 mb-4">Newsletter</p>
 
-          <h2 className="font-serif text-lead md:text-display-sm font-bold mb-3">Die besten Österreich-Tipps per Mail</h2>
-          <p className="text-green-100 text-caption mb-7 leading-relaxed max-w-md mx-auto">
+          <h2 className="font-serif text-lead md:text-display-sm font-extrabold mb-3">Die besten Österreich-Tipps per Mail</h2>
+          <p className="text-green-100 text-caption mb-7 max-w-md">
             Geheime Badestellen, neue Wanderrouten und Spar-Tipps für deinen Urlaub.
             Nach der Anmeldung bekommst du eine Bestätigungsmail – erst mit dem Klick darin
             bist du dabei.
@@ -71,7 +61,7 @@ export default function Newsletter() {
             </div>
           ) : (
             <>
-              <form onSubmit={submit} className="flex flex-col sm:flex-row gap-2.5 max-w-md mx-auto">
+              <form onSubmit={submit} className="flex flex-col sm:flex-row gap-2.5 max-w-md">
                 <input
                   type="email"
                   required
@@ -81,7 +71,7 @@ export default function Newsletter() {
                   aria-label="E-Mail-Adresse"
                   aria-invalid={status === 'error'}
                   disabled={status === 'sending'}
-                  className="flex-1 px-5 py-3 text-ink text-caption outline-none focus-visible:ring-2 focus-visible:ring-sand-300 bg-canvas disabled:opacity-70 rounded-full"
+                  className="flex-1 px-5 py-3 text-ink text-caption outline-none focus-visible:ring-2 focus-visible:ring-sand-300 bg-canvas disabled:opacity-70 rounded-sm"
                 />
                 <button
                   type="submit"

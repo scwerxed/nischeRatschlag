@@ -90,7 +90,7 @@ export default function RegenPage() {
       ))}
 
       <div className="mt-6 flex flex-wrap gap-3">
-        <Link href="/hitzefreundliche-ausfluege" className="inline-block bg-green-700 text-white text-caption font-semibold px-5 py-2.5 hover:bg-green-800 transition-colors rounded-full">
+        <Link href="/hitzefreundliche-ausfluege" className="inline-block bg-green-700 text-white text-caption font-semibold px-5 py-2.5 hover:bg-green-800 transition-colors rounded-sm">
           Und bei Hitze?
         </Link>
         <Link href="/ausfluege-nach-dauer" className="btn btn-secondary btn-sm">

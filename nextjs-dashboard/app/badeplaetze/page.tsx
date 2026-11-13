@@ -77,7 +77,7 @@ export default async function BadeplaetzePage() {
       </p>
 
       <div className="mt-8 flex flex-wrap gap-3">
-        <Link href="/seen-vergleich" className="inline-block bg-green-700 text-white text-caption font-semibold px-5 py-2.5 hover:bg-green-800 transition-colors rounded-full">
+        <Link href="/seen-vergleich" className="inline-block bg-green-700 text-white text-caption font-semibold px-5 py-2.5 hover:bg-green-800 transition-colors rounded-sm">
           Seen im Vergleich
         </Link>
         <Link href="/wassertemperatur" className="btn btn-secondary btn-sm">
@@ -86,7 +86,7 @@ export default async function BadeplaetzePage() {
         <Link href="/wandern-baden" className="btn btn-secondary btn-sm">
           Wandern + Baden
         </Link>
-        <Link href="/hitzefreundliche-ausfluege" className="inline-block border border-amber-500 text-amber-700 text-caption font-semibold px-5 py-2.5 hover:bg-amber-50 transition-colors rounded-full">
+        <Link href="/hitzefreundliche-ausfluege" className="inline-block border border-amber-500 text-amber-700 text-caption font-semibold px-5 py-2.5 hover:bg-amber-50 transition-colors rounded-sm">
           Kühle Ziele für Hitzetage
         </Link>
       </div>

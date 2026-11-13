@@ -78,7 +78,7 @@ export default function FamilienausfluegePage() {
                     <span className="text-fine text-ink-soft">{regionName(post.region)}</span>
                     <h3 className="font-semibold text-ink group-hover:text-green-700 leading-snug mt-0.5">{post.title}</h3>
                     <p className="mt-2 text-caption text-ink-muted border-l-2 border-sky-300 pl-2.5">
-                      <span aria-hidden>🧒</span> {tipp}
+                      <span className="label-mono mr-1.5">Familien-Tipp</span>{tipp}
                     </p>
                   </div>
                 </Link>
@@ -89,7 +89,7 @@ export default function FamilienausfluegePage() {
       ))}
 
       <div className="mt-6 flex flex-wrap gap-3">
-        <Link href="/seen-vergleich/familienseen" className="inline-block bg-green-700 text-white text-caption font-semibold px-5 py-2.5 hover:bg-green-800 transition-colors rounded-full">
+        <Link href="/seen-vergleich/familienseen" className="inline-block bg-green-700 text-white text-caption font-semibold px-5 py-2.5 hover:bg-green-800 transition-colors rounded-sm">
           Familienseen im Vergleich
         </Link>
         <Link href="/aussicht-ohne-anstrengung" className="btn btn-secondary btn-sm">

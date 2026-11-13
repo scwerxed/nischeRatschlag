@@ -130,7 +130,7 @@ export default function HeroSlideshow({ children }: { children: React.ReactNode 
   return (
     // min-h statt fester Höhe: Auf schmalen Handys ist der Text höher als 560px und
     // wurde oben unter der Navigation abgeschnitten (Audit 2026-10-20).
-    <section className="relative min-h-[520px] md:min-h-[600px] flex items-end overflow-hidden bg-green-900">
+    <section className="relative min-h-[560px] md:min-h-[680px] flex items-end overflow-hidden bg-green-900">
       {SLIDES.map((img, i) => (
         <div
           key={img.src}
@@ -181,8 +181,8 @@ export default function HeroSlideshow({ children }: { children: React.ReactNode 
       <div className="absolute inset-x-0 bottom-0" style={{ zIndex: 3 }}>
         <div className="max-w-6xl mx-auto px-6 pb-4 flex items-end justify-between gap-4">
           {/* Kein truncate: die Namensnennung muss auch auf dem Handy vollständig lesbar sein */}
-          <p className="min-w-0 text-fine leading-snug text-white/70">
-            <span aria-hidden>📍 </span>
+          <p className="min-w-0 font-mono text-[11px] leading-snug text-white/70">
+            
             <Link href={`/blog/${slide.slug}`} className="font-semibold text-white/90 hover:text-white hover:underline">
               {slide.ort}
             </Link>
@@ -199,7 +199,7 @@ export default function HeroSlideshow({ children }: { children: React.ReactNode 
               <button
                 key={s.src}
                 onClick={() => goTo(i)}
-                className={`h-1 rounded-full transition duration-500 ${i === shown ? 'w-8 bg-white' : 'w-3 bg-white/40 hover:bg-white/70'}`}
+                className={`h-[3px] transition duration-500 ${i === shown ? 'w-8 bg-white' : 'w-3 bg-white/40 hover:bg-white/70'}`}
                 aria-label={`Bild ${i + 1}: ${s.ort}`}
                 aria-current={i === shown}
               />

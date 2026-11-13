@@ -71,7 +71,7 @@ export default function DauerPage() {
       ))}
 
       <div className="mt-6 flex flex-wrap gap-3">
-        <Link href="/wochenendtrip" className="inline-block bg-green-700 text-white text-caption font-semibold px-5 py-2.5 hover:bg-green-800 transition-colors rounded-full">
+        <Link href="/wochenendtrip" className="inline-block bg-green-700 text-white text-caption font-semibold px-5 py-2.5 hover:bg-green-800 transition-colors rounded-sm">
           Wochenendtrips nach Startstadt
         </Link>
         <Link href="/feierabend-ausfluege" className="btn btn-secondary btn-sm">

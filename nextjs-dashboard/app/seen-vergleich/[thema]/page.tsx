@@ -97,12 +97,12 @@ export default async function SeeThemaPage({ params }: Props) {
           <Link
             key={x.slug}
             href={`/seen-vergleich/${x.slug}`}
-            className="text-caption font-medium px-4 py-1.5 bg-sky-50 text-sky-700 border border-sky-200 hover:bg-sky-100 transition-colors rounded-full"
+            className="text-caption font-medium px-4 py-1.5 bg-sky-50 text-sky-700 border border-sky-200 hover:bg-sky-100 transition-colors rounded-sm"
           >
             {x.h1} →
           </Link>
         ))}
-        <Link href="/seen-vergleich" className="text-caption font-medium px-4 py-1.5 border border-hairline text-ink-muted hover:border-green-600 hover:text-green-700 transition-colors rounded-full">
+        <Link href="/seen-vergleich" className="text-caption font-medium px-4 py-1.5 border border-hairline text-ink-muted hover:border-green-600 hover:text-green-700 transition-colors rounded-sm">
           Alle Seen im Vergleich
         </Link>
       </div>

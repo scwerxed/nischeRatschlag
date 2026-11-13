@@ -419,7 +419,7 @@ export default async function SeeSteckbriefPage({ params }: Props) {
             <Link
               key={n.see.slug}
               href={`/wassertemperatur/${n.see.slug}`}
-              className={`text-caption font-medium px-4 py-1.5 border transition-colors rounded-full ${
+              className={`text-caption font-medium px-4 py-1.5 border transition-colors rounded-sm ${
                 n.see.stationen.length > 0
                   ? 'bg-sky-50 text-sky-700 border-sky-200 hover:bg-sky-100'
                   : 'bg-parchment text-ink-muted border-hairline hover:border-green-600 hover:text-green-700'
@@ -430,7 +430,7 @@ export default async function SeeSteckbriefPage({ params }: Props) {
           ))}
           <Link
             href="/wassertemperatur"
-            className="text-caption font-medium px-4 py-1.5 border border-hairline text-ink-muted hover:border-green-600 hover:text-green-700 transition-colors rounded-full"
+            className="text-caption font-medium px-4 py-1.5 border border-hairline text-ink-muted hover:border-green-600 hover:text-green-700 transition-colors rounded-sm"
           >
             Alle Seen →
           </Link>
@@ -493,10 +493,10 @@ export default async function SeeSteckbriefPage({ params }: Props) {
       </p>
 
       <div className="flex flex-wrap gap-3">
-        <Link href="/wassertemperatur" className="inline-block bg-green-700 text-white text-caption font-semibold px-5 py-2.5 hover:bg-green-800 transition-colors rounded-full">
+        <Link href="/wassertemperatur" className="inline-block bg-green-700 text-white text-caption font-semibold px-5 py-2.5 hover:bg-green-800 transition-colors rounded-sm">
           Alle Seen: Wassertemperatur live
         </Link>
-        <Link href="/badeplaetze" className="inline-block border border-sky-500 text-sky-700 text-caption font-semibold px-5 py-2.5 hover:bg-sky-50 transition-colors rounded-full">
+        <Link href="/badeplaetze" className="inline-block border border-sky-500 text-sky-700 text-caption font-semibold px-5 py-2.5 hover:bg-sky-50 transition-colors rounded-sm">
           Badeplatz-Check
         </Link>
         {s.regionen.map((r) => (

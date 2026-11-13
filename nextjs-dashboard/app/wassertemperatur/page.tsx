@@ -292,7 +292,7 @@ export default async function WassertemperaturPage() {
                 <Link
                   key={s.slug}
                   href={`/wassertemperatur/${s.slug}`}
-                  className="text-caption font-medium px-4 py-1.5 bg-sky-50 text-sky-700 border border-sky-200 hover:bg-sky-100 transition-colors rounded-full"
+                  className="text-caption font-medium px-4 py-1.5 bg-sky-50 text-sky-700 border border-sky-200 hover:bg-sky-100 transition-colors rounded-sm"
                 >
                   {s.see}
                 </Link>
@@ -356,10 +356,10 @@ export default async function WassertemperaturPage() {
       </p>
 
       <div className="flex flex-wrap gap-3">
-        <Link href="/seen-vergleich" className="inline-block bg-green-700 text-white text-caption font-semibold px-5 py-2.5 hover:bg-green-800 transition-colors rounded-full">
+        <Link href="/seen-vergleich" className="inline-block bg-green-700 text-white text-caption font-semibold px-5 py-2.5 hover:bg-green-800 transition-colors rounded-sm">
           Seen im Vergleich
         </Link>
-        <Link href="/badeplaetze" className="inline-block border border-sky-500 text-sky-700 text-caption font-semibold px-5 py-2.5 hover:bg-sky-50 transition-colors rounded-full">
+        <Link href="/badeplaetze" className="inline-block border border-sky-500 text-sky-700 text-caption font-semibold px-5 py-2.5 hover:bg-sky-50 transition-colors rounded-sm">
           Badeplatz-Check
         </Link>
         <Link href="/seen-vergleich/warme-seen" className="btn btn-secondary btn-sm">

@@ -81,7 +81,7 @@ export default function BasislagerPage() {
                     {Object.entries(b.counts).map(([cat, n]) => {
                       const s = CATEGORY_STYLE[cat];
                       return (
-                        <span key={cat} className={`text-fine font-medium px-2 py-0.5 rounded-full ${s ? `${s.bg} ${s.text}` : 'bg-parchment text-ink-muted'}`}>
+                        <span key={cat} className={`text-fine font-medium px-2 py-0.5 rounded-sm ${s ? `${s.bg} ${s.text}` : 'bg-parchment text-ink-muted'}`}>
                           {n}× {cat}
                         </span>
                       );
@@ -118,7 +118,7 @@ export default function BasislagerPage() {
       ))}
 
       <div className="mt-10 flex flex-wrap gap-3">
-        <Link href="/unterkuenfte/am-see" className="inline-block bg-green-700 text-white text-caption font-semibold px-5 py-2.5 hover:bg-green-800 transition-colors rounded-full">
+        <Link href="/unterkuenfte/am-see" className="inline-block bg-green-700 text-white text-caption font-semibold px-5 py-2.5 hover:bg-green-800 transition-colors rounded-sm">
           Unterkünfte am See
         </Link>
         <Link href="/wochenendtrip" className="btn btn-secondary btn-sm">

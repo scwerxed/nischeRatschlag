@@ -12,7 +12,7 @@ export default function RegionSelector() {
   }
 
   return (
-    <div className="flex flex-col sm:flex-row items-center gap-3 max-w-lg mx-auto">
+    <div className="max-w-sm">
       <select
         defaultValue=""
         onChange={handleChange}
@@ -25,7 +25,6 @@ export default function RegionSelector() {
           </option>
         ))}
       </select>
-      <span className="text-caption text-ink-soft whitespace-nowrap">→ Tipps & Hotels</span>
     </div>
   );
 }

@@ -99,10 +99,10 @@ export default function ZweiAusfluegeAnEinemTagPage() {
       ))}
 
       <div className="mt-10 flex flex-wrap gap-3">
-        <Link href="/ausfluege-nach-dauer" className="inline-block bg-green-700 text-white text-caption font-semibold px-5 py-2.5 hover:bg-green-800 transition-colors rounded-full">
+        <Link href="/ausfluege-nach-dauer" className="inline-block bg-green-700 text-white text-caption font-semibold px-5 py-2.5 hover:bg-green-800 transition-colors rounded-sm">
           Ausflüge nach Dauer
         </Link>
-        <Link href="/wandern-baden" className="inline-block border border-sky-500 text-sky-700 text-caption font-semibold px-5 py-2.5 hover:bg-sky-50 transition-colors rounded-full">
+        <Link href="/wandern-baden" className="inline-block border border-sky-500 text-sky-700 text-caption font-semibold px-5 py-2.5 hover:bg-sky-50 transition-colors rounded-sm">
           Wandern + Baden
         </Link>
         <Link href="/wochenendtrip" className="btn btn-secondary btn-sm">

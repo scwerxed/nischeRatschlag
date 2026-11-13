@@ -1,5 +1,5 @@
 import '@/app/ui/global.css';
-import { inter, lusitana } from '@/app/ui/fonts';
+import { display, sans, reading, mono } from '@/app/ui/fonts';
 import Navbar from '@/app/ui/navbar';
 import Footer from '@/app/ui/footer';
 import ScrollToTop from '@/app/ui/scroll-to-top';
@@ -103,7 +103,7 @@ export const viewport = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="de" className={`${inter.variable} ${lusitana.variable}`}>
+    <html lang="de" className={`${display.variable} ${sans.variable} ${reading.variable} ${mono.variable}`}>
       <head>
         {/* Schnellere Verbindung zu Drittanbietern (spart Handshake-Zeit → besseres LCP/INP). */}
         <link rel="preconnect" href="https://pagead2.googlesyndication.com" crossOrigin="anonymous" />
@@ -118,7 +118,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           crossOrigin="anonymous"
         />
       </head>
-      <body className="font-sans antialiased bg-white text-ink">
+      <body className="font-sans antialiased bg-paper text-ink">
         {/* Globales Schema: Organization + WebSite (Sitelinks Searchbox) */}
         <script
           type="application/ld+json"
@@ -126,7 +126,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         />
         <a
           href="#inhalt"
-          className="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-[2000] focus:bg-green-700 focus:text-white focus:px-4 focus:py-2 focus:rounded-full"
+          className="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-[2000] focus:bg-green-700 focus:text-white focus:px-4 focus:py-2 focus:rounded-sm"
         >
           Zum Inhalt springen
         </a>

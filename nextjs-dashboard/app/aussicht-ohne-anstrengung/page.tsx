@@ -91,7 +91,7 @@ export default function AussichtPage() {
       ))}
 
       <div className="mt-6 flex flex-wrap gap-3">
-        <Link href="/ausfluege-nach-dauer" className="inline-block bg-green-700 text-white text-caption font-semibold px-5 py-2.5 hover:bg-green-800 transition-colors rounded-full">
+        <Link href="/ausfluege-nach-dauer" className="inline-block bg-green-700 text-white text-caption font-semibold px-5 py-2.5 hover:bg-green-800 transition-colors rounded-sm">
           Ausflüge nach Dauer
         </Link>
         <Link href="/bahnhofsausfluege" className="btn btn-secondary btn-sm">
