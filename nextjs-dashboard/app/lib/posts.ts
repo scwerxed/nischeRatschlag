@@ -1013,44 +1013,47 @@ Rund 20 km Luftlinie nordwestlich liegt im Gurktal der [Dom zu Gurk](/blog/gurke
     slug: 'klagenfurt-stadtfuehrung',
     startCoords: [46.6247, 14.3050],
     title: 'Klagenfurt entdecken – die besten Sehenswürdigkeiten der Kärntner Hauptstadt',
-    excerpt: 'Klagenfurt wird von den meisten nur als Sprungbrett zum Wörthersee genutzt – zu Unrecht. Die Landeshauptstadt hat schöne Plätze, exzellente Restaurants und einzigartige Denkmäler.',
+    excerpt: 'Klagenfurt wird von den meisten nur als Sprungbrett zum Wörthersee genutzt – zu Unrecht. Die Landeshauptstadt hat schöne Plätze, einen Wochenmarkt und den Wappensaal im Landhaus; seit der Koralmbahn ist sie auch ab Graz in rund 41 Minuten erreichbar.',
     date: '2026-05-16',
     category: 'Ausflug',
     region: 'kaernten',
     bestSeason: 'April–Oktober',
-    highlights: ['Stadtführung zu Fuß in 2 Stunden möglich', 'Lindwurm, Landhaus und Strandbad am See', 'Konkrete Restaurantempfehlungen mit Preisen'],
+    highlights: ['Altstadt gut zu Fuß in einem halben Tag erkundbar', 'Lindwurmbrunnen, Landhaus mit Wappensaal und Benediktinermarkt', 'Seit der Koralmbahn (Dezember 2025) nur rund 41 Minuten ab Graz'],
+    planningMistakes: [
+      { fehler: 'Den Wappensaal als Gratis-Stopp einplanen', besser: 'Der Wappensaal im Landhaus ist laut Landesmuseum ein Museumsstandort mit Eintritt. Öffnungszeiten und Preise ändern sich je nach Saison – vorab auf der Seite des Landesmuseums nachsehen.' },
+      { fehler: 'Den Benediktinermarkt an einem beliebigen Wochentag besuchen', besser: 'Großer Markttag ist laut Stadt Klagenfurt am Donnerstag und Samstag, am Vormittag bis etwa 13 Uhr. An Feiertagen kann der Termin abweichen.' },
+    ],
     content: `
-Die meisten Kärnten-Besucher fahren durch Klagenfurt durch, auf dem Weg zum Wörthersee. Schade – denn die Landeshauptstadt hat eine lebendige Innenstadt, schöne Plätze und Sehenswürdigkeiten, die sich in zwei Stunden entspannt zu Fuß erkunden lassen.
+Die meisten Kärnten-Besucher fahren durch Klagenfurt durch, auf dem Weg zum Wörthersee. Schade – denn die Landeshauptstadt hat eine lebendige Innenstadt, schöne Plätze und Sehenswürdigkeiten, die sich entspannt zu Fuß erkunden lassen.
 
 ## Die wichtigsten Sehenswürdigkeiten
 
 ### Neuer Platz & Lindwurmbrunnen
-Das Wahrzeichen Klagenfurts: Der Lindwurm – ein mythisches Ungeheuer aus der Stadtlegende – thront über dem Brunnen am Hauptplatz. Perfekter Startpunkt für den Stadtrundgang. Gratis.
+Das Wahrzeichen Klagenfurts: Der Lindwurm, ein Drache aus der Stadtlegende, thront über dem Brunnen auf dem Neuen Platz. Ein guter Startpunkt für den Stadtrundgang, die Besichtigung ist frei.
 
-### Landhaus Klagenfurt
-Prächtiges Renaissance-Gebäude aus dem 17. Jahrhundert. Der Wappensaal zeigt die bemalten Wappen aller Kärntner Gemeinden – beeindruckend und kostenlos besichtigbar.
+### Landhaus und Wappensaal
+Das Landhaus am Alten Platz ist ein Renaissancebau aus dem 16. Jahrhundert. Der große **Wappensaal** zeigt Wandfresken, ein Deckenfresko von Josef Ferdinand Fromiller und über 665 Wappen. Dazu gehört der Fürstenstein, der an die Kärntner Herzogseinsetzung erinnert. Besichtigung nur mit Eintritt, Zeiten und Preise vorab prüfen.
 
-### Dom zu Klagenfurt
-Barockdom mit beeindruckendem Innenraum. 20 Minuten gut investiert, gratis.
+### Dom zu Klagenfurt und Pfarrkirche St. Egid
+Der Dom St. Peter und Paul wurde Ende des 16. Jahrhunderts begonnen und liegt mitten in der Altstadt. In der Nähe steht die Stadtpfarrkirche St. Egid. Beide lassen sich gut in den Rundgang einbauen; bei Gottesdiensten ist der Zugang eingeschränkt.
 
-### Stadtpfarrkirche St. Egid
-Weniger bekannt als der Dom, aber architektonisch interessanter – schöne Stuckaturen aus dem Barock.
+## Stadtspaziergang
+Neuer Platz → Altstadtgassen und Alter Platz mit Landhaus → Dom → Herrengasse → Benediktinerplatz. Mit Pausen in Cafés reicht ein halber Tag.
 
-## Stadtspaziergang-Route (2 Stunden)
-Neuer Platz → Alte Rathausgasse → Dom → Landhaus → Herrengasse → Benediktinerplatz → Viktringer Ring → zurück zum Ausgangspunkt.
-
-## Essen in Klagenfurt – konkrete Empfehlungen
-- **Benediktinermarkt**: Täglich (außer So.) frische Marktstände, Käse, Wurst, Gemüse – der schönste Markt Kärntens
-- **Zum Augustin** (Pfarrplatz): Kärntner Küche, hervorragende Käsknödel, Hauptgericht ca. 14–18 €
-- **Café Musil**: Wiener Kaffeehauskultur in Klagenfurt, bestes Frühstück der Stadt
+## Essen und Einkaufen
+- **Benediktinermarkt**: Laut Stadt Klagenfurt großer Markttag am Donnerstag und Samstag vormittags, mit Bauern aus Kärnten sowie Friaul und Slowenien. Aktuelle Zeiten bei der Stadt prüfen.
+- Kärntner Küche mit Kasnudeln (Käsnudeln) und Reindling gibt es in vielen Gasthäusern der Altstadt – Karten und Preise vor Ort ansehen, wir nennen bewusst keine Lokale mit Preisen.
 
 ## Strandbad Klagenfurt
-Nur 4 km vom Stadtzentrum – das riesige Strandbad am Wörthersee ist gleichzeitig Naherholungsgebiet. Im Sommer über 6 km Uferpromenade.
+Das Strandbad liegt am Ostufer des Wörthersees und gehört zu den großen Bädern am See. Es ist vom Zentrum aus in wenigen Kilometern erreichbar, per Rad, Bus oder Auto. Eintritt und Öffnungszeiten vorab prüfen.
 
 ## Anreise
-Bahn: Von Wien Hauptbahnhof ca. 3,5 Stunden. Von Graz ca. 2,5 Stunden (Südbahn).
-Parken: Tiefgarage Heiligengeistplatz, 24/7 geöffnet, günstiger als Innenstadtparkplätze.
+Seit **14. Dezember 2025** fährt die Koralmbahn. Die schnellsten Railjet-Verbindungen brauchen laut Kärnten Werbung zwischen Graz und Klagenfurt rund 41 Minuten. Von Wien aus ist die Fahrt deutlich kürzer geworden als früher – aktuelle Fahrzeiten gibt es in der ÖBB-Auskunft. Parkmöglichkeiten in der Innenstadt: Garagen, Kurzparkzonen und Gebühren vorab prüfen.
     `,
+    officialLinks: [
+      { label: 'Wappensaal im Landhaus – Landesmuseum Kärnten', url: 'https://landesmuseum.ktn.gv.at/standorte/wappensaal' },
+      { label: 'Märkte in Klagenfurt – Stadt Klagenfurt', url: 'https://www.klagenfurt.at/maerkte' },
+    ],
     affiliateLinks: [
       { label: 'Klagenfurt: Stadtführungen, Minimundus & Tickets – GetYourGuide', url: 'https://www.getyourguide.de/s/?q=Klagenfurt%20am%20W%C3%B6rthersee' },
       { label: 'Hotels in Klagenfurt – booking.com', url: 'https://www.booking.com/city/at/klagenfurt.de.html' },
@@ -1058,46 +1061,45 @@ Parken: Tiefgarage Heiligengeistplatz, 24/7 geöffnet, günstiger als Innenstadt
   },
   {
     slug: 'drauradweg-klagenfurt-villach',
-    startCoords: [46.6100, 14.1700],
-    title: 'Drauradweg: Mit dem Rad von Klagenfurt nach Villach',
-    excerpt: '50 km flach entlang der Drau, weitgehend verkehrsfrei und durch unberührte Auwälder – der Drauradweg ist eine der schönsten Radtouren Kärntens. Rückfahrt bequem per Zug.',
+    startCoords: [46.6165, 13.8470],
+    title: 'Drauradweg im Rosental: Mit dem Rad von Villach nach Ferlach',
+    excerpt: 'Der Drauradweg (R1) folgt der Drau durch das Rosental. Etappe 4 führt von Villach nach Ferlach, rund 51 km mit etwa 300 Höhenmetern. Warum Klagenfurt nicht direkt an der Strecke liegt und wie man sie trotzdem einplant.',
     date: '2026-05-14',
     category: 'Ausflug',
     region: 'kaernten',
     bestSeason: 'April–Oktober',
-    highlights: ['50 km flach und weitgehend verkehrsfrei', 'Für alle Fitnesslevel geeignet', 'Rückfahrt per Bahn in 30 Minuten'],
+    highlights: ['Etappe 4 des Drauradwegs: Villach – Ferlach, rund 51 km', 'Etwa 300 Höhenmeter laut Tourenportalen', 'Anschluss Richtung Klagenfurt über Ferlach'],
+    planningMistakes: [
+      { fehler: 'Den Drauradweg als Verbindung Klagenfurt–Villach „entlang der Drau“ einplanen', besser: 'Klagenfurt liegt nicht an der Drau. Der Drauradweg läuft von Villach über Rosegg und Feistritz im Rosental nach Ferlach. Für Klagenfurt braucht man eine Zubringerroute ab Ferlach – Strecke und Beschilderung vorab prüfen.' },
+      { fehler: 'Die Tour als „komplett flach“ beschreiben und unterschätzen', besser: 'Tourenportale nennen für Etappe 4 knapp 300 Höhenmeter Aufstieg. Für Gelegenheitsradler machbar, mit Pausen aber ein ganzer Tag.' },
+    ],
     content: `
-Der Drauradweg von Klagenfurt nach Villach ist einer der angenehmsten Radwege Kärntens: 50 km flach entlang des Flusses, größtenteils verkehrsfrei, durch Auwälder, an ruhigen Flussabschnitten und kleinen Dörfern vorbei.
+Der **Drauradweg (R1)** folgt der Drau durch ganz Kärnten und ist im Rosental einer der beliebtesten Radwege des Landes. Die offizielle **Etappe 4** führt von **Villach nach Ferlach** und ist laut Tourenportalen rund 51 km lang. Der Weg ist durchgehend beschildert und überwiegend asphaltiert oder fein geschottert.
 
 ## Streckenübersicht
-- Start: Klagenfurt Stadthafen (Wörthersee, Parkplatz)
-- Ziel: Villach Hauptbahnhof
-- Länge: ca. 50 km
-- Höhenmeter: unter 200 m gesamt – sehr flach
-- Schwierigkeit: leicht, auch für untrainierte Radfahrer
+- Start: Villach (Hauptbahnhof ist Anschluss an die Bahn)
+- Ziel: Ferlach, die Büchsenmacherstadt im Rosental
+- Länge: rund 51 km
+- Höhenmeter: grob 300 hm im Aufstieg, laut Tourenportalen
+- Schwierigkeit: leicht bis mittel, je nach Kondition
 
-## Etappen
+## Orte am Weg
+Von Villach geht es talabwärts durch das breite Drautal. Auf der Strecke liegen unter anderem **Rosegg** (Schloss und Tierpark) und **Feistritz im Rosental**, dazu ruhige Abschnitte mit Auwald am Fluss. Gasthäuser finden sich in den Orten am Weg; Öffnungszeiten vorab prüfen.
 
-### Klagenfurt → Feistritz/Drau (17 km)
-Entlang der Glan durch das Stadtgebiet und dann entlang der Drau in die Aulandschaft. Gut beschildert (Radwegzeichen R2).
+## Richtung Klagenfurt
+Ferlach liegt nicht an der Hauptbahn. Von dort gibt es Radverbindungen Richtung Klagenfurt, die Tourenportale als Rundtouren beschreiben (zum Beispiel Velden – Ferlach – Klagenfurt – Velden mit rund 66 km). Wer die Tour als Streckenfahrt plant, sollte die Rückreise vorab klären: Bus und Bahn, Fahrradmitnahme und Verbindungen ändern sich, deshalb hier keine Zeiten oder Preise.
 
-### Feistritz → Rosegg (15 km)
-Der schönste Abschnitt: Auwälder, Drauknie, Wildwasser-Kanutraining am Ufer. Hier lohnt eine Pause im Gasthof.
-
-### Rosegg → Villach (18 km)
-Durch das breite Drautal, vorbei an Schloss Rosegg mit Tierpark (Eintritt ca. 12 €), nach Villach.
-
-## Rückfahrt
-Mit dem Zug von Villach nach Klagenfurt (30 Min., Fahrrad kostenpflichtig, ca. 3 € Aufpreis). Oder Punkt-zu-Punkt-Fahrt ohne Rückweg.
-
-## Nur den besten Teil fahren?
-Der Abschnitt Feistritz–Rosegg (15 km) ist der schönste. Als Hin- und Rückweg ergibt das eine bequeme 30-km-Tour.
+## Nur ein Stück fahren?
+Die Strecke lässt sich in beliebige Abschnitte teilen. Wer nur einen Tag hat, fährt zum Beispiel ab Villach bis Rosegg und zurück und besucht den Tierpark. Details zu Öffnungszeiten und Eintritt stehen auf der Seite des Tierparks.
 
 ## Praktische Infos
-- Fahrradverleih: ÖBB Radverleih am Klagenfurter Hauptbahnhof, ca. 25 €/Tag
-- Einkehr: Gasthäuser in Rosegg (direkt am Radweg) und Feistritz
-- Kinder: Weg ist kinderwagentauglich für die ersten 25 km
+- Radverleih: in Villach und Klagenfurt gibt es Verleihstationen – Preise und Öffnungszeiten vorab erfragen
+- Kinder: Der Weg ist überwiegend gut befahrbar; für Kinderwagen oder Anhänger Wegzustand vorab prüfen
+- Offizielle Streckeninfos: [drauradweg.com](https://www.drauradweg.com/de/etappen/)
     `,
+    officialLinks: [
+      { label: 'Drauradweg – Etappen', url: 'https://www.drauradweg.com/de/etappen/' },
+    ],
     affiliateLinks: [
       { label: 'Fahrradtaschen & Zubehör – Amazon', url: 'https://www.amazon.de/s?k=fahrradtasche+lenker' },
     ],
@@ -1669,7 +1671,7 @@ Klein, aber fein: Damwild, Sikahirsche, Mufflons, Wildschweine und eine Waschbä
 
 ## Als Pausenstopp auf dem Drauradweg
 
-Schloss Rosegg liegt direkt am Drauradweg (zwischen Feistritz und Villach). Wer die 50-km-Tour von Klagenfurt nach Villach macht, kommt automatisch daran vorbei. Die Kombination Radpause + Schloss + Tierpark + Einkehr im Schlosswirtshaus ist eine der besten Möglichkeiten, den Radweg aufzuwerten.
+Schloss Rosegg liegt am Drauradweg im Rosental, zwischen Villach und Feistritz im Rosental. Wer die Etappe von Villach Richtung Ferlach fährt, kommt daran vorbei (siehe [Drauradweg im Rosental](/blog/drauradweg-klagenfurt-villach)). Die Kombination Radpause + Schloss + Tierpark + Einkehr im Schlosswirtshaus ist eine der besten Möglichkeiten, den Radweg aufzuwerten.
 
 ## Schlosswirtshaus Rosegg
 
@@ -2047,48 +2049,46 @@ Kasnudeln, Reindling, Speck und Almkäse – am besten dort, wo sie herkommen: a
   {
     slug: 'karawanken-grenzwanderung-oesterreich-slowenien',
     startCoords: [46.4300, 14.4500],
-    title: 'Karawanken-Grenzkamm – Wandern auf der Staatsgrenze zwischen zwei Ländern',
-    excerpt: 'Auf dem Karawanken-Grenzkamm wandert man buchstäblich auf der Grenze – links Österreich, rechts Slowenien. Blick auf den Wörthersee und die slowenischen Alpen gleichzeitig. Unvergesslich.',
+    title: 'Hochstuhl (Stol) – Gipfeltour im Karawanken-Grenzkamm',
+    excerpt: 'Der Hochstuhl (slowenisch Stol, 2.236 m) ist der höchste Gipfel der Karawanken und liegt genau auf der Grenze zwischen Kärnten und Slowenien. Der klassische Zustieg führt vom Bodental über die Klagenfurter Hütte – eine lange, anspruchsvolle Bergtour.',
     date: '2026-05-09',
     category: 'Wandern',
     region: 'kaernten',
     difficulty: 'schwer',
     bestSeason: 'Juli–September',
-    highlights: ['Wandern exakt auf der Staatsgrenze AT/SLO', 'Blick auf Wörthersee und Slowenien gleichzeitig', 'Einzigartiges Grenzerlebnis im Schengen-Raum'],
+    highlights: ['Höchster Gipfel der Karawanken auf der Staatsgrenze AT/SLO', 'Zustieg vom Bodental über die Klagenfurter Hütte', 'Auf der slowenischen Seite steht die Prešernova koča kurz unter dem Gipfel'],
+    planningMistakes: [
+      { fehler: 'Den Hochstuhl als Spaziergang vom Loiblpass einplanen', besser: 'Der übliche Zustieg beginnt im Bodental und führt über die Klagenfurter Hütte. Eine Tour ab Loiblpass ist hier nicht belegt – Streckenführung immer in einer aktuellen Wanderkarte oder bei Alpenverein/Tourenportalen prüfen.' },
+      { fehler: 'Ohne Einkehrmöglichkeit loszugehen', besser: 'Auf der Kärntner Seite liegt die Klagenfurter Hütte (Alpenverein, 1.664 m), auf der slowenischen Seite die Prešernova koča kurz unter dem Gipfel. Beide sind nur in der Sommersaison bewirtschaftet – Öffnungszeiten vorab erfragen und trotzdem genug Wasser mitnehmen.' },
+      { fehler: 'Spät starten und auf Wetterbesserung hoffen', besser: 'Der Kamm ist exponiert, Gewitter am Nachmittag sind im Hochsommer keine Seltenheit. Früh starten und bei Wetterumschwung rechtzeitig umkehren.' },
+    ],
     content: `
-Die Karawanken bilden die natürliche Grenze zwischen Kärnten und Slowenien. Auf dem Grenzkamm zu wandern ist ein Erlebnis der besonderen Art: Der GPS zeigt abwechselnd Österreich und Slowenien an, während man einen Fuß in jedem Land hat.
+Die Karawanken bilden die Grenze zwischen Kärnten und Slowenien. Der **Hochstuhl** – auf Slowenisch **Stol** – ist mit 2.236 m ihr höchster Gipfel, und die Staatsgrenze verläuft über den Kamm. Wer oben steht, hat Österreich im Norden und Slowenien im Süden.
 
-## Die beste Tagesetappe: Loiblpass – Hochstuhl
+## Der klassische Zustieg: Bodental – Klagenfurter Hütte
+Die Tour beginnt im **Bodental** bei Ferlach, das in der Sommersaison mit dem Auto befahrbar ist. Von dort geht es zur **Klagenfurter Hütte** (Alpenverein, 1.664 m auf der Matschacher Alm). Je nach Tempo rechnen Tourenportale für den Hüttenaufstieg etwa eineinhalb bis zwei Stunden. Der Weg über den Stinzesteig verlangt Trittsicherheit und Schwindelfreiheit.
 
-### Streckendetails
-- Start: Loiblpass (1.368 m) – direkt an der Grenze
-- Höchster Punkt: Hochstuhl / Stol (2.236 m)
-- Länge: ca. 14 km (Hin- und Rückweg)
-- Gehzeit: 6–7 Stunden
-- Schwierigkeit: mittel bis schwer (kurze gesicherte Kletterpassagen)
+Von der Hütte zum Gipfel gibt es einen Normalweg sowie einen gesicherten Steig (Klettersteig-Schwierigkeit B/C). Insgesamt stufen Tourenportale die Gipfelrunde ab der Hütte als schwer ein, mit grob 900 Höhenmetern und mehreren Stunden Gehzeit. Genaue Zeiten hängen stark von Kondition und Route ab.
 
-### Was man sieht
-Vom Hochstuhl-Gipfel: Klagenfurt und der Wörthersee auf der einen Seite, die slowenischen Alpen und das Ljubljana-Becken auf der anderen. Bei klarem Wetter ist die Adria zu erahnen. Eine der beeindruckendsten Panoramen der Ostalpen.
+## Auf der slowenischen Seite
+Kurz unter dem Gipfel steht die **Prešernova koča na Stolu** (rund 2.170 m), die höchstgelegene bewirtschaftete Hütte der Karawanken. Sie ist nur im Sommer geöffnet und auf Wunsch telefonisch zu reservieren. Dadurch ist auch eine Zweitagestour mit Übernachtung möglich. Weitere Zustiege starten von der slowenischen Seite, zum Beispiel aus dem Raum Tržič, mit anderer Landschaft und eigenen Hütten.
 
-## Der Grenzkamm selbst
-Mehrere Kilometer verläuft der Weg exakt auf der Grenzlinie. Keine Grenzkontrollen (Schengen), man kann jederzeit die Seite wechseln. Das Handy-Roaming schaltet zwischen österreichischem und slowenischem Netz hin und her.
-
-## Schwierigkeitshinweis
-Der Aufstieg enthält kurze Kletterpassagen (gesichert mit Stahlseilen, kein Klettersteigset nötig). Trittsicherheit ist aber Pflicht. Bei aufziehendem Gewitter sofort absteigen – der Kamm ist exponiert.
-
-## Slowenische Alternative
-Viele Wanderer starten von der slowenischen Seite (Tržič) – andere Landschaft, andere Hütten, noch weniger Wanderer als von Österreich aus.
+## Auf dem Kamm
+Innerhalb des Schengen-Raums gibt es keine Grenzkontrollen, man kann auf dem Kamm frei zwischen den Ländern wechseln. Wie die Fernsicht ausfällt, hängt stark vom Wetter ab; versprechen lässt sich nichts. Wer es nicht bis zum Gipfel schafft, hat auf dem Weg zur Klagenfurter Hütte trotzdem Bergpanorama.
 
 ## Praktische Infos
-- Parkplatz Loiblpass: Kostenlos, direkt an der Staatsgrenze
-- Ausrüstung: Feste Bergschuhe, Regenjacke, mind. 2 Liter Wasser (keine Hütten auf dieser Etappe)
-- Anfahrt: Von Klagenfurt 45 Minuten über Ferlach
-- Startzeit: Spätestens 8 Uhr – nachmittags häufig Gewitter auf dem Kamm
-- Einkehr: In Ferlach am Fuß des Loiblpasses, bekannt für Gasthäuser und Büchsenmachertradition
+- Ausrüstung: feste Bergschuhe, Regenjacke, Stirnlampe und ausreichend Wasser, Wanderkarte mit GPS-Track als Absicherung
+- Anreise: Auf dem Weg nach Ferlach und ins Bodental; Parkplatz und Straßenverhältnisse vorab prüfen
+- Klagenfurter Hütte: Die Saison endet im Herbst, vor der Tour auf der Hüttenseite des Alpenvereins nach Öffnungszeiten schauen
+- Startzeit: früh am Morgen, nachmittags drohen im Sommer Gewitter
+- Einkehr: in Ferlach, bekannt als Büchsenmacherstadt
     `,
     affiliateLinks: [
       { label: 'Wanderrucksack für alpine Touren – Amazon', url: 'https://www.amazon.de/s?k=wanderrucksack+30l+wasserdicht' },
       { label: 'Wanderkarte Karawanken – Amazon', url: 'https://www.amazon.de/s?k=wanderkarte+karawanken' },
+    ],
+    officialLinks: [
+      { label: 'Klagenfurter Hütte – Alpenverein', url: 'https://www.alpenverein.at/klagenfurterhuette/' },
     ],
   },
 
