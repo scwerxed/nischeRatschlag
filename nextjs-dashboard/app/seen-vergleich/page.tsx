@@ -25,7 +25,7 @@ export default function SeenVergleichPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
       <p className="eyebrow mb-2">Entscheidungshilfe</p>
-      <h1 className="font-serif text-display font-bold mb-3 text-ink">Österreichs Seen im Vergleich</h1>
+      <h1 className="font-serif text-display font-extrabold mb-3 text-ink">Österreichs Seen im Vergleich</h1>
       <p className="text-ink-soft mb-8 max-w-2xl">
         Österreich hat Tausende Badeseen – von den warmen Seen im Süden bis zu glasklaren
         Bergseen in den Alpen. Hier die beliebtesten im direkten Vergleich: Wassertemperatur,
@@ -81,7 +81,7 @@ export default function SeenVergleichPage() {
             {LAKES.map((l, i) => (
               <tr key={l.name} className={i % 2 ? 'bg-parchment' : 'bg-white'}>
                 <td className="px-4 py-3 font-semibold text-ink">
-                  {l.slug ? <Link href={`/blog/${l.slug}`} className="text-green-700 hover:underline">{l.name}</Link> : l.name}
+                  {l.slug ? <Link href={`/blog/${l.slug}`} className="text-ink underline decoration-signal underline-offset-[3px] hover:text-signal-dark">{l.name}</Link> : l.name}
                 </td>
                 <td className="px-4 py-3 text-ink-muted whitespace-nowrap">{l.region}</td>
                 <td className="px-4 py-3 text-ink-muted whitespace-nowrap">
@@ -112,7 +112,7 @@ export default function SeenVergleichPage() {
           <div key={l.name} className="border border-hairline p-4 rounded-lg">
             <div className="flex items-baseline justify-between">
               <h2 className="font-serif text-tagline font-bold text-ink">
-                {l.slug ? <Link href={`/blog/${l.slug}`} className="text-green-700">{l.name}</Link> : l.name}
+                {l.slug ? <Link href={`/blog/${l.slug}`} className="text-ink underline decoration-signal underline-offset-[3px]">{l.name}</Link> : l.name}
               </h2>
               <span className="text-caption font-semibold text-cyan-700">{l.maxTemp}</span>
             </div>
@@ -129,22 +129,22 @@ export default function SeenVergleichPage() {
       </div>
 
       {/* Tipps-Spalte */}
-      <div className="mt-8 border-l-4 border-green-600 bg-green-50 px-5 py-4">
+      <div className="mt-8 border-l-4 border-ink bg-sand-50 px-5 py-4">
         <p className="eyebrow mb-3">Kurz-Empfehlung</p>
         <ul className="space-y-1.5 text-caption text-ink-muted">
-          <li className="flex items-start gap-2.5"><span className="shrink-0 mt-1.5 w-3 h-px bg-green-600 inline-block" /><strong className="font-semibold text-ink">Wärmstes Wasser:</strong>&nbsp;Klopeiner See &amp; Wörthersee (bis 28 °C)</li>
-          <li className="flex items-start gap-2.5"><span className="shrink-0 mt-1.5 w-3 h-px bg-green-600 inline-block" /><strong className="font-semibold text-ink">Familien:</strong>&nbsp;Klopeiner See &amp; Weissensee (flach, ruhig)</li>
-          <li className="flex items-start gap-2.5"><span className="shrink-0 mt-1.5 w-3 h-px bg-green-600 inline-block" /><strong className="font-semibold text-ink">Ruhe &amp; Natur:</strong>&nbsp;Weissensee &amp; Achensee</li>
-          <li className="flex items-start gap-2.5"><span className="shrink-0 mt-1.5 w-3 h-px bg-green-600 inline-block" /><strong className="font-semibold text-ink">Action &amp; Ausgehen:</strong>&nbsp;Wörthersee</li>
-          <li className="flex items-start gap-2.5"><span className="shrink-0 mt-1.5 w-3 h-px bg-green-600 inline-block" /><strong className="font-semibold text-ink">Bergpanorama:</strong>&nbsp;Zeller See &amp; Achensee</li>
-          <li className="flex items-start gap-2.5"><span className="shrink-0 mt-1.5 w-3 h-px bg-green-600 inline-block" /><strong className="font-semibold text-ink">Segeln &amp; Wind:</strong>&nbsp;Neusiedler See &amp; Achensee</li>
+          <li className="flex items-start gap-2.5"><span className="shrink-0 mt-1.5 w-3 h-px bg-signal inline-block" /><strong className="font-semibold text-ink">Wärmstes Wasser:</strong>&nbsp;Klopeiner See &amp; Wörthersee (bis 28 °C)</li>
+          <li className="flex items-start gap-2.5"><span className="shrink-0 mt-1.5 w-3 h-px bg-signal inline-block" /><strong className="font-semibold text-ink">Familien:</strong>&nbsp;Klopeiner See &amp; Weissensee (flach, ruhig)</li>
+          <li className="flex items-start gap-2.5"><span className="shrink-0 mt-1.5 w-3 h-px bg-signal inline-block" /><strong className="font-semibold text-ink">Ruhe &amp; Natur:</strong>&nbsp;Weissensee &amp; Achensee</li>
+          <li className="flex items-start gap-2.5"><span className="shrink-0 mt-1.5 w-3 h-px bg-signal inline-block" /><strong className="font-semibold text-ink">Action &amp; Ausgehen:</strong>&nbsp;Wörthersee</li>
+          <li className="flex items-start gap-2.5"><span className="shrink-0 mt-1.5 w-3 h-px bg-signal inline-block" /><strong className="font-semibold text-ink">Bergpanorama:</strong>&nbsp;Zeller See &amp; Achensee</li>
+          <li className="flex items-start gap-2.5"><span className="shrink-0 mt-1.5 w-3 h-px bg-signal inline-block" /><strong className="font-semibold text-ink">Segeln &amp; Wind:</strong>&nbsp;Neusiedler See &amp; Achensee</li>
         </ul>
       </div>
 
       <div className="mt-8 flex flex-wrap gap-3">
-        <Link href="/blog" className="inline-block bg-green-700 text-white text-caption font-semibold px-5 py-2.5 hover:bg-green-800 transition-colors rounded-sm">Alle Badeseen-Artikel</Link>
-        <Link href="/karte" className="inline-block border border-green-700 text-green-700 text-caption font-semibold px-5 py-2.5 hover:bg-green-50 transition-colors rounded-sm">Auf der Karte ansehen</Link>
-        <Link href="/ausflugsplaner" className="inline-block border border-hairline text-ink-muted text-caption font-semibold px-5 py-2.5 hover:border-green-600 hover:text-green-700 transition-colors rounded-sm">Alle Themenseiten</Link>
+        <Link href="/blog" className="inline-block bg-ink text-white text-caption font-semibold px-5 py-2.5 hover:bg-green-700 transition-colors rounded-sm">Alle Badeseen-Artikel</Link>
+        <Link href="/karte" className="inline-block border border-ink text-ink text-caption font-semibold px-5 py-2.5 hover:bg-sand-50 transition-colors rounded-sm">Auf der Karte ansehen</Link>
+        <Link href="/ausflugsplaner" className="inline-block border border-hairline text-ink-muted text-caption font-semibold px-5 py-2.5 hover:border-ink hover:text-signal-dark transition-colors rounded-sm">Alle Themenseiten</Link>
       </div>
 
       <p className="text-fine text-ink-soft mt-6">Wassertemperaturen sind sommerliche Höchstwerte (Juli/August) und können je nach Wetter schwanken.</p>

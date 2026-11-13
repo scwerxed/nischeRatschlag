@@ -20,7 +20,7 @@ export default function ImpressumPage() {
   return (
     <div className="max-w-2xl mx-auto px-6 py-14 md:py-section">
       <p className="eyebrow mb-2">Rechtliches</p>
-      <h1 className="font-serif text-display font-bold mb-8 text-ink">Impressum</h1>
+      <h1 className="font-serif text-display font-extrabold mb-8 text-ink">Impressum</h1>
 
       <section className="mb-8">
         <h2 className="font-serif text-tagline font-bold mb-3 text-ink">
@@ -38,7 +38,7 @@ export default function ImpressumPage() {
         <h2 className="font-serif text-tagline font-bold mb-3 text-ink">Kontakt</h2>
         <p className="text-ink-muted leading-relaxed">
           E-Mail:{' '}
-          <a href={`mailto:${IMPRESSUM.email}`} className="text-green-700 hover:underline">
+          <a href={`mailto:${IMPRESSUM.email}`} className="text-ink underline decoration-signal underline-offset-[3px] hover:text-signal-dark">
             {IMPRESSUM.email}
           </a>
           {IMPRESSUM.telefon && !IMPRESSUM.telefon.startsWith('[') && (
@@ -91,7 +91,7 @@ export default function ImpressumPage() {
         <h2 className="font-serif text-tagline font-bold mb-3 text-ink">Online-Streitbeilegung</h2>
         <p className="text-ink-muted leading-relaxed">
           Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit:{' '}
-          <a href="https://ec.europa.eu/consumers/odr" target="_blank" rel="noopener noreferrer" className="text-green-700 hover:underline">
+          <a href="https://ec.europa.eu/consumers/odr" target="_blank" rel="noopener noreferrer" className="text-ink underline decoration-signal underline-offset-[3px] hover:text-signal-dark">
             ec.europa.eu/consumers/odr
           </a>. Wir sind nicht verpflichtet und nicht bereit, an Streitbeilegungsverfahren vor
           einer Verbraucherschlichtungsstelle teilzunehmen.

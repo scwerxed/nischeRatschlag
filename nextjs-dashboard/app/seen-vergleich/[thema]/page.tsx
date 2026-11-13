@@ -57,15 +57,15 @@ export default async function SeeThemaPage({ params }: Props) {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
       <nav className="flex flex-wrap items-center gap-2 text-fine text-ink-soft mb-5">
-        <Link href="/" className="hover:text-green-700">Startseite</Link>
+        <Link href="/" className="hover:text-signal-dark">Startseite</Link>
         <span>/</span>
-        <Link href="/seen-vergleich" className="hover:text-green-700">Seen-Vergleich</Link>
+        <Link href="/seen-vergleich" className="hover:text-signal-dark">Seen-Vergleich</Link>
         <span>/</span>
         <span className="text-ink-muted">{t.h1}</span>
       </nav>
 
       <p className="eyebrow mb-2">Entscheidungshilfe</p>
-      <h1 className="font-serif text-display font-bold mb-3 text-ink">{t.h1}</h1>
+      <h1 className="font-serif text-display font-extrabold mb-3 text-ink">{t.h1}</h1>
       <p className="text-ink-soft max-w-2xl mb-10 leading-relaxed">{t.intro}</p>
 
       <div className="space-y-4">
@@ -73,7 +73,7 @@ export default async function SeeThemaPage({ params }: Props) {
           <div key={l.name} className="border border-hairline p-5 rounded-lg">
             <div className="flex items-baseline justify-between gap-3 flex-wrap">
               <h2 className="font-serif text-tagline font-bold text-ink">
-                {l.slug ? <Link href={`/blog/${l.slug}`} className="text-green-700 hover:underline">{l.name}</Link> : l.name}
+                {l.slug ? <Link href={`/blog/${l.slug}`} className="text-ink underline decoration-signal underline-offset-[3px] hover:text-signal-dark">{l.name}</Link> : l.name}
               </h2>
               <span className="text-caption font-semibold text-sky-700 whitespace-nowrap">{l.maxTemp} · {l.region}</span>
             </div>
@@ -102,7 +102,7 @@ export default async function SeeThemaPage({ params }: Props) {
             {x.h1} →
           </Link>
         ))}
-        <Link href="/seen-vergleich" className="text-caption font-medium px-4 py-1.5 border border-hairline text-ink-muted hover:border-green-600 hover:text-green-700 transition-colors rounded-sm">
+        <Link href="/seen-vergleich" className="text-caption font-medium px-4 py-1.5 border border-hairline text-ink-muted hover:border-ink hover:text-signal-dark transition-colors rounded-sm">
           Alle Seen im Vergleich
         </Link>
       </div>

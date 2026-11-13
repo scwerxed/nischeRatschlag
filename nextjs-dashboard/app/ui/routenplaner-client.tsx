@@ -265,7 +265,7 @@ export default function RoutenplanerClient() {
           {waypoints.length >= 2 && (
             <div className="mt-3 space-y-2">
               {!saveOpen ? (
-                <button onClick={() => setSaveOpen(true)} className="w-full text-caption bg-green-700 text-white rounded-lg py-1.5 hover:bg-green-800 transition-colors">
+                <button onClick={() => setSaveOpen(true)} className="w-full text-caption bg-ink text-white rounded-lg py-1.5 hover:bg-green-700 transition-colors">
                   Route speichern
                 </button>
               ) : (
@@ -277,7 +277,7 @@ export default function RoutenplanerClient() {
                     className="flex-1 text-caption border border-hairline rounded-lg px-2 py-1.5 outline-none focus:border-green-500"
                     autoFocus
                   />
-                  <button onClick={handleSave} className="text-caption bg-green-700 text-white px-3 rounded-lg hover:bg-green-800">OK</button>
+                  <button onClick={handleSave} className="text-caption bg-ink text-white px-3 rounded-lg hover:bg-green-700">OK</button>
                 </div>
               )}
               <button onClick={clearAll} className="w-full text-caption text-red-600 hover:text-red-800 border border-red-200 hover:border-red-400 rounded-lg py-1.5 transition-colors">
@@ -306,7 +306,7 @@ export default function RoutenplanerClient() {
                     </div>
                     <button onClick={() => handleDelete(route.id)} className="text-ink-soft/50 hover:text-red-500 text-tagline leading-none shrink-0">×</button>
                   </div>
-                  <button onClick={() => setWaypoints(route.waypoints)} className="mt-2 w-full text-fine text-green-700 border border-green-200 hover:bg-green-50 rounded py-1 transition-colors">
+                  <button onClick={() => setWaypoints(route.waypoints)} className="mt-2 w-full text-fine text-ink border border-hairline hover:border-ink rounded-sm py-1 transition-colors">
                     Laden →
                   </button>
                 </li>

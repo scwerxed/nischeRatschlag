@@ -40,7 +40,7 @@ export default function RecentlyViewed({ currentSlug }: { currentSlug?: string }
             className="group flex items-start gap-2.5 text-caption"
           >
             <span className={`shrink-0 mt-2 w-1.5 h-1.5 rounded-full ${CATEGORY_DOT[item.category] ?? 'bg-gray-400'}`} />
-            <span className="text-ink-muted group-hover:text-green-700 leading-snug transition-colors">
+            <span className="text-ink-muted group-hover:underline decoration-signal decoration-2 underline-offset-4 leading-snug transition-colors">
               {item.title}
             </span>
           </Link>

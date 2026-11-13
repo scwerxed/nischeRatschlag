@@ -11,7 +11,7 @@ export default function UeberUnsPage() {
   return (
     <div className="max-w-2xl mx-auto px-6 py-14 md:py-section">
       <p className="eyebrow mb-2">Über uns</p>
-      <h1 className="font-serif text-display font-bold mb-6 text-ink">
+      <h1 className="font-serif text-display font-extrabold mb-6 text-ink">
         Österreich, wie wir es wirklich erleben
       </h1>
 
@@ -30,10 +30,10 @@ export default function UeberUnsPage() {
         Damit dieses Angebot kostenlos bleiben kann, finanzieren wir uns über Werbung und
         Affiliate-Partnerschaften. Das beeinflusst unsere Empfehlungen nicht – wir verlinken nur,
         wovon wir selbst überzeugt sind. Details dazu im{' '}
-        <Link href="/impressum" className="text-green-700 hover:underline">Impressum</Link>.
+        <Link href="/impressum" className="text-ink underline decoration-signal underline-offset-[3px] hover:text-signal-dark">Impressum</Link>.
       </p>
 
-      <div className="border-l-4 border-green-600 bg-green-50 px-5 py-4 mt-8">
+      <div className="border-l-4 border-ink bg-sand-50 px-5 py-4 mt-8">
         <p className="eyebrow mb-2">Unser Versprechen</p>
         <ul className="space-y-1.5 text-caption text-ink-muted">
           {[
@@ -43,7 +43,7 @@ export default function UeberUnsPage() {
             'Transparente Kennzeichnung von Werbung',
           ].map((t) => (
             <li key={t} className="flex items-start gap-2.5">
-              <span className="shrink-0 mt-1.5 w-3 h-px bg-green-600 inline-block" />
+              <span className="shrink-0 mt-1.5 w-3 h-px bg-signal inline-block" />
               {t}
             </li>
           ))}
@@ -52,7 +52,7 @@ export default function UeberUnsPage() {
 
       <p className="text-ink-muted leading-relaxed mt-8">
         Fragen oder Anregungen? Schreib uns über die{' '}
-        <Link href="/kontakt" className="text-green-700 hover:underline">Kontaktseite</Link>.
+        <Link href="/kontakt" className="text-ink underline decoration-signal underline-offset-[3px] hover:text-signal-dark">Kontaktseite</Link>.
       </p>
     </div>
   );

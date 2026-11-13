@@ -39,7 +39,7 @@ export default function FamilienausfluegePage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
       <p className="eyebrow mb-2">Mit Kindern unterwegs</p>
-      <h1 className="font-serif text-display font-bold mb-3 text-ink">Familienausflüge: Ausflugsziele mit Kindern</h1>
+      <h1 className="font-serif text-display font-extrabold mb-3 text-ink">Familienausflüge: Ausflugsziele mit Kindern</h1>
       <p className="text-ink-soft max-w-2xl mb-8 leading-relaxed">
         Tiere zum Anfassen, Erlebniswelten, warme Badeseen mit flachem Einstieg und kurze Wege mit
         großer Kulisse – kuratierte Ziele, bei denen Kinder nicht nur mitkommen, sondern Spaß haben.
@@ -76,7 +76,7 @@ export default function FamilienausfluegePage() {
                   </div>
                   <div className="p-4">
                     <span className="text-fine text-ink-soft">{regionName(post.region)}</span>
-                    <h3 className="font-semibold text-ink group-hover:text-green-700 leading-snug mt-0.5">{post.title}</h3>
+                    <h3 className="font-semibold text-ink group-hover:underline decoration-signal decoration-2 underline-offset-4 leading-snug mt-0.5">{post.title}</h3>
                     <p className="mt-2 text-caption text-ink-muted border-l-2 border-sky-300 pl-2.5">
                       <span className="label-mono mr-1.5">Familien-Tipp</span>{tipp}
                     </p>
@@ -89,7 +89,7 @@ export default function FamilienausfluegePage() {
       ))}
 
       <div className="mt-6 flex flex-wrap gap-3">
-        <Link href="/seen-vergleich/familienseen" className="inline-block bg-green-700 text-white text-caption font-semibold px-5 py-2.5 hover:bg-green-800 transition-colors rounded-sm">
+        <Link href="/seen-vergleich/familienseen" className="inline-block bg-ink text-white text-caption font-semibold px-5 py-2.5 hover:bg-green-700 transition-colors rounded-sm">
           Familienseen im Vergleich
         </Link>
         <Link href="/aussicht-ohne-anstrengung" className="btn btn-secondary btn-sm">

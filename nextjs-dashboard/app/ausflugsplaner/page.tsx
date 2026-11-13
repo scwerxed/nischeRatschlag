@@ -95,7 +95,7 @@ export default function AusflugsplanerPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
       <p className="eyebrow mb-2">Übersicht</p>
-      <h1 className="font-serif text-display font-bold mb-3 text-ink">Der Ausflugsplaner</h1>
+      <h1 className="font-serif text-display font-extrabold mb-3 text-ink">Der Ausflugsplaner</h1>
       <p className="text-ink-soft max-w-2xl mb-12 leading-relaxed">
         Statt durch alle Artikel zu scrollen: Hier sind alle Themenseiten des Bergseen Guide an
         einem Ort – sortiert nach Wetter, Zeitfenster, Monat, Anreise oder Badesee. Einfach das
@@ -111,11 +111,11 @@ export default function AusflugsplanerPage() {
               <Link
                 key={item.href}
                 href={item.href}
-                className="group block border border-hairline p-5 hover:border-green-400 transition rounded-lg"
+                className="group block border border-hairline p-5 hover:border-ink transition rounded-lg"
               >
-                <h3 className="font-serif text-tagline font-bold text-ink group-hover:text-green-700">{item.title}</h3>
+                <h3 className="font-serif text-tagline font-bold text-ink group-hover:underline decoration-signal decoration-2 underline-offset-4">{item.title}</h3>
                 <p className="text-caption text-ink-muted mt-1.5 leading-relaxed">{item.desc}</p>
-                <span className="mt-3 inline-block text-caption font-medium text-green-700">Ansehen →</span>
+                <span className="mt-3 inline-block text-caption font-semibold text-ink underline decoration-signal underline-offset-[3px]">Ansehen →</span>
               </Link>
             ))}
           </div>
@@ -123,7 +123,7 @@ export default function AusflugsplanerPage() {
       ))}
 
       <div className="mt-4 flex flex-wrap gap-3">
-        <Link href="/blog" className="inline-block bg-green-700 text-white text-caption font-semibold px-5 py-2.5 hover:bg-green-800 transition-colors rounded-sm">
+        <Link href="/blog" className="inline-block bg-ink text-white text-caption font-semibold px-5 py-2.5 hover:bg-green-700 transition-colors rounded-sm">
           Alle Artikel im Magazin
         </Link>
         <Link href="/#regionen" className="btn btn-secondary btn-sm">

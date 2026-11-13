@@ -47,7 +47,7 @@ function SearchForm({ onSubmit }: { onSubmit?: () => void }) {
         onChange={(e) => setQ(e.target.value)}
         placeholder="Ziel oder See suchen…"
         aria-label="Artikel durchsuchen"
-        className="w-full pl-9 pr-4 py-2 text-caption bg-canvas border border-hairline rounded-sm outline-none transition-colors focus:border-green-600 focus-visible:ring-2 focus-visible:ring-green-600"
+        className="w-full pl-9 pr-4 py-2 text-caption bg-canvas border border-hairline rounded-sm outline-none transition-colors focus:border-ink focus-visible:ring-2 focus-visible:ring-ink"
       />
       <svg className="absolute left-3 top-1/2 -translate-y-1/2 text-ink-soft" width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.6" aria-hidden>
         <circle cx="7" cy="7" r="5" /><path d="M11 11l3.5 3.5" strokeLinecap="round" />
@@ -61,13 +61,13 @@ function Heart({ count }: { count: number }) {
     <Link
       href="/merkliste"
       aria-label={`Merkliste (${count})`}
-      className="relative text-ink-soft hover:text-green-700 transition-colors after:absolute after:content-[''] after:-inset-2"
+      className="relative text-ink-soft hover:text-signal-dark transition-colors after:absolute after:content-[''] after:-inset-2"
     >
       <svg width="22" height="22" viewBox="0 0 16 16" fill={count > 0 ? 'currentColor' : 'none'} stroke="currentColor" strokeWidth="1.5">
         <path d="M8 14s-5-3.3-5-7a3 3 0 0 1 5-2.2A3 3 0 0 1 13 7c0 3.7-5 7-5 7z" strokeLinejoin="round" />
       </svg>
       {count > 0 && (
-        <span className="absolute -top-1.5 -right-1.5 bg-green-700 text-white text-[10px] font-bold min-w-[16px] h-4 px-1 flex items-center justify-center rounded-sm">
+        <span className="absolute -top-1.5 -right-1.5 bg-signal text-white text-[10px] font-bold min-w-[16px] h-4 px-1 flex items-center justify-center rounded-sm">
           {count}
         </span>
       )}
@@ -147,7 +147,7 @@ function DesktopGroup({
             ))}
           </ul>
           {isRegionen && (
-            <Link href={group.href} onClick={onClose} className="mt-4 pt-3 border-t border-hairline block text-fine font-semibold text-green-700 hover:text-green-600">
+            <Link href={group.href} onClick={onClose} className="mt-4 pt-3 border-t border-hairline block text-fine font-semibold text-ink underline decoration-signal underline-offset-[3px] hover:text-signal-dark">
               Alle 9 Bundesländer im Überblick →
             </Link>
           )}
@@ -256,7 +256,7 @@ export default function Navbar() {
           <Link
             href="/blog"
             aria-label="Artikel durchsuchen"
-            className="hidden md:inline-flex xl:hidden text-ink-soft hover:text-green-700 transition-colors"
+            className="hidden md:inline-flex xl:hidden text-ink-soft hover:text-signal-dark transition-colors"
           >
             <svg width="20" height="20" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.6" aria-hidden>
               <circle cx="7" cy="7" r="5" /><path d="M11 11l3.5 3.5" strokeLinecap="round" />
@@ -300,7 +300,7 @@ export default function Navbar() {
           {NAV_GROUPS.map((g) => (
             <details key={g.label} className="group py-1" open={groupActive(g)}>
               <summary className="flex items-center justify-between py-3.5 font-serif text-tagline text-ink cursor-pointer list-none [&::-webkit-details-marker]:hidden">
-                <span className={groupActive(g) ? 'text-green-700 font-bold' : ''}>{g.label}</span>
+                <span className={groupActive(g) ? 'text-signal-dark font-bold' : ''}>{g.label}</span>
                 <span className="text-ink-soft transition-transform duration-200 group-open:rotate-180">
                   <Chevron open={false} />
                 </span>
@@ -311,7 +311,7 @@ export default function Navbar() {
                     <Link
                       href={l.href}
                       onClick={() => setOpen(false)}
-                      className={`block py-2 text-body ${isActive(l.href) ? 'text-green-700 font-semibold' : 'text-ink-muted'}`}
+                      className={`block py-2 text-body ${isActive(l.href) ? 'text-signal-dark font-semibold' : 'text-ink-muted'}`}
                     >
                       {l.label}
                     </Link>
@@ -325,7 +325,7 @@ export default function Navbar() {
               key={l.href}
               href={l.href}
               onClick={() => setOpen(false)}
-              className={`flex items-center justify-between py-4 font-serif text-tagline ${isActive(l.href) ? 'text-green-700 font-bold' : 'text-ink'}`}
+              className={`flex items-center justify-between py-4 font-serif text-tagline ${isActive(l.href) ? 'text-signal-dark font-bold' : 'text-ink'}`}
             >
               {l.label}
               <span className="text-ink-soft text-body">→</span>
@@ -345,7 +345,7 @@ export default function Navbar() {
 
         <div className="px-6 pt-6 pb-10 flex flex-wrap gap-x-5 gap-y-2 text-caption text-ink-soft">
           {NAV_SERVICE.map((l) => (
-            <Link key={l.href} href={l.href} onClick={() => setOpen(false)} className="hover:text-green-700">
+            <Link key={l.href} href={l.href} onClick={() => setOpen(false)} className="hover:text-signal-dark">
               {l.label}
             </Link>
           ))}

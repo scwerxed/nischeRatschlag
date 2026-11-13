@@ -90,8 +90,8 @@ export default function WassertemperaturLive({ gruppen, zusatz }: { gruppen: WtG
             <div className="grid sm:grid-cols-3 gap-4 mt-3">
               {top.map(({ station, wert }, i) => (
                 <div key={station.id} className="border border-sky-200 bg-sky-50 p-5 rounded-lg">
-                  <p className="text-fine font-semibold uppercase tracking-wide text-sky-700">Platz {i + 1}</p>
-                  <p className="font-serif text-display font-bold text-ink tabular-nums">{formatGrad(wert.wasser)}</p>
+                  <p className="font-mono text-[11.5px] uppercase tracking-[0.06em] text-sky-700">Platz {i + 1}</p>
+                  <p className="font-serif text-display font-extrabold text-ink tabular-nums">{formatGrad(wert.wasser)}</p>
                   <p className="font-semibold text-ink leading-snug">
                     <Link href={`/wassertemperatur/${station.steckbrief}`} className="hover:text-sky-700 hover:underline">
                       {station.see}
@@ -113,7 +113,7 @@ export default function WassertemperaturLive({ gruppen, zusatz }: { gruppen: WtG
         <section key={g.key} id={g.key} className="mb-12 scroll-mt-24">
           <h2 className="font-serif text-lead font-bold mb-1 text-ink">
             {g.titel}
-            <Link href={`/regionen/${g.region}`} className="ml-3 text-caption font-sans font-normal text-green-700 hover:underline">
+            <Link href={`/regionen/${g.region}`} className="ml-3 text-caption font-sans font-normal text-ink underline decoration-signal underline-offset-[3px] hover:text-signal-dark">
               Region entdecken →
             </Link>
           </h2>

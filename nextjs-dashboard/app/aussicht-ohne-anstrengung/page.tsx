@@ -39,7 +39,7 @@ export default function AussichtPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
       <p className="eyebrow mb-2">Gemütlich unterwegs</p>
-      <h1 className="font-serif text-display font-bold mb-3 text-ink">Aussicht ohne Anstrengung: Bergblick ohne lange Wanderung</h1>
+      <h1 className="font-serif text-display font-extrabold mb-3 text-ink">Aussicht ohne Anstrengung: Bergblick ohne lange Wanderung</h1>
       <p className="text-ink-soft max-w-2xl mb-8 leading-relaxed">
         Nicht jeder will – oder kann – 1.000 Höhenmeter steigen, um ein Panorama zu sehen.
         Diese Ziele liefern die Aussicht trotzdem: per Seilbahn, über eine Panoramastraße,
@@ -47,15 +47,15 @@ export default function AussichtPage() {
       </p>
 
       {/* Hinweise */}
-      <div className="border-l-4 border-green-500 bg-green-50 px-5 py-4 mb-12 max-w-2xl">
+      <div className="border-l-4 border-ink bg-sand-50 px-5 py-4 mb-12 max-w-2xl">
         <p className="eyebrow mb-2">Vorher wissen</p>
         <ul className="space-y-1.5 text-caption text-ink-muted">
-          <li className="flex items-start gap-2.5"><span className="shrink-0 mt-1.5 w-3 h-px bg-green-600 inline-block" />Bergbahnen und Panoramastraßen sind kostenpflichtig – Tarife und Betriebszeiten vorab prüfen</li>
-          <li className="flex items-start gap-2.5"><span className="shrink-0 mt-1.5 w-3 h-px bg-green-600 inline-block" />Viele Bahnen und Hochalpenstraßen haben Saison- und Revisionspausen, im Winter oft gesperrt</li>
-          <li className="flex items-start gap-2.5"><span className="shrink-0 mt-1.5 w-3 h-px bg-green-600 inline-block" />Oben ist es deutlich kühler und windiger als im Tal – auch im Hochsommer eine warme Schicht mitnehmen</li>
-          <li className="flex items-start gap-2.5"><span className="shrink-0 mt-1.5 w-3 h-px bg-green-600 inline-block" />Letzte Talfahrt notieren, sonst wird aus dem gemütlichen Ausflug doch ein langer Abstieg</li>
-          <li className="flex items-start gap-2.5"><span className="shrink-0 mt-1.5 w-3 h-px bg-green-600 inline-block" />Barrierefreiheit ist von Ziel zu Ziel sehr verschieden – bei Bedarf konkret beim Betreiber nachfragen</li>
-          <li className="flex items-start gap-2.5"><span className="shrink-0 mt-1.5 w-3 h-px bg-green-600 inline-block" />Bei Nebel bringt die schönste Bergbahn nichts: Bergwetter und Webcams vor der Fahrt checken</li>
+          <li className="flex items-start gap-2.5"><span className="shrink-0 mt-1.5 w-3 h-px bg-signal inline-block" />Bergbahnen und Panoramastraßen sind kostenpflichtig – Tarife und Betriebszeiten vorab prüfen</li>
+          <li className="flex items-start gap-2.5"><span className="shrink-0 mt-1.5 w-3 h-px bg-signal inline-block" />Viele Bahnen und Hochalpenstraßen haben Saison- und Revisionspausen, im Winter oft gesperrt</li>
+          <li className="flex items-start gap-2.5"><span className="shrink-0 mt-1.5 w-3 h-px bg-signal inline-block" />Oben ist es deutlich kühler und windiger als im Tal – auch im Hochsommer eine warme Schicht mitnehmen</li>
+          <li className="flex items-start gap-2.5"><span className="shrink-0 mt-1.5 w-3 h-px bg-signal inline-block" />Letzte Talfahrt notieren, sonst wird aus dem gemütlichen Ausflug doch ein langer Abstieg</li>
+          <li className="flex items-start gap-2.5"><span className="shrink-0 mt-1.5 w-3 h-px bg-signal inline-block" />Barrierefreiheit ist von Ziel zu Ziel sehr verschieden – bei Bedarf konkret beim Betreiber nachfragen</li>
+          <li className="flex items-start gap-2.5"><span className="shrink-0 mt-1.5 w-3 h-px bg-signal inline-block" />Bei Nebel bringt die schönste Bergbahn nichts: Bergwetter und Webcams vor der Fahrt checken</li>
         </ul>
       </div>
 
@@ -78,9 +78,9 @@ export default function AussichtPage() {
                   </div>
                   <div className="p-4">
                     <span className="text-fine text-ink-soft">{regionName(post.region)}</span>
-                    <h3 className="font-semibold text-ink group-hover:text-green-700 leading-snug mt-0.5">{post.title}</h3>
-                    <p className="mt-2 text-caption text-ink-muted border-l-2 border-green-300 pl-2.5">
-                      <strong className="font-semibold text-green-800">Warum leicht:</strong> {warum}
+                    <h3 className="font-semibold text-ink group-hover:underline decoration-signal decoration-2 underline-offset-4 leading-snug mt-0.5">{post.title}</h3>
+                    <p className="mt-2 text-caption text-ink-muted border-l-2 border-ink pl-2.5">
+                      <strong className="font-semibold text-ink">Warum leicht:</strong> {warum}
                     </p>
                   </div>
                 </Link>
@@ -91,7 +91,7 @@ export default function AussichtPage() {
       ))}
 
       <div className="mt-6 flex flex-wrap gap-3">
-        <Link href="/ausfluege-nach-dauer" className="inline-block bg-green-700 text-white text-caption font-semibold px-5 py-2.5 hover:bg-green-800 transition-colors rounded-sm">
+        <Link href="/ausfluege-nach-dauer" className="inline-block bg-ink text-white text-caption font-semibold px-5 py-2.5 hover:bg-green-700 transition-colors rounded-sm">
           Ausflüge nach Dauer
         </Link>
         <Link href="/bahnhofsausfluege" className="btn btn-secondary btn-sm">

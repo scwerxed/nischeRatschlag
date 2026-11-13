@@ -21,7 +21,7 @@ export default function NewsletterBestaetigtPage() {
       </div>
 
       <p className="eyebrow mb-2">Newsletter</p>
-      <h1 className="font-serif text-display font-bold mb-4 text-ink">Anmeldung bestätigt</h1>
+      <h1 className="font-serif text-display font-extrabold mb-4 text-ink">Anmeldung bestätigt</h1>
       <p className="text-ink-muted leading-relaxed mb-8">
         Danke! Deine E-Mail-Adresse ist jetzt eingetragen. Du bekommst ab sofort unsere
         Tipps zu Badestellen, Wanderungen und Ausflügen in Österreich – abmelden kannst du
@@ -29,7 +29,7 @@ export default function NewsletterBestaetigtPage() {
       </p>
 
       <div className="flex flex-wrap gap-3 justify-center">
-        <Link href="/ausflugsplaner" className="inline-block bg-green-700 text-white text-caption font-semibold px-5 py-2.5 hover:bg-green-800 transition-colors rounded-sm">
+        <Link href="/ausflugsplaner" className="inline-block bg-ink text-white text-caption font-semibold px-5 py-2.5 hover:bg-green-700 transition-colors rounded-sm">
           Zum Ausflugsplaner
         </Link>
         <Link href="/blog" className="btn btn-secondary btn-sm">

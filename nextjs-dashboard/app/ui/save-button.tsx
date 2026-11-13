@@ -33,7 +33,7 @@ export default function SaveButton({ slug, title, category }: SavedItem) {
     <button
       onClick={toggle}
       aria-pressed={saved}
-      className={`flex items-center justify-center gap-2 w-full text-caption font-medium px-4 py-2.5 border transition-colors ${ saved ? 'bg-green-700 text-white border-green-700 hover:bg-green-800' : 'border-hairline text-ink-muted hover:border-green-600 hover:text-green-700' } rounded-sm`}
+      className={`flex items-center justify-center gap-2 w-full text-caption font-medium px-4 py-2.5 border transition-colors ${ saved ? 'bg-ink text-white border-ink hover:bg-green-700' : 'border-hairline text-ink-muted hover:border-ink hover:text-signal-dark' } rounded-sm`}
     >
       <svg width="16" height="16" viewBox="0 0 16 16" fill={saved ? 'currentColor' : 'none'} stroke="currentColor" strokeWidth="1.6">
         <path d="M8 14s-5-3.3-5-7a3 3 0 0 1 5-2.2A3 3 0 0 1 13 7c0 3.7-5 7-5 7z" strokeLinejoin="round" />

@@ -30,7 +30,7 @@ export default function ReiseinfosPage() {
       />
 
       <p className="eyebrow mb-2">Praktisches</p>
-      <h1 className="font-serif text-display font-bold mb-3 text-ink">Österreich Reiseinfos</h1>
+      <h1 className="font-serif text-display font-extrabold mb-3 text-ink">Österreich Reiseinfos</h1>
       <p className="text-ink-soft mb-10">
         Das Wichtigste für die Planung deines Österreich-Urlaubs auf einen Blick – Anreise, Maut,
         Kosten und was in den Koffer gehört.
@@ -45,35 +45,35 @@ export default function ReiseinfosPage() {
       <Block title="Vignette & Mautstraßen">
         <p>Die <strong className="font-semibold text-ink">Autobahn-Vignette</strong> ist Pflicht: 10-Tage (~12 €), 2-Monate oder Jahres-Vignette. Erhältlich digital (ÖAMTC/ASFINAG) oder an Tankstellen. Die Digital-Vignette gilt erst ab dem 18. Tag nach Kauf rückwirkend nicht – früh kaufen.</p>
         <p>Zusätzlich <strong className="font-semibold text-ink">extra mautpflichtig</strong> (nicht in der Vignette enthalten):</p>
-        <ul className="list-none space-y-1.5 border-l-2 border-green-200 pl-4">
-          <li className="flex gap-2"><span className="shrink-0 mt-[0.6em] w-2.5 h-px bg-green-500" />Großglockner Hochalpenstraße – Salzburg/Kärnten (~40 €/Tag PKW)</li>
-          <li className="flex gap-2"><span className="shrink-0 mt-[0.6em] w-2.5 h-px bg-green-500" />Timmelsjoch Hochalpenstraße – Tirol (~30 €)</li>
-          <li className="flex gap-2"><span className="shrink-0 mt-[0.6em] w-2.5 h-px bg-green-500" />Silvretta-Hochalpenstraße – Tirol/Vorarlberg (~17 €)</li>
-          <li className="flex gap-2"><span className="shrink-0 mt-[0.6em] w-2.5 h-px bg-green-500" />Nockalmstraße – Kärnten (~20 €)</li>
+        <ul className="list-none space-y-1.5 border-l-2 border-ink pl-4">
+          <li className="flex gap-2"><span className="shrink-0 mt-[0.6em] w-2.5 h-px bg-signal" />Großglockner Hochalpenstraße – Salzburg/Kärnten (~40 €/Tag PKW)</li>
+          <li className="flex gap-2"><span className="shrink-0 mt-[0.6em] w-2.5 h-px bg-signal" />Timmelsjoch Hochalpenstraße – Tirol (~30 €)</li>
+          <li className="flex gap-2"><span className="shrink-0 mt-[0.6em] w-2.5 h-px bg-signal" />Silvretta-Hochalpenstraße – Tirol/Vorarlberg (~17 €)</li>
+          <li className="flex gap-2"><span className="shrink-0 mt-[0.6em] w-2.5 h-px bg-signal" />Nockalmstraße – Kärnten (~20 €)</li>
         </ul>
       </Block>
 
       <Block title="Beste Reisezeit">
         <p>Juli/August sind am wärmsten (Badeseen bis 28 °C), aber am vollsten und teuersten. <strong className="font-semibold text-ink">Geheimtipp September:</strong> Wasser vielerorts noch 22–25 °C, Preise deutlich günstiger, kaum Touristen. Region-spezifische Saison-Tipps findest du auf den{' '}
-          <Link href="/#regionen" className="text-green-700 hover:underline">Regionenseiten</Link>.</p>
+          <Link href="/#regionen" className="text-ink underline decoration-signal underline-offset-[3px] hover:text-signal-dark">Regionenseiten</Link>.</p>
       </Block>
 
       <Block title="Was kostet ein Österreich-Urlaub?">
-        <ul className="list-none space-y-1.5 border-l-2 border-green-200 pl-4">
-          <li className="flex gap-2"><span className="shrink-0 mt-[0.6em] w-2.5 h-px bg-green-500" />Campingplatz (Zelt + 2 Pers.): ab ~22 €/Nacht</li>
-          <li className="flex gap-2"><span className="shrink-0 mt-[0.6em] w-2.5 h-px bg-green-500" />Ferienwohnung: ab ~60 €/Nacht</li>
-          <li className="flex gap-2"><span className="shrink-0 mt-[0.6em] w-2.5 h-px bg-green-500" />Mittelklasse-Hotel am See: ~90–180 €/Nacht</li>
-          <li className="flex gap-2"><span className="shrink-0 mt-[0.6em] w-2.5 h-px bg-green-500" />Strandbad-Eintritt: ~5–8 €/Tag</li>
-          <li className="flex gap-2"><span className="shrink-0 mt-[0.6em] w-2.5 h-px bg-green-500" />Hauptgericht im Gasthaus: ~14–20 €</li>
+        <ul className="list-none space-y-1.5 border-l-2 border-ink pl-4">
+          <li className="flex gap-2"><span className="shrink-0 mt-[0.6em] w-2.5 h-px bg-signal" />Campingplatz (Zelt + 2 Pers.): ab ~22 €/Nacht</li>
+          <li className="flex gap-2"><span className="shrink-0 mt-[0.6em] w-2.5 h-px bg-signal" />Ferienwohnung: ab ~60 €/Nacht</li>
+          <li className="flex gap-2"><span className="shrink-0 mt-[0.6em] w-2.5 h-px bg-signal" />Mittelklasse-Hotel am See: ~90–180 €/Nacht</li>
+          <li className="flex gap-2"><span className="shrink-0 mt-[0.6em] w-2.5 h-px bg-signal" />Strandbad-Eintritt: ~5–8 €/Tag</li>
+          <li className="flex gap-2"><span className="shrink-0 mt-[0.6em] w-2.5 h-px bg-signal" />Hauptgericht im Gasthaus: ~14–20 €</li>
         </ul>
         <p className="text-caption text-ink-soft">Spar-Tipp: Viele Regionen geben mit der Übernachtung eine <strong className="font-semibold text-ink">Gästekarte</strong> aus (z. B. Kärnten Card, SalzburgerLand Card, Tirols Gästekarten) – oft mit freiem Eintritt zu zahlreichen Ausflugszielen oder Bergbahnen.</p>
       </Block>
 
       <Block title="Notfallnummern">
-        <ul className="list-none space-y-1.5 border-l-2 border-green-200 pl-4">
-          <li className="flex gap-2"><span className="shrink-0 mt-[0.6em] w-2.5 h-px bg-green-500" />Euro-Notruf: <strong className="font-semibold text-ink">112</strong></li>
-          <li className="flex gap-2"><span className="shrink-0 mt-[0.6em] w-2.5 h-px bg-green-500" />Rettung: 144 · Polizei: 133 · Feuerwehr: 122</li>
-          <li className="flex gap-2"><span className="shrink-0 mt-[0.6em] w-2.5 h-px bg-green-500" />Bergrettung: <strong className="font-semibold text-ink">140</strong></li>
+        <ul className="list-none space-y-1.5 border-l-2 border-ink pl-4">
+          <li className="flex gap-2"><span className="shrink-0 mt-[0.6em] w-2.5 h-px bg-signal" />Euro-Notruf: <strong className="font-semibold text-ink">112</strong></li>
+          <li className="flex gap-2"><span className="shrink-0 mt-[0.6em] w-2.5 h-px bg-signal" />Rettung: 144 · Polizei: 133 · Feuerwehr: 122</li>
+          <li className="flex gap-2"><span className="shrink-0 mt-[0.6em] w-2.5 h-px bg-signal" />Bergrettung: <strong className="font-semibold text-ink">140</strong></li>
         </ul>
       </Block>
 
@@ -82,12 +82,12 @@ export default function ReiseinfosPage() {
       </Block>
 
       {/* CTA */}
-      <div className="border-l-4 border-green-600 bg-green-50 px-5 py-4 mt-10">
+      <div className="border-l-4 border-ink bg-sand-50 px-5 py-4 mt-10">
         <p className="font-serif text-tagline font-bold text-ink mb-1">Bereit für die Planung?</p>
         <p className="text-caption text-ink-muted mb-3">Stöbere durch unsere Tipps oder plane direkt deine Wanderroute.</p>
         <div className="flex flex-wrap gap-3">
-          <Link href="/blog" className="inline-block bg-green-700 text-white text-caption font-semibold px-5 py-2.5 hover:bg-green-800 transition-colors rounded-sm">Zum Magazin</Link>
-          <Link href="/routenplaner" className="inline-block border border-green-700 text-green-700 text-caption font-semibold px-5 py-2.5 hover:bg-green-100 transition-colors rounded-sm">Route planen</Link>
+          <Link href="/blog" className="inline-block bg-ink text-white text-caption font-semibold px-5 py-2.5 hover:bg-green-700 transition-colors rounded-sm">Zum Magazin</Link>
+          <Link href="/routenplaner" className="inline-block border border-ink text-ink text-caption font-semibold px-5 py-2.5 hover:bg-green-100 transition-colors rounded-sm">Route planen</Link>
         </div>
       </div>
     </div>

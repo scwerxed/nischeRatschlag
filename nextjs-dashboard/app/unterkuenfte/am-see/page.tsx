@@ -40,15 +40,15 @@ export default function UnterkuenfteAmSeePage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
       <nav className="flex flex-wrap items-center gap-2 text-fine text-ink-soft mb-5">
-        <Link href="/" className="hover:text-green-700">Startseite</Link>
+        <Link href="/" className="hover:text-signal-dark">Startseite</Link>
         <span>/</span>
-        <Link href="/seen-vergleich" className="hover:text-green-700">Seen</Link>
+        <Link href="/seen-vergleich" className="hover:text-signal-dark">Seen</Link>
         <span>/</span>
         <span className="text-ink-muted">Unterkünfte am See</span>
       </nav>
 
       <p className="eyebrow mb-2">Übernachten</p>
-      <h1 className="font-serif text-display font-bold mb-3 text-ink">Unterkünfte direkt am See</h1>
+      <h1 className="font-serif text-display font-extrabold mb-3 text-ink">Unterkünfte direkt am See</h1>
       <p className="text-ink-soft max-w-2xl mb-4 leading-relaxed">
         Wer morgens vor dem Frühstück schon im Wasser sein will, sollte auch dort übernachten:
         Hotels, Ferienwohnungen und Campingplätze mit direkter Lage an einem der beliebtesten
@@ -62,7 +62,7 @@ export default function UnterkuenfteAmSeePage() {
           <section key={region} className="mb-12">
             <h2 className="font-serif text-lead font-bold mb-5 text-ink">
               {regionName(region)}
-              <Link href={`/regionen/${region}`} className="ml-3 text-caption font-sans font-normal text-green-700 hover:underline">
+              <Link href={`/regionen/${region}`} className="ml-3 text-caption font-sans font-normal text-ink underline decoration-signal underline-offset-[3px] hover:text-signal-dark">
                 Alle Artikel →
               </Link>
             </h2>
@@ -75,12 +75,12 @@ export default function UnterkuenfteAmSeePage() {
                     href={cloak(u.bookingUrl)}
                     target="_blank"
                     rel="noopener noreferrer sponsored"
-                    className="group block border border-hairline p-4 hover:border-green-400 hover:bg-green-50 transition-colors rounded-lg"
+                    className="group block border border-hairline p-4 hover:border-ink hover:bg-sand-50 transition-colors rounded-lg"
                   >
-                    <span className="block text-fine font-semibold text-green-700 uppercase tracking-wide">
+                    <span className="block text-fine font-mono text-[11.5px] uppercase tracking-[0.06em] text-ink-soft">
                       {u.typ} · {u.see}
                     </span>
-                    <span className="block font-semibold text-ink group-hover:text-green-700 mt-1 leading-snug">{u.name}</span>
+                    <span className="block font-semibold text-ink group-hover:underline decoration-signal decoration-2 underline-offset-4 mt-1 leading-snug">{u.name}</span>
                     <span className="block text-caption text-ink-soft mt-0.5">{u.ort} · ab {u.abPreis}&thinsp;€/Nacht →</span>
                     {seeSlug && (
                       <span className="block text-fine text-sky-700 mt-2">Mehr über {u.see} im Artikel</span>
@@ -104,7 +104,7 @@ export default function UnterkuenfteAmSeePage() {
       </div>
 
       <div className="mt-4 flex flex-wrap gap-3">
-        <Link href="/seen-vergleich" className="inline-block bg-green-700 text-white text-caption font-semibold px-5 py-2.5 hover:bg-green-800 transition-colors rounded-sm">
+        <Link href="/seen-vergleich" className="inline-block bg-ink text-white text-caption font-semibold px-5 py-2.5 hover:bg-green-700 transition-colors rounded-sm">
           Seen im Vergleich
         </Link>
         <Link href="/karte" className="btn btn-secondary btn-sm">

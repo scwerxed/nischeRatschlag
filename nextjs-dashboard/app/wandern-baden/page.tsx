@@ -45,7 +45,7 @@ export default function WandernBadenPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
       <p className="eyebrow mb-2">Sommer-Special</p>
-      <h1 className="font-serif text-display font-bold mb-3 text-ink">Wandern + Baden: erst Gipfel, dann See</h1>
+      <h1 className="font-serif text-display font-extrabold mb-3 text-ink">Wandern + Baden: erst Gipfel, dann See</h1>
       <p className="text-ink-soft max-w-2xl mb-4 leading-relaxed">
         Die perfekte Sommer-Formel: vormittags wandern, nachmittags ins kühle Wasser. Wir haben
         Wanderungen mit dem jeweils nächstgelegenen Badeziel kombiniert – je Bundesland, mit
@@ -57,7 +57,7 @@ export default function WandernBadenPage() {
         <section key={g.region} className="mb-12">
           <h2 className="font-serif text-lead font-bold mb-5 text-ink">
             {regionName(g.region)}
-            <Link href={`/regionen/${g.region}`} className="ml-3 text-caption font-sans font-normal text-green-700 hover:underline">
+            <Link href={`/regionen/${g.region}`} className="ml-3 text-caption font-sans font-normal text-ink underline decoration-signal underline-offset-[3px] hover:text-signal-dark">
               Alle Artikel →
             </Link>
           </h2>
@@ -65,16 +65,16 @@ export default function WandernBadenPage() {
             {g.combos.map((c) => (
               <div key={`${c.wandern.slug}-${c.baden.slug}`} className="border border-hairline rounded-lg overflow-hidden transition-shadow">
                 {/* Wanderung */}
-                <Link href={`/blog/${c.wandern.slug}`} className="group block p-4 hover:bg-green-50 transition-colors">
+                <Link href={`/blog/${c.wandern.slug}`} className="group block p-4 hover:bg-sand-50 transition-colors">
                   <div className="flex items-center gap-2 mb-1">
-                    <span className="text-fine font-semibold uppercase tracking-wide text-green-700">Wanderung</span>
+                    <span className="font-mono text-[11.5px] uppercase tracking-[0.06em] text-green-700">Wanderung</span>
                     {c.wandern.difficulty && (
                       <span className={`text-fine font-medium px-2 py-0.5 rounded-sm ${DIFF_BADGE[c.wandern.difficulty]}`}>
                         {c.wandern.difficulty}
                       </span>
                     )}
                   </div>
-                  <p className="font-semibold text-ink group-hover:text-green-700 leading-snug">{c.wandern.title}</p>
+                  <p className="font-semibold text-ink group-hover:underline decoration-signal decoration-2 underline-offset-4 leading-snug">{c.wandern.title}</p>
                 </Link>
 
                 {/* Verbinder */}
@@ -86,7 +86,7 @@ export default function WandernBadenPage() {
 
                 {/* Badeziel */}
                 <Link href={`/blog/${c.baden.slug}`} className="group block p-4 hover:bg-sky-50 transition-colors">
-                  <span className="text-fine font-semibold uppercase tracking-wide text-sky-700">Baden</span>
+                  <span className="font-mono text-[11.5px] uppercase tracking-[0.06em] text-sky-700">Baden</span>
                   <p className="font-semibold text-ink group-hover:text-sky-700 leading-snug mt-1">{c.baden.title}</p>
                 </Link>
               </div>
@@ -101,12 +101,12 @@ export default function WandernBadenPage() {
         <h2 className="font-serif text-lead font-bold mb-5 text-ink">Wie warm ist das Wasser gerade?</h2>
         <Seewetter />
         <p className="text-caption mt-3">
-          <Link href="/wassertemperatur" className="text-green-700 hover:underline">Alle 33 Messstellen live ansehen →</Link>
+          <Link href="/wassertemperatur" className="text-ink underline decoration-signal underline-offset-[3px] hover:text-signal-dark">Alle 33 Messstellen live ansehen →</Link>
         </p>
       </section>
 
       <div className="mt-10 flex flex-wrap gap-3">
-        <Link href="/seen-vergleich" className="inline-block bg-green-700 text-white text-caption font-semibold px-5 py-2.5 hover:bg-green-800 transition-colors rounded-sm">
+        <Link href="/seen-vergleich" className="inline-block bg-ink text-white text-caption font-semibold px-5 py-2.5 hover:bg-green-700 transition-colors rounded-sm">
           Seen im Vergleich
         </Link>
         <Link href="/wochenendtrip" className="btn btn-secondary btn-sm">

@@ -23,7 +23,7 @@ export default function MerklistePage() {
   return (
     <div className="max-w-3xl mx-auto px-6 py-14 md:py-section">
       <p className="eyebrow mb-2">Deine Merkliste</p>
-      <h1 className="font-serif text-display font-bold mb-3 text-ink">Gemerkte Artikel</h1>
+      <h1 className="font-serif text-display font-extrabold mb-3 text-ink">Gemerkte Artikel</h1>
       <p className="text-ink-soft mb-8">
         Deine gespeicherten Tipps – gespeichert nur in diesem Browser, ganz ohne Konto.
       </p>
@@ -36,7 +36,7 @@ export default function MerklistePage() {
           <p className="text-caption text-ink-soft mb-4">
             Tippe in einem Artikel auf <strong className="font-semibold">„Merken"</strong>, um ihn hier zu sammeln.
           </p>
-          <Link href="/blog" className="inline-block bg-green-700 text-white text-caption font-semibold px-5 py-2.5 hover:bg-green-800 transition-colors rounded-sm">
+          <Link href="/blog" className="inline-block bg-ink text-white text-caption font-semibold px-5 py-2.5 hover:bg-green-700 transition-colors rounded-sm">
             Zum Magazin
           </Link>
         </div>
@@ -47,7 +47,7 @@ export default function MerklistePage() {
               <div className="min-w-0 flex-1">
                 <span className="eyebrow">{item.category}</span>
                 <h2 className="font-serif text-tagline font-bold text-ink leading-snug">
-                  <Link href={`/blog/${item.slug}`} className="hover:text-green-700">{item.title}</Link>
+                  <Link href={`/blog/${item.slug}`} className="hover:text-signal-dark">{item.title}</Link>
                 </h2>
               </div>
               <button

@@ -65,7 +65,7 @@ export default function BadeplatzFilter({
               <div className="flex items-baseline justify-between gap-2 flex-wrap">
                 <h2 className="font-serif text-tagline font-bold text-ink leading-snug">
                   {p.slug ? (
-                    <Link href={`/blog/${p.slug}`} className="text-green-700 hover:underline">{p.name}</Link>
+                    <Link href={`/blog/${p.slug}`} className="text-ink underline decoration-signal underline-offset-[3px] hover:text-signal-dark">{p.name}</Link>
                   ) : (
                     p.name
                   )}

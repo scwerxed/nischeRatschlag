@@ -39,7 +39,7 @@ export default function HitzePage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
       <p className="eyebrow mb-2">Sommer-Special</p>
-      <h1 className="font-serif text-display font-bold mb-3 text-ink">Hitzefreundliche Ausflüge: kühle Ziele für heiße Tage</h1>
+      <h1 className="font-serif text-display font-extrabold mb-3 text-ink">Hitzefreundliche Ausflüge: kühle Ziele für heiße Tage</h1>
       <p className="text-ink-soft max-w-2xl mb-8 leading-relaxed">
         35 Grad im Tal? Dann eben dorthin, wo es von Natur aus kühl ist: in Klammen und Höhlen,
         in die Höhenluft der Berge oder direkt ans (frische) Wasser.
@@ -75,7 +75,7 @@ export default function HitzePage() {
                   </div>
                   <div className="p-4">
                     <span className="text-fine text-ink-soft">{regionName(post.region)}</span>
-                    <h3 className="font-semibold text-ink group-hover:text-green-700 leading-snug mt-0.5">{post.title}</h3>
+                    <h3 className="font-semibold text-ink group-hover:underline decoration-signal decoration-2 underline-offset-4 leading-snug mt-0.5">{post.title}</h3>
                     <p className="mt-2 text-caption text-ink-muted border-l-2 border-sky-300 pl-2.5">
                       <strong className="font-semibold text-sky-800">Kühl-Faktor:</strong> {warum}
                     </p>
@@ -88,7 +88,7 @@ export default function HitzePage() {
       ))}
 
       <div className="mt-6 flex flex-wrap gap-3">
-        <Link href="/wandern-baden" className="inline-block bg-green-700 text-white text-caption font-semibold px-5 py-2.5 hover:bg-green-800 transition-colors rounded-sm">
+        <Link href="/wandern-baden" className="inline-block bg-ink text-white text-caption font-semibold px-5 py-2.5 hover:bg-green-700 transition-colors rounded-sm">
           Wandern + Baden Kombis
         </Link>
         <Link href="/seen-vergleich" className="btn btn-secondary btn-sm">

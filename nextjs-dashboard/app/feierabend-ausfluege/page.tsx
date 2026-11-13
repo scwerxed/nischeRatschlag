@@ -39,7 +39,7 @@ export default function FeierabendPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
       <p className="eyebrow mb-2">Nach der Arbeit</p>
-      <h1 className="font-serif text-display font-bold mb-3 text-ink">Feierabend-Ausflüge: raus, bevor der Tag vorbei ist</h1>
+      <h1 className="font-serif text-display font-extrabold mb-3 text-ink">Feierabend-Ausflüge: raus, bevor der Tag vorbei ist</h1>
       <p className="text-ink-soft max-w-2xl mb-8 leading-relaxed">
         Um 17 Uhr aus dem Büro, um 18 Uhr am Wasser oder am Aussichtsberg: kurze Ausflüge ab Wien,
         Graz und Salzburg – alle mit grob 45 Minuten Anfahrt oder weniger.
@@ -70,7 +70,7 @@ export default function FeierabendPage() {
                   </div>
                   <div className="p-4">
                     <span className="text-fine text-ink-soft">{regionName(post.region)}</span>
-                    <h3 className="font-semibold text-ink group-hover:text-green-700 leading-snug mt-0.5">{post.title}</h3>
+                    <h3 className="font-semibold text-ink group-hover:underline decoration-signal decoration-2 underline-offset-4 leading-snug mt-0.5">{post.title}</h3>
                     <p className="mt-2 text-caption text-ink-muted border-l-2 border-amber-300 pl-2.5">
                       <span className="label-mono mr-1.5">Abends</span>{abend}
                     </p>
@@ -83,7 +83,7 @@ export default function FeierabendPage() {
       ))}
 
       <div className="mt-6 flex flex-wrap gap-3">
-        <Link href="/wochenendtrip" className="inline-block bg-green-700 text-white text-caption font-semibold px-5 py-2.5 hover:bg-green-800 transition-colors rounded-sm">
+        <Link href="/wochenendtrip" className="inline-block bg-ink text-white text-caption font-semibold px-5 py-2.5 hover:bg-green-700 transition-colors rounded-sm">
           Mehr Zeit? Wochenendtrips
         </Link>
         <Link href="/ausfluege-nach-dauer" className="btn btn-secondary btn-sm">

@@ -39,19 +39,19 @@ export default function BahnhofsausfluegePage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
       <p className="eyebrow mb-2">Ohne Auto</p>
-      <h1 className="font-serif text-display font-bold mb-3 text-ink">Ausflug ab Bahnhof</h1>
+      <h1 className="font-serif text-display font-extrabold mb-3 text-ink">Ausflug ab Bahnhof</h1>
       <p className="text-ink-soft max-w-2xl mb-8 leading-relaxed">
         Kein Auto, kein Problem: Diese Ziele erreichst du bequem mit der Bahn – vom Badesee mit
         eigenem Bahnhof bis zur Fähre nach Hallstatt. Mit konkretem Anreise-Hinweis pro Ziel.
       </p>
 
       {/* Öffi-Tipps */}
-      <div className="border-l-4 border-green-600 bg-green-50 px-5 py-4 mb-12 max-w-2xl">
+      <div className="border-l-4 border-ink bg-sand-50 px-5 py-4 mb-12 max-w-2xl">
         <p className="eyebrow mb-2">Öffi-Tipps</p>
         <ul className="space-y-1.5 text-caption text-ink-muted">
-          <li className="flex items-start gap-2.5"><span className="shrink-0 mt-1.5 w-3 h-px bg-green-600 inline-block" />Mit dem <strong className="font-semibold">Klimaticket</strong> sind alle diese Ziele ohne Zusatzkosten erreichbar</li>
-          <li className="flex items-start gap-2.5"><span className="shrink-0 mt-1.5 w-3 h-px bg-green-600 inline-block" />Letzte Rückverbindung <strong className="font-semibold">vor</strong> der Abfahrt prüfen – Regionalstrecken enden früh</li>
-          <li className="flex items-start gap-2.5"><span className="shrink-0 mt-1.5 w-3 h-px bg-green-600 inline-block" />Am Wochenende gelten oft ausgedünnte Takte – Scotty/ÖBB-App nutzen</li>
+          <li className="flex items-start gap-2.5"><span className="shrink-0 mt-1.5 w-3 h-px bg-signal inline-block" />Mit dem <strong className="font-semibold">Klimaticket</strong> sind alle diese Ziele ohne Zusatzkosten erreichbar</li>
+          <li className="flex items-start gap-2.5"><span className="shrink-0 mt-1.5 w-3 h-px bg-signal inline-block" />Letzte Rückverbindung <strong className="font-semibold">vor</strong> der Abfahrt prüfen – Regionalstrecken enden früh</li>
+          <li className="flex items-start gap-2.5"><span className="shrink-0 mt-1.5 w-3 h-px bg-signal inline-block" />Am Wochenende gelten oft ausgedünnte Takte – Scotty/ÖBB-App nutzen</li>
         </ul>
       </div>
 
@@ -70,8 +70,8 @@ export default function BahnhofsausfluegePage() {
                   </div>
                   <div className="p-4">
                     <span className="text-fine text-ink-soft">{regionName(post.region)}</span>
-                    <h3 className="font-semibold text-ink group-hover:text-green-700 leading-snug mt-0.5">{post.title}</h3>
-                    <p className="mt-2 text-caption text-ink-muted border-l-2 border-green-300 pl-2.5">
+                    <h3 className="font-semibold text-ink group-hover:underline decoration-signal decoration-2 underline-offset-4 leading-snug mt-0.5">{post.title}</h3>
+                    <p className="mt-2 text-caption text-ink-muted border-l-2 border-ink pl-2.5">
                       <span className="label-mono mr-1.5">Anreise</span>{anreise}
                     </p>
                   </div>

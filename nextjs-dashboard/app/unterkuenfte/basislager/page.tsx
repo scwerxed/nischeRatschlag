@@ -41,15 +41,15 @@ export default function BasislagerPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
       <nav className="flex flex-wrap items-center gap-2 text-fine text-ink-soft mb-5">
-        <Link href="/" className="hover:text-green-700">Startseite</Link>
+        <Link href="/" className="hover:text-signal-dark">Startseite</Link>
         <span>/</span>
-        <Link href="/ausflugsplaner" className="hover:text-green-700">Ausflugsplaner</Link>
+        <Link href="/ausflugsplaner" className="hover:text-signal-dark">Ausflugsplaner</Link>
         <span>/</span>
         <span className="text-ink-muted">Basislager</span>
       </nav>
 
       <p className="eyebrow mb-2">Übernachten</p>
-      <h1 className="font-serif text-display font-bold mb-3 text-ink">Basislager: einmal einchecken, jeden Tag ein neues Ziel</h1>
+      <h1 className="font-serif text-display font-extrabold mb-3 text-ink">Basislager: einmal einchecken, jeden Tag ein neues Ziel</h1>
       <p className="text-ink-soft max-w-2xl mb-4 leading-relaxed">
         Wer mehrere Tage bleibt, will nicht jeden Morgen den Koffer packen. Hier siehst du, welche
         Urlaubsorte die meisten unserer Wanderungen, Badeziele und Ausflüge im Umkreis von
@@ -64,7 +64,7 @@ export default function BasislagerPage() {
         <section key={g.region} id={g.region} className="mb-12 scroll-mt-24">
           <h2 className="font-serif text-lead font-bold mb-5 text-ink">
             {regionName(g.region)}
-            <Link href={`/regionen/${g.region}`} className="ml-3 text-caption font-sans font-normal text-green-700 hover:underline">
+            <Link href={`/regionen/${g.region}`} className="ml-3 text-caption font-sans font-normal text-ink underline decoration-signal underline-offset-[3px] hover:text-signal-dark">
               Alle Artikel →
             </Link>
           </h2>
@@ -92,7 +92,7 @@ export default function BasislagerPage() {
                 <ul className="p-4 space-y-1.5 flex-1">
                   {b.ziele.slice(0, MAX_ZIELE).map((z) => (
                     <li key={z.post.slug} className="flex items-baseline justify-between gap-3 text-caption">
-                      <Link href={`/blog/${z.post.slug}`} className="text-ink hover:text-green-700 hover:underline leading-snug">
+                      <Link href={`/blog/${z.post.slug}`} className="text-ink hover:text-ink underline decoration-signal underline-offset-[3px] hover:text-signal-dark leading-snug">
                         {z.post.title}
                       </Link>
                       <span className="text-fine text-ink-soft whitespace-nowrap">≈ {Math.max(1, Math.round(z.km))} km</span>
@@ -118,7 +118,7 @@ export default function BasislagerPage() {
       ))}
 
       <div className="mt-10 flex flex-wrap gap-3">
-        <Link href="/unterkuenfte/am-see" className="inline-block bg-green-700 text-white text-caption font-semibold px-5 py-2.5 hover:bg-green-800 transition-colors rounded-sm">
+        <Link href="/unterkuenfte/am-see" className="inline-block bg-ink text-white text-caption font-semibold px-5 py-2.5 hover:bg-green-700 transition-colors rounded-sm">
           Unterkünfte am See
         </Link>
         <Link href="/wochenendtrip" className="btn btn-secondary btn-sm">

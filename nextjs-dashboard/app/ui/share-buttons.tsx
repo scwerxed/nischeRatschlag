@@ -29,7 +29,7 @@ export default function ShareButtons({ title }: { title: string }) {
     ? `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(window.location.href)}`
     : '#';
 
-  const cls = 'inline-flex items-center gap-1.5 rounded-sm text-fine font-medium px-3.5 py-2 border border-hairline hover:border-green-400 hover:text-green-700 hover:bg-green-50 text-ink-soft transition duration-200';
+  const cls = 'inline-flex items-center gap-1.5 rounded-sm text-fine font-medium px-3.5 py-2 border border-hairline hover:border-ink hover:text-signal-dark hover:bg-sand-50 text-ink-soft transition duration-200';
 
   return (
     <div className="flex flex-wrap items-center gap-2">

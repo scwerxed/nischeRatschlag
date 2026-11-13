@@ -56,7 +56,7 @@ export default function SeeLive({ stationen, steckbrief }: { stationen: Station[
         </div>
       ) : (
         <>
-          <p className="font-serif text-display font-bold text-ink tabular-nums">
+          <p className="font-serif text-display font-extrabold text-ink tabular-nums">
             {state.wert.wasser.toLocaleString('de-AT', { minimumFractionDigits: 1, maximumFractionDigits: 1 })}&nbsp;°C
           </p>
           <p className="text-caption text-ink-muted mt-1 leading-snug">
@@ -68,7 +68,7 @@ export default function SeeLive({ stationen, steckbrief }: { stationen: Station[
             Offizieller Messwert: {state.station.quelle} (CC BY 4.0). An einzelnen Badeplätzen kann die Temperatur davon abweichen.
           </p>
           {steckbrief && (
-            <Link href={`/wassertemperatur/${steckbrief}`} className="mt-3 inline-flex items-center gap-1 text-caption font-medium text-green-700 hover:text-green-800">
+            <Link href={`/wassertemperatur/${steckbrief}`} className="mt-3 inline-flex items-center gap-1 text-caption font-medium text-ink underline decoration-signal underline-offset-[3px] hover:text-signal-dark">
               Alle Messstellen &amp; Badestellen am See →
             </Link>
           )}

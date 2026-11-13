@@ -95,23 +95,23 @@ export default async function RegionPage({ params }: Props) {
       )}
       {/* Header */}
       <div className="mb-8">
-        <Link href="/" className="text-caption text-green-600 hover:underline">
+        <Link href="/" className="text-caption text-ink underline decoration-signal underline-offset-[3px] hover:text-signal-dark">
           ← Zurück zur Startseite
         </Link>
-        <h1 className="font-serif text-display font-bold mt-3 mb-2 text-ink">{region.name}</h1>
+        <h1 className="font-serif text-display font-extrabold mt-3 mb-2 text-ink">{region.name}</h1>
         <p className="text-ink-soft max-w-2xl">{region.beschreibung}</p>
       </div>
 
       {/* Inaktive Region */}
       {!region.aktiv && (
-        <div className="bg-green-50 border border-green-200 rounded-lg p-8 text-center">
+        <div className="bg-sand-50 border border-hairline rounded-lg p-8 text-center">
           <h2 className="text-tagline font-semibold text-ink mb-1">Demnächst verfügbar</h2>
           <p className="text-ink-soft text-caption">
             Wir arbeiten gerade an Inhalten für {region.name}. Schau bald wieder vorbei!
           </p>
           <Link
             href="/#regionen"
-            className="mt-5 inline-block bg-green-700 text-white text-caption font-medium px-5 py-2.5 rounded-lg hover:bg-green-800 transition-colors"
+            className="mt-5 inline-block bg-ink text-white text-caption font-medium px-5 py-2.5 rounded-lg hover:bg-green-700 transition-colors"
           >
             Verfügbare Regionen ansehen
           </Link>
@@ -149,7 +149,7 @@ export default async function RegionPage({ params }: Props) {
                   className={`flex flex-col items-center border ${st?.bg ?? 'bg-parchment'} ${st?.border ?? 'border-hairline'} py-3 px-2 text-center transition rounded-sm`}
                 >
                   <span className={`w-2.5 h-2.5 rounded-full mb-2 ${CATEGORY_DOT[cat] ?? 'bg-gray-400'}`} />
-                  <span className={`text-fine font-semibold uppercase tracking-wide ${st?.text ?? 'text-ink-muted'}`}>{cat}</span>
+                  <span className={`font-mono text-[11.5px] uppercase tracking-[0.06em] ${st?.text ?? 'text-ink-muted'}`}>{cat}</span>
                   <span className="text-fine text-ink-soft font-medium mt-0.5">{counts[cat]} Artikel</span>
                 </a>
               );
@@ -160,7 +160,7 @@ export default async function RegionPage({ params }: Props) {
           <div className="grid sm:grid-cols-2 gap-4 mb-10">
             <Link
               href="/karte"
-              className="group flex items-start gap-4 bg-green-700 text-white rounded-lg p-5 hover:bg-green-800 transition-colors"
+              className="group flex items-start gap-4 bg-ink text-white rounded-lg p-5 hover:bg-green-700 transition-colors"
             >
               <div>
                 <p className="font-semibold text-tagline leading-tight">Interaktive Wanderkarte</p>
@@ -174,7 +174,7 @@ export default async function RegionPage({ params }: Props) {
             </Link>
             <Link
               href="/routenplaner"
-              className="group flex items-start gap-4 border-2 border-green-700 text-green-700 rounded-lg p-5 hover:bg-green-50 transition-colors"
+              className="group flex items-start gap-4 border-2 border-ink text-ink rounded-lg p-5 hover:bg-sand-50 transition-colors"
             >
               <div>
                 <p className="font-semibold text-tagline leading-tight">Routenplaner</p>
@@ -235,7 +235,7 @@ export default async function RegionPage({ params }: Props) {
                     <Link
                       key={post.slug}
                       href={`/blog/${post.slug}`}
-                      className="group block border border-hairline rounded-lg p-6 overflow-hidden hover:border-green-400 transition"
+                      className="group block border border-hairline rounded-lg p-6 overflow-hidden hover:border-ink transition"
                     >
                       <div className="aspect-[16/9] -mx-6 -mt-6 mb-4 overflow-hidden">
                         <PostBild slug={post.slug} category={post.category} />
@@ -243,7 +243,7 @@ export default async function RegionPage({ params }: Props) {
                       {/* Meta */}
                       <div className="flex items-center justify-between mb-2 flex-wrap gap-1">
                         <div className="flex items-center gap-2">
-                          <span className={`text-fine font-medium uppercase tracking-wide ${CATEGORY_STYLE[post.category]?.text ?? 'text-green-600'}`}>
+                          <span className={`font-mono text-[11.5px] uppercase tracking-[0.06em] ${CATEGORY_STYLE[post.category]?.text ?? 'text-green-600'}`}>
                             {post.category}
                           </span>
                           {post.difficulty && (
@@ -271,7 +271,7 @@ export default async function RegionPage({ params }: Props) {
                       </div>
 
                       {/* Titel */}
-                      <h3 className="font-semibold text-tagline text-ink group-hover:text-green-700 leading-snug mb-2">
+                      <h3 className="font-semibold text-tagline text-ink group-hover:underline decoration-signal decoration-2 underline-offset-4 leading-snug mb-2">
                         {post.title}
                       </h3>
 
@@ -289,7 +289,7 @@ export default async function RegionPage({ params }: Props) {
                         <p className="mt-2 text-caption text-ink-soft mb-3">{post.excerpt}</p>
                       )}
 
-                      <span className="inline-block text-caption text-green-600 font-medium">
+                      <span className="inline-block text-caption text-ink font-semibold underline decoration-signal underline-offset-[3px]">
                         Weiterlesen →
                       </span>
                     </Link>
@@ -312,16 +312,16 @@ export default async function RegionPage({ params }: Props) {
                     href={cloak(u.bookingUrl)}
                     target="_blank"
                     rel="noopener noreferrer sponsored"
-                    className="group block border border-hairline p-4 hover:border-green-400 hover:bg-green-50 transition-colors rounded-lg"
+                    className="group block border border-hairline p-4 hover:border-ink hover:bg-sand-50 transition-colors rounded-lg"
                   >
-                    <span className="block text-fine font-semibold text-green-700 uppercase tracking-wide">{u.typ} · {u.see}</span>
-                    <span className="block font-semibold text-ink group-hover:text-green-700 mt-1 leading-snug">{u.name}</span>
+                    <span className="block text-fine font-mono text-[11.5px] uppercase tracking-[0.06em] text-ink-soft">{u.typ} · {u.see}</span>
+                    <span className="block font-semibold text-ink group-hover:underline decoration-signal decoration-2 underline-offset-4 mt-1 leading-snug">{u.name}</span>
                     <span className="block text-caption text-ink-soft mt-0.5">{u.ort} · ab {u.abPreis}&thinsp;€/Nacht →</span>
                   </a>
                 ))}
               </div>
               <p className="text-[11px] text-ink-soft mt-3">
-                * Affiliate-Links – ohne Mehrkosten für dich. <Link href="/unterkuenfte/am-see" className="text-green-700 hover:underline">Alle Unterkünfte direkt am See →</Link>
+                * Affiliate-Links – ohne Mehrkosten für dich. <Link href="/unterkuenfte/am-see" className="text-ink underline decoration-signal underline-offset-[3px] hover:text-signal-dark">Alle Unterkünfte direkt am See →</Link>
               </p>
             </section>
           )}

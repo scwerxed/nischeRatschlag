@@ -235,7 +235,7 @@ export default async function WassertemperaturPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
       <p className="eyebrow mb-2">Live-Daten</p>
-      <h1 className="font-serif text-display font-bold mb-3 text-ink">Wassertemperatur der Seen in Österreich</h1>
+      <h1 className="font-serif text-display font-extrabold mb-3 text-ink">Wassertemperatur der Seen in Österreich</h1>
       <p className="text-ink-soft max-w-2xl mb-4 leading-relaxed">
         Wie warm ist der See gerade? Hier stehen die aktuellen Messwerte von {SEE_MESSSTELLEN.length} offiziellen
         Messstellen an {LIVE_SEEN.length} Seen in Kärnten, Salzburg und Oberösterreich – keine Schätzungen, sondern
@@ -261,7 +261,7 @@ export default async function WassertemperaturPage() {
         {sprungziele.map((g, i) => (
           <span key={g.key}>
             {i > 0 && ' · '}
-            <a href={`#${g.key}`} className="text-green-700 hover:underline">{g.titel}</a>
+            <a href={`#${g.key}`} className="text-ink underline decoration-signal underline-offset-[3px] hover:text-signal-dark">{g.titel}</a>
           </span>
         ))}
       </p>
@@ -304,7 +304,7 @@ export default async function WassertemperaturPage() {
             <div key={g.region} id={g.region} className="mb-10 scroll-mt-24">
               <h3 className="font-serif text-tagline font-bold mb-1 text-ink">
                 {g.bundesland}
-                <Link href={`/regionen/${g.region}`} className="ml-3 text-caption font-sans font-normal text-green-700 hover:underline">
+                <Link href={`/regionen/${g.region}`} className="ml-3 text-caption font-sans font-normal text-ink underline decoration-signal underline-offset-[3px] hover:text-signal-dark">
                   Region entdecken →
                 </Link>
               </h3>
@@ -339,7 +339,7 @@ export default async function WassertemperaturPage() {
           )}
           <li>
             <strong>Temperatur ist nicht Wasserqualität.</strong> Die offizielle Badewasser-Einstufung der EU-Badestellen
-            findest du im <Link href="/badeplaetze" className="text-green-700 hover:underline">Badeplatz-Check</Link>.
+            findest du im <Link href="/badeplaetze" className="text-ink underline decoration-signal underline-offset-[3px] hover:text-signal-dark">Badeplatz-Check</Link>.
           </li>
         </ul>
       </section>
@@ -356,7 +356,7 @@ export default async function WassertemperaturPage() {
       </p>
 
       <div className="flex flex-wrap gap-3">
-        <Link href="/seen-vergleich" className="inline-block bg-green-700 text-white text-caption font-semibold px-5 py-2.5 hover:bg-green-800 transition-colors rounded-sm">
+        <Link href="/seen-vergleich" className="inline-block bg-ink text-white text-caption font-semibold px-5 py-2.5 hover:bg-green-700 transition-colors rounded-sm">
           Seen im Vergleich
         </Link>
         <Link href="/badeplaetze" className="inline-block border border-sky-500 text-sky-700 text-caption font-semibold px-5 py-2.5 hover:bg-sky-50 transition-colors rounded-sm">

@@ -126,7 +126,7 @@ export default function TrailMapClient({ trails }: { trails: Trail[] }) {
             <button
               key={i}
               onClick={() => setSelected(i)}
-              className={`shrink-0 text-fine font-medium px-3 py-1.5 transition-colors ${ i === selected ? 'bg-green-700 text-white' : 'bg-white text-ink-muted border border-hairline hover:border-green-400' } rounded-sm`}
+              className={`shrink-0 text-fine font-medium px-3 py-1.5 transition-colors ${ i === selected ? 'bg-ink text-white' : 'bg-white text-ink-muted border border-hairline hover:border-ink' } rounded-sm`}
             >
               {tr.name}
             </button>

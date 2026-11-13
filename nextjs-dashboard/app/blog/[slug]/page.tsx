@@ -369,7 +369,7 @@ export default async function BlogPostPage({ params }: Props) {
                 {mapPoint && (
                   <Link
                     href={mapHref}
-                    className="flex items-center justify-center gap-1.5 text-caption font-medium px-3 py-2.5 border border-green-700 text-green-700 hover:bg-green-50 transition-colors rounded-sm"
+                    className="flex items-center justify-center gap-1.5 text-caption font-medium px-3 py-2.5 border border-ink text-ink hover:bg-sand-50 transition-colors rounded-sm"
                   >
                     Auf der Karte
                   </Link>
@@ -389,7 +389,7 @@ export default async function BlogPostPage({ params }: Props) {
                 <ol className="px-4 pb-4 space-y-2 text-caption">
                   {headings.map((h) => (
                     <li key={h.id}>
-                      <a href={`#${h.id}`} className="text-ink-muted hover:text-green-700 transition-colors block leading-snug">
+                      <a href={`#${h.id}`} className="text-ink-muted hover:text-signal-dark transition-colors block leading-snug">
                         {h.text}
                       </a>
                     </li>
@@ -400,12 +400,12 @@ export default async function BlogPostPage({ params }: Props) {
           </div>
 
           {post.highlights && post.highlights.length > 0 && (
-            <div className="border-l-4 border-green-600 bg-green-50 px-5 py-4 mb-8">
+            <div className="border-l-4 border-ink bg-sand-50 px-5 py-4 mb-8">
               <p className="eyebrow mb-3">Auf einen Blick</p>
               <ul className="space-y-1.5">
                 {post.highlights.map((h, i) => (
                   <li key={i} className="flex items-start gap-2.5 text-caption text-ink-muted">
-                    <span className="shrink-0 mt-1.5 w-3 h-px bg-green-600 inline-block" />
+                    <span className="shrink-0 mt-1.5 w-3 h-px bg-signal inline-block" />
                     {h}
                   </li>
                 ))}
@@ -472,10 +472,10 @@ export default async function BlogPostPage({ params }: Props) {
           {post.category === 'Wandern' && (
             <div className="mt-6 space-y-3">
               <div className="grid sm:grid-cols-2 gap-4">
-                <Link href={mapHref} className="flex items-center justify-center bg-green-700 text-white font-medium text-caption px-5 py-3 hover:bg-green-800 transition-colors rounded-sm">
+                <Link href={mapHref} className="flex items-center justify-center bg-ink text-white font-medium text-caption px-5 py-3 hover:bg-green-700 transition-colors rounded-sm">
                   {mapCtaLabel}
                 </Link>
-                <Link href="/routenplaner" className="flex items-center justify-center border border-green-700 text-green-700 font-medium text-caption px-5 py-3 hover:bg-green-50 transition-colors rounded-sm">
+                <Link href="/routenplaner" className="flex items-center justify-center border border-ink text-ink font-medium text-caption px-5 py-3 hover:bg-sand-50 transition-colors rounded-sm">
                   Route planen
                 </Link>
               </div>
@@ -506,14 +506,14 @@ export default async function BlogPostPage({ params }: Props) {
               </p>
               <div className="grid sm:grid-cols-2 gap-4">
                 {nearby.map((n) => (
-                  <Link key={n.post.slug} href={`/blog/${n.post.slug}`} className="group block border border-hairline p-4 hover:border-green-400 transition rounded-lg">
+                  <Link key={n.post.slug} href={`/blog/${n.post.slug}`} className="group block border border-hairline p-4 hover:border-ink transition rounded-lg">
                     <span className="flex items-baseline justify-between gap-3">
                       <span className={`eyebrow ${CATEGORY_STYLE[n.post.category].text}`}>{n.post.category}</span>
                       <span className="text-fine text-ink-soft whitespace-nowrap tabular-nums">
                         {n.km < 1 ? 'gleiche Gegend' : `≈ ${Math.round(n.km)} km`}
                       </span>
                     </span>
-                    <h3 className="mt-1.5 text-caption font-semibold text-ink group-hover:text-green-700 leading-snug">{n.post.title}</h3>
+                    <h3 className="mt-1.5 text-caption font-semibold text-ink group-hover:underline decoration-signal decoration-2 underline-offset-4 leading-snug">{n.post.title}</h3>
                     {n.post.region !== post.region && (
                       <span className="block mt-1 text-fine text-ink-soft">{regionName(n.post.region)}</span>
                     )}
@@ -529,9 +529,9 @@ export default async function BlogPostPage({ params }: Props) {
               <h2 className="font-serif text-tagline font-bold text-ink mb-4">Das könnte dich auch interessieren</h2>
               <div className="grid sm:grid-cols-2 gap-4">
                 {related.map((r) => (
-                  <Link key={r.slug} href={`/blog/${r.slug}`} className="group block border border-hairline p-4 hover:border-green-400 transition rounded-lg">
+                  <Link key={r.slug} href={`/blog/${r.slug}`} className="group block border border-hairline p-4 hover:border-ink transition rounded-lg">
                     <span className="eyebrow">{r.category}</span>
-                    <h3 className="mt-1.5 text-caption font-semibold text-ink group-hover:text-green-700 leading-snug">{r.title}</h3>
+                    <h3 className="mt-1.5 text-caption font-semibold text-ink group-hover:underline decoration-signal decoration-2 underline-offset-4 leading-snug">{r.title}</h3>
                   </Link>
                 ))}
               </div>
@@ -545,23 +545,23 @@ export default async function BlogPostPage({ params }: Props) {
               <p className="text-caption text-ink-soft mb-4">Passt der Ausflug gerade nicht? Über die Themenseiten findest du Alternativen mit demselben Anspruch.</p>
               <div className="grid sm:grid-cols-2 gap-3">
                 {themen.map((t) => (
-                  <Link key={t.href} href={t.href} className="group flex items-start gap-3 border border-hairline p-4 hover:border-green-400 transition rounded-lg">
-                    <span className="shrink-0 mt-2 w-3 h-px bg-green-600 inline-block" />
+                  <Link key={t.href} href={t.href} className="group flex items-start gap-3 border border-hairline p-4 hover:border-ink transition rounded-lg">
+                    <span className="shrink-0 mt-2 w-3 h-px bg-signal inline-block" />
                     <span>
-                      <span className="block text-caption font-semibold text-ink group-hover:text-green-700 leading-snug">{t.label}</span>
+                      <span className="block text-caption font-semibold text-ink group-hover:underline decoration-signal decoration-2 underline-offset-4 leading-snug">{t.label}</span>
                       <span className="block mt-0.5 text-fine text-ink-soft leading-snug">{t.note}</span>
                     </span>
                   </Link>
                 ))}
               </div>
-              <Link href="/ausflugsplaner" className="inline-block mt-4 text-caption text-green-700 hover:underline font-medium">
+              <Link href="/ausflugsplaner" className="inline-block mt-4 text-caption text-ink underline decoration-signal underline-offset-[3px] hover:text-signal-dark font-medium">
                 Alle Themenseiten im Ausflugsplaner →
               </Link>
             </div>
           )}
 
           <div className="mt-10 pt-6 border-t border-divider-soft">
-            <Link href={`/regionen/${post.region}`} className="text-caption text-green-700 hover:underline font-medium">
+            <Link href={`/regionen/${post.region}`} className="text-caption text-ink underline decoration-signal underline-offset-[3px] hover:text-signal-dark font-medium">
               ← Alle {regionLabel}-Artikel anzeigen
             </Link>
           </div>
@@ -576,7 +576,7 @@ export default async function BlogPostPage({ params }: Props) {
               <ol className="space-y-1.5 text-caption">
                 {headings.map((h) => (
                   <li key={h.id}>
-                    <a href={`#${h.id}`} className="text-ink-muted hover:text-green-700 transition-colors block leading-snug">
+                    <a href={`#${h.id}`} className="text-ink-muted hover:text-signal-dark transition-colors block leading-snug">
                       {h.text}
                     </a>
                   </li>
@@ -630,7 +630,7 @@ export default async function BlogPostPage({ params }: Props) {
             {mapPoint && (
               <Link
                 href={mapHref}
-                className="mt-3 flex items-center justify-center gap-1.5 w-full text-caption font-medium px-4 py-2.5 border border-green-700 text-green-700 hover:bg-green-50 transition-colors rounded-sm"
+                className="mt-3 flex items-center justify-center gap-1.5 w-full text-caption font-medium px-4 py-2.5 border border-ink text-ink hover:bg-sand-50 transition-colors rounded-sm"
               >
                 {precise ? 'Startpunkt auf Karte öffnen' : 'Region auf Karte öffnen'}
               </Link>
@@ -686,7 +686,7 @@ export default async function BlogPostPage({ params }: Props) {
                 Quelle: AGES, CC BY 3.0 AT.
               </p>
               {badestelleSteckbriefLink && (
-                <Link href={`/wassertemperatur/${badestelleSteckbriefLink}`} className="mt-3 inline-flex items-center gap-1 text-caption font-medium text-green-700 hover:text-green-800">
+                <Link href={`/wassertemperatur/${badestelleSteckbriefLink}`} className="mt-3 inline-flex items-center gap-1 text-caption font-medium text-ink underline decoration-signal underline-offset-[3px] hover:text-signal-dark">
                   Alle Badestellen &amp; Proben am See →
                 </Link>
               )}
@@ -708,7 +708,7 @@ export default async function BlogPostPage({ params }: Props) {
                   Route für die Anreise mit dem Auto ↗
                 </a>
               )}
-              <Link href="/bahnhofsausfluege" className="mt-3 inline-flex items-center gap-1 text-caption font-medium text-green-700 hover:text-green-800">
+              <Link href="/bahnhofsausfluege" className="mt-3 inline-flex items-center gap-1 text-caption font-medium text-ink underline decoration-signal underline-offset-[3px] hover:text-signal-dark">
                 Weitere Öffi-Ziele ansehen →
               </Link>
             </div>
@@ -743,7 +743,7 @@ export default async function BlogPostPage({ params }: Props) {
                   href={`https://www.google.com/maps/dir/?api=1&destination=${precise[0]},${precise[1]}`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="mt-4 flex items-center justify-center gap-1.5 w-full text-caption font-medium px-4 py-2.5 bg-green-700 text-white hover:bg-green-800 transition-colors rounded-sm"
+                  className="mt-4 flex items-center justify-center gap-1.5 w-full text-caption font-medium px-4 py-2.5 bg-ink text-white hover:bg-green-700 transition-colors rounded-sm"
                 >
                   Navigation starten ↗
                 </a>
@@ -769,7 +769,7 @@ export default async function BlogPostPage({ params }: Props) {
                 ))}
               </div>
               <p className="text-[11px] text-ink-soft mt-3">* Affiliate-Links – ohne Mehrkosten für dich.</p>
-              <Link href="/unterkuenfte/basislager" className="mt-2 inline-flex items-center gap-1 text-caption font-medium text-green-700 hover:text-green-800">
+              <Link href="/unterkuenfte/basislager" className="mt-2 inline-flex items-center gap-1 text-caption font-medium text-ink underline decoration-signal underline-offset-[3px] hover:text-signal-dark">
                 Beste Ausgangsorte ansehen →
               </Link>
             </div>
@@ -789,7 +789,7 @@ export default async function BlogPostPage({ params }: Props) {
                 <ul className="space-y-1 mb-3">
                   {basisAndere.map((z) => (
                     <li key={z.post.slug} className="text-caption leading-snug">
-                      <Link href={`/blog/${z.post.slug}`} className="text-ink hover:text-green-700 hover:underline">
+                      <Link href={`/blog/${z.post.slug}`} className="text-ink hover:text-ink underline decoration-signal underline-offset-[3px] hover:text-signal-dark">
                         {z.post.title}
                       </Link>
                     </li>
@@ -802,7 +802,7 @@ export default async function BlogPostPage({ params }: Props) {
                 <span className="block text-caption font-semibold text-ink group-hover:text-violet-700 leading-snug mt-0.5">{basisLager.lager.stay.name} →</span>
               </a>
               <p className="text-[11px] text-ink-soft mt-3">* Affiliate-Link – ohne Mehrkosten für dich. Entfernungen als Luftlinie.</p>
-              <Link href={`/unterkuenfte/basislager#${basisLager.lager.stay.region}`} className="mt-2 inline-flex items-center gap-1 text-caption font-medium text-green-700 hover:text-green-800">
+              <Link href={`/unterkuenfte/basislager#${basisLager.lager.stay.region}`} className="mt-2 inline-flex items-center gap-1 text-caption font-medium text-ink underline decoration-signal underline-offset-[3px] hover:text-signal-dark">
                 Alle Basislager in {regionName(basisLager.lager.stay.region)} →
               </Link>
             </div>
@@ -816,8 +816,8 @@ export default async function BlogPostPage({ params }: Props) {
               <div className="space-y-2.5">
                 {excursionsFor(post.region).map((ex) => (
                   <a key={ex.url} href={cloak(ex.url)} target="_blank" rel="noopener noreferrer sponsored"
-                    className="group block border border-hairline px-3 py-2.5 hover:border-green-400 hover:bg-green-50 transition-colors rounded-sm">
-                    <span className="block text-caption font-semibold text-ink group-hover:text-green-700 leading-snug">{ex.label} →</span>
+                    className="group block border border-hairline px-3 py-2.5 hover:border-ink hover:bg-sand-50 transition-colors rounded-sm">
+                    <span className="block text-caption font-semibold text-ink group-hover:underline decoration-signal decoration-2 underline-offset-4 leading-snug">{ex.label} →</span>
                     <span className="block text-fine text-ink-soft mt-0.5">{ex.note}</span>
                   </a>
                 ))}
@@ -828,13 +828,13 @@ export default async function BlogPostPage({ params }: Props) {
 
           {/* Empfehlungen */}
           {post.affiliateLinks && post.affiliateLinks.length > 0 && (
-            <div className="border border-green-100 bg-green-50 p-5 rounded-lg">
+            <div className="border border-hairline bg-sand-50 p-5 rounded-lg">
               <p className="eyebrow mb-3">Empfehlungen</p>
               <ul className="space-y-2.5">
                 {post.affiliateLinks.map((link) => (
                   <li key={link.url}>
                     <a href={cloak(link.url)} target="_blank" rel="noopener noreferrer sponsored"
-                      className="text-green-700 hover:underline font-medium text-caption leading-snug block">
+                      className="text-ink underline decoration-signal underline-offset-[3px] hover:text-signal-dark font-medium text-caption leading-snug block">
                       {link.label} →
                     </a>
                   </li>
@@ -855,7 +855,7 @@ export default async function BlogPostPage({ params }: Props) {
                 {officialLinks.map((link) => (
                   <li key={link.url}>
                     <a href={link.url} target="_blank" rel="noopener noreferrer"
-                      className="text-ink-muted hover:text-green-700 text-caption leading-snug block">
+                      className="text-ink-muted hover:text-signal-dark text-caption leading-snug block">
                       {link.label} ↗
                     </a>
                   </li>

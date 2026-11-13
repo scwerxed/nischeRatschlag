@@ -18,7 +18,7 @@ export default function NotFound() {
         </svg>
       </div>
 
-      <p className="font-serif text-7xl font-bold text-green-700 mb-2">404</p>
+      <p className="font-serif text-7xl font-extrabold text-ink mb-2">404</p>
       <h1 className="font-serif text-lead font-bold text-ink mt-2 mb-3">
         Diese Seite gibt es (noch) nicht
       </h1>
@@ -30,19 +30,19 @@ export default function NotFound() {
       <div className="flex flex-wrap justify-center gap-3">
         <Link
           href="/"
-          className="inline-block bg-green-700 text-white text-caption font-semibold px-6 py-3 hover:bg-green-800 transition rounded-sm"
+          className="inline-block bg-ink text-white text-caption font-semibold px-6 py-3 hover:bg-green-700 transition rounded-sm"
         >
           Zur Startseite
         </Link>
         <Link
           href="/blog"
-          className="inline-block border border-hairline text-ink-muted text-caption font-semibold px-6 py-3 hover:border-green-600 hover:text-green-700 transition rounded-sm"
+          className="inline-block border border-hairline text-ink-muted text-caption font-semibold px-6 py-3 hover:border-ink hover:text-signal-dark transition rounded-sm"
         >
           Zum Magazin
         </Link>
         <Link
           href="/#regionen"
-          className="inline-block border border-hairline text-ink-muted text-caption font-semibold px-6 py-3 hover:border-green-600 hover:text-green-700 transition rounded-sm"
+          className="inline-block border border-hairline text-ink-muted text-caption font-semibold px-6 py-3 hover:border-ink hover:text-signal-dark transition rounded-sm"
         >
           Regionen
         </Link>

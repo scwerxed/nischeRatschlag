@@ -83,7 +83,7 @@ export default function Seewetter() {
         {rows.map((row, i) => (
           <div
             key={row.name}
-            className="flex items-center justify-between px-5 py-3 hover:bg-green-50/50 transition-colors"
+            className="flex items-center justify-between px-5 py-3 hover:bg-sand-50 transition-colors"
             style={{ animationDelay: `${i * 50}ms` }}
           >
             <span className="text-caption font-medium text-ink-muted">{row.name}</span>

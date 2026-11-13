@@ -7,7 +7,7 @@ import { CATEGORY_STYLE, CATEGORY_LABEL } from '@/app/lib/blog-utils';
 // Volle Klassennamen literal im Quelltext, damit Tailwinds JIT sie erkennt
 // (dynamisch zusammengesetzte `hover:${...}`-Strings werden nicht gefunden).
 const HOVER_BG: Record<string, string> = {
-  Wandern: 'hover:bg-green-50',
+  Wandern: 'hover:bg-sand-50',
   Baden: 'hover:bg-sky-50',
   Ausflug: 'hover:bg-amber-50',
   Unterkunft: 'hover:bg-violet-50',
@@ -48,7 +48,7 @@ export default function ZweiAusfluegeAnEinemTagPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
       <p className="eyebrow mb-2">Tagesplaner</p>
-      <h1 className="font-serif text-display font-bold mb-3 text-ink">Zwei Ausflüge an einem Tag</h1>
+      <h1 className="font-serif text-display font-extrabold mb-3 text-ink">Zwei Ausflüge an einem Tag</h1>
       <p className="text-ink-soft max-w-2xl mb-4 leading-relaxed">
         Wenn ein Ziel allein den Tag nicht füllt: Wir haben halbtagstaugliche Ausflüge kombiniert,
         die nah genug beieinander liegen, um beide an einem Tag zu schaffen – vormittags das eine,
@@ -63,7 +63,7 @@ export default function ZweiAusfluegeAnEinemTagPage() {
         <section key={g.region} className="mb-12">
           <h2 className="font-serif text-lead font-bold mb-5 text-ink">
             {regionName(g.region)}
-            <Link href={`/regionen/${g.region}`} className="ml-3 text-caption font-sans font-normal text-green-700 hover:underline">
+            <Link href={`/regionen/${g.region}`} className="ml-3 text-caption font-sans font-normal text-ink underline decoration-signal underline-offset-[3px] hover:text-signal-dark">
               Alle Artikel →
             </Link>
           </h2>
@@ -72,10 +72,10 @@ export default function ZweiAusfluegeAnEinemTagPage() {
               <div key={`${c.first.slug}-${c.second.slug}`} className="border border-hairline rounded-lg overflow-hidden transition-shadow">
                 {/* Vormittag */}
                 <Link href={`/blog/${c.first.slug}`} className={`group block p-4 ${HOVER_BG[c.first.category]} transition-colors`}>
-                  <span className={`text-fine font-semibold uppercase tracking-wide ${CATEGORY_STYLE[c.first.category].text}`}>
+                  <span className={`font-mono text-[11.5px] uppercase tracking-[0.06em] ${CATEGORY_STYLE[c.first.category].text}`}>
                     Vormittag · {CATEGORY_LABEL[c.first.category]}
                   </span>
-                  <p className="font-semibold text-ink group-hover:text-green-700 leading-snug mt-1">{c.first.title}</p>
+                  <p className="font-semibold text-ink group-hover:underline decoration-signal decoration-2 underline-offset-4 leading-snug mt-1">{c.first.title}</p>
                 </Link>
 
                 {/* Verbinder */}
@@ -87,10 +87,10 @@ export default function ZweiAusfluegeAnEinemTagPage() {
 
                 {/* Nachmittag */}
                 <Link href={`/blog/${c.second.slug}`} className={`group block p-4 ${HOVER_BG[c.second.category]} transition-colors`}>
-                  <span className={`text-fine font-semibold uppercase tracking-wide ${CATEGORY_STYLE[c.second.category].text}`}>
+                  <span className={`font-mono text-[11.5px] uppercase tracking-[0.06em] ${CATEGORY_STYLE[c.second.category].text}`}>
                     Nachmittag · {CATEGORY_LABEL[c.second.category]}
                   </span>
-                  <p className="font-semibold text-ink group-hover:text-green-700 leading-snug mt-1">{c.second.title}</p>
+                  <p className="font-semibold text-ink group-hover:underline decoration-signal decoration-2 underline-offset-4 leading-snug mt-1">{c.second.title}</p>
                 </Link>
               </div>
             ))}
@@ -99,7 +99,7 @@ export default function ZweiAusfluegeAnEinemTagPage() {
       ))}
 
       <div className="mt-10 flex flex-wrap gap-3">
-        <Link href="/ausfluege-nach-dauer" className="inline-block bg-green-700 text-white text-caption font-semibold px-5 py-2.5 hover:bg-green-800 transition-colors rounded-sm">
+        <Link href="/ausfluege-nach-dauer" className="inline-block bg-ink text-white text-caption font-semibold px-5 py-2.5 hover:bg-green-700 transition-colors rounded-sm">
           Ausflüge nach Dauer
         </Link>
         <Link href="/wandern-baden" className="inline-block border border-sky-500 text-sky-700 text-caption font-semibold px-5 py-2.5 hover:bg-sky-50 transition-colors rounded-sm">

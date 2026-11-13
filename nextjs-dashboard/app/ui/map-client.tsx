@@ -396,7 +396,7 @@ export default function MapClient({ spots }: { spots: MapSpot[] }) {
               className="flex items-center gap-2 w-full py-1 text-left hover:text-ink transition-colors"
             >
               <span
-                className={`w-3.5 h-3.5 border flex items-center justify-center shrink-0 transition-colors ${ showArticles ? 'bg-green-600 border-green-600' : 'border-hairline' } rounded-sm`}
+                className={`w-3.5 h-3.5 border flex items-center justify-center shrink-0 transition-colors ${ showArticles ? 'bg-ink border-ink' : 'border-hairline' } rounded-sm`}
               >
                 {showArticles && <Checkmark />}
               </span>
@@ -431,7 +431,7 @@ export default function MapClient({ spots }: { spots: MapSpot[] }) {
               className="flex items-center gap-2 w-full py-1 text-left hover:text-ink transition-colors mt-0.5"
             >
               <span
-                className={`w-3.5 h-3.5 border flex items-center justify-center shrink-0 transition-colors ${ showTrails ? 'bg-green-600 border-green-600' : 'border-hairline' } rounded-sm`}
+                className={`w-3.5 h-3.5 border flex items-center justify-center shrink-0 transition-colors ${ showTrails ? 'bg-ink border-ink' : 'border-hairline' } rounded-sm`}
               >
                 {showTrails && <Checkmark />}
               </span>
@@ -452,7 +452,7 @@ export default function MapClient({ spots }: { spots: MapSpot[] }) {
               className="flex items-center gap-2 w-full py-1 text-left hover:text-ink transition-colors mt-0.5"
             >
               <span
-                className={`w-3.5 h-3.5 border flex items-center justify-center shrink-0 transition-colors ${ showPeaks ? 'bg-green-600 border-green-600' : 'border-hairline' } rounded-sm`}
+                className={`w-3.5 h-3.5 border flex items-center justify-center shrink-0 transition-colors ${ showPeaks ? 'bg-ink border-ink' : 'border-hairline' } rounded-sm`}
               >
                 {showPeaks && <Checkmark />}
               </span>
@@ -483,7 +483,7 @@ export default function MapClient({ spots }: { spots: MapSpot[] }) {
               className="flex items-center gap-2 w-full py-1 text-left hover:text-ink transition-colors mt-0.5"
             >
               <span
-                className={`w-3.5 h-3.5 border flex items-center justify-center shrink-0 transition-colors ${ showStays ? 'bg-green-600 border-green-600' : 'border-hairline' } rounded-sm`}
+                className={`w-3.5 h-3.5 border flex items-center justify-center shrink-0 transition-colors ${ showStays ? 'bg-ink border-ink' : 'border-hairline' } rounded-sm`}
               >
                 {showStays && <Checkmark />}
               </span>

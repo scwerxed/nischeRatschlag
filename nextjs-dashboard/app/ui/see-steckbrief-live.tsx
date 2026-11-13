@@ -67,7 +67,7 @@ export default function SeeSteckbriefLive({ stationen }: { stationen: Steckbrief
                 </div>
               ) : w && live ? (
                 <>
-                  <p className="font-serif text-display font-bold text-ink tabular-nums">{formatGrad(w.wasser)}</p>
+                  <p className="font-serif text-display font-extrabold text-ink tabular-nums">{formatGrad(w.wasser)}</p>
                   <p className="text-fine text-ink-soft mt-1">Stand: {formatStand(w.stand)} Uhr</p>
                 </>
               ) : (

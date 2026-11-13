@@ -21,7 +21,7 @@ export default function DatenschutzPage() {
   return (
     <div className="max-w-2xl mx-auto px-6 py-14 md:py-section">
       <p className="eyebrow mb-2">Rechtliches</p>
-      <h1 className="font-serif text-display font-bold mb-3 text-ink">Datenschutzerklärung</h1>
+      <h1 className="font-serif text-display font-extrabold mb-3 text-ink">Datenschutzerklärung</h1>
       <p className="text-ink-soft mb-10">
         Wir nehmen den Schutz deiner Daten ernst. Nachfolgend informieren wir dich gemäß
         Datenschutz-Grundverordnung (DSGVO) über die Verarbeitung personenbezogener Daten.
@@ -30,9 +30,9 @@ export default function DatenschutzPage() {
       <Section title="1. Verantwortlicher">
         <p>
           Verantwortlich für die Datenverarbeitung auf dieser Website ist der im{' '}
-          <a href="/impressum" className="text-green-700 hover:underline">Impressum</a> genannte
+          <a href="/impressum" className="text-ink underline decoration-signal underline-offset-[3px] hover:text-signal-dark">Impressum</a> genannte
           Medieninhaber. Kontakt:{' '}
-          <a href={`mailto:${KONTAKT_EMAIL}`} className="text-green-700 hover:underline">{KONTAKT_EMAIL}</a>
+          <a href={`mailto:${KONTAKT_EMAIL}`} className="text-ink underline decoration-signal underline-offset-[3px] hover:text-signal-dark">{KONTAKT_EMAIL}</a>
         </p>
       </Section>
 
@@ -111,11 +111,11 @@ export default function DatenschutzPage() {
         </p>
         <p>
           Mehr Informationen und Widerspruchsmöglichkeiten:{' '}
-          <a href="https://policies.google.com/technologies/ads?hl=de" target="_blank" rel="noopener noreferrer" className="text-green-700 hover:underline">
+          <a href="https://policies.google.com/technologies/ads?hl=de" target="_blank" rel="noopener noreferrer" className="text-ink underline decoration-signal underline-offset-[3px] hover:text-signal-dark">
             Google – Werbung
           </a>{' '}
           und{' '}
-          <a href="https://adssettings.google.com" target="_blank" rel="noopener noreferrer" className="text-green-700 hover:underline">
+          <a href="https://adssettings.google.com" target="_blank" rel="noopener noreferrer" className="text-ink underline decoration-signal underline-offset-[3px] hover:text-signal-dark">
             Google Anzeigeneinstellungen
           </a>.
         </p>
@@ -167,7 +167,7 @@ export default function DatenschutzPage() {
           Verarbeitung, Datenübertragbarkeit sowie auf Widerspruch gegen die Verarbeitung.
           Eine erteilte Einwilligung kannst du jederzeit mit Wirkung für die Zukunft widerrufen.
           Wende dich dazu an{' '}
-          <a href={`mailto:${KONTAKT_EMAIL}`} className="text-green-700 hover:underline">{KONTAKT_EMAIL}</a>.
+          <a href={`mailto:${KONTAKT_EMAIL}`} className="text-ink underline decoration-signal underline-offset-[3px] hover:text-signal-dark">{KONTAKT_EMAIL}</a>.
         </p>
       </Section>
 

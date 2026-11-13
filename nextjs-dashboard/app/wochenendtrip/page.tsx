@@ -32,7 +32,7 @@ export default function WochenendtripHub() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
       <p className="eyebrow mb-2">Wochenendtrips</p>
-      <h1 className="font-serif text-display font-bold mb-3 text-ink">Ausflüge nach Startstadt</h1>
+      <h1 className="font-serif text-display font-extrabold mb-3 text-ink">Ausflüge nach Startstadt</h1>
       <p className="text-ink-soft max-w-2xl mb-10 leading-relaxed">
         Wähle deine Startstadt – wir bündeln die schönsten Ausflugsziele Österreichs nach Fahrzeit,
         von „unter 1 Stunde“ bis zum Wochenendtrip. Ideal, um spontan das passende Ziel zu finden.
@@ -46,16 +46,16 @@ export default function WochenendtripHub() {
             <Link
               key={city.slug}
               href={`/wochenendtrip/${city.slug}`}
-              className="group block border border-hairline overflow-hidden hover:border-green-400 transition rounded-lg"
+              className="group block border border-hairline overflow-hidden hover:border-ink transition rounded-lg"
             >
               <div className={`h-2 bg-gradient-to-r ${accent}`} />
               <div className="p-6">
                 <p className="eyebrow mb-1.5">Ab {city.name}</p>
-                <h2 className="font-serif text-tagline font-bold text-ink group-hover:text-green-700">
+                <h2 className="font-serif text-tagline font-bold text-ink group-hover:underline decoration-signal decoration-2 underline-offset-4">
                   Wochenendtrip ab {city.name}
                 </h2>
                 <p className="text-caption text-ink-soft mt-1.5">{count} Ausflugsziele nach Fahrzeit sortiert</p>
-                <span className="mt-4 inline-block text-caption font-medium text-green-700 group-hover:text-green-600">
+                <span className="mt-4 inline-block text-caption font-medium text-ink underline decoration-signal underline-offset-[3px] group-hover:text-signal-dark decoration-signal decoration-2 underline-offset-4">
                   Ziele ansehen →
                 </span>
               </div>

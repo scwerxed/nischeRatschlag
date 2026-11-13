@@ -59,15 +59,15 @@ export default async function WochenendtripStadtPage({ params }: Props) {
 
       {/* Breadcrumb */}
       <nav className="flex flex-wrap items-center gap-2 text-fine text-ink-soft mb-5">
-        <Link href="/" className="hover:text-green-700">Startseite</Link>
+        <Link href="/" className="hover:text-signal-dark">Startseite</Link>
         <span>/</span>
-        <Link href="/wochenendtrip" className="hover:text-green-700">Wochenendtrips</Link>
+        <Link href="/wochenendtrip" className="hover:text-signal-dark">Wochenendtrips</Link>
         <span>/</span>
         <span className="text-ink-muted">Ab {city.name}</span>
       </nav>
 
       <p className="eyebrow mb-2">Wochenendtrip</p>
-      <h1 className="font-serif text-display font-bold mb-3 text-ink">Ausflüge & Kurztrips ab {city.name}</h1>
+      <h1 className="font-serif text-display font-extrabold mb-3 text-ink">Ausflüge & Kurztrips ab {city.name}</h1>
       <p className="text-ink-soft max-w-2xl mb-4 leading-relaxed">{city.intro}</p>
       <p className="text-fine text-ink-soft mb-10">Entfernungen als Luftlinie – die tatsächliche Fahrzeit hängt von Route und Verkehr ab.</p>
 
@@ -93,12 +93,12 @@ export default async function WochenendtripStadtPage({ params }: Props) {
                 </div>
                 <div className="p-4">
                   <div className="flex items-center justify-between gap-2 mb-1">
-                    <span className={`text-fine font-semibold uppercase tracking-wide ${CATEGORY_STYLE[post.category]?.text ?? 'text-green-700'}`}>
+                    <span className={`font-mono text-[11.5px] uppercase tracking-[0.06em] ${CATEGORY_STYLE[post.category]?.text ?? 'text-green-700'}`}>
                       {post.category}
                     </span>
                     <span className="text-fine text-ink-soft whitespace-nowrap">≈ {Math.round(km)} km</span>
                   </div>
-                  <h3 className="font-semibold text-ink group-hover:text-green-700 leading-snug">{post.title}</h3>
+                  <h3 className="font-semibold text-ink group-hover:underline decoration-signal decoration-2 underline-offset-4 leading-snug">{post.title}</h3>
                   <span className="mt-1 block text-fine text-ink-soft">{regionName(post.region)}</span>
                 </div>
               </Link>

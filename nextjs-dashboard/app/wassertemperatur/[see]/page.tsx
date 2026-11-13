@@ -166,9 +166,9 @@ export default async function SeeSteckbriefPage({ params }: Props) {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
       <nav className="flex flex-wrap items-center gap-2 text-fine text-ink-soft mb-5">
-        <Link href="/" className="hover:text-green-700">Startseite</Link>
+        <Link href="/" className="hover:text-signal-dark">Startseite</Link>
         <span>/</span>
-        <Link href="/wassertemperatur" className="hover:text-green-700">Wassertemperatur</Link>
+        <Link href="/wassertemperatur" className="hover:text-signal-dark">Wassertemperatur</Link>
         <span>/</span>
         <span className="text-ink-muted">{s.see}</span>
       </nav>
@@ -176,7 +176,7 @@ export default async function SeeSteckbriefPage({ params }: Props) {
       <p className="eyebrow mb-2">
         {live ? 'Live-Daten' : 'Offizielle Proben'} · {s.regionen.map((r) => regionName(r)).join(' / ')}
       </p>
-      <h1 className="font-serif text-display font-bold mb-3 text-ink">Wassertemperatur {s.see}</h1>
+      <h1 className="font-serif text-display font-extrabold mb-3 text-ink">Wassertemperatur {s.see}</h1>
       {live ? (
         <p className="text-ink-soft max-w-2xl mb-8 leading-relaxed">
           Wie warm ist {f.der} gerade?{' '}
@@ -213,7 +213,7 @@ export default async function SeeSteckbriefPage({ params }: Props) {
           {juengste ? (
             <div className="border border-sky-200 bg-sky-50 p-5 rounded-lg max-w-md">
               <p className="eyebrow mb-1">Letzte offizielle Probe</p>
-              <p className="font-serif text-display font-bold text-ink tabular-nums">{formatGrad(juengste.wasser)}</p>
+              <p className="font-serif text-display font-extrabold text-ink tabular-nums">{formatGrad(juengste.wasser)}</p>
               <p className="text-fine text-ink-soft mt-1">
                 am {juengste.datum} · Badestelle {juengste.stelle}
               </p>
@@ -356,7 +356,7 @@ export default async function SeeSteckbriefPage({ params }: Props) {
           <p className="text-caption text-ink-soft mt-2">
             <strong className="font-semibold text-ink">Tipp:</strong> {lake.tipp}
           </p>
-          <Link href="/seen-vergleich" className="inline-block mt-3 text-caption font-medium text-green-700 hover:underline">
+          <Link href="/seen-vergleich" className="inline-block mt-3 text-caption font-medium text-ink underline decoration-signal underline-offset-[3px] hover:text-signal-dark">
             Alle Seen im Vergleich →
           </Link>
         </section>
@@ -368,9 +368,9 @@ export default async function SeeSteckbriefPage({ params }: Props) {
           <h2 className="font-serif text-lead font-bold mb-4 text-ink">Artikel {f.zum}</h2>
           <div className="grid sm:grid-cols-2 gap-4">
             {artikel.map((p) => (
-              <Link key={p.slug} href={`/blog/${p.slug}`} className="group block border border-hairline p-5 hover:border-green-400 transition rounded-lg">
+              <Link key={p.slug} href={`/blog/${p.slug}`} className="group block border border-hairline p-5 hover:border-ink transition rounded-lg">
                 <span className={`eyebrow ${CATEGORY_STYLE[p.category].text}`}>{p.category}</span>
-                <h3 className="mt-1.5 font-serif text-body font-bold text-ink group-hover:text-green-700 leading-snug">{p.title}</h3>
+                <h3 className="mt-1.5 font-serif text-body font-bold text-ink group-hover:underline decoration-signal decoration-2 underline-offset-4 leading-snug">{p.title}</h3>
                 <p className="mt-1.5 text-caption text-ink-soft line-clamp-2">{p.excerpt}</p>
               </Link>
             ))}
@@ -390,14 +390,14 @@ export default async function SeeSteckbriefPage({ params }: Props) {
           </p>
           <div className="grid sm:grid-cols-2 gap-4">
             {umkreis.map((n) => (
-              <Link key={n.post.slug} href={`/blog/${n.post.slug}`} className="group block border border-hairline p-4 hover:border-green-400 transition rounded-lg">
+              <Link key={n.post.slug} href={`/blog/${n.post.slug}`} className="group block border border-hairline p-4 hover:border-ink transition rounded-lg">
                 <span className="flex items-baseline justify-between gap-3">
                   <span className={`eyebrow ${CATEGORY_STYLE[n.post.category].text}`}>{n.post.category}</span>
                   <span className="text-fine text-ink-soft whitespace-nowrap tabular-nums">
                     {n.km < 1 ? 'gleich am See' : `≈ ${Math.round(n.km)} km`}
                   </span>
                 </span>
-                <h3 className="mt-1.5 text-caption font-semibold text-ink group-hover:text-green-700 leading-snug">{n.post.title}</h3>
+                <h3 className="mt-1.5 text-caption font-semibold text-ink group-hover:underline decoration-signal decoration-2 underline-offset-4 leading-snug">{n.post.title}</h3>
                 {!s.regionen.includes(n.post.region) && (
                   <span className="block mt-1 text-fine text-ink-soft">{regionName(n.post.region)}</span>
                 )}
@@ -422,7 +422,7 @@ export default async function SeeSteckbriefPage({ params }: Props) {
               className={`text-caption font-medium px-4 py-1.5 border transition-colors rounded-sm ${
                 n.see.stationen.length > 0
                   ? 'bg-sky-50 text-sky-700 border-sky-200 hover:bg-sky-100'
-                  : 'bg-parchment text-ink-muted border-hairline hover:border-green-600 hover:text-green-700'
+                  : 'bg-parchment text-ink-muted border-hairline hover:border-ink hover:text-signal-dark'
               }`}
             >
               {n.see.see} <span className="text-ink-soft font-normal">· ≈ {Math.max(1, Math.round(n.km))} km</span>
@@ -430,7 +430,7 @@ export default async function SeeSteckbriefPage({ params }: Props) {
           ))}
           <Link
             href="/wassertemperatur"
-            className="text-caption font-medium px-4 py-1.5 border border-hairline text-ink-muted hover:border-green-600 hover:text-green-700 transition-colors rounded-sm"
+            className="text-caption font-medium px-4 py-1.5 border border-hairline text-ink-muted hover:border-ink hover:text-signal-dark transition-colors rounded-sm"
           >
             Alle Seen →
           </Link>
@@ -493,7 +493,7 @@ export default async function SeeSteckbriefPage({ params }: Props) {
       </p>
 
       <div className="flex flex-wrap gap-3">
-        <Link href="/wassertemperatur" className="inline-block bg-green-700 text-white text-caption font-semibold px-5 py-2.5 hover:bg-green-800 transition-colors rounded-sm">
+        <Link href="/wassertemperatur" className="inline-block bg-ink text-white text-caption font-semibold px-5 py-2.5 hover:bg-green-700 transition-colors rounded-sm">
           Alle Seen: Wassertemperatur live
         </Link>
         <Link href="/badeplaetze" className="inline-block border border-sky-500 text-sky-700 text-caption font-semibold px-5 py-2.5 hover:bg-sky-50 transition-colors rounded-sm">

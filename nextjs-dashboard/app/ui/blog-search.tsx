@@ -91,7 +91,7 @@ export default function BlogSearch({ posts }: { posts: CardPost[] }) {
             onChange={(e) => setQuery(e.target.value)}
             placeholder="Suche nach Ort, Aktivität, Tipp…"
             aria-label="Artikel durchsuchen"
-            className="w-full pl-10 pr-4 py-3 bg-canvas border border-hairline text-caption text-ink placeholder:text-ink-soft outline-none transition-colors focus:border-green-600 focus-visible:ring-2 focus-visible:ring-green-600 rounded-full"
+            className="w-full pl-10 pr-4 py-3 bg-canvas border border-hairline text-caption text-ink placeholder:text-ink-soft outline-none transition-colors focus:border-ink focus-visible:ring-2 focus-visible:ring-ink rounded-sm"
           />
         </div>
       </div>
@@ -104,8 +104,8 @@ export default function BlogSearch({ posts }: { posts: CardPost[] }) {
             aria-pressed={cat === c}
             className={`text-caption font-medium px-4 py-2 border transition duration-200 rounded-sm ${
               cat === c
-                ? `${c === 'Alle' ? 'bg-green-700' : CATEGORY_STYLE[c]?.chip ?? 'bg-green-700'} border-transparent text-white`
-                : 'border-hairline text-ink-muted hover:border-green-600 hover:text-green-700'
+                ? `${c === 'Alle' ? 'bg-ink' : CATEGORY_STYLE[c]?.chip ?? 'bg-ink'} border-transparent text-white`
+                : 'border-hairline text-ink-muted hover:border-ink hover:text-signal-dark'
             }`}
           >
             {c}
@@ -129,27 +129,27 @@ export default function BlogSearch({ posts }: { posts: CardPost[] }) {
           <p className="text-caption">Versuch einen anderen Suchbegriff oder wähle eine andere Kategorie.</p>
         </div>
       ) : (
-        <div className="grid md:grid-cols-2 gap-6">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-10">
           {visiblePosts.map((post) => {
             const mins = post.mins;
             return (
               <Link
                 key={post.slug}
                 href={`/blog/${post.slug}`}
-                className="surface-card-interactive group block overflow-hidden"
+                className="group block"
               >
-                <div className="aspect-[16/9] overflow-hidden relative">
-                  <PostBild slug={post.slug} category={post.category} className="transition-transform duration-700 group-hover:scale-105" />
+                <div className="aspect-[3/2] overflow-hidden relative rounded-sm bg-sand-100">
+                  <PostBild slug={post.slug} category={post.category} />
                   <div className="absolute top-3 right-3">
-                    <span className="bg-canvas/90 backdrop-blur text-fine font-medium text-ink-muted px-2.5 py-1 rounded-sm">
+                    <span className="bg-ink text-white font-mono text-[11px] px-2 py-1 rounded-sm">
                       {mins} Min.
                     </span>
                   </div>
                 </div>
-                <div className="p-6">
+                <div className="pt-4">
                   <div className="flex items-center justify-between mb-2">
                     <div className="flex items-center gap-2">
-                      <span className={`flex items-center gap-1.5 text-fine font-semibold uppercase tracking-wide ${CATEGORY_STYLE[post.category]?.text ?? 'text-green-700'}`}>
+                      <span className={`flex items-center gap-1.5 font-mono text-[11.5px] uppercase tracking-[0.06em] ${CATEGORY_STYLE[post.category]?.text ?? 'text-green-700'}`}>
                         <span className={`w-1.5 h-1.5 rounded-full ${CATEGORY_DOT[post.category] ?? 'bg-gray-400'}`} />
                         {post.category}
                       </span>
@@ -164,18 +164,12 @@ export default function BlogSearch({ posts }: { posts: CardPost[] }) {
                         </span>
                       )}
                     </div>
-                    <time dateTime={post.date} className="text-fine text-ink-soft">{formatDatum(post.date)}</time>
+                    <time dateTime={post.date} className="font-mono text-[11.5px] text-ink-soft">{formatDatum(post.date)}</time>
                   </div>
-                  <h2 className="font-serif font-bold text-tagline text-ink group-hover:text-green-700 leading-snug transition-colors">
+                  <h2 className="font-serif font-bold text-tagline text-ink group-hover:underline decoration-signal decoration-2 underline-offset-4 leading-snug transition-colors">
                     {post.title}
                   </h2>
                   <p className="mt-2 text-caption text-ink-soft line-clamp-2">{post.excerpt}</p>
-                  <span className="mt-4 inline-flex items-center gap-1.5 text-caption text-green-700 font-medium">
-                    Weiterlesen
-                    <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="2" className="transition-transform duration-300 group-hover:translate-x-1">
-                      <path d="M6 3l5 5-5 5" strokeLinecap="round" strokeLinejoin="round" />
-                    </svg>
-                  </span>
                 </div>
               </Link>
             );
