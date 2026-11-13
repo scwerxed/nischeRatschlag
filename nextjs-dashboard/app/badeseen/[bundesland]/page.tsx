@@ -160,7 +160,7 @@ export default async function BadeseenLandPage({ params }: Props) {
                           </div>
                           <p className="font-mono text-fine text-ink-muted sm:text-right" data-numeric>
                             {s.letzteProbe
-                              ? `${s.letzteProbe.wasser !== null ? formatGrad(s.letzteProbe.wasser) : '– °C'} · ${s.letzteProbe.datum}`
+                              ? `${s.letzteProbe.wasser !== null ? formatGrad(s.letzteProbe.wasser) : 'Temperatur nicht gemessen'} · ${s.letzteProbe.datum}`
                               : 'keine Probe'}
                           </p>
                         </li>

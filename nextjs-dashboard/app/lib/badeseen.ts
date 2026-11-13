@@ -23,10 +23,18 @@ export type Gewaesser = { name: string; stellen: Badestelle[] };
  * (z. B. „Wörthersee, Strandbad Velden“) – der Teil vor dem ersten Komma ist das Gewässer.
  * Sortiert nach Anzahl der Badestellen, dann alphabetisch.
  */
+// Himmelsrichtung am Namensende: „Altausseersee Nord“, „Grundlsee Nord-West“ → dasselbe Gewässer.
+const RICHTUNG = /\s+(nord|süd|ost|west)(-(nord|süd|ost|west))?$/i;
+
+function gewaesserName(s: Badestelle): string {
+  const vorKomma = s.name.split(',')[0].trim();
+  return vorKomma.replace(RICHTUNG, '').trim() || vorKomma || s.name;
+}
+
 export function nachGewaesser(stellen: Badestelle[]): Gewaesser[] {
   const map = new Map<string, Badestelle[]>();
   for (const s of stellen) {
-    const name = s.name.split(',')[0].trim() || s.name;
+    const name = gewaesserName(s);
     const liste = map.get(name);
     if (liste) liste.push(s);
     else map.set(name, [s]);
@@ -39,5 +47,7 @@ export function nachGewaesser(stellen: Badestelle[]): Gewaesser[] {
 /** Bezeichnung der einzelnen Badestelle innerhalb ihres Gewässers (Teil nach dem Komma, sonst die Gemeinde). */
 export function stellenName(s: Badestelle): string {
   const rest = s.name.split(',').slice(1).join(',').trim();
-  return rest || s.gemeinde || s.name;
+  if (rest) return rest;
+  const richtung = s.name.match(RICHTUNG);
+  return richtung ? richtung[0].trim() : s.gemeinde || s.name;
 }
