@@ -160,6 +160,18 @@ export async function badestellenById(ids: string[]): Promise<Record<string, Bad
   return result;
 }
 
+/**
+ * Alle offiziellen Badestellen eines Bundeslands (AGES-Schreibweise, z. B. „Kärnten“) mit Einstufung,
+ * letzter Probe und Sperrstatus – für die Seiten /badeseen/[bundesland]. Leere Liste, wenn die Quelle ausfällt.
+ */
+export async function badestellenImBundesland(bundesland: string): Promise<Badestelle[]> {
+  const liste: Badestelle[] = [];
+  for (const spot of await agesSpots()) {
+    if (spot.BUNDESLAND === bundesland && typeof spot.BADEGEWAESSERID === 'string') liste.push(toBadestelle(spot, 0));
+  }
+  return liste.sort((a, b) => a.name.localeCompare(b.name, 'de'));
+}
+
 export type AgesProbe = {
   id: string;
   name: string;

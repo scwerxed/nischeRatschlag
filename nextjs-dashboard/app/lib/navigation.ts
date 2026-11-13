@@ -47,6 +47,7 @@ export const NAV_GROUPS: NavGroup[] = [
     links: [
       { href: '/wassertemperatur', label: 'Wassertemperatur live', note: 'Offizielle Messstellen' },
       { href: '/badeplaetze', label: 'Badeplatz-Check', note: 'Mit Badewasser-Qualität' },
+      { href: '/badeseen', label: 'Badeseen nach Bundesland', note: 'Alle EU-Badestellen' },
       { href: '/seen-vergleich', label: 'Seen-Vergleich' },
       { href: '/wandern-baden', label: 'Wandern + Baden' },
       { href: '/unterkuenfte/am-see', label: 'Unterkünfte am See' },

@@ -1,5 +1,6 @@
 import type { MetadataRoute } from 'next';
 import { posts } from '@/app/lib/posts';
+import { BADESEEN_LAENDER } from '@/app/lib/badeseen';
 import { regionen } from '@/app/lib/regionen';
 import { TRIP_CITIES } from '@/app/lib/wochenendtrip';
 import { MONATE } from '@/app/lib/monatstipps';
@@ -9,7 +10,7 @@ import { STECKBRIEF_SEEN } from '@/app/lib/seen-messstellen';
 const BASE = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://www.bergseen-guide.com';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const staticPages = ['', '/blog', '/karte', '/routenplaner', '/ausflugsplaner', '/seen-vergleich', '/wochenendtrip', '/wandern-baden', '/hitzefreundliche-ausfluege', '/regentaugliche-ausfluege', '/aussicht-ohne-anstrengung', '/beste-ausfluege', '/ausfluege-nach-dauer', '/bahnhofsausfluege', '/feierabend-ausfluege', '/sonnenuntergang-spots', '/zwei-ausfluege-an-einem-tag', '/familienausfluege', '/badeplaetze', '/wassertemperatur', '/unterkuenfte/am-see', '/unterkuenfte/basislager', '/reiseinfos', '/ueber-uns', '/kontakt', '/impressum', '/datenschutz'].map((p) => ({
+  const staticPages = ['', '/blog', '/karte', '/routenplaner', '/ausflugsplaner', '/seen-vergleich', '/wochenendtrip', '/wandern-baden', '/hitzefreundliche-ausfluege', '/regentaugliche-ausfluege', '/aussicht-ohne-anstrengung', '/beste-ausfluege', '/ausfluege-nach-dauer', '/bahnhofsausfluege', '/feierabend-ausfluege', '/sonnenuntergang-spots', '/zwei-ausfluege-an-einem-tag', '/familienausfluege', '/badeplaetze', '/badeseen', '/wassertemperatur', '/unterkuenfte/am-see', '/unterkuenfte/basislager', '/reiseinfos', '/ueber-uns', '/kontakt', '/impressum', '/datenschutz'].map((p) => ({
     url: `${BASE}${p}`,
     lastModified: new Date(),
     changeFrequency: 'weekly' as const,
@@ -44,6 +45,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }));
 
+  const badeseenPages = BADESEEN_LAENDER.map((l) => ({
+    url: `${BASE}/badeseen/${l.slug}`,
+    lastModified: new Date(),
+    changeFrequency: 'weekly' as const,
+    priority: 0.7,
+  }));
+
   const postPages = posts.map((post) => ({
     url: `${BASE}/blog/${post.slug}`,
     lastModified: new Date(post.date),
@@ -58,5 +66,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: r.aktiv ? 0.9 : 0.3,
   }));
 
-  return [...staticPages, ...tripPages, ...monatPages, ...seeThemaPages, ...seeSteckbriefPages, ...postPages, ...regionPages];
+  return [...staticPages, ...tripPages, ...monatPages, ...seeThemaPages, ...seeSteckbriefPages, ...badeseenPages, ...postPages, ...regionPages];
 }

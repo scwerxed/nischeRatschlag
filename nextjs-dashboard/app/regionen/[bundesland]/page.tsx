@@ -228,6 +228,10 @@ export default async function RegionPage({ params }: Props) {
                     <Link href={`/wassertemperatur#${bundesland}`} className="text-sky-700 font-medium hover:underline">
                       {region.name}: Wassertemperatur der Badegewässer →
                     </Link>
+                    {' · '}
+                    <Link href={`/badeseen/${bundesland}`} className="text-sky-700 font-medium hover:underline">
+                      Alle Badestellen mit Wasserqualität →
+                    </Link>
                   </p>
                 )}
                 <div className="grid md:grid-cols-2 gap-5">
