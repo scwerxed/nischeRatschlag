@@ -196,10 +196,9 @@ export default async function RegionPage({ params }: Props) {
                 {content.seasons.map((s) => (
                   <div
                     key={s.season}
-                    className="border border-hairline rounded-lg p-4"
+                    className="border-t-2 border-ink pt-3"
                   >
                     <div className="flex items-center gap-2 mb-2">
-                      <span className="text-tagline">{s.icon}</span>
                       <div>
                         <p className="font-semibold text-caption text-ink">{s.season}</p>
                         <p className="text-fine text-ink-soft">{s.months}</p>
