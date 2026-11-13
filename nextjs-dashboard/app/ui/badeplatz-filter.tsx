@@ -37,7 +37,7 @@ export default function BadeplatzFilter({
             key={k}
             onClick={() => toggle(k)}
             aria-pressed={active.includes(k)}
-            className={`text-caption font-medium px-4 py-1.5 border transition-colors ${ active.includes(k) ? 'bg-sky-600 border-sky-600 text-white' : 'bg-white border-hairline text-ink-muted hover:border-sky-400 hover:text-sky-700' } rounded-sm`}
+            className={`tap text-caption font-medium px-4 py-1.5 border transition-colors ${ active.includes(k) ? 'bg-sky-600 border-sky-600 text-white' : 'bg-white border-hairline text-ink-muted hover:border-sky-400 hover:text-sky-700' } rounded-sm`}
           >
             {FEATURES[k].label}
           </button>

@@ -102,7 +102,7 @@ export default function BlogSearch({ posts }: { posts: CardPost[] }) {
             key={c}
             onClick={() => setCat(c)}
             aria-pressed={cat === c}
-            className={`text-caption font-medium px-4 py-2 border transition duration-200 rounded-sm ${
+            className={`tap text-caption font-medium px-4 py-2 border transition duration-200 rounded-sm ${
               cat === c
                 ? `${c === 'Alle' ? 'bg-ink' : CATEGORY_STYLE[c]?.chip ?? 'bg-ink'} border-transparent text-white`
                 : 'border-hairline text-ink-muted hover:border-ink hover:text-signal-dark'

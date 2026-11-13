@@ -106,6 +106,7 @@ export default function MapClient({ spots }: { spots: MapSpot[] }) {
   const [zoom,          setZoom]          = useState(KAERNTEN_ZOOM);
   const [mapReady,      setMapReady]      = useState(false);
   const [error,         setError]         = useState<string | null>(null);
+  const [panelOpen,     setPanelOpen]     = useState(true);
 
   // ── init ──────────────────────────────────────────────────────────────────
   useEffect(() => {
@@ -246,9 +247,12 @@ export default function MapClient({ spots }: { spots: MapSpot[] }) {
         }
 
         setMapReady(true);
+        // Am Handy startet das Bedienfeld eingeklappt, sonst verdeckt es die halbe Karte.
+        if (window.innerWidth < 640) setPanelOpen(false);
 
-        // Fetch peaks (non-blocking)
-        fetch(`https://overpass-api.de/api/interpreter?data=${OVERPASS_QUERY}`)
+        // Fetch peaks (non-blocking). Mit Zeitlimit: Overpass lässt Anfragen teils minutenlang hängen,
+        // ohne Limit blieb „Gipfel laden…“ dauerhaft stehen.
+        fetch(`https://overpass-api.de/api/interpreter?data=${OVERPASS_QUERY}`, { signal: AbortSignal.timeout(15000) })
           .then((r) => {
             if (!r.ok) throw new Error(`Overpass ${r.status}`);
             return r.json();
@@ -353,8 +357,17 @@ export default function MapClient({ spots }: { spots: MapSpot[] }) {
       {/* ── Layer control panel – top-right ─────────────────────────────── */}
       {mapReady && (
         <div
-          className="absolute top-2 right-2 z-[1000] bg-white border border-hairline select-none rounded-sm" style={{ minWidth: 176, boxShadow: '0 1px 4px rgba(0,0,0,.12)' }}
+          className="absolute top-2 right-2 z-[1000] bg-white border border-ink select-none rounded-sm max-h-[calc(100%-1rem)] overflow-y-auto" style={{ minWidth: panelOpen ? 176 : 0 }}
         >
+          <button
+            onClick={() => setPanelOpen((o) => !o)}
+            aria-expanded={panelOpen}
+            className="tap flex items-center justify-between gap-3 w-full px-3 py-2 font-mono text-[11.5px] uppercase tracking-[0.06em] text-ink"
+          >
+            Ebenen
+            <span aria-hidden className="text-signal">{panelOpen ? '–' : '+'}</span>
+          </button>
+          <div className={panelOpen ? 'border-t border-hairline' : 'hidden'}>
           {/* Basiskarte */}
           <div className="px-3 pt-2.5 pb-1.5">
             <p className="text-[10px] font-semibold text-ink-soft uppercase tracking-widest mb-2">
@@ -364,7 +377,7 @@ export default function MapClient({ spots }: { spots: MapSpot[] }) {
               <button
                 key={id}
                 onClick={() => switchBase(id)}
-                className="flex items-center gap-2 w-full py-1 text-left hover:text-ink transition-colors"
+                className="tap flex items-center gap-2 w-full py-1 text-left hover:text-ink transition-colors"
               >
                 <span
                   className={`w-3.5 h-3.5 rounded-full border-2 flex items-center justify-center shrink-0 ${
@@ -393,7 +406,7 @@ export default function MapClient({ spots }: { spots: MapSpot[] }) {
             {/* Ausflugsziele (Artikel) */}
             <button
               onClick={toggleArticles}
-              className="flex items-center gap-2 w-full py-1 text-left hover:text-ink transition-colors"
+              className="tap flex items-center gap-2 w-full py-1 text-left hover:text-ink transition-colors"
             >
               <span
                 className={`w-3.5 h-3.5 border flex items-center justify-center shrink-0 transition-colors ${ showArticles ? 'bg-ink border-ink' : 'border-hairline' } rounded-sm`}
@@ -428,7 +441,7 @@ export default function MapClient({ spots }: { spots: MapSpot[] }) {
             {/* Wanderwege */}
             <button
               onClick={toggleTrails}
-              className="flex items-center gap-2 w-full py-1 text-left hover:text-ink transition-colors mt-0.5"
+              className="tap flex items-center gap-2 w-full py-1 text-left hover:text-ink transition-colors mt-0.5"
             >
               <span
                 className={`w-3.5 h-3.5 border flex items-center justify-center shrink-0 transition-colors ${ showTrails ? 'bg-ink border-ink' : 'border-hairline' } rounded-sm`}
@@ -449,7 +462,7 @@ export default function MapClient({ spots }: { spots: MapSpot[] }) {
             {/* Gipfel */}
             <button
               onClick={togglePeaks}
-              className="flex items-center gap-2 w-full py-1 text-left hover:text-ink transition-colors mt-0.5"
+              className="tap flex items-center gap-2 w-full py-1 text-left hover:text-ink transition-colors mt-0.5"
             >
               <span
                 className={`w-3.5 h-3.5 border flex items-center justify-center shrink-0 transition-colors ${ showPeaks ? 'bg-ink border-ink' : 'border-hairline' } rounded-sm`}
@@ -480,7 +493,7 @@ export default function MapClient({ spots }: { spots: MapSpot[] }) {
             {/* Unterkünfte */}
             <button
               onClick={toggleStays}
-              className="flex items-center gap-2 w-full py-1 text-left hover:text-ink transition-colors mt-0.5"
+              className="tap flex items-center gap-2 w-full py-1 text-left hover:text-ink transition-colors mt-0.5"
             >
               <span
                 className={`w-3.5 h-3.5 border flex items-center justify-center shrink-0 transition-colors ${ showStays ? 'bg-ink border-ink' : 'border-hairline' } rounded-sm`}
@@ -504,7 +517,7 @@ export default function MapClient({ spots }: { spots: MapSpot[] }) {
           <div className="flex">
             <button
               onClick={showAustria}
-              className="flex items-center gap-1.5 flex-1 px-3 py-2 text-fine text-ink-soft hover:text-ink hover:bg-parchment transition-colors"
+              className="tap flex items-center gap-1.5 flex-1 px-3 py-2 text-fine text-ink-soft hover:text-ink hover:bg-parchment transition-colors"
             >
               <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
                 <path d="M6 1v2M6 9v2M1 6h2M9 6h2M3.05 3.05l1.41 1.41M7.54 7.54l1.41 1.41M3.05 8.95l1.41-1.41M7.54 4.46l1.41-1.41" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" />
@@ -513,10 +526,11 @@ export default function MapClient({ spots }: { spots: MapSpot[] }) {
             </button>
             <button
               onClick={resetView}
-              className="flex-1 px-3 py-2 text-fine text-ink-soft hover:text-ink hover:bg-parchment transition-colors border-l border-hairline"
+              className="tap flex-1 px-3 py-2 text-fine text-ink-soft hover:text-ink hover:bg-parchment transition-colors border-l border-hairline"
             >
               Kärnten
             </button>
+          </div>
           </div>
         </div>
       )}
