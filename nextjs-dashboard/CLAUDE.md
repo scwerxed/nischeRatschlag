@@ -91,7 +91,7 @@ Leaflet-based features (`map`, `routenplaner`, `trail-map`) are each wrapped in 
 **Important**: In Next.js 16 (Turbopack), `ssr: false` in `next/dynamic` is NOT allowed in Server Components — the wrapper must be a Client Component. The Leaflet CSS (`leaflet/dist/leaflet.css`) is imported in the wrapper, not in the client component, because Turbopack does not reliably extract CSS from dynamically-loaded modules.
 
 External APIs used by these components:
-- **Overpass API** — peak/mountain data + waypoint-to-trail snapping
+- **Overpass API** — waypoint-to-trail snapping im Routenplaner (`/api/brouter`). Die **Gipfel der Karte kommen seit 2026-11-14 nicht mehr live von Overpass**, sondern aus der mitgelieferten Datei `public/daten/gipfel.json` (15.913 benannte Gipfel Österreichs mit Höhe als `[lat, lon, name, höhe]`, absteigend nach Höhe, ~600 KB / ~210 KB gzip, wird nur auf `/karte` nachgeladen): Overpass war dauerhaft überlastet bzw. sperrte Browser-Anfragen. **Gipfel-Daten neu erzeugen:** Overpass-Abfrage `[out:csv(::lat,::lon,name,ele;false;"|")][timeout:120];area["ISO3166-1"="AT"][admin_level=2]->.a;node["natural"="peak"]["name"]["ele"](area.a);out;` per `curl --data-urlencode` (mit User-Agent, bei 502/504 wiederholen), dann in das JSON-Format umwandeln (Höhe 100–3800 m, Koordinaten auf 4 Stellen, Dubletten entfernen). Quelle: © OpenStreetMap-Mitwirkende (ODbL)
 - **Waymarked Trails** — hiking trail tile overlay
 - **BRouter** — route calculation (keyless, proxied via `/api/brouter`). OpenRouteService (`NEXT_PUBLIC_ORS_API_KEY`) is legacy and no longer used.
 

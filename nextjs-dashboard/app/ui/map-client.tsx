@@ -28,9 +28,10 @@ const LEGEND: [string, string][] = [
 const MIN_ZOOM_PEAKS = 11;
 const MAX_VISIBLE_PEAKS = 25;
 
-const OVERPASS_QUERY = encodeURIComponent(
-  '[out:json][timeout:25];node["natural"="peak"]["name"](46.3,12.9,47.1,15.2);out body;'
-);
+// Alle benannten Gipfel Österreichs mit Höhenangabe als [lat, lon, name, höhe], absteigend nach Höhe.
+// Einmaliger Abzug aus OpenStreetMap (Overpass, © OpenStreetMap-Mitwirkende, ODbL) vom 2026-11-14;
+// neu erzeugen mit der Abfrage in CLAUDE.md („Gipfel-Daten“).
+const PEAKS_URL = '/daten/gipfel.json';
 
 /** HTML-Entities escapen. Wird fuer alles gebraucht, was aus fremder Quelle
  *  (URL-Parameter, OpenStreetMap-Tags) in Popup-HTML eingesetzt wird. */
@@ -250,16 +251,19 @@ export default function MapClient({ spots }: { spots: MapSpot[] }) {
         // Am Handy startet das Bedienfeld eingeklappt, sonst verdeckt es die halbe Karte.
         if (window.innerWidth < 640) setPanelOpen(false);
 
-        // Fetch peaks (non-blocking). Mit Zeitlimit: Overpass lässt Anfragen teils minutenlang hängen,
-        // ohne Limit blieb „Gipfel laden…“ dauerhaft stehen.
-        fetch(`https://overpass-api.de/api/interpreter?data=${OVERPASS_QUERY}`, { signal: AbortSignal.timeout(15000) })
+        // Gipfel (non-blocking) aus der mitgelieferten Datei statt live von Overpass: der Dienst war
+        // im Herbst 2026 dauerhaft überlastet bzw. sperrte Browser-Anfragen, Gipfel ändern sich aber kaum.
+        fetch(PEAKS_URL, { signal: AbortSignal.timeout(15000) })
           .then((r) => {
-            if (!r.ok) throw new Error(`Overpass ${r.status}`);
+            if (!r.ok) throw new Error(`Gipfel ${r.status}`);
             return r.json();
           })
-          .then((data) => {
+          .then((data: [number, number, string, number][]) => {
             if (cancelled) return;
-            allPeaksRef.current = data.elements ?? [];
+            // In die Form der Overpass-Elemente bringen, die updatePeaks() erwartet.
+            allPeaksRef.current = (Array.isArray(data) ? data : []).map(([lat, lon, name, ele]) => ({
+              lat, lon, tags: { name, ele },
+            }));
             setPeakCount(allPeaksRef.current.length);
             updatePeaks();
           })
