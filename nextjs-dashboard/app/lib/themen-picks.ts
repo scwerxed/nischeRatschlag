@@ -358,7 +358,7 @@ export const FAMILIEN_GROUPS: { title: string; note: string; picks: { slug: stri
     picks: [
       { slug: 'eselwanderung-kaernten', tipp: 'Das geduldigste Tier für kleine Kinder – werden die Beine müde, darf man meist ein Stück mitreiten.' },
       { slug: 'alpaka-wanderung-kaernten', tipp: 'Gemütliches, kindgerechtes Tempo; Mindestalter je Hof vorab erfragen.' },
-      { slug: 'schloss-rosegg-tierpark-ausflug', tipp: 'Damwild und Waschbären, Tiere füttern ist erlaubt – ein entspannter halber Tag.' },
+      { slug: 'schloss-rosegg-tierpark-ausflug', tipp: 'Tierpark rund um eine Burgruine, Kleintierzoo zum Füttern, Spielplatz und Heckenlabyrinth – ein entspannter halber Tag.' },
       { slug: 'steppentierpark-pamhagen', tipp: 'Weitläufiges Freigelände mit Streichelbereich, gut mit einem Badetag kombinierbar.' },
       { slug: 'greifvogelschau-adler-kaernten', tipp: 'Moderierte, kindgerechte Flugvorführungen – Vorführzeiten vorab prüfen.' },
       { slug: 'lainzer-tiergarten-wien', tipp: 'Freilaufendes Wild in Wien, breite Forstwege – einzelne Runden sind kinderwagentauglich.' },

@@ -361,72 +361,64 @@ Die meisten geführten Touren liegen zwischen **20 und 60 €** pro Person. Grei
     slug: 'die-10-besten-wanderwege-am-woerthersee',
     startCoords: [46.6200, 14.1400],
     title: 'Die 10 besten Wanderwege am Wörthersee',
-    excerpt: 'Von gemütlichen Seepromenaden bis zu anspruchsvollen Gipfeltouren – die schönsten Wanderwege rund um den Wörthersee.',
+    excerpt: 'Der Wörthersee ist Hügelland, kein Hochgebirge: Waldwege, Aussichtspunkte und ein Rundwanderweg in vier Etappen. Zehn Touren von der Forstsee-Runde bis zum Pyramidenkogel – mit Längen laut Tourismusregion.',
     date: '2026-05-20',
     category: 'Wandern',
     region: 'kaernten',
     difficulty: 'mittel',
     bestSeason: 'April–Oktober',
-    highlights: ['10 Touren für jeden Schwierigkeitsgrad', 'Seepromenade bis Gipfel auf 851 m', 'Ideal für Familien und Sportler'],
+    highlights: ['Wörthersee-Rundwanderweg: rund 58 km in vier Etappen', 'Kurze Runden: Forstsee und Hohe Gloriette', 'Zu Fuß von Maria Wörth auf den Pyramidenkogel (851 m)'],
+    planningMistakes: [
+      { fehler: 'Eine flache Uferpromenade rund um den See erwarten', besser: 'Der Rundwanderweg verläuft großteils im Wald auf den Hügeln über dem See, mit einigen steilen An- und Abstiegen. Direkt am Ufer geht man nur auf kurzen Promenaden in den Orten.' },
+      { fehler: 'Eine Etappe als Hin-und-zurück-Tour planen', besser: 'Die Etappen sind 11 bis 19 km lang. Zurück geht es mit dem Schiff, am Nordufer mit der Bahn, am Südufer mit dem Bus – Fahrzeiten vorab prüfen.' },
+    ],
     content: `
-Der Wörthersee ist nicht nur zum Baden da – die Region bietet auch fantastische Wanderwege für jeden Schwierigkeitsgrad.
+Wer am Wörthersee wandert, bekommt kein Hochgebirge, sondern sanfte, bewaldete Hügel zwischen rund 440 und 850 Metern Seehöhe – mit immer wieder freiem Blick auf den See und die Karawanken. Das Rückgrat ist der **Wörthersee-Rundwanderweg**: laut Tourismusregion rund 58 km und etwa 1.500 Höhenmeter, in beiden Richtungen begehbar und üblicherweise in vier Etappen geteilt. Dazu kommen ein paar kurze Runden, die auch mit Kindern gut gehen.
 
-## 1. Seepromenade Klagenfurt–Pörtschach (leicht, 18 km)
-Die klassische Route entlang des Nordufers. Flach, gut befestigt und mit traumhaften Ausblicken auf den See. Ideal für Familien.
+Die Längen und Gehzeiten unten stammen aus dem Tourenportal der Region Wörthersee bzw. aus gängigen Tourenportalen und sind Richtwerte.
 
-## 2. Pyramidenkogel (mittel, 3 Stunden)
-Auf den 851 Meter hohen Aussichtsberg mit dem höchsten Holzturm der Welt. Der Panoramablick über den Wörthersee ist einmalig.
+## 1. Forstsee-Runde (leicht, ca. 4,3 km)
+Der Forstsee liegt im Wald oberhalb des Nordufers, in der Gemeinde Techelsberg; die Zufahrt zweigt bei Saag von der Wörthersee-Straße ab. Die Runde um den See ist rund 4,3 km lang und fast eben, teils Schotterweg, teils schmaler Waldpfad – für Kinderwagen daher nicht durchgehend geeignet. Im Sommer wird im See gebadet. Der Parkplatz ist laut Tourismusregion kostenpflichtig.
 
-## 3. Keutschacher Seenrunde (leicht, 12 km)
-Durch das idyllische Keutschacher Seental mit mehreren kleinen Seen. Im Frühling blühen hier die Wiesen in vollem Farbenrausch.
+## 2. Hohe Gloriette bei Pörtschach (leicht)
+Ein kleiner weißer Säulenpavillon an einem der schönsten Aussichtspunkte über dem See: Der Blick reicht von Maria Wörth bis Velden, dahinter stehen die Karawanken. Von Pörtschach geht man laut Tourismusregion etwa 40 Minuten bergauf durch den Wald, rund 100 Höhenmeter. Eine gute Tour für den späten Nachmittag.
 
-## 4. Dobratsch-Gipfeltour (schwer, 5 Stunden)
-Der „Kärntner Hausberg" bietet eine der schönsten Aussichten der Alpen – bei klarem Wetter sieht man bis zum Triglav.
+## 3. Von Maria Wörth auf den Pyramidenkogel (mittel, ca. 11 km)
+Der Klassiker am Südufer: von der Halbinsel [Maria Wörth](/blog/maria-woerth-woerthersee) durch den Wald hinauf zum [Pyramidenkogel](/blog/pyramidenkogel-woerthersee) (851 m) mit seinem rund 100 Meter hohen Holz-Aussichtsturm. Hin und zurück sind es rund 11 km mit etwa 410 Höhenmetern, Gehzeit knapp 4 Stunden. Der Turm kostet Eintritt; wer nicht gehen will, fährt mit dem Auto bis zum Parkplatz am Turm.
 
-## 5. Maria Wörth Rundweg (leicht, 8 km)
-Rund um die malerische Halbinsel mit der berühmten Wallfahrtskirche. Kurz aber wunderschön.
+## 4. Rundwanderweg-Etappe Pörtschach–Velden (mittel, ca. 13 km)
+Die kürzeste der beiden Nordufer-Etappen, rund 4,5 Stunden. Sie führt über die Hohe Gloriette und am Forstsee vorbei nach Velden – also zwei der oben genannten Ziele in einer Tour. Start und Ziel haben einen Bahnhof.
 
-## 6. Reinzackel-Gipfel (mittel, 4 Stunden)
-Über dem Südufer gelegen, mit weniger Andrang als der Pyramidenkogel. Schöner Wald-Aufstieg, oben freier Blick über den ganzen See.
+## 5. Rundwanderweg-Etappe Klagenfurt–Pörtschach (mittel, ca. 18,7 km)
+Die längste Etappe, gut 6 Stunden Gehzeit und je nach Quelle bis knapp 480 Höhenmeter. Sie verläuft nicht am Ufer, sondern über die Hügel nördlich des Sees. Zubringerwege von Krumpendorf erlauben es, die Etappe zu teilen.
 
-## 7. Forstsee-Runde (leicht, 6 km)
-Der kleine Forstsee oberhalb von Pörtschach ist ein Geheimtipp: ruhiger Rundweg durch Wald, kaum Touristen, ideal für eine schnelle Feierabendrunde.
+## 6. Rundwanderweg-Etappe Velden–Reifnitz (mittel, ca. 18 km)
+Die aussichtsreichste Etappe, etwa 5 Stunden: Sie führt am Südufer über den Pyramidenkogel und hinunter nach Reifnitz. Wer den Turm ohnehin besuchen will, plant hier eine längere Pause ein.
 
-## 8. Sattnitz-Höhenweg (mittel, 14 km)
-Auf dem bewaldeten Höhenrücken südlich von Klagenfurt. Aussichtspunkte über den Wörthersee und das Klagenfurter Becken, angenehm schattig im Hochsommer.
+## 7. Rundwanderweg-Etappe Reifnitz–Klagenfurt (mittel, ca. 11,4 km)
+Die kürzeste Etappe, rund 3,5 Stunden, über die Waldhügel des Südufers zurück nach Klagenfurt. Gut als Halbtagestour mit Anreise per Schiff oder Bus.
 
-## 9. Ulrichsberg (mittel, 3 Stunden)
-Geschichtsträchtiger Aussichtsberg mit Ruine und Rundblick bis in die Karawanken. Kombinierbar mit dem benachbarten Magdalensberg.
+## 8. Der ganze Rundwanderweg in mehreren Tagen
+Alle vier Etappen ergeben zusammen die Seeumrundung. Einsteigen kann man überall, am einfachsten an den Schiffsanlegestellen und Bahnstationen. Die Wanderkarte zum Weg gibt es laut Tourismusregion in den Tourismusbüros rund um den See. Als Verweilpunkte nennt die Region unter anderem Zillhöhe, Pirkerkogel, Hohe Gloriette und Trattnigteich.
 
-## 10. Kompolan & Aussichtsturm Pyramidenkogel-Höhenweg (schwer, 5 Stunden)
-Die sportliche Verbindungstour über mehrere Höhenzüge des Südufers – für konditionsstarke Wanderer, die Ruhe und Weitblick suchen.
+## 9. Keutschacher Seental (leicht)
+Südlich des Wörthersees, hinter dem Pyramidenkogel, liegt das Keutschacher Seental mit Keutschacher See, Hafnersee, Rauschelesee und Baßgeigensee. Eine offiziell beschilderte Seenrunde mit fester Länge gibt es nicht; die Seen lassen sich aber auf Wegen und ruhigen Nebenstraßen verbinden – zu Fuß in Teilstücken, bequemer mit dem Rad. Mehr dazu im Artikel zur [Radtour durchs Keutschacher Seental](/blog/keutschacher-seental-radtour).
+
+## 10. Abstecher: Dobratsch bei Villach (leicht bis mittel)
+Kein Wörthersee-Berg, aber von Velden aus gut erreichbar: Auf den Dobratsch führt ab der Rosstratte am Ende der Villacher Alpenstraße ein breiter, technisch leichter Weg bis zum Gipfel auf 2.166 m. Die Straße ist mautpflichtig. Alles Weitere steht im Artikel zur [Wanderung auf den Dobratsch](/blog/villacher-alpe-dobratsch-wanderung).
+
+## Zurück mit Schiff, Bahn oder Bus
+Die Etappen enden an Orten mit Schiffsanlegestelle; am Nordufer (Klagenfurt, Krumpendorf, Pörtschach, Velden) fährt zusätzlich die Bahn, am Südufer der Bus. Die [Wörthersee-Schifffahrt](/blog/woerthersee-schifffahrt) verkehrt nur in der Saison – Fahrplan vorab prüfen und die letzte Verbindung im Blick behalten.
 
 ## Beste Zeit & Tipps
-April bis Juni und September/Oktober sind ideal: angenehme Temperaturen, klare Sicht, weniger Andrang. Im Hochsommer früh starten und schattige Wald-Routen (Sattnitz, Forstsee) bevorzugen. Wasser, Sonnenschutz und eine Regenjacke gehören immer in den Rucksack – das Bergwetter kann rasch umschlagen.
+April bis Juni und September/Oktober sind ideal: angenehme Temperaturen, klare Sicht, weniger Andrang. Im Hochsommer früh starten – die Waldwege sind schattig, die Luft über dem See ist trotzdem schwül. Nach der Tour bietet sich ein Sprung ins Wasser an, siehe [Badestellen am Wörthersee](/blog/beste-badestellen-woerthersee).
 
 ## Ausrüstungs-Tipp
-Gute Wanderschuhe sind Pflicht – besonders für die längeren Touren. Aktuelle Preise und Bewertungen:
+Für die kurzen Runden reichen feste Schuhe mit Profil, für die Etappen des Rundwanderwegs sind Wanderschuhe angenehmer:
     `,
     affiliateLinks: [
       { label: 'Wanderschuhe auf Amazon ansehen', url: 'https://www.amazon.de/s?k=wanderschuhe+herren' },
       { label: 'Hotels am Wörthersee – booking.com', url: 'https://www.booking.com/region/at/carinthia.de.html' },
-    ],
-    trails: [
-      {
-        name: 'Seepromenade Klagenfurt–Pörtschach',
-        difficulty: 'leicht', length: '18 km', duration: '4,5 Std.', ascent: '60 hm',
-        coords: [[46.6240, 14.2620], [46.6280, 14.2200], [46.6310, 14.1800], [46.6328, 14.1497]],
-      },
-      {
-        name: 'Pyramidenkogel',
-        difficulty: 'mittel', length: '7 km', duration: '3 Std.', ascent: '420 hm',
-        coords: [[46.6010, 14.1330], [46.5980, 14.1290], [46.5945, 14.1240], [46.5919, 14.1208]],
-      },
-      {
-        name: 'Maria Wörth Rundweg',
-        difficulty: 'leicht', length: '8 km', duration: '2 Std.', ascent: '90 hm',
-        coords: [[46.6178, 14.1640], [46.6155, 14.1700], [46.6170, 14.1780], [46.6205, 14.1720], [46.6178, 14.1640]],
-      },
     ],
   },
   {
@@ -1561,44 +1553,47 @@ Für den James-Bond-Film „Der Hauch des Todes“ (1987) wurden Szenen auf dem 
   },
   {
     slug: 'kaernten-kulinarik-kaesknodel-reindling',
-    title: 'Kärntner Küche – Käsknödel, Reindling und was man sonst noch essen muss',
-    excerpt: 'Kärnten hat eine der eigenständigsten Regionalküchen Österreichs. Käsknödel, Reindling, Kärntner Nudeln und der obligatorische Almteller – was es ist, wo man es am besten isst, und wie man es selber macht.',
+    title: 'Kärntner Küche – Kasnudeln, Reindling und was man sonst noch essen muss',
+    excerpt: 'Kasnudeln mit Topfen und Minze, Reindling zu Ostern und zur Kirchtagssuppe, Speck und Almkäse aus dem Gailtal: was die Kärntner Küche ausmacht, wo man sie am ehesten bekommt – und ein Reindling-Rezept zum Nachbacken.',
     date: '2026-05-31',
     category: 'Ausflug',
     region: 'kaernten',
     bestSeason: 'Ganzjährig',
-    highlights: ['Käsknödel – das Nationalgericht Kärntens', 'Reindling: Kärntner Germkuchen mit Zimt', 'Almhütten für authentische Kärntner Küche'],
+    highlights: ['Kasnudeln: gekrendelte Teigtaschen mit Topfen und Minze', 'Reindling: Germkuchen mit Zimt, Zucker und Rosinen', 'Speck und Almkäse aus dem Gailtal'],
     content: `
-Kärnten ist das einzige österreichische Bundesland mit einer eigenen, klar definierten Regionalküche, die sich deutlich von der Wiener Tradition unterscheidet. Slowenische Einflüsse, alpine Zutaten und die Tradition der Almwirtschaft prägen die Gerichte. Wer in Kärnten isst, ohne Käsknödel zu probieren, hat etwas grundlegend verpasst.
+Die Kärntner Küche ist bodenständig und eigenständig: viel Teig, Topfen, Erdäpfel, Geselchtes – und ein deutlicher Einschlag aus dem slowenischen und friulanischen Nachbarraum. Wer nur ein Gericht probiert, nimmt die Kasnudeln.
 
-## Käsknödel – das Nationalgericht
+## Kärntner Kasnudeln
 
-Der Käsknödel ist rund, kompakt und in heißer Butter gedreht. Innen: Kärnter Bergkäse (oft Lavanttal), Knoblauch, manchmal Kümmel. Dazu: Sauerkraut oder Blattsalat. Preis in Gasthäusern: 12–16 € für 3 Stück.
+Kasnudeln sind keine Nudeln im üblichen Sinn, sondern gefüllte Teigtaschen. In die klassische Fülle kommen Bröseltopfen und Erdäpfel (oder Semmelwürfel), gewürzt mit **Nudelminze** und oft Keferfil, wie der Kerbel in Kärnten heißt. Der Rand wird von Hand **gekrendelt**, also zackenartig zusammengedrückt – daran erkennt man handgemachte Nudeln, und in Kärnten gilt das Krendeln als kleine Kunst. Serviert werden sie meist mit brauner Butter, oft mit grünem Salat.
 
-**Wo die besten?** Authentische Gasthäuser auf dem Land – Klagenfurter Restaurants sind teurer und oft weniger gut. Empfehlung: „Zum Augustin" am Pfarrplatz Klagenfurt oder jeder Almgasthof in den Nockbergen.
+Neben der Kasnudel gibt es eine ganze Familie: Fleischnudeln, Erdäpfelnudeln, Nudeln mit Pilzfülle und süße Varianten wie die **Kletzennudel** mit gedörrten Birnen.
 
-## Kärntner Nudeln (Kasnudeln)
-
-Halbmondförmige Teigtaschen gefüllt mit Bröseltopfen, Minze und Kräutern – ein Gericht, das es sonst nirgendwo gibt. In einfacher Butter gedreht. Delikat und überraschend zart für einen Teigtaschenteller. Preis ca. 10–14 €.
+Übrigens: „Kas“ meint hier den Topfen. Käseknödel im Sinn der Tiroler Kaspressknödel sind etwas anderes – in Kärnten bestellt man Kasnudeln.
 
 ## Reindling
 
-Kärntens Sonntagskuchen. Ein süßes Germteig-Gebäck in einer Röhrenform, gefüllt mit Butter, Zimtzucker und manchmal Rosinen. Unterscheidet sich je nach Familie – manche machen ihn locker, manche kompakt. In Bäckereien erhältlich, am besten noch warm.
+Der Reindling ist ein Germteigkuchen, gefüllt mit Butter, Zucker, Zimt und Rosinen. Der Name kommt von der Backform, der Rein oder dem Reindl; heute wird meist eine Guglhupfform verwendet. Traditionell gehört er zur **Osterjause** – zusammen mit Osterschinken, Eiern und Kren, also süß zu salzig – und wird auch zur **Kirchtagssuppe** gereicht. Sonst isst man ihn zum Kaffee. Im zweisprachigen Süden Kärntens kennt man ihn auch unter slowenischen Namen wie Pogača; in Unterkärnten heißt er mancherorts Woazas.
 
-## Der Almteller (Brettljause)
+## Speck, Almkäse und Jause
 
-Auf jeder Alm das Gleiche, überall leicht anders: Kärntner Hauswurst, Speck, Bergkäse, Radieschen, Butter, Brot. Dazu ein Glas Bier oder Most. Preis 12–18 €. Mehr braucht man nach einer Wanderung nicht.
+Zur Jause nach der Wanderung gibt es Speck, Hauswürstel, Käse, Butter und Brot. Zwei Produkte aus dem Gailtal sind EU-weit herkunftsgeschützt: der **Gailtaler Speck** (g.g.A.) und der **Gailtaler Almkäse** (g.U.), der im Sommer auf den Almen der Region hergestellt wird. Passend dazu: [Wandern in den Gailtaler Alpen](/blog/gailtaler-alpen-wandern-geheimtipp).
+
+## Kirchtagssuppe und Ritschert
+
+Zwei Gerichte, die man seltener auf Speisekarten findet, aber kennen sollte: die **Kirchtagssuppe**, eine kräftige, säuerlich-würzige Suppe mit mehreren Fleischsorten, die zu den Kirchtagen gekocht wird, und das **Ritschert**, ein Eintopf aus Rollgerste, Bohnen und Geselchtem.
 
 ## Kärntner Reindling selbst backen
 
-Zutaten (für 1 Form): 500 g Mehl, 250 ml Milch, 80 g Butter, 2 Eier, 1 Pkg. Germ, 60 g Zucker, Prise Salz. Für die Füllung: 80 g Butter (weich), 100 g Zucker, 2 TL Zimt, optional Rosinen. Teig gehen lassen, ausrollen, füllen, aufrollen, in die gebutterte Form legen, nochmals gehen lassen, bei 180°C ca. 45 Min. backen.
+Zutaten (für 1 Form): 500 g Mehl, 250 ml Milch, 80 g Butter, 2 Eier, 1 Pkg. Germ, 60 g Zucker, Prise Salz. Für die Füllung: 80 g Butter (weich), 100 g Zucker, 2 TL Zimt, Rosinen nach Geschmack. Teig gehen lassen, ausrollen, mit Butter bestreichen, mit Zimtzucker und Rosinen bestreuen, einrollen, in die gebutterte Form legen, nochmals gehen lassen und bei 180 °C etwa 45 Minuten backen. Jede Familie hat ihr eigenes Rezept – das hier ist eine einfache Grundversion.
 
 ## Wo essen in Kärnten
 
-- **Almgasthöfe in den Nockbergen**: Authentischste Küche, günstigste Preise
-- **Klagenfurt Benediktinermarkt**: Frische Produkte, mehrere Standln mit Käsknödeln
-- **Velden Promenade**: Schöne Lage, aber höhere Preise
-- **Gasthof Kreuzwirt** (Krumpendorf): Lokales Geheimtipp-Gasthaus, hervorragende Hausmannskost
+- **Almhütten und Landgasthäuser**: Kasnudeln und Jause bekommt man am ehesten dort, wo noch selbst gekocht wird – etwa auf bewirtschafteten Hütten in den [Nockbergen](/blog/nockberge-biosphaerenpark-wandern) oder im Gailtal. Ob die Nudeln handgekrendelt sind, darf man ruhig fragen.
+- **Benediktinermarkt in Klagenfurt**: der große Markt der Landeshauptstadt mit Ständen für Speck, Käse, Brot und Reindling – gut zum Einkaufen und für einen Imbiss. Markttage vorab prüfen; mehr zur Stadt im Artikel [Klagenfurt](/blog/klagenfurt-stadtfuehrung).
+- **Bäckereien**: Reindling gibt es das ganze Jahr, rund um Ostern in besonders großer Auswahl.
+
+Konkrete Lokale und Preise nennen wir hier bewusst nicht – beides ändert sich schneller, als wir es nachprüfen können.
     `,
     affiliateLinks: [
       { label: 'Kärntner Kochbuch – Amazon', url: 'https://www.amazon.de/s?k=k%C3%A4rntner+kochbuch+regionalk%C3%BCche' },
@@ -1650,39 +1645,46 @@ Der Name „Heiligenblut" geht auf eine Legende zurück: Ein legendärer isländ
   },
   {
     slug: 'schloss-rosegg-tierpark-ausflug',
-    startCoords: [46.6080, 14.0250],
+    startCoords: [46.5890, 14.0200],
     title: 'Schloss Rosegg mit Tierpark – Familienausflug zwischen Adel und Wildtieren',
-    excerpt: 'Schloss Rosegg im Rosental verbindet historische Architektur mit einem der schönsten kleinen Tierparks Kärntens. Damwild, Waschbären und altes Schloss – ideal für einen halben Tag mit Kindern.',
+    excerpt: 'Tierpark rund um eine Burgruine, ein Heckenlabyrinth aus über 3.000 Hainbuchen und ein Schloss mit Café: Rosegg liegt im Rosental zwischen Wörthersee und Faaker See und füllt gut einen halben Tag mit Kindern.',
     date: '2026-06-01',
     category: 'Ausflug',
     region: 'kaernten',
     bestSeason: 'April–Oktober',
-    highlights: ['Historisches Schloss mit englischem Landschaftsgarten', 'Kleiner Tierpark mit Damwild, Mufflons und Waschbären', 'Ideal als Zwischenstopp auf dem Drauradweg'],
+    highlights: ['Tierpark auf rund 30 Hektar rund um die Burgruine Alt-Rosegg', 'Gartenlabyrinth aus über 3.000 Hainbuchen', 'Schloss von 1772 mit Schlosscafé'],
     content: `
-Das Rosental zwischen Klagenfurt und Ferlach ist eines der ruhigsten Täler Kärntens – und Schloss Rosegg liegt mittendrin. Das Schloss selbst ist im Besitz der Fürstenfamilie Auersperg, umgeben von einem großzügigen englischen Landschaftsgarten. Der kleine Tierpark daneben macht den Ausflug für Familien perfekt.
-
-## Das Schloss
-
-Schloss Rosegg (17./18. Jh.) ist nicht von innen besichtigbar, aber das Außengelände mit dem alten Baumbestand und den verschlungenen Wegen ist schön genug. Der englische Park im Stil des 19. Jahrhunderts ist einer der wenigen seiner Art in Kärnten.
+Rosegg liegt im westlichen Rosental an der Drau, zwischen Wörthersee und Faaker See, nur wenige Kilometer südlich von Velden. Drei Dinge gehören hier zusammen: der Tierpark auf dem Burgberg, das Heckenlabyrinth und das Schloss im Talgrund. Betrieben wird alles gemeinsam als „Tierpark, Schloss & Labyrinth Rosegg“.
 
 ## Der Tierpark
 
-Klein, aber fein: Damwild, Sikahirsche, Mufflons, Wildschweine und eine Waschbären-Anlage. Keine Löwen oder Elefanten – dafür naturnah und ruhig. Kinder können Tiere füttern (Heu erhältlich). Eintritt ca. 8–10 € pro Person.
+Der Tierpark bezeichnet sich als größten Tierpark Kärntens: rund 30 Hektar am Burgberg, mit mehreren hundert Tieren (die Angaben schwanken je nach Quelle zwischen gut 300 und rund 400). Zu sehen sind laut Betreiber unter anderem Steinböcke, Hirsche, Luchse, Bisons, Kängurus, Schakale und Waldrappe. Manche Tiere – etwa Steinböcke, Pfaue und Rehe – bewegen sich frei im Gelände.
+
+Die Wege führen rund um den Burgberg, vorbei an alten Mauern: Mitten im Park steht die denkmalgeschützte **Burgruine Alt-Rosegg**, der Vorgänger des heutigen Schlosses. Der Park geht auf einen ummauerten Tiergarten des Schlosses aus dem 19. Jahrhundert zurück; als Tierpark für Besucher besteht er seit 1970.
+
+Für Kinder gibt es einen **Kleintierzoo** mit Ziegen, Eseln und Lamas, in dem die Tiere gefüttert werden dürfen, daneben einen großen Spielplatz und ein Buffet. Die Wege sind laut Betreiber überwiegend kinderwagentauglich, am Burgberg geht es aber bergauf und bergab. Hunde dürfen an der kurzen Leine mit in den Tierpark.
+
+## Das Labyrinth
+
+Zwischen Schloss und Tierpark liegt das 2001 eröffnete Gartenlabyrinth, eines der größten in Österreich: über 3.000 Hainbuchen bilden auf rund 2.400 Quadratmetern etwa einen Kilometer Hecke. In der Mitte steht ein Turm – als Orientierung und mit Blick auf das Schloss. Wichtig für die Planung: Das Labyrinth ist bei Regen geschlossen, und Hunde dürfen nicht hinein.
+
+## Das Schloss
+
+Das Schloss wurde ab 1772 von Franz Xaver Wolf Graf Orsini-Rosenberg als Sommersitz gebaut – der Überlieferung nach für seine italienische Geliebte Lucrezia, weshalb es auch „Schloss Lukrezia“ genannt wird. 1829 kaufte es Peter Ritter von Bohr, der später als Geldfälscher verurteilt wurde. Seit den frühen 1830er-Jahren gehört es der Familie Liechtenstein.
+
+Das früher im Schloss gezeigte Wachsfigurenkabinett gibt es nicht mehr (laut Wikipedia 2022 aufgelöst). Heute ist das Schloss vor allem Kulisse für Ausstellungen, Konzerte, Hochzeiten und Sommerveranstaltungen; für Tagesgäste ist das **Schlosscafé** mit Terrasse und Blick auf Karawanken, Ruine und Labyrinth der Anlaufpunkt. Ob gerade eine Ausstellung läuft, steht auf der Seite des Betreibers.
 
 ## Als Pausenstopp auf dem Drauradweg
 
-Schloss Rosegg liegt am Drauradweg im Rosental, zwischen Villach und Feistritz im Rosental. Wer die Etappe von Villach Richtung Ferlach fährt, kommt daran vorbei (siehe [Drauradweg im Rosental](/blog/drauradweg-klagenfurt-villach)). Die Kombination Radpause + Schloss + Tierpark + Einkehr im Schlosswirtshaus ist eine der besten Möglichkeiten, den Radweg aufzuwerten.
-
-## Schlosswirtshaus Rosegg
-
-Das Restaurant am Schlosseingang bietet Kärntner Küche in historischem Ambiente. Mittagessen ca. 14–20 €. Im Sommer sind die Tische im Freien unter alten Kastanienbäumen – ein perfekter Ort.
+Rosegg liegt am Drauradweg zwischen Villach und Feistritz im Rosental. Wer die Etappe von Villach Richtung Ferlach fährt, kommt hier vorbei (siehe [Drauradweg im Rosental](/blog/drauradweg-klagenfurt-villach)) – der Tierpark ist ein guter Grund für eine längere Pause.
 
 ## Praktische Infos
-- Adresse: Rosegg 1, 9232 Rosegg (Rosental)
-- Öffnungszeiten Tierpark: Mai–Oktober täglich 9–17 Uhr
-- Eintritt: Erwachsene ca. 10 €, Kinder ca. 5 €
-- Parken: Kostenloser Parkplatz am Eingang
-- Anfahrt: Von Klagenfurt ca. 20 Minuten, von Villach ca. 25 Minuten
+- Adresse: Rosegg 1, 9232 Rosegg
+- Saison: Tierpark laut Kärnten Werbung von April bis Oktober täglich geöffnet; Labyrinth und Schlosscafé nur von Mai bis September und nicht an allen Wochentagen. Zeiten vorab auf rosegg.at prüfen.
+- Eintritt: Tierpark und Labyrinth sind kostenpflichtig; aktuelle Preise beim Betreiber.
+- Wetter: Bei Regen bleibt das Labyrinth zu – dann nur den Tierpark einplanen.
+- Anfahrt: von Velden am Wörthersee nur wenige Kilometer; von Klagenfurt und Villach jeweils eine kurze Autofahrt.
+- In der Nähe: [Velden am Wörthersee](/blog/velden-am-woerthersee-urlaub) und die [Badestellen am Faaker See](/blog/faaker-see-badestellen).
     `,
     affiliateLinks: [
       { label: 'Ferienwohnungen im Rosental – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Rosental+K%C3%A4rnten' },
