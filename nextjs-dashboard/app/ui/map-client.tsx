@@ -123,7 +123,7 @@ export default function MapClient({ spots }: { spots: MapSpot[] }) {
 
         // Startansicht: Deep-Link auf einen Punkt (?lat=&lng=&zoom=) vor Bundesland (?region=)
         // vor ganz Österreich. Zuerst ein grober Ausschnitt über Mittelpunkt + Zoom, der ohne
-        // Containergröße auskommt; exakt eingepasst wird weiter unten (settleView).
+        // Containergröße auskommt; exakt eingepasst wird weiter unten (fitIfSized).
         const sp = new URLSearchParams(window.location.search);
         const dlLat = parseFloat(sp.get('lat') ?? '');
         const dlLng = parseFloat(sp.get('lng') ?? '');
@@ -260,21 +260,31 @@ export default function MapClient({ spots }: { spots: MapSpot[] }) {
             .openPopup();
         }
 
-        // Ausschnitt erst einpassen, wenn der Container seine echte Größe hat: Beim ersten Lauf
-        // dieses Effekts ist er noch 0 px groß (live beobachtet am 2026-11-19), fitBounds landete
-        // dann auf Zoomstufe 0 – die ganze Welt. invalidateSize() liest die Größe neu ein und
-        // hält dabei die Mitte, das hilft auch dem Deep-Link.
-        const settleView = (tries: number) => {
-          if (cancelled || mapRef.current !== map) return;
-          map.invalidateSize();
+        // Ausschnitt exakt einpassen – aber nur, wenn der Container eine Größe hat. Wird die Seite
+        // in einem verborgenen Fenster geladen, ist er anfangs 0 px breit (live beobachtet am
+        // 2026-11-19); fitBounds landete dann auf Zoomstufe 0, der ganzen Welt. In dem Fall bleibt
+        // der grobe Ausschnitt von oben stehen, bis Leaflet einen Größenwechsel meldet ('resize').
+        // invalidateSize() liest die Größe neu ein und hält dabei die Mitte (auch beim Deep-Link).
+        let fitted = hasDeepLink;
+        const fitIfSized = () => {
+          if (fitted || cancelled || mapRef.current !== map) return;
           const size = map.getSize();
           if (size.x > 0 && size.y > 0) {
-            if (!hasDeepLink) map.fitBounds(startBounds, { animate: false });
-          } else if (tries < 30) {
-            requestAnimationFrame(() => settleView(tries + 1));
+            fitted = true;
+            map.off('resize', fitIfSized);
+            map.fitBounds(startBounds, { animate: false });
           }
         };
-        requestAnimationFrame(() => settleView(0));
+        if (!fitted) map.on('resize', fitIfSized);
+        map.invalidateSize();
+        fitIfSized();
+        if (!fitted) {
+          setTimeout(() => {
+            if (cancelled || mapRef.current !== map) return;
+            map.invalidateSize();
+            fitIfSized();
+          }, 500);
+        }
 
         setMapReady(true);
         // Am Handy startet das Bedienfeld eingeklappt, sonst verdeckt es die halbe Karte.
