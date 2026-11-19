@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from 'react';
 import { unterkuenfte, TYP_INFO } from '@/app/lib/unterkuenfte';
 import { cloak } from '@/app/lib/affiliate';
 import { CATEGORY_HEX } from '@/app/lib/blog-utils';
+import { AUSTRIA_BOUNDS, KARTE_REGIONEN, karteRegion } from '@/app/lib/karte-regionen';
 
 /** Ein Pin der Ebene „Ausflugsziele“: alle Artikel mit demselben Startpunkt (z. B. die
  *  fünf Wörthersee-Artikel mit Sammel-Koordinate). Kommt schlank von der Server-Page,
@@ -14,9 +15,6 @@ export type MapSpot = {
   articles: { slug: string; title: string; category: string; region: string }[];
 };
 
-const KAERNTEN_CENTER: [number, number] = [46.83, 13.83];
-const KAERNTEN_ZOOM = 9;
-const AUSTRIA_BOUNDS: [[number, number], [number, number]] = [[46.37, 9.53], [49.02, 17.16]];
 const MULTI_SPOT_COLOR = '#374151';
 const LEGEND: [string, string][] = [
   [CATEGORY_HEX.Wandern, 'Wandern'],
@@ -104,7 +102,8 @@ export default function MapClient({ spots }: { spots: MapSpot[] }) {
   const [peakCount,     setPeakCount]     = useState<number | null>(null);
   const [peaksFailed,   setPeaksFailed]   = useState(false);
   const [visibleCount,  setVisibleCount]  = useState(0);
-  const [zoom,          setZoom]          = useState(KAERNTEN_ZOOM);
+  const [zoom,          setZoom]          = useState(7);
+  const [region,        setRegion]        = useState('');
   const [mapReady,      setMapReady]      = useState(false);
   const [error,         setError]         = useState<string | null>(null);
   const [panelOpen,     setPanelOpen]     = useState(true);
@@ -122,8 +121,25 @@ export default function MapClient({ spots }: { spots: MapSpot[] }) {
         const el = containerRef.current as any;
         if (el._leaflet_id) el._leaflet_id = null;
 
-        const map = L.map(containerRef.current, { center: KAERNTEN_CENTER, zoom: KAERNTEN_ZOOM });
+        // Startansicht: Deep-Link auf einen Punkt (?lat=&lng=&zoom=) vor Bundesland (?region=)
+        // vor ganz Österreich. Gleich beim Anlegen setzen, damit keine Kacheln für einen
+        // falschen Ausschnitt geladen werden.
+        const sp = new URLSearchParams(window.location.search);
+        const dlLat = parseFloat(sp.get('lat') ?? '');
+        const dlLng = parseFloat(sp.get('lng') ?? '');
+        const hasDeepLink = Number.isFinite(dlLat) && Number.isFinite(dlLng);
+        const startRegion = hasDeepLink ? undefined : karteRegion(sp.get('region'));
+
+        const map = L.map(containerRef.current);
         mapRef.current = map;
+        if (hasDeepLink) {
+          const dz = parseInt(sp.get('zoom') ?? '', 10);
+          map.setView([dlLat, dlLng], Number.isFinite(dz) ? dz : 14);
+        } else {
+          map.fitBounds(startRegion?.bounds ?? AUSTRIA_BOUNDS);
+        }
+        setZoom(map.getZoom());
+        if (startRegion) setRegion(startRegion.slug);
 
         // Base layers
         osmLayerRef.current = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -225,13 +241,9 @@ export default function MapClient({ spots }: { spots: MapSpot[] }) {
         map.on('moveend', updatePeaks);
         map.on('zoomend', updatePeaks);
 
-        // Deep-Link: /karte?lat=..&lng=..&zoom=..&name=.. → dorthin zentrieren + Startpunkt-Marker
-        const sp = new URLSearchParams(window.location.search);
-        const dlLat = parseFloat(sp.get('lat') ?? '');
-        const dlLng = parseFloat(sp.get('lng') ?? '');
-        if (Number.isFinite(dlLat) && Number.isFinite(dlLng)) {
-          const dz = parseInt(sp.get('zoom') ?? '', 10);
-          map.setView([dlLat, dlLng], Number.isFinite(dz) ? dz : 14);
+        // Deep-Link: /karte?lat=..&lng=..&zoom=..&name=.. → Ausschnitt ist oben schon gesetzt,
+        // hier nur noch der Startpunkt-Marker.
+        if (hasDeepLink) {
           // Der Name stammt aus der URL, landet also in fremd steuerbarem HTML.
           const nm = escapeHtml((sp.get('name') ?? 'Startpunkt').slice(0, 80));
           const startIcon = L.divIcon({
@@ -332,12 +344,16 @@ export default function MapClient({ spots }: { spots: MapSpot[] }) {
     setShowArticles((v) => !v);
   }
 
-  function resetView() {
-    mapRef.current?.setView(KAERNTEN_CENTER, KAERNTEN_ZOOM);
+  function showAustria() {
+    setRegion('');
+    mapRef.current?.fitBounds(AUSTRIA_BOUNDS);
   }
 
-  function showAustria() {
-    mapRef.current?.fitBounds(AUSTRIA_BOUNDS);
+  function showRegion(slug: string) {
+    const r = karteRegion(slug);
+    if (!r) return showAustria();
+    setRegion(r.slug);
+    mapRef.current?.fitBounds(r.bounds);
   }
 
   // ── render ────────────────────────────────────────────────────────────────
@@ -517,23 +533,32 @@ export default function MapClient({ spots }: { spots: MapSpot[] }) {
 
           <div className="border-t border-hairline" />
 
-          {/* Ansicht: ganz Österreich / zurück zu Kärnten */}
-          <div className="flex">
+          {/* Ansicht: ganz Österreich oder ein Bundesland */}
+          <div className="px-3 pt-2 pb-2.5">
+            <p className="text-[10px] font-semibold text-ink-soft uppercase tracking-widest mb-1.5">
+              Ansicht
+            </p>
             <button
               onClick={showAustria}
-              className="tap flex items-center gap-1.5 flex-1 px-3 py-2 text-fine text-ink-soft hover:text-ink hover:bg-parchment transition-colors"
+              className={`tap flex items-center gap-1.5 w-full py-1 text-left text-caption hover:text-ink transition-colors ${region ? 'text-ink-soft' : 'text-ink font-medium'}`}
             >
-              <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+              <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden>
                 <path d="M6 1v2M6 9v2M1 6h2M9 6h2M3.05 3.05l1.41 1.41M7.54 7.54l1.41 1.41M3.05 8.95l1.41-1.41M7.54 4.46l1.41-1.41" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" />
               </svg>
-              Österreich
+              Ganz Österreich
             </button>
-            <button
-              onClick={resetView}
-              className="tap flex-1 px-3 py-2 text-fine text-ink-soft hover:text-ink hover:bg-parchment transition-colors border-l border-hairline"
+            <label htmlFor="karte-region" className="sr-only">Bundesland auf der Karte zeigen</label>
+            <select
+              id="karte-region"
+              value={region}
+              onChange={(e) => showRegion(e.target.value)}
+              className="tap mt-1 w-full border border-hairline rounded-sm bg-white py-1 pl-2 pr-7 text-caption text-ink focus:border-ink focus:ring-0"
             >
-              Kärnten
-            </button>
+              <option value="">Bundesland wählen…</option>
+              {KARTE_REGIONEN.map((r) => (
+                <option key={r.slug} value={r.slug}>{r.name}</option>
+              ))}
+            </select>
           </div>
           </div>
         </div>

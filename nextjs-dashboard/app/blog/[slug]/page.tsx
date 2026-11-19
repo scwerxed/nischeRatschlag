@@ -205,15 +205,12 @@ export default async function BlogPostPage({ params }: Props) {
   const officialLinks = [...(post.officialLinks ?? []), ...(regionSite ? [regionSite] : [])];
 
   // Startpunkt: explizit gesetzt oder erster Wegpunkt der ersten Tour.
-  // Fallback: Region-Mittelpunkt, damit jeder Artikel einen Karten-CTA hat.
+  // Fallback: das ganze Bundesland (/karte?region=), damit jeder Artikel einen Karten-CTA hat –
+  // früher ein „Startpunkt“-Pin in der Landesmitte, der einen Ort vorgaukelte.
   const precise = post.startCoords ?? post.trails?.[0]?.coords?.[0];
-  const regionGeo = REGION_META[post.region]?.geo;
-  const mapPoint: [number, number] | undefined =
-    precise ?? (regionGeo ? [regionGeo.lat, regionGeo.lng] : undefined);
-  const mapZoom = precise ? 14 : 9;
-  const mapHref = mapPoint
-    ? `/karte?lat=${mapPoint[0]}&lng=${mapPoint[1]}&zoom=${mapZoom}&name=${encodeURIComponent(precise ? post.title : regionName(post.region))}`
-    : '/karte';
+  const mapHref = precise
+    ? `/karte?lat=${precise[0]}&lng=${precise[1]}&zoom=14&name=${encodeURIComponent(post.title)}`
+    : `/karte?region=${encodeURIComponent(post.region)}`;
   const mapCtaLabel = precise ? 'Startpunkt auf Karte' : 'Region auf Karte';
 
   // Weite Anfahrt von allen 6 Startstädten? Dann lohnt sich ggf. eine Übernachtung vor Ort statt
@@ -365,15 +362,13 @@ export default async function BlogPostPage({ params }: Props) {
                   <dd className="font-medium text-ink">{regionLabel}</dd>
                 </div>
               </dl>
-              <div className={`mt-4 grid gap-2 ${mapPoint ? 'grid-cols-2' : 'grid-cols-1'}`}>
-                {mapPoint && (
-                  <Link
-                    href={mapHref}
-                    className="flex items-center justify-center gap-1.5 text-caption font-medium px-3 py-2.5 border border-ink text-ink hover:bg-sand-50 transition-colors rounded-sm"
-                  >
-                    Auf der Karte
-                  </Link>
-                )}
+              <div className="mt-4 grid gap-2 grid-cols-2">
+                <Link
+                  href={mapHref}
+                  className="flex items-center justify-center gap-1.5 text-caption font-medium px-3 py-2.5 border border-ink text-ink hover:bg-sand-50 transition-colors rounded-sm"
+                >
+                  Auf der Karte
+                </Link>
                 <SaveButton slug={post.slug} title={post.title} category={post.category} />
               </div>
             </div>
@@ -627,14 +622,12 @@ export default async function BlogPostPage({ params }: Props) {
             <div className="mt-4 pt-4 border-t border-divider-soft">
               <SaveButton slug={post.slug} title={post.title} category={post.category} />
             </div>
-            {mapPoint && (
-              <Link
-                href={mapHref}
-                className="mt-3 flex items-center justify-center gap-1.5 w-full text-caption font-medium px-4 py-2.5 border border-ink text-ink hover:bg-sand-50 transition-colors rounded-sm"
-              >
-                {precise ? 'Startpunkt auf Karte öffnen' : 'Region auf Karte öffnen'}
-              </Link>
-            )}
+            <Link
+              href={mapHref}
+              className="mt-3 flex items-center justify-center gap-1.5 w-full text-caption font-medium px-4 py-2.5 border border-ink text-ink hover:bg-sand-50 transition-colors rounded-sm"
+            >
+              {precise ? 'Startpunkt auf Karte öffnen' : 'Region auf Karte öffnen'}
+            </Link>
           </div>
 
           {/* Live-Wassertemperatur */}

@@ -26,7 +26,7 @@ const ARTICLE_COUNT = SPOTS.reduce((n, s) => n + s.articles.length, 0);
 
 export const metadata: Metadata = {
   title: 'Interaktive Wanderkarte',
-  description: `Interaktive Österreich-Karte mit ${ARTICLE_COUNT} Ausflugszielen aus unserem Magazin (Wandern, Baden, Ausflüge), dazu Wanderwege, Unterkünfte und Gipfel in Kärnten.`,
+  description: `Interaktive Österreich-Karte mit ${ARTICLE_COUNT} Ausflugszielen aus unserem Magazin (Wandern, Baden, Ausflüge), dazu Wanderwege, Gipfel und Unterkünfte – ganz Österreich oder je Bundesland.`,
 };
 
 export default function KartePage() {
@@ -36,7 +36,7 @@ export default function KartePage() {
         <div>
           <h1 className="font-serif text-lead font-bold text-ink">Interaktive Wanderkarte</h1>
           <p className="text-caption text-ink-soft mt-0.5">
-            {ARTICLE_COUNT} Ausflugsziele aus dem Magazin, Wanderwege und Unterkünfte in ganz Österreich, Gipfel aktuell für Kärnten — Pin anklicken öffnet den Artikel, Ebenen rechts oben ein-/ausblenden
+            {ARTICLE_COUNT} Ausflugsziele aus dem Magazin, Wanderwege, Gipfel und Unterkünfte in ganz Österreich — Pin anklicken öffnet den Artikel, rechts oben Ebenen ein-/ausblenden oder ein Bundesland wählen
           </p>
         </div>
       </div>

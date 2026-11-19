@@ -159,13 +159,13 @@ export default async function RegionPage({ params }: Props) {
           {/* Karte & Routenplaner CTA */}
           <div className="grid sm:grid-cols-2 gap-4 mb-10">
             <Link
-              href="/karte"
+              href={`/karte?region=${bundesland}`}
               className="group flex items-start gap-4 bg-ink text-white rounded-lg p-5 hover:bg-green-700 transition-colors"
             >
               <div>
-                <p className="font-semibold text-tagline leading-tight">Interaktive Wanderkarte</p>
+                <p className="font-semibold text-tagline leading-tight">{region.name} auf der Karte</p>
                 <p className="text-green-100 text-caption mt-1">
-                  Ausflugsziele aus dem Magazin, Wanderwege und Unterkünfte auf einen Blick – inkl. Waymarked Trails Overlay.
+                  Die Ausflugsziele aus dem Magazin, Wanderwege, Gipfel und Unterkünfte in {region.name} auf einen Blick – inkl. Waymarked Trails Overlay.
                 </p>
                 <span className="mt-3 inline-block text-caption font-medium underline underline-offset-2">
                   Karte öffnen →
