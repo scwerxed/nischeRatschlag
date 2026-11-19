@@ -122,23 +122,24 @@ export default function MapClient({ spots }: { spots: MapSpot[] }) {
         if (el._leaflet_id) el._leaflet_id = null;
 
         // Startansicht: Deep-Link auf einen Punkt (?lat=&lng=&zoom=) vor Bundesland (?region=)
-        // vor ganz Österreich. Gleich beim Anlegen setzen, damit keine Kacheln für einen
-        // falschen Ausschnitt geladen werden.
+        // vor ganz Österreich. Zuerst ein grober Ausschnitt über Mittelpunkt + Zoom, der ohne
+        // Containergröße auskommt; exakt eingepasst wird weiter unten (settleView).
         const sp = new URLSearchParams(window.location.search);
         const dlLat = parseFloat(sp.get('lat') ?? '');
         const dlLng = parseFloat(sp.get('lng') ?? '');
         const hasDeepLink = Number.isFinite(dlLat) && Number.isFinite(dlLng);
         const startRegion = hasDeepLink ? undefined : karteRegion(sp.get('region'));
+        const startBounds = startRegion?.bounds ?? AUSTRIA_BOUNDS;
 
-        const map = L.map(containerRef.current);
+        const dz = parseInt(sp.get('zoom') ?? '', 10);
+        const startCenter: [number, number] = hasDeepLink
+          ? [dlLat, dlLng]
+          : [(startBounds[0][0] + startBounds[1][0]) / 2, (startBounds[0][1] + startBounds[1][1]) / 2];
+        const startZoom = hasDeepLink ? (Number.isFinite(dz) ? dz : 14) : startRegion ? 8 : 7;
+
+        const map = L.map(containerRef.current, { center: startCenter, zoom: startZoom });
         mapRef.current = map;
-        if (hasDeepLink) {
-          const dz = parseInt(sp.get('zoom') ?? '', 10);
-          map.setView([dlLat, dlLng], Number.isFinite(dz) ? dz : 14);
-        } else {
-          map.fitBounds(startRegion?.bounds ?? AUSTRIA_BOUNDS);
-        }
-        setZoom(map.getZoom());
+        setZoom(startZoom);
         if (startRegion) setRegion(startRegion.slug);
 
         // Base layers
@@ -258,6 +259,22 @@ export default function MapClient({ spots }: { spots: MapSpot[] }) {
             .bindPopup(`<strong style="font-size:13px">${nm}</strong><br/><span style="color:#6b7280;font-size:12px">Startpunkt</span>`)
             .openPopup();
         }
+
+        // Ausschnitt erst einpassen, wenn der Container seine echte Größe hat: Beim ersten Lauf
+        // dieses Effekts ist er noch 0 px groß (live beobachtet am 2026-11-19), fitBounds landete
+        // dann auf Zoomstufe 0 – die ganze Welt. invalidateSize() liest die Größe neu ein und
+        // hält dabei die Mitte, das hilft auch dem Deep-Link.
+        const settleView = (tries: number) => {
+          if (cancelled || mapRef.current !== map) return;
+          map.invalidateSize();
+          const size = map.getSize();
+          if (size.x > 0 && size.y > 0) {
+            if (!hasDeepLink) map.fitBounds(startBounds, { animate: false });
+          } else if (tries < 30) {
+            requestAnimationFrame(() => settleView(tries + 1));
+          }
+        };
+        requestAnimationFrame(() => settleView(0));
 
         setMapReady(true);
         // Am Handy startet das Bedienfeld eingeklappt, sonst verdeckt es die halbe Karte.
