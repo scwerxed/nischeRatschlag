@@ -303,7 +303,7 @@ export const SONNENUNTERGANG_GROUPS: { title: string; note: string; picks: { slu
     title: 'Türme, Straßen & Städte im Abendlicht',
     note: 'Kein Gipfelaufstieg nötig – auch mit wenig Aufwand lässt sich die Abendstimmung genießen.',
     picks: [
-      { slug: 'pyramidenkogel-woerthersee', warum: 'Höchster Holzaussichtsturm der Welt, per Lift erreichbar – Rundblick über den Wörthersee im Abendlicht.' },
+      { slug: 'pyramidenkogel-woerthersee', warum: 'Höchster Holzaussichtsturm der Welt, per Lift erreichbar – im Juli und August bis in den Abend geöffnet, dann mit Rundblick über den Wörthersee im Abendlicht.' },
       { slug: 'gaisberg-salzburg-aussicht', warum: 'Salzburgs Hausberg, mit dem Bus erreichbar – die Altstadt liegt bei Sonnenuntergang direkt zu Füßen.' },
       { slug: 'wienerwald-wandern', warum: 'Kahlenberg und Leopoldsberg sind mit dem Bus erreichbar – von dort blickt man über ganz Wien.' },
       { slug: 'hallstatt-salzkammergut', warum: 'Der Blick vom Skywalk über Dorf und See gehört zu den bekanntesten Postkartenmotiven Österreichs.' },
@@ -375,7 +375,7 @@ export const FAMILIEN_GROUPS: { title: string; note: string; picks: { slug: stri
       { slug: 'wien-schoenbrunn', tipp: 'Ältester Zoo der Welt plus Kindermuseum im Schloss – leicht ein ganzer Tag.' },
       { slug: 'wien-prater', tipp: 'Die schmalspurige Liliputbahn ist bei Kindern ein Fixpunkt.' },
       { slug: 'salzwelten-hallein-duerrnberg', tipp: 'Grubenbahn, Bergmannsrutschen und Salzsee-Floß – auch bei Regen. Drinnen ist es kühl.' },
-      { slug: 'pyramidenkogel-woerthersee', tipp: 'Per Lift hinauf, auf Wunsch über die lange Indoor-Rutsche wieder hinunter.' },
+      { slug: 'pyramidenkogel-woerthersee', tipp: 'Per Panoramalift hinauf; wer mindestens 130 cm groß ist, kann über die 120 m lange Rutsche hinunter (eigenes Ticket, nicht bei Nässe). Unten wartet ein Spielplatz.' },
       { slug: 'swarovski-kristallwelten', tipp: 'Im Garten warten Spielturm, Karussell und Wasserspiele.' },
     ],
   },

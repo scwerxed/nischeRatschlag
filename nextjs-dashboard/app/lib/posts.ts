@@ -1602,42 +1602,60 @@ Konkrete Lokale und Preise nennen wir hier bewusst nicht – beides ändert sich
   {
     slug: 'heiligenblut-grossglockner-dorf',
     startCoords: [47.0394, 12.8447],
-    title: 'Heiligenblut am Großglockner – das schönste Bergdorf Kärntens',
-    excerpt: 'Mit der gotischen Kirche vor der Kulisse des Großglockners ist Heiligenblut eines der meistfotografierten Dörfer Österreichs – und der beste Ausgangspunkt für Touren zum höchsten Berg des Landes.',
+    title: 'Heiligenblut am Großglockner – Kirchturm, Glocknerblick und Nationalpark-Wege',
+    excerpt: 'Die gotische Kirche vor dem Großglockner ist eines der bekanntesten Fotomotive Österreichs. Heiligenblut liegt am obersten Ende des Mölltals und am Südende der Hochalpenstraße – mit leichten Nationalpark-Wegen und dem Kärntner Anstieg auf den höchsten Berg des Landes.',
     date: '2026-06-01',
     category: 'Wandern',
     region: 'kaernten',
-    difficulty: 'schwer',
+    difficulty: 'leicht',
     bestSeason: 'Juni–Oktober',
-    highlights: ['Ikonisches Postkartenpanorama: Kirchturm + Großglockner', 'Ausgangspunkt für Großglockner-Besteigungen', 'Kleines, authentisches Bergdorf ohne Massentourismus'],
+    planningMistakes: [
+      { fehler: 'Den Großglockner als lange Bergwanderung einplanen', besser: 'Der Gipfel ist eine Hochtour über Gletscher und einen ausgesetzten Felsgrat: Steigeisen, Pickel und Helm, dazu Hochtourenerfahrung – sonst nur mit Bergführer. Für Wanderer sind Kaiser-Franz-Josefs-Höhe und Gamsgrubenweg das passende Ziel.' },
+      { fehler: 'Im Spätherbst oder Frühjahr über die Hochalpenstraße anreisen wollen', besser: 'Die mautpflichtige Straße ist nur im Sommerhalbjahr offen. Außerhalb davon führt der Weg nach Heiligenblut nur von Süden durch das Mölltal – Öffnungstermine vorab auf der offiziellen Seite prüfen.' },
+      { fehler: 'An der Kaiser-Franz-Josefs-Höhe in Sommerkleidung aussteigen', besser: 'Man steht dort auf rund 2.370 m, direkt über einem Gletscher. Auch im Juli kann es kalt, windig und nass sein – warme Schicht und Regenjacke gehören ins Auto.' },
+    ],
+    highlights: ['Pfarrkirche St. Vinzenz (geweiht 1491) vor der Kulisse des Großglockners', 'Wasser-Wunder-Weg zum Jungfernsprung: leichte Runde von rund 1 Stunde', 'Südlicher Ausgangspunkt der Großglockner-Hochalpenstraße'],
     content: `
-Es gibt Fotos, die man kennt, ohne zu wissen, woher sie kommen. Das schmale Kirchturmschiff, dahinter das schneebedeckte Massiv des Großglockners – das ist Heiligenblut. Ein Dorf mit 900 Einwohnern auf 1.288 m Seehöhe, in einem engen Tal gelegen, das nach oben ins Eis mündet.
+Ein spitzer gotischer Kirchturm, dahinter die Eispyramide des Großglockners: Das Bild von Heiligenblut gehört zu den bekanntesten Fotomotiven Österreichs. Der Ort liegt auf rund 1.290 m am obersten Ende des **Mölltals**, im **Nationalpark Hohe Tauern**; die Gemeinde hat knapp 950 Einwohner. Hier endet die Straße durch das Mölltal – und hier beginnt nach Norden die mautpflichtige **Großglockner-Hochalpenstraße**. Groß geworden ist der Ort vor allem mit dem Tourismus, besonders seit dem Bau dieser Straße in den 1930er-Jahren.
 
-## Das Dorf selbst
+## Die Wallfahrtskirche
+Die Pfarrkirche St. Vinzenz steht unterhalb des Ortskerns an einem steilen Hang. Eine Kapelle wird 1271 erstmals urkundlich erwähnt, die heutige spätgotische Kirche entstand im 15. Jahrhundert: Der Chor war 1430 fertig, geweiht wurde die Kirche 1491. Sehenswert sind der rund 11 m hohe Flügelaltar (laut Inschrift 1520 vollendet), das 13 m hohe Sakramentshaus von 1496 und die Unterkirche.
 
-Heiligenblut ist kein Touristenkaff. Es hat wenige Hotels, keine Shoppingmeile, keine Après-Ski-Bars im touristischen Sinn. Was es hat: eine außergewöhnliche Lage, eine der schönsten gotischen Wallfahrtskirchen Österreichs (15. Jh.), und den unmittelbaren Zugang zu Österreichs höchstem Berg.
+Ihren Namen verdankt der Ort einer Legende: Der dänische Prinz **Briccius** soll vom byzantinischen Kaiser ein Fläschchen mit dem Blut Christi erhalten haben und auf dem Heimweg hier im Schnee ums Leben gekommen sein. Drei Getreideähren, die aus dem Schnee wuchsen, sollen zu seinem Leichnam geführt haben. Die Heiligblut-Reliquie und die drei Ähren werden bis heute im Sakramentshaus aufbewahrt, sein Grabmal liegt in der Unterkirche, und Szenen der Legende sind im Mittelschiff an die Wände gemalt.
 
-## Wandern in Heiligenblut
+Neben der Kirche erinnern am Friedhof Gräber und ein Denkmal an Bergsteiger, die am Glockner und in den umliegenden Bergen verunglückt sind – ein stiller Ort, der zeigt, wie ernst der Berg hinter dem Postkartenmotiv zu nehmen ist.
 
-### Kaisertörl (mittel, 3 Stunden)
-Auf 2.600 m – ein langer, aber technisch einfacher Anstieg. Von oben: direkte Sicht auf die Pasterze und den Glockner. Einer der lohnendsten Halbtagsausflüge in ganz Kärnten.
+## Leichte Wege für Wanderer
 
-### Großglockner Normalroute (sehr schwer, 2 Tage)
-Für erfahrene Bergsteiger mit Hochtourenerfahrung. Übernachtung in der Salmhütte oder Erzherzog-Johann-Hütte (2.802 m). Gipfelsturm über Ostgrat. Keine Klettersteigausrüstung nötig, aber Steigeisen und Pickel sind Pflicht.
+### Jungfernsprung (leicht, rund 1 Stunde)
+Unterhalb des Ortes stürzt der Wasserfall **Jungfernsprung** über die Felsen, um ihn rankt sich eine Sage. Der Nationalpark hat dort den „Wasser-Wunder-Weg“ angelegt: eine leichte Runde von rund 2 km, für die man etwa eine Stunde braucht; begehbar ist sie laut Nationalpark von Mai bis Oktober. Wer mag, wandert direkt vom Ortszentrum hin.
 
-## Großglockner Hochalpenstraße ab Heiligenblut
+### Kaiser-Franz-Josefs-Höhe und Gamsgrubenweg (leicht, 1–2 Stunden)
+Über die Hochalpenstraße und ihre Abzweigung, die Gletscherstraße, erreicht man die **Kaiser-Franz-Josefs-Höhe** (2.369 m). Von dort sieht man den Großglockner aus nächster Nähe und blickt hinunter auf die **Pasterze**, den größten Gletscher Österreichs, der seit Jahrzehnten deutlich schrumpft. Am Tunnelportal beginnt der **Gamsgrubenweg**, ein unschwieriger, aussichtsreicher Themenweg des Nationalparks; je nach Umkehrpunkt ist man ein bis zwei Stunden unterwegs. Die Zufahrt ist mautpflichtig – Details im Artikel zum [Großglockner-Tagesausflug](/blog/grossglockner-tagesausflug).
 
-Die berühmte Panoramastraße beginnt hier. Von Heiligenblut aus fährt man direkt die Straße hinauf – ohne den Zubringer von Norden. Auf dieser Seite ist es oft ruhiger als auf der Salzburger Seite.
+## Großglockner: eine Hochtour, keine Wanderung
+Der **Großglockner** (3.798 m) wurde im Jahr 1800 erstmals bestiegen – die Expedition ging von Heiligenblut aus. Der Kärntner Anstieg, heute als „Weg der Erstbesteiger“ bekannt, führt vom Glocknerhaus an der Gletscherstraße über den Wiener Höhenweg zur **Salmhütte** (2.644 m), weiter über die Hohenwartscharte zur **Erzherzog-Johann-Hütte** auf der Adlersruhe (3.454 m), der höchstgelegenen Schutzhütte Österreichs, und von dort über den Kleinglockner und die Glocknerscharte zum Gipfel. Viele übernachten auf der Adlersruhe, von wo der Gipfel laut Hütte noch etwa 1,5 bis 2 Stunden entfernt ist. Auch von Kals in Osttirol führt ein Normalweg dorthin.
 
-## Wissenswertes über das Dorf
+Steigeisen und Pickel sind Pflicht, ein Helm gegen Steinschlag wird dringend empfohlen, der Gipfelaufbau ist ausgesetzt. Wer keine Hochtourenerfahrung hat, geht nur mit Bergführer – und dreht bei schlechtem Wetter um.
 
-Der Name „Heiligenblut" geht auf eine Legende zurück: Ein legendärer isländischer Ritter soll eine Ampulle mit dem Blut Christi hierher gebracht haben – die Ampulle soll noch immer in der Kirche aufbewahrt werden. Ob man das glaubt oder nicht: Die gotische Kirche selbst ist ein Kunstwerk.
+## Großglockner-Hochalpenstraße
+Die 1935 eröffnete Hochalpenstraße verbindet Heiligenblut mit Fusch im Salzburger Pinzgau; ihren Scheitel erreicht sie am Hochtor auf 2.504 m. Sie ist mautpflichtig und nur im Sommerhalbjahr befahrbar – Öffnungszeiten, Sperren und Maut vorab auf der offiziellen Seite prüfen.
+
+## Im Winter
+Über dem Ort liegt ein Skigebiet rund um Schareck und Gjaidtroghöhe, mit Liften zwischen gut 1.300 und rund 2.900 m Höhe. Im Talboden gibt es Übungshänge für Anfänger und Kinder.
 
 ## Praktische Infos
-- Anfahrt: Von Spittal an der Drau ca. 1 Stunde, von Klagenfurt ca. 1,5 Stunden
-- Parken: Im Ortszentrum, gebührenpflichtig im Sommer
-- Kleidung: Auch im Sommer Regenjacke und warme Schicht einpacken – Wetter ändert sich schnell
+- Anreise mit dem Auto: von Süden durch das Mölltal (aus Richtung Spittal an der Drau oder von Lienz über den Iselsberg), von Norden im Sommerhalbjahr über die mautpflichtige Hochalpenstraße
+- Öffis: Busse fahren durch das Mölltal – Verbindungen vorab prüfen
+- Parken: im Ort; Regeln und Gebühren vor Ort beachten
+- Kleidung: Selbst im Hochsommer kann es an der Kaiser-Franz-Josefs-Höhe kalt und windig sein – warme Schicht und Regenjacke einpacken
+- Hochtouren: nur mit Erfahrung oder Bergführer, Wetterbericht und Verhältnisse vorab prüfen
     `,
+    officialLinks: [
+      { label: 'Kirchen & Wallfahrtsorte – Heiligenblut am Großglockner', url: 'https://heiligenblut.at/kirchen-wallfahrtsorte/' },
+      { label: 'Großglockner Hochalpenstraße – offizielle Website', url: 'https://www.grossglockner.at/' },
+      { label: 'Weg der Erstbesteiger (Normalweg) – Österreichischer Alpenverein (PDF)', url: 'https://www.alpenverein.at/portal_wAssets/docs/news/2012/Alpenverein_Grossglockner_Weg-der-Erstbesteiger.pdf' },
+    ],
     affiliateLinks: [
       { label: 'Hotels in Heiligenblut – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=Heiligenblut' },
       { label: 'Hochtourenausrüstung – Amazon', url: 'https://www.amazon.de/s?k=hochtourenrucksack+steigeisen' },
@@ -1789,49 +1807,54 @@ Rund 20 km Luftlinie südöstlich von Gurk steht [Burg Hochosterwitz](/blog/burg
   },
   {
     slug: 'woerthersee-schifffahrt',
-    startCoords: [46.6200, 14.1400],
-    title: 'Schifffahrt am Wörthersee – der schönste Weg von Klagenfurt nach Velden',
-    excerpt: 'Die Wörthersee-Schifffahrt verbindet alle großen Orte am See. Ein Rundticket reicht für einen ganzen Tag – einsteigen, aussteigen, Baden, wieder einsteigen. Das beste Verkehrsmittel Kärntens.',
+    startCoords: [46.6222, 14.2525],
+    startPoint: { name: 'Schiffsanlegestelle Klagenfurt (Friedelstrand)', parking: 'kostenpflichtige Parkplätze rund um die Anlegestelle, u. a. bei der Villa Lido und am Strandbad', arrival: 'mit dem Stadtbus bis zur Haltestelle „Schiffsanlegestelle“, rund 100 m zum Steg', note: 'Linienverkehr nur in der Saison – Fahrplan und letzte Rückfahrt vorab prüfen.' },
+    planningMistakes: [
+      { fehler: 'Mit der Kärnten Card gratis aufs Schiff wollen', besser: 'Die Wörthersee Schifffahrt ist laut eigener Auskunft kein Partner der Kärnten Card. Ticket an Bord oder online kaufen – beides wird nach dem Kauf nicht erstattet.' },
+      { fehler: 'Im Frühjahr oder Herbst in Weißes Rössl oder Kraftwerk Forstsee zusteigen wollen', besser: 'Diese beiden Anlegestellen werden laut Betreiber nur im Sommerfahrplan angefahren. Den Fahrplan der jeweiligen Saison ansehen, bevor man den Tag plant.' },
+      { fehler: 'Das Fahrrad auf jedes Schiff mitnehmen wollen', besser: 'Räder fahren nur auf MS Kärnten und MS Klagenfurt mit und nur, wenn Platz ist; Dampfschiff Thalia und MS Velden nehmen keine mit. Für eine Rad-Schiff-Kombination die passende Abfahrt wählen und Alternativen einplanen.' },
+    ],
+    title: 'Schifffahrt am Wörthersee – mit dem Linienschiff von Klagenfurt nach Velden',
+    excerpt: 'Zehn Anlegestellen zwischen Klagenfurt und Velden, ein Tagesticket zum beliebigen Ein- und Aussteigen und ein Dampfschiff von 1909: wie die Wörthersee-Schifffahrt funktioniert und wo man vorher besser in den Fahrplan schaut.',
     date: '2026-06-01',
     category: 'Ausflug',
     region: 'kaernten',
-    bestSeason: 'Mai–Oktober',
-    highlights: ['Alle Hauptorte direkt vom Wasser erreichbar', 'Tagesticket zum Einsteigen/Aussteigen', 'Kinder unter 6 Jahren kostenlos'],
+    bestSeason: 'April–Oktober',
+    highlights: ['10 Anlegestellen, Klagenfurt–Velden in rund 1 Std. 45 Min.', 'Ganztagesticket zum beliebigen Ein- und Aussteigen', 'Dampfschiff „Thalia“ von 1909, eines der letzten Schraubendampfschiffe Europas'],
     content: `
-Die Wörthersee-Schifffahrt ist kein touristisches Beiwerk – sie ist das praktischste Transportmittel am See. Wer ein Tagesticket kauft, kann an allen Anlegestellen ein- und aussteigen, schwimmen, essen gehen und später wieder an Bord gehen. Bessere Möglichkeit, den See zu erkunden, gibt es nicht.
+Am Wörthersee ist das Schiff mehr als eine Rundfahrt: Die Linienschiffe der **Wörthersee Schifffahrt** verbinden Klagenfurt im Osten mit Velden im Westen und legen dazwischen an beiden Ufern an. Mit dem Ganztagesticket kann man laut Betreiber den ganzen Tag nach Fahrplan beliebig ein- und aussteigen – vormittags nach Maria Wörth, mittags baden, am Nachmittag nach Velden und am Abend zurück.
 
-## Die Strecke
+## Die Anlegestellen
+Angefahren werden zehn Anlegestellen: **Klagenfurt** am Ostende und **Velden** (Schlosshotel) am Westende, dazwischen **Krumpendorf** und die beiden Pörtschacher Stege **Landspitz** und **Werzer** am Nordufer, **Reifnitz** und **Maria Wörth** am Südufer sowie **Dellach**, **Weißes Rössl** und **Kraftwerk Forstsee**. Die beiden letzten werden im Frühjahr und Herbst nicht bedient.
 
-Von Klagenfurt-Strandbad bis nach Velden und zurück – 11 Anlegestellen, Gesamtlänge 17 km. Die Fahrt dauert ohne Unterbrechung ca. 2,5 Stunden. Mit Stops und Absteigern kann man den ganzen Tag damit verbringen.
+## Fahrzeiten
+Laut Wörthersee Schifffahrt dauert die Fahrt von Klagenfurt nach Velden rund **1 Stunde 45 Minuten**, eine ganze Seerundfahrt rund **3 Stunden 45 Minuten**. Wer nicht die ganze Runde fahren will, kann in Maria Wörth Richtung Klagenfurt und in Pörtschach Landspitz Richtung Velden umsteigen. Die Schiffe fahren nicht im dichten Takt – deshalb vorab in den Fahrplan schauen und vor allem die **letzte Rückfahrt** im Blick behalten. Im Linienverkehr sind laut Betreiber Verspätungen von bis zu 15 Minuten möglich.
 
-## Highlights entlang der Strecke
+## Saison und Tickets
+2026 fuhren die Linienschiffe vom 5. April bis 31. Oktober täglich, mit eigenem Sommerfahrplan sowie einem Frühlings- und Herbstfahrplan; im Advent kommen eigene Fahrten dazu. Tickets gibt es an Bord oder online, erstattet werden beide nach dem Kauf nicht. Neben Einzelfahrten gibt es das Ganztagesticket für Hop-on/Hop-off. Wichtig für Urlauber mit **Kärnten Card**: Die Wörthersee Schifffahrt ist laut eigener Auskunft kein Partner der Karte. Aktuelle Preise und Ermäßigungen auf der Website des Betreibers prüfen.
 
-### Klagenfurt-Strandbad → Pörtschach (45 Min.)
-Das Nordufer ist weniger besiedelt und zeigt den See von der ruhigen Seite. Blick auf die Südalpen im Hintergrund.
+## Die Schiffe
+Zur Flotte gehören die Motorschiffe **Velden**, **Klagenfurt** und **Kärnten** sowie das Dampfschiff **Thalia**. Die Thalia wurde 1909 gebaut, 1974 nach einem Wellenbruch außer Dienst gestellt und nach einer Restaurierung 1988 wieder in Fahrt gebracht – laut Betreiber eines der letzten Schraubendampfschiffe Europas. Sie fährt vor allem Ausflugs- und Sonderfahrten, an einzelnen Terminen auch im Linienverkehr. An Bord gibt es Getränke und Snacks; zusätzlich bietet der Betreiber Themenfahrten wie Frühstück an Bord an.
 
-### Pörtschach → Maria Wörth (15 Min.)
-Maria Wörth liegt auf einer Halbinsel und ist vom Wasser aus am schönsten zu sehen. Die gotische Wallfahrtskirche direkt am Ufer ist das Postkartenmotiv des Wörthersees.
+## Mit Rad, Hund oder Rollstuhl
+- **Fahrrad und E-Bike:** nur auf MS Kärnten und MS Klagenfurt, nur bei freiem Platz und gegen Aufpreis. So lässt sich etwa eine Strecke am [Wörthersee-Radweg](/blog/woerthersee-radweg-komplett) mit der Rückfahrt per Schiff verbinden – mit Plan B, falls das Schiff voll ist.
+- **Hunde:** fahren laut Betreiber kostenlos mit, an der Leine und mit Maulkorb.
+- **Rollstuhl:** An Bord möglich, aufs Oberdeck geht es aber nur über Stufen. Auf Thalia und MS Velden gibt es keine Rollstuhlfläche, barrierefreie Toiletten auf keinem Schiff.
 
-### Maria Wörth → Velden (30 Min.)
-Das Westufer, mondän und belebt. Die Promenade von Velden sieht man von Weitem.
-
-## Tipps für die Fahrt
-
-- **Tagesticket kaufen**: Lohnt sich ab zwei Anlegestellen (ca. 16 € Erwachsene)
-- **Frühe Fahrt**: Erste Abfahrt um 8 Uhr, fast leer – perfekt für Fotografen
-- **Abendfahrt**: Die letzte Abfahrt aus Velden kurz vor Sonnenuntergang ist unvergesslich
-- **Mit Fahrrad**: Fahrräder können mitgenommen werden (Aufpreis, Platzkontingent begrenzt)
-
-## Kombination Schiff + Rad
-
-Hinfahrt per Schiff, Rückfahrt am Seeradweg – oder umgekehrt. 17 km Radweg am Nordufer sind flach und gut ausgebaut.
+## Was man vom Wasser aus sieht
+Am schönsten ist der Abschnitt um [Maria Wörth](/blog/maria-woerth-woerthersee): Die Kirchen auf der Halbinsel sieht man vom Schiff aus genau so, wie sie auf den Postkarten stehen. Am Nordufer reihen sich in Krumpendorf und Pörtschach Villen und Hotels, im Westen wartet [Velden](/blog/velden-am-woerthersee-urlaub) mit seiner Promenade. Im Süden ragt über dem See der Aussichtsturm auf dem [Pyramidenkogel](/blog/pyramidenkogel-woerthersee) auf.
 
 ## Praktische Infos
-- Saison: Mai–Oktober (je nach Wetterlage)
-- Abfahrten: Ca. stündlich von Klagenfurt-Strandbad
-- Tickets: Vor Ort oder online (Wörthersee Schifffahrt)
-- Kinder unter 6 Jahren: kostenlos
+- Saison: Linienverkehr etwa April bis Oktober (2026: 5. April bis 31. Oktober), dazu Adventfahrten – Termine jedes Jahr neu prüfen
+- Start in Klagenfurt: Anlegestelle am Friedelstrand nahe der Villa Lido, Stadtbus-Haltestelle „Schiffsanlegestelle“ rund 100 m entfernt, Parkplätze in der Umgebung kostenpflichtig
+- Tickets: an Bord oder online, keine Erstattung nach dem Kauf
+- Kärnten Card: gilt nicht
+- Ohne Auto: Krumpendorf, Pörtschach und Velden liegen an der Bahn – Zug und Schiff lassen sich gut kombinieren
     `,
+    officialLinks: [
+      { label: 'Fahrplan & Preise – Wörthersee Schifffahrt', url: 'https://www.woertherseeschifffahrt.at/fahrplan/' },
+      { label: 'Anlegestellen – Wörthersee Schifffahrt', url: 'https://www.woertherseeschifffahrt.at/anlegestellen/' },
+    ],
     affiliateLinks: [
       { label: 'Bootstouren & Schifffahrt am Wörthersee – GetYourGuide', url: 'https://www.getyourguide.de/s/?q=W%C3%B6rthersee%20Schifffahrt' },
       { label: 'Hotels am Wörthersee – booking.com', url: 'https://www.booking.com/region/at/worthersee.de.html' },
@@ -6336,25 +6359,41 @@ Bei tiefhängenden Wolken verliert Filzmoos außerdem viel von seinem Reiz, weil
   {
     slug: 'pyramidenkogel-woerthersee',
     title: 'Pyramidenkogel – der Aussichtsturm über dem Wörthersee',
-    excerpt: 'Vom höchsten Holz-Aussichtsturm der Welt reicht der Blick über den Wörthersee bis zu den Karawanken – und runter geht es wahlweise mit Österreichs höchster Turmrutsche.',
-    date: '2026-06-17', category: 'Ausflug', region: 'kaernten', bestSeason: 'April–Oktober',
-    startCoords: [46.6094, 14.1454],
-    startPoint: { name: 'Parkplatz Pyramidenkogel', parking: 'großer Parkplatz direkt am Turm', arrival: 'zum Sonnenuntergang besonders schön', note: 'Abends länger geöffnet – Sunset-Tickets beachten.' },
-    highlights: ['100 m hoher Holzturm mit Panorama-Lift', 'Rundumblick über den Wörthersee', 'Indoor-Rutsche als Highlight für Kinder'],
+    excerpt: 'Der rund 100 m hohe Holz-Aussichtsturm auf dem Pyramidenkogel gilt als höchster der Welt: per Panoramalift oder über 441 Stufen hinauf, oben Rundblick über den Wörthersee bis zu den Karawanken – und für Mutige eine 120 m lange Rutsche nach unten.',
+    date: '2026-06-17', category: 'Ausflug', region: 'kaernten', bestSeason: 'Ganzjährig',
+    startCoords: [46.6090, 14.1450],
+    startPoint: { name: 'Parkplatz Aussichtsturm Pyramidenkogel', parking: 'Parkplätze direkt beim Turm, laut Kärntens TOP-10-Ausflugszielen kostenfrei; Behindertenparkplätze am Turmfuß', arrival: 'im Juli und August bis in den Abend geöffnet – dann ist auch der Sonnenuntergang vom Turm aus möglich', note: 'Rutsche und Fly 100 laufen nur bei trockenem Wetter.' },
+    officialLinks: [
+      { label: 'Aussichtsturm Pyramidenkogel – Öffnungszeiten & Preise', url: 'https://www.pyramidenkogel.info/' },
+      { label: 'Häufige Fragen zum Pyramidenkogel – Kärntens TOP-10-Ausflugsziele', url: 'https://www.kaernten-top10.at/angebote-veranstaltungen/haeufige-fragen-zum-pyramidenkogel-am-woerthersee/' },
+    ],
+    highlights: ['Rund 100 m hoher Holz-Aussichtsturm (2013), oberste Plattform auf knapp 71 m', 'Panoramalift oder 441 Stufen, verglaste Skybox bei Wind und Regen', '120 m lange Rutsche ab 130 cm Körpergröße, im Sommer Flying Fox „Fly 100“'],
     content: `
-Hoch über dem Keutschacher Seental thront der **Pyramidenkogel** – mit rund 100 Metern der höchste Holz-Aussichtsturm der Welt. Bei klarer Sicht reicht der Blick vom Wörthersee über die Karawanken bis zu den Hohen Tauern.
+Der **Pyramidenkogel** (851 m) ist der höchste Berg am Wörthersee. Er erhebt sich südlich des Sees in der Gemeinde Keutschach am See, zwischen dem Wörthersee und dem Keutschacher Seental. Auf dem Gipfel steht seit 2013 ein Aussichtsturm aus Holz und Stahl: mit Antenne rund **100 m hoch** und damit der höchste Holz-Aussichtsturm der Welt.
 
-## Was dich oben erwartet
-Drei Aussichtsplattformen, erreichbar per Lift oder über die Treppe. Von ganz oben siehst du fast ganz Mittelkärnten – ideal zum Sonnenuntergang, wenn sich der See orange färbt.
+## Der Turm
+Senkrechte Stützen aus Leimholz, umschlungen von gegeneinander verdrehten Stahl-Ellipsen: Der Entwurf der Klagenfurter Architekten Markus Klaura und Dietmar Kaden ersetzte einen Betonturm aus den 1960er-Jahren, den die Einheimischen wegen seiner Form „Schwammerl“ nannten; er wurde 2012 gesprengt. Hinauf geht es mit dem **Panoramalift** im verglasten Schacht oder über **441 Stufen**. Es gibt drei Besucherplattformen, die oberste auf knapp **71 m**, dazu die verglaste **Skybox**, in der man auch bei Wind und Regen geschützt rundum schaut. Die unterste Plattform und die Skybox sind mit dem Lift stufenlos erreichbar.
+
+## Der Blick
+Von oben überblickt man den ganzen Wörthersee von Klagenfurt bis Velden, mit der Halbinsel von [Maria Wörth](/blog/maria-woerth-woerthersee) und gegenüber am Nordufer Krumpendorf und Pörtschach. Auf der anderen Seite des Turms liegt der Keutschacher See, im Süden stehen die Karawanken. Wie weit man sieht, hängt stark vom Wetter ab – an dunstigen Sommertagen bleibt es oft beim Seenblick.
+
+## Rutsche und Fly 100
+- **Rutsche:** 120 m lang, Start in gut 50 m Höhe – laut Betreiber die höchste Gebäuderutsche Europas. Sie windet sich als geschlossene Röhre am Turm hinunter. Mindestgröße 130 cm, Kinder dürfen nicht gemeinsam mit Erwachsenen rutschen, eigenes Ticket, bei Regen oder Nässe außer Betrieb.
+- **Fly 100:** ein Flying Fox vom Turm hinunter, nur in der warmen Saison und teils nur am Wochenende; Mindest- und Höchstgewicht beachten, bei Schlechtwetter kein Betrieb.
 
 ## Für Familien
-Das Highlight für Kinder (und Mutige): die **52 m lange Indoor-Rutsche**, eine der höchsten Turmrutschen Europas. In wenigen Sekunden geht es spiralförmig nach unten.
+Am Fuß des Turms gibt es einen Natur-Erlebnis-Spielplatz, der laut Kärntens TOP-10-Ausflugszielen kostenlos ist, und einen familientauglichen Rundwanderweg von rund 2,3 km (etwa 45 Minuten). Für den Turm allein reicht meist eine Stunde; mit Spielplatz, Rutsche und Einkehr im Restaurant am Turmfuß wird ein halber Tag daraus. Im Hochsommer kann es an der Rutsche Wartezeiten geben. Hunde dürfen an der Leine mit.
+
+## Öffnungszeiten und Abendstimmung
+Der Turm ist ganzjährig geöffnet, die Zeiten wechseln mit den Monaten: Im Juli und August ist er bis in den Abend offen, sodass man den Sonnenuntergang über dem See von oben erleben kann; im Winter schließt er am späten Nachmittag. Anfang November bleibt er für einige Tage wegen Revisionsarbeiten zu. Aktuelle Zeiten vorab auf der Website prüfen.
 
 ## Praktische Infos
-- Anfahrt: ca. 20 Minuten von Klagenfurt
-- Großer Parkplatz vorhanden
-- Abends teils länger geöffnet (Sonnenuntergangs-Tickets)
-- Gut kombinierbar mit einer Runde um den Keutschacher See
+- Adresse: Linden 62, 9074 Keutschach am See, Zufahrt über die Pyramidenkogelstraße
+- Parken: direkt beim Turm
+- Eintritt: kostenpflichtig, Rutsche und Fly 100 extra; mit der Kärnten Card ist der Turm frei, Rutsche und Fly 100 sind nicht inbegriffen
+- Barrierefrei: unterste Plattform und Skybox per Lift erreichbar
+- Zu Fuß: Von Maria Wörth führt ein Wanderweg hinauf – siehe [Wanderwege am Wörthersee](/blog/die-10-besten-wanderwege-am-woerthersee)
+- Kombinieren: mit einer [Radtour durchs Keutschacher Seental](/blog/keutschacher-seental-radtour) oder einer [Schifffahrt am Wörthersee](/blog/woerthersee-schifffahrt)
     `,
     affiliateLinks: [
       { label: 'Unterkünfte am Wörthersee – booking.com', url: 'https://www.booking.com/searchresults.de.html?ss=W%C3%B6rthersee' },
