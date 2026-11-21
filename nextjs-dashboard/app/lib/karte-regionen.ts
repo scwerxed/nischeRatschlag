@@ -30,3 +30,30 @@ export function karteRegion(slug: string | null | undefined): KarteRegion | unde
   if (!slug) return undefined;
   return KARTE_REGIONEN.find((r) => r.slug === slug);
 }
+
+// Kategorie-Filter der Ebene „Ausflugsziele“ (Bedienfeld und Deep-Link /karte?kat=baden bzw.
+// ?kat=wandern,baden, z. B. von den Kategorie-Abschnitten der Regionsseiten). `name` ist die
+// Post-Kategorie, `slug` der URL-Teil.
+export const KARTE_KATEGORIEN: { name: string; slug: string }[] = [
+  { name: 'Wandern',    slug: 'wandern' },
+  { name: 'Baden',      slug: 'baden' },
+  { name: 'Ausflug',    slug: 'ausflug' },
+  { name: 'Unterkunft', slug: 'unterkunft' },
+];
+
+export const ALLE_KARTE_KATEGORIEN = KARTE_KATEGORIEN.map((k) => k.name);
+
+/** Aktive Kategorien aus dem URL-Parameter `kat` (beliebiger Text). Fehlt er oder passt
+ *  nichts, sind alle aktiv – ein Tippfehler im Link soll nie eine leere Karte ergeben. */
+export function karteKategorien(param: string | null | undefined): string[] {
+  if (!param) return ALLE_KARTE_KATEGORIEN;
+  const wanted = param.toLowerCase().split(',').map((s) => s.trim());
+  const found = KARTE_KATEGORIEN.filter((k) => wanted.includes(k.slug)).map((k) => k.name);
+  return found.length ? found : ALLE_KARTE_KATEGORIEN;
+}
+
+/** URL-Wert für die aktiven Kategorien; null, wenn alle (oder keine) aktiv sind. */
+export function karteKategorienParam(aktiv: string[]): string | null {
+  if (!aktiv.length || aktiv.length >= KARTE_KATEGORIEN.length) return null;
+  return KARTE_KATEGORIEN.filter((k) => aktiv.includes(k.name)).map((k) => k.slug).join(',');
+}

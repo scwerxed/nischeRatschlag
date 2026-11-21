@@ -13,6 +13,7 @@ import PostBild from '@/app/ui/post-bild';
 import { CATEGORY_STYLE } from '@/app/lib/blog-utils';
 import { isOeffiErreichbar } from '@/app/lib/themenseiten';
 import { seasonStatus, SEASON_LABEL } from '@/app/lib/season';
+import { coordsOf } from '@/app/lib/wochenendtrip';
 
 type Props = { params: Promise<{ bundesland: string }> };
 
@@ -215,12 +216,25 @@ export default async function RegionPage({ params }: Props) {
           {categories.map((cat) => {
             const catPosts = regionPosts.filter((p) => p.category === cat);
             if (catPosts.length === 0) return null;
+            // Link auf die Karte, gefiltert auf dieses Land + diese Kategorie – nur, wenn dort
+            // auch Pins landen (Artikel ohne Startpunkt stehen nicht auf der Karte).
+            const onMap = catPosts.some((p) => coordsOf(p));
             return (
               <section key={cat} id={cat.toLowerCase()} className="mb-16 md:mb-20">
-                <h2 className="font-serif text-lead font-bold mb-5 text-ink flex items-baseline gap-2">
-                  {cat}
-                  <span className="text-caption font-sans font-normal text-ink-soft">{catPosts.length} Artikel</span>
-                </h2>
+                <div className="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1 mb-5">
+                  <h2 className="font-serif text-lead font-bold text-ink flex items-baseline gap-2">
+                    {cat}
+                    <span className="text-caption font-sans font-normal text-ink-soft">{catPosts.length} Artikel</span>
+                  </h2>
+                  {onMap && (
+                    <Link
+                      href={`/karte?region=${bundesland}&kat=${cat.toLowerCase()}`}
+                      className="text-caption font-medium text-ink underline decoration-signal underline-offset-[3px] hover:text-signal"
+                    >
+                      Auf der Karte zeigen →
+                    </Link>
+                  )}
+                </div>
                 {/* Jede Region hat auf /wassertemperatur einen eigenen Abschnitt (live bzw. letzte offizielle Probe). */}
                 {cat === 'Baden' && (
                   <p className="text-caption text-ink-soft -mt-3 mb-5">

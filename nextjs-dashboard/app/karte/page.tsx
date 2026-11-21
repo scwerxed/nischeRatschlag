@@ -36,7 +36,7 @@ export default function KartePage() {
         <div>
           <h1 className="font-serif text-lead font-bold text-ink">Interaktive Wanderkarte</h1>
           <p className="text-caption text-ink-soft mt-0.5">
-            {ARTICLE_COUNT} Ausflugsziele aus dem Magazin, Wanderwege, Gipfel und Unterkünfte in ganz Österreich — Pin anklicken öffnet den Artikel, rechts oben Ebenen ein-/ausblenden oder ein Bundesland wählen
+            {ARTICLE_COUNT} Ausflugsziele aus dem Magazin, Wanderwege, Gipfel und Unterkünfte in ganz Österreich — Pin anklicken öffnet den Artikel, rechts oben Ebenen ein-/ausblenden, nach Kategorie filtern oder ein Bundesland wählen
           </p>
         </div>
       </div>
@@ -54,7 +54,7 @@ export default function KartePage() {
           Topo: <a href="https://opentopomap.org" target="_blank" rel="noopener noreferrer" className="hover:text-ink-muted">OpenTopoMap</a>
         </span>
         <span className="text-fine text-ink-soft">
-          Gipfel: <a href="https://overpass-api.de" target="_blank" rel="noopener noreferrer" className="hover:text-ink-muted">Overpass API</a>
+          Gipfel: <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer" className="hover:text-ink-muted">OpenStreetMap (ODbL)</a>
         </span>
       </div>
     </div>

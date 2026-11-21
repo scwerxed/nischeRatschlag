@@ -4,7 +4,10 @@ import { useEffect, useRef, useState } from 'react';
 import { unterkuenfte, TYP_INFO } from '@/app/lib/unterkuenfte';
 import { cloak } from '@/app/lib/affiliate';
 import { CATEGORY_HEX } from '@/app/lib/blog-utils';
-import { AUSTRIA_BOUNDS, KARTE_REGIONEN, karteRegion } from '@/app/lib/karte-regionen';
+import {
+  AUSTRIA_BOUNDS, KARTE_REGIONEN, karteRegion,
+  KARTE_KATEGORIEN, ALLE_KARTE_KATEGORIEN, karteKategorien, karteKategorienParam,
+} from '@/app/lib/karte-regionen';
 
 /** Ein Pin der Ebene „Ausflugsziele“: alle Artikel mit demselben Startpunkt (z. B. die
  *  fünf Wörthersee-Artikel mit Sammel-Koordinate). Kommt schlank von der Server-Page,
@@ -16,13 +19,34 @@ export type MapSpot = {
 };
 
 const MULTI_SPOT_COLOR = '#374151';
-const LEGEND: [string, string][] = [
-  [CATEGORY_HEX.Wandern, 'Wandern'],
-  [CATEGORY_HEX.Baden, 'Baden'],
-  [CATEGORY_HEX.Ausflug, 'Ausflug'],
-  [CATEGORY_HEX.Unterkunft, 'Unterkunft'],
-  [MULTI_SPOT_COLOR, 'mehrere'],
-];
+
+/** Steht der Artikel im aktuellen Kategorie-Filter? Kategorien, die der Filter (noch) nicht
+ *  kennt, bleiben immer sichtbar – eine neue Post-Kategorie soll nicht still von der Karte fallen. */
+function inFilter(category: string, aktiv: string[]): boolean {
+  return !ALLE_KARTE_KATEGORIEN.includes(category) || aktiv.includes(category);
+}
+
+// Was bei einem Deep-Link auf einen Punkt in der URL steht. Wechselt man danach auf ein
+// Bundesland oder ganz Österreich, gilt der Punkt nicht mehr (er hätte beim Neuladen Vorrang).
+const DEEP_LINK_AUS = { lat: null, lng: null, zoom: null, name: null };
+
+/** Ansicht in die Adresszeile schreiben (ohne Neuladen), damit man sie teilen oder als
+ *  Lesezeichen speichern kann. Next.js übernimmt history.replaceState in seinen Router. */
+function updateUrl(changes: Record<string, string | null>) {
+  try {
+    const url = new URL(window.location.href);
+    for (const [k, v] of Object.entries(changes)) {
+      if (v) url.searchParams.set(k, v);
+      else url.searchParams.delete(k);
+    }
+    // Komma lesbar lassen (?kat=wandern,baden statt wandern%2Cbaden) – beim Einlesen gleichwertig.
+    const qs = url.searchParams.toString().replace(/%2C/gi, ',');
+    window.history.replaceState(null, '', `${url.pathname}${qs ? `?${qs}` : ''}${url.hash}`);
+  } catch {
+    // Nur Komfort – die Karte funktioniert auch ohne.
+  }
+}
+
 const MIN_ZOOM_PEAKS = 11;
 const MAX_VISIBLE_PEAKS = 25;
 
@@ -91,6 +115,7 @@ export default function MapClient({ spots }: { spots: MapSpot[] }) {
   const peaksLayerRef = useRef<any>(null);
   const staysLayerRef = useRef<any>(null);
   const articlesLayerRef = useRef<any>(null);
+  const leafletRef    = useRef<any>(null);
   const allPeaksRef   = useRef<any[]>([]);
   const showPeaksRef  = useRef(true);
 
@@ -99,6 +124,7 @@ export default function MapClient({ spots }: { spots: MapSpot[] }) {
   const [showPeaks,     setShowPeaks]     = useState(true);
   const [showStays,     setShowStays]     = useState(true);
   const [showArticles,  setShowArticles]  = useState(true);
+  const [activeCats,    setActiveCats]    = useState<string[]>(ALLE_KARTE_KATEGORIEN);
   const [peakCount,     setPeakCount]     = useState<number | null>(null);
   const [peaksFailed,   setPeaksFailed]   = useState(false);
   const [visibleCount,  setVisibleCount]  = useState(0);
@@ -107,6 +133,38 @@ export default function MapClient({ spots }: { spots: MapSpot[] }) {
   const [mapReady,      setMapReady]      = useState(false);
   const [error,         setError]         = useState<string | null>(null);
   const [panelOpen,     setPanelOpen]     = useState(true);
+
+  // Ausflugsziele (Artikel-Startpunkte) – ein Pin je Ort, mehrere Artikel → Zahl im Pin. Wird bei
+  // jedem Wechsel des Kategorie-Filters neu aufgebaut: Ein Sammel-Pin zählt und listet dann nur die
+  // Artikel der aktiven Kategorien, bleibt einer übrig, wird er zum normalen farbigen Pin.
+  // Nutzt nur Refs und die (feste) spots-Prop, darf also auch aus dem Init-Effekt laufen.
+  function renderArticlePins(aktiv: string[]) {
+    const L = leafletRef.current;
+    const layer = articlesLayerRef.current;
+    if (!L || !layer) return;
+    layer.clearLayers();
+    spots.forEach((spot) => {
+      const articles = spot.articles.filter((a) => inFilter(a.category, aktiv));
+      if (!articles.length) return;
+      const s: MapSpot = { ...spot, articles };
+      const multi = articles.length > 1;
+      const color = multi ? MULTI_SPOT_COLOR : CATEGORY_HEX[articles[0].category] ?? '#6b7280';
+      const size = multi ? 22 : 16;
+      const icon = L.divIcon({
+        className: '',
+        html: `<div style="display:flex;align-items:center;justify-content:center;width:${size}px;height:${size}px;background:${color};color:#fff;font-size:11px;font-weight:700;border:2px solid #fff;border-radius:50%;box-shadow:0 1px 3px rgba(0,0,0,.4)">${multi ? articles.length : ''}</div>`,
+        iconSize: [size, size],
+        iconAnchor: [size / 2, size / 2],
+        popupAnchor: [0, -size / 2],
+      });
+      L.marker([s.lat, s.lng], {
+        icon,
+        title: multi ? `${articles.length} Artikel an diesem Ort` : articles[0].title,
+      })
+        .bindPopup(spotPopupHtml(s), { closeButton: true })
+        .addTo(layer);
+    });
+  }
 
   // ── init ──────────────────────────────────────────────────────────────────
   useEffect(() => {
@@ -117,6 +175,7 @@ export default function MapClient({ spots }: { spots: MapSpot[] }) {
       try {
         const L = (await import('leaflet')).default;
         if (cancelled || !containerRef.current) return;
+        leafletRef.current = L;
 
         const el = containerRef.current as any;
         if (el._leaflet_id) el._leaflet_id = null;
@@ -130,6 +189,7 @@ export default function MapClient({ spots }: { spots: MapSpot[] }) {
         const hasDeepLink = Number.isFinite(dlLat) && Number.isFinite(dlLng);
         const startRegion = hasDeepLink ? undefined : karteRegion(sp.get('region'));
         const startBounds = startRegion?.bounds ?? AUSTRIA_BOUNDS;
+        const startCats = karteKategorien(sp.get('kat'));
 
         const dz = parseInt(sp.get('zoom') ?? '', 10);
         const startCenter: [number, number] = hasDeepLink
@@ -189,26 +249,10 @@ export default function MapClient({ spots }: { spots: MapSpot[] }) {
             .addTo(staysLayerRef.current);
         });
 
-        // Ausflugsziele (Artikel-Startpunkte) layer – ein Pin je Ort, mehrere Artikel → Zahl im Pin
+        // Ausflugsziele (Artikel-Startpunkte) layer, gefiltert nach ?kat= (sonst alle Kategorien)
         articlesLayerRef.current = L.layerGroup().addTo(map);
-        spots.forEach((s) => {
-          const multi = s.articles.length > 1;
-          const color = multi ? MULTI_SPOT_COLOR : CATEGORY_HEX[s.articles[0].category] ?? '#6b7280';
-          const size = multi ? 22 : 16;
-          const icon = L.divIcon({
-            className: '',
-            html: `<div style="display:flex;align-items:center;justify-content:center;width:${size}px;height:${size}px;background:${color};color:#fff;font-size:11px;font-weight:700;border:2px solid #fff;border-radius:50%;box-shadow:0 1px 3px rgba(0,0,0,.4)">${multi ? s.articles.length : ''}</div>`,
-            iconSize: [size, size],
-            iconAnchor: [size / 2, size / 2],
-            popupAnchor: [0, -size / 2],
-          });
-          L.marker([s.lat, s.lng], {
-            icon,
-            title: multi ? `${s.articles.length} Artikel an diesem Ort` : s.articles[0].title,
-          })
-            .bindPopup(spotPopupHtml(s), { closeButton: true })
-            .addTo(articlesLayerRef.current);
-        });
+        setActiveCats(startCats);
+        renderArticlePins(startCats);
 
         const updatePeaks = () => {
           const z = map.getZoom();
@@ -371,9 +415,20 @@ export default function MapClient({ spots }: { spots: MapSpot[] }) {
     setShowArticles((v) => !v);
   }
 
+  function setCategories(next: string[]) {
+    setActiveCats(next);
+    renderArticlePins(next);
+    updateUrl({ kat: karteKategorienParam(next) });
+  }
+
+  function toggleCategory(name: string) {
+    setCategories(activeCats.includes(name) ? activeCats.filter((c) => c !== name) : [...activeCats, name]);
+  }
+
   function showAustria() {
     setRegion('');
     mapRef.current?.fitBounds(AUSTRIA_BOUNDS);
+    updateUrl({ region: null, ...DEEP_LINK_AUS });
   }
 
   function showRegion(slug: string) {
@@ -381,11 +436,20 @@ export default function MapClient({ spots }: { spots: MapSpot[] }) {
     if (!r) return showAustria();
     setRegion(r.slug);
     mapRef.current?.fitBounds(r.bounds);
+    updateUrl({ region: r.slug, ...DEEP_LINK_AUS });
   }
 
   // ── render ────────────────────────────────────────────────────────────────
   const mapH = 'calc(100vh - 160px)';
-  const articleCount = spots.reduce((n, s) => n + s.articles.length, 0);
+  const catCounts: Record<string, number> = {};
+  let articleCount = 0;
+  for (const s of spots) {
+    for (const a of s.articles) {
+      catCounts[a.category] = (catCounts[a.category] ?? 0) + 1;
+      if (inFilter(a.category, activeCats)) articleCount++;
+    }
+  }
+  const allCatsActive = activeCats.length >= KARTE_KATEGORIEN.length;
 
   return (
     <div
@@ -473,15 +537,44 @@ export default function MapClient({ spots }: { spots: MapSpot[] }) {
               </span>
             </button>
 
-            {/* Legend: category colors of the article pins */}
+            {/* Kategorie-Filter = Legende der Pin-Farben: antippen blendet die Kategorie ein/aus */}
             {showArticles && (
-              <div className="grid grid-cols-2 gap-x-2 gap-y-0.5 pl-5 mt-0.5 mb-1">
-                {LEGEND.map(([color, label]) => (
-                  <span key={label} className="flex items-center gap-1 text-[10px] text-ink-soft leading-tight">
-                    <span className="w-2 h-2 rounded-full shrink-0" style={{ background: color }} />
-                    {label}
-                  </span>
-                ))}
+              <div className="pl-5 mt-0.5 mb-1">
+                <div role="group" aria-label="Ausflugsziele nach Kategorie filtern">
+                  {KARTE_KATEGORIEN.map((k) => {
+                    const on = activeCats.includes(k.name);
+                    const color = CATEGORY_HEX[k.name] ?? '#6b7280';
+                    return (
+                      <button
+                        key={k.slug}
+                        type="button"
+                        onClick={() => toggleCategory(k.name)}
+                        aria-pressed={on}
+                        className={`tap flex items-center gap-1.5 w-full py-0.5 text-left text-[11px] leading-tight transition-colors hover:text-ink ${on ? 'text-ink' : 'text-ink-soft'}`}
+                      >
+                        <span
+                          className="w-2.5 h-2.5 rounded-full shrink-0 border-2"
+                          style={{ borderColor: color, background: on ? color : 'transparent' }}
+                        />
+                        {k.name}
+                        <span className="ml-auto pl-2 font-mono text-[10px] text-ink-soft">{catCounts[k.name] ?? 0}</span>
+                      </button>
+                    );
+                  })}
+                </div>
+                <p className="flex items-center gap-1.5 text-[10px] text-ink-soft leading-tight mt-1">
+                  <span className="w-2.5 h-2.5 rounded-full shrink-0" style={{ background: MULTI_SPOT_COLOR }} />
+                  mehrere an einem Ort
+                </p>
+                {!allCatsActive && (
+                  <button
+                    type="button"
+                    onClick={() => setCategories(ALLE_KARTE_KATEGORIEN)}
+                    className="tap mt-1 text-[11px] text-ink underline underline-offset-2 decoration-signal hover:text-signal"
+                  >
+                    {activeCats.length ? 'Alle Kategorien zeigen' : 'Keine Kategorie gewählt – alle zeigen'}
+                  </button>
+                )}
               </div>
             )}
 
