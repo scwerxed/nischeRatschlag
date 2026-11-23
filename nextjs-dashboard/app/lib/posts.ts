@@ -423,48 +423,65 @@ Für die kurzen Runden reichen feste Schuhe mit Profil, für die Etappen des Run
   },
   {
     slug: 'beste-badestellen-woerthersee',
-    startCoords: [46.6200, 14.1400],
-    title: 'Die schönsten Badestellen am Wörthersee',
-    excerpt: 'Wo badet man am besten? Ein Überblick über die top Badestellen – kostenlos und mit Eintritt.',
+    startCoords: [46.6186, 14.2551],
+    planningMistakes: [
+      { fehler: 'An einem heißen Sommerwochenende erst mittags mit dem Auto zu einem freien Seezugang fahren', besser: 'Die Gratis-Zugänge haben meist nur einen kleinen Parkplatz oder einen Parkstreifen an der Straße, beim Schamandra in der Ostbucht und am Cap Wörth gibt es praktisch keine Stellplätze. Früh kommen oder gleich mit dem Rad über den Wörthersee-Radweg R4 anreisen, an dem mehrere Zugänge liegen.' },
+      { fehler: 'An jedem freien Seezugang einen flachen Einstieg für kleine Kinder erwarten', besser: 'Zwischen Sekirn und Reifnitz geht es über eine steile Böschung ins Wasser, bei Auen liegt der Badeplatz erhöht hinter einem Geländer an der Straße. Mit Kleinkindern besser ein Strandbad mit Nichtschwimmerbereich und Badeaufsicht wählen, etwa das Strandbad Klagenfurt.' },
+      { fehler: 'Mit dem Hund einfach an irgendeinen Seezugang gehen', besser: 'Ausgewiesene Hundebadeplätze sind am Wörthersee selten; die Kärnten Werbung nennt die Hundewiese beim Strandbad Klagenfurt. Ganz in der Nähe hat der Keutschacher See eine Hundebucht beim Strandcamping Süd. Vor Ort die Beschilderung beachten.' },
+    ],
+    title: 'Badestellen am Wörthersee – die schönsten Strandbäder und Gratis-Zugänge',
+    excerpt: 'Vom Strandbad Klagenfurt mit drei Stegen bis zum Gratis-Zugang bei Reifnitz: welche Strandbäder und freien Seezugänge es rund um den Wörthersee gibt, wo Kinder flach ins Wasser kommen und was die offiziellen Badewasser-Proben sagen.',
     date: '2026-05-15',
     category: 'Baden',
     region: 'kaernten',
     bestSeason: 'Juni–September',
-    highlights: ['Kostenlose & gebührenpflichtige Optionen', 'Wasser bis 28°C im Sommer', 'Für Familien und Schwimmer geeignet'],
+    highlights: ['Alle sechs EU-Badestellen des Sees 2024 und 2025 „ausgezeichnet“ (AGES)', 'Strandbäder in Klagenfurt, Krumpendorf, Pörtschach und Velden', 'Freie Seezugänge bei Reifnitz, Pritschitz, Bad Saag und in der Ostbucht'],
     content: `
-Der Wörthersee ist einer der wärmsten Seen Österreichs – im Sommer erreicht das Wasser bis zu 28°C. Hier sind die besten Badestellen:
+Am Wörthersee liegen große Strandbäder mit Stegen, Rutschen und Badeaufsicht neben kleinen freien Seezugängen, an denen man einfach die Decke ausbreitet. Die gute Nachricht vorweg: An allen sechs offiziellen EU-Badestellen des Sees – **Klagenfurt, Maiernigg, Reifnitz, Pörtschach, Saag und Velden** – war das Badewasser laut AGES 2024 und 2025 „ausgezeichnet“. Die freien Zugänge sind dagegen meist klein, haben wenig Parkplatz und sind an heißen Tagen schnell voll.
 
-## Strandbad Klagenfurt (mit Eintritt)
-Das größte Strandbad Kärntens mit Wasserrutsche, Sprungturm und Gastronomie. Perfekt für einen ganzen Tag.
+## Strandbad Klagenfurt
+Das Strandbad der Stadtwerke Klagenfurt am Metnitzstrand gibt es seit 1924. Laut Betreiber ist es das größte Bad am Wörthersee und sogar das größte Binnenseebad Europas. Drei große, rauchfreie Badestege führen ins Wasser, dazu kommen eine 113 m lange Wasserrutsche mit Zeitmessung, ein 3-Meter-Sprungturm, abgetrennte Schwimmbahnen, Beachvolleyballplätze sowie SUP- und Elektroboot-Verleih. Für Kinder gibt es flache Nichtschwimmerbereiche, einen Wasserspielplatz und mehrere Spielplätze; die Schwimmbereiche sichert die Badeaufsicht. Alter Baumbestand spendet Schatten.
 
-## Strandbad Velden (mit Eintritt)
-Im mondänen Velden gelegen, elegantes Strandbad mit gutem Service.
+Der Eintritt ist kostenpflichtig, es gibt Tages-, Nachmittags- und Abendkarten. An Wochenenden und heißen Tagen im Juli und August wird es laut Stadtwerken sehr voll – wer vor 10 Uhr kommt, ist im Vorteil.
 
-## Freistrand Maria Wörth (kostenlos)
-Kleiner, aber charmanter Freistrand direkt neben der berühmten Kirche. Sehr beliebt und oft voll.
+## Strandbad Loretto und Strandbad Maiernigg
+Das Ticket des Strandbads Klagenfurt gilt laut Stadtwerken auch in den beiden kleineren Bädern der Stadt: im **Strandbad Loretto** in der Ostbucht, das die Stadtwerke als ruhiger und familienfreundlich beschreiben, und im **Strandbad Maiernigg** am Südufer, naturnah und abseits der großen Besucherströme. Von Maiernigg sind es rund zehn Gehminuten zum Komponierhäuschen von Gustav Mahler.
 
-## Badebucht Reifnitz (kostenlos)
-Ruhigere Alternative am Südufer, ideal für Familien mit kleinen Kindern – flacher Einstieg.
+## Kropfitschbad in Krumpendorf
+Am Übergang von Krumpendorf zur Klagenfurter Ostbucht liegt das **Kropfitschbad**: gepflegte Liegewiese, langer Badesteg, kleine Marina, Strandbar und Restaurant. Der feinschottrige Einstieg eignet sich laut Klagenfurt Tourismus auch für kleinere Kinder. Eintritt und Saison vorab prüfen.
 
-## Strandbad Pörtschach (mit Eintritt)
-Großzügige Liegewiesen, Stege weit in den See, Kinderbereich. Eines der gepflegtesten Bäder am Nordufer mit toller Blickachse über den See.
+## Promenadenbad Pörtschach
+Das **Promenadenbad** liegt laut Gemeinde Pörtschach am Blumenstrand in der Westbucht, einer verkehrsfreien Zone im Landschaftsschutzgebiet. Es gibt einen Kinderspielplatz mit Sandspiellandschaften, einen Wasserkletterturm, Beachvolleyball, Trampolin und SUP-Verleih, dazu Wasserski und Wakeboarden. Die Saison lief 2026 von Anfang Mai bis 20. September; die Preisliste steht auf der Website der Gemeinde.
 
-## Bad Saag & Aussichtsbuchten am Südufer
-Das ruhigere Südufer hat mehrere kleine, weniger bekannte Buchten. Hier ist es auch in der Hochsaison entspannter als am belebten Nordufer.
+## Strandbad Velden
+Mitten im Ort, direkt an der Seepromenade, liegt das **Strandbad Velden**. Es ist in der Sommersaison geöffnet und kostenpflichtig. Mehr zum Ort steht im Artikel [Velden am Wörthersee](/blog/velden-am-woerthersee-urlaub).
 
-## Kostenlos vs. mit Eintritt – was lohnt sich?
-- **Strandbäder (Eintritt ~5–8 €):** Liegewiese, sanitäre Anlagen, Gastronomie, Bademeister – ideal für ganze Tage und Familien.
-- **Freistrände (gratis):** schnelles Bad, weniger Komfort, oft kein WC. Früh da sein, dann hat man die schönsten Plätze.
+## Freie Seezugänge – gratis ins Wasser
+Eine Übersicht der Region Wörthersee (Stand 2020) und Klagenfurt Tourismus nennen unter anderem diese kostenlosen Zugänge:
+- **Schamandra (Ostbucht/Krumpendorf):** freier Seezugang neben dem gleichnamigen Strandcafé am Radweg R4, mit kleinem Steg – einer der wenigen Gratis-Plätze mit Gastronomie. Parkplätze sind knapp, besser mit dem Rad kommen.
+- **Freibad Pritschitz (Pörtschach):** zwischen Pörtschach und Krumpendorf, mit Liegewiese und ohne Eintritt.
+- **Bad Saag (Nordufer, Gemeinde Techelsberg):** lang gestreckter Zugang direkt am Radweg R4 zwischen Pörtschach und Velden, gesäumt von Schilf und Laubbäumen; nur ein kleiner Parkplatz und ein Parkstreifen an der Straße.
+- **Sekirn und Reifnitz (Südufer):** zwei Zugänge an der Süduferstraße mit großen Liegewiesen und kleinen Parkstreifen. Zwischen Sekirn und Reifnitz geht es über eine steile Böschung ins Wasser; der Platz ist auch zum Sonnenuntergang beliebt.
+- **Teixlbucht (Südufer):** großer Zugang mit Liegewiese und Holzbänken gegenüber der Kapuzinerinsel, an sonnigen Tagen stark besucht.
+- **Cap Wörth (Südufer):** der schattigste Zugang, mitten im Wald, schwer zu finden und ohne Parkplätze.
 
-## Wassertemperatur & beste Zeit
-Von Juni bis September liegt das Wasser meist zwischen 23 und 28 °C – Spitzenwerte im Juli/August. Im September ist es oft noch über 22 °C, bei deutlich weniger Andrang.
+Weitere legale Plätze laut derselben Liste: am Friedelstrand in Klagenfurt zwischen der Werft und dem Ruderverein Albatros, das Edelweißbad und das Freibad Sallach in Pörtschach sowie ein Gemeindebad in Techelsberg. Weil sich Zugänge und Parkregeln ändern können, vor Ort die Beschilderung beachten.
+
+## Wassertemperatur und Badewasser-Qualität
+Die AGES hat die sechs EU-Badestellen 2026 fünfmal zwischen Juni und August beprobt. Bei der ersten Probe Anfang Juni hatte das Wasser rund 21 °C, ab Ende Juni lagen die Werte meist zwischen 25 und 28 °C; am wärmsten waren 28,7 °C in Velden Ende Juni. Die aktuelle Temperatur der Messstellen und alle Proben zeigt unser [Wörthersee-Steckbrief](/wassertemperatur/woerthersee); Badeplätze nach Ausstattung filtern lässt sich im [Badeplatz-Check](/badeplaetze).
 
 ## Praktische Tipps
-- **Parken:** an beliebten Bädern gebührenpflichtig; früh kommen oder mit dem Rad/Schiff anreisen
-- **Anreise per Schiff:** viele Bäder haben einen eigenen Anlegesteg – stressfreier als Parkplatzsuche
-- **Frühschwimmer:** vor 10 Uhr sind selbst die Top-Spots leer
-- **Schlechtwetter-Alternative:** bei Regen lohnt eine der Thermen in der Umgebung
+- **Parken am Strandbad Klagenfurt:** laut Stadtwerken bei Minimundus und am P+R-Parkplatz in der Villacher Straße, von dort zu Fuß oder mit dem Stadtbus; Parktarife vor Ort beachten
+- **Mit dem Rad:** Der [Wörthersee-Radweg R4](/blog/woerthersee-radweg-komplett) führt an Schamandra, Pritschitz und Bad Saag vorbei
+- **Mit dem Schiff:** Die [Wörthersee-Schifffahrt](/blog/woerthersee-schifffahrt) legt unter anderem in Klagenfurt, Krumpendorf, Pörtschach, Reifnitz, Maria Wörth und Velden an – praktisch für Badetage ohne Auto
+- **Mit Kindern:** mehr Tipps im Artikel [Wörthersee mit Kindern](/blog/woerthersee-mit-kindern)
+- **Bei Regen:** Ideen auf der Seite [regentaugliche Ausflüge](/regentaugliche-ausfluege)
     `,
+    officialLinks: [
+      { label: 'Strandbad Klagenfurt – Stadtwerke Klagenfurt', url: 'https://baeder.stw.at/baeder/strandbad-klagenfurt/' },
+      { label: 'Promenadenbad – Gemeinde Pörtschach', url: 'https://poertschach.gv.at/unser-poertschach/promenadenbad' },
+      { label: 'Freie Seezugänge am Wörthersee (PDF, Region Wörthersee)', url: 'https://www.krumpendorf.gv.at/wp-content/uploads/2020/10/Freie-Seezugaenge-am-Woerthersee.pdf' },
+    ],
     affiliateLinks: [
       { label: 'Hotels in Velden – booking.com', url: 'https://www.booking.com/city/at/velden-am-worthersee.de.html' },
       { label: 'Strandaccessoires auf Amazon', url: 'https://www.amazon.de/s?k=strand+set+sommer' },
@@ -472,51 +489,71 @@ Von Juni bis September liegt das Wasser meist zwischen 23 und 28 °C – Spitzen
   },
   {
     slug: 'woerthersee-mit-kindern',
-    startCoords: [46.6200, 14.1400],
+    startCoords: [46.6208, 14.2597],
+    planningMistakes: [
+      { fehler: 'Minimundus für den Herbst- oder Winterurlaub einplanen', besser: 'Der Park ist laut Betreiber von Anfang November bis Ende März geschlossen (Saison 2026: 27. März bis 1. November). Auch der Reptilienzoo hat laut eigener Website Schließzeiten – vor dem Besuch die aktuellen Öffnungszeiten prüfen.' },
+      { fehler: 'An einem heißen Ferientag erst mittags ins Strandbad Klagenfurt fahren', besser: 'An Wochenenden und heißen Tagen im Juli und August ist das Bad laut Stadtwerken sehr voll; vor 10 Uhr findet man leichter Parkplatz und Schatten. Ruhiger ist das Strandbad Loretto – das Ticket gilt in allen drei Bädern der Stadtwerke.' },
+      { fehler: 'Kleinen Kindern die Rutsche am Pyramidenkogel fest versprechen', besser: 'Gerutscht wird erst ab 130 cm Körpergröße, nicht gemeinsam mit Erwachsenen und nur bei trockenem Wetter. Für Kleinere ist der kostenlose Natur-Erlebnis-Spielplatz am Turmfuß das bessere Ziel.' },
+    ],
     title: 'Wörthersee mit Kindern – die besten Familienausflüge',
-    excerpt: 'Miniaturpark, Reptilienzoo, Schifffahrt und mehr – so wird der Urlaub am Wörthersee für die ganze Familie unvergesslich.',
+    excerpt: 'Minimundus, Reptilienzoo, ein Strandbad mit Wasserspielplatz, die Schifffahrt und die Rutsche am Pyramidenkogel: was sich am Wörthersee mit Kindern lohnt, was bei Regen geht und warum die Klagenfurter Ostbucht der beste Ausgangspunkt ist.',
     date: '2026-05-10',
     category: 'Ausflug',
     region: 'kaernten',
     bestSeason: 'Mai–September',
-    highlights: ['Miniaturpark, Reptilienzoo, Schifffahrt', 'Aktivitäten für Kinder aller Altersgruppen', 'Geheimtipps für Familienhotels'],
+    highlights: ['Minimundus: 166 Modelle im Maßstab 1:25, dazu 1.500 m² Indoor-Fläche', 'Strandbad Klagenfurt mit Nichtschwimmerbereich und Wasserspielplatz', 'Mit dem Schiff nach Velden, Turm und Rutsche am Pyramidenkogel'],
     content: `
-Ein Urlaub am Wörthersee mit Kindern ist eine tolle Idee – die Region hat für die Kleinen viel zu bieten.
+Viele Familienziele am Wörthersee liegen in **Klagenfurt** an der Ostbucht nah beieinander: Minimundus und der Reptilienzoo Happ an der Villacher Straße, daneben der Europapark und am Ufer das Strandbad. Mit kleinen Kindern lässt sich hier ein ganzer Tag füllen, ohne viel im Auto zu sitzen. Für die Ziele weiter draußen kommen Schiff, Bahn oder Auto dazu.
 
-## Minimundus Klagenfurt
-Über 150 weltberühmte Bauwerke im Miniaturformat auf 26.000 m². Kinder und Erwachsene gleichermaßen begeistert.
+## Minimundus
+Der Miniaturpark zeigt laut Betreiber **166 Modelle** berühmter Bauwerke im Maßstab 1:25, großteils aus Originalmaterialien wie Sandstein, Marmor oder Lavabasalt, auf rund 26.000 m². Für Kinder gibt es einen 400 m² großen Spielplatz, einen Kindererlebnisweg mit Urkunde und im Juli und August dienstags eigene Kinderführungen. Eine **Indoor-Fläche von 1.500 m²** macht Minimundus auch an Regentagen interessant. Geöffnet ist von Ende März bis Anfang November, im Winter bleibt der Park zu. Mehr dazu im Artikel [Minimundus in Klagenfurt](/blog/minimundus-klagenfurt).
 
 ## Reptilienzoo Happ
-Mehr als 500 Tiere aus aller Welt – Krokodile, Riesenschlangen und seltene Schildkröten. Ein echtes Highlight.
+Nur ein paar Schritte weiter an der Villacher Straße zeigt der Reptilienzoo Happ laut eigenen Angaben über 1.000 Reptilien auf mehr als 4.000 m²: Riesenschlangen, Echsen, Chamäleons und Schildkröten, dazu Freilandanlagen. Der Zoo ist Partner der Kärnten Card. Laut Website gibt es Schließzeiten, deshalb die aktuellen Öffnungszeiten vorab prüfen.
 
-## Schifffahrt Wörthersee
-Mit dem Schiff von Klagenfurt bis Velden – Kinder lieben die Fahrt über den See, und man sieht alle Sehenswürdigkeiten vom Wasser aus.
+## Strandbad Klagenfurt und Europapark
+Das größte Bad am See ist auch eines der familientauglichsten: flache Nichtschwimmerbereiche, ein Wasserspielplatz, mehrere Spielplätze, Familienumkleiden und Wickelräume; die Schwimmbereiche sichert die Badeaufsicht. Größere Kinder zieht es auf die 113 m lange Wasserrutsche mit Zeitmessung. Unter den alten Bäumen gibt es Schatten – an heißen Tagen aber früh kommen. Gleich daneben liegt der weitläufige **Europapark** mit einem großen Kinderspielplatz, den Klagenfurt Tourismus auch für Tage ohne Badewetter empfiehlt. Alle Bäder rund um den See stehen im Artikel [Badestellen am Wörthersee](/blog/beste-badestellen-woerthersee).
 
-## Europapark im Strandbad
-Kletterturm, Wasserrutschen und Spielplatz direkt am See.
+## Weitere Bäder für Familien
+- **Strandbad Loretto (Klagenfurt):** laut Stadtwerken ruhiger und familienfreundlich; das Ticket des Strandbads Klagenfurt gilt auch hier
+- **Kropfitschbad (Krumpendorf):** feinschottriger Einstieg, laut Klagenfurt Tourismus ideal für kleinere Kinder
+- **Promenadenbad Pörtschach:** in der verkehrsfreien Westbucht, mit Kinderspielplatz, Sandspiellandschaften und Wasserkletterturm
 
-## Pyramidenkogel – Aussichtsturm mit Riesenrutsche
-Der höchste Holzaussichtsturm der Welt hat für Kinder ein besonderes Highlight: die 120 m lange Indoor-Rutsche vom Turm nach unten. Panoramablick für die Eltern, Adrenalin für die Kids.
+## Mit dem Schiff nach Velden
+Für Kinder ist die [Wörthersee-Schifffahrt](/blog/woerthersee-schifffahrt) ein eigener Ausflug: Von Klagenfurt nach Velden dauert die Fahrt rund 1 Stunde 45 Minuten, unterwegs legt das Schiff an beiden Ufern an. In Velden empfiehlt Klagenfurt Tourismus den Spielplatz im Kurpark, während die Eltern einen Kaffee trinken. Zurück geht es mit dem Schiff oder mit dem Zug am Nordufer – vorher die letzte Rückfahrt im Fahrplan nachsehen.
 
-## Tierische Erlebnisse
-Für tierbegeisterte Kinder lohnen sich die Tiertouren der Region – von der **Alpaka-Wanderung** über **Eselwanderungen** bis zur **Greifvogelschau**. Sanft, lehrreich und ein echtes Urlaubs-Highlight (eigene Artikel dazu im Magazin).
+## Pyramidenkogel – Turm und Rutsche
+Der rund 100 m hohe Holz-Aussichtsturm über dem Südufer hat einen Panoramalift und eine 120 m lange Rutsche, die als geschlossene Röhre am Turm hinunterführt. Rutschen dürfen Kinder ab 130 cm Körpergröße, nur allein und nur bei trockenem Wetter; die Rutsche kostet extra. Am Turmfuß gibt es einen kostenlosen Natur-Erlebnis-Spielplatz und einen rund 2,3 km langen Rundweg. Details im Artikel [Pyramidenkogel](/blog/pyramidenkogel-woerthersee).
 
-## Schlechtwetter-Programm
-- **Hallenbäder & Thermen** in der Umgebung (z. B. Bad Kleinkirchheim)
-- **Minimundus** ist teils überdacht
-- **Reptilienzoo Happ** funktioniert auch bei Regen
+## Tierpark Rosegg
+Südlich von Velden, zwischen Wörthersee und Faaker See, liegt [Schloss Rosegg mit Tierpark](/blog/schloss-rosegg-tierpark-ausflug): Wildtiere rund um eine Burgruine und ein großes Heckenlabyrinth – gut für einen halben Tag mit Kindern.
+
+## Tiere erleben in ganz Kärnten
+Nicht direkt am See, aber gut mit einem Wörthersee-Urlaub kombinierbar: [Alpaka-Wanderungen](/blog/alpaka-wanderung-kaernten), [Eselwanderungen](/blog/eselwanderung-kaernten) und [Greifvogelschauen](/blog/greifvogelschau-adler-kaernten). Wo es sie gibt, steht in den jeweiligen Artikeln.
+
+## Wenn es regnet
+- **Minimundus:** 1.500 m² Indoor-Fläche
+- **Reptilienzoo Happ:** Öffnungszeiten vorab prüfen
+- **Pyramidenkogel:** oben eine verglaste Skybox – die Rutsche steht bei Nässe aber still
+- Weitere Ideen auf der Seite [regentaugliche Ausflüge](/regentaugliche-ausfluege)
+
+## Kärnten Card – lohnt sie sich?
+Die Kärnten Card öffnet laut Anbieter über 100 Ausflugsziele in Kärnten. Am Wörthersee sind zum Beispiel der Reptilienzoo Happ und der Aussichtsturm auf dem Pyramidenkogel dabei (die Rutsche nicht), die Wörthersee-Schifffahrt dagegen nicht. Ob sich die Karte rechnet, hängt davon ab, wie viele Partnerziele man wirklich besucht – die aktuelle Liste steht auf kaerntencard.at.
 
 ## Tipps für entspannte Familientage
-- **Früh starten:** Vormittags sind Parkplätze und Attraktionen leerer
-- **Kärnten Card:** Mit vielen Übernachtungen gratis – freier Eintritt zu über 100 Ausflugszielen, rechnet sich für Familien schnell
-- **Mittagshitze meiden:** vormittags Aktivität, mittags See, nachmittags Schatten
+- **Früh starten:** Strandbad und Parkplätze sind vormittags leerer
+- **Parken in der Ostbucht:** laut Stadtwerken bei Minimundus und am P+R-Parkplatz Villacher Straße, dann zu Fuß oder mit dem Stadtbus weiter
+- **Mittagshitze meiden:** vormittags Programm, mittags in den Schatten, nachmittags baden
+- **Ohne Auto:** Krumpendorf, Pörtschach und Velden liegen an der Bahn, die Schiffe verbinden beide Ufer
 
 ## Unterkunft-Tipp
-Familienfreundliche Hotels mit Kinderbetreuung findet man am besten über booking.com:
+Familienfreundliche Hotels rund um den See findet man am besten über booking.com:
     `,
     officialLinks: [
       { label: 'Minimundus Klagenfurt (minimundus.at)', url: 'https://www.minimundus.at' },
       { label: 'Reptilienzoo Happ (reptilienzoo.at)', url: 'https://www.reptilienzoo.at' },
+      { label: 'Strandbad Klagenfurt – Stadtwerke Klagenfurt', url: 'https://baeder.stw.at/baeder/strandbad-klagenfurt/' },
+      { label: 'Kärnten Card – Ausflugsziele', url: 'https://www.kaerntencard.at/sommer/' },
     ],
     affiliateLinks: [
       { label: 'Familienhotels Wörthersee – booking.com', url: 'https://www.booking.com/region/at/carinthia.de.html?nflt=fc%3D2' },
@@ -1927,46 +1964,55 @@ Juni bis Oktober. Für die hohen Gipfel ist der Spätsommer und Frühherbst oft 
   },
   {
     slug: 'woerthersee-radweg-komplett',
-    startCoords: [46.6200, 14.1400],
-    title: 'Wörthersee Radweg – Die komplette Runde in einem Tag',
-    excerpt: 'Die 52 km lange Radroute rund um den Wörthersee ist eine der schönsten Seeradrunden Österreichs. Wo die Strecke schön ist, wo sie nervt, und wie man die Tour in einem Tag ohne Hetze schafft.',
+    startCoords: [46.6119, 14.0433],
+    startPoint: { name: 'Schloss Velden – Start laut Wegbeschreibung des R4', arrival: 'mit dem Zug bis Velden am Wörther See, Fahrradmitnahme möglich', note: 'Rundweg: Einstieg genauso in Klagenfurt, Krumpendorf oder Pörtschach – Klagenfurt Tourismus empfiehlt die Ostbucht als Start.' },
+    planningMistakes: [
+      { fehler: 'Mit Kindern die ganze Runde einplanen, weil sie „flach“ ist', besser: 'Zwischen Pörtschach und Velden verläuft der R4 neben der stark befahrenen Bundesstraße B83, am Südufer ist der Radweg nicht durchgehend ausgebaut. Mit radelnden Kindern lieber nur das Nordufer zwischen Klagenfurt und Pörtschach fahren und mit dem Zug zurück.' },
+      { fehler: 'Fest mit dem Schiff als Rückfahrt rechnen', besser: 'Räder fahren nur auf MS Kärnten und MS Klagenfurt mit, nur bei freiem Platz und gegen Aufpreis. Als Plan B die Bahn am Nordufer einplanen und den Fahrplan vorab prüfen.' },
+      { fehler: 'Durch die Pörtschacher Parkanlage am Landspitz radeln', besser: 'Dort heißt es laut Klagenfurt Tourismus absteigen und schieben. Für die Promenade etwas Zeit einplanen – zu Fuß ist sie ohnehin schöner.' },
+    ],
+    title: 'Wörthersee-Radweg R4 – die ganze Runde um den See an einem Tag',
+    excerpt: 'Rund 39 km, etwa 100 Höhenmeter, durchgehend asphaltiert: Der Wörthersee-Radweg R4 umrundet den See. Wo er am Wasser entlangführt, wo er neben der Bundesstraße verläuft und wie man mit Zug oder Schiff abkürzt.',
     date: '2026-06-01',
     category: 'Ausflug',
     region: 'kaernten',
     bestSeason: 'April–Oktober',
-    highlights: ['52 km – komplette Runde in 4–5 Stunden', 'Mix aus Seepromenade und ruhigen Nebenwegen', 'Strecke mehrfach teilbar – auch kürzere Runden möglich'],
+    highlights: ['R4: rund 39 km Rundkurs, etwa 100 Höhenmeter, asphaltiert', 'Sonniges Nordufer an der Bahn, schattigeres Südufer', 'Abkürzen mit dem Zug (Nordufer) oder dem Schiff'],
     content: `
-Den Wörthersee einmal komplett umrunden? 52 Kilometer, relativ flach, abwechslungsreich – und an einem Tag gut machbar, wenn man es nicht übertreibt. Hier ist das ehrliche Bild der Strecke.
+Der **Wörthersee-Radweg R4** gehört zum Kärntner Radwegenetz und führt einmal rund um den See: rund 39 km, etwa 100 Höhenmeter, durchgehend asphaltiert. Die reine Fahrzeit gibt bergfex mit etwa zweieinhalb Stunden an; mit Badestopps, Einkehr und Abstechern wird schnell ein ganzer Tag daraus. Wer mehr fahren will, findet bei der Region Wörthersee eine rund 48 km lange Rundfahrt, die das [Keutschacher Seental](/blog/keutschacher-seental-radtour) einbezieht.
 
-## Streckenübersicht
+## Streckenüberblick
+- **Länge:** rund 39 km (Rundkurs)
+- **Höhenmeter:** etwa 100
+- **Belag:** asphaltiert
+- **Fahrzeit ohne Pausen:** etwa 2,5 Stunden
+- **Start:** beliebig – die Wegbeschreibung des R4 beginnt beim Schloss Velden, Klagenfurt Tourismus empfiehlt die Ostbucht in Klagenfurt
+- **Verkehr:** zwischen Pörtschach und Velden neben der stark befahrenen B83, am Südufer kein durchgehend ausgebauter Radweg
 
-- Gesamtlänge: ca. 52 km (Rundkurs)
-- Höhenmeter: unter 400 m gesamt
-- Dauer (ohne Pausen): 3,5–4 Stunden
-- Mit Pausen, Baden, Einkehr: 6–7 Stunden
+## Nordufer: sonnig, mit Bahn und Promenaden
+Von Klagenfurt aus führt der R4 durch die Ostbucht: entlang der Friedelpromenade mit Blick auf die Karawanken und Schloss Loretto, vorbei am freien Seezugang beim Strandcafé Schamandra und am Kropfitschbad nach **Krumpendorf**. Dort hat man die Wahl zwischen dem direkten Weg entlang der Bahn und einem Schlenker zur kleinen Seepromenade mit Spielplatz. Bei **Pritschitz** lohnt ein Abstecher zum Freibad, das keinen Eintritt kostet. In **Pörtschach** folgt die Promenade mit Denkmälern für Johannes Brahms und Thomas Koschat und der Parkanlage am Landspitz, wo Radler absteigen müssen.
 
-## Nordufer – das Highlight
+Zwischen Pörtschach und Velden wird es ungemütlicher: Über Töschling und Saag verläuft der Radweg neben der stark befahrenen Bundesstraße B83. Lohnende Stopps gibt es trotzdem: den freien Seezugang bei **Bad Saag**, eine Aussichtsplattform mit Blick auf den Pyramidenkogel und kurz vor Velden das **Kraftwerk Forstsee** – eine Villa des Wörthersee-Architekten Franz Baumgartner, die 1925 ans Netz ging und heute als Schaukraftwerk zeigt, wie Strom erzeugt wird.
 
-Das Nordufer zwischen Klagenfurt und Velden ist der schönste Teil. Hier verläuft der Weg größtenteils direkt am Wasser: Promenaden, kurze Waldstücke, Badebuchten zum spontanen Eintauchen. Pörtschach ist der Pflicht-Stopp – die Halbinsel, die ins Wasser ragt, bietet den besten Wörthersee-Blick.
+## Südufer: schattiger, aber mit Lücken
+Das Südufer ist laut Klagenfurt Tourismus deutlich schattiger, der Radweg dort aber weniger gut ausgebaut; einen durchgehenden Radweg gibt es nicht, Teile führen entlang der Süduferstraße. Dafür liegen hier einige der schönsten Stopps: das Naturschutzgebiet am **Lendspitz** mit Schilfgürtel am Abfluss des Sees, der Glanfurt, dann das **Strandbad Maiernigg** und gegenüber der Weg zum **Komponierhäuschen von Gustav Mahler**, der dort zwischen 1900 und 1907 seine Hauptwerke schrieb. Zwischen **Sekirn** und **Reifnitz** gibt es einen kleinen Rastplatz mit Seezugang, beliebt auch zum Sonnenuntergang. Es folgen Reifnitz mit seinem Schloss und [Maria Wörth](/blog/maria-woerth-woerthersee) mit Pfarrkirche und Rosenkranzkirche auf der Halbinsel. Kurz danach öffnet sich an der **Teixlbucht** der Blick auf die Kapuzinerinsel, bevor man [Velden](/blog/velden-am-woerthersee-urlaub) erreicht.
 
-## Südufer – ehrlich bewertet
+## In welche Richtung?
+Klagenfurt Tourismus schlägt vor, vormittags über das Südufer nach Velden zu fahren und nachmittags am Nordufer mit seinen vielen Einkehrmöglichkeiten zurück – umgekehrt funktioniert es genauso. Familien mit radelnden Kindern empfiehlt Klagenfurt Tourismus das sonnige Nordufer. Unser Rat: mit Kindern nur das Stück zwischen Klagenfurt und Pörtschach fahren, denn danach geht es neben der Bundesstraße weiter.
 
-Das Südufer ist weniger einheitlich. Teile verlaufen auf Landstraßen (mit Radstreifen), durch Dörfer und an Einfahrten vorbei. Weniger romantisch, aber: Maria Wörth liegt am Südufer – und das ist ein Pflichtbesuch. Die Halbinsel mit der gotischen Kirche ist das Herzstück des Sees.
+## Abkürzen mit Zug oder Schiff
+Die Runde lässt sich jederzeit abbrechen. Am Nordufer fährt die S-Bahn zurück nach Klagenfurt, am Südufer gibt es keine Bahn. Alternativ geht es mit der [Wörthersee-Schifffahrt](/blog/woerthersee-schifffahrt) zurück – Räder nehmen aber nur MS Kärnten und MS Klagenfurt mit, nur bei freiem Platz und gegen Aufpreis. Fahrpläne vorab prüfen.
 
-## Startempfehlung
+## Baden unterwegs
+Gratis ins Wasser geht es unter anderem beim Schamandra in der Ostbucht, im Freibad Pritschitz, bei Bad Saag und zwischen Sekirn und Reifnitz. Strandbäder gibt es in Klagenfurt, Maiernigg, Krumpendorf, Pörtschach und Velden; beim Strandbad Klagenfurt stehen Fahrradständer. Die ganze Übersicht steht im Artikel [Badestellen am Wörthersee](/blog/beste-badestellen-woerthersee).
 
-**Klagenfurt-Strandbad**, Uhrzeigersinn (erst Nordufer). Vorteil: Das schönste Stück liegt am Anfang, wenn man noch frisch ist. Velden ist die natürliche Hälftenpause.
-
-## Wo Bad und Pause einbauen?
-
-- Nordufer Pörtschach: Strandbad oder Freistrand Bogenspitz
-- Südufer Maria Wörth: Freistrand an der Halbinsel
-- Velden: Promenade + Kaffee + obligatorischer Schlenker
-
-## Bikeverleih
-
-ÖBB Radverleih am Klagenfurter Hauptbahnhof, ca. 25 €/Tag. Oder E-Bikes in Velden und Pörtschach – lohnt sich wenn man nachmittags noch gemütlich schwimmen möchte.
+## Räder leihen
+Die Tourismusinformation am Neuen Platz in Klagenfurt verleiht laut Klagenfurt Tourismus Fahrräder, E-Bikes und Mountainbikes. Dazu kommen Stationen des Leihradsystems nextbike in der Ostbucht, beim Strandbad Maiernigg, in Krumpendorf, Pörtschach und Velden – praktisch, wenn man die Runde unterwegs beenden will. Aktuelle Preise und Standorte vorab prüfen.
     `,
+    officialLinks: [
+      { label: 'Wörthersee Radrunde – Klagenfurt Tourismus', url: 'https://www.visitklagenfurt.at/de/blog/urlaub-freizeit/woerthersee-radrunde-rund-um-den-woerthersee/' },
+      { label: 'Wörtherseeradweg R4 – bergfex', url: 'https://www.bergfex.at/sommer/kaernten/touren/radfahren/2277,woertherseeradweg-r4/' },
+    ],
     affiliateLinks: [
       { label: 'Fahrradschloss für Urlaub – Amazon', url: 'https://www.amazon.de/s?k=fahrradschloss+sicher' },
       { label: 'Hotels am Wörthersee – booking.com', url: 'https://www.booking.com/region/at/worthersee.de.html' },

@@ -17,7 +17,7 @@ export type Lake = {
 };
 
 export const LAKES: Lake[] = [
-  { name: 'Wörthersee', region: 'Kärnten', slug: 'beste-badestellen-woerthersee', maxTemp: '28 °C', groesse: 'sehr groß', charakter: 'Mondän & belebt', idealFuer: 'Action, Ausgehen, Familien', gratis: true, tipp: 'Gratis-Strände in Maria Wörth & Reifnitz', tags: ['warm', 'familie', 'wassersport'] },
+  { name: 'Wörthersee', region: 'Kärnten', slug: 'beste-badestellen-woerthersee', maxTemp: '28 °C', groesse: 'sehr groß', charakter: 'Mondän & belebt', idealFuer: 'Action, Ausgehen, Familien', gratis: true, tipp: 'Freie Seezugänge bei Reifnitz, Pritschitz & Bad Saag', tags: ['warm', 'familie', 'wassersport'] },
   { name: 'Klopeiner See', region: 'Kärnten', slug: 'klopeiner-see-badeurlaub', maxTemp: '28 °C', groesse: 'klein', charakter: 'Ruhig & familiär', idealFuer: 'Familien mit Kindern', gratis: false, tipp: 'Einer der wärmsten Badeseen Österreichs, keine Motorboote', tags: ['warm', 'familie', 'ruhig'] },
   { name: 'Millstätter See', region: 'Kärnten', slug: 'millstaetter-see-wandern-und-schwimmen', maxTemp: '26 °C', groesse: 'groß & tief', charakter: 'Elegant & ruhig', idealFuer: 'Wandern + Baden, Paare', gratis: true, tipp: 'Im Herbst herrlich leer', tags: ['ruhig', 'wanderung', 'warm'] },
   { name: 'Faaker See', region: 'Kärnten', slug: 'faaker-see-badestellen', maxTemp: '26 °C', groesse: 'mittel', charakter: 'Türkis & malerisch', idealFuer: 'Familien, Fotografen', gratis: false, tipp: 'Türkis durch feine Kalkteilchen, keine Verbrenner-Boote', tags: ['warm', 'familie'] },
