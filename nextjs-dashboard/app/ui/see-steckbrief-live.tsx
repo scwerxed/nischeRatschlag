@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import type { SeeMesswert } from '@/app/lib/seen-messstellen';
+import SeeTrend from '@/app/ui/see-trend';
 
 // Live-Werte aller Messstellen eines Sees für die Steckbriefe /wassertemperatur/[see]. Welche Stationen zum
 // See gehören, liefert der Server; hier wird nur /api/seewetter abgefragt (gleiche Route und derselbe
@@ -69,6 +70,7 @@ export default function SeeSteckbriefLive({ stationen }: { stationen: Steckbrief
                 <>
                   <p className="font-serif text-display font-extrabold text-ink tabular-nums">{formatGrad(w.wasser)}</p>
                   <p className="text-fine text-ink-soft mt-1">Stand: {formatStand(w.stand)} Uhr</p>
+                  <SeeTrend wert={w} className="block text-fine text-ink-soft mt-0.5" />
                 </>
               ) : (
                 <p className="text-caption text-ink-soft mt-2">Gerade keine aktuelle Messung{fehler ? ' (Verbindung fehlgeschlagen)' : ''}.</p>

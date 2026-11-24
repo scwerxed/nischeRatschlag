@@ -451,6 +451,14 @@ export default async function SeeSteckbriefPage({ params }: Props) {
                 <strong>Nur frische Werte.</strong> Messungen, die älter als 72 Stunden sind, blenden wir aus, statt sie als
                 „aktuell“ zu verkaufen.
               </li>
+              <li>
+                <strong>Pfeil = Veränderung seit etwa einem Tag.</strong> Unter dem Live-Wert steht, um wie viel das Wasser
+                seit dem Messwert von rund einem Tag vorher wärmer oder kühler geworden ist – mit Datum und Uhrzeit des
+                Vergleichswerts.
+                {s.stationen.some((m) => m.quelle === 'sbg') && (
+                  <> Das Messnetz Salzburg liefert nur den jeweils letzten Wert, dort fehlt der Vergleich.</>
+                )}
+              </li>
             </>
           ) : (
             <>

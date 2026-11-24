@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import { type ReactNode, useEffect, useState } from 'react';
 import type { SeeMesswert } from '@/app/lib/seen-messstellen';
+import SeeTrend from '@/app/ui/see-trend';
 
 // Live-Tabelle aller offiziellen See-Messstellen für /wassertemperatur. Welche Stationen es gibt
 // und zu welchem Steckbrief (/wassertemperatur/[see]) der Seename führt, liefert der Server
@@ -149,6 +150,7 @@ export default function WassertemperaturLive({ gruppen, zusatz }: { gruppen: WtG
                           <>
                             <span className="font-semibold text-ink tabular-nums">{formatGrad(w.wasser)}</span>
                             <span className="block text-fine text-ink-soft">Stand {formatStand(w.stand)} Uhr</span>
+                            <SeeTrend wert={w} className="block text-fine text-ink-soft" />
                           </>
                         ) : (
                           <span className="text-caption text-ink-soft">keine aktuelle Messung</span>

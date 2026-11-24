@@ -113,8 +113,12 @@ export const LIVE_SEEN: LiveSee[] = Object.values(
   }, {}),
 ).sort((a, b) => a.see.localeCompare(b.see, 'de'));
 
-/** Live-Messwert einer Station, wie ihn /api/seewetter liefert. */
-export type SeeMesswert = { wasser: number; stand: string };
+/**
+ * Live-Messwert einer Station, wie ihn /api/seewetter liefert. `vorher` = Vergleichswert von etwa einem Tag
+ * davor (12–36 h vor `stand`, möglichst nah an 24 h) für die Trend-Anzeige – nur Kärnten und Oberösterreich
+ * liefern einen Verlauf, das Messnetz Salzburg nur den jeweils letzten Wert.
+ */
+export type SeeMesswert = { wasser: number; stand: string; vorher?: { wasser: number; stand: string } };
 
 // ── Seen ohne Live-Messstelle, aber mit offiziellen Proben (AGES) ───────────
 // Bekannte Badeseen ohne offenes Live-Messnetz (v. a. Tirol, Steiermark, Burgenland, Wien, Vorarlberg) bekommen

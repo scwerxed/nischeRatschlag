@@ -29,9 +29,34 @@ function frisch(stand: Date, wasser: number): boolean {
   return Number.isFinite(t) && Date.now() - t < MAX_ALTER_MS && Number.isFinite(wasser) && wasser > -5 && wasser < 40;
 }
 
-function add(out: Werte, id: string, wasser: number, stand: Date) {
+const STUNDE_MS = 60 * 60 * 1000;
+
+/** Ein Punkt der Zeitreihe: Zeit in ms, Wassertemperatur in °C. */
+type Punkt = { t: number; v: number };
+
+/**
+ * Vergleichswert für die Trend-Anzeige („seit gestern“): der Punkt der Zeitreihe, der am nächsten an
+ * „aktueller Stand − 24 h“ liegt, aber 12 bis 36 Stunden vor dem aktuellen Wert. Kärnten liefert rund 24 h
+ * (nur die Punkte, an denen sich der Wert ändert – der früheste liegt also teils erst 16–20 h zurück),
+ * Oberösterreich rund 48 h im 15-Minuten-Takt, Salzburg nur den letzten Wert (→ kein Vergleich).
+ * Die Oberfläche nennt deshalb immer Datum und Uhrzeit des Vergleichswerts, nie „vor genau 24 Stunden“.
+ */
+function vergleichswert(reihe: Punkt[], stand: Date): SeeMesswert['vorher'] {
+  const jetzt = stand.getTime();
+  let best: Punkt | undefined;
+  for (const p of reihe) {
+    const abstand = jetzt - p.t;
+    if (!Number.isFinite(abstand) || abstand < 12 * STUNDE_MS || abstand > 36 * STUNDE_MS) continue;
+    if (!Number.isFinite(p.v) || p.v <= -5 || p.v >= 40) continue;
+    if (!best || Math.abs(abstand - 24 * STUNDE_MS) < Math.abs(jetzt - best.t - 24 * STUNDE_MS)) best = p;
+  }
+  return best ? { wasser: Math.round(best.v * 10) / 10, stand: new Date(best.t).toISOString() } : undefined;
+}
+
+function add(out: Werte, id: string, wasser: number, stand: Date, reihe: Punkt[] = []) {
   if (!KNOWN_IDS.has(id) || !frisch(stand, wasser)) return;
-  out[id] = { wasser: Math.round(wasser * 10) / 10, stand: stand.toISOString() };
+  const vorher = vergleichswert(reihe, stand);
+  out[id] = { wasser: Math.round(wasser * 10) / 10, stand: stand.toISOString(), ...(vorher ? { vorher } : {}) };
 }
 
 // Bewusst `no-store` statt `next: { revalidate }`: Der Next-Data-Cache liefert nach einer ruhigen Phase
@@ -50,7 +75,13 @@ async function kaernten(out: Werte) {
   for (const f of features) {
     const p = f?.properties ?? {};
     if (typeof p.letzter_wert_wt === 'number' && typeof p.letzter_wert_wt_date === 'string') {
-      add(out, `ktn-${p.id}`, p.letzter_wert_wt, new Date(p.letzter_wert_wt_date));
+      // Verlauf der letzten rund 24 h: [{ date: ISO-Zeit, value: °C }]
+      const verlauf: any[] = Array.isArray(p.werte?.wassertemperatur) ? p.werte.wassertemperatur : [];
+      const reihe: Punkt[] = verlauf.map((x) => ({
+        t: typeof x?.date === 'string' ? new Date(x.date).getTime() : NaN,
+        v: typeof x?.value === 'number' ? x.value : NaN,
+      }));
+      add(out, `ktn-${p.id}`, p.letzter_wert_wt, new Date(p.letzter_wert_wt_date), reihe);
     }
   }
 }
@@ -68,10 +99,15 @@ async function salzburg(out: Werte) {
 }
 
 // ZRXP: je Zeitreihe Kopfzeilen mit „#“ (darin SANR = Stationsnummer), danach Zeilen
-// „JJJJMMTThhmmss Wert“ in UTC+1; -777 steht für „kein gültiger Wert“.
+// „JJJJMMTThhmmss Wert“ in UTC+1 (rund 48 h im 15-Minuten-Takt); -777 steht für „kein gültiger Wert“.
+function zrxpZeit(t: string): Date {
+  return new Date(`${t.slice(0, 4)}-${t.slice(4, 6)}-${t.slice(6, 8)}T${t.slice(8, 10)}:${t.slice(10, 12)}:${t.slice(12, 14)}+01:00`);
+}
+
 async function oberoesterreich(out: Werte) {
   const text = await (await fetchSource(OOE_URL)).text();
-  const latest = new Map<string, { t: string; v: number }>();
+  // Nur die Reihen unserer Stationen sammeln (die Datei enthält rund 150, meist Flüsse).
+  const reihen = new Map<string, { t: string; v: number }[]>();
   let id = '';
   for (const line of text.split('\n')) {
     if (line.startsWith('#')) {
@@ -79,15 +115,17 @@ async function oberoesterreich(out: Werte) {
       if (m) id = `ooe-${m[1].trim()}`;
       continue;
     }
+    if (!KNOWN_IDS.has(id)) continue;
     const [t, raw] = line.trim().split(/\s+/);
     const v = Number(raw);
-    if (!id || !/^\d{14}$/.test(t ?? '') || !Number.isFinite(v) || v === -777) continue;
-    const prev = latest.get(id);
-    if (!prev || t > prev.t) latest.set(id, { t, v });
+    if (!/^\d{14}$/.test(t ?? '') || !Number.isFinite(v) || v === -777) continue;
+    const reihe = reihen.get(id);
+    if (reihe) reihe.push({ t, v });
+    else reihen.set(id, [{ t, v }]);
   }
-  for (const [sid, { t, v }] of latest) {
-    const stand = new Date(`${t.slice(0, 4)}-${t.slice(4, 6)}-${t.slice(6, 8)}T${t.slice(8, 10)}:${t.slice(10, 12)}:${t.slice(12, 14)}+01:00`);
-    add(out, sid, v, stand);
+  for (const [sid, reihe] of reihen) {
+    const letzter = reihe.reduce((a, b) => (b.t > a.t ? b : a));
+    add(out, sid, letzter.v, zrxpZeit(letzter.t), reihe.map((p) => ({ t: zrxpZeit(p.t).getTime(), v: p.v })));
   }
 }
 

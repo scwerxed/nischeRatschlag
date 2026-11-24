@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import type { SeeMesswert } from '@/app/lib/seen-messstellen';
+import SeeTrend from '@/app/ui/see-trend';
 
 // Live-Wassertemperatur für die Artikel-Sidebar. Welche Messstellen passen, entscheidet der Server
 // (app/lib/gewaesser.ts → seeMessstellenFuer); hier wird nur der aktuelle Wert über /api/seewetter
@@ -64,6 +65,7 @@ export default function SeeLive({ stationen, steckbrief }: { stationen: Station[
             {state.station.km >= 1 && <span className="text-ink-soft"> · ≈ {Math.round(state.station.km)} km von hier</span>}
           </p>
           <p className="text-fine text-ink-soft mt-1">Stand: {formatStand(state.wert.stand)} Uhr</p>
+          <SeeTrend wert={state.wert} className="block text-fine text-ink-soft mt-0.5" />
           <p className="text-[11px] text-ink-soft mt-3">
             Offizieller Messwert: {state.station.quelle} (CC BY 4.0). An einzelnen Badeplätzen kann die Temperatur davon abweichen.
           </p>
