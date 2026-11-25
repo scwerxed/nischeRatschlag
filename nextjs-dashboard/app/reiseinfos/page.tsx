@@ -46,15 +46,17 @@ export default function ReiseinfosPage() {
         <p>Die <strong className="font-semibold text-ink">Autobahn-Vignette</strong> ist Pflicht: 10-Tage (~12 €), 2-Monate oder Jahres-Vignette. Erhältlich digital (ÖAMTC/ASFINAG) oder an Tankstellen. Die Digital-Vignette gilt erst ab dem 18. Tag nach Kauf rückwirkend nicht – früh kaufen.</p>
         <p>Zusätzlich <strong className="font-semibold text-ink">extra mautpflichtig</strong> (nicht in der Vignette enthalten):</p>
         <ul className="list-none space-y-1.5 border-l-2 border-ink pl-4">
-          <li className="flex gap-2"><span className="shrink-0 mt-[0.6em] w-2.5 h-px bg-signal" />Großglockner Hochalpenstraße – Salzburg/Kärnten (~40 €/Tag PKW)</li>
-          <li className="flex gap-2"><span className="shrink-0 mt-[0.6em] w-2.5 h-px bg-signal" />Timmelsjoch Hochalpenstraße – Tirol (~30 €)</li>
-          <li className="flex gap-2"><span className="shrink-0 mt-[0.6em] w-2.5 h-px bg-signal" />Silvretta-Hochalpenstraße – Tirol/Vorarlberg (~17 €)</li>
-          <li className="flex gap-2"><span className="shrink-0 mt-[0.6em] w-2.5 h-px bg-signal" />Nockalmstraße – Kärnten (~20 €)</li>
+          <li className="flex gap-2"><span className="shrink-0 mt-[0.6em] w-2.5 h-px bg-signal" /><span><Link href="/blog/grossglockner-tagesausflug" className="text-ink underline decoration-signal underline-offset-[3px] hover:text-signal-dark">Großglockner Hochalpenstraße</Link> – Salzburg/Kärnten (Tagesticket, gilt am selben Tag beliebig oft)</span></li>
+          <li className="flex gap-2"><span className="shrink-0 mt-[0.6em] w-2.5 h-px bg-signal" />Timmelsjoch Hochalpenstraße – Tirol</li>
+          <li className="flex gap-2"><span className="shrink-0 mt-[0.6em] w-2.5 h-px bg-signal" />Silvretta-Hochalpenstraße – Tirol/Vorarlberg</li>
+          <li className="flex gap-2"><span className="shrink-0 mt-[0.6em] w-2.5 h-px bg-signal" />Nockalmstraße – Kärnten</li>
         </ul>
+        <p>Die Panoramastraßen sind im Winter gesperrt, und die Tarife ändern sich jedes Jahr – aktuelle Preise und Öffnungszeiten beim jeweiligen Betreiber prüfen.</p>
       </Block>
 
       <Block title="Beste Reisezeit">
-        <p>Juli/August sind am wärmsten (Badeseen bis 28 °C), aber am vollsten und teuersten. <strong className="font-semibold text-ink">Geheimtipp September:</strong> Wasser vielerorts noch 22–25 °C, Preise deutlich günstiger, kaum Touristen. Region-spezifische Saison-Tipps findest du auf den{' '}
+        <p>Juli/August sind am wärmsten (Badeseen bis 28 °C), aber am vollsten und teuersten. <strong className="font-semibold text-ink">Geheimtipp September:</strong> Nach den Sommerferien wird es ruhiger, und die großen Seen kühlen nur langsam ab – wie warm sie gerade sind, zeigt die Seite{' '}
+          <Link href="/wassertemperatur" className="text-ink underline decoration-signal underline-offset-[3px] hover:text-signal-dark">Wassertemperatur</Link>. Region-spezifische Saison-Tipps findest du auf den{' '}
           <Link href="/#regionen" className="text-ink underline decoration-signal underline-offset-[3px] hover:text-signal-dark">Regionenseiten</Link>.</p>
       </Block>
 

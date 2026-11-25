@@ -64,7 +64,7 @@ export const AUSSICHT_GROUPS: { title: string; note: string; picks: { slug: stri
     title: 'Panoramastraßen: Aussicht ab dem Parkplatz',
     note: 'Hier fährst du direkt in die Höhe. Beachte: Diese Straßen sind in der Regel mautpflichtig und im Winter gesperrt – Öffnungszeitraum und Tarife vorab beim Betreiber prüfen.',
     picks: [
-      { slug: 'grossglockner-tagesausflug', warum: 'Die Hochalpenstraße führt bis über 2.500 m; an der Kaiser-Franz-Josefs-Höhe steht man direkt vor dem Gletscher.' },
+      { slug: 'grossglockner-tagesausflug', warum: 'Die Hochalpenstraße führt bis über 2.500 m; an der Kaiser-Franz-Josefs-Höhe steht man hoch über der Pasterze, dem größten Gletscher Österreichs.' },
       { slug: 'nockalmstrasse-panoramastrasse', warum: 'Sanfte Nockberge-Kuppen, viele Parkbuchten mit Aussicht – Panorama fast ohne Aussteigen.' },
       { slug: 'silvretta-hochalpenstrasse', warum: 'Serpentinen zum Stausee auf über 2.000 m mit Blick auf die Gletscher der Silvretta.' },
       { slug: 'villacher-alpe-dobratsch-wanderung', warum: 'Die Alpenstraße führt weit hinauf; von den oberen Parkplätzen ist es nur noch ein kurzer Weg zur Aussicht.' },
@@ -138,7 +138,7 @@ export const REGEN_GROUPS: { title: string; note: string; picks: { slug: string;
     note: 'Wenn Kinder dabei sind und der Tag gerettet werden muss: Ziele, bei denen der Großteil überdacht ist.',
     picks: [
       { slug: 'swarovski-kristallwelten', warum: 'Die Wunderkammern sind komplett drinnen; Garten und Spielturm liegen im Freien.' },
-      { slug: 'minimundus-klagenfurt', warum: 'Ehrlich gesagt eher ein Schönwetter-Ziel – die Modelle stehen im Park. Nur bei leichtem Nieselregen sinnvoll.' },
+      { slug: 'minimundus-klagenfurt', warum: 'Die Modelle stehen im Freien, aber die Indoor-Ausstellung (rund 1.500 m², mit 4D-Kino) füllt laut Betreiber etwa eine Stunde – für einen verregneten Nachmittag, nicht für einen ganzen Tag.' },
       { slug: 'haus-des-meeres-wien', warum: 'Haie, Krokodile und Tropenhaus auf vielen Stockwerken im Flakturm – komplett drinnen. An Regenwochenenden aber entsprechend voll.' },
     ],
   },
@@ -177,7 +177,6 @@ export const DAUER_GROUPS: { title: string; note: string; picks: { slug: string;
     note: 'Schnell hin, kurz staunen, ohne Stress zurück – ideal für spontane Lücken im Tag.',
     picks: [
       { slug: 'pyramidenkogel-woerthersee', zeit: '1–2 Std. inkl. Turm & Rutsche' },
-      { slug: 'minimundus-klagenfurt', zeit: '1–2 Std. Rundgang' },
       { slug: 'liechtensteinklamm', zeit: 'ca. 1,5 Std. inkl. Klammweg' },
       { slug: 'gaisberg-salzburg-aussicht', zeit: 'mit dem Bus hinauf: Gipfelrunde in 1 Std.' },
       { slug: 'alte-donau-baden-wien', zeit: 'Abendbad ab 1 Std.' },
@@ -194,6 +193,7 @@ export const DAUER_GROUPS: { title: string; note: string; picks: { slug: string;
       { slug: 'stift-melk', zeit: 'Führung + Stiftspark ≈ 3–4 Std.' },
       { slug: 'traunsee-gmunden', zeit: 'Stadt + Seepromenade ≈ 4 Std.' },
       { slug: 'schloss-eggenberg-graz', zeit: 'Prunkräume + Park ≈ 3 Std.' },
+      { slug: 'minimundus-klagenfurt', zeit: 'Park 1,5–3 Std. + Indoor ≈ 1 Std.' },
     ],
   },
   {
@@ -371,7 +371,7 @@ export const FAMILIEN_GROUPS: { title: string; note: string; picks: { slug: stri
     note: 'Planbare Ziele mit viel Programm auf kleinem Raum. Familienkarten gibt es oft – Tarife aber immer beim Betreiber prüfen.',
     picks: [
       { slug: 'familypark-st-margarethen', tipp: 'Österreichs größter Freizeitpark, klar auf jüngere Kinder ausgerichtet – ein ganzer Tag.' },
-      { slug: 'minimundus-klagenfurt', tipp: 'Fahrende Modellbahnen und Schiffe, dazu ein Spielplatz zum Toben.' },
+      { slug: 'minimundus-klagenfurt', tipp: 'Fahrende Modellbahnen, eine Tower Bridge, die sich für ein Schiff öffnet, und ein Spielplatz – bei Regen bleibt die Indoor-Ausstellung mit 4D-Kino.' },
       { slug: 'wien-schoenbrunn', tipp: 'Ältester Zoo der Welt plus Kindermuseum im Schloss – leicht ein ganzer Tag.' },
       { slug: 'wien-prater', tipp: 'Die schmalspurige Liliputbahn ist bei Kindern ein Fixpunkt.' },
       { slug: 'salzwelten-hallein-duerrnberg', tipp: 'Grubenbahn, Bergmannsrutschen und Salzsee-Floß – auch bei Regen. Drinnen ist es kühl.' },

@@ -779,38 +779,58 @@ Juni bis September. Im Juni ist es an den Ufern noch ruhiger und das Wasser oft 
   },
   {
     slug: 'grossglockner-tagesausflug',
-    startCoords: [47.0740, 12.8300],
-    planningMistakes: [ { fehler: 'Erst mittags auffahren', besser: 'Früh starten – nachmittags ziehen oft Wolken und Gewitter auf, dann ist die Sicht weg.' }, { fehler: 'Die Maut nicht eingeplant', besser: 'Rund 40 € pro PKW (Tageskarte) einkalkulieren.' } ],
+    startCoords: [47.0752, 12.7518],
+    startPoint: { name: 'Kaiser-Franz-Josefs-Höhe (Parkhaus)', parking: 'Parkhaus und Parkplätze bis zum Hohen Sattel laut Betreiber in der Maut inbegriffen', arrival: 'früh am Tag – im Hochsommer ziehen nachmittags oft Wolken auf', note: 'Mautstraße, laut Betreiber meist Anfang Mai bis Anfang November offen – Öffnungszeiten und Sperren vorab prüfen.' },
+    planningMistakes: [
+      { fehler: 'Erst mittags auffahren', besser: 'Früh starten – im Hochsommer bilden sich nachmittags oft Quellwolken und Gewitter, dann ist der Glockner weg.' },
+      { fehler: 'Mit freier Fahrt dank Kärnten Card rechnen', besser: 'Die Straße ist mautpflichtig, mit der Kärnten Card gibt es laut Kartenbetreiber nur eine Ermäßigung. Das Tagesticket gilt am Ausstellungstag dafür beliebig oft – aktuelle Tarife auf grossglockner.at.' },
+      { fehler: 'Mit der Gletscherbahn zur Pasterze hinunter wollen', besser: 'Die Standseilbahn ist laut Heiligenblut Tourismus seit 2025 außer Betrieb. Zum Gletscher geht es nur noch zu Fuß über den Gletscherweg – feste Schuhe und Kraft für den Rückweg bergauf einplanen.' },
+      { fehler: 'Mit dem Wohnmobil auf die Edelweißspitze fahren', besser: 'Die Stichstraße ist für Fahrzeuge über 3,5 t nicht zugelassen und für Busse ungeeignet, vom Wohnmobil rät der Betreiber ab. Unterhalb des Fuscher Törls parken und in rund 30 Minuten hinaufgehen.' },
+    ],
     title: 'Großglockner Hochalpenstraße – Tagesausflug mit Wow-Faktor',
-    excerpt: 'Österreichs höchster Berg, Gletscher hautnah und eine legendäre Panoramastraße: Der Großglockner ist ein Muss für jeden Kärnten-Besucher.',
+    excerpt: 'Von Heiligenblut über das Hochtor auf 2.504 m: Die Großglockner-Hochalpenstraße führt zur Kaiser-Franz-Josefs-Höhe über der Pasterze und zur Edelweißspitze. Was oben wartet, was die Maut abdeckt – und warum die Gletscherbahn nicht mehr fährt.',
     date: '2026-05-08',
     category: 'Ausflug',
     region: 'kaernten',
     bestSeason: 'Juni–Oktober',
-    highlights: ['Österreichs höchster Berg hautnah erleben', 'Pasterzegletscher direkt am Weg', 'Von Kärnten aus bequem als Tagesausflug'],
+    highlights: ['Kaiser-Franz-Josefs-Höhe (2.369 m) mit Blick auf Großglockner und Pasterze', 'Edelweißspitze (2.571 m): höchster befahrbarer Punkt, Rundblick auf mehr als 30 Dreitausender', 'Tagesticket gilt den ganzen Tag, Parken im Mautbereich inklusive'],
     content: `
-Die Großglockner Hochalpenstraße ist eine der schönsten Alpenstraßen der Welt – und von Kärnten aus bequem als Tagesausflug erreichbar.
+Die **Großglockner-Hochalpenstraße** verbindet Heiligenblut in Kärnten mit Fusch im Salzburger Pinzgau: 48 km mit 36 Kehren, eröffnet 1935. Am **Hochtor** (2.504 m), an der Grenze zwischen Kärnten und Salzburg, erreicht sie ihre Passhöhe. Von Kärnten aus ist sie ein klassischer Tagesausflug – das eigentliche Ziel ist für die meisten aber nicht der Pass, sondern die **Kaiser-Franz-Josefs-Höhe** über dem größten Gletscher Österreichs.
 
-## Die Strecke
-Von Heiligenblut in Kärnten führt die Straße auf 2.504 Meter Seehöhe hinauf zur Kaiser-Franz-Josefs-Höhe mit direktem Blick auf den Großglockner (3.798 m) und den Pasterzegletscher.
+## Kaiser-Franz-Josefs-Höhe (2.369 m)
+Über eine Abzweigung, die Gletscherstraße, erreicht man die Kaiser-Franz-Josefs-Höhe. Hier steht man hoch über der **Pasterze** und hat den **Großglockner** (3.798 m) direkt gegenüber. Das Besucherzentrum hat laut Betreiber mehrere Ausstellungen, von einer Automobilausstellung bis zum Nationalpark-Infocenter. Das Auto steht im Parkhaus oder auf den Parkplätzen bis zum Hohen Sattel; das Parken ist in der Maut inbegriffen.
 
-## Kaiser-Franz-Josefs-Höhe
-Das Besucherzentrum auf 2.369 m bietet Ausstellungen zum Gletscher, Panoramaterrassen und einen kurzen Wanderweg direkt zum Gletscherrand. Der Pasterze ist Österreichs längster Gletscher.
+In rund zehn Gehminuten führt der Kaiser-Franz-Josef-Panoramaweg zur Beobachtungswarte „Nationalpark Kristall Großglockner“. Von dort lassen sich Murmeltiere und Steinböcke beobachten, mit etwas Glück auch Gämsen oder Adler.
+
+Am Ende der Höhe beginnt der **Gamsgrubenweg**, ein Panoramaweg hoch über der Pasterze, der durch mehrere Tunnel führt. Nach gut einer Stunde käme man laut Betreiber zum Wasserfallwinkl – derzeit (Stand Herbst 2026) ist der Weg aber nur bis zum Ausgang von Tunnel 6 begehbar, danach gesperrt.
+
+## Zur Pasterze hinunter
+Die Pasterze zieht sich seit Jahrzehnten deutlich zurück. Vom Besucherzentrum führt der **Gletscherweg Pasterze** als gesicherter Steig hinunter. Die Standseilbahn, die früher einen Teil des Abstiegs abnahm, ist laut Heiligenblut Tourismus seit 2025 nach 61 Betriebsjahren außer Betrieb; die rund 500 Stufen geht man nun selbst. Bei der Gehzeit gehen die Angaben auseinander: Der Straßenbetreiber nennt rund 30 Minuten bis zum Gletscher und eine Stunde zurück, Heiligenblut Tourismus deutlich längere Wege bis zum Eis. Feste Schuhe sind Pflicht, und der Rückweg bergauf auf über 2.300 m ist anstrengender, als er aussieht.
 
 ## Edelweißspitze (2.571 m)
-Die höchste befahrbare Stelle der Straße – mit einem 360°-Panorama über 37 Dreitausender. Ein kurzer Fußweg führt zum Gipfelkreuz.
+Der höchste befahrbare Punkt der Straße liegt auf der Salzburger Seite: Beim **Fuscher Törl** zweigt eine rund 2 km lange Stichstraße zur Edelweißspitze ab. Oben öffnet sich ein Rundblick auf mehr als 30 Dreitausender. Für Busse ist die Stichstraße nicht geeignet, für Fahrzeuge über 3,5 t nicht zugelassen, vom Wohnmobil rät der Betreiber ab. Wer nicht hinauffahren kann, parkt unterhalb des Restaurants Fuscher Törl und geht in rund 30 Minuten zu Fuß hinauf.
 
-## Fuscher Törl und Hexenküche
-Weitere Aussichtspunkte entlang der Strecke mit Informationstafeln über Geologie und Geschichte.
+## Unterwegs anhalten
+Im Mautbereich gibt es laut Betreiber zahlreiche kostenlose Parkplätze – anhalten, schauen und ein paar Schritte gehen gehört zu dieser Straße. Beim **Haus Alpine Naturschau** auf der Salzburger Seite kann man oft Murmeltiere beobachten.
 
-## Praktische Infos
-Die Straße ist mautpflichtig (Tagesticket ca. 40 €/Auto). Geöffnet von Mai bis November, je nach Schneelage. Warme Kleidung einpacken – oben kann es auch im Sommer kalt sein.
+## Maut und Öffnungszeiten
+- Die Straße ist mautpflichtig und laut Betreiber von **Anfang Mai bis Anfang November** geöffnet, im Winter gesperrt. Die täglichen Öffnungszeiten ändern sich im Lauf der Saison – Zeiten, Wetter und Sperren vorab auf der offiziellen Seite prüfen.
+- Das Tagesticket ist an das Kennzeichen gebunden und gilt am Ausstellungstag beliebig oft. Man kann also auf die Salzburger Seite und am selben Tag zurück fahren.
+- Online kaufen ist nicht nötig, Tickets gibt es auch an den Kassenstellen.
+- Mit der **Kärnten Card** gibt es laut Kartenbetreiber nur eine Ermäßigung auf die Maut, keine freie Fahrt.
+- Hunde dürfen mit.
 
-## Anfahrt aus Kärnten
-Von Villach ca. 1,5 Stunden, von Klagenfurt ca. 2 Stunden über Heiligenblut.
+## Anreise aus Kärnten
+Mit dem Auto geht es durch das Mölltal nach Heiligenblut: von Villach rund 1,5 bis 2 Stunden, von Klagenfurt rund 2 Stunden bis zur Mautstelle, je nach Verkehr. Ohne Auto fährt laut Betreiber von Mai bis September – aber nicht täglich – der **Glocknerbus** von verschiedenen Orten zur Kaiser-Franz-Josefs-Höhe, mit Nationalpark-Rangern an Bord; Fahrplan vorab prüfen. Mehr zum Ort am Südende der Straße steht im Artikel [Heiligenblut am Großglockner](/blog/heiligenblut-grossglockner-dorf).
+
+## Warm anziehen
+Auf über 2.300 m ist es auch im Hochsommer deutlich kühler als im Tal, oft windig, und das Wetter kann schnell umschlagen. Eine warme Schicht und eine Regenjacke gehören ins Auto, für den Gletscherweg feste Schuhe.
     `,
     officialLinks: [
       { label: 'Großglockner Hochalpenstraße (grossglockner.at)', url: 'https://www.grossglockner.at' },
+      { label: 'Preise & Öffnungszeiten – Großglockner Hochalpenstraße', url: 'https://www.grossglockner.at/de/fuer-ihren-besuch/preise-oeffnungszeiten' },
+      { label: 'Fragen & Antworten – Großglockner Hochalpenstraße', url: 'https://www.grossglockner.at/de/fuer-ihren-besuch/FAQ' },
+      { label: 'Kaiser-Franz-Josefs-Höhe – Heiligenblut am Großglockner', url: 'https://heiligenblut.at/en/kaiser-franz-josefs-hoehe/' },
     ],
     affiliateLinks: [
       { label: 'Großglockner-Touren & Tickets – GetYourGuide', url: 'https://www.getyourguide.de/s/?q=Gro%C3%9Fglockner' },
@@ -2020,51 +2040,60 @@ Die Tourismusinformation am Neuen Platz in Klagenfurt verleiht laut Klagenfurt T
   },
   {
     slug: 'kaernten-herbst-geheimtipps',
-    title: 'Kärnten im Herbst – warum September/Oktober die beste Reisezeit ist',
-    excerpt: 'Im September sind die Strandbäder noch offen, die Berge frei von Schnee, die Preise gefallen und die Touristen weg. Wer Kärnten wirklich kennenlernen will, kommt im Herbst.',
+    title: 'Kärnten im Herbst – warum September und Oktober so lohnend sind',
+    excerpt: 'Letzte Badetage an den Seen, Wandern ohne Hitze, Weinlese im Lavanttal und in Mittelkärnten, Almabtriebe und goldene Lärchen in den Nockbergen: was den Kärntner Herbst ausmacht – und was im Oktober schon schließt.',
     date: '2026-06-01',
     category: 'Ausflug',
     region: 'kaernten',
     bestSeason: 'September–Oktober',
-    highlights: ['Seentemperaturen noch 22–24°C im September', 'Hotels bis zu 40% günstiger als im Juli', 'Goldenes Herbstlicht für Fotografen und Wanderer'],
+    planningMistakes: [
+      { fehler: 'Mit allen Strandbädern und Bergbahnen bis Ende Oktober rechnen', besser: 'Viele Strandbäder schließen im Lauf des Septembers, manche Bergbahnen und die Panoramastraßen beenden im Oktober oder Anfang November ihre Saison. Vorab beim Betreiber prüfen, was noch offen hat.' },
+      { fehler: 'Die Almabtriebe Ende Oktober suchen', besser: 'Almabtriebe finden in Österreich meist zwischen Anfang September und Mitte Oktober statt, in Kärnten oft schon im September. Die Termine hängen vom Wetter ab – beim örtlichen Tourismusverband nachfragen.' },
+      { fehler: 'Im Oktober wie im Sommer auf den Berg gehen', besser: 'Die Tage sind deutlich kürzer, und in höheren Lagen kann schon Schnee liegen. Früh starten, eine warme Schicht und eine Stirnlampe einpacken.' },
+    ],
+    highlights: ['Nach den Sommerferien Mitte September deutlich ruhiger', 'Weinlese, Obst und Slow Food im Lavanttal und in Mittelkärnten', 'Kärnten Card gilt bis in den Herbst (2026: bis 1. November)'],
     content: `
-Kärnten wird oft als Sommerdestination vermarktet – Juli und August, Wasser und Sonne. Aber wer die Region wirklich mag, reist im Herbst. September und Oktober sind ein anderes Kärnten: leerer, ruhiger, goldener – und in jeder Hinsicht entspannter.
+Kärnten wird vor allem als Sommerziel vermarktet – Juli und August, Seen und Sonne. Der Herbst hat aber eigene Vorzüge: Spätestens wenn Mitte September in Kärnten und in Süddeutschland die Sommerferien enden, wird es an den Seen und auf den Bergen merklich ruhiger. Dafür schließt manches früher, als man denkt – beides gehört zur Planung.
 
-## Das Wasser ist noch warm
+## Baden im September?
+Große, tiefe Seen speichern die Sommerwärme und kühlen nur langsam ab. Wie warm es im September noch ist, hängt aber stark vom Sommer und vom Wetter ab. Die offiziellen EU-Badewasser-Proben enden im August: 2026 wurden bei der letzten Probe am 10. August am Wörthersee rund 27 °C gemessen, am Klopeiner See 26,5 °C und am Millstätter See gut 25 °C. Für den September bleiben die Live-Messstellen des Landes – aktuelle Werte und den Trend seit etwa einem Tag zeigt die Seite [Wassertemperatur der Seen in Österreich](/wassertemperatur#kaernten), Details je See etwa für den [Wörthersee](/wassertemperatur/woerthersee) oder den [Millstätter See](/wassertemperatur/millstaetter-see).
 
-Die großen Kärntner Seen kühlen langsam ab. Im September: Wörthersee 22–24°C, Klopeiner See bis 25°C, Millstätter See 21–23°C. Das ist warm genug für entspanntes Baden, ohne Gedränge.
+Viele Strandbäder schließen im Lauf des Septembers. Wer in der Nachsaison baden will, sollte vorab prüfen, welche noch offen sind.
 
-## Die Preise
+## Wandern ohne Hitze
+Im September und Oktober ist es in mittleren Höhen meist angenehm kühl, und nach dem Ende der Ferien sind die Wege leerer. Die Tage werden aber spürbar kürzer – lange Touren früh beginnen. In den [Nockbergen](/blog/nockberge-biosphaerenpark-wandern) färben sich im Oktober die Lärchen golden; die [Nockalmstraße](/blog/nockalmstrasse-panoramastrasse) ist etwa bis Ende Oktober befahrbar, die [Großglockner-Hochalpenstraße](/blog/grossglockner-tagesausflug) laut Betreiber bis Anfang November.
 
-Hotels kosten im September oft 30–40% weniger als im Juli/August. Dasselbe gilt für Ferienwohnungen. Die Strandbäder haben zwar kürzere Öffnungszeiten, aber dafür kaum Warteschlangen.
+## Weinlese, Obst und Slow Food
+Kärnten ist ein kleines Weinland: Laut Kärnten Werbung wachsen auf rund 145 Hektar etwa 450.000 Liter Wein im Jahr. Die längste Tradition hat das **Lavanttal**, wo an den Ausläufern von Koralpe und Saualpe Weiß- und Rotweine reifen; rund um Wolfsberg führt ein Weinlehrpfad durch die Weingärten. Als aufstrebende Weinregion gilt **Mittelkärnten** um St. Veit und den Längsee – dort liegt rund um die Burg Taggenbrunn mit über 40 Hektar Reben Kärntens größtes Weingut. Gelesen wird im Herbst. Buschenschänken haben nur zu bestimmten Zeiten offen, also vorab beim Betrieb nachfragen.
 
-## Wandern ohne Schweiß
+Das Lavanttal mit seinen Obst- und Weingärten ist zugleich eine Slow-Food-Travel-Region. Im Herbst reifen dort alte Apfelsorten wie die „Lavanttaler Banane“, die geschmacklich an eine Banane erinnert, und bei den „Tagen der offenen Genusstür“ kann man Produzenten besuchen und verkosten. Mehr zur Kärntner Küche steht im Artikel [Kärntner Küche – Kasnudeln, Reindling & Co.](/blog/kaernten-kulinarik-kaesknodel-reindling).
 
-In 1.500–2.000 m Höhe sind die Temperaturen im September ideal für Wanderungen: kühl genug, um nicht zu überhitzen, warm genug für T-Shirt im Aufstieg. Die Bergwiesen leuchten in Herbstfarben.
+## Almabtriebe
+Im Herbst holen die Bauern ihr Vieh von den Almen, vielerorts mit geschmückten Tieren und einem Fest im Tal. In Österreich finden die Almabtriebe laut Österreich Werbung meist zwischen Anfang September und Mitte Oktober statt; in Kärnten etwa in Bad Kleinkirchheim, 2025 Mitte September. Die Termine hängen vom Wetter ab und können sich kurzfristig ändern – beim örtlichen Tourismusverband nachfragen.
 
-## Kärntner Herbst-Highlights
-
-### Weißweinlese im Südkärnten
-Das Gailtal und das Lavanttal haben kleine Weinbaugebiete. Im Oktober wird gelesen – lokale Kellereien öffnen für Verkostungen.
-
-### Kastanienzeit
-Esskastanienwälder gibt es im Lavanttal und bei Wolfsberg. Im Oktober liegen die Kastanien auf den Wegen – Locals sammeln und rösten sie.
-
-### Märkte und Feste
-Oktober: Viehscheiden auf den Almen. Das Almvieh wird zum letzten Mal für die Saison ins Tal getrieben – ein Schauspiel mit Tradition.
+## Klagenfurt und der Benediktinermarkt
+Schlägt das Wetter um, ist [Klagenfurt](/blog/klagenfurt-stadtfuehrung) eine gute Wahl. Am Donnerstag und Samstag verkaufen am **Benediktinermarkt** in der Altstadt Bauern aus Kärnten, Friaul und Slowenien ihre Produkte.
 
 ## Was im Herbst schließt
+- Strandbäder: viele schließen im Lauf des Septembers
+- Bergbahnen: manche beenden den Sommerbetrieb schon im September oder Oktober
+- Panoramastraßen: Nockalmstraße und Großglockner-Hochalpenstraße schließen Ende Oktober bzw. Anfang November für den Winter
+- Campingplätze: viele beenden die Saison im September oder Oktober
+- Die **Kärnten Card** gilt in der Sommersaison bis in den Herbst, 2026 bis 1. November
 
-- Einige Strandbäder: ab Mitte September
-- Gondelbahnen: teils ab Oktober
-- Campingplätze: die meisten bis Ende September
+Öffnungszeiten ändern sich jedes Jahr – vorab beim Betreiber prüfen.
 
-## Empfehlungen für den Herbst
-
-- **Nockberge wandern**: Goldene Lärchenwälder im Oktober – einer der schönsten Anblicke der Ostalpen
-- **Millstätter See**: Ruhig, warm genug, Promenade leer – das beste Wochenende des Jahres am See
-- **Klagenfurt**: Herbst-Wochenmärkte am Benediktinermarkt, keine Touristengruppen
+## Unsere Herbst-Empfehlungen
+- **Nockberge**: Almwege ohne Hitze, im Oktober goldene Lärchen – [Nockberge wandern](/blog/nockberge-biosphaerenpark-wandern)
+- **Millstätter See**: Nachsaison am Nordufer und Wanderungen über dem See – [Millstätter See](/blog/millstaetter-see-wandern-und-schwimmen)
+- **Mittelkärnten**: Weingegend um St. Veit, dazu [Burg Hochosterwitz](/blog/burg-hochosterwitz-ausflug) und der [Gurker Dom](/blog/gurker-dom-romanik-kaernten)
     `,
+    officialLinks: [
+      { label: 'Weinland Kärnten – Kärnten Werbung', url: 'https://www.kaernten.at/kulinarik/typisch-kaerntnerisch/weinland-kaernten/' },
+      { label: 'Slow Food Travel Lavanttal – Kärnten Werbung', url: 'https://www.kaernten.at/herbsturlaub/kulinarik/lavanttal/' },
+      { label: 'Almabtriebe in Österreich – Österreich Werbung', url: 'https://www.austria.info/de-at/inspiration/almabtriebe/' },
+      { label: 'Kärnten Card Sommer', url: 'https://www.kaerntencard.at/sommer/' },
+    ],
     affiliateLinks: [
       { label: 'Herbstangebote Kärnten – booking.com', url: 'https://www.booking.com/region/at/carinthia.de.html' },
       { label: 'Windjacke für Herbstwanderungen – Amazon', url: 'https://www.amazon.de/s?k=softshell+jacke+damen+wandern' },
@@ -6448,24 +6477,47 @@ Der Turm ist ganzjährig geöffnet, die Zeiten wechseln mit den Monaten: Im Juli
   {
     slug: 'minimundus-klagenfurt',
     startCoords: [46.6199, 14.2642],
+    startPoint: { name: 'Minimundus, Villacher Straße 241, Klagenfurt', parking: 'laut Betreiber kostenlose Parkplätze direkt vor dem Eingang', arrival: 'vormittags – dann bleibt Zeit für Park und Indoor-Ausstellung', note: 'Etwa Ende März bis Anfang November geöffnet, im Winter geschlossen – aktuelle Zeiten vorab prüfen.' },
+    planningMistakes: [
+      { fehler: 'Eine Stunde für den Besuch einplanen', besser: 'Für den Park nennt der Betreiber 1,5 bis 3 Stunden, für die Indoor-Ausstellung etwa eine weitere Stunde. Mit Kindern lieber einen halben Tag einplanen.' },
+      { fehler: 'Im Winter oder Anfang März hinfahren', besser: 'Von Anfang November bis Ende März ist Minimundus geschlossen. Die Saisonzeiten ändern sich jedes Jahr – vorab auf der offiziellen Seite prüfen.' },
+    ],
     title: 'Minimundus in Klagenfurt – die kleine Welt am Wörthersee',
-    excerpt: 'Eiffelturm, Taj Mahal und Petersdom auf einem Spaziergang: Der Miniaturpark Minimundus zeigt über 150 Bauwerke aus aller Welt im Maßstab 1:25 – ein Klassiker für Familien.',
+    excerpt: 'Petersdom, Taj Mahal und Christusstatue an einem Nachmittag: Minimundus zeigt 166 Modelle berühmter Bauwerke, fast alle im Maßstab 1:25 und großteils aus Originalmaterialien – dazu eine Indoor-Ausstellung für Regentage. Was es zu sehen gibt und wie viel Zeit man braucht.',
     date: '2026-06-17', category: 'Ausflug', region: 'kaernten', bestSeason: 'April–Oktober',
-    highlights: ['Über 150 Modelle berühmter Bauwerke', 'Maßstab 1:25, liebevoll detailliert', 'Ideal für Familien & als Schlechtwetter-Alternative'],
+    highlights: ['166 Modelle aus aller Welt, fast alle im Maßstab 1:25', 'Fahrende Modellbahnen, Tower Bridge mit Schiff, simulierter Space-Shuttle-Start', 'Indoor-Ausstellung (1.500 m²) mit 4D-Kino für Regentage'],
     content: `
-Am Rande von Klagenfurt, nahe dem Wörthersee, liegt **Minimundus** – „die kleine Welt am Wörthersee". Auf rund 26.000 m² stehen über 150 originalgetreue Modelle berühmter Bauwerke im Maßstab 1:25.
+Am Westrand von Klagenfurt, nahe dem Ostende des Wörthersees, liegt **Minimundus** – „die kleine Welt am Wörthersee“. Auf rund 26.000 m² stehen 166 Modelle berühmter Bauwerke aus allen Kontinenten, fast alle im Maßstab 1:25. Gebaut werden sie laut Betreiber in der eigenen Modellbauwerkstätte, großteils aus Originalmaterialien wie Sandstein, Lavabasalt oder Marmor. Kleiner gebaut sind nur die Burg Hochosterwitz und das Passagierschiff Queen Mary.
 
 ## Was es zu sehen gibt
-Vom Eiffelturm über den Petersdom und das Taj Mahal bis zur Freiheitsstatue – eine Weltreise zu Fuß in ein bis zwei Stunden. Viele Modelle bestehen aus Originalmaterialien.
+Die Weltreise führt unter anderem zum Petersdom, zum Taj Mahal, zur Christusstatue von Rio, zur Chephren-Pyramide von Gizeh samt Sphinx, zu den Tempeln von Abu Simbel, zur Maya-Pyramide von Chichén Itzá, zum CN Tower in Toronto und zum Schloss Neuschwanstein. Österreich ist etwa mit dem Wiener Riesenrad und dem Grazer Uhrturm vertreten. Die ältesten Modelle, die Burg Hochosterwitz und das Wiener Schloss Belvedere, stammen laut Betreiber von 1959 – dem Jahr, in dem Minimundus eröffnet wurde.
+
+## Was sich bewegt
+Durch den Park drehen laut Betreiber zahlreiche Modellzüge ihre Runden. Zu bestimmten Zeiten wird beim Space Shuttle der Start simuliert, und an der Tower Bridge klappen wie beim Vorbild die Brückenteile hoch, damit ein Schiff durchfahren kann. An manchen Modellen lösen Knöpfe eine Bewegung aus – bei Kindern meist der Höhepunkt.
+
+## Wenn es regnet
+Die Modelle stehen im Freien, Minimundus ist also vor allem ein Schönwetter-Ziel. Seit 2015/16 gibt es aber eine rund 1.500 m² große **Indoor-Ausstellung** auf zwei Stockwerken, unter anderem mit 4D-Kino, einer Modelleisenbahn-Station, interaktiven Globen, einer Trickfilm-Station und einer Riesenrutsche. Laut Betreiber braucht man dafür etwa eine Stunde – für einen ganzen Regentag reicht das nicht, für einen verregneten Nachmittag schon.
 
 ## Für Familien
-Modelleisenbahnen, Schiffe und Flugzeuge in Bewegung begeistern Kinder. Es gibt einen Spielplatz und genug Platz zum Toben.
+Neben den beweglichen Modellen gibt es einen rund 400 m² großen Spielplatz. Der Park ist laut Betreiber barrierefrei, der Indoorbereich hat Lift und Rampe – mit dem Kinderwagen also kein Problem. Hunde dürfen an der Leine mit, größere mit Maulkorb.
+
+## Wie viel Zeit?
+Für den Rundgang durch den Park nennt der Betreiber 1,5 bis 3 Stunden, je nach Tempo und Fotopausen, dazu etwa eine Stunde für die Ausstellung. Gleich beim Kassenbereich gibt es ein Restaurant.
+
+## Wer dahintersteht
+Minimundus wurde am 3. Juli 1959 eröffnet und gehört dem Verein **Rettet das Kind Kärnten**. Mit dem Eintritt unterstützt man laut Betreiber Kinder und Jugendliche in Kärnten.
 
 ## Praktische Infos
-- Zentral in Klagenfurt, nahe Strandbad & Europapark
-- Tickets oft günstiger mit der Kärnten Card
-- Gut kombinierbar mit dem benachbarten Reptilienzoo
+- Geöffnet etwa von Ende März bis Anfang November, im Winter geschlossen – aktuelle Zeiten und Tarife beim Betreiber prüfen
+- Mit dem Auto: A2-Abfahrt Klagenfurt-Wörthersee/Minimundus, kostenlose Parkplätze vor dem Eingang
+- Mit dem Bus: Die Stadtbuslinien 10 und 20 halten an der Haltestelle „Minimundus“ wenige Meter vom Eingang
+- Kombitickets gibt es mit dem [Pyramidenkogel](/blog/pyramidenkogel-woerthersee) und der [Wörthersee-Schifffahrt](/blog/woerthersee-schifffahrt)
+- Gleich nebenan liegt der Reptilienzoo Happ; weitere Ideen in [Wörthersee mit Kindern](/blog/woerthersee-mit-kindern)
     `,
+    officialLinks: [
+      { label: 'Minimundus – offizielle Website', url: 'https://www.minimundus.at/' },
+      { label: 'Häufige Fragen – Minimundus', url: 'https://www.minimundus.at/faq/' },
+    ],
     affiliateLinks: [
       { label: 'Hotels in Klagenfurt – booking.com', url: 'https://www.booking.com/city/at/klagenfurt.de.html' },
     ],

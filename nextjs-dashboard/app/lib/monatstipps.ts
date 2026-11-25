@@ -63,7 +63,7 @@ export const MONATE: Monat[] = [
     picks: [
       { slug: 'wachau-duernstein', warum: 'Je nach Witterung beginnt jetzt die Marillenblüte – die Wachau in Weiß und Rosa.' },
       { slug: 'stift-melk', warum: 'Die Gartenanlage startet in die Saison, während drinnen Bibliothek und Marmorsaal ganzjährig warten.' },
-      { slug: 'minimundus-klagenfurt', warum: 'Saisonstart am Wörthersee – die Modelle stehen wieder im gepflegten Park.' },
+      { slug: 'minimundus-klagenfurt', warum: 'Seit dem Saisonstart Ende März wieder offen – und im April noch ohne den Andrang der Sommerferien.' },
       { slug: 'rust-stoerche-altstadt', warum: 'Die Störche kehren auf ihre Kamin-Nester zurück – Rusts bekanntestes Frühlingsbild.' },
       { slug: 'seewinkel-nationalpark-voegel', warum: 'Frühjahrszug: Jetzt kommen die meisten Vogelarten im Seewinkel an.' },
       { slug: 'neusiedler-see-radweg', warum: 'Mildes Radwetter, bevor im Sommer Hitze und Menschenmassen kommen.' },
@@ -150,7 +150,7 @@ export const MONATE: Monat[] = [
       { slug: 'suedsteirische-weinstrasse', warum: 'Weinlese und Buschenschank-Zeit – die Steiermark von ihrer besten Seite.' },
       { slug: 'wachau-duernstein', warum: 'Die Weinterrassen färben sich golden, die Lese beginnt.' },
       { slug: 'uhudler-suedburgenland-wein', warum: 'Uhudler-Herbst im Südburgenland – jetzt wird verkostet.' },
-      { slug: 'kaernten-herbst-geheimtipps', warum: 'Unser Herbst-Guide: baden, wandern und sparen nach der Saison.' },
+      { slug: 'kaernten-herbst-geheimtipps', warum: 'Unser Herbst-Guide: letzte Badetage, Wandern ohne Hitze, Weinlese und Almabtriebe.' },
       { slug: 'wilder-kaiser-wandern', warum: 'Klare Luft, stabile Tage – die beste Wanderzeit am Kaiser.' },
       { slug: 'hochschwab-wandern', warum: 'Kühlere Temperaturen machen die langen Zustiege angenehm.' },
       { slug: 'gaisberg-salzburg-aussicht', warum: 'Herbstliche Fernsicht über Salzburg bis ins Salzkammergut.' },
