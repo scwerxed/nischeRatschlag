@@ -1,9 +1,10 @@
 'use client';
 
 import { useEffect, useRef, useState } from 'react';
+import Link from 'next/link';
 import { unterkuenfte, TYP_INFO } from '@/app/lib/unterkuenfte';
 import { cloak } from '@/app/lib/affiliate';
-import { CATEGORY_HEX } from '@/app/lib/blog-utils';
+import { CATEGORY_HEX, CATEGORY_STYLE } from '@/app/lib/blog-utils';
 import {
   AUSTRIA_BOUNDS, KARTE_REGIONEN, karteRegion,
   KARTE_KATEGORIEN, ALLE_KARTE_KATEGORIEN, karteKategorien, karteKategorienParam,
@@ -19,6 +20,17 @@ export type MapSpot = {
 };
 
 const MULTI_SPOT_COLOR = '#374151';
+
+/** Schlüssel eines Pins der Ebene „Ausflugsziele“ (die Server-Page fasst je Koordinate zusammen). */
+function spotKey(s: { lat: number; lng: number }): string {
+  return `${s.lat},${s.lng}`;
+}
+
+/** Aktueller Kartenausschnitt (Ränder + Mitte) für die Liste unter der Karte. */
+type ViewBox = { s: number; w: number; n: number; e: number; lat: number; lng: number };
+
+/** Wie viele Ziele die Liste „im Kartenausschnitt“ zeigt, bevor man „Alle zeigen“ wählt. */
+const LISTE_START = 12;
 
 /** Steht der Artikel im aktuellen Kategorie-Filter? Kategorien, die der Filter (noch) nicht
  *  kennt, bleiben immer sichtbar – eine neue Post-Kategorie soll nicht still von der Karte fallen. */
@@ -118,6 +130,8 @@ export default function MapClient({ spots }: { spots: MapSpot[] }) {
   const leafletRef    = useRef<any>(null);
   const allPeaksRef   = useRef<any[]>([]);
   const showPeaksRef  = useRef(true);
+  // Marker der Ausflugsziele je spotKey – damit „Auf der Karte“ in der Liste das Popup öffnen kann.
+  const articleMarkersRef = useRef<Map<string, any>>(new Map());
 
   const [baseLayer,     setBaseLayer]     = useState<'osm' | 'topo'>('osm');
   const [showTrails,    setShowTrails]    = useState(true);
@@ -133,6 +147,8 @@ export default function MapClient({ spots }: { spots: MapSpot[] }) {
   const [mapReady,      setMapReady]      = useState(false);
   const [error,         setError]         = useState<string | null>(null);
   const [panelOpen,     setPanelOpen]     = useState(true);
+  const [viewBox,       setViewBox]       = useState<ViewBox | null>(null);
+  const [listAll,       setListAll]       = useState(false);
 
   // Ausflugsziele (Artikel-Startpunkte) – ein Pin je Ort, mehrere Artikel → Zahl im Pin. Wird bei
   // jedem Wechsel des Kategorie-Filters neu aufgebaut: Ein Sammel-Pin zählt und listet dann nur die
@@ -143,6 +159,7 @@ export default function MapClient({ spots }: { spots: MapSpot[] }) {
     const layer = articlesLayerRef.current;
     if (!L || !layer) return;
     layer.clearLayers();
+    articleMarkersRef.current.clear();
     spots.forEach((spot) => {
       const articles = spot.articles.filter((a) => inFilter(a.category, aktiv));
       if (!articles.length) return;
@@ -157,12 +174,13 @@ export default function MapClient({ spots }: { spots: MapSpot[] }) {
         iconAnchor: [size / 2, size / 2],
         popupAnchor: [0, -size / 2],
       });
-      L.marker([s.lat, s.lng], {
+      const marker = L.marker([s.lat, s.lng], {
         icon,
         title: multi ? `${articles.length} Artikel an diesem Ort` : articles[0].title,
       })
         .bindPopup(spotPopupHtml(s), { closeButton: true })
         .addTo(layer);
+      articleMarkersRef.current.set(spotKey(spot), marker);
     });
   }
 
@@ -286,6 +304,19 @@ export default function MapClient({ spots }: { spots: MapSpot[] }) {
         map.on('moveend', updatePeaks);
         map.on('zoomend', updatePeaks);
 
+        // Liste „Ausflugsziele im Kartenausschnitt“ unter der Karte: nach jeder Bewegung den
+        // Ausschnitt merken, gefiltert und sortiert wird beim Rendern. moveend kommt auch nach
+        // Zoom, fitBounds und invalidateSize. Bei 0 px Container (verborgenes Fenster) gibt es
+        // noch keinen echten Ausschnitt – dann warten, bis fitIfSized() unten einpasst.
+        const updateViewBox = () => {
+          const size = map.getSize();
+          if (!size.x || !size.y) return;
+          const b = map.getBounds();
+          const c = map.getCenter();
+          setViewBox({ s: b.getSouth(), w: b.getWest(), n: b.getNorth(), e: b.getEast(), lat: c.lat, lng: c.lng });
+        };
+        map.on('moveend', updateViewBox);
+
         // Deep-Link: /karte?lat=..&lng=..&zoom=..&name=.. → Ausschnitt ist oben schon gesetzt,
         // hier nur noch der Startpunkt-Marker.
         if (hasDeepLink) {
@@ -329,6 +360,9 @@ export default function MapClient({ spots }: { spots: MapSpot[] }) {
             fitIfSized();
           }, 500);
         }
+        // Startausschnitt einmal ausdrücklich übernehmen: Der Deep-Link (ohne fitBounds) und der
+        // Konstruktor lösen ihr moveend aus, bevor der Handler oben hängt.
+        updateViewBox();
 
         setMapReady(true);
         // Am Handy startet das Bedienfeld eingeklappt, sonst verdeckt es die halbe Karte.
@@ -439,6 +473,16 @@ export default function MapClient({ spots }: { spots: MapSpot[] }) {
     updateUrl({ region: r.slug, ...DEEP_LINK_AUS });
   }
 
+  /** „Auf der Karte“ aus der Liste: Karte ins Bild scrollen, auf den Pin zoomen, Popup öffnen.
+   *  Ohne Animation, damit das Popup nicht mitten in einen Zoom-Übergang aufgeht. */
+  function showOnMap(lat: number, lng: number, key: string) {
+    const map = mapRef.current;
+    if (!map) return;
+    containerRef.current?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    map.setView([lat, lng], Math.max(map.getZoom(), 12), { animate: false });
+    articleMarkersRef.current.get(key)?.openPopup();
+  }
+
   // ── render ────────────────────────────────────────────────────────────────
   const mapH = 'calc(100vh - 160px)';
   const catCounts: Record<string, number> = {};
@@ -451,7 +495,25 @@ export default function MapClient({ spots }: { spots: MapSpot[] }) {
   }
   const allCatsActive = activeCats.length >= KARTE_KATEGORIEN.length;
 
+  // Ausflugsziele im aktuellen Ausschnitt (aktive Kategorien), das der Kartenmitte nächste zuerst.
+  // Abstand nur zum Sortieren: Längengrade mit cos(Breite) gestaucht, sonst wiegt Ost-West zu schwer.
+  type InView = MapSpot['articles'][number] & { lat: number; lng: number; key: string; d: number };
+  const inView: InView[] = [];
+  if (viewBox && showArticles) {
+    const cosLat = Math.cos((viewBox.lat * Math.PI) / 180);
+    for (const s of spots) {
+      if (s.lat < viewBox.s || s.lat > viewBox.n || s.lng < viewBox.w || s.lng > viewBox.e) continue;
+      const d = (s.lat - viewBox.lat) ** 2 + ((s.lng - viewBox.lng) * cosLat) ** 2;
+      for (const a of s.articles) {
+        if (inFilter(a.category, activeCats)) inView.push({ ...a, lat: s.lat, lng: s.lng, key: spotKey(s), d });
+      }
+    }
+    inView.sort((x, y) => x.d - y.d || x.title.localeCompare(y.title, 'de'));
+  }
+  const listed = listAll ? inView : inView.slice(0, LISTE_START);
+
   return (
+    <>
     <div
       className="relative border border-hairline overflow-hidden rounded-sm" style={{ minHeight: 560 }}
     >
@@ -705,5 +767,58 @@ export default function MapClient({ spots }: { spots: MapSpot[] }) {
         </div>
       )}
     </div>
+
+    {/* ── Ausflugsziele im Kartenausschnitt – als Liste unter der Karte ────── */}
+    {/* Für das Handy (Pins antippen ist fummelig) und für Screenreader, die die Pins nicht sehen.
+        Folgt Verschieben, Zoom, Bundesland-Wahl und Kategorie-Filter. */}
+    {mapReady && showArticles && viewBox && (
+      <section aria-labelledby="karte-liste-titel" className="mt-6 border-t-2 border-ink pt-4">
+        <h2 id="karte-liste-titel" className="font-serif text-tagline font-bold text-ink">
+          Ausflugsziele im Kartenausschnitt
+        </h2>
+        <p className="text-caption text-ink-soft mt-1" aria-live="polite">
+          {inView.length === 0
+            ? `Im Ausschnitt liegt gerade kein Ausflugsziel${allCatsActive ? '' : ' der gewählten Kategorien'} – herauszoomen oder oben rechts ein Bundesland wählen.`
+            : `${inView.length === 1 ? '1 Ziel' : `${inView.length} Ziele`} im Ausschnitt${allCatsActive ? '' : ' (gefiltert)'}${inView.length > 1 ? ', das der Kartenmitte nächste zuerst' : ''}. Karte verschieben oder zoomen ändert die Liste.`}
+        </p>
+        {listed.length > 0 && (
+          <ul className="mt-4 grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
+            {listed.map((a) => (
+              <li key={a.slug} className="flex flex-col border border-hairline p-3 rounded-sm">
+                <span className={`eyebrow ${CATEGORY_STYLE[a.category]?.text ?? ''}`}>{a.category}</span>
+                <Link
+                  href={`/blog/${a.slug}`}
+                  className="mt-1.5 text-caption font-semibold text-ink leading-snug hover:underline decoration-signal decoration-2 underline-offset-4"
+                >
+                  {a.title}
+                </Link>
+                <span className="mt-auto pt-2 flex items-center justify-between gap-3 text-fine text-ink-soft">
+                  <span>{a.region}</span>
+                  <button
+                    type="button"
+                    onClick={() => showOnMap(a.lat, a.lng, a.key)}
+                    aria-label={`${a.title} auf der Karte zeigen`}
+                    className="tap shrink-0 text-ink underline underline-offset-2 decoration-signal hover:text-signal"
+                  >
+                    Auf der Karte
+                  </button>
+                </span>
+              </li>
+            ))}
+          </ul>
+        )}
+        {inView.length > LISTE_START && (
+          <button
+            type="button"
+            onClick={() => setListAll((v) => !v)}
+            aria-expanded={listAll}
+            className="btn-secondary mt-4"
+          >
+            {listAll ? `Nur die ${LISTE_START} nächsten zeigen` : `Alle ${inView.length} zeigen`}
+          </button>
+        )}
+      </section>
+    )}
+    </>
   );
 }

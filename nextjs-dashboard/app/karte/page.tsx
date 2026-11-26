@@ -36,7 +36,7 @@ export default function KartePage() {
         <div>
           <h1 className="font-serif text-lead font-bold text-ink">Interaktive Wanderkarte</h1>
           <p className="text-caption text-ink-soft mt-0.5">
-            {ARTICLE_COUNT} Ausflugsziele aus dem Magazin, Wanderwege, Gipfel und Unterkünfte in ganz Österreich — Pin anklicken öffnet den Artikel, rechts oben Ebenen ein-/ausblenden, nach Kategorie filtern oder ein Bundesland wählen
+            {ARTICLE_COUNT} Ausflugsziele aus dem Magazin, Wanderwege, Gipfel und Unterkünfte in ganz Österreich — Pin anklicken öffnet den Artikel, rechts oben Ebenen ein-/ausblenden, nach Kategorie filtern oder ein Bundesland wählen. Unter der Karte stehen die Ziele im aktuellen Ausschnitt als Liste.
           </p>
         </div>
       </div>
